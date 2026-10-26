@@ -29,8 +29,10 @@
       <button class="nav-link" data-view="journeys"><span class="ico">☷</span> Study journeys</button>
       <button class="nav-link" data-view="notebook"><span class="ico">▧</span> My notebook</button>
     </nav>
-    <div class="side-label side-label-library">START READING</div>
-    <div class="compact-picker"><label for="side-book">Book</label><select id="side-book" aria-label="Choose Bible book"></select><div class="picker-chapter"><label for="side-chapter">Chapter</label><select id="side-chapter" aria-label="Choose chapter"></select><button id="side-open" class="small-go" aria-label="Open selected chapter">→</button></div></div>
+    <details class="sidebar-reader-details" id="sidebar-reader-details">
+      <summary>QUICK CHAPTER JUMP</summary>
+      <div class="compact-picker"><label for="side-book">Book</label><select id="side-book" aria-label="Choose Bible book"></select><div class="picker-chapter"><label for="side-chapter">Chapter</label><select id="side-chapter" aria-label="Choose chapter"></select><button id="side-open" class="small-go" aria-label="Open selected chapter">→</button></div></div>
+    </details>
     <div class="sidebar-bottom"><div class="mini-verse"><div class="overline">YOUR NEXT DISCOVERY</div><p>Every verse has a context. Every connection has a story.</p><button id="random-verse" class="text-button">Explore a passage <span>↗</span></button></div><button class="nav-link about-link" data-view="about"><span class="ico">ⓘ</span> About the project</button></div>
   </aside>
   <div class="main-column">
