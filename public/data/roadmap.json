@@ -190,7 +190,7 @@
         "Publisher attribution and API.Bible Scripture-view reporting",
         "Translation-neutral Atlas actions retained in every reader edition"
       ],
-      "verification": "Implementation and mock API tests completed. Live NASB20, NIV and NKJV text retrieval requires API_BIBLE_KEY to be added to the production environment, followed by redeployment and an entitlement check."
+      "verification": "Production verse and full-chapter requests for NASB20, NIV and NKJV verified on 27 October 2026, including returned copyright notices and Scripture-view tokens. ESV retrieval, 56 automated tests, Cloudflare runtime request settings and desktop/mobile browser checks also passed."
     },
     {
       "id": "bible-languages",

@@ -27,7 +27,7 @@
 - Added server-side API.Bible routing using the encrypted `API_BIBLE_KEY` secret and fixed approved Bible IDs.
 - Added publisher copyright, API.Bible attribution, FUMS view reporting and edition-specific error messages.
 - Retained ESV keyword search.
-- Added routing, security and upstream failure tests. Live API.Bible access requires the production secret and a redeployment.
+- Added routing, security, redirect and upstream failure tests. All 56 tests passed; production verse and chapter retrieval was verified for all three API.Bible editions on 27 October 2026.
 
 
 ## 0.1.0 - 26 October 2026

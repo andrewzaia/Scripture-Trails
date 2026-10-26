@@ -87,7 +87,7 @@ The proxy validates references, requests one chapter or up to 30 selected verses
 
 API.Bible requires Scripture-view reporting. The client loads only fixed official FUMS trackers when an API.Bible passage is shown: current `fumsToken` reporting via `https://pkg.api.bible/fumsV3.min.js`, or legacy `fumsId` via `https://cdn.scripture.api.bible/fums/fumsv2.min.js`. Returned executable JavaScript is never used. The CSP permits those two scripts and their specific reporting hosts. About explains the anonymous device/session reporting. Ad blockers may prevent the provider's reporting.
 
-The API key and the three approved entitlements must be verified against the live service after configuration. Mock tests verify routing and failure handling, but cannot establish the validity of a real key or the publisher terms associated with the account. References are shared across editions while verse numbering may differ.
+Production verse and chapter retrieval was verified for NASB20, NIV and NKJV on 27 October 2026, including returned copyright and FUMS tokens. Re-check the API key and all three entitlements after future credential or access changes. Mock tests verify routing and failure handling, but cannot establish the validity of a real key or the publisher terms associated with the account. References are shared across editions while verse numbering may differ.
 
 References: [API.Bible chapters](https://docs.api.bible/guides/chapters/), [passages](https://docs.api.bible/guides/passages/), [view reporting](https://docs.api.bible/resources/fair-use/), [terms](https://api.bible/terms-and-conditions).
 
