@@ -196,12 +196,12 @@
       "id": "bible-languages",
       "phase": "editions",
       "status": "research",
-      "title": "LSB and original-language study",
-      "summary": "Investigate LSB in-page display and separately licensed Hebrew and Greek study tools. ESV, NASB20, NIV and NKJV reader switching is implemented separately.",
+      "title": "Original-language study",
+      "summary": "Investigate separately licensed Hebrew and Greek study tools. ESV, NASB20, NIV and NKJV reader switching is implemented separately.",
       "capabilities": [
-        "Investigate authorised LSB API/display licensing",
+        "Identify licensed Hebrew and Greek lexical datasets",
         "Compare variant renderings only where permissions allow",
-        "Later: carefully sourced Hebrew and Greek lexical tools"
+        "Carefully sourced original-language study tools"
       ],
       "verification": "Do not host additional copyrighted text without an appropriate licence."
     },

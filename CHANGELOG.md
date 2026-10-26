@@ -20,11 +20,13 @@
 
 ## 2026-10-27 - API.Bible translation selection
 
+- Removed unused external edition links from the reader, Atlas, About, map and roadmap.
+
 - Added in-page ESV, NASB20, NIV (2011) and NKJV selection for exact verses, ranges and full chapters.
 - Keep the edition in shared links, browser history and the saved reading preference.
 - Added server-side API.Bible routing using the encrypted `API_BIBLE_KEY` secret and fixed approved Bible IDs.
 - Added publisher copyright, API.Bible attribution, FUMS view reporting and edition-specific error messages.
-- Retained ESV keyword search and the external LSB reader.
+- Retained ESV keyword search.
 - Added routing, security and upstream failure tests. Live API.Bible access requires the production secret and a redeployment.
 
 
@@ -45,13 +47,13 @@ Live ESV passages and search require the `ESV_API_KEY` secret in Cloudflare Page
 - Linked each numbered ESV verse directly to the connection atlas.
 - Added OpenBible.info community-voted and attributed full-canon verse reference data.
 - Added adjacent-verse context fallback, explicitly distinct from a theological connection.
-- Documented approved ESV, NASB 2020 and LSB study editions and official external readers.
+- Documented approved study editions and official external readers.
 
 ## 0.2.0 - 26 October 2026
 
 - Added individual verse Atlas actions, 66-book chapter and verse selector, and a capped ten-hop network.
 - Added user-visible provenance labels and reading-context fallbacks.
-- Added ESV, NASB 2020 and LSB study edition links without redistributing additional copyrighted translations.
+- Added official study edition links without redistributing additional copyrighted translations.
 - Added a pinned OpenBible.info cross-reference import workflow with validation and attribution.
 
 ## Gospel itinerary map - 26 October 2026

@@ -15,7 +15,7 @@ test('API.Bible uses the three approved editions and USFM IDs for all 66 books',
  assert.equal(getTranslation('nasb20').bibleId,'a761ca71e0b3ddcf-01');
  assert.equal(getTranslation('NIV').bibleId,'78a9f6124f344018-01');
  assert.equal(getTranslation('NKJV').bibleId,'63097d2a0a2f7db3-01');
- assert.equal(getTranslation('LSB'),null);
+ assert.equal(getTranslation('UNKNOWN'),null);
  assert.equal(new Set(BOOKS.map(book=>apiBibleTarget(`${book.name} 1`).id)).size,66);
  for(const [ref,id] of [['Psalms 23','PSA.23'],['Song of Solomon 2','SNG.2'],['1 Kings 3','1KI.3'],['Philippians 4:13','PHP.4.13'],['1 John 1:1','1JN.1.1']])assert.equal(apiBibleTarget(ref).id,id);
 });
