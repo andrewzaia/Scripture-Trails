@@ -193,3 +193,16 @@ The new **Project roadmap** is a first-class navigation page at `/?view=roadmap`
 - [First-century Capernaum archaeological survey](https://rsc.byu.edu/ministry-peter-chief-apostle/simon-peter-capernaum-archaeological-survey-first-century-village) and [el-Araj Bethsaida excavation report](https://www.bethsaida-julias.com/season8report).
 
 These studies contextualise the material remains; none should be cited as independently proving a supernatural event. Additional place-by-place publications and specialist review remain on the roadmap.
+
+
+## Gospel and place evidence audit - initial release (26 October 2026)
+
+The 79 Gospel and Acts episodes and 35 mapped place dossiers now include **initial, AI-assisted editorial screening** metadata. This is not a completed archaeological monograph, direct independent Bible translation verification of every event, or external expert peer review. No invented time, route or geolocation is implied by a timeline or schematic point.
+
+- `public/data/jesus-audit.json` records the methodology, **9 specific editorial corrections**, **18 known interpretative/source issues**, source-page checks and the distinctions between `open`, `qualified` and `corrected` issues. These are all displayed in the journey map's evidence register.
+- `public/data/jesus-journeys.json` retains primary Gospel or Acts citations and adds screening statuses to every event. `screened` means no specific issue has been flagged in this first pass; it is not a statement of historical proof. `qualified` and `needs-further-review` disclose unresolved problems.
+- `public/data/jesus-geography.json` records whether each place has any attached independent literature, is a regional placeholder, or requires independent source discovery. A link to an archaeology report documents a site or physical evidence, not proof of a Gospel miracle.
+- The major corrections include moving Jairus from Capernaum to an unspecified lakeshore, identifying Capernaum in Mark 2:1, treating Caesarea Philippi as a district, not specifying the donkey's source village as Bethphage, distinguishing John 20's two disciple appearances, and flagging the Last Supper calendar and anointing parallel issues.
+- The roadmap records this **first editorial screening** as delivered while retaining a separate **independent specialist review** milestone as research. This avoids misleading users into assuming all passages have received scholarly signoff.
+
+Sources used in the issue register include canonical verses opened via the site's licensed reader, Crossway's textual note to John 7:53-8:11, SIL Bible translation notes on Mark 5, reputable commentary, and academic work on Gospel chronology. Links within `jesus-audit.json` are external background sources, **not substitutes for the biblical text**.

@@ -1,7 +1,7 @@
 {
-  "version": 1,
+  "version": 2,
   "title": "The journeys of Jesus",
-  "method": "Gospel-referenced itinerary, not a reconstructed GPS track. Chronological ordering blends the Gospel narratives and is debated, especially across John and the Synoptics. The slider shows narrative stops, not measured dates or distances. Each stop describes a recorded episode, not proof of a distinct trip.",
+  "method": "Gospel-referenced itinerary, not a reconstructed GPS track. Chronological ordering blends the Gospel narratives and is debated, especially across John and the Synoptics. The slider shows narrative stops, not measured dates or distances. Each stop describes a recorded episode, not proof of a distinct trip. The first-pass evidence register documents corrected assumptions, unresolved scholarly issues and limited screening status at each stop.",
   "sources": [
     {
       "id": "gospels",
@@ -456,7 +456,13 @@
         "Matthew 2:1"
       ],
       "evidence": "named",
-      "qualification": ""
+      "qualification": "",
+      "review": {
+        "status": "screened",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": []
+      }
     },
     {
       "id": "j002",
@@ -468,7 +474,15 @@
         "Luke 2:22-38"
       ],
       "evidence": "named",
-      "qualification": ""
+      "qualification": "",
+      "review": {
+        "status": "qualified",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": [
+          "chronology-birth"
+        ]
+      }
     },
     {
       "id": "j003",
@@ -480,7 +494,13 @@
         "Matthew 2:1-12"
       ],
       "evidence": "named",
-      "qualification": "Matthew does not specify that the visit occurred on the night of the birth."
+      "qualification": "Matthew does not specify that the visit occurred on the night of the birth.",
+      "review": {
+        "status": "screened",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": []
+      }
     },
     {
       "id": "j004",
@@ -492,7 +512,15 @@
         "Matthew 2:13-15"
       ],
       "evidence": "region",
-      "qualification": "Matthew gives no Egyptian city, exact route, or length of residence."
+      "qualification": "Matthew gives no Egyptian city, exact route, or length of residence.",
+      "review": {
+        "status": "qualified",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": [
+          "chronology-birth"
+        ]
+      }
     },
     {
       "id": "j005",
@@ -505,7 +533,15 @@
         "Luke 2:39-40"
       ],
       "evidence": "named",
-      "qualification": ""
+      "qualification": "Matthew relates an Egyptian refuge before Nazareth; Luke moves from temple presentation to Nazareth without recording that episode. Their intervening sequence is not independently established.",
+      "review": {
+        "status": "qualified",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": [
+          "chronology-birth"
+        ]
+      }
     },
     {
       "id": "j006",
@@ -517,7 +553,13 @@
         "Luke 2:41-50"
       ],
       "evidence": "named",
-      "qualification": ""
+      "qualification": "",
+      "review": {
+        "status": "screened",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": []
+      }
     },
     {
       "id": "j007",
@@ -529,7 +571,13 @@
         "Luke 2:51-52"
       ],
       "evidence": "named",
-      "qualification": ""
+      "qualification": "",
+      "review": {
+        "status": "screened",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": []
+      }
     },
     {
       "id": "j008",
@@ -543,7 +591,13 @@
         "Luke 3:21-22"
       ],
       "evidence": "region",
-      "qualification": "The exact bank/site is not settled by the text."
+      "qualification": "The exact bank/site is not settled by the text.",
+      "review": {
+        "status": "screened",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": []
+      }
     },
     {
       "id": "j009",
@@ -557,7 +611,13 @@
         "Luke 4:1-13"
       ],
       "evidence": "region",
-      "qualification": "The wilderness is not a named mountain or precise site."
+      "qualification": "The wilderness is not a named mountain or precise site.",
+      "review": {
+        "status": "screened",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": []
+      }
     },
     {
       "id": "j010",
@@ -569,7 +629,13 @@
         "John 1:28-42"
       ],
       "evidence": "named",
-      "qualification": "The exact site of Bethany beyond the Jordan remains disputed; John's sequence relative to the Synoptics is reconstructed."
+      "qualification": "The exact site of Bethany beyond the Jordan remains disputed; John's sequence relative to the Synoptics is reconstructed.",
+      "review": {
+        "status": "screened",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": []
+      }
     },
     {
       "id": "j011",
@@ -581,7 +647,13 @@
         "John 1:43-51"
       ],
       "evidence": "region",
-      "qualification": "John 1:43 names Galilee, but not Nazareth or a specific stop on this journey."
+      "qualification": "John 1:43 names Galilee, but not Nazareth or a specific stop on this journey.",
+      "review": {
+        "status": "screened",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": []
+      }
     },
     {
       "id": "j012",
@@ -593,7 +665,13 @@
         "John 2:1-11"
       ],
       "evidence": "named",
-      "qualification": ""
+      "qualification": "",
+      "review": {
+        "status": "screened",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": []
+      }
     },
     {
       "id": "j013",
@@ -605,7 +683,13 @@
         "John 2:12"
       ],
       "evidence": "named",
-      "qualification": ""
+      "qualification": "",
+      "review": {
+        "status": "screened",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": []
+      }
     },
     {
       "id": "j014",
@@ -617,7 +701,15 @@
         "John 2:13-25"
       ],
       "evidence": "named",
-      "qualification": "Whether John's temple action is distinct from the Synoptic final-week cleansing is debated."
+      "qualification": "John places this temple action near an early Passover; Synoptics narrate a temple action in the final week. Whether one or two events are described is debated.",
+      "review": {
+        "status": "qualified",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": [
+          "temple-chronology"
+        ]
+      }
     },
     {
       "id": "j015",
@@ -629,7 +721,13 @@
         "John 3:1-21"
       ],
       "evidence": "inferred",
-      "qualification": "John 3 follows the Jerusalem setting; the conversation’s exact venue is not identified."
+      "qualification": "John 3 follows the Jerusalem setting; the conversation’s exact venue is not identified.",
+      "review": {
+        "status": "screened",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": []
+      }
     },
     {
       "id": "j016",
@@ -642,7 +740,13 @@
         "John 4:1-3"
       ],
       "evidence": "region",
-      "qualification": "No town is named."
+      "qualification": "No town is named.",
+      "review": {
+        "status": "screened",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": []
+      }
     },
     {
       "id": "j017",
@@ -654,7 +758,13 @@
         "John 4:4-42"
       ],
       "evidence": "named",
-      "qualification": "Precise identification of Sychar is debated."
+      "qualification": "Precise identification of Sychar is debated.",
+      "review": {
+        "status": "screened",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": []
+      }
     },
     {
       "id": "j018",
@@ -666,7 +776,13 @@
         "John 4:46-54"
       ],
       "evidence": "named",
-      "qualification": "The son is in Capernaum, but Jesus is at Cana when he gives the word."
+      "qualification": "The son is in Capernaum, but Jesus is at Cana when he gives the word.",
+      "review": {
+        "status": "screened",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": []
+      }
     },
     {
       "id": "j019",
@@ -678,7 +794,13 @@
         "John 5:1-47"
       ],
       "evidence": "named",
-      "qualification": "The feast is unnamed, so the visit's place in a harmonised chronology is uncertain."
+      "qualification": "The feast is unnamed, so the visit's place in a harmonised chronology is uncertain.",
+      "review": {
+        "status": "screened",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": []
+      }
     },
     {
       "id": "j020",
@@ -690,7 +812,15 @@
         "Luke 4:16-30"
       ],
       "evidence": "named",
-      "qualification": "May relate to the rejection narrated in Mark 6; number of separate visits is debated."
+      "qualification": "Luke presents the Nazareth synagogue appearance at a different narrative point from the hometown rejection in Mark 6 / Matthew 13; do not assume two proved visits or a secure unified order.",
+      "review": {
+        "status": "needs-further-review",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": [
+          "nazareth-order"
+        ]
+      }
     },
     {
       "id": "j021",
@@ -702,7 +832,13 @@
         "Matthew 4:12-17"
       ],
       "evidence": "named",
-      "qualification": ""
+      "qualification": "Matthew 4:13 explicitly names Capernaum; the exact household or base of residence is not established.",
+      "review": {
+        "status": "screened",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": []
+      }
     },
     {
       "id": "j022",
@@ -716,7 +852,15 @@
         "Luke 5:1-11"
       ],
       "evidence": "region",
-      "qualification": "Luke presents additional details; exact shore location unspecified."
+      "qualification": "Matthew/Mark describe a lakeside call; Luke narrates the catch of fish in another presentation. Their precise relative sequence is not proved by these citations.",
+      "review": {
+        "status": "needs-further-review",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": [
+          "disciples-call"
+        ]
+      }
     },
     {
       "id": "j023",
@@ -729,7 +873,13 @@
         "Luke 4:31-37"
       ],
       "evidence": "named",
-      "qualification": ""
+      "qualification": "",
+      "review": {
+        "status": "screened",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": []
+      }
     },
     {
       "id": "j024",
@@ -743,7 +893,13 @@
         "Luke 4:38-41"
       ],
       "evidence": "named",
-      "qualification": ""
+      "qualification": "",
+      "review": {
+        "status": "screened",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": []
+      }
     },
     {
       "id": "j025",
@@ -756,8 +912,14 @@
         "Luke 5:17-26",
         "Matthew 9:1-8"
       ],
-      "evidence": "inferred",
-      "qualification": "Mark situates the story in Capernaum; parallel accounts are not all explicit about location."
+      "evidence": "named",
+      "qualification": "Mark 2:1 explicitly names Capernaum; the building itself is not securely located.",
+      "review": {
+        "status": "screened",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": []
+      }
     },
     {
       "id": "j026",
@@ -770,7 +932,13 @@
         "Luke 7:1-10"
       ],
       "evidence": "named",
-      "qualification": ""
+      "qualification": "",
+      "review": {
+        "status": "screened",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": []
+      }
     },
     {
       "id": "j027",
@@ -783,7 +951,13 @@
         "Luke 6:17-49"
       ],
       "evidence": "region",
-      "qualification": "Do not equate the discourses or their locations with certainty."
+      "qualification": "Do not equate the discourses or their locations with certainty.",
+      "review": {
+        "status": "screened",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": []
+      }
     },
     {
       "id": "j028",
@@ -795,7 +969,13 @@
         "Luke 7:11-17"
       ],
       "evidence": "named",
-      "qualification": ""
+      "qualification": "",
+      "review": {
+        "status": "screened",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": []
+      }
     },
     {
       "id": "j029",
@@ -808,7 +988,13 @@
         "Matthew 13:1-53"
       ],
       "evidence": "region",
-      "qualification": "Specific landing beach unnamed."
+      "qualification": "Specific landing beach unnamed.",
+      "review": {
+        "status": "screened",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": []
+      }
     },
     {
       "id": "j030",
@@ -822,7 +1008,13 @@
         "Luke 8:22-25"
       ],
       "evidence": "region",
-      "qualification": "The travel line indicates movement across the lake, not the boat’s documented track."
+      "qualification": "The travel line indicates movement across the lake, not the boat’s documented track.",
+      "review": {
+        "status": "screened",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": []
+      }
     },
     {
       "id": "j031",
@@ -836,21 +1028,37 @@
         "Matthew 8:28-34"
       ],
       "evidence": "region",
-      "qualification": "Gerasenes, Gadarenes and Gergesenes are variant location traditions."
+      "qualification": "Gerasenes, Gadarenes and Gergesenes are variant location traditions.",
+      "review": {
+        "status": "qualified",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": [
+          "eastern-lake-variants"
+        ]
+      }
     },
     {
       "id": "j032",
       "phase": "galilee",
-      "place": "capernaum",
+      "place": "galilee-shore",
       "title": "Jairus’s daughter and the woman healed",
-      "summary": "Jesus returns by boat, heals a woman, and raises Jairus’s daughter.",
+      "summary": "After Jesus crosses back to the lakeshore, a woman is healed and Jairus’s daughter is restored to life.",
       "passages": [
         "Mark 5:21-43",
         "Luke 8:40-56",
         "Matthew 9:18-26"
       ],
-      "evidence": "inferred",
-      "qualification": "A return to the western shore is explicit; Capernaum is a plausible but unnamed town here."
+      "evidence": "region",
+      "qualification": "Mark 5:21 says Jesus is beside the sea after crossing; Capernaum is a plausible inference but is not named in the immediate episode.",
+      "review": {
+        "status": "qualified",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": [
+          "jairus-location"
+        ]
+      }
     },
     {
       "id": "j033",
@@ -863,7 +1071,15 @@
         "Matthew 13:53-58"
       ],
       "evidence": "named",
-      "qualification": "Some harmonisations treat this as the same Nazareth rejection described by Luke."
+      "qualification": "Some harmonisations treat this as the same Nazareth rejection described by Luke.",
+      "review": {
+        "status": "needs-further-review",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": [
+          "nazareth-order"
+        ]
+      }
     },
     {
       "id": "j034",
@@ -878,7 +1094,16 @@
         "Matthew 14:13-21"
       ],
       "evidence": "inferred",
-      "qualification": "Luke associates the event with Bethsaida; the precise place is debated."
+      "qualification": "Luke associates this feeding with Bethsaida, while Mark and Matthew place it in a deserted setting. The exact site and the boat route are not fixed.",
+      "review": {
+        "status": "needs-further-review",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": [
+          "feeding-site",
+          "bethsaida-identification"
+        ]
+      }
     },
     {
       "id": "j035",
@@ -892,7 +1117,13 @@
         "John 6:16-21"
       ],
       "evidence": "region",
-      "qualification": "The route is schematic, not a boat track."
+      "qualification": "The route is schematic, not a boat track.",
+      "review": {
+        "status": "screened",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": []
+      }
     },
     {
       "id": "j036",
@@ -905,7 +1136,13 @@
         "Matthew 14:34-36"
       ],
       "evidence": "named",
-      "qualification": ""
+      "qualification": "",
+      "review": {
+        "status": "screened",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": []
+      }
     },
     {
       "id": "j037",
@@ -917,7 +1154,13 @@
         "John 6:22-59"
       ],
       "evidence": "named",
-      "qualification": ""
+      "qualification": "",
+      "review": {
+        "status": "screened",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": []
+      }
     },
     {
       "id": "j038",
@@ -930,7 +1173,13 @@
         "Matthew 15:21-28"
       ],
       "evidence": "region",
-      "qualification": "The text says region of Tyre, not a pinpoint house or street."
+      "qualification": "The text says region of Tyre, not a pinpoint house or street.",
+      "review": {
+        "status": "screened",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": []
+      }
     },
     {
       "id": "j039",
@@ -942,7 +1191,13 @@
         "Mark 7:31"
       ],
       "evidence": "region",
-      "qualification": "Mark reports a route via Sidon, not a distinct ministry episode inside the city."
+      "qualification": "Mark reports a route via Sidon, not a distinct ministry episode inside the city.",
+      "review": {
+        "status": "screened",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": []
+      }
     },
     {
       "id": "j040",
@@ -954,7 +1209,13 @@
         "Mark 7:31-37"
       ],
       "evidence": "region",
-      "qualification": "No specific town within the Decapolis is named."
+      "qualification": "No specific town within the Decapolis is named.",
+      "review": {
+        "status": "screened",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": []
+      }
     },
     {
       "id": "j041",
@@ -964,10 +1225,16 @@
       "summary": "Jesus feeds a great crowd with seven loaves and small fish.",
       "passages": [
         "Mark 8:1-9",
-        "Matthew 15:32-38"
+        "Matthew 15:29-38"
       ],
       "evidence": "region",
-      "qualification": "Exact site not named."
+      "qualification": "Exact site not named.",
+      "review": {
+        "status": "screened",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": []
+      }
     },
     {
       "id": "j042",
@@ -980,7 +1247,13 @@
         "Mark 8:10"
       ],
       "evidence": "region",
-      "qualification": "Magadan and Dalmanutha cannot be equated with complete certainty."
+      "qualification": "Magadan and Dalmanutha cannot be equated with complete certainty.",
+      "review": {
+        "status": "screened",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": []
+      }
     },
     {
       "id": "j043",
@@ -992,7 +1265,15 @@
         "Mark 8:22-26"
       ],
       "evidence": "named",
-      "qualification": ""
+      "qualification": "",
+      "review": {
+        "status": "needs-further-review",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": [
+          "bethsaida-identification"
+        ]
+      }
     },
     {
       "id": "j044",
@@ -1005,8 +1286,16 @@
         "Mark 8:27-30",
         "Luke 9:18-21"
       ],
-      "evidence": "named",
-      "qualification": "Gospels identify the district, not a particular rock or shrine as the speech site."
+      "evidence": "region",
+      "qualification": "Gospels identify the district, not a particular rock or shrine as the speech site.",
+      "review": {
+        "status": "qualified",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": [
+          "caesarea-district"
+        ]
+      }
     },
     {
       "id": "j045",
@@ -1019,7 +1308,15 @@
         "Mark 8:31-9:1"
       ],
       "evidence": "inferred",
-      "qualification": "The conversation follows the Caesarea Philippi setting without specifying a new stop."
+      "qualification": "The conversation follows the Caesarea Philippi setting without specifying a new stop.",
+      "review": {
+        "status": "qualified",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": [
+          "caesarea-district"
+        ]
+      }
     },
     {
       "id": "j046",
@@ -1033,7 +1330,13 @@
         "Luke 9:28-36"
       ],
       "evidence": "region",
-      "qualification": "Mount Tabor and Mount Hermon are proposed traditions; the Gospel does not name the mountain."
+      "qualification": "Mount Tabor and Mount Hermon are proposed traditions; the Gospel does not name the mountain.",
+      "review": {
+        "status": "screened",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": []
+      }
     },
     {
       "id": "j047",
@@ -1045,7 +1348,13 @@
         "Matthew 17:24-27"
       ],
       "evidence": "named",
-      "qualification": ""
+      "qualification": "",
+      "review": {
+        "status": "screened",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": []
+      }
     },
     {
       "id": "j048",
@@ -1058,7 +1367,13 @@
         "Matthew 18:1-5"
       ],
       "evidence": "named",
-      "qualification": ""
+      "qualification": "",
+      "review": {
+        "status": "screened",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": []
+      }
     },
     {
       "id": "j049",
@@ -1070,7 +1385,13 @@
         "Luke 9:51-56"
       ],
       "evidence": "region",
-      "qualification": "Luke does not identify the village."
+      "qualification": "Luke does not identify the village.",
+      "review": {
+        "status": "screened",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": []
+      }
     },
     {
       "id": "j050",
@@ -1082,7 +1403,15 @@
         "Luke 17:11-19"
       ],
       "evidence": "region",
-      "qualification": "Luke identifies the borderlands, not a named town; travel-narrative ordering is debated."
+      "qualification": "Luke 17:11 describes travel at or between Samaria and Galilee, but its literary placement within the broader harmonised itinerary is not independently dated.",
+      "review": {
+        "status": "qualified",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": [
+          "galilee-samaria-border"
+        ]
+      }
     },
     {
       "id": "j051",
@@ -1095,7 +1424,15 @@
         "John 8:12-59"
       ],
       "evidence": "named",
-      "qualification": "Events in John are presented by feast, not harmonised here to a precise shared Gospel calendar."
+      "qualification": "John 7 and 8 contain feast-related teaching; John 7:53-8:11 is omitted from the earliest manuscripts as noted by the ESV, and is not silently included in this stop. The precise cross-Gospel ordering is unsettled.",
+      "review": {
+        "status": "qualified",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": [
+          "john-textual-note"
+        ]
+      }
     },
     {
       "id": "j052",
@@ -1107,7 +1444,13 @@
         "John 9:1-41"
       ],
       "evidence": "named",
-      "qualification": ""
+      "qualification": "",
+      "review": {
+        "status": "screened",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": []
+      }
     },
     {
       "id": "j053",
@@ -1119,7 +1462,13 @@
         "John 10:22-39"
       ],
       "evidence": "named",
-      "qualification": ""
+      "qualification": "",
+      "review": {
+        "status": "screened",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": []
+      }
     },
     {
       "id": "j054",
@@ -1130,8 +1479,14 @@
       "passages": [
         "John 10:40-42"
       ],
-      "evidence": "named",
-      "qualification": "John does not give precise coordinates."
+      "evidence": "inferred",
+      "qualification": "John does not give precise coordinates.",
+      "review": {
+        "status": "screened",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": []
+      }
     },
     {
       "id": "j055",
@@ -1143,7 +1498,13 @@
         "John 11:1-44"
       ],
       "evidence": "named",
-      "qualification": ""
+      "qualification": "",
+      "review": {
+        "status": "screened",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": []
+      }
     },
     {
       "id": "j056",
@@ -1155,7 +1516,13 @@
         "John 11:53-54"
       ],
       "evidence": "named",
-      "qualification": "The site identification is debated."
+      "qualification": "The site identification is debated.",
+      "review": {
+        "status": "screened",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": []
+      }
     },
     {
       "id": "j057",
@@ -1168,7 +1535,13 @@
         "Mark 10:1"
       ],
       "evidence": "region",
-      "qualification": "Region only; cannot assert a particular Perea town."
+      "qualification": "Region only; cannot assert a particular Perea town.",
+      "review": {
+        "status": "screened",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": []
+      }
     },
     {
       "id": "j058",
@@ -1182,7 +1555,15 @@
         "Matthew 20:29-34"
       ],
       "evidence": "named",
-      "qualification": "The Gospel accounts differ over approach/departure details and number of people."
+      "qualification": "The Gospel accounts differ over approach/departure details and number of people.",
+      "review": {
+        "status": "qualified",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": [
+          "jericho-direction"
+        ]
+      }
     },
     {
       "id": "j059",
@@ -1194,7 +1575,13 @@
         "Luke 19:1-10"
       ],
       "evidence": "named",
-      "qualification": ""
+      "qualification": "",
+      "review": {
+        "status": "screened",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": []
+      }
     },
     {
       "id": "j060",
@@ -1206,7 +1593,15 @@
         "John 12:1-11"
       ],
       "evidence": "named",
-      "qualification": "The relationship to the anointing account in Mark 14 and Matthew 26 is debated."
+      "qualification": "The relationship to the anointing account in Mark 14 and Matthew 26 is debated.",
+      "review": {
+        "status": "needs-further-review",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": [
+          "bethany-anointing"
+        ]
+      }
     },
     {
       "id": "j061",
@@ -1219,8 +1614,16 @@
         "Mark 11:1-7",
         "Luke 19:29-35"
       ],
-      "evidence": "named",
-      "qualification": ""
+      "evidence": "inferred",
+      "qualification": "The Gospels place the approach near Bethphage and Bethany; the village where the donkey was obtained is not securely identified as Bethphage.",
+      "review": {
+        "status": "qualified",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": [
+          "donkey-village"
+        ]
+      }
     },
     {
       "id": "j062",
@@ -1232,7 +1635,13 @@
         "Luke 19:37-44"
       ],
       "evidence": "named",
-      "qualification": ""
+      "qualification": "",
+      "review": {
+        "status": "screened",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": []
+      }
     },
     {
       "id": "j063",
@@ -1247,7 +1656,13 @@
         "John 12:12-19"
       ],
       "evidence": "named",
-      "qualification": ""
+      "qualification": "",
+      "review": {
+        "status": "screened",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": []
+      }
     },
     {
       "id": "j064",
@@ -1261,7 +1676,15 @@
         "Luke 19:45-48"
       ],
       "evidence": "named",
-      "qualification": "Relationship to the earlier temple action in John 2 is disputed."
+      "qualification": "Relationship to the earlier temple action in John 2 is disputed.",
+      "review": {
+        "status": "qualified",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": [
+          "temple-chronology"
+        ]
+      }
     },
     {
       "id": "j065",
@@ -1274,7 +1697,13 @@
         "Matthew 21:17"
       ],
       "evidence": "named",
-      "qualification": ""
+      "qualification": "",
+      "review": {
+        "status": "screened",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": []
+      }
     },
     {
       "id": "j066",
@@ -1288,7 +1717,13 @@
         "Luke 20:1-21:4"
       ],
       "evidence": "named",
-      "qualification": ""
+      "qualification": "",
+      "review": {
+        "status": "screened",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": []
+      }
     },
     {
       "id": "j067",
@@ -1302,7 +1737,13 @@
         "Luke 21:5-36"
       ],
       "evidence": "named",
-      "qualification": ""
+      "qualification": "",
+      "review": {
+        "status": "screened",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": []
+      }
     },
     {
       "id": "j068",
@@ -1315,14 +1756,22 @@
         "Matthew 26:6-13"
       ],
       "evidence": "named",
-      "qualification": "This may recount the same meal as John 12; do not infer two independent visits."
+      "qualification": "Matthew and Mark locate an anointing at Bethany but introduce it later in their narrative than John 12. Whether the accounts describe the same meal or separate occasions is debated. Do not count them as two proved visits.",
+      "review": {
+        "status": "needs-further-review",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": [
+          "bethany-anointing"
+        ]
+      }
     },
     {
       "id": "j069",
       "phase": "passion",
       "place": "jerusalem",
       "title": "Last Supper",
-      "summary": "Jesus shares Passover with the disciples, gives bread and cup, and prepares them for his departure.",
+      "summary": "Jesus shares a final meal with the disciples; Synoptics describe bread and cup, while John records foot-washing and farewell teaching.",
       "passages": [
         "Matthew 26:17-30",
         "Mark 14:12-26",
@@ -1330,7 +1779,15 @@
         "John 13:1-17:26"
       ],
       "evidence": "named",
-      "qualification": "The exact room is not established; calendar details vary across Gospel presentations."
+      "qualification": "Synoptics describe Passover preparation and meal; John introduces supper before Passover. The chronology/calendar and precise room are debated; this map does not resolve them.",
+      "review": {
+        "status": "needs-further-review",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": [
+          "last-supper-calendar"
+        ]
+      }
     },
     {
       "id": "j070",
@@ -1345,7 +1802,13 @@
         "John 18:1-12"
       ],
       "evidence": "named",
-      "qualification": "Location of the traditional garden is approximate."
+      "qualification": "Location of the traditional garden is approximate.",
+      "review": {
+        "status": "screened",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": []
+      }
     },
     {
       "id": "j071",
@@ -1360,7 +1823,15 @@
         "John 18:13-19:16"
       ],
       "evidence": "named",
-      "qualification": "Exact routes between hearing venues are not established."
+      "qualification": "Exact routes between hearing venues are not established.",
+      "review": {
+        "status": "qualified",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": [
+          "passion-tomb-sites"
+        ]
+      }
     },
     {
       "id": "j072",
@@ -1375,7 +1846,15 @@
         "John 19:17-30"
       ],
       "evidence": "named",
-      "qualification": "Golgotha is named, but the precise physical site remains debated."
+      "qualification": "Golgotha is named, but the precise physical site remains debated.",
+      "review": {
+        "status": "qualified",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": [
+          "passion-tomb-sites"
+        ]
+      }
     },
     {
       "id": "j073",
@@ -1390,7 +1869,15 @@
         "John 19:38-42"
       ],
       "evidence": "named",
-      "qualification": "The location of the tomb is represented by Jerusalem, not a verified surveyed point."
+      "qualification": "The location of the tomb is represented by Jerusalem, not a verified surveyed point.",
+      "review": {
+        "status": "qualified",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": [
+          "passion-tomb-sites"
+        ]
+      }
     },
     {
       "id": "j074",
@@ -1405,7 +1892,16 @@
         "John 20:1-18"
       ],
       "evidence": "named",
-      "qualification": "Accounts differ in the presentation of visitors and sequence; no single modern site is assumed."
+      "qualification": "Accounts differ in the presentation of visitors and sequence; no single modern site is assumed.",
+      "review": {
+        "status": "qualified",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": [
+          "passion-tomb-sites",
+          "resurrection-sequence"
+        ]
+      }
     },
     {
       "id": "j075",
@@ -1417,20 +1913,37 @@
         "Luke 24:13-35"
       ],
       "evidence": "named",
-      "qualification": "Several competing locations for Emmaus; the marker is illustrative."
+      "qualification": "Several competing locations for Emmaus; the marker is illustrative.",
+      "review": {
+        "status": "needs-further-review",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": [
+          "resurrection-sequence",
+          "emmaus-identification"
+        ]
+      }
     },
     {
       "id": "j076",
       "phase": "resurrection",
       "place": "jerusalem",
-      "title": "Appearance to the disciples",
-      "summary": "Jesus appears to gathered disciples, shows his wounds and commissions them.",
+      "title": "Appearances to the gathered disciples",
+      "summary": "The Gospels describe appearances to gathered disciples; John also records a later meeting involving Thomas.",
       "passages": [
         "Luke 24:36-49",
         "John 20:19-29"
       ],
       "evidence": "named",
-      "qualification": ""
+      "qualification": "John 20:19-29 narrates an appearance and another eight days later involving Thomas. Luke 24 also reports an appearance. This stop groups accounts, not one single evening.",
+      "review": {
+        "status": "qualified",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": [
+          "resurrection-sequence"
+        ]
+      }
     },
     {
       "id": "j077",
@@ -1442,7 +1955,15 @@
         "John 21:1-23"
       ],
       "evidence": "region",
-      "qualification": "The shoreline location is unspecified."
+      "qualification": "The shoreline location is unspecified.",
+      "review": {
+        "status": "qualified",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": [
+          "resurrection-sequence"
+        ]
+      }
     },
     {
       "id": "j078",
@@ -1454,7 +1975,15 @@
         "Matthew 28:16-20"
       ],
       "evidence": "region",
-      "qualification": "Matthew does not name the mountain."
+      "qualification": "The mountain is unnamed, and Matthew does not establish its timing relative to John 21. The chosen order is editorial.",
+      "review": {
+        "status": "qualified",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": [
+          "resurrection-sequence"
+        ]
+      }
     },
     {
       "id": "j079",
@@ -1467,7 +1996,15 @@
         "Acts 1:6-12"
       ],
       "evidence": "region",
-      "qualification": "Luke and Acts describe the area, not an exact ascension footprint."
+      "qualification": "Luke 24:50 locates the scene toward Bethany; Acts 1:12 names the Mount of Olives as the disciples return. Neither identifies the exact footprint or specifies the entire intervening itinerary.",
+      "review": {
+        "status": "qualified",
+        "basis": "passage-index-and-location-screen",
+        "reviewedOn": "2026-10-26",
+        "issueIds": [
+          "resurrection-sequence"
+        ]
+      }
     }
   ]
 }

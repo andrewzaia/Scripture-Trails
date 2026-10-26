@@ -1,3 +1,4 @@
+import {parseRef} from './books.js';
 /** Journeys of Jesus: self-hosted schematic SVG atlas. No tiles or external JavaScript. */
 const SVG_NS='http://www.w3.org/2000/svg';
 const PROJECT={west:30.3,east:36.2,north:33.85,south:30.05,width:1100,height:780};
@@ -43,8 +44,27 @@ export function validatePlaceStudies(geography,journeys){
  }
  return true;
 }
+export function validateAuditData(audit,journeys,geography){
+ if(!audit||!Array.isArray(audit.issues)||!Array.isArray(audit.corrections)||!audit.methodology||!audit.updated)throw Error('Audit register unavailable');
+ const ids=new Set(journeys.events.map(e=>e.id)),known=new Set();
+ const issueStatuses=new Set(['open','qualified','corrected']);
+ for(const issue of audit.issues){
+  if(known.has(issue.id)||!issueStatuses.has(issue.status)||!issue.description||!issue.category||!issue.events?.length||!issue.events.every(id=>ids.has(id))||!(issue.references||[]).every(url=>/^https:\/\//.test(url)))throw Error('Invalid audit issue '+issue.id);
+  known.add(issue.id);
+ }
+ for(const e of journeys.events){
+  if(!['screened','qualified','needs-further-review'].includes(e.review?.status)||e.review.reviewedOn!==audit.updated||!Array.isArray(e.review.issueIds)||e.review.issueIds.some(id=>!known.has(id)))throw Error('Unaudited episode '+e.id);
+  if(!['named','region','inferred'].includes(e.evidence)||!e.passages.every(ref=>{
+   const p=parseRef(passageStart(ref));return p&&['Matthew','Mark','Luke','John','Acts'].includes(p.book.name);
+  }))throw Error('Non-canonical journey reference '+e.id);
+ }
+ for(const [id,p] of Object.entries(geography.places))if(!p.review||p.review.reviewedOn!==audit.updated||!['source-linked','external-source-needed','regional-placeholder'].includes(p.review.status)||p.review.independentSourceCount!==p.literature.length)throw Error('Unaudited place '+id);
+ for(const entry of audit.corrections)if(!ids.has(entry.event)||!entry.change||!entry.reason||!entry.passages?.length||entry.passages.some(ref=>!parseRef(passageStart(ref))))throw Error('Invalid correction record');
+ const sources=new Set(Object.keys(geography.sources));if(new Set(audit.sourceChecks.map(x=>x.source)).size!==sources.size||audit.sourceChecks.some(x=>!sources.has(x.source)))throw Error('Source checklist does not match published sources');
+ return true;
+}
 export function createJesusMap(root,onOpenPassage){
- let data,geography,phaseMap,placeMap,index=0,visited=[],timer=null,view={x:0,y:0,w:1100,h:780},phase='all',mode='stage';
+ let data,geography,audit,issueMap,phaseMap,placeMap,index=0,visited=[],timer=null,view={x:0,y:0,w:1100,h:780},phase='all',mode='stage';
  const $=name=>root.querySelector(`[data-jesus="${name}"]`);
  const svg=$('map');const duration=2300;
  const layer={};for(const id of ['geography','paths','pins']){layer[id]=g('g',{'data-layer':id});svg.append(layer[id]);}
@@ -93,8 +113,15 @@ export function createJesusMap(root,onOpenPassage){
  function sourceButtons(event){const div=$('passages');div.replaceChildren();for(const ref of event.passages){const wrapper=el('div','jesus-passage-row');const title=el('span','',ref);const b=el('button','jesus-reading-action','Read in Bible reader');b.type='button';b.addEventListener('click',()=>{const v=passageStart(ref);if(v)onOpenPassage(v);});wrapper.append(title,b);div.append(wrapper);}}
  function selectEvent(next,autoFocus=true){if(!data)return;index=Math.max(0,Math.min(data.events.length-1,next));const e=data.events[index],p=placeMap.get(e.place);$('place').value=p.id;
   $('event-heading').textContent=e.title;$('place-name').textContent=p.name;$('summary').textContent=e.summary;$('site-note').textContent=p.note;$('qualification').textContent=e.qualification||'This event is documented in the cited Gospel passages; the overall journey order remains a harmonised study sequence.';
-  $('basis').textContent=e.evidence==='named'?'Place named in passage':e.evidence==='region'?'Region only / schematic pin':'Location inferred from context';
+  $('basis').textContent=e.evidence==='named'?'Town/place named in passage':e.evidence==='region'?'Region only / schematic pin':'Location inferred from context';
   $('location-grade').textContent=p.certainty==='identified'?'Location broadly identified':p.certainty==='region'?'Regional placement only':p.certainty==='traditional'?'Traditional site':p.certainty==='approximate'?'Approximate identification':'Site identification disputed';
+  const reviewLabels={screened:'Editorial screening: no flagged issue',qualified:'Editorial screening: qualifications recorded','needs-further-review':'Further research required'};
+  $('audit-status').textContent=reviewLabels[e.review.status];
+  const issues=$('audit-event-issues');issues.replaceChildren();
+  if(e.review.issueIds.length){for(const id of e.review.issueIds){const issue=issueMap.get(id);const row=el('div','jesus-audit-issue');
+   row.append(el('strong','',`${issue.category} | ${issue.status}`),el('p','',issue.description));
+   const sources=el('div','jesus-audit-sources');for(const url of issue.references){const a=el('a','',new URL(url).hostname+' ↗');a.href=url;a.target='_blank';a.rel='noopener noreferrer';sources.append(a);}row.append(sources);issues.append(row);}}
+  else issues.append(el('p','jesus-map-muted','The cited passage and mapped location received a first-pass editorial check; this is not independent historical verification.'));
   $('event-number').textContent=`STOP ${String(index+1).padStart(2,'0')} / ${data.events.length}`;
   sourceButtons(e);setTimeline();route();drawPins();if(autoFocus)focus(p.coordinates);
   $('map').setAttribute('aria-label',`Schematic map of Jesus' journeys, selected ${p.name}: ${e.title}`);
@@ -110,6 +137,8 @@ export function createJesusMap(root,onOpenPassage){
   $('study-context').textContent=record.historicalContext;
   $('study-archaeology').textContent=record.archaeology;
   $('study-caution').textContent=record.caution;
+  const check=record.review;
+  $('study-source-status').textContent=check.status==='source-linked'?`${check.independentSourceCount} external bibliographic ${check.independentSourceCount===1?'source':'sources'} attached - site evidence, not Gospel event proof`:check.status==='regional-placeholder'?'Regional schematic marker; no exact ancient site claimed':'Independent archaeology citation needed; the summary is contextual and unverified by a linked source';
   const ot=$('study-old');ot.replaceChildren();
   if(record.oldTestament.length){for(const item of record.oldTestament){const row=el('div','jesus-study-source-row');
     const read=el('button','jesus-study-ref',item.ref);read.type='button';read.title=`Read ${item.ref}`;read.addEventListener('click',()=>onOpenPassage(passageStart(item.ref)));
@@ -124,6 +153,13 @@ export function createJesusMap(root,onOpenPassage){
   const external=$('study-sources');external.replaceChildren();
   if(record.literature.length){for(const key of record.literature){const item=geography.sources[key];const a=el('a','jesus-study-literature',item.title+' ↗');a.href=item.url;a.target='_blank';a.rel='noopener noreferrer';const kind=el('small','',item.kind);const row=el('div','jesus-study-literature-row');row.append(a,kind);external.append(row);}}
   else external.append(el('p','jesus-study-empty','No independent archaeological reference is attached to this place yet. This is a research gap, not proof of a particular identification.'));
+ }
+ function renderAuditRegister(){
+  const summary=$('audit-summary');summary.textContent=`${data.events.length} episodes screened | ${Object.keys(geography.places).length} place dossiers screened | ${audit.issues.filter(i=>i.status==='open').length} open research questions | ${audit.corrections.length} corrections logged`;
+  const corrections=$('audit-corrections');corrections.replaceChildren();
+  for(const c of audit.corrections){const row=el('div','jesus-audit-correction');const b=el('button','jesus-study-ref',`${c.event.toUpperCase()} | ${c.change}`);b.type='button';b.addEventListener('click',()=>{stop();phase='all';$('phase').value='all';const i=data.events.findIndex(e=>e.id===c.event);selectEvent(i);selectPlace(data.events[i].place);root.querySelector('.jesus-map-grid')?.scrollIntoView({behavior:'smooth',block:'start'});});row.append(b,el('p','',c.reason),el('small','',c.passages.join(' | ')));corrections.append(row);}
+  const outstanding=$('audit-open');outstanding.replaceChildren();
+  for(const issue of audit.issues.filter(i=>i.status==='open')){const row=el('div','jesus-audit-correction');row.append(el('strong','',`${issue.category} | ${issue.id}`),el('p','',issue.description),el('small','',`Affected episodes: ${issue.events.join(', ')}`));outstanding.append(row);}
  }
  function selectPlace(id,move=false){const place=placeMap.get(id);if(!place)return;
  const matches=data.events.filter(e=>e.place===id);const list=$('visits');list.replaceChildren();$('visit-count').textContent=`${matches.length} recorded ${matches.length===1?'episode':'episodes'}`;
@@ -151,10 +187,10 @@ export function createJesusMap(root,onOpenPassage){
   document.addEventListener('visibilitychange',()=>{if(document.hidden)stop();});
  }
  async function load(){
-  const responses=await Promise.all([fetch('/data/jesus-journeys.json'),fetch('/data/jesus-geography.json')]);
+  const responses=await Promise.all([fetch('/data/jesus-journeys.json'),fetch('/data/jesus-geography.json'),fetch('/data/jesus-audit.json')]);
   if(responses.some(r=>!r.ok))throw Error('Cannot retrieve the journey and geography data');
-  [data,geography]=await Promise.all(responses.map(r=>r.json()));validateJourneyData(data);validatePlaceStudies(geography,data);$('event-total').textContent=String(data.events.length);$('place-total').textContent=String(data.places.length);$('source-total').textContent=String(data.events.reduce((n,e)=>n+e.passages.length,0));placeMap=new Map(data.places.map(p=>[p.id,p]));phaseMap=new Map(data.phases.map(p=>[p.id,p]));
-  background();bind();view={x:520,y:56,w:580,h:411};setView();const initial=new URLSearchParams(location.search).get('stop');const chosen=data.events.findIndex(e=>e.id===initial);selectEvent(chosen<0?0:chosen,true);selectPlace(data.events[index].place);$('loading').hidden=true;root.dataset.ready='true';
+  [data,geography,audit]=await Promise.all(responses.map(r=>r.json()));validateJourneyData(data);validatePlaceStudies(geography,data);validateAuditData(audit,data,geography);issueMap=new Map(audit.issues.map(x=>[x.id,x]));$('event-total').textContent=String(data.events.length);$('place-total').textContent=String(data.places.length);$('source-total').textContent=String(data.events.reduce((n,e)=>n+e.passages.length,0));placeMap=new Map(data.places.map(p=>[p.id,p]));phaseMap=new Map(data.phases.map(p=>[p.id,p]));
+  background();bind();renderAuditRegister();view={x:520,y:56,w:580,h:411};setView();const initial=new URLSearchParams(location.search).get('stop');const chosen=data.events.findIndex(e=>e.id===initial);selectEvent(chosen<0?0:chosen,true);selectPlace(data.events[index].place);$('loading').hidden=true;root.dataset.ready='true';
  }
  let loading=null;return {activate(){if(!loading)loading=load().catch(e=>{$('loading').textContent='Unable to load the Gospel itinerary. Please try refreshing this page.';console.error('Journeys map:',e);});},pause:stop};
 }

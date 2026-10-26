@@ -1,0 +1,366 @@
+{
+  "version": 1,
+  "updated": "2026-10-26",
+  "status": "first-pass-screened",
+  "methodology": {
+    "primary": "Biblical passages listed with each Gospel/Acts episode are primary narrative sources. The published sequence is a Gospel harmony, not a separately dated GPS reconstruction.",
+    "scope": "First-pass editorial and machine-assisted reference/location screening of 79 episodes and 35 dossiers. Corrected particular overclaims and recorded disputes. NOT a claim of independent scholarly certification or of having verified every historical assertion.",
+    "sourceTypes": {
+      "scripture": "Canonical Gospel/Acts narrative cited for each episode; text is opened in authorised reader.",
+      "historical": "External archaeological or academic reference; proves only its stated archaeological/historical claim.",
+      "tradition": "Later veneration or a candidate location, not independent proof of an episode."
+    },
+    "reviewer": "Scripture Trails editorial - AI-assisted initial review; independent subject-matter review pending",
+    "reviewedAt": "2026-10-26",
+    "translationPolicy": "ESV as primary display; NASB 2020 and LSB as approved external readers. Differences in translation and ancient manuscripts should be examined in the source reader."
+  },
+  "issues": [
+    {
+      "id": "chronology-birth",
+      "category": "chronology",
+      "events": [
+        "j002",
+        "j004",
+        "j005"
+      ],
+      "description": "Luke and Matthew provide different amounts of detail between presentation, Egypt and Nazareth. The combined timeline is interpretative.",
+      "references": [],
+      "status": "qualified"
+    },
+    {
+      "id": "temple-chronology",
+      "category": "chronology",
+      "events": [
+        "j014",
+        "j064"
+      ],
+      "description": "John 2 and the Synoptic final-week temple scenes cannot be asserted to be two independently proved actions.",
+      "references": [
+        "https://doi.org/10.1017/S0028688519000468"
+      ],
+      "status": "qualified"
+    },
+    {
+      "id": "nazareth-order",
+      "category": "chronology",
+      "events": [
+        "j020",
+        "j033"
+      ],
+      "description": "Luke 4 and Mark 6 place hometown synagogue narratives differently; identity and sequence of the encounters need specialist comparison.",
+      "references": [],
+      "status": "open"
+    },
+    {
+      "id": "disciples-call",
+      "category": "parallels",
+      "events": [
+        "j022"
+      ],
+      "description": "Luke 5 and Mark 1 may represent differently framed reports; avoid a single precise date for all details.",
+      "references": [],
+      "status": "open"
+    },
+    {
+      "id": "jairus-location",
+      "category": "location",
+      "events": [
+        "j032"
+      ],
+      "description": "Mark 5:21 specifies the lakeshore but does not name Capernaum for the encounter.",
+      "references": [
+        "https://tips.translation.bible/story/sil-translators-notes-on-mark-521/"
+      ],
+      "status": "corrected"
+    },
+    {
+      "id": "feeding-site",
+      "category": "location",
+      "events": [
+        "j034"
+      ],
+      "description": "The Bethsaida designation in Luke and the deserted place framing in the parallel Gospels do not yield a single surveyed feeding point.",
+      "references": [],
+      "status": "qualified"
+    },
+    {
+      "id": "caesarea-district",
+      "category": "location",
+      "events": [
+        "j044",
+        "j045"
+      ],
+      "description": "Caesarea Philippi district and surrounding villages are named; a specific urban address is not.",
+      "references": [],
+      "status": "corrected"
+    },
+    {
+      "id": "galilee-samaria-border",
+      "category": "location",
+      "events": [
+        "j050"
+      ],
+      "description": "Luke names the Samaria/Galilee border corridor; no exact road, border-crossing point or chronology is stated.",
+      "references": [
+        "https://ncec.catholic.edu.au/faith/scripture-resources/commentaries/the-gospel-of-luke/jesus-cleanses-ten-lepers-luke-1711-19/"
+      ],
+      "status": "qualified"
+    },
+    {
+      "id": "john-textual-note",
+      "category": "textual",
+      "events": [
+        "j051"
+      ],
+      "description": "The ESV notes that John 7:53-8:11 is absent from the earliest manuscripts; this event cites 8:12 onward rather than silently treating the disputed pericope as part of the feast teaching.",
+      "references": [
+        "https://www.esv.org/verses/John%2B7%3A53/"
+      ],
+      "status": "qualified"
+    },
+    {
+      "id": "bethany-anointing",
+      "category": "chronology",
+      "events": [
+        "j060",
+        "j068"
+      ],
+      "description": "John 12 and Mark 14/Matthew 26 may be parallel accounts or distinct events; the composite map cannot prove additional trips.",
+      "references": [
+        "https://www.biblegateway.com/resources/ivp-nt/Jesus-Is-Anointed-Bethany"
+      ],
+      "status": "open"
+    },
+    {
+      "id": "donkey-village",
+      "category": "location",
+      "events": [
+        "j061"
+      ],
+      "description": "Arrival near Bethphage is named; the village from which the donkey was brought is not independently identified.",
+      "references": [
+        "https://www.biblegateway.com/passage/?search=Matthew+21%3A1-3&version=NET"
+      ],
+      "status": "corrected"
+    },
+    {
+      "id": "jericho-direction",
+      "category": "parallels",
+      "events": [
+        "j058"
+      ],
+      "description": "Luke describes approach, while Mark and Matthew describe departure from Jericho; location and narrative grouping are qualified.",
+      "references": [],
+      "status": "qualified"
+    },
+    {
+      "id": "last-supper-calendar",
+      "category": "chronology",
+      "events": [
+        "j069"
+      ],
+      "description": "John and the Synoptics relate the final supper to Passover differently, and no uncontroversial harmonised date is fixed.",
+      "references": [
+        "https://www.cambridge.org/core/journals/new-testament-studies/article/abs/narrative-chronology-of-tatians-diatessaron/D7A86FA6776CDE57BA2BE31207E754AA"
+      ],
+      "status": "open"
+    },
+    {
+      "id": "passion-tomb-sites",
+      "category": "archaeology",
+      "events": [
+        "j071",
+        "j072",
+        "j073",
+        "j074"
+      ],
+      "description": "Jerusalem and Golgotha are named in the text; exact trial, crucifixion and tomb coordinates are not independently proven by modern commemorative buildings.",
+      "references": [
+        "https://whc.unesco.org/en/list/148/"
+      ],
+      "status": "qualified"
+    },
+    {
+      "id": "resurrection-sequence",
+      "category": "chronology",
+      "events": [
+        "j074",
+        "j075",
+        "j076",
+        "j077",
+        "j078",
+        "j079"
+      ],
+      "description": "Appearance accounts do not yield one undisputed, continuously dated route; John 20:19-29 includes a later gathering involving Thomas.",
+      "references": [],
+      "status": "qualified"
+    },
+    {
+      "id": "eastern-lake-variants",
+      "category": "textual",
+      "events": [
+        "j031"
+      ],
+      "description": "Gerasenes/Gadarenes/Gergesenes are variant geographical readings; the marker remains a region, not a verified landing site.",
+      "references": [],
+      "status": "qualified"
+    },
+    {
+      "id": "bethsaida-identification",
+      "category": "archaeology",
+      "events": [
+        "j034",
+        "j043"
+      ],
+      "description": "El-Araj and et-Tell remain competing Bethsaida candidates; excavations must not be treated as proof of the Gospel event.",
+      "references": [
+        "https://www.bethsaida-julias.com/season8report"
+      ],
+      "status": "open"
+    },
+    {
+      "id": "emmaus-identification",
+      "category": "archaeology",
+      "events": [
+        "j075"
+      ],
+      "description": "The biblical name Emmaus is clear but its modern identification remains contested.",
+      "references": [],
+      "status": "open"
+    }
+  ],
+  "corrections": [
+    {
+      "event": "j025",
+      "change": "Capernaum basis upgraded from inferred to named",
+      "reason": "Mark 2:1 explicitly identifies the town.",
+      "passages": [
+        "Mark 2:1"
+      ]
+    },
+    {
+      "event": "j032",
+      "change": "Jairus episode relocated from Capernaum to unspecified Sea of Galilee shore",
+      "reason": "Mark 5:21 specifies lakeshore after a crossing, not the town of Capernaum.",
+      "passages": [
+        "Mark 5:21-43"
+      ]
+    },
+    {
+      "event": "j044",
+      "change": "Caesarea Philippi episode relabelled as a district, not a verified spot in town",
+      "reason": "Matthew 16:13 and Mark 8:27 speak of district or villages.",
+      "passages": [
+        "Matthew 16:13",
+        "Mark 8:27"
+      ]
+    },
+    {
+      "event": "j054",
+      "change": "Retreat beyond Jordan no longer treated as an explicitly named town stop",
+      "reason": "John 10:40 points back to the baptism area without providing its coordinates.",
+      "passages": [
+        "John 10:40-42"
+      ]
+    },
+    {
+      "event": "j061",
+      "change": "Donkey retrieval site changed from named Bethphage to contextual inference",
+      "reason": "Matthew 21:1-3 names the approach but refers to a village ahead.",
+      "passages": [
+        "Matthew 21:1-3"
+      ]
+    },
+    {
+      "event": "j069",
+      "change": "Last Supper summary stops treating all four Gospels as one unqualified Passover meal",
+      "reason": "Calendar and narrative differences are recognised.",
+      "passages": [
+        "John 13:1",
+        "Mark 14:12"
+      ]
+    },
+    {
+      "event": "j076",
+      "change": "Disciple appearances described as multiple gatherings",
+      "reason": "John 20:26 distinguishes a later appearance involving Thomas.",
+      "passages": [
+        "John 20:19-29"
+      ]
+    },
+    {
+      "event": "j051",
+      "change": "John 7:53-8:11 textual status explicitly noted",
+      "reason": "Crossway ESV marks it as absent from the earliest manuscripts.",
+      "passages": [
+        "John 7:53",
+        "John 8:12"
+      ]
+    },
+    {
+      "event": "j041",
+      "change": "Lakeshore context added for feeding the four thousand",
+      "reason": "Matthew 15:29 describes the lakeside setting preceding the feeding.",
+      "passages": [
+        "Matthew 15:29-38"
+      ]
+    }
+  ],
+  "sourceChecks": [
+    {
+      "source": "bethlehem-unesco",
+      "result": "public source page located and general scope checked",
+      "checkedOn": "2026-10-26"
+    },
+    {
+      "source": "jerusalem-unesco",
+      "result": "public source page located and general scope checked",
+      "checkedOn": "2026-10-26"
+    },
+    {
+      "source": "jericho-unesco",
+      "result": "public source page located and general scope checked",
+      "checkedOn": "2026-10-26"
+    },
+    {
+      "source": "baptism-unesco",
+      "result": "public source page located and general scope checked",
+      "checkedOn": "2026-10-26"
+    },
+    {
+      "source": "nazareth-iaa",
+      "result": "public source page located and general scope checked",
+      "checkedOn": "2026-10-26"
+    },
+    {
+      "source": "nazareth-oxford",
+      "result": "public source page located and general scope checked",
+      "checkedOn": "2026-10-26"
+    },
+    {
+      "source": "capernaum-survey",
+      "result": "public source page located and general scope checked",
+      "checkedOn": "2026-10-26"
+    },
+    {
+      "source": "bethsaida-excavation",
+      "result": "public source page located and general scope checked",
+      "checkedOn": "2026-10-26"
+    },
+    {
+      "source": "tyre-unesco",
+      "result": "public source page located and general scope checked",
+      "checkedOn": "2026-10-26"
+    },
+    {
+      "source": "tyre-france",
+      "result": "public source page located and general scope checked",
+      "checkedOn": "2026-10-26"
+    },
+    {
+      "source": "magdala-iaa",
+      "result": "public source page located and general scope checked",
+      "checkedOn": "2026-10-26"
+    }
+  ]
+}

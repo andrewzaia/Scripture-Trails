@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "updated": "2026-10-26",
   "methodology": "Gospels and Acts are primary evidence for the episodes; OT references illuminate the broader history of a named region, not evidence Jesus visited that Old Testament event. Independent archaeological scholarship is cited where available. Absence of an external archaeology citation is explicitly not proof of a site identification.",
   "evidenceGuide": {
@@ -93,7 +93,13 @@
       "literature": [
         "bethlehem-unesco"
       ],
-      "caution": "The Gospel names the town; the precise building or cave is identified by later Christian tradition."
+      "caution": "The Gospel names the town; the precise building or cave is identified by later Christian tradition.",
+      "review": {
+        "status": "source-linked",
+        "reviewedOn": "2026-10-26",
+        "basis": "geography-source-and-uncertainty-screen",
+        "independentSourceCount": 1
+      }
     },
     "jerusalem": {
       "ancientNames": [
@@ -122,7 +128,13 @@
       "literature": [
         "jerusalem-unesco"
       ],
-      "caution": "A city-level identification does not establish the location of the upper room, trial, Golgotha or tomb."
+      "caution": "A city-level identification does not establish the location of the upper room, trial, Golgotha or tomb.",
+      "review": {
+        "status": "source-linked",
+        "reviewedOn": "2026-10-26",
+        "basis": "geography-source-and-uncertainty-screen",
+        "independentSourceCount": 1
+      }
     },
     "egypt": {
       "ancientNames": [
@@ -144,7 +156,13 @@
         }
       ],
       "literature": [],
-      "caution": "The map pin is a regional placeholder, not an archaeological claim or a travel destination."
+      "caution": "The map pin is a regional placeholder, not an archaeological claim or a travel destination.",
+      "review": {
+        "status": "regional-placeholder",
+        "reviewedOn": "2026-10-26",
+        "basis": "geography-source-and-uncertainty-screen",
+        "independentSourceCount": 0
+      }
     },
     "nazareth": {
       "ancientNames": [
@@ -160,7 +178,13 @@
         "nazareth-iaa",
         "nazareth-oxford"
       ],
-      "caution": "Nazareth is not specifically named in the Old Testament; proposed connections are later interpretations."
+      "caution": "Nazareth is not specifically named in the Old Testament; proposed connections are later interpretations.",
+      "review": {
+        "status": "source-linked",
+        "reviewedOn": "2026-10-26",
+        "basis": "geography-source-and-uncertainty-screen",
+        "independentSourceCount": 2
+      }
     },
     "jordan": {
       "ancientNames": [
@@ -180,7 +204,13 @@
       "literature": [
         "baptism-unesco"
       ],
-      "caution": "The location of the baptism cannot be independently fixed to a precise riverbank coordinate."
+      "caution": "The location of the baptism cannot be independently fixed to a precise riverbank coordinate.",
+      "review": {
+        "status": "source-linked",
+        "reviewedOn": "2026-10-26",
+        "basis": "geography-source-and-uncertainty-screen",
+        "independentSourceCount": 1
+      }
     },
     "wilderness": {
       "ancientNames": [
@@ -198,7 +228,13 @@
         }
       ],
       "literature": [],
-      "caution": "The pin represents a broad region. Do not treat the traditional Mount of Temptation as a proven site."
+      "caution": "The pin represents a broad region. Do not treat the traditional Mount of Temptation as a proven site.",
+      "review": {
+        "status": "regional-placeholder",
+        "reviewedOn": "2026-10-26",
+        "basis": "geography-source-and-uncertainty-screen",
+        "independentSourceCount": 0
+      }
     },
     "beyond-jordan": {
       "ancientNames": [
@@ -218,7 +254,13 @@
       "literature": [
         "baptism-unesco"
       ],
-      "caution": "Do not confuse Bethany beyond the Jordan with Bethany near Jerusalem."
+      "caution": "Do not confuse Bethany beyond the Jordan with Bethany near Jerusalem.",
+      "review": {
+        "status": "source-linked",
+        "reviewedOn": "2026-10-26",
+        "basis": "geography-source-and-uncertainty-screen",
+        "independentSourceCount": 1
+      }
     },
     "cana": {
       "ancientNames": [
@@ -231,7 +273,13 @@
       "evidenceLevel": "disputed",
       "oldTestament": [],
       "literature": [],
-      "caution": "The biblical name is clear but the exact modern identification is not established."
+      "caution": "The biblical name is clear but the exact modern identification is not established.",
+      "review": {
+        "status": "external-source-needed",
+        "reviewedOn": "2026-10-26",
+        "basis": "geography-source-and-uncertainty-screen",
+        "independentSourceCount": 0
+      }
     },
     "capernaum": {
       "ancientNames": [
@@ -251,7 +299,13 @@
       "literature": [
         "capernaum-survey"
       ],
-      "caution": "Later commemorative buildings cannot by themselves confirm a particular miracle or house owner."
+      "caution": "Later commemorative buildings cannot by themselves confirm a particular miracle or house owner.",
+      "review": {
+        "status": "source-linked",
+        "reviewedOn": "2026-10-26",
+        "basis": "geography-source-and-uncertainty-screen",
+        "independentSourceCount": 1
+      }
     },
     "judea-region": {
       "ancientNames": [
@@ -264,7 +318,13 @@
       "evidenceLevel": "regional",
       "oldTestament": [],
       "literature": [],
-      "caution": "No city should be inferred from John 3:22."
+      "caution": "No city should be inferred from John 3:22.",
+      "review": {
+        "status": "regional-placeholder",
+        "reviewedOn": "2026-10-26",
+        "basis": "geography-source-and-uncertainty-screen",
+        "independentSourceCount": 0
+      }
     },
     "sychar": {
       "ancientNames": [
@@ -286,7 +346,13 @@
         }
       ],
       "literature": [],
-      "caution": "Shechem is not automatically identical to the town called Sychar."
+      "caution": "Shechem is not automatically identical to the town called Sychar.",
+      "review": {
+        "status": "external-source-needed",
+        "reviewedOn": "2026-10-26",
+        "basis": "geography-source-and-uncertainty-screen",
+        "independentSourceCount": 0
+      }
     },
     "galilee-shore": {
       "ancientNames": [
@@ -294,7 +360,7 @@
         "Kinneret / Lake Gennesaret / Sea of Tiberias"
       ],
       "modernSetting": "Sea of Galilee - exact shore landing varies",
-      "historicalContext": "Boats, fishing communities, teaching and miracles are repeatedly associated with the lake.",
+      "historicalContext": "Boats, fishing communities, teaching and miracles are repeatedly associated with the lake. The Jairus episode is conservatively mapped to the lakeshore as Mark 5:21 does not name Capernaum.",
       "archaeology": "The lake and its regional settlement network are geographically secure; specific boat courses and shoreline landing sites are usually not supplied.",
       "evidenceLevel": "regional",
       "oldTestament": [
@@ -304,7 +370,13 @@
         }
       ],
       "literature": [],
-      "caution": "The point is only a navigational marker for lake episodes, not the location of each miracle."
+      "caution": "The point is only a navigational marker for lake episodes, not the location of each miracle.",
+      "review": {
+        "status": "regional-placeholder",
+        "reviewedOn": "2026-10-26",
+        "basis": "geography-source-and-uncertainty-screen",
+        "independentSourceCount": 0
+      }
     },
     "galilee-hill": {
       "ancientNames": [
@@ -317,7 +389,13 @@
       "evidenceLevel": "regional",
       "oldTestament": [],
       "literature": [],
-      "caution": "Do not identify the traditional pilgrimage site as a biblically named hill."
+      "caution": "Do not identify the traditional pilgrimage site as a biblically named hill.",
+      "review": {
+        "status": "regional-placeholder",
+        "reviewedOn": "2026-10-26",
+        "basis": "geography-source-and-uncertainty-screen",
+        "independentSourceCount": 0
+      }
     },
     "nain": {
       "ancientNames": [
@@ -330,7 +408,13 @@
       "evidenceLevel": "tradition",
       "oldTestament": [],
       "literature": [],
-      "caution": "Ancient town limits and the particular gate remain uncertain."
+      "caution": "Ancient town limits and the particular gate remain uncertain.",
+      "review": {
+        "status": "external-source-needed",
+        "reviewedOn": "2026-10-26",
+        "basis": "geography-source-and-uncertainty-screen",
+        "independentSourceCount": 0
+      }
     },
     "east-shore": {
       "ancientNames": [
@@ -343,7 +427,13 @@
       "evidenceLevel": "disputed",
       "oldTestament": [],
       "literature": [],
-      "caution": "Place variants in manuscript traditions and Gospel accounts should not be hidden."
+      "caution": "Place variants in manuscript traditions and Gospel accounts should not be hidden.",
+      "review": {
+        "status": "external-source-needed",
+        "reviewedOn": "2026-10-26",
+        "basis": "geography-source-and-uncertainty-screen",
+        "independentSourceCount": 0
+      }
     },
     "bethsaida": {
       "ancientNames": [
@@ -358,7 +448,13 @@
       "literature": [
         "bethsaida-excavation"
       ],
-      "caution": "Do not present one excavated candidate as the sole proven biblical town."
+      "caution": "Both el-Araj and et-Tell appear in identification debates. The el-Araj season report confirms excavated material, not a consensus that it is the Gospel Bethsaida.",
+      "review": {
+        "status": "source-linked",
+        "reviewedOn": "2026-10-26",
+        "basis": "geography-source-and-uncertainty-screen",
+        "independentSourceCount": 1
+      }
     },
     "gennesaret": {
       "ancientNames": [
@@ -371,7 +467,13 @@
       "evidenceLevel": "regional",
       "oldTestament": [],
       "literature": [],
-      "caution": "Gennesaret can mean a shore region; a point marker is approximate."
+      "caution": "Gennesaret can mean a shore region; a point marker is approximate.",
+      "review": {
+        "status": "regional-placeholder",
+        "reviewedOn": "2026-10-26",
+        "basis": "geography-source-and-uncertainty-screen",
+        "independentSourceCount": 0
+      }
     },
     "sidon": {
       "ancientNames": [
@@ -393,7 +495,13 @@
         }
       ],
       "literature": [],
-      "caution": "A region or transit corridor must not be converted into a list of unrecorded city meetings."
+      "caution": "A region or transit corridor must not be converted into a list of unrecorded city meetings.",
+      "review": {
+        "status": "external-source-needed",
+        "reviewedOn": "2026-10-26",
+        "basis": "geography-source-and-uncertainty-screen",
+        "independentSourceCount": 0
+      }
     },
     "decapolis": {
       "ancientNames": [
@@ -406,7 +514,13 @@
       "evidenceLevel": "regional",
       "oldTestament": [],
       "literature": [],
-      "caution": "The marker is a representative regional point; city-level visit claims would be ungrounded."
+      "caution": "The marker is a representative regional point; city-level visit claims would be ungrounded.",
+      "review": {
+        "status": "regional-placeholder",
+        "reviewedOn": "2026-10-26",
+        "basis": "geography-source-and-uncertainty-screen",
+        "independentSourceCount": 0
+      }
     },
     "magadan": {
       "ancientNames": [
@@ -421,7 +535,13 @@
       "literature": [
         "magdala-iaa"
       ],
-      "caution": "Distinguish well-attested Magdala archaeology from uncertain Magadan/Dalmanutha identification."
+      "caution": "Distinguish well-attested Magdala archaeology from uncertain Magadan/Dalmanutha identification.",
+      "review": {
+        "status": "source-linked",
+        "reviewedOn": "2026-10-26",
+        "basis": "geography-source-and-uncertainty-screen",
+        "independentSourceCount": 1
+      }
     },
     "caesarea-philippi": {
       "ancientNames": [
@@ -434,7 +554,13 @@
       "evidenceLevel": "reported",
       "oldTestament": [],
       "literature": [],
-      "caution": "A named district is not proof that every conversation occurred in the urban centre."
+      "caution": "The Gospels name the district or villages of Caesarea Philippi, not a proven conversation site inside the town or at a modern shrine.",
+      "review": {
+        "status": "external-source-needed",
+        "reviewedOn": "2026-10-26",
+        "basis": "geography-source-and-uncertainty-screen",
+        "independentSourceCount": 0
+      }
     },
     "mountain": {
       "ancientNames": [
@@ -447,7 +573,13 @@
       "evidenceLevel": "disputed",
       "oldTestament": [],
       "literature": [],
-      "caution": "The schematic map pin represents a mountain setting, not a located peak."
+      "caution": "The schematic map pin represents a mountain setting, not a located peak.",
+      "review": {
+        "status": "external-source-needed",
+        "reviewedOn": "2026-10-26",
+        "basis": "geography-source-and-uncertainty-screen",
+        "independentSourceCount": 0
+      }
     },
     "samaria-region": {
       "ancientNames": [
@@ -460,7 +592,13 @@
       "evidenceLevel": "regional",
       "oldTestament": [],
       "literature": [],
-      "caution": "No modern village identification is claimed."
+      "caution": "No modern village identification is claimed.",
+      "review": {
+        "status": "regional-placeholder",
+        "reviewedOn": "2026-10-26",
+        "basis": "geography-source-and-uncertainty-screen",
+        "independentSourceCount": 0
+      }
     },
     "border": {
       "ancientNames": [
@@ -473,7 +611,13 @@
       "evidenceLevel": "regional",
       "oldTestament": [],
       "literature": [],
-      "caution": "The exact border location is not recorded."
+      "caution": "The exact border location is not recorded.",
+      "review": {
+        "status": "regional-placeholder",
+        "reviewedOn": "2026-10-26",
+        "basis": "geography-source-and-uncertainty-screen",
+        "independentSourceCount": 0
+      }
     },
     "jordan-east": {
       "ancientNames": [
@@ -486,7 +630,13 @@
       "evidenceLevel": "regional",
       "oldTestament": [],
       "literature": [],
-      "caution": "Perea is a geographic frame, not a biblical claim about this marker."
+      "caution": "Perea is a geographic frame, not a biblical claim about this marker.",
+      "review": {
+        "status": "regional-placeholder",
+        "reviewedOn": "2026-10-26",
+        "basis": "geography-source-and-uncertainty-screen",
+        "independentSourceCount": 0
+      }
     },
     "bethany": {
       "ancientNames": [
@@ -499,7 +649,13 @@
       "evidenceLevel": "tradition",
       "oldTestament": [],
       "literature": [],
-      "caution": "This is separate from Bethany beyond the Jordan."
+      "caution": "This is separate from Bethany beyond the Jordan.",
+      "review": {
+        "status": "external-source-needed",
+        "reviewedOn": "2026-10-26",
+        "basis": "geography-source-and-uncertainty-screen",
+        "independentSourceCount": 0
+      }
     },
     "ephraim": {
       "ancientNames": [
@@ -512,7 +668,13 @@
       "evidenceLevel": "disputed",
       "oldTestament": [],
       "literature": [],
-      "caution": "The marker should not be treated as a surveyed first-century city centre."
+      "caution": "The marker should not be treated as a surveyed first-century city centre.",
+      "review": {
+        "status": "external-source-needed",
+        "reviewedOn": "2026-10-26",
+        "basis": "geography-source-and-uncertainty-screen",
+        "independentSourceCount": 0
+      }
     },
     "jericho": {
       "ancientNames": [
@@ -536,7 +698,13 @@
       "literature": [
         "jericho-unesco"
       ],
-      "caution": "Do not equate the prehistoric mound with the precise setting of Luke 19 or Mark 10."
+      "caution": "The UNESCO-listed Tell es-Sultan contains prehistoric and Bronze Age remains; it is not itself evidence for the exact New Testament-era town setting or healing site.",
+      "review": {
+        "status": "source-linked",
+        "reviewedOn": "2026-10-26",
+        "basis": "geography-source-and-uncertainty-screen",
+        "independentSourceCount": 1
+      }
     },
     "bethphage": {
       "ancientNames": [
@@ -544,12 +712,18 @@
         "Beit Fagi (traditional rendering)"
       ],
       "modernSetting": "Eastern approach to Jerusalem - near the Mount of Olives",
-      "historicalContext": "A village named as the place where disciples obtained the donkey before the entry into Jerusalem.",
+      "historicalContext": "The Gospels name Bethphage as a village near the Jerusalem approach and Mount of Olives, then describe disciples sent to obtain a donkey from a village ahead.",
       "archaeology": "A traditional location exists but archaeological identification of the Gospel village is not conclusive.",
       "evidenceLevel": "tradition",
       "oldTestament": [],
       "literature": [],
-      "caution": "The precise village footprint is not established."
+      "caution": "The Gospels do not state that the donkey was fetched specifically inside Bethphage; its ancient village footprint also remains uncertain.",
+      "review": {
+        "status": "external-source-needed",
+        "reviewedOn": "2026-10-26",
+        "basis": "geography-source-and-uncertainty-screen",
+        "independentSourceCount": 0
+      }
     },
     "olives": {
       "ancientNames": [
@@ -571,7 +745,13 @@
         }
       ],
       "literature": [],
-      "caution": "The Mount of Olives spans a ridge, not a single pinpoint coordinate."
+      "caution": "The Mount of Olives spans a ridge, not a single pinpoint coordinate.",
+      "review": {
+        "status": "external-source-needed",
+        "reviewedOn": "2026-10-26",
+        "basis": "geography-source-and-uncertainty-screen",
+        "independentSourceCount": 0
+      }
     },
     "gethsemane": {
       "ancientNames": [
@@ -584,7 +764,13 @@
       "evidenceLevel": "tradition",
       "oldTestament": [],
       "literature": [],
-      "caution": "The traditional gardens are later commemorations of an event tied by Scripture to an area, not a measured plot."
+      "caution": "The traditional gardens are later commemorations of an event tied by Scripture to an area, not a measured plot.",
+      "review": {
+        "status": "external-source-needed",
+        "reviewedOn": "2026-10-26",
+        "basis": "geography-source-and-uncertainty-screen",
+        "independentSourceCount": 0
+      }
     },
     "emmaus": {
       "ancientNames": [
@@ -597,7 +783,13 @@
       "evidenceLevel": "disputed",
       "oldTestament": [],
       "literature": [],
-      "caution": "The map point is illustrative and does not select one candidate as definitive."
+      "caution": "The map point is illustrative and does not select one candidate as definitive.",
+      "review": {
+        "status": "external-source-needed",
+        "reviewedOn": "2026-10-26",
+        "basis": "geography-source-and-uncertainty-screen",
+        "independentSourceCount": 0
+      }
     },
     "galilee-mountain": {
       "ancientNames": [
@@ -610,7 +802,13 @@
       "evidenceLevel": "regional",
       "oldTestament": [],
       "literature": [],
-      "caution": "Do not conflate this unnamed location with the Transfiguration mountain."
+      "caution": "Do not conflate this unnamed location with the Transfiguration mountain.",
+      "review": {
+        "status": "regional-placeholder",
+        "reviewedOn": "2026-10-26",
+        "basis": "geography-source-and-uncertainty-screen",
+        "independentSourceCount": 0
+      }
     },
     "tyre": {
       "ancientNames": [
@@ -635,7 +833,13 @@
         "tyre-unesco",
         "tyre-france"
       ],
-      "caution": "Mark 7 places Jesus in the territory of Tyre; it does not identify an excavated dwelling."
+      "caution": "Mark 7 places Jesus in the territory of Tyre; it does not identify an excavated dwelling.",
+      "review": {
+        "status": "source-linked",
+        "reviewedOn": "2026-10-26",
+        "basis": "geography-source-and-uncertainty-screen",
+        "independentSourceCount": 2
+      }
     },
     "galilee-region": {
       "ancientNames": [
@@ -657,7 +861,18 @@
         }
       ],
       "literature": [],
-      "caution": "A regional episode must not be presented as an individually evidenced town visit."
+      "caution": "A regional episode must not be presented as an individually evidenced town visit.",
+      "review": {
+        "status": "regional-placeholder",
+        "reviewedOn": "2026-10-26",
+        "basis": "geography-source-and-uncertainty-screen",
+        "independentSourceCount": 0
+      }
     }
+  },
+  "audit": {
+    "scope": "Location/source metadata checked for 35 place dossiers. Text of external literature not independently peer reviewed by this project. Source links checked 26 October 2026.",
+    "revision": "2026-10-26",
+    "verification": "Bibliographic and location-confidence screening; scholarly review remains ongoing."
   }
 }

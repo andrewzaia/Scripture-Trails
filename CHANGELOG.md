@@ -1,3 +1,12 @@
+## 2026-10-26 - Gospel geographical and textual evidence screening
+
+- Audited the data structure for all 79 listed episodes and all 35 place dossiers; published review state, corrections and open research issues.
+- Corrected lakeshore/Capernaum labelling for Jairus (Mark 5:21) and the paralytic (Mark 2:1); revised Caesarea Philippi as a district (Matthew 16:13; Mark 8:27), Bethphage donkey collection as inferred (Matthew 21:1-3), and John 20 multiple appearances (John 20:19-29).
+- Added explicit qualification of the conflicting presentation of childhood, Nazareth synagogue, temple actions, Bethany anointing, the final meal and resurrection appearances.
+- Added John 7:53-8:11 manuscript caution and referenced Matthew 15:29-38 for lakeshore context.
+- Added public per-episode issue notes, source links, corrections register and research gaps to the map, with no claims of independent scholarly certification.
+- Marked first-pass editorial audit delivered on roadmap and planned independent specialist review separately.
+
 # Changelog
 
 ## 0.1.0 - 26 October 2026

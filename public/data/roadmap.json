@@ -1,11 +1,11 @@
 {
   "project": "Scripture Trails",
   "updated": "2026-10-26",
-  "description": "A transparent, evidence-aware roadmap. Completed means the feature is delivered, not that its scholarly coverage is exhaustive. No future delivery dates are promised.",
+  "description": "A transparent, evidence-aware roadmap. Delivered means implementation exists, not that every scholarly question is settled. The accuracy audit is an initial, publicly documented editorial screening, not external specialist certification.",
   "currentFocus": [
-    "Editorial and historical accuracy audit",
-    "Deeper archaeological city dossiers",
-    "Parallel-Gospel chronology comparison"
+    "Deep research dossiers for five core cities",
+    "Gospel-by-Gospel chronology comparison",
+    "Independent scholarly review of flagged audit questions"
   ],
   "phases": [
     {
@@ -114,22 +114,22 @@
     {
       "id": "audit",
       "phase": "next",
-      "status": "next",
-      "title": "Editorial and historical accuracy audit",
-      "summary": "Review every existing place, event and cross-reference for bibliographic accuracy, historical caution, and competing Gospel sequences.",
+      "status": "delivered",
+      "title": "Gospel journey audit - initial editorial pass",
+      "summary": "All 79 episode entries and 35 place dossiers now have traceable screening states, a publicly visible corrections register, and open historical questions.",
       "capabilities": [
-        "Passage-by-passage review of the 79 events",
-        "Correct misidentified places or overconfident geographical assertions",
-        "Clear source/date/reviewer fields and published corrections log"
+        "Passage-reference syntax and Gospel/Acts scope checks",
+        "Corrected Capernaum, Jairus lakeshore, Caesarea Philippi district, Bethphage and supper summaries",
+        "Published correction history, evidence categories and chronology concerns"
       ],
-      "verification": "Ready when each retained claim has a source and an explicit review status."
+      "verification": "First editorial screening and source-link inspection completed; open questions remain, and this is not external peer review."
     },
     {
       "id": "place-deep-dives",
       "phase": "next",
       "status": "next",
       "title": "Deeper individual city dossiers",
-      "summary": "Expand leading archaeological sites from short summaries into illustrated, separately cited research pages.",
+      "summary": "Next: commission and expand research-grade dossiers with site-level source notes for Jerusalem, Nazareth, Capernaum, Bethlehem and Jericho.",
       "capabilities": [
         "Full dossiers for Jerusalem, Nazareth, Capernaum, Bethlehem and Jericho",
         "Document excavation chronology and which structures are later traditions",
@@ -227,6 +227,19 @@
         "Accessible visual and list modes"
       ],
       "verification": "Require a separate source and chronological audit per map."
+    },
+    {
+      "id": "independent-audit",
+      "phase": "next",
+      "status": "research",
+      "title": "Independent historical and textual peer review",
+      "summary": "Seek independent scholarly verification of flagged Gospel chronology, textual and archaeological identifications.",
+      "capabilities": [
+        "Review the public audit issue register against primary Scripture",
+        "Verify site claims with excavation publications and mapped historical data",
+        "Document human specialist reviewer and method only when such reviews occur"
+      ],
+      "verification": "Not completed: initial AI-assisted editorial screening must not be represented as external independent review."
     }
   ]
 }
