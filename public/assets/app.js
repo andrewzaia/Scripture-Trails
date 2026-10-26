@@ -2,7 +2,7 @@ import {BOOKS,findBook,parseRef,referenceFor,chapterRef,adjacentChapter,readerSc
 import {PATHS,EDITORIAL_LINKS} from './studies.js';
 import {ScriptureGraph} from './graph.js';
 import {createJesusMap} from './jesus-map.js';
-import {createRoadmap} from './roadmap.js';
+import {createRoadmap} from './roadmap.js?v=20261027-translations';
 import {createCityStudies} from './city-studies.js';
 import {buildAtlas} from './atlas-paths.js';
 import {TRANSLATIONS,getTranslation} from './translations.js';

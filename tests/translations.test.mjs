@@ -22,7 +22,7 @@ test('API.Bible uses the three approved editions and USFM IDs for all 66 books',
 test('single verse, range and full chapter route to their exact API.Bible resources',async()=>{
  await mockedFetch(async(url,options)=>{
   assert.equal(options.headers['api-key'],'server-only-key');
-  assert.equal(options.redirect,'error');
+  assert.equal(options.redirect,'manual');
   assert.ok(options.signal instanceof AbortSignal);
   const u=new URL(url),i=calls.length;calls.push(u);
   assert.equal(u.origin,'https://rest.api.bible');
@@ -79,5 +79,15 @@ test('wrong edition, missing copyright and malformed payloads are rejected',asyn
 test('upstream failures and excessive responses fail safely',async()=>{
  for(const mock of [async()=>{throw new Error('network failure');},async()=>new Response('x'.repeat(1024*1024+1))])await mockedFetch(mock,async()=>{
   const res=await onRequestGet({request:request('John 3','NIV'),env:{API_BIBLE_KEY:'test'}});assert.equal(res.status,502);assert.equal((await res.json()).code,'upstream_unavailable');
+ });
+});
+test('upstream redirects are rejected without forwarding credentials to another host',async()=>{
+ let requests=0;
+ await mockedFetch(async(url,options)=>{
+  requests++;assert.equal(new URL(url).origin,'https://rest.api.bible');assert.equal(options.redirect,'manual');
+  return new Response(null,{status:302,headers:{Location:'https://untrusted.example/'}});
+ },async()=>{
+  const res=await onRequestGet({request:request('John 3:16','NIV'),env:{API_BIBLE_KEY:'server-only-key'}});
+  assert.equal(res.status,502);assert.equal((await res.json()).code,'upstream_failure');assert.equal(requests,1);
  });
 });

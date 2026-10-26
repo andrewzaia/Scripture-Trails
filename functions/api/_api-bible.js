@@ -13,7 +13,8 @@ export async function apiBiblePassage(ref,edition,env,reply){
  try{
   const response=await fetch(url,{
    headers:{'api-key':env.API_BIBLE_KEY,Accept:'application/json'},
-   redirect:'error',signal:AbortSignal.timeout(10000)
+   // Workers supports manual redirect handling; never forward the key elsewhere.
+   redirect:'manual',signal:AbortSignal.timeout(10000)
   });
   if(!response.ok){
    if(response.status===429)return reply(429,{code:'rate_limited',message:'API.Bible request limit reached. Please try again later.'});

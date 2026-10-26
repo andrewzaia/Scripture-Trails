@@ -28,5 +28,5 @@ export function createRoadmap(root){
   $('focus').replaceChildren(...data.currentFocus.map((x,i)=>make('li','',`${i+1}. ${x}`)));
   root.querySelectorAll('[data-roadmap-filter]').forEach(b=>b.addEventListener('click',()=>{filter=b.dataset.roadmapFilter;render();}));render();
   root.dataset.ready='true';$('loading').hidden=true;}
- return {activate(){if(!initial)initial=fetch('/data/roadmap.json').then(r=>{if(!r.ok)throw Error('Roadmap data unavailable');return r.json();}).then(d=>{data=d;setup();}).catch(()=>{$('loading').textContent='Could not load the roadmap right now.';});}};
+ return {activate(){if(!initial)initial=fetch('/data/roadmap.json?v=20261027-translations').then(r=>{if(!r.ok)throw Error('Roadmap data unavailable');return r.json();}).then(d=>{data=d;setup();}).catch(()=>{$('loading').textContent='Could not load the roadmap right now.';});}};
 }
