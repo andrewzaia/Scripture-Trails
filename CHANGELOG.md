@@ -18,6 +18,13 @@
 
 # Changelog
 
+## 2026-10-27 - Simpler translation indicators
+
+- Make the header translation squares display-only, keeping translation changes in the Bible reader selector and ESV as the default.
+- Replace visible status labels with green ticks and red crosses, retaining accessible names and hover explanations.
+- Start each edition as available, turn red only after an identified reading failure, and restore green after a successful retry.
+- Remove the unused configuration endpoint and its page-load request.
+
 ## 2026-10-27 - Production domain and translation status
 
 - Set the production address to `https://www.scripturetrails.com/`, with canonical and social sharing metadata and a sitemap.

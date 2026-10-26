@@ -7,7 +7,7 @@ import {createCityStudies} from './city-studies.js?v=20261027-local';
 import {buildAtlas} from './atlas-paths.js';
 import {TRANSLATIONS,getTranslation} from './translations.js';
 import {reportScriptureView} from './fums.js';
-import {TRANSLATION_STATUS,statusForResponse} from './translation-status.js';
+import {TRANSLATION_STATUS,statusForResponse} from './translation-status.js?v=20261027-indicators';
 
 const $=id=>document.getElementById(id);
 const pick=(s,root=document)=>root.querySelector(s);
@@ -16,39 +16,26 @@ for(const link of EDITORIAL_LINKS){const a=parseRef(link.from)?.formatted,b=pars
 const getSaved=(key,defaultValue)=>{try{const parsed=JSON.parse(localStorage.getItem(`scripture-trails:${key}`));return parsed===null?defaultValue:parsed;}catch{return defaultValue;}};
 const putSaved=(key,value)=>{try{localStorage.setItem(`scripture-trails:${key}`,JSON.stringify(value));return true;}catch{return false;}};
 const state={translation:getTranslation(getSaved('translation','ESV'))?.code||'ESV',loadedTranslation:null,pendingTranslation:null,fums:null,view:'discover',ref:'John 1:1',loadedPassage:null,pendingPassage:null,bookmarks:getSaved('bookmarks',[]),notes:getSaved('notes',{}),history:getSaved('history',[]),theme:getSaved('theme','dark'),filter:'all',journey:null,links:[],graph:null,graphDepth:3,graphLinks:{},graphRequestId:0,requestId:0,jesusMap:null};
-const translationStatuses=new Map(TRANSLATIONS.map(edition=>[edition.code,'checking']));
+const translationStatuses=new Map(TRANSLATIONS.map(edition=>[edition.code,'available']));
 const translationRequests=new Map();
 function renderTranslationStatuses(){
  for(const button of document.querySelectorAll('#translation-statuses [data-translation]')){
-  const code=button.dataset.translation,status=translationStatuses.get(code)||'unknown';
+  const code=button.dataset.translation,status=translationStatuses.get(code)||'available';
   const detail=TRANSLATION_STATUS[status];
   button.dataset.status=status;
-  button.setAttribute('aria-pressed',String(code===state.translation));
-  button.querySelector('[data-status-label]').textContent=detail.label;
-  button.title=`${getTranslation(code).name}: ${detail.description} Select to read in ${code}.`;
-  button.setAttribute('aria-label',`Read in ${code}. ${detail.label}. ${detail.description}`);
+  button.dataset.selected=String(code===state.translation);
+  button.title=`${getTranslation(code).name}: ${detail.label}. ${detail.description}`;
+  button.setAttribute('aria-label',`${code}: ${detail.label}`);
  }
 }
 function setTranslationStatus(code,status){
  if(!getTranslation(code)||!TRANSLATION_STATUS[status])return;
  translationStatuses.set(code,status);renderTranslationStatuses();
 }
-async function loadTranslationStatuses(){
- try{
-  const response=await fetch('/api/translations',{cache:'no-store',signal:AbortSignal.timeout(5000)});
-  if(!response.ok)throw Error('Configuration check failed');
-  const payload=await response.json();
-  for(const edition of TRANSLATIONS){
-   const item=payload.translations?.find(item=>item.code===edition.code);
-   // A slow configuration response must not overwrite a newer reading result.
-   if(translationStatuses.get(edition.code)==='checking')setTranslationStatus(edition.code,typeof item?.configured==='boolean'?(item.configured?'configured':'not_configured'):'unknown');
-  }
- }catch{for(const edition of TRANSLATIONS)if(translationStatuses.get(edition.code)==='checking')setTranslationStatus(edition.code,'unknown');}
-}
-function selectTranslation(code,openReader=false){
+function selectTranslation(code){
  const edition=getTranslation(code);if(!edition)return;
  state.translation=edition.code;putSaved('translation',state.translation);renderTranslationStatuses();
- if(openReader)showView('reader',false);else void renderReader();
+ void renderReader();
  updateUrl();
 }
 const bookCache=new Map();let referenceManifest=null,verseCounts=null;let roadmapPage=null,cityStudiesPage=null;let toastTimer;
@@ -146,7 +133,6 @@ async function loadPassage(reference){
  const requestId=++state.requestId,translation=state.translation,edition=getTranslation(translation);
  translationRequests.set(translation,requestId);
  const updateStatus=status=>{if(translationRequests.get(translation)===requestId)setTranslationStatus(translation,status);};
- updateStatus('loading');
  state.pendingPassage=reference;state.pendingTranslation=translation;state.fums=null;
  const content=$('passage-content');
  content.replaceChildren(create('div','message-panel',`Retrieving the passage from ${edition.provider}...`));
@@ -155,7 +141,7 @@ async function loadPassage(reference){
   const res=await fetch(`/api/passage?q=${encodeURIComponent(reference)}&translation=${encodeURIComponent(translation)}`,{cache:'no-store'});
   const payload=await res.json();
   if(!res.ok){
-   updateStatus(statusForResponse(res.status,payload.code));
+   updateStatus(statusForResponse(res.status));
    if(requestId!==state.requestId)return;
    const configured=payload.code!=='not_configured';
    content.replaceChildren(buildFallback(payload.message||'This translation is temporarily unavailable.',configured));
@@ -180,11 +166,11 @@ async function searchBible(q){
  showView('reader',false);updateUrl();state.loadedPassage=null;state.pendingPassage=null;state.pendingTranslation=null;state.fums=null;
  $('passage-attribution').hidden=true;$('reader-source-name').textContent='Keyword search via Crossway (ESV)';$('reader-title').textContent=`Search ESV: ${q}`;
  const box=$('passage-content');box.replaceChildren(create('div','message-panel','Searching the ESV text...'));$('passage-status').textContent='Searching ESV';
- const requestId=++state.requestId;translationRequests.set('ESV',requestId);setTranslationStatus('ESV','loading');
+ const requestId=++state.requestId;translationRequests.set('ESV',requestId);
  const updateStatus=status=>{if(translationRequests.get('ESV')===requestId)setTranslationStatus('ESV',status);};
  try{
   const res=await fetch(`/api/search?q=${encodeURIComponent(q)}`,{cache:'no-store'}),data=await res.json();
-  updateStatus(statusForResponse(res.status,data.code));
+  updateStatus(statusForResponse(res.status));
   if(requestId!==state.requestId)return;
   if(!res.ok){box.replaceChildren(buildFallback(data.message||'Bible search is not configured.'));return;}
   box.replaceChildren();box.append(create('h3','',`${data.total_results} matching verses`));
@@ -237,8 +223,6 @@ function removeBookmark(ref){state.bookmarks=state.bookmarks.filter(x=>x!==ref);
 function init(){document.body.classList.toggle('light',state.theme==='light');$('theme-toggle').textContent=state.theme==='light'?'☾':'☼';$('copyright-year').textContent=String(new Date().getFullYear());populateBookPicker();initAtlasPicker();buildJourneys();
  $('reader-translation').replaceChildren(...TRANSLATIONS.map(edition=>{const option=create('option','',`${edition.code} - ${edition.name}`);option.value=edition.code;return option;}));
  $('reader-translation').addEventListener('change',()=>selectTranslation($('reader-translation').value));
- $('translation-statuses').addEventListener('click',event=>{const button=event.target.closest('[data-translation]');if(button)selectTranslation(button.dataset.translation,true);});
- void loadTranslationStatuses();
  document.addEventListener('click',e=>{const button=e.target.closest('[data-view]');if(button){showView(button.dataset.view);return;}const ref=e.target.closest('[data-open]');if(ref)selectRef(ref.dataset.open);});
  $('hero-search').addEventListener('submit',e=>{e.preventDefault();const input=$('passage-input').value.trim();const parsed=parseRef(input);if(parsed)selectRef(parsed.formatted);else if(input.length>=2)void searchBible(input);else toast('Enter a reference or search term.');});
  $('side-book').addEventListener('change',populateChapters);$('side-open').addEventListener('click',()=>selectRef(`${$('side-book').value} ${$('side-chapter').value}`));
