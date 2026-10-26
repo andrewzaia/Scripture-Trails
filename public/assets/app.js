@@ -15,7 +15,9 @@ async function hasImportedReferences(){if(referenceManifest===null){referenceMan
 const create=(tag,className,text)=>{const node=document.createElement(tag);if(className)node.className=className;if(text!==undefined)node.textContent=text;return node;};
 function toast(message){const el=$('toast');el.textContent=message;el.classList.add('visible');clearTimeout(toastTimer);toastTimer=setTimeout(()=>el.classList.remove('visible'),2500);}
 function esvUrl(ref){return `https://www.esv.org/${encodeURIComponent(ref.replace(/\s/g,'+')).replace(/%2B/g,'+')}/`;}
-function lsbUrl(){return 'https://read.lsbible.org/';}
+function bibleBookSlug(name){return name.toLowerCase().replace(/\s+/g,'-');}
+function lsbUrl(ref){const p=parseRef(ref);return p?`https://read.lsbible.org/${bibleBookSlug(p.book.name)}/${p.chapter}/${p.verse||1}`:'https://read.lsbible.org/';}
+function nasbUrl(ref){const p=parseRef(ref);return p?`https://bible.lockman.org/nasb2020/${bibleBookSlug(p.book.name)}/${p.chapter}`:'https://bible.lockman.org/nasb2020/';}
 async function getCounts(){if(!verseCounts){verseCounts=fetch('/data/verse-counts.json').then(r=>r.ok?r.json():{}).catch(()=>({}));}return verseCounts;}
 function nextReadingContext(ref,counts){const p=parseRef(ref);if(!p)return [];const count=counts?.[p.book.name]?.[p.chapter-1];if(!Number.isInteger(count)||!count)return [];const verse=p.verse||1;const to=[];if(verse>1)to.push(`${p.book.name} ${p.chapter}:${verse-1}`);if(verse<count)to.push(`${p.book.name} ${p.chapter}:${verse+1}`);return to.map(v=>({from:ref,to:v,type:'context',description:'Adjacent verse for reading context only - not an interpretative cross-reference',source:'Reading context'}));}
 function updateUrl(){const url=new URL(window.location.href);url.searchParams.set('view',state.view);url.searchParams.set('ref',state.ref);history.pushState({},'',url);}
@@ -48,7 +50,7 @@ async function renderConnections(){const ref=state.ref;const connections=await c
 function renderNote(){const note=state.notes[state.ref]||'';$('notes-text').value=note;}
 function currentIsSaved(){return state.bookmarks.includes(state.ref);}
 function setSaveButton(){$('bookmark-current').textContent=currentIsSaved()?'★ Saved':'☆ Save';}
-function refreshCurrentUi(){const p=parseRef(state.ref);$('reader-title').textContent=state.ref;$('read-on-esv').href=esvUrl(state.ref);$('read-on-nasb').title=`Open the official Lockman NASB 2020 reader and locate ${state.ref}`; $('read-on-lsb').href=lsbUrl(state.ref);$('prev-chapter').disabled=!adjacentChapter(state.ref,-1);$('next-chapter').disabled=!adjacentChapter(state.ref,1);$('read-prev').disabled=!adjacentChapter(state.ref,-1);$('read-next').disabled=!adjacentChapter(state.ref,1);setSaveButton();renderNote();void renderConnections();if(p){$('side-book').value=p.book.name;populateChapters();$('side-chapter').value=String(p.chapter);}if(state.view==='reader')markSelectedVerse();}
+function refreshCurrentUi(){const p=parseRef(state.ref);$('reader-title').textContent=state.ref;$('read-on-esv').href=esvUrl(state.ref);$('read-on-nasb').href=nasbUrl(state.ref);$('read-on-nasb').title=`Open ${state.ref} in the official NASB 2020 reader`; $('read-on-lsb').href=lsbUrl(state.ref);$('prev-chapter').disabled=!adjacentChapter(state.ref,-1);$('next-chapter').disabled=!adjacentChapter(state.ref,1);$('read-prev').disabled=!adjacentChapter(state.ref,-1);$('read-next').disabled=!adjacentChapter(state.ref,1);setSaveButton();renderNote();void renderConnections();if(p){$('side-book').value=p.book.name;populateChapters();$('side-chapter').value=String(p.chapter);}if(state.view==='reader')markSelectedVerse();}
 function buildFallback(message,isError=false){const div=create('div','message-panel');div.append(create('h3','',isError?'Unable to load Scripture text':'Read this passage in the ESV'));div.append(create('p','',message));const a=create('a','',`Open ${state.ref} on ESV.org ↗`);a.href=esvUrl(state.ref);a.target='_blank';a.rel='noopener noreferrer';div.append(a);return div;}
 function safeHtml(raw){const doc=new DOMParser().parseFromString(raw,'text/html');const allowed=new Set(['DIV','P','H2','H3','H4','H5','SPAN','B','STRONG','EM','I','SMALL','A','SUP','SUB','BR','UL','OL','LI','BLOCKQUOTE','HR','SECTION']);
  const walker=node=>{if(node.nodeType===Node.TEXT_NODE)return document.createTextNode(node.nodeValue);if(node.nodeType!==Node.ELEMENT_NODE)return document.createDocumentFragment();const name=allowed.has(node.tagName)?node.tagName.toLowerCase():'span';const el=document.createElement(name);
@@ -116,7 +118,7 @@ async function renderGraph(){
  const ref=state.ref, requestId=++state.graphRequestId;
  $('graph-current').textContent=ref;$('graph-info-ref').textContent=ref;
  $('graph-info-type').textContent=p?`${p.book.testament} | ${p.book.name}`:'';
- $('atlas-nasb').title=`Open the Lockman NASB 2020 reader and locate ${ref}`;$('atlas-lsb').href=lsbUrl(ref);
+ $('atlas-nasb').href=nasbUrl(ref);$('atlas-nasb').title=`Open ${ref} in the official NASB 2020 reader`;$('atlas-lsb').href=lsbUrl(ref);
  $('graph-progress').textContent='Following Scripture references...';
  const list=$('graph-details-list');list.replaceChildren(create('p','soft-note','Loading connections...'));
  if(!state.graph)state.graph=new ScriptureGraph($('graph-canvas'),next=>selectRef(next,'connections'));
