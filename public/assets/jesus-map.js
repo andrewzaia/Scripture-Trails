@@ -63,7 +63,7 @@ export function validateAuditData(audit,journeys,geography){
  const sources=new Set(Object.keys(geography.sources));if(new Set(audit.sourceChecks.map(x=>x.source)).size!==sources.size||audit.sourceChecks.some(x=>!sources.has(x.source)))throw Error('Source checklist does not match published sources');
  return true;
 }
-export function createJesusMap(root,onOpenPassage){
+export function createJesusMap(root,onOpenPassage,onOpenCity){
  let data,geography,audit,issueMap,phaseMap,placeMap,index=0,visited=[],timer=null,view={x:0,y:0,w:1100,h:780},phase='all',mode='stage';
  const $=name=>root.querySelector(`[data-jesus="${name}"]`);
  const svg=$('map');const duration=2300;
@@ -164,7 +164,7 @@ export function createJesusMap(root,onOpenPassage){
  function selectPlace(id,move=false){const place=placeMap.get(id);if(!place)return;
  const matches=data.events.filter(e=>e.place===id);const list=$('visits');list.replaceChildren();$('visit-count').textContent=`${matches.length} recorded ${matches.length===1?'episode':'episodes'}`;
  for(const e of matches){const b=el('button','jesus-visit',`${String(data.events.indexOf(e)+1).padStart(2,'0')}  ${e.title}`);b.type='button';b.classList.toggle('active',e.id===data.events[index].id);b.addEventListener('click',()=>{stop();phase='all';$('phase').value='all';selectEvent(data.events.indexOf(e));selectPlace(id);});list.append(b);}
- $('place-caption').textContent=`${place.name} | ${place.region}`;renderPlaceStudy(id);if(move)focus(place.coordinates,true);
+ $('place-caption').textContent=`${place.name} | ${place.region}`;renderPlaceStudy(id);const hasStudy=['jerusalem','nazareth','capernaum','bethlehem','jericho'].includes(id);$('city-deep-link-wrap').hidden=!hasStudy; if(hasStudy)$('city-deep-link').onclick=()=>onOpenCity?.(id);if(move)focus(place.coordinates,true);
  }
  function move(delta){const items=getList();let pos=items.findIndex(e=>e.id===data.events[index].id);const next=items[pos+delta];if(!next){stop();return;}selectEvent(data.events.indexOf(next));selectPlace(next.place);}
  function start(){if(timer!==null){stop();return;}const items=getList();if(items.length===0)return;let pos=items.findIndex(e=>e.id===data.events[index].id);if(pos===items.length-1){selectEvent(data.events.indexOf(items[0]));selectPlace(items[0].place);}

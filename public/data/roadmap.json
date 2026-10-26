@@ -3,9 +3,9 @@
   "updated": "2026-10-26",
   "description": "A transparent, evidence-aware roadmap. Delivered means implementation exists, not that every scholarly question is settled. The accuracy audit is an initial, publicly documented editorial screening, not external specialist certification.",
   "currentFocus": [
-    "Deep research dossiers for five core cities",
     "Gospel-by-Gospel chronology comparison",
-    "Independent scholarly review of flagged audit questions"
+    "Independent expert review of highlighted research issues",
+    "People, places and events index"
   ],
   "phases": [
     {
@@ -127,15 +127,17 @@
     {
       "id": "place-deep-dives",
       "phase": "next",
-      "status": "next",
-      "title": "Deeper individual city dossiers",
-      "summary": "Next: commission and expand research-grade dossiers with site-level source notes for Jerusalem, Nazareth, Capernaum, Bethlehem and Jericho.",
+      "status": "delivered",
+      "title": "Five deep historical city studies",
+      "summary": "Five browsable studies of Jerusalem, Nazareth, Capernaum, Bethlehem and Jericho, each with source-linked biblical history, chronology and archaeological qualification, plus contested identification comparisons.",
       "capabilities": [
-        "Full dossiers for Jerusalem, Nazareth, Capernaum, Bethlehem and Jericho",
-        "Document excavation chronology and which structures are later traditions",
-        "Bring disputed alternatives to the foreground for Cana, Bethsaida and Emmaus"
+        "Five dedicated, independently selectable city pages using one reusable design",
+        "40 primary Scripture links, 25 historical period summaries, 20 individually source-qualified findings",
+        "Modern site photo licensing and source attribution with illustrative site-orientation maps",
+        "Comparative location studies for Cana, Bethsaida and Emmaus",
+        "Direct navigation from Journeys of Jesus and to Bible Reader or Connection Atlas"
       ],
-      "verification": "Ready when each featured site has peer-reviewed or primary institutional citations and a visible evidence register."
+      "verification": "Implementation, data schema and citations tested. The studies are sourced editorial summaries, not externally peer-reviewed archaeological monographs; coordinate markers are approximations and the photo gallery depicts modern sites."
     },
     {
       "id": "timeline-evidence",
@@ -166,7 +168,7 @@
     {
       "id": "people-places",
       "phase": "connections",
-      "status": "planned",
+      "status": "next",
       "title": "People, places and events index",
       "summary": "Link biblical persons, locations and key events to the reader, Atlas and journey map.",
       "capabilities": [

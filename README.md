@@ -206,3 +206,16 @@ The 79 Gospel and Acts episodes and 35 mapped place dossiers now include **initi
 - The roadmap records this **first editorial screening** as delivered while retaining a separate **independent specialist review** milestone as research. This avoids misleading users into assuming all passages have received scholarly signoff.
 
 Sources used in the issue register include canonical verses opened via the site's licensed reader, Crossway's textual note to John 7:53-8:11, SIL Bible translation notes on Mark 5, reputable commentary, and academic work on Gospel chronology. Links within `jesus-audit.json` are external background sources, **not substitutes for the biblical text**.
+
+
+## Historical City Studies - biblical geography milestone (26 October 2026)
+
+A distinct navigable view `?view=city-studies&city=jerusalem` provides five expanded studies using one reusable data-backed rendering system: Jerusalem, Nazareth, Capernaum, Bethlehem and Jericho. Switch cities with keyboard-accessible tabs or use the deep-study link in the Journeys of Jesus map. Each study includes a primary Scripture passage register, five broad historical periods, four individually qualified material-history findings, a modern-coordinate orientation diagram with selectable points, open research questions and independently linked institutional or scholarly sources. A separate interactive comparison discusses alternative locations proposed for Cana, Bethsaida and Emmaus without asserting any one as definitive.
+
+Data: `public/data/city-studies.json` (5 cities, 40 biblical references, 25 historical periods, 20 evidence cards, 15 bibliography sources and 7 disputed candidate points). Code: `public/assets/city-studies.js` and `city-studies.css`. Tests: `tests/city-studies.test.mjs`.
+
+**Source hierarchy:** Biblical passages are primary for what the texts say; external evidence supports only the independent archaeological or historical claim for which it is cited. Later pilgrimage monuments are not identified as the original first-century event settings. The existence of Bronze Age Jericho and late Roman Capernaum architecture does not independently establish Joshua 6 or an individual Gospel miracle. Sites and candidate coordinates are modern orientation aids, not ancient city polygons or travel paths.
+
+**Modern images:** The five city cover photographs link to identified Wikimedia Commons file pages and licence URLs, with authors credited. Because the site does not redistribute the images locally, photos are requested from Wikimedia when a city study is opened and may fail if Wikimedia is unreachable; generic original cover art remains as the fallback. `public/_headers` permits images from `commons.wikimedia.org` and `upload.wikimedia.org` only; scripts, fonts and ESV text remain same-origin.
+
+This milestone is an **editorial research release**. External specialist peer review and disputed-site adjudication are still outstanding and separately tracked on the roadmap. No additional copyrighted Bible text is bundled in the data or JavaScript.

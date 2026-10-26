@@ -1,3 +1,12 @@
+## 26 October 2026 - Five deep historical city studies
+
+- Introduced a separate Historical City Studies navigation view and direct deep links for Jerusalem, Nazareth, Capernaum, Bethlehem and Jericho.
+- Added 40 primary biblical reference entries, 25 broadly dated historical periods and 20 documented archaeological/historical findings with an explicit limitation on every claim.
+- Included interactive modern-site orientation diagrams and a candidate-comparison explorer for Cana, Bethsaida and Emmaus; no ancient route or precise Gospel house footprint is invented.
+- Linked Wikimedia Commons photos with author/licence attribution and retained original illustrative art as an offline fallback.
+- Connected the new city pages to Gospel journey episodes, Bible reading and the Connection Atlas.
+- Preserved the prior map and evidence audit; changed the roadmap to mark the implemented city-study milestone Delivered while retaining specialist review and Gospel chronology comparison as future work.
+
 ## 2026-10-26 - Gospel geographical and textual evidence screening
 
 - Audited the data structure for all 79 listed episodes and all 35 place dossiers; published review state, corrections and open research issues.

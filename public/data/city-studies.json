@@ -1,0 +1,1322 @@
+{
+  "version": 1,
+  "updated": "2026-10-26",
+  "methodology": "Canonical Gospel/Acts and Old Testament references are primary for claims made by biblical authors. External archaeological, heritage and historical sources support only the independent material-history claims to which they are attached. Timelines show approximate periods, not a fully dated life of Jesus. Illustrative pins and outlines are NOT surveyed ancient borders, pilgrim routes or site footprints. This is research-based editorial synthesis, not peer-reviewed certification.",
+  "reviewStatus": "Source-linked editorial research; external specialist review outstanding",
+  "sources": {
+    "jerusalem-upper": {
+      "title": "Jerusalem: the Upper City during the Second Temple period",
+      "publisher": "Israel Ministry of Foreign Affairs, archaeological sites series",
+      "url": "https://www.gov.il/en/pages/jerusalem-the-upper-city-during-the-second-temple-period",
+      "kind": "Historical archaeology overview"
+    },
+    "jerusalem-arch": {
+      "title": "Archaeology in Jerusalem: Ophel, City of David and Citadel",
+      "publisher": "Israel Ministry of Foreign Affairs",
+      "url": "https://www.gov.il/en/pages/archeology-in-jerusalem",
+      "kind": "Site archaeology overview"
+    },
+    "jerusalem-unesco": {
+      "title": "Old City of Jerusalem and its Walls",
+      "publisher": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/148/",
+      "kind": "Heritage record"
+    },
+    "nazareth-iaa": {
+      "title": "The Settlement History of Nazareth in the Iron Age and Early Roman Period",
+      "publisher": "Yardenna Alexandre, Israel Antiquities Authority, Atiqot 98",
+      "url": "https://publications.iaa.org.il/atiqot/vol98/iss1/3/",
+      "kind": "Excavation report, 2025"
+    },
+    "nazareth-cambridge": {
+      "title": "Early Roman-period Nazareth and the Sisters of Nazareth convent",
+      "publisher": "Ken Dark, The Antiquaries Journal, Cambridge University Press",
+      "url": "https://www.cambridge.org/core/journals/antiquaries-journal/article/abs/early-romanperiod-nazareth-and-the-sisters-of-nazareth-convent/CC6D566B2F905B663540434FC495A37B",
+      "kind": "Peer-reviewed archaeological research, 2012"
+    },
+    "nazareth-oxford": {
+      "title": "Archaeology of Jesus' Nazareth",
+      "publisher": "Ken Dark, Oxford University Press",
+      "url": "https://academic.oup.com/book/45361",
+      "kind": "Research monograph, 2023"
+    },
+    "capernaum-franciscans": {
+      "title": "Capernaum: sanctuary excavations and synagogue",
+      "publisher": "Custody of the Holy Land",
+      "url": "https://www.custodia.org/en/sanctuaries/capernaum/",
+      "kind": "Excavation and site account"
+    },
+    "capernaum-syn": {
+      "title": "Capernaum synagogue record and bibliography",
+      "publisher": "Bornblum Eretz Israel Synagogues Website, Kinneret College",
+      "url": "https://synagogues.kinneret.ac.il/synagogues/capernaum/",
+      "kind": "Academic site inventory"
+    },
+    "bethlehem-unesco": {
+      "title": "Birthplace of Jesus: Church of the Nativity and Pilgrimage Route, Bethlehem",
+      "publisher": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/1433/",
+      "kind": "Heritage record"
+    },
+    "jericho-unesco": {
+      "title": "Ancient Jericho / Tell es-Sultan",
+      "publisher": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/1687",
+      "kind": "Inscribed archaeological site"
+    },
+    "jericho-palaces": {
+      "title": "Archaeological Palaces of Tulul Abu el-'Alayiq",
+      "publisher": "UNESCO World Heritage Centre, tentative list (not inscribed)",
+      "url": "https://whc.unesco.org/en/tentativelists/6947/",
+      "kind": "Tentative-list research description"
+    },
+    "cana-map": {
+      "title": "Cana location proposals and ancient names",
+      "publisher": "OpenBible.info geographic research index",
+      "url": "https://www.openbible.info/geo/",
+      "kind": "Geographical comparison, not archaeological adjudication"
+    },
+    "bethsaida-dig": {
+      "title": "Bethsaida-Julias el-Araj excavation, season eight",
+      "publisher": "el-Araj Excavation Project",
+      "url": "https://www.bethsaida-julias.com/season8report",
+      "kind": "Project excavation report, not consensus"
+    },
+    "emmaus-openbible": {
+      "title": "Emmaus proposed modern identifications",
+      "publisher": "OpenBible.info geographical research",
+      "url": "https://www.openbible.info/geo/ancient/ae7274b/emmaus",
+      "kind": "Comparative identification index"
+    },
+    "emmaus-biblegateway": {
+      "title": "Emmaus entry",
+      "publisher": "Encyclopedia of the Bible, Bible Gateway",
+      "url": "https://www.biblegateway.com/resources/encyclopedia-of-the-bible/Emmaus",
+      "kind": "Bible geography reference"
+    }
+  },
+  "cities": [
+    {
+      "id": "jerusalem",
+      "name": "Jerusalem",
+      "strapline": "Temple, kingship, feasts and the final week",
+      "modern": "Jerusalem",
+      "ancient": [
+        "Jerusalem",
+        "Zion (often poetic or part of the city)",
+        "City of David (ancient southeastern ridge)"
+      ],
+      "location": [
+        35.233,
+        31.78
+      ],
+      "theme": "judah",
+      "status": "A securely located city, but not every Gospel event site can be fixed.",
+      "lead": "Jerusalem unites royal traditions, the Temple and Jesus' final days. The Gospel accounts place multiple visits and teachings here; archaeology provides evidence for the city's ancient settlement and its Second Temple urban setting without verifying every room, trial route or sacred spot.",
+      "biblical": [
+        {
+          "ref": "2 Samuel 5:6-10",
+          "note": "David and Jerusalem",
+          "kind": "old-testament"
+        },
+        {
+          "ref": "1 Kings 8:1-13",
+          "note": "Dedication of the Temple",
+          "kind": "old-testament"
+        },
+        {
+          "ref": "Psalm 122:1-9",
+          "note": "Pilgrimage and prayer for Jerusalem",
+          "kind": "old-testament"
+        },
+        {
+          "ref": "Isaiah 2:2-4",
+          "note": "Prophetic vision involving Zion",
+          "kind": "old-testament"
+        },
+        {
+          "ref": "Luke 2:41-52",
+          "note": "Jesus at the temple at twelve",
+          "kind": "new-testament"
+        },
+        {
+          "ref": "John 2:13-25",
+          "note": "Passover and temple action",
+          "kind": "new-testament"
+        },
+        {
+          "ref": "John 7:1-52",
+          "note": "Teaching at the Feast of Booths",
+          "kind": "new-testament"
+        },
+        {
+          "ref": "John 9:1-41",
+          "note": "Healing of the man born blind",
+          "kind": "new-testament"
+        },
+        {
+          "ref": "Luke 19:28-48",
+          "note": "Entry and teaching",
+          "kind": "new-testament"
+        },
+        {
+          "ref": "Mark 14:12-15:47",
+          "note": "Supper, trial, crucifixion and burial",
+          "kind": "new-testament"
+        },
+        {
+          "ref": "John 20:1-29",
+          "note": "Resurrection narratives and appearances",
+          "kind": "new-testament"
+        }
+      ],
+      "timeline": [
+        {
+          "period": "Davidic kingdom",
+          "dates": "Traditional biblical period: around 1000 BCE",
+          "description": "The biblical histories depict David taking Jerusalem and making it a royal centre. Modern archaeological arguments about the scale and chronology of early Judah are debated.",
+          "passages": [
+            "2 Samuel 5:6-10"
+          ],
+          "sourceIds": [
+            "jerusalem-arch"
+          ],
+          "classification": "biblical-and-historical"
+        },
+        {
+          "period": "First Temple era",
+          "dates": "First millennium BCE",
+          "description": "Royal, religious and administrative Jerusalem is described in Kings and the prophets; remains in the City of David area document Iron Age habitation.",
+          "passages": [
+            "1 Kings 8:1-13",
+            "2 Kings 25:1-12"
+          ],
+          "sourceIds": [
+            "jerusalem-arch"
+          ],
+          "classification": "historical-context"
+        },
+        {
+          "period": "Second Temple and Herodian expansion",
+          "dates": "Late first century BCE to first century CE",
+          "description": "Herodian building and pilgrimage infrastructure shaped the city experienced by Jesus. Surviving excavated streets, steps, walls and residential areas document the setting, not individual miracles.",
+          "passages": [
+            "Luke 19:45-48",
+            "John 2:13-25"
+          ],
+          "sourceIds": [
+            "jerusalem-upper",
+            "jerusalem-arch"
+          ],
+          "classification": "historical-context"
+        },
+        {
+          "period": "Destruction of the Second Temple",
+          "dates": "70 CE",
+          "description": "Roman destruction reshaped the city after the Gospel events. This later horizon is archaeologically distinct from the ministry years.",
+          "passages": [],
+          "sourceIds": [
+            "jerusalem-upper"
+          ],
+          "classification": "historical-context"
+        },
+        {
+          "period": "Christian and later pilgrimage",
+          "dates": "Fourth century CE onward",
+          "description": "Churches and commemorative locations accumulated over later centuries, preserving traditions that are not identical to first-century archaeological proof.",
+          "passages": [],
+          "sourceIds": [
+            "jerusalem-unesco"
+          ],
+          "classification": "historical-context"
+        }
+      ],
+      "findings": [
+        {
+          "title": "Herodian Upper City",
+          "kind": "excavation",
+          "claim": "Remains of substantial housing, walls and urban growth document Jerusalem in the late Second Temple period.",
+          "limitation": "The finds establish a city context, not where a specific Gospel conversation happened.",
+          "sourceIds": [
+            "jerusalem-upper"
+          ],
+          "passages": []
+        },
+        {
+          "title": "Temple precinct approaches",
+          "kind": "excavation",
+          "claim": "Archaeological park remains include southern steps and entrances associated with pilgrimage access.",
+          "limitation": "The retained structures are not evidence that Jesus used a particular stone step.",
+          "sourceIds": [
+            "jerusalem-arch"
+          ],
+          "passages": [
+            "Luke 19:45-48"
+          ]
+        },
+        {
+          "title": "City of David and earlier layers",
+          "kind": "excavation",
+          "claim": "Multiple Iron Age and later remains attest occupation on the southeastern ridge.",
+          "limitation": "Attribution of individual walls and palaces to biblical figures is debated.",
+          "sourceIds": [
+            "jerusalem-arch"
+          ],
+          "passages": [
+            "2 Samuel 5:6-10"
+          ]
+        },
+        {
+          "title": "Holy Sepulchre and sacred sites",
+          "kind": "tradition",
+          "claim": "Later Christian pilgrimage monuments commemorate the death and burial narratives.",
+          "limitation": "Cultural importance of commemoration does not independently prove a precise Gospel event spot.",
+          "sourceIds": [
+            "jerusalem-unesco"
+          ],
+          "passages": [
+            "John 19:17-42"
+          ]
+        }
+      ],
+      "mapPoints": [
+        {
+          "id": "jerusalem-core",
+          "title": "Jerusalem city centre (orientation)",
+          "coordinates": [
+            35.233,
+            31.78
+          ],
+          "kind": "city",
+          "note": "Modern-centre marker, not the first-century city boundary.",
+          "sourceIds": []
+        },
+        {
+          "id": "jerusalem-temple",
+          "title": "Temple precinct / elevated platform",
+          "coordinates": [
+            35.236,
+            31.778
+          ],
+          "kind": "site",
+          "note": "Approximate ancient precinct. Present walls reflect many later periods.",
+          "sourceIds": [
+            "jerusalem-upper",
+            "jerusalem-arch"
+          ]
+        },
+        {
+          "id": "jerusalem-david",
+          "title": "City of David ridge",
+          "coordinates": [
+            35.236,
+            31.772
+          ],
+          "kind": "site",
+          "note": "Southeastern ridge with Iron Age and later occupation.",
+          "sourceIds": [
+            "jerusalem-arch"
+          ]
+        },
+        {
+          "id": "jerusalem-olives",
+          "title": "Mount of Olives ridge",
+          "coordinates": [
+            35.259,
+            31.78
+          ],
+          "kind": "context",
+          "note": "Ridge east of Jerusalem; particular events are not pinpointed.",
+          "sourceIds": []
+        }
+      ],
+      "debates": [
+        "The exact locations of the trial settings, Golgotha and the burial tomb cannot all be confirmed archaeologically.",
+        "The Synoptic Gospels and John present different patterns of Jerusalem visits and temple action chronology.",
+        "Topography, streets and borders changed between the First Temple, Second Temple and later periods."
+      ],
+      "sourceIds": [
+        "jerusalem-upper",
+        "jerusalem-arch",
+        "jerusalem-unesco"
+      ],
+      "image": {
+        "title": "Modern aerial view of Jerusalem and the Temple Mount",
+        "file": "ISR-2013-Aerial-Jerusalem-Temple_Mount_01.jpg",
+        "author": "Andrew Shiva",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "page": "https://commons.wikimedia.org/wiki/File:ISR-2013-Aerial-Jerusalem-Temple_Mount_01.jpg"
+      }
+    },
+    {
+      "id": "nazareth",
+      "name": "Nazareth",
+      "strapline": "A Galilean home in an Early Roman village",
+      "modern": "Nazareth, Lower Galilee",
+      "ancient": [
+        "Nazareth",
+        "Nazara (New Testament Greek variant)"
+      ],
+      "location": [
+        35.296,
+        32.703
+      ],
+      "theme": "galilee",
+      "status": "Early Roman settlement attested; no excavated house can be named Jesus' home.",
+      "lead": "The Gospels identify Nazareth as the community in which Jesus grew up and as the scene of a synagogue reading. Published excavations now provide material context for an Early Roman village, including domestic activity and subterranean storage spaces. Later pilgrimage sites should not be mistaken for excavated proof of a specific family dwelling.",
+      "biblical": [
+        {
+          "ref": "Matthew 2:19-23",
+          "note": "Joseph brings the family to Nazareth",
+          "kind": "new-testament"
+        },
+        {
+          "ref": "Luke 2:39-40",
+          "note": "The family returns to Galilee and Nazareth",
+          "kind": "new-testament"
+        },
+        {
+          "ref": "Luke 2:51-52",
+          "note": "Life and growth after the Jerusalem pilgrimage",
+          "kind": "new-testament"
+        },
+        {
+          "ref": "Luke 4:16-30",
+          "note": "Jesus reads in a synagogue and addresses his hometown",
+          "kind": "new-testament"
+        },
+        {
+          "ref": "Mark 6:1-6",
+          "note": "Teaching amid the response of hometown residents",
+          "kind": "new-testament"
+        },
+        {
+          "ref": "John 1:45-46",
+          "note": "Nazareth in Philip and Nathanael's conversation",
+          "kind": "new-testament"
+        }
+      ],
+      "timeline": [
+        {
+          "period": "Iron Age evidence",
+          "dates": "Tenth to early eighth centuries BCE",
+          "description": "One excavated area preserves Iron Age occupation strata; this does not establish an OT narrative featuring Nazareth.",
+          "passages": [],
+          "sourceIds": [
+            "nazareth-iaa"
+          ],
+          "classification": "historical-context"
+        },
+        {
+          "period": "Late Hellenistic settlement",
+          "dates": "Late second to first century BCE",
+          "description": "Excavated strata indicate occupation before the period of Jesus.",
+          "passages": [],
+          "sourceIds": [
+            "nazareth-iaa"
+          ],
+          "classification": "historical-context"
+        },
+        {
+          "period": "Early Roman farming village",
+          "dates": "First century CE",
+          "description": "Dwelling and silo/pit evidence supports an occupied Jewish settlement in the Gospel-era region.",
+          "passages": [
+            "Luke 4:16-30"
+          ],
+          "sourceIds": [
+            "nazareth-iaa",
+            "nazareth-oxford"
+          ],
+          "classification": "historical-context"
+        },
+        {
+          "period": "Pilgrimage commemorations",
+          "dates": "Byzantine era onward",
+          "description": "Church and pilgrimage landscapes developed around traditional accounts of the Annunciation and Jesus' upbringing.",
+          "passages": [],
+          "sourceIds": [
+            "nazareth-cambridge",
+            "nazareth-oxford"
+          ],
+          "classification": "historical-context"
+        },
+        {
+          "period": "Modern excavation and reassessment",
+          "dates": "Twentieth to twenty-first centuries",
+          "description": "Modern archaeological projects reassess domestic structures and layers without identifying a secure Jesus-family household.",
+          "passages": [],
+          "sourceIds": [
+            "nazareth-iaa",
+            "nazareth-cambridge"
+          ],
+          "classification": "historical-context"
+        }
+      ],
+      "findings": [
+        {
+          "title": "Late Hellenistic / Early Roman strata",
+          "kind": "excavation",
+          "claim": "Published excavations near the Annunciation compound reveal dwelling and subterranean storage contexts.",
+          "limitation": "Occupation evidence does not assign an excavated dwelling to Mary, Joseph or Jesus.",
+          "sourceIds": [
+            "nazareth-iaa"
+          ],
+          "passages": []
+        },
+        {
+          "title": "Sisters of Nazareth site",
+          "kind": "peer-reviewed",
+          "claim": "A partially rock-cut first-century structure and later religious phases were documented and reinterpreted by Ken Dark.",
+          "limitation": "The specific biblical household attribution is a later tradition, not a proven archaeological identity.",
+          "sourceIds": [
+            "nazareth-cambridge"
+          ],
+          "passages": []
+        },
+        {
+          "title": "Settlement as farming community",
+          "kind": "research",
+          "claim": "Site-wide work supports a first-century Galilean village with Jewish material culture.",
+          "limitation": "Population size and the boundaries of the Gospel-era settlement are not securely fixed.",
+          "sourceIds": [
+            "nazareth-oxford"
+          ],
+          "passages": []
+        },
+        {
+          "title": "Annunciation traditions",
+          "kind": "tradition",
+          "claim": "Christian churches and local commemoration preserve later religious traditions tied to Nazareth.",
+          "limitation": "The Gospel narratives do not provide coordinates for these traditional holy sites.",
+          "sourceIds": [
+            "nazareth-oxford"
+          ],
+          "passages": [
+            "Luke 1:26-38"
+          ]
+        }
+      ],
+      "mapPoints": [
+        {
+          "id": "nazareth-core",
+          "title": "Nazareth village vicinity",
+          "coordinates": [
+            35.296,
+            32.703
+          ],
+          "kind": "city",
+          "note": "Approximate modern town centre, not a surveyed Roman-period village boundary.",
+          "sourceIds": []
+        },
+        {
+          "id": "nazareth-annunciation",
+          "title": "Annunciation compound / excavations",
+          "coordinates": [
+            35.297,
+            32.7
+          ],
+          "kind": "site",
+          "note": "Vicinity of the reported archaeological strata; coordinates for study orientation only.",
+          "sourceIds": [
+            "nazareth-iaa"
+          ]
+        },
+        {
+          "id": "nazareth-sisters",
+          "title": "Sisters of Nazareth complex",
+          "coordinates": [
+            35.295,
+            32.702
+          ],
+          "kind": "site",
+          "note": "Site of archaeological work on first-century and later deposits; approximate marker.",
+          "sourceIds": [
+            "nazareth-cambridge"
+          ]
+        }
+      ],
+      "debates": [
+        "Nazareth is not named in the Old Testament; avoid treating later theological allusions as a named historical reference.",
+        "The Luke 4 synagogue scene is recorded at Nazareth, but no existing building is proven to be that synagogue.",
+        "Whether Mark 6 and Luke 4 report one visit or separate visits is a Gospel-harmonisation question."
+      ],
+      "sourceIds": [
+        "nazareth-iaa",
+        "nazareth-cambridge",
+        "nazareth-oxford"
+      ],
+      "image": {
+        "title": "Church of the Annunciation in modern Nazareth",
+        "file": "Nazareth_Church_of_the_Annunciation.jpg",
+        "author": "Magalhães",
+        "license": "Public domain",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "page": "https://commons.wikimedia.org/wiki/File:Nazareth_Church_of_the_Annunciation.jpg"
+      }
+    },
+    {
+      "id": "capernaum",
+      "name": "Capernaum",
+      "strapline": "Lakeside teaching, healings and a later monumental synagogue",
+      "modern": "Tell Hum, northwestern Sea of Galilee",
+      "ancient": [
+        "Capernaum",
+        "Kefar Nahum / Kfar Nahum",
+        "Tell Hum (modern site name)"
+      ],
+      "location": [
+        35.576,
+        32.881
+      ],
+      "theme": "galilee",
+      "status": "Roman-period settlement established; monumental limestone synagogue is later.",
+      "lead": "Capernaum is a recurring Gospel setting for Jesus' teaching and healings. Excavated basalt domestic remains supply a first-century village context, while the prominent white limestone synagogue belongs to a later construction phase. The distinction matters: an ancient town can be well identified without proving the exact room or building of any Gospel event.",
+      "biblical": [
+        {
+          "ref": "Matthew 4:13-17",
+          "note": "Jesus makes his home in Capernaum",
+          "kind": "new-testament"
+        },
+        {
+          "ref": "Mark 1:21-34",
+          "note": "Teaching in a synagogue and healing in Simon's household",
+          "kind": "new-testament"
+        },
+        {
+          "ref": "Mark 2:1-12",
+          "note": "Healing a paralysed man in Capernaum",
+          "kind": "new-testament"
+        },
+        {
+          "ref": "Matthew 8:5-13",
+          "note": "Centurion and his servant",
+          "kind": "new-testament"
+        },
+        {
+          "ref": "Luke 7:1-10",
+          "note": "Parallel account of the centurion",
+          "kind": "new-testament"
+        },
+        {
+          "ref": "John 6:22-59",
+          "note": "Bread of Life teaching in Capernaum synagogue",
+          "kind": "new-testament"
+        },
+        {
+          "ref": "Matthew 17:24-27",
+          "note": "Temple-tax teaching",
+          "kind": "new-testament"
+        },
+        {
+          "ref": "Matthew 11:20-24",
+          "note": "Words of warning about the town",
+          "kind": "new-testament"
+        }
+      ],
+      "timeline": [
+        {
+          "period": "Lakeside village",
+          "dates": "Late Hellenistic / Early Roman periods",
+          "description": "Domestic occupation formed the community reflected by the Gospel references; basalt was a common local building stone.",
+          "passages": [
+            "Mark 1:21-34"
+          ],
+          "sourceIds": [
+            "capernaum-franciscans"
+          ],
+          "classification": "historical-context"
+        },
+        {
+          "period": "Ministry narratives",
+          "dates": "First century CE",
+          "description": "Mark, Matthew, Luke and John place teaching, healings and household episodes here.",
+          "passages": [
+            "Mark 2:1-12",
+            "John 6:59"
+          ],
+          "sourceIds": [],
+          "classification": "biblical-narrative"
+        },
+        {
+          "period": "Christian assembly and memorials",
+          "dates": "Fourth century CE and later",
+          "description": "A house-site was adapted and commemorated in Christian architecture; its traditional association with Peter remains an identification of devotion.",
+          "passages": [
+            "Mark 1:29-31"
+          ],
+          "sourceIds": [
+            "capernaum-franciscans"
+          ],
+          "classification": "historical-context"
+        },
+        {
+          "period": "Monumental white synagogue",
+          "dates": "Late Roman / Byzantine period",
+          "description": "The excavated limestone synagogue and earlier underlying structural levels are distinct archaeological phases.",
+          "passages": [
+            "Mark 1:21-28"
+          ],
+          "sourceIds": [
+            "capernaum-franciscans",
+            "capernaum-syn"
+          ],
+          "classification": "historical-context"
+        },
+        {
+          "period": "Modern research",
+          "dates": "Twentieth century to present",
+          "description": "Successive campaigns investigated the synagogue, domestic remains and later churches, revising earlier dating proposals.",
+          "passages": [],
+          "sourceIds": [
+            "capernaum-franciscans",
+            "capernaum-syn"
+          ],
+          "classification": "historical-context"
+        }
+      ],
+      "findings": [
+        {
+          "title": "Basalt village housing",
+          "kind": "excavation",
+          "claim": "Domestic remains document the Roman-period town and later occupation.",
+          "limitation": "No individual miracle or occupant can be established from house walls alone.",
+          "sourceIds": [
+            "capernaum-franciscans"
+          ],
+          "passages": []
+        },
+        {
+          "title": "White limestone synagogue",
+          "kind": "excavation",
+          "claim": "Custody site investigations date the monumental limestone phase later than the first century, with underlying earlier constructions.",
+          "limitation": "The visible synagogue should not be labelled the unchanged building used by Jesus; dating arguments have a research history.",
+          "sourceIds": [
+            "capernaum-franciscans",
+            "capernaum-syn"
+          ],
+          "passages": [
+            "Mark 1:21-28"
+          ]
+        },
+        {
+          "title": "Traditional Peter house",
+          "kind": "tradition",
+          "claim": "Christian memorial buildings were built over earlier domestic phases at a venerated house-site.",
+          "limitation": "The attribution of a specific dwelling to Simon Peter is not independently demonstrable.",
+          "sourceIds": [
+            "capernaum-franciscans"
+          ],
+          "passages": [
+            "Mark 1:29-31"
+          ]
+        },
+        {
+          "title": "Synagogue inscriptions and architectural fragments",
+          "kind": "academic-inventory",
+          "claim": "The excavation inventory records architectural ornament and inscriptions associated with later synagogue remains.",
+          "limitation": "Decoration reflects later worship architecture, not what the first-century synagogue necessarily looked like.",
+          "sourceIds": [
+            "capernaum-syn"
+          ],
+          "passages": []
+        }
+      ],
+      "mapPoints": [
+        {
+          "id": "capernaum-centre",
+          "title": "Capernaum archaeological zone",
+          "coordinates": [
+            35.576,
+            32.881
+          ],
+          "kind": "city",
+          "note": "General tell/village orientation.",
+          "sourceIds": []
+        },
+        {
+          "id": "capernaum-syn",
+          "title": "Monumental synagogue remains",
+          "coordinates": [
+            35.578,
+            32.881
+          ],
+          "kind": "site",
+          "note": "Later limestone synagogue, not proven Gospel-period building.",
+          "sourceIds": [
+            "capernaum-franciscans",
+            "capernaum-syn"
+          ]
+        },
+        {
+          "id": "capernaum-peter",
+          "title": "Traditional Peter house area",
+          "coordinates": [
+            35.575,
+            32.88
+          ],
+          "kind": "tradition",
+          "note": "Excavated and later commemorated remains; precise Gospel attribution unproven.",
+          "sourceIds": [
+            "capernaum-franciscans"
+          ]
+        },
+        {
+          "id": "capernaum-shore",
+          "title": "Sea of Galilee shore",
+          "coordinates": [
+            35.576,
+            32.879
+          ],
+          "kind": "context",
+          "note": "Illustrative lake access, not a recorded individual boat landing.",
+          "sourceIds": []
+        }
+      ],
+      "debates": [
+        "The earlier synagogue beneath the visible later structure cannot simply be identified with the exact building Jesus entered.",
+        "Multiple visits to the same town may be narrative episodes rather than a count of separate journeys.",
+        "The town is secure enough for a city-level marker, while events within private houses are not pinpointed."
+      ],
+      "sourceIds": [
+        "capernaum-franciscans",
+        "capernaum-syn"
+      ],
+      "image": {
+        "title": "Limestone synagogue ruins at Capernaum (later than Jesus)",
+        "file": "Capernaum_Synagogue_Ruins.jpg",
+        "author": "zeevveez",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+        "page": "https://commons.wikimedia.org/wiki/File:Capernaum_Synagogue_Ruins.jpg"
+      }
+    },
+    {
+      "id": "bethlehem",
+      "name": "Bethlehem",
+      "strapline": "Davidic traditions and the infancy narratives",
+      "modern": "Bethlehem, West Bank",
+      "ancient": [
+        "Bethlehem",
+        "Bethlehem Ephrathah (Micah)",
+        "Ephrath / Ephrathah (related biblical usage)"
+      ],
+      "location": [
+        35.203,
+        31.705
+      ],
+      "theme": "judah",
+      "status": "The town is identified; the Nativity grotto is a Christian traditional attribution.",
+      "lead": "Bethlehem links the David narratives and the infancy accounts of Jesus. Scripture names the town; centuries of Christian commemoration identify the Church of the Nativity and a grotto with the birthplace. UNESCO documents that history of belief and architecture, not a first-century archaeological demonstration of the birth location.",
+      "biblical": [
+        {
+          "ref": "Ruth 1:1-2",
+          "note": "Bethlehem in the setting of Ruth",
+          "kind": "old-testament"
+        },
+        {
+          "ref": "Ruth 4:11-22",
+          "note": "Genealogy culminating in David",
+          "kind": "old-testament"
+        },
+        {
+          "ref": "1 Samuel 16:1-13",
+          "note": "Samuel sent to Jesse in Bethlehem",
+          "kind": "old-testament"
+        },
+        {
+          "ref": "Micah 5:2",
+          "note": "Bethlehem Ephrathah in a ruler prophecy",
+          "kind": "old-testament"
+        },
+        {
+          "ref": "Luke 2:1-20",
+          "note": "Birth and shepherds",
+          "kind": "new-testament"
+        },
+        {
+          "ref": "Matthew 2:1-12",
+          "note": "Magi visit Bethlehem",
+          "kind": "new-testament"
+        },
+        {
+          "ref": "Matthew 2:13-23",
+          "note": "Flight and later move to Nazareth",
+          "kind": "new-testament"
+        }
+      ],
+      "timeline": [
+        {
+          "period": "Bethlehem in biblical Judah",
+          "dates": "Biblical monarchy-era setting",
+          "description": "Ruth and Samuel describe Bethlehem in family, tribal and royal traditions.",
+          "passages": [
+            "Ruth 4:11-22",
+            "1 Samuel 16:1-13"
+          ],
+          "sourceIds": [],
+          "classification": "biblical-narrative"
+        },
+        {
+          "period": "Prophetic royal imagery",
+          "dates": "Prophetic period in Judah",
+          "description": "Micah names Bethlehem Ephrathah in a prophecy associated with a ruler; Matthew cites this passage.",
+          "passages": [
+            "Micah 5:2",
+            "Matthew 2:5-6"
+          ],
+          "sourceIds": [],
+          "classification": "biblical-narrative"
+        },
+        {
+          "period": "Birth narratives",
+          "dates": "Late first century BCE / early first century CE, dates debated",
+          "description": "Luke and Matthew name Bethlehem but do not provide coordinates for the stable, building or grotto.",
+          "passages": [
+            "Luke 2:1-7",
+            "Matthew 2:1"
+          ],
+          "sourceIds": [],
+          "classification": "biblical-narrative"
+        },
+        {
+          "period": "Early Christian identification",
+          "dates": "Second to fourth centuries CE",
+          "description": "UNESCO records a Christian tradition of birthplace identification dating back to at least the second century.",
+          "passages": [],
+          "sourceIds": [
+            "bethlehem-unesco"
+          ],
+          "classification": "historical-context"
+        },
+        {
+          "period": "Church of the Nativity",
+          "dates": "339 CE and sixth-century rebuilding",
+          "description": "An early church was completed by 339 CE; the current building largely reflects its sixth-century reconstruction and later changes.",
+          "passages": [],
+          "sourceIds": [
+            "bethlehem-unesco"
+          ],
+          "classification": "historical-context"
+        }
+      ],
+      "findings": [
+        {
+          "title": "Church of the Nativity construction phases",
+          "kind": "heritage",
+          "claim": "UNESCO records fourth-century church construction and surviving sixth-century rebuilding with earlier floor elements.",
+          "limitation": "Monumental phases postdate Jesus by centuries; they document commemoration.",
+          "sourceIds": [
+            "bethlehem-unesco"
+          ],
+          "passages": []
+        },
+        {
+          "title": "Grotto identification",
+          "kind": "tradition",
+          "claim": "A site beneath the church has been honoured as Jesus' birthplace from early Christian centuries.",
+          "limitation": "The textual record does not identify this specific cave and archaeology cannot verify the birth event.",
+          "sourceIds": [
+            "bethlehem-unesco"
+          ],
+          "passages": [
+            "Luke 2:1-7"
+          ]
+        },
+        {
+          "title": "Pilgrimage route and monastic complexes",
+          "kind": "heritage",
+          "claim": "Later pilgrimage routes, monasteries and churches document centuries of Christian veneration.",
+          "limitation": "These do not establish the path followed by Mary and Joseph or the magi.",
+          "sourceIds": [
+            "bethlehem-unesco"
+          ],
+          "passages": []
+        },
+        {
+          "title": "Davidic association",
+          "kind": "biblical-narrative",
+          "claim": "Ruth, Samuel and Micah situate the town within narratives and poetry concerning Davidic origins.",
+          "limitation": "Biblical literary claims remain distinct from archaeological proof of particular family households.",
+          "sourceIds": [],
+          "passages": [
+            "Ruth 4:11-22",
+            "1 Samuel 16:1-13",
+            "Micah 5:2"
+          ]
+        }
+      ],
+      "mapPoints": [
+        {
+          "id": "bethlehem-core",
+          "title": "Bethlehem town centre",
+          "coordinates": [
+            35.203,
+            31.705
+          ],
+          "kind": "city",
+          "note": "Modern town location; precise first-century footprint not shown.",
+          "sourceIds": []
+        },
+        {
+          "id": "bethlehem-nativity",
+          "title": "Church of the Nativity",
+          "coordinates": [
+            35.208,
+            31.704
+          ],
+          "kind": "tradition",
+          "note": "Site of a long-documented Christian birthplace tradition and later church phases.",
+          "sourceIds": [
+            "bethlehem-unesco"
+          ]
+        },
+        {
+          "id": "bethlehem-road",
+          "title": "Pilgrimage approach",
+          "coordinates": [
+            35.206,
+            31.709
+          ],
+          "kind": "context",
+          "note": "Later documented pilgrimage landscape, not a reconstructed Holy Family route.",
+          "sourceIds": [
+            "bethlehem-unesco"
+          ]
+        }
+      ],
+      "debates": [
+        "Luke 2 and Matthew 2 do not specify the date interval between Jesus' birth and the visit of the magi.",
+        "The cave or building associated with Jesus' birth is a later tradition, not an independently verified first-century site.",
+        "Historical questions about the census chronology and Herod date are unresolved and are not expressed as a precise year here."
+      ],
+      "sourceIds": [
+        "bethlehem-unesco"
+      ],
+      "image": {
+        "title": "Courtyard at the Church of the Nativity (modern)",
+        "file": "Courtyard_at_Church_of_the_Nativity,_Bethlehem.jpg",
+        "author": "Daniel Case",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "page": "https://commons.wikimedia.org/wiki/File:Courtyard_at_Church_of_the_Nativity,_Bethlehem.jpg"
+      }
+    },
+    {
+      "id": "jericho",
+      "name": "Jericho",
+      "strapline": "Ancient oasis, conquest narrative and Gospel encounters",
+      "modern": "Jericho, West Bank and its environs",
+      "ancient": [
+        "Jericho",
+        "Tell es-Sultan (ancient tell)",
+        "Tulul Abu el-Alayiq (palace area)"
+      ],
+      "location": [
+        35.445,
+        31.869
+      ],
+      "theme": "jordan",
+      "status": "The Bronze Age tell and Herodian-era palace landscape are distinct sites and time periods.",
+      "lead": "Jericho's long archaeological sequence predates New Testament events by millennia. The Bronze Age mound Tell es-Sultan supplies evidence for the ancient oasis, while the Hellenistic and Herodian palaces southwest of modern Jericho offer a more relevant picture of the late Second Temple period. The Gospels name Jericho for encounters with a blind man or men and Zacchaeus, without fixing the exact roadside or household.",
+      "biblical": [
+        {
+          "ref": "Joshua 2:1-24",
+          "note": "Rahab and spies at Jericho",
+          "kind": "old-testament"
+        },
+        {
+          "ref": "Joshua 6:1-27",
+          "note": "Conquest narrative and city walls",
+          "kind": "old-testament"
+        },
+        {
+          "ref": "1 Kings 16:34",
+          "note": "Later rebuilding of Jericho",
+          "kind": "old-testament"
+        },
+        {
+          "ref": "2 Kings 2:19-22",
+          "note": "Elisha and water near the city",
+          "kind": "old-testament"
+        },
+        {
+          "ref": "Mark 10:46-52",
+          "note": "Blind Bartimaeus near Jericho",
+          "kind": "new-testament"
+        },
+        {
+          "ref": "Luke 18:35-43",
+          "note": "Healing as Jesus approaches Jericho",
+          "kind": "new-testament"
+        },
+        {
+          "ref": "Matthew 20:29-34",
+          "note": "Two blind men as Jesus departs",
+          "kind": "new-testament"
+        },
+        {
+          "ref": "Luke 19:1-10",
+          "note": "Zacchaeus welcomes Jesus",
+          "kind": "new-testament"
+        }
+      ],
+      "timeline": [
+        {
+          "period": "Early permanent settlement",
+          "dates": "Around tenth to ninth millennia BCE",
+          "description": "Tell es-Sultan preserves one of the region's earliest substantial settled communities, including a Neolithic tower and walls.",
+          "passages": [],
+          "sourceIds": [
+            "jericho-unesco"
+          ],
+          "classification": "historical-context"
+        },
+        {
+          "period": "Bronze Age urban phases",
+          "dates": "Third to second millennia BCE",
+          "description": "Successive city phases include defensive constructions and urban occupation visible in excavated tell layers.",
+          "passages": [
+            "Joshua 6:1-27"
+          ],
+          "sourceIds": [
+            "jericho-unesco"
+          ],
+          "classification": "archaeology-versus-narrative"
+        },
+        {
+          "period": "Biblical Judah / Israel contexts",
+          "dates": "First millennium BCE",
+          "description": "Joshua, Kings and the Elisha narratives connect Jericho with Israelite history in texts spanning different horizons.",
+          "passages": [
+            "1 Kings 16:34",
+            "2 Kings 2:19-22"
+          ],
+          "sourceIds": [],
+          "classification": "biblical-narrative"
+        },
+        {
+          "period": "Hellenistic to Herodian palace landscape",
+          "dates": "Second to first centuries BCE",
+          "description": "The southwest oasis royal-palace remains document elite occupation and gardens in the wider district near the Gospel era.",
+          "passages": [],
+          "sourceIds": [
+            "jericho-palaces"
+          ],
+          "classification": "historical-context"
+        },
+        {
+          "period": "Gospel journey towards Jerusalem",
+          "dates": "First century CE",
+          "description": "The Gospels report healing a blind person or persons and meeting Zacchaeus in or near Jericho. Their accounts vary about approach/departure.",
+          "passages": [
+            "Mark 10:46-52",
+            "Luke 19:1-10"
+          ],
+          "sourceIds": [],
+          "classification": "biblical-narrative"
+        }
+      ],
+      "findings": [
+        {
+          "title": "Tell es-Sultan stratigraphy",
+          "kind": "excavation",
+          "claim": "UNESCO records numerous archaeological occupation phases with Neolithic and Bronze Age structures.",
+          "limitation": "These surviving earlier walls cannot on their own establish the specific event in Joshua 6.",
+          "sourceIds": [
+            "jericho-unesco"
+          ],
+          "passages": [
+            "Joshua 6:1-27"
+          ]
+        },
+        {
+          "title": "Neolithic tower and settlement",
+          "kind": "excavation",
+          "claim": "A stone tower, walls and early settled occupation are well documented at the ancient tell.",
+          "limitation": "This material is several millennia earlier than the Gospel scenes.",
+          "sourceIds": [
+            "jericho-unesco"
+          ],
+          "passages": []
+        },
+        {
+          "title": "Herodian-era palace landscape",
+          "kind": "heritage",
+          "claim": "Palace remains at Tulul Abu el-Alayiq southwest of Jericho illustrate Herodian elite presence and the late Hellenistic-Roman oasis.",
+          "limitation": "The UNESCO entry is a tentative-list description, not World Heritage inscription or proof of Zacchaeus' house.",
+          "sourceIds": [
+            "jericho-palaces"
+          ],
+          "passages": []
+        },
+        {
+          "title": "Location of Zacchaeus' home",
+          "kind": "biblical-narrative",
+          "claim": "Luke records Jesus entering Jericho and visiting Zacchaeus.",
+          "limitation": "A tourist-labelled sycamore or dwelling cannot be verified as the specific tree or home from Luke 19.",
+          "sourceIds": [],
+          "passages": [
+            "Luke 19:1-10"
+          ]
+        }
+      ],
+      "mapPoints": [
+        {
+          "id": "jericho-tell",
+          "title": "Tell es-Sultan archaeological mound",
+          "coordinates": [
+            35.444,
+            31.871
+          ],
+          "kind": "site",
+          "note": "UNESCO-listed ancient tell, with layers much older than the Gospel era.",
+          "sourceIds": [
+            "jericho-unesco"
+          ]
+        },
+        {
+          "id": "jericho-modern",
+          "title": "Modern Jericho (orientation)",
+          "coordinates": [
+            35.445,
+            31.869
+          ],
+          "kind": "city",
+          "note": "Modern centre, not a surveyed city limit.",
+          "sourceIds": []
+        },
+        {
+          "id": "jericho-palaces",
+          "title": "Tulul Abu el-Alayiq palace area",
+          "coordinates": [
+            35.426,
+            31.855
+          ],
+          "kind": "site",
+          "note": "Approximate heritage landscape southwest of Jericho; UNESCO tentative list, not inscribed.",
+          "sourceIds": [
+            "jericho-palaces"
+          ]
+        }
+      ],
+      "debates": [
+        "The archaeological chronology of Bronze Age Jericho and interpretation of Joshua 6 must not be collapsed into a simplistic statement of confirmation or disproof.",
+        "Mark, Matthew and Luke differ on approach/departure and number of blind people; our itinerary notes these variants.",
+        "The ancient tell, Herodian palace estates and Gospel-era town are related but not interchangeable locations."
+      ],
+      "sourceIds": [
+        "jericho-unesco",
+        "jericho-palaces"
+      ],
+      "image": {
+        "title": "Archaeological excavation at Tell es-Sultan (Bronze Age / Neolithic site)",
+        "file": "Ausgrabungen_bei_Tell_es-Sultan_(3709391491).jpg",
+        "author": "random exposure",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+        "page": "https://commons.wikimedia.org/wiki/File:Ausgrabungen_bei_Tell_es-Sultan_(3709391491).jpg"
+      }
+    }
+  ],
+  "disputed": [
+    {
+      "id": "cana",
+      "name": "Cana of Galilee",
+      "ref": "John 2:1-11",
+      "statement": "The Gospel names Cana; neither Kafr Kanna nor Khirbet Qana is universally accepted as the exact New Testament site.",
+      "candidates": [
+        {
+          "name": "Kafr Kanna",
+          "point": [
+            35.342,
+            32.746
+          ],
+          "type": "traditional",
+          "note": "Prominent later Christian pilgrimage identification; this is not proof of the first-century wedding setting."
+        },
+        {
+          "name": "Khirbet Qana",
+          "point": [
+            35.316,
+            32.79
+          ],
+          "type": "proposed",
+          "note": "Archaeological alternative often discussed in site-identification scholarship; not resolved by the Gospel text."
+        }
+      ],
+      "sourceIds": [
+        "cana-map"
+      ]
+    },
+    {
+      "id": "bethsaida",
+      "name": "Bethsaida / Julias",
+      "ref": "John 1:44",
+      "statement": "Multiple candidate sites near the northeastern Sea of Galilee compete; discoveries at one excavation do not end the identification debate.",
+      "candidates": [
+        {
+          "name": "et-Tell",
+          "point": [
+            35.63,
+            32.909
+          ],
+          "type": "proposed",
+          "note": "Longstanding inland candidate; questions remain about its setting relative to ancient shorelines."
+        },
+        {
+          "name": "el-Araj",
+          "point": [
+            35.62,
+            32.89
+          ],
+          "type": "proposed",
+          "note": "Excavated lakeside candidate with Roman and Byzantine strata; supported by the excavation team, not universally agreed."
+        }
+      ],
+      "sourceIds": [
+        "bethsaida-dig"
+      ]
+    },
+    {
+      "id": "emmaus",
+      "name": "Emmaus",
+      "ref": "Luke 24:13-35",
+      "statement": "Luke names Emmaus but does not establish modern coordinates; differing manuscript distance traditions complicate identification.",
+      "candidates": [
+        {
+          "name": "Qalunya / Motza",
+          "point": [
+            35.164,
+            31.793
+          ],
+          "type": "proposed",
+          "note": "Proposed site broadly consistent with the shorter-distance reading in Luke 24."
+        },
+        {
+          "name": "el-Qubeibeh",
+          "point": [
+            35.14,
+            31.851
+          ],
+          "type": "traditional",
+          "note": "Later pilgrimage identification northwest of Jerusalem."
+        },
+        {
+          "name": "Emmaus Nicopolis / Imwas",
+          "point": [
+            34.987,
+            31.84
+          ],
+          "type": "traditional",
+          "note": "Historically attested Emmaus and pilgrimage site farther west; relation to Luke 24 contested."
+        }
+      ],
+      "sourceIds": [
+        "emmaus-openbible",
+        "emmaus-biblegateway"
+      ]
+    }
+  ]
+}
