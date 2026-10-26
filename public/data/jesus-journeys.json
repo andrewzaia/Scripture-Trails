@@ -1,0 +1,1473 @@
+{
+  "version": 1,
+  "title": "The journeys of Jesus",
+  "method": "Gospel-referenced itinerary, not a reconstructed GPS track. Chronological ordering blends the Gospel narratives and is debated, especially across John and the Synoptics. The slider shows narrative stops, not measured dates or distances. Each stop describes a recorded episode, not proof of a distinct trip.",
+  "sources": [
+    {
+      "id": "gospels",
+      "title": "The canonical Gospels and Acts",
+      "note": "Primary references appear at each itinerary stop. Exact translations are opened in the licensed Scripture reader, not reproduced in this dataset."
+    },
+    {
+      "id": "map",
+      "title": "Historic biblical cartography",
+      "url": "https://downloads.open.bible/maps/en/en_biblica_std/the_ministry_of_jesus.pdf",
+      "note": "Contextual comparison of regions and site uncertainty; not used as a definitive route."
+    }
+  ],
+  "phases": [
+    {
+      "id": "childhood",
+      "title": "Birth and childhood",
+      "description": "From the birth narratives through Jesus at twelve"
+    },
+    {
+      "id": "preparation",
+      "title": "Baptism and preparation",
+      "description": "Jordan, wilderness and first disciples"
+    },
+    {
+      "id": "early",
+      "title": "Early Judean ministry",
+      "description": "Cana, Jerusalem, Judea, Samaria"
+    },
+    {
+      "id": "galilee",
+      "title": "Galilean ministry",
+      "description": "Teachings and signs around Galilee"
+    },
+    {
+      "id": "north",
+      "title": "Northern and eastern journeys",
+      "description": "Tyre, Sidon, Decapolis and Caesarea Philippi"
+    },
+    {
+      "id": "toward-jerusalem",
+      "title": "Journeys towards Jerusalem",
+      "description": "Feasts in Jerusalem and the final approach"
+    },
+    {
+      "id": "passion",
+      "title": "Final week in Jerusalem",
+      "description": "Entry, Passover, betrayal and crucifixion"
+    },
+    {
+      "id": "resurrection",
+      "title": "Resurrection and ascension",
+      "description": "Appearances and the final departure"
+    }
+  ],
+  "places": [
+    {
+      "id": "bethlehem",
+      "name": "Bethlehem",
+      "coordinates": [
+        35.203,
+        31.705
+      ],
+      "region": "Judea",
+      "certainty": "identified",
+      "note": "Birthplace; modern town location is well established."
+    },
+    {
+      "id": "jerusalem",
+      "name": "Jerusalem",
+      "coordinates": [
+        35.233,
+        31.78
+      ],
+      "region": "Judea",
+      "certainty": "identified",
+      "note": "Jerusalem is well identified. Specific Gospel buildings and first-century sites are not all archaeologically certain."
+    },
+    {
+      "id": "egypt",
+      "name": "Egypt - unspecified refuge",
+      "coordinates": [
+        31.24,
+        30.38
+      ],
+      "region": "Egypt",
+      "certainty": "region",
+      "note": "Matthew names Egypt, not a town. This pin is a regional symbol, NOT a proposed residence or a known stopping point."
+    },
+    {
+      "id": "nazareth",
+      "name": "Nazareth",
+      "coordinates": [
+        35.296,
+        32.703
+      ],
+      "region": "Galilee",
+      "certainty": "identified",
+      "note": "Childhood hometown; ancient settlement generally corresponds to modern Nazareth."
+    },
+    {
+      "id": "jordan",
+      "name": "Jordan baptism area",
+      "coordinates": [
+        35.553,
+        31.841
+      ],
+      "region": "Jordan valley",
+      "certainty": "uncertain",
+      "note": "Baptism is in the Jordan. The river point is illustrative; Bethany beyond the Jordan is disputed."
+    },
+    {
+      "id": "wilderness",
+      "name": "Wilderness - location unspecified",
+      "coordinates": [
+        35.375,
+        31.7
+      ],
+      "region": "Judea",
+      "certainty": "region",
+      "note": "The Gospels name the wilderness, not its coordinates. This is an illustrative location only."
+    },
+    {
+      "id": "beyond-jordan",
+      "name": "Bethany beyond the Jordan",
+      "coordinates": [
+        35.56,
+        31.852
+      ],
+      "region": "Jordan valley",
+      "certainty": "uncertain",
+      "note": "John 1:28 and 10:40 describe a place beyond the Jordan. Candidate sites and its precise identification are debated."
+    },
+    {
+      "id": "cana",
+      "name": "Cana of Galilee",
+      "coordinates": [
+        35.343,
+        32.75
+      ],
+      "region": "Galilee",
+      "certainty": "uncertain",
+      "note": "Traditional Kafr Kanna / archaeological Khirbet Qana identifications differ."
+    },
+    {
+      "id": "capernaum",
+      "name": "Capernaum",
+      "coordinates": [
+        35.576,
+        32.881
+      ],
+      "region": "Galilee",
+      "certainty": "identified",
+      "note": "Ancient lakeside town at Tell Hum, a base for the Galilean ministry."
+    },
+    {
+      "id": "judea-region",
+      "name": "Judean countryside",
+      "coordinates": [
+        35.248,
+        31.62
+      ],
+      "region": "Judea",
+      "certainty": "region",
+      "note": "John describes Jesus and his disciples in the Judean countryside without naming a town."
+    },
+    {
+      "id": "sychar",
+      "name": "Sychar / Jacob's well",
+      "coordinates": [
+        35.285,
+        32.211
+      ],
+      "region": "Samaria",
+      "certainty": "approximate",
+      "note": "The Sychar identification is associated with the Jacob’s well site near modern Nablus; the precise settlement is debated."
+    },
+    {
+      "id": "galilee-shore",
+      "name": "Sea of Galilee shore",
+      "coordinates": [
+        35.53,
+        32.842
+      ],
+      "region": "Galilee",
+      "certainty": "region",
+      "note": "A regional map marker for lakeside teaching and journeys; it is not a specific landing point."
+    },
+    {
+      "id": "galilee-hill",
+      "name": "Galilean hillside",
+      "coordinates": [
+        35.545,
+        32.81
+      ],
+      "region": "Galilee",
+      "certainty": "region",
+      "note": "The Sermon on the Mount does not identify a particular hill. Traditional Mount of Beatitudes is not treated as proved."
+    },
+    {
+      "id": "nain",
+      "name": "Nain",
+      "coordinates": [
+        35.348,
+        32.63
+      ],
+      "region": "Galilee",
+      "certainty": "approximate",
+      "note": "Traditionally identified with modern Nein; exact ancient boundaries are not mapped."
+    },
+    {
+      "id": "east-shore",
+      "name": "Eastern Galilee shore",
+      "coordinates": [
+        35.69,
+        32.814
+      ],
+      "region": "Decapolis",
+      "certainty": "uncertain",
+      "note": "Gerasenes, Gadarenes and Gergesenes vary among Gospel traditions/manuscripts. Marker suggests a district, not a proven town."
+    },
+    {
+      "id": "bethsaida",
+      "name": "Bethsaida district",
+      "coordinates": [
+        35.633,
+        32.9
+      ],
+      "region": "Galilee",
+      "certainty": "uncertain",
+      "note": "Bethsaida location debated between et-Tell, el-Araj and other proposed sites."
+    },
+    {
+      "id": "gennesaret",
+      "name": "Gennesaret",
+      "coordinates": [
+        35.51,
+        32.856
+      ],
+      "region": "Galilee",
+      "certainty": "approximate",
+      "note": "The plain west of the lake is known; no exact arrival point is supplied."
+    },
+    {
+      "id": "sidon",
+      "name": "Sidon / Sidon district",
+      "coordinates": [
+        35.373,
+        33.561
+      ],
+      "region": "Phoenicia",
+      "certainty": "region",
+      "note": "Mark describes travel through Sidon; it does not list visits to individual buildings."
+    },
+    {
+      "id": "decapolis",
+      "name": "Decapolis region",
+      "coordinates": [
+        35.77,
+        32.71
+      ],
+      "region": "Decapolis",
+      "certainty": "region",
+      "note": "The Decapolis comprised cities and surrounding territory. This marker does not indicate a particular city."
+    },
+    {
+      "id": "magadan",
+      "name": "Magadan / Dalmanutha region",
+      "coordinates": [
+        35.49,
+        32.82
+      ],
+      "region": "Galilee",
+      "certainty": "uncertain",
+      "note": "The names in Matthew 15:39 and Mark 8:10 differ. Association with Magdala is debated."
+    },
+    {
+      "id": "caesarea-philippi",
+      "name": "Caesarea Philippi district",
+      "coordinates": [
+        35.693,
+        33.248
+      ],
+      "region": "Iturea",
+      "certainty": "identified",
+      "note": "The district around Banias is named; not every conversation must have occurred inside the town."
+    },
+    {
+      "id": "mountain",
+      "name": "High mountain - unspecified",
+      "coordinates": [
+        35.61,
+        33.1
+      ],
+      "region": "Upper Galilee",
+      "certainty": "region",
+      "note": "The Transfiguration mountain is unnamed in the text. Both Tabor and Hermon have been proposed."
+    },
+    {
+      "id": "samaria-region",
+      "name": "Samaritan village - unnamed",
+      "coordinates": [
+        35.275,
+        32.25
+      ],
+      "region": "Samaria",
+      "certainty": "region",
+      "note": "Luke 9:52-56 does not name the village. The pin represents Samaria generally."
+    },
+    {
+      "id": "border",
+      "name": "Samaria-Galilee border",
+      "coordinates": [
+        35.25,
+        32.48
+      ],
+      "region": "Samaria / Galilee",
+      "certainty": "region",
+      "note": "Luke 17:11 describes travel between regions without identifying a specific town."
+    },
+    {
+      "id": "jordan-east",
+      "name": "Beyond the Jordan / Perea",
+      "coordinates": [
+        35.646,
+        31.99
+      ],
+      "region": "Perea",
+      "certainty": "region",
+      "note": "The Gospels give a territory but no stop at this location; the pin is representative."
+    },
+    {
+      "id": "bethany",
+      "name": "Bethany near Jerusalem",
+      "coordinates": [
+        35.261,
+        31.77
+      ],
+      "region": "Judea",
+      "certainty": "identified",
+      "note": "The town east of Jerusalem is usually associated with al-Eizariya."
+    },
+    {
+      "id": "ephraim",
+      "name": "Ephraim",
+      "coordinates": [
+        35.29,
+        31.95
+      ],
+      "region": "Judea",
+      "certainty": "uncertain",
+      "note": "John identifies a town called Ephraim; one proposed modern identification is et-Taiyibeh."
+    },
+    {
+      "id": "jericho",
+      "name": "Jericho",
+      "coordinates": [
+        35.445,
+        31.869
+      ],
+      "region": "Jordan valley",
+      "certainty": "identified",
+      "note": "Jericho is well attested but New Testament-era settlement encompassed a wider area than the modern town."
+    },
+    {
+      "id": "bethphage",
+      "name": "Bethphage",
+      "coordinates": [
+        35.255,
+        31.788
+      ],
+      "region": "Mount of Olives",
+      "certainty": "uncertain",
+      "note": "Gospel village near Mount of Olives, traditional location approximate."
+    },
+    {
+      "id": "olives",
+      "name": "Mount of Olives",
+      "coordinates": [
+        35.26,
+        31.784
+      ],
+      "region": "Jerusalem environs",
+      "certainty": "identified",
+      "note": "The ridge east of Jerusalem is well known; exact speech/ascension positions are not established."
+    },
+    {
+      "id": "gethsemane",
+      "name": "Gethsemane",
+      "coordinates": [
+        35.258,
+        31.779
+      ],
+      "region": "Jerusalem environs",
+      "certainty": "traditional",
+      "note": "Traditional garden location; ancient boundary and exact prayer spot unknown."
+    },
+    {
+      "id": "emmaus",
+      "name": "Emmaus - site disputed",
+      "coordinates": [
+        35.09,
+        31.835
+      ],
+      "region": "Judea",
+      "certainty": "uncertain",
+      "note": "Luke 24 names Emmaus, but multiple candidate sites exist; marker is illustrative, not a site identification."
+    },
+    {
+      "id": "galilee-mountain",
+      "name": "Mountain in Galilee - unnamed",
+      "coordinates": [
+        35.49,
+        32.76
+      ],
+      "region": "Galilee",
+      "certainty": "region",
+      "note": "Matthew 28:16 gives no name for the mountain; marker represents Galilee as a region."
+    },
+    {
+      "id": "tyre",
+      "name": "Tyre district",
+      "coordinates": [
+        35.197,
+        33.27
+      ],
+      "region": "Phoenicia",
+      "certainty": "region",
+      "note": "Jesus visited the region of Tyre; residence within the city is not specified."
+    },
+    {
+      "id": "galilee-region",
+      "name": "Galilee - unspecified location",
+      "coordinates": [
+        35.37,
+        32.73
+      ],
+      "region": "Galilee",
+      "certainty": "region",
+      "note": "John reports travel into Galilee but does not identify a particular town at this point."
+    }
+  ],
+  "events": [
+    {
+      "id": "j001",
+      "phase": "childhood",
+      "place": "bethlehem",
+      "title": "Birth of Jesus",
+      "summary": "Jesus is born in Bethlehem during the census; the birth narratives identify Bethlehem in Judea.",
+      "passages": [
+        "Luke 2:1-7",
+        "Matthew 2:1"
+      ],
+      "evidence": "named",
+      "qualification": ""
+    },
+    {
+      "id": "j002",
+      "phase": "childhood",
+      "place": "jerusalem",
+      "title": "Presentation at the temple",
+      "summary": "Mary and Joseph bring the infant Jesus to the temple; Simeon and Anna speak about him.",
+      "passages": [
+        "Luke 2:22-38"
+      ],
+      "evidence": "named",
+      "qualification": ""
+    },
+    {
+      "id": "j003",
+      "phase": "childhood",
+      "place": "bethlehem",
+      "title": "Visit of the magi",
+      "summary": "Magi visit the child and give gifts; Joseph is later warned of danger from Herod.",
+      "passages": [
+        "Matthew 2:1-12"
+      ],
+      "evidence": "named",
+      "qualification": "Matthew does not specify that the visit occurred on the night of the birth."
+    },
+    {
+      "id": "j004",
+      "phase": "childhood",
+      "place": "egypt",
+      "title": "Flight into Egypt",
+      "summary": "Joseph takes Mary and the child to Egypt after a warning in a dream, escaping Herod.",
+      "passages": [
+        "Matthew 2:13-15"
+      ],
+      "evidence": "region",
+      "qualification": "Matthew gives no Egyptian city, exact route, or length of residence."
+    },
+    {
+      "id": "j005",
+      "phase": "childhood",
+      "place": "nazareth",
+      "title": "Return and upbringing in Nazareth",
+      "summary": "The family settles in Nazareth; Jesus grows up there.",
+      "passages": [
+        "Matthew 2:19-23",
+        "Luke 2:39-40"
+      ],
+      "evidence": "named",
+      "qualification": ""
+    },
+    {
+      "id": "j006",
+      "phase": "childhood",
+      "place": "jerusalem",
+      "title": "Passover pilgrimage at twelve",
+      "summary": "Jesus remains at the temple among teachers while his parents search for him.",
+      "passages": [
+        "Luke 2:41-50"
+      ],
+      "evidence": "named",
+      "qualification": ""
+    },
+    {
+      "id": "j007",
+      "phase": "childhood",
+      "place": "nazareth",
+      "title": "Life in Nazareth",
+      "summary": "Jesus returns to Nazareth with his parents and continues to grow.",
+      "passages": [
+        "Luke 2:51-52"
+      ],
+      "evidence": "named",
+      "qualification": ""
+    },
+    {
+      "id": "j008",
+      "phase": "preparation",
+      "place": "jordan",
+      "title": "Baptism in the Jordan",
+      "summary": "Jesus comes from Galilee to be baptised by John; the Spirit descends.",
+      "passages": [
+        "Matthew 3:13-17",
+        "Mark 1:9-11",
+        "Luke 3:21-22"
+      ],
+      "evidence": "region",
+      "qualification": "The exact bank/site is not settled by the text."
+    },
+    {
+      "id": "j009",
+      "phase": "preparation",
+      "place": "wilderness",
+      "title": "Forty days and temptation",
+      "summary": "Jesus fasts in the wilderness and answers the temptations with Scripture.",
+      "passages": [
+        "Matthew 4:1-11",
+        "Mark 1:12-13",
+        "Luke 4:1-13"
+      ],
+      "evidence": "region",
+      "qualification": "The wilderness is not a named mountain or precise site."
+    },
+    {
+      "id": "j010",
+      "phase": "preparation",
+      "place": "beyond-jordan",
+      "title": "First disciples near John’s ministry",
+      "summary": "John identifies Jesus, and two of John's disciples begin following him in this account.",
+      "passages": [
+        "John 1:28-42"
+      ],
+      "evidence": "named",
+      "qualification": "The exact site of Bethany beyond the Jordan remains disputed; John's sequence relative to the Synoptics is reconstructed."
+    },
+    {
+      "id": "j011",
+      "phase": "preparation",
+      "place": "galilee-region",
+      "title": "Journey into Galilee",
+      "summary": "Jesus travels into Galilee and calls Philip, who speaks to Nathanael.",
+      "passages": [
+        "John 1:43-51"
+      ],
+      "evidence": "region",
+      "qualification": "John 1:43 names Galilee, but not Nazareth or a specific stop on this journey."
+    },
+    {
+      "id": "j012",
+      "phase": "early",
+      "place": "cana",
+      "title": "Water turned into wine",
+      "summary": "At a wedding in Cana, Jesus performs the first sign recorded by John.",
+      "passages": [
+        "John 2:1-11"
+      ],
+      "evidence": "named",
+      "qualification": ""
+    },
+    {
+      "id": "j013",
+      "phase": "early",
+      "place": "capernaum",
+      "title": "A brief stay after Cana",
+      "summary": "Jesus stays in Capernaum with family and disciples for a few days.",
+      "passages": [
+        "John 2:12"
+      ],
+      "evidence": "named",
+      "qualification": ""
+    },
+    {
+      "id": "j014",
+      "phase": "early",
+      "place": "jerusalem",
+      "title": "Passover and temple action",
+      "summary": "Jesus goes to Jerusalem for Passover and drives merchants from the temple.",
+      "passages": [
+        "John 2:13-25"
+      ],
+      "evidence": "named",
+      "qualification": "Whether John's temple action is distinct from the Synoptic final-week cleansing is debated."
+    },
+    {
+      "id": "j015",
+      "phase": "early",
+      "place": "jerusalem",
+      "title": "Conversation with Nicodemus",
+      "summary": "Jesus teaches Nicodemus about the new birth and entering the kingdom of God.",
+      "passages": [
+        "John 3:1-21"
+      ],
+      "evidence": "inferred",
+      "qualification": "John 3 follows the Jerusalem setting; the conversation’s exact venue is not identified."
+    },
+    {
+      "id": "j016",
+      "phase": "early",
+      "place": "judea-region",
+      "title": "Ministry in Judean countryside",
+      "summary": "Jesus and his disciples spend time in the countryside of Judea; the disciples baptise.",
+      "passages": [
+        "John 3:22",
+        "John 4:1-3"
+      ],
+      "evidence": "region",
+      "qualification": "No town is named."
+    },
+    {
+      "id": "j017",
+      "phase": "early",
+      "place": "sychar",
+      "title": "Samaritan woman at Jacob’s well",
+      "summary": "Jesus speaks with a woman of Samaria and many people from the town come to believe.",
+      "passages": [
+        "John 4:4-42"
+      ],
+      "evidence": "named",
+      "qualification": "Precise identification of Sychar is debated."
+    },
+    {
+      "id": "j018",
+      "phase": "early",
+      "place": "cana",
+      "title": "Healing the official’s son",
+      "summary": "Jesus returns to Cana and heals an official’s son, who is in Capernaum.",
+      "passages": [
+        "John 4:46-54"
+      ],
+      "evidence": "named",
+      "qualification": "The son is in Capernaum, but Jesus is at Cana when he gives the word."
+    },
+    {
+      "id": "j019",
+      "phase": "early",
+      "place": "jerusalem",
+      "title": "Healing at Bethesda during a feast",
+      "summary": "Jesus heals a man near the pool called Bethesda and teaches about his authority.",
+      "passages": [
+        "John 5:1-47"
+      ],
+      "evidence": "named",
+      "qualification": "The feast is unnamed, so the visit's place in a harmonised chronology is uncertain."
+    },
+    {
+      "id": "j020",
+      "phase": "galilee",
+      "place": "nazareth",
+      "title": "Teaching in the synagogue",
+      "summary": "Jesus reads Isaiah in his hometown synagogue and faces rejection.",
+      "passages": [
+        "Luke 4:16-30"
+      ],
+      "evidence": "named",
+      "qualification": "May relate to the rejection narrated in Mark 6; number of separate visits is debated."
+    },
+    {
+      "id": "j021",
+      "phase": "galilee",
+      "place": "capernaum",
+      "title": "Settling in Capernaum",
+      "summary": "Jesus leaves Nazareth and lives in Capernaum on the shore of the lake.",
+      "passages": [
+        "Matthew 4:12-17"
+      ],
+      "evidence": "named",
+      "qualification": ""
+    },
+    {
+      "id": "j022",
+      "phase": "galilee",
+      "place": "galilee-shore",
+      "title": "Calling the fishermen",
+      "summary": "Jesus calls Simon, Andrew, James and John to follow him by the Sea of Galilee.",
+      "passages": [
+        "Matthew 4:18-22",
+        "Mark 1:16-20",
+        "Luke 5:1-11"
+      ],
+      "evidence": "region",
+      "qualification": "Luke presents additional details; exact shore location unspecified."
+    },
+    {
+      "id": "j023",
+      "phase": "galilee",
+      "place": "capernaum",
+      "title": "Teaching and deliverance in synagogue",
+      "summary": "Jesus teaches with authority and delivers a man from an unclean spirit.",
+      "passages": [
+        "Mark 1:21-28",
+        "Luke 4:31-37"
+      ],
+      "evidence": "named",
+      "qualification": ""
+    },
+    {
+      "id": "j024",
+      "phase": "galilee",
+      "place": "capernaum",
+      "title": "Healing in Simon’s household",
+      "summary": "Jesus heals Simon's mother-in-law and later many sick and demon-oppressed people.",
+      "passages": [
+        "Mark 1:29-34",
+        "Matthew 8:14-17",
+        "Luke 4:38-41"
+      ],
+      "evidence": "named",
+      "qualification": ""
+    },
+    {
+      "id": "j025",
+      "phase": "galilee",
+      "place": "capernaum",
+      "title": "Forgiving and healing a paralysed man",
+      "summary": "Jesus pronounces forgiveness and heals a man lowered through a roof.",
+      "passages": [
+        "Mark 2:1-12",
+        "Luke 5:17-26",
+        "Matthew 9:1-8"
+      ],
+      "evidence": "inferred",
+      "qualification": "Mark situates the story in Capernaum; parallel accounts are not all explicit about location."
+    },
+    {
+      "id": "j026",
+      "phase": "galilee",
+      "place": "capernaum",
+      "title": "Centurion’s servant healed",
+      "summary": "Jesus responds to a centurion’s faith and the servant is healed.",
+      "passages": [
+        "Matthew 8:5-13",
+        "Luke 7:1-10"
+      ],
+      "evidence": "named",
+      "qualification": ""
+    },
+    {
+      "id": "j027",
+      "phase": "galilee",
+      "place": "galilee-hill",
+      "title": "Teaching about the kingdom",
+      "summary": "Jesus teaches on a mountain in Matthew and at a level place in Luke.",
+      "passages": [
+        "Matthew 5:1-7:29",
+        "Luke 6:17-49"
+      ],
+      "evidence": "region",
+      "qualification": "Do not equate the discourses or their locations with certainty."
+    },
+    {
+      "id": "j028",
+      "phase": "galilee",
+      "place": "nain",
+      "title": "Widow’s son raised",
+      "summary": "Jesus encounters a funeral procession at Nain and restores the widow’s son to life.",
+      "passages": [
+        "Luke 7:11-17"
+      ],
+      "evidence": "named",
+      "qualification": ""
+    },
+    {
+      "id": "j029",
+      "phase": "galilee",
+      "place": "galilee-shore",
+      "title": "Teaching beside the lake",
+      "summary": "Jesus teaches crowds in parables from a boat.",
+      "passages": [
+        "Mark 4:1-34",
+        "Matthew 13:1-53"
+      ],
+      "evidence": "region",
+      "qualification": "Specific landing beach unnamed."
+    },
+    {
+      "id": "j030",
+      "phase": "galilee",
+      "place": "galilee-shore",
+      "title": "Storm calmed on the lake",
+      "summary": "Jesus and the disciples cross the lake; Jesus stills wind and waves.",
+      "passages": [
+        "Mark 4:35-41",
+        "Matthew 8:23-27",
+        "Luke 8:22-25"
+      ],
+      "evidence": "region",
+      "qualification": "The travel line indicates movement across the lake, not the boat’s documented track."
+    },
+    {
+      "id": "j031",
+      "phase": "galilee",
+      "place": "east-shore",
+      "title": "Deliverance on the eastern shore",
+      "summary": "Jesus frees a demon-possessed man or men; the restored man proclaims what happened.",
+      "passages": [
+        "Mark 5:1-20",
+        "Luke 8:26-39",
+        "Matthew 8:28-34"
+      ],
+      "evidence": "region",
+      "qualification": "Gerasenes, Gadarenes and Gergesenes are variant location traditions."
+    },
+    {
+      "id": "j032",
+      "phase": "galilee",
+      "place": "capernaum",
+      "title": "Jairus’s daughter and the woman healed",
+      "summary": "Jesus returns by boat, heals a woman, and raises Jairus’s daughter.",
+      "passages": [
+        "Mark 5:21-43",
+        "Luke 8:40-56",
+        "Matthew 9:18-26"
+      ],
+      "evidence": "inferred",
+      "qualification": "A return to the western shore is explicit; Capernaum is a plausible but unnamed town here."
+    },
+    {
+      "id": "j033",
+      "phase": "galilee",
+      "place": "nazareth",
+      "title": "A return to his hometown",
+      "summary": "Jesus teaches again in his hometown, where people take offence at him.",
+      "passages": [
+        "Mark 6:1-6",
+        "Matthew 13:53-58"
+      ],
+      "evidence": "named",
+      "qualification": "Some harmonisations treat this as the same Nazareth rejection described by Luke."
+    },
+    {
+      "id": "j034",
+      "phase": "galilee",
+      "place": "bethsaida",
+      "title": "Feeding the five thousand",
+      "summary": "Jesus feeds a crowd from five loaves and two fish near Bethsaida.",
+      "passages": [
+        "Luke 9:10-17",
+        "Mark 6:30-44",
+        "John 6:1-15",
+        "Matthew 14:13-21"
+      ],
+      "evidence": "inferred",
+      "qualification": "Luke associates the event with Bethsaida; the precise place is debated."
+    },
+    {
+      "id": "j035",
+      "phase": "galilee",
+      "place": "galilee-shore",
+      "title": "Walking on the water",
+      "summary": "During the night crossing, Jesus comes towards the disciples on the lake.",
+      "passages": [
+        "Mark 6:45-52",
+        "Matthew 14:22-33",
+        "John 6:16-21"
+      ],
+      "evidence": "region",
+      "qualification": "The route is schematic, not a boat track."
+    },
+    {
+      "id": "j036",
+      "phase": "galilee",
+      "place": "gennesaret",
+      "title": "Healing in Gennesaret",
+      "summary": "People recognise Jesus and bring the sick to him after the crossing.",
+      "passages": [
+        "Mark 6:53-56",
+        "Matthew 14:34-36"
+      ],
+      "evidence": "named",
+      "qualification": ""
+    },
+    {
+      "id": "j037",
+      "phase": "galilee",
+      "place": "capernaum",
+      "title": "Bread of life teaching",
+      "summary": "Jesus teaches in the synagogue at Capernaum about the bread of life.",
+      "passages": [
+        "John 6:22-59"
+      ],
+      "evidence": "named",
+      "qualification": ""
+    },
+    {
+      "id": "j038",
+      "phase": "north",
+      "place": "tyre",
+      "title": "The Syrophoenician woman",
+      "summary": "In the region of Tyre, Jesus responds to a mother asking for her daughter’s deliverance.",
+      "passages": [
+        "Mark 7:24-30",
+        "Matthew 15:21-28"
+      ],
+      "evidence": "region",
+      "qualification": "The text says region of Tyre, not a pinpoint house or street."
+    },
+    {
+      "id": "j039",
+      "phase": "north",
+      "place": "sidon",
+      "title": "Journey by way of Sidon",
+      "summary": "Jesus travels via Sidon towards the Sea of Galilee and Decapolis.",
+      "passages": [
+        "Mark 7:31"
+      ],
+      "evidence": "region",
+      "qualification": "Mark reports a route via Sidon, not a distinct ministry episode inside the city."
+    },
+    {
+      "id": "j040",
+      "phase": "north",
+      "place": "decapolis",
+      "title": "A deaf man healed",
+      "summary": "In the Decapolis region, Jesus opens a deaf man's ears and loosens his speech.",
+      "passages": [
+        "Mark 7:31-37"
+      ],
+      "evidence": "region",
+      "qualification": "No specific town within the Decapolis is named."
+    },
+    {
+      "id": "j041",
+      "phase": "north",
+      "place": "galilee-shore",
+      "title": "Feeding the four thousand",
+      "summary": "Jesus feeds a great crowd with seven loaves and small fish.",
+      "passages": [
+        "Mark 8:1-9",
+        "Matthew 15:32-38"
+      ],
+      "evidence": "region",
+      "qualification": "Exact site not named."
+    },
+    {
+      "id": "j042",
+      "phase": "north",
+      "place": "magadan",
+      "title": "Arrival in Magadan / Dalmanutha",
+      "summary": "After the feeding, Jesus crosses by boat to a western lakeside district.",
+      "passages": [
+        "Matthew 15:39",
+        "Mark 8:10"
+      ],
+      "evidence": "region",
+      "qualification": "Magadan and Dalmanutha cannot be equated with complete certainty."
+    },
+    {
+      "id": "j043",
+      "phase": "north",
+      "place": "bethsaida",
+      "title": "Healing a blind man",
+      "summary": "Jesus takes a blind man outside Bethsaida, heals him and sends him home.",
+      "passages": [
+        "Mark 8:22-26"
+      ],
+      "evidence": "named",
+      "qualification": ""
+    },
+    {
+      "id": "j044",
+      "phase": "north",
+      "place": "caesarea-philippi",
+      "title": "Peter’s confession",
+      "summary": "In the Caesarea Philippi district, Peter declares Jesus to be the Christ.",
+      "passages": [
+        "Matthew 16:13-20",
+        "Mark 8:27-30",
+        "Luke 9:18-21"
+      ],
+      "evidence": "named",
+      "qualification": "Gospels identify the district, not a particular rock or shrine as the speech site."
+    },
+    {
+      "id": "j045",
+      "phase": "north",
+      "place": "caesarea-philippi",
+      "title": "Jesus foretells his death",
+      "summary": "After Peter’s confession, Jesus teaches about his coming suffering and the cost of discipleship.",
+      "passages": [
+        "Matthew 16:21-28",
+        "Mark 8:31-9:1"
+      ],
+      "evidence": "inferred",
+      "qualification": "The conversation follows the Caesarea Philippi setting without specifying a new stop."
+    },
+    {
+      "id": "j046",
+      "phase": "north",
+      "place": "mountain",
+      "title": "The transfiguration",
+      "summary": "Jesus is transfigured before Peter, James and John on an unnamed high mountain.",
+      "passages": [
+        "Matthew 17:1-13",
+        "Mark 9:2-13",
+        "Luke 9:28-36"
+      ],
+      "evidence": "region",
+      "qualification": "Mount Tabor and Mount Hermon are proposed traditions; the Gospel does not name the mountain."
+    },
+    {
+      "id": "j047",
+      "phase": "north",
+      "place": "capernaum",
+      "title": "Temple-tax discussion",
+      "summary": "Jesus discusses the temple tax and the coin in the fish's mouth with Peter.",
+      "passages": [
+        "Matthew 17:24-27"
+      ],
+      "evidence": "named",
+      "qualification": ""
+    },
+    {
+      "id": "j048",
+      "phase": "north",
+      "place": "capernaum",
+      "title": "Teaching about humility",
+      "summary": "Jesus uses a child to teach his disciples about humility and welcome.",
+      "passages": [
+        "Mark 9:33-37",
+        "Matthew 18:1-5"
+      ],
+      "evidence": "named",
+      "qualification": ""
+    },
+    {
+      "id": "j049",
+      "phase": "toward-jerusalem",
+      "place": "samaria-region",
+      "title": "A Samaritan village refuses welcome",
+      "summary": "Jesus sends messengers to a Samaritan village that will not receive him.",
+      "passages": [
+        "Luke 9:51-56"
+      ],
+      "evidence": "region",
+      "qualification": "Luke does not identify the village."
+    },
+    {
+      "id": "j050",
+      "phase": "toward-jerusalem",
+      "place": "border",
+      "title": "Ten men with leprosy healed",
+      "summary": "On the way towards Jerusalem, ten men are cleansed; one returns to give thanks.",
+      "passages": [
+        "Luke 17:11-19"
+      ],
+      "evidence": "region",
+      "qualification": "Luke identifies the borderlands, not a named town; travel-narrative ordering is debated."
+    },
+    {
+      "id": "j051",
+      "phase": "toward-jerusalem",
+      "place": "jerusalem",
+      "title": "Feast of Booths teaching",
+      "summary": "Jesus goes to Jerusalem for the festival and teaches in the temple.",
+      "passages": [
+        "John 7:1-52",
+        "John 8:12-59"
+      ],
+      "evidence": "named",
+      "qualification": "Events in John are presented by feast, not harmonised here to a precise shared Gospel calendar."
+    },
+    {
+      "id": "j052",
+      "phase": "toward-jerusalem",
+      "place": "jerusalem",
+      "title": "Healing of a man born blind",
+      "summary": "Jesus gives sight to a man born blind; authorities investigate the healing.",
+      "passages": [
+        "John 9:1-41"
+      ],
+      "evidence": "named",
+      "qualification": ""
+    },
+    {
+      "id": "j053",
+      "phase": "toward-jerusalem",
+      "place": "jerusalem",
+      "title": "Feast of Dedication",
+      "summary": "Jesus teaches in Solomon’s Colonnade during the winter festival.",
+      "passages": [
+        "John 10:22-39"
+      ],
+      "evidence": "named",
+      "qualification": ""
+    },
+    {
+      "id": "j054",
+      "phase": "toward-jerusalem",
+      "place": "beyond-jordan",
+      "title": "Retreat across the Jordan",
+      "summary": "Jesus goes again to the area where John had been baptising; many believe in him.",
+      "passages": [
+        "John 10:40-42"
+      ],
+      "evidence": "named",
+      "qualification": "John does not give precise coordinates."
+    },
+    {
+      "id": "j055",
+      "phase": "toward-jerusalem",
+      "place": "bethany",
+      "title": "Lazarus raised",
+      "summary": "Jesus comes to Bethany and calls Lazarus from the tomb.",
+      "passages": [
+        "John 11:1-44"
+      ],
+      "evidence": "named",
+      "qualification": ""
+    },
+    {
+      "id": "j056",
+      "phase": "toward-jerusalem",
+      "place": "ephraim",
+      "title": "Withdrawal to Ephraim",
+      "summary": "Jesus withdraws to a town called Ephraim near the wilderness.",
+      "passages": [
+        "John 11:53-54"
+      ],
+      "evidence": "named",
+      "qualification": "The site identification is debated."
+    },
+    {
+      "id": "j057",
+      "phase": "toward-jerusalem",
+      "place": "jordan-east",
+      "title": "Ministry beyond the Jordan",
+      "summary": "Jesus teaches and heals in the territory across the Jordan.",
+      "passages": [
+        "Matthew 19:1-2",
+        "Mark 10:1"
+      ],
+      "evidence": "region",
+      "qualification": "Region only; cannot assert a particular Perea town."
+    },
+    {
+      "id": "j058",
+      "phase": "toward-jerusalem",
+      "place": "jericho",
+      "title": "Blind man healed near Jericho",
+      "summary": "A blind beggar receives sight as Jesus approaches or leaves Jericho.",
+      "passages": [
+        "Mark 10:46-52",
+        "Luke 18:35-43",
+        "Matthew 20:29-34"
+      ],
+      "evidence": "named",
+      "qualification": "The Gospel accounts differ over approach/departure details and number of people."
+    },
+    {
+      "id": "j059",
+      "phase": "toward-jerusalem",
+      "place": "jericho",
+      "title": "Zacchaeus welcomed",
+      "summary": "Jesus calls Zacchaeus from a tree and stays with him.",
+      "passages": [
+        "Luke 19:1-10"
+      ],
+      "evidence": "named",
+      "qualification": ""
+    },
+    {
+      "id": "j060",
+      "phase": "toward-jerusalem",
+      "place": "bethany",
+      "title": "Dinner in Bethany before Passover",
+      "summary": "A meal is held for Jesus; Mary anoints his feet in John’s account.",
+      "passages": [
+        "John 12:1-11"
+      ],
+      "evidence": "named",
+      "qualification": "The relationship to the anointing account in Mark 14 and Matthew 26 is debated."
+    },
+    {
+      "id": "j061",
+      "phase": "passion",
+      "place": "bethphage",
+      "title": "The donkey is brought",
+      "summary": "Near Bethphage at the Mount of Olives, disciples bring a colt for the journey into Jerusalem.",
+      "passages": [
+        "Matthew 21:1-7",
+        "Mark 11:1-7",
+        "Luke 19:29-35"
+      ],
+      "evidence": "named",
+      "qualification": ""
+    },
+    {
+      "id": "j062",
+      "phase": "passion",
+      "place": "olives",
+      "title": "Approach from the Mount of Olives",
+      "summary": "Jesus comes down the Mount of Olives as the crowd rejoices, and he laments over Jerusalem.",
+      "passages": [
+        "Luke 19:37-44"
+      ],
+      "evidence": "named",
+      "qualification": ""
+    },
+    {
+      "id": "j063",
+      "phase": "passion",
+      "place": "jerusalem",
+      "title": "Entry into Jerusalem",
+      "summary": "Crowds welcome Jesus as he enters the city.",
+      "passages": [
+        "Matthew 21:8-11",
+        "Mark 11:8-11",
+        "Luke 19:36-40",
+        "John 12:12-19"
+      ],
+      "evidence": "named",
+      "qualification": ""
+    },
+    {
+      "id": "j064",
+      "phase": "passion",
+      "place": "jerusalem",
+      "title": "Temple action in the final week",
+      "summary": "Jesus challenges buying and selling in the temple precinct.",
+      "passages": [
+        "Mark 11:15-19",
+        "Matthew 21:12-17",
+        "Luke 19:45-48"
+      ],
+      "evidence": "named",
+      "qualification": "Relationship to the earlier temple action in John 2 is disputed."
+    },
+    {
+      "id": "j065",
+      "phase": "passion",
+      "place": "bethany",
+      "title": "Evenings in Bethany",
+      "summary": "Jesus goes outside the city to Bethany during the final week.",
+      "passages": [
+        "Mark 11:11-12",
+        "Matthew 21:17"
+      ],
+      "evidence": "named",
+      "qualification": ""
+    },
+    {
+      "id": "j066",
+      "phase": "passion",
+      "place": "jerusalem",
+      "title": "Debates and teaching in the temple",
+      "summary": "Jesus teaches about authority, resurrection, the great commandment and warnings against hypocrisy.",
+      "passages": [
+        "Mark 11:27-12:44",
+        "Matthew 21:23-23:39",
+        "Luke 20:1-21:4"
+      ],
+      "evidence": "named",
+      "qualification": ""
+    },
+    {
+      "id": "j067",
+      "phase": "passion",
+      "place": "olives",
+      "title": "Teaching on the Mount of Olives",
+      "summary": "Jesus speaks of the temple and coming events while seated opposite it.",
+      "passages": [
+        "Matthew 24:1-25:46",
+        "Mark 13:1-37",
+        "Luke 21:5-36"
+      ],
+      "evidence": "named",
+      "qualification": ""
+    },
+    {
+      "id": "j068",
+      "phase": "passion",
+      "place": "bethany",
+      "title": "Anointing in Simon’s house",
+      "summary": "At Bethany, a woman anoints Jesus in Simon the leper’s house in the Synoptic accounts.",
+      "passages": [
+        "Mark 14:3-9",
+        "Matthew 26:6-13"
+      ],
+      "evidence": "named",
+      "qualification": "This may recount the same meal as John 12; do not infer two independent visits."
+    },
+    {
+      "id": "j069",
+      "phase": "passion",
+      "place": "jerusalem",
+      "title": "Last Supper",
+      "summary": "Jesus shares Passover with the disciples, gives bread and cup, and prepares them for his departure.",
+      "passages": [
+        "Matthew 26:17-30",
+        "Mark 14:12-26",
+        "Luke 22:7-38",
+        "John 13:1-17:26"
+      ],
+      "evidence": "named",
+      "qualification": "The exact room is not established; calendar details vary across Gospel presentations."
+    },
+    {
+      "id": "j070",
+      "phase": "passion",
+      "place": "gethsemane",
+      "title": "Prayer and arrest",
+      "summary": "Jesus prays in Gethsemane and is arrested after Judas arrives.",
+      "passages": [
+        "Matthew 26:36-56",
+        "Mark 14:32-52",
+        "Luke 22:39-53",
+        "John 18:1-12"
+      ],
+      "evidence": "named",
+      "qualification": "Location of the traditional garden is approximate."
+    },
+    {
+      "id": "j071",
+      "phase": "passion",
+      "place": "jerusalem",
+      "title": "Hearings before authorities",
+      "summary": "Jesus is questioned before religious and Roman authorities and sentenced.",
+      "passages": [
+        "Matthew 26:57-27:31",
+        "Mark 14:53-15:20",
+        "Luke 22:54-23:25",
+        "John 18:13-19:16"
+      ],
+      "evidence": "named",
+      "qualification": "Exact routes between hearing venues are not established."
+    },
+    {
+      "id": "j072",
+      "phase": "passion",
+      "place": "jerusalem",
+      "title": "Crucifixion at Golgotha",
+      "summary": "Jesus is crucified outside the city; the Gospels record his death and burial preparations.",
+      "passages": [
+        "Matthew 27:32-56",
+        "Mark 15:21-41",
+        "Luke 23:26-49",
+        "John 19:17-30"
+      ],
+      "evidence": "named",
+      "qualification": "Golgotha is named, but the precise physical site remains debated."
+    },
+    {
+      "id": "j073",
+      "phase": "passion",
+      "place": "jerusalem",
+      "title": "Burial in a tomb",
+      "summary": "Joseph of Arimathea places Jesus in a tomb before the Sabbath.",
+      "passages": [
+        "Matthew 27:57-66",
+        "Mark 15:42-47",
+        "Luke 23:50-56",
+        "John 19:38-42"
+      ],
+      "evidence": "named",
+      "qualification": "The location of the tomb is represented by Jerusalem, not a verified surveyed point."
+    },
+    {
+      "id": "j074",
+      "phase": "resurrection",
+      "place": "jerusalem",
+      "title": "The empty tomb and appearances",
+      "summary": "The Gospels report the empty tomb and appearances of the risen Jesus.",
+      "passages": [
+        "Matthew 28:1-10",
+        "Mark 16:1-8",
+        "Luke 24:1-12",
+        "John 20:1-18"
+      ],
+      "evidence": "named",
+      "qualification": "Accounts differ in the presentation of visitors and sequence; no single modern site is assumed."
+    },
+    {
+      "id": "j075",
+      "phase": "resurrection",
+      "place": "emmaus",
+      "title": "Appearance on the road to Emmaus",
+      "summary": "The risen Jesus walks with two disciples, explains the Scriptures and is recognised at a meal.",
+      "passages": [
+        "Luke 24:13-35"
+      ],
+      "evidence": "named",
+      "qualification": "Several competing locations for Emmaus; the marker is illustrative."
+    },
+    {
+      "id": "j076",
+      "phase": "resurrection",
+      "place": "jerusalem",
+      "title": "Appearance to the disciples",
+      "summary": "Jesus appears to gathered disciples, shows his wounds and commissions them.",
+      "passages": [
+        "Luke 24:36-49",
+        "John 20:19-29"
+      ],
+      "evidence": "named",
+      "qualification": ""
+    },
+    {
+      "id": "j077",
+      "phase": "resurrection",
+      "place": "galilee-shore",
+      "title": "Appearance by the Sea of Tiberias",
+      "summary": "Jesus appears by the lake, directs a catch of fish and speaks with Peter.",
+      "passages": [
+        "John 21:1-23"
+      ],
+      "evidence": "region",
+      "qualification": "The shoreline location is unspecified."
+    },
+    {
+      "id": "j078",
+      "phase": "resurrection",
+      "place": "galilee-mountain",
+      "title": "Commission on a mountain in Galilee",
+      "summary": "The risen Jesus meets the eleven and sends them to make disciples of the nations.",
+      "passages": [
+        "Matthew 28:16-20"
+      ],
+      "evidence": "region",
+      "qualification": "Matthew does not name the mountain."
+    },
+    {
+      "id": "j079",
+      "phase": "resurrection",
+      "place": "olives",
+      "title": "Ascension near Bethany",
+      "summary": "Jesus blesses the disciples near Bethany; Acts associates the return with the Mount of Olives.",
+      "passages": [
+        "Luke 24:50-53",
+        "Acts 1:6-12"
+      ],
+      "evidence": "region",
+      "qualification": "Luke and Acts describe the area, not an exact ascension footprint."
+    }
+  ]
+}

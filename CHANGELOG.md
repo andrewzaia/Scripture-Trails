@@ -25,3 +25,11 @@ Live ESV passages and search require the `ESV_API_KEY` secret in Cloudflare Page
 - Added user-visible provenance labels and reading-context fallbacks.
 - Added ESV, NASB 2020 and LSB study edition links without redistributing additional copyrighted translations.
 - Added a pinned OpenBible.info cross-reference import workflow with validation and attribution.
+
+## Gospel itinerary map - 26 October 2026
+
+- Added a separate Journeys of Jesus view with a self-hosted SVG map, draggable narrative timeline and playback.
+- Catalogued 79 Gospel and Acts episodes across 35 known or uncertain locations with 155 primary passage citations.
+- Added location filters, phase filters, zoom/pan, repeat-visit history and ESV reader links for each listed passage.
+- Marked all approximate geography, uncertain site identification, inferred stops and narrative harmonisation explicitly.
+- Preserved the existing Bible reader, Connection Atlas, guided studies, ESV API integration and site theme.
