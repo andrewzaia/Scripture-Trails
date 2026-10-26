@@ -28,8 +28,7 @@ const aliases={
   '1timothy':['1ti','1tim'], '2timothy':['2ti','2tim'],
   '1peter':['1pe','1pet'], '2peter':['2pe','2pet'], 'philemon':['phm','phlm'],
   'ecclesiastes':['ecc','eccl'], 'deuteronomy':['dt','deut'], 'judges':['jdg','judg'],
-  'zechariah':['zec','zech'], 'zephaniah':['zep','zeph'], 'habakkuk':['hab'], 'jeremiah':['jer'],
-  '1chronicles':['1chr','1ch'], '2chronicles':['2chr','2ch']
+  'zechariah':['zec','zech'], 'zephaniah':['zep','zeph'], 'habakkuk':['hab'], 'jeremiah':['jer']
 };
 const clean=value=>String(value).toLowerCase().replace(/[^a-z0-9]/g,'');
 const bookLookup=new Map();
