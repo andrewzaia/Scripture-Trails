@@ -6,6 +6,7 @@ on:
     paths:
       - '.github/workflows/import-crossrefs.yml'
       - 'scripts/import-crossrefs.mjs'
+      - 'scripts/check-crossrefs.mjs'
 
 permissions:
   contents: write
