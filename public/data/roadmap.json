@@ -1,6 +1,6 @@
 {
   "project": "Scripture Trails",
-  "updated": "2026-10-26",
+  "updated": "2026-10-27",
   "description": "A transparent, evidence-aware roadmap. Delivered means implementation exists, not that every scholarly question is settled. The accuracy audit is an initial, publicly documented editorial screening, not external specialist certification.",
   "currentFocus": [
     "Gospel-by-Gospel chronology comparison",
@@ -179,13 +179,27 @@
       "verification": "Requires sourced identifiers and name disambiguation."
     },
     {
+      "id": "translation-reader",
+      "phase": "editions",
+      "status": "delivered",
+      "title": "Switch reader translations",
+      "summary": "Read the same verse, range or chapter in ESV, NASB20, NIV (2011) or NKJV without leaving Scripture Trails.",
+      "capabilities": [
+        "Translation selector with saved device preference and shareable edition links",
+        "NASB20, NIV and NKJV through a server-side API.Bible integration",
+        "Publisher attribution and API.Bible Scripture-view reporting",
+        "Translation-neutral Atlas actions retained in every reader edition"
+      ],
+      "verification": "Implementation and mock API tests completed. Live NASB20, NIV and NKJV text retrieval requires API_BIBLE_KEY to be added to the production environment, followed by redeployment and an entitlement check."
+    },
+    {
       "id": "bible-languages",
       "phase": "editions",
       "status": "research",
-      "title": "NASB, LSB and original-language study",
-      "summary": "Maintain ESV, NASB 2020 and LSB as approved study editions while respecting distinct text and data rights.",
+      "title": "LSB and original-language study",
+      "summary": "Investigate LSB in-page display and separately licensed Hebrew and Greek study tools. ESV, NASB20, NIV and NKJV reader switching is implemented separately.",
       "capabilities": [
-        "Investigate authorised NASB and LSB API/display licensing",
+        "Investigate authorised LSB API/display licensing",
         "Compare variant renderings only where permissions allow",
         "Later: carefully sourced Hebrew and Greek lexical tools"
       ],

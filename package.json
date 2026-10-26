@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "An ESV-based Bible reader and visual Scripture discovery website",
+  "description": "A Bible reader with ESV, NASB20, NIV and NKJV translations and visual Scripture discovery",
   "scripts": {
     "dev": "wrangler pages dev public",
     "test": "node --test tests/*.test.mjs",

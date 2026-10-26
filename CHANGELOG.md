@@ -18,6 +18,16 @@
 
 # Changelog
 
+## 2026-10-27 - API.Bible translation selection
+
+- Added in-page ESV, NASB20, NIV (2011) and NKJV selection for exact verses, ranges and full chapters.
+- Keep the edition in shared links, browser history and the saved reading preference.
+- Added server-side API.Bible routing using the encrypted `API_BIBLE_KEY` secret and fixed approved Bible IDs.
+- Added publisher copyright, API.Bible attribution, FUMS view reporting and edition-specific error messages.
+- Retained ESV keyword search and the external LSB reader.
+- Added routing, security and upstream failure tests. Live API.Bible access requires the production secret and a redeployment.
+
+
 ## 0.1.0 - 26 October 2026
 
 - Introduced Scripture reader, curated study paths, bookmarks and notes.

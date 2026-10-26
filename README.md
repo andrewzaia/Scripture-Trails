@@ -1,11 +1,12 @@
 # Scripture Trails
 
-A responsive, extensible Bible study website designed around the English Standard Version (ESV). Follow passages and references, explore the interactive connection atlas, use six guided study journeys and retain bookmarks and notes locally.
+A responsive, extensible Bible study website with in-page ESV, NASB20, NIV (2011) and NKJV translation selection. Follow passages and references, explore the interactive connection atlas, use six guided study journeys and retain bookmarks and notes locally.
 
 ## What works now
 
 - Passage navigation across all 66 Protestant canonical Bible books, with chapter selectors and deep links such as `?view=reader&ref=John%203%3A16`.
-- Official ESV passage display and verse-by-verse cross-reference callouts when the Crossway ESV API is configured.
+- Official ESV text via Crossway, plus NASB20, NIV (2011) and NKJV via API.Bible when their server-side keys are configured.
+- Translation selection preserves the exact verse, range or chapter, persists the preference on this device, and records the edition in shared links. Per-verse Atlas actions work across reader editions.
 - ESV keyword search (10 results per query) through a server-side Cloudflare Pages Function.
 - Starter reference network with editorial labels for quotations, parallels, echoes and themes.
 - Interactive pan-and-zoom connection map, with one to ten levels of bounded verse-to-verse exploration.
@@ -17,7 +18,7 @@ The website deliberately **does not bundle the ESV text**. The official ESV API 
 
 ## Local development
 
-Requirements: Node.js 20 or newer.
+Requirements: Node.js 22 or newer.
 
 ```bash
 npm install
@@ -27,6 +28,7 @@ Obtain an ESV API token by creating an application at <https://api.esv.org/>. In
 
 ```ini
 ESV_API_KEY=YOUR_CROSSWAY_API_KEY
+API_BIBLE_KEY=YOUR_API_BIBLE_KEY
 ```
 
 Run:
@@ -67,6 +69,28 @@ Obtain an ESV API key from <https://api.esv.org/> and configure `ESV_API_KEY` as
 
 For testing the production release, visit `/api/passage?q=John%201%3A1` and `/api/search?q=faith`. Without a configured secret each endpoint should give a 503 JSON response containing `not_configured`. With a valid key, verify official response data and licensing conditions. These endpoints expose the ESV content but never reveal the key.
 
+### API.Bible credentials and approved translations
+
+In **Cloudflare > Workers & Pages > scripture-trails > Settings > Variables and Secrets**, add an encrypted **Production** secret named **`API_BIBLE_KEY`**. Use the API key issued for this application at <https://api.bible/>. Keep `ESV_API_KEY` for ESV. After adding or changing a Pages secret, redeploy the production build so the Functions receive it. No extra endpoint environment variable is needed: the server uses `https://rest.api.bible/v1`.
+
+The fixed, approved mappings from the application owner's API.Bible access panel are:
+
+| Translation | Bible ID | Publisher |
+| --- | --- | --- |
+| NASB20 | `a761ca71e0b3ddcf-01` | The Lockman Foundation |
+| NIV (2011) | `78a9f6124f344018-01` | Biblica, Inc. |
+| NKJV | `63097d2a0a2f7db3-01` | HarperCollins Christian Publishing |
+
+Check `/api/passage?q=John%203%3A16&translation=NIV` after activation, then repeat for NASB20 and NKJV and a chapter such as `John%203`. Absent configuration returns `503 not_configured`. Invalid editions are rejected. Authorisation failures, unavailable verses and request limits receive explicit messages. An unavailable edition never silently substitutes ESV. Keyword search remains explicitly labelled ESV; opening a search result uses the selected reading edition.
+
+The proxy validates references, requests one chapter or up to 30 selected verses, sets a 10-second upstream timeout, bounds upstream payloads to 1 MiB, and prevents credentials being forwarded through redirects. Responses are `no-store`; Bible text is never added to browser storage or bundled for offline access. Only the translation preference and personal study data are stored locally. Copyright HTML is filtered before display. Returned full copyright notices appear below every API.Bible passage and update the corresponding About entry for the current page session. Publisher and API.Bible attribution links remain visible.
+
+API.Bible requires Scripture-view reporting. The client loads only fixed official FUMS trackers when an API.Bible passage is shown: current `fumsToken` reporting via `https://pkg.api.bible/fumsV3.min.js`, or legacy `fumsId` via `https://cdn.scripture.api.bible/fums/fumsv2.min.js`. Returned executable JavaScript is never used. The CSP permits those two scripts and their specific reporting hosts. About explains the anonymous device/session reporting. Ad blockers may prevent the provider's reporting.
+
+The API key and the three approved entitlements must be verified against the live service after configuration. Mock tests verify routing and failure handling, but cannot establish the validity of a real key or the publisher terms associated with the account. References are shared across editions while verse numbering may differ. LSB remains an official external reader link.
+
+References: [API.Bible chapters](https://docs.api.bible/guides/chapters/), [passages](https://docs.api.bible/guides/passages/), [view reporting](https://docs.api.bible/resources/fair-use/), [terms](https://api.bible/terms-and-conditions).
+
 ### Security and deployment notes
 
 A private GitHub repository does not make the Cloudflare `pages.dev` website private. Initial preview deployments are disabled to reduce the number of publicly accessible deployment URLs and avoid unintended ESV API quota usage. Configure Cloudflare Access if the site itself must be restricted. Review Cloudflare rate limiting options for `/api/*` if traffic or scraping becomes a concern.
@@ -91,7 +115,7 @@ To add broader references:
 
 ## Editorial conventions
 
-- Scripture quotations must remain unaltered and display ESV attribution and copyright.
+- Scripture quotations must remain unaltered and display the selected edition's attribution and copyright.
 - Descriptions of verse links are separate editorial commentary.
 - `quotation` denotes a direct cited passage, while `theme` and `echo` are interpretative groupings. Some direct quotations can involve translation variants, and their surrounding context must still be read.
 - A link is an invitation to study, **not proof** of a theological position or biblical date.
@@ -115,7 +139,10 @@ public/
   assets/app.js                 UI state, notes, history, API integration
   assets/style.css              Theme and responsive interface
   data/refs/*.json              Optional per-book dataset generated by importer
-functions/api/passage.js         Server-side authenticated ESV passage retrieval
+functions/api/passage.js         Server-side ESV and approved API.Bible passage routing
+functions/api/_api-bible.js      Bounded authenticated API.Bible retrieval
+public/assets/translations.js   Approved editions and USFM reference mapping
+public/assets/fums.js           Official API.Bible Scripture-view reporting
 functions/api/search.js          Server-side authenticated ESV keyword search
 scripts/import-crossrefs.mjs     Dataset importer, without copyrighted Bible text
 tests/                          Built-in Node tests
@@ -140,7 +167,7 @@ The Atlas supports selecting any book, chapter and verse in the 66-book canon an
 
 Reference sources are kept separate: editor-curated quotation, parallel, echo and theme labels; OpenBible.info community-ranked cross-reference data (CC BY 4.0, sourced mainly from the Treasury of Scripture Knowledge); and reading-context links, used only when a verse has no cross-reference. These context links **are not semantic connections**. Votes are a rough ranking, not a statement of authority. OpenBible multi-verse ranges are indexed to their first verse, with the original range retained in imported data. Some Bible versions differ slightly in versification.
 
-**Permitted study editions** are ESV, NASB 2020 and LSB. The in-site reader serves the ESV using the official Crossway API. Links lead to the official NASB 2020 and LSB readers; the app neither scrapes nor redistributes those copyrighted texts. Translation-neutral reference links are not inaccurately described as coming from one translation. Future source-specific cross-references may be imported with permission and source-level attribution.
+**Reader editions** are ESV via Crossway and NASB20, NIV and NKJV via API.Bible. LSB remains an external official study reader. Publisher text is retrieved on demand using server-side credentials; the repository contains no Bible text. Translation-neutral reference links are not inaccurately described as coming from one translation. Future source-specific cross-references may be imported with permission and source-level attribution.
 
 The expanded network comes from the OpenBible.info cross-reference dataset (CC BY 4.0). To regenerate locally, download the official TSV and run `npm run import:refs -- /path/to/cross_references.txt`. The repo includes chapter verse counts for navigation, derived from a public domain KJV dataset, used only for versification numbers, never Bible text. See [OpenBible.info](https://www.openbible.info/labs/cross-references/) and [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 
@@ -148,9 +175,9 @@ The expanded network comes from the OpenBible.info cross-reference dataset (CC B
 
 - Pick any of the 66 books, then an individual chapter and verse using per-chapter verse counts.
 - Follow up to ten hops in a capped breadth-first sample, with an accessible hop-by-hop list and re-centre on any node. The cap is deliberate to avoid freezing mobile browsers on dense hubs.
-- Each verse number in an ESV chapter has its own Atlas action.
+- Each verse number in the selected reader edition has its own Atlas action.
 - A missing reference triggers a **reading context** link to nearby verses, explicitly not a claimed biblical cross-reference.
-- Study editions: ESV (displayed via Crossway), NASB 2020 and LSB (linked to official readers; text not republished). Cross-reference relationships are translation-neutral unless their source specifically asserts otherwise.
+- Reader editions: ESV (Crossway), NASB20, NIV and NKJV (API.Bible). LSB is linked to its official external reader. Cross-reference relationships are translation-neutral unless their source specifically asserts otherwise.
 
 ### Importing real-world connections
 
@@ -162,7 +189,7 @@ The corpus uses KJV-style chapter/verse metadata for navigation, which may diffe
 
 The separate **Journeys of Jesus** page (`/?view=jesus-map`) is a self-hosted SVG interactive atlas with a draggable event timeline, step-by-step playback, eight narrative periods, location selector, repeat-visit index and citation links directly into the ESV reader. It has no third-party map scripts, trackers or map tile services, and follows the technical approach of the Assyrian Living Archive's historical map. The current release catalogues 79 distinct narrative episodes, 35 locations or broad regions and 155 cited Gospel / Acts passage references.
 
-Source of truth: `public/data/jesus-journeys.json`. New map events require a stable ID, stage, named or regional location, a short factual summary, explicit Gospel/Acts references, and an evidence grade; approximate or disputed site placement also requires a caveat. All episode content is separate from the copyrighted ESV text. Selected references open through the existing official ESV API reader; the NASB 2020 and LSB remain official outbound references rather than copied content.
+Source of truth: `public/data/jesus-journeys.json`. New map events require a stable ID, stage, named or regional location, a short factual summary, explicit Gospel/Acts references, and an evidence grade; approximate or disputed site placement also requires a caveat. All episode content is separate from the copyrighted ESV text. Selected references open in the chosen ESV, NASB20, NIV or NKJV reader edition; LSB remains an official outbound reader link.
 
 **Accuracy constraints:** This is a narrative itinerary, not a measured walking route, an exhaustive travel diary, or a consensus day-by-day Gospel harmony. Multiple sources for a single event are grouped rather than counted as independent trips. Travel connectors are schematic straight lines. Locations such as Egypt (unidentified refuge), the desert temptations, Bethany beyond the Jordan, Cana, the site of the Transfiguration, Bethsaida and Emmaus cannot be pinpointed confidently. All regional and contested pins are explained to the reader. Biblical accounts are primary sources for reported actions, while identifying them with modern coordinates is a separate inference. Historic map context: [Biblica's Ministry of Jesus map](https://downloads.open.bible/maps/en/en_biblica_std/the_ministry_of_jesus.pdf), with the publisher retaining rights to that map. No third-party art is copied.
 
