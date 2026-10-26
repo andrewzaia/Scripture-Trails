@@ -1,0 +1,20 @@
+{
+  "name": "scripture-trails",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "An ESV-based Bible reader and visual Scripture discovery website",
+  "scripts": {
+    "dev": "wrangler pages dev public",
+    "test": "node --test tests/*.test.mjs",
+    "import:refs": "node scripts/import-crossrefs.mjs",
+    "deploy": "wrangler pages deploy public --project-name scripture-trails",
+    "build": "npm run test"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
