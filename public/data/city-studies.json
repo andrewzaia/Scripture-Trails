@@ -342,11 +342,13 @@
       ],
       "image": {
         "title": "Modern aerial view of Jerusalem and the Temple Mount",
-        "file": "ISR-2013-Aerial-Jerusalem-Temple_Mount_01.jpg",
-        "author": "Andrew Shiva",
+        "file": "Jerusalem-2013-Aerial-Temple_Mount_01.jpg",
+        "author": "Andrew Shiva / Wikipedia",
         "license": "CC BY-SA 4.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "page": "https://commons.wikimedia.org/wiki/File:ISR-2013-Aerial-Jerusalem-Temple_Mount_01.jpg"
+        "page": "https://commons.wikimedia.org/wiki/File:Jerusalem-2013-Aerial-Temple_Mount_01.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Jerusalem-2013-Aerial-Temple_Mount_01.jpg/1024px-Jerusalem-2013-Aerial-Temple_Mount_01.jpg",
+        "fallbackUrl": "https://upload.wikimedia.org/wikipedia/commons/4/48/Jerusalem-2013-Aerial-Temple_Mount_01.jpg"
       }
     },
     {
@@ -553,7 +555,9 @@
         "author": "Magalhães",
         "license": "Public domain",
         "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
-        "page": "https://commons.wikimedia.org/wiki/File:Nazareth_Church_of_the_Annunciation.jpg"
+        "page": "https://commons.wikimedia.org/wiki/File:Nazareth_Church_of_the_Annunciation.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Nazareth_Church_of_the_Annunciation.jpg/1024px-Nazareth_Church_of_the_Annunciation.jpg",
+        "fallbackUrl": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Nazareth_Church_of_the_Annunciation.jpg"
       }
     },
     {
@@ -789,7 +793,9 @@
         "author": "zeevveez",
         "license": "CC BY 2.0",
         "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
-        "page": "https://commons.wikimedia.org/wiki/File:Capernaum_Synagogue_Ruins.jpg"
+        "page": "https://commons.wikimedia.org/wiki/File:Capernaum_Synagogue_Ruins.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Capernaum_Synagogue_Ruins.jpg/1024px-Capernaum_Synagogue_Ruins.jpg",
+        "fallbackUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Capernaum_Synagogue_Ruins.jpg"
       }
     },
     {
@@ -995,12 +1001,14 @@
         "bethlehem-unesco"
       ],
       "image": {
-        "title": "Courtyard at the Church of the Nativity (modern)",
-        "file": "Courtyard_at_Church_of_the_Nativity,_Bethlehem.jpg",
-        "author": "Daniel Case",
-        "license": "CC BY-SA 3.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-        "page": "https://commons.wikimedia.org/wiki/File:Courtyard_at_Church_of_the_Nativity,_Bethlehem.jpg"
+        "title": "Church of the Nativity courtyard in modern Bethlehem",
+        "file": "Bethlehem-BW-10.jpg",
+        "author": "Rundvald",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "page": "https://commons.wikimedia.org/wiki/File:Bethlehem-BW-10.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Bethlehem-BW-10.jpg/960px-Bethlehem-BW-10.jpg",
+        "fallbackUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Bethlehem-BW-10.jpg"
       }
     },
     {
@@ -1216,7 +1224,9 @@
         "author": "random exposure",
         "license": "CC BY 2.0",
         "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
-        "page": "https://commons.wikimedia.org/wiki/File:Ausgrabungen_bei_Tell_es-Sultan_(3709391491).jpg"
+        "page": "https://commons.wikimedia.org/wiki/File:Ausgrabungen_bei_Tell_es-Sultan_(3709391491).jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Ausgrabungen_bei_Tell_es-Sultan_%283709391491%29.jpg",
+        "fallbackUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ausgrabungen_bei_Tell_es-Sultan_%283709391491%29.jpg?width=1024"
       }
     }
   ],

@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {validateCityStudies} from '../public/assets/city-studies.js';
+import {validateCityStudies,cityPhotoCandidates,isApprovedPhotoUrl} from '../public/assets/city-studies.js';
 import {parseRef} from '../public/assets/books.js';
 import {passageStart} from '../public/assets/jesus-map.js';
 const read=path=>readFileSync(new URL(path,import.meta.url),'utf8');
@@ -54,4 +54,20 @@ test('External site photos are restricted to Wikimedia image hosts by CSP',()=>{
  assert.match(headers,/img-src 'self' data: https:\/\/upload\.wikimedia\.org https:\/\/commons\.wikimedia\.org/);
  assert.match(headers,/script-src 'self'/);
  assert.match(read('../public/assets/city-studies.js'),/referrerpolicy|no-referrer|photo\.src/);
+});
+
+test('City images use canonical direct Wikimedia media links, with an independent fallback',()=>{
+ for(const c of cities.cities){
+  const list=cityPhotoCandidates(c.image);
+  assert.equal(list.length,2,`${c.id}: missing primary and backup photo`);
+  assert.match(list[0],/^https:\/\/upload\.wikimedia\.org\/wikipedia\/commons\//,`${c.id}: must load direct media, not a redirect`);
+  assert.ok(list.every(isApprovedPhotoUrl));
+  assert.equal(c.image.page,`https://commons.wikimedia.org/wiki/File:${c.image.file}`);
+ }
+ assert.ok(!isApprovedPhotoUrl('https://evil.example.org/image.jpg'));
+ assert.equal(cities.cities.find(c=>c.id==='jerusalem').image.file,'Jerusalem-2013-Aerial-Temple_Mount_01.jpg');
+ const script=read('../public/assets/city-studies.js');
+ assert.match(script,/photo\.onerror=\(\)=>\{photoIndex\+\+/);
+ assert.match(script,/photo\.onload=\(\)=>/);
+ assert.doesNotMatch(script,/photo\.src=`https:\/\/commons\.wikimedia\.org\/wiki\/Special:Redirect\/file/);
 });

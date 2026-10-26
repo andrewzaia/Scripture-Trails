@@ -5,6 +5,9 @@ const SVG='http://www.w3.org/2000/svg';
 const kindNames={excavation:'Excavated material',heritage:'Heritage record',tradition:'Later tradition','peer-reviewed':'Peer-reviewed analysis',research:'Scholarly interpretation','academic-inventory':'Academic site record','biblical-narrative':'Biblical narrative'};
 const make=(tag,cl,txt)=>{const e=document.createElement(tag);if(cl)e.className=cl;if(txt!==undefined)e.textContent=txt;return e;};
 const icon=(tag,attrs,text)=>{const e=document.createElementNS(SVG,tag);for(const [k,v] of Object.entries(attrs))e.setAttribute(k,String(v));if(text!==undefined)e.textContent=text;return e;};
+// Link directly to the published Wikimedia media files. Redirect endpoint URLs are unreliable in some browsers.
+export const isApprovedPhotoUrl=url=>typeof url==='string'&&/^https:\/\/(?:upload\.wikimedia\.org\/wikipedia\/commons\/|commons\.wikimedia\.org\/wiki\/Special:Redirect\/file\/)/.test(url);
+export const cityPhotoCandidates=image=>[image.url,image.fallbackUrl].filter(isApprovedPhotoUrl).filter((url,i,all)=>all.indexOf(url)===i);
 export function validateCityStudies(data){
  if(!data||data.version!==1||!data.sources||!Array.isArray(data.cities)||data.cities.length<5||!Array.isArray(data.disputed))throw Error('City studies schema');
  const cityIds=new Set();const parse=(ref,who)=>{if(!parseRef(passageStart(ref)))throw Error(`Invalid Bible citation in ${who}: ${ref}`);};
@@ -14,7 +17,7 @@ export function validateCityStudies(data){
   for(const ref of city.biblical)parse(ref.ref,city.id);
   for(const era of city.timeline){if(!era.dates||!era.description||!['historical-context','biblical-and-historical','biblical-narrative','archaeology-versus-narrative'].includes(era.classification))throw Error('Invalid timeline '+city.id);for(const ref of era.passages)parse(ref,city.id);for(const source of era.sourceIds)if(!data.sources[source])throw Error('Missing source '+source);}
   for(const finding of city.findings){if(!finding.limitation||!finding.claim||!kindNames[finding.kind])throw Error('Unsourced finding '+city.id);for(const ref of finding.passages)parse(ref,city.id);for(const source of finding.sourceIds)if(!data.sources[source])throw Error('Missing finding source '+source);if(!finding.sourceIds.length&&!finding.passages.length)throw Error('Finding without evidence '+city.id);}
-  if(!city.image?.page?.startsWith('https://commons.wikimedia.org/')||!city.image?.author||!city.image?.licenseUrl)throw Error('Missing legal photo attribution '+city.id);
+  if(!city.image?.page?.startsWith('https://commons.wikimedia.org/')||!city.image?.author||!city.image?.licenseUrl||!isApprovedPhotoUrl(city.image.url)||!isApprovedPhotoUrl(city.image.fallbackUrl))throw Error('Missing legal photo attribution or approved image source '+city.id);
   for(const id of city.sourceIds)if(!data.sources[id])throw Error('Missing source '+id);
   const pids=new Set();for(const point of city.mapPoints){if(pids.has(point.id)||!point.coordinates?.every(Number.isFinite)||!['site','city','context','tradition'].includes(point.kind))throw Error('Map point invalid '+city.id);pids.add(point.id);for(const s of point.sourceIds)if(!data.sources[s])throw Error('Source missing '+s);}
  }
@@ -59,11 +62,19 @@ export function createCityStudies(root,{onRead,onAtlas,onJourney}={}){
   root.querySelectorAll('[data-city-select]').forEach(b=>{const active=b.dataset.citySelect===city.id;b.classList.toggle('selected',active);b.setAttribute('aria-pressed',String(active));});
   $('city-title').textContent=city.name;$('strapline').textContent=city.strapline;$('city-location').textContent=city.modern;$('city-status').textContent=city.status;$('city-intro').textContent=city.lead;$('ancient').textContent=city.ancient.join(' | ');
   const photo=$('photo'),credit=$('photo-credit'),meta=city.image;
-  photo.hidden=false;photo.alt=meta.title+' - modern photograph, not a scene from antiquity';
-  // Wikimedia serves reduced images and receives an image request; never claim self-hosted imagery.
-  photo.src=`https://commons.wikimedia.org/wiki/Special:Redirect/file/${encodeURIComponent(meta.file)}?width=1024`;
-  photo.onerror=()=>{photo.hidden=true;};
-  credit.replaceChildren();const photoLink=make('a','',`Photo: ${meta.author}`);photoLink.href=meta.page;photoLink.target='_blank';photoLink.rel='noopener noreferrer';const license=make('a','',meta.license);license.href=meta.licenseUrl;license.target='_blank';license.rel='noopener noreferrer';credit.append(photoLink,make('span','', ' | '),license,make('span','', ' | Current-day site, not a Gospel-era reconstruction'));
+  const candidates=cityPhotoCandidates(meta);
+  let photoIndex=0;
+  // Avoid displaying an old city image or a broken-photo credit during slow network requests.
+  photo.onload=null;photo.onerror=null;photo.hidden=true;
+  photo.removeAttribute('src');
+  photo.alt=meta.title+' - modern photograph, not a scene from antiquity';
+  photo.loading='eager';
+  credit.replaceChildren();credit.hidden=true;
+  const showCredit=()=>{credit.replaceChildren();const photoLink=make('a','',`Photo: ${meta.author}`);photoLink.href=meta.page;photoLink.target='_blank';photoLink.rel='noopener noreferrer';const license=make('a','',meta.license);license.href=meta.licenseUrl;license.target='_blank';license.rel='noopener noreferrer';credit.append(photoLink,make('span','', ' | '),license,make('span','', ' | Current-day site, not a Gospel-era reconstruction'));credit.hidden=false;};
+  const fallbackIllustration=()=>{photo.hidden=true;credit.replaceChildren();credit.hidden=false;credit.textContent='Illustrative landscape - image source unavailable';};
+  photo.onload=()=>{if(photo.naturalWidth>0){photo.hidden=false;showCredit();}else photo.onerror?.();};
+  photo.onerror=()=>{photoIndex++;if(photoIndex<candidates.length)photo.src=candidates[photoIndex];else fallbackIllustration();};
+  if(candidates.length)photo.src=candidates[0];else fallbackIllustration();
   const n=city.biblical.length; $('bible-total').textContent=String(n);$('finding-total').textContent=String(city.findings.length);$('era-total').textContent=String(city.timeline.length);
   const verses=$('bible-refs');verses.replaceChildren();for(const item of city.biblical){const row=make('div','city-bible-row');row.append(linked(item.ref,item.ref,onRead),make('p','',item.note),tag(item.kind==='old-testament'?'old-testament':'new-testament'));verses.append(row);}
   const eras=$('periods');eras.replaceChildren();for(const item of city.timeline){const wrap=make('article','city-era');const left=make('div','city-era-marker');left.append(make('small','',item.dates),make('h3','',item.period));const right=make('div','city-era-body');right.append(tag(item.classification),make('p','',item.description));const refs=make('div','city-era-refs');for(const ref of item.passages)refs.append(linked(ref,ref,onRead));right.append(refs);if(item.sourceIds.length){const ul=make('ul','city-mini-sources');sourceList(item.sourceIds,ul);right.append(ul);}wrap.append(left,right);eras.append(wrap);}

@@ -59,3 +59,10 @@ Live ESV passages and search require the `ESV_API_KEY` secret in Cloudflare Page
 - Added a separate Project roadmap page with filtering, expandable milestones, verified delivered work and prospective research priorities.
 - Kept the 79-event itinerary, private GitHub / Cloudflare setup and existing Bible reader unchanged.
 - Added test coverage for cross-source references, geography completeness, roadmap statuses and page navigation.
+
+## 26 October 2026 - Historical City Studies photo reliability
+
+- Replaced brittle Wikimedia Commons image redirect endpoints with direct Wikimedia image CDN sources and one fallback URL per city.
+- Corrected the Jerusalem image filename to a confirmed Commons image; updated Bethlehem to a licensed Commons courtyard photograph.
+- Maintained photo creator and Creative Commons attribution, with an explicit illustrative fallback if the CDN cannot be reached.
+- Added regression checks for all five primary and fallback image URLs.
