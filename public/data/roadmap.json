@@ -256,6 +256,21 @@
         "Document human specialist reviewer and method only when such reviews occur"
       ],
       "verification": "Not completed: initial AI-assisted editorial screening must not be represented as external independent review."
+    },
+    {
+      "id": "local-reference-data",
+      "phase": "foundation",
+      "status": "delivered",
+      "title": "Locally stored reference data and supporting assets",
+      "summary": "The original OpenBible.info archive and all 66 generated Atlas files are stored with the project. Five credited city photographs are also served locally.",
+      "capabilities": [
+        "344799 source reference rows, with 344753 valid non-self rows imported",
+        "603076 directed navigation links across 66 book files",
+        "Source and generated-file checksums, provenance and attribution",
+        "Offline dataset regeneration with no reference download during builds",
+        "Local history, geography, verse metadata and city photographs"
+      ],
+      "verification": "All source reference pairs match an official OpenBible download. Vote counts differ by snapshot date. The original archive is retained unchanged, generated-file checksums are validated during builds, and publisher Bible APIs remain separate."
     }
   ]
 }

@@ -1,0 +1,90 @@
+{
+  "verifiedOn": "2026-10-27",
+  "photos": [
+    {
+      "id": "jerusalem",
+      "file": "/assets/city-photos/jerusalem.webp",
+      "author": "Andrew Shiva / Wikipedia",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Jerusalem-2013-Aerial-Temple_Mount_01.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/4/48/Jerusalem-2013-Aerial-Temple_Mount_01.jpg",
+      "downloadSha256": "b230e9d7f7a6fa66ac7ac6296d98743c653df01fb770e371b4060a46b201a7d7",
+      "localSha256": "6380ed8116f49af4c10124bbe7fdb204b2d59520fd5dd3720a500eee61486298",
+      "bytes": 174670,
+      "dimensions": [
+        1600,
+        923
+      ],
+      "changes": "Resized without cropping and re-encoded as WebP for web delivery; no retouching."
+    },
+    {
+      "id": "nazareth",
+      "file": "/assets/city-photos/nazareth.webp",
+      "author": "Magalhães",
+      "licence": "Public domain",
+      "licenceUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Nazareth_Church_of_the_Annunciation.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Nazareth_Church_of_the_Annunciation.jpg",
+      "downloadSha256": "f2bf42ee6df962cb2528ae775f0c8100c915c38fc7dfa1cfa4bbfc9578567c3d",
+      "localSha256": "ae6fe5a485cced87b5707de7d6e5b607ac96e02842855ba42609536bf515068d",
+      "bytes": 204458,
+      "dimensions": [
+        1600,
+        1200
+      ],
+      "changes": "Resized without cropping and re-encoded as WebP for web delivery; no retouching."
+    },
+    {
+      "id": "capernaum",
+      "file": "/assets/city-photos/capernaum.webp",
+      "author": "zeevveez",
+      "licence": "CC BY 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Capernaum_Synagogue_Ruins.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Capernaum_Synagogue_Ruins.jpg",
+      "downloadSha256": "5161523f8bf65b64c7beddadd3b50dbcde63f191850fdfc2335c3db539ce4612",
+      "localSha256": "bebcb2d78697f603e119ec123a9b9245154c3bebf7869efc7e123d58894341ae",
+      "bytes": 340304,
+      "dimensions": [
+        1600,
+        1200
+      ],
+      "changes": "Resized without cropping and re-encoded as WebP for web delivery; no retouching."
+    },
+    {
+      "id": "bethlehem",
+      "file": "/assets/city-photos/bethlehem.webp",
+      "author": "Rundvald",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Bethlehem-BW-10.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Bethlehem-BW-10.jpg/960px-Bethlehem-BW-10.jpg",
+      "downloadSha256": "a82003f92b8a7bbe82fc5de17ee9311b2641503bdfbda09cd8d877e162a5b065",
+      "localSha256": "4939cefc18e7cce8b1f917f6a8cd818ff445234d8a4d561ff9e839e0b9869ca7",
+      "bytes": 127922,
+      "dimensions": [
+        960,
+        639
+      ],
+      "changes": "Resized without cropping and re-encoded as WebP for web delivery; no retouching."
+    },
+    {
+      "id": "jericho",
+      "file": "/assets/city-photos/jericho.webp",
+      "author": "random exposure",
+      "licence": "CC BY 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Ausgrabungen_bei_Tell_es-Sultan_(3709391491).jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Ausgrabungen_bei_Tell_es-Sultan_%283709391491%29.jpg",
+      "downloadSha256": "ac0456cec2e78b8aa0713927be243d3a54ce4fff170ffb3c2fc10a37c19277bf",
+      "localSha256": "152d55bb51437e5abfab840ad737a2cb5f6f25fc9dd46539183bc0699ca2b2a4",
+      "bytes": 174448,
+      "dimensions": [
+        1024,
+        768
+      ],
+      "changes": "Resized without cropping and re-encoded as WebP for web delivery; no retouching."
+    }
+  ]
+}

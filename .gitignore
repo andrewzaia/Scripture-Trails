@@ -4,5 +4,3 @@ node_modules/
 .env*
 !.env.example
 .DS_Store
-public/data/refs/*.json
-!public/data/refs/manifest.json

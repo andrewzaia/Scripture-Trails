@@ -9,7 +9,8 @@
     "test": "node --test tests/*.test.mjs",
     "import:refs": "node scripts/import-crossrefs.mjs",
     "deploy": "wrangler pages deploy public --project-name scripture-trails",
-    "build": "npm run test"
+    "build": "npm run check:refs && npm run test",
+    "check:refs": "node scripts/check-crossrefs.mjs"
   },
   "devDependencies": {
     "wrangler": "^4.0.0"

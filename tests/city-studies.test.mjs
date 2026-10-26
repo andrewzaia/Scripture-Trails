@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
+import {createHash} from 'node:crypto';
 import {validateCityStudies,cityPhotoCandidates,isApprovedPhotoUrl} from '../public/assets/city-studies.js';
 import {parseRef} from '../public/assets/books.js';
 import {passageStart} from '../public/assets/jesus-map.js';
@@ -50,24 +51,29 @@ test('Full historical study view is linked from menu, the journeys map, and the 
  assert.match(css,/max-width:760px/);
 });
 
-test('External site photos are restricted to Wikimedia image hosts by CSP',()=>{
- assert.match(headers,/img-src 'self' data: https:\/\/upload\.wikimedia\.org https:\/\/commons\.wikimedia\.org/);
+test('city photo CSP permits local assets and required Bible reporting without Wikimedia requests',()=>{
+ assert.match(headers,/img-src 'self' data: https:\/\/fums\.api\.bible/);
+ assert.doesNotMatch(headers,/https:\/\/(?:upload|commons)\.wikimedia\.org/);
  assert.match(headers,/script-src 'self'/);
- assert.match(read('../public/assets/city-studies.js'),/referrerpolicy|no-referrer|photo\.src/);
 });
 
-test('City images use canonical direct Wikimedia media links, with an independent fallback',()=>{
+test('all five city photographs are local licensed assets with verified byte hashes',()=>{
  for(const c of cities.cities){
-  const list=cityPhotoCandidates(c.image);
-  assert.equal(list.length,2,`${c.id}: missing primary and backup photo`);
-  assert.match(list[0],/^https:\/\/upload\.wikimedia\.org\/wikipedia\/commons\//,`${c.id}: must load direct media, not a redirect`);
-  assert.ok(list.every(isApprovedPhotoUrl));
+  const candidates=cityPhotoCandidates(c.image);
+  assert.equal(candidates.length,1);
+  assert.match(candidates[0],/^\/assets\/city-photos\/[a-z-]+\.webp$/);
+  assert.ok(isApprovedPhotoUrl(candidates[0]));
+  assert.ok(!isApprovedPhotoUrl(c.image.sourceUrl));
+  const bytes=readFileSync(new URL('../public'+c.image.url,import.meta.url));
+  assert.equal(bytes.toString('ascii',0,4),'RIFF');assert.equal(bytes.toString('ascii',8,12),'WEBP');
+  assert.equal(createHash('sha256').update(bytes).digest('hex'),c.image.sha256);
+  assert.ok(bytes.length<600000);assert.ok(c.image.changes.includes('WebP'));
   assert.equal(c.image.page,`https://commons.wikimedia.org/wiki/File:${c.image.file}`);
  }
- assert.ok(!isApprovedPhotoUrl('https://evil.example.org/image.jpg'));
- assert.equal(cities.cities.find(c=>c.id==='jerusalem').image.file,'Jerusalem-2013-Aerial-Temple_Mount_01.jpg');
+ assert.equal(isApprovedPhotoUrl('//evil.example/photo.webp'),false);
+ assert.equal(isApprovedPhotoUrl('/assets/city-photos/../secret.webp'),false);
+ assert.equal(isApprovedPhotoUrl('https://evil.example.org/image.jpg'),false);
  const script=read('../public/assets/city-studies.js');
  assert.match(script,/photo\.onerror=\(\)=>\{photoIndex\+\+/);
  assert.match(script,/photo\.onload=\(\)=>/);
- assert.doesNotMatch(script,/photo\.src=`https:\/\/commons\.wikimedia\.org\/wiki\/Special:Redirect\/file/);
 });

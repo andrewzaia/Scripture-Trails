@@ -18,6 +18,16 @@
 
 # Changelog
 
+## 2026-10-27 - Local reference sources and supporting assets
+
+- Verified the uploaded OpenBible archive against all 344,799 official reference pairs and documented snapshot/vote differences.
+- Stored the original source archive and provenance, and regenerated all 66 Atlas files locally.
+- Removed external reference downloads from the rebuild workflow and made imports deterministic.
+- Added source and shard checksum validation to production builds.
+- Hosted all five credited city photographs locally as optimised WebP files, preserving source links and licences.
+- Recorded the preference for licensed local data in the project instructions. Publisher Bible APIs and required usage reporting remain separate.
+
+
 ## 2026-10-27 - API.Bible translation selection
 
 - Removed unused external edition links from the reader, Atlas, About, map and roadmap.

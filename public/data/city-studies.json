@@ -347,8 +347,10 @@
         "license": "CC BY-SA 4.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
         "page": "https://commons.wikimedia.org/wiki/File:Jerusalem-2013-Aerial-Temple_Mount_01.jpg",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Jerusalem-2013-Aerial-Temple_Mount_01.jpg/1024px-Jerusalem-2013-Aerial-Temple_Mount_01.jpg",
-        "fallbackUrl": "https://upload.wikimedia.org/wikipedia/commons/4/48/Jerusalem-2013-Aerial-Temple_Mount_01.jpg"
+        "url": "/assets/city-photos/jerusalem.webp",
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/48/Jerusalem-2013-Aerial-Temple_Mount_01.jpg",
+        "sha256": "6380ed8116f49af4c10124bbe7fdb204b2d59520fd5dd3720a500eee61486298",
+        "changes": "Resized without cropping and re-encoded as WebP for web delivery; no retouching."
       }
     },
     {
@@ -556,8 +558,10 @@
         "license": "Public domain",
         "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
         "page": "https://commons.wikimedia.org/wiki/File:Nazareth_Church_of_the_Annunciation.jpg",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Nazareth_Church_of_the_Annunciation.jpg/1024px-Nazareth_Church_of_the_Annunciation.jpg",
-        "fallbackUrl": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Nazareth_Church_of_the_Annunciation.jpg"
+        "url": "/assets/city-photos/nazareth.webp",
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Nazareth_Church_of_the_Annunciation.jpg",
+        "sha256": "ae6fe5a485cced87b5707de7d6e5b607ac96e02842855ba42609536bf515068d",
+        "changes": "Resized without cropping and re-encoded as WebP for web delivery; no retouching."
       }
     },
     {
@@ -794,8 +798,10 @@
         "license": "CC BY 2.0",
         "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
         "page": "https://commons.wikimedia.org/wiki/File:Capernaum_Synagogue_Ruins.jpg",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Capernaum_Synagogue_Ruins.jpg/1024px-Capernaum_Synagogue_Ruins.jpg",
-        "fallbackUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Capernaum_Synagogue_Ruins.jpg"
+        "url": "/assets/city-photos/capernaum.webp",
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Capernaum_Synagogue_Ruins.jpg",
+        "sha256": "bebcb2d78697f603e119ec123a9b9245154c3bebf7869efc7e123d58894341ae",
+        "changes": "Resized without cropping and re-encoded as WebP for web delivery; no retouching."
       }
     },
     {
@@ -1007,8 +1013,10 @@
         "license": "CC BY-SA 4.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
         "page": "https://commons.wikimedia.org/wiki/File:Bethlehem-BW-10.jpg",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Bethlehem-BW-10.jpg/960px-Bethlehem-BW-10.jpg",
-        "fallbackUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Bethlehem-BW-10.jpg"
+        "url": "/assets/city-photos/bethlehem.webp",
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Bethlehem-BW-10.jpg/960px-Bethlehem-BW-10.jpg",
+        "sha256": "4939cefc18e7cce8b1f917f6a8cd818ff445234d8a4d561ff9e839e0b9869ca7",
+        "changes": "Resized without cropping and re-encoded as WebP for web delivery; no retouching."
       }
     },
     {
@@ -1225,8 +1233,10 @@
         "license": "CC BY 2.0",
         "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
         "page": "https://commons.wikimedia.org/wiki/File:Ausgrabungen_bei_Tell_es-Sultan_(3709391491).jpg",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Ausgrabungen_bei_Tell_es-Sultan_%283709391491%29.jpg",
-        "fallbackUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ausgrabungen_bei_Tell_es-Sultan_%283709391491%29.jpg?width=1024"
+        "url": "/assets/city-photos/jericho.webp",
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Ausgrabungen_bei_Tell_es-Sultan_%283709391491%29.jpg",
+        "sha256": "152d55bb51437e5abfab840ad737a2cb5f6f25fc9dd46539183bc0699ca2b2a4",
+        "changes": "Resized without cropping and re-encoded as WebP for web delivery; no retouching."
       }
     }
   ],

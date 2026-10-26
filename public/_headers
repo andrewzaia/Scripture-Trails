@@ -3,7 +3,7 @@
   Referrer-Policy: strict-origin-when-cross-origin
   X-Frame-Options: DENY
   Permissions-Policy: camera=(), microphone=(), geolocation=()
-  Content-Security-Policy: default-src 'self'; script-src 'self' https://pkg.api.bible/fumsV3.min.js https://cdn.scripture.api.bible/fums/fumsv2.min.js; style-src 'self'; img-src 'self' data: https://upload.wikimedia.org https://commons.wikimedia.org https://fums.api.bible https://d3a2okcloueqyx.cloudfront.net; font-src 'self'; connect-src 'self' https://fums.api.bible; frame-ancestors 'none'; base-uri 'self'; object-src 'none'; form-action 'self'
+  Content-Security-Policy: default-src 'self'; script-src 'self' https://pkg.api.bible/fumsV3.min.js https://cdn.scripture.api.bible/fums/fumsv2.min.js; style-src 'self'; img-src 'self' data: https://fums.api.bible https://d3a2okcloueqyx.cloudfront.net; font-src 'self'; connect-src 'self' https://fums.api.bible; frame-ancestors 'none'; base-uri 'self'; object-src 'none'; form-action 'self'
 
 /assets/*
   Cache-Control: public, max-age=3600, must-revalidate

@@ -1,0 +1,17 @@
+{
+  "title": "OpenBible.info Bible Cross References",
+  "sourceUrl": "https://www.openbible.info/labs/cross-references/",
+  "downloadUrl": "https://a.openbible.info/data/cross-references.zip",
+  "licence": "CC BY 4.0",
+  "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "sourceDate": "2026-10-26",
+  "verifiedOn": "2026-10-27",
+  "archiveSha256": "045f1c5db8a331e3d2a185b44646b6ff220b72dd54669fd1976270a7351afcf4",
+  "tsvSha256": "203e2bc2ae11de5c9745c86504fe3e32c841ac8a59a6453dc68d34614f69769a",
+  "sourceRows": 344799,
+  "origin": "Archive supplied by the site owner from the public OpenBible.info download.",
+  "verification": "All 344799 unique From Verse / To Verse pairs match the official download retrieved on 27 October 2026. That retrieved download carries a 19 October 2026 header; the supplied snapshot carries a 26 October 2026 header, has 3525 different vote counts, and is not byte-identical.",
+  "officialComparisonTsvSha256": "8cff4d0eb417cfda226ea82759a1481a392977dea5d511e70157d753e40d2c73",
+  "sourceAttribution": "OpenBible.info; primarily based on public-domain sources, especially the Treasury of Scripture Knowledge.",
+  "changes": "Original supplied archive preserved unchanged. Generated shards normalise book IDs, validate verse counts, omit invalid or self links, clamp negative vote ranks to zero, deduplicate destinations and add reverse navigation links. Passage ranges are indexed by their first verse with the end retained."
+}

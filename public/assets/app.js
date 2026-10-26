@@ -2,8 +2,8 @@ import {BOOKS,findBook,parseRef,referenceFor,chapterRef,adjacentChapter,readerSc
 import {PATHS,EDITORIAL_LINKS} from './studies.js';
 import {ScriptureGraph} from './graph.js';
 import {createJesusMap} from './jesus-map.js';
-import {createRoadmap} from './roadmap.js?v=20261027-translations';
-import {createCityStudies} from './city-studies.js';
+import {createRoadmap} from './roadmap.js?v=20261027-local';
+import {createCityStudies} from './city-studies.js?v=20261027-local';
 import {buildAtlas} from './atlas-paths.js';
 import {TRANSLATIONS,getTranslation} from './translations.js';
 import {reportScriptureView} from './fums.js';
@@ -16,7 +16,7 @@ const getSaved=(key,defaultValue)=>{try{const parsed=JSON.parse(localStorage.get
 const putSaved=(key,value)=>{try{localStorage.setItem(`scripture-trails:${key}`,JSON.stringify(value));return true;}catch{return false;}};
 const state={translation:getTranslation(getSaved('translation','ESV'))?.code||'ESV',loadedTranslation:null,pendingTranslation:null,fums:null,view:'discover',ref:'John 1:1',loadedPassage:null,pendingPassage:null,bookmarks:getSaved('bookmarks',[]),notes:getSaved('notes',{}),history:getSaved('history',[]),theme:getSaved('theme','dark'),filter:'all',journey:null,links:[],graph:null,graphDepth:3,graphLinks:{},graphRequestId:0,requestId:0,jesusMap:null};
 const bookCache=new Map();let referenceManifest=null,verseCounts=null;let roadmapPage=null,cityStudiesPage=null;let toastTimer;
-async function hasImportedReferences(){if(referenceManifest===null){referenceManifest=fetch('/data/refs/manifest.json').then(r=>r.ok?r.json():{enabled:false}).catch(()=>({enabled:false}));}return (await referenceManifest).enabled===true;}
+async function hasImportedReferences(){if(referenceManifest===null){referenceManifest=fetch('/data/refs/manifest.json?v=20261027-local').then(r=>r.ok?r.json():{enabled:false}).catch(()=>({enabled:false}));}return (await referenceManifest).enabled===true;}
 const create=(tag,className,text)=>{const node=document.createElement(tag);if(className)node.className=className;if(text!==undefined)node.textContent=text;return node;};
 function toast(message){const el=$('toast');el.textContent=message;el.classList.add('visible');clearTimeout(toastTimer);toastTimer=setTimeout(()=>el.classList.remove('visible'),2500);}
 function esvUrl(ref){return `https://www.esv.org/${encodeURIComponent(ref.replace(/\s/g,'+')).replace(/%2B/g,'+')}/`;}
@@ -35,7 +35,7 @@ function openJourney(id){const path=PATHS.find(x=>x.id===id);if(!path)return;sta
 function renderJourneys(){const target=$('journey-detail');if(!state.journey){target.hidden=true;return;}target.hidden=false;}
 function populateBookPicker(){const frag=document.createDocumentFragment();for(const [label,books] of [['OLD TESTAMENT',BOOKS.slice(0,39)],['NEW TESTAMENT',BOOKS.slice(39)]]){const group=create('optgroup');group.label=label;for(const book of books){const opt=create('option','',book.name);opt.value=book.name;group.append(opt);}frag.append(group);}$('side-book').replaceChildren(frag);$('side-book').value='John';populateChapters();}
 function populateChapters(){const book=findBook($('side-book').value);if(!book)return;$('side-chapter').replaceChildren(...Array.from({length:book.chapters},(_,i)=>{const opt=create('option','',String(i+1));opt.value=i+1;return opt;}));$('side-chapter').value=1;}
-async function loadBookData(book){if(!book||!(await hasImportedReferences()))return {};const id=book.abbr.toLowerCase();if(bookCache.has(id))return bookCache.get(id);const promise=fetch(`/data/refs/${id}.json`).then(x=>x.ok?x.json():{}).catch(()=>({}));bookCache.set(id,promise);return promise;}
+async function loadBookData(book){if(!book||!(await hasImportedReferences()))return {};const id=book.abbr.toLowerCase();if(bookCache.has(id))return bookCache.get(id);const promise=fetch(`/data/refs/${id}.json?v=20261027-local`).then(x=>x.ok?x.json():{}).catch(()=>({}));bookCache.set(id,promise);return promise;}
 async function connectionsFor(ref){const cur=parseRef(ref);if(!cur)return [];
  const canonical=cur.verse===null?`${cur.book.name} ${cur.chapter}:1`:cur.formatted;
  const base=[...(editorial.get(canonical)||[])];const archive=await loadBookData(cur.book);

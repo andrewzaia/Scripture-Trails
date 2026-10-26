@@ -99,19 +99,25 @@ CI runs the Node tests for pushes and pull requests. Cloudflare deploys successf
 
 Static hosting such as GitHub Pages **cannot run** the API Functions. With static hosting the site remains a reference explorer with direct ESV.org links unless you provide a suitable server-side API elsewhere.
 
-## Expand to 340,000+ external cross-references
+## Locally stored OpenBible reference data
 
-The included links are a small **editorially curated starter dataset**, not comprehensive full-Bible coverage.
+The Atlas loads reference files hosted with this site, without querying OpenBible.info or GitHub in a visitor's browser. The project also retains the unchanged original archive supplied by the site owner in `sources/openbible/cross-references.zip` and reviewed provenance/checksums in `sources/openbible/provenance.json`.
 
-To add broader references:
+The 26 October 2026 source snapshot contains **344,799 reference rows**. All 344,799 unique source/target pairs match an official OpenBible download retrieved during verification. That retrieved download carries a 19 October 2026 header and differs in 3,525 vote counts; the archives are not byte-identical. Importing the supplied snapshot accepts **344,753 rows**, skips **46 invalid or self links**, and generates **603,076 directed navigation links** covering **30,303 source verses** in **66 book files**. Reverse navigation and deduplication explain the different row and link totals.
 
-1. Download the original cross-reference archive from <https://www.openbible.info/labs/cross-references/>.
-2. Extract the `cross_references.txt` TSV file, retaining the copyright/attribution from the source archive.
-3. Run `node scripts/import-crossrefs.mjs ./cross_references.txt`.
-4. Commit the 66 generated `public/data/refs/*.json` files after reviewing source provenance and sizes. The files are git-ignored by default to prevent accidentally committing a large dataset; force-add only after approval, e.g. `git add -f public/data/refs/*.json`.
-5. Verify sample connections against the original dataset, and confirm the file format before relying on any counts. The importer writes both directions for navigation and deduplicates each target.
+Rebuild entirely from the stored archive:
 
-**Attribution:** OpenBible.info Bible Cross-References, CC BY 4.0, primarily derived from the public-domain Treasury of Scripture Knowledge. <https://www.openbible.info/labs/cross-references/>. Dataset-derived links are labelled `dataset`, not automatically classified as quotations, messianic prophecies or theological conclusions. If you import this dataset, preserve this attribution in the site's About page and documentation.
+```bash
+npm run import:refs
+npm run check:refs
+npm run build
+```
+
+No reference download is made by these commands. Importing the same source is deterministic. Production builds verify the archived source, generated file checksums, coverage and website tests. An explicit TSV or compatible single-file ZIP can still be passed using `npm run import:refs -- /path/to/source`; review and update provenance before replacing the default snapshot. Commit the source archive, provenance and generated shards together. The manual GitHub rebuild workflow uses the same local source.
+
+**Attribution:** OpenBible.info Bible Cross-References, CC BY 4.0, based primarily on public-domain sources, especially the Treasury of Scripture Knowledge. [Original source](https://www.openbible.info/labs/cross-references/) and [licence](https://creativecommons.org/licenses/by/4.0/). Imported data normalises book IDs, validates verse counts, omits invalid or self links, clamps negative votes to zero, deduplicates destinations and adds reverse navigation. Range endpoints are retained while ranges are indexed by their first verse. These links are study aids, not independent proof of quotation, prophecy or interpretation.
+
+The project policy in `AGENTS.md` prefers locally stored, versioned copies of reusable data and assets where redistribution is allowed. Public access alone does not grant republication rights. Licensed Bible text still uses its authorised API and required view reporting.
 
 ## Editorial conventions
 
@@ -169,7 +175,7 @@ Reference sources are kept separate: editor-curated quotation, parallel, echo an
 
 **Reader editions** are ESV via Crossway and NASB20, NIV and NKJV via API.Bible. Publisher text is retrieved on demand using server-side credentials; the repository contains no Bible text. Translation-neutral reference links are not inaccurately described as coming from one translation. Future source-specific cross-references may be imported with permission and source-level attribution.
 
-The expanded network comes from the OpenBible.info cross-reference dataset (CC BY 4.0). To regenerate locally, download the official TSV and run `npm run import:refs -- /path/to/cross_references.txt`. The repo includes chapter verse counts for navigation, derived from a public domain KJV dataset, used only for versification numbers, never Bible text. See [OpenBible.info](https://www.openbible.info/labs/cross-references/) and [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+The expanded network comes from the OpenBible.info cross-reference dataset (CC BY 4.0). To regenerate from the stored snapshot without network access, run `npm run import:refs`. The repo includes chapter verse counts for navigation, derived from a public domain KJV dataset, used only for versification numbers, never Bible text. See [OpenBible.info](https://www.openbible.info/labs/cross-references/) and [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 
 ## Atlas version 0.2
 
@@ -181,7 +187,7 @@ The expanded network comes from the OpenBible.info cross-reference dataset (CC B
 
 ### Importing real-world connections
 
-The `Refresh atlas cross-references` GitHub Actions workflow downloads a **SHA-256 pinned** OpenBible.info CC BY 4.0 archive snapshot from the `trekhleb/bible-cross-references` public source repository, imports it into 66 shards and checks that the result is complete. The workflow is deliberately not run on every build. It commits only the derived reference JSON, never any Bible translation text. If the source changes, manually update the pin after verifying provenance and licence.
+The manual `Rebuild local Atlas references` GitHub Actions workflow imports the reviewed archive from `sources/openbible/`, validates all 66 files, and commits deterministic data only if it changes. It performs no third-party reference-data download. Update snapshots deliberately after reviewing provenance and reuse rights.
 
 The corpus uses KJV-style chapter/verse metadata for navigation, which may differ from textual-variant decisions in the supported reader editions.
 
@@ -243,6 +249,6 @@ Data: `public/data/city-studies.json` (5 cities, 40 biblical references, 25 hist
 
 **Source hierarchy:** Biblical passages are primary for what the texts say; external evidence supports only the independent archaeological or historical claim for which it is cited. Later pilgrimage monuments are not identified as the original first-century event settings. The existence of Bronze Age Jericho and late Roman Capernaum architecture does not independently establish Joshua 6 or an individual Gospel miracle. Sites and candidate coordinates are modern orientation aids, not ancient city polygons or travel paths.
 
-**Modern images:** The five city cover photographs link to identified Wikimedia Commons file pages and licence URLs, with authors credited. Because the site does not redistribute the images locally, photos are requested from Wikimedia when a city study is opened and may fail if Wikimedia is unreachable; generic original cover art remains as the fallback. `public/_headers` permits images from `commons.wikimedia.org` and `upload.wikimedia.org` only; scripts, fonts and ESV text remain same-origin.
+**Modern images:** The five city photographs are served from `public/assets/city-photos/`. Their Commons source pages, authors, licences, original download hashes, local hashes and changes are recorded in `credits.json` and city metadata. Photos are resized without cropping and re-encoded as WebP; their original licences still apply, including applicable share-alike conditions. No Wikimedia image request is required to open a city study. External source and licence links remain for verification. The combined local image payload is about 1.02 MB. The CSP permits local images and mandatory API.Bible reporting hosts.
 
 This milestone is an **editorial research release**. External specialist peer review and disputed-site adjudication are still outstanding and separately tracked on the roadmap. No additional copyrighted Bible text is bundled in the data or JavaScript.

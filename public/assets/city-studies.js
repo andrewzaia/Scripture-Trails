@@ -5,9 +5,9 @@ const SVG='http://www.w3.org/2000/svg';
 const kindNames={excavation:'Excavated material',heritage:'Heritage record',tradition:'Later tradition','peer-reviewed':'Peer-reviewed analysis',research:'Scholarly interpretation','academic-inventory':'Academic site record','biblical-narrative':'Biblical narrative'};
 const make=(tag,cl,txt)=>{const e=document.createElement(tag);if(cl)e.className=cl;if(txt!==undefined)e.textContent=txt;return e;};
 const icon=(tag,attrs,text)=>{const e=document.createElementNS(SVG,tag);for(const [k,v] of Object.entries(attrs))e.setAttribute(k,String(v));if(text!==undefined)e.textContent=text;return e;};
-// Link directly to the published Wikimedia media files. Redirect endpoint URLs are unreliable in some browsers.
-export const isApprovedPhotoUrl=url=>typeof url==='string'&&/^https:\/\/(?:upload\.wikimedia\.org\/wikipedia\/commons\/|commons\.wikimedia\.org\/wiki\/Special:Redirect\/file\/)/.test(url);
-export const cityPhotoCandidates=image=>[image.url,image.fallbackUrl].filter(isApprovedPhotoUrl).filter((url,i,all)=>all.indexOf(url)===i);
+// City photographs are served by this site; external URLs are citation metadata only.
+export const isApprovedPhotoUrl=url=>typeof url==='string'&&/^\/assets\/city-photos\/[a-z-]+\.webp$/.test(url);
+export const cityPhotoCandidates=image=>[image.url].filter(isApprovedPhotoUrl);
 export function validateCityStudies(data){
  if(!data||data.version!==1||!data.sources||!Array.isArray(data.cities)||data.cities.length<5||!Array.isArray(data.disputed))throw Error('City studies schema');
  const cityIds=new Set();const parse=(ref,who)=>{if(!parseRef(passageStart(ref)))throw Error(`Invalid Bible citation in ${who}: ${ref}`);};
@@ -17,7 +17,7 @@ export function validateCityStudies(data){
   for(const ref of city.biblical)parse(ref.ref,city.id);
   for(const era of city.timeline){if(!era.dates||!era.description||!['historical-context','biblical-and-historical','biblical-narrative','archaeology-versus-narrative'].includes(era.classification))throw Error('Invalid timeline '+city.id);for(const ref of era.passages)parse(ref,city.id);for(const source of era.sourceIds)if(!data.sources[source])throw Error('Missing source '+source);}
   for(const finding of city.findings){if(!finding.limitation||!finding.claim||!kindNames[finding.kind])throw Error('Unsourced finding '+city.id);for(const ref of finding.passages)parse(ref,city.id);for(const source of finding.sourceIds)if(!data.sources[source])throw Error('Missing finding source '+source);if(!finding.sourceIds.length&&!finding.passages.length)throw Error('Finding without evidence '+city.id);}
-  if(!city.image?.page?.startsWith('https://commons.wikimedia.org/')||!city.image?.author||!city.image?.licenseUrl||!isApprovedPhotoUrl(city.image.url)||!isApprovedPhotoUrl(city.image.fallbackUrl))throw Error('Missing legal photo attribution or approved image source '+city.id);
+  if(!city.image?.page?.startsWith('https://commons.wikimedia.org/')||!city.image?.author||!city.image?.licenseUrl||!isApprovedPhotoUrl(city.image.url)||!city.image?.sourceUrl?.startsWith('https://upload.wikimedia.org/')||!city.image?.sha256||!city.image?.changes)throw Error('Missing legal photo attribution or approved image source '+city.id);
   for(const id of city.sourceIds)if(!data.sources[id])throw Error('Missing source '+id);
   const pids=new Set();for(const point of city.mapPoints){if(pids.has(point.id)||!point.coordinates?.every(Number.isFinite)||!['site','city','context','tradition'].includes(point.kind))throw Error('Map point invalid '+city.id);pids.add(point.id);for(const s of point.sourceIds)if(!data.sources[s])throw Error('Source missing '+s);}
  }
@@ -70,7 +70,7 @@ export function createCityStudies(root,{onRead,onAtlas,onJourney}={}){
   photo.alt=meta.title+' - modern photograph, not a scene from antiquity';
   photo.loading='eager';
   credit.replaceChildren();credit.hidden=true;
-  const showCredit=()=>{credit.replaceChildren();const photoLink=make('a','',`Photo: ${meta.author}`);photoLink.href=meta.page;photoLink.target='_blank';photoLink.rel='noopener noreferrer';const license=make('a','',meta.license);license.href=meta.licenseUrl;license.target='_blank';license.rel='noopener noreferrer';credit.append(photoLink,make('span','', ' | '),license,make('span','', ' | Current-day site, not a Gospel-era reconstruction'));credit.hidden=false;};
+  const showCredit=()=>{credit.replaceChildren();const photoLink=make('a','',`Photo: ${meta.author}`);photoLink.href=meta.page;photoLink.target='_blank';photoLink.rel='noopener noreferrer';const license=make('a','',meta.license);license.href=meta.licenseUrl;license.target='_blank';license.rel='noopener noreferrer';credit.append(photoLink,make('span','', ' | '),license,make('span','', ' | '+meta.changes+' | Current-day site, not a Gospel-era reconstruction'));credit.hidden=false;};
   const fallbackIllustration=()=>{photo.hidden=true;credit.replaceChildren();credit.hidden=false;credit.textContent='Illustrative landscape - image source unavailable';};
   photo.onload=()=>{if(photo.naturalWidth>0){photo.hidden=false;showCredit();}else photo.onerror?.();};
   photo.onerror=()=>{photoIndex++;if(photoIndex<candidates.length)photo.src=candidates[photoIndex];else fallbackIllustration();};
@@ -86,6 +86,6 @@ export function createCityStudies(root,{onRead,onAtlas,onJourney}={}){
   const address=new URL(location.href);address.searchParams.set('city',city.id);history.replaceState(history.state,'',address);
  }
  function drawTabs(){const target=$('city-tabs');target.replaceChildren();for(const city of data.cities){const b=make('button','city-tab',city.name);b.type='button';b.dataset.citySelect=city.id;b.addEventListener('click',()=>{selected=city.id;renderCity();});target.append(b);}}
- async function load(){const resp=await fetch('/data/city-studies.json');if(!resp.ok)throw Error('Cannot load city research');data=await resp.json();validateCityStudies(data);drawTabs();renderDebate();root.dataset.ready='true';$('loading').hidden=true;renderCity();}
+ async function load(){const resp=await fetch('/data/city-studies.json?v=20261027-local');if(!resp.ok)throw Error('Cannot load city research');data=await resp.json();validateCityStudies(data);drawTabs();renderDebate();root.dataset.ready='true';$('loading').hidden=true;renderCity();}
  return {activate(city){if(city&&/^[a-z-]+$/.test(city))selected=city;if(!pending)pending=load().catch(e=>{$('loading').textContent='City studies could not load. Please refresh this page.';console.error('City studies:',e);});else if(data)renderCity();}};
 }
