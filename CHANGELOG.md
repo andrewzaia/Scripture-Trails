@@ -18,6 +18,11 @@
 
 # Changelog
 
+## 2026-10-27 - Compact translation status rectangles
+
+- Use compact horizontal rectangles with a small green or red circle before each translation acronym.
+- Preserve display-only behaviour, accessible status descriptions and the existing availability logic.
+
 ## 2026-10-27 - Simpler translation indicators
 
 - Make the header translation squares display-only, keeping translation changes in the Bible reader selector and ESV as the default.
