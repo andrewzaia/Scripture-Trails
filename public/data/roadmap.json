@@ -1,0 +1,232 @@
+{
+  "project": "Scripture Trails",
+  "updated": "2026-10-26",
+  "description": "A transparent, evidence-aware roadmap. Completed means the feature is delivered, not that its scholarly coverage is exhaustive. No future delivery dates are promised.",
+  "currentFocus": [
+    "Editorial and historical accuracy audit",
+    "Deeper archaeological city dossiers",
+    "Parallel-Gospel chronology comparison"
+  ],
+  "phases": [
+    {
+      "id": "foundation",
+      "title": "Platform and Bible discovery"
+    },
+    {
+      "id": "geography",
+      "title": "Biblical geography"
+    },
+    {
+      "id": "next",
+      "title": "Next priorities"
+    },
+    {
+      "id": "connections",
+      "title": "Deeper connections"
+    },
+    {
+      "id": "editions",
+      "title": "Texts and languages"
+    },
+    {
+      "id": "platform",
+      "title": "Future study tools"
+    }
+  ],
+  "milestones": [
+    {
+      "id": "reader",
+      "phase": "foundation",
+      "status": "delivered",
+      "title": "Bible reading and personal study",
+      "summary": "The 66-book navigator, ESV reader, verse search, bookmarks, local notes and reading history form the foundation.",
+      "capabilities": [
+        "All 66 books and chapter navigation",
+        "Official Crossway ESV text via server-side API",
+        "Bookmarks, private local notes and recent reading"
+      ],
+      "verification": "Available in the live application; text retrieval depends on the Crossway service and applicable licensing."
+    },
+    {
+      "id": "atlas",
+      "phase": "foundation",
+      "status": "delivered",
+      "title": "Ten-hop Connection Atlas",
+      "summary": "An explorer connecting verses with documented source labels, rather than treating every relation as a quotation or a prophecy.",
+      "capabilities": [
+        "Up to 10 reference hops with bounded rendering",
+        "Book / chapter / verse selection and per-verse Atlas actions",
+        "603,076 directed reference links imported from 344,753 OpenBible.info source rows"
+      ],
+      "verification": "Dataset importer and CI tests passed; edges are sourced suggestions, not independently verified exegetical claims."
+    },
+    {
+      "id": "guided",
+      "phase": "foundation",
+      "status": "delivered",
+      "title": "Guided study journeys",
+      "summary": "Six theme-based entry points and deep links into Scripture.",
+      "capabilities": [
+        "Six curated journeys",
+        "Reader links and study notes"
+      ],
+      "verification": "Curated paths are tested for valid Bible references."
+    },
+    {
+      "id": "gospel",
+      "phase": "geography",
+      "status": "delivered",
+      "title": "Journeys of Jesus",
+      "summary": "A self-hosted geographic itinerary following Gospel and Acts passages without drawing invented historical roads.",
+      "capabilities": [
+        "79 episode entries and 35 places or regions",
+        "Interactive pins, repeated visit lists and draggable timeline",
+        "Passage links, location confidence and qualified route reconstruction"
+      ],
+      "verification": "Narrative sequence is an editorial harmonisation and not a complete historically dated itinerary."
+    },
+    {
+      "id": "places",
+      "phase": "geography",
+      "status": "delivered",
+      "title": "Place history and archaeology panels",
+      "summary": "Historical context for each of the 35 journey markers, while distinguishing scriptural claims from external scholarship.",
+      "capabilities": [
+        "Ancient and modern names and location context",
+        "Archaeology summaries with source links where available",
+        "Old Testament historical connections and Gospel episode index"
+      ],
+      "verification": "All 35 places have a dossier; depth of independent archaeological references varies by place."
+    },
+    {
+      "id": "deployment",
+      "phase": "foundation",
+      "status": "delivered",
+      "title": "Deployment, provenance and testing",
+      "summary": "The site is automatically deployed from a private GitHub repository to Cloudflare Pages.",
+      "capabilities": [
+        "Private GitHub source with production branch builds",
+        "Automated Node tests and Pages Functions",
+        "ESV API token configured as an encrypted production secret"
+      ],
+      "verification": "Deployment and test results checked; production site remains public despite the private code repository."
+    },
+    {
+      "id": "audit",
+      "phase": "next",
+      "status": "next",
+      "title": "Editorial and historical accuracy audit",
+      "summary": "Review every existing place, event and cross-reference for bibliographic accuracy, historical caution, and competing Gospel sequences.",
+      "capabilities": [
+        "Passage-by-passage review of the 79 events",
+        "Correct misidentified places or overconfident geographical assertions",
+        "Clear source/date/reviewer fields and published corrections log"
+      ],
+      "verification": "Ready when each retained claim has a source and an explicit review status."
+    },
+    {
+      "id": "place-deep-dives",
+      "phase": "next",
+      "status": "next",
+      "title": "Deeper individual city dossiers",
+      "summary": "Expand leading archaeological sites from short summaries into illustrated, separately cited research pages.",
+      "capabilities": [
+        "Full dossiers for Jerusalem, Nazareth, Capernaum, Bethlehem and Jericho",
+        "Document excavation chronology and which structures are later traditions",
+        "Bring disputed alternatives to the foreground for Cana, Bethsaida and Emmaus"
+      ],
+      "verification": "Ready when each featured site has peer-reviewed or primary institutional citations and a visible evidence register."
+    },
+    {
+      "id": "timeline-evidence",
+      "phase": "next",
+      "status": "next",
+      "title": "Gospel chronology comparison",
+      "summary": "Allow users to switch between each Gospel's account and a harmonised sequence.",
+      "capabilities": [
+        "Matthew, Mark, Luke and John filters",
+        "Parallel-account grouping and notes on sequence differences",
+        "Explicit no-date status when the text supplies no date"
+      ],
+      "verification": "Ready when every cross-Gospel sequence decision is documented and alternate orders can be studied."
+    },
+    {
+      "id": "book-atlas",
+      "phase": "connections",
+      "status": "planned",
+      "title": "Classify references by evidence type",
+      "summary": "Distinguish direct quotations, literary echoes, typology, parallels and editorial themes across the complete atlas.",
+      "capabilities": [
+        "Source-verified edge types rather than inferred labels",
+        "Reviewer status and confidence/explanation per edge",
+        "Browse original context for both ends of each link"
+      ],
+      "verification": "Requires careful human review and should not be auto-labelled from similarity alone."
+    },
+    {
+      "id": "people-places",
+      "phase": "connections",
+      "status": "planned",
+      "title": "People, places and events index",
+      "summary": "Link biblical persons, locations and key events to the reader, Atlas and journey map.",
+      "capabilities": [
+        "Entity index with alternate names",
+        "One-click location and related verses",
+        "Person-event-place cross-navigation"
+      ],
+      "verification": "Requires sourced identifiers and name disambiguation."
+    },
+    {
+      "id": "bible-languages",
+      "phase": "editions",
+      "status": "research",
+      "title": "NASB, LSB and original-language study",
+      "summary": "Maintain ESV, NASB 2020 and LSB as approved study editions while respecting distinct text and data rights.",
+      "capabilities": [
+        "Investigate authorised NASB and LSB API/display licensing",
+        "Compare variant renderings only where permissions allow",
+        "Later: carefully sourced Hebrew and Greek lexical tools"
+      ],
+      "verification": "Do not host additional copyrighted text without an appropriate licence."
+    },
+    {
+      "id": "study-tools",
+      "phase": "platform",
+      "status": "planned",
+      "title": "Richer notes, exports and reading plans",
+      "summary": "Bring linked observations, highlights and optional study plans into one private workspace.",
+      "capabilities": [
+        "Notes linked to multiple verses and places",
+        "Export and import personal work with clear privacy notices",
+        "Reading goals and optional progress tracking"
+      ],
+      "verification": "Should be accessible, tested and usable without creating an account."
+    },
+    {
+      "id": "accounts",
+      "phase": "platform",
+      "status": "research",
+      "title": "Optional encrypted sync and accounts",
+      "summary": "Consider private device sync only after a clear privacy/security design and an actual user need.",
+      "capabilities": [
+        "Opt-in login rather than a sign-up gate",
+        "Secure note synchronisation and deletion tools",
+        "Privacy policy and encrypted data handling"
+      ],
+      "verification": "Not committed; avoid building accounts before study features are stable."
+    },
+    {
+      "id": "maps",
+      "phase": "platform",
+      "status": "planned",
+      "title": "Wider biblical geography library",
+      "summary": "After the Jesus itinerary, consider maps for Paul's journeys, Exodus traditions and Old Testament kings and prophets.",
+      "capabilities": [
+        "Passage-linked maps and dates with explicit ambiguity",
+        "Historical geography comparison without invented borders",
+        "Accessible visual and list modes"
+      ],
+      "verification": "Require a separate source and chronological audit per map."
+    }
+  ]
+}

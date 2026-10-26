@@ -32,8 +32,19 @@ export function validateJourneyData(data){
  const ids=new Set();for(const e of data.events){if(ids.has(e.id)||!sites.has(e.place)||!phases.has(e.phase)||!e.title||!e.summary||!e.passages?.length||!e.passages.every(passageStart))throw Error(`Invalid journey event ${e.id}`);ids.add(e.id);}
  return true;
 }
+export function validatePlaceStudies(geography,journeys){
+ if(!geography||!geography.places||!geography.sources||!geography.evidenceGuide)throw Error('Missing geography dataset');
+ const placeIds=new Set(journeys.places.map(p=>p.id));
+ if(Object.keys(geography.places).length!==placeIds.size)throw Error('Incomplete historical place coverage');
+ for(const id of placeIds){const p=geography.places[id];
+  if(!p||!p.ancientNames?.length||!p.modernSetting||!p.historicalContext||!p.archaeology||!p.caution||!geography.evidenceGuide[p.evidenceLevel])throw Error('Invalid historical place '+id);
+  for(const item of p.oldTestament||[])if(!passageStart(item.ref)||!item.note)throw Error('Invalid OT note '+id);
+  for(const key of p.literature||[])if(!geography.sources[key]||!/^https:\/\//.test(geography.sources[key].url))throw Error('Unsourced claim '+id);
+ }
+ return true;
+}
 export function createJesusMap(root,onOpenPassage){
- let data,phaseMap,placeMap,index=0,visited=[],timer=null,view={x:0,y:0,w:1100,h:780},phase='all',mode='stage';
+ let data,geography,phaseMap,placeMap,index=0,visited=[],timer=null,view={x:0,y:0,w:1100,h:780},phase='all',mode='stage';
  const $=name=>root.querySelector(`[data-jesus="${name}"]`);
  const svg=$('map');const duration=2300;
  const layer={};for(const id of ['geography','paths','pins']){layer[id]=g('g',{'data-layer':id});svg.append(layer[id]);}
@@ -90,10 +101,34 @@ export function createJesusMap(root,onOpenPassage){
   const qp=new URL(window.location.href);qp.searchParams.set('stop',e.id);history.replaceState(history.state,'',qp);
  }
  function jumpToPlace(id){const matching=data.events.find(e=>e.place===id);if(!matching)return;phase='all';$('phase').value='all';selectEvent(data.events.indexOf(matching));selectPlace(id,true);}
+ function renderPlaceStudy(id){
+  const place=placeMap.get(id),record=geography?.places?.[id];if(!place||!record)return;
+  $('study-name').textContent=place.name;
+  $('study-evidence').textContent=geography.evidenceGuide[record.evidenceLevel];
+  $('study-ancient').textContent=record.ancientNames.join(' | ');
+  $('study-modern').textContent=record.modernSetting;
+  $('study-context').textContent=record.historicalContext;
+  $('study-archaeology').textContent=record.archaeology;
+  $('study-caution').textContent=record.caution;
+  const ot=$('study-old');ot.replaceChildren();
+  if(record.oldTestament.length){for(const item of record.oldTestament){const row=el('div','jesus-study-source-row');
+    const read=el('button','jesus-study-ref',item.ref);read.type='button';read.title=`Read ${item.ref}`;read.addEventListener('click',()=>onOpenPassage(passageStart(item.ref)));
+    row.append(read,el('span','',item.note));ot.append(row);}}
+  else ot.append(el('p','jesus-study-empty','No direct Old Testament place reference is asserted for this marker.'));
+  const gospel=$('study-gospel');gospel.replaceChildren();
+  const episodes=data.events.filter(e=>e.place===id);
+  for(const event of episodes){const row=el('div','jesus-study-gospel-item');const title=el('strong','',event.title);const refList=el('div','jesus-study-gospel-refs');
+    for(const ref of event.passages){const button=el('button','jesus-study-ref',ref);button.type='button';button.title=`Read ${ref}`;button.addEventListener('click',()=>onOpenPassage(passageStart(ref)));refList.append(button);}
+    row.append(title,refList);gospel.append(row);}
+  $('study-gospel-count').textContent=`${episodes.length} catalogued ${episodes.length===1?'episode':'episodes'}`;
+  const external=$('study-sources');external.replaceChildren();
+  if(record.literature.length){for(const key of record.literature){const item=geography.sources[key];const a=el('a','jesus-study-literature',item.title+' ↗');a.href=item.url;a.target='_blank';a.rel='noopener noreferrer';const kind=el('small','',item.kind);const row=el('div','jesus-study-literature-row');row.append(a,kind);external.append(row);}}
+  else external.append(el('p','jesus-study-empty','No independent archaeological reference is attached to this place yet. This is a research gap, not proof of a particular identification.'));
+ }
  function selectPlace(id,move=false){const place=placeMap.get(id);if(!place)return;
  const matches=data.events.filter(e=>e.place===id);const list=$('visits');list.replaceChildren();$('visit-count').textContent=`${matches.length} recorded ${matches.length===1?'episode':'episodes'}`;
  for(const e of matches){const b=el('button','jesus-visit',`${String(data.events.indexOf(e)+1).padStart(2,'0')}  ${e.title}`);b.type='button';b.classList.toggle('active',e.id===data.events[index].id);b.addEventListener('click',()=>{stop();phase='all';$('phase').value='all';selectEvent(data.events.indexOf(e));selectPlace(id);});list.append(b);}
- $('place-caption').textContent=`${place.name} | ${place.region}`;if(move)focus(place.coordinates,true);
+ $('place-caption').textContent=`${place.name} | ${place.region}`;renderPlaceStudy(id);if(move)focus(place.coordinates,true);
  }
  function move(delta){const items=getList();let pos=items.findIndex(e=>e.id===data.events[index].id);const next=items[pos+delta];if(!next){stop();return;}selectEvent(data.events.indexOf(next));selectPlace(next.place);}
  function start(){if(timer!==null){stop();return;}const items=getList();if(items.length===0)return;let pos=items.findIndex(e=>e.id===data.events[index].id);if(pos===items.length-1){selectEvent(data.events.indexOf(items[0]));selectPlace(items[0].place);}
@@ -116,8 +151,9 @@ export function createJesusMap(root,onOpenPassage){
   document.addEventListener('visibilitychange',()=>{if(document.hidden)stop();});
  }
  async function load(){
-  const response=await fetch('/data/jesus-journeys.json');if(!response.ok)throw Error('Cannot retrieve the itinerary');
-  data=await response.json();validateJourneyData(data);$('event-total').textContent=String(data.events.length);$('place-total').textContent=String(data.places.length);$('source-total').textContent=String(data.events.reduce((n,e)=>n+e.passages.length,0));placeMap=new Map(data.places.map(p=>[p.id,p]));phaseMap=new Map(data.phases.map(p=>[p.id,p]));
+  const responses=await Promise.all([fetch('/data/jesus-journeys.json'),fetch('/data/jesus-geography.json')]);
+  if(responses.some(r=>!r.ok))throw Error('Cannot retrieve the journey and geography data');
+  [data,geography]=await Promise.all(responses.map(r=>r.json()));validateJourneyData(data);validatePlaceStudies(geography,data);$('event-total').textContent=String(data.events.length);$('place-total').textContent=String(data.places.length);$('source-total').textContent=String(data.events.reduce((n,e)=>n+e.passages.length,0));placeMap=new Map(data.places.map(p=>[p.id,p]));phaseMap=new Map(data.phases.map(p=>[p.id,p]));
   background();bind();view={x:520,y:56,w:580,h:411};setView();const initial=new URLSearchParams(location.search).get('stop');const chosen=data.events.findIndex(e=>e.id===initial);selectEvent(chosen<0?0:chosen,true);selectPlace(data.events[index].place);$('loading').hidden=true;root.dataset.ready='true';
  }
  let loading=null;return {activate(){if(!loading)loading=load().catch(e=>{$('loading').textContent='Unable to load the Gospel itinerary. Please try refreshing this page.';console.error('Journeys map:',e);});},pause:stop};

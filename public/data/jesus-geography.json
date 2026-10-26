@@ -1,0 +1,663 @@
+{
+  "version": 1,
+  "updated": "2026-10-26",
+  "methodology": "Gospels and Acts are primary evidence for the episodes; OT references illuminate the broader history of a named region, not evidence Jesus visited that Old Testament event. Independent archaeological scholarship is cited where available. Absence of an external archaeology citation is explicitly not proof of a site identification.",
+  "evidenceGuide": {
+    "excavated": "Archaeological settlement or material remains established, not the particular Gospel event",
+    "reported": "Historical place or feature known; this entry does not independently audit a precise event spot",
+    "tradition": "Traditional identification or commemorated place, with location limits",
+    "disputed": "Two or more plausible identifications or textual variants",
+    "regional": "No exact ancient site claimed; illustrative regional marker"
+  },
+  "sources": {
+    "bethlehem-unesco": {
+      "title": "UNESCO - Birthplace of Jesus, Church of the Nativity, Bethlehem",
+      "url": "https://whc.unesco.org/en/list/1433/",
+      "kind": "Heritage record"
+    },
+    "jerusalem-unesco": {
+      "title": "UNESCO - Old City of Jerusalem and its Walls",
+      "url": "https://whc.unesco.org/en/list/148/",
+      "kind": "Heritage record"
+    },
+    "jericho-unesco": {
+      "title": "UNESCO - Ancient Jericho/Tell es-Sultan",
+      "url": "https://whc.unesco.org/en/list/1687/",
+      "kind": "Archaeology and heritage"
+    },
+    "baptism-unesco": {
+      "title": "UNESCO - Baptism Site, Bethany Beyond the Jordan (Al-Maghtas)",
+      "url": "https://whc.unesco.org/en/list/1446",
+      "kind": "Pilgrimage heritage"
+    },
+    "nazareth-iaa": {
+      "title": "Israel Antiquities Authority - The Settlement History of Nazareth in the Iron Age and Early Roman Period",
+      "url": "https://publications.iaa.org.il/atiqot/vol98/iss1/3/",
+      "kind": "Excavation report"
+    },
+    "nazareth-oxford": {
+      "title": "Ken Dark - Archaeology of Jesus' Nazareth (Oxford University Press)",
+      "url": "https://academic.oup.com/book/45361",
+      "kind": "Research monograph"
+    },
+    "capernaum-survey": {
+      "title": "Archaeological survey - Simon Peter in Capernaum: A Survey of the First-Century Village",
+      "url": "https://rsc.byu.edu/ministry-peter-chief-apostle/simon-peter-capernaum-archaeological-survey-first-century-village",
+      "kind": "Archaeological overview"
+    },
+    "bethsaida-excavation": {
+      "title": "Bethsaida-Julias el-Araj Excavation Project - Season 8 report (2024)",
+      "url": "https://www.bethsaida-julias.com/season8report",
+      "kind": "Excavation report"
+    },
+    "tyre-unesco": {
+      "title": "UNESCO - Tyre",
+      "url": "https://whc.unesco.org/en/list/299/",
+      "kind": "Archaeology and heritage"
+    },
+    "tyre-france": {
+      "title": "French Ministry of Culture - Tyre",
+      "url": "https://archeologie.culture.gouv.fr/proche-orient/en/tyre",
+      "kind": "Archaeological overview"
+    },
+    "magdala-iaa": {
+      "title": "Israel Antiquities Authority - Magdala Archaeological Project report",
+      "url": "https://publications.iaa.org.il/atiqot/vol90/iss1/7/",
+      "kind": "Excavation report"
+    }
+  },
+  "places": {
+    "bethlehem": {
+      "ancientNames": [
+        "Bethlehem",
+        "Ephrath / Ephrathah (regional association)"
+      ],
+      "modernSetting": "Bethlehem, West Bank",
+      "historicalContext": "Judean settlement associated with David and his family; the Gospels place Jesus' birth here.",
+      "archaeology": "The Church of the Nativity marks a site venerated from at least the second century; the church was first completed in the fourth century. This preserves early tradition, not an excavated first-century birth certificate.",
+      "evidenceLevel": "tradition",
+      "oldTestament": [
+        {
+          "ref": "Micah 5:2",
+          "note": "Bethlehem in the prophetic royal context"
+        },
+        {
+          "ref": "Ruth 1:1-2",
+          "note": "The town in Ruth's story"
+        },
+        {
+          "ref": "1 Samuel 16:1-13",
+          "note": "David anointed in Bethlehem"
+        }
+      ],
+      "literature": [
+        "bethlehem-unesco"
+      ],
+      "caution": "The Gospel names the town; the precise building or cave is identified by later Christian tradition."
+    },
+    "jerusalem": {
+      "ancientNames": [
+        "Jerusalem",
+        "Zion (poetic/part of city)",
+        "City of David (ancient core)"
+      ],
+      "modernSetting": "Jerusalem",
+      "historicalContext": "Temple and pilgrimage centre in the first century. Jesus is shown attending feasts, teaching, and facing trial and crucifixion there.",
+      "archaeology": "Excavations document multiple occupation periods and Second Temple urban structures. UNESCO records the later holy places, including the Church of the Holy Sepulchre; individual Gospel rooms and event spots cannot all be proven.",
+      "evidenceLevel": "excavated",
+      "oldTestament": [
+        {
+          "ref": "2 Samuel 5:6-10",
+          "note": "David takes Jerusalem"
+        },
+        {
+          "ref": "1 Kings 8:1-11",
+          "note": "Temple dedication"
+        },
+        {
+          "ref": "Isaiah 2:2-3",
+          "note": "Jerusalem in prophetic vision"
+        }
+      ],
+      "literature": [
+        "jerusalem-unesco"
+      ],
+      "caution": "A city-level identification does not establish the location of the upper room, trial, Golgotha or tomb."
+    },
+    "egypt": {
+      "ancientNames": [
+        "Egypt",
+        "Mizraim (Hebrew name)"
+      ],
+      "modernSetting": "Egypt - unspecified town",
+      "historicalContext": "Egypt is named as a refuge for the family in Matthew 2, echoing Israel's earlier history in Egypt.",
+      "archaeology": "The Gospel records no Egyptian town, route, dates or particular residence. Archaeological sites elsewhere in Egypt cannot identify the family's lodging.",
+      "evidenceLevel": "regional",
+      "oldTestament": [
+        {
+          "ref": "Exodus 12:37-42",
+          "note": "Israel leaves Egypt"
+        },
+        {
+          "ref": "Hosea 11:1",
+          "note": "Matthew applies the wording to Jesus in Matthew 2:15"
+        }
+      ],
+      "literature": [],
+      "caution": "The map pin is a regional placeholder, not an archaeological claim or a travel destination."
+    },
+    "nazareth": {
+      "ancientNames": [
+        "Nazareth",
+        "Nazara / Nazareth (Greek manuscript forms)"
+      ],
+      "modernSetting": "Nazareth, Lower Galilee",
+      "historicalContext": "Jesus' upbringing and synagogue appearance are connected to a rural Galilean community.",
+      "archaeology": "Excavations document settlement in the Late Hellenistic and Early Roman periods and a Jewish farming community. None of the excavated homes is securely identifiable as the specific childhood house of Jesus.",
+      "evidenceLevel": "excavated",
+      "oldTestament": [],
+      "literature": [
+        "nazareth-iaa",
+        "nazareth-oxford"
+      ],
+      "caution": "Nazareth is not specifically named in the Old Testament; proposed connections are later interpretations."
+    },
+    "jordan": {
+      "ancientNames": [
+        "River Jordan",
+        "Yarden (Hebrew name)"
+      ],
+      "modernSetting": "Jordan River valley - baptism reach uncertain",
+      "historicalContext": "Jesus is baptised in the Jordan by John; the river connects the narrative to Israel's crossing traditions.",
+      "archaeology": "Al-Maghtas on the eastern bank has Roman and Byzantine pilgrim remains and is recognised as a traditional baptism site. Such remains evidence later devotion, not a pinpoint first-century baptism location.",
+      "evidenceLevel": "tradition",
+      "oldTestament": [
+        {
+          "ref": "Joshua 3:14-17",
+          "note": "Crossing the Jordan River"
+        }
+      ],
+      "literature": [
+        "baptism-unesco"
+      ],
+      "caution": "The location of the baptism cannot be independently fixed to a precise riverbank coordinate."
+    },
+    "wilderness": {
+      "ancientNames": [
+        "Wilderness",
+        "Judean wilderness (broad traditional association)"
+      ],
+      "modernSetting": "Wilderness - site unspecified",
+      "historicalContext": "The Synoptic Gospels describe Jesus' temptation in the wilderness without naming the site.",
+      "archaeology": "A wide desert and upland landscape is relevant; a named cave or mountain cannot be verified from the passages alone.",
+      "evidenceLevel": "regional",
+      "oldTestament": [
+        {
+          "ref": "Deuteronomy 8:2-3",
+          "note": "Wilderness-testing motif invoked in the temptation account"
+        }
+      ],
+      "literature": [],
+      "caution": "The pin represents a broad region. Do not treat the traditional Mount of Temptation as a proven site."
+    },
+    "beyond-jordan": {
+      "ancientNames": [
+        "Bethany beyond the Jordan",
+        "Bethabara (variant reading/traditional label)"
+      ],
+      "modernSetting": "East bank of the Jordan - several proposed sites",
+      "historicalContext": "John places the Baptist's ministry and a later retreat beyond the Jordan.",
+      "archaeology": "Al-Maghtas preserves evidence of ancient Christian pilgrimage and baptisms; the first-century locality and its relationship to all Bethany references remain debated.",
+      "evidenceLevel": "tradition",
+      "oldTestament": [
+        {
+          "ref": "Joshua 3:14-17",
+          "note": "Earlier crossing narrative in the Jordan corridor"
+        }
+      ],
+      "literature": [
+        "baptism-unesco"
+      ],
+      "caution": "Do not confuse Bethany beyond the Jordan with Bethany near Jerusalem."
+    },
+    "cana": {
+      "ancientNames": [
+        "Cana of Galilee",
+        "Khirbet Qana / Kafr Kanna (competing candidates)"
+      ],
+      "modernSetting": "Lower Galilee - candidate sites near modern Kafr Kanna and Khirbet Qana",
+      "historicalContext": "John records the wedding sign and healing linked to Cana.",
+      "archaeology": "Multiple archaeological and traditional proposals remain in use. The precise site is disputed, so no candidate is asserted as definite.",
+      "evidenceLevel": "disputed",
+      "oldTestament": [],
+      "literature": [],
+      "caution": "The biblical name is clear but the exact modern identification is not established."
+    },
+    "capernaum": {
+      "ancientNames": [
+        "Capernaum",
+        "Kfar Nahum / Kefar Nahum"
+      ],
+      "modernSetting": "Tell Hum, northwest Sea of Galilee",
+      "historicalContext": "A major setting for Jesus' Galilean teaching, healings and residence, with repeated visits in the Gospels.",
+      "archaeology": "Archaeological remains include Roman-period basalt homes, a synagogue complex and later Christian memorial structures. The conspicuous limestone synagogue is later than Jesus' ministry, though earlier levels exist.",
+      "evidenceLevel": "excavated",
+      "oldTestament": [
+        {
+          "ref": "Isaiah 9:1-2",
+          "note": "Regional Galilee context cited by Matthew 4:13-16, not the town name"
+        }
+      ],
+      "literature": [
+        "capernaum-survey"
+      ],
+      "caution": "Later commemorative buildings cannot by themselves confirm a particular miracle or house owner."
+    },
+    "judea-region": {
+      "ancientNames": [
+        "Judea",
+        "Judean countryside"
+      ],
+      "modernSetting": "Judean hills and valleys - unnamed setting",
+      "historicalContext": "John describes Jesus and his disciples ministering in Judea without identifying a town.",
+      "archaeology": "Archaeological remains occur throughout Judea, but none can identify this unspecified stage of John's account.",
+      "evidenceLevel": "regional",
+      "oldTestament": [],
+      "literature": [],
+      "caution": "No city should be inferred from John 3:22."
+    },
+    "sychar": {
+      "ancientNames": [
+        "Sychar",
+        "Near Shechem; Jacob's well (traditional identification)"
+      ],
+      "modernSetting": "Vicinity of modern Nablus, West Bank",
+      "historicalContext": "John situates Jesus' meeting with a Samaritan woman by Jacob's well.",
+      "archaeology": "Jacob's Well has a long identification history. Distinguish the well's commemorated setting from the exact limits or identity of ancient Sychar.",
+      "evidenceLevel": "tradition",
+      "oldTestament": [
+        {
+          "ref": "Genesis 33:18-20",
+          "note": "Jacob and the Shechem area"
+        },
+        {
+          "ref": "Joshua 24:32",
+          "note": "Joseph's burial near Shechem"
+        }
+      ],
+      "literature": [],
+      "caution": "Shechem is not automatically identical to the town called Sychar."
+    },
+    "galilee-shore": {
+      "ancientNames": [
+        "Sea of Galilee",
+        "Kinneret / Lake Gennesaret / Sea of Tiberias"
+      ],
+      "modernSetting": "Sea of Galilee - exact shore landing varies",
+      "historicalContext": "Boats, fishing communities, teaching and miracles are repeatedly associated with the lake.",
+      "archaeology": "The lake and its regional settlement network are geographically secure; specific boat courses and shoreline landing sites are usually not supplied.",
+      "evidenceLevel": "regional",
+      "oldTestament": [
+        {
+          "ref": "Joshua 19:35",
+          "note": "Chinnereth among fortified towns; name linked to the lake region"
+        }
+      ],
+      "literature": [],
+      "caution": "The point is only a navigational marker for lake episodes, not the location of each miracle."
+    },
+    "galilee-hill": {
+      "ancientNames": [
+        "Mountain / hillside in Galilee",
+        "Mount of Beatitudes (later tradition)"
+      ],
+      "modernSetting": "Galilean uplands - hill unspecified",
+      "historicalContext": "Matthew describes mountain teaching; Luke describes related teaching on a level place.",
+      "archaeology": "No excavated place identifies the exact Sermon on the Mount hillside. The well-known traditional landscape is later pilgrimage geography.",
+      "evidenceLevel": "regional",
+      "oldTestament": [],
+      "literature": [],
+      "caution": "Do not identify the traditional pilgrimage site as a biblically named hill."
+    },
+    "nain": {
+      "ancientNames": [
+        "Nain",
+        "Nein / Na'in"
+      ],
+      "modernSetting": "Nein, southern Galilee",
+      "historicalContext": "Luke locates the restoration of a widow's son at the gate of Nain.",
+      "archaeology": "The modern village is usually associated with Nain. Excavation does not establish the Gospel meeting point or city gate.",
+      "evidenceLevel": "tradition",
+      "oldTestament": [],
+      "literature": [],
+      "caution": "Ancient town limits and the particular gate remain uncertain."
+    },
+    "east-shore": {
+      "ancientNames": [
+        "Country of the Gerasenes / Gadarenes",
+        "Gergesenes (textual variant)"
+      ],
+      "modernSetting": "Eastern shore of Galilee - competing districts",
+      "historicalContext": "Gospel accounts use different geographical designations for the deliverance of a possessed man or men.",
+      "archaeology": "Candidate landing points and district names differ. Textual variants and uneven evidence prevent a single secure site identification.",
+      "evidenceLevel": "disputed",
+      "oldTestament": [],
+      "literature": [],
+      "caution": "Place variants in manuscript traditions and Gospel accounts should not be hidden."
+    },
+    "bethsaida": {
+      "ancientNames": [
+        "Bethsaida",
+        "Bethsaida-Julias (Roman-era name in some sources)"
+      ],
+      "modernSetting": "Northeastern Sea of Galilee - el-Araj and et-Tell candidates",
+      "historicalContext": "Fishing-community associations and several signs/healings are located at or near Bethsaida.",
+      "archaeology": "Excavations at el-Araj have documented Roman and Byzantine materials; et-Tell is another proposed identification. The archaeological identification remains contested.",
+      "evidenceLevel": "disputed",
+      "oldTestament": [],
+      "literature": [
+        "bethsaida-excavation"
+      ],
+      "caution": "Do not present one excavated candidate as the sole proven biblical town."
+    },
+    "gennesaret": {
+      "ancientNames": [
+        "Gennesaret",
+        "Plain of Gennesaret"
+      ],
+      "modernSetting": "Northwestern shore, Sea of Galilee",
+      "historicalContext": "A fertile plain receiving Jesus and the disciples after a crossing, with people bringing the sick.",
+      "archaeology": "The plain is geographically recognisable. The text does not locate a single verified disembarkation or house.",
+      "evidenceLevel": "regional",
+      "oldTestament": [],
+      "literature": [],
+      "caution": "Gennesaret can mean a shore region; a point marker is approximate."
+    },
+    "sidon": {
+      "ancientNames": [
+        "Sidon",
+        "Saida / Sayda"
+      ],
+      "modernSetting": "Sidon, coastal Lebanon",
+      "historicalContext": "Mark describes a route through Sidon and surrounding territory on the way towards the Decapolis.",
+      "archaeology": "Sidon is a long-lived coastal city with archaeological layers. The text does not specify which buildings or streets Jesus used.",
+      "evidenceLevel": "reported",
+      "oldTestament": [
+        {
+          "ref": "Genesis 10:15",
+          "note": "Sidon in a genealogical/geographical setting"
+        },
+        {
+          "ref": "Isaiah 23:2-4",
+          "note": "Prophetic reference to the Phoenician coast"
+        }
+      ],
+      "literature": [],
+      "caution": "A region or transit corridor must not be converted into a list of unrecorded city meetings."
+    },
+    "decapolis": {
+      "ancientNames": [
+        "Decapolis",
+        "Ten-city federation/region"
+      ],
+      "modernSetting": "East and southeast of the Sea of Galilee",
+      "historicalContext": "The Gospels speak of Decapolis as a region, not a single point or one fixed itinerary.",
+      "archaeology": "Roman-period city ruins are documented across the territory, but the event is not assigned to a particular Decapolis city.",
+      "evidenceLevel": "regional",
+      "oldTestament": [],
+      "literature": [],
+      "caution": "The marker is a representative regional point; city-level visit claims would be ungrounded."
+    },
+    "magadan": {
+      "ancientNames": [
+        "Magadan",
+        "Dalmanutha in Mark; Magdala suggested but not certain"
+      ],
+      "modernSetting": "Western shore, Sea of Galilee - precise site disputed",
+      "historicalContext": "Matthew and Mark use different location names for the landing after the feeding.",
+      "archaeology": "The ancient town of Magdala/Migdal has excavated Early Roman remains, but these do not prove Magadan and Dalmanutha are the same location.",
+      "evidenceLevel": "disputed",
+      "oldTestament": [],
+      "literature": [
+        "magdala-iaa"
+      ],
+      "caution": "Distinguish well-attested Magdala archaeology from uncertain Magadan/Dalmanutha identification."
+    },
+    "caesarea-philippi": {
+      "ancientNames": [
+        "Caesarea Philippi",
+        "Paneas / Banias"
+      ],
+      "modernSetting": "Banias district near Mount Hermon",
+      "historicalContext": "The district provides the backdrop for Peter's confession and following teaching in the Gospels.",
+      "archaeology": "Ancient Paneas/Banias is historically attested, including Roman-era religious remains; the conversations could have occurred elsewhere in the district.",
+      "evidenceLevel": "reported",
+      "oldTestament": [],
+      "literature": [],
+      "caution": "A named district is not proof that every conversation occurred in the urban centre."
+    },
+    "mountain": {
+      "ancientNames": [
+        "High mountain",
+        "Tabor / Hermon (competing traditions)"
+      ],
+      "modernSetting": "High mountain - not specified in the Gospels",
+      "historicalContext": "Matthew, Mark and Luke describe the Transfiguration without naming the mountain.",
+      "archaeology": "Tabor and Hermon are proposed in different traditions. Neither can be established solely from the Gospel wording.",
+      "evidenceLevel": "disputed",
+      "oldTestament": [],
+      "literature": [],
+      "caution": "The schematic map pin represents a mountain setting, not a located peak."
+    },
+    "samaria-region": {
+      "ancientNames": [
+        "Samaritan village - unnamed",
+        "Samaria (regional marker)"
+      ],
+      "modernSetting": "Samaria highlands - no named village",
+      "historicalContext": "Luke records an unnamed Samaritan village refusing hospitality.",
+      "archaeology": "Excavations throughout Samaria cannot identify this unnamed village from the source.",
+      "evidenceLevel": "regional",
+      "oldTestament": [],
+      "literature": [],
+      "caution": "No modern village identification is claimed."
+    },
+    "border": {
+      "ancientNames": [
+        "Samaria-Galilee border",
+        "Border corridor"
+      ],
+      "modernSetting": "Between Samaria and Galilee - unspecified route",
+      "historicalContext": "Luke describes travel between regions during the healing of ten men with leprosy.",
+      "archaeology": "No individual town or road segment is identified; boundaries varied over time.",
+      "evidenceLevel": "regional",
+      "oldTestament": [],
+      "literature": [],
+      "caution": "The exact border location is not recorded."
+    },
+    "jordan-east": {
+      "ancientNames": [
+        "Beyond the Jordan",
+        "Perea (later administrative/geographical label)"
+      ],
+      "modernSetting": "Eastern Jordan Valley - representative area",
+      "historicalContext": "Matthew and Mark discuss ministry across the Jordan without a detailed list of stops.",
+      "archaeology": "The broader corridor is identifiable but there is no specific excavated site attached to this journey step.",
+      "evidenceLevel": "regional",
+      "oldTestament": [],
+      "literature": [],
+      "caution": "Perea is a geographic frame, not a biblical claim about this marker."
+    },
+    "bethany": {
+      "ancientNames": [
+        "Bethany near Jerusalem",
+        "Al-Eizariya / Lazarieh"
+      ],
+      "modernSetting": "Al-Eizariya, east of Jerusalem",
+      "historicalContext": "John places Lazarus, Mary and Martha in Bethany, a repeated stop near Jerusalem.",
+      "archaeology": "The town is broadly associated with al-Eizariya. Later churches and the traditionally identified tomb are pilgrimage monuments, not independent proof of the narrated events.",
+      "evidenceLevel": "tradition",
+      "oldTestament": [],
+      "literature": [],
+      "caution": "This is separate from Bethany beyond the Jordan."
+    },
+    "ephraim": {
+      "ancientNames": [
+        "Ephraim",
+        "et-Taiyibeh / Taybeh (proposed)"
+      ],
+      "modernSetting": "Northeast of Jerusalem - identification debated",
+      "historicalContext": "John reports a withdrawal to Ephraim near the wilderness.",
+      "archaeology": "A modern identification has been proposed, but the exact ancient town and archaeological mapping are disputed.",
+      "evidenceLevel": "disputed",
+      "oldTestament": [],
+      "literature": [],
+      "caution": "The marker should not be treated as a surveyed first-century city centre."
+    },
+    "jericho": {
+      "ancientNames": [
+        "Jericho",
+        "Tell es-Sultan (ancient mound); Roman/Herodian Jericho (different occupation zones)"
+      ],
+      "modernSetting": "Jericho oasis, West Bank",
+      "historicalContext": "Jericho features in Old Testament conquest tradition and Jesus' final journey, including the healing and Zacchaeus.",
+      "archaeology": "UNESCO documents deep prehistoric and Bronze Age occupation at Tell es-Sultan. This is not the identical urban footprint of the New Testament-era Jericho near Herodian development.",
+      "evidenceLevel": "excavated",
+      "oldTestament": [
+        {
+          "ref": "Joshua 6:1-27",
+          "note": "Joshua's Jericho narrative"
+        },
+        {
+          "ref": "1 Kings 16:34",
+          "note": "Later rebuilding tradition"
+        }
+      ],
+      "literature": [
+        "jericho-unesco"
+      ],
+      "caution": "Do not equate the prehistoric mound with the precise setting of Luke 19 or Mark 10."
+    },
+    "bethphage": {
+      "ancientNames": [
+        "Bethphage",
+        "Beit Fagi (traditional rendering)"
+      ],
+      "modernSetting": "Eastern approach to Jerusalem - near the Mount of Olives",
+      "historicalContext": "A village named as the place where disciples obtained the donkey before the entry into Jerusalem.",
+      "archaeology": "A traditional location exists but archaeological identification of the Gospel village is not conclusive.",
+      "evidenceLevel": "tradition",
+      "oldTestament": [],
+      "literature": [],
+      "caution": "The precise village footprint is not established."
+    },
+    "olives": {
+      "ancientNames": [
+        "Mount of Olives",
+        "Har ha-Zeitim (Hebrew)"
+      ],
+      "modernSetting": "Ridge east of Jerusalem",
+      "historicalContext": "Connected with Jesus' approach, final discourse, prayer vicinity and ascension narrative.",
+      "archaeology": "The ridge is a secure geographical feature. Specific points associated with individual speeches or ascension are traditionally commemorated and not proven archaeologically.",
+      "evidenceLevel": "reported",
+      "oldTestament": [
+        {
+          "ref": "2 Samuel 15:30",
+          "note": "David ascends the Mount of Olives"
+        },
+        {
+          "ref": "Zechariah 14:4",
+          "note": "Prophetic reference to the Mount of Olives"
+        }
+      ],
+      "literature": [],
+      "caution": "The Mount of Olives spans a ridge, not a single pinpoint coordinate."
+    },
+    "gethsemane": {
+      "ancientNames": [
+        "Gethsemane",
+        "Gat Shemanim (oil-press name, traditional etymology)"
+      ],
+      "modernSetting": "Foot of the Mount of Olives, Jerusalem",
+      "historicalContext": "The Synoptic Gospels recount prayer and arrest in a place called Gethsemane.",
+      "archaeology": "An established pilgrimage garden marks the remembered area, but neither the exact garden boundary nor the specific trees can be verified as first-century eyewitness locations.",
+      "evidenceLevel": "tradition",
+      "oldTestament": [],
+      "literature": [],
+      "caution": "The traditional gardens are later commemorations of an event tied by Scripture to an area, not a measured plot."
+    },
+    "emmaus": {
+      "ancientNames": [
+        "Emmaus",
+        "Nicopolis / Abu Ghosh / Motza / Qubeibeh (candidates)"
+      ],
+      "modernSetting": "West of Jerusalem - candidate sites vary",
+      "historicalContext": "Luke records a road encounter and meal following the resurrection.",
+      "archaeology": "Several proposals for the ancient Emmaus site compete; the manuscript mileage question and local traditions are not settled.",
+      "evidenceLevel": "disputed",
+      "oldTestament": [],
+      "literature": [],
+      "caution": "The map point is illustrative and does not select one candidate as definitive."
+    },
+    "galilee-mountain": {
+      "ancientNames": [
+        "Unnamed mountain in Galilee",
+        "No verified modern place name"
+      ],
+      "modernSetting": "Galilee - broad regional marker",
+      "historicalContext": "Matthew places the commissioning of disciples on a mountain in Galilee without identifying it.",
+      "archaeology": "A specific excavated mountain site cannot be matched to the passage.",
+      "evidenceLevel": "regional",
+      "oldTestament": [],
+      "literature": [],
+      "caution": "Do not conflate this unnamed location with the Transfiguration mountain."
+    },
+    "tyre": {
+      "ancientNames": [
+        "Tyre",
+        "Sour (Arabic); Tzor (Hebrew)"
+      ],
+      "modernSetting": "Tyre, southern Lebanon",
+      "historicalContext": "A prominent Phoenician port in the Old Testament; Jesus visits its district in the Gospel narratives.",
+      "archaeology": "UNESCO documents Phoenician and substantial Roman-period remains at Tyre; excavation establishes the ancient city, not a particular Gospel house.",
+      "evidenceLevel": "excavated",
+      "oldTestament": [
+        {
+          "ref": "1 Kings 5:1-12",
+          "note": "Relations between Solomon and Hiram of Tyre"
+        },
+        {
+          "ref": "Ezekiel 26:1-21",
+          "note": "Prophetic oracle concerning Tyre"
+        }
+      ],
+      "literature": [
+        "tyre-unesco",
+        "tyre-france"
+      ],
+      "caution": "Mark 7 places Jesus in the territory of Tyre; it does not identify an excavated dwelling."
+    },
+    "galilee-region": {
+      "ancientNames": [
+        "Galilee",
+        "Galil (Hebrew regional name)"
+      ],
+      "modernSetting": "Galilee - unspecified location",
+      "historicalContext": "The northern region is prominent in prophetic wording and in the Gospels as the setting of Jesus' early ministry.",
+      "archaeology": "Archaeological sites document varied Galilean settlements. No single archaeological site identifies this region-wide travel entry.",
+      "evidenceLevel": "regional",
+      "oldTestament": [
+        {
+          "ref": "Isaiah 9:1-2",
+          "note": "Zebulun, Naphtali and Galilee in the prophetic passage"
+        },
+        {
+          "ref": "Joshua 20:7",
+          "note": "Kedesh in Galilee named as a refuge city"
+        }
+      ],
+      "literature": [],
+      "caution": "A regional episode must not be presented as an individually evidenced town visit."
+    }
+  }
+}

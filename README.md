@@ -167,3 +167,29 @@ Source of truth: `public/data/jesus-journeys.json`. New map events require a sta
 **Accuracy constraints:** This is a narrative itinerary, not a measured walking route, an exhaustive travel diary, or a consensus day-by-day Gospel harmony. Multiple sources for a single event are grouped rather than counted as independent trips. Travel connectors are schematic straight lines. Locations such as Egypt (unidentified refuge), the desert temptations, Bethany beyond the Jordan, Cana, the site of the Transfiguration, Bethsaida and Emmaus cannot be pinpointed confidently. All regional and contested pins are explained to the reader. Biblical accounts are primary sources for reported actions, while identifying them with modern coordinates is a separate inference. Historic map context: [Biblica's Ministry of Jesus map](https://downloads.open.bible/maps/en/en_biblica_std/the_ministry_of_jesus.pdf), with the publisher retaining rights to that map. No third-party art is copied.
 
 Use `node --test tests/jesus-map.test.mjs` to validate reference formats, place links, event grouping and uncertainty. On each change, verify desktop and mobile navigation and the interactive controls manually. This feature is designed for further expansion by adding cited episodes, not manufacturing geographic precision or treating all Gospel accounts as a single settled chronology.
+
+## Historical place dossiers and project roadmap (October 2026)
+
+**Journeys of Jesus** includes one historical study record for each of its 35 current places or regional markers. Select a pin, town or recorded episode, then scroll to **Biblical place dossier** beneath the journey map. It shows:
+
+- Ancient and modern names / regional labels, with uncertainty for disputed sites.
+- The historical context and any externally grounded archaeological evidence.
+- Old Testament passages with an explicit description of how they relate to the place or wider region. They are not presented as records of Jesus' visit.
+- All catalogued Gospel and Acts episodes and their Scripture references, opening the ESV reader when clicked.
+- Independent external research links when one has been reviewed and attached; a clear evidence gap otherwise.
+- A separate caution field explaining what the source does **not** establish.
+
+The editable corpus is `public/data/jesus-geography.json` and the interface is implemented in `public/assets/jesus-map.js` and `public/assets/jesus-map.css`. The existing `public/data/jesus-journeys.json` remains the primary record of the 79 narrative episodes; no route order, number or citation was changed for this milestone. The new `validatePlaceStudies` function checks one-to-one place coverage and linked source IDs.
+
+Historical reading uses a distinction between excavation of a town, traditional site identification and evidence for a **specific Gospel event**. A Roman-period settlement does not independently verify a narrated miracle, while a later church or pilgrimage tradition does not make a first-century house or hill certain. Reconstructed place names, historic routes and the Gospel harmonisation remain qualified throughout the interface. Third-party archaeology sources remain with their publishers and are linked rather than reproduced.
+
+The new **Project roadmap** is a first-class navigation page at `/?view=roadmap`. Its content lives in `public/data/roadmap.json`; filters and expandable details use `public/assets/roadmap.js`. Its statuses are `delivered`, `next`, `planned` and `research`, with separate acceptance criteria and no promised delivery dates. The next priorities are an event-by-event evidence audit, deeper fully documented city research and alternative Gospel chronology views. Update the data when any milestone changes; do not mark an unimplemented feature as delivered. Edit existing cards rather than adding contradictory records. `tests/geography.test.mjs` and `tests/ui-structure.test.mjs` guard these features.
+
+### Key independent source starting points
+
+- UNESCO - [Bethlehem: Church of the Nativity](https://whc.unesco.org/en/list/1433/), [Jerusalem](https://whc.unesco.org/en/list/148/), [Jericho/Tell es-Sultan](https://whc.unesco.org/en/list/1687/), [Al-Maghtas](https://whc.unesco.org/en/list/1446), [Tyre](https://whc.unesco.org/en/list/299/).
+- Israel Antiquities Authority - [Nazareth excavation report](https://publications.iaa.org.il/atiqot/vol98/iss1/3/) and [Magdala excavation report](https://publications.iaa.org.il/atiqot/vol90/iss1/7/).
+- Ken Dark - [Archaeology of Jesus' Nazareth](https://academic.oup.com/book/45361), Oxford University Press (2023).
+- [First-century Capernaum archaeological survey](https://rsc.byu.edu/ministry-peter-chief-apostle/simon-peter-capernaum-archaeological-survey-first-century-village) and [el-Araj Bethsaida excavation report](https://www.bethsaida-julias.com/season8report).
+
+These studies contextualise the material remains; none should be cited as independently proving a supernatural event. Additional place-by-place publications and specialist review remain on the roadmap.

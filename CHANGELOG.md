@@ -33,3 +33,11 @@ Live ESV passages and search require the `ESV_API_KEY` secret in Cloudflare Page
 - Added location filters, phase filters, zoom/pan, repeat-visit history and ESV reader links for each listed passage.
 - Marked all approximate geography, uncertain site identification, inferred stops and narrative harmonisation explicitly.
 - Preserved the existing Bible reader, Connection Atlas, guided studies, ESV API integration and site theme.
+
+## 26 October 2026 - Place dossiers and transparent roadmap
+
+- Added an archaeology and history study panel to every one of the 35 Gospel map markers.
+- Distinguished ancient names, modern localities, OT historical associations, Gospel passages, archaeological source links and site-identification uncertainty.
+- Added a separate Project roadmap page with filtering, expandable milestones, verified delivered work and prospective research priorities.
+- Kept the 79-event itinerary, private GitHub / Cloudflare setup and existing Bible reader unchanged.
+- Added test coverage for cross-source references, geography completeness, roadmap statuses and page navigation.
