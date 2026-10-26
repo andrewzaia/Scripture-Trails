@@ -8,7 +8,7 @@ A responsive, extensible Bible study website designed around the English Standar
 - Official ESV passage display and verse-by-verse cross-reference callouts when the Crossway ESV API is configured.
 - ESV keyword search (10 results per query) through a server-side Cloudflare Pages Function.
 - Starter reference network with editorial labels for quotations, parallels, echoes and themes.
-- Interactive pan-and-zoom connection map, with one to three levels of connections.
+- Interactive pan-and-zoom connection map, with one to ten levels of bounded verse-to-verse exploration.
 - Six guided studies, saved passages, recent-history list and user notes.
 - Responsive layout, keyboard-focus indicators, dark/light themes and accessible text alternatives for the graph.
 - Clear separation of Scripture text, reference data and editorial interpretation.
@@ -133,3 +133,27 @@ tests/                          Built-in Node tests
 ## Licence
 
 No universal open-source licence is assigned to this prototype. The ESV translation is separately copyrighted by Crossway; the optional OpenBible cross-reference data is CC BY 4.0. Do not assume all bundled and future content is covered by the same licence.
+
+## Connection Atlas - extended reference network
+
+The Atlas supports selecting any book, chapter and verse in the 66-book canon and exploring up to **10 hops** through the available cross-reference graph. The default is 3 hops. A bounded breadth-first display chooses a readable subset at each hop (up to 10 new verses per layer), rather than rendering every possible path and freezing the browser. Recenter on any node to continue the investigation. The accessible depth-list provides the same selected verses without using the canvas.
+
+Reference sources are kept separate: editor-curated quotation, parallel, echo and theme labels; OpenBible.info community-ranked cross-reference data (CC BY 4.0, sourced mainly from the Treasury of Scripture Knowledge); and reading-context links, used only when a verse has no cross-reference. These context links **are not semantic connections**. Votes are a rough ranking, not a statement of authority. OpenBible multi-verse ranges are indexed to their first verse, with the original range retained in imported data. Some Bible versions differ slightly in versification.
+
+**Permitted study editions** are ESV, NASB 2020 and LSB. The in-site reader serves the ESV using the official Crossway API. Links lead to the official NASB 2020 and LSB readers; the app neither scrapes nor redistributes those copyrighted texts. Translation-neutral reference links are not inaccurately described as coming from one translation. Future source-specific cross-references may be imported with permission and source-level attribution.
+
+The expanded network comes from the OpenBible.info cross-reference dataset (CC BY 4.0). To regenerate locally, download the official TSV and run `npm run import:refs -- /path/to/cross_references.txt`. The repo includes chapter verse counts for navigation, derived from a public domain KJV dataset, used only for versification numbers, never Bible text. See [OpenBible.info](https://www.openbible.info/labs/cross-references/) and [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+
+## Atlas version 0.2
+
+- Pick any of the 66 books, then an individual chapter and verse using per-chapter verse counts.
+- Follow up to ten hops in a capped breadth-first sample, with an accessible hop-by-hop list and re-centre on any node. The cap is deliberate to avoid freezing mobile browsers on dense hubs.
+- Each verse number in an ESV chapter has its own Atlas action.
+- A missing reference triggers a **reading context** link to nearby verses, explicitly not a claimed biblical cross-reference.
+- Study editions: ESV (displayed via Crossway), NASB 2020 and LSB (linked to official readers; text not republished). Cross-reference relationships are translation-neutral unless their source specifically asserts otherwise.
+
+### Importing real-world connections
+
+The `Refresh atlas cross-references` GitHub Actions workflow downloads a **SHA-256 pinned** OpenBible.info CC BY 4.0 archive snapshot from the `trekhleb/bible-cross-references` public source repository, imports it into 66 shards and checks that the result is complete. The workflow is deliberately not run on every build. It commits only the derived reference JSON, never any Bible translation text. If the source changes, manually update the pin after verifying provenance and licence.
+
+The corpus uses KJV-style chapter/verse metadata for navigation, which may differ from textual-variant decisions in ESV/NASB/LSB.

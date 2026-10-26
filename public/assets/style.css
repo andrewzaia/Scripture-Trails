@@ -15,3 +15,22 @@ body.light{color-scheme:light;--bg:#f5f3ed;--sidebar:#15242c;--surface:#fffdf7;-
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
 .search-result{border-bottom:1px solid var(--line);padding:14px 0}.search-result-link{background:none;border:0;padding:0;color:var(--gold);font-size:14px;font-family:var(--sans);font-weight:650}.search-result p{font:normal 17px/1.7 var(--serif);margin:9px 0}.foot-nav:disabled,.chapter-navigation button:disabled{opacity:.25;cursor:not-allowed}
 .search-esv{display:block;font:700 10px var(--sans);letter-spacing:1px;color:var(--gold);margin-bottom:6px}
+
+/* Scripture Atlas v0.2: reference-level discovery, multi-hop exploration, edition links */
+.atlas-picker{display:flex;align-items:flex-end;flex-wrap:wrap;gap:14px;margin:24px min(5.2%,68px) 0;padding:18px 21px}
+.atlas-picker label{display:flex;flex:1 1 130px;flex-direction:column;gap:5px;color:var(--muted);font-size:10px;letter-spacing:.4px;font-weight:700}
+.atlas-picker select{width:100%;height:39px;min-width:90px;border:1px solid var(--line);background:var(--surface2);color:var(--ink);border-radius:4px;padding:7px}
+.atlas-open{border:0;background:var(--gold);color:#152732;border-radius:4px;font-weight:750;font-size:12px;padding:10px 15px;min-height:39px}
+.atlas-progress{display:block;font-size:10px;max-width:240px;color:var(--accent);line-height:1.4;margin-top:4px}
+.graph-toolbar .toolbar-right label{color:var(--muted);font-size:10px;font-weight:650}
+.atlas-source-note{font-size:11px!important;line-height:1.65}
+.atlas-edition-links{display:flex;flex-direction:column;gap:8px;margin-top:15px}
+.atlas-edition-links a{font-size:11px;color:var(--gold);text-decoration:underline;text-underline-offset:3px}
+.verse-atlas-link{display:inline-flex!important;align-items:center;gap:3px;margin:0 5px 0 3px;padding:1px 4px;border:1px solid var(--line2);border-radius:3px;background:transparent;color:var(--gold);font:700 9px var(--sans);vertical-align:baseline;line-height:1.7;letter-spacing:.2px}
+.verse-atlas-link:hover{background:var(--surface2);border-color:var(--gold)}
+.verse-num[data-selected="true"]{color:var(--gold);box-shadow:0 2px var(--gold)}
+body.light .atlas-picker select{color:#263840;background:#f6f2e9;border-color:#c4cfc8}
+body.light .verse-atlas-link{color:#886637;border-color:#c5b69d}
+@media(max-width:760px){.atlas-picker{margin:15px 16px 0;padding:14px}.atlas-picker label{flex:1 1 120px}.atlas-open{flex:1 1 100%}.graph-toolbar .toolbar-left{min-width:0}.atlas-progress{max-width:100%}}
+
+.atlas-layer-explorer{margin-top:20px}.atlas-layer{border-bottom:1px solid var(--line);padding:7px 0}.atlas-layer summary{cursor:pointer;color:var(--accent);font-size:11px}.atlas-layer-links{display:flex;flex-wrap:wrap;gap:4px;margin:8px 0}.atlas-layer-links button{font-size:10px;background:var(--surface2);border:1px solid var(--line);border-radius:3px;color:var(--ink);padding:4px 8px}.atlas-layer-links button:hover{border-color:var(--gold)}
