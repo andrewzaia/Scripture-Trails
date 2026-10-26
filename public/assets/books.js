@@ -46,6 +46,11 @@ export function parseRef(input){
 }
 export function referenceFor(book,chapter,verse=null){return `${book.name} ${chapter}${verse===null?'':`:${verse}`}`;}
 export function chapterRef(value){const p=typeof value==='string'?parseRef(value):value;return p?`${p.book.name} ${p.chapter}`:null;}
+/** A verse or range is displayed as requested; a chapter-only reference remains a chapter. */
+export function readerScope(value){
+ const p=typeof value==='string'?parseRef(value):value;
+ return p?{query:p.formatted,chapter:chapterRef(p),focused:p.verse!==null}:null;
+}
 export function bookOf(ref){return parseRef(ref)?.book||null;}
 export function shortRef(value){const p=parseRef(value);return p?`${p.book.abbr} ${p.chapter}${p.verse?':'+p.verse:''}`:value;}
 export function adjacentChapter(ref,direction){const p=parseRef(ref);if(!p)return null;let i=p.book.index,chapter=p.chapter+direction;if(chapter<1){i--;if(i<0)return null;chapter=BOOKS[i].chapters;}else if(chapter>p.book.chapters){i++;if(i>=BOOKS.length)return null;chapter=1;}return referenceFor(BOOKS[i],chapter);}

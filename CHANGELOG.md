@@ -66,3 +66,11 @@ Live ESV passages and search require the `ESV_API_KEY` secret in Cloudflare Page
 - Corrected the Jerusalem image filename to a confirmed Commons image; updated Bethlehem to a licensed Commons courtyard photograph.
 - Maintained photo creator and Creative Commons attribution, with an explicit illustrative fallback if the CDN cannot be reached.
 - Added regression checks for all five primary and fallback image URLs.
+
+## 27 October 2026 - Focused verse reading
+
+- Verse lookups, search-result selections and study links now request and display only the selected ESV verse or explicit verse range instead of the whole chapter.
+- Chapter-only references continue to open the full chapter, and verse/range views display a **Read full chapter** action.
+- Preserved the passage-specific deep link, bookmarks, notes and Atlas connections; replaced chapter-only reader caching with exact-reference caching and cancellation-aware requests.
+- Kept Crossway ESV text server-side, with chapter headings disabled on verse-specific requests.
+- Added explicit reader and proxy tests for verse, range and chapter modes.

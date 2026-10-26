@@ -49,3 +49,10 @@ body.light .verse-atlas-link{color:#886637;border-color:#c5b69d}
 .sidebar::-webkit-scrollbar{width:6px}
 .sidebar::-webkit-scrollbar-thumb{background:#415861;border-radius:8px}
 @media(max-width:760px){.sidebar{height:100vh;height:100dvh;max-height:100dvh;overflow-y:auto;overscroll-behavior-y:contain;padding:22px 15px 15px}}
+
+/* A focused verse has a lightweight, explicit route back to its complete chapter. */
+.reader-chapter-access{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin:22px 0 7px;padding:12px 15px;border:1px solid var(--line);border-radius:5px;background:var(--surface2);font-size:11px;color:var(--muted)}
+.reader-chapter-access[hidden]{display:none}
+.reader-full-chapter{font-size:11px;font-weight:700;color:var(--gold);background:transparent;border:0;padding:5px 0;text-decoration:underline;text-underline-offset:3px}
+.reader-full-chapter:hover{color:var(--ink)}
+@media(max-width:430px){.reader-chapter-access{align-items:flex-start;flex-direction:column;gap:5px}}
