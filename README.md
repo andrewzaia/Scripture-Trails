@@ -2,6 +2,10 @@
 
 A responsive, extensible Bible study website with in-page ESV, NASB20, NIV (2011) and NKJV translation selection. Follow passages and references, explore the interactive connection atlas, use six guided study journeys and retain bookmarks and notes locally.
 
+Production address: <https://www.scripturetrails.com/>. The apex `scripturetrails.com` and HTTP requests redirect permanently to HTTPS on `www`, preserving the full path and query string, including passage and translation links. Cloudflare DNS points `www` to `scripture-trails.pages.dev`; a proxied originless apex record supports the zone redirect rule. The Pages custom domain is `www.scripturetrails.com`. Canonical and sharing metadata, `robots.txt` and the sitemap use this address.
+
+The top-right header has separate ESV, NASB20, NIV and NKJV status squares. Select a square to read the current reference in that edition. `Configured` means its server key exists, while `Available` means the latest reading request succeeded in the current page session. Failures, missing configuration, request limits and missing passages have distinct labels. The lightweight `/api/translations` configuration check never returns keys or contacts the Scripture providers. Each reading request updates only its own translation, and late responses cannot overwrite a newer result for that edition. Status is not stored across page loads.
+
 ## What works now
 
 - Passage navigation across all 66 Protestant canonical Bible books, with chapter selectors and deep links such as `?view=reader&ref=John%203%3A16`.

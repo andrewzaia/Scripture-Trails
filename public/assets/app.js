@@ -7,6 +7,7 @@ import {createCityStudies} from './city-studies.js?v=20261027-local';
 import {buildAtlas} from './atlas-paths.js';
 import {TRANSLATIONS,getTranslation} from './translations.js';
 import {reportScriptureView} from './fums.js';
+import {TRANSLATION_STATUS,statusForResponse} from './translation-status.js';
 
 const $=id=>document.getElementById(id);
 const pick=(s,root=document)=>root.querySelector(s);
@@ -15,6 +16,41 @@ for(const link of EDITORIAL_LINKS){const a=parseRef(link.from)?.formatted,b=pars
 const getSaved=(key,defaultValue)=>{try{const parsed=JSON.parse(localStorage.getItem(`scripture-trails:${key}`));return parsed===null?defaultValue:parsed;}catch{return defaultValue;}};
 const putSaved=(key,value)=>{try{localStorage.setItem(`scripture-trails:${key}`,JSON.stringify(value));return true;}catch{return false;}};
 const state={translation:getTranslation(getSaved('translation','ESV'))?.code||'ESV',loadedTranslation:null,pendingTranslation:null,fums:null,view:'discover',ref:'John 1:1',loadedPassage:null,pendingPassage:null,bookmarks:getSaved('bookmarks',[]),notes:getSaved('notes',{}),history:getSaved('history',[]),theme:getSaved('theme','dark'),filter:'all',journey:null,links:[],graph:null,graphDepth:3,graphLinks:{},graphRequestId:0,requestId:0,jesusMap:null};
+const translationStatuses=new Map(TRANSLATIONS.map(edition=>[edition.code,'checking']));
+const translationRequests=new Map();
+function renderTranslationStatuses(){
+ for(const button of document.querySelectorAll('#translation-statuses [data-translation]')){
+  const code=button.dataset.translation,status=translationStatuses.get(code)||'unknown';
+  const detail=TRANSLATION_STATUS[status];
+  button.dataset.status=status;
+  button.setAttribute('aria-pressed',String(code===state.translation));
+  button.querySelector('[data-status-label]').textContent=detail.label;
+  button.title=`${getTranslation(code).name}: ${detail.description} Select to read in ${code}.`;
+  button.setAttribute('aria-label',`Read in ${code}. ${detail.label}. ${detail.description}`);
+ }
+}
+function setTranslationStatus(code,status){
+ if(!getTranslation(code)||!TRANSLATION_STATUS[status])return;
+ translationStatuses.set(code,status);renderTranslationStatuses();
+}
+async function loadTranslationStatuses(){
+ try{
+  const response=await fetch('/api/translations',{cache:'no-store',signal:AbortSignal.timeout(5000)});
+  if(!response.ok)throw Error('Configuration check failed');
+  const payload=await response.json();
+  for(const edition of TRANSLATIONS){
+   const item=payload.translations?.find(item=>item.code===edition.code);
+   // A slow configuration response must not overwrite a newer reading result.
+   if(translationStatuses.get(edition.code)==='checking')setTranslationStatus(edition.code,typeof item?.configured==='boolean'?(item.configured?'configured':'not_configured'):'unknown');
+  }
+ }catch{for(const edition of TRANSLATIONS)if(translationStatuses.get(edition.code)==='checking')setTranslationStatus(edition.code,'unknown');}
+}
+function selectTranslation(code,openReader=false){
+ const edition=getTranslation(code);if(!edition)return;
+ state.translation=edition.code;putSaved('translation',state.translation);renderTranslationStatuses();
+ if(openReader)showView('reader',false);else void renderReader();
+ updateUrl();
+}
 const bookCache=new Map();let referenceManifest=null,verseCounts=null;let roadmapPage=null,cityStudiesPage=null;let toastTimer;
 async function hasImportedReferences(){if(referenceManifest===null){referenceManifest=fetch('/data/refs/manifest.json?v=20261027-local').then(r=>r.ok?r.json():{enabled:false}).catch(()=>({enabled:false}));}return (await referenceManifest).enabled===true;}
 const create=(tag,className,text)=>{const node=document.createElement(tag);if(className)node.className=className;if(text!==undefined)node.textContent=text;return node;};
@@ -55,7 +91,7 @@ async function renderConnections(){const ref=state.ref;const connections=await c
 function renderNote(){const note=state.notes[state.ref]||'';$('notes-text').value=note;}
 function currentIsSaved(){return state.bookmarks.includes(state.ref);}
 function setSaveButton(){$('bookmark-current').textContent=currentIsSaved()?'★ Saved':'☆ Save';}
-function refreshCurrentUi(){$('reader-translation').value=state.translation;$('translation-label').textContent=state.translation+' EDITION';$('reader-source-name').textContent=state.translation+' via '+getTranslation(state.translation).provider;const scope=readerScope(state.ref);const p=parseRef(state.ref);$('reader-chapter-access').hidden=!scope?.focused;$('reader-scope-note').textContent=scope?.focused?`Showing only ${scope.query}`:'';$('reader-title').textContent=state.ref;$('read-on-esv').href=esvUrl(state.ref);$('read-on-nasb').href=nasbUrl(state.ref);$('read-on-nasb').title=`Open ${state.ref} in the official NASB 2020 reader`;$('prev-chapter').disabled=!adjacentChapter(state.ref,-1);$('next-chapter').disabled=!adjacentChapter(state.ref,1);$('read-prev').disabled=!adjacentChapter(state.ref,-1);$('read-next').disabled=!adjacentChapter(state.ref,1);setSaveButton();renderNote();void renderConnections();if(p){$('side-book').value=p.book.name;populateChapters();$('side-chapter').value=String(p.chapter);}if(state.view==='reader')markSelectedVerse();}
+function refreshCurrentUi(){$('reader-translation').value=state.translation;renderTranslationStatuses();$('reader-source-name').textContent=state.translation+' via '+getTranslation(state.translation).provider;const scope=readerScope(state.ref);const p=parseRef(state.ref);$('reader-chapter-access').hidden=!scope?.focused;$('reader-scope-note').textContent=scope?.focused?`Showing only ${scope.query}`:'';$('reader-title').textContent=state.ref;$('read-on-esv').href=esvUrl(state.ref);$('read-on-nasb').href=nasbUrl(state.ref);$('read-on-nasb').title=`Open ${state.ref} in the official NASB 2020 reader`;$('prev-chapter').disabled=!adjacentChapter(state.ref,-1);$('next-chapter').disabled=!adjacentChapter(state.ref,1);$('read-prev').disabled=!adjacentChapter(state.ref,-1);$('read-next').disabled=!adjacentChapter(state.ref,1);setSaveButton();renderNote();void renderConnections();if(p){$('side-book').value=p.book.name;populateChapters();$('side-chapter').value=String(p.chapter);}if(state.view==='reader')markSelectedVerse();}
 function buildFallback(message,isError=false){const div=create('div','message-panel');div.append(create('h3','',isError?'Unable to load Scripture text':`Read this passage in ${state.translation}`));div.append(create('p','',message));if(state.translation==='ESV'||state.translation==='NASB20'){const esv=state.translation==='ESV';const a=create('a','',`Open ${state.ref} in the official ${state.translation} reader ↗`);a.href=esv?esvUrl(state.ref):nasbUrl(state.ref);a.target='_blank';a.rel='noopener noreferrer';div.append(a);}return div;}
 function safeHtml(raw){const doc=new DOMParser().parseFromString(raw,'text/html');const allowed=new Set(['DIV','P','H2','H3','H4','H5','SPAN','B','STRONG','EM','I','SMALL','A','SUP','SUB','BR','UL','OL','LI','BLOCKQUOTE','HR','SECTION']);
  const walker=node=>{if(node.nodeType===Node.TEXT_NODE)return document.createTextNode(node.nodeValue);if(node.nodeType!==Node.ELEMENT_NODE||['SCRIPT','STYLE','IFRAME','OBJECT','TEMPLATE'].includes(node.tagName))return document.createDocumentFragment();const name=allowed.has(node.tagName)?node.tagName.toLowerCase():'span';const el=document.createElement(name);
@@ -106,16 +142,58 @@ function renderPassageAttribution(payload,edition){
  // Retain the returned notice in the About view for this page session only.
  $('copyright-'+edition.code.toLowerCase()).replaceChildren(safeHtml(payload.copyright));
 }
-async function loadPassage(reference){const requestId=++state.requestId;const translation=state.translation,edition=getTranslation(translation);state.pendingPassage=reference;state.pendingTranslation=translation;state.fums=null;const content=$('passage-content');content.replaceChildren(create('div','message-panel',`Retrieving the passage from ${edition.provider}...`));content.setAttribute('aria-busy','true');$('passage-attribution').hidden=true;$('passage-attribution').replaceChildren();$('passage-status').textContent=`Loading ${translation}`;
- try{const res=await fetch(`/api/passage?q=${encodeURIComponent(reference)}&translation=${encodeURIComponent(translation)}`,{cache:'no-store'});const payload=await res.json();if(requestId!==state.requestId)return;
-  if(!res.ok){const configured=payload.code!=='not_configured';content.replaceChildren(buildFallback(payload.message||'This translation is temporarily unavailable.',configured));$('passage-status').textContent=configured?'Service unavailable':'Translation unavailable';return;}
+async function loadPassage(reference){
+ const requestId=++state.requestId,translation=state.translation,edition=getTranslation(translation);
+ translationRequests.set(translation,requestId);
+ const updateStatus=status=>{if(translationRequests.get(translation)===requestId)setTranslationStatus(translation,status);};
+ updateStatus('loading');
+ state.pendingPassage=reference;state.pendingTranslation=translation;state.fums=null;
+ const content=$('passage-content');
+ content.replaceChildren(create('div','message-panel',`Retrieving the passage from ${edition.provider}...`));
+ content.setAttribute('aria-busy','true');$('passage-attribution').hidden=true;$('passage-attribution').replaceChildren();$('passage-status').textContent=`Loading ${translation}`;
+ try{
+  const res=await fetch(`/api/passage?q=${encodeURIComponent(reference)}&translation=${encodeURIComponent(translation)}`,{cache:'no-store'});
+  const payload=await res.json();
+  if(!res.ok){
+   updateStatus(statusForResponse(res.status,payload.code));
+   if(requestId!==state.requestId)return;
+   const configured=payload.code!=='not_configured';
+   content.replaceChildren(buildFallback(payload.message||'This translation is temporarily unavailable.',configured));
+   $('passage-status').textContent=configured?'Service unavailable':'Translation unavailable';return;
+  }
   if(!Array.isArray(payload.passages)||!payload.passages.length||payload.passages.some(p=>typeof p!=='string'))throw Error('The provider returned no passage text');
-  content.replaceChildren(...payload.passages.map(html=>safeHtml(html)));decorateReaderVerses(chapterRef(reference));renderPassageAttribution(payload,edition);$('passage-status').textContent=`Official ${translation} text`;state.loadedPassage=reference;state.loadedTranslation=translation;
+  updateStatus('available');
+  if(requestId!==state.requestId)return;
+  content.replaceChildren(...payload.passages.map(html=>safeHtml(html)));decorateReaderVerses(chapterRef(reference));renderPassageAttribution(payload,edition);
+  $('passage-status').textContent=`Official ${translation} text`;state.loadedPassage=reference;state.loadedTranslation=translation;
   state.fums=payload.fums;if(state.view==='reader'){void reportScriptureView(state.fums);state.fums=null;}
- }catch(e){if(requestId!==state.requestId)return;content.replaceChildren(buildFallback('The Scripture service is temporarily unavailable. Please try again later or choose another translation.',true));$('passage-status').textContent='Service unavailable';}finally{if(requestId===state.requestId){state.pendingPassage=null;state.pendingTranslation=null;content.setAttribute('aria-busy','false');}}
+ }catch{
+  updateStatus('unavailable');
+  if(requestId!==state.requestId)return;
+  content.replaceChildren(buildFallback('The Scripture service is temporarily unavailable. Please try again later or choose another translation.',true));$('passage-status').textContent='Service unavailable';
+ }finally{
+  if(requestId===state.requestId){state.pendingPassage=null;state.pendingTranslation=null;content.setAttribute('aria-busy','false');}
+ }
 }
 async function renderReader(){refreshCurrentUi();const requested=readerScope(state.ref)?.query;if(!requested)return;if((requested===state.loadedPassage&&state.loadedTranslation===state.translation)||(requested===state.pendingPassage&&state.pendingTranslation===state.translation)){markSelectedVerse();if(state.fums){void reportScriptureView(state.fums);state.fums=null;}return;}state.loadedPassage=null;await loadPassage(requested);}
-async function searchBible(q){showView('reader',false);updateUrl();state.loadedPassage=null;state.pendingPassage=null;state.pendingTranslation=null;state.fums=null;$('passage-attribution').hidden=true;$('reader-source-name').textContent='Keyword search via Crossway (ESV)';$('reader-title').textContent=`Search ESV: ${q}`;const box=$('passage-content');box.replaceChildren(create('div','message-panel','Searching the ESV text...'));$('passage-status').textContent='Searching ESV';const requestId=++state.requestId;try{const res=await fetch(`/api/search?q=${encodeURIComponent(q)}`);const data=await res.json();if(requestId!==state.requestId)return;if(!res.ok){box.replaceChildren(buildFallback(data.message||'Bible search is not configured.'));return;}box.replaceChildren();box.append(create('h3','',`${data.total_results} matching verses`));for(const result of data.results){const row=create('div','search-result');const btn=create('button','search-result-link',result.reference+' ↗');btn.addEventListener('click',()=>selectRef(result.reference));row.append(btn,create('p','',result.content),create('small','search-esv','ESV'));box.append(row);}$('passage-status').textContent='ESV search results';}catch{if(requestId!==state.requestId)return;box.replaceChildren(buildFallback('Could not search the ESV at this time.',true));}finally{if(requestId===state.requestId)box.setAttribute('aria-busy','false');}}
+async function searchBible(q){
+ showView('reader',false);updateUrl();state.loadedPassage=null;state.pendingPassage=null;state.pendingTranslation=null;state.fums=null;
+ $('passage-attribution').hidden=true;$('reader-source-name').textContent='Keyword search via Crossway (ESV)';$('reader-title').textContent=`Search ESV: ${q}`;
+ const box=$('passage-content');box.replaceChildren(create('div','message-panel','Searching the ESV text...'));$('passage-status').textContent='Searching ESV';
+ const requestId=++state.requestId;translationRequests.set('ESV',requestId);setTranslationStatus('ESV','loading');
+ const updateStatus=status=>{if(translationRequests.get('ESV')===requestId)setTranslationStatus('ESV',status);};
+ try{
+  const res=await fetch(`/api/search?q=${encodeURIComponent(q)}`,{cache:'no-store'}),data=await res.json();
+  updateStatus(statusForResponse(res.status,data.code));
+  if(requestId!==state.requestId)return;
+  if(!res.ok){box.replaceChildren(buildFallback(data.message||'Bible search is not configured.'));return;}
+  box.replaceChildren();box.append(create('h3','',`${data.total_results} matching verses`));
+  for(const result of data.results){const row=create('div','search-result');const btn=create('button','search-result-link',result.reference+' ↗');btn.addEventListener('click',()=>selectRef(result.reference));row.append(btn,create('p','',result.content),create('small','search-esv','ESV'));box.append(row);}
+  $('passage-status').textContent='ESV search results';
+ }catch{
+  updateStatus('unavailable');if(requestId!==state.requestId)return;box.replaceChildren(buildFallback('Could not search the ESV at this time.',true));
+ }finally{if(requestId===state.requestId)box.setAttribute('aria-busy','false');}
+}
 async function buildGraphData(requestId){
  const current=state.ref,depth=state.graphDepth;
  const result=await buildAtlas(current,depth,connectionsFor,{layerWidth:10,perSource:4,cancelled:()=>requestId!==state.graphRequestId||state.ref!==current||state.view!=='connections'});
@@ -158,7 +236,9 @@ function renderNotebook(){const b=$('bookmarks-list'),h=$('history-list'),n=$('n
 function removeBookmark(ref){state.bookmarks=state.bookmarks.filter(x=>x!==ref);putSaved('bookmarks',state.bookmarks);renderNotebook();setSaveButton();}
 function init(){document.body.classList.toggle('light',state.theme==='light');$('theme-toggle').textContent=state.theme==='light'?'☾':'☼';$('copyright-year').textContent=String(new Date().getFullYear());populateBookPicker();initAtlasPicker();buildJourneys();
  $('reader-translation').replaceChildren(...TRANSLATIONS.map(edition=>{const option=create('option','',`${edition.code} - ${edition.name}`);option.value=edition.code;return option;}));
- $('reader-translation').addEventListener('change',()=>{state.translation=$('reader-translation').value;putSaved('translation',state.translation);void renderReader();updateUrl();});
+ $('reader-translation').addEventListener('change',()=>selectTranslation($('reader-translation').value));
+ $('translation-statuses').addEventListener('click',event=>{const button=event.target.closest('[data-translation]');if(button)selectTranslation(button.dataset.translation,true);});
+ void loadTranslationStatuses();
  document.addEventListener('click',e=>{const button=e.target.closest('[data-view]');if(button){showView(button.dataset.view);return;}const ref=e.target.closest('[data-open]');if(ref)selectRef(ref.dataset.open);});
  $('hero-search').addEventListener('submit',e=>{e.preventDefault();const input=$('passage-input').value.trim();const parsed=parseRef(input);if(parsed)selectRef(parsed.formatted);else if(input.length>=2)void searchBible(input);else toast('Enter a reference or search term.');});
  $('side-book').addEventListener('change',populateChapters);$('side-open').addEventListener('click',()=>selectRef(`${$('side-book').value} ${$('side-chapter').value}`));
@@ -175,6 +255,6 @@ function init(){document.body.classList.toggle('light',state.theme==='light');$(
  $('graph-depth').addEventListener('change',()=>{state.graphDepth=Number($('graph-depth').value);void renderGraph();});$('graph-reset').addEventListener('click',()=>state.graph?.reset());$('graph-zoom-in').addEventListener('click',()=>state.graph?.zoom(1.2));$('graph-zoom-out').addEventListener('click',()=>state.graph?.zoom(.8));
  $('random-verse').addEventListener('click',()=>selectRef(PATHS[Math.floor(Math.random()*PATHS.length)].refs[0]));
  $('passage-content').addEventListener('click',e=>{const mapLink=e.target.closest('[data-atlas-ref]');if(mapLink){selectRef(mapLink.dataset.atlasRef,'connections');e.preventDefault();return;}const verse=e.target.closest('.verse-num');if(verse){const num=Number(verse.textContent.trim().match(/\d+/)?.[0]);if(num>0&&num<=176){selectRef(`${chapterRef(state.ref)}:${num}`);e.preventDefault();return;}}const link=e.target.closest('a');if(link){const match=link.textContent.match(/(?:[1-3]\s*)?[A-Za-z ]+\d{1,3}:\d{1,3}/);const parsed=parseRef(match?.[0]||link.getAttribute('title')||'');if(parsed){e.preventDefault();selectRef(parsed.formatted);}}});
- const params=new URLSearchParams(location.search);state.translation=getTranslation(params.get('translation'))?.code||state.translation;$('translation-label').textContent=state.translation+' EDITION';const ref=parseRef(params.get('ref'));if(ref)state.ref=ref.formatted;showView(params.get('view')||'discover',false);window.addEventListener('popstate',()=>{const p=new URLSearchParams(location.search);state.translation=getTranslation(p.get('translation'))?.code||getTranslation(getSaved('translation','ESV'))?.code||'ESV';$('translation-label').textContent=state.translation+' EDITION';const parsed=parseRef(p.get('ref'));if(parsed)state.ref=parsed.formatted;showView(p.get('view')||'discover',false);});
+ const params=new URLSearchParams(location.search);state.translation=getTranslation(params.get('translation'))?.code||state.translation;renderTranslationStatuses();const ref=parseRef(params.get('ref'));if(ref)state.ref=ref.formatted;showView(params.get('view')||'discover',false);window.addEventListener('popstate',()=>{const p=new URLSearchParams(location.search);state.translation=getTranslation(p.get('translation'))?.code||getTranslation(getSaved('translation','ESV'))?.code||'ESV';renderTranslationStatuses();const parsed=parseRef(p.get('ref'));if(parsed)state.ref=parsed.formatted;showView(p.get('view')||'discover',false);});
 }
 init();

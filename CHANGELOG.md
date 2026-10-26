@@ -18,6 +18,14 @@
 
 # Changelog
 
+## 2026-10-27 - Production domain and translation status
+
+- Set the production address to `https://www.scripturetrails.com/`, with canonical and social sharing metadata and a sitemap.
+- Configure Cloudflare DNS, the Pages custom domain and a permanent apex/HTTP redirect to HTTPS `www`, preserving deep links and query strings.
+- Give ESV, NASB20, NIV and NKJV independent, responsive status squares in the header, with selection shortcuts to the current passage.
+- Distinguish configured keys from successful reading requests, rate limits, unavailable passages and service failures without polling the Scripture providers.
+- Test configuration disclosure, provider quota avoidance and status classification.
+
 ## 2026-10-27 - Local reference sources and supporting assets
 
 - Verified the uploaded OpenBible archive against all 344,799 official reference pairs and documented snapshot/vote differences.
