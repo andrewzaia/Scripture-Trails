@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "version": "0.9.3",
+      "date": "2026-10-27",
+      "title": "Reliable versioned deployments",
+      "changes": [
+        "Corrected a deployment check that could prevent new website releases from publishing.",
+        "Kept release history, version numbers and update notes consistent across the site."
+      ]
+    },
+    {
       "version": "0.9.2",
       "date": "2026-10-27",
       "title": "Consistent version history",
