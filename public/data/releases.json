@@ -1,6 +1,24 @@
 {
   "releases": [
     {
+      "version": "0.4.1",
+      "date": "2026-10-27",
+      "title": "Clarify chronology evidence and citations",
+      "changes": [
+        "Added academic reading links to the public Gospel evidence register for important ordering differences.",
+        "Clarified potentially parallel visits and the difference between narrative order and historical evidence."
+      ]
+    },
+    {
+      "version": "0.4.0",
+      "date": "2026-10-27",
+      "title": "Compare Gospel narrative sequences",
+      "changes": [
+        "Added individual Matthew, Mark, Luke and John passage-order views alongside the combined Journeys of Jesus timeline.",
+        "Added source-linked comparisons for disputed parallel accounts, and distinguished textual order from historical dates and travel."
+      ]
+    },
+    {
       "version": "0.3.1",
       "date": "2026-10-27",
       "title": "Complete historical release numbering",

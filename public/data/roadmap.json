@@ -3,9 +3,9 @@
   "updated": "2026-10-27",
   "description": "A transparent, evidence-aware roadmap. Delivered means implementation exists, not that every scholarly question is settled. The accuracy audit is an initial, publicly documented editorial screening, not external specialist certification.",
   "currentFocus": [
-    "Gospel-by-Gospel chronology comparison",
+    "People, places and events index",
     "Independent expert review of highlighted research issues",
-    "People, places and events index"
+    "Expanded source-critical Gospel parallels beyond the 79 mapped entries"
   ],
   "phases": [
     {
@@ -142,15 +142,15 @@
     {
       "id": "timeline-evidence",
       "phase": "next",
-      "status": "next",
+      "status": "delivered",
       "title": "Gospel chronology comparison",
-      "summary": "Allow users to switch between each Gospel's account and a harmonised sequence.",
+      "summary": "Compare the order in which the four Gospel texts present the catalogued Jesus-journey episodes, alongside the combined editorial study sequence.",
       "capabilities": [
-        "Matthew, Mark, Luke and John filters",
-        "Parallel-account grouping and notes on sequence differences",
-        "Explicit no-date status when the text supplies no date"
+        "Independent Matthew, Mark, Luke and John textual-order selectors based on each account's cited passages",
+        "Chronology and possible-parallel notes for disputed Nazareth, temple, Bethany and disciple-call passages",
+        "Original Scripture references and linked academic reading, with no invented calendar dates or physical journeys"
       ],
-      "verification": "Ready when every cross-Gospel sequence decision is documented and alternate orders can be studied."
+      "verification": "Textual sequence follows chapter and verse ordering within each Gospel, not established event dates. Dataset and issue links are validated in automated tests. Full source-critical synoptic comparison and external scholarly review remain outstanding."
     },
     {
       "id": "book-atlas",

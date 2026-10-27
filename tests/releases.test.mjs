@@ -41,6 +41,7 @@ test('missing, reversed and skipped historical patch versions are rejected',()=>
  assert.throws(()=>validateReleases(missing,pkg.version),/needs a semantic version/);
  const reversed=manifest.releases.map(r=>({...r}));[reversed[2],reversed[3]]=[reversed[3],reversed[2]];
  assert.throws(()=>validateReleases(reversed,pkg.version),/newest first/);
- const skipped=manifest.releases.map(r=>({...r}));skipped[2].version='0.2.18';
+ const skipped=manifest.releases.map(r=>({...r})).filter(r=>r.version!=='0.2.10');
+ assert.equal(manifest.releases.some(r=>r.version==='0.2.10'),true);
  assert.throws(()=>validateReleases(skipped,pkg.version),/Skipped patch version/);
 });

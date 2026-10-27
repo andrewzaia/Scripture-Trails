@@ -1,0 +1,111 @@
+{
+  "version": 1,
+  "updated": "2026-10-27",
+  "scope": "Narrative-order comparison of entries already catalogued in the 79-event Gospel journey map. Book chapter and verse numbers order the selected Gospel's descriptions, not the dates when the events happened. A shared study entry may cover distinct literary presentations. The dataset is not a source-critical synopsis and does not identify two related accounts as the same historical occurrence without qualification. Full chapter and verse ordering is displayed for only the mapped entries, not for every incident in each Gospel. A claim of literary correspondence must not be mistaken for verification of the number of visits or chronology.",
+  "methodology": "Each Gospel view selects only journey entries with an explicit passage from that Gospel, then sorts them by the first cited chapter and verse within that book. Multiple citations in the same Gospel are grouped under one entry and listed together. Canonical chapter and verse positions are editorial reading coordinates, not historical time stamps. No unreported dates, independent journeys or missing Gospel narratives are inferred.",
+  "sources": [
+    {
+      "id": "crawford-nazareth",
+      "title": "Matthew R. Crawford, Rejection at Nazareth in the Gospels of Mark, Matthew, Luke - and Tatian",
+      "kind": "Academic book chapter, Oxford University Press, 2018",
+      "url": "https://doi.org/10.1093/oso/9780198814801.003.0006",
+      "claim": "Compares the different narrative placements of the hometown rejection in Luke, Mark and Matthew. The abstract is public; chapter full text may require access."
+    },
+    {
+      "id": "tyson-order",
+      "title": "Joseph B. Tyson, Sequential Parallelism in the Synoptic Gospels",
+      "kind": "Peer-reviewed journal article, New Testament Studies",
+      "url": "https://www.cambridge.org/core/journals/new-testament-studies/article/abs/sequential-parallelism-in-the-synoptic-gospels/106FEAC09C5D6DB223DDEA58EA2A0FC3",
+      "claim": "A methodological discussion of how sequential parallelism is analysed; it does not adjudicate the identity of the Bethany anointing or other specific parallels in this catalogue."
+    },
+    {
+      "id": "barker-harmony",
+      "title": "James W. Barker, The Narrative Chronology of Tatian's Diatessaron",
+      "kind": "Peer-reviewed journal article, New Testament Studies, 2020",
+      "url": "https://doi.org/10.1017/S0028688519000468",
+      "claim": "Shows how a historical Gospel harmony arranged temple-action traditions differently; it is evidence about harmonisation choices, not proof of the original event date."
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "nazareth-rejection",
+      "title": "Nazareth: one encounter or different visits?",
+      "events": [
+        "j020",
+        "j033"
+      ],
+      "issueId": "nazareth-order",
+      "passages": [
+        "Luke 4:16-30",
+        "Mark 6:1-6",
+        "Matthew 13:53-58"
+      ],
+      "status": "disputed parallel",
+      "analysis": "Luke narrates the Nazareth confrontation early in his ministry account; Mark and Matthew place their hometown rejection later. The two map entries represent textual placements, not proof that Jesus made two independently demonstrable visits.",
+      "sourceIds": [
+        "crawford-nazareth",
+        "tyson-order"
+      ]
+    },
+    {
+      "id": "temple-action",
+      "title": "Temple action: John and the final week",
+      "events": [
+        "j014",
+        "j064"
+      ],
+      "issueId": "temple-chronology",
+      "passages": [
+        "John 2:13-25",
+        "Mark 11:15-19",
+        "Matthew 21:12-17",
+        "Luke 19:45-48"
+      ],
+      "status": "chronology unresolved",
+      "analysis": "John narrates the temple confrontation early in his account, while the Synoptics place a similar scene in the final week. One incident with different literary placement and two distinct incidents are competing interpretations; this map does not decide between them.",
+      "sourceIds": [
+        "barker-harmony",
+        "tyson-order"
+      ]
+    },
+    {
+      "id": "bethany-anointing",
+      "title": "Bethany anointing accounts",
+      "events": [
+        "j060",
+        "j068"
+      ],
+      "issueId": "bethany-anointing",
+      "passages": [
+        "John 12:1-11",
+        "Mark 14:3-9",
+        "Matthew 26:6-13"
+      ],
+      "status": "parallel identification debated",
+      "analysis": "The anointings share features but differ in reported details and placement. The two catalogue entries should not be added together as two historically confirmed meals or journeys.",
+      "sourceIds": [
+        "tyson-order"
+      ]
+    },
+    {
+      "id": "fishermen-call",
+      "title": "The fishermen: order and presentation",
+      "events": [
+        "j022",
+        "j023"
+      ],
+      "issueId": "disciples-call",
+      "passages": [
+        "Mark 1:16-20",
+        "Mark 1:21-28",
+        "Luke 4:31-37",
+        "Luke 5:1-11"
+      ],
+      "status": "distinct narrative arrangement",
+      "analysis": "Mark presents the lakeside call before synagogue teaching in Capernaum; Luke places the catch-and-call scene after Capernaum teaching. The chosen textual view displays each author's ordering without constructing dates.",
+      "sourceIds": [
+        "tyson-order"
+      ]
+    }
+  ]
+}

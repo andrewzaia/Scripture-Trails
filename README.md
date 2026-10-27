@@ -264,3 +264,15 @@ The website version is recorded in `package.json` and shown in the footer. The p
 For each website update, run `npm run release -- patch "Public heading" "Short public summary"` before committing. Choose `minor` for new backward-compatible features and `major` for breaking changes. Additional quoted arguments become further public changelog bullets. This command synchronises `package.json`, public release notes, footer version, asset cache keys and the developer changelog.
 
 `npm run build` checks that the version and public release history agree. When Git parent history is available, it also rejects code-changing commits without an increased version. GitHub CI fetches the previous commit so these checks are enforced. Semantic impact is chosen by the developer; the system will not guess whether a change is major, minor or patch. Documentation-only and test-only edits need no website release.
+
+## Gospel-by-Gospel narrative chronology comparison (27 October 2026)
+
+Journeys of Jesus provides a combined editorial study sequence and individual Matthew, Mark, Luke and John textual-order views. Each account view selects entries with an explicit citation for that book and sorts them by the first cited chapter and verse. This is **literary order within an existing 79-entry catalogue**, not a dated historical chronology or an exhaustive synopsis of all Gospel material. When an account view is active, speculative map travel connectors are hidden. Place dossiers still cover the wider combined catalogue.
+
+The public comparison metadata in `public/data/gospel-chronology.json` flags disputed or possibly shared episodes without claiming two independently proven visits: the Nazareth rejection, temple action, Bethany anointing and differing call of fishermen narrative order. Every comparison links the canonical passages and relevant research publications. External research confirms interpretive issues, not a definitive timeline, and full specialist peer review remains uncompleted.
+
+The pure `gospelSequence` and `validateGospelChronology` functions live in `public/assets/gospel-chronology.js`; `tests/gospel-chronology.test.mjs` exercises independent ordering, evidence links, interface structure and roadmap status. Future scholarship should expand coverage by source-critical review rather than treating every cross-Gospel resemblance as a confirmed parallel.
+
+### Academic follow-up (27 October 2026)
+
+The public evidence register also links the Nazareth ordering issue to Crawford's Oxford University Press chapter (2018), and the general Synoptic-order method to Tyson's article in *New Testament Studies*. The Capernaum synagogue entry is explicitly associated with the fishermen's-call sequence issue, since Mark 1:16-28 and Luke 4:31-5:11 present these accounts in different order. The original first-pass audit date is preserved; `jesus-audit.json` separately records the later bibliographic update. An academic publication discussing a method or a similar textual pattern is not independent historical confirmation of a particular incident, and editorial review is not peer review.
