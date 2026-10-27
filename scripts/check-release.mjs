@@ -21,7 +21,8 @@ if(!app.includes('connection-evidence.js?v='+pkg.version)||!index.includes('conn
 if(!app.includes('atlas-comparison.js?v='+pkg.version)||!index.includes('person-trails.js?v='+pkg.version))throw new Error('Comparison and person trails must match release version');
 const evidence=readFileSync('public/assets/connection-evidence.js','utf8');
 if(!evidence.includes('connection-evidence-expanded.js?v='+pkg.version))throw new Error('Expanded evidence cache key must match release version');
-// PR validation must cover ALL branch commits, even if the last commit only updates docs.
+// PR validation covers ALL branch commits. Cloudflare's production checkout can be shallow,
+// so only GitHub Actions must have full history; every build still checks release metadata.
 // GitHub Actions checks out full history (fetch-depth: 0) so the merge base is available.
 const git=(...args)=>execFileSync('git',args,{encoding:'utf8'}).trim();
 let base='HEAD^';
@@ -32,7 +33,7 @@ try{
  }
  execFileSync('git',['cat-file','-e',base],{stdio:'ignore'});
 }catch(error){
- if(process.env.CI)throw new Error('Release validation requires Git history for the target branch: '+error.message);
+ if(process.env.GITHUB_ACTIONS||process.env.GITHUB_BASE_REF)throw new Error('GitHub release validation requires the destination branch history: '+error.message);
  console.log('Release metadata is consistent; Git history unavailable, skipping historical comparison.');
  process.exit(0);
 }
