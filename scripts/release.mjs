@@ -23,6 +23,9 @@ nextApp=versionedImport(nextApp,'atlas-comparison.js?v='+oldVersion,'atlas-compa
 nextApp=versionedImport(nextApp,'paul-map.js?v='+oldVersion,'paul-map.js?v='+newVersion,'Pauline journeys');
 nextApp=versionedImport(nextApp,'roadmap.js?v='+oldVersion,'roadmap.js?v='+newVersion,'roadmap');
 nextApp=versionedImport(nextApp,'notebook-backup.js?v='+oldVersion,'notebook-backup.js?v='+newVersion,'notebook backups');
+nextApp=versionedImport(nextApp,'reading-plans.js?v='+oldVersion,'reading-plans.js?v='+newVersion,'reading progress');
+const backupPath='public/assets/notebook-backup.js';
+const nextBackup=versionedImport(read(backupPath),'reading-plans.js?v='+oldVersion,'reading-plans.js?v='+newVersion,'backup progress validation');
 const prevIndex=read(indexPath);
 let nextIndex=versionedImport(prevIndex,'entity-index-data.js?v='+oldVersion,'entity-index-data.js?v='+newVersion,'index data module');
 nextIndex=versionedImport(nextIndex,"ENTITY_INDEX_DATA_VERSION='"+oldVersion+"'","ENTITY_INDEX_DATA_VERSION='"+newVersion+"'",'index JSON files');
@@ -46,6 +49,7 @@ writeFileSync(packagePath,JSON.stringify(pkg,null,2)+'\n');
 writeFileSync(historyPath,JSON.stringify(history,null,2)+'\n');
 writeFileSync(htmlPath,newHtml);
 writeFileSync(appPath,nextApp);
+writeFileSync(backupPath,nextBackup);
 writeFileSync(graphPath,nextGraph);
 writeFileSync(indexPath,nextIndex);
 writeFileSync(evidencePath,nextEvidence);

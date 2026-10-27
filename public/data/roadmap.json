@@ -4,7 +4,7 @@
   "description": "A transparent, evidence-aware roadmap. Delivered means implementation exists, not that every scholarly question is settled. The accuracy audit is an initial, publicly documented editorial screening, not external specialist certification.",
   "currentFocus": [
     "Review the Pauline journey location and textual questions against specialist research",
-    "Next study milestone: richer annotations and reading plans",
+    "Next study milestone: structured annotations and verse highlights",
     "Expand person-centred trails and Hebrew Bible geography while preserving evidence distinctions"
   ],
   "phases": [
@@ -370,6 +370,20 @@
         "Single-write notebook persistence with storage failure and stale-import handling"
       ],
       "verification": "Automated validation and merge tests plus browser round-trip checks. Backups are unencrypted and should be kept private. No publisher Bible text is fetched for export."
+    },
+    {
+      "id": "reading-progress",
+      "phase": "platform",
+      "status": "delivered",
+      "title": "Optional study journey reading progress",
+      "summary": "Track completed passages in the six existing guided study journeys and resume the next unread passage.",
+      "capabilities": [
+        "Explicit per-passage checklists and completion indicators",
+        "Resume the next unread passage and confirm before resetting a plan",
+        "Local progress saved without an account",
+        "Version 2 notebook backups include progress; older backups remain supported"
+      ],
+      "verification": "Plan-reference validation, completion merge and backup compatibility tested. Progress is self-reported and does not measure reading time or comprehension. Structured annotations and calendar-based reading schedules remain future work."
     }
   ]
 }

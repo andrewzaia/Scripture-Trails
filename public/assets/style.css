@@ -176,3 +176,7 @@ body.light .atlas-preview-panel{background:var(--surface2)}
 @media(max-width:600px){.atlas-preview-bar{align-items:start}.atlas-preview-bar>div{flex-basis:100%}}
 
 .notebook-backup{margin:24px min(6.5%,82px);padding:24px}.notebook-backup>p,.notebook-backup section>p{color:var(--muted);font-size:12px}.notebook-backup label{display:block;margin:14px 0}.notebook-backup input[type=file]{display:block;max-width:100%;margin-top:8px}.notebook-backup fieldset{border:1px solid var(--line);margin:12px 0;min-width:0}.notebook-backup fieldset p{white-space:pre-wrap;overflow-wrap:anywhere;max-height:180px;overflow:auto}.notebook-backup button{margin:5px 8px 5px 0}
+
+.reading-plan{margin-top:24px;border-top:1px solid var(--line);padding-top:20px}.reading-plan>p{color:var(--muted);font-size:12px}.reading-plan progress{width:100%;accent-color:var(--gold)}.reading-plan-row{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid var(--line)}.reading-plan-row input{width:18px;height:18px;accent-color:var(--gold);vertical-align:middle}.reading-plan>button{margin:14px 8px 0 0}.reading-plan button:disabled{opacity:.5}
+
+.reading-plan [hidden]{display:none!important}

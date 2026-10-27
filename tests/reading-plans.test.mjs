@@ -1,0 +1,9 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {validateReadingPlans,mergeReadingPlans} from '../public/assets/reading-plans.js';
+import {validateBackup,mergeNotebook} from '../public/assets/notebook-backup.js';
+const counts=JSON.parse(readFileSync(new URL('../public/data/verse-counts.json',import.meta.url)));
+test('progress accepts only existing plan passages and normalises their order',()=>{assert.deepEqual([...validateReadingPlans({creation:['John 1:1','Genesis 1:1']}).creation],['Genesis 1:1','John 1:1']);for(const bad of [null,[],{unknown:[]},{creation:['John 3:16']},{creation:['Genesis 1:1','Genesis 1:1']}])assert.throws(()=>validateReadingPlans(bad));});
+test('progress merges completed passages without clearing existing completions',()=>{const a={creation:['Genesis 1:1']},b={creation:['Genesis 2:9']};assert.deepEqual([...mergeReadingPlans(a,b).creation],['Genesis 1:1','Genesis 2:9']);assert.deepEqual(a.creation,['Genesis 1:1']);});
+test('schema 1 imports preserve progress and schema 2 backups round-trip it',()=>{const v1={format:'scripture-trails-notebook',schemaVersion:1,exportedAt:new Date().toISOString(),bookmarks:[],notes:{}};const current={bookmarks:[],notes:{},readingPlans:{creation:['Genesis 1:1']}};assert.deepEqual([...mergeNotebook(current,validateBackup(v1,counts)).merged.readingPlans.creation],['Genesis 1:1']);const v2={...v1,schemaVersion:2,readingPlans:{creation:['Genesis 2:9']}};const merged=mergeNotebook(current,validateBackup(JSON.parse(JSON.stringify(v2)),counts));assert.equal(merged.newCompleted,1);assert.equal(merged.merged.readingPlans.creation.length,2);assert.throws(()=>validateBackup({...v1,readingPlans:{}},counts));assert.throws(()=>validateBackup({...v2,readingPlans:{creation:['Acts 1:1']}},counts));});
