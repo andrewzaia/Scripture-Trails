@@ -1,10 +1,10 @@
 import {validateCanonicalReference} from './reference-integrity.js';
 
-/** Catalogued Gospel narrative entries with stable cross-links, not historical proof. */
+/** A sourced reading index: Gospel episodes and selected Hebrew Bible narratives. Historical verification is kept separate. */
 export const ENTITY_TYPES=['person','place','event'];
 const fold=s=>String(s||'').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[’']/g,"").replace(/[^a-z0-9]+/g,' ').trim();
 const listed=(items)=>[...new Set(items)];
-export function buildEntityCatalog(peopleData,journeys,geography,audit,cityData,counts){
+export function buildEntityCatalog(peopleData,journeys,geography,audit,cityData,counts,historyData=null){
  if(!peopleData?.people?.length||!journeys?.events?.length||!journeys?.places?.length||!geography?.places||!audit?.issues||!cityData?.cities)throw Error('Incomplete index datasets');
  if(peopleData.sourcePolicy?.length<20||!peopleData.scope)throw Error('Index source policy missing');
  const eventById=new Map(journeys.events.map(x=>[x.id,x]));
@@ -38,7 +38,53 @@ export function buildEntityCatalog(peopleData,journeys,geography,audit,cityData,
   const issues=(event.review?.issueIds||[]).map(id=>{const issue=issueById.get(id);if(!issue)throw Error('Missing event issue '+id);return {id,status:issue.status,description:issue.description,links:issue.references};});
   records.push({id:event.id,type:'event',title:event.title,aliases:[],disambiguation:'Gospel itinerary episode - '+(placeById.get(event.place)?.name||event.place),summary:event.summary,qualification:event.qualification||'',evidence:event.evidence,passages:event.passages,place:event.place,issues,events:[],sourceStatus:'Primary Gospel or Acts passages; chronology and location are editorially qualified'});
  }
- return {records,byKey:new Map(records.map(x=>[x.type+':'+x.id,x])),byId:{person:personById,place:placeById,event:eventById},count:{person:peopleData.people.length,place:journeys.places.length,event:journeys.events.length}};
+ if(historyData){
+  if(!historyData.scope||!historyData.sourcePolicy||!Array.isArray(historyData.people)||!Array.isArray(historyData.events)||!Array.isArray(historyData.places)||!historyData.sources)throw Error('Incomplete Hebrew Bible history dataset');
+  const allPersonIds=new Set([...personById.keys()]);
+  const allPlaceIds=new Set([...placeById.keys()]);
+  const allEventIds=new Set([...eventById.keys()]);
+  for(const p of historyData.people){if(allPersonIds.has(p.id))throw Error('Duplicate person ID '+p.id);allPersonIds.add(p.id);}
+  for(const p of historyData.places){if(allPlaceIds.has(p.id))throw Error('Duplicate place ID '+p.id);allPlaceIds.add(p.id);}
+  for(const e of historyData.events){if(allEventIds.has(e.id))throw Error('Duplicate event ID '+e.id);allEventIds.add(e.id);}
+  const usedSource=ids=>{
+   if(!Array.isArray(ids))throw Error('Source IDs must be an array');
+   return ids.map(id=>{const source=historyData.sources[id];if(!source||!source.scope||!source.title||!/^https:\/\//.test(source.url))throw Error('Invalid historical source '+id);return {...source,id};});
+  };
+  for(const place of historyData.places){
+   if(!/^[a-z0-9-]+$/.test(place.id)||!place.name||!['site','region','polity'].includes(place.kind)||!place.summary||!place.caution||!place.region||!Array.isArray(place.aliases)||!Array.isArray(place.passages)||!place.passages.length||!Array.isArray(place.events))throw Error('Invalid historical place '+place.id);
+   for(const ref of place.passages)validateRef(ref,'historical place '+place.id);
+   for(const id of place.events)if(!allEventIds.has(id))throw Error('Invalid event for place '+place.id+': '+id);
+   records.push({id:place.id,type:'place',title:place.name,kind:place.kind,corpus:'Hebrew Bible',aliases:place.aliases,disambiguation:place.region+' - '+place.kind,summary:place.summary,caution:place.caution,passages:place.passages,events:listed(place.events),oldTestament:[],sourceLinks:usedSource(place.sourceIds),sourceStatus:place.sourceIds.length?'Independent context sources attached; claims have limited scope':'Biblical narrative references only; independent bibliography not linked'});
+  }
+  for(const event of historyData.events){
+   if(!/^[a-z0-9-]+$/.test(event.id)||!event.title||!event.summary||!event.qualification||!event.category||!allPlaceIds.has(event.place)||!event.passages?.length||!Array.isArray(event.people)||!event.people.length)throw Error('Invalid Hebrew Bible event '+event.id);
+   for(const ref of event.passages)validateRef(ref,'Hebrew Bible event '+event.id);
+   for(const id of event.people)if(!allPersonIds.has(id))throw Error('Unknown participant for '+event.id+': '+id);
+   records.push({id:event.id,type:'event',corpus:'Hebrew Bible',isJourney:false,title:event.title,aliases:[],disambiguation:'Hebrew Bible - '+event.category,summary:event.summary,passages:event.passages,place:event.place,people:event.people,qualification:event.qualification,sourceLinks:usedSource(event.sourceIds),issues:[],events:[],evidence:'Narrative source and editorial regional assignment',sourceStatus:'Biblical passage indexed; historical and archaeological claims require separately scoped evidence'});
+   const existing=records.find(x=>x.type==='place'&&x.id===event.place);
+   if(existing){existing.events=listed([...existing.events,event.id]);existing.corpus=existing.corpus==='Gospels'?'Both':existing.corpus;}
+  }
+  for(const person of historyData.people){
+   if(!/^[a-z0-9-]+$/.test(person.id)||!person.name||!person.summary||!person.disambiguation||!Array.isArray(person.aliases)||!person.passages?.length||!Array.isArray(person.events)||!Array.isArray(person.relationships))throw Error('Invalid Hebrew Bible person '+person.id);
+   for(const ref of person.passages)validateRef(ref,'Hebrew Bible person '+person.id);
+   for(const id of person.events)if(!allEventIds.has(id))throw Error('Unknown event for person '+person.id+': '+id);
+   for(const edge of person.relationships){if(!allPersonIds.has(edge.to)||edge.to===person.id||!edge.label)throw Error('Unknown person relation '+person.id);validateRef(edge.ref,'relation '+person.id);}
+   records.push({id:person.id,type:'person',corpus:'Hebrew Bible',title:person.name,aliases:person.aliases,disambiguation:person.disambiguation,summary:person.summary,passages:person.passages,events:listed(person.events),relationships:person.relationships,sourceLinks:usedSource(person.sourceIds||[]),sourceStatus:'Hebrew Bible passage testimony; museum evidence cited only for its independently attested claims'});
+  }
+  for(const person of historyData.people){
+   for(const id of person.events){const event=records.find(x=>x.type==='event'&&x.id===id);if(event?.corpus==='Hebrew Bible'&&!event.people.includes(person.id))throw Error('Person event associations not reciprocal: '+person.id+' '+id);}
+  }
+  for(const event of historyData.events){
+   for(const id of event.people){const p=records.find(x=>x.type==='person'&&x.id===id);if(p?.corpus==='Hebrew Bible'&&!p.events.includes(event.id))throw Error('Event person associations not reciprocal: '+event.id+' '+id);}
+  }
+ }
+ for(const entry of records){entry.corpus??='Gospels';if(entry.type==='event')entry.isJourney??=true;}
+ const byKey=new Map(records.map(x=>[x.type+':'+x.id,x]));
+ if(byKey.size!==records.length)throw Error('Colliding index keys');
+ const personMap=new Map([...personById,...(historyData?.people||[]).map(x=>[x.id,x])]);
+ const placeMap=new Map([...placeById,...(historyData?.places||[]).map(x=>[x.id,x])]);
+ const eventMap=new Map([...eventById,...(historyData?.events||[]).map(x=>[x.id,x])]);
+ return {records,byKey,byId:{person:personMap,place:placeMap,event:eventMap},count:{person:personMap.size,place:placeMap.size,event:eventMap.size}};
 }
 export function referenceOverlaps(query,citation,counts){
  const q=validateCanonicalReference(query,counts),c=validateCanonicalReference(citation,counts);
@@ -48,10 +94,10 @@ export function referenceOverlaps(query,citation,counts){
  return start(q)<=end(c)&&start(c)<=end(q);
 }
 /** Matches source passages and indexed episode context (not a claim of a person's presence in every verse). */
-export function findEntities(catalog,query='',type='all',counts=null){
- if(!catalog?.records||!['all',...ENTITY_TYPES].includes(type))return [];
+export function findEntities(catalog,query='',type='all',counts=null,period='all'){
+ if(!catalog?.records||!['all',...ENTITY_TYPES].includes(type)||!['all','Gospels','Hebrew Bible'].includes(period))return [];
  const q=fold(query),words=q.split(' ').filter(Boolean),isRef=counts&&validateCanonicalReference(query,counts);
- return catalog.records.filter(x=>type==='all'||x.type===type).map(record=>{
+ return catalog.records.filter(x=>(type==='all'||x.type===type)&&(period==='all'||x.corpus===period||x.corpus==='Both')).map(record=>{
   if(!q)return {record,score:0};
   if(isRef){
    const own=record.passages.some(ref=>referenceOverlaps(query,ref,counts));

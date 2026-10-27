@@ -920,7 +920,8 @@
       "sourceIds": [],
       "events": [
         "h001",
-        "h027"
+        "h027",
+        "h029"
       ]
     },
     {
@@ -971,7 +972,7 @@
       ],
       "region": "Israel / Samaria",
       "summary": "A political designation for the northern monarchy in Kings and prophetic superscriptions.",
-      "caution": "Not the patriarch Jacob, not the entire nation at every date, and not a fixed geographical polygon. The Book of Judges precedes this monarchy; Deborah's regional connection does not imply the kingdom existed in her lifetime.",
+      "caution": "The label identifies the later divided monarchy and is not a fixed surveyed border or equivalent to the patriarch Jacob.",
       "passages": [
         "1 Kings 12:20-33",
         "2 Kings 17:1-6"
@@ -982,8 +983,7 @@
         "h011",
         "h012",
         "h013",
-        "h014",
-        "h029"
+        "h014"
       ]
     },
     {
@@ -1680,7 +1680,7 @@
     {
       "id": "h029",
       "title": "Deborah and Barak",
-      "place": "northern-israel",
+      "place": "canaan-region",
       "summary": "Judges describes Deborah's role alongside Barak and contains a poetic account of the battle.",
       "passages": [
         "Judges 4:4-10",
