@@ -1,6 +1,14 @@
 {
   "releases": [
     {
+      "version": "0.11.1",
+      "date": "2026-10-28",
+      "title": "Clearer People Index icon",
+      "changes": [
+        "Replaced the People, places & events navigation icon with a head-and-shoulders outline matching the existing style."
+      ]
+    },
+    {
       "version": "0.11.0",
       "date": "2026-10-28",
       "title": "Paul's missionary journeys",

@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.11.1 - 28/10/2026: Clearer People Index icon
+
+- Replaced the People, places & events navigation icon with a head-and-shoulders outline matching the existing style.
+
 ## 0.11.0 - 28/10/2026: Paul's missionary journeys
 
 - Explore three missionary journeys in Acts through 61 passage-linked narrative stages, with 33 approximate location markers.
