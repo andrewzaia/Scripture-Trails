@@ -227,6 +227,55 @@ function createAtlasVoteMeter(link,highestVotes){
  for(let i=0;i<7;i++){const bar=create('i',`atlas-vote-bar${i<level?' filled':''}`);bar.style.height=`${5+i*2}px`;meter.append(bar);}
  return {meter,label};
 }
+
+/** A preview changes neither the Atlas centre nor the browser's passage reference. */
+async function renderAtlasPreview(reference){
+ const parsed=parseRef(reference);if(!parsed)return;
+ const ref=parsed.formatted,translation=state.translation,edition=getTranslation(translation),requestId=++state.atlasPreviewRequestId;
+ state.atlasPreviewRef=ref;
+ state.graph?.setPreviewRef(ref);
+ $('atlas-preview-ref').textContent=ref;
+ $('atlas-preview-translation').value=translation;
+ $('atlas-preview-focus').disabled=ref===state.ref;
+ $('atlas-preview-help').textContent=ref===state.ref
+  ?'This is the current Atlas centre. Select another node to read its passage.'
+  :'Click the same node again, or choose Focus Atlas here, to explore connections from this verse.';
+ const content=$('atlas-preview-content'),credit=$('atlas-preview-credit');
+ content.replaceChildren(create('p','soft-note','Loading '+translation+' passage...'));
+ content.setAttribute('aria-busy','true');credit.replaceChildren();
+ const fresh=()=>requestId===state.atlasPreviewRequestId&&state.atlasPreviewRef===ref&&state.translation===translation&&state.view==='connections';
+ try{
+  const response=await fetch('/api/passage?q='+encodeURIComponent(ref)+'&translation='+encodeURIComponent(translation),{cache:'no-store'});
+  const payload=await response.json();
+  if(!fresh())return;
+  if(!response.ok){
+   content.replaceChildren(create('p','soft-note',payload.message||'This passage could not be loaded. Try a different translation or try again.'));
+   return;
+  }
+  if(!Array.isArray(payload.passages)||!payload.passages.length||payload.passages.some(p=>typeof p!=='string'))throw Error('Missing passage text');
+  content.replaceChildren(...payload.passages.map(safeHtml));
+  if(edition.provider==='API.Bible'){
+   if(typeof payload.copyright==='string'){
+    credit.append(safeHtml(payload.copyright));
+    $('copyright-'+edition.code.toLowerCase()).replaceChildren(safeHtml(payload.copyright));
+   }
+   for(const [label,url] of [[edition.publisher,edition.publisherUrl],['Scripture supplied by API.Bible','https://api.bible/']]){
+    const link=create('a','',label);link.href=url;link.target='_blank';link.rel='noopener noreferrer';credit.append(link);
+   }
+   void reportScriptureView(payload.fums);
+  }else{
+   const link=create('a','','ESV passage text supplied by Crossway');
+   link.href=esvUrl(ref);link.target='_blank';link.rel='noopener noreferrer';credit.append(link);
+  }
+ }catch{
+  if(fresh())content.replaceChildren(create('p','soft-note','Could not retrieve this passage. Please try again or choose another translation.'));
+ }finally{if(fresh())content.setAttribute('aria-busy','false');}
+}
+function activateAtlasNode(ref,action='preview'){
+ if(action==='focus')selectRef(ref,'connections');
+ else void renderAtlasPreview(ref);
+}
+
 async function renderGraph(){
  const p=parseRef(state.ref);if(p?.verse===null){state.ref=`${p.book.name} ${p.chapter}:1`;}
  const ref=state.ref, requestId=++state.graphRequestId;
