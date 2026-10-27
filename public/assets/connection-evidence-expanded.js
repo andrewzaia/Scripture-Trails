@@ -1,7 +1,447 @@
-/** Added curated biblical comparisons. Their review status is editorial, not academic certification. */
+/** More editorial comparisons of cited passages. Specialist review is not implied. */
 export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
   {
     "id": "ce025",
+    "from": "Genesis 2:9",
+    "to": "Revelation 22:2",
+    "kind": "theme",
+    "explanation": "The tree of life imagery. Explore how Genesis 2:9 and Revelation 22:2 address this subject or imagery from their respective settings.",
+    "caution": "A shared subject does not establish quotation, fulfilment or historical corroboration.",
+    "context": "Revelation 22:2",
+    "review": "editorial-reading-aid",
+    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
+  },
+  {
+    "id": "ce026",
+    "from": "Genesis 1:26",
+    "to": "Colossians 1:15",
+    "kind": "theme",
+    "explanation": "The image of God. Explore how Genesis 1:26 and Colossians 1:15 address this subject or imagery from their respective settings.",
+    "caution": "A shared subject does not establish quotation, fulfilment or historical corroboration.",
+    "context": "Colossians 1:15",
+    "review": "editorial-reading-aid",
+    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
+  },
+  {
+    "id": "ce027",
+    "from": "Genesis 3:15",
+    "to": "Romans 16:20",
+    "kind": "echo",
+    "explanation": "The defeat of evil. Explore how Genesis 3:15 and Romans 16:20 address this subject or imagery from their respective settings.",
+    "caution": "The proposed literary echo is an editorial interpretation, not proof of authorial intention.",
+    "context": "Romans 16:20",
+    "review": "editorial-reading-aid",
+    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
+  },
+  {
+    "id": "ce028",
+    "from": "Genesis 12:3",
+    "to": "Galatians 3:8",
+    "kind": "quotation",
+    "explanation": "The promise to Abraham. Explore how Genesis 12:3 and Galatians 3:8 address this subject or imagery from their respective settings.",
+    "caution": "The later text may adapt the earlier wording. Read both contexts and check translation differences.",
+    "context": "Galatians 3:8",
+    "review": "editorial-reading-aid",
+    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
+  },
+  {
+    "id": "ce029",
+    "from": "Genesis 12:3",
+    "to": "Matthew 28:19",
+    "kind": "theme",
+    "explanation": "Blessing reaching the nations. Explore how Genesis 12:3 and Matthew 28:19 address this subject or imagery from their respective settings.",
+    "caution": "A shared subject does not establish quotation, fulfilment or historical corroboration.",
+    "context": "Matthew 28:19",
+    "review": "editorial-reading-aid",
+    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
+  },
+  {
+    "id": "ce030",
+    "from": "Exodus 16:4",
+    "to": "John 6:32",
+    "kind": "theme",
+    "explanation": "Bread from heaven. Explore how Exodus 16:4 and John 6:32 address this subject or imagery from their respective settings.",
+    "caution": "A shared subject does not establish quotation, fulfilment or historical corroboration.",
+    "context": "John 6:32",
+    "review": "editorial-reading-aid",
+    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
+  },
+  {
+    "id": "ce031",
+    "from": "Deuteronomy 6:5",
+    "to": "Mark 12:30",
+    "kind": "quotation",
+    "explanation": "The greatest commandment. Explore how Deuteronomy 6:5 and Mark 12:30 address this subject or imagery from their respective settings.",
+    "caution": "The later text may adapt the earlier wording. Read both contexts and check translation differences.",
+    "context": "Mark 12:30",
+    "review": "editorial-reading-aid",
+    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
+  },
+  {
+    "id": "ce032",
+    "from": "Psalm 2:7",
+    "to": "Hebrews 1:5",
+    "kind": "quotation",
+    "explanation": "Royal sonship language. Explore how Psalm 2:7 and Hebrews 1:5 address this subject or imagery from their respective settings.",
+    "caution": "The later text may adapt the earlier wording. Read both contexts and check translation differences.",
+    "context": "Hebrews 1:5",
+    "review": "editorial-reading-aid",
+    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
+  },
+  {
+    "id": "ce033",
+    "from": "Psalm 23:1",
+    "to": "Ezekiel 34:11",
+    "kind": "theme",
+    "explanation": "The shepherd caring for the flock. Explore how Psalm 23:1 and Ezekiel 34:11 address this subject or imagery from their respective settings.",
+    "caution": "A shared subject does not establish quotation, fulfilment or historical corroboration.",
+    "context": "Ezekiel 34:11",
+    "review": "editorial-reading-aid",
+    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
+  },
+  {
+    "id": "ce034",
+    "from": "Psalm 23:1",
+    "to": "1 Peter 5:4",
+    "kind": "theme",
+    "explanation": "The chief shepherd. Explore how Psalm 23:1 and 1 Peter 5:4 address this subject or imagery from their respective settings.",
+    "caution": "A shared subject does not establish quotation, fulfilment or historical corroboration.",
+    "context": "1 Peter 5:4",
+    "review": "editorial-reading-aid",
+    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
+  },
+  {
+    "id": "ce035",
+    "from": "Psalm 46:1",
+    "to": "Philippians 4:6",
+    "kind": "theme",
+    "explanation": "Help in trouble and prayer. Explore how Psalm 46:1 and Philippians 4:6 address this subject or imagery from their respective settings.",
+    "caution": "A shared subject does not establish quotation, fulfilment or historical corroboration.",
+    "context": "Philippians 4:6",
+    "review": "editorial-reading-aid",
+    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
+  },
+  {
+    "id": "ce036",
+    "from": "Psalm 51:10",
+    "to": "Ezekiel 36:26",
+    "kind": "theme",
+    "explanation": "A renewed heart. Explore how Psalm 51:10 and Ezekiel 36:26 address this subject or imagery from their respective settings.",
+    "caution": "A shared subject does not establish quotation, fulfilment or historical corroboration.",
+    "context": "Ezekiel 36:26",
+    "review": "editorial-reading-aid",
+    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
+  },
+  {
+    "id": "ce037",
+    "from": "Isaiah 9:6",
+    "to": "Luke 2:11",
+    "kind": "theme",
+    "explanation": "Messianic royal imagery. Explore how Isaiah 9:6 and Luke 2:11 address this subject or imagery from their respective settings.",
+    "caution": "A shared subject does not establish quotation, fulfilment or historical corroboration.",
+    "context": "Luke 2:11",
+    "review": "editorial-reading-aid",
+    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
+  },
+  {
+    "id": "ce038",
+    "from": "Isaiah 25:8",
+    "to": "Revelation 21:4",
+    "kind": "echo",
+    "explanation": "The removal of death and tears. Explore how Isaiah 25:8 and Revelation 21:4 address this subject or imagery from their respective settings.",
+    "caution": "The proposed literary echo is an editorial interpretation, not proof of authorial intention.",
+    "context": "Revelation 21:4",
+    "review": "editorial-reading-aid",
+    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
+  },
+  {
+    "id": "ce039",
+    "from": "Isaiah 40:31",
+    "to": "Psalm 46:1",
+    "kind": "theme",
+    "explanation": "Strength and reliance upon God. Explore how Isaiah 40:31 and Psalm 46:1 address this subject or imagery from their respective settings.",
+    "caution": "A shared subject does not establish quotation, fulfilment or historical corroboration.",
+    "context": "Psalm 46:1",
+    "review": "editorial-reading-aid",
+    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
+  },
+  {
+    "id": "ce040",
+    "from": "Isaiah 53:5",
+    "to": "1 Peter 2:24",
+    "kind": "echo",
+    "explanation": "Healing and the suffering servant. Explore how Isaiah 53:5 and 1 Peter 2:24 address this subject or imagery from their respective settings.",
+    "caution": "The proposed literary echo is an editorial interpretation, not proof of authorial intention.",
+    "context": "1 Peter 2:24",
+    "review": "editorial-reading-aid",
+    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
+  },
+  {
+    "id": "ce041",
+    "from": "Jeremiah 31:31",
+    "to": "Luke 22:20",
+    "kind": "theme",
+    "explanation": "The new covenant. Explore how Jeremiah 31:31 and Luke 22:20 address this subject or imagery from their respective settings.",
+    "caution": "A shared subject does not establish quotation, fulfilment or historical corroboration.",
+    "context": "Luke 22:20",
+    "review": "editorial-reading-aid",
+    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
+  },
+  {
+    "id": "ce042",
+    "from": "Ezekiel 34:11",
+    "to": "John 10:11",
+    "kind": "theme",
+    "explanation": "The shepherd imagery. Explore how Ezekiel 34:11 and John 10:11 address this subject or imagery from their respective settings.",
+    "caution": "A shared subject does not establish quotation, fulfilment or historical corroboration.",
+    "context": "John 10:11",
+    "review": "editorial-reading-aid",
+    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
+  },
+  {
+    "id": "ce043",
+    "from": "Ezekiel 36:26",
+    "to": "John 3:5",
+    "kind": "theme",
+    "explanation": "Renewal and new birth. Explore how Ezekiel 36:26 and John 3:5 address this subject or imagery from their respective settings.",
+    "caution": "A shared subject does not establish quotation, fulfilment or historical corroboration.",
+    "context": "John 3:5",
+    "review": "editorial-reading-aid",
+    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
+  },
+  {
+    "id": "ce044",
+    "from": "Malachi 3:1",
+    "to": "Mark 1:2",
+    "kind": "quotation",
+    "explanation": "A messenger prepares the way. Explore how Malachi 3:1 and Mark 1:2 address this subject or imagery from their respective settings.",
+    "caution": "The later text may adapt the earlier wording. Read both contexts and check translation differences.",
+    "context": "Mark 1:2",
+    "review": "editorial-reading-aid",
+    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
+  },
+  {
+    "id": "ce045",
+    "from": "Matthew 5:17",
+    "to": "Romans 3:31",
+    "kind": "theme",
+    "explanation": "The Law in the New Testament. Explore how Matthew 5:17 and Romans 3:31 address this subject or imagery from their respective settings.",
+    "caution": "A shared subject does not establish quotation, fulfilment or historical corroboration.",
+    "context": "Romans 3:31",
+    "review": "editorial-reading-aid",
+    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
+  },
+  {
+    "id": "ce046",
+    "from": "Matthew 6:25",
+    "to": "Philippians 4:6",
+    "kind": "theme",
+    "explanation": "Anxiety and trust. Explore how Matthew 6:25 and Philippians 4:6 address this subject or imagery from their respective settings.",
+    "caution": "A shared subject does not establish quotation, fulfilment or historical corroboration.",
+    "context": "Philippians 4:6",
+    "review": "editorial-reading-aid",
+    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
+  },
+  {
+    "id": "ce047",
+    "from": "Matthew 28:19",
+    "to": "Acts 1:8",
+    "kind": "theme",
+    "explanation": "Witness to the nations. Explore how Matthew 28:19 and Acts 1:8 address this subject or imagery from their respective settings.",
+    "caution": "A shared subject does not establish quotation, fulfilment or historical corroboration.",
+    "context": "Acts 1:8",
+    "review": "editorial-reading-aid",
+    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
+  },
+  {
+    "id": "ce048",
+    "from": "Luke 15:4",
+    "to": "John 10:11",
+    "kind": "theme",
+    "explanation": "The shepherd seeks the lost. Explore how Luke 15:4 and John 10:11 address this subject or imagery from their respective settings.",
+    "caution": "A shared subject does not establish quotation, fulfilment or historical corroboration.",
+    "context": "John 10:11",
+    "review": "editorial-reading-aid",
+    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
+  },
+  {
+    "id": "ce049",
+    "from": "John 1:1",
+    "to": "Colossians 1:15",
+    "kind": "theme",
+    "explanation": "Christ and creation. Explore how John 1:1 and Colossians 1:15 address this subject or imagery from their respective settings.",
+    "caution": "A shared subject does not establish quotation, fulfilment or historical corroboration.",
+    "context": "Colossians 1:15",
+    "review": "editorial-reading-aid",
+    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
+  },
+  {
+    "id": "ce050",
+    "from": "John 1:14",
+    "to": "Philippians 2:7",
+    "kind": "theme",
+    "explanation": "The incarnation. Explore how John 1:14 and Philippians 2:7 address this subject or imagery from their respective settings.",
+    "caution": "A shared subject does not establish quotation, fulfilment or historical corroboration.",
+    "context": "Philippians 2:7",
+    "review": "editorial-reading-aid",
+    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
+  },
+  {
+    "id": "ce051",
+    "from": "John 3:16",
+    "to": "Romans 5:8",
+    "kind": "theme",
+    "explanation": "God’s love and salvation. Explore how John 3:16 and Romans 5:8 address this subject or imagery from their respective settings.",
+    "caution": "A shared subject does not establish quotation, fulfilment or historical corroboration.",
+    "context": "Romans 5:8",
+    "review": "editorial-reading-aid",
+    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
+  },
+  {
+    "id": "ce052",
+    "from": "John 3:16",
+    "to": "Ephesians 2:8",
+    "kind": "theme",
+    "explanation": "Salvation through grace. Explore how John 3:16 and Ephesians 2:8 address this subject or imagery from their respective settings.",
+    "caution": "A shared subject does not establish quotation, fulfilment or historical corroboration.",
+    "context": "Ephesians 2:8",
+    "review": "editorial-reading-aid",
+    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
+  },
+  {
+    "id": "ce053",
+    "from": "John 11:25",
+    "to": "1 Corinthians 15:20",
+    "kind": "theme",
+    "explanation": "Resurrection hope. Explore how John 11:25 and 1 Corinthians 15:20 address this subject or imagery from their respective settings.",
+    "caution": "A shared subject does not establish quotation, fulfilment or historical corroboration.",
+    "context": "1 Corinthians 15:20",
+    "review": "editorial-reading-aid",
+    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
+  },
+  {
+    "id": "ce054",
+    "from": "John 14:6",
+    "to": "Acts 4:12",
+    "kind": "theme",
+    "explanation": "Salvation in Christ. Explore how John 14:6 and Acts 4:12 address this subject or imagery from their respective settings.",
+    "caution": "A shared subject does not establish quotation, fulfilment or historical corroboration.",
+    "context": "Acts 4:12",
+    "review": "editorial-reading-aid",
+    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
+  },
+  {
+    "id": "ce055",
+    "from": "Romans 3:23",
+    "to": "Ecclesiastes 7:20",
+    "kind": "theme",
+    "explanation": "Human sinfulness. Explore how Romans 3:23 and Ecclesiastes 7:20 address this subject or imagery from their respective settings.",
+    "caution": "A shared subject does not establish quotation, fulfilment or historical corroboration.",
+    "context": "Ecclesiastes 7:20",
+    "review": "editorial-reading-aid",
+    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
+  },
+  {
+    "id": "ce056",
+    "from": "Romans 3:23",
+    "to": "Ephesians 2:8",
+    "kind": "theme",
+    "explanation": "Human need and grace. Explore how Romans 3:23 and Ephesians 2:8 address this subject or imagery from their respective settings.",
+    "caution": "A shared subject does not establish quotation, fulfilment or historical corroboration.",
+    "context": "Ephesians 2:8",
+    "review": "editorial-reading-aid",
+    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
+  },
+  {
+    "id": "ce057",
+    "from": "Romans 8:1",
+    "to": "John 5:24",
+    "kind": "theme",
+    "explanation": "No condemnation and life. Explore how Romans 8:1 and John 5:24 address this subject or imagery from their respective settings.",
+    "caution": "A shared subject does not establish quotation, fulfilment or historical corroboration.",
+    "context": "John 5:24",
+    "review": "editorial-reading-aid",
+    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
+  },
+  {
+    "id": "ce058",
+    "from": "Romans 8:21",
+    "to": "Revelation 21:1",
+    "kind": "theme",
+    "explanation": "Creation set free. Explore how Romans 8:21 and Revelation 21:1 address this subject or imagery from their respective settings.",
+    "caution": "A shared subject does not establish quotation, fulfilment or historical corroboration.",
+    "context": "Revelation 21:1",
+    "review": "editorial-reading-aid",
+    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
+  },
+  {
+    "id": "ce059",
+    "from": "Romans 8:28",
+    "to": "Genesis 50:20",
+    "kind": "theme",
+    "explanation": "Providence and human actions. Explore how Romans 8:28 and Genesis 50:20 address this subject or imagery from their respective settings.",
+    "caution": "A shared subject does not establish quotation, fulfilment or historical corroboration.",
+    "context": "Genesis 50:20",
+    "review": "editorial-reading-aid",
+    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
+  },
+  {
+    "id": "ce060",
+    "from": "Romans 12:2",
+    "to": "Ephesians 4:23",
+    "kind": "theme",
+    "explanation": "Renewal of the mind. Explore how Romans 12:2 and Ephesians 4:23 address this subject or imagery from their respective settings.",
+    "caution": "A shared subject does not establish quotation, fulfilment or historical corroboration.",
+    "context": "Ephesians 4:23",
+    "review": "editorial-reading-aid",
+    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
+  },
+  {
+    "id": "ce061",
+    "from": "1 Corinthians 13:4",
+    "to": "John 15:12",
+    "kind": "theme",
+    "explanation": "Love in Christian life. Explore how 1 Corinthians 13:4 and John 15:12 address this subject or imagery from their respective settings.",
+    "caution": "A shared subject does not establish quotation, fulfilment or historical corroboration.",
+    "context": "John 15:12",
+    "review": "editorial-reading-aid",
+    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
+  },
+  {
+    "id": "ce062",
+    "from": "Galatians 3:8",
+    "to": "Ephesians 2:8",
+    "kind": "theme",
+    "explanation": "The gospel and grace. Explore how Galatians 3:8 and Ephesians 2:8 address this subject or imagery from their respective settings.",
+    "caution": "A shared subject does not establish quotation, fulfilment or historical corroboration.",
+    "context": "Ephesians 2:8",
+    "review": "editorial-reading-aid",
+    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
+  },
+  {
+    "id": "ce063",
+    "from": "Hebrews 11:1",
+    "to": "2 Corinthians 5:7",
+    "kind": "theme",
+    "explanation": "Faith and what is unseen. Explore how Hebrews 11:1 and 2 Corinthians 5:7 address this subject or imagery from their respective settings.",
+    "caution": "A shared subject does not establish quotation, fulfilment or historical corroboration.",
+    "context": "2 Corinthians 5:7",
+    "review": "editorial-reading-aid",
+    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
+  },
+  {
+    "id": "ce064",
+    "from": "Revelation 21:1",
+    "to": "Revelation 21:4",
+    "kind": "theme",
+    "explanation": "The new creation and comfort. Explore how Revelation 21:1 and Revelation 21:4 address this subject or imagery from their respective settings.",
+    "caution": "A shared subject does not establish quotation, fulfilment or historical corroboration.",
+    "context": "Revelation 21:4",
+    "review": "editorial-reading-aid",
+    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
+  },
+  {
+    "id": "ce065",
     "from": "1 Samuel 17:4",
     "to": "1 Chronicles 20:5",
     "kind": "parallel",
@@ -12,7 +452,7 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
   },
   {
-    "id": "ce026",
+    "id": "ce066",
     "from": "1 Samuel 31:1",
     "to": "1 Chronicles 10:1",
     "kind": "parallel",
@@ -23,7 +463,7 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
   },
   {
-    "id": "ce027",
+    "id": "ce067",
     "from": "2 Samuel 5:1",
     "to": "1 Chronicles 11:1",
     "kind": "parallel",
@@ -34,7 +474,7 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
   },
   {
-    "id": "ce028",
+    "id": "ce068",
     "from": "2 Samuel 5:11",
     "to": "1 Chronicles 14:1",
     "kind": "parallel",
@@ -45,7 +485,7 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
   },
   {
-    "id": "ce029",
+    "id": "ce069",
     "from": "2 Samuel 6:1",
     "to": "1 Chronicles 13:1",
     "kind": "parallel",
@@ -56,7 +496,7 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
   },
   {
-    "id": "ce030",
+    "id": "ce070",
     "from": "2 Samuel 7:1",
     "to": "1 Chronicles 17:1",
     "kind": "parallel",
@@ -67,7 +507,7 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
   },
   {
-    "id": "ce031",
+    "id": "ce071",
     "from": "2 Samuel 11:2",
     "to": "1 Chronicles 20:1",
     "kind": "parallel",
@@ -78,7 +518,7 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
   },
   {
-    "id": "ce032",
+    "id": "ce072",
     "from": "2 Samuel 24:1",
     "to": "1 Chronicles 21:1",
     "kind": "parallel",
@@ -89,7 +529,7 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
   },
   {
-    "id": "ce033",
+    "id": "ce073",
     "from": "1 Kings 3:5",
     "to": "2 Chronicles 1:7",
     "kind": "parallel",
@@ -100,7 +540,7 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
   },
   {
-    "id": "ce034",
+    "id": "ce074",
     "from": "1 Kings 6:1",
     "to": "2 Chronicles 3:1",
     "kind": "parallel",
@@ -111,7 +551,7 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
   },
   {
-    "id": "ce035",
+    "id": "ce075",
     "from": "1 Kings 8:22",
     "to": "2 Chronicles 6:12",
     "kind": "parallel",
@@ -122,7 +562,7 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
   },
   {
-    "id": "ce036",
+    "id": "ce076",
     "from": "1 Kings 9:1",
     "to": "2 Chronicles 7:11",
     "kind": "parallel",
@@ -133,7 +573,7 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
   },
   {
-    "id": "ce037",
+    "id": "ce077",
     "from": "1 Kings 10:1",
     "to": "2 Chronicles 9:1",
     "kind": "parallel",
@@ -144,7 +584,7 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
   },
   {
-    "id": "ce038",
+    "id": "ce078",
     "from": "1 Kings 11:41",
     "to": "2 Chronicles 9:29",
     "kind": "parallel",
@@ -155,7 +595,7 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
   },
   {
-    "id": "ce039",
+    "id": "ce079",
     "from": "1 Kings 12:1",
     "to": "2 Chronicles 10:1",
     "kind": "parallel",
@@ -166,7 +606,7 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
   },
   {
-    "id": "ce040",
+    "id": "ce080",
     "from": "1 Kings 15:1",
     "to": "2 Chronicles 13:1",
     "kind": "parallel",
@@ -177,7 +617,7 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
   },
   {
-    "id": "ce041",
+    "id": "ce081",
     "from": "1 Kings 22:2",
     "to": "2 Chronicles 18:2",
     "kind": "parallel",
@@ -188,7 +628,7 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
   },
   {
-    "id": "ce042",
+    "id": "ce082",
     "from": "2 Kings 11:1",
     "to": "2 Chronicles 22:10",
     "kind": "parallel",
@@ -199,7 +639,7 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
   },
   {
-    "id": "ce043",
+    "id": "ce083",
     "from": "2 Kings 12:1",
     "to": "2 Chronicles 24:1",
     "kind": "parallel",
@@ -210,7 +650,7 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
   },
   {
-    "id": "ce044",
+    "id": "ce084",
     "from": "2 Kings 14:1",
     "to": "2 Chronicles 25:1",
     "kind": "parallel",
@@ -221,7 +661,7 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
   },
   {
-    "id": "ce045",
+    "id": "ce085",
     "from": "2 Kings 15:1",
     "to": "2 Chronicles 26:1",
     "kind": "parallel",
@@ -232,7 +672,7 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
   },
   {
-    "id": "ce046",
+    "id": "ce086",
     "from": "2 Kings 16:1",
     "to": "2 Chronicles 28:1",
     "kind": "parallel",
@@ -243,7 +683,7 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
   },
   {
-    "id": "ce047",
+    "id": "ce087",
     "from": "2 Kings 18:1",
     "to": "2 Chronicles 29:1",
     "kind": "parallel",
@@ -254,7 +694,7 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
   },
   {
-    "id": "ce048",
+    "id": "ce088",
     "from": "2 Kings 19:35",
     "to": "Isaiah 37:36",
     "kind": "parallel",
@@ -265,7 +705,7 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
   },
   {
-    "id": "ce049",
+    "id": "ce089",
     "from": "2 Kings 20:1",
     "to": "Isaiah 38:1",
     "kind": "parallel",
@@ -276,7 +716,7 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
   },
   {
-    "id": "ce050",
+    "id": "ce090",
     "from": "2 Kings 21:1",
     "to": "2 Chronicles 33:1",
     "kind": "parallel",
@@ -287,7 +727,7 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
   },
   {
-    "id": "ce051",
+    "id": "ce091",
     "from": "2 Kings 22:8",
     "to": "2 Chronicles 34:14",
     "kind": "parallel",
@@ -298,7 +738,7 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
   },
   {
-    "id": "ce052",
+    "id": "ce092",
     "from": "2 Kings 23:29",
     "to": "2 Chronicles 35:20",
     "kind": "parallel",
@@ -309,7 +749,7 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
   },
   {
-    "id": "ce053",
+    "id": "ce093",
     "from": "2 Kings 24:18",
     "to": "Jeremiah 52:1",
     "kind": "parallel",
@@ -320,7 +760,7 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
   },
   {
-    "id": "ce054",
+    "id": "ce094",
     "from": "2 Kings 25:1",
     "to": "Jeremiah 52:4",
     "kind": "parallel",
@@ -331,7 +771,7 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
   },
   {
-    "id": "ce055",
+    "id": "ce095",
     "from": "Ezra 2:1",
     "to": "Nehemiah 7:6",
     "kind": "parallel",
@@ -342,7 +782,7 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
   },
   {
-    "id": "ce056",
+    "id": "ce096",
     "from": "Matthew 3:13",
     "to": "Mark 1:9",
     "kind": "parallel",
@@ -353,7 +793,7 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
   },
   {
-    "id": "ce057",
+    "id": "ce097",
     "from": "Mark 1:9",
     "to": "Luke 3:21",
     "kind": "parallel",
@@ -364,7 +804,7 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
   },
   {
-    "id": "ce058",
+    "id": "ce098",
     "from": "Matthew 4:1",
     "to": "Luke 4:1",
     "kind": "parallel",
@@ -375,7 +815,7 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
   },
   {
-    "id": "ce059",
+    "id": "ce099",
     "from": "Matthew 8:14",
     "to": "Mark 1:29",
     "kind": "parallel",
@@ -386,7 +826,7 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
   },
   {
-    "id": "ce060",
+    "id": "ce100",
     "from": "Matthew 8:23",
     "to": "Mark 4:35",
     "kind": "parallel",
@@ -397,7 +837,7 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
   },
   {
-    "id": "ce061",
+    "id": "ce101",
     "from": "Matthew 9:9",
     "to": "Mark 2:14",
     "kind": "parallel",
@@ -408,7 +848,7 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
   },
   {
-    "id": "ce062",
+    "id": "ce102",
     "from": "Matthew 14:13",
     "to": "Mark 6:32",
     "kind": "parallel",
@@ -419,7 +859,7 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
   },
   {
-    "id": "ce063",
+    "id": "ce103",
     "from": "Matthew 16:13",
     "to": "Mark 8:27",
     "kind": "parallel",
@@ -430,7 +870,7 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
   },
   {
-    "id": "ce064",
+    "id": "ce104",
     "from": "Matthew 17:1",
     "to": "Luke 9:28",
     "kind": "parallel",
@@ -441,7 +881,7 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
   },
   {
-    "id": "ce065",
+    "id": "ce105",
     "from": "Matthew 19:13",
     "to": "Luke 18:15",
     "kind": "parallel",
@@ -452,7 +892,7 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
   },
   {
-    "id": "ce066",
+    "id": "ce106",
     "from": "Matthew 21:1",
     "to": "Luke 19:28",
     "kind": "parallel",
@@ -463,7 +903,7 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
   },
   {
-    "id": "ce067",
+    "id": "ce107",
     "from": "Matthew 26:26",
     "to": "Mark 14:22",
     "kind": "parallel",
@@ -474,7 +914,7 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
   },
   {
-    "id": "ce068",
+    "id": "ce108",
     "from": "Matthew 26:36",
     "to": "Mark 14:32",
     "kind": "parallel",
@@ -485,7 +925,7 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
   },
   {
-    "id": "ce069",
+    "id": "ce109",
     "from": "Matthew 27:57",
     "to": "Luke 23:50",
     "kind": "parallel",
@@ -496,7 +936,7 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
   },
   {
-    "id": "ce070",
+    "id": "ce110",
     "from": "Matthew 28:1",
     "to": "Mark 16:1",
     "kind": "parallel",
@@ -507,7 +947,7 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
   },
   {
-    "id": "ce071",
+    "id": "ce111",
     "from": "Luke 24:1",
     "to": "John 20:1",
     "kind": "parallel",
@@ -518,7 +958,7 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
   },
   {
-    "id": "ce072",
+    "id": "ce112",
     "from": "Acts 9:3",
     "to": "Acts 26:13",
     "kind": "parallel",
@@ -529,7 +969,7 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
   },
   {
-    "id": "ce073",
+    "id": "ce113",
     "from": "Acts 22:6",
     "to": "Acts 26:13",
     "kind": "parallel",
@@ -540,7 +980,7 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
   },
   {
-    "id": "ce074",
+    "id": "ce114",
     "from": "John 6:5",
     "to": "Mark 6:35",
     "kind": "parallel",
@@ -551,7 +991,7 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
   },
   {
-    "id": "ce075",
+    "id": "ce115",
     "from": "Matthew 5:3",
     "to": "Luke 6:20",
     "kind": "parallel",
