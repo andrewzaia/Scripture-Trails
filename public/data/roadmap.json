@@ -3,9 +3,9 @@
   "updated": "2026-10-27",
   "description": "A transparent, evidence-aware roadmap. Delivered means implementation exists, not that every scholarly question is settled. The accuracy audit is an initial, publicly documented editorial screening, not external specialist certification.",
   "currentFocus": [
-    "Expand and review Scripture Index coverage across the biblical canon",
-    "Evidence type classification across the Connection Atlas",
-    "Independent historical review of Assyrian, Babylonian and Gospel claims"
+    "Expand passage-by-passage Atlas annotation beyond the initial comparisons",
+    "Independent expert review of interpretive and archaeological claims",
+    "Improve how the People Index opens related Atlas explanations"
   ],
   "phases": [
     {
@@ -156,15 +156,16 @@
     {
       "id": "book-atlas",
       "phase": "connections",
-      "status": "next",
-      "title": "Classify references by evidence type",
-      "summary": "Distinguish direct quotations, literary echoes, typology, parallels and editorial themes across the complete atlas.",
+      "status": "delivered",
+      "title": "Explain sourced Scripture connections",
+      "summary": "Introduced selective passage-by-passage evidence categories in the Atlas, without implying the complete OpenBible archive is classified.",
       "capabilities": [
-        "Source-verified edge types rather than inferred labels",
-        "Reviewer status and confidence/explanation per edge",
-        "Browse original context for both ends of each link"
+        "24 selected passage comparisons spanning quotations, narrative parallels, literary echoes, interpretive typology and shared themes",
+        "Each annotated connection includes a context passage and interpretation caution",
+        "Filters separate explained and unclassified links while preserving OpenBible vote bars",
+        "People Index profiles surface related Atlas paths for overlapping cited passages"
       ],
-      "verification": "Requires careful human review and should not be auto-labelled from similarity alone."
+      "verification": "Canonical passage references and pair identity are checked in CI. These are internal editorial passage comparisons, not independent specialist certification. The OpenBible corpus stays unclassified by default."
     },
     {
       "id": "people-places",
@@ -301,6 +302,19 @@
         "Accessible reader and Atlas integration for people mentioned in cited passages"
       ],
       "verification": "Research and external specialist validation remain pending; editorial bibliography scopes must be documented."
+    },
+    {
+      "id": "atlas-evidence-expansion",
+      "phase": "connections",
+      "status": "next",
+      "title": "Extend context-checked Scripture explanations",
+      "summary": "Incrementally annotate more community cross-references with explicit source passages, context, and interpretive cautions.",
+      "capabilities": [
+        "Prioritise frequently explored verses",
+        "Document disagreement and uncertain quotations",
+        "Seek genuinely independent specialist review where justified"
+      ],
+      "verification": "Unexamined links remain unclassified; vote bars do not represent theological or historical confidence."
     }
   ]
 }

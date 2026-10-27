@@ -1,12 +1,13 @@
-import {buildEntityCatalog,findEntities,ENTITY_TYPES} from './entity-index-data.js?v=0.7.0';
+import {buildEntityCatalog,findEntities,ENTITY_TYPES} from './entity-index-data.js?v=0.8.0';
 import {validateCanonicalReference} from './reference-integrity.js';
+import {connectionsForPassages,CONNECTION_KINDS} from './connection-evidence.js?v=0.8.0';
 
 const make=(tag,cls,text)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(text!==undefined)e.textContent=text;return e;};
 const key=(type,id)=>type+':'+id;
 /** Indexed entities reuse local source datasets. Source text is not rehosted. */
 export function createEntityIndex(root,handlers={}){
  const $=id=>root.querySelector('[data-entity="'+id+'"]')||root.closest('section')?.querySelector('[data-entity="'+id+'"]');
- const ENTITY_INDEX_DATA_VERSION='0.7.0';
+ const ENTITY_INDEX_DATA_VERSION='0.8.0';
  let initial=null,catalog,counts,filter='all',period='all',query='',selected=null,shown=32,pendingReference=null;
  const label=record=>record.type==='person'?'Person':record.type==='place'?(record.kind==='polity'?'Kingdom / polity':'Place'):'Event';
  const by=(type,id)=>catalog.byKey.get(key(type,id));
@@ -54,6 +55,17 @@ export function createEntityIndex(root,handlers={}){
   }
   panel.append(make('h3','','Primary Scripture passages'),referenceList(record.passages,record.type==='place'?8:15));
   if(record.type==='person'){
+   const links=connectionsForPassages(record.passages,counts,8);
+   panel.append(make('h3','','Related Atlas connections'));
+   if(links.length){
+    panel.append(make('p','entity-muted','Connections intersect this profile\'s cited passages. They do not prove the person appears in both texts.'));
+    for(const evidence of links){
+     const row=make('div','entity-atlas-route');
+     row.append(make('strong','',CONNECTION_KINDS[evidence.kind]+': '+evidence.from+' and '+evidence.to),make('p','entity-muted',evidence.explanation),make('p','entity-muted',evidence.caution));
+     row.append(btn('Atlas '+evidence.from,()=>handlers.onAtlas?.(evidence.from)),btn('Atlas '+evidence.to,()=>handlers.onAtlas?.(evidence.to)));
+     panel.append(row);
+    }
+   }else panel.append(make('p','entity-muted','No specially explained connection intersects this profile yet. Use Atlas beside its Scripture references to explore the unclassified links.'));
    const events=relatedEvents(record);panel.append(make('h3','','Associated biblical events'),pills(events,18));
    const places=[...new Map(events.map(e=>[e.place,by('place',e.place)]).filter(x=>x[1])).values()];panel.append(make('h3','','Places and regions in associated entries'),pills(places,15));
   }

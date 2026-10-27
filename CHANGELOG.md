@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.8.0 - 27/10/2026: Explain Scripture connections in the Atlas
+
+- Added passage explanations and context for selected quotations, parallels, echoes, typology and themes.
+- Made it easy to separate explained links from the wider community-ranked, unclassified reference archive.
+- Connected biblical people profiles to relevant Atlas explanations and original passage reading.
+
 ## 0.7.0 - 27/10/2026: Find more biblical people and kingdoms
 
 - Expanded the People Index with over 100 further cited biblical figures, including major names from both Testaments.
