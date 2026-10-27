@@ -1,6 +1,6 @@
 import {readFileSync} from 'node:fs';
 import {execFileSync} from 'node:child_process';
-import {compareVersions,validateReleases} from './versioning.mjs';
+import {validateReleases,assertReleaseIncrement} from './versioning.mjs';
 const pkg=JSON.parse(readFileSync('package.json','utf8'));
 const notes=JSON.parse(readFileSync('public/data/releases.json','utf8'));
 const html=readFileSync('public/index.html','utf8');
@@ -21,14 +21,22 @@ if(!app.includes('connection-evidence.js?v='+pkg.version)||!index.includes('conn
 if(!app.includes('atlas-comparison.js?v='+pkg.version)||!index.includes('person-trails.js?v='+pkg.version))throw new Error('Comparison and person trails must match release version');
 const evidence=readFileSync('public/assets/connection-evidence.js','utf8');
 if(!evidence.includes('connection-evidence-expanded.js?v='+pkg.version))throw new Error('Expanded evidence cache key must match release version');
-try{execFileSync('git',['cat-file','-e','HEAD^'],{stdio:'ignore'});}
-catch{console.log('Release metadata is consistent; parent commit history unavailable, skipping historical comparison.');process.exit(0);}
-const changes=execFileSync('git',['diff','--name-only','HEAD^','HEAD'],{encoding:'utf8'}).split(/\r?\n/).filter(Boolean);
-const siteChanges=changes.filter(x=>/^(public\/|functions\/|scripts\/|sources\/|package\.json$|wrangler\.toml$)/.test(x));
-if(siteChanges.length){
- let previous;
- try{previous=JSON.parse(execFileSync('git',['show','HEAD^:package.json'],{encoding:'utf8'})).version;}
- catch{previous=null;}
- if(previous&&compareVersions(pkg.version,previous)<=0)throw new Error(`Website code changed without a version increment (${previous} -> ${pkg.version}). Run npm run release -- patch "Heading" "Summary".`);
+// PR validation must cover ALL branch commits, even if the last commit only updates docs.
+// GitHub Actions checks out full history (fetch-depth: 0) so the merge base is available.
+const git=(...args)=>execFileSync('git',args,{encoding:'utf8'}).trim();
+let base='HEAD^';
+try{
+ if(process.env.GITHUB_BASE_REF){
+  base=git('merge-base','HEAD',`refs/remotes/origin/${process.env.GITHUB_BASE_REF}`);
+  if(!base)throw new Error('Empty PR merge base');
+ }
+ execFileSync('git',['cat-file','-e',base],{stdio:'ignore'});
+}catch(error){
+ if(process.env.CI)throw new Error('Release validation requires Git history for the target branch: '+error.message);
+ console.log('Release metadata is consistent; Git history unavailable, skipping historical comparison.');
+ process.exit(0);
 }
-console.log('Release metadata and version rules verified: '+version);
+const changes=git('diff','--name-only',base,'HEAD').split(/\r?\n/).filter(Boolean);
+const previous=JSON.parse(git('show',`${base}:package.json`)).version;
+assertReleaseIncrement(changes,previous,pkg.version);
+console.log('Release metadata and version rules verified: '+version+' (compared with '+previous+')');

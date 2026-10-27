@@ -46,3 +46,12 @@ export function validateReleases(releases,version){
  if(!releases.some(entry=>entry.version==='0.1.0'))throw new Error('Initial version must remain in the release history');
  return true;
 }
+
+/** Enforce a new version for any public-site or release-infrastructure change in the full diff. */
+export function assertReleaseIncrement(changedPaths,previous,current){
+ const websiteChanged=changedPaths.some(path=>/^(public\/|functions\/|scripts\/|sources\/|package\.json$|wrangler\.toml$)/.test(path));
+ if(websiteChanged&&compareVersions(current,previous)<=0){
+  throw new Error(`Website changed without a semantic version increment (${previous} -> ${current}). Run npm run release -- patch|minor|major "Title" "Visitor-facing change".`);
+ }
+ return websiteChanged;
+}
