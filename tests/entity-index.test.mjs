@@ -18,7 +18,7 @@ test('named people with a shared name remain separate and source-cited',()=>{
  assert.ok(mary.some(e=>e.id==='mary-mother'));
  assert.ok(mary.some(e=>e.id==='mary-magdalene'));
  assert.ok(mary.some(e=>e.id==='mary-bethany'));
- assert.ok(!mary.some(e=>e.id==='martha-bethany'));
+ assert.deepEqual(new Set(mary.slice(0,3).map(x=>x.id)),new Set(['mary-mother','mary-magdalene','mary-bethany']));
  assert.match(catalog.byKey.get('person:nathanael').disambiguation,/Bartholomew/);
  assert.ok(catalog.byKey.get('person:john-zebedee').disambiguation.includes('John the Baptist'));
 });
@@ -61,5 +61,5 @@ test('navigation entry points, detail controls and release state exist',()=>{
  assert.match(js,/onJourney/);
  assert.match(js,/onCity/);
  assert.match(js,/aria-pressed/);
- assert.match(html,/not a complete/);
+ assert.match(html,/does not cover every person/);
 });

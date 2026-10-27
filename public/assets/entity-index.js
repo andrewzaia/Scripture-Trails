@@ -6,8 +6,8 @@ const titleMap={person:'People',place:'Places',event:'Events'};
 const key=(type,id)=>type+':'+id;
 /** Indexed entities reuse local source datasets. Source text is not rehosted. */
 export function createEntityIndex(root,handlers={}){
- const $=id=>root.querySelector('[data-entity="'+id+'"]');
- let initial=null,catalog,counts,filter='all',query='',selected=null,shown=32;
+ const $=id=>root.querySelector('[data-entity="'+id+'"]')||root.closest('section')?.querySelector('[data-entity="'+id+'"]');
+ let initial=null,catalog,counts,filter='all',query='',selected=null,shown=32,pendingReference=null;
  const label=record=>record.type==='person'?'Person':record.type==='place'?'Place':'Event';
  const by=(type,id)=>catalog.byKey.get(key(type,id));
  const btn=(text,click,cls='entity-action')=>{const b=make('button',cls,text);b.type='button';b.addEventListener('click',click);return b;};
@@ -77,7 +77,7 @@ export function createEntityIndex(root,handlers={}){
   $('search').addEventListener('input',()=>{query=$('search').value.trim();shown=32;renderList();});
   root.querySelectorAll('[data-entity-type]').forEach(button=>button.addEventListener('click',()=>{filter=button.dataset.entityType;shown=32;renderTabs();renderList();}));
   $('more').addEventListener('click',()=>{shown+=32;renderList();});
-  activate(new URLSearchParams(location.search));
+  activate(new URLSearchParams(location.search));if(pendingReference){const ref=pendingReference;pendingReference=null;thisFocus(ref);}
  }
  function activate(params){
   if(!catalog)return;
@@ -86,11 +86,12 @@ export function createEntityIndex(root,handlers={}){
   else if(!selected)selected='person:jesus';
   renderTabs();renderList();renderDetail();
  }
+ const thisFocus=ref=>{if(!catalog){pendingReference=ref;return;}filter='all';query=ref;shown=32;$('search').value=ref;renderTabs();renderList();};
  return {
   activate(params=new URLSearchParams(location.search)){
    if(initial){if(catalog)activate(params);return;}
    initial=Promise.all(['biblical-people.json','jesus-journeys.json','jesus-geography.json','jesus-audit.json','city-studies.json','verse-counts.json'].map(name=>fetch('/data/'+name).then(r=>{if(!r.ok)throw Error('Missing '+name);return r.json();}))).then(([people,j,g,a,c,vs])=>{counts=vs;catalog=buildEntityCatalog(people,j,g,a,c,counts);setup();}).catch(error=>{$('loading').textContent='The index could not be loaded. Please retry later.';console.error(error);});
   },
-  focusReference(ref){if(!catalog)return;filter='all';query=ref;shown=32;$('search').value=ref;renderTabs();renderList();}
+  focusReference(ref){thisFocus(ref);}
  };
 }
