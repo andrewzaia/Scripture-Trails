@@ -1,6 +1,16 @@
 {
   "releases": [
     {
+      "version": "0.5.0",
+      "date": "2026-10-27",
+      "title": "Explore biblical people, places and events",
+      "changes": [
+        "Added searchable biblical people profiles with disambiguated names and passage references.",
+        "Connected 35 historical locations and 79 Gospel episodes to an interactive study index.",
+        "Added one-click navigation between the index, Bible reader, Connection Atlas and historical maps."
+      ]
+    },
+    {
       "version": "0.4.2",
       "date": "2026-10-27",
       "title": "Clarify Atlas evidence and validate Scripture references",
