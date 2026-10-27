@@ -4,7 +4,7 @@
   "description": "A transparent, evidence-aware roadmap. Delivered means implementation exists, not that every scholarly question is settled. The accuracy audit is an initial, publicly documented editorial screening, not external specialist certification.",
   "currentFocus": [
     "Review the Pauline journey location and textual questions against specialist research",
-    "Next geography milestone: Paul's voyage to Rome in Acts 27-28",
+    "Next study milestone: private notebook export and import",
     "Expand person-centred trails and Hebrew Bible geography while preserving evidence distinctions"
   ],
   "phases": [
@@ -226,7 +226,7 @@
     {
       "id": "study-tools",
       "phase": "platform",
-      "status": "planned",
+      "status": "next",
       "title": "Richer notes, exports and reading plans",
       "summary": "Bring linked observations, highlights and optional study plans into one private workspace.",
       "capabilities": [
@@ -347,15 +347,15 @@
     {
       "id": "paul-rome",
       "phase": "next",
-      "status": "next",
+      "status": "delivered",
       "title": "Paul's voyage to Rome",
-      "summary": "Extend Pauline geography to Acts 27-28, with particular care over unnamed anchorages, the storm and the shipwreck location.",
+      "summary": "A separately selectable prisoner voyage with 22 passage-linked stages in Acts 27-28, approximate named-place markers and unpinned offshore, storm and wreck settings.",
       "capabilities": [
         "Passage-linked sailing stages and wintering locations",
         "Explicitly uncertain or unlocated sea positions",
         "Separate source and textual audit before adding new markers"
       ],
-      "verification": "Not implemented. Avoid inventing a storm track, exact shipwreck site or unsupported daily ship positions."
+      "verification": "References and sourced marker alignment tested. No exact wreck bay, storm track or daily ship positions are claimed. Independent specialist review remains outstanding."
     }
   ]
 }

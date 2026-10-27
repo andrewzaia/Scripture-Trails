@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.12.0 - 28/10/2026: Paul's voyage to Rome
+
+- Added a separate Voyage to Rome option with 22 passage-linked stages in Acts 27-28.
+- Extended the map to Italy with credited location markers, Malta wintering and reader, Atlas and index links.
+- Kept offshore passages, the storm and the shipwreck unpinned, with explicit source and location limitations.
+
 ## 0.11.2 - 28/10/2026: Consistent journey names
 
 - Renamed Paul's journeys to Journeys of Paul across navigation, map labels, index links and the roadmap to match Journeys of Jesus.

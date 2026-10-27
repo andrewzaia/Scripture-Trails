@@ -1,6 +1,6 @@
 {
   "name": "scripture-trails",
-  "version": "0.11.2",
+  "version": "0.12.0",
   "private": true,
   "type": "module",
   "description": "A Bible reader with ESV, NASB20, NIV and NKJV translations and visual Scripture discovery",
