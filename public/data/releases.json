@@ -1,6 +1,14 @@
 {
   "releases": [
     {
+      "version": "0.11.2",
+      "date": "2026-10-28",
+      "title": "Consistent journey names",
+      "changes": [
+        "Renamed Paul's journeys to Journeys of Paul across navigation, map labels, index links and the roadmap to match Journeys of Jesus."
+      ]
+    },
+    {
       "version": "0.11.1",
       "date": "2026-10-28",
       "title": "Clearer People Index icon",

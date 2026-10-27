@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.11.2 - 28/10/2026: Consistent journey names
+
+- Renamed Paul's journeys to Journeys of Paul across navigation, map labels, index links and the roadmap to match Journeys of Jesus.
+
 ## 0.11.1 - 28/10/2026: Clearer People Index icon
 
 - Replaced the People, places & events navigation icon with a head-and-shoulders outline matching the existing style.

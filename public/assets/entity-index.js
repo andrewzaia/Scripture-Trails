@@ -1,14 +1,14 @@
-import {buildEntityCatalog,findEntities,ENTITY_TYPES} from './entity-index-data.js?v=0.11.1';
+import {buildEntityCatalog,findEntities,ENTITY_TYPES} from './entity-index-data.js?v=0.11.2';
 import {validateCanonicalReference} from './reference-integrity.js';
-import {connectionsForPassages,CONNECTION_KINDS,REVIEW_LABELS} from './connection-evidence.js?v=0.11.1';
-import {personTrail} from './person-trails.js?v=0.11.1';
+import {connectionsForPassages,CONNECTION_KINDS,REVIEW_LABELS} from './connection-evidence.js?v=0.11.2';
+import {personTrail} from './person-trails.js?v=0.11.2';
 
 const make=(tag,cls,text)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(text!==undefined)e.textContent=text;return e;};
 const key=(type,id)=>type+':'+id;
 /** Indexed entities reuse local source datasets. Source text is not rehosted. */
 export function createEntityIndex(root,handlers={}){
  const $=id=>root.querySelector('[data-entity="'+id+'"]')||root.closest('section')?.querySelector('[data-entity="'+id+'"]');
- const ENTITY_INDEX_DATA_VERSION='0.11.1';
+ const ENTITY_INDEX_DATA_VERSION='0.11.2';
  let initial=null,catalog,counts,filter='all',period='all',query='',selected=null,shown=32,pendingReference=null;
  const label=record=>record.type==='person'?'Person':record.type==='place'?(record.kind==='polity'?'Kingdom / polity':'Place'):'Event';
  const by=(type,id)=>catalog.byKey.get(key(type,id));
@@ -29,7 +29,7 @@ export function createEntityIndex(root,handlers={}){
   panel.append(make('p','entity-disambiguation',record.disambiguation),make('p','entity-lead',record.summary));
   if(record.aliases.length)panel.append(make('p','entity-muted','Alternative names or search terms: '+record.aliases.join(', ')+'. These are search aids, not proof that differing historical names identify the same person or location.'));
   if(record.type==='person'){
-   if(record.id==='paul-apostle'){const a=make('a','entity-pill',"Explore Paul's missionary journeys");a.href='/?view=paul-map';panel.append(a);}
+   if(record.id==='paul-apostle'){const a=make('a','entity-pill',"Explore Journeys of Paul");a.href='/?view=paul-map';panel.append(a);}
    const trail=personTrail(record.id);
    if(trail){
     panel.append(make('h3','',"Follow this person's Scripture trail"),make('p','entity-muted',trail.qualification));
