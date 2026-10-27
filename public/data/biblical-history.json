@@ -116,7 +116,7 @@
         "Genesis 35:9-12"
       ],
       "events": [
-        "h001"
+        "h027"
       ],
       "relationships": [
         {
@@ -145,7 +145,7 @@
         "Genesis 45:1-15"
       ],
       "events": [
-        "h002"
+        "h028"
       ],
       "relationships": [
         {
@@ -261,7 +261,7 @@
         "Judges 5:1-7"
       ],
       "events": [
-        "h004"
+        "h029"
       ],
       "relationships": []
     },
@@ -441,7 +441,8 @@
         "2 Kings 2:1-12"
       ],
       "events": [
-        "h010"
+        "h010",
+        "h030"
       ],
       "relationships": [
         {
@@ -464,7 +465,7 @@
         "2 Kings 4:1-7"
       ],
       "events": [
-        "h010"
+        "h030"
       ],
       "relationships": [
         {
@@ -490,7 +491,10 @@
       "events": [
         "h011"
       ],
-      "relationships": []
+      "relationships": [],
+      "sourceIds": [
+        "black-obelisk"
+      ]
     },
     {
       "id": "jeroboam-ii",
@@ -650,7 +654,10 @@
         "h017",
         "h018"
       ],
-      "relationships": []
+      "relationships": [],
+      "sourceIds": [
+        "sennacherib-prism"
+      ]
     },
     {
       "id": "sennacherib",
@@ -669,7 +676,10 @@
         "h017",
         "h018"
       ],
-      "relationships": []
+      "relationships": [],
+      "sourceIds": [
+        "sennacherib-prism"
+      ]
     },
     {
       "id": "jonah",
@@ -777,7 +787,10 @@
         "h022",
         "h023"
       ],
-      "relationships": []
+      "relationships": [],
+      "sourceIds": [
+        "babylon-cylinder"
+      ]
     },
     {
       "id": "ezekiel",
@@ -832,7 +845,10 @@
       "events": [
         "h024"
       ],
-      "relationships": []
+      "relationships": [],
+      "sourceIds": [
+        "cyrus-cylinder"
+      ]
     },
     {
       "id": "ezra-scribe",
@@ -847,7 +863,7 @@
         "Nehemiah 8:1-8"
       ],
       "events": [
-        "h024"
+        "h031"
       ],
       "relationships": []
     },
@@ -864,7 +880,8 @@
         "Nehemiah 6:15-16"
       ],
       "events": [
-        "h025"
+        "h025",
+        "h031"
       ],
       "relationships": []
     },
@@ -902,7 +919,8 @@
       ],
       "sourceIds": [],
       "events": [
-        "h001"
+        "h001",
+        "h027"
       ]
     },
     {
@@ -953,7 +971,7 @@
       ],
       "region": "Israel / Samaria",
       "summary": "A political designation for the northern monarchy in Kings and prophetic superscriptions.",
-      "caution": "Not the patriarch Jacob, not the entire nation at every date, and not a fixed geographical polygon.",
+      "caution": "Not the patriarch Jacob, not the entire nation at every date, and not a fixed geographical polygon. The Book of Judges precedes this monarchy; Deborah's regional connection does not imply the kingdom existed in her lifetime.",
       "passages": [
         "1 Kings 12:20-33",
         "2 Kings 17:1-6"
@@ -964,7 +982,8 @@
         "h011",
         "h012",
         "h013",
-        "h014"
+        "h014",
+        "h029"
       ]
     },
     {
@@ -1625,6 +1644,85 @@
       ],
       "category": "persian-era",
       "qualification": "The literary-historical status of Esther's court narrative is debated; the name Susa is not contested as an ancient city.",
+      "sourceIds": []
+    },
+    {
+      "id": "h027",
+      "title": "Jacob receives the name Israel",
+      "place": "canaan-region",
+      "summary": "Genesis recounts Jacob's wrestling and the change of his name to Israel.",
+      "passages": [
+        "Genesis 32:24-30",
+        "Genesis 35:9-12"
+      ],
+      "people": [
+        "jacob-israel"
+      ],
+      "category": "ancestral",
+      "qualification": "This ancestral account is not the same entity as the later kingdom of Israel.",
+      "sourceIds": []
+    },
+    {
+      "id": "h028",
+      "title": "Joseph and his brothers in Egypt",
+      "place": "egypt",
+      "summary": "Genesis narrates Joseph's disclosure of his identity to his brothers in Egypt.",
+      "passages": [
+        "Genesis 45:1-15"
+      ],
+      "people": [
+        "joseph-jacob"
+      ],
+      "category": "ancestral",
+      "qualification": "The narrative is not independently established as a dated royal administrative record.",
+      "sourceIds": []
+    },
+    {
+      "id": "h029",
+      "title": "Deborah and Barak",
+      "place": "northern-israel",
+      "summary": "Judges describes Deborah's role alongside Barak and contains a poetic account of the battle.",
+      "passages": [
+        "Judges 4:4-10",
+        "Judges 5:1-7"
+      ],
+      "people": [
+        "deborah-judge"
+      ],
+      "category": "judges",
+      "qualification": "The period is narrated in Judges, prior to the divided monarchy. The northern kingdom name here is only a later regional lookup convenience, not a state existing during Deborah.",
+      "sourceIds": []
+    },
+    {
+      "id": "h030",
+      "title": "Elijah and Elisha at the Jordan",
+      "place": "jordan",
+      "summary": "Second Kings recounts Elijah's departure and Elisha's succession.",
+      "passages": [
+        "2 Kings 2:1-15"
+      ],
+      "people": [
+        "elijah",
+        "elisha"
+      ],
+      "category": "prophetic-literature",
+      "qualification": "No precise route or archaeological location for the episode is asserted.",
+      "sourceIds": []
+    },
+    {
+      "id": "h031",
+      "title": "Ezra reads the law in Jerusalem",
+      "place": "jerusalem",
+      "summary": "Nehemiah presents Ezra reading the law to an assembled community.",
+      "passages": [
+        "Nehemiah 8:1-8"
+      ],
+      "people": [
+        "ezra-scribe",
+        "nehemiah-governor"
+      ],
+      "category": "persian-era",
+      "qualification": "The text is the narrative source; independent historical verification of the specific assembly is not claimed.",
       "sourceIds": []
     }
   ]
