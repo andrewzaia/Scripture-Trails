@@ -31,7 +31,7 @@ export function createEntityIndex(root,handlers={}){
   if(record.type==='person'){
    const trail=personTrail(record.id);
    if(trail){
-    panel.append(make('h3','','Follow this person's Scripture trail'),make('p','entity-muted',trail.qualification));
+    panel.append(make('h3','',"Follow this person's Scripture trail"),make('p','entity-muted',trail.qualification));
     const steps=make('ol','entity-study-trail');
     for(const step of trail.stages){
      const item=make('li','entity-trail-step');

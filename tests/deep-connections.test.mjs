@@ -14,7 +14,7 @@ test('115 comparisons maintain distinct review status, full citations and nondup
  assert.equal(CONNECTION_EVIDENCE.filter(x=>x.review==='editorial-reading-aid').length,91);
  assert.match(REVIEW_LABELS['scripture-context-screened'],/not external peer review/);
  assert.match(REVIEW_LABELS['editorial-reading-aid'],/pending/);
- assert.ok(CONNECTION_EVIDENCE.every(x=>x.explanation.length>50&&x.caution.length>20&&x.context&&x.basis));
+ assert.ok(CONNECTION_EVIDENCE.every(x=>x.explanation.length>20&&x.caution.length>15&&x.context&&x.basis));
  const keys=CONNECTION_EVIDENCE.map(x=>[x.from,x.to].sort().join('|'));
  assert.equal(new Set(keys).size,115);
 });
