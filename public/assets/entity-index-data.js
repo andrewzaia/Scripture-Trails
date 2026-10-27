@@ -62,7 +62,7 @@ export function buildEntityCatalog(peopleData,journeys,geography,audit,cityData,
    for(const id of event.people)if(!allPersonIds.has(id))throw Error('Unknown participant for '+event.id+': '+id);
    records.push({id:event.id,type:'event',corpus:'Hebrew Bible',isJourney:false,title:event.title,aliases:[],disambiguation:'Hebrew Bible - '+event.category,summary:event.summary,passages:event.passages,place:event.place,people:event.people,qualification:event.qualification,sourceLinks:usedSource(event.sourceIds),issues:[],events:[],evidence:'Narrative source and editorial regional assignment',sourceStatus:'Biblical passage indexed; historical and archaeological claims require separately scoped evidence'});
    const existing=records.find(x=>x.type==='place'&&x.id===event.place);
-   if(existing){existing.events=listed([...existing.events,event.id]);existing.corpus=existing.corpus==='Gospels'?'Both':existing.corpus;}
+   if(existing){existing.events=listed([...existing.events,event.id]);existing.passages=listed([...existing.passages,...event.passages]);existing.corpus=existing.corpus==='Gospels'?'Both':existing.corpus;}
   }
   for(const person of historyData.people){
    if(!/^[a-z0-9-]+$/.test(person.id)||!person.name||!person.summary||!person.disambiguation||!Array.isArray(person.aliases)||!person.passages?.length||!Array.isArray(person.events)||!Array.isArray(person.relationships))throw Error('Invalid Hebrew Bible person '+person.id);

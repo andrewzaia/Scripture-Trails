@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {buildEntityCatalog,findEntities,referenceOverlaps} from '../public/assets/entity-index-data.js';
+import {createEntityIndex} from '../public/assets/entity-index.js';
 const read=n=>JSON.parse(readFileSync(new URL('../public/data/'+n,import.meta.url),'utf8'));
 const g=read('biblical-people.json'),j=read('jesus-journeys.json'),geo=read('jesus-geography.json'),audit=read('jesus-audit.json'),city=read('city-studies.json'),verses=read('verse-counts.json'),history=read('biblical-history.json');
 const catalog=buildEntityCatalog(g,j,geo,audit,city,verses,history);
@@ -13,6 +14,8 @@ test('source-aware index unifies all existing Gospel records and added Hebrew Bi
  assert.equal(catalog.count.place,49);
  assert.equal(catalog.count.event,110);
  assert.equal(catalog.records.length,227);
+ assert.equal(typeof createEntityIndex,'function');
+ assert.ok(catalog.byKey.get('place:jerusalem').passages.includes('2 Kings 18:17-37'));
  assert.equal(catalog.byKey.size,227);
  assert.equal(catalog.byKey.get('event:j055').place,'bethany');
  assert.equal(catalog.byKey.get('event:h018').place,'jerusalem');
