@@ -3,9 +3,9 @@
   "updated": "2026-10-27",
   "description": "A transparent, evidence-aware roadmap. Delivered means implementation exists, not that every scholarly question is settled. The accuracy audit is an initial, publicly documented editorial screening, not external specialist certification.",
   "currentFocus": [
-    "Expand passage-by-passage Atlas annotation beyond the initial comparisons",
-    "Independent expert review of interpretive and archaeological claims",
-    "Improve how the People Index opens related Atlas explanations"
+    "Human editorial review and deeper context analysis for newly added Atlas reading aids",
+    "Expand person-centred study trails beyond eight initial profiles",
+    "Next biblical geography library: Pauline journeys and Hebrew Bible locations"
   ],
   "phases": [
     {
@@ -306,15 +306,29 @@
     {
       "id": "atlas-evidence-expansion",
       "phase": "connections",
-      "status": "next",
-      "title": "Extend context-checked Scripture explanations",
-      "summary": "Incrementally annotate more community cross-references with explicit source passages, context, and interpretive cautions.",
+      "status": "delivered",
+      "title": "Deep Scripture connections and comparison",
+      "summary": "Expanded passage-anchored comparisons, added paired Bible reading from official translation APIs, and introduced study trails for key biblical figures.",
       "capabilities": [
-        "Prioritise frequently explored verses",
-        "Document disagreement and uncertain quotations",
-        "Seek genuinely independent specialist review where justified"
+        "115 editorial passage-pair comparisons, including quotations, echoes, shared themes and parallel accounts, each with explicit review status",
+        "Side-by-side passage reader with selected Bible edition, individual publisher attributions and API.Bible usage reporting",
+        "Eight curated person-centred reading trails with Scripture passages, Atlas navigation and linked comparison actions",
+        "Provenance labels distinguish the original 24 context-screened records from 91 additional editorial reading aids; unclassified community links retain vote bars"
       ],
-      "verification": "Unexamined links remain unclassified; vote bars do not represent theological or historical confidence."
+      "verification": "Release tests validate 115 unique pairs, reference boundaries, review classifications, and trail citations. Independent specialist review is not claimed and translations remain publisher-API dependent."
+    },
+    {
+      "id": "biblical-geography-expansion",
+      "phase": "next",
+      "status": "next",
+      "title": "Expand biblical geography beyond the Jesus journeys",
+      "summary": "Plan passage-linked Pauline journeys, Exodus traditions and Old Testament place studies with transparent chronological and location uncertainty.",
+      "capabilities": [
+        "Passage-referenced stops and repeated visits",
+        "Accessible lists and date/route uncertainty labels",
+        "Local, sourced research datasets rather than inferred travel paths"
+      ],
+      "verification": "Do not invent archaeological coordinates, journey routes or absolute chronology."
     }
   ]
 }

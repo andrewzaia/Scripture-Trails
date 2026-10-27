@@ -5,7 +5,7 @@ const [level,title,...changes]=process.argv.slice(2);
 if(!title?.trim()||!changes.length||changes.some(x=>!x.trim()))throw new Error('Usage: npm run release -- patch|minor|major "Heading" "Public summary" ["Another change"]');
 const read=path=>readFileSync(path,'utf8');
 const packagePath='package.json',historyPath='public/data/releases.json',htmlPath='public/index.html';
-const appPath='public/assets/app.js',indexPath='public/assets/entity-index.js';
+const appPath='public/assets/app.js',indexPath='public/assets/entity-index.js',evidencePath='public/assets/connection-evidence.js';
 const versionedImport=(content,oldPart,newPart,label)=>{if(!content.includes(oldPart))throw Error('Index cache key missing: '+label);return content.replace(oldPart,newPart);};
 const pkg=JSON.parse(read(packagePath)),history=JSON.parse(read(historyPath));
 validateReleases(history.releases,pkg.version);
@@ -17,10 +17,13 @@ if(!html.includes(oldLabel))throw new Error('Footer version is out of sync; run 
 if(!html.includes('/assets/app.js?v='+oldVersion)||!html.includes('/assets/style.css?v='+oldVersion)||!html.includes('/assets/entity-index.css?v='+oldVersion))throw new Error('Asset cache keys are out of sync');
 let nextApp=versionedImport(read(appPath),'entity-index.js?v='+oldVersion,'entity-index.js?v='+newVersion,'index module');
 nextApp=versionedImport(nextApp,'connection-evidence.js?v='+oldVersion,'connection-evidence.js?v='+newVersion,'Atlas evidence module');
+nextApp=versionedImport(nextApp,'atlas-comparison.js?v='+oldVersion,'atlas-comparison.js?v='+newVersion,'licensed side-by-side comparison');
 const prevIndex=read(indexPath);
 let nextIndex=versionedImport(prevIndex,'entity-index-data.js?v='+oldVersion,'entity-index-data.js?v='+newVersion,'index data module');
 nextIndex=versionedImport(nextIndex,"ENTITY_INDEX_DATA_VERSION='"+oldVersion+"'","ENTITY_INDEX_DATA_VERSION='"+newVersion+"'",'index JSON files');
 nextIndex=versionedImport(nextIndex,'connection-evidence.js?v='+oldVersion,'connection-evidence.js?v='+newVersion,'index evidence import');
+nextIndex=versionedImport(nextIndex,'person-trails.js?v='+oldVersion,'person-trails.js?v='+newVersion,'person study trails');
+const nextEvidence=versionedImport(read(evidencePath),'connection-evidence-expanded.js?v='+oldVersion,'connection-evidence-expanded.js?v='+newVersion,'expanded evidence');
 const newHtml=html.replace(oldLabel,oldLabel.replace(oldVersion,newVersion))
  .replace('/assets/app.js?v='+oldVersion,'/assets/app.js?v='+newVersion)
  .replace('/assets/style.css?v='+oldVersion,'/assets/style.css?v='+newVersion)
@@ -38,5 +41,6 @@ writeFileSync(historyPath,JSON.stringify(history,null,2)+'\n');
 writeFileSync(htmlPath,newHtml);
 writeFileSync(appPath,nextApp);
 writeFileSync(indexPath,nextIndex);
+writeFileSync(evidencePath,nextEvidence);
 writeFileSync('CHANGELOG.md',newChangelog);
 console.log(`Prepared release v${newVersion}: ${title}`);
