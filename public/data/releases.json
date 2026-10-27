@@ -1,6 +1,17 @@
 {
   "releases": [
     {
+      "version": "0.15.0",
+      "date": "2026-10-28",
+      "title": "Linked notes and verse highlights",
+      "changes": [
+        "Save tagged observations linked to multiple passages and manage them in My notebook.",
+        "Highlight whole verses in amber, green or blue, with colour labels and reference-based persistence across reader editions.",
+        "Filter linked notes and highlights by passage, text, tag or colour.",
+        "Include annotations in version 3 backups while preserving older imports and previewing conflicting entries."
+      ]
+    },
+    {
       "version": "0.14.0",
       "date": "2026-10-28",
       "title": "Study journey reading progress",

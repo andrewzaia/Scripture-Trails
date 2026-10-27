@@ -4,7 +4,7 @@
   "description": "A transparent, evidence-aware roadmap. Delivered means implementation exists, not that every scholarly question is settled. The accuracy audit is an initial, publicly documented editorial screening, not external specialist certification.",
   "currentFocus": [
     "Review the Pauline journey location and textual questions against specialist research",
-    "Next study milestone: structured annotations and verse highlights",
+    "Next study milestone: calendar-based reading schedules and custom study collections",
     "Expand person-centred trails and Hebrew Bible geography while preserving evidence distinctions"
   ],
   "phases": [
@@ -384,6 +384,20 @@
         "Version 2 notebook backups include progress; older backups remain supported"
       ],
       "verification": "Plan-reference validation, completion merge and backup compatibility tested. Progress is self-reported and does not measure reading time or comprehension. Structured annotations and calendar-based reading schedules remain future work."
+    },
+    {
+      "id": "annotations-highlights",
+      "phase": "platform",
+      "status": "delivered",
+      "title": "Linked observations and verse highlights",
+      "summary": "Save tagged observations linked to multiple passages and colour-labelled, verse-reference highlights across reader editions.",
+      "capabilities": [
+        "Linked note creation, editing and confirmed deletion in My notebook",
+        "Amber, green and blue highlights with visible text labels",
+        "Filter linked notes and highlights by passage, text, tag or highlight colour",
+        "Version 3 backups preserve annotations; version 1 and 2 imports remain supported with conflict previews"
+      ],
+      "verification": "Reference validation, merge conflicts and old-backup preservation tested. Reader highlight boundaries and translation switching tested with fixture text. Reference numbering may differ between editions; word-selection highlighting is not implemented."
     }
   ]
 }
