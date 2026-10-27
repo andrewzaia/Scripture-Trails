@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "version": "0.9.4",
+      "date": "2026-10-28",
+      "title": "Clearer one-hop Atlas connections",
+      "changes": [
+        "Hovering an Atlas verse now softly highlights the directly connected verses and lines, one hop away.",
+        "The brighter shortest route to the centre remains distinct, with both highlight types identified in the legend."
+      ]
+    },
+    {
       "version": "0.9.3",
       "date": "2026-10-27",
       "title": "Reliable versioned deployments",

@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.9.4 - 28/10/2026: Clearer one-hop Atlas connections
+
+- Hovering an Atlas verse now softly highlights the directly connected verses and lines, one hop away.
+- The brighter shortest route to the centre remains distinct, with both highlight types identified in the legend.
+
 ## 0.9.3 - 27/10/2026: Reliable versioned deployments
 
 - Corrected a deployment check that could prevent new website releases from publishing.

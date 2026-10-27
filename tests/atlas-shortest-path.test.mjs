@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {buildShortestRouteTree} from '../public/assets/atlas-shortest-path.js';
+import {buildShortestRouteTree,getOneHopConnections} from '../public/assets/atlas-shortest-path.js';
 
 test('highlights the direct shortcut instead of a longer discovery route', () => {
   const routeTo = buildShortestRouteTree(5, [
@@ -28,4 +28,21 @@ test('does not invent routes through disconnected or invalid edges', () => {
 test('works when the centre is not node zero', () => {
   const routeTo = buildShortestRouteTree(3, [{a:0,b:1},{a:1,b:2}], 2);
   assert.deepEqual(routeTo(0), {nodes:[2,1,0], edges:[1,0]});
+});
+
+test('highlights only one-hop neighbours, not their neighbours', () => {
+  const edges=[{a:0,b:1},{a:1,b:2},{a:2,b:3},{a:2,b:4},{a:4,b:5}];
+  assert.deepEqual(getOneHopConnections(6,edges,2),{nodes:[1,3,4],edges:[1,2,3]});
+  assert.ok(!getOneHopConnections(6,edges,2).nodes.includes(5));
+});
+
+test('one-hop neighbours work in both edge directions and exclude repeated nodes', () => {
+  const edges=[{a:2,b:0},{a:0,b:2},{a:0,b:3},{a:3,b:4}];
+  assert.deepEqual(getOneHopConnections(5,edges,0),{nodes:[2,3],edges:[0,1,2]});
+});
+
+test('one-hop discovery ignores disconnected, invalid and self-link edges', () => {
+  const edges=[{a:0,b:1},{a:3,b:4},{a:1,b:1},{a:1,b:99},{a:-2,b:1}];
+  assert.deepEqual(getOneHopConnections(5,edges,1),{nodes:[0],edges:[0]});
+  assert.deepEqual(getOneHopConnections(5,edges,5),{nodes:[],edges:[]});
 });
