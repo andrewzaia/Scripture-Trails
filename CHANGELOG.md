@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.14.0 - 28/10/2026: Study journey reading progress
+
+- Track completed passages in the six guided study journeys and resume the next unread passage.
+- Save progress locally with explicit completion choices and confirmation before resetting a plan.
+- Include progress in version 2 notebook backups, while supporting older imports and preserving existing completions.
+
 ## 0.13.0 - 28/10/2026: Private notebook backups
 
 - Download saved passages and personal notes as a versioned JSON backup without uploading them.

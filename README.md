@@ -333,6 +333,12 @@ Journeys of Paul includes a separate Voyage to Rome selector for Acts 27-28: 22 
 
 ## Notebook backups
 
-My notebook provides local JSON export and import for saved references and personal notes. Backups carry the `scripture-trails-notebook` format identifier and schema version 1. Files are limited to 2 MiB, 300 saved references and 2,000 notes (50,000 characters per note). Files are parsed locally without upload. Backups are unencrypted; user notes may contain private information or text the user entered. No publisher passage text is fetched or automatically included.
+My notebook provides local JSON export and import for saved references and personal notes. Backups carry the `scripture-trails-notebook` format identifier. New exports use schema version 2; version 1 imports remain supported. Files are limited to 2 MiB, 300 saved references and 2,000 notes (50,000 characters per note). Files are parsed locally without upload. Backups are unencrypted; user notes may contain private information or text the user entered. No publisher passage text is fetched or automatically included.
 
 Import previews additions, identical entries and conflicts, preserving existing notes by default. Each conflicting note has an explicit replacement choice. Invalid schemas, references and oversized merged collections are rejected. A single `scripture-trails:notebook` localStorage entry becomes authoritative on the next save or import; existing legacy notes and bookmarks are read without deletion. Import storage failures leave the persisted notebook unchanged. Stale previews and changes observed in another tab require a fresh preview or reload. Recent reading, preferences, credentials and unsaved note drafts are outside the backup.
+
+## Study journey reading progress
+
+The six existing Study journeys offer optional, self-reported passage checklists, completion indicators and a resume-next-unread action. Opening a passage does not mark it read. Reset requires a separate confirmation and affects only that plan. Progress uses the same local notebook snapshot, with storage failure and stale-tab checks before writes. These short editorial passage sequences are not a whole-Bible or calendar schedule.
+
+New notebook exports use schema version 2 and include `readingPlans`, mapping the six plan IDs to completed references from those plans. Schema version 1 imports remain supported and preserve existing progress. Import merges completion sets, reports additional completions in preview and never clears current completions. Old v0.13 clients cannot import version 2 files; use the current website for new backups. Verse highlights, structured annotations and calendar plans remain future milestones.
