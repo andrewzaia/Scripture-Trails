@@ -1,3 +1,11 @@
+# Changelog
+
+## 0.3.0 - 27 October 2026
+
+- Added a compact, expandable public changelog to the About page, based on documented website changes.
+- Displayed the current release version in the footer, and added release commands and automated consistency checks.
+- Require an increased semantic version for future website changes when Git parent history is available.
+
 ## 26 October 2026 - Five deep historical city studies
 
 - Introduced a separate Historical City Studies navigation view and direct deep links for Jerusalem, Nazareth, Capernaum, Bethlehem and Jericho.
@@ -16,7 +24,6 @@
 - Added public per-episode issue notes, source links, corrections register and research gaps to the map, with no claims of independent scholarly certification.
 - Marked first-pass editorial audit delivered on roadmap and planned independent specialist review separately.
 
-# Changelog
 
 ## 2026-10-27 - Compact translation status rectangles
 

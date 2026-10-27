@@ -93,3 +93,30 @@ body.light .translation-status-card[data-status="unavailable"] .translation-stat
  .translation-statuses{grid-column:1/-1;grid-row:2;justify-self:end}
  .translation-status-card{min-width:0;height:28px;gap:6px;padding:0 8px}
 }
+
+/* Compact public release history within the About page. */
+.public-release-panel{grid-column:1/-1;padding:0;overflow:hidden}
+.public-release-history>summary{display:flex;justify-content:space-between;align-items:center;gap:24px;cursor:pointer;list-style:none;padding:22px 30px}
+.public-release-history>summary::-webkit-details-marker,.public-release-entry>summary::-webkit-details-marker{display:none}
+.public-release-history>summary:focus-visible,.public-release-entry>summary:focus-visible{outline:2px solid var(--gold);outline-offset:-3px}
+.public-release-heading{display:flex;flex-direction:column;min-width:0;gap:3px}
+.public-release-heading .eyebrow{margin:0}
+.public-release-heading strong{font:normal 25px/1.25 var(--serif);color:var(--ink)}
+.public-release-heading small{font-size:11px;color:var(--muted)}
+.public-release-toggle{white-space:nowrap;color:var(--gold);font-weight:650;font-size:11px}
+.public-release-toggle span{margin-left:7px;font-size:17px}
+.public-release-history[open] .public-release-toggle span{display:inline-block;transform:rotate(45deg)}
+.public-release-list{padding:0 30px 22px;border-top:1px solid var(--line)}
+.public-release-list>p{margin:15px 0}
+.public-release-entry{border-bottom:1px solid var(--line)}
+.public-release-entry:last-child{border-bottom:0}
+.public-release-entry>summary{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:12px 0;list-style:none;cursor:pointer}
+.public-release-title{color:var(--ink);font-size:12px;font-weight:600;min-width:0}
+.public-release-meta{display:flex;align-items:center;gap:12px;flex:0 0 auto;color:var(--muted);font-size:10px}
+.public-release-version{border:1px solid var(--line);color:var(--gold);padding:1px 6px;border-radius:3px;font-weight:700}
+.public-release-entry>summary:after{content:"+";color:var(--gold);font-size:15px}
+.public-release-entry[open]>summary:after{content:"-"}
+.public-release-entry ul{margin:0 0 15px;padding:0 0 0 19px;color:var(--muted);font-size:12px;line-height:1.75}
+.public-release-entry li+li{margin-top:4px}
+.site-version{color:var(--gold);font-size:10px;white-space:nowrap}
+@media(max-width:650px){.public-release-history>summary{padding:18px;align-items:flex-start;flex-wrap:wrap;gap:8px}.public-release-heading strong{font-size:22px}.public-release-toggle{margin-left:auto}.public-release-list{padding:0 18px 18px}.public-release-entry>summary{flex-wrap:wrap;row-gap:2px}.public-release-meta{order:3;width:100%}.public-release-entry>summary:after{margin-left:auto}}

@@ -1,0 +1,21 @@
+import {readFileSync} from 'node:fs';
+import {execFileSync} from 'node:child_process';
+import {compareVersions,validateReleases} from './versioning.mjs';
+const pkg=JSON.parse(readFileSync('package.json','utf8'));
+const notes=JSON.parse(readFileSync('public/data/releases.json','utf8'));
+const html=readFileSync('public/index.html','utf8');
+validateReleases(notes.releases,pkg.version);
+const version='v'+pkg.version;
+if(!html.includes(`id="site-version" class="site-version" aria-label="Website version">${version}</span>`))throw new Error('Footer version must match package.json');
+for(const name of ['app.js','style.css'])if(!html.includes(name+'?v='+pkg.version))throw new Error('Asset cache keys must match website version: '+name);
+try{execFileSync('git',['cat-file','-e','HEAD^'],{stdio:'ignore'});}
+catch{console.log('Release metadata is consistent; parent commit history unavailable, skipping historical comparison.');process.exit(0);}
+const changes=execFileSync('git',['diff','--name-only','HEAD^','HEAD'],{encoding:'utf8'}).split(/\r?\n/).filter(Boolean);
+const siteChanges=changes.filter(x=>/^(public\/|functions\/|scripts\/|sources\/|package\.json$|wrangler\.toml$)/.test(x));
+if(siteChanges.length){
+ let previous;
+ try{previous=JSON.parse(execFileSync('git',['show','HEAD^:package.json'],{encoding:'utf8'})).version;}
+ catch{previous=null;}
+ if(previous&&compareVersions(pkg.version,previous)<=0)throw new Error(`Website code changed without a version increment (${previous} -> ${pkg.version}). Run npm run release -- patch "Heading" "Summary".`);
+}
+console.log('Release metadata and version rules verified: '+version);

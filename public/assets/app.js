@@ -5,6 +5,7 @@ import {createJesusMap} from './jesus-map.js';
 import {createRoadmap} from './roadmap.js?v=20261027-local';
 import {createCityStudies} from './city-studies.js?v=20261027-local';
 import {buildAtlas} from './atlas-paths.js';
+import {initPublicReleases} from './release-notes.js';
 import {maxDatasetVotes,relativeVoteBars} from './atlas-strength.js';
 import {TRANSLATIONS,getTranslation} from './translations.js';
 import {reportScriptureView} from './fums.js';
@@ -237,7 +238,7 @@ function renderNotebook(){const b=$('bookmarks-list'),h=$('history-list'),n=$('n
  if(!state.bookmarks.length)b.append(create('p','empty-list','No saved verses yet. Open a passage and select Save to build your collection.'));if(!state.history.length)h.append(create('p','empty-list','Your recently visited passages will appear here.'));if(!n.children.length)n.append(create('p','empty-list','Notes added during reading will appear here.'));
 }
 function removeBookmark(ref){state.bookmarks=state.bookmarks.filter(x=>x!==ref);putSaved('bookmarks',state.bookmarks);renderNotebook();setSaveButton();}
-function init(){document.body.classList.toggle('light',state.theme==='light');$('theme-toggle').textContent=state.theme==='light'?'☾':'☼';$('copyright-year').textContent=String(new Date().getFullYear());populateBookPicker();initAtlasPicker();buildJourneys();
+function init(){void initPublicReleases();document.body.classList.toggle('light',state.theme==='light');$('theme-toggle').textContent=state.theme==='light'?'☾':'☼';$('copyright-year').textContent=String(new Date().getFullYear());populateBookPicker();initAtlasPicker();buildJourneys();
  $('reader-translation').replaceChildren(...TRANSLATIONS.map(edition=>{const option=create('option','',`${edition.code} - ${edition.name}`);option.value=edition.code;return option;}));
  $('reader-translation').addEventListener('change',()=>selectTranslation($('reader-translation').value));
  document.addEventListener('click',e=>{const button=e.target.closest('[data-view]');if(button){showView(button.dataset.view);return;}const ref=e.target.closest('[data-open]');if(ref)selectRef(ref.dataset.open);});

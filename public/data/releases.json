@@ -1,0 +1,142 @@
+{
+  "releases": [
+    {
+      "version": "0.3.0",
+      "date": "2026-10-27",
+      "title": "Public release history and version display",
+      "changes": [
+        "Added a compact, expandable website changelog to About Scripture Trails.",
+        "Show the current website version in the footer, with checks to keep future release numbers and notes in sync."
+      ]
+    },
+    {
+      "date": "2026-10-27",
+      "title": "Connection strength bars",
+      "changes": [
+        "Replaced raw Atlas cross-reference vote labels with seven compact bars, scaled to the strongest connection for the selected verse.",
+        "Exact community vote counts remain available on hover and through accessible descriptions."
+      ]
+    },
+    {
+      "date": "2026-10-27",
+      "title": "Cleaner translation availability indicators",
+      "changes": [
+        "Changed translation status badges into compact horizontal labels with green and red status circles.",
+        "Kept availability indicators display-only; choose translations in the Bible reader."
+      ]
+    },
+    {
+      "date": "2026-10-27",
+      "title": "Translation status made simpler",
+      "changes": [
+        "Show translation availability without a separate configured state.",
+        "Report an edition as unavailable after a reading failure, then restore its available indicator after a successful reading."
+      ]
+    },
+    {
+      "date": "2026-10-27",
+      "title": "Official Scripture Trails website",
+      "changes": [
+        "Established www.scripturetrails.com as the canonical site address, redirecting other domain variants.",
+        "Added individual availability indicators for ESV, NASB20, NIV and NKJV."
+      ]
+    },
+    {
+      "date": "2026-10-27",
+      "title": "Faster, locally hosted reference materials",
+      "changes": [
+        "Moved the OpenBible.info cross-reference archive into locally served data files, with documented provenance.",
+        "Host credited city photographs on the site to reduce reliance on external image requests."
+      ]
+    },
+    {
+      "date": "2026-10-27",
+      "title": "Four in-page Bible translations",
+      "changes": [
+        "Added NASB 2020, NIV 2011 and NKJV reading through authorised Bible services alongside ESV.",
+        "Keep a selected translation when sharing a passage or navigating; display publisher attribution with verses."
+      ]
+    },
+    {
+      "date": "2026-10-27",
+      "title": "Focused verse and chapter reading",
+      "changes": [
+        "Show the requested verse or range instead of always displaying an entire chapter.",
+        "Added a Read full chapter action and improved reading links."
+      ]
+    },
+    {
+      "date": "2026-10-27",
+      "title": "Navigation and sidebar refinements",
+      "changes": [
+        "Improved compact chapter navigation, sidebar scrolling and mobile-friendly presentation.",
+        "Made the Scripture Trails logo a link back to the homepage, and refined roadmap page spacing."
+      ]
+    },
+    {
+      "date": "2026-10-26",
+      "title": "Historical city studies",
+      "changes": [
+        "Added in-depth studies of Jerusalem, Nazareth, Capernaum, Bethlehem and Jericho.",
+        "Included Scripture references, historical and archaeological evidence, timelines, modern map illustrations and disputed-site comparisons."
+      ]
+    },
+    {
+      "date": "2026-10-26",
+      "title": "More reliable historical images",
+      "changes": [
+        "Improved image sourcing and fallbacks for historical locations, then moved credited photographs into local hosting."
+      ]
+    },
+    {
+      "date": "2026-10-26",
+      "title": "Evidence review and corrections",
+      "changes": [
+        "Reviewed the Gospel journey episodes and historical place descriptions.",
+        "Published corrections, research limitations and differing Gospel chronologies instead of presenting uncertain details as established facts."
+      ]
+    },
+    {
+      "date": "2026-10-26",
+      "title": "Historical place dossiers and project roadmap",
+      "changes": [
+        "Added biblical and historical source notes for the locations shown on the journeys map.",
+        "Launched a public roadmap to distinguish delivered features, upcoming work and research still needed."
+      ]
+    },
+    {
+      "date": "2026-10-26",
+      "title": "Journeys of Jesus map",
+      "changes": [
+        "Launched an interactive map and timeline exploring 79 Gospel and Acts episodes across 35 places and regions.",
+        "Added passage links, visit history, filters and clear labels for uncertain sites and schematic routes."
+      ]
+    },
+    {
+      "version": "0.2.0",
+      "date": "2026-10-26",
+      "title": "Expanded Connection Atlas",
+      "changes": [
+        "Added book, chapter and verse selection, plus exploration up to ten Scripture-reference hops.",
+        "Introduced verse-level links, readable graph depth controls and a fallback for neighbouring verses when no reference is known."
+      ]
+    },
+    {
+      "date": "2026-10-26",
+      "title": "Expanded biblical cross-references",
+      "changes": [
+        "Added attributed OpenBible.info links throughout the Bible, with ranking from community votes.",
+        "Separated imported references from curated quotation, parallel, echo and theme connections."
+      ]
+    },
+    {
+      "version": "0.1.0",
+      "date": "2026-10-26",
+      "title": "First Scripture Trails release",
+      "changes": [
+        "Introduced Bible reading, guided studies, bookmarks and personal notes stored on the current device.",
+        "Launched the original Scripture connection graph and light/dark site themes."
+      ]
+    }
+  ]
+}

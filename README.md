@@ -256,3 +256,11 @@ Data: `public/data/city-studies.json` (5 cities, 40 biblical references, 25 hist
 **Modern images:** The five city photographs are served from `public/assets/city-photos/`. Their Commons source pages, authors, licences, original download hashes, local hashes and changes are recorded in `credits.json` and city metadata. Photos are resized without cropping and re-encoded as WebP; their original licences still apply, including applicable share-alike conditions. No Wikimedia image request is required to open a city study. External source and licence links remain for verification. The combined local image payload is about 1.02 MB. The CSP permits local images and mandatory API.Bible reporting hosts.
 
 This milestone is an **editorial research release**. External specialist peer review and disputed-site adjudication are still outstanding and separately tracked on the roadmap. No additional copyrighted Bible text is bundled in the data or JavaScript.
+
+## Public changelog and versioning
+
+The website version is recorded in `package.json` and shown in the footer. The public About page reads `public/data/releases.json`. The full technical history remains in `CHANGELOG.md`. Historic release notes retain their dates, but only previously recorded version numbers are shown.
+
+For each website update, run `npm run release -- patch "Public heading" "Short public summary"` before committing. Choose `minor` for new backward-compatible features and `major` for breaking changes. Additional quoted arguments become further public changelog bullets. This command synchronises `package.json`, public release notes, footer version, asset cache keys and the developer changelog.
+
+`npm run build` checks that the version and public release history agree. When Git parent history is available, it also rejects code-changing commits without an increased version. GitHub CI fetches the previous commit so these checks are enforced. Semantic impact is chosen by the developer; the system will not guess whether a change is major, minor or patch. Documentation-only and test-only edits need no website release.
