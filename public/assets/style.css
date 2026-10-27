@@ -120,3 +120,17 @@ body.light .translation-status-card[data-status="unavailable"] .translation-stat
 .public-release-entry li+li{margin-top:4px}
 .site-version{color:var(--gold);font-size:10px;white-space:nowrap}
 @media(max-width:650px){.public-release-history>summary{padding:18px;align-items:flex-start;flex-wrap:wrap;gap:8px}.public-release-heading strong{font-size:22px}.public-release-toggle{margin-left:auto}.public-release-list{padding:0 18px 18px}.public-release-entry>summary{flex-wrap:wrap;row-gap:2px}.public-release-meta{order:3;width:100%}.public-release-entry>summary:after{margin-left:auto}}
+
+/* Scoped source explanations: votes indicate community rank, never theological confidence. */
+.atlas-evidence-filter{display:grid;gap:7px;margin:10px 0 12px}
+.atlas-evidence-filter label{font-size:11px;color:var(--muted)}
+.atlas-evidence-filter select{border:1px solid var(--line);background:var(--surface2);color:var(--ink);border-radius:5px;padding:9px;width:100%}
+.atlas-evidence-filter small{color:var(--muted);font-size:10px}
+.atlas-reference-row{padding:9px 0;border-bottom:1px solid var(--line)}
+.atlas-reference-row>button{border-bottom:0!important;padding:6px 0!important;flex-wrap:wrap}
+.atlas-edge-status{display:block;color:var(--muted)!important;font-size:10px!important;text-transform:none!important;flex-basis:100%}
+.atlas-evidence-detail{margin:0 0 8px;border-left:2px solid var(--gold);padding:6px 10px;background:var(--surface2);color:var(--ink)}
+.atlas-evidence-detail summary{cursor:pointer;font-size:11px;color:var(--gold);padding:6px 0}
+.atlas-evidence-detail p{font-size:11px!important;line-height:1.7!important;color:var(--muted)!important;margin:8px 0}
+.atlas-evidence-actions{display:flex;gap:5px;flex-wrap:wrap;margin:8px 0}
+.atlas-evidence-actions button{width:auto!important;border:1px solid var(--line)!important;padding:7px!important;font-size:10px!important;color:var(--ink)!important;background:var(--surface3)!important}
