@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.4.0 - 27/10/2026: Compare Gospel narrative sequences
+
+- Added individual Matthew, Mark, Luke and John passage-order views alongside the combined Journeys of Jesus timeline.
+- Added source-linked comparisons for disputed parallel accounts, and distinguished textual order from historical dates and travel.
+
 ## 0.3.1 - 27 October 2026 - Complete historical release numbering
 
 - Assigned retrospective patch numbers to previously unnumbered historical updates, with v0.1.1 and v0.2.1 through v0.2.14 based on their documented sequence.
