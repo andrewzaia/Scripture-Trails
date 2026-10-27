@@ -1,7 +1,7 @@
 {
   "title": "Journeys of Paul",
   "updated": "2026-10-28",
-  "scope": "Three conventional missionary journey groupings in Acts 13-21. Narrative order, not an independently dated historical itinerary.",
+  "scope": "Three conventional missionary journey groupings in Acts 13-21 and a separately labelled prisoner voyage to Rome in Acts 27-28.",
   "method": "Acts is primary for the narrated movements. Each entry is an editorial paraphrase with a passage link; no Bible text is bundled. Markers are rounded Pleiades representative points. Regions, unnamed settings and offshore passages have no invented pins. Dashed connectors join only consecutive mapped entries within one journey and are not roads or sailing tracks.",
   "review": "AI-assisted editorial source and reference screening. Independent historical and textual specialist review has not occurred.",
   "chronology": "The timeline counts narrative stages, not elapsed time. No absolute years are assigned. Acts and Pauline-letter chronology require separate comparison; letters are not silently used to add unnamed Acts stops.",
@@ -35,6 +35,16 @@
       ],
       "scope": "Regional revisits, Ephesus, Macedonia and Greece, followed by the voyage to Jerusalem.",
       "note": "Regional summaries do not identify every city. The later arrest, imprisonment and voyage to Rome are outside this release."
+    },
+    {
+      "id": "rome",
+      "title": "Voyage to Rome",
+      "passages": [
+        "Acts 27:1-8",
+        "Acts 28:11-16"
+      ],
+      "scope": "A prisoner transfer, storm, Malta wintering and arrival in Rome in Acts 27-28.",
+      "note": "This is not labelled a fourth missionary journey. The embarkation at Caesarea follows the preceding custody narrative; Acts 27:1-2 itself does not name the departure port. Phoenix is an intended winter harbour, not a reached stop. Adramyttium and Alexandria describe ships, not visits by Paul."
     }
   ],
   "places": [
@@ -631,6 +641,223 @@
       "sourceUrl": null,
       "sourceTitle": "Primary Acts passage at each stage",
       "note": "Acts 21:3 describes passing Cyprus on the left while sailing towards Syria. It does not record landing on Cyprus on this journey."
+    },
+    {
+      "id": "sidon",
+      "name": "Sidon",
+      "kind": "site",
+      "coordinates": [
+        35.3728,
+        33.5619
+      ],
+      "certainty": "approximate",
+      "sourceId": "sidon",
+      "sourceUrl": "https://pleiades.stoa.org/places/678393",
+      "sourceTitle": "Sidon/Col. Aurelia Pia",
+      "note": "Rounded Pleiades representative point for geographic orientation, not the exact harbour, road or building of a narrated event."
+    },
+    {
+      "id": "myra",
+      "name": "Myra",
+      "kind": "site",
+      "coordinates": [
+        29.9855,
+        36.2586
+      ],
+      "certainty": "approximate",
+      "sourceId": "myra",
+      "sourceUrl": "https://pleiades.stoa.org/places/639005",
+      "sourceTitle": "Myra",
+      "note": "Rounded Pleiades representative point for geographic orientation, not the exact harbour, road or building of a narrated event."
+    },
+    {
+      "id": "fair-havens",
+      "name": "Fair Havens",
+      "kind": "site",
+      "coordinates": [
+        24.8123,
+        34.9318
+      ],
+      "certainty": "approximate",
+      "sourceId": "fair-havens",
+      "sourceUrl": "https://pleiades.stoa.org/places/589834",
+      "sourceTitle": "Kaloi Limenes",
+      "note": "Rounded Pleiades representative point for geographic orientation, not the exact harbour, road or building of a narrated event."
+    },
+    {
+      "id": "malta",
+      "name": "Malta",
+      "kind": "island",
+      "coordinates": [
+        14.4384,
+        35.8878
+      ],
+      "certainty": "island",
+      "sourceId": "malta",
+      "sourceUrl": "https://pleiades.stoa.org/places/462311",
+      "sourceTitle": "Melita/Malta (island)",
+      "note": "Island-scale orientation only. The wreck bay, beach and Publius estate are not located by this point."
+    },
+    {
+      "id": "syracuse",
+      "name": "Syracuse",
+      "kind": "site",
+      "coordinates": [
+        15.2833,
+        37.0701
+      ],
+      "certainty": "approximate",
+      "sourceId": "syracuse",
+      "sourceUrl": "https://pleiades.stoa.org/places/462503",
+      "sourceTitle": "Syracusae/Syrakousai",
+      "note": "Rounded Pleiades representative point for geographic orientation, not the exact harbour, road or building of a narrated event."
+    },
+    {
+      "id": "rhegium",
+      "name": "Rhegium",
+      "kind": "site",
+      "coordinates": [
+        15.6439,
+        38.1093
+      ],
+      "certainty": "approximate",
+      "sourceId": "rhegium",
+      "sourceUrl": "https://pleiades.stoa.org/places/452416",
+      "sourceTitle": "Rhegion/Regium",
+      "note": "Rounded Pleiades representative point for geographic orientation, not the exact harbour, road or building of a narrated event."
+    },
+    {
+      "id": "puteoli",
+      "name": "Puteoli",
+      "kind": "site",
+      "coordinates": [
+        14.1217,
+        40.8258
+      ],
+      "certainty": "approximate",
+      "sourceId": "puteoli",
+      "sourceUrl": "https://pleiades.stoa.org/places/432815",
+      "sourceTitle": "Dikaiarcheia/Puteoli",
+      "note": "Rounded Pleiades representative point for geographic orientation, not the exact harbour, road or building of a narrated event."
+    },
+    {
+      "id": "appius",
+      "name": "Forum of Appius",
+      "kind": "site",
+      "coordinates": [
+        12.9975,
+        41.4664
+      ],
+      "certainty": "approximate",
+      "sourceId": "appius",
+      "sourceUrl": "https://pleiades.stoa.org/places/422927",
+      "sourceTitle": "Forum Appii ",
+      "note": "Rounded Pleiades representative point for geographic orientation, not the exact harbour, road or building of a narrated event."
+    },
+    {
+      "id": "three-taverns",
+      "name": "Three Taverns",
+      "kind": "site",
+      "coordinates": [
+        12.8743,
+        41.5617
+      ],
+      "certainty": "approximate",
+      "sourceId": "three-taverns",
+      "sourceUrl": "https://pleiades.stoa.org/places/423106",
+      "sourceTitle": "Tres Tabernae",
+      "note": "Rounded Pleiades representative point for geographic orientation, not the exact harbour, road or building of a narrated event."
+    },
+    {
+      "id": "rome",
+      "name": "Rome",
+      "kind": "site",
+      "coordinates": [
+        12.4913,
+        41.89
+      ],
+      "certainty": "approximate",
+      "sourceId": "rome",
+      "sourceUrl": "https://pleiades.stoa.org/places/423025",
+      "sourceTitle": "Roma",
+      "note": "Rounded Pleiades representative point for geographic orientation, not the exact harbour, road or building of a narrated event."
+    },
+    {
+      "id": "rome-cyprus",
+      "name": "In the lee of Cyprus",
+      "kind": "offshore",
+      "coordinates": null,
+      "certainty": "offshore",
+      "sourceId": null,
+      "sourceUrl": null,
+      "sourceTitle": "Primary Acts passage",
+      "note": "No landing is stated; no ship position is reconstructed."
+    },
+    {
+      "id": "rome-coast",
+      "name": "Across the Cilician and Pamphylian sea",
+      "kind": "offshore",
+      "coordinates": null,
+      "certainty": "offshore",
+      "sourceId": null,
+      "sourceUrl": null,
+      "sourceTitle": "Primary Acts passage",
+      "note": "A broad sea passage, not an additional city stop."
+    },
+    {
+      "id": "cnidus-offshore",
+      "name": "Off Cnidus",
+      "kind": "offshore",
+      "coordinates": null,
+      "certainty": "offshore",
+      "sourceId": null,
+      "sourceUrl": null,
+      "sourceTitle": "Primary Acts passage",
+      "note": "Acts describes difficulty off Cnidus, not a recorded landing."
+    },
+    {
+      "id": "salmone-offshore",
+      "name": "In the lee of Crete, off Salmone",
+      "kind": "offshore",
+      "coordinates": null,
+      "certainty": "offshore",
+      "sourceId": null,
+      "sourceUrl": null,
+      "sourceTitle": "Primary Acts passage",
+      "note": "An offshore description, not a harbour arrival."
+    },
+    {
+      "id": "cauda-offshore",
+      "name": "In the lee of Cauda",
+      "kind": "offshore",
+      "coordinates": null,
+      "certainty": "offshore",
+      "sourceId": null,
+      "sourceUrl": null,
+      "sourceTitle": "Primary Acts passage",
+      "note": "The ship passes the island while securing its boat; no landing is recorded."
+    },
+    {
+      "id": "storm-drift",
+      "name": "Storm-driven drift",
+      "kind": "offshore",
+      "coordinates": null,
+      "certainty": "offshore",
+      "sourceId": null,
+      "sourceUrl": null,
+      "sourceTitle": "Primary Acts passage",
+      "note": "No day-by-day ship coordinates or storm track can be recovered from this account. Syrtis is a feared hazard, not an arrival."
+    },
+    {
+      "id": "wreck",
+      "name": "Unidentified bay and shipwreck",
+      "kind": "unlocated",
+      "coordinates": null,
+      "certainty": "unlocated",
+      "sourceId": null,
+      "sourceUrl": null,
+      "sourceTitle": "Primary Acts passage",
+      "note": "Acts 27 does not name the bay. Malta is named subsequently in Acts 28:1; no exact wreck site is plotted."
     }
   ],
   "events": [
@@ -1367,6 +1594,270 @@
       ],
       "qualification": "No precise road, lodging position or calendar date is supplied by this map.",
       "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-rome-01",
+      "journey": "rome",
+      "place": "caesarea",
+      "title": "Departure in custody",
+      "summary": "Prisoners embark for Italy.",
+      "passages": [
+        "Acts 27:1-2"
+      ],
+      "qualification": "The port is inferred from the preceding Caesarea custody setting, not named in these embarkation verses.",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-rome-02",
+      "journey": "rome",
+      "place": "sidon",
+      "title": "Friends at Sidon",
+      "summary": "Julius permits a visit with friends.",
+      "passages": [
+        "Acts 27:3"
+      ],
+      "qualification": "",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-rome-03",
+      "journey": "rome",
+      "place": "rome-cyprus",
+      "title": "Sheltered passage by Cyprus",
+      "summary": "Contrary winds affect the sailing.",
+      "passages": [
+        "Acts 27:4"
+      ],
+      "qualification": "",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-rome-04",
+      "journey": "rome",
+      "place": "rome-coast",
+      "title": "Across the coastal sea",
+      "summary": "The passage leads towards Lycia.",
+      "passages": [
+        "Acts 27:5"
+      ],
+      "qualification": "",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-rome-05",
+      "journey": "rome",
+      "place": "myra",
+      "title": "A change of ship",
+      "summary": "The centurion finds an Alexandrian vessel bound for Italy.",
+      "passages": [
+        "Acts 27:5-6"
+      ],
+      "qualification": "",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-rome-06",
+      "journey": "rome",
+      "place": "cnidus-offshore",
+      "title": "Difficulty off Cnidus",
+      "summary": "The wind prevents further progress on the intended course.",
+      "passages": [
+        "Acts 27:7"
+      ],
+      "qualification": "",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-rome-07",
+      "journey": "rome",
+      "place": "salmone-offshore",
+      "title": "Shelter along Crete",
+      "summary": "The ship sails in the lee of Crete.",
+      "passages": [
+        "Acts 27:7"
+      ],
+      "qualification": "",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-rome-08",
+      "journey": "rome",
+      "place": "fair-havens",
+      "title": "A decision at Fair Havens",
+      "summary": "Paul warns against continuing; the company seeks another winter harbour.",
+      "passages": [
+        "Acts 27:8-12"
+      ],
+      "qualification": "",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-rome-09",
+      "journey": "rome",
+      "place": "cauda-offshore",
+      "title": "Securing the boat",
+      "summary": "The storm drives the vessel past Cauda.",
+      "passages": [
+        "Acts 27:13-16"
+      ],
+      "qualification": "",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-rome-10",
+      "journey": "rome",
+      "place": "storm-drift",
+      "title": "Drifting in the storm",
+      "summary": "Cargo is discarded; Paul encourages the company.",
+      "passages": [
+        "Acts 27:17-26"
+      ],
+      "qualification": "",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-rome-11",
+      "journey": "rome",
+      "place": "storm-drift",
+      "title": "Soundings and anchors",
+      "summary": "The sailors suspect land is near and take soundings.",
+      "passages": [
+        "Acts 27:27-38"
+      ],
+      "qualification": "",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-rome-12",
+      "journey": "rome",
+      "place": "wreck",
+      "title": "The ship is lost",
+      "summary": "The company reaches shore from the breaking vessel.",
+      "passages": [
+        "Acts 27:39-44"
+      ],
+      "qualification": "",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-rome-13",
+      "journey": "rome",
+      "place": "malta",
+      "title": "Welcome on Malta",
+      "summary": "The islanders offer shelter; Acts recounts the snake episode.",
+      "passages": [
+        "Acts 28:1-6"
+      ],
+      "qualification": "",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-rome-14",
+      "journey": "rome",
+      "place": "malta",
+      "title": "Hospitality and healing",
+      "summary": "Publius receives the travellers; Acts recounts healings.",
+      "passages": [
+        "Acts 28:7-10"
+      ],
+      "qualification": "",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-rome-15",
+      "journey": "rome",
+      "place": "malta",
+      "title": "Departure after winter",
+      "summary": "After three months, the company boards another Alexandrian ship.",
+      "passages": [
+        "Acts 28:11"
+      ],
+      "qualification": "",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-rome-16",
+      "journey": "rome",
+      "place": "syracuse",
+      "title": "Three days at Syracuse",
+      "summary": "The voyage resumes with a stay at Syracuse.",
+      "passages": [
+        "Acts 28:12"
+      ],
+      "qualification": "",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-rome-17",
+      "journey": "rome",
+      "place": "rhegium",
+      "title": "Arrival at Rhegium",
+      "summary": "A changed wind precedes the next sailing.",
+      "passages": [
+        "Acts 28:13"
+      ],
+      "qualification": "",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-rome-18",
+      "journey": "rome",
+      "place": "puteoli",
+      "title": "A week with believers",
+      "summary": "The company stays with fellow believers.",
+      "passages": [
+        "Acts 28:13-14"
+      ],
+      "qualification": "",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-rome-19",
+      "journey": "rome",
+      "place": "appius",
+      "title": "Welcome on the approach to Rome",
+      "summary": "Believers come out to meet Paul.",
+      "passages": [
+        "Acts 28:15"
+      ],
+      "qualification": "These meeting points follow the approach towards Rome; Acts does not supply a complete measured road itinerary.",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-rome-20",
+      "journey": "rome",
+      "place": "three-taverns",
+      "title": "Another meeting on the approach",
+      "summary": "The narrative also names Three Taverns.",
+      "passages": [
+        "Acts 28:15"
+      ],
+      "qualification": "These meeting points follow the approach towards Rome; Acts does not supply a complete measured road itinerary.",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-rome-21",
+      "journey": "rome",
+      "place": "rome",
+      "title": "Arrival under guard",
+      "summary": "Paul is allowed separate lodging with a soldier.",
+      "passages": [
+        "Acts 28:16"
+      ],
+      "qualification": "",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-rome-22",
+      "journey": "rome",
+      "place": "rome",
+      "title": "Teaching in Rome",
+      "summary": "Acts closes with discussions and an extended period of teaching.",
+      "passages": [
+        "Acts 28:17-31"
+      ],
+      "qualification": "",
+      "reviewStatus": "editorial-reading-aid"
     }
   ],
   "sources": {
@@ -1448,6 +1939,16 @@
       "passages": [
         "Acts 14:6-21",
         "Acts 16:1-5"
+      ]
+    },
+    {
+      "id": "rome-evidence",
+      "title": "Voyage, storm and wreck limitations",
+      "description": "This is not labelled a fourth missionary journey. The embarkation at Caesarea follows the preceding custody narrative; Acts 27:1-2 itself does not name the departure port. Phoenix is an intended winter harbour, not a reached stop. Adramyttium and Alexandria describe ships, not visits by Paul. The storm, soundings and wreck remain unpinned. Malta uses only an island-scale marker; no traditional wreck bay is asserted as certain.",
+      "passages": [
+        "Acts 27:1-16",
+        "Acts 27:27-44",
+        "Acts 28:1-16"
       ]
     }
   ]

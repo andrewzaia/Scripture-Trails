@@ -8,7 +8,7 @@ The top-right header has separate, display-only ESV, NASB20, NIV and NKJV status
 
 ## What works now
 
-- Journeys of Paul, covering three missionary journeys: 61 Acts-linked stages, 33 approximate ancient place markers, regional/offshore gaps and an accessible timeline and list.
+- Journeys of Paul, covering three missionary journeys and the voyage to Rome: 83 Acts-linked stages, 43 approximate ancient place markers, regional/offshore gaps and an accessible timeline and list.
 
 - Passage navigation across all 66 Protestant canonical Bible books, with chapter selectors and deep links such as `?view=reader&ref=John%203%3A16`.
 - Official ESV text via Crossway, plus NASB20, NIV (2011) and NKJV via API.Bible when their server-side keys are configured.
@@ -319,10 +319,14 @@ The People Index now contains eight manually outlined passage trails for Abraham
 
 ## Journeys of Paul
 
-Open [the Pauline map](https://www.scripturetrails.com/?view=paul-map) for three conventional journey groupings in Acts 13-21. The page follows the existing Jesus-map interaction and theme, with journey/place filters, narrative timeline, previous/next and manual playback, keyboard and pointer pan/zoom, repeat-visit navigation, reader/Atlas actions and People Index links. Deep links retain `paul-journey` and `paul-stop`.
+Open [the Pauline map](https://www.scripturetrails.com/?view=paul-map) for three conventional journey groupings in Acts 13-21 and the voyage to Rome in Acts 27-28. The page follows the existing Jesus-map interaction and theme, with journey/place filters, narrative timeline, previous/next and manual playback, keyboard and pointer pan/zoom, repeat-visit navigation, reader/Atlas actions and People Index links. Deep links retain `paul-journey` and `paul-stop`.
 
-All 61 stages are listed, including 14 stages without a geographic pin. Thirty-three rounded Pleiades representative points provide approximate orientation; regions, unnamed settings and offshore passages receive no invented coordinates. Connectors join adjacent mapped stages within one journey only, never crossing unpinned gaps or journey boundaries. Natural Earth land polygons give low-resolution modern coastal orientation without political borders. Neither markers nor lines establish precise event sites, ancient roads, sailing tracks or travel distances.
+All 83 stages are listed, including 22 stages without a geographic pin. Forty-three rounded Pleiades representative points provide approximate orientation; regions, unnamed settings and offshore passages receive no invented coordinates. Connectors join adjacent mapped stages within one journey only, never crossing unpinned gaps or journey boundaries. Natural Earth land polygons give low-resolution modern coastal orientation without political borders. Neither markers nor lines establish precise event sites, ancient roads, sailing tracks or travel distances.
 
-The source and uncertainty register covers the conventional journey divisions, regional Galatia language, Acts 18:22, Greece/Corinth, island and offshore distinctions, Trogyllium and provisional Derbe/Lystra locations. Dates and letter-composition chronology are not reconstructed. The voyage to Rome remains the next geography milestone. Independent specialist review is not claimed.
+The source and uncertainty register covers the conventional journey divisions, regional Galatia language, Acts 18:22, Greece/Corinth, island and offshore distinctions, Trogyllium and provisional Derbe/Lystra locations. Dates and letter-composition chronology are not reconstructed. The voyage to Rome is delivered as a separate selection. Independent specialist review is not claimed.
 
 Local datasets: `public/data/pauline-journeys.json` and `public/data/pauline-coast.json`. Credited, pinned location metadata and transformation notes: `sources/pauline/`. Node tests validate references, marker/source alignment, narrative boundaries and provenance; production checks must also verify mobile/desktop navigation and the deployed version.
+
+## Voyage to Rome
+
+Journeys of Paul includes a separate Voyage to Rome selector for Acts 27-28: 22 stages, ten additional credited place markers, and unpinned sea, storm and wreck settings. This prisoner transfer is not a fourth missionary journey. Caesarea embarkation is qualified as inferred from the preceding custody narrative. Phoenix, Adramyttium and Alexandria are not plotted as reached destinations. Malta uses island-scale orientation only. The map now extends west to Italy; connectors remain schematic and break at unlocated stages. All 61 earlier stages retain their identifiers.

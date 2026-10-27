@@ -3,7 +3,7 @@ import {validateCanonicalReference} from './reference-integrity.js';
 
 // Narrative stages and geographic markers have separate evidence requirements.
 const NS='http://www.w3.org/2000/svg';
-const BOUNDS={west:19,east:38,south:29,north:43,width:1100,height:850};
+const BOUNDS={west:10,east:38,south:29,north:43,width:1100,height:850};
 const VERSION=new URL(import.meta.url).searchParams.get('v')||'local';
 const CERTAINTY={approximate:'Approximate ancient site',uncertain:'Provisional site identification',island:'Island-scale orientation',region:'Regional stage - no pin',offshore:'Offshore passage - no landing pin',unlocated:'Unnamed setting - no pin'};
 const element=(tag,cls,text)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(text!==undefined)n.textContent=text;return n;};
@@ -19,7 +19,7 @@ export function narrativeConnections(data,events){
  });
 }
 export function validatePaulineData(data,counts){
- if(!data?.method||!data.scope||!data.review||!data.chronology||!Array.isArray(data.journeys)||data.journeys.length!==3||!Array.isArray(data.places)||!Array.isArray(data.events)||!data.events.length||!Array.isArray(data.issues)||!data.sources)throw Error('Incomplete Pauline itinerary');
+ if(!data?.method||!data.scope||!data.review||!data.chronology||!Array.isArray(data.journeys)||data.journeys.length!==4||!Array.isArray(data.places)||!Array.isArray(data.events)||!data.events.length||!Array.isArray(data.issues)||!data.sources)throw Error('Incomplete Pauline itinerary');
  const ids=items=>{const result=new Set();for(const item of items){if(!/^[a-z0-9-]+$/.test(item.id)||result.has(item.id))throw Error('Duplicate or invalid identifier '+item.id);result.add(item.id);}return result;};
  const journeys=ids(data.journeys),places=ids(data.places);ids(data.events);ids(data.issues);
  const refs=items=>{if(!Array.isArray(items)||!items.length||items.some(ref=>!ref.startsWith('Acts ')||!validateCanonicalReference(ref,counts)))throw Error('Invalid primary Acts reference');};
@@ -29,7 +29,7 @@ export function validatePaulineData(data,counts){
   if(!place.name||!place.note||!CERTAINTY[place.certainty]||!allowed[place.kind]?.includes(place.certainty))throw Error('Invalid place '+place.id);
   const mapped=['site','island'].includes(place.kind);
   if(mapped){
-   const c=place.coordinates;if(!Array.isArray(c)||c.length!==2||!c.every(Number.isFinite)||c[0]<19||c[0]>38||c[1]<29||c[1]>43||!place.sourceId||!/^https:\/\/pleiades\.stoa\.org\/places\/\d+$/.test(place.sourceUrl)||!place.sourceTitle)throw Error('Unsourced or invalid marker '+place.id);
+   const c=place.coordinates;if(!Array.isArray(c)||c.length!==2||!c.every(Number.isFinite)||c[0]<10||c[0]>38||c[1]<29||c[1]>43||!place.sourceId||!/^https:\/\/pleiades\.stoa\.org\/places\/\d+$/.test(place.sourceUrl)||!place.sourceTitle)throw Error('Unsourced or invalid marker '+place.id);
   }else if(place.coordinates!==null)throw Error('An unlocated or offshore stage must not receive a pin');
  }
  const closed=new Set();let previous=null;
@@ -42,8 +42,8 @@ export function validatePaulineData(data,counts){
  return true;
 }
 export function validatePaulineCoast(data){
- if(data?.licence!=='Public domain'||!data.sourceUrl||!data.sourceSha256||JSON.stringify(data.bounds)!=='[19,29,38,43]'||!Array.isArray(data.rings)||!data.rings.length)throw Error('Missing coastal provenance');
- for(const ring of data.rings)if(!Array.isArray(ring)||ring.length<4||ring.some(c=>!Array.isArray(c)||c.length!==2||!c.every(Number.isFinite)||c[0]<19||c[0]>38||c[1]<29||c[1]>43))throw Error('Invalid coastal geometry');
+ if(data?.licence!=='Public domain'||!data.sourceUrl||!data.sourceSha256||JSON.stringify(data.bounds)!=='[10,29,38,43]'||!Array.isArray(data.rings)||!data.rings.length)throw Error('Missing coastal provenance');
+ for(const ring of data.rings)if(!Array.isArray(ring)||ring.length<4||ring.some(c=>!Array.isArray(c)||c.length!==2||!c.every(Number.isFinite)||c[0]<10||c[0]>38||c[1]<29||c[1]>43))throw Error('Invalid coastal geometry');
  return true;
 }
 
@@ -69,7 +69,7 @@ export function createPaulMap(root,handlers={}){
   for(const ring of coast.rings)layers.geography.append(graphic('path',{d:path(ring)+' Z',fill:'#dedaca',stroke:'#8eaaa7','stroke-width':1}));
   for(let lon=20;lon<=36;lon+=4){const [x]=projectPaulLocation([lon,40]);layers.geography.append(graphic('path',{d:`M${x} 0V850`,stroke:'#edf1e7','stroke-width':.5,opacity:.5}));}
   for(let lat=30;lat<=42;lat+=3){const [,y]=projectPaulLocation([25,lat]);layers.geography.append(graphic('path',{d:`M0 ${y}H1100`,stroke:'#edf1e7','stroke-width':.5,opacity:.5}));}
-  for(const [label,c] of [['MACEDONIA',[22.3,41.9]],['ACHAIA',[20.5,38.1]],['ANATOLIA',[31,40.8]],['CYPRUS',[33.3,34.2]],['SYRIA',[36.5,35.1]],['JUDEA',[36.3,31.3]],['AEGEAN SEA',[24.2,36.7]],['MEDITERRANEAN SEA',[29.8,32.7]]]){const [x,y]=projectPaulLocation(c);layers.geography.append(graphic('text',{x,y,'text-anchor':'middle',class:'jesus-geo-label'},label));}
+  for(const [label,c] of [['ITALY',[13,42.3]],['SICILY',[14,37.8]],['MALTA',[14.4,35.3]],['MACEDONIA',[22.3,41.9]],['ACHAIA',[20.5,38.1]],['ANATOLIA',[31,40.8]],['CYPRUS',[33.3,34.2]],['SYRIA',[36.5,35.1]],['JUDEA',[36.3,31.3]],['AEGEAN SEA',[24.2,36.7]],['MEDITERRANEAN SEA',[29.8,32.7]]]){const [x,y]=projectPaulLocation(c);layers.geography.append(graphic('text',{x,y,'text-anchor':'middle',class:'jesus-geo-label'},label));}
  }
  function draw(){
   const focusedPin=document.activeElement?.getAttribute('data-paul-place');
@@ -113,7 +113,7 @@ export function createPaulMap(root,handlers={}){
   $('step').textContent=`${pos+1} / ${entries.length}`;$('year').textContent=j.title;$('previous').disabled=pos===0;$('next').disabled=pos===entries.length-1;$('place').value=place.id;
   $('journey-note').textContent=journey==='all'?data.chronology:j.scope+' '+j.note+' Narrative stages, not calendar dates.';
   const focusedVisit=document.activeElement?.dataset.paulVisit;
-  $('visits').replaceChildren();const visits=data.events.filter(e=>e.place===place.id);$('visit-count').textContent=`${visits.length} ${visits.length===1?'entry':'entries'} across the three journeys`;
+  $('visits').replaceChildren();const visits=data.events.filter(e=>e.place===place.id);$('visit-count').textContent=`${visits.length} ${visits.length===1?'entry':'entries'} across the journey collection`;
   for(const visit of visits){const b=button(journeys.get(visit.journey).title+' | '+visit.title,()=>{pause();journey=visit.journey;refreshSelectors();select(visit);},'jesus-visit');b.dataset.paulVisit=visit.id;if(visit.id===event.id)b.setAttribute('aria-current','step');$('visits').append(b);}
   if(focusedVisit)$('visits').querySelector(`[data-paul-visit="${focusedVisit}"]`)?.focus({preventScroll:true});
  }
@@ -129,7 +129,7 @@ export function createPaulMap(root,handlers={}){
   for(const issue of data.issues){const item=element('article','jesus-audit-issue');item.append(element('h3','',issue.title),element('p','',issue.description),...issue.passages.map(passageActions));for(const source of issue.sourceLinks||[]){const a=element('a','',source.title);a.href=source.url;a.target='_blank';a.rel='noopener noreferrer';item.append(a,element('p','',source.scope));}$('issues').append(item);}
  }
  function bind(){
-  $('journey').replaceChildren();for(const j of [...data.journeys,{id:'all',title:'All three journeys'}]){const o=element('option','',j.title);o.value=j.id;$('journey').append(o);}
+  $('journey').replaceChildren();for(const j of [...data.journeys,{id:'all',title:'All journeys and voyage'}]){const o=element('option','',j.title);o.value=j.id;$('journey').append(o);}
   $('journey').addEventListener('change',()=>{pause();journey=$('journey').value;refreshSelectors();fitJourney();select(items()[0]);});
   $('place').addEventListener('change',()=>{pause();select(items().find(e=>e.place===$('place').value));});
   $('timeline').addEventListener('input',()=>{pause();select(items()[Number($('timeline').value)]);});

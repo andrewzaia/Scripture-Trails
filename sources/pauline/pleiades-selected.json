@@ -3540,6 +3540,947 @@
       ],
       "originalSha256": "c8c660402b331d4032a755e127df96c8e1028d07dcbe2270ac25538d8148b702",
       "snapshotUrl": "https://github.com/isawnyu/pleiades.datasets/blob/e180a8d108032f461200c7c1899a84340a7b492b/data/json/6/4/8/6/648621.json"
+    },
+    "sidon": {
+      "id": "678393",
+      "uri": "https://pleiades.stoa.org/places/678393",
+      "title": "Sidon/Col. Aurelia Pia",
+      "reprPoint": [
+        35.3727895,
+        33.561947249999996
+      ],
+      "bbox": [
+        35.3697,
+        33.560243,
+        35.375272,
+        33.564733
+      ],
+      "creators": [
+        {
+          "name": "E.M. Meyers",
+          "username": null
+        },
+        {
+          "name": "J.P. Brown",
+          "username": null
+        }
+      ],
+      "contributors": [
+        {
+          "homepage": null,
+          "name": "Brady Kiesling",
+          "uri": "https://pleiades.stoa.org/author/bkiesling",
+          "username": "bkiesling"
+        },
+        {
+          "homepage": null,
+          "name": "Sean Gillies",
+          "uri": "https://pleiades.stoa.org/author/sgillies",
+          "username": "sgillies"
+        },
+        {
+          "homepage": null,
+          "name": "Jeffrey Becker",
+          "uri": "https://pleiades.stoa.org/author/jbecker",
+          "username": "jbecker"
+        },
+        {
+          "homepage": null,
+          "name": "Jamie Novotny",
+          "uri": "https://pleiades.stoa.org/author/jnovotny",
+          "username": "jnovotny"
+        },
+        {
+          "name": "H. Kopp",
+          "username": null
+        },
+        {
+          "name": "W. Röllig",
+          "username": null
+        },
+        {
+          "name": "B. Siewert-Mayer",
+          "username": null
+        },
+        {
+          "homepage": null,
+          "name": "Rune Rattenborg",
+          "uri": "https://pleiades.stoa.org/author/rrattenborg",
+          "username": "rrattenborg"
+        },
+        {
+          "name": "R. Talbert",
+          "username": null
+        },
+        {
+          "homepage": null,
+          "name": "Johan Åhlfeldt",
+          "uri": "https://pleiades.stoa.org/author/jahlfeldt",
+          "username": "jahlfeldt"
+        },
+        {
+          "homepage": null,
+          "name": "Enes Yılandiloğlu",
+          "uri": "https://pleiades.stoa.org/author/enesy",
+          "username": "enesy"
+        },
+        {
+          "homepage": null,
+          "name": "Carolin Johansson",
+          "uri": "https://pleiades.stoa.org/author/cjohansson",
+          "username": "cjohansson"
+        },
+        {
+          "homepage": null,
+          "name": "Tom Elliott",
+          "uri": "https://pleiades.stoa.org/author/thomase",
+          "username": "thomase"
+        },
+        {
+          "name": "DARMC",
+          "username": null
+        },
+        {
+          "homepage": null,
+          "name": "R. Scott Smith",
+          "uri": "https://pleiades.stoa.org/author/rssmith",
+          "username": "rssmith"
+        },
+        {
+          "homepage": null,
+          "name": "Greta Hawes",
+          "uri": "https://pleiades.stoa.org/author/ghawes",
+          "username": "ghawes"
+        },
+        {
+          "homepage": null,
+          "name": "Francis Deblauwe",
+          "uri": "https://pleiades.stoa.org/author/fdeblauwe",
+          "username": "fdeblauwe"
+        },
+        {
+          "homepage": null,
+          "name": "Eric Kansa",
+          "uri": "https://pleiades.stoa.org/author/ekansa",
+          "username": "ekansa"
+        }
+      ],
+      "rights": "Copyright © The Creators. Sharing and remixing permitted under terms of the Creative Commons Attribution 3.0 License (cc-by).",
+      "provenance": "Barrington Atlas: BAtlas 69 B2 Sidon/Col. Aurelia Pia",
+      "locations": [
+        {
+          "title": "DARMC location 14738",
+          "precision": "precise"
+        },
+        {
+          "title": "DARE Location",
+          "precision": "precise"
+        },
+        {
+          "title": "OSM location of صيدا",
+          "precision": "precise"
+        },
+        {
+          "title": "CIGS location of Ṣaiydā",
+          "precision": "precise"
+        }
+      ],
+      "originalSha256": "fa0df143c7b98e8c1456d0ff782f84ce861b56f220ac75ad6ff7538080eb7979",
+      "snapshotUrl": "https://github.com/isawnyu/pleiades.datasets/blob/e180a8d108032f461200c7c1899a84340a7b492b/data/json/6/7/8/3/678393.json"
+    },
+    "myra": {
+      "id": "639005",
+      "uri": "https://pleiades.stoa.org/places/639005",
+      "title": "Myra",
+      "reprPoint": [
+        29.985450200905625,
+        36.25855892173753
+      ],
+      "bbox": [
+        29.9842083,
+        36.2577955,
+        29.9862648,
+        36.2596986
+      ],
+      "creators": [
+        {
+          "name": "C. Foss",
+          "username": null
+        },
+        {
+          "name": "S. Mitchell",
+          "username": null
+        }
+      ],
+      "contributors": [
+        {
+          "homepage": null,
+          "name": "Brady Kiesling",
+          "uri": "https://pleiades.stoa.org/author/bkiesling",
+          "username": "bkiesling"
+        },
+        {
+          "homepage": null,
+          "name": "Sean Gillies",
+          "uri": "https://pleiades.stoa.org/author/sgillies",
+          "username": "sgillies"
+        },
+        {
+          "homepage": null,
+          "name": "Johan Åhlfeldt",
+          "uri": "https://pleiades.stoa.org/author/jahlfeldt",
+          "username": "jahlfeldt"
+        },
+        {
+          "homepage": null,
+          "name": "Adam Prins",
+          "uri": "https://pleiades.stoa.org/author/adamp",
+          "username": "adamp"
+        },
+        {
+          "name": "Jen Thum",
+          "username": null
+        },
+        {
+          "homepage": null,
+          "name": "Jeffrey Becker",
+          "uri": "https://pleiades.stoa.org/author/jbecker",
+          "username": "jbecker"
+        },
+        {
+          "homepage": null,
+          "name": "Tom Elliott",
+          "uri": "https://pleiades.stoa.org/author/thomase",
+          "username": "thomase"
+        },
+        {
+          "name": "DARMC",
+          "username": null
+        },
+        {
+          "name": "Herbert Verreth",
+          "username": null
+        },
+        {
+          "name": "R. Talbert",
+          "username": null
+        },
+        {
+          "name": "Mark Depauw",
+          "username": null
+        },
+        {
+          "homepage": null,
+          "name": "Phoebe Acheson",
+          "uri": "https://pleiades.stoa.org/author/pacheson",
+          "username": "pacheson"
+        }
+      ],
+      "rights": "Copyright © The Contributors. Sharing and remixing permitted under terms of the Creative Commons Attribution 3.0 License (cc-by).",
+      "provenance": "Barrington Atlas: BAtlas 65 C5 Myra",
+      "locations": [
+        {
+          "title": "DARE Location",
+          "precision": "precise"
+        },
+        {
+          "title": "OSM location of Myra",
+          "precision": "precise"
+        }
+      ],
+      "originalSha256": "b1701851338d39ffbc30db29e030ce51b7e189b3629af36bb20f5b0cefa10373",
+      "snapshotUrl": "https://github.com/isawnyu/pleiades.datasets/blob/e180a8d108032f461200c7c1899a84340a7b492b/data/json/6/3/9/0/639005.json"
+    },
+    "fair-havens": {
+      "id": "589834",
+      "uri": "https://pleiades.stoa.org/places/589834",
+      "title": "Kaloi Limenes",
+      "reprPoint": [
+        24.81228,
+        34.93182
+      ],
+      "bbox": [
+        24.81228,
+        34.93182,
+        24.81228,
+        34.93182
+      ],
+      "creators": [
+        {
+          "name": "J. Bennet",
+          "username": null
+        },
+        {
+          "name": "G. Reger",
+          "username": null
+        }
+      ],
+      "contributors": [
+        {
+          "homepage": null,
+          "name": "Catherine Bouras",
+          "uri": "https://pleiades.stoa.org/author/cbouras",
+          "username": "cbouras"
+        },
+        {
+          "name": "R. Talbert",
+          "username": null
+        },
+        {
+          "homepage": null,
+          "name": "Brady Kiesling",
+          "uri": "https://pleiades.stoa.org/author/bkiesling",
+          "username": "bkiesling"
+        },
+        {
+          "homepage": null,
+          "name": "Sean Gillies",
+          "uri": "https://pleiades.stoa.org/author/sgillies",
+          "username": "sgillies"
+        },
+        {
+          "homepage": null,
+          "name": "Jeffrey Becker",
+          "uri": "https://pleiades.stoa.org/author/jbecker",
+          "username": "jbecker"
+        },
+        {
+          "homepage": null,
+          "name": "Tom Elliott",
+          "uri": "https://pleiades.stoa.org/author/thomase",
+          "username": "thomase"
+        }
+      ],
+      "rights": "Copyright © The Contributors. Sharing and remixing permitted under terms of the Creative Commons Attribution 3.0 License (cc-by).",
+      "provenance": "Barrington Atlas: BAtlas 60 C3 Kaloi Limenes",
+      "locations": [
+        {
+          "title": "GeoNames location of  Órmos Kaloí Limniónes",
+          "precision": "precise"
+        }
+      ],
+      "originalSha256": "03da0c508d28259d2f8ef6e0e67d26a9b0a8ea95945e8e8d15285f891468b8d7",
+      "snapshotUrl": "https://github.com/isawnyu/pleiades.datasets/blob/e180a8d108032f461200c7c1899a84340a7b492b/data/json/5/8/9/8/589834.json"
+    },
+    "malta": {
+      "id": "462311",
+      "uri": "https://pleiades.stoa.org/places/462311",
+      "title": "Melita/Malta (island)",
+      "reprPoint": [
+        14.438447430543812,
+        35.887811223140325
+      ],
+      "bbox": [
+        14.283799,
+        35.8263011,
+        14.557183,
+        36.0627831
+      ],
+      "creators": [
+        {
+          "name": "R.J.A. Wilson",
+          "username": null
+        }
+      ],
+      "contributors": [
+        {
+          "homepage": null,
+          "name": "Jeffrey Becker",
+          "uri": "https://pleiades.stoa.org/author/jbecker",
+          "username": "jbecker"
+        },
+        {
+          "homepage": null,
+          "name": "Tom Elliott",
+          "uri": "https://pleiades.stoa.org/author/thomase",
+          "username": "thomase"
+        },
+        {
+          "homepage": null,
+          "name": "Sean Gillies",
+          "uri": "https://pleiades.stoa.org/author/sgillies",
+          "username": "sgillies"
+        },
+        {
+          "homepage": null,
+          "name": "Brady Kiesling",
+          "uri": "https://pleiades.stoa.org/author/bkiesling",
+          "username": "bkiesling"
+        },
+        {
+          "homepage": null,
+          "name": "Jonathan Prag",
+          "uri": "https://pleiades.stoa.org/author/jprag",
+          "username": "jprag"
+        },
+        {
+          "name": "R. Talbert",
+          "username": null
+        },
+        {
+          "homepage": null,
+          "name": "Valeria Vitale",
+          "uri": "https://pleiades.stoa.org/author/vvitale",
+          "username": "vvitale"
+        },
+        {
+          "homepage": null,
+          "name": "Enes Yılandiloğlu",
+          "uri": "https://pleiades.stoa.org/author/enesy",
+          "username": "enesy"
+        }
+      ],
+      "rights": "Copyright © The Contributors. Sharing and remixing permitted under terms of the Creative Commons Attribution 3.0 License (cc-by).",
+      "provenance": "Barrington Atlas: BAtlas 47 inset Melita/Malta Ins.",
+      "locations": [],
+      "originalSha256": "49758d34c3166c3f7a2e262635930145b5984dd914b0653eeb307e7dc3d6561b",
+      "snapshotUrl": "https://github.com/isawnyu/pleiades.datasets/blob/e180a8d108032f461200c7c1899a84340a7b492b/data/json/4/6/2/3/462311.json"
+    },
+    "syracuse": {
+      "id": "462503",
+      "uri": "https://pleiades.stoa.org/places/462503",
+      "title": "Syracusae/Syrakousai",
+      "reprPoint": [
+        15.283335658142617,
+        37.070078971013665
+      ],
+      "bbox": [
+        13.8190089,
+        36.8672637,
+        22.881385,
+        37.9724362
+      ],
+      "creators": [
+        {
+          "name": "R.J.A. Wilson",
+          "username": null
+        }
+      ],
+      "contributors": [
+        {
+          "homepage": null,
+          "name": "Brady Kiesling",
+          "uri": "https://pleiades.stoa.org/author/bkiesling",
+          "username": "bkiesling"
+        },
+        {
+          "homepage": null,
+          "name": "Sean Gillies",
+          "uri": "https://pleiades.stoa.org/author/sgillies",
+          "username": "sgillies"
+        },
+        {
+          "name": "Rajas Pradhan",
+          "username": null
+        },
+        {
+          "homepage": null,
+          "name": "Jeffrey Becker",
+          "uri": "https://pleiades.stoa.org/author/jbecker",
+          "username": "jbecker"
+        },
+        {
+          "name": "Faith Lubeck",
+          "username": null
+        },
+        {
+          "homepage": null,
+          "name": "Kali Kocian",
+          "uri": "https://pleiades.stoa.org/author/kkocian",
+          "username": "kkocian"
+        },
+        {
+          "homepage": null,
+          "name": "Jonathan Prag",
+          "uri": "https://pleiades.stoa.org/author/jprag",
+          "username": "jprag"
+        },
+        {
+          "name": "Jeffrey Mayfield",
+          "username": null
+        },
+        {
+          "homepage": null,
+          "name": "David Mimno",
+          "uri": "https://pleiades.stoa.org/author/mimno",
+          "username": "mimno"
+        },
+        {
+          "name": "R. Talbert",
+          "username": null
+        },
+        {
+          "homepage": null,
+          "name": "Valeria Vitale",
+          "uri": "https://pleiades.stoa.org/author/vvitale",
+          "username": "vvitale"
+        },
+        {
+          "homepage": null,
+          "name": "Adam Rabinowitz",
+          "uri": "https://pleiades.stoa.org/author/arabinowitz",
+          "username": "arabinowitz"
+        },
+        {
+          "homepage": null,
+          "name": "Tom Elliott",
+          "uri": "https://pleiades.stoa.org/author/thomase",
+          "username": "thomase"
+        },
+        {
+          "name": "DARMC",
+          "username": null
+        },
+        {
+          "homepage": null,
+          "name": "R. Scott Smith",
+          "uri": "https://pleiades.stoa.org/author/rssmith",
+          "username": "rssmith"
+        },
+        {
+          "homepage": null,
+          "name": "Greta Hawes",
+          "uri": "https://pleiades.stoa.org/author/ghawes",
+          "username": "ghawes"
+        }
+      ],
+      "rights": "Copyright © The Contributors. Sharing and remixing permitted under terms of the Creative Commons Attribution 3.0 License (cc-by).",
+      "provenance": "Barrington Atlas: BAtlas 47 G4 Syracusae",
+      "locations": [],
+      "originalSha256": "58676e46831768d80d46685d173f297122b12452e649c8232fba8a44ee3e85f3",
+      "snapshotUrl": "https://github.com/isawnyu/pleiades.datasets/blob/e180a8d108032f461200c7c1899a84340a7b492b/data/json/4/6/2/5/462503.json"
+    },
+    "rhegium": {
+      "id": "452416",
+      "uri": "https://pleiades.stoa.org/places/452416",
+      "title": "Rhegion/Regium",
+      "reprPoint": [
+        15.64393,
+        38.109279
+      ],
+      "bbox": [
+        15.64393,
+        38.109279,
+        15.64393,
+        38.109279
+      ],
+      "creators": [
+        {
+          "name": "I.E.M. Edlund Berry",
+          "username": null
+        },
+        {
+          "name": "A.M. Small",
+          "username": null
+        }
+      ],
+      "contributors": [
+        {
+          "homepage": null,
+          "name": "Brady Kiesling",
+          "uri": "https://pleiades.stoa.org/author/bkiesling",
+          "username": "bkiesling"
+        },
+        {
+          "homepage": null,
+          "name": "Sean Gillies",
+          "uri": "https://pleiades.stoa.org/author/sgillies",
+          "username": "sgillies"
+        },
+        {
+          "homepage": null,
+          "name": "Jeffrey Becker",
+          "uri": "https://pleiades.stoa.org/author/jbecker",
+          "username": "jbecker"
+        },
+        {
+          "homepage": null,
+          "name": "Tom Elliott",
+          "uri": "https://pleiades.stoa.org/author/thomase",
+          "username": "thomase"
+        },
+        {
+          "name": "DARMC",
+          "username": null
+        },
+        {
+          "name": "R. Talbert",
+          "username": null
+        },
+        {
+          "homepage": null,
+          "name": "R. Scott Smith",
+          "uri": "https://pleiades.stoa.org/author/rssmith",
+          "username": "rssmith"
+        },
+        {
+          "homepage": null,
+          "name": "Greta Hawes",
+          "uri": "https://pleiades.stoa.org/author/ghawes",
+          "username": "ghawes"
+        },
+        {
+          "homepage": null,
+          "name": "Ryan Horne",
+          "uri": "https://pleiades.stoa.org/author/rmhorne",
+          "username": "rmhorne"
+        }
+      ],
+      "rights": "Copyright © The Contributors. Sharing and remixing permitted under terms of the Creative Commons Attribution 3.0 License (cc-by).",
+      "provenance": "Barrington Atlas: BAtlas 46 C5 Rhegion/Regium",
+      "locations": [
+        {
+          "title": "DARMC location 7120",
+          "precision": "precise"
+        }
+      ],
+      "originalSha256": "bec8311757baddd4c1356eceab7526a8929005b92d14c660254cadcb786d9d19",
+      "snapshotUrl": "https://github.com/isawnyu/pleiades.datasets/blob/e180a8d108032f461200c7c1899a84340a7b492b/data/json/4/5/2/4/452416.json"
+    },
+    "puteoli": {
+      "id": "432815",
+      "uri": "https://pleiades.stoa.org/places/432815",
+      "title": "Dikaiarcheia/Puteoli",
+      "reprPoint": [
+        14.121741499999999,
+        40.825838
+      ],
+      "bbox": [
+        14.121614,
+        40.823719,
+        14.121869,
+        40.827957
+      ],
+      "creators": [
+        {
+          "name": "N. Purcell",
+          "username": null
+        }
+      ],
+      "contributors": [
+        {
+          "homepage": null,
+          "name": "Brady Kiesling",
+          "uri": "https://pleiades.stoa.org/author/bkiesling",
+          "username": "bkiesling"
+        },
+        {
+          "homepage": null,
+          "name": "Sean Gillies",
+          "uri": "https://pleiades.stoa.org/author/sgillies",
+          "username": "sgillies"
+        },
+        {
+          "homepage": null,
+          "name": "Johan Åhlfeldt",
+          "uri": "https://pleiades.stoa.org/author/jahlfeldt",
+          "username": "jahlfeldt"
+        },
+        {
+          "homepage": null,
+          "name": "Jeffrey Becker",
+          "uri": "https://pleiades.stoa.org/author/jbecker",
+          "username": "jbecker"
+        },
+        {
+          "homepage": null,
+          "name": "Tom Elliott",
+          "uri": "https://pleiades.stoa.org/author/thomase",
+          "username": "thomase"
+        },
+        {
+          "name": "DARMC",
+          "username": null
+        },
+        {
+          "name": "R. Talbert",
+          "username": null
+        },
+        {
+          "homepage": null,
+          "name": "R. Scott Smith",
+          "uri": "https://pleiades.stoa.org/author/rssmith",
+          "username": "rssmith"
+        },
+        {
+          "homepage": null,
+          "name": "Greta Hawes",
+          "uri": "https://pleiades.stoa.org/author/ghawes",
+          "username": "ghawes"
+        },
+        {
+          "homepage": null,
+          "name": "Ryan Horne",
+          "uri": "https://pleiades.stoa.org/author/rmhorne",
+          "username": "rmhorne"
+        }
+      ],
+      "rights": "Copyright © The Contributors. Sharing and remixing permitted under terms of the Creative Commons Attribution 3.0 License (cc-by).",
+      "provenance": "Barrington Atlas: BAtlas 44 F4 Dikaiarcheia/Puteoli",
+      "locations": [
+        {
+          "title": "DARMC location 18402",
+          "precision": "precise"
+        },
+        {
+          "title": "DARE Location",
+          "precision": "precise"
+        }
+      ],
+      "originalSha256": "5fa63c30073ff884533350776fe9e7af32007c302e17ece72d9f99f080fd7835",
+      "snapshotUrl": "https://github.com/isawnyu/pleiades.datasets/blob/e180a8d108032f461200c7c1899a84340a7b492b/data/json/4/3/2/8/432815.json"
+    },
+    "appius": {
+      "id": "422927",
+      "uri": "https://pleiades.stoa.org/places/422927",
+      "title": "Forum Appii ",
+      "reprPoint": [
+        12.9975,
+        41.46639
+      ],
+      "bbox": [
+        12.9975,
+        41.46639,
+        12.9975,
+        41.46639
+      ],
+      "creators": [
+        {
+          "name": "L. Quilici",
+          "username": null
+        },
+        {
+          "name": "S. Quilici Gigli",
+          "username": null
+        }
+      ],
+      "contributors": [
+        {
+          "name": "DARMC",
+          "username": null
+        },
+        {
+          "name": "R. Talbert",
+          "username": null
+        },
+        {
+          "homepage": null,
+          "name": "Brady Kiesling",
+          "uri": "https://pleiades.stoa.org/author/bkiesling",
+          "username": "bkiesling"
+        },
+        {
+          "homepage": null,
+          "name": "Sean Gillies",
+          "uri": "https://pleiades.stoa.org/author/sgillies",
+          "username": "sgillies"
+        },
+        {
+          "homepage": null,
+          "name": "Johan Åhlfeldt",
+          "uri": "https://pleiades.stoa.org/author/jahlfeldt",
+          "username": "jahlfeldt"
+        },
+        {
+          "homepage": null,
+          "name": "Jeffrey Becker",
+          "uri": "https://pleiades.stoa.org/author/jbecker",
+          "username": "jbecker"
+        },
+        {
+          "homepage": null,
+          "name": "Tom Elliott",
+          "uri": "https://pleiades.stoa.org/author/thomase",
+          "username": "thomase"
+        }
+      ],
+      "rights": "Copyright © The Contributors. Sharing and remixing permitted under terms of the Creative Commons Attribution 3.0 License (cc-by).",
+      "provenance": "Barrington Atlas: BAtlas 43 E4 Forum Appii",
+      "locations": [
+        {
+          "title": "DARE Location",
+          "precision": "precise"
+        }
+      ],
+      "originalSha256": "3f056af270ef7130b04c384951ecf7abb04b0d0194ad358c194fb1fed9efc617",
+      "snapshotUrl": "https://github.com/isawnyu/pleiades.datasets/blob/e180a8d108032f461200c7c1899a84340a7b492b/data/json/4/2/2/9/422927.json"
+    },
+    "three-taverns": {
+      "id": "423106",
+      "uri": "https://pleiades.stoa.org/places/423106",
+      "title": "Tres Tabernae",
+      "reprPoint": [
+        12.874282278683129,
+        41.56167513388507
+      ],
+      "bbox": [
+        12.872907,
+        41.5606427,
+        12.8756576,
+        41.5627075
+      ],
+      "creators": [
+        {
+          "name": "L. Quilici",
+          "username": null
+        },
+        {
+          "name": "S. Quilici Gigli",
+          "username": null
+        }
+      ],
+      "contributors": [
+        {
+          "name": "R. Talbert",
+          "username": null
+        },
+        {
+          "homepage": null,
+          "name": "Brady Kiesling",
+          "uri": "https://pleiades.stoa.org/author/bkiesling",
+          "username": "bkiesling"
+        },
+        {
+          "homepage": null,
+          "name": "Sean Gillies",
+          "uri": "https://pleiades.stoa.org/author/sgillies",
+          "username": "sgillies"
+        },
+        {
+          "homepage": null,
+          "name": "Johan Åhlfeldt",
+          "uri": "https://pleiades.stoa.org/author/jahlfeldt",
+          "username": "jahlfeldt"
+        },
+        {
+          "homepage": null,
+          "name": "Jeffrey Becker",
+          "uri": "https://pleiades.stoa.org/author/jbecker",
+          "username": "jbecker"
+        },
+        {
+          "homepage": null,
+          "name": "Tom Elliott",
+          "uri": "https://pleiades.stoa.org/author/thomase",
+          "username": "thomase"
+        }
+      ],
+      "rights": "Copyright © The Contributors. Sharing and remixing permitted under terms of the Creative Commons Attribution 3.0 License (cc-by).",
+      "provenance": "Barrington Atlas: BAtlas 43 D3 Tres Tabernae",
+      "locations": [
+        {
+          "title": "OSM location of Tres Tabernae",
+          "precision": "precise"
+        }
+      ],
+      "originalSha256": "e7fc4ca05d5c644094130f5ce928bce697f0c9bd3a50b1a836ff5df499aecad5",
+      "snapshotUrl": "https://github.com/isawnyu/pleiades.datasets/blob/e180a8d108032f461200c7c1899a84340a7b492b/data/json/4/2/3/1/423106.json"
+    },
+    "rome": {
+      "id": "423025",
+      "uri": "https://pleiades.stoa.org/places/423025",
+      "title": "Roma",
+      "reprPoint": [
+        12.491258174554883,
+        41.8899769864849
+      ],
+      "bbox": [
+        11.8932823,
+        40.2859079,
+        15.3155234,
+        43.7892424
+      ],
+      "creators": [
+        {
+          "name": "L. Quilici",
+          "username": null
+        },
+        {
+          "name": "S. Quilici Gigli",
+          "username": null
+        }
+      ],
+      "contributors": [
+        {
+          "homepage": null,
+          "name": "Brady Kiesling",
+          "uri": "https://pleiades.stoa.org/author/bkiesling",
+          "username": "bkiesling"
+        },
+        {
+          "homepage": null,
+          "name": "Sean Gillies",
+          "uri": "https://pleiades.stoa.org/author/sgillies",
+          "username": "sgillies"
+        },
+        {
+          "homepage": null,
+          "name": "Rosemary Selth",
+          "uri": "https://pleiades.stoa.org/author/rselth",
+          "username": "rselth"
+        },
+        {
+          "homepage": null,
+          "name": "Jeffrey Becker",
+          "uri": "https://pleiades.stoa.org/author/jbecker",
+          "username": "jbecker"
+        },
+        {
+          "homepage": null,
+          "name": "Tom Elliott",
+          "uri": "https://pleiades.stoa.org/author/thomase",
+          "username": "thomase"
+        },
+        {
+          "name": "DARMC",
+          "username": null
+        },
+        {
+          "name": "R. Talbert",
+          "username": null
+        },
+        {
+          "homepage": null,
+          "name": "Sebastian Heath",
+          "uri": "https://pleiades.stoa.org/author/sebs",
+          "username": "sebs"
+        },
+        {
+          "homepage": null,
+          "name": "Joe User",
+          "uri": "https://pleiades.stoa.org/author/juser",
+          "username": "juser"
+        },
+        {
+          "homepage": null,
+          "name": "Maxime Guénette",
+          "uri": "https://pleiades.stoa.org/author/maximeg",
+          "username": "maximeg"
+        },
+        {
+          "homepage": null,
+          "name": "R. Scott Smith",
+          "uri": "https://pleiades.stoa.org/author/rssmith",
+          "username": "rssmith"
+        },
+        {
+          "homepage": null,
+          "name": "Greta Hawes",
+          "uri": "https://pleiades.stoa.org/author/ghawes",
+          "username": "ghawes"
+        },
+        {
+          "homepage": null,
+          "name": "Enes Yılandiloğlu",
+          "uri": "https://pleiades.stoa.org/author/enesy",
+          "username": "enesy"
+        }
+      ],
+      "rights": "Copyright © The Contributors. Sharing and remixing permitted under terms of the Creative Commons Attribution 3.0 License (cc-by).",
+      "provenance": "Barrington Atlas: BAtlas 43 B2 Roma",
+      "locations": [],
+      "originalSha256": "09a9bdb6309bfafe57b19fb3e2c4b402d0f77c7eefaf57c8539f2ca815d81fa5",
+      "snapshotUrl": "https://github.com/isawnyu/pleiades.datasets/blob/e180a8d108032f461200c7c1899a84340a7b492b/data/json/4/2/3/0/423025.json"
     }
   }
 }
