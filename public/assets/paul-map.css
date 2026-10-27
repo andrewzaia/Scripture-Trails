@@ -1,0 +1,25 @@
+/* Match the established journey interface while keeping the wider map readable. */
+.paul-map-page .paul-map-svg{height:610px;max-height:75vh}
+.paul-map-page .jesus-geo-label{font-size:12px;letter-spacing:1.2px;fill:#436c76}
+.paul-map-page .jesus-map-side{max-height:810px}
+.paul-map-page .paul-route-toggle{flex:0 1 200px;flex-direction:row;align-items:center;gap:9px;min-height:38px}
+.paul-route-toggle input{width:18px;height:18px;accent-color:var(--gold)}
+.paul-map-status{padding:12px 17px;margin:0;border-top:1px solid var(--line);font-size:11px;line-height:1.65;color:var(--muted)}
+.paul-stage-list{display:grid;gap:6px;max-height:380px;overflow-y:auto;padding:3px}
+.paul-stage{background:var(--surface2);border:1px solid var(--line);border-radius:4px;text-align:left;color:var(--ink);padding:12px;font:inherit;font-size:12px;cursor:pointer}
+.paul-stage small{display:block;margin-top:5px;font-size:10px;color:var(--muted);line-height:1.5}
+.paul-stage:hover,.paul-stage[aria-current=step]{border-color:var(--gold)}
+.paul-stage[aria-current=step]{border-left-width:4px}
+.paul-map-page button:focus-visible,.paul-map-page a:focus-visible,.paul-map-page input:focus-visible,.paul-map-page select:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.paul-stage-list-panel{margin-top:17px;padding:20px 23px}
+.paul-stage-list-panel h2{font:400 26px/1.2 var(--serif);margin:0 0 10px}
+.paul-stage-list-panel p,.paul-sources p{font-size:12px;line-height:1.7;color:var(--muted)}
+.paul-map-page [data-paul=source] a,.paul-sources a{color:var(--gold);font-size:12px;overflow-wrap:anywhere}
+.paul-map-page .paul-index-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:15px}
+.paul-map-page .jesus-audit-issue h3{font-size:13px;margin:2px 0 8px;color:var(--ink)}
+.paul-map-page h3.jesus-map-subheading{font-size:10px;margin:22px 0 9px;line-height:1.5}
+.paul-map-page .jesus-passage-row{flex-wrap:wrap}
+.paul-map-page .jesus-passage-row span{flex-basis:110px}
+.paul-sources{margin-top:15px;padding-top:10px;border-top:1px solid var(--line)}
+@media(max-width:900px){.paul-map-page .paul-map-svg{height:500px}.paul-map-page .jesus-map-side{max-height:none;grid-row:3}.paul-map-page .jesus-map-grid{grid-template-columns:minmax(0,1fr)}.paul-map-page .jesus-map-grid>div{display:contents}.paul-map-page .paul-stage-list-panel{grid-row:4}}
+@media(max-width:600px){.paul-map-page .paul-map-svg{height:400px}.paul-stage-list-panel{padding:18px}.paul-map-page .paul-route-toggle{flex-basis:100%}}

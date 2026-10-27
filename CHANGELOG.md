@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.11.0 - 28/10/2026: Paul's missionary journeys
+
+- Explore three missionary journeys in Acts through 61 passage-linked narrative stages, with 33 approximate location markers.
+- Use journey filters, a timeline, repeat visits and an accessible stage list, with links to the Bible reader, Atlas and People Index.
+- See source-linked geography and clear notes for regional, unnamed, offshore and disputed settings without invented routes or dates.
+- Updated the roadmap with the completed missionary journeys and Paul's voyage to Rome as the next geography milestone.
+
+- Retain credited, pinned Pleiades source metadata and public-domain Natural Earth coastal orientation locally.
+- Validate canonical Acts citations, marker/source alignment, repeat visits and connector gaps with eight new data tests.
+- Extend release cache-key checks to the Pauline map and refreshed roadmap.
+- Verification: 132 Node tests passed; desktop and mobile browser checks covered filtering, deep links, keyboard focus, playback, map controls and reader/Atlas/index navigation.
+
 ## 0.10.0 - 28/10/2026: Atlas passage preview
 
 - Preview linked verses below the graph without changing its centre.

@@ -20,6 +20,8 @@ nextApp=versionedImport(nextApp,'graph.js?v='+oldVersion,'graph.js?v='+newVersio
 const nextGraph=versionedImport(read(graphPath),'atlas-shortest-path.js?v='+oldVersion,'atlas-shortest-path.js?v='+newVersion,'Atlas shortest path module');
 nextApp=versionedImport(nextApp,'connection-evidence.js?v='+oldVersion,'connection-evidence.js?v='+newVersion,'Atlas evidence module');
 nextApp=versionedImport(nextApp,'atlas-comparison.js?v='+oldVersion,'atlas-comparison.js?v='+newVersion,'licensed side-by-side comparison');
+nextApp=versionedImport(nextApp,'paul-map.js?v='+oldVersion,'paul-map.js?v='+newVersion,'Pauline journeys');
+nextApp=versionedImport(nextApp,'roadmap.js?v='+oldVersion,'roadmap.js?v='+newVersion,'roadmap');
 const prevIndex=read(indexPath);
 let nextIndex=versionedImport(prevIndex,'entity-index-data.js?v='+oldVersion,'entity-index-data.js?v='+newVersion,'index data module');
 nextIndex=versionedImport(nextIndex,"ENTITY_INDEX_DATA_VERSION='"+oldVersion+"'","ENTITY_INDEX_DATA_VERSION='"+newVersion+"'",'index JSON files');
@@ -29,7 +31,8 @@ const nextEvidence=versionedImport(read(evidencePath),'connection-evidence-expan
 const newHtml=html.replace(oldLabel,oldLabel.replace(oldVersion,newVersion))
  .replace('/assets/app.js?v='+oldVersion,'/assets/app.js?v='+newVersion)
  .replace('/assets/style.css?v='+oldVersion,'/assets/style.css?v='+newVersion)
- .replace('/assets/entity-index.css?v='+oldVersion,'/assets/entity-index.css?v='+newVersion);
+ .replace('/assets/entity-index.css?v='+oldVersion,'/assets/entity-index.css?v='+newVersion)
+ .replace('/assets/paul-map.css?v='+oldVersion,'/assets/paul-map.css?v='+newVersion);
 pkg.version=newVersion;
 history.releases.unshift({version:newVersion,date,title:title.trim(),changes:changes.map(x=>x.trim())});
 validateReleases(history.releases,newVersion);

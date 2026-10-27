@@ -1,11 +1,11 @@
 {
   "project": "Scripture Trails",
-  "updated": "2026-10-27",
+  "updated": "2026-10-28",
   "description": "A transparent, evidence-aware roadmap. Delivered means implementation exists, not that every scholarly question is settled. The accuracy audit is an initial, publicly documented editorial screening, not external specialist certification.",
   "currentFocus": [
-    "Human editorial review and deeper context analysis for newly added Atlas reading aids",
-    "Expand person-centred study trails beyond eight initial profiles",
-    "Next biblical geography library: Pauline journeys and Hebrew Bible locations"
+    "Review the Pauline journey location and textual questions against specialist research",
+    "Next geography milestone: Paul's voyage to Rome in Acts 27-28",
+    "Expand person-centred trails and Hebrew Bible geography while preserving evidence distinctions"
   ],
   "phases": [
     {
@@ -254,7 +254,7 @@
       "phase": "platform",
       "status": "planned",
       "title": "Wider biblical geography library",
-      "summary": "After the Jesus itinerary, consider maps for Paul's journeys, Exodus traditions and Old Testament kings and prophets.",
+      "summary": "Continue beyond the delivered Jesus itinerary and Pauline missionary journeys, with future Exodus, kings and prophets studies.",
       "capabilities": [
         "Passage-linked maps and dates with explicit ambiguity",
         "Historical geography comparison without invented borders",
@@ -320,15 +320,42 @@
     {
       "id": "biblical-geography-expansion",
       "phase": "next",
-      "status": "next",
-      "title": "Expand biblical geography beyond the Jesus journeys",
-      "summary": "Plan passage-linked Pauline journeys, Exodus traditions and Old Testament place studies with transparent chronological and location uncertainty.",
+      "status": "planned",
+      "title": "Further biblical geography and Hebrew Bible studies",
+      "summary": "Paul's three missionary journeys are delivered. Extend the library with separately sourced Exodus traditions and Old Testament place studies.",
       "capabilities": [
-        "Passage-referenced stops and repeated visits",
-        "Accessible lists and date/route uncertainty labels",
-        "Local, sourced research datasets rather than inferred travel paths"
+        "Passage-referenced places and repeated visits",
+        "Accessible lists with explicit date and location uncertainty",
+        "Separate source and chronological audit for each future geography collection"
       ],
       "verification": "Do not invent archaeological coordinates, journey routes or absolute chronology."
+    },
+    {
+      "id": "pauline-journeys",
+      "phase": "geography",
+      "status": "delivered",
+      "title": "Paul's three missionary journeys",
+      "summary": "Explore 61 passage-linked narrative stages in Acts 13-21 with 33 approximate markers, repeat visits and explicit unpinned regional, unnamed and offshore stages.",
+      "capabilities": [
+        "Three journey filters, an all-journeys view, timeline, playback, pan/zoom and a complete keyboard-accessible stage list",
+        "Reader and Atlas actions, Paul's index profile and related passage search",
+        "Pinned, locally retained Pleiades location sources and public-domain coastal orientation",
+        "Public location, narrative and textual uncertainty register without invented dates, roads or regional pins"
+      ],
+      "verification": "Canonical references, source-point alignment and narrative connector gaps are tested. The itinerary is an editorial reading aid, not externally peer-reviewed historical reconstruction. Island positions indicate island-scale orientation."
+    },
+    {
+      "id": "paul-rome",
+      "phase": "next",
+      "status": "next",
+      "title": "Paul's voyage to Rome",
+      "summary": "Extend Pauline geography to Acts 27-28, with particular care over unnamed anchorages, the storm and the shipwreck location.",
+      "capabilities": [
+        "Passage-linked sailing stages and wintering locations",
+        "Explicitly uncertain or unlocated sea positions",
+        "Separate source and textual audit before adding new markers"
+      ],
+      "verification": "Not implemented. Avoid inventing a storm track, exact shipwreck site or unsupported daily ship positions."
     }
   ]
 }
