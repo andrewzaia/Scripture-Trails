@@ -8,7 +8,7 @@ The top-right header has separate, display-only ESV, NASB20, NIV and NKJV status
 
 ## What works now
 
-- Paul's three missionary journeys: 61 Acts-linked stages, 33 approximate ancient place markers, regional/offshore gaps and an accessible timeline and list.
+- Journeys of Paul, covering three missionary journeys: 61 Acts-linked stages, 33 approximate ancient place markers, regional/offshore gaps and an accessible timeline and list.
 
 - Passage navigation across all 66 Protestant canonical Bible books, with chapter selectors and deep links such as `?view=reader&ref=John%203%3A16`.
 - Official ESV text via Crossway, plus NASB20, NIV (2011) and NKJV via API.Bible when their server-side keys are configured.
@@ -317,7 +317,7 @@ The Atlas offers an on-demand side-by-side comparison reader using the existing 
 
 The People Index now contains eight manually outlined passage trails for Abraham, Moses, David, Solomon, Hezekiah, Esther, Paul and Jesus, plus links from relevant editorial comparisons. Trails are structured reading aids, not settled reconstructions of historical chronology, and source claims await outside scholarly review. Both modules and their dependencies use the site's semantic-version cache-busting process.
 
-## Paul's missionary journeys
+## Journeys of Paul
 
 Open [the Pauline map](https://www.scripturetrails.com/?view=paul-map) for three conventional journey groupings in Acts 13-21. The page follows the existing Jesus-map interaction and theme, with journey/place filters, narrative timeline, previous/next and manual playback, keyboard and pointer pan/zoom, repeat-visit navigation, reader/Atlas actions and People Index links. Deep links retain `paul-journey` and `paul-stop`.
 
