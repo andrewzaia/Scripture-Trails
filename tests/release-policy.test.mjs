@@ -23,6 +23,8 @@ test('PR checks compare all commits with destination merge base',()=>{
  const check=readFileSync(new URL('../scripts/check-release.mjs',import.meta.url),'utf8');
  const workflow=readFileSync(new URL('../.github/workflows/ci.yml',import.meta.url),'utf8');
  assert.match(check,/GITHUB_BASE_REF/);
+ assert.match(check,/process\.env\.GITHUB_ACTIONS/);
+ assert.doesNotMatch(check,/if\(process\.env\.CI\)throw/);
  assert.match(check,/merge-base/);
  assert.match(check,/assertReleaseIncrement\(changes,previous,pkg.version\)/);
  assert.match(workflow,/fetch-depth:\s*0/);
