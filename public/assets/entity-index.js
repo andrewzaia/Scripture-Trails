@@ -67,6 +67,12 @@ export function createEntityIndex(root,handlers={}){
  function renderList(){
   const all=findEntities(catalog,query,filter,counts,period);const list=$('list');list.replaceChildren();
   $('result-count').textContent=all.length+' matching entries'+(all.length>shown?' | showing '+shown:'');
+  const otherMatches=query&&(filter!=='all'||period!=='all')
+   ?findEntities(catalog,query,'all',counts,'all').filter(x=>!all.includes(x)):null;
+  if(all.length&&otherMatches?.length){
+   list.append(make('p','entity-muted',otherMatches.length+' additional matching entr'+(otherMatches.length===1?'y is':'ies are')+' outside the current filters. Include all categories to find people, places and kingdoms.'));
+   list.append(btn('Show matching entries across all categories',()=>{filter='all';period='all';$('period').value='all';shown=32;renderTabs();renderList();},'entity-action entity-more'));
+  }
   if(!all.length){
    const matchesAll=query&&findEntities(catalog,query,'all',counts,'all');
    if(matchesAll?.length){
