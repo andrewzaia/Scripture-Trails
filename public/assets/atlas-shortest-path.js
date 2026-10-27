@@ -33,3 +33,19 @@ export function buildShortestRouteTree(nodeCount, edges, root = 0) {
     return {nodes: nodes.reverse(), edges: routeEdges.reverse()};
   };
 }
+
+/** Return only the displayed edges touching the hovered node and their immediate neighbours. */
+export function getOneHopConnections(nodeCount, edges, target) {
+  const result={nodes:[],edges:[]};
+  if(!Number.isInteger(target)||target<0||target>=nodeCount)return result;
+  const seen=new Set();
+  for(let index=0;index<edges.length;index++){
+    const {a,b}=edges[index]||{};
+    if(!Number.isInteger(a)||!Number.isInteger(b)||a<0||b<0||a>=nodeCount||b>=nodeCount||a===b)continue;
+    if(a!==target&&b!==target)continue;
+    const neighbour=a===target?b:a;
+    result.edges.push(index);
+    if(!seen.has(neighbour)){seen.add(neighbour);result.nodes.push(neighbour);}
+  }
+  return result;
+}
