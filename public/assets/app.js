@@ -75,7 +75,7 @@ async function connectionsFor(ref){const cur=parseRef(ref);if(!cur)return [];
  return base.sort((a,b)=>(a.type==='dataset'?1:0)-(b.type==='dataset'?1:0)||(b.votes||0)-(a.votes||0));
 }
 async function renderConnections(){const ref=state.ref;const connections=await connectionsFor(ref);if(ref!==state.ref)return;state.links=connections;const filter=state.filter;$('reference-count').textContent=String(connections.length);const list=$('reference-list');list.replaceChildren();let shown=connections.filter(x=>filter==='all'||x.type===filter);shown=shown.slice(0,80);if(!shown.length){list.append(create('p','empty-list',filter==='all'?'No references recorded for this verse. Try a neighbouring verse or view Crossway callouts in the reader.':'No connections in this category for the selected verse.'));return;}
- for(const item of shown){const button=create('button','reference-item');const left=create('span');left.append(create('strong','',item.to),create('small','',item.description));const right=create('span');right.append(create('em','',item.type==='dataset'?'DATA':item.type),create('span','arrow','↗'));button.append(left,right);button.title=item.source==='editorial'?'Curated study connection':item.source==='Reading context'?'Neighbouring verse (not a cross-reference)':'From OpenBible.info';button.addEventListener('click',()=>selectRef(item.to));list.append(button);}
+ for(const item of shown){const button=create('button','reference-item');const left=create('span');left.append(create('strong','',item.to),create('small','',item.description));const right=create('span');right.append(create('em','',item.type==='dataset'?'DATA':item.type),create('span','arrow','↗'));button.append(left,right);button.title=item.source==='editorial'?'Curated study connection':item.source==='Reading context'?'Neighbouring verse (not a cross-reference)':'OpenBible.info - ranked source suggestion, not scholarly verification';button.addEventListener('click',()=>selectRef(item.to));list.append(button);}
 }
 function renderNote(){const note=state.notes[state.ref]||'';$('notes-text').value=note;}
 function currentIsSaved(){return state.bookmarks.includes(state.ref);}
@@ -197,11 +197,12 @@ async function buildGraphData(requestId){
  }
 }
 function createAtlasVoteMeter(link,highestVotes){
- const votes=Number(link.votes),hasVotes=Number.isFinite(votes)&&votes>=0;
+ const hasVotes=link.votes!==undefined&&link.votes!==null&&link.votes!==''&&Number.isFinite(Number(link.votes))&&Number(link.votes)>=0;
+ const votes=hasVotes?Number(link.votes):null;
  const level=hasVotes?relativeVoteBars(votes,highestVotes):0;
  const label=hasVotes
-  ?`OpenBible.info: ${votes} community votes. Relative vote strength: ${level} of 7 bars; highest for this verse: ${highestVotes} votes. Votes do not verify accuracy.`
-  :'OpenBible.info: community vote total unavailable. Connection not independently verified.';
+  ?`OpenBible.info source score: ${votes} votes. Relative ranking: ${level} of 7 bars against the highest listed score (${highestVotes}). Votes include source-seeded weights and reader feedback; they are not a scholarly confidence measure.`
+  :'OpenBible.info source score unavailable. This connection has not been independently reviewed.';
  const meter=create('span','atlas-vote-meter');
  meter.setAttribute('role','img');meter.setAttribute('aria-label',label);meter.title=label;
  for(let i=0;i<7;i++){const bar=create('i',`atlas-vote-bar${i<level?' filled':''}`);bar.style.height=`${5+i*2}px`;meter.append(bar);}
@@ -219,7 +220,7 @@ async function renderGraph(){
  state.graph.resize();void renderAtlasPickers();
  try{await buildGraphData(requestId);if(requestId!==state.graphRequestId||state.ref!==ref)return;
   list.replaceChildren();const links=await connectionsFor(ref);if(requestId!==state.graphRequestId)return;
-  if(!links.length)list.append(create('p','empty-list','No verified cross-reference recorded. Choose a neighbouring verse to continue.'));
+  if(!links.length)list.append(create('p','empty-list','No cross-reference listed in the available data. Try a neighbouring verse for reading context.'));
   const highestVotes=maxDatasetVotes(links);
   for(const link of links.slice(0,80)){
    const row=create('div','atlas-reference-row');const b=create('button');b.append(create('span','',link.to));

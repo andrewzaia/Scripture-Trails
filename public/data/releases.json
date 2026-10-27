@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "version": "0.4.2",
+      "date": "2026-10-27",
+      "title": "Clarify Atlas evidence and validate Scripture references",
+      "changes": [
+        "Explained that Atlas votes indicate community-ranked relevance rather than scholarly confidence.",
+        "Improved checks for Scripture citation ranges and made outstanding research-source gaps clearer."
+      ]
+    },
+    {
       "version": "0.4.1",
       "date": "2026-10-27",
       "title": "Clarify chronology evidence and citations",
