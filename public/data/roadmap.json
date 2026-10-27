@@ -3,9 +3,9 @@
   "updated": "2026-10-27",
   "description": "A transparent, evidence-aware roadmap. Delivered means implementation exists, not that every scholarly question is settled. The accuracy audit is an initial, publicly documented editorial screening, not external specialist certification.",
   "currentFocus": [
-    "People, places and events index",
-    "Independent specialist review and outstanding bibliography gaps",
-    "Scholarly classification of Atlas references with evidence explanations"
+    "Sourced historical identity disambiguation and expansion beyond the Gospel corpus",
+    "Scholarly classification of Atlas reference evidence",
+    "Independent specialist review of disputed archaeology and Gospel chronology"
   ],
   "phases": [
     {
@@ -169,15 +169,16 @@
     {
       "id": "people-places",
       "phase": "connections",
-      "status": "next",
+      "status": "delivered",
       "title": "People, places and events index",
-      "summary": "Link biblical persons, locations and key events to the reader, Atlas and journey map.",
+      "summary": "A cross-linked Gospel knowledge index with disambiguated people, all 35 mapped places and all 79 recorded journey events.",
       "capabilities": [
-        "Entity index with alternate names",
-        "One-click location and related verses",
-        "Person-event-place cross-navigation"
+        "Curated biblical person profiles with cited passages, alternate names and disambiguation",
+        "Reusable 35-place dossiers and associated archaeology sources, all 79 Gospel journey events",
+        "Search by name, aliases, reference or narrative, with deep links to the reader, Atlas, journey map and city studies",
+        "Evidence-status warnings and source limitations preserved across links"
       ],
-      "verification": "Requires sourced identifiers and name disambiguation."
+      "verification": "Indexed IDs, relationship targets and cited passage boundaries are checked in CI. Profiles rely on the Gospel text as primary narrative testimony; the curated people list is intentionally incomplete and has not received independent specialist peer review."
     },
     {
       "id": "translation-reader",

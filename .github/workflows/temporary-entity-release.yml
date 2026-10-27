@@ -1,0 +1,27 @@
+name: One-time entity index release preparation
+on:
+  push:
+    branches: [milestone/entity-index-20261027]
+permissions:
+  contents: write
+jobs:
+  prepare:
+    if: "github.event.head_commit.message == 'chore: prepare source-linked biblical entity index'"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          fetch-depth: 2
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+      - name: Invoke standard semantic release
+        run: npm run release -- minor "Explore biblical people, places and events" "Added searchable biblical people profiles with disambiguated names and passage references." "Connected 35 historical locations and 79 Gospel episodes to an interactive study index." "Added one-click navigation between the index, Bible reader, Connection Atlas and historical maps."
+      - name: Commit release metadata and footer
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add package.json CHANGELOG.md public/index.html public/data/releases.json
+          git commit -m "Release v0.5.0: biblical people, places and events index"
+          git push origin HEAD:milestone/entity-index-20261027
