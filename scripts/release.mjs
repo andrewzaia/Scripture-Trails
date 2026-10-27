@@ -15,10 +15,12 @@ const date=`${parts.year}-${parts.month}-${parts.day}`;
 const html=read(htmlPath),oldLabel='<span id="site-version" class="site-version" aria-label="Website version">v'+oldVersion+'</span>';
 if(!html.includes(oldLabel))throw new Error('Footer version is out of sync; run npm run check:release');
 if(!html.includes('/assets/app.js?v='+oldVersion)||!html.includes('/assets/style.css?v='+oldVersion)||!html.includes('/assets/entity-index.css?v='+oldVersion))throw new Error('Asset cache keys are out of sync');
-const nextApp=versionedImport(read(appPath),'entity-index.js?v='+oldVersion,'entity-index.js?v='+newVersion,'index module');
+let nextApp=versionedImport(read(appPath),'entity-index.js?v='+oldVersion,'entity-index.js?v='+newVersion,'index module');
+nextApp=versionedImport(nextApp,'connection-evidence.js?v='+oldVersion,'connection-evidence.js?v='+newVersion,'Atlas evidence module');
 const prevIndex=read(indexPath);
 let nextIndex=versionedImport(prevIndex,'entity-index-data.js?v='+oldVersion,'entity-index-data.js?v='+newVersion,'index data module');
 nextIndex=versionedImport(nextIndex,"ENTITY_INDEX_DATA_VERSION='"+oldVersion+"'","ENTITY_INDEX_DATA_VERSION='"+newVersion+"'",'index JSON files');
+nextIndex=versionedImport(nextIndex,'connection-evidence.js?v='+oldVersion,'connection-evidence.js?v='+newVersion,'index evidence import');
 const newHtml=html.replace(oldLabel,oldLabel.replace(oldVersion,newVersion))
  .replace('/assets/app.js?v='+oldVersion,'/assets/app.js?v='+newVersion)
  .replace('/assets/style.css?v='+oldVersion,'/assets/style.css?v='+newVersion)

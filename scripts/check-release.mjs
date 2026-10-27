@@ -15,6 +15,7 @@ for(const name of ['app.js','style.css','entity-index.css'])if(!html.includes(na
 const app=readFileSync('public/assets/app.js','utf8'),index=readFileSync('public/assets/entity-index.js','utf8');
 if(!app.includes('entity-index.js?v='+pkg.version))throw new Error('Index module cache key must match version');
 if(!index.includes('entity-index-data.js?v='+pkg.version)||!index.includes("ENTITY_INDEX_DATA_VERSION='"+pkg.version+"'"))throw new Error('Index module and JSON cache keys must match version');
+if(!app.includes('connection-evidence.js?v='+pkg.version)||!index.includes('connection-evidence.js?v='+pkg.version))throw new Error('Atlas evidence modules must match website release version');
 try{execFileSync('git',['cat-file','-e','HEAD^'],{stdio:'ignore'});}
 catch{console.log('Release metadata is consistent; parent commit history unavailable, skipping historical comparison.');process.exit(0);}
 const changes=execFileSync('git',['diff','--name-only','HEAD^','HEAD'],{encoding:'utf8'}).split(/\r?\n/).filter(Boolean);
