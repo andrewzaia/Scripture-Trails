@@ -4,8 +4,8 @@
   "description": "A transparent, evidence-aware roadmap. Delivered means implementation exists, not that every scholarly question is settled. The accuracy audit is an initial, publicly documented editorial screening, not external specialist certification.",
   "currentFocus": [
     "People, places and events index",
-    "Independent expert review of highlighted research issues",
-    "Expanded source-critical Gospel parallels beyond the 79 mapped entries"
+    "Independent specialist review and outstanding bibliography gaps",
+    "Scholarly classification of Atlas references with evidence explanations"
   ],
   "phases": [
     {
@@ -52,13 +52,13 @@
       "phase": "foundation",
       "status": "delivered",
       "title": "Ten-hop Connection Atlas",
-      "summary": "An explorer connecting verses with documented source labels, rather than treating every relation as a quotation or a prophecy.",
+      "summary": "Explore Scripture connections using curated notes and attributed OpenBible.info cross-references, without treating community vote scores as scholarly confidence.",
       "capabilities": [
         "Up to 10 reference hops with bounded rendering",
         "Book / chapter / verse selection and per-verse Atlas actions",
         "603,076 directed reference links imported from 344,753 OpenBible.info source rows"
       ],
-      "verification": "Dataset importer and CI tests passed; edges are sourced suggestions, not independently verified exegetical claims."
+      "verification": "Dataset importer and CI checks validate reference structure and provenance, not the exegetical validity of each connection. Seven bars are normalised source scores relative to the selected verse, not academic confidence ratings."
     },
     {
       "id": "guided",
@@ -120,9 +120,10 @@
       "capabilities": [
         "Passage-reference syntax and Gospel/Acts scope checks",
         "Corrected Capernaum, Jairus lakeshore, Caesarea Philippi district, Bethphage and supper summaries",
-        "Published correction history, evidence categories and chronology concerns"
+        "Published correction history, evidence categories and chronology concerns",
+        "Explicitly report unresolved research issues without attached independent secondary-source links"
       ],
-      "verification": "First editorial screening and source-link inspection completed; open questions remain, and this is not external peer review."
+      "verification": "Initial AI-assisted screening, provenance checks and dated academic bibliography links are documented. Missing secondary citations remain visible. No independent external peer review has occurred."
     },
     {
       "id": "place-deep-dives",

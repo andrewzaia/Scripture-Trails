@@ -12,7 +12,8 @@
     },
     "reviewer": "Scripture Trails editorial - AI-assisted initial review; independent subject-matter review pending",
     "reviewedAt": "2026-10-26",
-    "translationPolicy": "ESV, NASB20, NIV and NKJV are available reader editions. Differences in translation, verse numbering and ancient manuscripts require examination in context."
+    "translationPolicy": "ESV, NASB20, NIV and NKJV are available reader editions. Differences in translation, verse numbering and ancient manuscripts require examination in context.",
+    "voteAndSourcePolicy": "OpenBible.info cross-reference votes express source-seeded and community-ranked relevance, not scholarly confidence. A missing secondary literature link is a research gap, not proof or disproof of an event. Biblical references are primary witnesses to their textual claims, not independent archaeological verification."
   },
   "issues": [
     {
@@ -376,5 +377,17 @@
       "Nazareth rejection: the relative literary placements of Luke 4 and Mark 6/Matthew 13 are reviewed in published biblical scholarship.",
       "Fishermen's calling: Mark places calling before the Capernaum synagogue; Luke describes the call after its Capernaum teaching. Both catalogue entries now point to the open ordering issue."
     ]
+  },
+  "referenceIntegrity": {
+    "updated": "2026-10-27",
+    "method": "Automated canonical-reference boundary checks were added for the existing Scripture citation registers using local Protestant 66-book KJV-style verse counts. This validates reference addressability in that numbering scheme, not manuscript variants, translation equivalence, historicity, or scholarly review.",
+    "coverage": [
+      "Gospel journeys and corrections",
+      "Gospel comparison passages",
+      "Geography Old Testament links",
+      "Historical city study passage registers, timelines, evidence cards and disputed-site links",
+      "Curated guided-study and Atlas references"
+    ],
+    "limitations": "Some Bible editions, textual traditions and psalm titles use different versification. The checks do not establish textual or historical accuracy. Bibliography claims require separate source-level examination."
   }
 }
