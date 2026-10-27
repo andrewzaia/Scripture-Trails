@@ -18,5 +18,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version-file: .nvmrc
+      - name: Generate temporary minor release
+        run: npm run release -- minor "Atlas passage preview" "Preview linked verses below the graph without changing its centre." "A second node click explicitly focuses the Atlas."
       - name: Check source and tests
         run: npm run build
