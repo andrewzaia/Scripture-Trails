@@ -4,7 +4,7 @@ import {validateCanonicalReference} from './reference-integrity.js';
 export const ENTITY_TYPES=['person','place','event'];
 const fold=s=>String(s||'').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[’']/g,"").replace(/[^a-z0-9]+/g,' ').trim();
 const listed=(items)=>[...new Set(items)];
-export function buildEntityCatalog(peopleData,journeys,geography,audit,cityData,counts,historyData=null){
+export function buildEntityCatalog(peopleData,journeys,geography,audit,cityData,counts,historyData=null,expandedPeopleData=null){
  if(!peopleData?.people?.length||!journeys?.events?.length||!journeys?.places?.length||!geography?.places||!audit?.issues||!cityData?.cities)throw Error('Incomplete index datasets');
  if(peopleData.sourcePolicy?.length<20||!peopleData.scope)throw Error('Index source policy missing');
  const eventById=new Map(journeys.events.map(x=>[x.id,x]));
@@ -78,10 +78,29 @@ export function buildEntityCatalog(peopleData,journeys,geography,audit,cityData,
    for(const id of event.people){const p=records.find(x=>x.type==='person'&&x.id===id);if(p?.corpus==='Hebrew Bible'&&!p.events.includes(event.id))throw Error('Event person associations not reciprocal: '+event.id+' '+id);}
   }
  }
+ if(expandedPeopleData){
+  if(!expandedPeopleData.scope||expandedPeopleData.sourcePolicy?.length<25||!Array.isArray(expandedPeopleData.people))throw Error('Expanded biographies need an editorial source policy');
+  const knownPeople=new Set(records.filter(x=>x.type==='person').map(x=>x.id));
+  const knownEvents=new Set(records.filter(x=>x.type==='event').map(x=>x.id));
+  for(const person of expandedPeopleData.people){
+   if(!/^[a-z0-9-]+$/.test(person.id)||knownPeople.has(person.id))throw Error('Duplicate or invalid extended person '+person.id);
+   knownPeople.add(person.id);
+  }
+  for(const person of expandedPeopleData.people){
+   if(!person.name||!person.summary||!person.disambiguation||!['Hebrew Bible','Gospels'].includes(person.corpus)||!Array.isArray(person.aliases)||!Array.isArray(person.passages)||!person.passages.length||!Array.isArray(person.relationships)||!Array.isArray(person.events))throw Error('Incomplete extended person '+person.id);
+   for(const ref of person.passages)validateRef(ref,'extended person '+person.id);
+   for(const id of person.events)if(!knownEvents.has(id))throw Error('Unknown extended event '+person.id+': '+id);
+   for(const edge of person.relationships){
+    if(!edge.label||!edge.ref||!knownPeople.has(edge.to)||person.id===edge.to)throw Error('Invalid extended relationship '+person.id);
+    validateRef(edge.ref,'extended relationship '+person.id);
+   }
+   records.push({id:person.id,type:'person',corpus:person.corpus,title:person.name,aliases:person.aliases,disambiguation:person.disambiguation,summary:person.summary,passages:person.passages,events:listed(person.events),relationships:person.relationships,sourceLinks:[],sourceStatus:'Indexed Scripture testimony; independent biographical corroboration not implied'});
+  }
+ }
  for(const entry of records){entry.corpus??='Gospels';if(entry.type==='event')entry.isJourney??=true;}
  const byKey=new Map(records.map(x=>[x.type+':'+x.id,x]));
  if(byKey.size!==records.length)throw Error('Colliding index keys');
- const personMap=new Map([...personById,...(historyData?.people||[]).map(x=>[x.id,x])]);
+ const personMap=new Map([...personById,...(historyData?.people||[]).map(x=>[x.id,x]),...(expandedPeopleData?.people||[]).map(x=>[x.id,x])]);
  const placeMap=new Map([...placeById,...(historyData?.places||[]).map(x=>[x.id,x])]);
  const eventMap=new Map([...eventById,...(historyData?.events||[]).map(x=>[x.id,x])]);
  return {records,byKey,byId:{person:personMap,place:placeMap,event:eventMap},count:{person:personMap.size,place:placeMap.size,event:eventMap.size}};

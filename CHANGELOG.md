@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.7.0 - 27/10/2026: Find more biblical people and kingdoms
+
+- Expanded the People Index with over 100 further cited biblical figures, including major names from both Testaments.
+- Featured Hezekiah, David, Solomon, Moses, Paul and Assyria as directly selectable entries.
+- Improved search guidance, retry options and loading consistency across new releases.
+
 ## 0.6.0 - 27/10/2026: Explore Old Testament history and biblical kingdoms
 
 - Added biblical people and event profiles from the ancestors of Israel to the Persian era.

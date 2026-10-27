@@ -1,6 +1,16 @@
 {
   "releases": [
     {
+      "version": "0.7.0",
+      "date": "2026-10-27",
+      "title": "Find more biblical people and kingdoms",
+      "changes": [
+        "Expanded the People Index with over 100 further cited biblical figures, including major names from both Testaments.",
+        "Featured Hezekiah, David, Solomon, Moses, Paul and Assyria as directly selectable entries.",
+        "Improved search guidance, retry options and loading consistency across new releases."
+      ]
+    },
+    {
       "version": "0.6.0",
       "date": "2026-10-27",
       "title": "Explore Old Testament history and biblical kingdoms",

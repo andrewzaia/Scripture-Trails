@@ -11,7 +11,10 @@ const publicVersions=notes.releases.map(entry=>entry.version);
 if(JSON.stringify(headings)!==JSON.stringify(publicVersions))throw new Error('Development and public changelogs must list the same versions in the same order');
 const version='v'+pkg.version;
 if(!html.includes(`id="site-version" class="site-version" aria-label="Website version">${version}</span>`))throw new Error('Footer version must match package.json');
-for(const name of ['app.js','style.css'])if(!html.includes(name+'?v='+pkg.version))throw new Error('Asset cache keys must match website version: '+name);
+for(const name of ['app.js','style.css','entity-index.css'])if(!html.includes(name+'?v='+pkg.version))throw new Error('Asset cache keys must match website version: '+name);
+const app=readFileSync('public/assets/app.js','utf8'),index=readFileSync('public/assets/entity-index.js','utf8');
+if(!app.includes('entity-index.js?v='+pkg.version))throw new Error('Index module cache key must match version');
+if(!index.includes('entity-index-data.js?v='+pkg.version)||!index.includes("ENTITY_INDEX_DATA_VERSION='"+pkg.version+"'"))throw new Error('Index module and JSON cache keys must match version');
 try{execFileSync('git',['cat-file','-e','HEAD^'],{stdio:'ignore'});}
 catch{console.log('Release metadata is consistent; parent commit history unavailable, skipping historical comparison.');process.exit(0);}
 const changes=execFileSync('git',['diff','--name-only','HEAD^','HEAD'],{encoding:'utf8'}).split(/\r?\n/).filter(Boolean);

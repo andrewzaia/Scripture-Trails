@@ -4,7 +4,7 @@ import {ScriptureGraph} from './graph.js';
 import {createJesusMap} from './jesus-map.js';
 import {createRoadmap} from './roadmap.js?v=20261027-local';
 import {createCityStudies} from './city-studies.js?v=20261027-local';
-import {createEntityIndex} from './entity-index.js';
+import {createEntityIndex} from './entity-index.js?v=0.7.0';
 import {buildAtlas} from './atlas-paths.js';
 import {initPublicReleases} from './release-notes.js';
 import {maxDatasetVotes,relativeVoteBars} from './atlas-strength.js';
