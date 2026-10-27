@@ -32,7 +32,9 @@ test('roadmap data is complete and keeps completed distinct from planned work',(
  assert.equal(validateRoadmap(roadmap),true);
  assert.ok(roadmap.milestones.length>=14);
  assert.ok(roadmap.milestones.filter(m=>m.status==='delivered').length>=6);
- assert.ok(roadmap.milestones.filter(m=>m.status==='next').length>=2);
+ assert.ok(roadmap.milestones.filter(m=>m.status==='next').length>=1);
+ assert.ok(roadmap.milestones.some(m=>m.id==='timeline-evidence'&&m.status==='delivered'));
+ assert.ok(roadmap.milestones.some(m=>m.id==='people-places'&&m.status==='next'));
  assert.ok(roadmap.milestones.some(m=>m.id==='places'&&m.status==='delivered'));
  assert.ok(roadmap.milestones.some(m=>m.id==='bible-languages'&&m.status==='research'));
  for(const m of roadmap.milestones)assert.ok(m.verification.length>=45);
