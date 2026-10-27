@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.13.0 - 28/10/2026: Private notebook backups
+
+- Download saved passages and personal notes as a versioned JSON backup without uploading them.
+- Preview new entries, duplicates and conflicting notes before importing; keep existing notes unless replacements are selected.
+- Validate backup files and passage references, with safe handling of storage failures and stale previews.
+
 ## 0.12.0 - 28/10/2026: Paul's voyage to Rome
 
 - Added a separate Voyage to Rome option with 22 passage-linked stages in Acts 27-28.

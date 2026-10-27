@@ -330,3 +330,9 @@ Local datasets: `public/data/pauline-journeys.json` and `public/data/pauline-coa
 ## Voyage to Rome
 
 Journeys of Paul includes a separate Voyage to Rome selector for Acts 27-28: 22 stages, ten additional credited place markers, and unpinned sea, storm and wreck settings. This prisoner transfer is not a fourth missionary journey. Caesarea embarkation is qualified as inferred from the preceding custody narrative. Phoenix, Adramyttium and Alexandria are not plotted as reached destinations. Malta uses island-scale orientation only. The map now extends west to Italy; connectors remain schematic and break at unlocated stages. All 61 earlier stages retain their identifiers.
+
+## Notebook backups
+
+My notebook provides local JSON export and import for saved references and personal notes. Backups carry the `scripture-trails-notebook` format identifier and schema version 1. Files are limited to 2 MiB, 300 saved references and 2,000 notes (50,000 characters per note). Files are parsed locally without upload. Backups are unencrypted; user notes may contain private information or text the user entered. No publisher passage text is fetched or automatically included.
+
+Import previews additions, identical entries and conflicts, preserving existing notes by default. Each conflicting note has an explicit replacement choice. Invalid schemas, references and oversized merged collections are rejected. A single `scripture-trails:notebook` localStorage entry becomes authoritative on the next save or import; existing legacy notes and bookmarks are read without deletion. Import storage failures leave the persisted notebook unchanged. Stale previews and changes observed in another tab require a fresh preview or reload. Recent reading, preferences, credentials and unsaved note drafts are outside the backup.
