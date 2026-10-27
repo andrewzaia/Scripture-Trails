@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.9.0 - 27/10/2026: Deep Scripture Connections
+
+- Expanded passage-linked connection explanations to 115 and clarified editorial evidence status.
+- Added side-by-side Bible passage comparison with publisher-supplied text and attribution.
+- Introduced person-centred Scripture trails for eight major biblical figures.
+
 ## 0.8.0 - 27/10/2026: Explain Scripture connections in the Atlas
 
 - Added passage explanations and context for selected quotations, parallels, echoes, typology and themes.
