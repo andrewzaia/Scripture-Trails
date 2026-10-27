@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.4.2 - 27/10/2026: Clarify Atlas evidence and validate Scripture references
+
+- Explained that Atlas votes indicate community-ranked relevance rather than scholarly confidence.
+- Improved checks for Scripture citation ranges and made outstanding research-source gaps clearer.
+
 ## 0.4.1 - 27/10/2026: Clarify chronology evidence and citations
 
 - Added academic reading links to the public Gospel evidence register for important ordering differences.
