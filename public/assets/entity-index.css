@@ -41,3 +41,5 @@
 /* Period selector for the expanded source-aware index. */
 .entity-controls select{width:100%;max-width:310px;min-height:42px;background:var(--surface2);border:1px solid var(--line);border-radius:7px;color:var(--ink);padding:8px 12px;font-size:13px}
 .entity-controls select:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+
+.entity-featured{display:grid;gap:10px;padding-top:12px;border-top:1px solid var(--line)}.entity-featured>strong{font-size:12px;letter-spacing:.03em;color:var(--ink)}.entity-featured .entity-pill{font-size:12px;min-height:39px}.entity-featured .entity-muted{margin:0}.entity-results .entity-action{margin-top:10px}

@@ -1,14 +1,14 @@
-import {buildEntityCatalog,findEntities,ENTITY_TYPES} from './entity-index-data.js';
+import {buildEntityCatalog,findEntities,ENTITY_TYPES} from './entity-index-data.js?v=0.6.0';
 import {validateCanonicalReference} from './reference-integrity.js';
 
 const make=(tag,cls,text)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(text!==undefined)e.textContent=text;return e;};
-const titleMap={person:'People',place:'Places',event:'Events'};
 const key=(type,id)=>type+':'+id;
 /** Indexed entities reuse local source datasets. Source text is not rehosted. */
 export function createEntityIndex(root,handlers={}){
  const $=id=>root.querySelector('[data-entity="'+id+'"]')||root.closest('section')?.querySelector('[data-entity="'+id+'"]');
+ const ENTITY_INDEX_DATA_VERSION='0.6.0';
  let initial=null,catalog,counts,filter='all',period='all',query='',selected=null,shown=32,pendingReference=null;
- const label=record=>record.type==='person'?'Person':record.type==='place'?'Place':'Event';
+ const label=record=>record.type==='person'?'Person':record.type==='place'?(record.kind==='polity'?'Kingdom / polity':'Place'):'Event';
  const by=(type,id)=>catalog.byKey.get(key(type,id));
  const btn=(text,click,cls='entity-action')=>{const b=make('button',cls,text);b.type='button';b.addEventListener('click',click);return b;};
  const nav=(record)=>{if(!record)return;selected=key(record.type,record.id);const url=new URL(location.href);url.searchParams.set('view','entities');url.searchParams.set('type',record.type);url.searchParams.set('id',record.id);history.pushState({},'',url);renderDetail();renderList();root.querySelector('.entity-detail')?.scrollIntoView({behavior:'smooth',block:'nearest'});};
@@ -67,7 +67,13 @@ export function createEntityIndex(root,handlers={}){
  function renderList(){
   const all=findEntities(catalog,query,filter,counts,period);const list=$('list');list.replaceChildren();
   $('result-count').textContent=all.length+' matching entries'+(all.length>shown?' | showing '+shown:'');
-  if(!all.length)list.append(make('p','entity-muted','No catalogued entries match this search. The index remains selective rather than exhaustive; try a different name or period.'));
+  if(!all.length){
+   const matchesAll=query&&findEntities(catalog,query,'all',counts,'all');
+   if(matchesAll?.length){
+    list.append(make('p','entity-muted',matchesAll.length+' matching entr'+(matchesAll.length===1?'y is':'ies are')+' outside the current filters. For example, Assyria is a kingdom/polity under Places, not a person.'));
+    list.append(btn('Show matching entries across all categories',()=>{filter='all';period='all';$('period').value='all';shown=32;renderTabs();renderList();},'entity-action entity-more'));
+   }else list.append(make('p','entity-muted','No catalogued entries match this search. The index is selective rather than exhaustive; try another name.'));
+  }
   for(const record of all.slice(0,shown)){
    const item=btn('',()=>nav(record),'entity-result'+(selected===key(record.type,record.id)?' selected':''));
    item.setAttribute('aria-pressed',String(selected===key(record.type,record.id)));
@@ -77,9 +83,24 @@ export function createEntityIndex(root,handlers={}){
   $('more').hidden=all.length<=shown;
  }
  function renderTabs(){root.querySelectorAll('[data-entity-type]').forEach(b=>{const on=b.dataset.entityType===filter;b.setAttribute('aria-pressed',String(on));b.classList.toggle('selected',on);});}
+ function showFeatured(){
+  const list=$('featured');list.replaceChildren();
+  const picks=[
+   ['person','hezekiah','Hezekiah'],['person','david-king','David'],['person','solomon-king','Solomon'],
+   ['person','moses','Moses'],['person','paul-apostle','Paul'],['person','esther','Esther'],
+   ['place','assyria-empire','Assyria'],['place','babylonian-empire','Babylonia']
+  ];
+  for(const [type,id,title] of picks){
+   const record=by(type,id);if(!record)throw Error('Missing featured entry '+type+':'+id);
+   list.append(btn(title+' · '+(record.kind==='polity'?'kingdom':label(record).toLowerCase()),()=>{
+    filter=type;period='all';query='';shown=32;$('search').value='';$('period').value='all';renderTabs();nav(record);
+   },'entity-pill'));
+  }
+ }
  function setup(){
   root.dataset.ready='true';$('loading').hidden=true;
-  $('totals').textContent=catalog.count.person+' people | '+catalog.count.place+' places | '+catalog.count.event+' events';
+  $('totals').textContent=catalog.count.person+' people | '+catalog.count.place+' places and regions | '+catalog.count.event+' events';
+  showFeatured();
   $('search').addEventListener('input',()=>{query=$('search').value.trim();shown=32;renderList();});
   $('period').addEventListener('change',()=>{period=$('period').value;shown=32;renderList();});
   root.querySelectorAll('[data-entity-type]').forEach(button=>button.addEventListener('click',()=>{filter=button.dataset.entityType;shown=32;renderTabs();renderList();}));
@@ -94,11 +115,15 @@ export function createEntityIndex(root,handlers={}){
   renderTabs();renderList();renderDetail();
  }
  const thisFocus=ref=>{if(!catalog){pendingReference=ref;return;}filter='all';period='all';$('period').value='all';query=ref;shown=32;$('search').value=ref;renderTabs();renderList();};
- return {
+ const controller={
   activate(params=new URLSearchParams(location.search)){
    if(initial){if(catalog)activate(params);return;}
-   initial=Promise.all(['biblical-people.json','jesus-journeys.json','jesus-geography.json','jesus-audit.json','city-studies.json','verse-counts.json','biblical-history.json'].map(name=>fetch('/data/'+name).then(r=>{if(!r.ok)throw Error('Missing '+name);return r.json();}))).then(([people,j,g,a,c,vs,history])=>{counts=vs;catalog=buildEntityCatalog(people,j,g,a,c,counts,history);setup();}).catch(error=>{$('loading').textContent='The index could not be loaded. Please retry later.';console.error(error);});
+   initial=Promise.all(['biblical-people.json','jesus-journeys.json','jesus-geography.json','jesus-audit.json','city-studies.json','verse-counts.json','biblical-history.json','biblical-people-expanded.json'].map(name=>fetch('/data/'+name+'?v='+ENTITY_INDEX_DATA_VERSION).then(r=>{if(!r.ok)throw Error('Missing '+name);return r.json();}))).then(([people,j,g,a,c,vs,history,expanded])=>{counts=vs;catalog=buildEntityCatalog(people,j,g,a,c,counts,history,expanded);setup();}).catch(error=>{
+     initial=null;const el=$('loading');el.hidden=false;el.replaceChildren(make('span','','The index could not be loaded. Check the connection and retry.'),btn('Retry loading index',()=>{controller.activate(new URLSearchParams(location.search));}));
+     console.error(error);
+    });
   },
   focusReference(ref){thisFocus(ref);}
  };
+ return controller;
 }

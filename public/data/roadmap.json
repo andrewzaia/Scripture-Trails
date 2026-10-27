@@ -3,9 +3,9 @@
   "updated": "2026-10-27",
   "description": "A transparent, evidence-aware roadmap. Delivered means implementation exists, not that every scholarly question is settled. The accuracy audit is an initial, publicly documented editorial screening, not external specialist certification.",
   "currentFocus": [
+    "Expand and review Scripture Index coverage across the biblical canon",
     "Evidence type classification across the Connection Atlas",
-    "Expand historical sources and textual context for Hebrew Bible entries",
-    "Independent expert review of Assyrian, Babylonian and Gospel historical claims"
+    "Independent historical review of Assyrian, Babylonian and Gospel claims"
   ],
   "phases": [
     {
@@ -185,12 +185,13 @@
       "phase": "connections",
       "status": "delivered",
       "title": "Expand the biblical people, places and events index",
-      "summary": "Extended the sourced index into major Hebrew Bible people, kings, prophets, Assyrian and Babylonian historical settings, ancient polities and scriptural events.",
+      "summary": "Expanded the local people and events index into the Hebrew Bible and added further named biblical figures across both Testaments, with discoverable featured entries and improved category guidance.",
       "capabilities": [
         "Disambiguated Old Testament figures including monarchs, prophets and similarly named individuals",
         "Narrative events from ancestral traditions to the Persian-era return, with relevant people and places linked",
         "Distinct political realms and ancient locations without invented map pins or timeless borders",
-        "Selected museum references about Assyrian inscriptions, Lachish reliefs, Babylonian inscriptions and the Cyrus Cylinder"
+        "Selected museum references about Assyrian inscriptions, Lachish reliefs, Babylonian inscriptions and the Cyrus Cylinder",
+        "Featured people and kingdoms are directly discoverable without browsing multiple result pages"
       ],
       "verification": "Biblical addresses, related entities, museum-source identifiers and disambiguations are validated in CI. Only historical statements specifically attested by an external source are attributed to it. No claim of independent peer review or complete Old Testament coverage."
     },
@@ -287,6 +288,19 @@
         "Local history, geography, verse metadata and city photographs"
       ],
       "verification": "All source reference pairs match an official OpenBible download. Vote counts differ by snapshot date. The original archive is retained unchanged, generated-file checksums are validated during builds, and publisher Bible APIs remain separate."
+    },
+    {
+      "id": "people-index-review",
+      "phase": "next",
+      "status": "planned",
+      "title": "Extend and externally review the biblical people index",
+      "summary": "Continue improving the breadth, identity disambiguation and interpretation of profiles beyond this curated selection.",
+      "capabilities": [
+        "More biblical figures and family links with cited references",
+        "Refine biography and history evidence categories",
+        "Accessible reader and Atlas integration for people mentioned in cited passages"
+      ],
+      "verification": "Research and external specialist validation remain pending; editorial bibliography scopes must be documented."
     }
   ]
 }
