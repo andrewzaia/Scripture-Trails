@@ -134,3 +134,24 @@ body.light .translation-status-card[data-status="unavailable"] .translation-stat
 .atlas-evidence-detail p{font-size:11px!important;line-height:1.7!important;color:var(--muted)!important;margin:8px 0}
 .atlas-evidence-actions{display:flex;gap:5px;flex-wrap:wrap;margin:8px 0}
 .atlas-evidence-actions button{width:auto!important;border:1px solid var(--line)!important;padding:7px!important;font-size:10px!important;color:var(--ink)!important;background:var(--surface3)!important}
+
+/* Side-by-side licensed Scripture comparison: independent source attributions per panel. */
+.atlas-comparison{margin:0 min(5.2%,68px) 42px;padding:26px;scroll-margin-top:22px}
+.atlas-comparison[hidden]{display:none!important}
+.atlas-comparison-bar{display:flex;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:14px}
+.atlas-comparison-bar>div:first-child{margin-right:auto}
+.atlas-comparison-bar h2{font:normal clamp(20px,2.6vw,28px) var(--serif);margin:4px 0}
+.atlas-comparison-bar h2 em{color:var(--gold)}
+.atlas-comparison-bar label{font-size:11px;color:var(--muted);display:grid;gap:5px}
+.atlas-comparison-bar select{background:var(--surface2);color:var(--ink);border:1px solid var(--line);border-radius:4px;padding:10px;min-width:180px}
+.atlas-comparison-explain{font-size:13px;line-height:1.65;color:var(--ink)}
+.atlas-comparison-provenance{font-size:11px;color:var(--muted);line-height:1.65}
+.atlas-comparison-columns{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:20px 0}
+.atlas-comparison-column{background:var(--surface2);border:1px solid var(--line);border-radius:7px;padding:20px;min-width:0}
+.atlas-comparison-column header{display:flex;justify-content:space-between;gap:10px;align-items:baseline;border-bottom:1px solid var(--line);padding-bottom:12px}
+.atlas-comparison-column h3{margin:0;font:normal 21px var(--serif);color:var(--ink)}
+.atlas-comparison-column header span{font-size:10px;color:var(--gold)}
+.atlas-comparison-passage{font-size:17px;line-height:1.7;max-height:500px;overflow-y:auto;margin:14px 0;overflow-wrap:anywhere}
+.atlas-comparison-copyright{font-size:10px;line-height:1.6;color:var(--muted);border-top:1px solid var(--line);padding:12px 0}
+.atlas-comparison-copyright a{color:var(--gold);text-decoration:underline}
+@media(max-width:850px){.atlas-comparison-columns{grid-template-columns:1fr}.atlas-comparison{padding:17px;margin-left:18px;margin-right:18px}.atlas-comparison-column{padding:16px}}

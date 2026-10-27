@@ -1,13 +1,14 @@
-import {buildEntityCatalog,findEntities,ENTITY_TYPES} from './entity-index-data.js?v=0.8.0';
+import {buildEntityCatalog,findEntities,ENTITY_TYPES} from './entity-index-data.js?v=0.9.0';
 import {validateCanonicalReference} from './reference-integrity.js';
-import {connectionsForPassages,CONNECTION_KINDS} from './connection-evidence.js?v=0.8.0';
+import {connectionsForPassages,CONNECTION_KINDS,REVIEW_LABELS} from './connection-evidence.js?v=0.9.0';
+import {personTrail} from './person-trails.js?v=0.9.0';
 
 const make=(tag,cls,text)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(text!==undefined)e.textContent=text;return e;};
 const key=(type,id)=>type+':'+id;
 /** Indexed entities reuse local source datasets. Source text is not rehosted. */
 export function createEntityIndex(root,handlers={}){
  const $=id=>root.querySelector('[data-entity="'+id+'"]')||root.closest('section')?.querySelector('[data-entity="'+id+'"]');
- const ENTITY_INDEX_DATA_VERSION='0.8.0';
+ const ENTITY_INDEX_DATA_VERSION='0.9.0';
  let initial=null,catalog,counts,filter='all',period='all',query='',selected=null,shown=32,pendingReference=null;
  const label=record=>record.type==='person'?'Person':record.type==='place'?(record.kind==='polity'?'Kingdom / polity':'Place'):'Event';
  const by=(type,id)=>catalog.byKey.get(key(type,id));
@@ -28,6 +29,20 @@ export function createEntityIndex(root,handlers={}){
   panel.append(make('p','entity-disambiguation',record.disambiguation),make('p','entity-lead',record.summary));
   if(record.aliases.length)panel.append(make('p','entity-muted','Alternative names or search terms: '+record.aliases.join(', ')+'. These are search aids, not proof that differing historical names identify the same person or location.'));
   if(record.type==='person'){
+   const trail=personTrail(record.id);
+   if(trail){
+    panel.append(make('h3','',"Follow this person's Scripture trail"),make('p','entity-muted',trail.qualification));
+    const steps=make('ol','entity-study-trail');
+    for(const step of trail.stages){
+     const item=make('li','entity-trail-step');
+     item.append(make('strong','',step.label+' · '+step.ref),make('p','entity-muted',step.note));
+     item.append(btn('Read passage',()=>handlers.onRead?.(step.ref)),btn('View in Atlas',()=>handlers.onAtlas?.(step.ref)));
+     const linked=connectionsForPassages([step.ref],counts,1)[0];
+     if(linked)item.append(btn('Compare related passages',()=>handlers.onCompare?.(linked.from,linked.to,linked)));
+     steps.append(item);
+    }
+    panel.append(steps);
+   }
    panel.append(make('h3','','Relationships described in Scripture'));
    if(!record.relationships.length)panel.append(make('p','entity-muted','No relationship is registered for this initial profile.'));
    for(const edge of record.relationships){const row=make('div','entity-relationship');row.append(btn(by('person',edge.to)?.title||edge.to,()=>nav(by('person',edge.to)),'entity-text-button'),make('span','',edge.label),btn(edge.ref,()=>handlers.onRead?.(sourcePassage(edge.ref)),'entity-link-ref'));panel.append(row);}
@@ -62,7 +77,7 @@ export function createEntityIndex(root,handlers={}){
     for(const evidence of links){
      const row=make('div','entity-atlas-route');
      row.append(make('strong','',CONNECTION_KINDS[evidence.kind]+': '+evidence.from+' and '+evidence.to),make('p','entity-muted',evidence.explanation),make('p','entity-muted',evidence.caution));
-     row.append(btn('Atlas '+evidence.from,()=>handlers.onAtlas?.(evidence.from)),btn('Atlas '+evidence.to,()=>handlers.onAtlas?.(evidence.to)));
+     row.append(make('p','entity-muted','Review: '+REVIEW_LABELS[evidence.review]),btn('Atlas '+evidence.from,()=>handlers.onAtlas?.(evidence.from)),btn('Atlas '+evidence.to,()=>handlers.onAtlas?.(evidence.to)),btn('Compare side by side',()=>handlers.onCompare?.(evidence.from,evidence.to,evidence)));
      panel.append(row);
     }
    }else panel.append(make('p','entity-muted','No specially explained connection intersects this profile yet. Use Atlas beside its Scripture references to explore the unclassified links.'));

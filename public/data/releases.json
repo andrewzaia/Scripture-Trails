@@ -1,6 +1,16 @@
 {
   "releases": [
     {
+      "version": "0.9.0",
+      "date": "2026-10-27",
+      "title": "Deep Scripture Connections",
+      "changes": [
+        "Expanded passage-linked connection explanations to 115 and clarified editorial evidence status.",
+        "Added side-by-side Bible passage comparison with publisher-supplied text and attribution.",
+        "Introduced person-centred Scripture trails for eight major biblical figures."
+      ]
+    },
+    {
       "version": "0.8.0",
       "date": "2026-10-27",
       "title": "Explain Scripture connections in the Atlas",

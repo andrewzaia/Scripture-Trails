@@ -1,5 +1,6 @@
 import {parseRef} from './books.js';
 import {validateCanonicalReference} from './reference-integrity.js';
+import {ADDITIONAL_CONNECTION_EVIDENCE} from './connection-evidence-expanded.js?v=0.9.0';
 /** Selective passage-linked editorial register. The 603k OpenBible links remain unclassified. */
 export const CONNECTION_KINDS=Object.freeze({
   "quotation": "Direct quotation",
@@ -272,8 +273,13 @@ export const CONNECTION_EVIDENCE=Object.freeze([
     "context": "Acts 7:30-34",
     "review": "scripture-context-screened",
     "basis": "Editorial comparison of cited passages; external specialist review pending"
-  }
+  },
+ ...ADDITIONAL_CONNECTION_EVIDENCE
 ]);
+export const REVIEW_LABELS=Object.freeze({
+ "scripture-context-screened":"Internal passage comparison (not external peer review)",
+ "editorial-reading-aid":"Editorial reading aid - detailed textual review pending"
+});
 const canonical=value=>parseRef(value)?.formatted||null;
 const key=(a,b)=>[canonical(a),canonical(b)].sort().join('|');
 const lookup=new Map();
@@ -296,7 +302,7 @@ export function validateConnectionEvidence(counts){
  for(const e of CONNECTION_EVIDENCE){
   if(ids.has(e.id)||pairs.has(key(e.from,e.to)))throw Error('Duplicate evidence identifier '+e.id);
   ids.add(e.id);pairs.add(key(e.from,e.to));
-  if(!CONNECTION_KINDS[e.kind]||!e.explanation||!e.caution||!e.context||e.review!=='scripture-context-screened'||!e.basis)throw Error('Incomplete evidence '+e.id);
+  if(!CONNECTION_KINDS[e.kind]||!e.explanation||!e.caution||!e.context||!REVIEW_LABELS[e.review]||!e.basis)throw Error('Incomplete evidence '+e.id);
   for(const ref of [e.from,e.to,e.context])if(!validateCanonicalReference(ref,counts))throw Error('Invalid evidence reference '+e.id+': '+ref);
  }return true;
 }

@@ -6,15 +6,16 @@ import {EDITORIAL_LINKS} from '../public/assets/studies.js';
 const read=n=>readFileSync(new URL('../'+n,import.meta.url),'utf8');
 const json=n=>JSON.parse(read('public/data/'+n));
 const counts=json('verse-counts.json'),history=json('biblical-history.json'),expanded=json('biblical-people-expanded.json');
-test('24 selectively annotated passage comparisons are explicit, valid, and uniquely addressed',()=>{
- assert.equal(CONNECTION_EVIDENCE.length,24);
+test('115 editorial passage comparisons are explicit, source-cited and uniquely addressed',()=>{
+ assert.equal(CONNECTION_EVIDENCE.length,115);
  assert.equal(validateConnectionEvidence(counts),true);
  assert.deepEqual(new Set(CONNECTION_EVIDENCE.map(e=>e.kind)),new Set(['quotation','parallel','echo','typology','theme']));
  assert.equal(Object.keys(CONNECTION_KINDS).length,5);
  const keys=new Set(CONNECTION_EVIDENCE.map(e=>[e.from,e.to].sort().join('|')));
  assert.equal(keys.size,CONNECTION_EVIDENCE.length);
- assert.ok(CONNECTION_EVIDENCE.every(e=>e.review==='scripture-context-screened'));
- assert.ok(CONNECTION_EVIDENCE.every(e=>e.basis.includes('external specialist review pending')));
+ assert.equal(CONNECTION_EVIDENCE.filter(e=>e.review==='scripture-context-screened').length,24);
+ assert.equal(CONNECTION_EVIDENCE.filter(e=>e.review==='editorial-reading-aid').length,91);
+ assert.ok(CONNECTION_EVIDENCE.every(e=>/pending/i.test(e.basis)));
 });
 test('quotation, parallel, echo and typology are bounded by explicit Scripture pairs',()=>{
  for(const [from,to,kind] of [
@@ -32,8 +33,8 @@ test('quotation, parallel, echo and typology are bounded by explicit Scripture p
  assert.equal(explainConnection('Genesis 1:2','Revelation 21:1'),null);
 });
 test('special editorial explanations never imply every existing cross-reference is classified',()=>{
- assert.ok(EDITORIAL_LINKS.length>CONNECTION_EVIDENCE.length);
- assert.ok(EDITORIAL_LINKS.some(link=>!explainConnection(link.from,link.to)));
+ assert.ok(CONNECTION_EVIDENCE.length>EDITORIAL_LINKS.length);
+ assert.ok(EDITORIAL_LINKS.every(link=>explainConnection(link.from,link.to)));
  const atlas=read('public/assets/app.js');
  assert.match(atlas,/link\.evidence/);
  assert.match(atlas,/OpenBible suggestion - unclassified/);

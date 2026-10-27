@@ -4,11 +4,12 @@ import {ScriptureGraph} from './graph.js';
 import {createJesusMap} from './jesus-map.js';
 import {createRoadmap} from './roadmap.js?v=20261027-local';
 import {createCityStudies} from './city-studies.js?v=20261027-local';
-import {createEntityIndex} from './entity-index.js?v=0.8.0';
+import {createEntityIndex} from './entity-index.js?v=0.9.0';
 import {buildAtlas} from './atlas-paths.js';
 import {initPublicReleases} from './release-notes.js';
 import {maxDatasetVotes,relativeVoteBars} from './atlas-strength.js';
-import {CONNECTION_EVIDENCE,CONNECTION_KINDS,explainConnection} from './connection-evidence.js?v=0.8.0';
+import {CONNECTION_EVIDENCE,CONNECTION_KINDS,explainConnection,REVIEW_LABELS} from './connection-evidence.js?v=0.9.0';
+import {createPassageComparison} from './atlas-comparison.js?v=0.9.0';
 import {TRANSLATIONS,getTranslation} from './translations.js';
 import {reportScriptureView} from './fums.js';
 import {TRANSLATION_STATUS,statusForResponse} from './translation-status.js?v=20261027-indicators';
@@ -42,7 +43,7 @@ function selectTranslation(code){
  void renderReader();
  updateUrl();
 }
-const bookCache=new Map();let referenceManifest=null,verseCounts=null;let roadmapPage=null,cityStudiesPage=null,entityIndexPage=null;let toastTimer;
+const bookCache=new Map();let referenceManifest=null,verseCounts=null;let roadmapPage=null,cityStudiesPage=null,entityIndexPage=null,passageComparison=null;let toastTimer;
 async function hasImportedReferences(){if(referenceManifest===null){referenceManifest=fetch('/data/refs/manifest.json?v=20261027-local').then(r=>r.ok?r.json():{enabled:false}).catch(()=>({enabled:false}));}return (await referenceManifest).enabled===true;}
 const create=(tag,className,text)=>{const node=document.createElement(tag);if(className)node.className=className;if(text!==undefined)node.textContent=text;return node;};
 function toast(message){const el=$('toast');el.textContent=message;el.classList.add('visible');clearTimeout(toastTimer);toastTimer=setTimeout(()=>el.classList.remove('visible'),2500);}
@@ -53,7 +54,15 @@ async function getCounts(){if(!verseCounts){verseCounts=fetch('/data/verse-count
 function nextReadingContext(ref,counts){const p=parseRef(ref);if(!p)return [];const count=counts?.[p.book.name]?.[p.chapter-1];if(!Number.isInteger(count)||!count)return [];const verse=p.verse||1;const to=[];if(verse>1)to.push(`${p.book.name} ${p.chapter}:${verse-1}`);if(verse<count)to.push(`${p.book.name} ${p.chapter}:${verse+1}`);return to.map(v=>({from:ref,to:v,type:'context',description:'Adjacent verse for reading context only - not an interpretative cross-reference',source:'Reading context'}));}
 function updateUrl(){const url=new URL(window.location.href);url.searchParams.set('view',state.view);url.searchParams.set('ref',state.ref);url.searchParams.set('translation',state.translation);history.pushState({},'',url);}
 function closeSidebar(){$('sidebar').classList.remove('open');$('menu-toggle').setAttribute('aria-expanded','false');$('sidebar-shade').hidden=true;}
-function showView(name,updateHistory=true){const valid=['discover','reader','connections','jesus-map','city-studies','entities','roadmap','journeys','notebook','about'];if(!valid.includes(name))name='discover';state.view=name;document.querySelectorAll('.view').forEach(v=>{v.classList.toggle('active-view',v.id===`view-${name}`);});document.querySelectorAll('[data-view].nav-link').forEach(v=>v.classList.toggle('selected',v.dataset.view===name));$('section-heading').textContent={discover:'Discover',reader:'Bible reader',connections:'Connection atlas','jesus-map':'Journeys of Jesus','city-studies':'Historical cities',entities:'People, places and events',roadmap:'Project roadmap',journeys:'Study journeys',notebook:'My notebook',about:'About the project'}[name];closeSidebar();if(name==='reader'){void renderReader();}if(name==='connections'){void renderGraph();}if(name==='jesus-map'){if(!state.jesusMap)state.jesusMap=createJesusMap(document.querySelector('[data-jesus-map]'),ref=>selectRef(ref,'reader'),cityId=>openCityStudy(cityId));state.jesusMap.activate();}else state.jesusMap?.pause();if(name==='city-studies'){if(!cityStudiesPage)cityStudiesPage=createCityStudies(document.querySelector('[data-city-studies]'),{onRead:ref=>selectRef(ref,'reader'),onAtlas:ref=>selectRef(ref,'connections'),onJourney:cityId=>{const first={jerusalem:'j002',nazareth:'j005',capernaum:'j013',bethlehem:'j001',jericho:'j058'}[cityId];if(first){window.location.assign(`/?view=jesus-map&stop=${first}`);}}});cityStudiesPage.activate(new URLSearchParams(location.search).get('city'));}if(name==='entities'){if(!entityIndexPage)entityIndexPage=createEntityIndex(document.querySelector('[data-entity-index]'),{onRead:ref=>selectRef(ref,'reader'),onAtlas:ref=>selectRef(ref,'connections'),onJourney:id=>{window.location.assign('/?view=jesus-map&stop='+encodeURIComponent(id));},onCity:id=>openCityStudy(id)});entityIndexPage.activate(new URLSearchParams(location.search));}if(name==='roadmap'){if(!roadmapPage)roadmapPage=createRoadmap(document.querySelector('[data-roadmap]'));roadmapPage.activate();}if(name==='notebook')renderNotebook();if(name==='journeys')renderJourneys();if(updateHistory)updateUrl();window.scrollTo({top:0,behavior:'instant'});}
+function showView(name,updateHistory=true){const valid=['discover','reader','connections','jesus-map','city-studies','entities','roadmap','journeys','notebook','about'];if(!valid.includes(name))name='discover';state.view=name;document.querySelectorAll('.view').forEach(v=>{v.classList.toggle('active-view',v.id===`view-${name}`);});document.querySelectorAll('[data-view].nav-link').forEach(v=>v.classList.toggle('selected',v.dataset.view===name));$('section-heading').textContent={discover:'Discover',reader:'Bible reader',connections:'Connection atlas','jesus-map':'Journeys of Jesus','city-studies':'Historical cities',entities:'People, places and events',roadmap:'Project roadmap',journeys:'Study journeys',notebook:'My notebook',about:'About the project'}[name];closeSidebar();if(name==='reader'){void renderReader();}if(name==='connections'){void renderGraph();}if(name==='jesus-map'){if(!state.jesusMap)state.jesusMap=createJesusMap(document.querySelector('[data-jesus-map]'),ref=>selectRef(ref,'reader'),cityId=>openCityStudy(cityId));state.jesusMap.activate();}else state.jesusMap?.pause();if(name==='city-studies'){if(!cityStudiesPage)cityStudiesPage=createCityStudies(document.querySelector('[data-city-studies]'),{onRead:ref=>selectRef(ref,'reader'),onAtlas:ref=>selectRef(ref,'connections'),onJourney:cityId=>{const first={jerusalem:'j002',nazareth:'j005',capernaum:'j013',bethlehem:'j001',jericho:'j058'}[cityId];if(first){window.location.assign(`/?view=jesus-map&stop=${first}`);}}});cityStudiesPage.activate(new URLSearchParams(location.search).get('city'));}if(name==='entities'){if(!entityIndexPage)entityIndexPage=createEntityIndex(document.querySelector('[data-entity-index]'),{onRead:ref=>selectRef(ref,'reader'),onAtlas:ref=>selectRef(ref,'connections'),onJourney:id=>{window.location.assign('/?view=jesus-map&stop='+encodeURIComponent(id));},onCity:id=>openCityStudy(id),onCompare:(from,to,evidence)=>comparePassages(from,to,evidence)});entityIndexPage.activate(new URLSearchParams(location.search));}if(name==='roadmap'){if(!roadmapPage)roadmapPage=createRoadmap(document.querySelector('[data-roadmap]'));roadmapPage.activate();}if(name==='notebook')renderNotebook();if(name==='journeys')renderJourneys();if(updateHistory)updateUrl();window.scrollTo({top:0,behavior:'instant'});}
+function comparePassages(from,to,evidence=null){
+ if(state.view!=='connections')selectRef(from,'connections');
+ if(!passageComparison)passageComparison=createPassageComparison($('atlas-compare'),{
+  sanitize:safeHtml,onViewed:reportScriptureView,getEdition:()=>state.translation,
+  onRead:ref=>selectRef(ref,'reader')
+ });
+ return passageComparison.open(from,to,evidence||explainConnection(from,to));
+}
 function openCityStudy(cityId){const url=new URL(location.href);url.searchParams.set('city',cityId);history.replaceState(history.state,'',url);showView('city-studies');cityStudiesPage?.activate(cityId);}
 function selectRef(ref,view='reader',updateHistory=true){const parsed=parseRef(ref);if(!parsed){toast('Please enter a valid Bible reference.');return;}state.ref=(view==='connections'&&parsed.verse===null)?`${parsed.book.name} ${parsed.chapter}:1`:parsed.formatted;state.history=[state.ref,...state.history.filter(x=>x!==state.ref)].slice(0,12);putSaved('history',state.history);const sameView=state.view===view;if(sameView&&view==='reader'){void renderReader();}else if(sameView&&view==='connections'){void renderGraph();}else showView(view,false);if(updateHistory)updateUrl();}
 function makeJourneyCard(path){const button=create('button','journey-card');button.type='button';button.setAttribute('aria-label',`Explore ${path.name}`);const meta=create('div','card-meta');meta.append(create('span','',path.label),create('span','card-number',path.number));const heading=create('h3','',path.name);const summary=create('p','',path.summary);const bottom=create('div','card-bottom');bottom.append(create('span','',`${path.refs.length} passages  ·  ${path.time}`),create('span','','↗'));button.append(meta,heading,summary,bottom);button.addEventListener('click',()=>openJourney(path.id));return button;}
@@ -244,11 +253,12 @@ async function renderGraph(){
    b.addEventListener('click',()=>selectRef(link.to,'connections'));row.append(b);
    if(link.evidence){
     const e=link.evidence,note=create('details','atlas-evidence-detail');
-    note.append(create('summary','','Why these passages connect'),create('p','atlas-evidence-explain',e.explanation),create('p','atlas-evidence-caution',e.caution),create('p','atlas-evidence-caution','Status: source-passage editorial check; independent specialist review pending.'));
+    note.append(create('summary','','Why these passages connect'),create('p','atlas-evidence-explain',e.explanation),create('p','atlas-evidence-caution',e.caution),create('p','atlas-evidence-caution','Status: '+REVIEW_LABELS[e.review]+'. Independent specialist review pending.'),create('p','atlas-evidence-caution','Provenance: '+e.basis));
     const actions=create('div','atlas-evidence-actions');
     for(const [label,reference,view] of [['Read '+e.from,e.from,'reader'],['Read '+e.to,e.to,'reader'],['Read context: '+e.context,e.context,'reader'],['Atlas '+e.to,e.to,'connections']]){
      const action=create('button','small-action',label);action.type='button';action.addEventListener('click',()=>selectRef(reference,view));actions.append(action);
     }
+    const compare=create('button','small-action','Compare passages side by side');compare.type='button';compare.addEventListener('click',()=>comparePassages(e.from,e.to,e));actions.append(compare);
     note.append(actions);row.append(note);
    }
    list.append(row);
