@@ -48,17 +48,23 @@
         "j033"
       ],
       "description": "Luke 4 and Mark 6 place hometown synagogue narratives differently; identity and sequence of the encounters need specialist comparison.",
-      "references": [],
+      "references": [
+        "https://doi.org/10.1093/oso/9780198814801.003.0006",
+        "https://www.cambridge.org/core/journals/new-testament-studies/article/abs/sequential-parallelism-in-the-synoptic-gospels/106FEAC09C5D6DB223DDEA58EA2A0FC3"
+      ],
       "status": "open"
     },
     {
       "id": "disciples-call",
       "category": "parallels",
       "events": [
-        "j022"
+        "j022",
+        "j023"
       ],
       "description": "Luke 5 and Mark 1 may represent differently framed reports; avoid a single precise date for all details.",
-      "references": [],
+      "references": [
+        "https://www.cambridge.org/core/journals/new-testament-studies/article/abs/sequential-parallelism-in-the-synoptic-gospels/106FEAC09C5D6DB223DDEA58EA2A0FC3"
+      ],
       "status": "open"
     },
     {
@@ -362,5 +368,13 @@
       "result": "public source page located and general scope checked",
       "checkedOn": "2026-10-26"
     }
-  ]
+  ],
+  "literatureUpdate": {
+    "date": "2026-10-27",
+    "method": "Follow-up editorial linking of academic discussions of textual arrangement to specific unresolved Gospel parallels. These links establish the interpretative issue, not the historicity or identity of either episode. The first-pass screening remains dated 26 October 2026; no external specialist review or new archaeological verification was performed.",
+    "notes": [
+      "Nazareth rejection: the relative literary placements of Luke 4 and Mark 6/Matthew 13 are reviewed in published biblical scholarship.",
+      "Fishermen's calling: Mark places calling before the Capernaum synagogue; Luke describes the call after its Capernaum teaching. Both catalogue entries now point to the open ordering issue."
+    ]
+  }
 }

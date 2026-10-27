@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.4.1 - 27/10/2026: Clarify chronology evidence and citations
+
+- Added academic reading links to the public Gospel evidence register for important ordering differences.
+- Clarified potentially parallel visits and the difference between narrative order and historical evidence.
+
 ## 0.4.0 - 27/10/2026: Compare Gospel narrative sequences
 
 - Added individual Matthew, Mark, Luke and John passage-order views alongside the combined Journeys of Jesus timeline.

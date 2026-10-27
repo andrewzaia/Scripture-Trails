@@ -873,12 +873,14 @@
         "Luke 4:31-37"
       ],
       "evidence": "named",
-      "qualification": "",
+      "qualification": "Mark 1 places the fishermen's call before this synagogue scene, but Luke 4 narrates the Capernaum synagogue before the catch-and-call in Luke 5. The chronology comparison shows textual order, not separate independently dated events.",
       "review": {
-        "status": "screened",
+        "status": "needs-further-review",
         "basis": "passage-index-and-location-screen",
         "reviewedOn": "2026-10-26",
-        "issueIds": []
+        "issueIds": [
+          "disciples-call"
+        ]
       }
     },
     {

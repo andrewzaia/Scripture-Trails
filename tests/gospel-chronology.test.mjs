@@ -40,3 +40,17 @@ test('account control, cautions and next roadmap status are visible',()=>{
  assert.equal(roadmap.milestones.find(m=>m.id==='timeline-evidence').status,'delivered');
  assert.equal(roadmap.milestones.find(m=>m.id==='independent-audit').status,'research');
 });
+
+test('editorial source strengthening is traceable and does not masquerade as expert verification',()=>{
+ const nazareth=audit.issues.find(x=>x.id==='nazareth-order');
+ const call=audit.issues.find(x=>x.id==='disciples-call');
+ assert.ok(nazareth.references.some(x=>x.includes('10.1093/oso/9780198814801')));
+ assert.ok(call.references.length>0);
+ assert.ok(call.events.includes('j023'));
+ assert.ok(journeys.events.find(x=>x.id==='j023').review.issueIds.includes('disciples-call'));
+ assert.equal(audit.literatureUpdate.date,'2026-10-27');
+ assert.match(audit.literatureUpdate.method,/no external specialist review/i);
+ const map=readFileSync(new URL('../public/assets/jesus-map.js',import.meta.url),'utf8');
+ assert.match(map,/Affected entries:/);
+ assert.match(map,/issue.references.length/);
+});

@@ -1,7 +1,7 @@
 {
   "version": 1,
   "updated": "2026-10-27",
-  "scope": "Narrative-order comparison of entries already catalogued in the 79-event Gospel journey map. Book chapter and verse numbers order the selected Gospel's descriptions, not the dates when the events happened. A shared study entry may cover distinct literary presentations. The dataset is not a source-critical synopsis and does not identify two related accounts as the same historical occurrence without qualification.",
+  "scope": "Narrative-order comparison of entries already catalogued in the 79-event Gospel journey map. Book chapter and verse numbers order the selected Gospel's descriptions, not the dates when the events happened. A shared study entry may cover distinct literary presentations. The dataset is not a source-critical synopsis and does not identify two related accounts as the same historical occurrence without qualification. Full chapter and verse ordering is displayed for only the mapped entries, not for every incident in each Gospel. A claim of literary correspondence must not be mistaken for verification of the number of visits or chronology.",
   "methodology": "Each Gospel view selects only journey entries with an explicit passage from that Gospel, then sorts them by the first cited chapter and verse within that book. Multiple citations in the same Gospel are grouped under one entry and listed together. Canonical chapter and verse positions are editorial reading coordinates, not historical time stamps. No unreported dates, independent journeys or missing Gospel narratives are inferred.",
   "sources": [
     {
@@ -16,14 +16,14 @@
       "title": "Joseph B. Tyson, Sequential Parallelism in the Synoptic Gospels",
       "kind": "Peer-reviewed journal article, New Testament Studies",
       "url": "https://www.cambridge.org/core/journals/new-testament-studies/article/abs/sequential-parallelism-in-the-synoptic-gospels/106FEAC09C5D6DB223DDEA58EA2A0FC3",
-      "claim": "Discusses how accounts of literary sequence depend on interpretive assumptions, rather than providing an uncontested historical itinerary."
+      "claim": "A methodological discussion of how sequential parallelism is analysed; it does not adjudicate the identity of the Bethany anointing or other specific parallels in this catalogue."
     },
     {
       "id": "barker-harmony",
       "title": "James W. Barker, The Narrative Chronology of Tatian's Diatessaron",
       "kind": "Peer-reviewed journal article, New Testament Studies, 2020",
       "url": "https://doi.org/10.1017/S0028688519000468",
-      "claim": "Studies how a later Gospel harmony reshaped Gospel sequence, including the placement of the temple action."
+      "claim": "Shows how a historical Gospel harmony arranged temple-action traditions differently; it is evidence about harmonisation choices, not proof of the original event date."
     }
   ],
   "comparisons": [
