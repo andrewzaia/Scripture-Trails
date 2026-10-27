@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "version": "0.10.0",
+      "date": "2026-10-28",
+      "title": "Atlas passage preview",
+      "changes": [
+        "Preview linked verses below the graph without changing its centre.",
+        "A second node click explicitly focuses the Atlas."
+      ]
+    },
+    {
       "version": "0.9.4",
       "date": "2026-10-28",
       "title": "Clearer one-hop Atlas connections",
