@@ -12,8 +12,9 @@ test('a first click previews and only a second click on that same node requests 
 });
 
 test('graph click callback differentiates preview and focus without rebuilding node data',()=>{
- const previous=globalThis.ResizeObserver;
+ const previous=globalThis.ResizeObserver,oldDpr=globalThis.devicePixelRatio;
  globalThis.ResizeObserver=class{observe(){}};
+ globalThis.devicePixelRatio=1;
  try{
   const ctx=new Proxy({}, {get:(object,key)=>object[key]||(()=>{})});
   const canvas={parentElement:{},style:{},getContext:()=>ctx,getBoundingClientRect:()=>({left:0,top:0,width:700,height:450}),addEventListener(){},setPointerCapture(){}};
@@ -34,6 +35,8 @@ test('graph click callback differentiates preview and focus without rebuilding n
  }finally{
   if(previous===undefined)delete globalThis.ResizeObserver;
   else globalThis.ResizeObserver=previous;
+  if(oldDpr===undefined)delete globalThis.devicePixelRatio;
+  else globalThis.devicePixelRatio=oldDpr;
  }
 });
 
