@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.9.3 - 27/10/2026: Reliable versioned deployments
+
+- Corrected a deployment check that could prevent new website releases from publishing.
+- Kept release history, version numbers and update notes consistent across the site.
+
 ## 0.9.2 - 27/10/2026: Consistent version history
 
 - Strengthened release checks so every website update receives a new version and public changelog entry.

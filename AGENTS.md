@@ -20,7 +20,7 @@
 5. Record **every meaningful visitor-facing change** in the new public and development changelog entries. The public list is concise and newest-first. The development changelog can include more implementation detail. Preserve all historical releases and the existing collapsed About-page presentation.
 6. Never publish credentials, configuration secrets, personally identifying data or irrelevant internal maintenance in public notes.
 7. Run `npm run build` (including `check:release`, `check:refs` and tests), inspect the changelog and footer consistency, and verify the new version is strictly greater than the last released version.
-8. **Pull-request CI must compare the complete PR against its merge base with the destination branch, not only the final individual commit.** Block any website-changing PR if the version and matching release notes have not advanced. Confirm GitHub checks before merging.
+8. **Pull-request CI must compare the complete PR against its merge base with the destination branch, not only the final individual commit.** Block any website-changing PR if the version and matching release notes have not advanced. Confirm GitHub checks before merging. Cloudflare may use a shallow checkout, so the GitHub PR check is the authority for historical version comparisons; Cloudflare builds must still pass the metadata, asset and content checks.
 9. Once merged, verify the GitHub commit and Cloudflare Pages production deployment refer to the expected release, and check live-site version when accessible. Never report test, merge or deployment success without verification.
 10. Report the previous version, new version, visitor-facing changes, relevant GitHub commit, test status and deployment status after every website release.
 
