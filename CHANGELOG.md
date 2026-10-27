@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.9.2 - 27/10/2026: Consistent version history
+
+- Strengthened release checks so every website update receives a new version and public changelog entry.
+- Improved consistency between the public release history and the website footer version.
+
 ## 0.9.1 - 27/10/2026: Trace the shortest Atlas connections
 
 - Hover over an Atlas verse to illuminate the shortest displayed route back to the centre in green.
