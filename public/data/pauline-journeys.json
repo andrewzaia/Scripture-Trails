@@ -1,0 +1,1454 @@
+{
+  "title": "Paul's missionary journeys",
+  "updated": "2026-10-28",
+  "scope": "Three conventional missionary journey groupings in Acts 13-21. Narrative order, not an independently dated historical itinerary.",
+  "method": "Acts is primary for the narrated movements. Each entry is an editorial paraphrase with a passage link; no Bible text is bundled. Markers are rounded Pleiades representative points. Regions, unnamed settings and offshore passages have no invented pins. Dashed connectors join only consecutive mapped entries within one journey and are not roads or sailing tracks.",
+  "review": "AI-assisted editorial source and reference screening. Independent historical and textual specialist review has not occurred.",
+  "chronology": "The timeline counts narrative stages, not elapsed time. No absolute years are assigned. Acts and Pauline-letter chronology require separate comparison; letters are not silently used to add unnamed Acts stops.",
+  "journeys": [
+    {
+      "id": "first",
+      "title": "First missionary journey",
+      "passages": [
+        "Acts 13:1-3",
+        "Acts 14:26-28"
+      ],
+      "scope": "Antioch, Cyprus and southern Anatolia, returning to the sending church.",
+      "note": "Acts does not number missionary journeys. This familiar grouping is an editorial study convention, following the narrated departure and return."
+    },
+    {
+      "id": "second",
+      "title": "Second missionary journey",
+      "passages": [
+        "Acts 15:36-41",
+        "Acts 18:22"
+      ],
+      "scope": "Anatolia, Macedonia and Achaia, then a return towards Antioch.",
+      "note": "The church visit in Acts 18:22 remains unnamed. No conjectural Jerusalem stop is mapped."
+    },
+    {
+      "id": "third",
+      "title": "Third missionary journey",
+      "passages": [
+        "Acts 18:23",
+        "Acts 21:15-17"
+      ],
+      "scope": "Regional revisits, Ephesus, Macedonia and Greece, followed by the voyage to Jerusalem.",
+      "note": "Regional summaries do not identify every city. The later arrest, imprisonment and voyage to Rome are outside this release."
+    }
+  ],
+  "places": [
+    {
+      "id": "antioch-syria",
+      "name": "Antioch in Syria",
+      "kind": "site",
+      "coordinates": [
+        36.1768,
+        36.2159
+      ],
+      "certainty": "approximate",
+      "sourceId": "antioch-syria",
+      "sourceUrl": "https://pleiades.stoa.org/places/658381",
+      "sourceTitle": "Antiochia/Theoupolis",
+      "note": "The sending church is at Antioch on the Orontes, near modern Antakya. This is distinct from Antioch in Pisidia."
+    },
+    {
+      "id": "seleucia",
+      "name": "Seleucia Pieria",
+      "kind": "site",
+      "coordinates": [
+        35.9286,
+        36.1213
+      ],
+      "certainty": "approximate",
+      "sourceId": "seleucia",
+      "sourceUrl": "https://pleiades.stoa.org/places/658483",
+      "sourceTitle": "Hydatos Potamoi/Seleukeia Pieria",
+      "note": "The marker is a rounded gazetteer representative point for the ancient place. It does not locate a narrated event, building or first-century harbour precisely."
+    },
+    {
+      "id": "salamis",
+      "name": "Salamis on Cyprus",
+      "kind": "site",
+      "coordinates": [
+        33.9029,
+        35.1796
+      ],
+      "certainty": "approximate",
+      "sourceId": "salamis",
+      "sourceUrl": "https://pleiades.stoa.org/places/707617",
+      "sourceTitle": "Salamis/Konstantia",
+      "note": "The Cypriot settlement is intended, not the Greek island of Salamis."
+    },
+    {
+      "id": "paphos",
+      "name": "Paphos",
+      "kind": "site",
+      "coordinates": [
+        32.4066,
+        34.7572
+      ],
+      "certainty": "approximate",
+      "sourceId": "paphos",
+      "sourceUrl": "https://pleiades.stoa.org/places/707586",
+      "sourceTitle": "(Nea) Paphos",
+      "note": "The marker uses Nea Paphos. Acts does not identify the building in which Paul met the proconsul."
+    },
+    {
+      "id": "perga",
+      "name": "Perga",
+      "kind": "site",
+      "coordinates": [
+        30.8533,
+        36.9645
+      ],
+      "certainty": "approximate",
+      "sourceId": "perga",
+      "sourceUrl": "https://pleiades.stoa.org/places/639048",
+      "sourceTitle": "Perge",
+      "note": "The inland ancient settlement is marked, not a reconstructed first-century coastline or harbour."
+    },
+    {
+      "id": "antioch-pisidia",
+      "name": "Antioch in Pisidia",
+      "kind": "site",
+      "coordinates": [
+        31.1899,
+        38.3054
+      ],
+      "certainty": "approximate",
+      "sourceId": "antioch-pisidia",
+      "sourceUrl": "https://pleiades.stoa.org/places/609307",
+      "sourceTitle": "Antiochia/Col. Caesarea",
+      "note": "The Anatolian city near modern Yalvac. It is distinct from the Syrian Antioch that sends Paul and Barnabas."
+    },
+    {
+      "id": "iconium",
+      "name": "Iconium",
+      "kind": "site",
+      "coordinates": [
+        32.4923,
+        37.8725
+      ],
+      "certainty": "approximate",
+      "sourceId": "iconium",
+      "sourceUrl": "https://pleiades.stoa.org/places/648647",
+      "sourceTitle": "Iconium/Claudiconium",
+      "note": "The marker is a rounded gazetteer representative point for the ancient place. It does not locate a narrated event, building or first-century harbour precisely."
+    },
+    {
+      "id": "lystra",
+      "name": "Lystra",
+      "kind": "site",
+      "coordinates": [
+        32.3445,
+        37.5883
+      ],
+      "certainty": "uncertain",
+      "sourceId": "lystra",
+      "sourceUrl": "https://pleiades.stoa.org/places/648699",
+      "sourceTitle": "Lystra/Col. Iulia Felix Gemina",
+      "note": "The marker follows the gazetteer representative point near Hatunsaray. It indicates a candidate ancient settlement area, not the spot of a narrated event."
+    },
+    {
+      "id": "derbe",
+      "name": "Derbe",
+      "kind": "site",
+      "coordinates": [
+        33.3618,
+        37.3492
+      ],
+      "certainty": "uncertain",
+      "sourceId": "derbe",
+      "sourceUrl": "https://pleiades.stoa.org/places/648620",
+      "sourceTitle": "Derbe/Claudioderbe",
+      "note": "The marker follows the Pleiades Derbe/Claudioderbe candidate. A separate Pleiades Derbe record is unlocated at regional precision. The plotted point is provisional, not a settled excavation location for Acts."
+    },
+    {
+      "id": "attalia",
+      "name": "Attalia",
+      "kind": "site",
+      "coordinates": [
+        30.7,
+        36.8903
+      ],
+      "certainty": "approximate",
+      "sourceId": "attalia",
+      "sourceUrl": "https://pleiades.stoa.org/places/638778",
+      "sourceTitle": "Attalea",
+      "note": "The marker is a rounded gazetteer representative point for the ancient place. It does not locate a narrated event, building or first-century harbour precisely."
+    },
+    {
+      "id": "troas",
+      "name": "Troas",
+      "kind": "site",
+      "coordinates": [
+        26.1576,
+        39.7517
+      ],
+      "certainty": "approximate",
+      "sourceId": "troas",
+      "sourceUrl": "https://pleiades.stoa.org/places/550434",
+      "sourceTitle": "Antigoneia/(Col. Augusta) Alexandria Troas",
+      "note": "The itinerary uses Alexandria Troas, not the site of Homeric Troy."
+    },
+    {
+      "id": "samothrace",
+      "name": "Samothrace",
+      "kind": "island",
+      "coordinates": [
+        25.5762,
+        40.4523
+      ],
+      "certainty": "island",
+      "sourceId": "samothrace",
+      "sourceUrl": "https://pleiades.stoa.org/places/501597",
+      "sourceTitle": "Samothrace (island)",
+      "note": "An island-scale representative point. Acts names the island; no exact landing place is claimed."
+    },
+    {
+      "id": "neapolis",
+      "name": "Neapolis in Macedonia",
+      "kind": "site",
+      "coordinates": [
+        24.414,
+        40.9343
+      ],
+      "certainty": "approximate",
+      "sourceId": "neapolis",
+      "sourceUrl": "https://pleiades.stoa.org/places/501523",
+      "sourceTitle": "Neapolis (Kavalla)",
+      "note": "The marker is a rounded gazetteer representative point for the ancient place. It does not locate a narrated event, building or first-century harbour precisely."
+    },
+    {
+      "id": "philippi",
+      "name": "Philippi",
+      "kind": "site",
+      "coordinates": [
+        24.2846,
+        41.0127
+      ],
+      "certainty": "approximate",
+      "sourceId": "philippi",
+      "sourceUrl": "https://pleiades.stoa.org/places/501482",
+      "sourceTitle": "Krenides/Philippi/Col. Augusta Iulia Philippensis",
+      "note": "The marker is a rounded gazetteer representative point for the ancient place. It does not locate a narrated event, building or first-century harbour precisely."
+    },
+    {
+      "id": "amphipolis",
+      "name": "Amphipolis",
+      "kind": "site",
+      "coordinates": [
+        23.8416,
+        40.8258
+      ],
+      "certainty": "approximate",
+      "sourceId": "amphipolis",
+      "sourceUrl": "https://pleiades.stoa.org/places/501347",
+      "sourceTitle": "Amphipolis",
+      "note": "The marker is a rounded gazetteer representative point for the ancient place. It does not locate a narrated event, building or first-century harbour precisely."
+    },
+    {
+      "id": "apollonia",
+      "name": "Apollonia in Macedonia",
+      "kind": "site",
+      "coordinates": [
+        23.4697,
+        40.6237
+      ],
+      "certainty": "approximate",
+      "sourceId": "apollonia",
+      "sourceUrl": "https://pleiades.stoa.org/places/491526",
+      "sourceTitle": "Apollonia",
+      "note": "This is the Macedonian Apollonia in the Acts 17:1 travel sequence, not another city of the same name."
+    },
+    {
+      "id": "thessalonica",
+      "name": "Thessalonica",
+      "kind": "site",
+      "coordinates": [
+        22.9529,
+        40.6283
+      ],
+      "certainty": "approximate",
+      "sourceId": "thessalonica",
+      "sourceUrl": "https://pleiades.stoa.org/places/491741",
+      "sourceTitle": "Thessalonica",
+      "note": "The marker is a rounded gazetteer representative point for the ancient place. It does not locate a narrated event, building or first-century harbour precisely."
+    },
+    {
+      "id": "berea",
+      "name": "Berea in Macedonia",
+      "kind": "site",
+      "coordinates": [
+        22.2015,
+        40.5221
+      ],
+      "certainty": "approximate",
+      "sourceId": "berea",
+      "sourceUrl": "https://pleiades.stoa.org/places/491546",
+      "sourceTitle": "Ber(r)oia",
+      "note": "Macedonian Berea is intended, not Beroia in Syria."
+    },
+    {
+      "id": "athens",
+      "name": "Athens",
+      "kind": "site",
+      "coordinates": [
+        23.724,
+        37.9716
+      ],
+      "certainty": "approximate",
+      "sourceId": "athens",
+      "sourceUrl": "https://pleiades.stoa.org/places/579885",
+      "sourceTitle": "Athenae",
+      "note": "The marker is a rounded gazetteer representative point for the ancient place. It does not locate a narrated event, building or first-century harbour precisely."
+    },
+    {
+      "id": "corinth",
+      "name": "Corinth",
+      "kind": "site",
+      "coordinates": [
+        22.8786,
+        37.9056
+      ],
+      "certainty": "approximate",
+      "sourceId": "corinth",
+      "sourceUrl": "https://pleiades.stoa.org/places/570182",
+      "sourceTitle": "Corinthus/Korinthos",
+      "note": "The marker is a rounded gazetteer representative point for the ancient place. It does not locate a narrated event, building or first-century harbour precisely."
+    },
+    {
+      "id": "cenchreae",
+      "name": "Cenchreae",
+      "kind": "site",
+      "coordinates": [
+        22.9925,
+        37.8824
+      ],
+      "certainty": "approximate",
+      "sourceId": "cenchreae",
+      "sourceUrl": "https://pleiades.stoa.org/places/570347",
+      "sourceTitle": "Kenchreai",
+      "note": "The eastern harbour of Corinth. Acts 18:18 names it; no vow location beyond that named setting is reconstructed."
+    },
+    {
+      "id": "ephesus",
+      "name": "Ephesus",
+      "kind": "site",
+      "coordinates": [
+        27.3424,
+        37.9402
+      ],
+      "certainty": "approximate",
+      "sourceId": "ephesus",
+      "sourceUrl": "https://pleiades.stoa.org/places/599612",
+      "sourceTitle": "Ephesus/Arsinoe(ia)",
+      "note": "The marker is a rounded gazetteer representative point for the ancient place. It does not locate a narrated event, building or first-century harbour precisely."
+    },
+    {
+      "id": "caesarea",
+      "name": "Caesarea Maritima",
+      "kind": "site",
+      "coordinates": [
+        34.8924,
+        32.5018
+      ],
+      "certainty": "approximate",
+      "sourceId": "caesarea",
+      "sourceUrl": "https://pleiades.stoa.org/places/678401",
+      "sourceTitle": "Stratonos Pyrgos/Caesarea",
+      "note": "The coastal Caesarea is intended, not Caesarea Philippi or Caesarea in Cappadocia."
+    },
+    {
+      "id": "assos",
+      "name": "Assos",
+      "kind": "site",
+      "coordinates": [
+        26.3364,
+        39.4901
+      ],
+      "certainty": "approximate",
+      "sourceId": "assos",
+      "sourceUrl": "https://pleiades.stoa.org/places/550463",
+      "sourceTitle": "Assos/Apollonia",
+      "note": "The marker is a rounded gazetteer representative point for the ancient place. It does not locate a narrated event, building or first-century harbour precisely."
+    },
+    {
+      "id": "mitylene",
+      "name": "Mitylene",
+      "kind": "site",
+      "coordinates": [
+        26.547,
+        39.1105
+      ],
+      "certainty": "approximate",
+      "sourceId": "mitylene",
+      "sourceUrl": "https://pleiades.stoa.org/places/550763",
+      "sourceTitle": "Mytilene",
+      "note": "The marker is a rounded gazetteer representative point for the ancient place. It does not locate a narrated event, building or first-century harbour precisely."
+    },
+    {
+      "id": "chios",
+      "name": "Opposite Chios",
+      "kind": "offshore",
+      "coordinates": null,
+      "certainty": "offshore",
+      "sourceId": "chios",
+      "sourceUrl": "https://pleiades.stoa.org/places/550497",
+      "sourceTitle": "Chios (island)",
+      "note": "Acts 20:15 says they sailed opposite Chios. No landing is recorded, so no on-island stop or offshore ship position is plotted."
+    },
+    {
+      "id": "samos",
+      "name": "Samos",
+      "kind": "island",
+      "coordinates": [
+        26.8391,
+        37.7325
+      ],
+      "certainty": "island",
+      "sourceId": "samos",
+      "sourceUrl": "https://pleiades.stoa.org/places/599926",
+      "sourceTitle": "Samos (island)",
+      "note": "An island-scale representative point. Acts names Samos without establishing a precise harbour. Trogyllium appears in some manuscripts and translations of Acts 20:15; it is discussed separately rather than silently added to this itinerary."
+    },
+    {
+      "id": "miletus",
+      "name": "Miletus",
+      "kind": "site",
+      "coordinates": [
+        27.2788,
+        37.5305
+      ],
+      "certainty": "approximate",
+      "sourceId": "miletus",
+      "sourceUrl": "https://pleiades.stoa.org/places/599799",
+      "sourceTitle": "Miletus",
+      "note": "The marker is a rounded gazetteer representative point for the ancient place. It does not locate a narrated event, building or first-century harbour precisely."
+    },
+    {
+      "id": "cos",
+      "name": "Cos",
+      "kind": "island",
+      "coordinates": [
+        27.1374,
+        36.8229
+      ],
+      "certainty": "island",
+      "sourceId": "cos",
+      "sourceUrl": "https://pleiades.stoa.org/places/599581",
+      "sourceTitle": "Kos/Cos (island)",
+      "note": "An island-scale representative point for Cos/Kos, not a claim about the exact harbour used."
+    },
+    {
+      "id": "rhodes",
+      "name": "Rhodes",
+      "kind": "island",
+      "coordinates": [
+        27.9721,
+        36.1791
+      ],
+      "certainty": "island",
+      "sourceId": "rhodes",
+      "sourceUrl": "https://pleiades.stoa.org/places/590031",
+      "sourceTitle": "Rhodos (island)",
+      "note": "An island-scale representative point. Acts names Rhodes without locating the arrival precisely within the island."
+    },
+    {
+      "id": "patara",
+      "name": "Patara",
+      "kind": "site",
+      "coordinates": [
+        29.3145,
+        36.2618
+      ],
+      "certainty": "approximate",
+      "sourceId": "patara",
+      "sourceUrl": "https://pleiades.stoa.org/places/639042",
+      "sourceTitle": "Patara/Arsinoe",
+      "note": "The marker is a rounded gazetteer representative point for the ancient place. It does not locate a narrated event, building or first-century harbour precisely."
+    },
+    {
+      "id": "tyre",
+      "name": "Tyre",
+      "kind": "site",
+      "coordinates": [
+        35.2018,
+        33.2693
+      ],
+      "certainty": "approximate",
+      "sourceId": "tyre",
+      "sourceUrl": "https://pleiades.stoa.org/places/678437",
+      "sourceTitle": "Tyrus/Col. Septimia Severa",
+      "note": "The marker is a rounded gazetteer representative point for the ancient place. It does not locate a narrated event, building or first-century harbour precisely."
+    },
+    {
+      "id": "ptolemais",
+      "name": "Ptolemais",
+      "kind": "site",
+      "coordinates": [
+        35.0798,
+        32.9213
+      ],
+      "certainty": "approximate",
+      "sourceId": "ptolemais",
+      "sourceUrl": "https://pleiades.stoa.org/places/678010",
+      "sourceTitle": "Ake/Ptolemais",
+      "note": "The marker is a rounded gazetteer representative point for the ancient place. It does not locate a narrated event, building or first-century harbour precisely."
+    },
+    {
+      "id": "jerusalem",
+      "name": "Jerusalem",
+      "kind": "site",
+      "coordinates": [
+        35.235,
+        31.7772
+      ],
+      "certainty": "approximate",
+      "sourceId": "jerusalem",
+      "sourceUrl": "https://pleiades.stoa.org/places/687928",
+      "sourceTitle": "Ierusalem/Hierosolyma/Col. Aelia Capitolina",
+      "note": "The marker is a rounded gazetteer representative point for the ancient place. It does not locate a narrated event, building or first-century harbour precisely."
+    },
+    {
+      "id": "cyprus-crossing",
+      "name": "Across Cyprus",
+      "kind": "region",
+      "coordinates": null,
+      "certainty": "region",
+      "sourceId": null,
+      "sourceUrl": null,
+      "sourceTitle": "Primary Acts passage at each stage",
+      "note": "Acts summarises crossing the island without listing every town or reconstructing the road."
+    },
+    {
+      "id": "pisidia",
+      "name": "Through Pisidia",
+      "kind": "region",
+      "coordinates": null,
+      "certainty": "region",
+      "sourceId": null,
+      "sourceUrl": null,
+      "sourceTitle": "Primary Acts passage at each stage",
+      "note": "A regional transit in Acts 14:24, without an additional named city or fixed regional boundary."
+    },
+    {
+      "id": "pamphylia",
+      "name": "Into Pamphylia",
+      "kind": "region",
+      "coordinates": null,
+      "certainty": "region",
+      "sourceId": null,
+      "sourceUrl": null,
+      "sourceTitle": "Primary Acts passage at each stage",
+      "note": "Acts names a region before the return to Perga. No separate city is supplied here."
+    },
+    {
+      "id": "syria-cilicia",
+      "name": "Through Syria and Cilicia",
+      "kind": "region",
+      "coordinates": null,
+      "certainty": "region",
+      "sourceId": null,
+      "sourceUrl": null,
+      "sourceTitle": "Primary Acts passage at each stage",
+      "note": "Acts names the two regions. Tarsus and other intermediate cities are not individually named on this stage."
+    },
+    {
+      "id": "phrygia-galatia",
+      "name": "Phrygia and Galatia",
+      "kind": "region",
+      "coordinates": null,
+      "certainty": "region",
+      "sourceId": null,
+      "sourceUrl": null,
+      "sourceTitle": "Primary Acts passage at each stage",
+      "note": "Acts uses regional language. North/south Galatian reconstructions and precise roads are not resolved by this map."
+    },
+    {
+      "id": "mysia",
+      "name": "Mysia and the Bithynia boundary",
+      "kind": "region",
+      "coordinates": null,
+      "certainty": "region",
+      "sourceId": null,
+      "sourceUrl": null,
+      "sourceTitle": "Primary Acts passage at each stage",
+      "note": "Bithynia is an intended destination that is not entered in Acts 16:7. No Bithynian city is plotted as visited."
+    },
+    {
+      "id": "unnamed-church",
+      "name": "An unnamed church visit",
+      "kind": "unlocated",
+      "coordinates": null,
+      "certainty": "unlocated",
+      "sourceId": null,
+      "sourceUrl": null,
+      "sourceTitle": "Primary Acts passage at each stage",
+      "note": "Acts 18:22 does not name the city of the church Paul greets. Jerusalem is a common inference from the travel wording, not an explicit place-name here. No Jerusalem pin is added for this entry."
+    },
+    {
+      "id": "inland",
+      "name": "The inland country",
+      "kind": "region",
+      "coordinates": null,
+      "certainty": "region",
+      "sourceId": null,
+      "sourceUrl": null,
+      "sourceTitle": "Primary Acts passage at each stage",
+      "note": "Acts 19:1 names inland country, not a precise city chain or road to Ephesus."
+    },
+    {
+      "id": "macedonia",
+      "name": "Through Macedonia",
+      "kind": "region",
+      "coordinates": null,
+      "certainty": "region",
+      "sourceId": null,
+      "sourceUrl": null,
+      "sourceTitle": "Primary Acts passage at each stage",
+      "note": "A broad regional stage. Cities not explicitly named in this passage are not added to the route."
+    },
+    {
+      "id": "greece",
+      "name": "Three months in Greece",
+      "kind": "region",
+      "coordinates": null,
+      "certainty": "region",
+      "sourceId": null,
+      "sourceUrl": null,
+      "sourceTitle": "Primary Acts passage at each stage",
+      "note": "Acts 20:2-3 names Greece. Corinth is commonly reconstructed as the main setting, but is not named in these verses and receives no third-journey pin on that basis."
+    },
+    {
+      "id": "cyprus-offshore",
+      "name": "Cyprus sighted offshore",
+      "kind": "offshore",
+      "coordinates": null,
+      "certainty": "offshore",
+      "sourceId": null,
+      "sourceUrl": null,
+      "sourceTitle": "Primary Acts passage at each stage",
+      "note": "Acts 21:3 describes passing Cyprus on the left while sailing towards Syria. It does not record landing on Cyprus on this journey."
+    }
+  ],
+  "events": [
+    {
+      "id": "paul-first-01",
+      "journey": "first",
+      "place": "antioch-syria",
+      "title": "Sent from Antioch",
+      "summary": "Barnabas and Saul are commissioned after worship, fasting and prayer.",
+      "passages": [
+        "Acts 13:1-3"
+      ],
+      "qualification": "",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-first-02",
+      "journey": "first",
+      "place": "seleucia",
+      "title": "Departure from Seleucia",
+      "summary": "The travellers leave the Syrian coast for Cyprus.",
+      "passages": [
+        "Acts 13:4"
+      ],
+      "qualification": "",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-first-03",
+      "journey": "first",
+      "place": "salamis",
+      "title": "Proclamation at Salamis",
+      "summary": "They teach in the synagogues, assisted by John.",
+      "passages": [
+        "Acts 13:5"
+      ],
+      "qualification": "",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-first-04",
+      "journey": "first",
+      "place": "cyprus-crossing",
+      "title": "Across the island",
+      "summary": "The narrative summarises travel across Cyprus towards Paphos.",
+      "passages": [
+        "Acts 13:6"
+      ],
+      "qualification": "",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-first-05",
+      "journey": "first",
+      "place": "paphos",
+      "title": "Before the proconsul",
+      "summary": "Paul confronts Elymas; Sergius Paulus responds to the teaching.",
+      "passages": [
+        "Acts 13:6-12"
+      ],
+      "qualification": "",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-first-06",
+      "journey": "first",
+      "place": "perga",
+      "title": "Arrival at Perga",
+      "summary": "John leaves the company and returns to Jerusalem.",
+      "passages": [
+        "Acts 13:13"
+      ],
+      "qualification": "John's return is not plotted as a journey made by Paul.",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-first-07",
+      "journey": "first",
+      "place": "antioch-pisidia",
+      "title": "Teaching in Pisidian Antioch",
+      "summary": "Paul addresses the synagogue; the subsequent response brings both interest and opposition.",
+      "passages": [
+        "Acts 13:14-41",
+        "Acts 13:42-52"
+      ],
+      "qualification": "",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-first-08",
+      "journey": "first",
+      "place": "iconium",
+      "title": "An extended stay at Iconium",
+      "summary": "Teaching, a divided response and threatened violence precede departure.",
+      "passages": [
+        "Acts 14:1-7"
+      ],
+      "qualification": "",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-first-09",
+      "journey": "first",
+      "place": "lystra",
+      "title": "Healing and conflict at Lystra",
+      "summary": "A healing is followed by mistaken divine honours and violence against Paul.",
+      "passages": [
+        "Acts 14:8-20"
+      ],
+      "qualification": "",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-first-10",
+      "journey": "first",
+      "place": "derbe",
+      "title": "Making disciples at Derbe",
+      "summary": "Paul and Barnabas teach and make disciples before beginning their return.",
+      "passages": [
+        "Acts 14:20-21"
+      ],
+      "qualification": "",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-first-11",
+      "journey": "first",
+      "place": "lystra",
+      "title": "Return to Lystra",
+      "summary": "The return visits strengthen disciples and establish local leadership.",
+      "passages": [
+        "Acts 14:21-23"
+      ],
+      "qualification": "These named revisits are retained separately from the outward visits.",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-first-12",
+      "journey": "first",
+      "place": "iconium",
+      "title": "Return to Iconium",
+      "summary": "The return visits strengthen disciples and establish local leadership.",
+      "passages": [
+        "Acts 14:21-23"
+      ],
+      "qualification": "These named revisits are retained separately from the outward visits.",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-first-13",
+      "journey": "first",
+      "place": "antioch-pisidia",
+      "title": "Return to Pisidian Antioch",
+      "summary": "The return visits strengthen disciples and establish local leadership.",
+      "passages": [
+        "Acts 14:21-23"
+      ],
+      "qualification": "These named revisits are retained separately from the outward visits.",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-first-14",
+      "journey": "first",
+      "place": "pisidia",
+      "title": "Return through Pisidia",
+      "summary": "The narrative describes the regional passage on the return.",
+      "passages": [
+        "Acts 14:24"
+      ],
+      "qualification": "",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-first-15",
+      "journey": "first",
+      "place": "pamphylia",
+      "title": "Return into Pamphylia",
+      "summary": "The regional sequence leads back towards Perga.",
+      "passages": [
+        "Acts 14:24"
+      ],
+      "qualification": "",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-first-16",
+      "journey": "first",
+      "place": "perga",
+      "title": "Teaching again at Perga",
+      "summary": "The travellers proclaim the message before going down to Attalia.",
+      "passages": [
+        "Acts 14:25"
+      ],
+      "qualification": "",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-first-17",
+      "journey": "first",
+      "place": "attalia",
+      "title": "Sailing from Attalia",
+      "summary": "The port precedes the return sailing to Antioch.",
+      "passages": [
+        "Acts 14:25-26"
+      ],
+      "qualification": "",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-first-18",
+      "journey": "first",
+      "place": "antioch-syria",
+      "title": "Report to the sending church",
+      "summary": "Paul and Barnabas recount their work and remain with the disciples.",
+      "passages": [
+        "Acts 14:26-28"
+      ],
+      "qualification": "",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-second-01",
+      "journey": "second",
+      "place": "antioch-syria",
+      "title": "A new departure",
+      "summary": "Paul chooses Silas after the disagreement with Barnabas.",
+      "passages": [
+        "Acts 15:36-41"
+      ],
+      "qualification": "Barnabas and Mark sail to Cyprus separately; that journey is not assigned to Paul.",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-second-02",
+      "journey": "second",
+      "place": "syria-cilicia",
+      "title": "Strengthening regional churches",
+      "summary": "Paul travels through Syria and Cilicia.",
+      "passages": [
+        "Acts 15:41"
+      ],
+      "qualification": "",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-second-03",
+      "journey": "second",
+      "place": "derbe",
+      "title": "Derbe revisited",
+      "summary": "The next named city in the narrated journey is Derbe.",
+      "passages": [
+        "Acts 16:1"
+      ],
+      "qualification": "",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-second-04",
+      "journey": "second",
+      "place": "lystra",
+      "title": "Timothy joins the mission",
+      "summary": "The Lystra setting introduces Timothy and his participation.",
+      "passages": [
+        "Acts 16:1-5"
+      ],
+      "qualification": "",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-second-05",
+      "journey": "second",
+      "place": "phrygia-galatia",
+      "title": "Through Phrygia and Galatia",
+      "summary": "Regional travel continues while preaching in Asia is restricted.",
+      "passages": [
+        "Acts 16:6"
+      ],
+      "qualification": "The restriction is not a denial of the later recorded visit to Ephesus.",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-second-06",
+      "journey": "second",
+      "place": "mysia",
+      "title": "A redirected journey",
+      "summary": "An attempted move towards Bithynia is prevented; the route turns towards Troas.",
+      "passages": [
+        "Acts 16:7-8"
+      ],
+      "qualification": "",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-second-07",
+      "journey": "second",
+      "place": "troas",
+      "title": "The Macedonian vision",
+      "summary": "Paul receives a vision and the company prepares to cross into Macedonia.",
+      "passages": [
+        "Acts 16:8-10"
+      ],
+      "qualification": "",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-second-08",
+      "journey": "second",
+      "place": "samothrace",
+      "title": "Via Samothrace",
+      "summary": "The sailing narrative names Samothrace before Neapolis.",
+      "passages": [
+        "Acts 16:11"
+      ],
+      "qualification": "",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-second-09",
+      "journey": "second",
+      "place": "neapolis",
+      "title": "Arrival at Neapolis",
+      "summary": "The company reaches the Macedonian coastal town.",
+      "passages": [
+        "Acts 16:11"
+      ],
+      "qualification": "",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-second-10",
+      "journey": "second",
+      "place": "philippi",
+      "title": "Lydia and the prison episode",
+      "summary": "Acts recounts Lydia, the enslaved girl, imprisonment and the jailer.",
+      "passages": [
+        "Acts 16:12-40"
+      ],
+      "qualification": "",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-second-11",
+      "journey": "second",
+      "place": "amphipolis",
+      "title": "Passing Amphipolis",
+      "summary": "The city is named as a transit point.",
+      "passages": [
+        "Acts 17:1"
+      ],
+      "qualification": "No separate teaching episode is reported here.",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-second-12",
+      "journey": "second",
+      "place": "apollonia",
+      "title": "Passing Apollonia",
+      "summary": "The next transit point precedes Thessalonica.",
+      "passages": [
+        "Acts 17:1"
+      ],
+      "qualification": "No separate teaching episode is reported here.",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-second-13",
+      "journey": "second",
+      "place": "thessalonica",
+      "title": "Scripture discussion and opposition",
+      "summary": "Synagogue teaching is followed by unrest involving Jason.",
+      "passages": [
+        "Acts 17:1-9"
+      ],
+      "qualification": "",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-second-14",
+      "journey": "second",
+      "place": "berea",
+      "title": "Examining the Scriptures",
+      "summary": "The Berean response is followed by renewed opposition and Paul's departure.",
+      "passages": [
+        "Acts 17:10-15"
+      ],
+      "qualification": "",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-second-15",
+      "journey": "second",
+      "place": "athens",
+      "title": "Speaking in Athens",
+      "summary": "Paul teaches in public settings and addresses the Areopagus audience.",
+      "passages": [
+        "Acts 17:15-34"
+      ],
+      "qualification": "Acts does not establish the precise transport route from Berea to Athens.",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-second-16",
+      "journey": "second",
+      "place": "corinth",
+      "title": "Work and teaching at Corinth",
+      "summary": "Paul meets Aquila and Priscilla; Acts also narrates the Gallio hearing.",
+      "passages": [
+        "Acts 18:1-18"
+      ],
+      "qualification": "",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-second-17",
+      "journey": "second",
+      "place": "cenchreae",
+      "title": "Departure via Cenchreae",
+      "summary": "The sailing departure includes a notice about a vow.",
+      "passages": [
+        "Acts 18:18"
+      ],
+      "qualification": "",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-second-18",
+      "journey": "second",
+      "place": "ephesus",
+      "title": "A brief Ephesian visit",
+      "summary": "Paul speaks in the synagogue and leaves, intending to return.",
+      "passages": [
+        "Acts 18:19-21"
+      ],
+      "qualification": "",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-second-19",
+      "journey": "second",
+      "place": "caesarea",
+      "title": "Landing at Caesarea",
+      "summary": "The narrative names Caesarea before a church greeting.",
+      "passages": [
+        "Acts 18:22"
+      ],
+      "qualification": "",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-second-20",
+      "journey": "second",
+      "place": "unnamed-church",
+      "title": "Greeting an unnamed church",
+      "summary": "A church visit intervenes before the return to Antioch.",
+      "passages": [
+        "Acts 18:22"
+      ],
+      "qualification": "",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-second-21",
+      "journey": "second",
+      "place": "antioch-syria",
+      "title": "Back at Antioch",
+      "summary": "Acts records Paul's return to Antioch.",
+      "passages": [
+        "Acts 18:22"
+      ],
+      "qualification": "",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-third-01",
+      "journey": "third",
+      "place": "antioch-syria",
+      "title": "Leaving Antioch again",
+      "summary": "After a stay, Paul departs on another round of visits.",
+      "passages": [
+        "Acts 18:23"
+      ],
+      "qualification": "",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-third-02",
+      "journey": "third",
+      "place": "phrygia-galatia",
+      "title": "Strengthening disciples inland",
+      "summary": "The regional account names Galatia and Phrygia.",
+      "passages": [
+        "Acts 18:23"
+      ],
+      "qualification": "",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-third-03",
+      "journey": "third",
+      "place": "inland",
+      "title": "The inland approach to Ephesus",
+      "summary": "Paul passes through inland country before reaching Ephesus.",
+      "passages": [
+        "Acts 19:1"
+      ],
+      "qualification": "",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-third-04",
+      "journey": "third",
+      "place": "ephesus",
+      "title": "The extended Ephesian ministry",
+      "summary": "Acts narrates teaching, unusual events and the later disturbance connected with Artemis.",
+      "passages": [
+        "Acts 19:1-20",
+        "Acts 19:21-41"
+      ],
+      "qualification": "Apollos' travels in Acts 18:24-28 are not added as visits made by Paul.",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-third-05",
+      "journey": "third",
+      "place": "macedonia",
+      "title": "Encouraging disciples in Macedonia",
+      "summary": "Paul leaves after the disturbance and travels through Macedonia.",
+      "passages": [
+        "Acts 20:1-2"
+      ],
+      "qualification": "",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-third-06",
+      "journey": "third",
+      "place": "greece",
+      "title": "Three months in Greece",
+      "summary": "A plot changes Paul's intended sailing departure.",
+      "passages": [
+        "Acts 20:2-3"
+      ],
+      "qualification": "",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-third-07",
+      "journey": "third",
+      "place": "macedonia",
+      "title": "Return through Macedonia",
+      "summary": "Paul returns through Macedonia rather than taking the planned direct sailing.",
+      "passages": [
+        "Acts 20:3-6"
+      ],
+      "qualification": "",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-third-08",
+      "journey": "third",
+      "place": "philippi",
+      "title": "Departure after Unleavened Bread",
+      "summary": "The sailing account resumes from Philippi.",
+      "passages": [
+        "Acts 20:6"
+      ],
+      "qualification": "Acts names Philippi; an otherwise unmentioned departure port is not substituted.",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-third-09",
+      "journey": "third",
+      "place": "troas",
+      "title": "A week at Troas",
+      "summary": "The gathering includes the account of Eutychus.",
+      "passages": [
+        "Acts 20:6-12"
+      ],
+      "qualification": "",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-third-10",
+      "journey": "third",
+      "place": "assos",
+      "title": "Paul rejoins the ship",
+      "summary": "Paul travels overland while his companions sail to Assos.",
+      "passages": [
+        "Acts 20:13-14"
+      ],
+      "qualification": "The distinction between Paul's land travel and his companions' sailing is explicit; the exact road is not reconstructed.",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-third-11",
+      "journey": "third",
+      "place": "mitylene",
+      "title": "Arrival at Mitylene",
+      "summary": "After taking Paul aboard, the company reaches Mitylene.",
+      "passages": [
+        "Acts 20:14"
+      ],
+      "qualification": "",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-third-12",
+      "journey": "third",
+      "place": "chios",
+      "title": "Sailing opposite Chios",
+      "summary": "The account describes passing the island, without reporting a landing.",
+      "passages": [
+        "Acts 20:15"
+      ],
+      "qualification": "",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-third-13",
+      "journey": "third",
+      "place": "samos",
+      "title": "Arrival at Samos",
+      "summary": "Samos is the next named stage of the voyage.",
+      "passages": [
+        "Acts 20:15"
+      ],
+      "qualification": "",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-third-14",
+      "journey": "third",
+      "place": "miletus",
+      "title": "Meeting the Ephesian elders",
+      "summary": "Paul summons the elders to Miletus for his farewell address.",
+      "passages": [
+        "Acts 20:15-38"
+      ],
+      "qualification": "The elders come from Ephesus to Paul. Their travel is not plotted as a new Ephesian visit by Paul.",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-third-15",
+      "journey": "third",
+      "place": "cos",
+      "title": "The next sailing stage: Cos",
+      "summary": "The departure from Miletus leads to Cos.",
+      "passages": [
+        "Acts 21:1"
+      ],
+      "qualification": "",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-third-16",
+      "journey": "third",
+      "place": "rhodes",
+      "title": "On to Rhodes",
+      "summary": "The voyage continues to Rhodes.",
+      "passages": [
+        "Acts 21:1"
+      ],
+      "qualification": "",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-third-17",
+      "journey": "third",
+      "place": "patara",
+      "title": "Changing ships at Patara",
+      "summary": "The travellers find a ship bound for Phoenicia.",
+      "passages": [
+        "Acts 21:1-2"
+      ],
+      "qualification": "",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-third-18",
+      "journey": "third",
+      "place": "cyprus-offshore",
+      "title": "Passing Cyprus offshore",
+      "summary": "Cyprus is sighted as the ship continues towards Syria.",
+      "passages": [
+        "Acts 21:3"
+      ],
+      "qualification": "",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-third-19",
+      "journey": "third",
+      "place": "tyre",
+      "title": "Seven days with disciples at Tyre",
+      "summary": "The ship unloads and the company meets local disciples.",
+      "passages": [
+        "Acts 21:3-6"
+      ],
+      "qualification": "",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-third-20",
+      "journey": "third",
+      "place": "ptolemais",
+      "title": "A day at Ptolemais",
+      "summary": "The travellers greet fellow believers and stay briefly.",
+      "passages": [
+        "Acts 21:7"
+      ],
+      "qualification": "",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-third-21",
+      "journey": "third",
+      "place": "caesarea",
+      "title": "Philip's household and Agabus",
+      "summary": "The stay includes Agabus' warning before the ascent towards Jerusalem.",
+      "passages": [
+        "Acts 21:8-14"
+      ],
+      "qualification": "",
+      "reviewStatus": "editorial-reading-aid"
+    },
+    {
+      "id": "paul-third-22",
+      "journey": "third",
+      "place": "jerusalem",
+      "title": "Arrival at Jerusalem",
+      "summary": "The company travels inland and receives a welcome.",
+      "passages": [
+        "Acts 21:15-17"
+      ],
+      "qualification": "No precise road, lodging position or calendar date is supplied by this map.",
+      "reviewStatus": "editorial-reading-aid"
+    }
+  ],
+  "sources": {
+    "pleiades": {
+      "title": "Pleiades contributors, selected ancient place records",
+      "url": "https://pleiades.stoa.org/",
+      "licence": "CC BY 3.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "revision": "e180a8d108032f461200c7c1899a84340a7b492b",
+      "scope": "Ancient place identification and representative geography; not evidence of a visit by Paul."
+    },
+    "natural-earth": {
+      "title": "Natural Earth, 1:110m land",
+      "url": "https://www.naturalearthdata.com/about/terms-of-use/",
+      "licence": "Public domain",
+      "scope": "Modern low-resolution coastal orientation only. Small islands may be omitted; no historical borders."
+    }
+  },
+  "issues": [
+    {
+      "id": "numbered-journeys",
+      "title": "Journey groupings and dates",
+      "description": "First, second and third journey are conventional study labels. Acts supplies narrative sequences and some durations, not a complete modern calendar.",
+      "passages": [
+        "Acts 13:1-3",
+        "Acts 14:26-28",
+        "Acts 15:36-41",
+        "Acts 18:22-23",
+        "Acts 21:15-17"
+      ]
+    },
+    {
+      "id": "regional-galatia",
+      "title": "Regional language and Galatia",
+      "description": "The regional phrases do not settle every town, road or the north/south Galatian reconstruction. Regional stages remain unpinned.",
+      "passages": [
+        "Acts 16:6-8",
+        "Acts 18:23",
+        "Acts 19:1"
+      ]
+    },
+    {
+      "id": "unnamed-church",
+      "title": "The church in Acts 18:22",
+      "description": "Acts 18:22 does not name the city of the church Paul greets. Jerusalem is a common inference from the travel wording, not an explicit place-name here. No Jerusalem pin is added for this entry.",
+      "passages": [
+        "Acts 18:22"
+      ]
+    },
+    {
+      "id": "greece-corinth",
+      "title": "Greece is not a named third-journey Corinth stop",
+      "description": "Acts 20:2-3 names Greece. Corinth is commonly reconstructed as the main setting, but is not named in these verses and receives no third-journey pin on that basis.",
+      "passages": [
+        "Acts 20:2-3"
+      ]
+    },
+    {
+      "id": "offshore",
+      "title": "Island references and textual variants",
+      "description": "Opposite Chios and sighting Cyprus do not establish landings. Island markers elsewhere give only island-scale orientation. Trogyllium, included by some textual witnesses and translations of Acts 20:15, is not silently added to the common itinerary; manuscript comparison requires separate textual work.",
+      "passages": [
+        "Acts 16:11",
+        "Acts 20:15",
+        "Acts 21:1-3"
+      ],
+      "sourceLinks": [
+        {
+          "title": "Acts 20:15, ESV publisher text and manuscript footnote",
+          "url": "https://www.biblegateway.com/passage/?search=Acts+20%3A15&version=ESV",
+          "scope": "Documents the manuscript addition at Trogyllium; it does not establish a precise landing coordinate."
+        }
+      ]
+    },
+    {
+      "id": "derbe",
+      "title": "Derbe and Lystra location precision",
+      "description": "Pleiades representative points are provisional orientation. The Derbe candidate and separate undetermined Derbe record are kept distinct in the local source extract. A point cannot establish where a narrated event happened.",
+      "passages": [
+        "Acts 14:6-21",
+        "Acts 16:1-5"
+      ]
+    }
+  ]
+}

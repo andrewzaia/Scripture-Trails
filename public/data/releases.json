@@ -1,6 +1,17 @@
 {
   "releases": [
     {
+      "version": "0.11.0",
+      "date": "2026-10-28",
+      "title": "Paul's missionary journeys",
+      "changes": [
+        "Explore three missionary journeys in Acts through 61 passage-linked narrative stages, with 33 approximate location markers.",
+        "Use journey filters, a timeline, repeat visits and an accessible stage list, with links to the Bible reader, Atlas and People Index.",
+        "See source-linked geography and clear notes for regional, unnamed, offshore and disputed settings without invented routes or dates.",
+        "Updated the roadmap with the completed missionary journeys and Paul's voyage to Rome as the next geography milestone."
+      ]
+    },
+    {
       "version": "0.10.0",
       "date": "2026-10-28",
       "title": "Atlas passage preview",

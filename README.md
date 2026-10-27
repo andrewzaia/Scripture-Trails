@@ -8,6 +8,8 @@ The top-right header has separate, display-only ESV, NASB20, NIV and NKJV status
 
 ## What works now
 
+- Paul's three missionary journeys: 61 Acts-linked stages, 33 approximate ancient place markers, regional/offshore gaps and an accessible timeline and list.
+
 - Passage navigation across all 66 Protestant canonical Bible books, with chapter selectors and deep links such as `?view=reader&ref=John%203%3A16`.
 - Official ESV text via Crossway, plus NASB20, NIV (2011) and NKJV via API.Bible when their server-side keys are configured.
 - Translation selection preserves the exact verse, range or chapter, persists the preference on this device, and records the edition in shared links. Per-verse Atlas actions work across reader editions.
@@ -314,3 +316,13 @@ A curated register of **115 passage-pair editorial comparisons** spans the initi
 The Atlas offers an on-demand side-by-side comparison reader using the existing server-side ESV and API.Bible integrations. Both panels use the chosen available licensed translation and display translation attribution; API.Bible Scripture views are reported through the existing FUMS implementation. HTML is sanitized by the application's existing allowlist, not inserted directly. No verse content is checked into Git or cached in the Atlas. Individual passage failures show an error without preventing the other passage from rendering. It also supports swapping, retrying and jumping to each passage or wider context.
 
 The People Index now contains eight manually outlined passage trails for Abraham, Moses, David, Solomon, Hezekiah, Esther, Paul and Jesus, plus links from relevant editorial comparisons. Trails are structured reading aids, not settled reconstructions of historical chronology, and source claims await outside scholarly review. Both modules and their dependencies use the site's semantic-version cache-busting process.
+
+## Paul's missionary journeys
+
+Open [the Pauline map](https://www.scripturetrails.com/?view=paul-map) for three conventional journey groupings in Acts 13-21. The page follows the existing Jesus-map interaction and theme, with journey/place filters, narrative timeline, previous/next and manual playback, keyboard and pointer pan/zoom, repeat-visit navigation, reader/Atlas actions and People Index links. Deep links retain `paul-journey` and `paul-stop`.
+
+All 61 stages are listed, including 14 stages without a geographic pin. Thirty-three rounded Pleiades representative points provide approximate orientation; regions, unnamed settings and offshore passages receive no invented coordinates. Connectors join adjacent mapped stages within one journey only, never crossing unpinned gaps or journey boundaries. Natural Earth land polygons give low-resolution modern coastal orientation without political borders. Neither markers nor lines establish precise event sites, ancient roads, sailing tracks or travel distances.
+
+The source and uncertainty register covers the conventional journey divisions, regional Galatia language, Acts 18:22, Greece/Corinth, island and offshore distinctions, Trogyllium and provisional Derbe/Lystra locations. Dates and letter-composition chronology are not reconstructed. The voyage to Rome remains the next geography milestone. Independent specialist review is not claimed.
+
+Local datasets: `public/data/pauline-journeys.json` and `public/data/pauline-coast.json`. Credited, pinned location metadata and transformation notes: `sources/pauline/`. Node tests validate references, marker/source alignment, narrative boundaries and provenance; production checks must also verify mobile/desktop navigation and the deployed version.

@@ -5,8 +5,8 @@ const html = readFileSync(new URL('../public/index.html', import.meta.url), 'utf
 const css = readFileSync(new URL('../public/assets/style.css', import.meta.url), 'utf8');
 const sidebar = html.slice(html.indexOf('<aside class="sidebar"'), html.indexOf('</aside>') + '</aside>'.length);
 test('sidebar preserves all main navigation links, chapter controls and About button', () => {
-  assert.equal((sidebar.match(/class="nav-link/g) || []).length, 10);
-  for (const view of ['discover', 'reader', 'connections', 'jesus-map', 'city-studies', 'entities', 'roadmap', 'journeys', 'notebook', 'about']) {
+  assert.equal((sidebar.match(/class="nav-link/g) || []).length, 11);
+  for (const view of ['discover', 'reader', 'connections', 'jesus-map', 'paul-map', 'city-studies', 'entities', 'roadmap', 'journeys', 'notebook', 'about']) {
     assert.ok(sidebar.includes(`data-view="${view}"`), `missing navigation ${view}`);
   }
   for (const id of ['side-book', 'side-chapter', 'side-open', 'random-verse']) {
