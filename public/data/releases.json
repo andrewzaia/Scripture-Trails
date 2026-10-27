@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "version": "0.3.1",
+      "date": "2026-10-27",
+      "title": "Complete historical release numbering",
+      "changes": [
+        "Added sequential patch versions to earlier website updates, making the full release history easier to follow.",
+        "Aligned the public and development changelogs with the documented sequence of changes."
+      ]
+    },
+    {
       "version": "0.3.0",
       "date": "2026-10-27",
       "title": "Public release history and version display",
@@ -15,7 +24,8 @@
       "changes": [
         "Replaced raw Atlas cross-reference vote labels with seven compact bars, scaled to the strongest connection for the selected verse.",
         "Exact community vote counts remain available on hover and through accessible descriptions."
-      ]
+      ],
+      "version": "0.2.14"
     },
     {
       "date": "2026-10-27",
@@ -23,7 +33,8 @@
       "changes": [
         "Changed translation status badges into compact horizontal labels with green and red status circles.",
         "Kept availability indicators display-only; choose translations in the Bible reader."
-      ]
+      ],
+      "version": "0.2.13"
     },
     {
       "date": "2026-10-27",
@@ -31,7 +42,8 @@
       "changes": [
         "Show translation availability without a separate configured state.",
         "Report an edition as unavailable after a reading failure, then restore its available indicator after a successful reading."
-      ]
+      ],
+      "version": "0.2.12"
     },
     {
       "date": "2026-10-27",
@@ -39,7 +51,8 @@
       "changes": [
         "Established www.scripturetrails.com as the canonical site address, redirecting other domain variants.",
         "Added individual availability indicators for ESV, NASB20, NIV and NKJV."
-      ]
+      ],
+      "version": "0.2.11"
     },
     {
       "date": "2026-10-27",
@@ -47,7 +60,8 @@
       "changes": [
         "Moved the OpenBible.info cross-reference archive into locally served data files, with documented provenance.",
         "Host credited city photographs on the site to reduce reliance on external image requests."
-      ]
+      ],
+      "version": "0.2.10"
     },
     {
       "date": "2026-10-27",
@@ -55,15 +69,8 @@
       "changes": [
         "Added NASB 2020, NIV 2011 and NKJV reading through authorised Bible services alongside ESV.",
         "Keep a selected translation when sharing a passage or navigating; display publisher attribution with verses."
-      ]
-    },
-    {
-      "date": "2026-10-27",
-      "title": "Focused verse and chapter reading",
-      "changes": [
-        "Show the requested verse or range instead of always displaying an entire chapter.",
-        "Added a Read full chapter action and improved reading links."
-      ]
+      ],
+      "version": "0.2.9"
     },
     {
       "date": "2026-10-27",
@@ -71,7 +78,25 @@
       "changes": [
         "Improved compact chapter navigation, sidebar scrolling and mobile-friendly presentation.",
         "Made the Scripture Trails logo a link back to the homepage, and refined roadmap page spacing."
-      ]
+      ],
+      "version": "0.2.8"
+    },
+    {
+      "date": "2026-10-27",
+      "title": "Focused verse and chapter reading",
+      "changes": [
+        "Show the requested verse or range instead of always displaying an entire chapter.",
+        "Added a Read full chapter action and improved reading links."
+      ],
+      "version": "0.2.7"
+    },
+    {
+      "date": "2026-10-26",
+      "title": "More reliable historical images",
+      "changes": [
+        "Improved image sourcing and fallbacks for historical locations, then moved credited photographs into local hosting."
+      ],
+      "version": "0.2.6"
     },
     {
       "date": "2026-10-26",
@@ -79,14 +104,8 @@
       "changes": [
         "Added in-depth studies of Jerusalem, Nazareth, Capernaum, Bethlehem and Jericho.",
         "Included Scripture references, historical and archaeological evidence, timelines, modern map illustrations and disputed-site comparisons."
-      ]
-    },
-    {
-      "date": "2026-10-26",
-      "title": "More reliable historical images",
-      "changes": [
-        "Improved image sourcing and fallbacks for historical locations, then moved credited photographs into local hosting."
-      ]
+      ],
+      "version": "0.2.5"
     },
     {
       "date": "2026-10-26",
@@ -94,7 +113,8 @@
       "changes": [
         "Reviewed the Gospel journey episodes and historical place descriptions.",
         "Published corrections, research limitations and differing Gospel chronologies instead of presenting uncertain details as established facts."
-      ]
+      ],
+      "version": "0.2.4"
     },
     {
       "date": "2026-10-26",
@@ -102,7 +122,8 @@
       "changes": [
         "Added biblical and historical source notes for the locations shown on the journeys map.",
         "Launched a public roadmap to distinguish delivered features, upcoming work and research still needed."
-      ]
+      ],
+      "version": "0.2.3"
     },
     {
       "date": "2026-10-26",
@@ -110,7 +131,17 @@
       "changes": [
         "Launched an interactive map and timeline exploring 79 Gospel and Acts episodes across 35 places and regions.",
         "Added passage links, visit history, filters and clear labels for uncertain sites and schematic routes."
-      ]
+      ],
+      "version": "0.2.2"
+    },
+    {
+      "date": "2026-10-26",
+      "title": "Expanded biblical cross-references",
+      "changes": [
+        "Added attributed OpenBible.info links throughout the Bible, with ranking from community votes.",
+        "Separated imported references from curated quotation, parallel, echo and theme connections."
+      ],
+      "version": "0.2.1"
     },
     {
       "version": "0.2.0",
@@ -122,11 +153,11 @@
       ]
     },
     {
+      "version": "0.1.1",
       "date": "2026-10-26",
-      "title": "Expanded biblical cross-references",
+      "title": "More reliable Bible reference parsing",
       "changes": [
-        "Added attributed OpenBible.info links throughout the Bible, with ranking from community votes.",
-        "Separated imported references from curated quotation, parallel, echo and theme connections."
+        "Corrected duplicate Bible book aliases that could interfere with recognising Scripture references."
       ]
     },
     {

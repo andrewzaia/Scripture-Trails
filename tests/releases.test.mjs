@@ -26,3 +26,21 @@ test('footer and assets agree with current version',()=>{
 test('repeating a release version is rejected',()=>{
  assert.throws(()=>validateReleases([{version:'0.3.0',date:'2026-10-27',title:'One',changes:['a']},{version:'0.3.0',date:'2026-10-26',title:'Two',changes:['b']}],'0.3.0'));
 });
+
+test('every historical release is numbered, sorted and patch-contiguous',()=>{
+ const versions=manifest.releases.map(entry=>entry.version);
+ assert.equal(new Set(versions).size,versions.length);
+ assert.ok(versions.includes('0.1.1'));
+ assert.ok(versions.includes('0.2.14'));
+ assert.ok(versions.every((v,i)=>!i||compareVersions(versions[i-1],v)>0));
+ const details=readFileSync(new URL('../CHANGELOG.md',import.meta.url),'utf8');
+ assert.deepEqual([...details.matchAll(/^## (\d+\.\d+\.\d+)\b/gm)].map(m=>m[1]),versions);
+});
+test('missing, reversed and skipped historical patch versions are rejected',()=>{
+ const missing=manifest.releases.map(r=>({...r}));delete missing[2].version;
+ assert.throws(()=>validateReleases(missing,pkg.version),/needs a semantic version/);
+ const reversed=manifest.releases.map(r=>({...r}));[reversed[2],reversed[3]]=[reversed[3],reversed[2]];
+ assert.throws(()=>validateReleases(reversed,pkg.version),/newest first/);
+ const skipped=manifest.releases.map(r=>({...r}));skipped[2].version='0.2.18';
+ assert.throws(()=>validateReleases(skipped,pkg.version),/Skipped patch version/);
+});
