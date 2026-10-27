@@ -1,5 +1,5 @@
 import {parseRef,shortRef} from './books.js';
-import {buildShortestRouteTree} from './atlas-shortest-path.js?v=0.9.0';
+import {buildShortestRouteTree} from './atlas-shortest-path.js?v=0.9.1';
 export class ScriptureGraph{
  constructor(canvas,onSelect){this.canvas=canvas;this.ctx=canvas.getContext('2d');this.onSelect=onSelect;this.nodes=[];this.edges=[];this.scale=1;this.pan={x:0,y:0};this.drag=null;this.hover=null;this.route=null;this.routeTo=null;
   this.observer=new ResizeObserver(()=>this.resize());this.observer.observe(canvas.parentElement);
