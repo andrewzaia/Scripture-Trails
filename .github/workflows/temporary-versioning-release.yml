@@ -27,3 +27,4 @@ jobs:
           git add package.json CHANGELOG.md public/index.html public/data/releases.json public/assets/app.js public/assets/graph.js public/assets/entity-index.js public/assets/connection-evidence.js
           git commit -m "Release v0.9.2: Consistent version history"
           git push origin HEAD:chore/enforce-all-release-versions-20261027
+# Trigger from the existing registered default-branch workflow.
