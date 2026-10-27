@@ -34,7 +34,7 @@ test('every historical release is numbered, sorted and patch-contiguous',()=>{
  assert.ok(versions.includes('0.2.14'));
  assert.ok(versions.every((v,i)=>!i||compareVersions(versions[i-1],v)>0));
  const details=readFileSync(new URL('../CHANGELOG.md',import.meta.url),'utf8');
- assert.deepEqual([...details.matchAll(/^## (\\d+\\.\\d+\\.\\d+)\\b/gm)].map(m=>m[1]),versions);
+ assert.deepEqual([...details.matchAll(/^## (\d+\.\d+\.\d+)\b/gm)].map(m=>m[1]),versions);
 });
 test('missing, reversed and skipped historical patch versions are rejected',()=>{
  const missing=manifest.releases.map(r=>({...r}));delete missing[2].version;
