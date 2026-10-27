@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.5.0 - 27/10/2026: Explore biblical people, places and events
+
+- Added searchable biblical people profiles with disambiguated names and passage references.
+- Connected 35 historical locations and 79 Gospel episodes to an interactive study index.
+- Added one-click navigation between the index, Bible reader, Connection Atlas and historical maps.
+
 ## 0.4.2 - 27/10/2026: Clarify Atlas evidence and validate Scripture references
 
 - Explained that Atlas votes indicate community-ranked relevance rather than scholarly confidence.

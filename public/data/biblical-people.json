@@ -1,0 +1,607 @@
+{
+  "version": 1,
+  "updated": "2026-10-27",
+  "scope": "An initial Gospel-person index, not a complete biblical biographical dictionary. People are identified by explicit narrative references; selected event links are pointers to relevant study entries, not proofs of historicity. Alias matches are not identity equivalences. Scriptural claims and independent historical corroboration remain distinct.",
+  "sourcePolicy": "Person summaries and relationships use cited canonical Gospel passages as primary narrative sources. External biography and historical claims have not been independently peer reviewed. Do not infer relationships beyond the stated references.",
+  "people": [
+    {
+      "id": "jesus",
+      "name": "Jesus of Nazareth",
+      "aliases": [
+        "Jesus Christ",
+        "Jesus",
+        "Christ",
+        "Messiah"
+      ],
+      "disambiguation": "The Jesus described by the four canonical Gospels, not any other person named Jesus.",
+      "summary": "The Gospel narratives present Jesus teaching, healing and travelling through Galilee and Judea, culminating in the passion and resurrection accounts. The event links below are selected examples from the 79-entry map, not a complete list of his activities.",
+      "passages": [
+        "Mark 1:14-15",
+        "Luke 4:16-21",
+        "John 20:30-31"
+      ],
+      "events": [
+        "j001",
+        "j008",
+        "j014",
+        "j017",
+        "j020",
+        "j034",
+        "j044",
+        "j055",
+        "j063",
+        "j069",
+        "j072",
+        "j074",
+        "j079"
+      ],
+      "relationships": [
+        {
+          "to": "mary-mother",
+          "label": "son of",
+          "ref": "Luke 2:4-7"
+        },
+        {
+          "to": "john-baptist",
+          "label": "baptised by",
+          "ref": "Matthew 3:13-17"
+        }
+      ]
+    },
+    {
+      "id": "mary-mother",
+      "name": "Mary, mother of Jesus",
+      "aliases": [
+        "Mary of Nazareth",
+        "Mary (mother of Jesus)",
+        "Mary"
+      ],
+      "disambiguation": "Mary the mother of Jesus, distinct from Mary Magdalene and Mary of Bethany.",
+      "summary": "Luke and Matthew associate Mary with Jesus' birth and childhood. John places his mother at the wedding in Cana and at the crucifixion.",
+      "passages": [
+        "Luke 1:26-38",
+        "Luke 2:1-7",
+        "John 2:1-5",
+        "John 19:25-27"
+      ],
+      "events": [
+        "j001",
+        "j005",
+        "j006",
+        "j012",
+        "j072"
+      ],
+      "relationships": [
+        {
+          "to": "jesus",
+          "label": "mother of",
+          "ref": "Luke 2:4-7"
+        },
+        {
+          "to": "joseph-nazareth",
+          "label": "betrothed to",
+          "ref": "Matthew 1:18-25"
+        }
+      ]
+    },
+    {
+      "id": "joseph-nazareth",
+      "name": "Joseph of Nazareth",
+      "aliases": [
+        "Joseph (Mary's husband)",
+        "Joseph"
+      ],
+      "disambiguation": "Joseph, husband of Mary in the infancy accounts, not Joseph of Arimathea.",
+      "summary": "Matthew describes Joseph receiving a warning and taking Mary and Jesus to Egypt, then returning to settle in Nazareth.",
+      "passages": [
+        "Matthew 1:18-25",
+        "Matthew 2:13-23",
+        "Luke 2:41-51"
+      ],
+      "events": [
+        "j001",
+        "j004",
+        "j005",
+        "j006"
+      ],
+      "relationships": [
+        {
+          "to": "mary-mother",
+          "label": "husband of",
+          "ref": "Matthew 1:18-25"
+        }
+      ]
+    },
+    {
+      "id": "john-baptist",
+      "name": "John the Baptist",
+      "aliases": [
+        "John the Baptiser",
+        "John"
+      ],
+      "disambiguation": "The prophetic baptiser, distinct from John son of Zebedee.",
+      "summary": "The Gospels portray John as a wilderness preacher who baptises Jesus and directs others' attention toward him.",
+      "passages": [
+        "Mark 1:2-11",
+        "John 1:19-34",
+        "Matthew 11:2-11"
+      ],
+      "events": [
+        "j008",
+        "j010"
+      ],
+      "relationships": [
+        {
+          "to": "jesus",
+          "label": "baptised",
+          "ref": "Matthew 3:13-17"
+        }
+      ]
+    },
+    {
+      "id": "peter",
+      "name": "Simon Peter",
+      "aliases": [
+        "Peter",
+        "Cephas",
+        "Simon Peter",
+        "Simon"
+      ],
+      "disambiguation": "Simon called Peter, distinct from other men named Simon.",
+      "summary": "Introduced as Andrew's brother, Peter appears in the fishermen narratives, Caesarea Philippi confession and resurrection accounts.",
+      "passages": [
+        "John 1:40-42",
+        "Mark 1:16-18",
+        "Matthew 16:13-20",
+        "John 21:15-19"
+      ],
+      "events": [
+        "j010",
+        "j022",
+        "j044",
+        "j046",
+        "j077"
+      ],
+      "relationships": [
+        {
+          "to": "andrew",
+          "label": "brother of",
+          "ref": "John 1:40-42"
+        }
+      ]
+    },
+    {
+      "id": "andrew",
+      "name": "Andrew the apostle",
+      "aliases": [
+        "Andrew",
+        "Andrew (brother of Peter)"
+      ],
+      "disambiguation": "Andrew, Simon Peter's brother, among Jesus' first disciples.",
+      "summary": "John identifies Andrew as a follower who brings Simon to Jesus; Mark recounts the fishermen's calling.",
+      "passages": [
+        "John 1:35-42",
+        "Mark 1:16-18"
+      ],
+      "events": [
+        "j010",
+        "j022"
+      ],
+      "relationships": [
+        {
+          "to": "peter",
+          "label": "brother of",
+          "ref": "John 1:40-42"
+        }
+      ]
+    },
+    {
+      "id": "james-zebedee",
+      "name": "James son of Zebedee",
+      "aliases": [
+        "James (son of Zebedee)",
+        "James"
+      ],
+      "disambiguation": "One of multiple biblical men named James; the brother of John son of Zebedee.",
+      "summary": "The Synoptic Gospels place James among the fishermen called by Jesus and among those present at the transfiguration.",
+      "passages": [
+        "Mark 1:19-20",
+        "Matthew 17:1-3"
+      ],
+      "events": [
+        "j022",
+        "j046"
+      ],
+      "relationships": [
+        {
+          "to": "john-zebedee",
+          "label": "brother of",
+          "ref": "Mark 1:19-20"
+        }
+      ]
+    },
+    {
+      "id": "john-zebedee",
+      "name": "John son of Zebedee",
+      "aliases": [
+        "John (son of Zebedee)",
+        "John"
+      ],
+      "disambiguation": "The disciple among the sons of Zebedee, distinct from John the Baptist.",
+      "summary": "The Synoptic Gospels describe John as James' brother and a participant in the transfiguration. Authorship of the Fourth Gospel is not assumed by this profile.",
+      "passages": [
+        "Mark 1:19-20",
+        "Matthew 17:1-3"
+      ],
+      "events": [
+        "j022",
+        "j046"
+      ],
+      "relationships": [
+        {
+          "to": "james-zebedee",
+          "label": "brother of",
+          "ref": "Mark 1:19-20"
+        }
+      ]
+    },
+    {
+      "id": "philip-disciple",
+      "name": "Philip the disciple",
+      "aliases": [
+        "Philip (disciple)",
+        "Philip"
+      ],
+      "disambiguation": "Philip called by Jesus in John 1, not Philip the evangelist in Acts.",
+      "summary": "In John's account Philip is called during the journey into Galilee and speaks with Nathanael.",
+      "passages": [
+        "John 1:43-46",
+        "John 14:8-9"
+      ],
+      "events": [
+        "j011"
+      ],
+      "relationships": [
+        {
+          "to": "nathanael",
+          "label": "speaks to",
+          "ref": "John 1:45-46"
+        }
+      ]
+    },
+    {
+      "id": "nathanael",
+      "name": "Nathanael",
+      "aliases": [
+        "Nathanael of Cana"
+      ],
+      "disambiguation": "Nathanael in the Fourth Gospel; identification with Bartholomew is not established by these passages.",
+      "summary": "John records Philip inviting Nathanael to meet Jesus. This entry does not equate him automatically with Bartholomew.",
+      "passages": [
+        "John 1:45-51",
+        "John 21:2"
+      ],
+      "events": [
+        "j011"
+      ],
+      "relationships": [
+        {
+          "to": "philip-disciple",
+          "label": "introduced by",
+          "ref": "John 1:45-46"
+        }
+      ]
+    },
+    {
+      "id": "nicodemus",
+      "name": "Nicodemus",
+      "aliases": [
+        "Nicodemus the Pharisee"
+      ],
+      "disambiguation": "The Nicodemus named in the Gospel of John.",
+      "summary": "John portrays Nicodemus speaking with Jesus, later appearing in council discussion and the burial account.",
+      "passages": [
+        "John 3:1-21",
+        "John 7:50-52",
+        "John 19:39-42"
+      ],
+      "events": [
+        "j015",
+        "j051",
+        "j073"
+      ],
+      "relationships": []
+    },
+    {
+      "id": "samaritan-woman",
+      "name": "The Samaritan woman",
+      "aliases": [
+        "Woman at the well",
+        "Samaritan woman"
+      ],
+      "disambiguation": "The unnamed Samaritan woman in John 4; no personal name is supplied by the Gospel.",
+      "summary": "John reports an exchange with Jesus at Jacob's well. Later traditional names are not presented here as biblical identification.",
+      "passages": [
+        "John 4:4-30",
+        "John 4:39-42"
+      ],
+      "events": [
+        "j017"
+      ],
+      "relationships": []
+    },
+    {
+      "id": "jairus",
+      "name": "Jairus",
+      "aliases": [
+        "Jairus the synagogue leader"
+      ],
+      "disambiguation": "The synagogue official named Jairus, not a different ruler or father.",
+      "summary": "Mark and Luke describe Jairus requesting help for his daughter in an episode also involving a woman seeking healing.",
+      "passages": [
+        "Mark 5:22-43",
+        "Luke 8:40-56"
+      ],
+      "events": [
+        "j032"
+      ],
+      "relationships": []
+    },
+    {
+      "id": "centurion-capernaum",
+      "name": "The Capernaum centurion",
+      "aliases": [
+        "Centurion's servant",
+        "Unnamed centurion"
+      ],
+      "disambiguation": "The unnamed military officer in the servant-healing account.",
+      "summary": "Matthew and Luke describe a centurion's appeal concerning a servant, with differences in how messengers are represented.",
+      "passages": [
+        "Matthew 8:5-13",
+        "Luke 7:1-10"
+      ],
+      "events": [
+        "j026"
+      ],
+      "relationships": []
+    },
+    {
+      "id": "syrophoenician-woman",
+      "name": "The Syrophoenician woman",
+      "aliases": [
+        "Canaanite woman",
+        "Tyre woman"
+      ],
+      "disambiguation": "The unnamed woman in Mark 7 and Matthew 15; Gospel descriptions use different ethnic terminology.",
+      "summary": "Mark and Matthew recount her request for her daughter's deliverance in the region of Tyre.",
+      "passages": [
+        "Mark 7:24-30",
+        "Matthew 15:21-28"
+      ],
+      "events": [
+        "j038"
+      ],
+      "relationships": []
+    },
+    {
+      "id": "lazarus-bethany",
+      "name": "Lazarus of Bethany",
+      "aliases": [
+        "Lazarus",
+        "Lazarus (brother of Martha)"
+      ],
+      "disambiguation": "Brother of Martha and Mary of Bethany, not the Lazarus in Luke 16's parable.",
+      "summary": "John narrates the raising of Lazarus and places him with his sisters in Bethany.",
+      "passages": [
+        "John 11:1-44",
+        "John 12:1-2"
+      ],
+      "events": [
+        "j055",
+        "j060"
+      ],
+      "relationships": [
+        {
+          "to": "martha-bethany",
+          "label": "brother of",
+          "ref": "John 11:1-2"
+        },
+        {
+          "to": "mary-bethany",
+          "label": "brother of",
+          "ref": "John 11:1-2"
+        }
+      ]
+    },
+    {
+      "id": "martha-bethany",
+      "name": "Martha of Bethany",
+      "aliases": [
+        "Martha",
+        "Martha (sister of Lazarus)"
+      ],
+      "disambiguation": "The Martha named as a sister of Lazarus and Mary, not a generic unnamed host.",
+      "summary": "John presents Martha speaking with Jesus before the Lazarus episode and serving at a later meal in Bethany.",
+      "passages": [
+        "John 11:1-27",
+        "John 12:1-2",
+        "Luke 10:38-42"
+      ],
+      "events": [
+        "j055",
+        "j060"
+      ],
+      "relationships": [
+        {
+          "to": "lazarus-bethany",
+          "label": "sister of",
+          "ref": "John 11:1-2"
+        },
+        {
+          "to": "mary-bethany",
+          "label": "sister of",
+          "ref": "John 11:1-2"
+        }
+      ]
+    },
+    {
+      "id": "mary-bethany",
+      "name": "Mary of Bethany",
+      "aliases": [
+        "Mary (sister of Martha)",
+        "Mary of Bethany",
+        "Mary"
+      ],
+      "disambiguation": "Sister of Martha and Lazarus, not Mary Magdalene or Jesus' mother.",
+      "summary": "John describes Mary alongside her family and records an anointing in Bethany. Whether this matches every other anointing narrative remains debated.",
+      "passages": [
+        "John 11:1-2",
+        "John 12:1-8"
+      ],
+      "events": [
+        "j055",
+        "j060"
+      ],
+      "relationships": [
+        {
+          "to": "martha-bethany",
+          "label": "sister of",
+          "ref": "John 11:1-2"
+        },
+        {
+          "to": "lazarus-bethany",
+          "label": "sister of",
+          "ref": "John 11:1-2"
+        }
+      ]
+    },
+    {
+      "id": "mary-magdalene",
+      "name": "Mary Magdalene",
+      "aliases": [
+        "Mary of Magdala",
+        "Mary Magdalene",
+        "Mary"
+      ],
+      "disambiguation": "Mary Magdalene, distinguished from Jesus' mother and Mary of Bethany.",
+      "summary": "Luke names Mary Magdalene among women accompanying Jesus. John places her at the empty tomb and in the garden encounter.",
+      "passages": [
+        "Luke 8:1-3",
+        "John 20:1-18"
+      ],
+      "events": [
+        "j074"
+      ],
+      "relationships": []
+    },
+    {
+      "id": "zacchaeus",
+      "name": "Zacchaeus",
+      "aliases": [
+        "Zacchaeus of Jericho"
+      ],
+      "disambiguation": "The tax collector named in Luke 19.",
+      "summary": "Luke recounts Zacchaeus meeting Jesus in Jericho and hosting him.",
+      "passages": [
+        "Luke 19:1-10"
+      ],
+      "events": [
+        "j059"
+      ],
+      "relationships": []
+    },
+    {
+      "id": "bartimaeus",
+      "name": "Bartimaeus",
+      "aliases": [
+        "Blind Bartimaeus",
+        "Son of Timaeus"
+      ],
+      "disambiguation": "The named blind man in Mark's Jericho episode; parallel accounts differ in details.",
+      "summary": "Mark names Bartimaeus as a blind beggar near Jericho. His name is not supplied in Luke's parallel.",
+      "passages": [
+        "Mark 10:46-52",
+        "Luke 18:35-43"
+      ],
+      "events": [
+        "j058"
+      ],
+      "relationships": []
+    },
+    {
+      "id": "thomas",
+      "name": "Thomas the disciple",
+      "aliases": [
+        "Didymus",
+        "Thomas",
+        "Doubting Thomas"
+      ],
+      "disambiguation": "Thomas, called Didymus, among Jesus' disciples.",
+      "summary": "John describes Thomas' absence at one gathering and his encounter with Jesus at a later appearance.",
+      "passages": [
+        "John 20:24-29",
+        "John 21:2"
+      ],
+      "events": [
+        "j076",
+        "j077"
+      ],
+      "relationships": []
+    },
+    {
+      "id": "judas-iscariot",
+      "name": "Judas Iscariot",
+      "aliases": [
+        "Judas (Iscariot)",
+        "Judas"
+      ],
+      "disambiguation": "Judas Iscariot, distinct from other men named Judas in the New Testament.",
+      "summary": "The passion accounts portray Judas arranging to betray Jesus and identifying him at the arrest.",
+      "passages": [
+        "Matthew 26:14-16",
+        "Matthew 26:47-50",
+        "John 13:21-30"
+      ],
+      "events": [
+        "j069",
+        "j070"
+      ],
+      "relationships": []
+    },
+    {
+      "id": "pilate",
+      "name": "Pontius Pilate",
+      "aliases": [
+        "Pilate"
+      ],
+      "disambiguation": "The Roman prefect named in the trial and crucifixion narratives.",
+      "summary": "The Gospels present Pilate as the Roman authority involved in Jesus' hearing and crucifixion sentence.",
+      "passages": [
+        "Matthew 27:11-26",
+        "John 19:1-16"
+      ],
+      "events": [
+        "j071",
+        "j072"
+      ],
+      "relationships": []
+    },
+    {
+      "id": "caiaphas",
+      "name": "Caiaphas",
+      "aliases": [
+        "High priest Caiaphas"
+      ],
+      "disambiguation": "The high priest identified in Matthew and John, distinct from Annas.",
+      "summary": "The passion narratives name Caiaphas in the proceedings concerning Jesus.",
+      "passages": [
+        "Matthew 26:57-68",
+        "John 18:13-24"
+      ],
+      "events": [
+        "j071"
+      ],
+      "relationships": []
+    }
+  ]
+}
