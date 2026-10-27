@@ -1,0 +1,1601 @@
+{
+  "version": 1,
+  "updated": "2026-10-27",
+  "scope": "Additional selected people across the Hebrew Bible and New Testament. This is a cited reading index, not a complete prosopography or independent historical verification.",
+  "sourcePolicy": "The provided passage citations support the naming and descriptions used for the indexed narrative figures. Homonyms and uncertain traditional identifications are distinguished. No external archaeological or literary source should be taken as proving a whole narrative.",
+  "people": [
+    {
+      "id": "adam",
+      "name": "Adam",
+      "corpus": "Hebrew Bible",
+      "aliases": [],
+      "disambiguation": "The Adam of the Genesis creation account, not a later namesake.",
+      "summary": "Genesis describes Adam as the first man in the garden narrative.",
+      "passages": [
+        "Genesis 2:7-25",
+        "Genesis 3:1-24"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "eve",
+      "name": "Eve",
+      "corpus": "Hebrew Bible",
+      "aliases": [],
+      "disambiguation": "The first woman of the Genesis narrative.",
+      "summary": "Genesis depicts Eve in the garden narrative and as mother of Cain and Abel.",
+      "passages": [
+        "Genesis 3:1-21",
+        "Genesis 4:1-2"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "cain",
+      "name": "Cain",
+      "corpus": "Hebrew Bible",
+      "aliases": [],
+      "disambiguation": "Adam and Eve's son in Genesis, not another similarly named figure.",
+      "summary": "Cain is identified as Abel's brother in the account of the first murder.",
+      "passages": [
+        "Genesis 4:1-16"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "abel-genesis",
+      "name": "Abel",
+      "corpus": "Hebrew Bible",
+      "aliases": [
+        "Abel"
+      ],
+      "disambiguation": "The Abel of Genesis 4, later recalled in Hebrews.",
+      "summary": "Abel is Cain's brother whose offering and death are recorded in Genesis.",
+      "passages": [
+        "Genesis 4:1-10",
+        "Hebrews 11:4"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "seth-adam",
+      "name": "Seth",
+      "corpus": "Hebrew Bible",
+      "aliases": [],
+      "disambiguation": "Seth son of Adam, not other people of similar names.",
+      "summary": "Genesis identifies Seth as a son of Adam and Eve and traces his descendants.",
+      "passages": [
+        "Genesis 4:25-26",
+        "Genesis 5:3-8"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "enoch-jared",
+      "name": "Enoch son of Jared",
+      "corpus": "Hebrew Bible",
+      "aliases": [
+        "Enoch"
+      ],
+      "disambiguation": "The Enoch in Genesis 5, distinct from Cain's son in Genesis 4.",
+      "summary": "Genesis describes Enoch as one who walked with God.",
+      "passages": [
+        "Genesis 5:18-24",
+        "Hebrews 11:5"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "noah",
+      "name": "Noah",
+      "corpus": "Hebrew Bible",
+      "aliases": [],
+      "disambiguation": "Noah of the flood narrative, not other people called Noah.",
+      "summary": "Genesis tells the story of Noah, the ark, the flood and the post-flood covenant.",
+      "passages": [
+        "Genesis 6:8-22",
+        "Genesis 9:8-17"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "shem",
+      "name": "Shem",
+      "corpus": "Hebrew Bible",
+      "aliases": [],
+      "disambiguation": "Shem son of Noah, not an entire later ethnic or linguistic group.",
+      "summary": "Genesis names Shem among Noah's sons and traces his descendants.",
+      "passages": [
+        "Genesis 9:18-27",
+        "Genesis 11:10-11"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "ham-noah",
+      "name": "Ham son of Noah",
+      "corpus": "Hebrew Bible",
+      "aliases": [
+        "Ham"
+      ],
+      "disambiguation": "Ham son of Noah, not an ancient state or modern racial grouping.",
+      "summary": "Genesis identifies Ham as one of Noah's sons.",
+      "passages": [
+        "Genesis 9:18-27"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "japheth",
+      "name": "Japheth",
+      "corpus": "Hebrew Bible",
+      "aliases": [],
+      "disambiguation": "The Japheth in the Table of Nations, not a modern nation.",
+      "summary": "Japheth is one of Noah's sons in Genesis.",
+      "passages": [
+        "Genesis 9:18-27",
+        "Genesis 10:1-5"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "lot-abraham",
+      "name": "Lot",
+      "corpus": "Hebrew Bible",
+      "aliases": [
+        "Lot"
+      ],
+      "disambiguation": "Lot the nephew of Abram, not the English word lot.",
+      "summary": "Genesis depicts Lot as Abram's relative who settles near Sodom and survives the city's destruction.",
+      "passages": [
+        "Genesis 13:5-13",
+        "Genesis 19:1-29"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "hagar",
+      "name": "Hagar",
+      "corpus": "Hebrew Bible",
+      "aliases": [],
+      "disambiguation": "Hagar in the Abraham and Sarah household.",
+      "summary": "Genesis narrates the experiences of Hagar, an Egyptian servant, and her son Ishmael.",
+      "passages": [
+        "Genesis 16:1-16",
+        "Genesis 21:8-21"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "ishmael-abraham",
+      "name": "Ishmael son of Abraham",
+      "corpus": "Hebrew Bible",
+      "aliases": [
+        "Ishmael"
+      ],
+      "disambiguation": "Ishmael in the ancestral narrative, not a collective label for later peoples.",
+      "summary": "Genesis identifies Ishmael as the son of Abraham and Hagar.",
+      "passages": [
+        "Genesis 16:11-16",
+        "Genesis 21:8-21"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "rebekah",
+      "name": "Rebekah",
+      "corpus": "Hebrew Bible",
+      "aliases": [
+        "Rebecca"
+      ],
+      "disambiguation": "Wife of Isaac and mother of twins Esau and Jacob.",
+      "summary": "Genesis describes Rebekah's marriage to Isaac and the birth of Esau and Jacob.",
+      "passages": [
+        "Genesis 24:15-27",
+        "Genesis 25:19-28"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "esau",
+      "name": "Esau",
+      "corpus": "Hebrew Bible",
+      "aliases": [],
+      "disambiguation": "Esau son of Isaac, not identical to every later reference to Edom.",
+      "summary": "Genesis identifies Esau as Jacob's twin and narrates their later reconciliation.",
+      "passages": [
+        "Genesis 25:24-34",
+        "Genesis 33:1-17"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "leah",
+      "name": "Leah",
+      "corpus": "Hebrew Bible",
+      "aliases": [],
+      "disambiguation": "Leah, daughter of Laban, distinct from Rachel.",
+      "summary": "Genesis names Leah as Jacob's wife and the mother of several of his sons.",
+      "passages": [
+        "Genesis 29:15-35"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "rachel",
+      "name": "Rachel",
+      "corpus": "Hebrew Bible",
+      "aliases": [],
+      "disambiguation": "Rachel wife of Jacob, distinct from Leah.",
+      "summary": "Genesis recounts Rachel's marriage to Jacob and the birth of Benjamin.",
+      "passages": [
+        "Genesis 29:15-30",
+        "Genesis 35:16-20"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "judah-jacob",
+      "name": "Judah son of Jacob",
+      "corpus": "Hebrew Bible",
+      "aliases": [
+        "Judah (patriarch)",
+        "Judah"
+      ],
+      "disambiguation": "The patriarch Judah, not the later kingdom of Judah or Judas Iscariot.",
+      "summary": "Genesis identifies Judah as one of Jacob's sons.",
+      "passages": [
+        "Genesis 29:35",
+        "Genesis 49:8-12"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "benjamin-jacob",
+      "name": "Benjamin son of Jacob",
+      "corpus": "Hebrew Bible",
+      "aliases": [
+        "Benjamin"
+      ],
+      "disambiguation": "Benjamin son of Jacob, not the later tribe as a single person.",
+      "summary": "Genesis identifies Benjamin as the younger son of Rachel and Jacob.",
+      "passages": [
+        "Genesis 35:16-20",
+        "Genesis 43:15-34"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "jethro",
+      "name": "Jethro",
+      "corpus": "Hebrew Bible",
+      "aliases": [
+        "Moses' father-in-law"
+      ],
+      "disambiguation": "Jethro the Midianite priest; the naming traditions involving Reuel require care.",
+      "summary": "Exodus identifies Jethro as Moses' father-in-law and a priest of Midian.",
+      "passages": [
+        "Exodus 3:1",
+        "Exodus 18:1-12"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "zipporah",
+      "name": "Zipporah",
+      "corpus": "Hebrew Bible",
+      "aliases": [],
+      "disambiguation": "Wife of Moses in the Exodus narratives.",
+      "summary": "Exodus identifies Zipporah as Moses' wife.",
+      "passages": [
+        "Exodus 2:21-22",
+        "Exodus 4:24-26"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "caleb-jephunneh",
+      "name": "Caleb son of Jephunneh",
+      "corpus": "Hebrew Bible",
+      "aliases": [
+        "Caleb"
+      ],
+      "disambiguation": "The Caleb son of Jephunneh, not a later person with the name.",
+      "summary": "Caleb appears in the wilderness scouting narrative and receives an inheritance in Joshua.",
+      "passages": [
+        "Numbers 13:6",
+        "Joshua 14:6-14"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "rahab-jericho",
+      "name": "Rahab of Jericho",
+      "corpus": "Hebrew Bible",
+      "aliases": [
+        "Rahab"
+      ],
+      "disambiguation": "Rahab in Joshua, not the poetic sea-monster name Rahab in Job or Psalms.",
+      "summary": "Joshua depicts Rahab sheltering Israelite spies and surviving the city's capture.",
+      "passages": [
+        "Joshua 2:1-21",
+        "Joshua 6:22-25"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "eleazar-aaron",
+      "name": "Eleazar son of Aaron",
+      "corpus": "Hebrew Bible",
+      "aliases": [
+        "Eleazar"
+      ],
+      "disambiguation": "Aaron's son and successor, not Eleazar named elsewhere.",
+      "summary": "The priest Eleazar succeeded Aaron in the wilderness narratives.",
+      "passages": [
+        "Numbers 20:22-29",
+        "Joshua 14:1"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "phinehas-eleazar",
+      "name": "Phinehas son of Eleazar",
+      "corpus": "Hebrew Bible",
+      "aliases": [
+        "Phinehas"
+      ],
+      "disambiguation": "The son of Eleazar, not another Phinehas such as Eli's son.",
+      "summary": "Phinehas appears in the priestly traditions of Numbers and Joshua.",
+      "passages": [
+        "Numbers 25:6-13",
+        "Joshua 22:13-31"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "gideon",
+      "name": "Gideon",
+      "corpus": "Hebrew Bible",
+      "aliases": [
+        "Jerubbaal"
+      ],
+      "disambiguation": "The judge Gideon, also called Jerubbaal.",
+      "summary": "Judges portrays Gideon leading a small force against Midian.",
+      "passages": [
+        "Judges 6:11-24",
+        "Judges 7:1-25"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "jephthah",
+      "name": "Jephthah",
+      "corpus": "Hebrew Bible",
+      "aliases": [],
+      "disambiguation": "The judge Jephthah, whose vow is narrated in Judges.",
+      "summary": "Judges describes Jephthah, his military leadership and a controversial vow.",
+      "passages": [
+        "Judges 11:1-11",
+        "Judges 11:29-40"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "samson",
+      "name": "Samson",
+      "corpus": "Hebrew Bible",
+      "aliases": [],
+      "disambiguation": "The judge Samson, not a generic name for strong warriors.",
+      "summary": "Judges tells of Samson's strength, conflicts with Philistines and death.",
+      "passages": [
+        "Judges 13:24-25",
+        "Judges 16:23-31"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "delilah",
+      "name": "Delilah",
+      "corpus": "Hebrew Bible",
+      "aliases": [],
+      "disambiguation": "Delilah in Judges 16, distinct from Samson's unnamed wife.",
+      "summary": "Judges identifies Delilah as the woman who learns the secret of Samson's strength.",
+      "passages": [
+        "Judges 16:4-21"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "naomi",
+      "name": "Naomi",
+      "corpus": "Hebrew Bible",
+      "aliases": [
+        "Mara"
+      ],
+      "disambiguation": "Naomi, Ruth's mother-in-law, not Ruth herself.",
+      "summary": "Ruth describes Naomi's return from Moab and her relationship with Ruth.",
+      "passages": [
+        "Ruth 1:1-22",
+        "Ruth 4:13-17"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "boaz",
+      "name": "Boaz",
+      "corpus": "Hebrew Bible",
+      "aliases": [],
+      "disambiguation": "Boaz in Ruth, not the similarly named temple pillar.",
+      "summary": "Boaz is depicted as a kinsman who marries Ruth.",
+      "passages": [
+        "Ruth 2:1-23",
+        "Ruth 4:1-13"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "eli-priest",
+      "name": "Eli the priest",
+      "corpus": "Hebrew Bible",
+      "aliases": [
+        "Eli"
+      ],
+      "disambiguation": "Eli at Shiloh, not Elijah or Elisha.",
+      "summary": "First Samuel presents Eli as a priest at Shiloh and mentor to the young Samuel.",
+      "passages": [
+        "1 Samuel 1:9-18",
+        "1 Samuel 3:1-18"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "hannah-samuel",
+      "name": "Hannah mother of Samuel",
+      "corpus": "Hebrew Bible",
+      "aliases": [
+        "Hannah"
+      ],
+      "disambiguation": "Samuel's mother Hannah, distinct from the prophetess Anna in Luke.",
+      "summary": "First Samuel narrates Hannah's prayer and the dedication of her son Samuel.",
+      "passages": [
+        "1 Samuel 1:9-28",
+        "1 Samuel 2:1-10"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "jonathan-saul",
+      "name": "Jonathan son of Saul",
+      "corpus": "Hebrew Bible",
+      "aliases": [
+        "Jonathan"
+      ],
+      "disambiguation": "Prince Jonathan, not other Jonathans in Scripture.",
+      "summary": "Jonathan is Saul's son and David's friend in First Samuel.",
+      "passages": [
+        "1 Samuel 18:1-4",
+        "1 Samuel 20:1-42"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "michal-saul",
+      "name": "Michal daughter of Saul",
+      "corpus": "Hebrew Bible",
+      "aliases": [
+        "Michal"
+      ],
+      "disambiguation": "Michal daughter of Saul, not David's other wives.",
+      "summary": "First and Second Samuel identify Michal as a daughter of Saul and wife of David.",
+      "passages": [
+        "1 Samuel 18:17-29",
+        "2 Samuel 6:16-23"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "abigail-nabal",
+      "name": "Abigail wife of Nabal",
+      "corpus": "Hebrew Bible",
+      "aliases": [
+        "Abigail"
+      ],
+      "disambiguation": "Abigail of Carmel in 1 Samuel, distinct from David's sister Abigail.",
+      "summary": "Abigail intervenes between David and Nabal and later becomes David's wife.",
+      "passages": [
+        "1 Samuel 25:2-42"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "bathsheba",
+      "name": "Bathsheba",
+      "corpus": "Hebrew Bible",
+      "aliases": [],
+      "disambiguation": "Bathsheba, mother of Solomon, distinct from Abigail.",
+      "summary": "Second Samuel and First Kings describe Bathsheba's relationship to David and her role in Solomon's succession.",
+      "passages": [
+        "2 Samuel 11:1-27",
+        "1 Kings 1:11-31"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "nathan-prophet",
+      "name": "Nathan the prophet",
+      "corpus": "Hebrew Bible",
+      "aliases": [
+        "Nathan"
+      ],
+      "disambiguation": "The prophet Nathan, not Nathan son of David.",
+      "summary": "Nathan appears as a court prophet confronting David in Second Samuel.",
+      "passages": [
+        "2 Samuel 7:1-17",
+        "2 Samuel 12:1-15"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "absalom",
+      "name": "Absalom",
+      "corpus": "Hebrew Bible",
+      "aliases": [],
+      "disambiguation": "Absalom son of David.",
+      "summary": "Second Samuel recounts Absalom's rebellion against his father David.",
+      "passages": [
+        "2 Samuel 15:1-12",
+        "2 Samuel 18:9-18"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "adonijah-david",
+      "name": "Adonijah son of David",
+      "corpus": "Hebrew Bible",
+      "aliases": [
+        "Adonijah"
+      ],
+      "disambiguation": "Son of David, distinct from Solomon.",
+      "summary": "First Kings narrates Adonijah's unsuccessful attempt to claim the throne.",
+      "passages": [
+        "1 Kings 1:5-10",
+        "1 Kings 2:13-25"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "zadok-priest",
+      "name": "Zadok the priest",
+      "corpus": "Hebrew Bible",
+      "aliases": [
+        "Zadok"
+      ],
+      "disambiguation": "Priest associated with the early monarchy, not all later priests called Zadok.",
+      "summary": "Zadok appears as a priest during David's reign and at Solomon's anointing.",
+      "passages": [
+        "2 Samuel 15:24-29",
+        "1 Kings 1:32-40"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "queen-sheba",
+      "name": "Queen of Sheba",
+      "corpus": "Hebrew Bible",
+      "aliases": [
+        "Sheba's queen"
+      ],
+      "disambiguation": "The ruler is unnamed in the canonical Kings account; later personal names are not established by it.",
+      "summary": "Kings narrates a visiting queen who tests Solomon with difficult questions.",
+      "passages": [
+        "1 Kings 10:1-13",
+        "2 Chronicles 9:1-12"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "hiram-tyre",
+      "name": "Hiram king of Tyre",
+      "corpus": "Hebrew Bible",
+      "aliases": [
+        "Hiram"
+      ],
+      "disambiguation": "Hiram the king of Tyre, not the similarly named craftsman Hiram.",
+      "summary": "Kings depicts Hiram of Tyre as a ruler supplying materials and skilled labour.",
+      "passages": [
+        "1 Kings 5:1-12",
+        "2 Samuel 5:11"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "omri-king",
+      "name": "Omri king of Israel",
+      "corpus": "Hebrew Bible",
+      "aliases": [
+        "Omri"
+      ],
+      "disambiguation": "Northern Israelite king, father of Ahab; distinct from the Assyrian shorthand 'House of Omri'.",
+      "summary": "First Kings records Omri's rise and purchase of the hill of Samaria.",
+      "passages": [
+        "1 Kings 16:16-28"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "jezebel",
+      "name": "Jezebel",
+      "corpus": "Hebrew Bible",
+      "aliases": [],
+      "disambiguation": "Queen in the northern monarchy narratives, not the figurative Jezebel in Revelation.",
+      "summary": "First Kings depicts Jezebel, Ahab's wife, in the Carmel-era and Naboth narratives.",
+      "passages": [
+        "1 Kings 16:30-33",
+        "1 Kings 21:1-25"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "jehoshaphat-judah",
+      "name": "Jehoshaphat king of Judah",
+      "corpus": "Hebrew Bible",
+      "aliases": [
+        "Jehoshaphat"
+      ],
+      "disambiguation": "King of Judah, not Jehoshaphat son of Ahilud.",
+      "summary": "Kings describes Jehoshaphat as king of Judah during the divided monarchy.",
+      "passages": [
+        "1 Kings 22:41-50",
+        "2 Chronicles 20:1-30"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "uzziah-king",
+      "name": "Uzziah king of Judah",
+      "corpus": "Hebrew Bible",
+      "aliases": [
+        "Azariah king of Judah",
+        "Uzziah"
+      ],
+      "disambiguation": "The king also called Azariah, not the priest Azariah.",
+      "summary": "Kings and Chronicles describe Uzziah's Judahite reign.",
+      "passages": [
+        "2 Kings 15:1-7",
+        "2 Chronicles 26:1-23"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "ahaz-king",
+      "name": "Ahaz king of Judah",
+      "corpus": "Hebrew Bible",
+      "aliases": [
+        "Ahaz"
+      ],
+      "disambiguation": "Ahaz of Judah, not Ahaziah of Israel or Judah.",
+      "summary": "Second Kings and Isaiah place Ahaz among the Judahite monarchs confronted by regional powers.",
+      "passages": [
+        "2 Kings 16:1-20",
+        "Isaiah 7:1-17"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "athaliah",
+      "name": "Athaliah",
+      "corpus": "Hebrew Bible",
+      "aliases": [],
+      "disambiguation": "Royal woman in Judah, distinct from Jezebel.",
+      "summary": "Second Kings recounts Athaliah's rule and removal from the Judahite throne.",
+      "passages": [
+        "2 Kings 11:1-21"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "naaman-aram",
+      "name": "Naaman the Aramean",
+      "corpus": "Hebrew Bible",
+      "aliases": [
+        "Naaman"
+      ],
+      "disambiguation": "Naaman in Second Kings, not other people of the same name.",
+      "summary": "Second Kings describes Naaman, an Aramean commander, and his encounter with Elisha.",
+      "passages": [
+        "2 Kings 5:1-19"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "huldah",
+      "name": "Huldah the prophetess",
+      "corpus": "Hebrew Bible",
+      "aliases": [],
+      "disambiguation": "Prophetess of Josiah's period, not a priest.",
+      "summary": "Second Kings identifies Huldah as a prophet consulted during Josiah's reign.",
+      "passages": [
+        "2 Kings 22:14-20"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "manasseh-judah",
+      "name": "Manasseh king of Judah",
+      "corpus": "Hebrew Bible",
+      "aliases": [
+        "Manasseh (king)"
+      ],
+      "disambiguation": "King of Judah, not Manasseh son of Joseph nor the tribe bearing that name.",
+      "summary": "Second Kings and Chronicles narrate Manasseh's long reign.",
+      "passages": [
+        "2 Kings 21:1-18",
+        "2 Chronicles 33:1-20"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "baruch-neriah",
+      "name": "Baruch son of Neriah",
+      "corpus": "Hebrew Bible",
+      "aliases": [
+        "Baruch"
+      ],
+      "disambiguation": "Baruch associated with Jeremiah, distinct from later figures sharing the name.",
+      "summary": "Jeremiah depicts Baruch as a scribe who records and reads prophetic words.",
+      "passages": [
+        "Jeremiah 36:1-10",
+        "Jeremiah 45:1-5"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "gedaliah-ahikam",
+      "name": "Gedaliah son of Ahikam",
+      "corpus": "Hebrew Bible",
+      "aliases": [
+        "Gedaliah"
+      ],
+      "disambiguation": "The appointed governor after 586 BCE, not another Gedaliah.",
+      "summary": "Kings and Jeremiah describe Gedaliah's leadership in Judah after Jerusalem's fall.",
+      "passages": [
+        "2 Kings 25:22-26",
+        "Jeremiah 40:5-16"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "nebuchadnezzar-officer",
+      "name": "Nebuzaradan",
+      "corpus": "Hebrew Bible",
+      "aliases": [],
+      "disambiguation": "The imperial officer, distinct from King Nebuchadnezzar.",
+      "summary": "Kings names Nebuzaradan as a Babylonian official at Jerusalem's destruction.",
+      "passages": [
+        "2 Kings 25:8-12",
+        "Jeremiah 39:8-14"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "habakkuk",
+      "name": "Habakkuk the prophet",
+      "corpus": "Hebrew Bible",
+      "aliases": [
+        "Habakkuk"
+      ],
+      "disambiguation": "The speaker identified by the biblical prophetic book.",
+      "summary": "Habakkuk's oracles grapple with violence, injustice and divine judgment.",
+      "passages": [
+        "Habakkuk 1:1-4",
+        "Habakkuk 2:1-4"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "zephaniah-prophet",
+      "name": "Zephaniah the prophet",
+      "corpus": "Hebrew Bible",
+      "aliases": [
+        "Zephaniah"
+      ],
+      "disambiguation": "The prophet of Zephaniah 1:1, distinct from Zephaniah the priest in Jeremiah.",
+      "summary": "The book attributes its oracles to Zephaniah in the days of Josiah.",
+      "passages": [
+        "Zephaniah 1:1-6",
+        "Zephaniah 3:14-20"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "haggai-prophet",
+      "name": "Haggai the prophet",
+      "corpus": "Hebrew Bible",
+      "aliases": [
+        "Haggai"
+      ],
+      "disambiguation": "The prophet of Haggai, not a later court official.",
+      "summary": "Haggai speaks about the rebuilding of the temple in the Persian period.",
+      "passages": [
+        "Haggai 1:1-15",
+        "Haggai 2:1-9"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "zechariah-prophet",
+      "name": "Zechariah son of Berechiah",
+      "corpus": "Hebrew Bible",
+      "aliases": [
+        "Zechariah (prophet)"
+      ],
+      "disambiguation": "The prophet in Zechariah 1:1, not Zechariah father of John the Baptist.",
+      "summary": "Zechariah's prophetic book begins with visions associated with the Persian-period rebuilding.",
+      "passages": [
+        "Zechariah 1:1-6",
+        "Zechariah 4:1-14"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "mordecai",
+      "name": "Mordecai",
+      "corpus": "Hebrew Bible",
+      "aliases": [],
+      "disambiguation": "Mordecai in Esther, not an independently verified Persian court biography.",
+      "summary": "Esther portrays Mordecai as Esther's guardian and a Jewish official in Susa.",
+      "passages": [
+        "Esther 2:5-11",
+        "Esther 4:1-17"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "job",
+      "name": "Job",
+      "corpus": "Hebrew Bible",
+      "aliases": [],
+      "disambiguation": "The central figure of wisdom literature; historical dating is not established by the book.",
+      "summary": "The book of Job presents a man whose suffering frames dialogues on righteousness and divine justice.",
+      "passages": [
+        "Job 1:1-22",
+        "Job 42:10-17"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "balaam",
+      "name": "Balaam son of Beor",
+      "corpus": "Hebrew Bible",
+      "aliases": [
+        "Balaam"
+      ],
+      "disambiguation": "Balaam of the Numbers oracle narratives, not an Israelite prophet of the monarchy.",
+      "summary": "Numbers portrays Balaam as a diviner summoned by Balak.",
+      "passages": [
+        "Numbers 22:1-41",
+        "Numbers 24:1-9"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "balak",
+      "name": "Balak king of Moab",
+      "corpus": "Hebrew Bible",
+      "aliases": [
+        "Balak"
+      ],
+      "disambiguation": "Balak in Numbers, not another historical king.",
+      "summary": "Numbers presents Balak as a Moabite ruler who summons Balaam.",
+      "passages": [
+        "Numbers 22:1-8",
+        "Numbers 24:10-25"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "elizabeth-baptist",
+      "name": "Elizabeth mother of John",
+      "corpus": "Gospels",
+      "aliases": [
+        "Elizabeth"
+      ],
+      "disambiguation": "Elizabeth in Luke, not a similarly named later person.",
+      "summary": "Luke identifies Elizabeth as Zechariah's wife and the mother of John the Baptist.",
+      "passages": [
+        "Luke 1:5-25",
+        "Luke 1:57-66"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "zechariah-john",
+      "name": "Zechariah father of John",
+      "corpus": "Gospels",
+      "aliases": [
+        "Zacharias",
+        "Zechariah (priest)"
+      ],
+      "disambiguation": "Father of John in Luke, not the Old Testament prophet of Zechariah.",
+      "summary": "Luke depicts Zechariah as a priest and father of John the Baptist.",
+      "passages": [
+        "Luke 1:5-23",
+        "Luke 1:67-79"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "simeon-temple",
+      "name": "Simeon in the Temple",
+      "corpus": "Gospels",
+      "aliases": [
+        "Simeon"
+      ],
+      "disambiguation": "Simeon of Luke 2, distinct from Simeon called Peter.",
+      "summary": "Luke describes Simeon meeting the infant Jesus in the Jerusalem temple.",
+      "passages": [
+        "Luke 2:25-35"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "anna-prophetess",
+      "name": "Anna the prophetess",
+      "corpus": "Gospels",
+      "aliases": [
+        "Anna"
+      ],
+      "disambiguation": "Anna of Luke 2, not Hannah the mother of Samuel.",
+      "summary": "Luke identifies Anna as a prophetess who spoke about the infant Jesus.",
+      "passages": [
+        "Luke 2:36-38"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "joseph-arimathea",
+      "name": "Joseph of Arimathea",
+      "corpus": "Gospels",
+      "aliases": [
+        "Joseph (Arimathea)"
+      ],
+      "disambiguation": "Joseph who buried Jesus, not Joseph of Nazareth.",
+      "summary": "The Gospels describe Joseph of Arimathea requesting and burying Jesus' body.",
+      "passages": [
+        "Mark 15:42-47",
+        "John 19:38-42"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "matthew-apostle",
+      "name": "Matthew the tax collector",
+      "corpus": "Gospels",
+      "aliases": [
+        "Matthew",
+        "Levi (traditionally linked)"
+      ],
+      "disambiguation": "Matthew in the Gospel lists; traditional Gospel authorship is a separate attribution.",
+      "summary": "Matthew names a tax collector called to follow Jesus and lists an apostle Matthew.",
+      "passages": [
+        "Matthew 9:9-13",
+        "Matthew 10:2-4"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "james-alphaeus",
+      "name": "James son of Alphaeus",
+      "corpus": "Gospels",
+      "aliases": [
+        "James (Alphaeus)"
+      ],
+      "disambiguation": "Distinct from James son of Zebedee and James the brother of Jesus.",
+      "summary": "The apostolic lists identify a James son of Alphaeus.",
+      "passages": [
+        "Matthew 10:2-4",
+        "Acts 1:12-14"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "simon-zealot",
+      "name": "Simon called the Zealot",
+      "corpus": "Gospels",
+      "aliases": [
+        "Simon the Zealot"
+      ],
+      "disambiguation": "Not Simon Peter or Simon the magician.",
+      "summary": "Luke's lists name Simon called the Zealot among the Twelve.",
+      "passages": [
+        "Luke 6:12-16",
+        "Acts 1:12-14"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "matthias",
+      "name": "Matthias",
+      "corpus": "Gospels",
+      "aliases": [],
+      "disambiguation": "Matthias in Acts 1, not Matthew.",
+      "summary": "Acts describes Matthias being chosen to join the apostolic group after Judas.",
+      "passages": [
+        "Acts 1:15-26"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "james-brother-jesus",
+      "name": "James brother of Jesus",
+      "corpus": "Gospels",
+      "aliases": [
+        "James the Just",
+        "James (Jesus' brother)"
+      ],
+      "disambiguation": "Do not conflate with either apostle named James without argument.",
+      "summary": "The New Testament names James among Jesus' brothers and portrays a James in Jerusalem leadership.",
+      "passages": [
+        "Mark 6:1-3",
+        "Galatians 1:18-19",
+        "Acts 15:12-21"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "herod-great",
+      "name": "Herod the Great",
+      "corpus": "Gospels",
+      "aliases": [
+        "Herod (king at birth)"
+      ],
+      "disambiguation": "The Herod in Matthew's infancy narrative, distinct from his son Antipas.",
+      "summary": "Matthew places Herod as king at the time of Jesus' birth account.",
+      "passages": [
+        "Matthew 2:1-19",
+        "Luke 1:5"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "herod-antipas",
+      "name": "Herod Antipas",
+      "corpus": "Gospels",
+      "aliases": [
+        "Herod the tetrarch"
+      ],
+      "disambiguation": "Herod Antipas, not Herod the Great or Agrippa I.",
+      "summary": "Mark and Luke refer to Herod the tetrarch in the John the Baptist and passion narratives.",
+      "passages": [
+        "Mark 6:14-29",
+        "Luke 23:6-12"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "herod-agrippa-i",
+      "name": "Herod Agrippa I",
+      "corpus": "Gospels",
+      "aliases": [
+        "Herod (Acts 12)"
+      ],
+      "disambiguation": "The ruler in Acts 12, distinct from Herod Agrippa II.",
+      "summary": "Acts names King Herod as persecuting members of the Jerusalem church.",
+      "passages": [
+        "Acts 12:1-23"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "paul-apostle",
+      "name": "Paul the apostle",
+      "corpus": "Gospels",
+      "aliases": [
+        "Paul",
+        "Saul of Tarsus",
+        "Apostle Paul"
+      ],
+      "disambiguation": "Saul of Tarsus, not King Saul of Israel.",
+      "summary": "Acts and Paul's letters identify him as a missionary and letter writer in the early Christian movement.",
+      "passages": [
+        "Acts 9:1-22",
+        "Acts 13:6-13",
+        "Galatians 1:11-24"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "barnabas",
+      "name": "Barnabas",
+      "corpus": "Gospels",
+      "aliases": [],
+      "disambiguation": "Joseph nicknamed Barnabas, distinct from Joseph of Arimathea.",
+      "summary": "Acts identifies Barnabas as a travelling ministry companion and church leader.",
+      "passages": [
+        "Acts 4:36-37",
+        "Acts 13:1-12"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "silas",
+      "name": "Silas",
+      "corpus": "Gospels",
+      "aliases": [
+        "Silvanus (traditionally identified)"
+      ],
+      "disambiguation": "Silas in Acts, traditionally associated with the name Silvanus, without assuming identity from name alone.",
+      "summary": "Acts narrates Silas' participation in Paul's journeys.",
+      "passages": [
+        "Acts 15:22-34",
+        "Acts 16:19-40"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "timothy",
+      "name": "Timothy",
+      "corpus": "Gospels",
+      "aliases": [],
+      "disambiguation": "Timothy of Lystra, not Titus.",
+      "summary": "Acts portrays Timothy as Paul's associate; pastoral letters address a Timothy.",
+      "passages": [
+        "Acts 16:1-5",
+        "2 Timothy 1:1-7"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "titus",
+      "name": "Titus",
+      "corpus": "Gospels",
+      "aliases": [],
+      "disambiguation": "Titus the ministry colleague, distinct from Timothy.",
+      "summary": "Paul's letters refer to Titus as an associate and a recipient of pastoral instruction.",
+      "passages": [
+        "Galatians 2:1-3",
+        "Titus 1:1-5"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "stephen-acts",
+      "name": "Stephen",
+      "corpus": "Gospels",
+      "aliases": [
+        "Stephen the martyr"
+      ],
+      "disambiguation": "Stephen in Acts 6-7, not an apostle of the Twelve.",
+      "summary": "Acts depicts Stephen's speech and death in Jerusalem.",
+      "passages": [
+        "Acts 6:1-15",
+        "Acts 7:54-60"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "philip-evangelist",
+      "name": "Philip the evangelist",
+      "corpus": "Gospels",
+      "aliases": [
+        "Philip (Acts 8)"
+      ],
+      "disambiguation": "Philip among the Seven, distinct from Philip the apostle.",
+      "summary": "Acts names Philip among the Seven and describes his ministry in Samaria and on the Gaza road.",
+      "passages": [
+        "Acts 6:1-6",
+        "Acts 8:26-40",
+        "Acts 21:8-9"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "cornelius-centurion",
+      "name": "Cornelius",
+      "corpus": "Gospels",
+      "aliases": [
+        "Cornelius the centurion"
+      ],
+      "disambiguation": "Cornelius of Caesarea, not an unnamed Gospel centurion.",
+      "summary": "Acts narrates a centurion's conversion and Peter's visit to his household.",
+      "passages": [
+        "Acts 10:1-48"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "lydia",
+      "name": "Lydia",
+      "corpus": "Gospels",
+      "aliases": [],
+      "disambiguation": "Lydia of Thyatira in Acts, not the territory Lydia.",
+      "summary": "Acts introduces Lydia as a merchant who receives Paul and his companions in Philippi.",
+      "passages": [
+        "Acts 16:13-15",
+        "Acts 16:40"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "priscilla",
+      "name": "Priscilla",
+      "corpus": "Gospels",
+      "aliases": [
+        "Prisca"
+      ],
+      "disambiguation": "The woman also called Prisca in Romans, distinct from Aquila.",
+      "summary": "Acts and Romans mention Priscilla with Aquila as colleagues in ministry.",
+      "passages": [
+        "Acts 18:1-3",
+        "Acts 18:24-26",
+        "Romans 16:3-5"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "aquila",
+      "name": "Aquila",
+      "corpus": "Gospels",
+      "aliases": [],
+      "disambiguation": "Aquila the tentmaker, not another person sharing a Latin name.",
+      "summary": "Acts describes Aquila as Priscilla's husband and a colleague of Paul.",
+      "passages": [
+        "Acts 18:1-3",
+        "Acts 18:24-26",
+        "Romans 16:3-5"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "apollos",
+      "name": "Apollos",
+      "corpus": "Gospels",
+      "aliases": [],
+      "disambiguation": "Apollos of Acts, not Apollo the Greco-Roman deity.",
+      "summary": "Acts describes Apollos as a teacher from Alexandria who comes to Ephesus.",
+      "passages": [
+        "Acts 18:24-28",
+        "1 Corinthians 3:1-9"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "john-mark",
+      "name": "John called Mark",
+      "corpus": "Gospels",
+      "aliases": [
+        "Mark",
+        "John Mark"
+      ],
+      "disambiguation": "John Mark, not John the Baptist or John son of Zebedee; traditional Gospel authorship is a separate claim.",
+      "summary": "Acts calls this missionary companion John Mark.",
+      "passages": [
+        "Acts 12:12",
+        "Acts 13:5-13",
+        "Acts 15:36-39"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "luke-companion",
+      "name": "Luke",
+      "corpus": "Gospels",
+      "aliases": [
+        "Luke the physician"
+      ],
+      "disambiguation": "Luke named in letters; the attribution of Luke-Acts is a separate historical question.",
+      "summary": "Pauline letters refer to a Luke as a companion.",
+      "passages": [
+        "Colossians 4:14",
+        "Philemon 1:23-24",
+        "2 Timothy 4:9-11"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "gamaliel",
+      "name": "Gamaliel",
+      "corpus": "Gospels",
+      "aliases": [],
+      "disambiguation": "Gamaliel in Acts, not every later rabbi of the same name.",
+      "summary": "Acts names Gamaliel as a Pharisaic teacher and as Paul's teacher.",
+      "passages": [
+        "Acts 5:34-40",
+        "Acts 22:1-3"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "ananias-damascus",
+      "name": "Ananias of Damascus",
+      "corpus": "Gospels",
+      "aliases": [
+        "Ananias (Damascus)"
+      ],
+      "disambiguation": "The disciple in Damascus, not the Ananias of Acts 5 or the high priest.",
+      "summary": "Acts depicts Ananias receiving instructions to visit Saul after his vision.",
+      "passages": [
+        "Acts 9:10-19"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "ananias-sapphira",
+      "name": "Ananias husband of Sapphira",
+      "corpus": "Gospels",
+      "aliases": [
+        "Ananias (Acts 5)"
+      ],
+      "disambiguation": "The Ananias of Acts 5, not Ananias of Damascus.",
+      "summary": "Acts recounts Ananias and Sapphira withholding proceeds from a property sale.",
+      "passages": [
+        "Acts 5:1-11"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "sapphira",
+      "name": "Sapphira",
+      "corpus": "Gospels",
+      "aliases": [],
+      "disambiguation": "Wife of Ananias in Acts 5, not another named woman.",
+      "summary": "Acts narrates Sapphira's involvement in the episode of property-sale proceeds.",
+      "passages": [
+        "Acts 5:1-11"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "tabitha",
+      "name": "Tabitha",
+      "corpus": "Gospels",
+      "aliases": [
+        "Dorcas"
+      ],
+      "disambiguation": "Also called Dorcas in Greek, not a separate person.",
+      "summary": "Acts recounts Peter visiting the disciple Tabitha in Joppa.",
+      "passages": [
+        "Acts 9:36-43"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "phoebe",
+      "name": "Phoebe",
+      "corpus": "Gospels",
+      "aliases": [],
+      "disambiguation": "Phoebe of Romans 16, not a figure in the Gospel stories.",
+      "summary": "Romans commends Phoebe of the church at Cenchreae.",
+      "passages": [
+        "Romans 16:1-2"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "onesimus",
+      "name": "Onesimus",
+      "corpus": "Gospels",
+      "aliases": [],
+      "disambiguation": "Onesimus connected with Philemon; later biographical traditions are separate.",
+      "summary": "Paul's letter to Philemon concerns Onesimus, who is also named in Colossians.",
+      "passages": [
+        "Philemon 1:8-21",
+        "Colossians 4:7-9"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "philemon",
+      "name": "Philemon",
+      "corpus": "Gospels",
+      "aliases": [],
+      "disambiguation": "The addressee of Philemon, not Onesimus.",
+      "summary": "Philemon is a named recipient of a letter associated with Paul.",
+      "passages": [
+        "Philemon 1:1-7",
+        "Philemon 1:8-21"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "felix-governor",
+      "name": "Felix",
+      "corpus": "Gospels",
+      "aliases": [
+        "Governor Felix"
+      ],
+      "disambiguation": "Antonius Felix, distinct from his successor Festus.",
+      "summary": "Acts reports Paul's hearing before the governor Felix.",
+      "passages": [
+        "Acts 24:1-27"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "festus-governor",
+      "name": "Porcius Festus",
+      "corpus": "Gospels",
+      "aliases": [
+        "Festus"
+      ],
+      "disambiguation": "Festus, not Felix or Herod Agrippa II.",
+      "summary": "Acts describes Paul's hearings after Festus succeeds Felix as governor.",
+      "passages": [
+        "Acts 25:1-12"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "herod-agrippa-ii",
+      "name": "Herod Agrippa II",
+      "corpus": "Gospels",
+      "aliases": [
+        "Agrippa II",
+        "King Agrippa"
+      ],
+      "disambiguation": "The Agrippa in Acts 25-26, distinct from his father Agrippa I.",
+      "summary": "Acts presents Agrippa hearing Paul's defence at Caesarea.",
+      "passages": [
+        "Acts 25:13-27",
+        "Acts 26:1-32"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "epaphroditus",
+      "name": "Epaphroditus",
+      "corpus": "Gospels",
+      "aliases": [],
+      "disambiguation": "Paul's associate in Philippians, not Epaphras in Colossians.",
+      "summary": "Philippians describes Epaphroditus as a messenger from the Philippian church.",
+      "passages": [
+        "Philippians 2:25-30",
+        "Philippians 4:18"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "epaphras",
+      "name": "Epaphras",
+      "corpus": "Gospels",
+      "aliases": [],
+      "disambiguation": "Epaphras, not Epaphroditus.",
+      "summary": "Colossians names Epaphras as a servant concerned for its recipients.",
+      "passages": [
+        "Colossians 1:3-8",
+        "Colossians 4:12-13"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "euodia",
+      "name": "Euodia",
+      "corpus": "Gospels",
+      "aliases": [],
+      "disambiguation": "Euodia in Philippians, not Syntyche.",
+      "summary": "Philippians addresses Euodia as a fellow worker urged toward agreement.",
+      "passages": [
+        "Philippians 4:2-3"
+      ],
+      "events": [],
+      "relationships": []
+    },
+    {
+      "id": "syntyche",
+      "name": "Syntyche",
+      "corpus": "Gospels",
+      "aliases": [],
+      "disambiguation": "Syntyche in Philippians, not Euodia.",
+      "summary": "Philippians addresses Syntyche as a fellow worker urged toward agreement.",
+      "passages": [
+        "Philippians 4:2-3"
+      ],
+      "events": [],
+      "relationships": []
+    }
+  ]
+}
