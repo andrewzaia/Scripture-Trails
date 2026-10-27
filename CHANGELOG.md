@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.9.1 - 27/10/2026: Trace the shortest Atlas connections
+
+- Hover over an Atlas verse to illuminate the shortest displayed route back to the centre in green.
+- See every verse and connection along the route, with a clearer route legend and unchanged navigation controls.
+
 ## 0.9.0 - 27/10/2026: Deep Scripture Connections
 
 - Expanded passage-linked connection explanations to 115 and clarified editorial evidence status.

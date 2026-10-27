@@ -13,7 +13,7 @@ The top-right header has separate, display-only ESV, NASB20, NIV and NKJV status
 - Translation selection preserves the exact verse, range or chapter, persists the preference on this device, and records the edition in shared links. Per-verse Atlas actions work across reader editions.
 - ESV keyword search (10 results per query) through a server-side Cloudflare Pages Function.
 - Starter reference network with editorial labels for quotations, parallels, echoes and themes.
-- Interactive pan-and-zoom connection map, with one to ten levels of bounded verse-to-verse exploration.
+- Interactive pan-and-zoom connection map, with one to ten levels of bounded verse-to-verse exploration. Hover over a node to light up the shortest visible route to the centre; the highlight follows the graph's shown links, not unrendered relationships.
 - Six guided studies, saved passages, recent-history list and user notes.
 - Responsive layout, keyboard-focus indicators, dark/light themes and accessible text alternatives for the graph.
 - Clear separation of Scripture text, reference data and editorial interpretation.
