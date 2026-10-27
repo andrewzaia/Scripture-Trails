@@ -5,6 +5,7 @@ import {createJesusMap} from './jesus-map.js';
 import {createRoadmap} from './roadmap.js?v=20261027-local';
 import {createCityStudies} from './city-studies.js?v=20261027-local';
 import {buildAtlas} from './atlas-paths.js';
+import {maxDatasetVotes,relativeVoteBars} from './atlas-strength.js';
 import {TRANSLATIONS,getTranslation} from './translations.js';
 import {reportScriptureView} from './fums.js';
 import {TRANSLATION_STATUS,statusForResponse} from './translation-status.js?v=20261027-indicators';
@@ -194,6 +195,17 @@ async function buildGraphData(requestId){
   const links=create('div','atlas-layer-links');for(const ref of refs){const b=create('button','',ref);b.type='button';b.addEventListener('click',()=>selectRef(ref,'connections'));links.append(b);}group.append(links);layers.append(group);
  }
 }
+function createAtlasVoteMeter(link,highestVotes){
+ const votes=Number(link.votes),hasVotes=Number.isFinite(votes)&&votes>=0;
+ const level=hasVotes?relativeVoteBars(votes,highestVotes):0;
+ const label=hasVotes
+  ?`OpenBible.info: ${votes} community votes. Relative vote strength: ${level} of 7 bars; highest for this verse: ${highestVotes} votes. Votes do not verify accuracy.`
+  :'OpenBible.info: community vote total unavailable. Connection not independently verified.';
+ const meter=create('span','atlas-vote-meter');
+ meter.setAttribute('role','img');meter.setAttribute('aria-label',label);meter.title=label;
+ for(let i=0;i<7;i++){const bar=create('i',`atlas-vote-bar${i<level?' filled':''}`);bar.style.height=`${5+i*2}px`;meter.append(bar);}
+ return {meter,label};
+}
 async function renderGraph(){
  const p=parseRef(state.ref);if(p?.verse===null){state.ref=`${p.book.name} ${p.chapter}:1`;}
  const ref=state.ref, requestId=++state.graphRequestId;
@@ -207,8 +219,13 @@ async function renderGraph(){
  try{await buildGraphData(requestId);if(requestId!==state.graphRequestId||state.ref!==ref)return;
   list.replaceChildren();const links=await connectionsFor(ref);if(requestId!==state.graphRequestId)return;
   if(!links.length)list.append(create('p','empty-list','No verified cross-reference recorded. Choose a neighbouring verse to continue.'));
+  const highestVotes=maxDatasetVotes(links);
   for(const link of links.slice(0,80)){
-   const row=create('div','atlas-reference-row');const b=create('button');b.append(create('span','',link.to),create('small','',link.type==='context'?'Reading context only':link.type==='dataset'?`OpenBible.info${link.votes===undefined?'':` | ${link.votes} votes`}`:link.type));
+   const row=create('div','atlas-reference-row');const b=create('button');b.append(create('span','',link.to));
+   if(link.type==='dataset'){
+    const {meter,label}=createAtlasVoteMeter(link,highestVotes);
+    b.append(meter);b.title=label;b.setAttribute('aria-label',`${link.to}. ${label}`);
+   }else b.append(create('small','',link.type==='context'?'Reading context only':link.type));
    b.addEventListener('click',()=>selectRef(link.to,'connections'));row.append(b);list.append(row);
   }
   if(links.length>80)list.append(create('p','soft-note',`Showing 80 of ${links.length} direct connections.`));
