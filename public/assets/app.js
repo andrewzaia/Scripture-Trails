@@ -1,15 +1,15 @@
 import {BOOKS,findBook,parseRef,referenceFor,chapterRef,adjacentChapter,readerScope} from './books.js';
 import {PATHS,EDITORIAL_LINKS} from './studies.js';
-import {ScriptureGraph} from './graph.js?v=0.9.4';
+import {ScriptureGraph} from './graph.js?v=0.10.0';
 import {createJesusMap} from './jesus-map.js';
 import {createRoadmap} from './roadmap.js?v=20261027-local';
 import {createCityStudies} from './city-studies.js?v=20261027-local';
-import {createEntityIndex} from './entity-index.js?v=0.9.4';
+import {createEntityIndex} from './entity-index.js?v=0.10.0';
 import {buildAtlas} from './atlas-paths.js';
 import {initPublicReleases} from './release-notes.js';
 import {maxDatasetVotes,relativeVoteBars} from './atlas-strength.js';
-import {CONNECTION_EVIDENCE,CONNECTION_KINDS,explainConnection,REVIEW_LABELS} from './connection-evidence.js?v=0.9.4';
-import {createPassageComparison} from './atlas-comparison.js?v=0.9.4';
+import {CONNECTION_EVIDENCE,CONNECTION_KINDS,explainConnection,REVIEW_LABELS} from './connection-evidence.js?v=0.10.0';
+import {createPassageComparison} from './atlas-comparison.js?v=0.10.0';
 import {TRANSLATIONS,getTranslation} from './translations.js';
 import {reportScriptureView} from './fums.js';
 import {TRANSLATION_STATUS,statusForResponse} from './translation-status.js?v=20261027-indicators';
@@ -20,7 +20,7 @@ const editorial=new Map();
 for(const link of EDITORIAL_LINKS){const a=parseRef(link.from)?.formatted,b=parseRef(link.to)?.formatted;if(!a||!b)continue;for(const [from,to] of [[a,b],[b,a]]){if(!editorial.has(from))editorial.set(from,[]);editorial.get(from).push({...link,from,to});}}
 const getSaved=(key,defaultValue)=>{try{const parsed=JSON.parse(localStorage.getItem(`scripture-trails:${key}`));return parsed===null?defaultValue:parsed;}catch{return defaultValue;}};
 const putSaved=(key,value)=>{try{localStorage.setItem(`scripture-trails:${key}`,JSON.stringify(value));return true;}catch{return false;}};
-const state={translation:getTranslation(getSaved('translation','ESV'))?.code||'ESV',loadedTranslation:null,pendingTranslation:null,fums:null,view:'discover',ref:'John 1:1',loadedPassage:null,pendingPassage:null,bookmarks:getSaved('bookmarks',[]),notes:getSaved('notes',{}),history:getSaved('history',[]),theme:getSaved('theme','dark'),filter:'all',journey:null,links:[],graph:null,graphDepth:3,graphLinks:{},graphRequestId:0,graphEvidenceFilter:'all',requestId:0,jesusMap:null};
+const state={translation:getTranslation(getSaved('translation','ESV'))?.code||'ESV',loadedTranslation:null,pendingTranslation:null,fums:null,view:'discover',ref:'John 1:1',loadedPassage:null,pendingPassage:null,bookmarks:getSaved('bookmarks',[]),notes:getSaved('notes',{}),history:getSaved('history',[]),theme:getSaved('theme','dark'),filter:'all',journey:null,links:[],graph:null,graphDepth:3,graphLinks:{},graphRequestId:0,graphEvidenceFilter:'all',atlasPreviewRef:null,atlasPreviewRequestId:0,requestId:0,jesusMap:null};
 const translationStatuses=new Map(TRANSLATIONS.map(edition=>[edition.code,'available']));
 const translationRequests=new Map();
 function renderTranslationStatuses(){
@@ -40,7 +40,8 @@ function setTranslationStatus(code,status){
 function selectTranslation(code){
  const edition=getTranslation(code);if(!edition)return;
  state.translation=edition.code;putSaved('translation',state.translation);renderTranslationStatuses();
- void renderReader();
+ if(state.view==='connections')void renderAtlasPreview(state.atlasPreviewRef||state.ref);
+ else void renderReader();
  updateUrl();
 }
 const bookCache=new Map();let referenceManifest=null,verseCounts=null;let roadmapPage=null,cityStudiesPage=null,entityIndexPage=null,passageComparison=null;let toastTimer;
@@ -204,14 +205,14 @@ async function buildGraphData(requestId){
  const current=state.ref,depth=state.graphDepth;
  const result=await buildAtlas(current,depth,connectionsFor,{layerWidth:10,perSource:4,cancelled:()=>requestId!==state.graphRequestId||state.ref!==current||state.view!=='connections'});
  if(!result)return;
- state.graphLinks=result.linksByRef;state.graph.setData(result);
+ state.graphLinks=result.linksByRef;state.graph.setData(result);state.graph.setPreviewRef(state.atlasPreviewRef||result.center);
  $('graph-progress').textContent=`${result.depthReached} of ${result.depthRequested} hops reached | ${result.nodes} verses shown${result.truncated?' | top links selected':''}`;
  $('graph-empty').hidden=result.nodes>1;
  const layers=$('graph-layer-list');layers.replaceChildren();
  for(const [i,refs] of result.layers.entries()){
   if(!i)continue;
   const group=create('details','atlas-layer');const summary=create('summary','',`Hop ${i} | ${refs.length} verses`);group.append(summary);
-  const links=create('div','atlas-layer-links');for(const ref of refs){const b=create('button','',ref);b.type='button';b.addEventListener('click',()=>selectRef(ref,'connections'));links.append(b);}group.append(links);layers.append(group);
+  const links=create('div','atlas-layer-links');for(const ref of refs){const b=create('button','',ref);b.type='button';b.addEventListener('click',()=>activateAtlasNode(ref,ref===state.atlasPreviewRef&&ref!==state.ref?'focus':'preview'));links.append(b);}group.append(links);layers.append(group);
  }
 }
 function createAtlasVoteMeter(link,highestVotes){
@@ -226,6 +227,55 @@ function createAtlasVoteMeter(link,highestVotes){
  for(let i=0;i<7;i++){const bar=create('i',`atlas-vote-bar${i<level?' filled':''}`);bar.style.height=`${5+i*2}px`;meter.append(bar);}
  return {meter,label};
 }
+
+/** A preview changes neither the Atlas centre nor the browser's passage reference. */
+async function renderAtlasPreview(reference){
+ const parsed=parseRef(reference);if(!parsed)return;
+ const ref=parsed.formatted,translation=state.translation,edition=getTranslation(translation),requestId=++state.atlasPreviewRequestId;
+ state.atlasPreviewRef=ref;
+ state.graph?.setPreviewRef(ref);
+ $('atlas-preview-ref').textContent=ref;
+ $('atlas-preview-translation').value=translation;
+ $('atlas-preview-focus').disabled=ref===state.ref;
+ $('atlas-preview-help').textContent=ref===state.ref
+  ?'This is the current Atlas centre. Select another node to read its passage.'
+  :'Click the same node again, or choose Focus Atlas here, to explore connections from this verse.';
+ const content=$('atlas-preview-content'),credit=$('atlas-preview-credit');
+ content.replaceChildren(create('p','soft-note','Loading '+translation+' passage...'));
+ content.setAttribute('aria-busy','true');credit.replaceChildren();
+ const fresh=()=>requestId===state.atlasPreviewRequestId&&state.atlasPreviewRef===ref&&state.translation===translation&&state.view==='connections';
+ try{
+  const response=await fetch('/api/passage?q='+encodeURIComponent(ref)+'&translation='+encodeURIComponent(translation),{cache:'no-store'});
+  const payload=await response.json();
+  if(!fresh())return;
+  if(!response.ok){
+   content.replaceChildren(create('p','soft-note',payload.message||'This passage could not be loaded. Try a different translation or try again.'));
+   return;
+  }
+  if(!Array.isArray(payload.passages)||!payload.passages.length||payload.passages.some(p=>typeof p!=='string'))throw Error('Missing passage text');
+  content.replaceChildren(...payload.passages.map(safeHtml));
+  if(edition.provider==='API.Bible'){
+   if(typeof payload.copyright==='string'){
+    credit.append(safeHtml(payload.copyright));
+    $('copyright-'+edition.code.toLowerCase()).replaceChildren(safeHtml(payload.copyright));
+   }
+   for(const [label,url] of [[edition.publisher,edition.publisherUrl],['Scripture supplied by API.Bible','https://api.bible/']]){
+    const link=create('a','',label);link.href=url;link.target='_blank';link.rel='noopener noreferrer';credit.append(link);
+   }
+   void reportScriptureView(payload.fums);
+  }else{
+   const link=create('a','','ESV passage text supplied by Crossway');
+   link.href=esvUrl(ref);link.target='_blank';link.rel='noopener noreferrer';credit.append(link);
+  }
+ }catch{
+  if(fresh())content.replaceChildren(create('p','soft-note','Could not retrieve this passage. Please try again or choose another translation.'));
+ }finally{if(fresh())content.setAttribute('aria-busy','false');}
+}
+function activateAtlasNode(ref,action='preview'){
+ if(action==='focus')selectRef(ref,'connections');
+ else void renderAtlasPreview(ref);
+}
+
 async function renderGraph(){
  const p=parseRef(state.ref);if(p?.verse===null){state.ref=`${p.book.name} ${p.chapter}:1`;}
  const ref=state.ref, requestId=++state.graphRequestId;
@@ -234,8 +284,8 @@ async function renderGraph(){
  $('atlas-nasb').href=nasbUrl(ref);$('atlas-nasb').title=`Open ${ref} in the official NASB 2020 reader`;
  $('graph-progress').textContent='Following Scripture references...';
  const list=$('graph-details-list');list.replaceChildren(create('p','soft-note','Loading connections...'));
- if(!state.graph)state.graph=new ScriptureGraph($('graph-canvas'),next=>selectRef(next,'connections'));
- state.graph.resize();void renderAtlasPickers();
+ if(!state.graph)state.graph=new ScriptureGraph($('graph-canvas'),activateAtlasNode);
+ state.graph.resize();void renderAtlasPickers();void renderAtlasPreview(ref);
  try{await buildGraphData(requestId);if(requestId!==state.graphRequestId||state.ref!==ref)return;
   list.replaceChildren();const links=await connectionsFor(ref);if(requestId!==state.graphRequestId)return;
   if(!links.length)list.append(create('p','empty-list','No cross-reference listed in the available data. Try a neighbouring verse for reading context.'));
@@ -250,7 +300,7 @@ async function renderGraph(){
    }
    const status=link.evidence?CONNECTION_KINDS[link.evidence.kind]:link.type==='context'?'Reading context':link.type==='dataset'?'OpenBible suggestion - unclassified':'Editorial suggestion - unreviewed';
    b.append(create('small','atlas-edge-status',status));
-   b.addEventListener('click',()=>selectRef(link.to,'connections'));row.append(b);
+   b.addEventListener('click',()=>activateAtlasNode(link.to,link.to===state.atlasPreviewRef&&link.to!==state.ref?'focus':'preview'));row.append(b);
    if(link.evidence){
     const e=link.evidence,note=create('details','atlas-evidence-detail');
     note.append(create('summary','','Why these passages connect'),create('p','atlas-evidence-explain',e.explanation),create('p','atlas-evidence-caution',e.caution),create('p','atlas-evidence-caution','Status: '+REVIEW_LABELS[e.review]+'. Independent specialist review pending.'),create('p','atlas-evidence-caution','Provenance: '+e.basis));
@@ -288,7 +338,11 @@ function init(){void initPublicReleases();document.body.classList.toggle('light'
  $('copy-link').addEventListener('click',async()=>{try{await navigator.clipboard.writeText(location.href);toast('Link copied to clipboard.');}catch{toast('Copy the address from your browser.');}});
  $('ref-filter').addEventListener('change',()=>{state.filter=$('ref-filter').value;void renderConnections();});
  $('save-notes').addEventListener('click',()=>{const text=$('notes-text').value.trim();if(text)state.notes[state.ref]=text;else delete state.notes[state.ref];if(putSaved('notes',state.notes))toast(text?'Note saved on this device.':'Note cleared.');else toast('Your browser could not save this note.');});
- $('view-in-map').addEventListener('click',()=>showView('connections'));$('open-entity-index').addEventListener('click',()=>showView('entities'));$('reader-related-index').addEventListener('click',()=>{showView('entities');entityIndexPage?.focusReference(state.ref);});$('graph-read').addEventListener('click',()=>showView('reader'));
+ $('view-in-map').addEventListener('click',()=>showView('connections'));$('open-entity-index').addEventListener('click',()=>showView('entities'));$('reader-related-index').addEventListener('click',()=>{showView('entities');entityIndexPage?.focusReference(state.ref);});$('graph-read').addEventListener('click',()=>selectRef(state.atlasPreviewRef||state.ref,'reader'));
+ $('atlas-preview-focus').addEventListener('click',()=>{if(state.atlasPreviewRef&&state.atlasPreviewRef!==state.ref)selectRef(state.atlasPreviewRef,'connections');});
+ $('atlas-preview-translation').replaceChildren(...TRANSLATIONS.map(edition=>{const option=create('option','',edition.code);option.value=edition.code;return option;}));
+ $('atlas-preview-translation').value=state.translation;
+ $('atlas-preview-translation').addEventListener('change',()=>selectTranslation($('atlas-preview-translation').value));
  $('graph-evidence-filter').addEventListener('change',()=>{state.graphEvidenceFilter=$('graph-evidence-filter').value;void renderGraph();});
   $('graph-depth').addEventListener('change',()=>{state.graphDepth=Number($('graph-depth').value);void renderGraph();});$('graph-reset').addEventListener('click',()=>state.graph?.reset());$('graph-zoom-in').addEventListener('click',()=>state.graph?.zoom(1.2));$('graph-zoom-out').addEventListener('click',()=>state.graph?.zoom(.8));
  $('random-verse').addEventListener('click',()=>selectRef(PATHS[Math.floor(Math.random()*PATHS.length)].refs[0]));

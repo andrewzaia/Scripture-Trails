@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.10.0 - 28/10/2026: Atlas passage preview
+
+- Preview linked verses below the graph without changing its centre.
+- A second node click explicitly focuses the Atlas.
+
 ## 0.9.4 - 28/10/2026: Clearer one-hop Atlas connections
 
 - Hovering an Atlas verse now softly highlights the directly connected verses and lines, one hop away.

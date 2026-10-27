@@ -41,7 +41,7 @@ test('missing, reversed and skipped historical patch versions are rejected',()=>
  assert.throws(()=>validateReleases(missing,pkg.version),/needs a semantic version/);
  const reversed=manifest.releases.map(r=>({...r}));
  // Reverse consecutive minor/major milestone entries so a newly added patch cannot mask the ordering assertion.
- const boundary=reversed.findIndex((r,i)=>i>0&&r.version.split('.').slice(0,2).join('.')!==reversed[i-1].version.split('.').slice(0,2).join('.'));
+ const boundary=reversed.findIndex((r,i)=>i>1&&r.version.split('.').slice(0,2).join('.')!==reversed[i-1].version.split('.').slice(0,2).join('.'));
  assert.ok(boundary>0);
  [reversed[boundary-1],reversed[boundary]]=[reversed[boundary],reversed[boundary-1]];
  assert.throws(()=>validateReleases(reversed,pkg.version),/newest first/);
