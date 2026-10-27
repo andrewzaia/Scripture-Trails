@@ -8,6 +8,7 @@ import {createEntityIndex} from './entity-index.js?v=0.7.0';
 import {buildAtlas} from './atlas-paths.js';
 import {initPublicReleases} from './release-notes.js';
 import {maxDatasetVotes,relativeVoteBars} from './atlas-strength.js';
+import {CONNECTION_EVIDENCE,CONNECTION_KINDS,explainConnection} from './connection-evidence.js?v=0.7.0';
 import {TRANSLATIONS,getTranslation} from './translations.js';
 import {reportScriptureView} from './fums.js';
 import {TRANSLATION_STATUS,statusForResponse} from './translation-status.js?v=20261027-indicators';
@@ -18,7 +19,7 @@ const editorial=new Map();
 for(const link of EDITORIAL_LINKS){const a=parseRef(link.from)?.formatted,b=parseRef(link.to)?.formatted;if(!a||!b)continue;for(const [from,to] of [[a,b],[b,a]]){if(!editorial.has(from))editorial.set(from,[]);editorial.get(from).push({...link,from,to});}}
 const getSaved=(key,defaultValue)=>{try{const parsed=JSON.parse(localStorage.getItem(`scripture-trails:${key}`));return parsed===null?defaultValue:parsed;}catch{return defaultValue;}};
 const putSaved=(key,value)=>{try{localStorage.setItem(`scripture-trails:${key}`,JSON.stringify(value));return true;}catch{return false;}};
-const state={translation:getTranslation(getSaved('translation','ESV'))?.code||'ESV',loadedTranslation:null,pendingTranslation:null,fums:null,view:'discover',ref:'John 1:1',loadedPassage:null,pendingPassage:null,bookmarks:getSaved('bookmarks',[]),notes:getSaved('notes',{}),history:getSaved('history',[]),theme:getSaved('theme','dark'),filter:'all',journey:null,links:[],graph:null,graphDepth:3,graphLinks:{},graphRequestId:0,requestId:0,jesusMap:null};
+const state={translation:getTranslation(getSaved('translation','ESV'))?.code||'ESV',loadedTranslation:null,pendingTranslation:null,fums:null,view:'discover',ref:'John 1:1',loadedPassage:null,pendingPassage:null,bookmarks:getSaved('bookmarks',[]),notes:getSaved('notes',{}),history:getSaved('history',[]),theme:getSaved('theme','dark'),filter:'all',journey:null,links:[],graph:null,graphDepth:3,graphLinks:{},graphRequestId:0,graphEvidenceFilter:'all',requestId:0,jesusMap:null};
 const translationStatuses=new Map(TRANSLATIONS.map(edition=>[edition.code,'available']));
 const translationRequests=new Map();
 function renderTranslationStatuses(){
@@ -64,19 +65,26 @@ function populateChapters(){const book=findBook($('side-book').value);if(!book)r
 async function loadBookData(book){if(!book||!(await hasImportedReferences()))return {};const id=book.abbr.toLowerCase();if(bookCache.has(id))return bookCache.get(id);const promise=fetch(`/data/refs/${id}.json?v=20261027-local`).then(x=>x.ok?x.json():{}).catch(()=>({}));bookCache.set(id,promise);return promise;}
 async function connectionsFor(ref){const cur=parseRef(ref);if(!cur)return [];
  const canonical=cur.verse===null?`${cur.book.name} ${cur.chapter}:1`:cur.formatted;
- const base=[...(editorial.get(canonical)||[])];const archive=await loadBookData(cur.book);
+ const base=[...(editorial.get(canonical)||[])];const listed=new Set(base.map(link=>link.to));
+ for(const entry of CONNECTION_EVIDENCE){
+  const matched=entry.from===canonical?entry.to:entry.to===canonical?entry.from:null;
+  if(!matched||listed.has(matched))continue;
+  base.push({from:canonical,to:matched,type:entry.kind,description:entry.explanation,source:'passage-evidence'});listed.add(matched);
+ }
+ for(const link of base){const detail=explainConnection(canonical,link.to);if(detail){link.evidence=detail;link.type=detail.kind;link.description=detail.explanation;}}
+ const archive=await loadBookData(cur.book);
  const extra=archive[`${cur.chapter}:${cur.verse||1}`]||archive[canonical]||[];
  const known=new Set(base.map(x=>x.to));
  for(const item of extra){const packed=Array.isArray(item);
   const to=packed?(BOOKS[item[0]]?`${BOOKS[item[0]].name} ${item[1]}:${item[2]}`:null):item.to;
   const parsed=parseRef(to);if(!parsed||known.has(parsed.formatted)||parsed.formatted===canonical)continue;
   const range=packed&&item.length>=6?`${BOOKS[item[6]??item[0]]?.name||BOOKS[item[0]].name} ${item[4]}:${item[5]}`:item.range;
-  known.add(parsed.formatted);base.push({from:canonical,to:parsed.formatted,type:'dataset',description:range?`OpenBible.info reference range ending at ${range}, mapped by its first verse`:'OpenBible.info verse reference, ranked by community votes; connection type not independently verified',source:'OpenBible.info',votes:packed?item[3]:item.votes,range});}
+  known.add(parsed.formatted);base.push({from:canonical,to:parsed.formatted,type:'dataset',description:range?`OpenBible.info reference range ending at ${range}, mapped by its first verse`:'OpenBible.info community-ranked link; connection type not independently verified',source:'OpenBible.info',votes:packed?item[3]:item.votes,range,evidence:explainConnection(canonical,parsed.formatted)});}
  if(!base.length)return nextReadingContext(canonical,await getCounts());
  return base.sort((a,b)=>(a.type==='dataset'?1:0)-(b.type==='dataset'?1:0)||(b.votes||0)-(a.votes||0));
 }
 async function renderConnections(){const ref=state.ref;const connections=await connectionsFor(ref);if(ref!==state.ref)return;state.links=connections;const filter=state.filter;$('reference-count').textContent=String(connections.length);const list=$('reference-list');list.replaceChildren();let shown=connections.filter(x=>filter==='all'||x.type===filter);shown=shown.slice(0,80);if(!shown.length){list.append(create('p','empty-list',filter==='all'?'No references recorded for this verse. Try a neighbouring verse or view Crossway callouts in the reader.':'No connections in this category for the selected verse.'));return;}
- for(const item of shown){const button=create('button','reference-item');const left=create('span');left.append(create('strong','',item.to),create('small','',item.description));const right=create('span');right.append(create('em','',item.type==='dataset'?'DATA':item.type),create('span','arrow','↗'));button.append(left,right);button.title=item.source==='editorial'?'Curated study connection':item.source==='Reading context'?'Neighbouring verse (not a cross-reference)':'OpenBible.info - ranked source suggestion, not scholarly verification';button.addEventListener('click',()=>selectRef(item.to));list.append(button);}
+ for(const item of shown){const button=create('button','reference-item');const left=create('span');left.append(create('strong','',item.to),create('small','',item.description));const right=create('span');right.append(create('em','',item.evidence?CONNECTION_KINDS[item.evidence.kind]:item.type==='dataset'?'UNCLASSIFIED':item.type==='context'?'CONTEXT':'EDITORIAL'),create('span','arrow','↗'));button.append(left,right);button.title=item.evidence?'Editorial passage comparison, not external peer review':item.source==='Reading context'?'Neighbouring verse, not a cross-reference':item.type==='dataset'?'Community-voted link, not classified':'Editorial study suggestion without an evidence check';button.addEventListener('click',()=>selectRef(item.to));list.append(button);}
 }
 function renderNote(){const note=state.notes[state.ref]||'';$('notes-text').value=note;}
 function currentIsSaved(){return state.bookmarks.includes(state.ref);}
@@ -223,15 +231,30 @@ async function renderGraph(){
   list.replaceChildren();const links=await connectionsFor(ref);if(requestId!==state.graphRequestId)return;
   if(!links.length)list.append(create('p','empty-list','No cross-reference listed in the available data. Try a neighbouring verse for reading context.'));
   const highestVotes=maxDatasetVotes(links);
-  for(const link of links.slice(0,80)){
+  const filtered=links.filter(link=>state.graphEvidenceFilter==='explained'?!!link.evidence:state.graphEvidenceFilter==='unclassified'?!link.evidence:true);
+  $('graph-visible-count').textContent=filtered.length+' of '+links.length+' links shown in list';
+  for(const link of filtered.slice(0,80)){
    const row=create('div','atlas-reference-row');const b=create('button');b.append(create('span','',link.to));
    if(link.type==='dataset'){
     const {meter,label}=createAtlasVoteMeter(link,highestVotes);
     b.append(meter);b.title=label;b.setAttribute('aria-label',`${link.to}. ${label}`);
-   }else b.append(create('small','',link.type==='context'?'Reading context only':link.type));
-   b.addEventListener('click',()=>selectRef(link.to,'connections'));row.append(b);list.append(row);
+   }
+   const status=link.evidence?CONNECTION_KINDS[link.evidence.kind]:link.type==='context'?'Reading context':link.type==='dataset'?'OpenBible suggestion - unclassified':'Editorial suggestion - unreviewed';
+   b.append(create('small','atlas-edge-status',status));
+   b.addEventListener('click',()=>selectRef(link.to,'connections'));row.append(b);
+   if(link.evidence){
+    const e=link.evidence,note=create('details','atlas-evidence-detail');
+    note.append(create('summary','','Why these passages connect'),create('p','atlas-evidence-explain',e.explanation),create('p','atlas-evidence-caution',e.caution),create('p','atlas-evidence-caution','Status: source-passage editorial check; independent specialist review pending.'));
+    const actions=create('div','atlas-evidence-actions');
+    for(const [label,reference,view] of [['Read '+e.from,e.from,'reader'],['Read '+e.to,e.to,'reader'],['Read context: '+e.context,e.context,'reader'],['Atlas '+e.to,e.to,'connections']]){
+     const action=create('button','small-action',label);action.type='button';action.addEventListener('click',()=>selectRef(reference,view));actions.append(action);
+    }
+    note.append(actions);row.append(note);
+   }
+   list.append(row);
   }
-  if(links.length>80)list.append(create('p','soft-note',`Showing 80 of ${links.length} direct connections.`));
+  if(filtered.length>80)list.append(create('p','soft-note',`Showing 80 of ${filtered.length} matching connections.`));
+  if(!filtered.length)list.append(create('p','soft-note','No links match this list filter. Other links remain available and unclassified.'));
  }catch{if(requestId!==state.graphRequestId)return;$('graph-progress').textContent='Could not load reference data';list.replaceChildren(create('p','empty-list','Could not load reference data. Try again or open a different verse.'));}
 }
 function renderNotebook(){const b=$('bookmarks-list'),h=$('history-list'),n=$('notes-list');b.replaceChildren();h.replaceChildren();n.replaceChildren();$('bookmarks-count').textContent=`${state.bookmarks.length} saved`;
@@ -256,7 +279,8 @@ function init(){void initPublicReleases();document.body.classList.toggle('light'
  $('ref-filter').addEventListener('change',()=>{state.filter=$('ref-filter').value;void renderConnections();});
  $('save-notes').addEventListener('click',()=>{const text=$('notes-text').value.trim();if(text)state.notes[state.ref]=text;else delete state.notes[state.ref];if(putSaved('notes',state.notes))toast(text?'Note saved on this device.':'Note cleared.');else toast('Your browser could not save this note.');});
  $('view-in-map').addEventListener('click',()=>showView('connections'));$('open-entity-index').addEventListener('click',()=>showView('entities'));$('reader-related-index').addEventListener('click',()=>{showView('entities');entityIndexPage?.focusReference(state.ref);});$('graph-read').addEventListener('click',()=>showView('reader'));
- $('graph-depth').addEventListener('change',()=>{state.graphDepth=Number($('graph-depth').value);void renderGraph();});$('graph-reset').addEventListener('click',()=>state.graph?.reset());$('graph-zoom-in').addEventListener('click',()=>state.graph?.zoom(1.2));$('graph-zoom-out').addEventListener('click',()=>state.graph?.zoom(.8));
+ $('graph-evidence-filter').addEventListener('change',()=>{state.graphEvidenceFilter=$('graph-evidence-filter').value;void renderGraph();});
+  $('graph-depth').addEventListener('change',()=>{state.graphDepth=Number($('graph-depth').value);void renderGraph();});$('graph-reset').addEventListener('click',()=>state.graph?.reset());$('graph-zoom-in').addEventListener('click',()=>state.graph?.zoom(1.2));$('graph-zoom-out').addEventListener('click',()=>state.graph?.zoom(.8));
  $('random-verse').addEventListener('click',()=>selectRef(PATHS[Math.floor(Math.random()*PATHS.length)].refs[0]));
  $('passage-content').addEventListener('click',e=>{const mapLink=e.target.closest('[data-atlas-ref]');if(mapLink){selectRef(mapLink.dataset.atlasRef,'connections');e.preventDefault();return;}const verse=e.target.closest('.verse-num');if(verse){const num=Number(verse.textContent.trim().match(/\d+/)?.[0]);if(num>0&&num<=176){selectRef(`${chapterRef(state.ref)}:${num}`);e.preventDefault();return;}}const link=e.target.closest('a');if(link){const match=link.textContent.match(/(?:[1-3]\s*)?[A-Za-z ]+\d{1,3}:\d{1,3}/);const parsed=parseRef(match?.[0]||link.getAttribute('title')||'');if(parsed){e.preventDefault();selectRef(parsed.formatted);}}});
  const params=new URLSearchParams(location.search);state.translation=getTranslation(params.get('translation'))?.code||state.translation;renderTranslationStatuses();const ref=parseRef(params.get('ref'));if(ref)state.ref=ref.formatted;showView(params.get('view')||'discover',false);window.addEventListener('popstate',()=>{const p=new URLSearchParams(location.search);state.translation=getTranslation(p.get('translation'))?.code||getTranslation(getSaved('translation','ESV'))?.code||'ESV';renderTranslationStatuses();const parsed=parseRef(p.get('ref'));if(parsed)state.ref=parsed.formatted;showView(p.get('view')||'discover',false);});
