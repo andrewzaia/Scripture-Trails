@@ -1,0 +1,1631 @@
+{
+  "version": 1,
+  "updated": "2026-10-27",
+  "scope": "Selected Hebrew Bible narratives, people, historical regions and political entities. This is not a complete canonical index, a settled biblical chronology, a GIS map or an independent historical certification.",
+  "sourcePolicy": "Scripture references support what the biblical books narrate. Museum records and academic historical commentary are separately attributed to their narrower claims. Royal monuments can be partisan political sources. Do not infer a person, event or modern community identity from an ancient imperial label alone.",
+  "sources": {
+    "sennacherib-prism": {
+      "title": "Israel Museum - The Assyrian campaign in Judah as told by the Sennacherib Prism",
+      "url": "https://www.imj.org.il/en/exhibitions/special-display-assyrian-campaign-judah-told-sennacherib-prism",
+      "kind": "Museum object interpretation",
+      "scope": "Assyrian royal inscription on 701 BCE Judah campaign, tribute and royal claims; does not verify the Bible's explanation of Jerusalem's outcome."
+    },
+    "lachish-relief": {
+      "title": "British Museum - Sennacherib's Lachish assault relief",
+      "url": "https://www.britishmuseum.org/collection/object/W_1856-0909-14_1",
+      "kind": "Museum collection record",
+      "scope": "Material evidence of Assyrian depiction of Lachish campaign; royal propaganda and historical reconstruction require interpretation."
+    },
+    "black-obelisk": {
+      "title": "British Museum - Black Obelisk of Shalmaneser III",
+      "url": "https://www.britishmuseum.org/collection/search?keyword=WCO26594",
+      "kind": "Museum collection entry",
+      "scope": "Neo-Assyrian royal monument naming tribute of Jehu of the House of Omri; does not independently recount his coup."
+    },
+    "cyrus-cylinder": {
+      "title": "Metropolitan Museum of Art - Cyrus and the Judean Diaspora",
+      "url": "https://www.metmuseum.org/de/perspectives/cyrus-and-the-judean-diaspora",
+      "kind": "Museum contextual scholarship",
+      "scope": "The Cyrus Cylinder describes Babylonian imperial religious policy, not a specific decree naming Jews or Jerusalem."
+    },
+    "babylon-cylinder": {
+      "title": "British Museum - Nebuchadnezzar II building inscription",
+      "url": "https://www.britishmuseum.org/collection/object/W_1885-0430-1",
+      "kind": "Museum collection record",
+      "scope": "Inscribed evidence of Nebuchadnezzar II's Babylonian building projects, not proof of specific biblical court stories."
+    }
+  },
+  "people": [
+    {
+      "id": "abraham",
+      "name": "Abraham",
+      "aliases": [
+        "Abram"
+      ],
+      "disambiguation": "Patriarch in Genesis, distinct from later namesakes.",
+      "summary": "Genesis narrates Abram's call and the covenant promises, including his renaming as Abraham.",
+      "passages": [
+        "Genesis 12:1-9",
+        "Genesis 17:1-8"
+      ],
+      "events": [
+        "h001"
+      ],
+      "relationships": []
+    },
+    {
+      "id": "sarah",
+      "name": "Sarah",
+      "aliases": [
+        "Sarai"
+      ],
+      "disambiguation": "Wife of Abraham in Genesis.",
+      "summary": "Genesis describes Sarai's renaming as Sarah and the promised birth of Isaac.",
+      "passages": [
+        "Genesis 17:15-21",
+        "Genesis 21:1-7"
+      ],
+      "events": [
+        "h001"
+      ],
+      "relationships": [
+        {
+          "to": "abraham",
+          "label": "wife of",
+          "ref": "Genesis 17:15-16"
+        }
+      ]
+    },
+    {
+      "id": "isaac",
+      "name": "Isaac",
+      "aliases": [],
+      "disambiguation": "Son of Abraham and Sarah, not Ishmael.",
+      "summary": "Genesis portrays Isaac in the ancestral narratives and identifies Jacob and Esau as his sons.",
+      "passages": [
+        "Genesis 21:1-7",
+        "Genesis 25:19-26"
+      ],
+      "events": [
+        "h001"
+      ],
+      "relationships": [
+        {
+          "to": "abraham",
+          "label": "son of",
+          "ref": "Genesis 21:1-3"
+        },
+        {
+          "to": "jacob-israel",
+          "label": "father of",
+          "ref": "Genesis 25:19-26"
+        }
+      ]
+    },
+    {
+      "id": "jacob-israel",
+      "name": "Jacob, called Israel",
+      "aliases": [
+        "Jacob",
+        "Israel (Jacob)"
+      ],
+      "disambiguation": "The patriarch called Israel, not the later northern kingdom bearing that name.",
+      "summary": "Genesis narrates Jacob's renaming as Israel and the family whose descendants figure in the tribal narratives.",
+      "passages": [
+        "Genesis 32:24-30",
+        "Genesis 35:9-12"
+      ],
+      "events": [
+        "h001"
+      ],
+      "relationships": [
+        {
+          "to": "isaac",
+          "label": "son of",
+          "ref": "Genesis 25:19-26"
+        },
+        {
+          "to": "joseph-jacob",
+          "label": "father of",
+          "ref": "Genesis 37:3"
+        }
+      ]
+    },
+    {
+      "id": "joseph-jacob",
+      "name": "Joseph son of Jacob",
+      "aliases": [
+        "Joseph (Genesis)",
+        "Joseph"
+      ],
+      "disambiguation": "The Joseph of Genesis, distinct from Joseph of Nazareth.",
+      "summary": "Genesis portrays Joseph's rise in Egypt and eventual reconciliation with his brothers.",
+      "passages": [
+        "Genesis 37:3-11",
+        "Genesis 45:1-15"
+      ],
+      "events": [
+        "h002"
+      ],
+      "relationships": [
+        {
+          "to": "jacob-israel",
+          "label": "son of",
+          "ref": "Genesis 37:3"
+        }
+      ]
+    },
+    {
+      "id": "moses",
+      "name": "Moses",
+      "aliases": [],
+      "disambiguation": "The leader in Exodus and Deuteronomy, not an alternative name for another prophet.",
+      "summary": "Exodus presents Moses as the leader of Israel's departure from Egypt and mediator of the Sinai covenant.",
+      "passages": [
+        "Exodus 3:1-12",
+        "Exodus 12:31-42",
+        "Exodus 19:1-8"
+      ],
+      "events": [
+        "h002",
+        "h003"
+      ],
+      "relationships": [
+        {
+          "to": "aaron-moses",
+          "label": "brother of",
+          "ref": "Exodus 4:14"
+        },
+        {
+          "to": "miriam-moses",
+          "label": "brother of",
+          "ref": "Numbers 26:59"
+        }
+      ]
+    },
+    {
+      "id": "aaron-moses",
+      "name": "Aaron",
+      "aliases": [
+        "Aaron the priest"
+      ],
+      "disambiguation": "Brother of Moses and Miriam, distinct from later priestly figures.",
+      "summary": "Exodus and Numbers identify Aaron in the departure narratives and priestly traditions.",
+      "passages": [
+        "Exodus 4:14-16",
+        "Exodus 28:1-4",
+        "Numbers 26:59"
+      ],
+      "events": [
+        "h002",
+        "h003"
+      ],
+      "relationships": [
+        {
+          "to": "moses",
+          "label": "brother of",
+          "ref": "Exodus 4:14"
+        }
+      ]
+    },
+    {
+      "id": "miriam-moses",
+      "name": "Miriam",
+      "aliases": [
+        "Miriam the prophet"
+      ],
+      "disambiguation": "Sister of Moses and Aaron, distinct from later women named Mary.",
+      "summary": "Exodus calls Miriam a prophet and describes her song after the crossing.",
+      "passages": [
+        "Exodus 15:20-21",
+        "Numbers 26:59"
+      ],
+      "events": [
+        "h002"
+      ],
+      "relationships": [
+        {
+          "to": "moses",
+          "label": "sister of",
+          "ref": "Numbers 26:59"
+        }
+      ]
+    },
+    {
+      "id": "joshua-nun",
+      "name": "Joshua son of Nun",
+      "aliases": [
+        "Joshua"
+      ],
+      "disambiguation": "Israelite leader in Joshua, not another biblical Joshua or Jesus.",
+      "summary": "Joshua reports the crossing of the Jordan and the Israelites' entry into the land.",
+      "passages": [
+        "Joshua 1:1-9",
+        "Joshua 3:7-17"
+      ],
+      "events": [
+        "h004"
+      ],
+      "relationships": []
+    },
+    {
+      "id": "deborah-judge",
+      "name": "Deborah the judge",
+      "aliases": [
+        "Deborah"
+      ],
+      "disambiguation": "Prophet and judge in Judges 4-5, not Rebekah's nurse in Genesis.",
+      "summary": "Judges depicts Deborah judging Israel and participating in the narrative of Barak's campaign.",
+      "passages": [
+        "Judges 4:4-10",
+        "Judges 5:1-7"
+      ],
+      "events": [
+        "h004"
+      ],
+      "relationships": []
+    },
+    {
+      "id": "ruth-moabite",
+      "name": "Ruth",
+      "aliases": [
+        "Ruth the Moabite"
+      ],
+      "disambiguation": "The Moabite woman in Ruth, distinct from any later namesakes.",
+      "summary": "The book of Ruth recounts her loyalty to Naomi and her marriage to Boaz.",
+      "passages": [
+        "Ruth 1:16-18",
+        "Ruth 4:13-17"
+      ],
+      "events": [
+        "h005"
+      ],
+      "relationships": []
+    },
+    {
+      "id": "samuel-prophet",
+      "name": "Samuel",
+      "aliases": [
+        "Samuel the prophet"
+      ],
+      "disambiguation": "Prophet and judge associated with Shiloh, distinct from King Saul.",
+      "summary": "First Samuel recounts Samuel's call and his role in the transition to kingship.",
+      "passages": [
+        "1 Samuel 3:1-21",
+        "1 Samuel 8:1-9"
+      ],
+      "events": [
+        "h006"
+      ],
+      "relationships": []
+    },
+    {
+      "id": "saul-king",
+      "name": "Saul king of Israel",
+      "aliases": [
+        "King Saul",
+        "Saul"
+      ],
+      "disambiguation": "The first monarch in 1 Samuel, not Saul of Tarsus in Acts.",
+      "summary": "First Samuel depicts Saul's anointing as king and conflict with David.",
+      "passages": [
+        "1 Samuel 9:15-17",
+        "1 Samuel 10:1",
+        "1 Samuel 18:6-9"
+      ],
+      "events": [
+        "h006"
+      ],
+      "relationships": []
+    },
+    {
+      "id": "david-king",
+      "name": "David",
+      "aliases": [
+        "King David"
+      ],
+      "disambiguation": "The Judahite king in Samuel and Kings, distinct from later descendants bearing his name.",
+      "summary": "Second Samuel narrates David's enthronement and the establishment of Jerusalem as his capital.",
+      "passages": [
+        "2 Samuel 5:1-12",
+        "2 Samuel 7:8-16"
+      ],
+      "events": [
+        "h007"
+      ],
+      "relationships": [
+        {
+          "to": "solomon-king",
+          "label": "father of",
+          "ref": "1 Kings 1:28-30"
+        }
+      ]
+    },
+    {
+      "id": "solomon-king",
+      "name": "Solomon",
+      "aliases": [
+        "King Solomon"
+      ],
+      "disambiguation": "David's son and successor as king, not a stand-in for every royal wisdom author.",
+      "summary": "First Kings describes Solomon's reign and the dedication of the temple in Jerusalem.",
+      "passages": [
+        "1 Kings 1:28-40",
+        "1 Kings 8:1-21"
+      ],
+      "events": [
+        "h008"
+      ],
+      "relationships": [
+        {
+          "to": "david-king",
+          "label": "son of",
+          "ref": "1 Kings 1:28-30"
+        },
+        {
+          "to": "rehoboam-king",
+          "label": "father of",
+          "ref": "1 Kings 11:43"
+        }
+      ]
+    },
+    {
+      "id": "rehoboam-king",
+      "name": "Rehoboam",
+      "aliases": [
+        "Rehoboam son of Solomon"
+      ],
+      "disambiguation": "King of Judah after the kingdom division, not Jeroboam.",
+      "summary": "First Kings recounts Rehoboam's response to the tribes' petition and the division of royal rule.",
+      "passages": [
+        "1 Kings 11:43",
+        "1 Kings 12:1-19"
+      ],
+      "events": [
+        "h009"
+      ],
+      "relationships": [
+        {
+          "to": "solomon-king",
+          "label": "son of",
+          "ref": "1 Kings 11:43"
+        }
+      ]
+    },
+    {
+      "id": "jeroboam-i",
+      "name": "Jeroboam son of Nebat",
+      "aliases": [
+        "Jeroboam I",
+        "Jeroboam"
+      ],
+      "disambiguation": "Founder of the northern kingdom's royal line, distinct from Jeroboam II.",
+      "summary": "First Kings presents Jeroboam's kingship after the division and the rival cult sites at Bethel and Dan.",
+      "passages": [
+        "1 Kings 12:20-33",
+        "1 Kings 14:1-20"
+      ],
+      "events": [
+        "h009"
+      ],
+      "relationships": []
+    },
+    {
+      "id": "ahab",
+      "name": "Ahab king of Israel",
+      "aliases": [
+        "King Ahab",
+        "Ahab"
+      ],
+      "disambiguation": "Ninth-century northern king, not a Judahite ruler.",
+      "summary": "First Kings describes Ahab's rule and Elijah's confrontation with the prophets of Baal.",
+      "passages": [
+        "1 Kings 16:29-33",
+        "1 Kings 18:17-46"
+      ],
+      "events": [
+        "h010"
+      ],
+      "relationships": []
+    },
+    {
+      "id": "elijah",
+      "name": "Elijah",
+      "aliases": [
+        "Elijah the Tishbite"
+      ],
+      "disambiguation": "Prophet active in First and Second Kings.",
+      "summary": "The Elijah narratives include the Carmel confrontation and the episode of his departure.",
+      "passages": [
+        "1 Kings 18:17-39",
+        "2 Kings 2:1-12"
+      ],
+      "events": [
+        "h010"
+      ],
+      "relationships": [
+        {
+          "to": "elisha",
+          "label": "mentor of",
+          "ref": "2 Kings 2:1-12"
+        }
+      ]
+    },
+    {
+      "id": "elisha",
+      "name": "Elisha",
+      "aliases": [
+        "Elisha son of Shaphat"
+      ],
+      "disambiguation": "Prophet succeeding Elijah, not the similarly sounding name Elijah.",
+      "summary": "Second Kings describes Elisha's ministry following Elijah's departure.",
+      "passages": [
+        "2 Kings 2:9-15",
+        "2 Kings 4:1-7"
+      ],
+      "events": [
+        "h010"
+      ],
+      "relationships": [
+        {
+          "to": "elijah",
+          "label": "successor to",
+          "ref": "2 Kings 2:9-15"
+        }
+      ]
+    },
+    {
+      "id": "jehu-king",
+      "name": "Jehu king of Israel",
+      "aliases": [
+        "King Jehu",
+        "Jehu"
+      ],
+      "disambiguation": "King whose coup is narrated in 2 Kings 9-10, distinct from Jehu son of Hanani.",
+      "summary": "Second Kings recounts Jehu's violent succession. An Assyrian obelisk separately attests tribute associated with a Jehu of the House of Omri, not the biblical coup's details.",
+      "passages": [
+        "2 Kings 9:1-13",
+        "2 Kings 10:28-36"
+      ],
+      "events": [
+        "h011"
+      ],
+      "relationships": []
+    },
+    {
+      "id": "jeroboam-ii",
+      "name": "Jeroboam son of Joash",
+      "aliases": [
+        "Jeroboam II"
+      ],
+      "disambiguation": "Later king of northern Israel, distinct from Jeroboam son of Nebat.",
+      "summary": "Second Kings narrates his reign; Amos is dated by its superscription to his period.",
+      "passages": [
+        "2 Kings 14:23-29",
+        "Amos 1:1"
+      ],
+      "events": [
+        "h012"
+      ],
+      "relationships": []
+    },
+    {
+      "id": "amos",
+      "name": "Amos",
+      "aliases": [
+        "Amos of Tekoa"
+      ],
+      "disambiguation": "Prophetic voice in the book bearing his name.",
+      "summary": "Amos' superscription places his prophetic activity in the reigns of Uzziah of Judah and Jeroboam II of Israel.",
+      "passages": [
+        "Amos 1:1-2",
+        "Amos 5:21-24"
+      ],
+      "events": [
+        "h012"
+      ],
+      "relationships": []
+    },
+    {
+      "id": "hosea-prophet",
+      "name": "Hosea the prophet",
+      "aliases": [
+        "Hosea son of Beeri",
+        "Hosea"
+      ],
+      "disambiguation": "The prophet, not King Hoshea of Israel.",
+      "summary": "Hosea is introduced as a prophetic voice across northern Israel's late monarchy.",
+      "passages": [
+        "Hosea 1:1-2",
+        "Hosea 11:1-9"
+      ],
+      "events": [
+        "h013"
+      ],
+      "relationships": []
+    },
+    {
+      "id": "isaiah-prophet",
+      "name": "Isaiah son of Amoz",
+      "aliases": [
+        "Isaiah"
+      ],
+      "disambiguation": "The prophet named in Isaiah 1:1, not a claim about single authorship of every chapter of Isaiah.",
+      "summary": "Isaiah's superscription places the prophetic book in the era of several kings of Judah. The book contains narratives connected with Hezekiah and Assyria.",
+      "passages": [
+        "Isaiah 1:1",
+        "Isaiah 36:1-3",
+        "Isaiah 37:1-7"
+      ],
+      "events": [
+        "h015"
+      ],
+      "relationships": []
+    },
+    {
+      "id": "micah-prophet",
+      "name": "Micah of Moresheth",
+      "aliases": [
+        "Micah"
+      ],
+      "disambiguation": "Prophet in the book bearing his name, not the Micah in Judges 17.",
+      "summary": "Micah's superscription locates his oracles in the periods of Jotham, Ahaz and Hezekiah.",
+      "passages": [
+        "Micah 1:1-7",
+        "Micah 6:6-8"
+      ],
+      "events": [
+        "h015"
+      ],
+      "relationships": []
+    },
+    {
+      "id": "tiglath-pileser-iii",
+      "name": "Tiglath-pileser king of Assyria",
+      "aliases": [
+        "Tiglath-Pileser III",
+        "Pul"
+      ],
+      "disambiguation": "Assyrian ruler named in 2 Kings, distinct from Sennacherib and Shalmaneser.",
+      "summary": "Second Kings reports Assyrian incursions and deportations under Tiglath-pileser.",
+      "passages": [
+        "2 Kings 15:19-20",
+        "2 Kings 15:29",
+        "1 Chronicles 5:26"
+      ],
+      "events": [
+        "h014"
+      ],
+      "relationships": []
+    },
+    {
+      "id": "shalmaneser-v",
+      "name": "Shalmaneser king of Assyria",
+      "aliases": [
+        "Shalmaneser V",
+        "Shalmaneser"
+      ],
+      "disambiguation": "The Assyrian king in 2 Kings 17, not Shalmaneser III of the Black Obelisk.",
+      "summary": "Second Kings records Hoshea's submission and subsequent conflict with Shalmaneser. Attribution of all subsequent siege activity is a separate historical question.",
+      "passages": [
+        "2 Kings 17:3-6",
+        "2 Kings 18:9-12"
+      ],
+      "events": [
+        "h016"
+      ],
+      "relationships": []
+    },
+    {
+      "id": "hoshea-king",
+      "name": "Hoshea son of Elah",
+      "aliases": [
+        "King Hoshea",
+        "Hoshea"
+      ],
+      "disambiguation": "Last ruler of northern Israel named in 2 Kings, not the prophet Hosea.",
+      "summary": "Second Kings identifies Hoshea as Israel's king during the Assyrian campaigns preceding Samaria's fall.",
+      "passages": [
+        "2 Kings 17:1-6"
+      ],
+      "events": [
+        "h016"
+      ],
+      "relationships": []
+    },
+    {
+      "id": "hezekiah",
+      "name": "Hezekiah king of Judah",
+      "aliases": [
+        "King Hezekiah",
+        "Hezekiah"
+      ],
+      "disambiguation": "Judahite king in the Assyrian campaign narratives, not a king of northern Israel.",
+      "summary": "Second Kings recounts Hezekiah's reforms, his tribute and Jerusalem's crisis during Sennacherib's campaign.",
+      "passages": [
+        "2 Kings 18:1-16",
+        "2 Kings 19:1-37"
+      ],
+      "events": [
+        "h017",
+        "h018"
+      ],
+      "relationships": []
+    },
+    {
+      "id": "sennacherib",
+      "name": "Sennacherib king of Assyria",
+      "aliases": [
+        "Sennacherib"
+      ],
+      "disambiguation": "Neo-Assyrian monarch, distinct from Shalmaneser and Tiglath-pileser.",
+      "summary": "Second Kings and Isaiah record Sennacherib's campaign against Judah. Contemporary Assyrian royal sources describe his successes and Hezekiah's tribute, with different emphases from the biblical narrative.",
+      "passages": [
+        "2 Kings 18:13-17",
+        "Isaiah 36:1-3",
+        "Isaiah 37:36-38"
+      ],
+      "events": [
+        "h017",
+        "h018"
+      ],
+      "relationships": []
+    },
+    {
+      "id": "jonah",
+      "name": "Jonah son of Amittai",
+      "aliases": [
+        "Jonah"
+      ],
+      "disambiguation": "Prophet named in 2 Kings and in the narrative book of Jonah.",
+      "summary": "The book of Jonah narrates a prophetic mission to Nineveh. The narrative's literary and historical questions should not be settled by the location entry alone.",
+      "passages": [
+        "2 Kings 14:25",
+        "Jonah 1:1-3",
+        "Jonah 3:1-10"
+      ],
+      "events": [
+        "h019"
+      ],
+      "relationships": []
+    },
+    {
+      "id": "nahum",
+      "name": "Nahum of Elkosh",
+      "aliases": [
+        "Nahum"
+      ],
+      "disambiguation": "Prophet to whom the book of Nahum is attributed, not a named Assyrian court chronicler.",
+      "summary": "Nahum contains an oracle concerning Nineveh. Its rhetoric cannot by itself be used as an archaeological account of the city's capture.",
+      "passages": [
+        "Nahum 1:1-8",
+        "Nahum 2:1-13"
+      ],
+      "events": [
+        "h020"
+      ],
+      "relationships": []
+    },
+    {
+      "id": "josiah",
+      "name": "Josiah king of Judah",
+      "aliases": [
+        "King Josiah",
+        "Josiah"
+      ],
+      "disambiguation": "Judahite king associated with the discovery of a scroll and covenant reform.",
+      "summary": "Second Kings presents Josiah's temple reforms and the public renewal of the covenant.",
+      "passages": [
+        "2 Kings 22:1-20",
+        "2 Kings 23:1-25"
+      ],
+      "events": [
+        "h021"
+      ],
+      "relationships": []
+    },
+    {
+      "id": "jeremiah",
+      "name": "Jeremiah son of Hilkiah",
+      "aliases": [
+        "Jeremiah"
+      ],
+      "disambiguation": "Prophet in the book of Jeremiah, not King Josiah's high priest.",
+      "summary": "Jeremiah's book places his ministry across the last decades of Judah's kingdom and the Jerusalem catastrophe.",
+      "passages": [
+        "Jeremiah 1:1-10",
+        "Jeremiah 39:1-10"
+      ],
+      "events": [
+        "h022"
+      ],
+      "relationships": []
+    },
+    {
+      "id": "zedekiah",
+      "name": "Zedekiah king of Judah",
+      "aliases": [
+        "King Zedekiah",
+        "Zedekiah"
+      ],
+      "disambiguation": "Last reigning king of Judah in the 2 Kings 25 account, distinct from other biblical Zedekiahs.",
+      "summary": "Second Kings narrates Zedekiah's rebellion, the siege and the destruction of Jerusalem.",
+      "passages": [
+        "2 Kings 24:17-20",
+        "2 Kings 25:1-7"
+      ],
+      "events": [
+        "h022"
+      ],
+      "relationships": []
+    },
+    {
+      "id": "nebuchadnezzar-ii",
+      "name": "Nebuchadnezzar king of Babylon",
+      "aliases": [
+        "Nebuchadnezzar II",
+        "Nebuchadnezzar"
+      ],
+      "disambiguation": "Neo-Babylonian king in Kings and Daniel, not his father Nabopolassar.",
+      "summary": "Second Kings and Jeremiah identify Nebuchadnezzar with campaigns and deportations involving Judah. Daniel sets court narratives under him.",
+      "passages": [
+        "2 Kings 24:10-17",
+        "2 Kings 25:1-11",
+        "Daniel 1:1-7"
+      ],
+      "events": [
+        "h022",
+        "h023"
+      ],
+      "relationships": []
+    },
+    {
+      "id": "ezekiel",
+      "name": "Ezekiel son of Buzi",
+      "aliases": [
+        "Ezekiel the prophet",
+        "Ezekiel"
+      ],
+      "disambiguation": "Prophet in the exile setting of Ezekiel, not another man sharing the name.",
+      "summary": "The book situates Ezekiel among exiles by the Chebar canal in Babylonia rather than at the city centre of Babylon.",
+      "passages": [
+        "Ezekiel 1:1-3",
+        "Ezekiel 3:12-15"
+      ],
+      "events": [
+        "h023"
+      ],
+      "relationships": []
+    },
+    {
+      "id": "daniel",
+      "name": "Daniel",
+      "aliases": [
+        "Daniel in exile"
+      ],
+      "disambiguation": "The Daniel of the book of Daniel; its literary-historical composition and dates are debated.",
+      "summary": "Daniel's opening chapter locates its court stories in a Babylonian setting. This profile does not present the work as independently verified court documentation.",
+      "passages": [
+        "Daniel 1:1-7",
+        "Daniel 2:1-13"
+      ],
+      "events": [
+        "h023"
+      ],
+      "relationships": []
+    },
+    {
+      "id": "cyrus-ii",
+      "name": "Cyrus king of Persia",
+      "aliases": [
+        "Cyrus the Great",
+        "Cyrus II",
+        "Cyrus"
+      ],
+      "disambiguation": "Persian monarch, distinct from any other Cyrus in later historical writing.",
+      "summary": "Ezra and Chronicles attribute an authorisation to Cyrus for a return and rebuilding programme. The Cyrus Cylinder is related imperial evidence but does not mention Jerusalem or Jewish returnees.",
+      "passages": [
+        "Ezra 1:1-4",
+        "2 Chronicles 36:22-23",
+        "Isaiah 44:28"
+      ],
+      "events": [
+        "h024"
+      ],
+      "relationships": []
+    },
+    {
+      "id": "ezra-scribe",
+      "name": "Ezra the scribe",
+      "aliases": [
+        "Ezra"
+      ],
+      "disambiguation": "Priest and scribe in Ezra-Nehemiah; not the title of every returning leader.",
+      "summary": "Ezra describes a later mission to Jerusalem involving teaching Torah and community reforms.",
+      "passages": [
+        "Ezra 7:1-10",
+        "Nehemiah 8:1-8"
+      ],
+      "events": [
+        "h024"
+      ],
+      "relationships": []
+    },
+    {
+      "id": "nehemiah-governor",
+      "name": "Nehemiah",
+      "aliases": [
+        "Nehemiah the governor"
+      ],
+      "disambiguation": "Official and wall-building organiser in Nehemiah, distinct from other men named Nehemiah.",
+      "summary": "Nehemiah recounts efforts to repair Jerusalem's defences and to organise public life.",
+      "passages": [
+        "Nehemiah 2:1-10",
+        "Nehemiah 6:15-16"
+      ],
+      "events": [
+        "h025"
+      ],
+      "relationships": []
+    },
+    {
+      "id": "esther",
+      "name": "Esther",
+      "aliases": [
+        "Hadassah"
+      ],
+      "disambiguation": "Queen in the book of Esther; the story's literary and historical setting is not assumed to be independently verified.",
+      "summary": "Esther describes a Jewish woman in the Persian court and a crisis facing the Jewish population.",
+      "passages": [
+        "Esther 2:5-18",
+        "Esther 4:12-17"
+      ],
+      "events": [
+        "h026"
+      ],
+      "relationships": []
+    }
+  ],
+  "places": [
+    {
+      "id": "canaan-region",
+      "name": "Canaan (biblical region)",
+      "kind": "region",
+      "aliases": [
+        "Land of Canaan"
+      ],
+      "region": "Levant",
+      "summary": "A regional name in the ancestral narratives, without a single fixed boundary applicable to every period.",
+      "caution": "The narrative does not provide a reconstructable journey path or a unique archaeological border.",
+      "passages": [
+        "Genesis 12:5-9"
+      ],
+      "sourceIds": [],
+      "events": [
+        "h001"
+      ]
+    },
+    {
+      "id": "sinai-region",
+      "name": "Sinai wilderness and mountain",
+      "kind": "region",
+      "aliases": [
+        "Mount Sinai",
+        "Horeb"
+      ],
+      "region": "Sinai traditions",
+      "summary": "Exodus locates the covenant narrative in the wilderness of Sinai.",
+      "caution": "Identification of the mountain and precise campsite is disputed; this is not a mapped coordinate.",
+      "passages": [
+        "Exodus 19:1-8"
+      ],
+      "sourceIds": [],
+      "events": [
+        "h003"
+      ]
+    },
+    {
+      "id": "shiloh",
+      "name": "Shiloh",
+      "kind": "site",
+      "aliases": [
+        "Shilo"
+      ],
+      "region": "Hill country of Ephraim",
+      "summary": "Sanctuary setting in the books of Joshua, Judges and 1 Samuel.",
+      "caution": "The site association does not establish a precise spot for Samuel's reported experience.",
+      "passages": [
+        "1 Samuel 1:3-9",
+        "1 Samuel 3:1-21"
+      ],
+      "sourceIds": [],
+      "events": [
+        "h006"
+      ]
+    },
+    {
+      "id": "northern-israel",
+      "name": "Kingdom of Israel (north)",
+      "kind": "polity",
+      "aliases": [
+        "Northern Kingdom",
+        "Israelite northern kingdom"
+      ],
+      "region": "Israel / Samaria",
+      "summary": "A political designation for the northern monarchy in Kings and prophetic superscriptions.",
+      "caution": "Not the patriarch Jacob, not the entire nation at every date, and not a fixed geographical polygon.",
+      "passages": [
+        "1 Kings 12:20-33",
+        "2 Kings 17:1-6"
+      ],
+      "sourceIds": [],
+      "events": [
+        "h009",
+        "h011",
+        "h012",
+        "h013",
+        "h014"
+      ]
+    },
+    {
+      "id": "judah-kingdom",
+      "name": "Kingdom of Judah",
+      "kind": "polity",
+      "aliases": [
+        "Southern Kingdom",
+        "Judahite kingdom"
+      ],
+      "region": "Judah / Jerusalem",
+      "summary": "The southern monarchy described in Kings, Chronicles and the prophetic books.",
+      "caution": "The kingdom's changing political control is not represented by a fixed or surveyed outline.",
+      "passages": [
+        "2 Kings 18:1-16",
+        "2 Kings 24:17-20"
+      ],
+      "sourceIds": [],
+      "events": [
+        "h015"
+      ]
+    },
+    {
+      "id": "carmel",
+      "name": "Mount Carmel (region)",
+      "kind": "region",
+      "aliases": [
+        "Carmel"
+      ],
+      "region": "Northwestern Levant",
+      "summary": "Mount named in the prophetic confrontation recorded in 1 Kings.",
+      "caution": "The literary episode does not fix the position of an individual altar or meeting site.",
+      "passages": [
+        "1 Kings 18:17-46"
+      ],
+      "sourceIds": [],
+      "events": [
+        "h010"
+      ]
+    },
+    {
+      "id": "samaria-city",
+      "name": "Samaria (ancient capital)",
+      "kind": "site",
+      "aliases": [
+        "Samaria",
+        "Shomron"
+      ],
+      "region": "Northern Israel",
+      "summary": "The royal city of the northern kingdom and the subject of the Assyrian capture in Kings.",
+      "caution": "Distinguish the city from the wider region called Samaria in the Gospels and later eras.",
+      "passages": [
+        "1 Kings 16:23-28",
+        "2 Kings 17:3-6"
+      ],
+      "sourceIds": [],
+      "events": [
+        "h016"
+      ]
+    },
+    {
+      "id": "assyria-empire",
+      "name": "Assyria (imperial polity)",
+      "kind": "polity",
+      "aliases": [
+        "Assyrian Empire",
+        "Neo-Assyrian Empire",
+        "Assyria"
+      ],
+      "region": "Northern Mesopotamia and western Asia",
+      "summary": "A historical imperial power whose rulers appear in the Hebrew Bible's accounts of Israel and Judah.",
+      "caution": "Modern Assyrian identities are not equivalent to the changing borders of an ancient imperial state.",
+      "passages": [
+        "2 Kings 15:29",
+        "2 Kings 18:13-17",
+        "Nahum 1:1"
+      ],
+      "sourceIds": [
+        "sennacherib-prism"
+      ],
+      "events": [
+        "h014",
+        "h016",
+        "h017",
+        "h018",
+        "h020"
+      ]
+    },
+    {
+      "id": "nineveh",
+      "name": "Nineveh",
+      "kind": "site",
+      "aliases": [
+        "Nineveh (Assyria)"
+      ],
+      "region": "Northern Mesopotamia",
+      "summary": "Important Assyrian royal centre and the named setting of Jonah and Nahum.",
+      "caution": "The site is an ancient city; Jonah's conversations and Nahum's prophecy are distinct literary claims.",
+      "passages": [
+        "Jonah 1:1-3",
+        "Jonah 3:1-10",
+        "Nahum 1:1"
+      ],
+      "sourceIds": [],
+      "events": [
+        "h019",
+        "h020"
+      ]
+    },
+    {
+      "id": "lachish",
+      "name": "Lachish",
+      "kind": "site",
+      "aliases": [
+        "Tel Lachish"
+      ],
+      "region": "Shephelah of Judah",
+      "summary": "Judean fortified city associated with Sennacherib's campaign in Kings and palace reliefs.",
+      "caution": "Assyrian reliefs glorify victory; the excavated site is not proof of every biblical diplomatic exchange.",
+      "passages": [
+        "2 Kings 18:13-17"
+      ],
+      "sourceIds": [
+        "lachish-relief"
+      ],
+      "events": [
+        "h017"
+      ]
+    },
+    {
+      "id": "babylonian-empire",
+      "name": "Babylonia (imperial polity)",
+      "kind": "polity",
+      "aliases": [
+        "Neo-Babylonian Empire",
+        "Babylonia"
+      ],
+      "region": "Mesopotamia",
+      "summary": "The imperial domain associated with the capture of Jerusalem and Judean exile narratives.",
+      "caution": "The state is not one city, and a narrative located among exiles need not occur within the city of Babylon.",
+      "passages": [
+        "2 Kings 24:10-17",
+        "Ezekiel 1:1-3"
+      ],
+      "sourceIds": [
+        "babylon-cylinder"
+      ],
+      "events": [
+        "h023"
+      ]
+    },
+    {
+      "id": "babylon",
+      "name": "Babylon (city)",
+      "kind": "site",
+      "aliases": [
+        "City of Babylon"
+      ],
+      "region": "Southern Mesopotamia",
+      "summary": "The Mesopotamian city at the centre of Neo-Babylonian imperial rule and Daniel's court setting.",
+      "caution": "This entry distinguishes the city from the territory of Babylonia and does not independently verify Daniel's literary episodes.",
+      "passages": [
+        "Daniel 1:1-7"
+      ],
+      "sourceIds": [
+        "babylon-cylinder"
+      ],
+      "events": [
+        "h023"
+      ]
+    },
+    {
+      "id": "persian-empire",
+      "name": "Persian Empire (Achaemenid)",
+      "kind": "polity",
+      "aliases": [
+        "Achaemenid Empire",
+        "Persia"
+      ],
+      "region": "Southwest Asia",
+      "summary": "Empire under Cyrus and later rulers in the Ezra-Nehemiah and Esther narratives.",
+      "caution": "This is a political designation, not an exact route or single point on a map.",
+      "passages": [
+        "Ezra 1:1-4",
+        "Esther 1:1-3"
+      ],
+      "sourceIds": [
+        "cyrus-cylinder"
+      ],
+      "events": [
+        "h024"
+      ]
+    },
+    {
+      "id": "susa",
+      "name": "Susa (Shushan)",
+      "kind": "site",
+      "aliases": [
+        "Shushan",
+        "Susa"
+      ],
+      "region": "Southwestern Iran",
+      "summary": "Ancient city named as a Persian court setting in Esther and Nehemiah.",
+      "caution": "Susa as a city is historically attested; that does not independently establish every detail of Esther's literary narrative.",
+      "passages": [
+        "Esther 1:1-3",
+        "Nehemiah 1:1"
+      ],
+      "sourceIds": [],
+      "events": [
+        "h026"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "h001",
+      "title": "Call and covenant with Abraham",
+      "place": "canaan-region",
+      "summary": "Genesis narrates Abram's departure toward Canaan and a promise concerning his descendants.",
+      "passages": [
+        "Genesis 12:1-9",
+        "Genesis 17:1-8"
+      ],
+      "people": [
+        "abraham",
+        "sarah",
+        "isaac",
+        "jacob-israel"
+      ],
+      "category": "ancestral",
+      "qualification": "Later narrative genealogies belong to the ancestral story, not to an externally established itinerary.",
+      "sourceIds": []
+    },
+    {
+      "id": "h002",
+      "title": "Israel's departure from Egypt",
+      "place": "egypt",
+      "summary": "Exodus narrates the departure, Passover and the crossing tradition.",
+      "passages": [
+        "Exodus 12:21-42",
+        "Exodus 14:10-31"
+      ],
+      "people": [
+        "moses",
+        "aaron-moses",
+        "miriam-moses",
+        "joseph-jacob"
+      ],
+      "category": "exodus",
+      "qualification": "The geography, dating and external historical verification of the Exodus remain disputed.",
+      "sourceIds": []
+    },
+    {
+      "id": "h003",
+      "title": "Covenant at Sinai",
+      "place": "sinai-region",
+      "summary": "Exodus places the giving of covenant teaching at Sinai.",
+      "passages": [
+        "Exodus 19:1-25",
+        "Exodus 20:1-21"
+      ],
+      "people": [
+        "moses",
+        "aaron-moses"
+      ],
+      "category": "exodus",
+      "qualification": "The precise identification of the biblical mountain is disputed.",
+      "sourceIds": []
+    },
+    {
+      "id": "h004",
+      "title": "Israel crosses the Jordan",
+      "place": "jordan",
+      "summary": "Joshua narrates the crossing at the start of Israel's entry into the land.",
+      "passages": [
+        "Joshua 3:1-17",
+        "Joshua 4:1-9"
+      ],
+      "people": [
+        "joshua-nun"
+      ],
+      "category": "settlement",
+      "qualification": "This is the biblical story's sequence; no comprehensive archaeological reconstruction is asserted.",
+      "sourceIds": []
+    },
+    {
+      "id": "h005",
+      "title": "Ruth and Boaz",
+      "place": "bethlehem",
+      "summary": "Ruth recounts the family relationship that the book connects with David's genealogy.",
+      "passages": [
+        "Ruth 4:1-22"
+      ],
+      "people": [
+        "ruth-moabite"
+      ],
+      "category": "judges",
+      "qualification": "The literary narrative is not an independently dated local case record.",
+      "sourceIds": []
+    },
+    {
+      "id": "h006",
+      "title": "Samuel and the rise of monarchy",
+      "place": "shiloh",
+      "summary": "First Samuel portrays Samuel's call and the selection of Saul as king.",
+      "passages": [
+        "1 Samuel 3:1-21",
+        "1 Samuel 10:1-16"
+      ],
+      "people": [
+        "samuel-prophet",
+        "saul-king"
+      ],
+      "category": "monarchy",
+      "qualification": "Shiloh is associated with Samuel's childhood; Saul's anointing is not placed at Shiloh by this entry.",
+      "sourceIds": []
+    },
+    {
+      "id": "h007",
+      "title": "David's kingship in Jerusalem",
+      "place": "jerusalem",
+      "summary": "Second Samuel describes David's accession and Jerusalem becoming his centre.",
+      "passages": [
+        "2 Samuel 5:1-12",
+        "2 Samuel 7:8-16"
+      ],
+      "people": [
+        "david-king"
+      ],
+      "category": "monarchy",
+      "qualification": "The biblical kingdom account is not a claim of uncontroversial archaeological borders.",
+      "sourceIds": []
+    },
+    {
+      "id": "h008",
+      "title": "Dedication of Solomon's temple",
+      "place": "jerusalem",
+      "summary": "First Kings narrates the dedication of the temple in Jerusalem.",
+      "passages": [
+        "1 Kings 8:1-21",
+        "1 Kings 8:54-66"
+      ],
+      "people": [
+        "solomon-king",
+        "david-king"
+      ],
+      "category": "monarchy",
+      "qualification": "Architectural details in Scripture do not constitute an excavated plan of the temple.",
+      "sourceIds": []
+    },
+    {
+      "id": "h009",
+      "title": "Division of royal rule",
+      "place": "northern-israel",
+      "summary": "First Kings recounts the division between the kingdoms associated with Rehoboam and Jeroboam.",
+      "passages": [
+        "1 Kings 12:1-24",
+        "1 Kings 12:25-33"
+      ],
+      "people": [
+        "rehoboam-king",
+        "jeroboam-i"
+      ],
+      "category": "divided-kingdoms",
+      "qualification": "The kingdom labels are political summaries, not fixed surveyed borders.",
+      "sourceIds": []
+    },
+    {
+      "id": "h010",
+      "title": "Elijah's confrontation on Carmel",
+      "place": "carmel",
+      "summary": "First Kings depicts Elijah's confrontation with the prophets of Baal during Ahab's reign.",
+      "passages": [
+        "1 Kings 18:17-46"
+      ],
+      "people": [
+        "elijah",
+        "ahab"
+      ],
+      "category": "divided-kingdoms",
+      "qualification": "The mount is named in the text; a pinpoint location for the encounter is not established.",
+      "sourceIds": []
+    },
+    {
+      "id": "h011",
+      "title": "Jehu's violent accession",
+      "place": "northern-israel",
+      "summary": "Second Kings narrates the coup and succession of Jehu.",
+      "passages": [
+        "2 Kings 9:1-13",
+        "2 Kings 10:28-36"
+      ],
+      "people": [
+        "jehu-king"
+      ],
+      "category": "divided-kingdoms",
+      "qualification": "The Black Obelisk independently attests tribute associated with Jehu, not this narrative's dialogue or executions.",
+      "sourceIds": [
+        "black-obelisk"
+      ]
+    },
+    {
+      "id": "h012",
+      "title": "Reign of Jeroboam II and Amos",
+      "place": "northern-israel",
+      "summary": "Second Kings dates a northern reign and Amos' superscription places the prophetic book in the same broad period.",
+      "passages": [
+        "2 Kings 14:23-29",
+        "Amos 1:1-2"
+      ],
+      "people": [
+        "jeroboam-ii",
+        "amos"
+      ],
+      "category": "divided-kingdoms",
+      "qualification": "This literary alignment does not establish the date of each individual oracle.",
+      "sourceIds": []
+    },
+    {
+      "id": "h013",
+      "title": "Hosea's prophetic ministry",
+      "place": "northern-israel",
+      "summary": "The opening of Hosea attributes its oracles to the period of northern Israel's late monarchy.",
+      "passages": [
+        "Hosea 1:1-2",
+        "Hosea 11:1-9"
+      ],
+      "people": [
+        "hosea-prophet"
+      ],
+      "category": "divided-kingdoms",
+      "qualification": "A prophetic superscription is the primary source for the claimed period.",
+      "sourceIds": []
+    },
+    {
+      "id": "h014",
+      "title": "Assyrian deportations under Tiglath-pileser",
+      "place": "northern-israel",
+      "summary": "Second Kings describes territorial conquests and deportations under Tiglath-pileser of Assyria.",
+      "passages": [
+        "2 Kings 15:19-20",
+        "2 Kings 15:29"
+      ],
+      "people": [
+        "tiglath-pileser-iii"
+      ],
+      "category": "assyrian-era",
+      "qualification": "Do not collapse multiple campaigns or kings into a single conquest.",
+      "sourceIds": []
+    },
+    {
+      "id": "h015",
+      "title": "Isaiah and Micah in Judah",
+      "place": "judah-kingdom",
+      "summary": "The prophetic superscriptions situate Isaiah and Micah amid the kingdom of Judah.",
+      "passages": [
+        "Isaiah 1:1",
+        "Micah 1:1"
+      ],
+      "people": [
+        "isaiah-prophet",
+        "micah-prophet"
+      ],
+      "category": "assyrian-era",
+      "qualification": "The books include later material and differing scholarly views of composition.",
+      "sourceIds": []
+    },
+    {
+      "id": "h016",
+      "title": "Assyrian conquest of Samaria",
+      "place": "samaria-city",
+      "summary": "Second Kings describes Assyrian pressure on Hoshea and the capture of Samaria.",
+      "passages": [
+        "2 Kings 17:1-6",
+        "2 Kings 18:9-12"
+      ],
+      "people": [
+        "shalmaneser-v",
+        "hoshea-king"
+      ],
+      "category": "assyrian-era",
+      "qualification": "Kings names Shalmaneser in initiating operations; responsibility for the final capture is debated.",
+      "sourceIds": []
+    },
+    {
+      "id": "h017",
+      "title": "Assyrian campaign against Lachish",
+      "place": "lachish",
+      "summary": "Second Kings places Assyrian troops at Lachish and reports the crisis confronting Judah.",
+      "passages": [
+        "2 Kings 18:13-17",
+        "Isaiah 36:1-3"
+      ],
+      "people": [
+        "sennacherib",
+        "hezekiah"
+      ],
+      "category": "assyrian-era",
+      "qualification": "The Assyrian palace reliefs attest a royal depiction of the siege, not every detail of the Bible's Jerusalem account.",
+      "sourceIds": [
+        "lachish-relief"
+      ]
+    },
+    {
+      "id": "h018",
+      "title": "Jerusalem confronted by Sennacherib",
+      "place": "jerusalem",
+      "summary": "Second Kings and Isaiah describe Jerusalem's crisis under Hezekiah and Sennacherib's Assyrian campaign.",
+      "passages": [
+        "2 Kings 18:17-37",
+        "2 Kings 19:1-37"
+      ],
+      "people": [
+        "hezekiah",
+        "sennacherib",
+        "isaiah-prophet"
+      ],
+      "category": "assyrian-era",
+      "qualification": "The Assyrian prism boasts of Hezekiah's confinement and tribute. It does not claim Jerusalem was captured, and neither royal source independently settles the biblical miracle claim.",
+      "sourceIds": [
+        "sennacherib-prism"
+      ]
+    },
+    {
+      "id": "h019",
+      "title": "Jonah's mission in the Nineveh narrative",
+      "place": "nineveh",
+      "summary": "Jonah portrays a prophet calling the people of Nineveh to repentance.",
+      "passages": [
+        "Jonah 3:1-10"
+      ],
+      "people": [
+        "jonah"
+      ],
+      "category": "prophetic-literature",
+      "qualification": "The story is indexed as a biblical narrative, not independently verified Ninevite civic history.",
+      "sourceIds": []
+    },
+    {
+      "id": "h020",
+      "title": "Nahum's oracle concerning Nineveh",
+      "place": "nineveh",
+      "summary": "Nahum speaks rhetorically of judgment against Nineveh.",
+      "passages": [
+        "Nahum 1:1-8",
+        "Nahum 2:1-13"
+      ],
+      "people": [
+        "nahum"
+      ],
+      "category": "prophetic-literature",
+      "qualification": "The text is prophetic literature, not a stand-alone excavation report of the city's destruction.",
+      "sourceIds": []
+    },
+    {
+      "id": "h021",
+      "title": "Josiah's covenant reform",
+      "place": "jerusalem",
+      "summary": "Second Kings narrates the discovery of a scroll and covenant renewal.",
+      "passages": [
+        "2 Kings 22:1-20",
+        "2 Kings 23:1-25"
+      ],
+      "people": [
+        "josiah"
+      ],
+      "category": "late-judah",
+      "qualification": "The account is a biblical presentation of reform; historical assessment requires separate sources.",
+      "sourceIds": []
+    },
+    {
+      "id": "h022",
+      "title": "Fall of Jerusalem and deportations",
+      "place": "jerusalem",
+      "summary": "Second Kings recounts the siege, destruction of Jerusalem and the removal of the Judahite monarchy.",
+      "passages": [
+        "2 Kings 24:17-20",
+        "2 Kings 25:1-21",
+        "Jeremiah 39:1-10"
+      ],
+      "people": [
+        "zedekiah",
+        "nebuchadnezzar-ii",
+        "jeremiah"
+      ],
+      "category": "babylonian-era",
+      "qualification": "The historical capture and individual literary details require distinction; the event is not assigned invented exact coordinates.",
+      "sourceIds": []
+    },
+    {
+      "id": "h023",
+      "title": "Life and literature of the Babylonian exile",
+      "place": "babylonian-empire",
+      "summary": "Ezekiel begins among exiles by the Chebar canal; Daniel narrates court stories in Babylon.",
+      "passages": [
+        "Ezekiel 1:1-3",
+        "Daniel 1:1-7"
+      ],
+      "people": [
+        "ezekiel",
+        "daniel",
+        "nebuchadnezzar-ii"
+      ],
+      "category": "babylonian-era",
+      "qualification": "Ezekiel's canal setting is not the exact location of Babylon city; Daniel's court narrative has literary-historical debates.",
+      "sourceIds": [
+        "babylon-cylinder"
+      ]
+    },
+    {
+      "id": "h024",
+      "title": "Cyrus and the return tradition",
+      "place": "persian-empire",
+      "summary": "Ezra attributes a return and temple-rebuilding authorisation to Cyrus.",
+      "passages": [
+        "Ezra 1:1-4",
+        "2 Chronicles 36:22-23"
+      ],
+      "people": [
+        "cyrus-ii",
+        "ezra-scribe"
+      ],
+      "category": "persian-era",
+      "qualification": "The Cyrus Cylinder describes broad imperial policies but does not itself mention Jewish exiles or Jerusalem. Ezra's later mission is not dated to Cyrus' initial decree.",
+      "sourceIds": [
+        "cyrus-cylinder"
+      ]
+    },
+    {
+      "id": "h025",
+      "title": "Nehemiah and Jerusalem's walls",
+      "place": "jerusalem",
+      "summary": "Nehemiah records a programme to repair Jerusalem's walls and reorganise the community.",
+      "passages": [
+        "Nehemiah 2:11-20",
+        "Nehemiah 6:15-16"
+      ],
+      "people": [
+        "nehemiah-governor",
+        "ezra-scribe"
+      ],
+      "category": "persian-era",
+      "qualification": "Ezra and Nehemiah are linked through literary setting, not necessarily attendance at every episode.",
+      "sourceIds": []
+    },
+    {
+      "id": "h026",
+      "title": "Esther's story in the Persian court",
+      "place": "susa",
+      "summary": "Esther narrates a crisis involving the Jewish community at the court in Susa.",
+      "passages": [
+        "Esther 2:5-18",
+        "Esther 4:12-17"
+      ],
+      "people": [
+        "esther"
+      ],
+      "category": "persian-era",
+      "qualification": "The literary-historical status of Esther's court narrative is debated; the name Susa is not contested as an ancient city.",
+      "sourceIds": []
+    }
+  ]
+}
