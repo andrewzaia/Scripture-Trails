@@ -27,3 +27,4 @@ jobs:
           git add package.json CHANGELOG.md public/index.html public/data/releases.json public/assets/app.js public/assets/graph.js public/assets/entity-index.js public/assets/connection-evidence.js
           git commit -m "Release v0.9.1: Trace the shortest Atlas connections"
           git push origin HEAD:fix/atlas-hover-shortest-path-20261027
+# Triggered by a dedicated branch commit; safe to remove after release.
