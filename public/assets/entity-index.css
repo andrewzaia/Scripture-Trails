@@ -37,3 +37,7 @@
 .entity-methodology strong{color:var(--ink)}
 @media(max-width:980px){.entity-layout{grid-template-columns:1fr}.entity-results{max-height:520px;overflow-y:auto}}
 @media(max-width:600px){.entity-results,.entity-detail{padding:18px}.entity-controls{padding:16px}.entity-reference>span{min-width:100%}}
+
+/* Period selector for the expanded source-aware index. */
+.entity-controls select{width:100%;max-width:310px;min-height:42px;background:var(--surface2);border:1px solid var(--line);border-radius:7px;color:var(--ink);padding:8px 12px;font-size:13px}
+.entity-controls select:focus-visible{outline:2px solid var(--gold);outline-offset:2px}

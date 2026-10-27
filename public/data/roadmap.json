@@ -3,9 +3,9 @@
   "updated": "2026-10-27",
   "description": "A transparent, evidence-aware roadmap. Delivered means implementation exists, not that every scholarly question is settled. The accuracy audit is an initial, publicly documented editorial screening, not external specialist certification.",
   "currentFocus": [
-    "Sourced historical identity disambiguation and expansion beyond the Gospel corpus",
-    "Scholarly classification of Atlas reference evidence",
-    "Independent specialist review of disputed archaeology and Gospel chronology"
+    "Evidence type classification across the Connection Atlas",
+    "Expand historical sources and textual context for Hebrew Bible entries",
+    "Independent expert review of Assyrian, Babylonian and Gospel historical claims"
   ],
   "phases": [
     {
@@ -156,7 +156,7 @@
     {
       "id": "book-atlas",
       "phase": "connections",
-      "status": "planned",
+      "status": "next",
       "title": "Classify references by evidence type",
       "summary": "Distinguish direct quotations, literary echoes, typology, parallels and editorial themes across the complete atlas.",
       "capabilities": [
@@ -183,15 +183,16 @@
     {
       "id": "entity-expansion",
       "phase": "connections",
-      "status": "next",
+      "status": "delivered",
       "title": "Expand the biblical people, places and events index",
-      "summary": "Extend the initial Gospel-based index into the remaining biblical books without merging people who share a name or mistaking editorial associations for documented relationships.",
+      "summary": "Extended the sourced index into major Hebrew Bible people, kings, prophets, Assyrian and Babylonian historical settings, ancient polities and scriptural events.",
       "capabilities": [
-        "Source-linked profiles for Old Testament and early-church people and places",
-        "Distinct identities for similarly named individuals, with cited evidence for proposed equivalences",
-        "More contextual event cards and passage links, with recorded source gaps"
+        "Disambiguated Old Testament figures including monarchs, prophets and similarly named individuals",
+        "Narrative events from ancestral traditions to the Persian-era return, with relevant people and places linked",
+        "Distinct political realms and ancient locations without invented map pins or timeless borders",
+        "Selected museum references about Assyrian inscriptions, Lachish reliefs, Babylonian inscriptions and the Cyrus Cylinder"
       ],
-      "verification": "Content and relationship references must validate against the full canon; independent corroboration should be linked only where available and relevant. The Gospel-focused first release is not comprehensive."
+      "verification": "Biblical addresses, related entities, museum-source identifiers and disambiguations are validated in CI. Only historical statements specifically attested by an external source are attributed to it. No claim of independent peer review or complete Old Testament coverage."
     },
     {
       "id": "translation-reader",

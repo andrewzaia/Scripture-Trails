@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.6.0 - 27/10/2026: Explore Old Testament history and biblical kingdoms
+
+- Added biblical people and event profiles from the ancestors of Israel to the Persian era.
+- Expanded the index with historical cities, ancient kingdoms, and sources distinguishing biblical narratives from archaeological records.
+- Added Hebrew Bible and Gospel filters and improved navigation between related Scripture entries.
+
 ## 0.5.0 - 27/10/2026: Explore biblical people, places and events
 
 - Added searchable biblical people profiles with disambiguated names and passage references.
