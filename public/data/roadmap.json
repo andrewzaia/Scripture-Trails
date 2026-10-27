@@ -181,6 +181,19 @@
       "verification": "Indexed IDs, relationship targets and cited passage boundaries are checked in CI. Profiles rely on the Gospel text as primary narrative testimony; the curated people list is intentionally incomplete and has not received independent specialist peer review."
     },
     {
+      "id": "entity-expansion",
+      "phase": "connections",
+      "status": "next",
+      "title": "Expand the biblical people, places and events index",
+      "summary": "Extend the initial Gospel-based index into the remaining biblical books without merging people who share a name or mistaking editorial associations for documented relationships.",
+      "capabilities": [
+        "Source-linked profiles for Old Testament and early-church people and places",
+        "Distinct identities for similarly named individuals, with cited evidence for proposed equivalences",
+        "More contextual event cards and passage links, with recorded source gaps"
+      ],
+      "verification": "Content and relationship references must validate against the full canon; independent corroboration should be linked only where available and relevant. The Gospel-focused first release is not comprehensive."
+    },
+    {
       "id": "translation-reader",
       "phase": "editions",
       "status": "delivered",

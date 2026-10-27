@@ -39,7 +39,7 @@ test('every historical release is numbered, sorted and patch-contiguous',()=>{
 test('missing, reversed and skipped historical patch versions are rejected',()=>{
  const missing=manifest.releases.map(r=>({...r}));delete missing[2].version;
  assert.throws(()=>validateReleases(missing,pkg.version),/needs a semantic version/);
- const reversed=manifest.releases.map(r=>({...r}));[reversed[2],reversed[3]]=[reversed[3],reversed[2]];
+ const reversed=manifest.releases.map(r=>({...r}));[reversed[1],reversed[2]]=[reversed[2],reversed[1]];
  assert.throws(()=>validateReleases(reversed,pkg.version),/newest first/);
  const skipped=manifest.releases.map(r=>({...r})).filter(r=>r.version!=='0.2.10');
  assert.equal(manifest.releases.some(r=>r.version==='0.2.10'),true);
