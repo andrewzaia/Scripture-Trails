@@ -1,6 +1,16 @@
 {
   "releases": [
     {
+      "version": "0.6.0",
+      "date": "2026-10-27",
+      "title": "Explore Old Testament history and biblical kingdoms",
+      "changes": [
+        "Added biblical people and event profiles from the ancestors of Israel to the Persian era.",
+        "Expanded the index with historical cities, ancient kingdoms, and sources distinguishing biblical narratives from archaeological records.",
+        "Added Hebrew Bible and Gospel filters and improved navigation between related Scripture entries."
+      ]
+    },
+    {
       "version": "0.5.0",
       "date": "2026-10-27",
       "title": "Explore biblical people, places and events",
