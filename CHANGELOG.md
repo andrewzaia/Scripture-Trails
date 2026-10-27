@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.15.0 - 28/10/2026: Linked notes and verse highlights
+
+- Save tagged observations linked to multiple passages and manage them in My notebook.
+- Highlight whole verses in amber, green or blue, with colour labels and reference-based persistence across reader editions.
+- Filter linked notes and highlights by passage, text, tag or colour.
+- Include annotations in version 3 backups while preserving older imports and previewing conflicting entries.
+
 ## 0.14.0 - 28/10/2026: Study journey reading progress
 
 - Track completed passages in the six guided study journeys and resume the next unread passage.

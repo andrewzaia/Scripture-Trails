@@ -1,18 +1,19 @@
-import {renderReadingPlan} from './reading-plans.js?v=0.14.0';
-import {createNotebookBackup,persistNotebook} from './notebook-backup.js?v=0.14.0';
+import {createAnnotations,applyHighlights,canonicalVerse,validateAnnotations,emptyAnnotations} from './annotations.js?v=0.15.0';
+import {renderReadingPlan} from './reading-plans.js?v=0.15.0';
+import {createNotebookBackup,persistNotebook} from './notebook-backup.js?v=0.15.0';
 import {BOOKS,findBook,parseRef,referenceFor,chapterRef,adjacentChapter,readerScope} from './books.js';
 import {PATHS,EDITORIAL_LINKS} from './studies.js';
-import {ScriptureGraph} from './graph.js?v=0.14.0';
+import {ScriptureGraph} from './graph.js?v=0.15.0';
 import {createJesusMap} from './jesus-map.js';
-import {createPaulMap} from './paul-map.js?v=0.14.0';
-import {createRoadmap} from './roadmap.js?v=0.14.0';
+import {createPaulMap} from './paul-map.js?v=0.15.0';
+import {createRoadmap} from './roadmap.js?v=0.15.0';
 import {createCityStudies} from './city-studies.js?v=20261027-local';
-import {createEntityIndex} from './entity-index.js?v=0.14.0';
+import {createEntityIndex} from './entity-index.js?v=0.15.0';
 import {buildAtlas} from './atlas-paths.js';
 import {initPublicReleases} from './release-notes.js';
 import {maxDatasetVotes,relativeVoteBars} from './atlas-strength.js';
-import {CONNECTION_EVIDENCE,CONNECTION_KINDS,explainConnection,REVIEW_LABELS} from './connection-evidence.js?v=0.14.0';
-import {createPassageComparison} from './atlas-comparison.js?v=0.14.0';
+import {CONNECTION_EVIDENCE,CONNECTION_KINDS,explainConnection,REVIEW_LABELS} from './connection-evidence.js?v=0.15.0';
+import {createPassageComparison} from './atlas-comparison.js?v=0.15.0';
 import {TRANSLATIONS,getTranslation} from './translations.js';
 import {reportScriptureView} from './fums.js';
 import {TRANSLATION_STATUS,statusForResponse} from './translation-status.js?v=20261027-indicators';
@@ -21,9 +22,9 @@ const $=id=>document.getElementById(id);
 const pick=(s,root=document)=>root.querySelector(s);
 const editorial=new Map();
 for(const link of EDITORIAL_LINKS){const a=parseRef(link.from)?.formatted,b=parseRef(link.to)?.formatted;if(!a||!b)continue;for(const [from,to] of [[a,b],[b,a]]){if(!editorial.has(from))editorial.set(from,[]);editorial.get(from).push({...link,from,to});}}
-const getSaved=(key,defaultValue)=>{try{if(key==='notes'||key==='bookmarks'||key==='readingPlans'){const notebook=JSON.parse(localStorage.getItem('scripture-trails:notebook'));if(notebook&&Object.prototype.hasOwnProperty.call(notebook,key))return notebook[key];}const parsed=JSON.parse(localStorage.getItem(`scripture-trails:${key}`));return parsed===null?defaultValue:parsed;}catch{return defaultValue;}};
-const putSaved=(key,value)=>{try{if(key==='notes'||key==='bookmarks'||key==='readingPlans'){const notebook={notes:getSaved('notes',{}),bookmarks:getSaved('bookmarks',[]),readingPlans:getSaved('readingPlans',{}),[key]:value};localStorage.setItem('scripture-trails:notebook',JSON.stringify(notebook));}else localStorage.setItem(`scripture-trails:${key}`,JSON.stringify(value));return true;}catch{return false;}};
-const state={translation:getTranslation(getSaved('translation','ESV'))?.code||'ESV',loadedTranslation:null,pendingTranslation:null,fums:null,view:'discover',ref:'John 1:1',loadedPassage:null,pendingPassage:null,bookmarks:getSaved('bookmarks',[]),notes:getSaved('notes',{}),readingPlans:getSaved('readingPlans',{}),history:getSaved('history',[]),theme:getSaved('theme','dark'),filter:'all',journey:null,links:[],graph:null,graphDepth:3,graphLinks:{},graphRequestId:0,graphEvidenceFilter:'all',atlasPreviewRef:null,atlasPreviewRequestId:0,requestId:0,jesusMap:null};
+const getSaved=(key,defaultValue)=>{try{if(key==='notes'||key==='bookmarks'||key==='readingPlans'||key==='annotations'){const notebook=JSON.parse(localStorage.getItem('scripture-trails:notebook'));if(notebook&&Object.prototype.hasOwnProperty.call(notebook,key))return notebook[key];}const parsed=JSON.parse(localStorage.getItem(`scripture-trails:${key}`));return parsed===null?defaultValue:parsed;}catch{return defaultValue;}};
+const putSaved=(key,value)=>{try{if(key==='notes'||key==='bookmarks'||key==='readingPlans'||key==='annotations'){const notebook={notes:getSaved('notes',{}),bookmarks:getSaved('bookmarks',[]),readingPlans:getSaved('readingPlans',{}),annotations:getSaved('annotations',emptyAnnotations()),[key]:value};localStorage.setItem('scripture-trails:notebook',JSON.stringify(notebook));}else localStorage.setItem(`scripture-trails:${key}`,JSON.stringify(value));return true;}catch{return false;}};
+const state={translation:getTranslation(getSaved('translation','ESV'))?.code||'ESV',loadedTranslation:null,pendingTranslation:null,fums:null,view:'discover',ref:'John 1:1',loadedPassage:null,pendingPassage:null,bookmarks:getSaved('bookmarks',[]),notes:getSaved('notes',{}),readingPlans:getSaved('readingPlans',{}),annotations:getSaved('annotations',emptyAnnotations()),history:getSaved('history',[]),theme:getSaved('theme','dark'),filter:'all',journey:null,links:[],graph:null,graphDepth:3,graphLinks:{},graphRequestId:0,graphEvidenceFilter:'all',atlasPreviewRef:null,atlasPreviewRequestId:0,requestId:0,jesusMap:null};
 const translationStatuses=new Map(TRANSLATIONS.map(edition=>[edition.code,'available']));
 const translationRequests=new Map();
 function renderTranslationStatuses(){
@@ -100,7 +101,7 @@ async function connectionsFor(ref){const cur=parseRef(ref);if(!cur)return [];
 async function renderConnections(){const ref=state.ref;const connections=await connectionsFor(ref);if(ref!==state.ref)return;state.links=connections;const filter=state.filter;$('reference-count').textContent=String(connections.length);const list=$('reference-list');list.replaceChildren();let shown=connections.filter(x=>filter==='all'||x.type===filter);shown=shown.slice(0,80);if(!shown.length){list.append(create('p','empty-list',filter==='all'?'No references recorded for this verse. Try a neighbouring verse or view Crossway callouts in the reader.':'No connections in this category for the selected verse.'));return;}
  for(const item of shown){const button=create('button','reference-item');const left=create('span');left.append(create('strong','',item.to),create('small','',item.description));const right=create('span');right.append(create('em','',item.evidence?CONNECTION_KINDS[item.evidence.kind]:item.type==='dataset'?'UNCLASSIFIED':item.type==='context'?'CONTEXT':'EDITORIAL'),create('span','arrow','↗'));button.append(left,right);button.title=item.evidence?'Editorial passage comparison, not external peer review':item.source==='Reading context'?'Neighbouring verse, not a cross-reference':item.type==='dataset'?'Community-voted link, not classified':'Editorial study suggestion without an evidence check';button.addEventListener('click',()=>selectRef(item.to));list.append(button);}
 }
-function renderNote(){const note=state.notes[state.ref]||'';$('notes-text').value=note;}
+function renderNote(){$('highlight-ref').value=state.ref;const note=state.notes[state.ref]||'';$('notes-text').value=note;}
 function currentIsSaved(){return state.bookmarks.includes(state.ref);}
 function setSaveButton(){$('bookmark-current').textContent=currentIsSaved()?'★ Saved':'☆ Save';}
 function refreshCurrentUi(){$('reader-translation').value=state.translation;renderTranslationStatuses();$('reader-source-name').textContent=state.translation+' via '+getTranslation(state.translation).provider;const scope=readerScope(state.ref);const p=parseRef(state.ref);$('reader-chapter-access').hidden=!scope?.focused;$('reader-scope-note').textContent=scope?.focused?`Showing only ${scope.query}`:'';$('reader-title').textContent=state.ref;$('read-on-esv').href=esvUrl(state.ref);$('read-on-nasb').href=nasbUrl(state.ref);$('read-on-nasb').title=`Open ${state.ref} in the official NASB 2020 reader`;$('prev-chapter').disabled=!adjacentChapter(state.ref,-1);$('next-chapter').disabled=!adjacentChapter(state.ref,1);$('read-prev').disabled=!adjacentChapter(state.ref,-1);$('read-next').disabled=!adjacentChapter(state.ref,1);setSaveButton();renderNote();void renderConnections();if(p){$('side-book').value=p.book.name;populateChapters();$('side-chapter').value=String(p.chapter);}if(state.view==='reader')markSelectedVerse();}
@@ -112,7 +113,7 @@ function safeHtml(raw){const doc=new DOMParser().parseFromString(raw,'text/html'
   if(name==='a'){const href=node.getAttribute('href')||'';try{const url=new URL(href,'https://www.esv.org/');if(url.protocol==='https:'&&['www.esv.org','api.bible','www.lockman.org','lockman.org','www.biblica.com','biblica.com','www.harpercollinschristian.com','www.thomasnelson.com'].includes(url.hostname)){el.href=url.href;el.target='_blank';el.rel='noopener noreferrer';}}catch{}}
   for(const child of node.childNodes)el.append(walker(child));return el;};
  const out=document.createDocumentFragment();for(const child of doc.body.childNodes)out.append(walker(child));return out;}
-function markSelectedVerse(){const p=parseRef(state.ref);document.querySelectorAll('#passage-content .verse-num[data-verse-ref]').forEach(el=>el.dataset.selected=String(el.dataset.verseRef===state.ref));}
+function markSelectedVerse(){applyHighlights($('passage-content'),state.annotations.highlights);const p=parseRef(state.ref);document.querySelectorAll('#passage-content .verse-num[data-verse-ref]').forEach(el=>el.dataset.selected=String(el.dataset.verseRef===state.ref));}
 function decorateReaderVerses(chapter){
  const box=$('passage-content');for(const verseEl of box.querySelectorAll('.verse-num,.v')){
   verseEl.classList.add('verse-num');
@@ -321,14 +322,16 @@ async function renderGraph(){
   if(!filtered.length)list.append(create('p','soft-note','No links match this list filter. Other links remain available and unclassified.'));
  }catch{if(requestId!==state.graphRequestId)return;$('graph-progress').textContent='Could not load reference data';list.replaceChildren(create('p','empty-list','Could not load reference data. Try again or open a different verse.'));}
 }
-function currentNotebook(){return {bookmarks:[...state.bookmarks],notes:{...state.notes},readingPlans:{...state.readingPlans}};}
-function renderNotebook(){const b=$('bookmarks-list'),h=$('history-list'),n=$('notes-list');b.replaceChildren();h.replaceChildren();n.replaceChildren();$('bookmarks-count').textContent=`${state.bookmarks.length} saved`;
+function currentNotebook(){return {bookmarks:[...state.bookmarks],notes:{...state.notes},readingPlans:{...state.readingPlans},annotations:structuredClone(state.annotations)};}
+let annotationPage=null;
+function saveAnnotations(next){persistNotebook(localStorage,{...currentNotebook(),annotations:next},currentNotebook());state.annotations=next;applyHighlights($('passage-content'),next.highlights);}
+function renderNotebook(){annotationPage?.render();const b=$('bookmarks-list'),h=$('history-list'),n=$('notes-list');b.replaceChildren();h.replaceChildren();n.replaceChildren();$('bookmarks-count').textContent=`${state.bookmarks.length} saved`;
  function item(ref,parent,remove=null,snippet=null){const row=create('div','notebook-entry');const text=create('div');const open=create('button','',ref+' ↗');open.addEventListener('click',()=>selectRef(ref));text.append(open);if(snippet)text.append(create('small','',snippet.slice(0,110)));row.append(text);if(remove){const del=create('button','delete-button','Remove');del.setAttribute('aria-label',`Remove ${ref}`);del.addEventListener('click',()=>remove(ref));row.append(del);}parent.append(row);}
  for(const ref of state.bookmarks)item(ref,b,removeBookmark);for(const ref of state.history)item(ref,h);for(const [ref,note] of Object.entries(state.notes).filter(([_,value])=>value.trim()))item(ref,n,null,note);
  if(!state.bookmarks.length)b.append(create('p','empty-list','No saved verses yet. Open a passage and select Save to build your collection.'));if(!state.history.length)h.append(create('p','empty-list','Your recently visited passages will appear here.'));if(!n.children.length)n.append(create('p','empty-list','Notes added during reading will appear here.'));
 }
 function removeBookmark(ref){state.bookmarks=state.bookmarks.filter(x=>x!==ref);putSaved('bookmarks',state.bookmarks);renderNotebook();setSaveButton();}
-function init(){createNotebookBackup(document.querySelector('[data-notebook-backup]'),{counts:getCounts,current:currentNotebook,apply:notebook=>{try{persistNotebook(localStorage,notebook,currentNotebook());}catch(error){throw Error(error.message==='Notebook changed in another tab. Reload before importing.'?error.message:'The browser could not save the import. Your existing notebook is unchanged.');}state.bookmarks=notebook.bookmarks;state.notes=notebook.notes;state.readingPlans=notebook.readingPlans||{};renderNotebook();renderNote();setSaveButton();}});void initPublicReleases();document.body.classList.toggle('light',state.theme==='light');$('theme-toggle').textContent=state.theme==='light'?'☾':'☼';$('copyright-year').textContent=String(new Date().getFullYear());populateBookPicker();initAtlasPicker();buildJourneys();
+function init(){annotationPage=createAnnotations(document.querySelector('[data-annotations]'),{current:()=>structuredClone(state.annotations),save:saveAnnotations,counts:getCounts,read:ref=>selectRef(ref)});$('save-highlight').addEventListener('click',async()=>{try{const ref=canonicalVerse($('highlight-ref').value,await getCounts()),colour=$('highlight-colour').value,next=structuredClone(state.annotations);if(colour==='none')delete next.highlights[ref];else next.highlights[ref]=colour;saveAnnotations(validateAnnotations(next,await getCounts()));$('highlight-status').textContent=colour==='none'?'Highlight removed.':'Verse highlighted: '+colour+'.';}catch(e){$('highlight-status').textContent=e.message;}});createNotebookBackup(document.querySelector('[data-notebook-backup]'),{counts:getCounts,current:currentNotebook,apply:notebook=>{try{persistNotebook(localStorage,notebook,currentNotebook());}catch(error){throw Error(error.message==='Notebook changed in another tab. Reload before importing.'?error.message:'The browser could not save the import. Your existing notebook is unchanged.');}state.bookmarks=notebook.bookmarks;state.notes=notebook.notes;state.readingPlans=notebook.readingPlans||{};state.annotations=notebook.annotations||emptyAnnotations();renderNotebook();applyHighlights($('passage-content'),state.annotations.highlights);renderNote();setSaveButton();}});void initPublicReleases();document.body.classList.toggle('light',state.theme==='light');$('theme-toggle').textContent=state.theme==='light'?'☾':'☼';$('copyright-year').textContent=String(new Date().getFullYear());populateBookPicker();initAtlasPicker();buildJourneys();
  $('reader-translation').replaceChildren(...TRANSLATIONS.map(edition=>{const option=create('option','',`${edition.code} - ${edition.name}`);option.value=edition.code;return option;}));
  $('reader-translation').addEventListener('change',()=>selectTranslation($('reader-translation').value));
  document.addEventListener('click',e=>{const button=e.target.closest('[data-view]');if(button){showView(button.dataset.view);return;}const ref=e.target.closest('[data-open]');if(ref)selectRef(ref.dataset.open);});
