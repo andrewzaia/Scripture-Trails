@@ -22,6 +22,7 @@ nextApp=versionedImport(nextApp,'connection-evidence.js?v='+oldVersion,'connecti
 nextApp=versionedImport(nextApp,'atlas-comparison.js?v='+oldVersion,'atlas-comparison.js?v='+newVersion,'licensed side-by-side comparison');
 nextApp=versionedImport(nextApp,'paul-map.js?v='+oldVersion,'paul-map.js?v='+newVersion,'Pauline journeys');
 nextApp=versionedImport(nextApp,'roadmap.js?v='+oldVersion,'roadmap.js?v='+newVersion,'roadmap');
+nextApp=versionedImport(nextApp,'notebook-backup.js?v='+oldVersion,'notebook-backup.js?v='+newVersion,'notebook backups');
 const prevIndex=read(indexPath);
 let nextIndex=versionedImport(prevIndex,'entity-index-data.js?v='+oldVersion,'entity-index-data.js?v='+newVersion,'index data module');
 nextIndex=versionedImport(nextIndex,"ENTITY_INDEX_DATA_VERSION='"+oldVersion+"'","ENTITY_INDEX_DATA_VERSION='"+newVersion+"'",'index JSON files');

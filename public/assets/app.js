@@ -1,16 +1,17 @@
+import {createNotebookBackup,persistNotebook} from './notebook-backup.js?v=0.13.0';
 import {BOOKS,findBook,parseRef,referenceFor,chapterRef,adjacentChapter,readerScope} from './books.js';
 import {PATHS,EDITORIAL_LINKS} from './studies.js';
-import {ScriptureGraph} from './graph.js?v=0.12.0';
+import {ScriptureGraph} from './graph.js?v=0.13.0';
 import {createJesusMap} from './jesus-map.js';
-import {createPaulMap} from './paul-map.js?v=0.12.0';
-import {createRoadmap} from './roadmap.js?v=0.12.0';
+import {createPaulMap} from './paul-map.js?v=0.13.0';
+import {createRoadmap} from './roadmap.js?v=0.13.0';
 import {createCityStudies} from './city-studies.js?v=20261027-local';
-import {createEntityIndex} from './entity-index.js?v=0.12.0';
+import {createEntityIndex} from './entity-index.js?v=0.13.0';
 import {buildAtlas} from './atlas-paths.js';
 import {initPublicReleases} from './release-notes.js';
 import {maxDatasetVotes,relativeVoteBars} from './atlas-strength.js';
-import {CONNECTION_EVIDENCE,CONNECTION_KINDS,explainConnection,REVIEW_LABELS} from './connection-evidence.js?v=0.12.0';
-import {createPassageComparison} from './atlas-comparison.js?v=0.12.0';
+import {CONNECTION_EVIDENCE,CONNECTION_KINDS,explainConnection,REVIEW_LABELS} from './connection-evidence.js?v=0.13.0';
+import {createPassageComparison} from './atlas-comparison.js?v=0.13.0';
 import {TRANSLATIONS,getTranslation} from './translations.js';
 import {reportScriptureView} from './fums.js';
 import {TRANSLATION_STATUS,statusForResponse} from './translation-status.js?v=20261027-indicators';
@@ -19,8 +20,8 @@ const $=id=>document.getElementById(id);
 const pick=(s,root=document)=>root.querySelector(s);
 const editorial=new Map();
 for(const link of EDITORIAL_LINKS){const a=parseRef(link.from)?.formatted,b=parseRef(link.to)?.formatted;if(!a||!b)continue;for(const [from,to] of [[a,b],[b,a]]){if(!editorial.has(from))editorial.set(from,[]);editorial.get(from).push({...link,from,to});}}
-const getSaved=(key,defaultValue)=>{try{const parsed=JSON.parse(localStorage.getItem(`scripture-trails:${key}`));return parsed===null?defaultValue:parsed;}catch{return defaultValue;}};
-const putSaved=(key,value)=>{try{localStorage.setItem(`scripture-trails:${key}`,JSON.stringify(value));return true;}catch{return false;}};
+const getSaved=(key,defaultValue)=>{try{if(key==='notes'||key==='bookmarks'){const notebook=JSON.parse(localStorage.getItem('scripture-trails:notebook'));if(notebook&&Object.prototype.hasOwnProperty.call(notebook,key))return notebook[key];}const parsed=JSON.parse(localStorage.getItem(`scripture-trails:${key}`));return parsed===null?defaultValue:parsed;}catch{return defaultValue;}};
+const putSaved=(key,value)=>{try{if(key==='notes'||key==='bookmarks'){const notebook={notes:getSaved('notes',{}),bookmarks:getSaved('bookmarks',[]),[key]:value};localStorage.setItem('scripture-trails:notebook',JSON.stringify(notebook));}else localStorage.setItem(`scripture-trails:${key}`,JSON.stringify(value));return true;}catch{return false;}};
 const state={translation:getTranslation(getSaved('translation','ESV'))?.code||'ESV',loadedTranslation:null,pendingTranslation:null,fums:null,view:'discover',ref:'John 1:1',loadedPassage:null,pendingPassage:null,bookmarks:getSaved('bookmarks',[]),notes:getSaved('notes',{}),history:getSaved('history',[]),theme:getSaved('theme','dark'),filter:'all',journey:null,links:[],graph:null,graphDepth:3,graphLinks:{},graphRequestId:0,graphEvidenceFilter:'all',atlasPreviewRef:null,atlasPreviewRequestId:0,requestId:0,jesusMap:null};
 const translationStatuses=new Map(TRANSLATIONS.map(edition=>[edition.code,'available']));
 const translationRequests=new Map();
@@ -324,7 +325,7 @@ function renderNotebook(){const b=$('bookmarks-list'),h=$('history-list'),n=$('n
  if(!state.bookmarks.length)b.append(create('p','empty-list','No saved verses yet. Open a passage and select Save to build your collection.'));if(!state.history.length)h.append(create('p','empty-list','Your recently visited passages will appear here.'));if(!n.children.length)n.append(create('p','empty-list','Notes added during reading will appear here.'));
 }
 function removeBookmark(ref){state.bookmarks=state.bookmarks.filter(x=>x!==ref);putSaved('bookmarks',state.bookmarks);renderNotebook();setSaveButton();}
-function init(){void initPublicReleases();document.body.classList.toggle('light',state.theme==='light');$('theme-toggle').textContent=state.theme==='light'?'☾':'☼';$('copyright-year').textContent=String(new Date().getFullYear());populateBookPicker();initAtlasPicker();buildJourneys();
+function init(){createNotebookBackup(document.querySelector('[data-notebook-backup]'),{counts:getCounts,current:()=>({bookmarks:[...state.bookmarks],notes:{...state.notes}}),apply:notebook=>{try{persistNotebook(localStorage,notebook,{bookmarks:[...state.bookmarks],notes:{...state.notes}});}catch(error){throw Error(error.message==='Notebook changed in another tab. Reload before importing.'?error.message:'The browser could not save the import. Your existing notebook is unchanged.');}state.bookmarks=notebook.bookmarks;state.notes=notebook.notes;renderNotebook();renderNote();setSaveButton();}});void initPublicReleases();document.body.classList.toggle('light',state.theme==='light');$('theme-toggle').textContent=state.theme==='light'?'☾':'☼';$('copyright-year').textContent=String(new Date().getFullYear());populateBookPicker();initAtlasPicker();buildJourneys();
  $('reader-translation').replaceChildren(...TRANSLATIONS.map(edition=>{const option=create('option','',`${edition.code} - ${edition.name}`);option.value=edition.code;return option;}));
  $('reader-translation').addEventListener('change',()=>selectTranslation($('reader-translation').value));
  document.addEventListener('click',e=>{const button=e.target.closest('[data-view]');if(button){showView(button.dataset.view);return;}const ref=e.target.closest('[data-open]');if(ref)selectRef(ref.dataset.open);});

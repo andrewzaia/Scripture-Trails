@@ -174,3 +174,5 @@ body.light .translation-status-card[data-status="unavailable"] .translation-stat
 .atlas-preview-credit p{margin:0}
 body.light .atlas-preview-panel{background:var(--surface2)}
 @media(max-width:600px){.atlas-preview-bar{align-items:start}.atlas-preview-bar>div{flex-basis:100%}}
+
+.notebook-backup{margin:24px min(6.5%,82px);padding:24px}.notebook-backup>p,.notebook-backup section>p{color:var(--muted);font-size:12px}.notebook-backup label{display:block;margin:14px 0}.notebook-backup input[type=file]{display:block;max-width:100%;margin-top:8px}.notebook-backup fieldset{border:1px solid var(--line);margin:12px 0;min-width:0}.notebook-backup fieldset p{white-space:pre-wrap;overflow-wrap:anywhere;max-height:180px;overflow:auto}.notebook-backup button{margin:5px 8px 5px 0}
