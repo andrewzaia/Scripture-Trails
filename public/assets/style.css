@@ -236,3 +236,34 @@ body.light .about-dashboard{--stat-gold:#79592c;--stat-soft:#536a6c}body.light .
 @media(min-width:761px) and (max-width:1050px){.about-stats-grid{grid-template-columns:1fr 1fr}.about-stat-featured{grid-column:span 2;grid-row:auto;min-height:210px}.about-stat-featured dd{font-size:48px}}
 @media(max-width:760px){.about-dashboard{width:calc(100% - 32px);margin-top:20px;padding:20px}.about-dashboard h2{font-size:26px}.about-dashboard-badge{display:none}.about-stats-grid{grid-template-columns:1fr 1fr}.about-stat-featured{grid-column:span 2;grid-row:auto;min-height:215px}.about-stat-featured dd{font-size:48px}.about-stat{padding:18px}.about-stat dd{font-size:32px}.about-stat-featured dd{font-size:48px}.about-stat>p{font-size:11px}.about-stat dt{font-size:11px}.about-stat-featured dt{font-size:10px}.about-stat-featured>p{font-size:12px}.about-stat-extras{gap:10px 18px}.about-review-progress>p,.about-review-progress>a,.about-review-progress>div{font-size:11px}}
 @media(max-width:390px){.about-dashboard{padding:16px}.about-dashboard h2{font-size:24px}.about-stat{padding:16px 13px}.about-stat-icon{display:none}.about-stat dt{font-size:10px}.about-stat-featured dd{font-size:43px}.about-stat-extras{font-size:10px}}
+
+/* Keyboard entry and mobile navigation visibility. */
+.skip-link{position:fixed;top:10px;left:10px;z-index:100;background:var(--surface);color:var(--ink);padding:12px 18px;border:2px solid var(--gold);border-radius:6px;transform:translateY(-160%)}
+.skip-link:focus{transform:translateY(0)}
+#main:focus{outline:none}
+main p a{text-decoration:underline;text-underline-offset:3px}
+@media(max-width:760px){.sidebar{visibility:hidden}.sidebar.open{visibility:visible}}
+/* Keep small labels readable on light surfaces; the sidebar stays dark. */
+body.light{--gold:#79592c;--gold-soft:#79592c;--muted:#53656b;--faint:#53656b;--accent:#3b6860}
+body.light .sidebar{--gold:#d2aa75;--muted:#9aa8a9;--ink:#e8e6dc;color:var(--ink)}
+body.light .breadcrumbs,body.light .eyebrow.muted,
+body.light .reader-source-line span:last-child,body.light .filter-row label,
+body.light .reference-item small,body.light .notes-footer small,
+body.light .section-heading-mini span,body.light .empty-list,
+body.light .page-heading p:not(.eyebrow),body.light .journey-card p,
+body.light .soft-note,body.light .about-panel p,body.light .message-panel p,
+body.light .feature-block p:not(.eyebrow){color:#53656b}
+body.light .hero h1 em,body.light .page-heading h1 em,body.light .feature-block h2 em,
+body.light .reference-item em{color:#79592c}
+body.light .card-number,body.light .about-panel strong{color:#344b50}
+body.light .city-type-excavation,body.light .city-type-peer-reviewed,
+body.light .city-type-academic-inventory,body.light .city-type-old-testament{color:#365e50}
+body.light .city-type-tradition,body.light .city-type-heritage{color:#79592c}
+body.light .city-type-new-testament{color:#685181}
+body.light .card-bottom,body.light .site-footer,body.light .site-footer p,
+body.light .toolbar-label,body.light .graph-legend-note,
+body.light .graph-details p:not(.eyebrow):not(.overline){color:#53656b}
+body.light .toolbar-left strong{color:#344b50}
+body.light .jesus-timeline-actions .primary-action,
+body.light .jesus-journey-promo button,body.light .roadmap-discover-link button,
+body.light .atlas-open{color:#fffdf7}

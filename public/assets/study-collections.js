@@ -36,12 +36,12 @@ export function mergeCollections(current=[],incoming=[],replace=new Set()){
  return {merged,conflicts,added};
 }
 export function createStudyCollections(root,handlers){
- const $=key=>root.querySelector(`[data-collection="${key}"]`);let editing=null;
+ const $=key=>root.querySelector(`[data-collection="${key}"]`);let editing=null,editingSnapshot=null;
  const make=(tag,text)=>{const e=document.createElement(tag);if(text!==undefined)e.textContent=text;return e;};
  const button=(text,action)=>{const b=make('button',text);b.type='button';b.className='small-action';b.addEventListener('click',action);return b;};
  const status=text=>{$('status').textContent=text;};
  const days=()=>[...root.querySelectorAll('[data-reading-day]:checked')].map(x=>Number(x.value));
- const reset=()=>{editing=null;$('form').reset();$('save').textContent='Save collection';$('cancel').hidden=true;};
+ const reset=()=>{editing=null;editingSnapshot=null;$('form').reset();$('save').textContent='Save collection';$('cancel').hidden=true;};
  for(const path of PATHS){const option=make('option',path.name);option.value=path.id;$('seed').append(option);}
  $('seed').addEventListener('change',()=>{const path=PATHS.find(p=>p.id===$('seed').value);if(path){$('title').value=path.name;$('refs').value=path.refs.join('; ');}});
  $('cancel').addEventListener('click',()=>{reset();status('Editing cancelled.');});
@@ -49,6 +49,7 @@ export function createStudyCollections(root,handlers){
   const counts=await handlers.counts(),current=handlers.current(),previous=current.find(c=>c.id===editing);
   const refs=$('refs').value.split(';').map(r=>r.trim()).filter(Boolean).map(r=>{if(!validateCanonicalReference(r,counts)||!parseRef(r))throw Error('Invalid passage: '+r);return parseRef(r).formatted;});
   if(editing&&!previous)throw Error('This collection changed. Reload before saving.');
+  if(editing&&JSON.stringify(previous)!==editingSnapshot)throw Error('This collection changed after editing began. Your draft is kept here. Cancel editing and reopen the current collection before saving.');
   const collection={id:editing||'c-'+crypto.randomUUID(),title:$('title').value,refs,completed:(previous?.completed||[]).filter(r=>refs.includes(r)),start:$('start').value||null,days:days()};
   const next=validateCollections(editing?current.map(c=>c.id===editing?collection:c):[...current,collection],counts);
   handlers.save(next);reset();render();status('Collection saved on this device.');
@@ -58,7 +59,7 @@ export function createStudyCollections(root,handlers){
    const card=make('article');card.className='study-collection';card.append(make('h3',c.title));const complete=new Set(c.completed),schedule=scheduleCollection(c),due=schedule.filter(s=>s.date&&s.date<=today&&!complete.has(s.ref));
    card.append(make('p',`${complete.size} of ${c.refs.length} passages marked read${c.start?`; ${due.length} due through today`:''}.`));
    const next=c.refs.find(r=>!complete.has(r));if(next)card.append(button('Resume next unread passage',()=>handlers.read(next)));
-   card.append(button('Edit collection',()=>{editing=c.id;$('title').value=c.title;$('refs').value=c.refs.join('; ');$('start').value=c.start||'';root.querySelectorAll('[data-reading-day]').forEach(i=>i.checked=c.days.includes(Number(i.value)));$('seed').value='';$('save').textContent='Save changes';$('cancel').hidden=false;$('title').focus();status('Editing '+c.title+'. Removing a passage also removes its completion from this collection.');}));
+   card.append(button('Edit collection',()=>{editing=c.id;editingSnapshot=JSON.stringify(c);$('title').value=c.title;$('refs').value=c.refs.join('; ');$('start').value=c.start||'';root.querySelectorAll('[data-reading-day]').forEach(i=>i.checked=c.days.includes(Number(i.value)));$('seed').value='';$('save').textContent='Save changes';$('cancel').hidden=false;$('title').focus();status('Editing '+c.title+'. Removing a passage also removes its completion from this collection.');}));
    const remove=button('Delete collection',()=>{confirm.hidden=cancel.hidden=false;});const confirm=button('Confirm deletion',()=>{try{handlers.save(handlers.current().filter(x=>x.id!==c.id));if(editing===c.id)reset();render();status('Collection deleted.');}catch(e){status(e.message);}}),cancel=button('Keep collection',()=>{confirm.hidden=cancel.hidden=true;});confirm.hidden=cancel.hidden=true;card.append(remove,confirm,cancel);
    const details=make('details'),summary=make('summary','Passages and schedule');details.dataset.collectionId=c.id;details.open=opened.has(c.id);details.append(summary);
    for(const {ref,date} of schedule){const row=make('div');row.className='reading-plan-row';const label=make('label'),input=make('input');input.type='checkbox';input.dataset.collectionId=c.id;input.dataset.completionRef=ref;input.checked=complete.has(ref);input.addEventListener('change',()=>{try{const next=handlers.current().map(x=>x.id!==c.id?x:{...x,completed:x.refs.filter(r=>r===ref?input.checked:x.completed.includes(r))});handlers.save(next);render();[...root.querySelectorAll('[data-completion-ref]')].find(x=>x.dataset.collectionId===c.id&&x.dataset.completionRef===ref)?.focus();status('Reading progress saved.');}catch(e){input.checked=complete.has(ref);status(e.message);}});label.append(input,document.createTextNode(' '+ref+(date?' - '+date:'')));row.append(label,button('Read '+ref,()=>handlers.read(ref)));details.append(row);}

@@ -20,6 +20,6 @@ test('historical place study panel has every datum required by its renderer',()=
 });
 
 test('the complete sidebar brand is an accessible link to the home page',()=>{
- assert.match(html,/<a class="brand" href="\/" aria-label="Scripture Trails home">/);
+ assert.match(html,/<a class="brand" href="\/">/);
  assert.match(html,/<small>THE BIBLE, EXPLORED<\/small><\/div><\/a>/);
 });

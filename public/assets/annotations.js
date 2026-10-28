@@ -1,4 +1,4 @@
-import {NOTE_PLACES,notePlace} from './note-places.js?v=0.24.0';
+import {NOTE_PLACES,notePlace} from './note-places.js?v=0.24.1';
 import {parseRef} from './books.js';
 import {validateCanonicalReference} from './reference-integrity.js';
 export const COLOURS=['amber','green','blue'];
@@ -32,7 +32,7 @@ export function filteredAnnotations(data,{query='',tag='',colour='all',place='al
  });
 }
 export function createAnnotations(root,handlers){
- const $=key=>root.querySelector(`[data-annotation="${key}"]`);let editing=null,selectedPlaces=[];
+ const $=key=>root.querySelector(`[data-annotation="${key}"]`);let editing=null,editingSnapshot=null,selectedPlaces=[];
  const make=(tag,text)=>{const e=document.createElement(tag);if(text!==undefined)e.textContent=text;return e;};
  const button=(text,action)=>{const b=make('button',text);b.type='button';b.className='small-action';b.addEventListener('click',action);return b;};
  const status=text=>{$('status').textContent=text;};
@@ -43,10 +43,11 @@ export function createAnnotations(root,handlers){
  $('add-place').addEventListener('click',()=>addPlace($('place-choice').value));
  $('use-place').addEventListener('click',()=>addPlace($('place-filter').value));
  const save=next=>{handlers.save(next);render();};
- function clear(){editing=null;selectedPlaces=[];$('text').value='';$('refs').value='';$('tags').value='';$('place-choice').value='';$('save').textContent='Save linked note';renderSelected();}
+ function clear(){editing=null;editingSnapshot=null;selectedPlaces=[];$('text').value='';$('refs').value='';$('tags').value='';$('place-choice').value='';$('save').textContent='Save linked note';renderSelected();}
  $('save').addEventListener('click',async()=>{$('save').disabled=true;try{
   const counts=await handlers.counts(),current=handlers.current(),note={id:editing||'a-'+crypto.randomUUID(),text:$('text').value.trim(),refs:$('refs').value.split(';').map(r=>r.trim()).filter(Boolean),tags:$('tags').value.split(',').map(t=>t.trim()).filter(Boolean),...(selectedPlaces.length?{places:[...selectedPlaces]}:{})};
   if(editing&&!current.notes.some(n=>n.id===editing))throw Error('This note was removed. Cancel editing before creating a new note.');
+  if(editing&&JSON.stringify(current.notes.find(n=>n.id===editing))!==editingSnapshot)throw Error('This note changed after editing began. Your draft is kept here. Cancel editing and reopen the current note before saving.');
   const notes=editing?current.notes.map(n=>n.id===editing?note:n):[...current.notes,note];save(validateAnnotations({notes,highlights:current.highlights},counts));clear();status('Linked note saved on this device.');
  }catch(e){status(e.message);}finally{$('save').disabled=false;}});
  $('cancel').addEventListener('click',()=>{clear();status('Editing cancelled.');});
@@ -58,7 +59,7 @@ export function createAnnotations(root,handlers){
    for(const id of n.places||[]){const p=notePlace(id);item.append(button('Place: '+placeLabel(p),()=>handlers.place(id)));}
    if(n.tags.length)item.append(make('small','Tags: '+n.tags.join(', ')));
    if(n.kind==='note'){
-    item.append(button('Edit note',()=>{editing=n.id;selectedPlaces=[...(n.places||[])];$('text').value=n.text;$('refs').value=n.refs.join('; ');$('tags').value=n.tags.join(', ');$('save').textContent='Update linked note';renderSelected();$('text').focus();}));
+    item.append(button('Edit note',()=>{editing=n.id;editingSnapshot=JSON.stringify(handlers.current().notes.find(note=>note.id===n.id));selectedPlaces=[...(n.places||[])];$('text').value=n.text;$('refs').value=n.refs.join('; ');$('tags').value=n.tags.join(', ');$('save').textContent='Update linked note';renderSelected();$('text').focus();}));
     const cancel=button('Keep note',()=>{confirm.hidden=cancel.hidden=true;}),confirm=button('Confirm delete note',()=>{try{save({...handlers.current(),notes:handlers.current().notes.filter(x=>x.id!==n.id)});if(editing===n.id)clear();status('Linked note deleted.');}catch(e){status(e.message);}});confirm.hidden=cancel.hidden=true;
     item.append(button('Delete note',()=>{confirm.hidden=cancel.hidden=false;}),confirm,cancel);
    }else item.append(button('Remove highlight',()=>{try{const next=handlers.current(),highlights={...next.highlights};delete highlights[n.refs[0]];save({...next,highlights});status('Highlight removed.');}catch(e){status(e.message);}}));

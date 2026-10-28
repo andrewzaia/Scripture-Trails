@@ -1,11 +1,11 @@
 {
   "project": "Scripture Trails",
-  "updated": "2026-10-28",
-  "description": "A transparent, evidence-aware roadmap reviewed against the released application through v0.24.0. Delivered records implementation milestones, including successive expansions; it is not a count of independent features or scholarly certification. Future work has completion criteria and no promised delivery dates.",
+  "updated": "2026-10-29",
+  "description": "A transparent, evidence-aware roadmap reviewed against the released application through v0.24.1. Delivered records implementation milestones, including successive expansions; it is not a count of independent features or scholarly certification. Future work has completion criteria and no promised delivery dates.",
   "currentFocus": [
-    "Next priority: repeatable browser, mobile and accessibility release coverage",
+    "Next priority: manual screen-reader and real-device accessibility review",
     "Continue citation remediation: 48 of 115 explained pairs now have dated assessments, including twelve scholarly-commentary follow-ups; 67 pairs and wider literature remain open.",
-    "Add repeatable desktop/mobile browser and accessibility checks for the reader, Atlas, geography collections and private notebook",
+    "Keep desktop/mobile browser, accessibility and notebook regression checks passing in CI; add manual assistive-technology findings as they are reviewed",
     "Arrange independent historical, textual and archaeological review, including the first Exodus collection, when suitable specialists are available",
     "Then extend the Hebrew Bible geography library with separately scoped kings, prophets, exile and return studies"
   ],
@@ -473,18 +473,31 @@
       "verification": "Delivered in v0.20.0 for the declared 43-record batch. AI-assisted editorial assessment, not independent specialist signoff. Unresolved geography, chronology, source access and textual questions remain explicit; other 107 explained pairs and wider source gaps are not newly assessed."
     },
     {
+      "id": "browser-automation",
+      "phase": "foundation",
+      "status": "delivered",
+      "title": "Automated desktop/mobile release coverage",
+      "summary": "Repeatable Chromium journeys and accessibility/layout checks protect the main study workspace in GitHub CI.",
+      "capabilities": [
+        "Reader navigation, four editions, outage recovery, Atlas preview/focus, map/list navigation and roadmap filters",
+        "Private notebook round trips, explicit conflict replacement, stale drafts and cross-tab write protection, highlights, place links and reading schedules",
+        "All twelve views scanned with axe WCAG 2 A/AA and 2.1 A/AA rules in dark/light themes at desktop/mobile sizes, plus horizontal overflow checks",
+        "Deterministic synthetic passage fixtures; source and browser jobs feed a failing release gate with retained failure traces"
+      ],
+      "verification": "Delivered in v0.24.1: 48 browser scenarios across desktop and mobile Chromium, with automated accessibility findings fixed and keyboard scenarios recorded. Fixtures do not establish publisher service availability. Manual screen-reader, real-device, Safari and Firefox review remains open."
+    },
+    {
       "id": "browser-accessibility",
       "phase": "next",
       "status": "next",
-      "title": "Browser, mobile and accessibility release coverage",
-      "summary": "Add repeatable browser-level checks to complement the existing Node/data tests and manual checks as the study workspace grows.",
+      "title": "Manual assistive-technology and real-device review",
+      "summary": "Complement the automated Chromium release coverage with recorded screen-reader and real-device reviews.",
       "capabilities": [
-        "CI smoke tests for reader navigation, Atlas preview/focus, map/list navigation and roadmap filters",
-        "Desktop and mobile checks for keyboard focus, readable layouts and accessible names",
-        "Browser tests for notebook export/import, conflicting/stale drafts, highlights, place links and reading schedules",
-        "Deterministic publisher-response fixtures; any live API smoke checks use authorised access and conservative limits"
+        "Manual screen-reader checks for reading order, control names, announcements, maps and private notebook flows",
+        "Real-device and browser checks beyond emulated desktop/mobile Chromium, including Safari and Firefox",
+        "Record keyboard and assistive-technology findings, resolve barriers and retain regression coverage"
       ],
-      "verification": "Complete when the declared critical user flows run in CI at desktop/mobile sizes, automated accessibility findings are triaged and manual keyboard/screen-reader checks are recorded. Existing unit/data tests do not establish complete browser accessibility."
+      "verification": "Open. Automated axe and keyboard scenarios are delivered separately; no complete accessibility certification, manual screen-reader signoff or real-device audit is claimed."
     },
     {
       "id": "independent-audit",
