@@ -11,7 +11,7 @@ const targets={issue:new Set(audit.issues.map(x=>x.id)),place:new Set(Object.key
 test('declared batch resolves real targets, canonical passages and scoped claim-level citations',()=>{
  assert.deepEqual(CITATION_REVIEW,json('citation-review'));
  assert.equal(validateCitationReview(CITATION_REVIEW,counts,targets),true);
- assert.equal(CITATION_REVIEW.records.length,45);
+ assert.equal(CITATION_REVIEW.records.length,65);
  assert.equal(CITATION_REVIEW.records.filter(r=>r.kind==='place'&&r.decision==='sources-added').length,15);
  assert.equal(CITATION_REVIEW.records.filter(r=>r.kind==='place'&&r.decision==='warning-retained').length,0);
  for(const r of CITATION_REVIEW.records.filter(r=>r.kind==='connection')){
@@ -47,9 +47,9 @@ test('claim panels and About register show scope, external links and retained wa
  for(const a of all.filter(e=>e.tagName==='a')){assert.match(a.href,/^https:\/\//);assert.equal(a.rel,'noopener noreferrer');}
  root.replaceChildren();appendCitationReview(root,'place','not-indexed');assert.equal(root.children.length,0);
  renderCitationSummary(root);const first=nodes(root).length;renderCitationSummary(root);assert.equal(nodes(root).length,first);
- assert.equal(nodes(root).filter(e=>e.tagName==='article').length,45);
+ assert.equal(nodes(root).filter(e=>e.tagName==='article').length,65);
  assert.ok(nodes(root).some(e=>e.download?.endsWith('.json')));
- assert.ok(nodes(root).some(e=>e.textContent.includes('107')));
+ assert.ok(nodes(root).some(e=>e.textContent.includes('87')));
 });
 test('review register is reachable from About, Gospel, profiles, Atlas and comparison panel',()=>{
  for(const path of ['app.js','jesus-map.js','entity-index.js','atlas-comparison.js'])assert.match(read('public/assets/'+path),/appendCitationReview/);
@@ -73,4 +73,12 @@ test('six geography additions retain event, period and identity limits',()=>{
  for(const [id,pattern] of Object.entries(expected)){const r=citationReviews('place',id)[0];assert.equal(r.decision,'sources-added');assert.match(r.limitation,pattern);assert.ok(r.citations.length>=2);assert.equal(geography.places[id].review.status,'source-linked');}
  assert.match(CITATION_REVIEW.sources['ephraim-peq'].access,/early Hebrew geography/);
  assert.match(CITATION_REVIEW.sources['transfiguration-location'].access,/note 34/);
+});
+
+test('first twenty further connection assessments have actual anchors and explicit research limits',()=>{
+ const b=CITATION_REVIEW.batches.find(b=>b.id==='connections-20-01');assert.equal(b.targets.length,20);assert.equal(new Set(b.targets).size,20);
+ for(const id of b.targets){const r=citationReviews('connection',id)[0],e=CONNECTION_EVIDENCE.find(e=>e.id===id);assert.equal(r.batch,b.id);assert.equal(r.anchor,e.from);assert.ok(r.citations.length>=2);assert.match(r.limitation,/not|distinct|outside|retai|compare|Compare|Keep|Read|does/i);}
+ assert.equal(CONNECTION_EVIDENCE.find(e=>e.id==='ce040').kind,'quotation');assert.equal(CONNECTION_EVIDENCE.find(e=>e.id==='ce041').kind,'echo');
+ assert.match(citationReviews('connection','ce013')[0].note,/2 Samuel 5:2/);assert.match(citationReviews('connection','ce014')[0].note,/Isaiah 58:6/);
+ assert.match(CITATION_REVIEW.batches[0].method,/Five assessments/);
 });

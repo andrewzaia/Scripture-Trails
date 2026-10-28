@@ -1,6 +1,6 @@
 import {parseRef} from './books.js';
 import {validateCanonicalReference} from './reference-integrity.js';
-import {ADDITIONAL_CONNECTION_EVIDENCE} from './connection-evidence-expanded.js?v=0.22.0';
+import {ADDITIONAL_CONNECTION_EVIDENCE} from './connection-evidence-expanded.js?v=0.23.0';
 /** Selective passage-linked editorial register. The 603k OpenBible links remain unclassified. */
 export const CONNECTION_KINDS=Object.freeze({
   "quotation": "Direct quotation",
@@ -15,78 +15,78 @@ export const CONNECTION_EVIDENCE=Object.freeze([
     "from": "Genesis 1:1",
     "to": "John 1:1",
     "kind": "echo",
-    "explanation": "John opens with wording reminiscent of the opening of Genesis, connecting its prologue to creation language.",
-    "caution": "Literary comparison, not a word-for-word quotation.",
+    "explanation": "John uses creation and light language in its opening account of the Word; Genesis narrates God creating.",
+    "caution": "Retain echo, not quotation. The literary connection does not collapse the distinct claims of the two openings.",
     "context": "John 1:1-5",
     "review": "scripture-context-screened",
-    "basis": "Editorial comparison of cited passages; external specialist review pending"
-  },
+    "basis": "Selected passage wording and immediate context rechecked in the dated citation register, batch connections-20-01; academic access limits recorded there. Independent specialist review pending."
+},
   {
     "id": "ce002",
     "from": "Genesis 15:6",
     "to": "Romans 4:3",
     "kind": "quotation",
-    "explanation": "Paul quotes Genesis 15:6 in a discussion of Abraham and faith.",
-    "caution": "Paul's argument is distinct from the Genesis narrative.",
+    "explanation": "Romans explicitly cites Abraham's belief and credited righteousness while arguing about faith, works and circumcision.",
+    "caution": "Genesis concerns the promised heir; later theological debates about justification are not settled by identifying the citation.",
     "context": "Romans 4:1-8",
     "review": "scripture-context-screened",
-    "basis": "Editorial comparison of cited passages; external specialist review pending"
-  },
+    "basis": "Selected passage wording and immediate context rechecked in the dated citation register, batch connections-20-01; academic access limits recorded there. Independent specialist review pending."
+},
   {
     "id": "ce003",
     "from": "Genesis 15:6",
     "to": "James 2:23",
     "kind": "quotation",
-    "explanation": "James cites Genesis 15:6 while discussing Abraham's faith and actions.",
-    "caution": "James and Paul use the same citation in different arguments.",
+    "explanation": "James cites the same Genesis verse in an argument that faith works with action, referring also to Abraham offering Isaac.",
+    "caution": "Read Genesis 22 alongside this comparison. Paul and James have distinct rhetorical contexts; no comprehensive reconciliation is claimed.",
     "context": "James 2:18-26",
     "review": "scripture-context-screened",
-    "basis": "Editorial comparison of cited passages; external specialist review pending"
-  },
+    "basis": "Selected passage wording and immediate context rechecked in the dated citation register, batch connections-20-01; academic access limits recorded there. Independent specialist review pending."
+},
   {
     "id": "ce004",
     "from": "Deuteronomy 8:3",
     "to": "Matthew 4:4",
     "kind": "quotation",
-    "explanation": "Matthew reports Jesus quoting Deuteronomy during the wilderness temptation.",
-    "caution": "The original address to Israel remains the context of Deuteronomy.",
+    "explanation": "Matthew reports Jesus quoting the wilderness lesson about dependence on God's word when tempted to make bread.",
+    "caution": "Deuteronomy addresses Israel and its wilderness testing. Identifying the quotation does not reconstruct Jesus' exact spoken language.",
     "context": "Matthew 4:1-11",
     "review": "scripture-context-screened",
-    "basis": "Editorial comparison of cited passages; external specialist review pending"
-  },
+    "basis": "Selected passage wording and immediate context rechecked in the dated citation register, batch connections-20-01; academic access limits recorded there. Independent specialist review pending."
+},
   {
     "id": "ce005",
     "from": "Deuteronomy 18:15",
     "to": "Acts 3:22",
     "kind": "quotation",
-    "explanation": "Peter's speech quotes the promise of a prophet like Moses.",
-    "caution": "Acts makes a Christian application of the Deuteronomy passage.",
+    "explanation": "Peter's speech cites the prophet-like-Moses promise and applies the prophetic expectation in its proclamation of Jesus.",
+    "caution": "Deuteronomy also regulates listening to prophets and false prophecy. The later application does not erase that original setting.",
     "context": "Acts 3:18-26",
     "review": "scripture-context-screened",
-    "basis": "Editorial comparison of cited passages; external specialist review pending"
-  },
+    "basis": "Selected passage wording and immediate context rechecked in the dated citation register, batch connections-20-01; academic access limits recorded there. Independent specialist review pending."
+},
   {
     "id": "ce006",
     "from": "Psalm 22:1",
     "to": "Matthew 27:46",
     "kind": "quotation",
-    "explanation": "Matthew reports Jesus speaking the opening words of Psalm 22.",
-    "caution": "Read the remainder of the lament as well.",
+    "explanation": "Matthew reports Jesus' cry using the opening of Psalm 22, a lament that later turns toward praise.",
+    "caution": "Keep the lament audible. The quotation alone does not settle every theological interpretation of Jesus' cry; Psalm numbering differs across editions.",
     "context": "Matthew 27:45-50",
     "review": "scripture-context-screened",
-    "basis": "Editorial comparison of cited passages; external specialist review pending"
-  },
+    "basis": "Selected passage wording and immediate context rechecked in the dated citation register, batch connections-20-01; academic access limits recorded there. Independent specialist review pending."
+},
   {
     "id": "ce007",
     "from": "Psalm 110:1",
     "to": "Matthew 22:44",
     "kind": "quotation",
-    "explanation": "Jesus quotes Psalm 110 in a discussion about David and the Messiah.",
-    "caution": "This is an interpretive argument in Matthew's narrative.",
+    "explanation": "Matthew cites the enthronement language of Psalm 110:1 in Jesus' question about David's son and lord.",
+    "caution": "The psalm's royal setting and its later messianic use are distinct interpretive questions; no independent authorship conclusion follows.",
     "context": "Matthew 22:41-46",
     "review": "scripture-context-screened",
-    "basis": "Editorial comparison of cited passages; external specialist review pending"
-  },
+    "basis": "Selected passage wording and immediate context rechecked in the dated citation register, batch connections-20-01; academic access limits recorded there. Independent specialist review pending."
+},
   {
     "id": "ce008",
     "from": "Isaiah 7:14",
@@ -103,67 +103,67 @@ export const CONNECTION_EVIDENCE=Object.freeze([
     "from": "Isaiah 40:3",
     "to": "John 1:23",
     "kind": "quotation",
-    "explanation": "John the Baptist identifies his role with a voice described by Isaiah.",
-    "caution": "The original Isaiah context concerns consolation and restoration.",
+    "explanation": "John the Baptist explicitly identifies his voice with Isaiah's wilderness proclamation in a scene distinguishing him from the Messiah.",
+    "caution": "Isaiah addresses consolation and restoration. Punctuation and the placement of wilderness language differ between textual traditions and translations.",
     "context": "John 1:19-28",
     "review": "scripture-context-screened",
-    "basis": "Editorial comparison of cited passages; external specialist review pending"
-  },
+    "basis": "Selected passage wording and immediate context rechecked in the dated citation register, batch connections-20-01; academic access limits recorded there. Independent specialist review pending."
+},
   {
     "id": "ce010",
     "from": "Isaiah 53:4",
     "to": "Matthew 8:17",
     "kind": "quotation",
-    "explanation": "Matthew cites Isaiah when explaining Jesus' healing activity.",
-    "caution": "The larger servant passage should also be consulted.",
+    "explanation": "Matthew cites the servant's bearing of affliction in explaining Jesus' healing ministry.",
+    "caution": "Compare the larger servant poem. This specific healing context must not silently be replaced with a claim that Matthew here narrates the crucifixion.",
     "context": "Matthew 8:14-17",
     "review": "scripture-context-screened",
-    "basis": "Editorial comparison of cited passages; external specialist review pending"
-  },
+    "basis": "Selected passage wording and immediate context rechecked in the dated citation register, batch connections-20-01; academic access limits recorded there. Independent specialist review pending."
+},
   {
     "id": "ce011",
     "from": "Jeremiah 31:31",
     "to": "Hebrews 8:8",
     "kind": "quotation",
-    "explanation": "Hebrews quotes the covenant promise recorded by Jeremiah.",
-    "caution": "Hebrews develops a particular interpretation of that promise.",
+    "explanation": "Hebrews quotes Jeremiah's new-covenant promise within its discussion of Jesus' priestly ministry and the covenant.",
+    "caution": "Jeremiah names Israel and Judah. The quotation does not by itself settle competing Christian accounts of Israel, covenant or supersessionism.",
     "context": "Hebrews 8:6-13",
     "review": "scripture-context-screened",
-    "basis": "Editorial comparison of cited passages; external specialist review pending"
-  },
+    "basis": "Selected passage wording and immediate context rechecked in the dated citation register, batch connections-20-01; academic access limits recorded there. Independent specialist review pending."
+},
   {
     "id": "ce012",
     "from": "Joel 2:28",
     "to": "Acts 2:17",
     "kind": "quotation",
-    "explanation": "Peter quotes Joel's prophetic passage in the Pentecost speech.",
-    "caution": "Acts applies the words to the event it narrates.",
+    "explanation": "Peter explicitly cites Joel in interpreting Pentecost, with language about the Spirit, prophecy and the day of the Lord.",
+    "caution": "Joel 2:28-32 is numbered Joel 3:1-5 in some editions. Identifying the citation does not settle the timing of every cosmic sign.",
     "context": "Acts 2:14-21",
     "review": "scripture-context-screened",
-    "basis": "Editorial comparison of cited passages; external specialist review pending"
-  },
+    "basis": "Selected passage wording and immediate context rechecked in the dated citation register, batch connections-20-01; academic access limits recorded there. Independent specialist review pending."
+},
   {
     "id": "ce013",
     "from": "Micah 5:2",
     "to": "Matthew 2:6",
     "kind": "quotation",
-    "explanation": "Matthew cites Micah concerning Bethlehem in its infancy narrative.",
-    "caution": "Matthew's wording adapts and interprets the prophetic text.",
+    "explanation": "Matthew's Bethlehem citation adapts Micah's ruler language and includes shepherd wording associated with 2 Samuel 5:2.",
+    "caution": "This is a composite/adapted citation, not identical wording from Micah alone. The Gospel's application and Micah's original context both remain relevant.",
     "context": "Matthew 2:1-12",
     "review": "scripture-context-screened",
-    "basis": "Editorial comparison of cited passages; external specialist review pending"
-  },
+    "basis": "Selected passage wording and immediate context rechecked in the dated citation register, batch connections-20-01; academic access limits recorded there. Independent specialist review pending."
+},
   {
     "id": "ce014",
     "from": "Isaiah 61:1",
     "to": "Luke 4:18",
     "kind": "quotation",
-    "explanation": "Luke portrays Jesus reading from Isaiah in Nazareth.",
-    "caution": "The reading combines Isaianic language; translations can differ.",
+    "explanation": "Luke's Nazareth reading uses Isaiah 61:1-2 and liberation wording from Isaiah 58:6, followed by Jesus' fulfilment announcement.",
+    "caution": "The composite reading is not a transcript of a single Hebrew passage. Reconstructing the spoken reading or scroll handling is outside this review.",
     "context": "Luke 4:16-21",
     "review": "scripture-context-screened",
-    "basis": "Editorial comparison of cited passages; external specialist review pending"
-  },
+    "basis": "Selected passage wording and immediate context rechecked in the dated citation register, batch connections-20-01; academic access limits recorded there. Independent specialist review pending."
+},
   {
     "id": "ce015",
     "from": "Genesis 1:1",
@@ -246,12 +246,12 @@ export const CONNECTION_EVIDENCE=Object.freeze([
     "from": "2 Samuel 7:12",
     "to": "Luke 1:32",
     "kind": "echo",
-    "explanation": "Luke's annunciation uses Davidic royal language related to the dynastic promise of 2 Samuel.",
-    "caution": "This is an intertextual reading, not an exact citation.",
+    "explanation": "Luke's annunciation describes David's throne and an enduring kingdom, recalling the dynastic promise in Samuel.",
+    "caution": "Retain echo, not direct quotation. Samuel's immediate dynastic setting and Luke's application should not be flattened into one speech.",
     "context": "Luke 1:26-33",
     "review": "scripture-context-screened",
-    "basis": "Editorial comparison of cited passages; external specialist review pending"
-  },
+    "basis": "Selected passage wording and immediate context rechecked in the dated citation register, batch connections-20-01; academic access limits recorded there. Independent specialist review pending."
+},
   {
     "id": "ce023",
     "from": "Acts 9:3",

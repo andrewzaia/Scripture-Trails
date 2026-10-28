@@ -1,4 +1,4 @@
-import {CITATION_REVIEW} from './citation-review-data.js?v=0.22.0';
+import {CITATION_REVIEW} from './citation-review-data.js?v=0.23.0';
 import {validateCanonicalReference} from './reference-integrity.js';
 export {CITATION_REVIEW};
 
@@ -51,7 +51,7 @@ export function appendCitationReview(parent,kind,target){
 
 export function renderCitationSummary(root){
  if(!root)return;
- root.replaceChildren(make('p','Reviewed coverage: 18 Gospel issues, 15 place dossiers, four Nehemiah readings and eight selected passage comparisons. Includes the first priority batch and a scientific/archaeological source expansion. Each assessment records a decision, checked source scope and remaining limitations.'));
+ root.replaceChildren(make('p','Reviewed coverage: 18 Gospel issues, 15 place dossiers, four Nehemiah readings and twenty-eight selected passage comparisons. Includes the first priority batch, scientific and archaeological sources, and twenty further connection assessments. Each assessment records a decision, checked source scope and remaining limitations.'));
  root.append(make('p','The Bible is the authoritative foundation of Scripture Trails. Archaeological and historical publications supply supporting context within their stated scope. This AI-assisted editorial review does not constitute independent specialist signoff.'));
  for(const [kind,title] of [['issue','Gospel issue assessments'],['place','Place citation assessments'],['trail','Nehemiah passage checks'],['connection','Selected passage comparisons']]){
   const group=make('details',undefined,'citation-review-group');group.append(make('summary',title));
@@ -60,12 +60,12 @@ export function renderCitationSummary(root){
    if(kind==='issue'||kind==='place'||kind==='trail'){
     const a=make('a','Open related study');a.href=kind==='issue'?'/?view=jesus-map':kind==='place'?'/?view=entities&type=place&id='+encodeURIComponent(r.target):'/?view=entities&type=person&id=nehemiah-governor';article.append(a);
    }
-   if(kind==='connection'){const a=make('a','Open in Atlas');a.href='/?view=connections&ref='+encodeURIComponent(r.passages[0].replace(/-.*$/,''));article.append(a);}
+   if(kind==='connection'){const a=make('a','Open in Atlas');a.href='/?view=connections&ref='+encodeURIComponent(r.anchor||r.passages[0].replace(/-.*$/,''));article.append(a);}
    appendCitationReview(article,kind,r.target);group.append(article);
   }
   root.append(group);
  }
  root.append(make('h3','Remaining source work'));
  const list=make('ul');for(const text of CITATION_REVIEW.deferred)list.append(make('li',text));root.append(list);
- const download=make('a','Download the dated citation review register (JSON)');download.href='/data/citation-review.json?v=0.22.0';download.download='scripture-trails-citation-review-'+CITATION_REVIEW.updated+'.json';root.append(download);
+ const download=make('a','Download the dated citation review register (JSON)');download.href='/data/citation-review.json?v=0.23.0';download.download='scripture-trails-citation-review-'+CITATION_REVIEW.updated+'.json';root.append(download);
 }

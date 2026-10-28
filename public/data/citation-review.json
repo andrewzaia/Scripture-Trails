@@ -7,11 +7,11 @@
     "issues": 18,
     "places": 15,
     "trailReadings": 4,
-    "connections": 8
+    "connections": 28
   },
   "deferred": [
     "All six previously unlinked named-place assessments now include external research. Bibliographic gaps in this declared batch are addressed at the stated scope; exact identifications, comparative excavation review, textual variants and abstract-only access remain unresolved. Regional placeholders were not upgraded.",
-    "The other 107 explained pairs retain their existing review labels and have no new source-level assessment in this batch.",
+    "The other 87 explained pairs retain their existing review labels and have no new source-level assessment in these batches. Many assessed pairs still need fuller academic literature, textual and specialist review.",
     "Other person-trail access gaps, full excavation reports, manuscript apparatuses, wider source coverage and independent specialist review remain open.",
     "The full OpenBible corpus remains unclassified."
   ],
@@ -641,6 +641,416 @@
       "checkedOn": "2026-10-28",
       "access": "Preliminary report: stratigraphic table, Roman-period sections and summary checked. The proposed identification concerns Vespasian's veteran settlement; other Emmaus candidates and Luke's distance variants are not settled.",
       "rights": "Linked only; no publisher text, tables or images redistributed."
+    },
+    "pair-john-6": {
+      "title": "John 6 - NET Bible",
+      "author": "NET Bible translation and editorial team",
+      "publisher": "Biblical Studies Press / Bible.org",
+      "kind": "primary-scripture",
+      "url": "https://bible.org/sites/bible.org/resources/netbible/joh6.htm",
+      "checkedOn": "2026-10-28",
+      "access": "John 6:30-35 wording checked in the readable NET chapter view. No full commentary or manuscript audit.",
+      "rights": "Linked only; no Bible translation text retained."
+    },
+    "pierce-hebrews": {
+      "title": "Intra-Divine Discourse (1), Divine Discourse in the Epistle to the Hebrews (2020)",
+      "author": "Madison N. Pierce",
+      "publisher": "Cambridge University Press, pp. 35-90; DOI 10.1017/9781108849838.002",
+      "kind": "publisher-note",
+      "url": "https://www.cambridge.org/core/books/abs/divine-discourse-in-the-epistle-to-the-hebrews/intradivine-discourse-1/17259EB9BA7D0085999584EA6B97FDC4",
+      "checkedOn": "2026-10-28",
+      "access": "Publisher chapter summary and metadata checked, not the full chapter. Supports the discussion of quotations in Hebrews 1 and 8, not independent specialist signoff.",
+      "rights": "Linked only; no publication text retained."
+    },
+    "gordon-abraham": {
+      "title": "Preaching from the Patriarchs: Background to the Exposition of Genesis 15",
+      "author": "Robert P. Gordon",
+      "publisher": "Themelios 1(1), hosted by The Gospel Coalition",
+      "kind": "publisher-note",
+      "url": "https://www.thegospelcoalition.org/themelios/article/preaching-from-the-patriarchs-background-to-the-exposition-of-genesis-15/",
+      "checkedOn": "2026-10-28",
+      "access": "Authorship and limited accessible/indexed section on Romans and James checked. Later direct retrieval was unavailable; no full-article review or archaeological verification claimed.",
+      "rights": "Linked only; no publication text retained."
+    },
+    "byu-luke4": {
+      "title": "The Testimony of Luke - Chapter 4 commentary",
+      "author": "BYU Studies, The Testimony of Luke commentary",
+      "publisher": "BYU Studies; explicitly Latter-day Saint interpretive setting",
+      "kind": "publisher-note",
+      "url": "https://byustudies.byu.edu/online-book/the-testimony-of-luke/1934",
+      "checkedOn": "2026-10-28",
+      "access": "Selected notes on Luke 4:17-19 checked, including the Isaiah 58:6 phrase. Cited here only for the composite quotation; its wider confessional interpretations are not adopted as consensus.",
+      "rights": "Linked only; no publication text retained."
+    },
+    "pair-genesis-1": {
+      "title": "Genesis 1 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/genesis/1",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage wording and immediate context checked through the publisher view. No manuscript collation or translation-equivalence audit; some USCCB requests required an ESV fallback.",
+      "rights": "Linked only; no Bible translation text retained."
+    },
+    "pair-john-1": {
+      "title": "John 1 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/john/1",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage wording and immediate context checked through the publisher view. No manuscript collation or translation-equivalence audit; some USCCB requests required an ESV fallback.",
+      "rights": "Linked only; no Bible translation text retained."
+    },
+    "pair-genesis-15": {
+      "title": "Genesis 15 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/Genesis+15/",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage wording and immediate context checked through the publisher view. No manuscript collation or translation-equivalence audit; some USCCB requests required an ESV fallback.",
+      "rights": "Linked only; no Bible translation text retained."
+    },
+    "pair-romans-4": {
+      "title": "Romans 4 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/romans/4",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage wording and immediate context checked through the publisher view. No manuscript collation or translation-equivalence audit; some USCCB requests required an ESV fallback.",
+      "rights": "Linked only; no Bible translation text retained."
+    },
+    "pair-james-2": {
+      "title": "James 2 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/james/2",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage wording and immediate context checked through the publisher view. No manuscript collation or translation-equivalence audit; some USCCB requests required an ESV fallback.",
+      "rights": "Linked only; no Bible translation text retained."
+    },
+    "pair-deuteronomy-8": {
+      "title": "Deuteronomy 8 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/Deuteronomy+8/",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage wording and immediate context checked through the publisher view. No manuscript collation or translation-equivalence audit; some USCCB requests required an ESV fallback.",
+      "rights": "Linked only; no Bible translation text retained."
+    },
+    "pair-matthew-4": {
+      "title": "Matthew 4 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/matthew/4",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage wording and immediate context checked through the publisher view. No manuscript collation or translation-equivalence audit; some USCCB requests required an ESV fallback.",
+      "rights": "Linked only; no Bible translation text retained."
+    },
+    "pair-deuteronomy-18": {
+      "title": "Deuteronomy 18 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/Deuteronomy+18/",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage wording and immediate context checked through the publisher view. No manuscript collation or translation-equivalence audit; some USCCB requests required an ESV fallback.",
+      "rights": "Linked only; no Bible translation text retained."
+    },
+    "pair-acts-3": {
+      "title": "Acts 3 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/Acts+3/",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage wording and immediate context checked through the publisher view. No manuscript collation or translation-equivalence audit; some USCCB requests required an ESV fallback.",
+      "rights": "Linked only; no Bible translation text retained."
+    },
+    "pair-psalm-22": {
+      "title": "Psalm 22 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/Psalm+22/",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage wording and immediate context checked through the publisher view. No manuscript collation or translation-equivalence audit; some USCCB requests required an ESV fallback.",
+      "rights": "Linked only; no Bible translation text retained."
+    },
+    "pair-matthew-27": {
+      "title": "Matthew 27 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/Matthew+27/",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage wording and immediate context checked through the publisher view. No manuscript collation or translation-equivalence audit; some USCCB requests required an ESV fallback.",
+      "rights": "Linked only; no Bible translation text retained."
+    },
+    "pair-psalm-110": {
+      "title": "Psalm 110 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/Psalm+110/",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage wording and immediate context checked through the publisher view. No manuscript collation or translation-equivalence audit; some USCCB requests required an ESV fallback.",
+      "rights": "Linked only; no Bible translation text retained."
+    },
+    "pair-matthew-22": {
+      "title": "Matthew 22 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/matthew/22",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage wording and immediate context checked through the publisher view. No manuscript collation or translation-equivalence audit; some USCCB requests required an ESV fallback.",
+      "rights": "Linked only; no Bible translation text retained."
+    },
+    "pair-isaiah-40": {
+      "title": "Isaiah 40 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/Isaiah+40/",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage wording and immediate context checked through the publisher view. No manuscript collation or translation-equivalence audit; some USCCB requests required an ESV fallback.",
+      "rights": "Linked only; no Bible translation text retained."
+    },
+    "pair-isaiah-53": {
+      "title": "Isaiah 53 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/Isaiah+53/",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage wording and immediate context checked through the publisher view. No manuscript collation or translation-equivalence audit; some USCCB requests required an ESV fallback.",
+      "rights": "Linked only; no Bible translation text retained."
+    },
+    "pair-matthew-8": {
+      "title": "Matthew 8 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/Matthew+8/",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage wording and immediate context checked through the publisher view. No manuscript collation or translation-equivalence audit; some USCCB requests required an ESV fallback.",
+      "rights": "Linked only; no Bible translation text retained."
+    },
+    "pair-jeremiah-31": {
+      "title": "Jeremiah 31 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/Jeremiah+31/",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage wording and immediate context checked through the publisher view. No manuscript collation or translation-equivalence audit; some USCCB requests required an ESV fallback.",
+      "rights": "Linked only; no Bible translation text retained."
+    },
+    "pair-hebrews-8": {
+      "title": "Hebrews 8 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/Hebrews+8/",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage wording and immediate context checked through the publisher view. No manuscript collation or translation-equivalence audit; some USCCB requests required an ESV fallback.",
+      "rights": "Linked only; no Bible translation text retained."
+    },
+    "pair-joel-2": {
+      "title": "Joel 2 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/Joel+2/",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage wording and immediate context checked through the publisher view. No manuscript collation or translation-equivalence audit; some USCCB requests required an ESV fallback.",
+      "rights": "Linked only; no Bible translation text retained."
+    },
+    "pair-acts-2": {
+      "title": "Acts 2 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/Acts+2/",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage wording and immediate context checked through the publisher view. No manuscript collation or translation-equivalence audit; some USCCB requests required an ESV fallback.",
+      "rights": "Linked only; no Bible translation text retained."
+    },
+    "pair-micah-5": {
+      "title": "Micah 5 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/Micah+5/",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage wording and immediate context checked through the publisher view. No manuscript collation or translation-equivalence audit; some USCCB requests required an ESV fallback.",
+      "rights": "Linked only; no Bible translation text retained."
+    },
+    "pair-matthew-2": {
+      "title": "Matthew 2 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/Matthew+2/",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage wording and immediate context checked through the publisher view. No manuscript collation or translation-equivalence audit; some USCCB requests required an ESV fallback.",
+      "rights": "Linked only; no Bible translation text retained."
+    },
+    "pair-2-samuel-5": {
+      "title": "2 Samuel 5 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/2+Samuel+5/",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage wording and immediate context checked through the publisher view. No manuscript collation or translation-equivalence audit; some USCCB requests required an ESV fallback.",
+      "rights": "Linked only; no Bible translation text retained."
+    },
+    "pair-isaiah-61": {
+      "title": "Isaiah 61 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/Isaiah+61/",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage wording and immediate context checked through the publisher view. No manuscript collation or translation-equivalence audit; some USCCB requests required an ESV fallback.",
+      "rights": "Linked only; no Bible translation text retained."
+    },
+    "pair-luke-4": {
+      "title": "Luke 4 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/Luke+4/",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage wording and immediate context checked through the publisher view. No manuscript collation or translation-equivalence audit; some USCCB requests required an ESV fallback.",
+      "rights": "Linked only; no Bible translation text retained."
+    },
+    "pair-isaiah-58": {
+      "title": "Isaiah 58 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/Isaiah+58/",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage wording and immediate context checked through the publisher view. No manuscript collation or translation-equivalence audit; some USCCB requests required an ESV fallback.",
+      "rights": "Linked only; no Bible translation text retained."
+    },
+    "pair-2-samuel-7": {
+      "title": "2 Samuel 7 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/2+Samuel+7/",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage wording and immediate context checked through the publisher view. No manuscript collation or translation-equivalence audit; some USCCB requests required an ESV fallback.",
+      "rights": "Linked only; no Bible translation text retained."
+    },
+    "pair-luke-1": {
+      "title": "Luke 1 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/Luke+1/",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage wording and immediate context checked through the publisher view. No manuscript collation or translation-equivalence audit; some USCCB requests required an ESV fallback.",
+      "rights": "Linked only; no Bible translation text retained."
+    },
+    "pair-exodus-16": {
+      "title": "Exodus 16 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/Exodus+16/",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage wording and immediate context checked through the publisher view. No manuscript collation or translation-equivalence audit; some USCCB requests required an ESV fallback.",
+      "rights": "Linked only; no Bible translation text retained."
+    },
+    "pair-deuteronomy-6": {
+      "title": "Deuteronomy 6 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/Deuteronomy+6/",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage wording and immediate context checked through the publisher view. No manuscript collation or translation-equivalence audit; some USCCB requests required an ESV fallback.",
+      "rights": "Linked only; no Bible translation text retained."
+    },
+    "pair-mark-12": {
+      "title": "Mark 12 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/Mark+12/",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage wording and immediate context checked through the publisher view. No manuscript collation or translation-equivalence audit; some USCCB requests required an ESV fallback.",
+      "rights": "Linked only; no Bible translation text retained."
+    },
+    "pair-psalm-2": {
+      "title": "Psalm 2 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/Psalm+2/",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage wording and immediate context checked through the publisher view. No manuscript collation or translation-equivalence audit; some USCCB requests required an ESV fallback.",
+      "rights": "Linked only; no Bible translation text retained."
+    },
+    "pair-hebrews-1": {
+      "title": "Hebrews 1 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/Hebrews+1/",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage wording and immediate context checked through the publisher view. No manuscript collation or translation-equivalence audit; some USCCB requests required an ESV fallback.",
+      "rights": "Linked only; no Bible translation text retained."
+    },
+    "pair-1-peter-2": {
+      "title": "1 Peter 2 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/1+Peter+2/",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage wording and immediate context checked through the publisher view. No manuscript collation or translation-equivalence audit; some USCCB requests required an ESV fallback.",
+      "rights": "Linked only; no Bible translation text retained."
+    },
+    "pair-luke-22": {
+      "title": "Luke 22 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/Luke+22/",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage wording and immediate context checked through the publisher view. No manuscript collation or translation-equivalence audit; some USCCB requests required an ESV fallback.",
+      "rights": "Linked only; no Bible translation text retained."
+    },
+    "pair-ezekiel-36": {
+      "title": "Ezekiel 36 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/Ezekiel+36/",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage wording and immediate context checked through the publisher view. No manuscript collation or translation-equivalence audit; some USCCB requests required an ESV fallback.",
+      "rights": "Linked only; no Bible translation text retained."
+    },
+    "pair-john-3": {
+      "title": "John 3 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/John+3/",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage wording and immediate context checked through the publisher view. No manuscript collation or translation-equivalence audit; some USCCB requests required an ESV fallback.",
+      "rights": "Linked only; no Bible translation text retained."
     }
   },
   "records": [
@@ -1683,6 +2093,613 @@
           "supports": "Bruins and van der Plicht analysed 18 samples, distinguishing short-lived cereal grains from charcoal. Their published calibration placed the final Middle Bronze Age destruction in the late seventeenth or sixteenth century BCE."
         }
       ]
+    },
+    {
+      "kind": "connection",
+      "target": "ce001",
+      "title": "Genesis 1:1-5 and John 1:1-5",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-28",
+      "note": "John uses creation and light language in its opening account of the Word; Genesis narrates God creating.",
+      "limitation": "Retain echo, not quotation. The literary connection does not collapse the distinct claims of the two openings. Additional independent academic literature was not assessed for this pair in this batch.",
+      "passages": [
+        "Genesis 1:1-5",
+        "John 1:1-5"
+      ],
+      "citations": [
+        {
+          "sourceId": "pair-genesis-1",
+          "locator": "Genesis 1:1-5",
+          "supports": "Selected passage wording and context for this comparison."
+        },
+        {
+          "sourceId": "pair-john-1",
+          "locator": "John 1:1-5",
+          "supports": "Selected passage wording and context for this comparison."
+        }
+      ],
+      "batch": "connections-20-01",
+      "anchor": "Genesis 1:1"
+    },
+    {
+      "kind": "connection",
+      "target": "ce002",
+      "title": "Genesis 15:1-6 and Romans 4:1-12",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-28",
+      "note": "Romans explicitly cites Abraham's belief and credited righteousness while arguing about faith, works and circumcision.",
+      "limitation": "Genesis concerns the promised heir; later theological debates about justification are not settled by identifying the citation.",
+      "passages": [
+        "Genesis 15:1-6",
+        "Romans 4:1-12"
+      ],
+      "citations": [
+        {
+          "sourceId": "pair-genesis-15",
+          "locator": "Genesis 15:1-6",
+          "supports": "Selected passage wording and context for this comparison."
+        },
+        {
+          "sourceId": "pair-romans-4",
+          "locator": "Romans 4:1-12",
+          "supports": "Selected passage wording and context for this comparison."
+        },
+        {
+          "sourceId": "gordon-abraham",
+          "locator": "Authorship and limited accessible/indexed section on Romans and James checked. Later direct retrieval was unavailable; no full-article review or archaeological verification claimed.",
+          "supports": "Only the quotation/context discussion identified in this source access note."
+        }
+      ],
+      "batch": "connections-20-01",
+      "anchor": "Genesis 15:6"
+    },
+    {
+      "kind": "connection",
+      "target": "ce003",
+      "title": "Genesis 15:1-6 and James 2:18-26",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-28",
+      "note": "James cites the same Genesis verse in an argument that faith works with action, referring also to Abraham offering Isaac.",
+      "limitation": "Read Genesis 22 alongside this comparison. Paul and James have distinct rhetorical contexts; no comprehensive reconciliation is claimed.",
+      "passages": [
+        "Genesis 15:1-6",
+        "James 2:18-26"
+      ],
+      "citations": [
+        {
+          "sourceId": "pair-genesis-15",
+          "locator": "Genesis 15:1-6",
+          "supports": "Selected passage wording and context for this comparison."
+        },
+        {
+          "sourceId": "pair-james-2",
+          "locator": "James 2:18-26",
+          "supports": "Selected passage wording and context for this comparison."
+        },
+        {
+          "sourceId": "gordon-abraham",
+          "locator": "Authorship and limited accessible/indexed section on Romans and James checked. Later direct retrieval was unavailable; no full-article review or archaeological verification claimed.",
+          "supports": "Only the quotation/context discussion identified in this source access note."
+        }
+      ],
+      "batch": "connections-20-01",
+      "anchor": "Genesis 15:6"
+    },
+    {
+      "kind": "connection",
+      "target": "ce004",
+      "title": "Deuteronomy 8:1-6 and Matthew 4:1-11",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-28",
+      "note": "Matthew reports Jesus quoting the wilderness lesson about dependence on God's word when tempted to make bread.",
+      "limitation": "Deuteronomy addresses Israel and its wilderness testing. Identifying the quotation does not reconstruct Jesus' exact spoken language. Additional independent academic literature was not assessed for this pair in this batch.",
+      "passages": [
+        "Deuteronomy 8:1-6",
+        "Matthew 4:1-11"
+      ],
+      "citations": [
+        {
+          "sourceId": "pair-deuteronomy-8",
+          "locator": "Deuteronomy 8:1-6",
+          "supports": "Selected passage wording and context for this comparison."
+        },
+        {
+          "sourceId": "pair-matthew-4",
+          "locator": "Matthew 4:1-11",
+          "supports": "Selected passage wording and context for this comparison."
+        }
+      ],
+      "batch": "connections-20-01",
+      "anchor": "Deuteronomy 8:3"
+    },
+    {
+      "kind": "connection",
+      "target": "ce005",
+      "title": "Deuteronomy 18:15-22 and Acts 3:18-26",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-28",
+      "note": "Peter's speech cites the prophet-like-Moses promise and applies the prophetic expectation in its proclamation of Jesus.",
+      "limitation": "Deuteronomy also regulates listening to prophets and false prophecy. The later application does not erase that original setting. Additional independent academic literature was not assessed for this pair in this batch.",
+      "passages": [
+        "Deuteronomy 18:15-22",
+        "Acts 3:18-26"
+      ],
+      "citations": [
+        {
+          "sourceId": "pair-deuteronomy-18",
+          "locator": "Deuteronomy 18:15-22",
+          "supports": "Selected passage wording and context for this comparison."
+        },
+        {
+          "sourceId": "pair-acts-3",
+          "locator": "Acts 3:18-26",
+          "supports": "Selected passage wording and context for this comparison."
+        }
+      ],
+      "batch": "connections-20-01",
+      "anchor": "Deuteronomy 18:15"
+    },
+    {
+      "kind": "connection",
+      "target": "ce006",
+      "title": "Psalm 22:1-5 and Matthew 27:45-50",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-28",
+      "note": "Matthew reports Jesus' cry using the opening of Psalm 22, a lament that later turns toward praise.",
+      "limitation": "Keep the lament audible. The quotation alone does not settle every theological interpretation of Jesus' cry; Psalm numbering differs across editions. Additional independent academic literature was not assessed for this pair in this batch.",
+      "passages": [
+        "Psalm 22:1-5",
+        "Matthew 27:45-50"
+      ],
+      "citations": [
+        {
+          "sourceId": "pair-psalm-22",
+          "locator": "Psalm 22:1-5",
+          "supports": "Selected passage wording and context for this comparison."
+        },
+        {
+          "sourceId": "pair-matthew-27",
+          "locator": "Matthew 27:45-50",
+          "supports": "Selected passage wording and context for this comparison."
+        }
+      ],
+      "batch": "connections-20-01",
+      "anchor": "Psalm 22:1"
+    },
+    {
+      "kind": "connection",
+      "target": "ce007",
+      "title": "Psalm 110:1-4 and Matthew 22:41-46",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-28",
+      "note": "Matthew cites the enthronement language of Psalm 110:1 in Jesus' question about David's son and lord.",
+      "limitation": "The psalm's royal setting and its later messianic use are distinct interpretive questions; no independent authorship conclusion follows. Additional independent academic literature was not assessed for this pair in this batch.",
+      "passages": [
+        "Psalm 110:1-4",
+        "Matthew 22:41-46"
+      ],
+      "citations": [
+        {
+          "sourceId": "pair-psalm-110",
+          "locator": "Psalm 110:1-4",
+          "supports": "Selected passage wording and context for this comparison."
+        },
+        {
+          "sourceId": "pair-matthew-22",
+          "locator": "Matthew 22:41-46",
+          "supports": "Selected passage wording and context for this comparison."
+        }
+      ],
+      "batch": "connections-20-01",
+      "anchor": "Psalm 110:1"
+    },
+    {
+      "kind": "connection",
+      "target": "ce009",
+      "title": "Isaiah 40:1-5 and John 1:19-28",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-28",
+      "note": "John the Baptist explicitly identifies his voice with Isaiah's wilderness proclamation in a scene distinguishing him from the Messiah.",
+      "limitation": "Isaiah addresses consolation and restoration. Punctuation and the placement of wilderness language differ between textual traditions and translations. Additional independent academic literature was not assessed for this pair in this batch.",
+      "passages": [
+        "Isaiah 40:1-5",
+        "John 1:19-28"
+      ],
+      "citations": [
+        {
+          "sourceId": "pair-isaiah-40",
+          "locator": "Isaiah 40:1-5",
+          "supports": "Selected passage wording and context for this comparison."
+        },
+        {
+          "sourceId": "pair-john-1",
+          "locator": "John 1:19-28",
+          "supports": "Selected passage wording and context for this comparison."
+        }
+      ],
+      "batch": "connections-20-01",
+      "anchor": "Isaiah 40:3"
+    },
+    {
+      "kind": "connection",
+      "target": "ce010",
+      "title": "Isaiah 53:1-6 and Matthew 8:14-17",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-28",
+      "note": "Matthew cites the servant's bearing of affliction in explaining Jesus' healing ministry.",
+      "limitation": "Compare the larger servant poem. This specific healing context must not silently be replaced with a claim that Matthew here narrates the crucifixion. Additional independent academic literature was not assessed for this pair in this batch.",
+      "passages": [
+        "Isaiah 53:1-6",
+        "Matthew 8:14-17"
+      ],
+      "citations": [
+        {
+          "sourceId": "pair-isaiah-53",
+          "locator": "Isaiah 53:1-6",
+          "supports": "Selected passage wording and context for this comparison."
+        },
+        {
+          "sourceId": "pair-matthew-8",
+          "locator": "Matthew 8:14-17",
+          "supports": "Selected passage wording and context for this comparison."
+        }
+      ],
+      "batch": "connections-20-01",
+      "anchor": "Isaiah 53:4"
+    },
+    {
+      "kind": "connection",
+      "target": "ce011",
+      "title": "Jeremiah 31:31-34 and Hebrews 8:6-13",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-28",
+      "note": "Hebrews quotes Jeremiah's new-covenant promise within its discussion of Jesus' priestly ministry and the covenant.",
+      "limitation": "Jeremiah names Israel and Judah. The quotation does not by itself settle competing Christian accounts of Israel, covenant or supersessionism.",
+      "passages": [
+        "Jeremiah 31:31-34",
+        "Hebrews 8:6-13"
+      ],
+      "citations": [
+        {
+          "sourceId": "pair-jeremiah-31",
+          "locator": "Jeremiah 31:31-34",
+          "supports": "Selected passage wording and context for this comparison."
+        },
+        {
+          "sourceId": "pair-hebrews-8",
+          "locator": "Hebrews 8:6-13",
+          "supports": "Selected passage wording and context for this comparison."
+        },
+        {
+          "sourceId": "pierce-hebrews",
+          "locator": "Publisher chapter summary and metadata checked, not the full chapter. Supports the discussion of quotations in Hebrews 1 and 8, not independent specialist signoff.",
+          "supports": "Only the quotation/context discussion identified in this source access note."
+        }
+      ],
+      "batch": "connections-20-01",
+      "anchor": "Jeremiah 31:31"
+    },
+    {
+      "kind": "connection",
+      "target": "ce012",
+      "title": "Joel 2:28-32 and Acts 2:14-21",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-28",
+      "note": "Peter explicitly cites Joel in interpreting Pentecost, with language about the Spirit, prophecy and the day of the Lord.",
+      "limitation": "Joel 2:28-32 is numbered Joel 3:1-5 in some editions. Identifying the citation does not settle the timing of every cosmic sign. Additional independent academic literature was not assessed for this pair in this batch.",
+      "passages": [
+        "Joel 2:28-32",
+        "Acts 2:14-21"
+      ],
+      "citations": [
+        {
+          "sourceId": "pair-joel-2",
+          "locator": "Joel 2:28-32",
+          "supports": "Selected passage wording and context for this comparison."
+        },
+        {
+          "sourceId": "pair-acts-2",
+          "locator": "Acts 2:14-21",
+          "supports": "Selected passage wording and context for this comparison."
+        }
+      ],
+      "batch": "connections-20-01",
+      "anchor": "Joel 2:28"
+    },
+    {
+      "kind": "connection",
+      "target": "ce013",
+      "title": "Micah 5:2-5 and Matthew 2:1-12",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-28",
+      "note": "Matthew's Bethlehem citation adapts Micah's ruler language and includes shepherd wording associated with 2 Samuel 5:2.",
+      "limitation": "This is a composite/adapted citation, not identical wording from Micah alone. The Gospel's application and Micah's original context both remain relevant. Additional independent academic literature was not assessed for this pair in this batch.",
+      "passages": [
+        "Micah 5:2-5",
+        "Matthew 2:1-12",
+        "2 Samuel 5:1-3"
+      ],
+      "citations": [
+        {
+          "sourceId": "pair-micah-5",
+          "locator": "Micah 5:2-5",
+          "supports": "Selected passage wording and context for this comparison."
+        },
+        {
+          "sourceId": "pair-matthew-2",
+          "locator": "Matthew 2:1-12",
+          "supports": "Selected passage wording and context for this comparison."
+        },
+        {
+          "sourceId": "pair-2-samuel-5",
+          "locator": "2 Samuel 5:1-3",
+          "supports": "Selected passage wording and context for this comparison."
+        }
+      ],
+      "batch": "connections-20-01",
+      "anchor": "Micah 5:2"
+    },
+    {
+      "kind": "connection",
+      "target": "ce014",
+      "title": "Isaiah 61:1-3 and Luke 4:16-21",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-28",
+      "note": "Luke's Nazareth reading uses Isaiah 61:1-2 and liberation wording from Isaiah 58:6, followed by Jesus' fulfilment announcement.",
+      "limitation": "The composite reading is not a transcript of a single Hebrew passage. Reconstructing the spoken reading or scroll handling is outside this review.",
+      "passages": [
+        "Isaiah 61:1-3",
+        "Luke 4:16-21",
+        "Isaiah 58:6-9"
+      ],
+      "citations": [
+        {
+          "sourceId": "pair-isaiah-61",
+          "locator": "Isaiah 61:1-3",
+          "supports": "Selected passage wording and context for this comparison."
+        },
+        {
+          "sourceId": "pair-luke-4",
+          "locator": "Luke 4:16-21",
+          "supports": "Selected passage wording and context for this comparison."
+        },
+        {
+          "sourceId": "pair-isaiah-58",
+          "locator": "Isaiah 58:6-9",
+          "supports": "Selected passage wording and context for this comparison."
+        },
+        {
+          "sourceId": "byu-luke4",
+          "locator": "Selected notes on Luke 4:17-19 checked, including the Isaiah 58:6 phrase. Cited here only for the composite quotation; its wider confessional interpretations are not adopted as consensus.",
+          "supports": "Only the quotation/context discussion identified in this source access note."
+        }
+      ],
+      "batch": "connections-20-01",
+      "anchor": "Isaiah 61:1"
+    },
+    {
+      "kind": "connection",
+      "target": "ce022",
+      "title": "2 Samuel 7:12-16 and Luke 1:26-33",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-28",
+      "note": "Luke's annunciation describes David's throne and an enduring kingdom, recalling the dynastic promise in Samuel.",
+      "limitation": "Retain echo, not direct quotation. Samuel's immediate dynastic setting and Luke's application should not be flattened into one speech. Additional independent academic literature was not assessed for this pair in this batch.",
+      "passages": [
+        "2 Samuel 7:12-16",
+        "Luke 1:26-33"
+      ],
+      "citations": [
+        {
+          "sourceId": "pair-2-samuel-7",
+          "locator": "2 Samuel 7:12-16",
+          "supports": "Selected passage wording and context for this comparison."
+        },
+        {
+          "sourceId": "pair-luke-1",
+          "locator": "Luke 1:26-33",
+          "supports": "Selected passage wording and context for this comparison."
+        }
+      ],
+      "batch": "connections-20-01",
+      "anchor": "2 Samuel 7:12"
+    },
+    {
+      "kind": "connection",
+      "target": "ce030",
+      "title": "Exodus 16:1-8 and John 6:30-35",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-28",
+      "note": "John explicitly discusses manna and distinguishes Moses from the Father as giver, before presenting Jesus as the bread of life.",
+      "limitation": "Retain the thematic label for these anchors; typological interpretation is possible. John 6:31 has its own quotation, whose exact source is not established by pairing Exodus 16:4 with John 6:32. Additional independent academic literature was not assessed for this pair in this batch.",
+      "passages": [
+        "Exodus 16:1-8",
+        "John 6:30-35"
+      ],
+      "citations": [
+        {
+          "sourceId": "pair-exodus-16",
+          "locator": "Exodus 16:1-8",
+          "supports": "Selected passage wording and context for this comparison."
+        },
+        {
+          "sourceId": "pair-john-6",
+          "locator": "John 6:30-35",
+          "supports": "Selected passage wording and context for this comparison."
+        }
+      ],
+      "batch": "connections-20-01",
+      "anchor": "Exodus 16:4"
+    },
+    {
+      "kind": "connection",
+      "target": "ce031",
+      "title": "Deuteronomy 6:4-9 and Mark 12:28-34",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-28",
+      "note": "Mark quotes the command to love God in the setting of the Shema and joins it to love of neighbour.",
+      "limitation": "Compare the wording of the faculties across editions and Gospel accounts. A quotation label does not assert letter-for-letter identity. Additional independent academic literature was not assessed for this pair in this batch.",
+      "passages": [
+        "Deuteronomy 6:4-9",
+        "Mark 12:28-34"
+      ],
+      "citations": [
+        {
+          "sourceId": "pair-deuteronomy-6",
+          "locator": "Deuteronomy 6:4-9",
+          "supports": "Selected passage wording and context for this comparison."
+        },
+        {
+          "sourceId": "pair-mark-12",
+          "locator": "Mark 12:28-34",
+          "supports": "Selected passage wording and context for this comparison."
+        }
+      ],
+      "batch": "connections-20-01",
+      "anchor": "Deuteronomy 6:5"
+    },
+    {
+      "kind": "connection",
+      "target": "ce032",
+      "title": "Psalm 2:6-9 and Hebrews 1:1-9",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-28",
+      "note": "Hebrews cites Psalm 2:7 as part of a sequence distinguishing the Son from angels; the psalm presents royal sonship.",
+      "limitation": "The surrounding sequence also cites 2 Samuel 7:14. This check does not independently settle historical royal identity or later Trinitarian debates.",
+      "passages": [
+        "Psalm 2:6-9",
+        "Hebrews 1:1-9"
+      ],
+      "citations": [
+        {
+          "sourceId": "pair-psalm-2",
+          "locator": "Psalm 2:6-9",
+          "supports": "Selected passage wording and context for this comparison."
+        },
+        {
+          "sourceId": "pair-hebrews-1",
+          "locator": "Hebrews 1:1-9",
+          "supports": "Selected passage wording and context for this comparison."
+        },
+        {
+          "sourceId": "pierce-hebrews",
+          "locator": "Publisher chapter summary and metadata checked, not the full chapter. Supports the discussion of quotations in Hebrews 1 and 8, not independent specialist signoff.",
+          "supports": "Only the quotation/context discussion identified in this source access note."
+        }
+      ],
+      "batch": "connections-20-01",
+      "anchor": "Psalm 2:7"
+    },
+    {
+      "kind": "connection",
+      "target": "ce040",
+      "title": "Isaiah 53:4-6 and 1 Peter 2:21-25",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-28",
+      "note": "First Peter uses Isaiah's suffering-servant language and directly quotes the healing-through-wounds clause in an exhortation about suffering and righteous conduct.",
+      "limitation": "Classify this pair as quotation rather than a merely possible echo. The pastoral context does not license endorsing abuse or promising automatic physical cure. Additional independent academic literature was not assessed for this pair in this batch.",
+      "passages": [
+        "Isaiah 53:4-6",
+        "1 Peter 2:21-25"
+      ],
+      "citations": [
+        {
+          "sourceId": "pair-isaiah-53",
+          "locator": "Isaiah 53:4-6",
+          "supports": "Selected passage wording and context for this comparison."
+        },
+        {
+          "sourceId": "pair-1-peter-2",
+          "locator": "1 Peter 2:21-25",
+          "supports": "Selected passage wording and context for this comparison."
+        }
+      ],
+      "batch": "connections-20-01",
+      "anchor": "Isaiah 53:5"
+    },
+    {
+      "kind": "connection",
+      "target": "ce041",
+      "title": "Jeremiah 31:31-34 and Luke 22:14-20",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-28",
+      "note": "Luke's cup saying uses new-covenant language associated with Jeremiah, in a meal setting that also invokes sacrificial blood.",
+      "limitation": "Classify as echo rather than a direct quotation of Jeremiah's full promise. Compare Exodus 24:8 and textual variants of Luke's supper account before broader claims. Additional independent academic literature was not assessed for this pair in this batch.",
+      "passages": [
+        "Jeremiah 31:31-34",
+        "Luke 22:14-20"
+      ],
+      "citations": [
+        {
+          "sourceId": "pair-jeremiah-31",
+          "locator": "Jeremiah 31:31-34",
+          "supports": "Selected passage wording and context for this comparison."
+        },
+        {
+          "sourceId": "pair-luke-22",
+          "locator": "Luke 22:14-20",
+          "supports": "Selected passage wording and context for this comparison."
+        }
+      ],
+      "batch": "connections-20-01",
+      "anchor": "Jeremiah 31:31"
+    },
+    {
+      "kind": "connection",
+      "target": "ce043",
+      "title": "Ezekiel 36:24-28 and John 3:1-10",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-28",
+      "note": "Ezekiel joins cleansing water, a new heart and God's Spirit; John's Nicodemus scene speaks of birth through water and Spirit.",
+      "limitation": "Retain a thematic comparison. A specific allusion is an interpretive proposal; this pairing does not settle baptismal or denominational interpretations. Additional independent academic literature was not assessed for this pair in this batch.",
+      "passages": [
+        "Ezekiel 36:24-28",
+        "John 3:1-10"
+      ],
+      "citations": [
+        {
+          "sourceId": "pair-ezekiel-36",
+          "locator": "Ezekiel 36:24-28",
+          "supports": "Selected passage wording and context for this comparison."
+        },
+        {
+          "sourceId": "pair-john-3",
+          "locator": "John 3:1-10",
+          "supports": "Selected passage wording and context for this comparison."
+        }
+      ],
+      "batch": "connections-20-01",
+      "anchor": "Ezekiel 36:26"
+    }
+  ],
+  "batches": [
+    {
+      "id": "connections-20-01",
+      "title": "First twenty further connection assessments",
+      "count": 20,
+      "targets": [
+        "ce001",
+        "ce002",
+        "ce003",
+        "ce004",
+        "ce005",
+        "ce006",
+        "ce007",
+        "ce009",
+        "ce010",
+        "ce011",
+        "ce012",
+        "ce013",
+        "ce014",
+        "ce022",
+        "ce030",
+        "ce031",
+        "ce032",
+        "ce040",
+        "ce041",
+        "ce043"
+      ],
+      "method": "AI-assisted selected-passage comparison. Five assessments also include scoped scholarly commentary or publisher-summary support. Other pairs retain an explicit secondary-literature gap; no independent specialist signoff."
     }
   ]
 }

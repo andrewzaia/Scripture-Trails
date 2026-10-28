@@ -60,34 +60,34 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "from": "Exodus 16:4",
     "to": "John 6:32",
     "kind": "theme",
-    "explanation": "Bread from heaven. Explore how Exodus 16:4 and John 6:32 address this subject or imagery from their respective settings.",
-    "caution": "A shared subject does not establish quotation, fulfilment or historical corroboration.",
+    "explanation": "John explicitly discusses manna and distinguishes Moses from the Father as giver, before presenting Jesus as the bread of life.",
+    "caution": "Retain the thematic label for these anchors; typological interpretation is possible. John 6:31 has its own quotation, whose exact source is not established by pairing Exodus 16:4 with John 6:32.",
     "context": "John 6:32",
     "review": "editorial-reading-aid",
-    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
-  },
+    "basis": "Selected passage wording and immediate context rechecked in the dated citation register, batch connections-20-01; academic access limits recorded there. Independent specialist review pending."
+},
   {
     "id": "ce031",
     "from": "Deuteronomy 6:5",
     "to": "Mark 12:30",
     "kind": "quotation",
-    "explanation": "The greatest commandment. Explore how Deuteronomy 6:5 and Mark 12:30 address this subject or imagery from their respective settings.",
-    "caution": "The later text may adapt the earlier wording. Read both contexts and check translation differences.",
+    "explanation": "Mark quotes the command to love God in the setting of the Shema and joins it to love of neighbour.",
+    "caution": "Compare the wording of the faculties across editions and Gospel accounts. A quotation label does not assert letter-for-letter identity.",
     "context": "Mark 12:30",
     "review": "editorial-reading-aid",
-    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
-  },
+    "basis": "Selected passage wording and immediate context rechecked in the dated citation register, batch connections-20-01; academic access limits recorded there. Independent specialist review pending."
+},
   {
     "id": "ce032",
     "from": "Psalm 2:7",
     "to": "Hebrews 1:5",
     "kind": "quotation",
-    "explanation": "Royal sonship language. Explore how Psalm 2:7 and Hebrews 1:5 address this subject or imagery from their respective settings.",
-    "caution": "The later text may adapt the earlier wording. Read both contexts and check translation differences.",
+    "explanation": "Hebrews cites Psalm 2:7 as part of a sequence distinguishing the Son from angels; the psalm presents royal sonship.",
+    "caution": "The surrounding sequence also cites 2 Samuel 7:14. This check does not independently settle historical royal identity or later Trinitarian debates.",
     "context": "Hebrews 1:5",
     "review": "editorial-reading-aid",
-    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
-  },
+    "basis": "Selected passage wording and immediate context rechecked in the dated citation register, batch connections-20-01; academic access limits recorded there. Independent specialist review pending."
+},
   {
     "id": "ce033",
     "from": "Psalm 23:1",
@@ -169,24 +169,24 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "id": "ce040",
     "from": "Isaiah 53:5",
     "to": "1 Peter 2:24",
-    "kind": "echo",
-    "explanation": "Healing and the suffering servant. Explore how Isaiah 53:5 and 1 Peter 2:24 address this subject or imagery from their respective settings.",
-    "caution": "The proposed literary echo is an editorial interpretation, not proof of authorial intention.",
+    "kind": "quotation",
+    "explanation": "First Peter uses Isaiah's suffering-servant language and directly quotes the healing-through-wounds clause in an exhortation about suffering and righteous conduct.",
+    "caution": "Classify this pair as quotation rather than a merely possible echo. The pastoral context does not license endorsing abuse or promising automatic physical cure.",
     "context": "1 Peter 2:24",
     "review": "editorial-reading-aid",
-    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
-  },
+    "basis": "Selected passage wording and immediate context rechecked in the dated citation register, batch connections-20-01; academic access limits recorded there. Independent specialist review pending."
+},
   {
     "id": "ce041",
     "from": "Jeremiah 31:31",
     "to": "Luke 22:20",
-    "kind": "theme",
-    "explanation": "The new covenant. Explore how Jeremiah 31:31 and Luke 22:20 address this subject or imagery from their respective settings.",
-    "caution": "A shared subject does not establish quotation, fulfilment or historical corroboration.",
+    "kind": "echo",
+    "explanation": "Luke's cup saying uses new-covenant language associated with Jeremiah, in a meal setting that also invokes sacrificial blood.",
+    "caution": "Classify as echo rather than a direct quotation of Jeremiah's full promise. Compare Exodus 24:8 and textual variants of Luke's supper account before broader claims.",
     "context": "Luke 22:20",
     "review": "editorial-reading-aid",
-    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
-  },
+    "basis": "Selected passage wording and immediate context rechecked in the dated citation register, batch connections-20-01; academic access limits recorded there. Independent specialist review pending."
+},
   {
     "id": "ce042",
     "from": "Ezekiel 34:11",
@@ -203,12 +203,12 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "from": "Ezekiel 36:26",
     "to": "John 3:5",
     "kind": "theme",
-    "explanation": "Renewal and new birth. Explore how Ezekiel 36:26 and John 3:5 address this subject or imagery from their respective settings.",
-    "caution": "A shared subject does not establish quotation, fulfilment or historical corroboration.",
+    "explanation": "Ezekiel joins cleansing water, a new heart and God's Spirit; John's Nicodemus scene speaks of birth through water and Spirit.",
+    "caution": "Retain a thematic comparison. A specific allusion is an interpretive proposal; this pairing does not settle baptismal or denominational interpretations.",
     "context": "John 3:5",
     "review": "editorial-reading-aid",
-    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
-  },
+    "basis": "Selected passage wording and immediate context rechecked in the dated citation register, batch connections-20-01; academic access limits recorded there. Independent specialist review pending."
+},
   {
     "id": "ce044",
     "from": "Malachi 3:1",

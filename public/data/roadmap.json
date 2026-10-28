@@ -1,10 +1,10 @@
 {
   "project": "Scripture Trails",
   "updated": "2026-10-28",
-  "description": "A transparent, evidence-aware roadmap reviewed against the released application through v0.22.0. Delivered records implementation milestones, including successive expansions; it is not a count of independent features or scholarly certification. Future work has completion criteria and no promised delivery dates.",
+  "description": "A transparent, evidence-aware roadmap reviewed against the released application through v0.23.0. Delivered records implementation milestones, including successive expansions; it is not a count of independent features or scholarly certification. Future work has completion criteria and no promised delivery dates.",
   "currentFocus": [
     "Next priority: repeatable browser, mobile and accessibility release coverage",
-    "Continue citation remediation beyond the first assessed batch; all six named-place bibliography gaps now have scoped sources; full-publication review and 107 other explained pairs remain",
+    "Continue citation remediation beyond the first assessed batch; all six named-place bibliography gaps now have scoped sources; full-publication review and 87 other explained pairs remain",
     "Add repeatable desktop/mobile browser and accessibility checks for the reader, Atlas, geography collections and private notebook",
     "Arrange independent historical, textual and archaeological review, including the first Exodus collection, when suitable specialists are available",
     "Then extend the Hebrew Bible geography library with separately scoped kings, prophets, exile and return studies"
@@ -518,7 +518,7 @@
       "phase": "next",
       "status": "planned",
       "title": "Further citation remediation and context review",
-      "summary": "The six named-place bibliography gaps have scoped external sources as of v0.22.0. Continue with comparative identification work, full publications and the other 107 explained pairs.",
+      "summary": "The first further twenty-connection batch is assessed in v0.23.0. Continue with the other 87 explained pairs, full-publication access and specialist review; assessed does not mean academically certified.",
       "capabilities": [
         "Publish a separately declared next batch with claim-specific supporting sources and access limits",
         "Review the newly linked studies in full, compare competing identifications and revisit person-trail access limitations",
