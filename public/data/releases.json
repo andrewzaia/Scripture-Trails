@@ -1,6 +1,16 @@
 {
   "releases": [
     {
+      "version": "0.16.0",
+      "date": "2026-10-28",
+      "title": "Custom study collections and reading schedules",
+      "changes": [
+        "Create ordered passage collections from guided studies or your own references.",
+        "Choose a start date and reading days, resume unread passages and track completion locally.",
+        "Include collections and schedules in version 4 notebook backups, with older-backup support and conflict previews."
+      ]
+    },
+    {
       "version": "0.15.4",
       "date": "2026-10-28",
       "title": "Consistent People and Places page spacing",

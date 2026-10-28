@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.16.0 - 28/10/2026: Custom study collections and reading schedules
+
+- Create ordered passage collections from guided studies or your own references.
+- Choose a start date and reading days, resume unread passages and track completion locally.
+- Include collections and schedules in version 4 notebook backups, with older-backup support and conflict previews.
+
 ## 0.15.4 - 28/10/2026: Consistent People and Places page spacing
 
 - Align the People, places and events content with the page gutters used elsewhere, including tablet and mobile spacing.

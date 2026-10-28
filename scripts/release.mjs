@@ -27,7 +27,9 @@ nextApp=versionedImport(nextApp,'reading-plans.js?v='+oldVersion,'reading-plans.
 const backupPath='public/assets/notebook-backup.js';
 const nextBackup=versionedImport(read(backupPath),'reading-plans.js?v='+oldVersion,'reading-plans.js?v='+newVersion,'backup progress validation');
 nextApp=versionedImport(nextApp,'annotations.js?v='+oldVersion,'annotations.js?v='+newVersion,'annotations');
-const finalBackup=versionedImport(nextBackup,'annotations.js?v='+oldVersion,'annotations.js?v='+newVersion,'backup annotations');
+let finalBackup=versionedImport(nextBackup,'annotations.js?v='+oldVersion,'annotations.js?v='+newVersion,'backup annotations');
+nextApp=versionedImport(nextApp,'study-collections.js?v='+oldVersion,'study-collections.js?v='+newVersion,'study collections');
+finalBackup=versionedImport(finalBackup,'study-collections.js?v='+oldVersion,'study-collections.js?v='+newVersion,'backup study collections');
 const prevIndex=read(indexPath);
 let nextIndex=versionedImport(prevIndex,'entity-index-data.js?v='+oldVersion,'entity-index-data.js?v='+newVersion,'index data module');
 nextIndex=versionedImport(nextIndex,"ENTITY_INDEX_DATA_VERSION='"+oldVersion+"'","ENTITY_INDEX_DATA_VERSION='"+newVersion+"'",'index JSON files');

@@ -19,9 +19,10 @@ if(!readFileSync('public/assets/graph.js','utf8').includes('atlas-shortest-path.
 if(!index.includes('entity-index-data.js?v='+pkg.version)||!index.includes("ENTITY_INDEX_DATA_VERSION='"+pkg.version+"'"))throw new Error('Index module and JSON cache keys must match version');
 if(!app.includes('connection-evidence.js?v='+pkg.version)||!index.includes('connection-evidence.js?v='+pkg.version))throw new Error('Atlas evidence modules must match website release version');
 if(!app.includes('atlas-comparison.js?v='+pkg.version)||!index.includes('person-trails.js?v='+pkg.version))throw new Error('Comparison and person trails must match release version');
-for(const name of ['paul-map.js','roadmap.js','notebook-backup.js','reading-plans.js','annotations.js'])if(!app.includes(name+'?v='+pkg.version))throw new Error('Journey and roadmap modules must match release version: '+name);
+for(const name of ['paul-map.js','roadmap.js','notebook-backup.js','reading-plans.js','annotations.js','study-collections.js'])if(!app.includes(name+'?v='+pkg.version))throw new Error('Journey and roadmap modules must match release version: '+name);
 const evidence=readFileSync('public/assets/connection-evidence.js','utf8');
 if(!evidence.includes('connection-evidence-expanded.js?v='+pkg.version))throw new Error('Expanded evidence cache key must match release version');
+if(!readFileSync('public/assets/notebook-backup.js','utf8').includes('study-collections.js?v='+pkg.version))throw Error('Backup collection module must match release version');
 // PR validation covers ALL branch commits. Cloudflare's production checkout can be shallow,
 // so only GitHub Actions must have full history; every build still checks release metadata.
 // GitHub Actions checks out full history (fetch-depth: 0) so the merge base is available.
