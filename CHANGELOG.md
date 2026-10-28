@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.21.1 - 28/10/2026: Revalidate updated research datasets
+
+- Revalidate city-study and Gospel research data when loading, so returning browsers receive the updated source records and consistent audit metadata.
+
 ## 0.21.0 - 28/10/2026: Scientific and archaeological source expansion
 
 - Add seven research and excavation/project sources across Gethsemane, Mount of Olives, Bethany, Jerusalem and Jericho.

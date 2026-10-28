@@ -1,4 +1,4 @@
-import {appendCitationReview} from './citation-review.js?v=0.21.0';
+import {appendCitationReview} from './citation-review.js?v=0.21.1';
 import {parseRef} from './books.js';
 import {GOSPEL_BOOKS,gospelSequence,gospelPassages,validateGospelChronology} from './gospel-chronology.js';
 /** Journeys of Jesus: self-hosted schematic SVG atlas. No tiles or external JavaScript. */
@@ -206,7 +206,7 @@ export function createJesusMap(root,onOpenPassage,onOpenCity){
   document.addEventListener('visibilitychange',()=>{if(document.hidden)stop();});
  }
  async function load(){
-  const responses=await Promise.all([fetch('/data/jesus-journeys.json'),fetch('/data/jesus-geography.json'),fetch('/data/jesus-audit.json'),fetch('/data/gospel-chronology.json')]);
+  const responses=await Promise.all([fetch('/data/jesus-journeys.json',{cache:'no-cache'}),fetch('/data/jesus-geography.json',{cache:'no-cache'}),fetch('/data/jesus-audit.json',{cache:'no-cache'}),fetch('/data/gospel-chronology.json',{cache:'no-cache'})]);
   if(responses.some(r=>!r.ok))throw Error('Cannot retrieve the journey and geography data');
   [data,geography,audit,chronology]=await Promise.all(responses.map(r=>r.json()));validateJourneyData(data);validatePlaceStudies(geography,data);validateAuditData(audit,data,geography);validateGospelChronology(chronology,data,audit);issueMap=new Map(audit.issues.map(x=>[x.id,x]));$('event-total').textContent=String(data.events.length);$('place-total').textContent=String(data.places.length);$('source-total').textContent=String(data.events.reduce((n,e)=>n+e.passages.length,0));placeMap=new Map(data.places.map(p=>[p.id,p]));phaseMap=new Map(data.phases.map(p=>[p.id,p]));
   background();bind();renderAuditRegister();view={x:520,y:56,w:580,h:411};setView();const initial=new URLSearchParams(location.search).get('stop');const chosen=data.events.findIndex(e=>e.id===initial);selectEvent(chosen<0?0:chosen,true);selectPlace(data.events[index].place);$('loading').hidden=true;root.dataset.ready='true';

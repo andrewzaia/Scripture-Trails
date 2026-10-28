@@ -1,6 +1,14 @@
 {
   "releases": [
     {
+      "version": "0.21.1",
+      "date": "2026-10-28",
+      "title": "Revalidate updated research datasets",
+      "changes": [
+        "Revalidate city-study and Gospel research data when loading, so returning browsers receive the updated source records and consistent audit metadata."
+      ]
+    },
+    {
       "version": "0.21.0",
       "date": "2026-10-28",
       "title": "Scientific and archaeological source expansion",
