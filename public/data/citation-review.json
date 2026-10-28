@@ -1,17 +1,17 @@
 {
   "schema": 1,
-  "updated": "2026-10-28",
+  "updated": "2026-10-29",
   "status": "declared-batch-assessed",
   "method": "AI-assisted editorial source-level review of a declared priority batch. The Bible is the authoritative foundation; supporting historical and archaeological sources are limited to the claims and access scope recorded here. No independent specialist signoff is claimed.",
   "scope": {
     "issues": 18,
     "places": 15,
     "trailReadings": 4,
-    "connections": 48
+    "connections": 68
   },
   "deferred": [
     "All six previously unlinked named-place assessments now include external research. Bibliographic gaps in this declared batch are addressed at the stated scope; exact identifications, comparative excavation review, textual variants and abstract-only access remain unresolved. Regional placeholders were not upgraded.",
-    "The other 67 explained pairs retain their existing review labels and have no source-level assessment in these batches. Sixteen assessed pairs now have named scholarly commentary or limited publisher-summary support; other assessed pairs still rely on passage comparisons. Fuller literature, textual and independent specialist review remain open.",
+    "The other 47 explained pairs retain their existing review labels and have no source-level assessment in these batches. Thirty-six assessed pairs now have named scholarly commentary or limited publisher-summary support; other assessed pairs still rely on passage comparisons. Fuller literature, textual and independent specialist review remain open.",
     "Other person-trail access gaps, full excavation reports, manuscript apparatuses, wider source coverage and independent specialist review remain open.",
     "The full OpenBible corpus remains unclassified."
   ],
@@ -1490,6 +1490,436 @@
       "url": "https://bible.usccb.org/bible/luke/6",
       "checkedOn": "2026-10-28",
       "access": "Selected narrative passage checked in the publisher chapter view. No original-language collation, full manuscript apparatus or independent historical audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "b3-revelation": {
+      "title": "Revelation - The Gospel Coalition Bible Commentary",
+      "author": "Brian J. Tabb",
+      "publisher": "The Gospel Coalition (evangelical Christian commentary)",
+      "kind": "scholarly-commentary",
+      "url": "https://www.thegospelcoalition.org/commentary/revelation/",
+      "checkedOn": "2026-10-29",
+      "access": "Named author and selected readable discussion checked: The New Jerusalem and the New Creation, especially 21:1, 21:3-4 and 22:1-2. Confessional interpretation; not a full literature review or independent specialist signoff.",
+      "rights": "Linked only; no publication text retained."
+    },
+    "b3-colossians": {
+      "title": "Colossians - The Gospel Coalition Bible Commentary",
+      "author": "Alistair I. Wilson",
+      "publisher": "The Gospel Coalition (evangelical Christian commentary)",
+      "kind": "scholarly-commentary",
+      "url": "https://www.thegospelcoalition.org/commentary/colossians/",
+      "checkedOn": "2026-10-29",
+      "access": "Named author and selected readable discussion checked: Creative Presentation of the Son as Head over Creation and the Church (1:15-20), especially the Genesis 1:26-27 and John 1:3 comparisons. Confessional interpretation; not a full literature review or independent specialist signoff.",
+      "rights": "Linked only; no publication text retained."
+    },
+    "b3-john10": {
+      "title": "Commentary on John 10:11-18 (2015)",
+      "author": "Meda Stamper",
+      "publisher": "Working Preacher, Luther Seminary (Christian lectionary commentary)",
+      "kind": "scholarly-commentary",
+      "url": "https://www.workingpreacher.org/commentaries/revised-common-lectionary/fourth-sunday-of-easter-2/commentary-on-john-1011-18-3",
+      "checkedOn": "2026-10-29",
+      "access": "Named author and selected readable discussion checked: Discussion of John 9 context, Ezekiel 34, Psalm 23 and the shepherd laying down his life. Confessional interpretation; not a full literature review or independent specialist signoff.",
+      "rights": "Linked only; no publication text retained."
+    },
+    "b3-genesis12": {
+      "title": "Commentary on Genesis 12:1-4a (2020)",
+      "author": "Terence E. Fretheim",
+      "publisher": "Working Preacher, Luther Seminary (Christian lectionary commentary)",
+      "kind": "scholarly-commentary",
+      "url": "https://www.workingpreacher.org/commentaries/revised-common-lectionary/second-sunday-in-lent/commentary-on-genesis-121-4a-5",
+      "checkedOn": "2026-10-29",
+      "access": "Named author and selected readable discussion checked: Discussion of the promise to Abram and its purpose beyond his family. Confessional interpretation; not a full literature review or independent specialist signoff.",
+      "rights": "Linked only; no publication text retained."
+    },
+    "b3-ezekiel34": {
+      "title": "Commentary on Ezekiel 34:11-16, 20-24 (2014)",
+      "author": "Margaret Odell",
+      "publisher": "Working Preacher, Luther Seminary (Christian lectionary commentary)",
+      "kind": "scholarly-commentary",
+      "url": "https://www.workingpreacher.org/commentaries/revised-common-lectionary/christ-the-king/commentary-on-ezekiel-3411-16-20-24-6",
+      "checkedOn": "2026-10-29",
+      "access": "Named author and selected readable discussion checked: Psalm 23 comparison and discussion of care, justice, scattered Judah and abusive leadership. Confessional interpretation; not a full literature review or independent specialist signoff.",
+      "rights": "Linked only; no publication text retained."
+    },
+    "b3-philippians4": {
+      "title": "Commentary on Philippians 4:1-9 (2023)",
+      "author": "Jane Lancaster Patterson",
+      "publisher": "Working Preacher, Luther Seminary (Christian lectionary commentary)",
+      "kind": "scholarly-commentary",
+      "url": "https://www.workingpreacher.org/commentaries/revised-common-lectionary/ordinary-28/commentary-on-philippians-41-9-6",
+      "checkedOn": "2026-10-29",
+      "access": "Named author and selected readable discussion checked: Opening contextual warning and section 4:4-9, Practicing our faith, as the Lord is near. Confessional interpretation; not a full literature review or independent specialist signoff.",
+      "rights": "Linked only; no publication text retained."
+    },
+    "b3-ezekiel36": {
+      "title": "Commentary on Ezekiel 36:24-28 (2025)",
+      "author": "Safwat Marzouk",
+      "publisher": "Working Preacher, Luther Seminary (Christian lectionary commentary)",
+      "kind": "scholarly-commentary",
+      "url": "https://www.workingpreacher.org/commentaries/revised-common-lectionary/vigil-of-easter-2/commentary-on-ezekiel-3624-28-3",
+      "checkedOn": "2026-10-29",
+      "access": "Named author and selected readable discussion checked: Discussion of restoration, divine initiative, heart and spirit, including the Psalm 51:10 comparison. Confessional interpretation; not a full literature review or independent specialist signoff.",
+      "rights": "Linked only; no publication text retained."
+    },
+    "b3-isaiah9": {
+      "title": "Commentary on Isaiah 9:2-7 (2011)",
+      "author": "Patricia Tull",
+      "publisher": "Working Preacher, Luther Seminary (Christian lectionary commentary)",
+      "kind": "scholarly-commentary",
+      "url": "https://www.workingpreacher.org/commentaries/revised-common-lectionary/christmas-eve-nativity-of-our-lord/commentary-on-isaiah-92-7-2",
+      "checkedOn": "2026-10-29",
+      "access": "Named author and selected readable discussion checked: Discussion of royal names, original royal setting, later Christian reception and themes alongside Luke. Confessional interpretation; not a full literature review or independent specialist signoff.",
+      "rights": "Linked only; no publication text retained."
+    },
+    "b3-isaiah40": {
+      "title": "Commentary on Isaiah 40:21-31 (2021)",
+      "author": "Kristin J. Wendland",
+      "publisher": "Working Preacher, Luther Seminary (Christian lectionary commentary)",
+      "kind": "scholarly-commentary",
+      "url": "https://www.workingpreacher.org/commentaries/revised-common-lectionary/fifth-sunday-after-epiphany-2/commentary-on-isaiah-4021-31-5",
+      "checkedOn": "2026-10-29",
+      "access": "Named author and selected readable discussion checked: Opening exile context and section The LORD recreates and strengthens. Confessional interpretation; not a full literature review or independent specialist signoff.",
+      "rights": "Linked only; no publication text retained."
+    },
+    "b3-matthew5": {
+      "title": "Commentary on Matthew 5:13-20 (2026)",
+      "author": "Warren Carter",
+      "publisher": "Working Preacher, Luther Seminary (Christian lectionary commentary)",
+      "kind": "scholarly-commentary",
+      "url": "https://www.workingpreacher.org/commentaries/revised-common-lectionary/fifth-sunday-after-epiphany/commentary-on-matthew-513-20-6",
+      "checkedOn": "2026-10-29",
+      "access": "Named author and selected readable discussion checked: Discussion of the four declarations in Matthew 5:17-20 and Jesus as interpreter of Scripture. Confessional interpretation; not a full literature review or independent specialist signoff.",
+      "rights": "Linked only; no publication text retained."
+    },
+    "b3-acts1": {
+      "title": "Commentary on Acts 1:1-11 (2021)",
+      "author": "Gilberto A. Ruiz",
+      "publisher": "Working Preacher, Luther Seminary (Christian lectionary commentary)",
+      "kind": "scholarly-commentary",
+      "url": "https://www.workingpreacher.org/commentaries/revised-common-lectionary/ascension-of-our-lord/commentary-on-acts-11-11",
+      "checkedOn": "2026-10-29",
+      "access": "Named author and selected readable discussion checked: Discussion of Acts 1:6-8, the Spirit, witness and the question about restoring Israel. Confessional interpretation; not a full literature review or independent specialist signoff.",
+      "rights": "Linked only; no publication text retained."
+    },
+    "b3-luke15": {
+      "title": "Commentary on Luke 15:1-10 (2010)",
+      "author": "Greg Carey",
+      "publisher": "Working Preacher, Luther Seminary (Christian lectionary commentary)",
+      "kind": "scholarly-commentary",
+      "url": "https://www.workingpreacher.org/commentaries/revised-common-lectionary/ordinary-24-3/commentary-on-luke-151-10",
+      "checkedOn": "2026-10-29",
+      "access": "Named author and selected readable discussion checked: Opening setting and lost-sheep discussion; other historical and source-critical proposals were not independently checked. Confessional interpretation; not a full literature review or independent specialist signoff.",
+      "rights": "Linked only; no publication text retained."
+    },
+    "b3-philippians2": {
+      "title": "Commentary on Philippians 2:5-11 (2025)",
+      "author": "Frank L. Crouch",
+      "publisher": "Working Preacher, Luther Seminary (Christian lectionary commentary)",
+      "kind": "scholarly-commentary",
+      "url": "https://www.workingpreacher.org/commentaries/revised-common-lectionary/sunday-of-the-passion-palm-sunday-3/commentary-on-philippians-25-11-20",
+      "checkedOn": "2026-10-29",
+      "access": "Named author and selected readable discussion checked: Discussion of the community setting, humility, obedience and limits of treating the passage only as a doctrinal formula. Confessional interpretation; not a full literature review or independent specialist signoff.",
+      "rights": "Linked only; no publication text retained."
+    },
+    "b3-romans5": {
+      "title": "Commentary on Romans 5:1-8 (2026)",
+      "author": "Stephen Chester",
+      "publisher": "Working Preacher, Luther Seminary (Christian lectionary commentary)",
+      "kind": "scholarly-commentary",
+      "url": "https://www.workingpreacher.org/commentaries/revised-common-lectionary/ordinary-11/commentary-on-romans-51-8-5",
+      "checkedOn": "2026-10-29",
+      "access": "Named author and selected readable discussion checked: Opening discussion of Romans 5:6-8 and undeserved divine love; cited books were not independently read. Confessional interpretation; not a full literature review or independent specialist signoff.",
+      "rights": "Linked only; no publication text retained."
+    },
+    "b3-romans8": {
+      "title": "Commentary on Romans 8:12-25 (2026)",
+      "author": "Erin Heim",
+      "publisher": "Working Preacher, Luther Seminary (Christian lectionary commentary)",
+      "kind": "scholarly-commentary",
+      "url": "https://www.workingpreacher.org/commentaries/revised-common-lectionary/ordinary-16/commentary-on-romans-812-25-7",
+      "checkedOn": "2026-10-29",
+      "access": "Named author and selected readable discussion checked: Groaning for redemption section, especially Romans 8:18-25 and patient expectation. Confessional interpretation; not a full literature review or independent specialist signoff.",
+      "rights": "Linked only; no publication text retained."
+    },
+    "b3-text-genesis-1": {
+      "title": "Genesis 1 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/Genesis%2B1/",
+      "checkedOn": "2026-10-29",
+      "access": "Selected range checked in the publisher chapter view, which also contains neighbouring chapters. English verse numbering used; no manuscript or translation-equivalence audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "b3-text-genesis-2": {
+      "title": "Genesis 2 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/genesis/2",
+      "checkedOn": "2026-10-29",
+      "access": "Selected range checked in the publisher chapter view. No manuscript or translation-equivalence audit; publisher notes are not a substitute for the passage.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "b3-text-genesis-12": {
+      "title": "Genesis 12 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/genesis/12",
+      "checkedOn": "2026-10-29",
+      "access": "Selected range checked in the publisher chapter view. No manuscript or translation-equivalence audit; publisher notes are not a substitute for the passage.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "b3-text-psalm-23": {
+      "title": "Psalm 23 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/Psalm%2B23/",
+      "checkedOn": "2026-10-29",
+      "access": "Selected range checked in the publisher chapter view, which also contains neighbouring chapters. English verse numbering used; no manuscript or translation-equivalence audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "b3-text-psalm-46": {
+      "title": "Psalm 46 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/Psalm%2B46/",
+      "checkedOn": "2026-10-29",
+      "access": "Selected range checked in the publisher chapter view, which also contains neighbouring chapters. English verse numbering used; no manuscript or translation-equivalence audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "b3-text-psalm-51": {
+      "title": "Psalm 51 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/Psalm%2B51/",
+      "checkedOn": "2026-10-29",
+      "access": "Selected range checked in the publisher chapter view, which also contains neighbouring chapters. English verse numbering used; no manuscript or translation-equivalence audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "b3-text-ezekiel-34": {
+      "title": "Ezekiel 34 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/ezekiel/34",
+      "checkedOn": "2026-10-29",
+      "access": "Selected range checked in the publisher chapter view. No manuscript or translation-equivalence audit; publisher notes are not a substitute for the passage.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "b3-text-ezekiel-36": {
+      "title": "Ezekiel 36 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/ezekiel/36",
+      "checkedOn": "2026-10-29",
+      "access": "Selected range checked in the publisher chapter view. No manuscript or translation-equivalence audit; publisher notes are not a substitute for the passage.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "b3-text-isaiah-9": {
+      "title": "Isaiah 9 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/Isaiah%2B9/",
+      "checkedOn": "2026-10-29",
+      "access": "Selected range checked in the publisher chapter view, which also contains neighbouring chapters. English verse numbering used; no manuscript or translation-equivalence audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "b3-text-isaiah-25": {
+      "title": "Isaiah 25 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/isaiah/25",
+      "checkedOn": "2026-10-29",
+      "access": "Selected range checked in the publisher chapter view. No manuscript or translation-equivalence audit; publisher notes are not a substitute for the passage.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "b3-text-isaiah-40": {
+      "title": "Isaiah 40 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/Isaiah%2B40/",
+      "checkedOn": "2026-10-29",
+      "access": "Selected range checked in the publisher chapter view, which also contains neighbouring chapters. English verse numbering used; no manuscript or translation-equivalence audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "b3-text-john-1": {
+      "title": "John 1 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/john/1",
+      "checkedOn": "2026-10-29",
+      "access": "Selected range checked in the publisher chapter view. No manuscript or translation-equivalence audit; publisher notes are not a substitute for the passage.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "b3-text-john-3": {
+      "title": "John 3 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/john/3",
+      "checkedOn": "2026-10-29",
+      "access": "Selected range checked in the publisher chapter view. No manuscript or translation-equivalence audit; publisher notes are not a substitute for the passage.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "b3-text-john-10": {
+      "title": "John 10 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/john/10",
+      "checkedOn": "2026-10-29",
+      "access": "Selected range checked in the publisher chapter view. No manuscript or translation-equivalence audit; publisher notes are not a substitute for the passage.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "b3-text-luke-2": {
+      "title": "Luke 2 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/luke/2",
+      "checkedOn": "2026-10-29",
+      "access": "Selected range checked in the publisher chapter view. No manuscript or translation-equivalence audit; publisher notes are not a substitute for the passage.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "b3-text-luke-15": {
+      "title": "Luke 15 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/Luke%2B15/",
+      "checkedOn": "2026-10-29",
+      "access": "Selected range checked in the publisher chapter view, which also contains neighbouring chapters. English verse numbering used; no manuscript or translation-equivalence audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "b3-text-matthew-5": {
+      "title": "Matthew 5 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/matthew/5",
+      "checkedOn": "2026-10-29",
+      "access": "Selected range checked in the publisher chapter view. No manuscript or translation-equivalence audit; publisher notes are not a substitute for the passage.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "b3-text-matthew-6": {
+      "title": "Matthew 6 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/matthew/6",
+      "checkedOn": "2026-10-29",
+      "access": "Selected range checked in the publisher chapter view. No manuscript or translation-equivalence audit; publisher notes are not a substitute for the passage.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "b3-text-matthew-28": {
+      "title": "Matthew 28 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/matthew/28",
+      "checkedOn": "2026-10-29",
+      "access": "Selected range checked in the publisher chapter view. No manuscript or translation-equivalence audit; publisher notes are not a substitute for the passage.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "b3-text-acts-1": {
+      "title": "Acts 1 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/acts/1",
+      "checkedOn": "2026-10-29",
+      "access": "Selected range checked in the publisher chapter view. No manuscript or translation-equivalence audit; publisher notes are not a substitute for the passage.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "b3-text-romans-3": {
+      "title": "Romans 3 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/romans/3",
+      "checkedOn": "2026-10-29",
+      "access": "Selected range checked in the publisher chapter view. No manuscript or translation-equivalence audit; publisher notes are not a substitute for the passage.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "b3-text-romans-5": {
+      "title": "Romans 5 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/Romans%2B5/",
+      "checkedOn": "2026-10-29",
+      "access": "Selected range checked in the publisher chapter view, which also contains neighbouring chapters. English verse numbering used; no manuscript or translation-equivalence audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "b3-text-romans-8": {
+      "title": "Romans 8 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/Romans%2B8/",
+      "checkedOn": "2026-10-29",
+      "access": "Selected range checked in the publisher chapter view, which also contains neighbouring chapters. English verse numbering used; no manuscript or translation-equivalence audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "b3-text-philippians-2": {
+      "title": "Philippians 2 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/philippians/2",
+      "checkedOn": "2026-10-29",
+      "access": "Selected range checked in the publisher chapter view. No manuscript or translation-equivalence audit; publisher notes are not a substitute for the passage.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "b3-text-philippians-4": {
+      "title": "Philippians 4 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/philippians/4",
+      "checkedOn": "2026-10-29",
+      "access": "Selected range checked in the publisher chapter view. No manuscript or translation-equivalence audit; publisher notes are not a substitute for the passage.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "b3-text-colossians-1": {
+      "title": "Colossians 1 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/colossians/1",
+      "checkedOn": "2026-10-29",
+      "access": "Selected range checked in the publisher chapter view. No manuscript or translation-equivalence audit; publisher notes are not a substitute for the passage.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "b3-text-revelation-21": {
+      "title": "Revelation 21 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/revelation/21",
+      "checkedOn": "2026-10-29",
+      "access": "Selected range checked in the publisher chapter view. No manuscript or translation-equivalence audit; publisher notes are not a substitute for the passage.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "b3-text-revelation-22": {
+      "title": "Revelation 22 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/revelation/22",
+      "checkedOn": "2026-10-29",
+      "access": "Selected range checked in the publisher chapter view. No manuscript or translation-equivalence audit; publisher notes are not a substitute for the passage.",
       "rights": "Linked only; no translation text retained."
     }
   },
@@ -3730,6 +4160,646 @@
       ],
       "batch": "connections-20-02",
       "anchor": "Matthew 5:3"
+    },
+    {
+      "kind": "connection",
+      "target": "ce015",
+      "title": "Genesis 1:1-5 and Revelation 21:1-5",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-29",
+      "note": "Genesis opens with God creating heaven and earth; Revelation envisions a renewed world and God dwelling with humanity. Brian J. Tabb points to Isaiah 65:17 as Revelation 21:1's more immediate scriptural background.",
+      "limitation": "Keep this broad creation theme distinct from a direct quotation of Genesis. The comparison does not settle how creation is renewed or supply a scientific chronology. AI-assisted selected-passage and named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "passages": [
+        "Genesis 1:1-5",
+        "Revelation 21:1-5"
+      ],
+      "citations": [
+        {
+          "sourceId": "b3-text-genesis-1",
+          "locator": "Genesis 1:1-5",
+          "supports": "Selected passage wording and immediate setting used in this editorial comparison."
+        },
+        {
+          "sourceId": "b3-text-revelation-21",
+          "locator": "Revelation 21:1-5",
+          "supports": "Selected passage wording and immediate setting used in this editorial comparison."
+        },
+        {
+          "sourceId": "b3-revelation",
+          "locator": "21:1-4",
+          "supports": "Tabb identifies Isaiah 65:17 as the closer wording behind Revelation 21:1."
+        }
+      ],
+      "batch": "connections-20-03",
+      "anchor": "Genesis 1:1"
+    },
+    {
+      "kind": "connection",
+      "target": "ce016",
+      "title": "Psalm 23:1-6 and John 10:11-18",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-29",
+      "note": "Psalm 23 pictures the Lord guiding and sustaining the speaker; John presents Jesus as the shepherd who gives his life for the flock. Meda Stamper places John's imagery within Israel's scriptural shepherd traditions.",
+      "limitation": "This is a thematic comparison, not a verbatim quotation. Preserve the psalm's own voice and John's setting after the conflict in John 9; the shared metaphor does not make the passages interchangeable. AI-assisted selected-passage and named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "passages": [
+        "Psalm 23:1-6",
+        "John 10:11-18"
+      ],
+      "citations": [
+        {
+          "sourceId": "b3-text-psalm-23",
+          "locator": "Psalm 23:1-6",
+          "supports": "Selected passage wording and immediate setting used in this editorial comparison."
+        },
+        {
+          "sourceId": "b3-text-john-10",
+          "locator": "John 10:11-18",
+          "supports": "Selected passage wording and immediate setting used in this editorial comparison."
+        },
+        {
+          "sourceId": "b3-john10",
+          "locator": "Paragraphs on Ezekiel 34, Psalm 23 and John 10:11-18",
+          "supports": "Stamper places the shepherd discourse beside Psalm 23 and Ezekiel 34."
+        }
+      ],
+      "batch": "connections-20-03",
+      "anchor": "Psalm 23:1"
+    },
+    {
+      "kind": "connection",
+      "target": "ce025",
+      "title": "Genesis 2:8-17 and Revelation 22:1-5",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-29",
+      "note": "Genesis places the tree of life in Eden; Revelation places life-giving tree imagery beside the river from the throne. Brian J. Tabb also draws attention to Ezekiel 47 as background to the final vision.",
+      "limitation": "Keep the link thematic. Shared imagery does not identify the river with a modern waterway, reconstruct Eden or establish that Revelation merely repeats the garden scene. AI-assisted selected-passage and named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "passages": [
+        "Genesis 2:8-17",
+        "Revelation 22:1-5"
+      ],
+      "citations": [
+        {
+          "sourceId": "b3-text-genesis-2",
+          "locator": "Genesis 2:8-17",
+          "supports": "Selected passage wording and immediate setting used in this editorial comparison."
+        },
+        {
+          "sourceId": "b3-text-revelation-22",
+          "locator": "Revelation 22:1-5",
+          "supports": "Selected passage wording and immediate setting used in this editorial comparison."
+        },
+        {
+          "sourceId": "b3-revelation",
+          "locator": "22:1-2",
+          "supports": "Tabb relates the tree of life to Genesis and the river/tree imagery to Ezekiel 47."
+        }
+      ],
+      "batch": "connections-20-03",
+      "anchor": "Genesis 2:9"
+    },
+    {
+      "kind": "connection",
+      "target": "ce026",
+      "title": "Genesis 1:26-28 and Colossians 1:15-20",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-29",
+      "note": "Genesis describes humanity made in God's image; Colossians identifies the Son as God's image and relates all creation to him. Alistair I. Wilson discusses the Genesis background while distinguishing the Son's role.",
+      "limitation": "This is an interpretive thematic link, not an explicit quotation. Do not collapse humanity's calling into the Son's identity; the meaning of firstborn and wider Christological debates need fuller treatment. AI-assisted selected-passage and named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "passages": [
+        "Genesis 1:26-28",
+        "Colossians 1:15-20"
+      ],
+      "citations": [
+        {
+          "sourceId": "b3-text-genesis-1",
+          "locator": "Genesis 1:26-28",
+          "supports": "Selected passage wording and immediate setting used in this editorial comparison."
+        },
+        {
+          "sourceId": "b3-text-colossians-1",
+          "locator": "Colossians 1:15-20",
+          "supports": "Selected passage wording and immediate setting used in this editorial comparison."
+        },
+        {
+          "sourceId": "b3-colossians",
+          "locator": "1:15-17, discussion of image and firstborn",
+          "supports": "Wilson explicitly compares Colossians 1:15 with Genesis 1:26-27."
+        }
+      ],
+      "batch": "connections-20-03",
+      "anchor": "Genesis 1:26"
+    },
+    {
+      "kind": "connection",
+      "target": "ce029",
+      "title": "Genesis 12:1-3 and Matthew 28:16-20",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-29",
+      "note": "The promise to Abram reaches beyond his family; Matthew commissions disciples among all nations. Terence E. Fretheim emphasises the wider reach of Genesis's blessing. Connecting that promise to Matthew is this site's Christian thematic comparison.",
+      "limitation": "Matthew does not quote Genesis 12:3 here. The pairing does not prove a deliberate literary allusion or erase the promise's particular relationship to Abram and Israel. AI-assisted selected-passage and named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "passages": [
+        "Genesis 12:1-3",
+        "Matthew 28:16-20"
+      ],
+      "citations": [
+        {
+          "sourceId": "b3-text-genesis-12",
+          "locator": "Genesis 12:1-3",
+          "supports": "Selected passage wording and immediate setting used in this editorial comparison."
+        },
+        {
+          "sourceId": "b3-text-matthew-28",
+          "locator": "Matthew 28:16-20",
+          "supports": "Selected passage wording and immediate setting used in this editorial comparison."
+        },
+        {
+          "sourceId": "b3-genesis12",
+          "locator": "Discussion of Genesis 12:1-3 and blessing beyond Abram",
+          "supports": "Fretheim emphasises the wider purpose of the promise to Abram."
+        }
+      ],
+      "batch": "connections-20-03",
+      "anchor": "Genesis 12:3"
+    },
+    {
+      "kind": "connection",
+      "target": "ce033",
+      "title": "Psalm 23:1-6 and Ezekiel 34:11-16",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-29",
+      "note": "The psalm's shepherd leads and restores; Ezekiel promises God's search for a scattered flock. Margaret Odell compares Psalm 23 while stressing Ezekiel's response to abusive leadership and the demands of justice.",
+      "limitation": "Shared pastoral imagery does not prove direct borrowing. Ezekiel addresses Israel's scattering and restoration; a comforting individual reading must not remove that communal and political setting. AI-assisted selected-passage and named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "passages": [
+        "Psalm 23:1-6",
+        "Ezekiel 34:11-16"
+      ],
+      "citations": [
+        {
+          "sourceId": "b3-text-psalm-23",
+          "locator": "Psalm 23:1-6",
+          "supports": "Selected passage wording and immediate setting used in this editorial comparison."
+        },
+        {
+          "sourceId": "b3-text-ezekiel-34",
+          "locator": "Ezekiel 34:11-16",
+          "supports": "Selected passage wording and immediate setting used in this editorial comparison."
+        },
+        {
+          "sourceId": "b3-ezekiel34",
+          "locator": "Opening Psalm 23 comparison and care/justice discussion",
+          "supports": "Odell links the shepherd imagery with both care and justice."
+        }
+      ],
+      "batch": "connections-20-03",
+      "anchor": "Psalm 23:1"
+    },
+    {
+      "kind": "connection",
+      "target": "ce035",
+      "title": "Psalm 46:1-11 and Philippians 4:4-9",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-29",
+      "note": "Psalm 46 confesses God's presence amid upheaval; Philippians urges a pressured community toward prayer, thanksgiving and peace. Jane Lancaster Patterson warns against reading Paul's words as a shallow assurance detached from their setting.",
+      "limitation": "This is an editorial theme, not a quotation or evidence of literary dependence. Neither passage promises a life without distress or supplies a timetable for the end of a particular crisis. AI-assisted selected-passage and named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "passages": [
+        "Psalm 46:1-11",
+        "Philippians 4:4-9"
+      ],
+      "citations": [
+        {
+          "sourceId": "b3-text-psalm-46",
+          "locator": "Psalm 46:1-11",
+          "supports": "Selected passage wording and immediate setting used in this editorial comparison."
+        },
+        {
+          "sourceId": "b3-text-philippians-4",
+          "locator": "Philippians 4:4-9",
+          "supports": "Selected passage wording and immediate setting used in this editorial comparison."
+        },
+        {
+          "sourceId": "b3-philippians4",
+          "locator": "Opening contextual warning and 4:4-9 discussion",
+          "supports": "Patterson cautions against detaching prayer and peace from a community under pressure."
+        }
+      ],
+      "batch": "connections-20-03",
+      "anchor": "Psalm 46:1"
+    },
+    {
+      "kind": "connection",
+      "target": "ce036",
+      "title": "Psalm 51:10-12 and Ezekiel 36:24-28",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-29",
+      "note": "The psalm asks God for inner renewal; Ezekiel promises a new heart and Spirit-enabled obedience to a restored people. Safwat Marzouk explicitly compares Psalm 51:10 within his discussion of Ezekiel's renewal language.",
+      "limitation": "The prayer and communal promise are distinct literary acts. Do not treat them as identical wording or detach Ezekiel from restoration to the land and covenant obedience. Psalm numbering can differ across editions. AI-assisted selected-passage and named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "passages": [
+        "Psalm 51:10-12",
+        "Ezekiel 36:24-28"
+      ],
+      "citations": [
+        {
+          "sourceId": "b3-text-psalm-51",
+          "locator": "Psalm 51:10-12",
+          "supports": "Selected passage wording and immediate setting used in this editorial comparison."
+        },
+        {
+          "sourceId": "b3-text-ezekiel-36",
+          "locator": "Ezekiel 36:24-28",
+          "supports": "Selected passage wording and immediate setting used in this editorial comparison."
+        },
+        {
+          "sourceId": "b3-ezekiel36",
+          "locator": "New heart/spirit discussion with explicit Psalm 51:10 comparison",
+          "supports": "Marzouk compares Psalm 51:10 while retaining Ezekiel's restoration and covenant setting."
+        }
+      ],
+      "batch": "connections-20-03",
+      "anchor": "Psalm 51:10"
+    },
+    {
+      "kind": "connection",
+      "target": "ce037",
+      "title": "Isaiah 9:2-7 and Luke 2:8-14",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-29",
+      "note": "Isaiah depicts a royal child and a reign of justice and peace; Luke announces Jesus as Saviour, Messiah and Lord. Patricia Tull distinguishes the royal setting of Isaiah from its later Christian reception alongside Luke.",
+      "limitation": "Luke 2 does not explicitly quote Isaiah 9:6. This Christian thematic reading does not settle the original child's identity, the royal titles' syntax or differences between Hebrew and Greek traditions. AI-assisted selected-passage and named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "passages": [
+        "Isaiah 9:2-7",
+        "Luke 2:8-14"
+      ],
+      "citations": [
+        {
+          "sourceId": "b3-text-isaiah-9",
+          "locator": "Isaiah 9:2-7",
+          "supports": "Selected passage wording and immediate setting used in this editorial comparison."
+        },
+        {
+          "sourceId": "b3-text-luke-2",
+          "locator": "Luke 2:8-14",
+          "supports": "Selected passage wording and immediate setting used in this editorial comparison."
+        },
+        {
+          "sourceId": "b3-isaiah9",
+          "locator": "Royal setting, reception history and concluding comparison with Luke",
+          "supports": "Tull distinguishes royal context and later Christian reception from an explicit New Testament citation."
+        }
+      ],
+      "batch": "connections-20-03",
+      "anchor": "Isaiah 9:6"
+    },
+    {
+      "kind": "connection",
+      "target": "ce038",
+      "title": "Isaiah 25:6-9 and Revelation 21:1-5",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-29",
+      "note": "Isaiah joins the ending of death and tears to a feast for the peoples; Revelation repeats these motifs within its new-creation vision. Brian J. Tabb identifies Isaiah 25:8 among the backgrounds to Revelation 21:4.",
+      "limitation": "Retain literary echo as an editorial classification rather than a quotation formula. Read the Zion feast and the New Jerusalem in their own settings; the link supplies no date for the vision. AI-assisted selected-passage and named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "passages": [
+        "Isaiah 25:6-9",
+        "Revelation 21:1-5"
+      ],
+      "citations": [
+        {
+          "sourceId": "b3-text-isaiah-25",
+          "locator": "Isaiah 25:6-9",
+          "supports": "Selected passage wording and immediate setting used in this editorial comparison."
+        },
+        {
+          "sourceId": "b3-text-revelation-21",
+          "locator": "Revelation 21:1-5",
+          "supports": "Selected passage wording and immediate setting used in this editorial comparison."
+        },
+        {
+          "sourceId": "b3-revelation",
+          "locator": "21:3-4",
+          "supports": "Tabb identifies Isaiah 25:8 among the scriptural backgrounds to Revelation 21:4."
+        }
+      ],
+      "batch": "connections-20-03",
+      "anchor": "Isaiah 25:8"
+    },
+    {
+      "kind": "connection",
+      "target": "ce039",
+      "title": "Isaiah 40:27-31 and Psalm 46:1-11",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-29",
+      "note": "Isaiah answers a weary people's complaint with the Creator's sustaining strength; Psalm 46 confesses God as refuge amid upheaval. Kristin J. Wendland locates Isaiah's hope within the challenge of return and rebuilding.",
+      "limitation": "This is a broad analogy of reliance on God, not a quotation or a demonstrated literary relationship. Preserve the different settings and do not turn renewed strength into a promise of effortless circumstances. AI-assisted selected-passage and named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "passages": [
+        "Isaiah 40:27-31",
+        "Psalm 46:1-11"
+      ],
+      "citations": [
+        {
+          "sourceId": "b3-text-isaiah-40",
+          "locator": "Isaiah 40:27-31",
+          "supports": "Selected passage wording and immediate setting used in this editorial comparison."
+        },
+        {
+          "sourceId": "b3-text-psalm-46",
+          "locator": "Psalm 46:1-11",
+          "supports": "Selected passage wording and immediate setting used in this editorial comparison."
+        },
+        {
+          "sourceId": "b3-isaiah40",
+          "locator": "Opening exile context and The LORD recreates and strengthens",
+          "supports": "Wendland reads the renewal of strength in relation to a weary exilic community."
+        }
+      ],
+      "batch": "connections-20-03",
+      "anchor": "Isaiah 40:31"
+    },
+    {
+      "kind": "connection",
+      "target": "ce042",
+      "title": "Ezekiel 34:11-16 and John 10:11-18",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-29",
+      "note": "Ezekiel promises that God will seek and tend the scattered flock; John contrasts Jesus' self-giving care with the hired hand's flight. Meda Stamper identifies Ezekiel 34 as scriptural background to John's shepherd discourse.",
+      "limitation": "Keep the thematic label without claiming a verbatim citation. Ezekiel's restoration of Israel and John's account of Jesus each retain their own claims; neither is independent historical corroboration of the other. AI-assisted selected-passage and named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "passages": [
+        "Ezekiel 34:11-16",
+        "John 10:11-18"
+      ],
+      "citations": [
+        {
+          "sourceId": "b3-text-ezekiel-34",
+          "locator": "Ezekiel 34:11-16",
+          "supports": "Selected passage wording and immediate setting used in this editorial comparison."
+        },
+        {
+          "sourceId": "b3-text-john-10",
+          "locator": "John 10:11-18",
+          "supports": "Selected passage wording and immediate setting used in this editorial comparison."
+        },
+        {
+          "sourceId": "b3-john10",
+          "locator": "Paragraphs on false shepherds, Ezekiel 34 and John 10:11-18",
+          "supports": "Stamper explicitly identifies Ezekiel 34 as background to John's shepherd imagery."
+        }
+      ],
+      "batch": "connections-20-03",
+      "anchor": "Ezekiel 34:11"
+    },
+    {
+      "kind": "connection",
+      "target": "ce045",
+      "title": "Matthew 5:17-20 and Romans 3:27-31",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-29",
+      "note": "Matthew's Jesus rejects abolishing the Law and Prophets; Romans rejects the claim that faith nullifies the Law. Warren Carter reads Matthew's teaching as a claim about scriptural continuity and Jesus' interpretive authority.",
+      "limitation": "The link does not make the two arguments identical or settle debates over Torah observance, justification or Jewish-Christian relations. Read Romans 3:21-31 and the wider Sermon on the Mount; this is no explicit cross-citation. AI-assisted selected-passage and named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "passages": [
+        "Matthew 5:17-20",
+        "Romans 3:27-31"
+      ],
+      "citations": [
+        {
+          "sourceId": "b3-text-matthew-5",
+          "locator": "Matthew 5:17-20",
+          "supports": "Selected passage wording and immediate setting used in this editorial comparison."
+        },
+        {
+          "sourceId": "b3-text-romans-3",
+          "locator": "Romans 3:27-31",
+          "supports": "Selected passage wording and immediate setting used in this editorial comparison."
+        },
+        {
+          "sourceId": "b3-matthew5",
+          "locator": "Four declarations in Matthew 5:17-20",
+          "supports": "Carter reads Matthew 5:17-20 as continuity with Scripture and Jesus' interpretive authority."
+        }
+      ],
+      "batch": "connections-20-03",
+      "anchor": "Matthew 5:17"
+    },
+    {
+      "kind": "connection",
+      "target": "ce046",
+      "title": "Matthew 6:25-34 and Philippians 4:4-9",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-29",
+      "note": "Matthew directs disciples toward the Father's care and God's kingdom amid everyday needs; Philippians connects prayer and thanksgiving with peace. Jane Lancaster Patterson stresses the community pressures surrounding Paul's exhortation.",
+      "limitation": "This is a thematic comparison, not an identified quotation. The passages have different audiences and arguments; they must not be used to blame distressed readers or promise exemption from hardship. AI-assisted selected-passage and named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "passages": [
+        "Matthew 6:25-34",
+        "Philippians 4:4-9"
+      ],
+      "citations": [
+        {
+          "sourceId": "b3-text-matthew-6",
+          "locator": "Matthew 6:25-34",
+          "supports": "Selected passage wording and immediate setting used in this editorial comparison."
+        },
+        {
+          "sourceId": "b3-text-philippians-4",
+          "locator": "Philippians 4:4-9",
+          "supports": "Selected passage wording and immediate setting used in this editorial comparison."
+        },
+        {
+          "sourceId": "b3-philippians4",
+          "locator": "Opening contextual warning and 4:4-9 discussion",
+          "supports": "Patterson stresses prayer within shared pressure, rather than shallow assurances."
+        }
+      ],
+      "batch": "connections-20-03",
+      "anchor": "Matthew 6:25"
+    },
+    {
+      "kind": "connection",
+      "target": "ce047",
+      "title": "Matthew 28:16-20 and Acts 1:6-11",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-29",
+      "note": "Matthew commissions disciple-making among all nations; Acts promises the Spirit's power for witness from Jerusalem outward. Gilberto A. Ruiz highlights the widening horizon of Acts 1:8 alongside the disciples' question about Israel's restoration.",
+      "limitation": "The commissions have distinct settings and wording: Galilee in Matthew and the Jerusalem/ascension sequence in Acts. Do not construct one speech or a single timetable from the pair, or turn mission into permission for domination. AI-assisted selected-passage and named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "passages": [
+        "Matthew 28:16-20",
+        "Acts 1:6-11"
+      ],
+      "citations": [
+        {
+          "sourceId": "b3-text-matthew-28",
+          "locator": "Matthew 28:16-20",
+          "supports": "Selected passage wording and immediate setting used in this editorial comparison."
+        },
+        {
+          "sourceId": "b3-text-acts-1",
+          "locator": "Acts 1:6-11",
+          "supports": "Selected passage wording and immediate setting used in this editorial comparison."
+        },
+        {
+          "sourceId": "b3-acts1",
+          "locator": "Acts 1:6-8 discussion of the Spirit and witness beyond familiar boundaries",
+          "supports": "Ruiz emphasises Spirit-empowered witness and the unanswered question of timing."
+        }
+      ],
+      "batch": "connections-20-03",
+      "anchor": "Matthew 28:19"
+    },
+    {
+      "kind": "connection",
+      "target": "ce048",
+      "title": "Luke 15:1-7 and John 10:11-18",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-29",
+      "note": "Luke's shepherd searches for a lost sheep in a dispute over Jesus welcoming sinners; John's shepherd gives his life for the flock. Greg Carey stresses the table-fellowship setting that frames Luke's parable.",
+      "limitation": "These are different teachings and literary forms, linked by a pastoral theme. Do not label them the same event or a direct quotation; seeking a lost sheep and laying down a life are distinct emphases. AI-assisted selected-passage and named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "passages": [
+        "Luke 15:1-7",
+        "John 10:11-18"
+      ],
+      "citations": [
+        {
+          "sourceId": "b3-text-luke-15",
+          "locator": "Luke 15:1-7",
+          "supports": "Selected passage wording and immediate setting used in this editorial comparison."
+        },
+        {
+          "sourceId": "b3-text-john-10",
+          "locator": "John 10:11-18",
+          "supports": "Selected passage wording and immediate setting used in this editorial comparison."
+        },
+        {
+          "sourceId": "b3-luke15",
+          "locator": "Opening meal setting and lost-sheep discussion",
+          "supports": "Carey reads the lost-sheep story in the dispute over welcoming sinners."
+        }
+      ],
+      "batch": "connections-20-03",
+      "anchor": "Luke 15:4"
+    },
+    {
+      "kind": "connection",
+      "target": "ce049",
+      "title": "John 1:1-5 and Colossians 1:15-20",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-29",
+      "note": "John relates creation to the Word; Colossians relates all things to the Son. Alistair I. Wilson compares Colossians 1:16 with John 1:3 while noting their different terminology.",
+      "limitation": "The shared creation claim does not establish that one text quotes the other or that they use identical categories. Questions about authorship, composition and the development of Christological language remain outside this short comparison. AI-assisted selected-passage and named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "passages": [
+        "John 1:1-5",
+        "Colossians 1:15-20"
+      ],
+      "citations": [
+        {
+          "sourceId": "b3-text-john-1",
+          "locator": "John 1:1-5",
+          "supports": "Selected passage wording and immediate setting used in this editorial comparison."
+        },
+        {
+          "sourceId": "b3-text-colossians-1",
+          "locator": "Colossians 1:15-20",
+          "supports": "Selected passage wording and immediate setting used in this editorial comparison."
+        },
+        {
+          "sourceId": "b3-colossians",
+          "locator": "1:15-17, especially the comparison with John 1:3",
+          "supports": "Wilson compares the creation-agency language while noting different terminology."
+        }
+      ],
+      "batch": "connections-20-03",
+      "anchor": "John 1:1"
+    },
+    {
+      "kind": "connection",
+      "target": "ce050",
+      "title": "John 1:14-18 and Philippians 2:5-11",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-29",
+      "note": "John describes the Word's coming in flesh; Philippians presents Christ's taking a servant's role, humility and obedience. Frank L. Crouch emphasises the communal ethical purpose of Philippians 2:5-11.",
+      "limitation": "This is a Christian thematic comparison, not a quotation or a complete account of incarnation. It does not settle debates about Christ's self-emptying; preserve Philippians' appeal to humility and John's witness to revelation. AI-assisted selected-passage and named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "passages": [
+        "John 1:14-18",
+        "Philippians 2:5-11"
+      ],
+      "citations": [
+        {
+          "sourceId": "b3-text-john-1",
+          "locator": "John 1:14-18",
+          "supports": "Selected passage wording and immediate setting used in this editorial comparison."
+        },
+        {
+          "sourceId": "b3-text-philippians-2",
+          "locator": "Philippians 2:5-11",
+          "supports": "Selected passage wording and immediate setting used in this editorial comparison."
+        },
+        {
+          "sourceId": "b3-philippians2",
+          "locator": "Community setting and humility/obedience discussion",
+          "supports": "Crouch emphasises the passage's call to communal humility and faithful action."
+        }
+      ],
+      "batch": "connections-20-03",
+      "anchor": "John 1:14"
+    },
+    {
+      "kind": "connection",
+      "target": "ce051",
+      "title": "John 3:14-21 and Romans 5:6-11",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-29",
+      "note": "John connects God's love with the giving of the Son and life through belief; Romans presents Christ's death for sinners as God's demonstration of love. Stephen Chester stresses the undeserved character of that love in Romans 5.",
+      "limitation": "A shared theme does not make the passages interchangeable or settle every question about atonement and salvation. Read John's belief, judgment and light language alongside Romans' reconciliation argument; no direct quotation is claimed. AI-assisted selected-passage and named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "passages": [
+        "John 3:14-21",
+        "Romans 5:6-11"
+      ],
+      "citations": [
+        {
+          "sourceId": "b3-text-john-3",
+          "locator": "John 3:14-21",
+          "supports": "Selected passage wording and immediate setting used in this editorial comparison."
+        },
+        {
+          "sourceId": "b3-text-romans-5",
+          "locator": "Romans 5:6-11",
+          "supports": "Selected passage wording and immediate setting used in this editorial comparison."
+        },
+        {
+          "sourceId": "b3-romans5",
+          "locator": "Opening discussion of Romans 5:6-8 and undeserved love",
+          "supports": "Chester presents divine love as preceding human worthiness in Romans 5."
+        }
+      ],
+      "batch": "connections-20-03",
+      "anchor": "John 3:16"
+    },
+    {
+      "kind": "connection",
+      "target": "ce058",
+      "title": "Romans 8:18-25 and Revelation 21:1-5",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-29",
+      "note": "Romans portrays creation awaiting freedom from decay; Revelation envisions a renewed heaven and earth. Erin Heim stresses Romans' solidarity with suffering creation and patient expectation, which qualifies the thematic comparison with Revelation.",
+      "limitation": "Do not identify Paul's metaphor with John's entire vision or derive a fixed end-times sequence. Both contexts sustain hope, but this pairing does not demonstrate literary dependence or resolve how cosmic renewal occurs. AI-assisted selected-passage and named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "passages": [
+        "Romans 8:18-25",
+        "Revelation 21:1-5"
+      ],
+      "citations": [
+        {
+          "sourceId": "b3-text-romans-8",
+          "locator": "Romans 8:18-25",
+          "supports": "Selected passage wording and immediate setting used in this editorial comparison."
+        },
+        {
+          "sourceId": "b3-text-revelation-21",
+          "locator": "Revelation 21:1-5",
+          "supports": "Selected passage wording and immediate setting used in this editorial comparison."
+        },
+        {
+          "sourceId": "b3-romans8",
+          "locator": "Groaning for redemption, especially Romans 8:18-25",
+          "supports": "Heim emphasises creation's suffering and patient expectation of redemption."
+        }
+      ],
+      "batch": "connections-20-03",
+      "anchor": "Romans 8:21"
     }
   ],
   "batches": [
@@ -3808,6 +4878,34 @@
         "ce115"
       ],
       "method": "AI-assisted selected-passage comparison of twenty previously unassessed narrative pairs. Literary parallels remain distinct from independent historical corroboration; order, identity and wording differences are retained. This batch does not claim full secondary-literature or specialist review."
+    },
+    {
+      "id": "connections-20-03",
+      "title": "Twenty creation, shepherd, renewal and mission comparisons",
+      "count": 20,
+      "targets": [
+        "ce015",
+        "ce016",
+        "ce025",
+        "ce026",
+        "ce029",
+        "ce033",
+        "ce035",
+        "ce036",
+        "ce037",
+        "ce038",
+        "ce039",
+        "ce042",
+        "ce045",
+        "ce046",
+        "ce047",
+        "ce048",
+        "ce049",
+        "ce050",
+        "ce051",
+        "ce058"
+      ],
+      "method": "AI-assisted selected-passage comparison with a named readable scholarly commentary for every pair. Commentary supports only the recorded claim and locator, not necessarily the complete cross-passage interpretation. Original contexts and confessional settings remain explicit; no independent specialist signoff."
     }
   ]
 }

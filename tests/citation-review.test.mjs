@@ -4,6 +4,7 @@ import {readFileSync} from 'node:fs';
 import {CITATION_REVIEW,validateCitationReview,citationReviews,appendCitationReview,renderCitationSummary} from '../public/assets/citation-review.js';
 import {CONNECTION_EVIDENCE} from '../public/assets/connection-evidence.js';
 import {personTrail} from '../public/assets/person-trails.js';
+import {validateCanonicalReference} from '../public/assets/reference-integrity.js';
 const read=path=>readFileSync(new URL('../'+path,import.meta.url),'utf8');
 const json=name=>JSON.parse(read('public/data/'+name+'.json'));
 const counts=json('verse-counts'),geography=json('jesus-geography'),audit=json('jesus-audit');
@@ -11,7 +12,7 @@ const targets={issue:new Set(audit.issues.map(x=>x.id)),place:new Set(Object.key
 test('declared batch resolves real targets, canonical passages and scoped claim-level citations',()=>{
  assert.deepEqual(CITATION_REVIEW,json('citation-review'));
  assert.equal(validateCitationReview(CITATION_REVIEW,counts,targets),true);
- assert.equal(CITATION_REVIEW.records.length,85);
+ assert.equal(CITATION_REVIEW.records.length,105);
  assert.equal(CITATION_REVIEW.records.filter(r=>r.kind==='place'&&r.decision==='sources-added').length,15);
  assert.equal(CITATION_REVIEW.records.filter(r=>r.kind==='place'&&r.decision==='warning-retained').length,0);
  for(const r of CITATION_REVIEW.records.filter(r=>r.kind==='connection')){
@@ -47,9 +48,9 @@ test('claim panels and About register show scope, external links and retained wa
  for(const a of all.filter(e=>e.tagName==='a')){assert.match(a.href,/^https:\/\//);assert.equal(a.rel,'noopener noreferrer');}
  root.replaceChildren();appendCitationReview(root,'place','not-indexed');assert.equal(root.children.length,0);
  renderCitationSummary(root);const first=nodes(root).length;renderCitationSummary(root);assert.equal(nodes(root).length,first);
- assert.equal(nodes(root).filter(e=>e.tagName==='article').length,85);
+ assert.equal(nodes(root).filter(e=>e.tagName==='article').length,105);
  assert.ok(nodes(root).some(e=>e.download?.endsWith('.json')));
- assert.ok(nodes(root).some(e=>e.textContent.includes('67')));
+ assert.ok(nodes(root).some(e=>e.textContent.includes('47')));
 });
 test('review register is reachable from About, Gospel, profiles, Atlas and comparison panel',()=>{
  for(const path of ['app.js','jesus-map.js','entity-index.js','atlas-comparison.js'])assert.match(read('public/assets/'+path),/appendCitationReview/);
@@ -104,4 +105,41 @@ test('second narrative batch retains account differences and follow-ups add scop
  for(const mutate of [d=>d.batches[1].count++,d=>d.batches[1].targets[0]='missing',d=>d.batches[1].id=d.batches[0].id,d=>d.records.find(r=>r.supportBatch).supportBatch='missing']){
   const d=structuredClone(CITATION_REVIEW);mutate(d);assert.throws(()=>validateCitationReview(d,counts,targets));
  }
+});
+
+test('third batch ties twenty distinct anchors to complete contexts and scoped named commentary',()=>{
+ const batch=CITATION_REVIEW.batches.find(b=>b.id==='connections-20-03');
+ assert.deepEqual(batch.targets,['ce015','ce016','ce025','ce026','ce029','ce033','ce035','ce036','ce037','ce038','ce039','ce042','ce045','ce046','ce047','ce048','ce049','ce050','ce051','ce058']);
+ assert.equal(batch.count,20);
+ const contains=(range,anchor)=>range.book===anchor.book&&range.startChapter===anchor.startChapter&&range.endChapter===anchor.endChapter&&range.startVerse<=anchor.startVerse&&range.endVerse>=anchor.endVerse;
+ for(const id of batch.targets){
+  const r=citationReviews('connection',id)[0],e=CONNECTION_EVIDENCE.find(e=>e.id===id);
+  assert.equal(r.batch,batch.id);assert.equal(r.reviewedOn,'2026-10-29');assert.equal(r.anchor,e.from);
+  assert.equal(r.note,e.explanation);assert.ok(r.limitation.includes(e.caution));assert.equal(e.context,r.passages[1]);
+  assert.ok(contains(validateCanonicalReference(r.passages[0],counts),validateCanonicalReference(e.from,counts)));
+  assert.ok(contains(validateCanonicalReference(r.passages[1],counts),validateCanonicalReference(e.to,counts)));
+  assert.equal(r.citations.length,3);
+  assert.equal(r.citations.filter(c=>CITATION_REVIEW.sources[c.sourceId].kind==='primary-scripture').length,2);
+  const commentary=r.citations.find(c=>CITATION_REVIEW.sources[c.sourceId].kind==='scholarly-commentary');assert.ok(commentary);
+  const s=CITATION_REVIEW.sources[commentary.sourceId];assert.ok(r.note.includes(s.author));assert.equal(s.checkedOn,r.reviewedOn);
+  assert.match(s.access,/selected readable discussion/);assert.match(s.access,/Confessional interpretation/);
+  assert.match(r.limitation,/independent specialist review remain open/);
+  assert.equal(e.kind,id==='ce038'?'echo':'theme');
+ }
+ const connections=CITATION_REVIEW.records.filter(r=>r.kind==='connection');
+ assert.equal(connections.length,68);assert.equal(CONNECTION_EVIDENCE.filter(e=>!connections.some(r=>r.target===e.id)).length,47);
+ assert.equal(connections.filter(r=>r.citations.some(c=>['scholarly-commentary','publisher-note','publisher-abstract'].includes(CITATION_REVIEW.sources[c.sourceId].kind))).length,36);
+});
+
+test('third batch keeps quotation, interpretation and suffering limits visible',()=>{
+ const review=id=>citationReviews('connection',id)[0];
+ assert.match(review('ce015').note,/Isaiah 65:17/);
+ assert.match(review('ce025').note,/Ezekiel 47/);
+ assert.match(review('ce029').limitation,/does not quote Genesis 12:3/);
+ assert.match(review('ce037').limitation,/does not explicitly quote Isaiah 9:6/);
+ assert.match(review('ce045').limitation,/does not make the two arguments identical/);
+ assert.match(review('ce046').limitation,/not be used to blame distressed readers/);
+ assert.match(review('ce047').limitation,/Galilee.*Jerusalem/);
+ assert.match(review('ce058').limitation,/fixed end-times sequence/);
+ assert.equal(CONNECTION_EVIDENCE.length,115);
 });

@@ -10,8 +10,8 @@ const counts=data('verse-counts.json'),history=data('biblical-history.json'),peo
 test('115 comparisons maintain distinct review status, full citations and nonduplicated pairs',()=>{
  assert.equal(CONNECTION_EVIDENCE.length,115);
  assert.equal(validateConnectionEvidence(counts),true);
- assert.equal(CONNECTION_EVIDENCE.filter(x=>x.review==='scripture-context-screened').length,24);
- assert.equal(CONNECTION_EVIDENCE.filter(x=>x.review==='editorial-reading-aid').length,91);
+ assert.equal(CONNECTION_EVIDENCE.filter(x=>x.review==='scripture-context-screened').length,42);
+ assert.equal(CONNECTION_EVIDENCE.filter(x=>x.review==='editorial-reading-aid').length,73);
  assert.match(REVIEW_LABELS['scripture-context-screened'],/not external peer review/);
  assert.match(REVIEW_LABELS['editorial-reading-aid'],/pending/);
  assert.ok(CONNECTION_EVIDENCE.every(x=>x.explanation.length>20&&x.caution.length>15&&x.context&&x.basis));

@@ -1,6 +1,6 @@
 import {parseRef} from './books.js';
 import {validateCanonicalReference} from './reference-integrity.js';
-import {ADDITIONAL_CONNECTION_EVIDENCE} from './connection-evidence-expanded.js?v=0.24.1';
+import {ADDITIONAL_CONNECTION_EVIDENCE} from './connection-evidence-expanded.js?v=0.25.0';
 /** Selective passage-linked editorial register. The 603k OpenBible links remain unclassified. */
 export const CONNECTION_KINDS=Object.freeze({
   "quotation": "Direct quotation",
@@ -169,22 +169,22 @@ export const CONNECTION_EVIDENCE=Object.freeze([
     "from": "Genesis 1:1",
     "to": "Revelation 21:1",
     "kind": "theme",
-    "explanation": "Both passages concern creation, while Revelation describes a new creation.",
-    "caution": "This is a theological comparison, not an explicit quotation.",
+    "explanation": "Genesis opens with God creating heaven and earth; Revelation envisions a renewed world and God dwelling with humanity. Brian J. Tabb points to Isaiah 65:17 as Revelation 21:1's more immediate scriptural background.",
+    "caution": "Keep this broad creation theme distinct from a direct quotation of Genesis. The comparison does not settle how creation is renewed or supply a scientific chronology.",
     "context": "Revelation 21:1-5",
     "review": "scripture-context-screened",
-    "basis": "Editorial comparison of cited passages; external specialist review pending"
+    "basis": "Selected passages and named scholarly commentary checked in citation batch connections-20-03 on 2026-10-29. Source scope and remaining questions recorded there. Independent specialist review pending."
   },
   {
     "id": "ce016",
     "from": "Psalm 23:1",
     "to": "John 10:11",
     "kind": "theme",
-    "explanation": "The shepherd image appears in the psalm and in Jesus' teaching.",
-    "caution": "Shared imagery does not prove a direct quotation.",
-    "context": "John 10:1-18",
+    "explanation": "Psalm 23 pictures the Lord guiding and sustaining the speaker; John presents Jesus as the shepherd who gives his life for the flock. Meda Stamper places John's imagery within Israel's scriptural shepherd traditions.",
+    "caution": "This is a thematic comparison, not a verbatim quotation. Preserve the psalm's own voice and John's setting after the conflict in John 9; the shared metaphor does not make the passages interchangeable.",
+    "context": "John 10:11-18",
     "review": "scripture-context-screened",
-    "basis": "Editorial comparison of cited passages; external specialist review pending"
+    "basis": "Selected passages and named scholarly commentary checked in citation batch connections-20-03 on 2026-10-29. Source scope and remaining questions recorded there. Independent specialist review pending."
   },
   {
     "id": "ce017",

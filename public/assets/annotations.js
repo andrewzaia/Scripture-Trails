@@ -1,4 +1,4 @@
-import {NOTE_PLACES,notePlace} from './note-places.js?v=0.24.1';
+import {NOTE_PLACES,notePlace} from './note-places.js?v=0.25.0';
 import {parseRef} from './books.js';
 import {validateCanonicalReference} from './reference-integrity.js';
 export const COLOURS=['amber','green','blue'];
