@@ -211,3 +211,15 @@ body.light .atlas-preview-panel{background:var(--surface2)}
 .annotation-place-chip{display:flex;align-items:center;flex-wrap:wrap;gap:8px;padding:6px 0;overflow-wrap:anywhere}
 .annotation-workspace [hidden]{display:none!important}
 .annotation-entry .small-action{max-width:100%;white-space:normal;text-align:left;overflow-wrap:anywhere}
+
+.person-trail-directory{margin:0 min(5.2%,68px) 40px;padding:26px}
+.person-trail-directory h2{font:normal 28px var(--serif);margin:0 0 12px}
+.person-trail-directory>p,.person-trail-card p{color:var(--muted);font-size:12px}
+.person-trail-filters{display:grid;grid-template-columns:2fr 1fr;gap:16px;margin:20px 0}
+.person-trail-filters label{display:grid;gap:7px;min-width:0}
+.person-trail-filters input,.person-trail-filters select{width:100%;min-width:0;padding:10px;border:1px solid var(--line);border-radius:4px;background:var(--surface2);color:var(--ink)}
+.person-trail-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.person-trail-card{border:1px solid var(--line);border-radius:6px;padding:16px;min-width:0}
+.person-trail-card .small-action{font-size:14px;text-align:left;white-space:normal;max-width:100%;overflow-wrap:anywhere}
+.entity-trail-source{font-size:11px;line-height:1.7;color:var(--muted);border-left:2px solid var(--gold);padding-left:10px}
+@media(max-width:760px){.person-trail-directory{margin:0 16px 32px;padding:20px}.person-trail-filters,.person-trail-grid{grid-template-columns:1fr}}

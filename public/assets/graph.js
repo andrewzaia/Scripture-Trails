@@ -1,5 +1,5 @@
 import {parseRef,shortRef} from './books.js';
-import {buildShortestRouteTree,getOneHopConnections} from './atlas-shortest-path.js?v=0.17.0';
+import {buildShortestRouteTree,getOneHopConnections} from './atlas-shortest-path.js?v=0.18.0';
 /** Distinguish a passage preview from the subsequent request to focus the Atlas. */
 export function atlasNodeAction(center,preview,clicked){return clicked===preview&&clicked!==center?'focus':'preview';}
 export class ScriptureGraph{

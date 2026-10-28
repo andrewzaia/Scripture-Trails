@@ -33,10 +33,10 @@ test('cross-account parallels expose distinct readings, not archaeological proof
  assert.match(explainConnection('2 Samuel 24:1','1 Chronicles 21:1').caution,/Attribution/);
  assert.equal(explainConnection('Matthew 3:14','Mark 1:9'),null);
 });
-test('eight curated people have verse-linked, clearly qualified multi-step study trails',()=>{
+test('twenty curated people have qualified trails while the original eight retain their stages',()=>{
  const ids=new Set([...history.people,...people.people,...extra.people].map(x=>x.id));
  assert.equal(validatePersonTrails(counts,ids),true);
- assert.equal(PERSON_TRAILS.length,8);
+ assert.equal(PERSON_TRAILS.length,20);
  for(const id of ['abraham','moses','david-king','solomon-king','hezekiah','esther','paul-apostle','jesus']){
   const trail=personTrail(id);assert.ok(trail,id);assert.equal(trail.stages.length,5,id);
   assert.match(trail.qualification,/not a full biography/);

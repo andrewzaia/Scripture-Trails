@@ -27,6 +27,7 @@ nextApp=versionedImport(nextApp,'reading-plans.js?v='+oldVersion,'reading-plans.
 nextApp=versionedImport(nextApp,'release-notes.js?v='+oldVersion,'release-notes.js?v='+newVersion,'release history');
 const backupPath='public/assets/notebook-backup.js';
 const nextBackup=versionedImport(read(backupPath),'reading-plans.js?v='+oldVersion,'reading-plans.js?v='+newVersion,'backup progress validation');
+nextApp=versionedImport(nextApp,'person-trails.js?v='+oldVersion,'person-trails.js?v='+newVersion,'person trail directory');
 nextApp=versionedImport(nextApp,'annotations.js?v='+oldVersion,'annotations.js?v='+newVersion,'annotations');
 let finalBackup=versionedImport(nextBackup,'annotations.js?v='+oldVersion,'annotations.js?v='+newVersion,'backup annotations');
 nextApp=versionedImport(nextApp,'study-collections.js?v='+oldVersion,'study-collections.js?v='+newVersion,'study collections');

@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.18.0 - 28/10/2026: Twenty person-centred Scripture trails
+
+- Explore twelve further biblical figures in a searchable directory of twenty person-centred Scripture trails.
+- Read forty-eight additional contextual passages with source and review labels, identity distinctions and interpretation cautions.
+- Open each trail from Study journeys and follow its passages in the Bible reader or starting-verse Atlas.
+
 ## 0.17.0 - 28/10/2026: Place-linked observations and notebook organisation
 
 - Link private observations to passages, existing places and regions, or both.

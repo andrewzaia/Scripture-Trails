@@ -1,6 +1,16 @@
 {
   "releases": [
     {
+      "version": "0.18.0",
+      "date": "2026-10-28",
+      "title": "Twenty person-centred Scripture trails",
+      "changes": [
+        "Explore twelve further biblical figures in a searchable directory of twenty person-centred Scripture trails.",
+        "Read forty-eight additional contextual passages with source and review labels, identity distinctions and interpretation cautions.",
+        "Open each trail from Study journeys and follow its passages in the Bible reader or starting-verse Atlas."
+      ]
+    },
+    {
       "version": "0.17.0",
       "date": "2026-10-28",
       "title": "Place-linked observations and notebook organisation",
