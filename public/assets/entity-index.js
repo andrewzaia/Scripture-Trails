@@ -1,14 +1,14 @@
-import {buildEntityCatalog,findEntities,ENTITY_TYPES} from './entity-index-data.js?v=0.17.0';
+import {buildEntityCatalog,findEntities,ENTITY_TYPES} from './entity-index-data.js?v=0.18.0';
 import {validateCanonicalReference} from './reference-integrity.js';
-import {connectionsForPassages,CONNECTION_KINDS,REVIEW_LABELS} from './connection-evidence.js?v=0.17.0';
-import {personTrail} from './person-trails.js?v=0.17.0';
+import {connectionsForPassages,CONNECTION_KINDS,REVIEW_LABELS} from './connection-evidence.js?v=0.18.0';
+import {personTrail,TRAIL_SOURCE_LABELS,TRAIL_REVIEW_LABELS} from './person-trails.js?v=0.18.0';
 
 const make=(tag,cls,text)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(text!==undefined)e.textContent=text;return e;};
 const key=(type,id)=>type+':'+id;
 /** Indexed entities reuse local source datasets. Source text is not rehosted. */
 export function createEntityIndex(root,handlers={}){
  const $=id=>root.querySelector('[data-entity="'+id+'"]')||root.closest('section')?.querySelector('[data-entity="'+id+'"]');
- const ENTITY_INDEX_DATA_VERSION='0.17.0';
+ const ENTITY_INDEX_DATA_VERSION='0.18.0';
  let initial=null,catalog,counts,filter='all',period='all',query='',selected=null,shown=32,pendingReference=null;
  const label=record=>record.type==='person'?'Person':record.type==='place'?(record.kind==='polity'?'Kingdom / polity':'Place'):'Event';
  const by=(type,id)=>catalog.byKey.get(key(type,id));
@@ -32,12 +32,13 @@ export function createEntityIndex(root,handlers={}){
    if(record.id==='paul-apostle'){const a=make('a','entity-pill',"Explore Journeys of Paul");a.href='/?view=paul-map';panel.append(a);}
    const trail=personTrail(record.id);
    if(trail){
-    panel.append(make('h3','',"Follow this person's Scripture trail"),make('p','entity-muted',trail.qualification));
+    panel.append(make('h3','',"Follow this person's Scripture trail"),make('p','entity-muted',trail.qualification),make('p','entity-muted',trail.caution));
+    panel.append(make('p','entity-muted','Related comparisons overlap a selected passage; they do not establish that this person appears in both texts.'));
     const steps=make('ol','entity-study-trail');
     for(const step of trail.stages){
      const item=make('li','entity-trail-step');
-     item.append(make('strong','',step.label+' · '+step.ref),make('p','entity-muted',step.note));
-     item.append(btn('Read passage',()=>handlers.onRead?.(step.ref)),btn('View in Atlas',()=>handlers.onAtlas?.(step.ref)));
+     item.append(make('strong','',step.label+' · '+step.ref),make('p','entity-muted',step.note),make('p','entity-trail-source',TRAIL_SOURCE_LABELS[step.source]+': '+step.ref+' | '+TRAIL_REVIEW_LABELS[step.review]));
+     item.append(btn('Read passage',()=>handlers.onRead?.(step.ref)),btn('View starting verse in Atlas',()=>handlers.onAtlas?.(sourcePassage(step.ref))));
      const linked=connectionsForPassages([step.ref],counts,1)[0];
      if(linked)item.append(btn('Compare related passages',()=>handlers.onCompare?.(linked.from,linked.to,linked)));
      steps.append(item);

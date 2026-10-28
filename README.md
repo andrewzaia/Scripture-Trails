@@ -315,7 +315,7 @@ A curated register of **115 passage-pair editorial comparisons** spans the initi
 
 The Atlas offers an on-demand side-by-side comparison reader using the existing server-side ESV and API.Bible integrations. Both panels use the chosen available licensed translation and display translation attribution; API.Bible Scripture views are reported through the existing FUMS implementation. HTML is sanitized by the application's existing allowlist, not inserted directly. No verse content is checked into Git or cached in the Atlas. Individual passage failures show an error without preventing the other passage from rendering. It also supports swapping, retrying and jumping to each passage or wider context.
 
-The People Index now contains eight manually outlined passage trails for Abraham, Moses, David, Solomon, Hezekiah, Esther, Paul and Jesus, plus links from relevant editorial comparisons. Trails are structured reading aids, not settled reconstructions of historical chronology, and source claims await outside scholarly review. Both modules and their dependencies use the site's semantic-version cache-busting process.
+The original eight People Index trails cover Abraham, Moses, David, Solomon, Hezekiah, Esther, Paul and Jesus, plus links from relevant editorial comparisons. The library now has twenty trails, described in the person-centred trails section below. Trails are structured reading aids, not settled reconstructions of historical chronology, and source claims await outside scholarly review. Both modules and their dependencies use the site's semantic-version cache-busting process.
 
 ## Journeys of Paul
 
@@ -360,3 +360,9 @@ Notebook backup schema 4 includes collections and schedules. Versions 1 to 3 rem
 My notebook accepts observations linked to passages, indexed places/regions, or both. Place choices reuse the 49 existing Gospel and Hebrew Bible index records; a private link is a study pointer, not a new geographic or historical claim. Place buttons open the source-qualified index profile, and each profile can open its matching private notes. Opening a place filter preserves any current draft; linking the filtered place to that draft is explicit. Filters combine place, annotation type, text/aliases, tag and highlight colour.
 
 Notebook schema 5 includes place links. Versions 1 to 4 remain supported, preserving existing place-linked notes unless an identified conflict is explicitly replaced. Place-only notes require schema 5. A conflict preview includes changed place links. The registry is generated with `node scripts/build-note-places.mjs`; CI tests verify that it matches the existing place datasets.
+
+## Person-centred Scripture trails
+
+Study journeys includes a searchable directory of 20 person-centred trails, with 88 selected readings. The original eight trails retain their 40 anchors. Twelve further figures add 48 contextual passage ranges: Ruth, Hannah, Samuel, Elijah, Elisha, Jeremiah, Daniel, Nehemiah, Mary the mother of Jesus, Peter, John the Baptist and Barnabas. Search names, topics or references and filter Hebrew Bible / New Testament coverage.
+
+The directory opens the existing disambiguated profile. Each stage displays its primary Scripture reference and editorial review label, plus reader and starting-verse Atlas actions. Cautions distinguish selected reading sequences from full biographies, harmonised chronologies, settled denominational interpretations or independent historical proof. The editorial method, primary-text reading links and access limitations are documented in `sources/person-trails/README.md`. Independent specialist review remains pending.

@@ -4,7 +4,7 @@
   "description": "A transparent, evidence-aware roadmap. Delivered means implementation exists, not that every scholarly question is settled. The accuracy audit is an initial, publicly documented editorial screening, not external specialist certification.",
   "currentFocus": [
     "Review the Pauline journey location and textual questions against specialist research",
-    "Next content milestone: expand person-centred Scripture trails with explicit evidence and review labels",
+    "Next content milestone: separately sourced Hebrew Bible geography and Exodus traditions",
     "Expand person-centred trails and Hebrew Bible geography while preserving evidence distinctions"
   ],
   "phases": [
@@ -312,7 +312,7 @@
       "capabilities": [
         "115 editorial passage-pair comparisons, including quotations, echoes, shared themes and parallel accounts, each with explicit review status",
         "Side-by-side passage reader with selected Bible edition, individual publisher attributions and API.Bible usage reporting",
-        "Eight curated person-centred reading trails with Scripture passages, Atlas navigation and linked comparison actions",
+        "Eight original person-centred reading trails (now expanded in a separate milestone) with Scripture passages, Atlas navigation and linked comparison actions",
         "Provenance labels distinguish the original 24 context-screened records from 91 additional editorial reading aids; unclassified community links retain vote bars"
       ],
       "verification": "Release tests validate 115 unique pairs, reference boundaries, review classifications, and trail citations. Independent specialist review is not claimed and translations remain publisher-API dependent."
@@ -320,7 +320,7 @@
     {
       "id": "biblical-geography-expansion",
       "phase": "next",
-      "status": "planned",
+      "status": "next",
       "title": "Further biblical geography and Hebrew Bible studies",
       "summary": "Paul's three missionary journeys are delivered. Extend the library with separately sourced Exodus traditions and Old Testament place studies.",
       "capabilities": [
@@ -430,15 +430,16 @@
     {
       "id": "person-trails-expansion",
       "phase": "connections",
-      "status": "next",
+      "status": "delivered",
       "title": "Further person-centred Scripture trails",
-      "summary": "Extend the existing eight trails with further passage-linked studies and explicit editorial review labels.",
+      "summary": "Twenty person-centred trails now include twelve further figures and a searchable directory, with explicit primary-passage and editorial review labels.",
       "capabilities": [
-        "Cited passage sequences for further biblical figures",
-        "Context notes, interpretation cautions and source distinctions",
-        "Reader and Atlas navigation with reference validation"
+        "Twenty disambiguated profiles: the original eight plus twelve additional figures",
+        "Eighty-eight selected Scripture readings, including forty-eight additional contextual ranges",
+        "Search by name, passage or topic and filter Hebrew Bible / New Testament",
+        "Per-stage source and review labels, tailored interpretation cautions, reader and starting-verse Atlas navigation"
       ],
-      "verification": "Planned editorial reading aids. Additional content needs its own reference and evidence checks; independent specialist review must remain separately identified."
+      "verification": "Canonical references, profile IDs, source/review metadata and bounded reading ranges are validated in CI. Primary-text checks are AI-assisted and partly limited by source access; independent specialist and source-critical review remain outstanding. No historical reconstruction or complete biography is claimed."
     }
   ]
 }
