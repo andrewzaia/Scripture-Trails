@@ -86,6 +86,6 @@ export function createCityStudies(root,{onRead,onAtlas,onJourney}={}){
   const address=new URL(location.href);address.searchParams.set('city',city.id);history.replaceState(history.state,'',address);
  }
  function drawTabs(){const target=$('city-tabs');target.replaceChildren();for(const city of data.cities){const b=make('button','city-tab',city.name);b.type='button';b.dataset.citySelect=city.id;b.addEventListener('click',()=>{selected=city.id;renderCity();});target.append(b);}}
- async function load(){const resp=await fetch('/data/city-studies.json?v=20261027-local');if(!resp.ok)throw Error('Cannot load city research');data=await resp.json();validateCityStudies(data);drawTabs();renderDebate();root.dataset.ready='true';$('loading').hidden=true;renderCity();}
+ async function load(){const resp=await fetch('/data/city-studies.json',{cache:'no-cache'});if(!resp.ok)throw Error('Cannot load city research');data=await resp.json();validateCityStudies(data);drawTabs();renderDebate();root.dataset.ready='true';$('loading').hidden=true;renderCity();}
  return {activate(city){if(city&&/^[a-z-]+$/.test(city))selected=city;if(!pending)pending=load().catch(e=>{$('loading').textContent='City studies could not load. Please refresh this page.';console.error('City studies:',e);});else if(data)renderCity();}};
 }
