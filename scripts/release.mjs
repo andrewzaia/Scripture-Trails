@@ -24,6 +24,7 @@ nextApp=versionedImport(nextApp,'paul-map.js?v='+oldVersion,'paul-map.js?v='+new
 nextApp=versionedImport(nextApp,'roadmap.js?v='+oldVersion,'roadmap.js?v='+newVersion,'roadmap');
 nextApp=versionedImport(nextApp,'notebook-backup.js?v='+oldVersion,'notebook-backup.js?v='+newVersion,'notebook backups');
 nextApp=versionedImport(nextApp,'reading-plans.js?v='+oldVersion,'reading-plans.js?v='+newVersion,'reading progress');
+nextApp=versionedImport(nextApp,'release-notes.js?v='+oldVersion,'release-notes.js?v='+newVersion,'release history');
 const backupPath='public/assets/notebook-backup.js';
 const nextBackup=versionedImport(read(backupPath),'reading-plans.js?v='+oldVersion,'reading-plans.js?v='+newVersion,'backup progress validation');
 nextApp=versionedImport(nextApp,'annotations.js?v='+oldVersion,'annotations.js?v='+newVersion,'annotations');

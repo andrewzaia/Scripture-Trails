@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.16.1 - 28/10/2026: Reliable live version and changelog display
+
+- Keep the footer tied to the loaded website release and prevent cached changelog data from showing an older version.
+
 ## 0.16.0 - 28/10/2026: Custom study collections and reading schedules
 
 - Create ordered passage collections from guided studies or your own references.

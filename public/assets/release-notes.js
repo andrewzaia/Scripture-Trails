@@ -3,11 +3,12 @@ export async function initPublicReleases(){
  const versionNode=document.getElementById('site-version'),container=document.getElementById('public-release-list');
  if(!versionNode||!container)return;
  try{
-  const res=await fetch('/data/releases.json');
+  const version=versionNode.textContent.trim().replace(/^v/,'');
+  const res=await fetch('/data/releases.json?v='+encodeURIComponent(version),{cache:'no-store'});
   if(!res.ok)throw new Error('Release notes unavailable');
   const data=await res.json();
   if(!Array.isArray(data.releases)||!data.releases.length)throw new Error('No release notes');
-  if(data.releases[0].version)versionNode.textContent='v'+data.releases[0].version;
+  if(data.releases[0].version!==version)throw new Error('Release notes do not match this page');
   const root=document.createDocumentFragment();
   for(const entry of data.releases){
    const details=document.createElement('details');details.className='public-release-entry';
