@@ -64,5 +64,9 @@ writeFileSync(annotationsPath,nextAnnotations);
 writeFileSync(graphPath,nextGraph);
 writeFileSync(indexPath,nextIndex);
 writeFileSync(evidencePath,nextEvidence);
+for(const path of ['public/assets/app.js','public/assets/jesus-map.js','public/assets/entity-index.js','public/assets/atlas-comparison.js','public/assets/citation-review.js']){
+ const text=read(path).replaceAll('citation-review.js?v='+oldVersion,'citation-review.js?v='+newVersion).replaceAll('citation-review-data.js?v='+oldVersion,'citation-review-data.js?v='+newVersion).replaceAll('jesus-map.js?v='+oldVersion,'jesus-map.js?v='+newVersion).replaceAll('citation-review.json?v='+oldVersion,'citation-review.json?v='+newVersion);
+ writeFileSync(path,text);
+}
 writeFileSync('CHANGELOG.md',newChangelog);
 console.log(`Prepared release v${newVersion}: ${title}`);

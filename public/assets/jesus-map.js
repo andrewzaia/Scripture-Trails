@@ -1,3 +1,4 @@
+import {appendCitationReview} from './citation-review.js?v=0.20.0';
 import {parseRef} from './books.js';
 import {GOSPEL_BOOKS,gospelSequence,gospelPassages,validateGospelChronology} from './gospel-chronology.js';
 /** Journeys of Jesus: self-hosted schematic SVG atlas. No tiles or external JavaScript. */
@@ -131,7 +132,7 @@ export function createJesusMap(root,onOpenPassage,onOpenCity){
   const issues=$('audit-event-issues');issues.replaceChildren();
   if(e.review.issueIds.length){for(const id of e.review.issueIds){const issue=issueMap.get(id);const row=el('div','jesus-audit-issue');
    row.append(el('strong','',`${issue.category} | ${issue.status}`),el('p','',issue.description));
-   const sources=el('div','jesus-audit-sources');for(const url of issue.references){const a=el('a','',new URL(url).hostname+' ↗');a.href=url;a.target='_blank';a.rel='noopener noreferrer';sources.append(a);}row.append(sources);issues.append(row);}}
+   const sources=el('div','jesus-audit-sources');for(const url of issue.references){const a=el('a','',new URL(url).hostname+' ↗');a.href=url;a.target='_blank';a.rel='noopener noreferrer';sources.append(a);}row.append(sources);appendCitationReview(row,'issue',issue.id);issues.append(row);}}
   else issues.append(el('p','jesus-map-muted','The cited passage and mapped location received a first-pass editorial check; this is not independent historical verification.'));
   const sequence=getList(),position=sequence.findIndex(x=>x.id===e.id);$('event-number').textContent=`${gospel==='harmony'?'STOP':'TEXT ORDER'} ${String(position+1).padStart(2,'0')} / ${sequence.length}`;
   $('chronology-note').textContent=gospel==='harmony'?'Editorial Gospel harmony: episode order is interpretative, not a dated itinerary.':`${gospel}: passage sequence within this Gospel, not an event date. Only entries currently catalogued for this account appear; absence does not mean the event never happened. Map travel connectors are hidden.`;
@@ -163,7 +164,7 @@ export function createJesusMap(root,onOpenPassage,onOpenCity){
     for(const ref of event.passages){const button=el('button','jesus-study-ref',ref);button.type='button';button.title=`Read ${ref}`;button.addEventListener('click',()=>onOpenPassage(passageStart(ref)));refList.append(button);}
     row.append(title,refList);gospel.append(row);}
   $('study-gospel-count').textContent=`${episodes.length} catalogued ${episodes.length===1?'episode':'episodes'}`;
-  const external=$('study-sources');external.replaceChildren();
+  const external=$('study-sources');external.replaceChildren();appendCitationReview(external,'place',id);
   if(record.literature.length){for(const key of record.literature){const item=geography.sources[key];const a=el('a','jesus-study-literature',item.title+' ↗');a.href=item.url;a.target='_blank';a.rel='noopener noreferrer';const kind=el('small','',item.kind);const row=el('div','jesus-study-literature-row');row.append(a,kind);external.append(row);}}
   else external.append(el('p','jesus-study-empty','No independent archaeological reference is attached to this place yet. This is a research gap, not proof of a particular identification.'));
  }
@@ -173,7 +174,7 @@ export function createJesusMap(root,onOpenPassage,onOpenCity){
   for(const c of audit.corrections){const row=el('div','jesus-audit-correction');const b=el('button','jesus-study-ref',`${c.event.toUpperCase()} | ${c.change}`);b.type='button';b.addEventListener('click',()=>{stop();phase='all';$('phase').value='all';const i=data.events.findIndex(e=>e.id===c.event);selectEvent(i);selectPlace(data.events[i].place);root.querySelector('.jesus-map-grid')?.scrollIntoView({behavior:'smooth',block:'start'});});row.append(b,el('p','',c.reason),el('small','',c.passages.join(' | ')));corrections.append(row);}
   const outstanding=$('audit-open');outstanding.replaceChildren();
   for(const issue of audit.issues.filter(i=>i.status==='open')){const row=el('div','jesus-audit-correction');row.append(el('strong','',`${issue.category} | ${issue.id}`),el('p','',issue.description),el('small','',`Affected entries: ${issue.events.join(', ')}`));
-   if(issue.references.length){const refs=el('div','jesus-audit-sources');for(const url of issue.references){const a=el('a','',new URL(url).hostname+' (research)');a.href=url;a.target='_blank';a.rel='noopener noreferrer';refs.append(a);}row.append(refs);}else row.append(el('small','jesus-map-muted','No secondary research link is attached to this open issue; the Gospel text is its primary narrative source.'));outstanding.append(row);}
+   if(issue.references.length){const refs=el('div','jesus-audit-sources');for(const url of issue.references){const a=el('a','',new URL(url).hostname+' (research)');a.href=url;a.target='_blank';a.rel='noopener noreferrer';refs.append(a);}row.append(refs);}else row.append(el('small','jesus-map-muted','No secondary research link is attached to this open issue; the Gospel text is its primary narrative source.'));appendCitationReview(row,'issue',issue.id);outstanding.append(row);}
  }
  function selectPlace(id,move=false){const place=placeMap.get(id);if(!place)return;
  const matches=getAccountSequence().filter(e=>e.place===id);const list=$('visits');list.replaceChildren();$('visit-count').textContent=`${matches.length} recorded ${matches.length===1?'episode':'episodes'}`;

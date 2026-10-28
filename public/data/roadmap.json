@@ -1,9 +1,10 @@
 {
   "project": "Scripture Trails",
   "updated": "2026-10-28",
-  "description": "A transparent, evidence-aware roadmap reviewed against the released application through v0.19.0. Delivered records implementation milestones, including successive expansions; it is not a count of independent features or scholarly certification. Future work has completion criteria and no promised delivery dates.",
+  "description": "A transparent, evidence-aware roadmap reviewed against the released application through v0.20.0. Delivered records implementation milestones, including successive expansions; it is not a count of independent features or scholarly certification. Future work has completion criteria and no promised delivery dates.",
   "currentFocus": [
-    "Next priority: close documented citation and primary-text access gaps across the existing studies, trails and explained connections",
+    "Next priority: repeatable browser, mobile and accessibility release coverage",
+    "Continue citation remediation beyond the first assessed batch; nine assessed place dossiers and 107 other explained pairs retain review gaps",
     "Add repeatable desktop/mobile browser and accessibility checks for the reader, Atlas, geography collections and private notebook",
     "Arrange independent historical, textual and archaeological review, including the first Exodus collection, when suitable specialists are available",
     "Then extend the Hebrew Bible geography library with separately scoped kings, prophets, exile and return studies"
@@ -460,21 +461,21 @@
     {
       "id": "source-coverage",
       "phase": "next",
-      "status": "next",
-      "title": "Citation coverage and editorial evidence review",
-      "summary": "Resolve documented citation and primary-text access gaps in existing material before treating greater content volume as greater confidence.",
+      "status": "delivered",
+      "title": "Citation coverage and editorial evidence review - first priority batch",
+      "summary": "Forty-three source-level assessments cover 18 Gospel issues, 13 place dossiers, four Nehemiah readings and eight passage comparisons, with retained warnings and precise source-access limits.",
       "capabilities": [
-        "Triage the Gospel audit issues and place dossiers with missing secondary-source support",
-        "Revisit person-trail checks limited by source access and the context of the 115 explained passage pairs",
-        "Attach checked sources to the claims they actually support, with access dates, review scope and remaining limitations",
-        "Maintain local source/provenance records where redistribution is permitted and link restricted publications instead"
+        "Dated claim-level sources and decisions alongside affected studies and in a downloadable About-page register",
+        "Add scoped bibliography for Cana, Nain, Sidon and Caesarea Philippi; retain nine place-source warnings",
+        "Close four Nehemiah primary-passage access gaps without claiming a manuscript or translation audit",
+        "Clarify eight selected comparisons and correct two related narratives from parallel to thematic labels"
       ],
-      "verification": "Complete when each issue in the declared priority batch has a documented source-level assessment and an implemented correction, checked supporting citations or a retained warning with a cited reason it remains unresolved. Independent human specialist signoff belongs to its own research milestone; the full OpenBible corpus stays unclassified."
+      "verification": "Delivered in v0.20.0 for the declared 43-record batch. AI-assisted editorial assessment, not independent specialist signoff. Unresolved geography, chronology, source access and textual questions remain explicit; other 107 explained pairs and wider source gaps are not newly assessed."
     },
     {
       "id": "browser-accessibility",
       "phase": "next",
-      "status": "planned",
+      "status": "next",
       "title": "Browser, mobile and accessibility release coverage",
       "summary": "Add repeatable browser-level checks to complement the existing Node/data tests and manual checks as the study workspace grows.",
       "capabilities": [
@@ -511,6 +512,19 @@
         "Connect new profiles to reader, Atlas, trails and places where supported"
       ],
       "verification": "Complete each expansion when its declared coverage, relationship targets, canonical passages and source notes are checked. Citation remediation and independent specialist review have separate milestones; twenty existing trails are already delivered."
+    },
+    {
+      "id": "source-coverage-followup",
+      "phase": "next",
+      "status": "planned",
+      "title": "Further citation remediation and context review",
+      "summary": "Continue beyond the first declared citation batch, prioritising unresolved place archaeology, limited-access sources and the other 107 explained passage pairs.",
+      "capabilities": [
+        "Publish a separately declared next batch with claim-specific supporting sources and access limits",
+        "Revisit nine retained place bibliography gaps and remaining person-trail access limitations",
+        "Compare complete excavation reports and textual apparatuses where access permits; preserve unresolved warnings"
+      ],
+      "verification": "Each declared batch needs checked supporting citations, implemented corrections or retained warnings with stated source-level reasons. Source-link presence does not establish specialist signoff."
     }
   ]
 }

@@ -368,6 +368,26 @@
       "source": "magdala-iaa",
       "result": "public source page located and general scope checked",
       "checkedOn": "2026-10-26"
+    },
+    {
+      "source": "citation-review-qana",
+      "result": "Online report introduction and survey descriptions checked; cited earlier excavations were not separately audited.",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "source": "citation-review-nein",
+      "result": "Publisher abstract and bibliographic record checked. Full Hebrew report and specialist finds reports not reviewed.",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "source": "citation-review-sidon",
+      "result": "Indexed public project summary checked; direct page requests timed out. Field reports and full stratigraphy not reviewed.",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "source": "citation-review-banias",
+      "result": "Online preliminary report, Roman compound and concluding interpretation checked. Related monographs and specialist reports not reviewed.",
+      "checkedOn": "2026-10-28"
     }
   ],
   "literatureUpdate": {

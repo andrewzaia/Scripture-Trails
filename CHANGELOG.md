@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.20.0 - 28/10/2026: Citation coverage and editorial evidence review
+
+- Inspect 43 dated assessments covering 18 Gospel issues, 13 places, four Nehemiah readings and eight passage comparisons.
+- Open claim-level sources, access notes and retained warnings beside affected studies and in the downloadable About-page review register.
+- Add scoped bibliography for Cana, Nain, Sidon and Caesarea Philippi, close four Nehemiah passage-access gaps and correct two thematic connection labels.
+- Mark the first citation batch delivered, retain further source remediation and move browser, mobile and accessibility coverage to the next roadmap priority.
+
 ## 0.19.0 - 28/10/2026: Exodus and wilderness geography
 
 - Explore twenty-five selected Exodus and wilderness readings in the new Hebrew Bible geography page.

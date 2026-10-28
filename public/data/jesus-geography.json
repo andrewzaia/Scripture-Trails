@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated": "2026-10-26",
+  "updated": "2026-10-28",
   "methodology": "Gospels and Acts are primary evidence for the episodes; OT references illuminate the broader history of a named region, not evidence Jesus visited that Old Testament event. Independent archaeological scholarship is cited where available. Absence of an external archaeology citation is explicitly not proof of a site identification.",
   "evidenceGuide": {
     "excavated": "Archaeological settlement or material remains established, not the particular Gospel event",
@@ -64,6 +64,38 @@
       "title": "Israel Antiquities Authority - Magdala Archaeological Project report",
       "url": "https://publications.iaa.org.il/atiqot/vol90/iss1/7/",
       "kind": "Excavation report"
+    },
+    "citation-review-qana": {
+      "title": "Horbat Qana, Survey (2012)",
+      "url": "https://hadashot.iaa.org.il/report_detail_eng.aspx?id=2048&mag_id=119",
+      "kind": "excavation-report",
+      "author": "Yoav Lerer",
+      "checkedOn": "2026-10-28",
+      "scope": "Online report introduction and survey descriptions checked; cited earlier excavations were not separately audited."
+    },
+    "citation-review-nein": {
+      "title": "An Early Roman-Period Residence at Nein (2025)",
+      "url": "https://publications.iaa.org.il/atiqot/vol107/iss1/6/",
+      "kind": "publisher-abstract",
+      "author": "Fadi Abu-Zidan, Yardenna Alexandre and Danny Syon",
+      "checkedOn": "2026-10-28",
+      "scope": "Publisher abstract and bibliographic record checked. Full Hebrew report and specialist finds reports not reviewed."
+    },
+    "citation-review-sidon": {
+      "title": "Sidon Excavation - project history",
+      "url": "https://www.sidonexcavation.com/",
+      "kind": "project-summary",
+      "author": "Sidon Excavation project",
+      "checkedOn": "2026-10-28",
+      "scope": "Indexed public project summary checked; direct page requests timed out. Field reports and full stratigraphy not reviewed."
+    },
+    "citation-review-banias": {
+      "title": "Banias (2025 preliminary report)",
+      "url": "https://hadashot.iaa.org.il/report_detail_eng.aspx?id=26675&mag_id=139",
+      "kind": "excavation-report",
+      "author": "Adi Erlich and Ron Lavi",
+      "checkedOn": "2026-10-28",
+      "scope": "Online preliminary report, Roman compound and concluding interpretation checked. Related monographs and specialist reports not reviewed."
     }
   },
   "places": {
@@ -272,13 +304,15 @@
       "archaeology": "Multiple archaeological and traditional proposals remain in use. The precise site is disputed, so no candidate is asserted as definite.",
       "evidenceLevel": "disputed",
       "oldTestament": [],
-      "literature": [],
+      "literature": [
+        "citation-review-qana"
+      ],
       "caution": "The biblical name is clear but the exact modern identification is not established.",
       "review": {
-        "status": "external-source-needed",
+        "status": "source-linked",
         "reviewedOn": "2026-10-26",
         "basis": "geography-source-and-uncertainty-screen",
-        "independentSourceCount": 0
+        "independentSourceCount": 1
       }
     },
     "capernaum": {
@@ -407,13 +441,15 @@
       "archaeology": "The modern village is usually associated with Nain. Excavation does not establish the Gospel meeting point or city gate.",
       "evidenceLevel": "tradition",
       "oldTestament": [],
-      "literature": [],
+      "literature": [
+        "citation-review-nein"
+      ],
       "caution": "Ancient town limits and the particular gate remain uncertain.",
       "review": {
-        "status": "external-source-needed",
+        "status": "source-linked",
         "reviewedOn": "2026-10-26",
         "basis": "geography-source-and-uncertainty-screen",
-        "independentSourceCount": 0
+        "independentSourceCount": 1
       }
     },
     "east-shore": {
@@ -494,13 +530,15 @@
           "note": "Prophetic reference to the Phoenician coast"
         }
       ],
-      "literature": [],
+      "literature": [
+        "citation-review-sidon"
+      ],
       "caution": "A region or transit corridor must not be converted into a list of unrecorded city meetings.",
       "review": {
-        "status": "external-source-needed",
+        "status": "source-linked",
         "reviewedOn": "2026-10-26",
         "basis": "geography-source-and-uncertainty-screen",
-        "independentSourceCount": 0
+        "independentSourceCount": 1
       }
     },
     "decapolis": {
@@ -553,13 +591,15 @@
       "archaeology": "Ancient Paneas/Banias is historically attested, including Roman-era religious remains; the conversations could have occurred elsewhere in the district.",
       "evidenceLevel": "reported",
       "oldTestament": [],
-      "literature": [],
+      "literature": [
+        "citation-review-banias"
+      ],
       "caution": "The Gospels name the district or villages of Caesarea Philippi, not a proven conversation site inside the town or at a modern shrine.",
       "review": {
-        "status": "external-source-needed",
+        "status": "source-linked",
         "reviewedOn": "2026-10-26",
         "basis": "geography-source-and-uncertainty-screen",
-        "independentSourceCount": 0
+        "independentSourceCount": 1
       }
     },
     "mountain": {

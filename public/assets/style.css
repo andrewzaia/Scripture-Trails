@@ -223,3 +223,5 @@ body.light .atlas-preview-panel{background:var(--surface2)}
 .person-trail-card .small-action{font-size:14px;text-align:left;white-space:normal;max-width:100%;overflow-wrap:anywhere}
 .entity-trail-source{font-size:11px;line-height:1.7;color:var(--muted);border-left:2px solid var(--gold);padding-left:10px}
 @media(max-width:760px){.person-trail-directory{margin:0 16px 32px;padding:20px}.person-trail-filters,.person-trail-grid{grid-template-columns:1fr}}
+
+.citation-review,.citation-review-group{margin:1rem 0;border-top:1px solid var(--line,#ddd);padding-top:.75rem;overflow-wrap:anywhere}.citation-review summary,.citation-review-group>summary{cursor:pointer;font-weight:600}.citation-review li{margin-bottom:1rem}.citation-review-group article{margin:1rem 0;padding:.75rem;border:1px solid var(--line,#ddd);border-radius:8px}.citation-review p{line-height:1.6}

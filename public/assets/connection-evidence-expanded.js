@@ -444,12 +444,12 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "id": "ce065",
     "from": "1 Samuel 17:4",
     "to": "1 Chronicles 20:5",
-    "kind": "parallel",
-    "explanation": "Both passages describe a Philistine warrior associated with Goliath; names and details create an interpretive difficulty.",
-    "caution": "Do not present these accounts as identical: the identity and text-history differences are substantial.",
+    "kind": "theme",
+    "explanation": "Samuel introduces Goliath; Chronicles names Lahmi, Goliath's brother, as Elhanan's opponent. These are related warrior narratives, not the same combat.",
+    "caution": "For the textual comparison concerning Elhanan also read 2 Samuel 21:19. Translation and textual-history differences require further review.",
     "context": "1 Chronicles 20:4-8",
     "review": "editorial-reading-aid",
-    "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
+    "basis": "Shared narrative subject; selected contexts checked in the dated citation register. Independent specialist assessment pending."
   },
   {
     "id": "ce066",
@@ -510,12 +510,12 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "id": "ce071",
     "from": "2 Samuel 11:2",
     "to": "1 Chronicles 20:1",
-    "kind": "parallel",
+    "kind": "theme",
     "explanation": "Samuel and Chronicles narrate episodes during David's wars with Ammon, with striking differences in what is included.",
     "caution": "Chronicles omits the Bathsheba episode; it is not a parallel account of that incident.",
     "context": "1 Chronicles 20:1-3",
     "review": "editorial-reading-aid",
-    "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
+    "basis": "Shared narrative subject; selected contexts checked in the dated citation register. Independent specialist assessment pending."
   },
   {
     "id": "ce072",

@@ -1,9 +1,12 @@
+import {appendCitationReview} from './citation-review.js?v=0.20.0';
 import {parseRef} from './books.js';
 import {TRANSLATIONS,getTranslation} from './translations.js';
 /** Licensed Scripture comes from the already authorised, server-side Bible reader endpoint. */
 export function createPassageComparison(root,handlers={}){
  const $=id=>root.querySelector('[data-compare="'+id+'"]');
  let pair=null,revision=0,requests=[],currentEdition=null;
+ const review=makeReview();
+ function makeReview(){const el=document.createElement("div");root.append(el);return el;}
  const make=(tag,text,cls='')=>{const el=document.createElement(tag);if(cls)el.className=cls;if(text!==undefined)el.textContent=text;return el;};
  const list=$('edition');
  list.replaceChildren(...TRANSLATIONS.map(t=>{const o=make('option',t.code+' - '+t.name);o.value=t.code;return o;}));
@@ -49,6 +52,7 @@ export function createPassageComparison(root,handlers={}){
   $('provenance').textContent=evidence?(evidence.review==='scripture-context-screened'?'Internal passage-context screening':'Editorial reading aid; detailed textual review pending')+'. No independent specialist certification.':'No scholarly evidence classification is attached.';
   $('context').hidden=!evidence?.context;
   $('context').textContent=evidence?.context?'Read wider context: '+evidence.context:'';
+  review.replaceChildren();if(evidence)appendCitationReview(review,'connection',evidence.id);
   load();root.scrollIntoView({behavior:'smooth',block:'start'});return true;
  }
  list.addEventListener('change',()=>{if(!getTranslation(list.value))return;currentEdition=list.value;load();});

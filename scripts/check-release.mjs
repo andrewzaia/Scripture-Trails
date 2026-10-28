@@ -25,6 +25,9 @@ const evidence=readFileSync('public/assets/connection-evidence.js','utf8');
 if(!evidence.includes('connection-evidence-expanded.js?v='+pkg.version))throw new Error('Expanded evidence cache key must match release version');
 if(!readFileSync('public/assets/notebook-backup.js','utf8').includes('study-collections.js?v='+pkg.version))throw Error('Backup collection module must match release version');
 if(!readFileSync('public/assets/annotations.js','utf8').includes('note-places.js?v='+pkg.version))throw Error('Notebook place registry must match release version');
+for(const path of ['app.js','jesus-map.js','entity-index.js','atlas-comparison.js'])if(!readFileSync('public/assets/'+path,'utf8').includes('citation-review.js?v='+pkg.version))throw Error('Citation review cache key mismatch: '+path);
+if(!readFileSync('public/assets/citation-review.js','utf8').includes('citation-review-data.js?v='+pkg.version))throw Error('Citation data cache key mismatch');
+if(!app.includes('jesus-map.js?v='+pkg.version))throw Error('Gospel map cache key mismatch');
 // PR validation covers ALL branch commits. Cloudflare's production checkout can be shallow,
 // so only GitHub Actions must have full history; every build still checks release metadata.
 // GitHub Actions checks out full history (fetch-depth: 0) so the merge base is available.
