@@ -1,6 +1,17 @@
 {
   "releases": [
     {
+      "version": "0.19.0",
+      "date": "2026-10-28",
+      "title": "Exodus and wilderness geography",
+      "changes": [
+        "Explore twenty-five selected Exodus and wilderness readings in the new Hebrew Bible geography page.",
+        "Search fifteen setting records, share reading selections and open the Bible reader, Atlas and existing study profiles.",
+        "Compare five location and chronology topics using seven supporting sources with explicit access notes and evidence limits.",
+        "Mark the first collection delivered and move citation review to the next roadmap priority; leave exact routes, coordinates and event dates unassigned."
+      ]
+    },
+    {
       "version": "0.18.2",
       "date": "2026-10-28",
       "title": "The study behind Scripture Trails",

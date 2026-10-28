@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.19.0 - 28/10/2026: Exodus and wilderness geography
+
+- Explore twenty-five selected Exodus and wilderness readings in the new Hebrew Bible geography page.
+- Search fifteen setting records, share reading selections and open the Bible reader, Atlas and existing study profiles.
+- Compare five location and chronology topics using seven supporting sources with explicit access notes and evidence limits.
+- Mark the first collection delivered and move citation review to the next roadmap priority; leave exact routes, coordinates and event dates unassigned.
+
 ## 0.18.2 - 28/10/2026: The study behind Scripture Trails
 
 - Describe about fifteen years of comprehensive personal Scripture study across the Old and New Testaments.
