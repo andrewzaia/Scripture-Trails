@@ -13,8 +13,8 @@ test('115 editorial passage comparisons are explicit, source-cited and uniquely 
  assert.equal(Object.keys(CONNECTION_KINDS).length,5);
  const keys=new Set(CONNECTION_EVIDENCE.map(e=>[e.from,e.to].sort().join('|')));
  assert.equal(keys.size,CONNECTION_EVIDENCE.length);
- assert.equal(CONNECTION_EVIDENCE.filter(e=>e.review==='scripture-context-screened').length,42);
- assert.equal(CONNECTION_EVIDENCE.filter(e=>e.review==='editorial-reading-aid').length,73);
+ assert.equal(CONNECTION_EVIDENCE.filter(e=>e.review==='scripture-context-screened').length,60);
+ assert.equal(CONNECTION_EVIDENCE.filter(e=>e.review==='editorial-reading-aid').length,55);
  assert.ok(CONNECTION_EVIDENCE.every(e=>/pending/i.test(e.basis)));
 });
 test('quotation, parallel, echo and typology are bounded by explicit Scripture pairs',()=>{

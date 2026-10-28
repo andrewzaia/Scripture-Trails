@@ -7,11 +7,11 @@
     "issues": 18,
     "places": 15,
     "trailReadings": 4,
-    "connections": 68
+    "connections": 88
   },
   "deferred": [
     "All six previously unlinked named-place assessments now include external research. Bibliographic gaps in this declared batch are addressed at the stated scope; exact identifications, comparative excavation review, textual variants and abstract-only access remain unresolved. Regional placeholders were not upgraded.",
-    "The other 47 explained pairs retain their existing review labels and have no source-level assessment in these batches. Thirty-six assessed pairs now have named scholarly commentary or limited publisher-summary support; other assessed pairs still rely on passage comparisons. Fuller literature, textual and independent specialist review remain open.",
+    "The other 27 explained pairs retain their existing review labels and have no source-level assessment in these batches. Fifty-six assessed pairs now have named scholarly commentary or limited publisher-summary support; access includes the recorded indexed-excerpt limits. Other assessed pairs still rely on passage comparisons. Fuller literature, textual and independent specialist review remain open.",
     "Other person-trail access gaps, full excavation reports, manuscript apparatuses, wider source coverage and independent specialist review remain open.",
     "The full OpenBible corpus remains unclassified."
   ],
@@ -1921,6 +1921,436 @@
       "checkedOn": "2026-10-29",
       "access": "Selected range checked in the publisher chapter view. No manuscript or translation-equivalence audit; publisher notes are not a substitute for the passage.",
       "rights": "Linked only; no translation text retained."
+    },
+    "b4-1chronicles": {
+      "title": "1 Chronicles - selected commentary",
+      "author": "Winfried Corduan",
+      "publisher": "The Gospel Coalition Bible Commentary (evangelical)",
+      "kind": "scholarly-commentary",
+      "url": "https://www.thegospelcoalition.org/commentary/1-chronicles/",
+      "checkedOn": "2026-10-29",
+      "access": "Selected readable discussion checked: Saul’s ending; David’s accession, palace, ark and covenant; introductory comparison of Kings and Chronicles. Conservative evangelical interpretation; Ezra authorship and historical reconstructions are not adopted as established results.",
+      "rights": "Linked only; no publication text retained."
+    },
+    "b4-2chronicles": {
+      "title": "2 Chronicles - selected commentary",
+      "author": "Winfried Corduan",
+      "publisher": "The Gospel Coalition Bible Commentary (evangelical)",
+      "kind": "scholarly-commentary",
+      "url": "https://www.thegospelcoalition.org/commentary/2-chronicles/",
+      "checkedOn": "2026-10-29",
+      "access": "Access limited to readable indexed excerpts: opening Abijah comparison (13:1-22). Direct article-body retrieval returned HTTP 403. Conservative evangelical interpretation; full discussion, author’s cited works and Ezra attribution not independently reviewed.",
+      "rights": "Linked only; no publication text retained."
+    },
+    "b4-1kings": {
+      "title": "1 Kings - selected commentary",
+      "author": "August H. Konkel",
+      "publisher": "The Gospel Coalition Bible Commentary (evangelical)",
+      "kind": "scholarly-commentary",
+      "url": "https://www.thegospelcoalition.org/commentary/1-kings/",
+      "checkedOn": "2026-10-29",
+      "access": "Selected readable indexed excerpts checked: 3:4-15, 6:1, Solomon overview, 9:1-9, 10:1-5 and 12:6-19. Direct article-body retrieval returned HTTP 403. Conservative evangelical interpretation; excerpt-level access, not a full commentary or literature review.",
+      "rights": "Linked only; no publication text retained."
+    },
+    "b4-2kings": {
+      "title": "2 Kings - selected commentary",
+      "author": "August H. Konkel",
+      "publisher": "The Gospel Coalition Bible Commentary (evangelical)",
+      "kind": "scholarly-commentary",
+      "url": "https://www.thegospelcoalition.org/commentary/2-kings/",
+      "checkedOn": "2026-10-29",
+      "access": "Selected readable discussion checked: 11:1-3, temple repair and Joash’s death, 14:5-6 and 15:1-7. Conservative evangelical interpretation; chronological charts, external historical claims and cited publications not independently reviewed.",
+      "rights": "Linked only; no publication text retained."
+    },
+    "b4-isaiah": {
+      "title": "Isaiah - selected commentary",
+      "author": "Ray Ortlund",
+      "publisher": "The Gospel Coalition Bible Commentary (evangelical)",
+      "kind": "scholarly-commentary",
+      "url": "https://www.thegospelcoalition.org/commentary/isaiah/",
+      "checkedOn": "2026-10-29",
+      "access": "Selected readable discussion checked: Historical Transition (36:1-39:8), narrative parallel and beginning of the Assyrian confrontation. Conservative evangelical interpretation; annals, archaeological claims and broader chronology not independently examined.",
+      "rights": "Linked only; no publication text retained."
+    },
+    "b4-howard": {
+      "title": "Commentary on 1 Kings 8:[1, 6, 10-11] 22-30, 41-43 (2012)",
+      "author": "Cameron B.R. Howard",
+      "publisher": "Working Preacher, Luther Seminary (Christian lectionary commentary)",
+      "kind": "scholarly-commentary",
+      "url": "https://www.workingpreacher.org/commentaries/revised-common-lectionary/ordinary-21-2/commentary-on-1-kings-81-6-10-11-22-30-41-43",
+      "checkedOn": "2026-10-29",
+      "access": "Selected readable discussion checked: ark transfer, cloud, prayer, covenant and presence without confinement. Christian lectionary interpretation; cited print commentary and broader editorial history not independently examined.",
+      "rights": "Linked only; no publication text retained."
+    },
+    "b4-text-2-kings-18": {
+      "title": "2 Kings 18 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/2%2BKings%2B18/",
+      "checkedOn": "2026-10-29",
+      "access": "Selected declared range checked in the publisher chapter view, which also contains neighbouring chapters. English verse numbering used. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no publisher passage text retained."
+    },
+    "b4-text-isaiah-36": {
+      "title": "Isaiah 36 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/Isaiah%2B36/",
+      "checkedOn": "2026-10-29",
+      "access": "Selected declared range checked in the publisher chapter view, which also contains neighbouring chapters. English verse numbering used. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no publisher passage text retained."
+    },
+    "b4-text-1-kings-8": {
+      "title": "1 Kings 8 - ESV (in the Kings 9 chapter view)",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/1%2BKings%2B9/",
+      "checkedOn": "2026-10-29",
+      "access": "Selected declared range checked in the publisher chapter view, which also contains neighbouring chapters. English verse numbering used. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no publisher passage text retained."
+    },
+    "b4-text-2-chronicles-5": {
+      "title": "2 Chronicles 5 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/2chronicles/5",
+      "checkedOn": "2026-10-29",
+      "access": "Selected declared range checked in the publisher chapter view. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no publisher passage text retained."
+    },
+    "b4-text-1-samuel-31": {
+      "title": "1 Samuel 31 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/1samuel/31",
+      "checkedOn": "2026-10-29",
+      "access": "Selected declared range checked in the publisher chapter view. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no publisher passage text retained."
+    },
+    "b4-text-1-chronicles-10": {
+      "title": "1 Chronicles 10 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/1chronicles/10",
+      "checkedOn": "2026-10-29",
+      "access": "Selected declared range checked in the publisher chapter view. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no publisher passage text retained."
+    },
+    "b4-text-2-samuel-5": {
+      "title": "2 Samuel 5 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/2%2BSamuel%2B5/",
+      "checkedOn": "2026-10-29",
+      "access": "Selected declared range checked in the publisher chapter view, which also contains neighbouring chapters. English verse numbering used. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no publisher passage text retained."
+    },
+    "b4-text-1-chronicles-11": {
+      "title": "1 Chronicles 11 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/1%2BChronicles%2B11/",
+      "checkedOn": "2026-10-29",
+      "access": "Selected declared range checked in the publisher chapter view, which also contains neighbouring chapters. English verse numbering used. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no publisher passage text retained."
+    },
+    "b4-text-1-chronicles-14": {
+      "title": "1 Chronicles 14 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/1%2BChronicles%2B14/",
+      "checkedOn": "2026-10-29",
+      "access": "Selected declared range checked in the publisher chapter view, which also contains neighbouring chapters. English verse numbering used. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no publisher passage text retained."
+    },
+    "b4-text-2-samuel-6": {
+      "title": "2 Samuel 6 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/2samuel/6",
+      "checkedOn": "2026-10-29",
+      "access": "Selected declared range checked in the publisher chapter view. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no publisher passage text retained."
+    },
+    "b4-text-1-chronicles-13": {
+      "title": "1 Chronicles 13 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/1%2BChronicles%2B13/",
+      "checkedOn": "2026-10-29",
+      "access": "Selected declared range checked in the publisher chapter view, which also contains neighbouring chapters. English verse numbering used. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no publisher passage text retained."
+    },
+    "b4-text-2-samuel-7": {
+      "title": "2 Samuel 7 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/2samuel/7",
+      "checkedOn": "2026-10-29",
+      "access": "Selected declared range checked in the publisher chapter view. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no publisher passage text retained."
+    },
+    "b4-text-1-chronicles-17": {
+      "title": "1 Chronicles 17 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/1chronicles/17",
+      "checkedOn": "2026-10-29",
+      "access": "Selected declared range checked in the publisher chapter view. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no publisher passage text retained."
+    },
+    "b4-text-1-kings-3": {
+      "title": "1 Kings 3 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/1kings/3",
+      "checkedOn": "2026-10-29",
+      "access": "Selected declared range checked in the publisher chapter view. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no publisher passage text retained."
+    },
+    "b4-text-2-chronicles-1": {
+      "title": "2 Chronicles 1 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/2%2BChronicles%2B1/",
+      "checkedOn": "2026-10-29",
+      "access": "Selected declared range checked in the publisher chapter view, which also contains neighbouring chapters. English verse numbering used. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no publisher passage text retained."
+    },
+    "b4-text-1-kings-6": {
+      "title": "1 Kings 6 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/1kings/6",
+      "checkedOn": "2026-10-29",
+      "access": "Selected declared range checked in the publisher chapter view. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no publisher passage text retained."
+    },
+    "b4-text-2-chronicles-3": {
+      "title": "2 Chronicles 3 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/2chronicles/3",
+      "checkedOn": "2026-10-29",
+      "access": "Selected declared range checked in the publisher chapter view. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no publisher passage text retained."
+    },
+    "b4-text-2-chronicles-6": {
+      "title": "2 Chronicles 6 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/2chronicles/6",
+      "checkedOn": "2026-10-29",
+      "access": "Selected declared range checked in the publisher chapter view. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no publisher passage text retained."
+    },
+    "b4-text-1-kings-9": {
+      "title": "1 Kings 9 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/1%2BKings%2B9/",
+      "checkedOn": "2026-10-29",
+      "access": "Selected declared range checked in the publisher chapter view, which also contains neighbouring chapters. English verse numbering used. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no publisher passage text retained."
+    },
+    "b4-text-2-chronicles-7": {
+      "title": "2 Chronicles 7 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/2chronicles/7",
+      "checkedOn": "2026-10-29",
+      "access": "Selected declared range checked in the publisher chapter view. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no publisher passage text retained."
+    },
+    "b4-text-1-kings-10": {
+      "title": "1 Kings 10 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/1%2BKings%2B10/",
+      "checkedOn": "2026-10-29",
+      "access": "Selected declared range checked in the publisher chapter view, which also contains neighbouring chapters. English verse numbering used. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no publisher passage text retained."
+    },
+    "b4-text-2-chronicles-9": {
+      "title": "2 Chronicles 9 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/2%2BChronicles%2B9/",
+      "checkedOn": "2026-10-29",
+      "access": "Selected declared range checked in the publisher chapter view, which also contains neighbouring chapters. English verse numbering used. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no publisher passage text retained."
+    },
+    "b4-text-1-kings-11": {
+      "title": "1 Kings 11 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/1kings/11",
+      "checkedOn": "2026-10-29",
+      "access": "Selected declared range checked in the publisher chapter view. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no publisher passage text retained."
+    },
+    "b4-text-1-kings-12": {
+      "title": "1 Kings 12 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/1kings/12",
+      "checkedOn": "2026-10-29",
+      "access": "Selected declared range checked in the publisher chapter view. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no publisher passage text retained."
+    },
+    "b4-text-2-chronicles-10": {
+      "title": "2 Chronicles 10 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/2chronicles/10",
+      "checkedOn": "2026-10-29",
+      "access": "Selected declared range checked in the publisher chapter view. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no publisher passage text retained."
+    },
+    "b4-text-1-kings-15": {
+      "title": "1 Kings 15 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/1kings/15",
+      "checkedOn": "2026-10-29",
+      "access": "Selected declared range checked in the publisher chapter view. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no publisher passage text retained."
+    },
+    "b4-text-2-chronicles-13": {
+      "title": "2 Chronicles 13 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/2chronicles/13",
+      "checkedOn": "2026-10-29",
+      "access": "Selected declared range checked in the publisher chapter view. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no publisher passage text retained."
+    },
+    "b4-text-1-kings-22": {
+      "title": "1 Kings 22 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/1kings/22",
+      "checkedOn": "2026-10-29",
+      "access": "Selected declared range checked in the publisher chapter view. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no publisher passage text retained."
+    },
+    "b4-text-2-chronicles-18": {
+      "title": "2 Chronicles 18 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/2%2BChronicles%2B18/",
+      "checkedOn": "2026-10-29",
+      "access": "Selected declared range checked in the publisher chapter view, which also contains neighbouring chapters. English verse numbering used. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no publisher passage text retained."
+    },
+    "b4-text-2-kings-11": {
+      "title": "2 Kings 11 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/2%2BKings%2B11/",
+      "checkedOn": "2026-10-29",
+      "access": "Selected declared range checked in the publisher chapter view, which also contains neighbouring chapters. English verse numbering used. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no publisher passage text retained."
+    },
+    "b4-text-2-chronicles-22": {
+      "title": "2 Chronicles 22 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/2%2BChronicles%2B22/",
+      "checkedOn": "2026-10-29",
+      "access": "Selected declared range checked in the publisher chapter view, which also contains neighbouring chapters. English verse numbering used. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no publisher passage text retained."
+    },
+    "b4-text-2-kings-12": {
+      "title": "2 Kings 12 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/2%2BKings%2B12/",
+      "checkedOn": "2026-10-29",
+      "access": "Selected declared range checked in the publisher chapter view, which also contains neighbouring chapters. English verse numbering used. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no publisher passage text retained."
+    },
+    "b4-text-2-chronicles-24": {
+      "title": "2 Chronicles 24 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/2chronicles/24",
+      "checkedOn": "2026-10-29",
+      "access": "Selected declared range checked in the publisher chapter view. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no publisher passage text retained."
+    },
+    "b4-text-2-kings-14": {
+      "title": "2 Kings 14 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/2%2BKings%2B14/",
+      "checkedOn": "2026-10-29",
+      "access": "Selected declared range checked in the publisher chapter view, which also contains neighbouring chapters. English verse numbering used. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no publisher passage text retained."
+    },
+    "b4-text-2-chronicles-25": {
+      "title": "2 Chronicles 25 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/2chronicles/25",
+      "checkedOn": "2026-10-29",
+      "access": "Selected declared range checked in the publisher chapter view. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no publisher passage text retained."
+    },
+    "b4-text-2-kings-15": {
+      "title": "2 Kings 15 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/2kings/15",
+      "checkedOn": "2026-10-29",
+      "access": "Selected declared range checked in the publisher chapter view. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no publisher passage text retained."
+    },
+    "b4-text-2-chronicles-26": {
+      "title": "2 Chronicles 26 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/2%2BChronicles%2B26/",
+      "checkedOn": "2026-10-29",
+      "access": "Selected declared range checked in the publisher chapter view, which also contains neighbouring chapters. English verse numbering used. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no publisher passage text retained."
     }
   },
   "records": [
@@ -4800,6 +5230,646 @@
       ],
       "batch": "connections-20-03",
       "anchor": "Romans 8:21"
+    },
+    {
+      "kind": "connection",
+      "target": "ce020",
+      "title": "2 Kings 18:13-18 and Isaiah 36:1-3",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-29",
+      "note": "Kings and Isaiah share the invasion notice and the approach to Jerusalem. Kings also includes Hezekiah's tribute payment before the delegation; Isaiah moves directly to the Rabshakeh. Ray Ortlund identifies the larger parallel narrative.",
+      "limitation": "Preserve the tribute passage in Kings and the different narrative scope. Shared biblical wording does not establish independent historical confirmation, exact source dependence or an independently verified chronology. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "passages": [
+        "2 Kings 18:13-18",
+        "Isaiah 36:1-3"
+      ],
+      "citations": [
+        {
+          "sourceId": "b4-text-2-kings-18",
+          "locator": "2 Kings 18:13-18",
+          "supports": "Selected wording and narrative setting for this comparison"
+        },
+        {
+          "sourceId": "b4-text-isaiah-36",
+          "locator": "Isaiah 36:1-3",
+          "supports": "Selected wording and narrative setting for this comparison"
+        },
+        {
+          "sourceId": "b4-isaiah",
+          "locator": "Historical Transition (36:1-39:8), opening comparison",
+          "supports": "Identifies the Kings/Isaiah narrative overlap"
+        }
+      ],
+      "batch": "connections-20-04",
+      "anchor": "2 Kings 18:13"
+    },
+    {
+      "kind": "connection",
+      "target": "ce021",
+      "title": "1 Kings 8:1-11 and 2 Chronicles 5:2-14",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-29",
+      "note": "Both accounts bring the ark into the inner sanctuary and describe the cloud interrupting priestly service. Chronicles expands the musicians and united praise. Cameron B.R. Howard discusses the ark transfer and divine presence in Kings.",
+      "limitation": "Kings names priests carrying the ark; Chronicles names Levites and levitical priests. Preserve the differing personnel and musical emphasis. This literary comparison does not reconstruct the ark or supply external evidence of the ceremony. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "passages": [
+        "1 Kings 8:1-11",
+        "2 Chronicles 5:2-14"
+      ],
+      "citations": [
+        {
+          "sourceId": "b4-text-1-kings-8",
+          "locator": "1 Kings 8:1-11",
+          "supports": "Selected wording and narrative setting for this comparison"
+        },
+        {
+          "sourceId": "b4-text-2-chronicles-5",
+          "locator": "2 Chronicles 5:2-14",
+          "supports": "Selected wording and narrative setting for this comparison"
+        },
+        {
+          "sourceId": "b4-howard",
+          "locator": "Ark transfer, cloud and temple presence, opening discussion",
+          "supports": "Explains the ark transfer and cloud in Kings"
+        }
+      ],
+      "batch": "connections-20-04",
+      "anchor": "1 Kings 8:1"
+    },
+    {
+      "kind": "connection",
+      "target": "ce066",
+      "title": "1 Samuel 31:1-13 and 1 Chronicles 10:1-14",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-29",
+      "note": "Both narratives describe Saul's defeat, death and the recovery of the bodies by Jabesh-gilead. Chronicles concludes with a judgment on his unfaithfulness and the transfer to David. Winfried Corduan highlights this evaluative ending.",
+      "limitation": "Chronicles adds an explicit theological verdict absent from the selected Samuel chapter. The accounts also differ in descriptions of the body and burial. Do not treat literary overlap as independent corroboration or resolve every death-account tension here. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "passages": [
+        "1 Samuel 31:1-13",
+        "1 Chronicles 10:1-14"
+      ],
+      "citations": [
+        {
+          "sourceId": "b4-text-1-samuel-31",
+          "locator": "1 Samuel 31:1-13",
+          "supports": "Selected wording and narrative setting for this comparison"
+        },
+        {
+          "sourceId": "b4-text-1-chronicles-10",
+          "locator": "1 Chronicles 10:1-14",
+          "supports": "Selected wording and narrative setting for this comparison"
+        },
+        {
+          "sourceId": "b4-1chronicles",
+          "locator": "Failure: Saul's Death (10:1-14), concluding evaluation",
+          "supports": "Highlights Saul's concluding covenant evaluation"
+        }
+      ],
+      "batch": "connections-20-04",
+      "anchor": "1 Samuel 31:1"
+    },
+    {
+      "kind": "connection",
+      "target": "ce067",
+      "title": "2 Samuel 5:1-10 and 1 Chronicles 11:1-9",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-29",
+      "note": "Both accounts unite Israel around David at Hebron and narrate the capture of Jerusalem. Samuel includes David's age and divided reign totals; Chronicles specifies Joab's leading role. Winfried Corduan discusses the move from divided allegiance to reunification.",
+      "limitation": "Chronicles moves rapidly from Saul to David; Samuel supplies the intervening struggle in earlier chapters. Keep those different presentations visible. This selected comparison does not establish an exact chronology or independently reconstruct the capture of Jerusalem. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "passages": [
+        "2 Samuel 5:1-10",
+        "1 Chronicles 11:1-9"
+      ],
+      "citations": [
+        {
+          "sourceId": "b4-text-2-samuel-5",
+          "locator": "2 Samuel 5:1-10",
+          "supports": "Selected wording and narrative setting for this comparison"
+        },
+        {
+          "sourceId": "b4-text-1-chronicles-11",
+          "locator": "1 Chronicles 11:1-9",
+          "supports": "Selected wording and narrative setting for this comparison"
+        },
+        {
+          "sourceId": "b4-1chronicles",
+          "locator": "The Kingdom Reunified (11:1-12:40), opening accession discussion",
+          "supports": "Discusses David's accession as reunification"
+        }
+      ],
+      "batch": "connections-20-04",
+      "anchor": "2 Samuel 5:1"
+    },
+    {
+      "kind": "connection",
+      "target": "ce068",
+      "title": "2 Samuel 5:11-12 and 1 Chronicles 14:1-2",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-29",
+      "note": "Both accounts name Hiram's messengers, cedar and craftsmen and connect David's established kingship with the people's benefit. Winfried Corduan comments on that public purpose.",
+      "limitation": "Samuel places this report before its ark-transfer chapter; Chronicles places it after the first ark attempt. Narrative placement alone does not date the diplomatic exchange. Shared reports do not identify excavated palace remains or independently prove a building attribution. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "passages": [
+        "2 Samuel 5:11-12",
+        "1 Chronicles 14:1-2"
+      ],
+      "citations": [
+        {
+          "sourceId": "b4-text-2-samuel-5",
+          "locator": "2 Samuel 5:11-12",
+          "supports": "Selected wording and narrative setting for this comparison"
+        },
+        {
+          "sourceId": "b4-text-1-chronicles-14",
+          "locator": "1 Chronicles 14:1-2",
+          "supports": "Selected wording and narrative setting for this comparison"
+        },
+        {
+          "sourceId": "b4-1chronicles",
+          "locator": "The Kingdom Fortified, David's New Home (14:1-6)",
+          "supports": "Emphasises kingship for Israel's benefit"
+        }
+      ],
+      "batch": "connections-20-04",
+      "anchor": "2 Samuel 5:11"
+    },
+    {
+      "kind": "connection",
+      "target": "ce069",
+      "title": "2 Samuel 6:1-11 and 1 Chronicles 13:1-14",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-29",
+      "note": "Both accounts describe the cart, Uzzah's death and the ark's stay with Obed-edom. Chronicles begins with consultation of leaders and the assembly. Winfried Corduan discusses that planning and the failed transfer.",
+      "limitation": "The chosen ranges cover the first attempt; the later successful transfer belongs to further passages. Samuel and Chronicles organise the events differently and use different threshing-floor names. No single reconstructed itinerary or resolution of those names is claimed. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "passages": [
+        "2 Samuel 6:1-11",
+        "1 Chronicles 13:1-14"
+      ],
+      "citations": [
+        {
+          "sourceId": "b4-text-2-samuel-6",
+          "locator": "2 Samuel 6:1-11",
+          "supports": "Selected wording and narrative setting for this comparison"
+        },
+        {
+          "sourceId": "b4-text-1-chronicles-13",
+          "locator": "1 Chronicles 13:1-14",
+          "supports": "Selected wording and narrative setting for this comparison"
+        },
+        {
+          "sourceId": "b4-1chronicles",
+          "locator": "The Kingdom Fortified, Moving the Ark of the Covenant: First Try (13:1-14)",
+          "supports": "Discusses consultation and the failed ark transfer"
+        }
+      ],
+      "batch": "connections-20-04",
+      "anchor": "2 Samuel 6:1"
+    },
+    {
+      "kind": "connection",
+      "target": "ce070",
+      "title": "2 Samuel 7:1-17 and 1 Chronicles 17:1-15",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-29",
+      "note": "Nathan's message redirects David's proposal to build a house into a promise about his dynasty and a son who will build. Winfried Corduan distinguishes the promised successor's building role.",
+      "limitation": "Samuel includes a clause about disciplining the son for wrongdoing; Chronicles omits that clause and speaks of establishment in God's house and kingdom. Preserve these differences. Later messianic reception and the promise's historical fulfilment need separate assessment. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "passages": [
+        "2 Samuel 7:1-17",
+        "1 Chronicles 17:1-15"
+      ],
+      "citations": [
+        {
+          "sourceId": "b4-text-2-samuel-7",
+          "locator": "2 Samuel 7:1-17",
+          "supports": "Selected wording and narrative setting for this comparison"
+        },
+        {
+          "sourceId": "b4-text-1-chronicles-17",
+          "locator": "1 Chronicles 17:1-15",
+          "supports": "Selected wording and narrative setting for this comparison"
+        },
+        {
+          "sourceId": "b4-1chronicles",
+          "locator": "The Kingdom Fortified, God's Covenant with David (17:1-27), 17:3-9",
+          "supports": "Distinguishes the successor's temple-building role"
+        }
+      ],
+      "batch": "connections-20-04",
+      "anchor": "2 Samuel 7:1"
+    },
+    {
+      "kind": "connection",
+      "target": "ce073",
+      "title": "1 Kings 3:4-15 and 2 Chronicles 1:1-13",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-29",
+      "note": "Both accounts place a divine appearance at Gibeon and Solomon's request for the capacity to govern. Kings explicitly calls it a dream and includes a conditional promise of long life. August H. Konkel discusses the request for discernment.",
+      "limitation": "Chronicles explains the tabernacle and bronze altar at Gibeon and asks for wisdom and knowledge. The accounts differ in wording and emphasis; the parallel does not make every detail interchangeable or provide an external verification of a private vision. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "passages": [
+        "1 Kings 3:4-15",
+        "2 Chronicles 1:1-13"
+      ],
+      "citations": [
+        {
+          "sourceId": "b4-text-1-kings-3",
+          "locator": "1 Kings 3:4-15",
+          "supports": "Selected wording and narrative setting for this comparison"
+        },
+        {
+          "sourceId": "b4-text-2-chronicles-1",
+          "locator": "2 Chronicles 1:1-13",
+          "supports": "Selected wording and narrative setting for this comparison"
+        },
+        {
+          "sourceId": "b4-1kings",
+          "locator": "The Vision at Gibeon (3:4-15)",
+          "supports": "Discusses discernment for governing Israel"
+        }
+      ],
+      "batch": "connections-20-04",
+      "anchor": "1 Kings 3:5"
+    },
+    {
+      "kind": "connection",
+      "target": "ce074",
+      "title": "1 Kings 6:1-13 and 2 Chronicles 3:1-9",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-29",
+      "note": "Both accounts begin construction in Solomon's fourth year and describe the temple. Kings also dates it in relation to the exodus; Chronicles names Mount Moriah and Ornan's threshing floor. August H. Konkel gives the Kings date a theological reading.",
+      "limitation": "Konkel's treatment of the 480 years is an interpretation, not a settled chronological result. Preserve each book's distinct location, dating and architectural details. This comparison does not supply archaeological confirmation or a complete temple reconstruction. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "passages": [
+        "1 Kings 6:1-13",
+        "2 Chronicles 3:1-9"
+      ],
+      "citations": [
+        {
+          "sourceId": "b4-text-1-kings-6",
+          "locator": "1 Kings 6:1-13",
+          "supports": "Selected wording and narrative setting for this comparison"
+        },
+        {
+          "sourceId": "b4-text-2-chronicles-3",
+          "locator": "2 Chronicles 3:1-9",
+          "supports": "Selected wording and narrative setting for this comparison"
+        },
+        {
+          "sourceId": "b4-1kings",
+          "locator": "The Temple (6:1-7:1), comment on 6:1",
+          "supports": "Offers a theological reading of the construction date"
+        }
+      ],
+      "batch": "connections-20-04",
+      "anchor": "1 Kings 6:1"
+    },
+    {
+      "kind": "connection",
+      "target": "ce075",
+      "title": "1 Kings 8:22-30 and 2 Chronicles 6:12-21",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-29",
+      "note": "Both prayers invoke the covenant with David and ask God to hear from heaven; neither selected text confines God to the building. Chronicles adds the bronze platform and kneeling. Cameron B.R. Howard discusses presence without confinement.",
+      "limitation": "These are selected opening portions of longer prayers, not their complete petitions or conclusions. The platform and posture detail in Chronicles must remain visible. Literary similarity does not establish a verbatim transcript of a historical speech. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "passages": [
+        "1 Kings 8:22-30",
+        "2 Chronicles 6:12-21"
+      ],
+      "citations": [
+        {
+          "sourceId": "b4-text-1-kings-8",
+          "locator": "1 Kings 8:22-30",
+          "supports": "Selected wording and narrative setting for this comparison"
+        },
+        {
+          "sourceId": "b4-text-2-chronicles-6",
+          "locator": "2 Chronicles 6:12-21",
+          "supports": "Selected wording and narrative setting for this comparison"
+        },
+        {
+          "sourceId": "b4-howard",
+          "locator": "Prayer and speeches, covenant language, and discussion of 1 Kings 8:27",
+          "supports": "Distinguishes temple presence from confinement"
+        }
+      ],
+      "batch": "connections-20-04",
+      "anchor": "1 Kings 8:22"
+    },
+    {
+      "kind": "connection",
+      "target": "ce076",
+      "title": "1 Kings 9:1-9 and 2 Chronicles 7:11-22",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-29",
+      "note": "Both accounts follow the building work with divine assurances and warnings about abandoning the covenant. Chronicles also includes humility, prayer and healing of the land in 7:13-16. August H. Konkel connects the second appearance with covenant responsibility.",
+      "limitation": "Retain Chronicles' additional wording and its address to Solomon and Israel around the temple. The land-healing promise is not automatically a guarantee about any modern nation or an individual's health. This check does not harmonise the timing of both narratives. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "passages": [
+        "1 Kings 9:1-9",
+        "2 Chronicles 7:11-22"
+      ],
+      "citations": [
+        {
+          "sourceId": "b4-text-1-kings-9",
+          "locator": "1 Kings 9:1-9",
+          "supports": "Selected wording and narrative setting for this comparison"
+        },
+        {
+          "sourceId": "b4-text-2-chronicles-7",
+          "locator": "2 Chronicles 7:11-22",
+          "supports": "Selected wording and narrative setting for this comparison"
+        },
+        {
+          "sourceId": "b4-1kings",
+          "locator": "Completion of the Building Projects and Second Vision of Solomon (9:1-9)",
+          "supports": "Connects the second appearance with covenant responsibility"
+        }
+      ],
+      "batch": "connections-20-04",
+      "anchor": "1 Kings 9:1"
+    },
+    {
+      "kind": "connection",
+      "target": "ce077",
+      "title": "1 Kings 10:1-13 and 2 Chronicles 9:1-12",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-29",
+      "note": "Both narratives recount the queen testing Solomon, observing his court and exchanging gifts. The reported praise connects kingship with justice. August H. Konkel reads the visit as a portrayal of Solomon's far-reaching reputation.",
+      "limitation": "The queen is unnamed in both passages. Their overlap does not establish her personal identity, a precise itinerary, a romance or later traditions about descendants. Claims about Sheba's location require their own historical evidence. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "passages": [
+        "1 Kings 10:1-13",
+        "2 Chronicles 9:1-12"
+      ],
+      "citations": [
+        {
+          "sourceId": "b4-text-1-kings-10",
+          "locator": "1 Kings 10:1-13",
+          "supports": "Selected wording and narrative setting for this comparison"
+        },
+        {
+          "sourceId": "b4-text-2-chronicles-9",
+          "locator": "2 Chronicles 9:1-12",
+          "supports": "Selected wording and narrative setting for this comparison"
+        },
+        {
+          "sourceId": "b4-1kings",
+          "locator": "Visit of the Queen of Sheba (10:1-13), 10:1-5",
+          "supports": "Reads the visit as portraying Solomon's reputation"
+        }
+      ],
+      "batch": "connections-20-04",
+      "anchor": "1 Kings 10:1"
+    },
+    {
+      "kind": "connection",
+      "target": "ce078",
+      "title": "1 Kings 11:41-43 and 2 Chronicles 9:29-31",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-29",
+      "note": "Both closing notices give Solomon a forty-year reign, burial in David's city and Rehoboam as successor. Kings cites a book of Solomon's acts; Chronicles names prophetic records. August H. Konkel's overview traces Kings' movement toward Solomon's failure.",
+      "limitation": "The cited commentary supports the broader Kings framing, not the survival or identity of the works named in the notices. These biblical source notices do not demonstrate that those works are extant, independent or consulted in this assessment. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "passages": [
+        "1 Kings 11:41-43",
+        "2 Chronicles 9:29-31"
+      ],
+      "citations": [
+        {
+          "sourceId": "b4-text-1-kings-11",
+          "locator": "1 Kings 11:41-43",
+          "supports": "Selected wording and narrative setting for this comparison"
+        },
+        {
+          "sourceId": "b4-text-2-chronicles-9",
+          "locator": "2 Chronicles 9:29-31",
+          "supports": "Selected wording and narrative setting for this comparison"
+        },
+        {
+          "sourceId": "b4-1kings",
+          "locator": "The Reign of Solomon (3:1-28), overview of visions and subsequent failure",
+          "supports": "Traces Kings' framing of Solomon's decline"
+        }
+      ],
+      "batch": "connections-20-04",
+      "anchor": "1 Kings 11:41"
+    },
+    {
+      "kind": "connection",
+      "target": "ce079",
+      "title": "1 Kings 12:1-19 and 2 Chronicles 10:1-19",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-29",
+      "note": "Both accounts describe the demand to ease the yoke, competing advisers, Rehoboam's harsh reply and the break with David's house. August H. Konkel discusses the choice of coercion and ensuing revolt.",
+      "limitation": "Preserve wording differences in the advisers' responses and Adoram/Hadoram's name. The books' theological explanation of the split is not an independent sociological reconstruction. Shared narrative material does not establish two independent witnesses. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "passages": [
+        "1 Kings 12:1-19",
+        "2 Chronicles 10:1-19"
+      ],
+      "citations": [
+        {
+          "sourceId": "b4-text-1-kings-12",
+          "locator": "1 Kings 12:1-19",
+          "supports": "Selected wording and narrative setting for this comparison"
+        },
+        {
+          "sourceId": "b4-text-2-chronicles-10",
+          "locator": "2 Chronicles 10:1-19",
+          "supports": "Selected wording and narrative setting for this comparison"
+        },
+        {
+          "sourceId": "b4-1kings",
+          "locator": "Division of the kingdom, comments on 12:6-19",
+          "supports": "Connects coercive policy with the revolt"
+        }
+      ],
+      "batch": "connections-20-04",
+      "anchor": "1 Kings 12:1"
+    },
+    {
+      "kind": "connection",
+      "target": "ce080",
+      "title": "1 Kings 15:1-8 and 2 Chronicles 13:1-22",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-29",
+      "note": "Kings gives Abijam a negative evaluation while preserving David's dynastic promise; Chronicles tells an extended victory account about Abijah, priesthood and reliance on God. Winfried Corduan explicitly contrasts the two treatments.",
+      "limitation": "The differently named mother and the contrasting royal portraits remain unresolved here. Do not convert a selected favourable episode into identical overall evaluations or independently verified troop totals. Commentary access was limited to indexed passage excerpts. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "passages": [
+        "1 Kings 15:1-8",
+        "2 Chronicles 13:1-22"
+      ],
+      "citations": [
+        {
+          "sourceId": "b4-text-1-kings-15",
+          "locator": "1 Kings 15:1-8",
+          "supports": "Selected wording and narrative setting for this comparison"
+        },
+        {
+          "sourceId": "b4-text-2-chronicles-13",
+          "locator": "2 Chronicles 13:1-22",
+          "supports": "Selected wording and narrative setting for this comparison"
+        },
+        {
+          "sourceId": "b4-2chronicles",
+          "locator": "Abijah (13:1-22), opening comparison with Kings",
+          "supports": "Contrasts the two portraits of Abijah"
+        }
+      ],
+      "batch": "connections-20-04",
+      "anchor": "1 Kings 15:1"
+    },
+    {
+      "kind": "connection",
+      "target": "ce081",
+      "title": "1 Kings 22:1-9 and 2 Chronicles 18:1-8",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-29",
+      "note": "Both passages introduce the Ramoth-gilead alliance and the request to consult Micaiah. Chronicles first names a marriage alliance and a feast. Winfried Corduan identifies the extensive parallel material in these chapters.",
+      "limitation": "The selected ranges cover the consultation's introduction, not the complete vision and battle. Similarity does not decide direct borrowing versus a common source. Corduan's attribution of Chronicles to Ezra is not adopted as an established authorship result. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "passages": [
+        "1 Kings 22:1-9",
+        "2 Chronicles 18:1-8"
+      ],
+      "citations": [
+        {
+          "sourceId": "b4-text-1-kings-22",
+          "locator": "1 Kings 22:1-9",
+          "supports": "Selected wording and narrative setting for this comparison"
+        },
+        {
+          "sourceId": "b4-text-2-chronicles-18",
+          "locator": "2 Chronicles 18:1-8",
+          "supports": "Selected wording and narrative setting for this comparison"
+        },
+        {
+          "sourceId": "b4-1chronicles",
+          "locator": "Introduction, How Did Ezra Recount Events before His Lifetime?, example of 1 Kings 22 and 2 Chronicles 18",
+          "supports": "Identifies substantial Kings/Chronicles narrative similarity"
+        }
+      ],
+      "batch": "connections-20-04",
+      "anchor": "1 Kings 22:2"
+    },
+    {
+      "kind": "connection",
+      "target": "ce082",
+      "title": "2 Kings 11:1-3 and 2 Chronicles 22:10-12",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-29",
+      "note": "Both passages describe Athaliah's attack on the royal family and Joash's concealment for six years. Chronicles identifies Jehoshabeath as Jehoiada's wife. August H. Konkel places the episode within the preservation of David's line.",
+      "limitation": "Retain the added family and priestly connection in Chronicles and the different forms Jehosheba/Jehoshabeath. These selected verses do not narrate the full coronation. The literary parallel is not independent archaeological confirmation of the hiding place. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "passages": [
+        "2 Kings 11:1-3",
+        "2 Chronicles 22:10-12"
+      ],
+      "citations": [
+        {
+          "sourceId": "b4-text-2-kings-11",
+          "locator": "2 Kings 11:1-3",
+          "supports": "Selected wording and narrative setting for this comparison"
+        },
+        {
+          "sourceId": "b4-text-2-chronicles-22",
+          "locator": "2 Chronicles 22:10-12",
+          "supports": "Selected wording and narrative setting for this comparison"
+        },
+        {
+          "sourceId": "b4-2kings",
+          "locator": "Reign of Athalia (11:1-3)",
+          "supports": "Relates Joash's preservation to David's line"
+        }
+      ],
+      "batch": "connections-20-04",
+      "anchor": "2 Kings 11:1"
+    },
+    {
+      "kind": "connection",
+      "target": "ce083",
+      "title": "2 Kings 12:1-21 and 2 Chronicles 24:1-27",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-29",
+      "note": "Both accounts describe Joash's reign, temple repairs and assassination. Chronicles expands his later abandonment of the temple and the killing of Jehoiada's son. August H. Konkel discusses the repair funds and the assassination report.",
+      "limitation": "Kings' assessment and Chronicles' account of later apostasy should not be flattened into one verdict. Temple-vessel funding and burial details also differ. English ESV numbering is used for Kings; other editions shift the chapter boundary. No full textual harmonisation is claimed. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "passages": [
+        "2 Kings 12:1-21",
+        "2 Chronicles 24:1-27"
+      ],
+      "citations": [
+        {
+          "sourceId": "b4-text-2-kings-12",
+          "locator": "2 Kings 12:1-21",
+          "supports": "Selected wording and narrative setting for this comparison"
+        },
+        {
+          "sourceId": "b4-text-2-chronicles-24",
+          "locator": "2 Chronicles 24:1-27",
+          "supports": "Selected wording and narrative setting for this comparison"
+        },
+        {
+          "sourceId": "b4-2kings",
+          "locator": "The Repair of the Temple (11:21-12:16) and comments on 12:19-21",
+          "supports": "Discusses repair administration and Joash's death"
+        }
+      ],
+      "batch": "connections-20-04",
+      "anchor": "2 Kings 12:1"
+    },
+    {
+      "kind": "connection",
+      "target": "ce084",
+      "title": "2 Kings 14:1-7 and 2 Chronicles 25:1-10",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-29",
+      "note": "Both accounts introduce Amaziah and say he spared the children of his father's killers in accordance with the law. Their qualified evaluations differ in wording. August H. Konkel highlights that restraint in the revenge narrative.",
+      "limitation": "Keep Kings' comparison with David and Joash distinct from Chronicles' lack-of-wholeheartedness judgment. The selected ranges do not encompass the complete reign or resolve chronological correlations and military figures. Identifying the parallel is not a moral endorsement of every royal act. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "passages": [
+        "2 Kings 14:1-7",
+        "2 Chronicles 25:1-10"
+      ],
+      "citations": [
+        {
+          "sourceId": "b4-text-2-kings-14",
+          "locator": "2 Kings 14:1-7",
+          "supports": "Selected wording and narrative setting for this comparison"
+        },
+        {
+          "sourceId": "b4-text-2-chronicles-25",
+          "locator": "2 Chronicles 25:1-10",
+          "supports": "Selected wording and narrative setting for this comparison"
+        },
+        {
+          "sourceId": "b4-2kings",
+          "locator": "Reign of Amaziah, comments on 14:5-6",
+          "supports": "Highlights sparing the assassins' children"
+        }
+      ],
+      "batch": "connections-20-04",
+      "anchor": "2 Kings 14:1"
+    },
+    {
+      "kind": "connection",
+      "target": "ce085",
+      "title": "2 Kings 15:1-7 and 2 Chronicles 26:1-23",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-29",
+      "note": "Kings calls the king Azariah and briefly reports his illness and Jotham's governing role. Chronicles calls him Uzziah and expands his achievements, pride and temple confrontation. August H. Konkel notes Chronicles' additional reign material.",
+      "limitation": "Azariah the king and Azariah the chief priest in Chronicles are distinct people. Ancient skin-disease terminology does not establish a modern diagnosis. Preserve Chronicles' priestly confrontation and Kings' shorter evaluation; no independent clinical or chronological conclusion follows. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "passages": [
+        "2 Kings 15:1-7",
+        "2 Chronicles 26:1-23"
+      ],
+      "citations": [
+        {
+          "sourceId": "b4-text-2-kings-15",
+          "locator": "2 Kings 15:1-7",
+          "supports": "Selected wording and narrative setting for this comparison"
+        },
+        {
+          "sourceId": "b4-text-2-chronicles-26",
+          "locator": "2 Chronicles 26:1-23",
+          "supports": "Selected wording and narrative setting for this comparison"
+        },
+        {
+          "sourceId": "b4-2kings",
+          "locator": "Reign of Azariah (15:1-7)",
+          "supports": "Notes Chronicles' expanded account of the reign"
+        }
+      ],
+      "batch": "connections-20-04",
+      "anchor": "2 Kings 15:1"
     }
   ],
   "batches": [
@@ -4906,6 +5976,34 @@
         "ce058"
       ],
       "method": "AI-assisted selected-passage comparison with a named readable scholarly commentary for every pair. Commentary supports only the recorded claim and locator, not necessarily the complete cross-passage interpretation. Original contexts and confessional settings remain explicit; no independent specialist signoff."
+    },
+    {
+      "id": "connections-20-04",
+      "title": "Twenty Samuel, Kings, Chronicles and Isaiah narrative comparisons",
+      "count": 20,
+      "targets": [
+        "ce020",
+        "ce021",
+        "ce066",
+        "ce067",
+        "ce068",
+        "ce069",
+        "ce070",
+        "ce073",
+        "ce074",
+        "ce075",
+        "ce076",
+        "ce077",
+        "ce078",
+        "ce079",
+        "ce080",
+        "ce081",
+        "ce082",
+        "ce083",
+        "ce084",
+        "ce085"
+      ],
+      "method": "AI-assisted comparison of two selected publisher passage contexts with one scoped named commentary for each pair. Six commentaries by four authors; access to two commentaries was limited to indexed excerpts. Narrative overlap, divergent evaluations and authorship/chronology limits remain explicit. All twenty links remain narrative parallels; no independent specialist signoff."
     }
   ]
 }

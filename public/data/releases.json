@@ -1,6 +1,16 @@
 {
   "releases": [
     {
+      "version": "0.26.0",
+      "date": "2026-10-29",
+      "title": "Twenty Old Testament narrative reviews",
+      "changes": [
+        "Compare twenty more Samuel, Kings, Chronicles and Isaiah narratives with paired reading contexts, named commentary and explicit differences.",
+        "Follow scoped citations to six commentaries by four authors, with indexed-excerpt access limits clearly recorded.",
+        "See 88 of 115 explained connections assessed on the About dashboard and roadmap, with 27 remaining and independent review still open."
+      ]
+    },
+    {
       "version": "0.25.0",
       "date": "2026-10-29",
       "title": "Twenty more source-backed Scripture connections",

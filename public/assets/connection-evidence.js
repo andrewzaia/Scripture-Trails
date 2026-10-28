@@ -1,6 +1,6 @@
 import {parseRef} from './books.js';
 import {validateCanonicalReference} from './reference-integrity.js';
-import {ADDITIONAL_CONNECTION_EVIDENCE} from './connection-evidence-expanded.js?v=0.25.0';
+import {ADDITIONAL_CONNECTION_EVIDENCE} from './connection-evidence-expanded.js?v=0.26.0';
 /** Selective passage-linked editorial register. The 603k OpenBible links remain unclassified. */
 export const CONNECTION_KINDS=Object.freeze({
   "quotation": "Direct quotation",
@@ -224,22 +224,22 @@ export const CONNECTION_EVIDENCE=Object.freeze([
     "from": "2 Kings 18:13",
     "to": "Isaiah 36:1",
     "kind": "parallel",
-    "explanation": "Both books introduce Sennacherib's invasion of Judah in Hezekiah's reign.",
-    "caution": "Overlapping biblical accounts do not provide independent confirmation.",
+    "explanation": "Kings and Isaiah share the invasion notice and the approach to Jerusalem. Kings also includes Hezekiah's tribute payment before the delegation; Isaiah moves directly to the Rabshakeh. Ray Ortlund identifies the larger parallel narrative.",
+    "caution": "Preserve the tribute passage in Kings and the different narrative scope. Shared biblical wording does not establish independent historical confirmation, exact source dependence or an independently verified chronology.",
     "context": "Isaiah 36:1-3",
     "review": "scripture-context-screened",
-    "basis": "Editorial comparison of cited passages; external specialist review pending"
+    "basis": "Selected passages and scoped named commentary checked in citation batch connections-20-04 on 2026-10-29. Access limits and remaining questions recorded there. Independent specialist review pending."
   },
   {
     "id": "ce021",
     "from": "1 Kings 8:1",
     "to": "2 Chronicles 5:2",
     "kind": "parallel",
-    "explanation": "Kings and Chronicles recount the assembly to bring the ark into Solomon's temple.",
-    "caution": "Chronicles retells events using its own literary emphasis.",
+    "explanation": "Both accounts bring the ark into the inner sanctuary and describe the cloud interrupting priestly service. Chronicles expands the musicians and united praise. Cameron B.R. Howard discusses the ark transfer and divine presence in Kings.",
+    "caution": "Kings names priests carrying the ark; Chronicles names Levites and levitical priests. Preserve the differing personnel and musical emphasis. This literary comparison does not reconstruct the ark or supply external evidence of the ceremony.",
     "context": "2 Chronicles 5:2-14",
     "review": "scripture-context-screened",
-    "basis": "Editorial comparison of cited passages; external specialist review pending"
+    "basis": "Selected passages and scoped named commentary checked in citation batch connections-20-04 on 2026-10-29. Access limits and remaining questions recorded there. Independent specialist review pending."
   },
   {
     "id": "ce022",
