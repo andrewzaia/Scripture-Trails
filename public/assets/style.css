@@ -206,3 +206,8 @@ body.light .atlas-preview-panel{background:var(--surface2)}
 .collection-workspace input:not([type=checkbox]),.collection-workspace textarea,.collection-workspace select{display:block;width:100%;padding:8px;border:1px solid var(--line);background:var(--surface2);color:var(--ink);border-radius:4px}
 .collection-workspace fieldset,.study-collection{border-color:var(--line)}
 .collection-workspace [hidden]{display:none!important}
+
+.annotation-place-picker{min-width:0;border:1px solid var(--line);border-radius:6px;padding:12px;margin:14px 0}
+.annotation-place-chip{display:flex;align-items:center;flex-wrap:wrap;gap:8px;padding:6px 0;overflow-wrap:anywhere}
+.annotation-workspace [hidden]{display:none!important}
+.annotation-entry .small-action{max-width:100%;white-space:normal;text-align:left;overflow-wrap:anywhere}

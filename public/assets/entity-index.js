@@ -1,14 +1,14 @@
-import {buildEntityCatalog,findEntities,ENTITY_TYPES} from './entity-index-data.js?v=0.16.1';
+import {buildEntityCatalog,findEntities,ENTITY_TYPES} from './entity-index-data.js?v=0.17.0';
 import {validateCanonicalReference} from './reference-integrity.js';
-import {connectionsForPassages,CONNECTION_KINDS,REVIEW_LABELS} from './connection-evidence.js?v=0.16.1';
-import {personTrail} from './person-trails.js?v=0.16.1';
+import {connectionsForPassages,CONNECTION_KINDS,REVIEW_LABELS} from './connection-evidence.js?v=0.17.0';
+import {personTrail} from './person-trails.js?v=0.17.0';
 
 const make=(tag,cls,text)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(text!==undefined)e.textContent=text;return e;};
 const key=(type,id)=>type+':'+id;
 /** Indexed entities reuse local source datasets. Source text is not rehosted. */
 export function createEntityIndex(root,handlers={}){
  const $=id=>root.querySelector('[data-entity="'+id+'"]')||root.closest('section')?.querySelector('[data-entity="'+id+'"]');
- const ENTITY_INDEX_DATA_VERSION='0.16.1';
+ const ENTITY_INDEX_DATA_VERSION='0.17.0';
  let initial=null,catalog,counts,filter='all',period='all',query='',selected=null,shown=32,pendingReference=null;
  const label=record=>record.type==='person'?'Person':record.type==='place'?(record.kind==='polity'?'Kingdom / polity':'Place'):'Event';
  const by=(type,id)=>catalog.byKey.get(key(type,id));
@@ -49,6 +49,7 @@ export function createEntityIndex(root,handlers={}){
    for(const edge of record.relationships){const row=make('div','entity-relationship');row.append(btn(by('person',edge.to)?.title||edge.to,()=>nav(by('person',edge.to)),'entity-text-button'),make('span','',edge.label),btn(edge.ref,()=>handlers.onRead?.(sourcePassage(edge.ref)),'entity-link-ref'));panel.append(row);}
   }
   if(record.type==='place'){
+   panel.append(btn('Open your notes for this place',()=>handlers.onNotes?.(record.id)));
    panel.append(make('h3','','Location and historical evidence'),make('p','entity-muted',record.caution),make('p','entity-muted','Record type: '+(record.kind||'Gospel setting')+'. '+record.sourceStatus+'. No event-level archaeological coordinate is implied.'));
    if(record.cityStudy)panel.append(btn('Open detailed city study',()=>handlers.onCity?.(record.cityStudy)));
    const mappedEvent=record.events.find(id=>by('event',id)?.isJourney);if(mappedEvent)panel.append(btn('Locate on the Gospel map',()=>handlers.onJourney?.(mappedEvent)));
