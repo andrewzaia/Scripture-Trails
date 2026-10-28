@@ -1,0 +1,1444 @@
+export const CITATION_REVIEW = {
+  "schema": 1,
+  "updated": "2026-10-28",
+  "status": "declared-batch-assessed",
+  "method": "AI-assisted editorial source-level review of a declared priority batch. The Bible is the authoritative foundation; supporting historical and archaeological sources are limited to the claims and access scope recorded here. No independent specialist signoff is claimed.",
+  "scope": {
+    "issues": 18,
+    "places": 13,
+    "trailReadings": 4,
+    "connections": 8
+  },
+  "deferred": [
+    "Nine assessed place dossiers still need external archaeological bibliography; regional placeholders were not upgraded.",
+    "The other 107 explained pairs retain their existing review labels and have no new source-level assessment in this batch.",
+    "Other person-trail access gaps, full excavation reports, manuscript apparatuses, wider source coverage and independent specialist review remain open.",
+    "The full OpenBible corpus remains unclassified."
+  ],
+  "sources": {
+    "luke2": {
+      "title": "Luke 2 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/luke/2",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage text and, where specified, publisher notes checked. No manuscript collation or translation equivalence audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "john2": {
+      "title": "John 2 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/john/2",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage text and, where specified, publisher notes checked. No manuscript collation or translation equivalence audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "mark11": {
+      "title": "Mark 11 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/mark/11",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage text and, where specified, publisher notes checked. No manuscript collation or translation equivalence audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "luke4": {
+      "title": "Luke 4 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/luke/4",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage text and, where specified, publisher notes checked. No manuscript collation or translation equivalence audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "mark5": {
+      "title": "Mark 5 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/Mark+5/",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage text checked in the publisher chapter view, which includes neighbouring chapters. Earlier USCCB requests were unavailable. No manuscript collation or translation equivalence audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "john4": {
+      "title": "John 4 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/John+4/",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage text checked in the publisher chapter view, which includes neighbouring chapters. Earlier USCCB requests were unavailable. No manuscript collation or translation equivalence audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "luke24": {
+      "title": "Luke 24 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/Luke+24/",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage text checked in the publisher chapter view, which includes neighbouring chapters. Earlier USCCB requests were unavailable. No manuscript collation or translation equivalence audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "john12": {
+      "title": "John 12 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/john/12",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage text and, where specified, publisher notes checked. No manuscript collation or translation equivalence audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "john13": {
+      "title": "John 13 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/john/13",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage text and, where specified, publisher notes checked. No manuscript collation or translation equivalence audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "john18": {
+      "title": "John 18 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/john/18",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage text and, where specified, publisher notes checked. No manuscript collation or translation equivalence audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "john19": {
+      "title": "John 19 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/john/19",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage text and, where specified, publisher notes checked. No manuscript collation or translation equivalence audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "luke18": {
+      "title": "Luke 18 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/luke/18",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage text and, where specified, publisher notes checked. No manuscript collation or translation equivalence audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "mark10": {
+      "title": "Mark 10 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/mark/10",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage text and, where specified, publisher notes checked. No manuscript collation or translation equivalence audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "neh1": {
+      "title": "Nehemiah 1 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/nehemiah/1",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage text and, where specified, publisher notes checked. No manuscript collation or translation equivalence audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "neh6": {
+      "title": "Nehemiah 6 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/nehemiah/6",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage text and, where specified, publisher notes checked. No manuscript collation or translation equivalence audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "neh8": {
+      "title": "Nehemiah 8 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/nehemiah/8",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage text and, where specified, publisher notes checked. No manuscript collation or translation equivalence audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "isa7": {
+      "title": "Isaiah 7 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/isaiah/7",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage text and, where specified, publisher notes checked. No manuscript collation or translation equivalence audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "exod12": {
+      "title": "Exodus 12 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/exodus/12",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage text and, where specified, publisher notes checked. No manuscript collation or translation equivalence audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "cor5": {
+      "title": "1 Corinthians 5 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/1corinthians/5",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage text and, where specified, publisher notes checked. No manuscript collation or translation equivalence audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "gen3": {
+      "title": "Genesis 3 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/genesis/3",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage text and, where specified, publisher notes checked. No manuscript collation or translation equivalence audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "rom16": {
+      "title": "Romans 16 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/romans/16",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage text and, where specified, publisher notes checked. No manuscript collation or translation equivalence audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "gen12": {
+      "title": "Genesis 12 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/genesis/12",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage text and, where specified, publisher notes checked. No manuscript collation or translation equivalence audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "gal3": {
+      "title": "Galatians 3 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/galatians/3",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage text and, where specified, publisher notes checked. No manuscript collation or translation equivalence audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "mal3": {
+      "title": "Malachi 3 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/malachi/3",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage text and, where specified, publisher notes checked. No manuscript collation or translation equivalence audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "sam17": {
+      "title": "1 Samuel 17 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/1samuel/17",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage text and, where specified, publisher notes checked. No manuscript collation or translation equivalence audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "chr20": {
+      "title": "1 Chronicles 20 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/1+Chronicles+20/",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage text checked in the publisher chapter view, which includes neighbouring chapters. Earlier USCCB requests were unavailable. No manuscript collation or translation equivalence audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "sam11": {
+      "title": "2 Samuel 11 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/2+Samuel+11/",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage text checked in the publisher chapter view, which includes neighbouring chapters. Earlier USCCB requests were unavailable. No manuscript collation or translation equivalence audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "sam21": {
+      "title": "2 Samuel 21 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/2+Samuel+21/",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage text checked in the publisher chapter view, which includes neighbouring chapters. Earlier USCCB requests were unavailable. No manuscript collation or translation equivalence audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "matt2": {
+      "title": "Matthew 2 - Crossway",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/Matthew+2/",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage text and, where specified, publisher notes checked. No manuscript collation or translation equivalence audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "mark6": {
+      "title": "Mark 6 - Crossway",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/Mark+6/",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage text and, where specified, publisher notes checked. No manuscript collation or translation equivalence audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "luke5": {
+      "title": "Luke 5 - Crossway",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/Luke+5/",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage text and, where specified, publisher notes checked. No manuscript collation or translation equivalence audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "mark1": {
+      "title": "Mark 1 - Crossway",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/Mark+1/",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage text and, where specified, publisher notes checked. No manuscript collation or translation equivalence audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "luke9": {
+      "title": "Luke 9 - Crossway",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/Luke+9/",
+      "checkedOn": "2026-10-28",
+      "access": "Luke 7:11-17 and 9:10-17 checked in the publisher chapter view, which includes neighbouring chapters.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "luke17": {
+      "title": "Luke 17 - Crossway",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/Luke+17/",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage text and, where specified, publisher notes checked. No manuscript collation or translation equivalence audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "john11": {
+      "title": "John 11 - Crossway",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/John+11/",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage text and, where specified, publisher notes checked. No manuscript collation or translation equivalence audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "matt17": {
+      "title": "Matthew 17 - Crossway",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/Matthew+17/",
+      "checkedOn": "2026-10-28",
+      "access": "Matthew 16:13-17 and 17:1-9 checked in the publisher chapter view, which includes neighbouring chapters.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "john20": {
+      "title": "John 20 - Crossway",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/John+20/",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage text and, where specified, publisher notes checked. No manuscript collation or translation equivalence audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "mark14": {
+      "title": "Mark 14 - Crossway",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/Mark+14/",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage text and, where specified, publisher notes checked. No manuscript collation or translation equivalence audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "neh2": {
+      "title": "Nehemiah 2 - Crossway",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/Nehemiah+2/",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage text and, where specified, publisher notes checked. No manuscript collation or translation equivalence audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "sam24": {
+      "title": "2 Samuel 24 - Crossway",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/2+Samuel+24/",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage text and, where specified, publisher notes checked. No manuscript collation or translation equivalence audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "chr21": {
+      "title": "1 Chronicles 21 - Crossway",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/1+Chronicles+21/",
+      "checkedOn": "2026-10-28",
+      "access": "Selected passage text and, where specified, publisher notes checked. No manuscript collation or translation equivalence audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "john7-note": {
+      "title": "John 7:53-8:11 - ESV textual note",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "publisher-note",
+      "url": "https://www.esv.org/John+7:53/",
+      "checkedOn": "2026-10-28",
+      "access": "Publisher bracketed textual note checked; no independent examination of the manuscripts.",
+      "rights": "Linked only; no article, image or report redistributed."
+    },
+    "qana": {
+      "title": "Horbat Qana, Survey (2012)",
+      "author": "Yoav Lerer",
+      "publisher": "Israel Antiquities Authority",
+      "kind": "excavation-report",
+      "url": "https://hadashot.iaa.org.il/report_detail_eng.aspx?id=2048&mag_id=119",
+      "checkedOn": "2026-10-28",
+      "access": "Online report introduction and survey descriptions checked; cited earlier excavations were not separately audited.",
+      "rights": "Linked only; no article, image or report redistributed."
+    },
+    "nein": {
+      "title": "An Early Roman-Period Residence at Nein (2025)",
+      "author": "Fadi Abu-Zidan, Yardenna Alexandre and Danny Syon",
+      "publisher": "Israel Antiquities Authority",
+      "kind": "publisher-abstract",
+      "url": "https://publications.iaa.org.il/atiqot/vol107/iss1/6/",
+      "checkedOn": "2026-10-28",
+      "access": "Publisher abstract and bibliographic record checked. Full Hebrew report and specialist finds reports not reviewed.",
+      "rights": "Linked only; no article, image or report redistributed."
+    },
+    "sidon": {
+      "title": "Sidon Excavation - project history",
+      "author": "Sidon Excavation project",
+      "publisher": "Sidon Excavation",
+      "kind": "project-summary",
+      "url": "https://www.sidonexcavation.com/",
+      "checkedOn": "2026-10-28",
+      "access": "Indexed public project summary checked; direct page requests timed out. Field reports and full stratigraphy not reviewed.",
+      "rights": "Linked only; no article, image or report redistributed."
+    },
+    "banias": {
+      "title": "Banias (2025 preliminary report)",
+      "author": "Adi Erlich and Ron Lavi",
+      "publisher": "Israel Antiquities Authority",
+      "kind": "excavation-report",
+      "url": "https://hadashot.iaa.org.il/report_detail_eng.aspx?id=26675&mag_id=139",
+      "checkedOn": "2026-10-28",
+      "access": "Online preliminary report, Roman compound and concluding interpretation checked. Related monographs and specialist reports not reviewed.",
+      "rights": "Linked only; no article, image or report redistributed."
+    },
+    "bethsaida-page": {
+      "title": "el-Araj - Season 8 report page",
+      "author": "el-Araj Excavation Project",
+      "publisher": "Bethsaida-Julias Excavation Project",
+      "kind": "access-limited",
+      "url": "https://www.bethsaida-julias.com/season8report",
+      "checkedOn": "2026-10-28",
+      "access": "Readable 2024 season report checked: Area E and Area A chronology, earlier walls and the project's expressly provisional sacred-place hypothesis. No comparison with et-Tell reports completed.",
+      "rights": "Linked only; no article, image or report redistributed."
+    }
+  },
+  "records": [
+    {
+      "kind": "issue",
+      "target": "chronology-birth",
+      "title": "Birth, Egypt and Nazareth",
+      "decision": "warning-retained",
+      "reviewedOn": "2026-10-28",
+      "note": "Matthew includes flight to Egypt and return after Herod; Luke moves from the temple presentation to Nazareth. Their combined map sequence is an editorial arrangement.",
+      "limitation": "No extra trip, elapsed interval or harmonised calendar is established by this check.",
+      "passages": [
+        "Matthew 2:13-23",
+        "Luke 2:22-40"
+      ],
+      "citations": [
+        {
+          "sourceId": "matt2",
+          "locator": "2:13-23",
+          "supports": "Egypt and return narrative"
+        },
+        {
+          "sourceId": "luke2",
+          "locator": "2:22-40",
+          "supports": "Presentation and return narrative"
+        }
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "temple-chronology",
+      "title": "Temple scenes",
+      "decision": "warning-retained",
+      "reviewedOn": "2026-10-28",
+      "note": "John places its temple scene near the beginning of the ministry; Mark places its scene after the Jerusalem entry. Both passages remain available for comparison.",
+      "limitation": "These literary positions do not decide whether the accounts describe one action or more. Existing specialist literature was not fully reviewed.",
+      "passages": [
+        "John 2:13-22",
+        "Mark 11:15-19"
+      ],
+      "citations": [
+        {
+          "sourceId": "john2",
+          "locator": "2:13-22",
+          "supports": "John's narrative placement"
+        },
+        {
+          "sourceId": "mark11",
+          "locator": "11:15-19",
+          "supports": "Mark's narrative placement"
+        }
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "nazareth-order",
+      "title": "Hometown synagogue order",
+      "decision": "warning-retained",
+      "reviewedOn": "2026-10-28",
+      "note": "Luke presents the synagogue rejection before its Capernaum sequence; Mark presents a hometown rejection after earlier Galilean episodes.",
+      "limitation": "The check supports retaining the ordering question; it does not settle whether these are the same encounter.",
+      "passages": [
+        "Luke 4:16-37",
+        "Mark 6:1-6"
+      ],
+      "citations": [
+        {
+          "sourceId": "luke4",
+          "locator": "4:16-37",
+          "supports": "Luke's presentation"
+        },
+        {
+          "sourceId": "mark6",
+          "locator": "6:1-6",
+          "supports": "Mark's presentation"
+        }
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "disciples-call",
+      "title": "Fishermen and Capernaum",
+      "decision": "warning-retained",
+      "reviewedOn": "2026-10-28",
+      "note": "Mark narrates the call before the Capernaum synagogue; Luke narrates the fishing and call after earlier Capernaum ministry.",
+      "limitation": "No precise common date or additional encounter is inferred.",
+      "passages": [
+        "Mark 1:16-28",
+        "Luke 5:1-11"
+      ],
+      "citations": [
+        {
+          "sourceId": "mark1",
+          "locator": "1:16-28",
+          "supports": "Call before synagogue in Mark"
+        },
+        {
+          "sourceId": "luke5",
+          "locator": "4:31-5:11",
+          "supports": "Capernaum and call sequence in Luke"
+        }
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "jairus-location",
+      "title": "Jairus at the shore",
+      "decision": "warning-retained",
+      "reviewedOn": "2026-10-28",
+      "note": "Mark places the gathering beside the sea after a crossing and names Jairus, without naming Capernaum at this point. The existing regional location is retained.",
+      "limitation": "A later house scene does not identify an excavated house or an exact meeting point.",
+      "passages": [
+        "Mark 5:21-24"
+      ],
+      "citations": [
+        {
+          "sourceId": "mark5",
+          "locator": "5:21-24",
+          "supports": "Lakeshore wording and absence of a named town"
+        }
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "feeding-site",
+      "title": "Feeding near Bethsaida",
+      "decision": "warning-retained",
+      "reviewedOn": "2026-10-28",
+      "note": "Luke names Bethsaida in the withdrawal and then describes a deserted setting for the crowd. A town name does not yield a surveyed feeding point.",
+      "limitation": "Only Luke's selected context was rechecked here; parallel accounts and landscape reconstruction require further comparison.",
+      "passages": [
+        "Luke 9:10-17"
+      ],
+      "citations": [
+        {
+          "sourceId": "luke9",
+          "locator": "9:10-17",
+          "supports": "Bethsaida and deserted-place wording"
+        }
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "caesarea-district",
+      "title": "Caesarea Philippi district",
+      "decision": "warning-retained",
+      "reviewedOn": "2026-10-28",
+      "note": "Matthew locates the confession in the district of Caesarea Philippi. The Banias report supplies archaeological context for the ancient site.",
+      "limitation": "The report does not locate the conversation at the cave, temple or any particular building.",
+      "passages": [
+        "Matthew 16:13-17"
+      ],
+      "citations": [
+        {
+          "sourceId": "matt17",
+          "locator": "16:13-17, neighbouring chapter",
+          "supports": "District wording"
+        },
+        {
+          "sourceId": "banias",
+          "locator": "Roman compound and conclusions",
+          "supports": "Roman-period archaeological context only"
+        }
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "galilee-samaria-border",
+      "title": "Samaria and Galilee corridor",
+      "decision": "warning-retained",
+      "reviewedOn": "2026-10-28",
+      "note": "Luke describes travel between Samaria and Galilee and entry into a village without naming the village.",
+      "limitation": "No modern boundary, road or precise crossing point is inferred.",
+      "passages": [
+        "Luke 17:11-19"
+      ],
+      "citations": [
+        {
+          "sourceId": "luke17",
+          "locator": "17:11-19",
+          "supports": "Regional corridor and unnamed village"
+        }
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "john-textual-note",
+      "title": "John 7:53-8:11 textual note",
+      "decision": "warning-retained",
+      "reviewedOn": "2026-10-28",
+      "note": "The ESV publisher marks the passage with a note about its absence from the earliest manuscripts. The existing feast entry continues from John 8:12.",
+      "limitation": "This records a publisher textual note, not an independent manuscript collation or a verdict on the passage's theological use.",
+      "passages": [
+        "John 7:53-8:11",
+        "John 8:12"
+      ],
+      "citations": [
+        {
+          "sourceId": "john7-note",
+          "locator": "Bracketed note before 7:53",
+          "supports": "Publisher's stated textual qualification"
+        }
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "bethany-anointing",
+      "title": "Bethany anointing accounts",
+      "decision": "warning-retained",
+      "reviewedOn": "2026-10-28",
+      "note": "John introduces the Bethany dinner six days before Passover; Mark narrates an anointing after its two-days-before-Passover introduction.",
+      "limitation": "Narrative framing alone does not establish two separate dinners, resolve chronology or prove additional journeys.",
+      "passages": [
+        "John 12:1-8",
+        "Mark 14:1-9"
+      ],
+      "citations": [
+        {
+          "sourceId": "john12",
+          "locator": "12:1-8",
+          "supports": "John's named participants and setting"
+        },
+        {
+          "sourceId": "mark14",
+          "locator": "14:1-9",
+          "supports": "Mark's framing of the anointing"
+        }
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "donkey-village",
+      "title": "Village ahead of the disciples",
+      "decision": "warning-retained",
+      "reviewedOn": "2026-10-28",
+      "note": "Mark names the approach to Bethphage and Bethany, then describes a village opposite the disciples. The retrieval village is not explicitly equated with Bethphage.",
+      "limitation": "No exact village footprint or retrieval street is assigned.",
+      "passages": [
+        "Mark 11:1-6"
+      ],
+      "citations": [
+        {
+          "sourceId": "mark11",
+          "locator": "11:1-6",
+          "supports": "Named approach and subsequent village instruction"
+        }
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "jericho-direction",
+      "title": "Jericho approach and departure",
+      "decision": "warning-retained",
+      "reviewedOn": "2026-10-28",
+      "note": "Luke describes approach to Jericho; Mark describes departure. The existing qualification remains beside the combined entry.",
+      "limitation": "A proposed old-town/new-town solution needs separate historical evidence; no such solution is asserted here.",
+      "passages": [
+        "Luke 18:35-43",
+        "Mark 10:46-52"
+      ],
+      "citations": [
+        {
+          "sourceId": "luke18",
+          "locator": "18:35-43",
+          "supports": "Approach wording"
+        },
+        {
+          "sourceId": "mark10",
+          "locator": "10:46-52",
+          "supports": "Departure wording"
+        }
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "last-supper-calendar",
+      "title": "Supper and Passover",
+      "decision": "warning-retained",
+      "reviewedOn": "2026-10-28",
+      "note": "John opens the supper before Passover and later describes the authorities preparing to eat Passover. Mark explicitly frames preparation for the meal as Passover.",
+      "limitation": "Retain the calendar warning. These selected passages do not establish one undisputed harmonised date; the previously linked research article was not reviewed in full.",
+      "passages": [
+        "John 13:1-5",
+        "John 18:28",
+        "Mark 14:12-16"
+      ],
+      "citations": [
+        {
+          "sourceId": "john13",
+          "locator": "13:1-5",
+          "supports": "Supper introduction"
+        },
+        {
+          "sourceId": "john18",
+          "locator": "18:28",
+          "supports": "Passover wording at the trial"
+        },
+        {
+          "sourceId": "mark14",
+          "locator": "14:12-16",
+          "supports": "Mark's meal preparation"
+        }
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "passion-tomb-sites",
+      "title": "Golgotha and later commemorations",
+      "decision": "warning-retained",
+      "reviewedOn": "2026-10-28",
+      "note": "John names Golgotha near the city and describes a garden and tomb nearby. The map continues to distinguish those biblical settings from modern commemorative coordinates.",
+      "limitation": "No excavation report was assessed for a particular trial room or tomb in this batch. Existing heritage links do not supply event-level identification.",
+      "passages": [
+        "John 19:17-20",
+        "John 19:38-42"
+      ],
+      "citations": [
+        {
+          "sourceId": "john19",
+          "locator": "19:17-20 and 38-42",
+          "supports": "Named setting and burial narrative"
+        }
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "resurrection-sequence",
+      "title": "Appearance sequence",
+      "decision": "warning-retained",
+      "reviewedOn": "2026-10-28",
+      "note": "Luke 24 groups Emmaus and Jerusalem appearances; John 20 explicitly distinguishes a later gathering involving Thomas.",
+      "limitation": "Selected context checks do not establish a continuously dated route across all appearance accounts.",
+      "passages": [
+        "Luke 24:13-49",
+        "John 20:19-29"
+      ],
+      "citations": [
+        {
+          "sourceId": "luke24",
+          "locator": "24:13-49",
+          "supports": "Luke's appearance sequence"
+        },
+        {
+          "sourceId": "john20",
+          "locator": "20:19-29",
+          "supports": "Later gathering involving Thomas"
+        }
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "eastern-lake-variants",
+      "title": "Eastern lake names",
+      "decision": "warning-retained",
+      "reviewedOn": "2026-10-28",
+      "note": "Mark's publisher note records an alternative Gadarenes reading alongside Gerasenes. The regional marker and textual warning are retained.",
+      "limitation": "No manuscript apparatus or complete Gospel-variant comparison was undertaken; Gergesenes and exact landing proposals need fuller source review.",
+      "passages": [
+        "Mark 5:1-20"
+      ],
+      "citations": [
+        {
+          "sourceId": "mark5",
+          "locator": "5:1 and publisher note",
+          "supports": "A documented geographical reading variation"
+        }
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "bethsaida-identification",
+      "title": "Bethsaida candidate review",
+      "decision": "warning-retained",
+      "reviewedOn": "2026-10-28",
+      "note": "The el-Araj 2024 report describes Byzantine remains and earlier walls, with several identifications explicitly provisional. It does not settle the el-Araj versus et-Tell comparison.",
+      "limitation": "The project report was readable in this review, closing the landing-page access gap. Comparative excavation publications from et-Tell and independent assessment remain outstanding; no candidate receives a confidence upgrade.",
+      "passages": [
+        "Luke 9:10-17"
+      ],
+      "citations": [
+        {
+          "sourceId": "bethsaida-page",
+          "locator": "2024 season report, Areas E, A and D",
+          "supports": "Reported excavation context and the project's provisional identifications only"
+        },
+        {
+          "sourceId": "luke9",
+          "locator": "9:10-17",
+          "supports": "Biblical Bethsaida setting only"
+        }
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "emmaus-identification",
+      "title": "Emmaus identification",
+      "decision": "warning-retained",
+      "reviewedOn": "2026-10-28",
+      "note": "Luke names Emmaus and supplies a distance from Jerusalem. The modern site question remains open.",
+      "limitation": "The chapter view was checked for the narrative, not a full apparatus of distance variants or an archaeological comparison of candidate sites.",
+      "passages": [
+        "Luke 24:13-35"
+      ],
+      "citations": [
+        {
+          "sourceId": "luke24",
+          "locator": "24:13-35",
+          "supports": "Biblical name and distance context"
+        }
+      ]
+    },
+    {
+      "kind": "place",
+      "target": "cana",
+      "title": "Cana",
+      "decision": "sources-added",
+      "reviewedOn": "2026-10-28",
+      "note": "John names Cana in Galilee; the Qana survey supplies archaeological context for one candidate.",
+      "limitation": "The survey does not compare every Cana candidate or identify a wedding house.",
+      "passages": [
+        "John 2:1-11"
+      ],
+      "citations": [
+        {
+          "sourceId": "john2",
+          "locator": "John 2:1-11",
+          "supports": "Narrative setting only"
+        },
+        {
+          "sourceId": "qana",
+          "locator": "Report scope stated in access note",
+          "supports": "Site context only; no event location"
+        }
+      ]
+    },
+    {
+      "kind": "place",
+      "target": "sychar",
+      "title": "Sychar and Jacob's well",
+      "decision": "warning-retained",
+      "reviewedOn": "2026-10-28",
+      "note": "John distinguishes the town called Sychar and Jacob's well nearby.",
+      "limitation": "Retain the missing external-source warning. A modern town identification, well monument and ancient town limits need separate evidence.",
+      "passages": [
+        "John 4:4-6"
+      ],
+      "citations": [
+        {
+          "sourceId": "john4",
+          "locator": "John 4:4-6",
+          "supports": "Narrative setting only"
+        }
+      ]
+    },
+    {
+      "kind": "place",
+      "target": "nain",
+      "title": "Nain",
+      "decision": "sources-added",
+      "reviewedOn": "2026-10-28",
+      "note": "Luke names Nain; the IAA abstract reports an Early Roman residence at Nein.",
+      "limitation": "Only the publisher abstract was checked. The residence does not identify Luke's gate or the meeting place.",
+      "passages": [
+        "Luke 7:11-17"
+      ],
+      "citations": [
+        {
+          "sourceId": "luke9",
+          "locator": "Luke 7:11-17",
+          "supports": "Narrative setting only"
+        },
+        {
+          "sourceId": "nein",
+          "locator": "Report scope stated in access note",
+          "supports": "Site context only; no event location"
+        }
+      ]
+    },
+    {
+      "kind": "place",
+      "target": "east-shore",
+      "title": "Eastern lakeshore",
+      "decision": "warning-retained",
+      "reviewedOn": "2026-10-28",
+      "note": "The narrative and publisher note support a regional setting with geographical name variation.",
+      "limitation": "Retain the missing archaeology citation. A textual note is not an excavated landing site.",
+      "passages": [
+        "Mark 5:1-20"
+      ],
+      "citations": [
+        {
+          "sourceId": "mark5",
+          "locator": "Mark 5:1-20",
+          "supports": "Narrative setting only"
+        }
+      ]
+    },
+    {
+      "kind": "place",
+      "target": "sidon",
+      "title": "Sidon",
+      "decision": "sources-added",
+      "reviewedOn": "2026-10-28",
+      "note": "The project summary describes urban excavations and the limits of knowledge of ancient Sidon.",
+      "limitation": "Direct access timed out; only the indexed project summary was checked. No Gospel street or building is identified.",
+      "passages": [
+        "Mark 7:31"
+      ],
+      "citations": [
+        {
+          "sourceId": "sidon",
+          "locator": "Mark 7:31",
+          "supports": "Urban archaeological project context"
+        }
+      ]
+    },
+    {
+      "kind": "place",
+      "target": "caesarea-philippi",
+      "title": "Caesarea Philippi",
+      "decision": "sources-added",
+      "reviewedOn": "2026-10-28",
+      "note": "The biblical district wording is retained alongside the Banias excavation context.",
+      "limitation": "The preliminary report dates different structures to different periods. The conversation is not pinned to a shrine.",
+      "passages": [
+        "Matthew 16:13-17"
+      ],
+      "citations": [
+        {
+          "sourceId": "matt17",
+          "locator": "Matthew 16:13-17",
+          "supports": "Narrative setting only"
+        },
+        {
+          "sourceId": "banias",
+          "locator": "Report scope stated in access note",
+          "supports": "Site context only; no event location"
+        }
+      ]
+    },
+    {
+      "kind": "place",
+      "target": "mountain",
+      "title": "Transfiguration mountain",
+      "decision": "warning-retained",
+      "reviewedOn": "2026-10-28",
+      "note": "Matthew describes a high mountain without giving its name.",
+      "limitation": "Retain the missing external-source warning. This check does not adjudicate Tabor and Hermon traditions.",
+      "passages": [
+        "Matthew 17:1-9"
+      ],
+      "citations": [
+        {
+          "sourceId": "matt17",
+          "locator": "Matthew 17:1-9",
+          "supports": "Narrative setting only"
+        }
+      ]
+    },
+    {
+      "kind": "place",
+      "target": "bethany",
+      "title": "Bethany near Jerusalem",
+      "decision": "warning-retained",
+      "reviewedOn": "2026-10-28",
+      "note": "John names Bethany and places it near Jerusalem.",
+      "limitation": "Retain the external-source gap for the modern identification and later tomb or church traditions. Those monuments were not audited.",
+      "passages": [
+        "John 11:1-18"
+      ],
+      "citations": [
+        {
+          "sourceId": "john11",
+          "locator": "John 11:1-18",
+          "supports": "Narrative setting only"
+        }
+      ]
+    },
+    {
+      "kind": "place",
+      "target": "ephraim",
+      "title": "Ephraim",
+      "decision": "warning-retained",
+      "reviewedOn": "2026-10-28",
+      "note": "John names a town called Ephraim near the wilderness.",
+      "limitation": "Retain the external-source gap. The verse does not identify a modern town or surveyed town centre.",
+      "passages": [
+        "John 11:54"
+      ],
+      "citations": [
+        {
+          "sourceId": "john11",
+          "locator": "John 11:54",
+          "supports": "Narrative setting only"
+        }
+      ]
+    },
+    {
+      "kind": "place",
+      "target": "bethphage",
+      "title": "Bethphage",
+      "decision": "warning-retained",
+      "reviewedOn": "2026-10-28",
+      "note": "Mark names Bethphage in the Jerusalem approach.",
+      "limitation": "Retain the external-source gap for the ancient village footprint; the donkey retrieval village remains unspecified.",
+      "passages": [
+        "Mark 11:1-6"
+      ],
+      "citations": [
+        {
+          "sourceId": "mark11",
+          "locator": "Mark 11:1-6",
+          "supports": "Narrative setting only"
+        }
+      ]
+    },
+    {
+      "kind": "place",
+      "target": "olives",
+      "title": "Mount of Olives",
+      "decision": "warning-retained",
+      "reviewedOn": "2026-10-28",
+      "note": "Mark connects the Mount of Olives and the subsequent Gethsemane scene.",
+      "limitation": "Retain the external-source gap for specific commemorative points. A ridge name does not identify every discourse or prayer spot.",
+      "passages": [
+        "Mark 14:26-32"
+      ],
+      "citations": [
+        {
+          "sourceId": "mark14",
+          "locator": "Mark 14:26-32",
+          "supports": "Narrative setting only"
+        }
+      ]
+    },
+    {
+      "kind": "place",
+      "target": "gethsemane",
+      "title": "Gethsemane",
+      "decision": "warning-retained",
+      "reviewedOn": "2026-10-28",
+      "note": "Mark names Gethsemane in the prayer scene.",
+      "limitation": "Retain the external-source gap. This batch did not verify garden boundaries, tree ages or an excavation claim for the prayer spot.",
+      "passages": [
+        "Mark 14:32-42"
+      ],
+      "citations": [
+        {
+          "sourceId": "mark14",
+          "locator": "Mark 14:32-42",
+          "supports": "Narrative setting only"
+        }
+      ]
+    },
+    {
+      "kind": "place",
+      "target": "emmaus",
+      "title": "Emmaus",
+      "decision": "warning-retained",
+      "reviewedOn": "2026-10-28",
+      "note": "Luke supplies the name and narrative distance.",
+      "limitation": "Retain the external-source gap for candidate-site archaeology and manuscript distance variants.",
+      "passages": [
+        "Luke 24:13-35"
+      ],
+      "citations": [
+        {
+          "sourceId": "luke24",
+          "locator": "Luke 24:13-35",
+          "supports": "Narrative setting only"
+        }
+      ]
+    },
+    {
+      "kind": "trail",
+      "target": "Nehemiah 1:1-11",
+      "title": "Nehemiah 1:1-11",
+      "decision": "passage-checked",
+      "reviewedOn": "2026-10-28",
+      "note": "The selected text supports mourning, confession and prayer after news from Jerusalem.",
+      "limitation": "The earlier access gap is closed for this summary check. Historical chronology, translation differences and independent specialist review remain outside this check.",
+      "passages": [
+        "Nehemiah 1:1-11"
+      ],
+      "citations": [
+        {
+          "sourceId": "neh1",
+          "locator": "Nehemiah 1:1-11",
+          "supports": "Selected summary and participant context"
+        }
+      ]
+    },
+    {
+      "kind": "trail",
+      "target": "Nehemiah 2:1-10",
+      "title": "Nehemiah 2:1-10",
+      "decision": "passage-checked",
+      "reviewedOn": "2026-10-28",
+      "note": "The selected text supports the royal request, letters and journey to the provincial governors.",
+      "limitation": "The earlier access gap is closed for this summary check. Historical chronology, translation differences and independent specialist review remain outside this check.",
+      "passages": [
+        "Nehemiah 2:1-10"
+      ],
+      "citations": [
+        {
+          "sourceId": "neh2",
+          "locator": "Nehemiah 2:1-10",
+          "supports": "Selected summary and participant context"
+        }
+      ]
+    },
+    {
+      "kind": "trail",
+      "target": "Nehemiah 6:1-16",
+      "title": "Nehemiah 6:1-16",
+      "decision": "passage-checked",
+      "reviewedOn": "2026-10-28",
+      "note": "The selected text supports intimidation, the attempted trap and the reported completion of the wall.",
+      "limitation": "The earlier access gap is closed for this summary check. Historical chronology, translation differences and independent specialist review remain outside this check.",
+      "passages": [
+        "Nehemiah 6:1-16"
+      ],
+      "citations": [
+        {
+          "sourceId": "neh6",
+          "locator": "Nehemiah 6:1-16",
+          "supports": "Selected summary and participant context"
+        }
+      ]
+    },
+    {
+      "kind": "trail",
+      "target": "Nehemiah 8:1-12",
+      "title": "Nehemiah 8:1-12",
+      "decision": "passage-checked",
+      "reviewedOn": "2026-10-28",
+      "note": "Ezra reads the law; Nehemiah and the Levites participate in addressing the assembly.",
+      "limitation": "The earlier access gap is closed for this summary check. Historical chronology, translation differences and independent specialist review remain outside this check.",
+      "passages": [
+        "Nehemiah 8:1-12"
+      ],
+      "citations": [
+        {
+          "sourceId": "neh8",
+          "locator": "Nehemiah 8:1-12",
+          "supports": "Selected summary and participant context"
+        }
+      ]
+    },
+    {
+      "kind": "connection",
+      "target": "ce008",
+      "title": "Isaiah 7:10-17 and Matthew 1:18-25",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-28",
+      "note": "Matthew cites Isaiah in the birth account. Isaiah addresses Ahaz in a setting involving the threatened kingdoms.",
+      "limitation": "Keep the original Isaiah setting and the translation question visible. No Hebrew/Greek manuscript collation was undertaken.",
+      "passages": [
+        "Isaiah 7:10-17",
+        "Matthew 1:18-25"
+      ],
+      "citations": [
+        {
+          "sourceId": "isa7",
+          "locator": "Isaiah 7:10-17",
+          "supports": "Passage context for the stated comparison"
+        },
+        {
+          "sourceId": "matt2",
+          "locator": "Matthew 1:18-25",
+          "supports": "Passage context for the stated comparison"
+        }
+      ]
+    },
+    {
+      "kind": "connection",
+      "target": "ce017",
+      "title": "Exodus 12:1-14 and 1 Corinthians 5:6-8",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-28",
+      "note": "Exodus describes the Passover protection and observance. Paul explicitly applies Passover sacrifice imagery to Christ in a discussion of the community's conduct.",
+      "limitation": "Retain the interpretive typology label. Paul's application does not make Exodus a direct naming of Jesus.",
+      "passages": [
+        "Exodus 12:1-14",
+        "1 Corinthians 5:6-8"
+      ],
+      "citations": [
+        {
+          "sourceId": "exod12",
+          "locator": "Exodus 12:1-14",
+          "supports": "Passage context for the stated comparison"
+        },
+        {
+          "sourceId": "cor5",
+          "locator": "1 Corinthians 5:6-8",
+          "supports": "Passage context for the stated comparison"
+        }
+      ]
+    },
+    {
+      "kind": "connection",
+      "target": "ce027",
+      "title": "Genesis 3:14-15 and Romans 16:17-20",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-28",
+      "note": "Genesis describes enmity involving the serpent and offspring; Romans promises Satan's defeat using crushing imagery.",
+      "limitation": "A proposed echo remains an editorial interpretation; shared imagery does not establish a verbatim quotation or a complete account of Paul's intention.",
+      "passages": [
+        "Genesis 3:14-15",
+        "Romans 16:17-20"
+      ],
+      "citations": [
+        {
+          "sourceId": "gen3",
+          "locator": "Genesis 3:14-15",
+          "supports": "Passage context for the stated comparison"
+        },
+        {
+          "sourceId": "rom16",
+          "locator": "Romans 16:17-20",
+          "supports": "Passage context for the stated comparison"
+        }
+      ]
+    },
+    {
+      "kind": "connection",
+      "target": "ce028",
+      "title": "Genesis 12:1-3 and Galatians 3:6-9",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-28",
+      "note": "Galatians explicitly invokes the blessing to Abraham in its argument about the nations and faith.",
+      "limitation": "Compare the related promise formulations in Genesis; do not require identical wording across translations or collapse Paul's argument into the original narrative.",
+      "passages": [
+        "Genesis 12:1-3",
+        "Galatians 3:6-9"
+      ],
+      "citations": [
+        {
+          "sourceId": "gen12",
+          "locator": "Genesis 12:1-3",
+          "supports": "Passage context for the stated comparison"
+        },
+        {
+          "sourceId": "gal3",
+          "locator": "Galatians 3:6-9",
+          "supports": "Passage context for the stated comparison"
+        }
+      ]
+    },
+    {
+      "kind": "connection",
+      "target": "ce044",
+      "title": "Malachi 3:1 and Mark 1:1-4",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-28",
+      "note": "Mark's opening uses messenger language associated with Malachi, followed by wilderness-voice language associated with Isaiah.",
+      "limitation": "The opening is a composite scriptural use; the entire quotation must not be attributed solely to Malachi.",
+      "passages": [
+        "Malachi 3:1",
+        "Mark 1:1-4"
+      ],
+      "citations": [
+        {
+          "sourceId": "mal3",
+          "locator": "Malachi 3:1",
+          "supports": "Passage context for the stated comparison"
+        },
+        {
+          "sourceId": "mark1",
+          "locator": "Mark 1:1-4",
+          "supports": "Passage context for the stated comparison"
+        }
+      ]
+    },
+    {
+      "kind": "connection",
+      "target": "ce065",
+      "title": "1 Samuel 17:4-7 and 1 Chronicles 20:4-8",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-28",
+      "note": "Samuel introduces Goliath; Chronicles names Lahmi, Goliath's brother, as Elhanan's opponent. The directly relevant additional textual comparison is 2 Samuel 21:19.",
+      "limitation": "These two anchors are related warrior narratives, not the same combat. Translation and textual-history differences around 2 Samuel 21:19 need specialist review.",
+      "passages": [
+        "1 Samuel 17:4-7",
+        "1 Chronicles 20:4-8",
+        "2 Samuel 21:18-22"
+      ],
+      "citations": [
+        {
+          "sourceId": "sam17",
+          "locator": "1 Samuel 17:4-7",
+          "supports": "Passage context for the stated comparison"
+        },
+        {
+          "sourceId": "chr20",
+          "locator": "1 Chronicles 20:4-8",
+          "supports": "Passage context for the stated comparison"
+        },
+        {
+          "sourceId": "sam21",
+          "locator": "2 Samuel 21:18-22",
+          "supports": "Passage context for the stated comparison"
+        }
+      ]
+    },
+    {
+      "kind": "connection",
+      "target": "ce071",
+      "title": "2 Samuel 11:1-5 and 1 Chronicles 20:1-3",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-28",
+      "note": "The shared context is the Ammonite campaign and David remaining in Jerusalem. Samuel proceeds to Bathsheba; Chronicles proceeds with the campaign.",
+      "limitation": "Chronicles does not retell the Bathsheba incident. The connection concerns a shared narrative setting, not a parallel account of that incident.",
+      "passages": [
+        "2 Samuel 11:1-5",
+        "1 Chronicles 20:1-3"
+      ],
+      "citations": [
+        {
+          "sourceId": "sam11",
+          "locator": "2 Samuel 11:1-5",
+          "supports": "Passage context for the stated comparison"
+        },
+        {
+          "sourceId": "chr20",
+          "locator": "1 Chronicles 20:1-3",
+          "supports": "Passage context for the stated comparison"
+        }
+      ]
+    },
+    {
+      "kind": "connection",
+      "target": "ce072",
+      "title": "2 Samuel 24:1-10 and 1 Chronicles 21:1-8",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-28",
+      "note": "Both accounts describe David's census; Samuel describes the LORD's anger and incitement, while Chronicles names Satan.",
+      "limitation": "Keep the different attribution explicit. This comparison does not settle the theological or textual explanation.",
+      "passages": [
+        "2 Samuel 24:1-10",
+        "1 Chronicles 21:1-8"
+      ],
+      "citations": [
+        {
+          "sourceId": "sam24",
+          "locator": "2 Samuel 24:1-10",
+          "supports": "Passage context for the stated comparison"
+        },
+        {
+          "sourceId": "chr21",
+          "locator": "1 Chronicles 21:1-8",
+          "supports": "Passage context for the stated comparison"
+        }
+      ]
+    }
+  ]
+};

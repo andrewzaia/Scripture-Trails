@@ -40,3 +40,7 @@ Source access is partial: some direct multi-passage and USCCB Nehemiah requests 
 - Mary's profile is specifically Jesus' mother. Peter's Matthew 16 reading does not settle denominational questions.
 - John the Baptist is not John the apostle. Mark 6 is explicitly described as a retrospective account.
 - Acts 15's dispute does not supply a complete later biography or a definitive moral verdict on either leader.
+
+### 28 October 2026 follow-up
+
+The four Nehemiah passages were rechecked through readable USCCB chapter views (1, 6, 8) and Crossway ESV (2). This closes the primary-passage summary access gap for those four readings only. Per-passage scope is in `public/data/citation-review.json`; other access limitations and independent review remain open.

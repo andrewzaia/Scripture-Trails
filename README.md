@@ -162,14 +162,14 @@ tests/                          Built-in Node tests
 
 ## Roadmap
 
-The canonical roadmap is [public/data/roadmap.json](public/data/roadmap.json), displayed on the [Project roadmap](https://www.scripturetrails.com/?view=roadmap). Reviewed on 28 October 2026 against the application through v0.19.0. It records 28 delivered implementation milestones and seven remaining or exploratory milestones. Historical expansion cards describe successive releases, not independent feature counts.
+The canonical roadmap is [public/data/roadmap.json](public/data/roadmap.json), displayed on the [Project roadmap](https://www.scripturetrails.com/?view=roadmap). Reviewed on 28 October 2026 against the application through v0.20.0. It records 29 delivered implementation milestones and seven remaining or exploratory milestones. Historical expansion cards describe successive releases, not independent feature counts.
 
 Delivered foundations include four reader editions, the local 603,076-link Atlas and passage comparison, 79 Jesus-journey episodes and 35 dossiers, five city studies, Gospel chronology comparison, the expanded people/events index, 83 Pauline stages, twenty person trails with 88 readings, and the private notebook with highlights, place links, backups, collections and schedules. This review also records the official-domain launch, Atlas path/preview improvements and release consistency safeguards as distinct delivered milestones.
 
 | Order / track | Remaining milestone | Completion or decision gate |
 | --- | --- | --- |
-| Next priority | Citation coverage and editorial evidence review | Declared priority issues have checked citations or documented unresolved decisions, including limited-access trail checks |
-| Alongside content | Browser, mobile and accessibility release coverage | Critical flows run in CI; accessibility findings are triaged and manual keyboard/screen-reader checks recorded |
+| Ongoing evidence | Further citation remediation and context review | Separately scoped batches address remaining place, trail and passage-pair source gaps |
+| Next priority | Browser, mobile and accessibility release coverage | Critical flows run in CI; accessibility findings are triaged and manual keyboard/screen-reader checks recorded |
 | Specialist availability | Independent historical, textual and nautical review | Actual named, dated specialist review of a declared scope; publish decisions and remaining disagreements |
 | Later content | Kings, prophets and wider historical geography | Build on the first Hebrew Bible collection; audit each collection separately |
 | Later content | Broader people, family and event relationships | Scope each expansion around new study needs and validate identity, passages, relationships and sources |
@@ -383,3 +383,7 @@ The [Hebrew Bible geography collection](https://www.scripturetrails.com/?view=he
 The 15 setting records include regions and grouped settings. They have no coordinates, invented routes or event dates. Five expandable comparison panels address the Delta cities, sea crossing, Horeb/Sinai, Kadesh and selected chronological models. Seven supporting source records distinguish excavation projects, a report catalogue, a heritage record, a scholar's essay, a research thesis and a publisher's study introduction. Their access notes say what was actually consulted. No source supplies independent signoff for the collection.
 
 Data: `public/data/hebrew-geography.json`. Interface: `public/assets/hebrew-geography.js` and `.css`. Method, source access and open review tasks: `sources/exodus/README.md`. Tests reject invalid references, unqualified geometry/dates, broken source/profile links and incorrect restored/filter selections. Release tooling updates the page's module and stylesheet cache keys. The collection is selective; it is not a complete Numbers 33 camp list or all Hebrew Bible geography.
+
+## Citation review: first declared batch
+
+The About page and affected studies expose 43 dated assessments: 18 Gospel issues, 13 places, four Nehemiah readings and eight explained pairs. `public/data/citation-review.json` is the source register; `node scripts/import-citation-review.mjs` regenerates its browser module. Only original editorial assessments are bundled. Publisher text remains external. Four place bibliographies gain scoped sources; nine assessed dossiers still lack external archaeological support. Two comparisons of related but different events use thematic labels. The other 107 explained pairs retain existing labels without a new assessment. Independent specialist review remains outstanding.
