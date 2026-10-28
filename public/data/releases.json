@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "version": "0.18.2",
+      "date": "2026-10-28",
+      "title": "The study behind Scripture Trails",
+      "changes": [
+        "Describe about fifteen years of comprehensive personal Scripture study across the Old and New Testaments.",
+        "State the Bible as the project's authoritative foundation, supported by manuscript research, archaeology and historical context, with continued learning and review."
+      ]
+    },
+    {
       "version": "0.18.1",
       "date": "2026-10-28",
       "title": "Roadmap review and remaining milestones",

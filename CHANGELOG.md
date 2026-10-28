@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.18.2 - 28/10/2026: The study behind Scripture Trails
+
+- Describe about fifteen years of comprehensive personal Scripture study across the Old and New Testaments.
+- State the Bible as the project's authoritative foundation, supported by manuscript research, archaeology and historical context, with continued learning and review.
+
 ## 0.18.1 - 28/10/2026: Roadmap review and remaining milestones
 
 - Record the official-domain launch, Atlas path and preview improvements, and versioned release safeguards as delivered milestones.
