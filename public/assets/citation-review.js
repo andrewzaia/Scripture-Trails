@@ -1,4 +1,4 @@
-import {CITATION_REVIEW} from './citation-review-data.js?v=0.20.0';
+import {CITATION_REVIEW} from './citation-review-data.js?v=0.21.0';
 import {validateCanonicalReference} from './reference-integrity.js';
 export {CITATION_REVIEW};
 
@@ -51,7 +51,7 @@ export function appendCitationReview(parent,kind,target){
 
 export function renderCitationSummary(root){
  if(!root)return;
- root.replaceChildren(make('p','First priority batch: 18 Gospel issues, 13 place dossiers, four Nehemiah readings and eight selected passage comparisons. Each assessment records a decision, checked source scope and remaining limitations.'));
+ root.replaceChildren(make('p','Reviewed coverage: 18 Gospel issues, 15 place dossiers, four Nehemiah readings and eight selected passage comparisons. Includes the first priority batch and a scientific/archaeological source expansion. Each assessment records a decision, checked source scope and remaining limitations.'));
  root.append(make('p','The Bible is the authoritative foundation of Scripture Trails. Archaeological and historical publications supply supporting context within their stated scope. This AI-assisted editorial review does not constitute independent specialist signoff.'));
  for(const [kind,title] of [['issue','Gospel issue assessments'],['place','Place citation assessments'],['trail','Nehemiah passage checks'],['connection','Selected passage comparisons']]){
   const group=make('details',undefined,'citation-review-group');group.append(make('summary',title));
@@ -67,5 +67,5 @@ export function renderCitationSummary(root){
  }
  root.append(make('h3','Remaining source work'));
  const list=make('ul');for(const text of CITATION_REVIEW.deferred)list.append(make('li',text));root.append(list);
- const download=make('a','Download the dated citation review register (JSON)');download.href='/data/citation-review.json?v=0.20.0';download.download='scripture-trails-citation-review-'+CITATION_REVIEW.updated+'.json';root.append(download);
+ const download=make('a','Download the dated citation review register (JSON)');download.href='/data/citation-review.json?v=0.21.0';download.download='scripture-trails-citation-review-'+CITATION_REVIEW.updated+'.json';root.append(download);
 }

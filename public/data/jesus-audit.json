@@ -388,6 +388,41 @@
       "source": "citation-review-banias",
       "result": "Online preliminary report, Roman compound and concluding interpretation checked. Related monographs and specialist reports not reviewed.",
       "checkedOn": "2026-10-28"
+    },
+    {
+      "source": "gethsemane-dating",
+      "result": "Institutional abstract and bibliographic metadata checked. Full paper, laboratory measurements and calibration models not independently reanalysed.",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "source": "jerusalem-radiocarbon",
+      "result": "Abstract, authorship and figure captions checked. Full supplementary dataset and Bayesian models not reanalysed; full-text access was limited.",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "source": "jericho-radiocarbon",
+      "result": "Institutional abstract and publication record checked. The study uses historical calibration curves; no recalibration or raw-sample reanalysis performed.",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "source": "olives-cave",
+      "result": "Readable final report checked, including pottery, ossuary lids and cave context. Cited comparative reports not separately audited.",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "source": "bethany-saller",
+      "result": "Publisher catalogue and contents checked only. Full excavation monograph not read; catalogue confirms research exists, not its detailed conclusions.",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "source": "bethany-heritage",
+      "result": "Project account of commemoration and architectural alterations checked. Ancient pilgrim texts and excavation stratigraphy not independently audited.",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "source": "gethsemane-bath",
+      "result": "Excavation announcement checked; this is a public project account, not a final stratigraphic report. Oil-production interpretation is explicitly tentative.",
+      "checkedOn": "2026-10-28"
     }
   ],
   "literatureUpdate": {

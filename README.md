@@ -387,3 +387,7 @@ Data: `public/data/hebrew-geography.json`. Interface: `public/assets/hebrew-geog
 ## Citation review: first declared batch
 
 The About page and affected studies expose 43 dated assessments: 18 Gospel issues, 13 places, four Nehemiah readings and eight explained pairs. `public/data/citation-review.json` is the source register; `node scripts/import-citation-review.mjs` regenerates its browser module. Only original editorial assessments are bundled. Publisher text remains external. Four place bibliographies gain scoped sources; nine assessed dossiers still lack external archaeological support. Two comparisons of related but different events use thematic labels. The other 107 explained pairs retain existing labels without a new assessment. Independent specialist review remains outstanding.
+
+## Scientific and archaeological citation expansion
+
+Seven additional research/project sources support five place assessments and two new city-study findings. Reviewed coverage is now 45 records, including 15 place dossiers. Radiocarbon claims distinguish sample age, calibration and event attribution; Bethany catalogue access is explicitly limited. Six of the original thirteen assessed place dossiers retain missing-bibliography warnings. This does not complete site-wide citation remediation or independent specialist review.

@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.21.0 - 28/10/2026: Scientific and archaeological source expansion
+
+- Add seven research and excavation/project sources across Gethsemane, Mount of Olives, Bethany, Jerusalem and Jericho.
+- Explain radiocarbon sample ages, calibration limits, medieval olive-tree dates and the distinction between material context and event identification.
+- Add two source-qualified city-study findings and expand the dated register to 45 assessments, with catalogue-only and abstract-only access clearly labelled.
+
 ## 0.20.0 - 28/10/2026: Citation coverage and editorial evidence review
 
 - Inspect 43 dated assessments covering 18 Gospel issues, 13 places, four Nehemiah readings and eight passage comparisons.

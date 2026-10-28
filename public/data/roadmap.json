@@ -4,7 +4,7 @@
   "description": "A transparent, evidence-aware roadmap reviewed against the released application through v0.20.0. Delivered records implementation milestones, including successive expansions; it is not a count of independent features or scholarly certification. Future work has completion criteria and no promised delivery dates.",
   "currentFocus": [
     "Next priority: repeatable browser, mobile and accessibility release coverage",
-    "Continue citation remediation beyond the first assessed batch; nine assessed place dossiers and 107 other explained pairs retain review gaps",
+    "Continue citation remediation beyond the first assessed batch; six original assessed place dossiers and 107 other explained pairs retain review gaps",
     "Add repeatable desktop/mobile browser and accessibility checks for the reader, Atlas, geography collections and private notebook",
     "Arrange independent historical, textual and archaeological review, including the first Exodus collection, when suitable specialists are available",
     "Then extend the Hebrew Bible geography library with separately scoped kings, prophets, exile and return studies"
@@ -518,10 +518,10 @@
       "phase": "next",
       "status": "planned",
       "title": "Further citation remediation and context review",
-      "summary": "Continue beyond the first declared citation batch, prioritising unresolved place archaeology, limited-access sources and the other 107 explained passage pairs.",
+      "summary": "Continue citation remediation after the first batch and the scientific/archaeological expansion covering Gethsemane, Mount of Olives, Bethany, Jerusalem and Jericho.",
       "capabilities": [
         "Publish a separately declared next batch with claim-specific supporting sources and access limits",
-        "Revisit nine retained place bibliography gaps and remaining person-trail access limitations",
+        "Revisit six retained original place bibliography gaps and remaining person-trail access limitations",
         "Compare complete excavation reports and textual apparatuses where access permits; preserve unresolved warnings"
       ],
       "verification": "Each declared batch needs checked supporting citations, implemented corrections or retained warnings with stated source-level reasons. Source-link presence does not establish specialist signoff."

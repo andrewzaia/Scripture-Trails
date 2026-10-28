@@ -13,7 +13,7 @@ const index=read('../public/index.html'),app=read('../public/assets/app.js'),css
 test('Five source-linked flagship city studies have complete evidence registers',()=>{
  assert.equal(validateCityStudies(cities),true);
  assert.equal(cities.cities.length,5);
- assert.equal(cities.cities.reduce((n,c)=>n+c.findings.length,0),20);
+ assert.equal(cities.cities.reduce((n,c)=>n+c.findings.length,0),22);
  assert.ok(cities.cities.every(c=>c.timeline.length>=5&&c.biblical.length>=5));
  assert.ok(cities.cities.every(c=>c.findings.every(f=>f.sourceIds.length||f.passages.length)));
  assert.ok(cities.cities.every(c=>c.biblical.every(p=>parseRef(passageStart(p.ref)))));

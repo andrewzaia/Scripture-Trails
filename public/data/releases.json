@@ -1,6 +1,16 @@
 {
   "releases": [
     {
+      "version": "0.21.0",
+      "date": "2026-10-28",
+      "title": "Scientific and archaeological source expansion",
+      "changes": [
+        "Add seven research and excavation/project sources across Gethsemane, Mount of Olives, Bethany, Jerusalem and Jericho.",
+        "Explain radiocarbon sample ages, calibration limits, medieval olive-tree dates and the distinction between material context and event identification.",
+        "Add two source-qualified city-study findings and expand the dated register to 45 assessments, with catalogue-only and abstract-only access clearly labelled."
+      ]
+    },
+    {
       "version": "0.20.0",
       "date": "2026-10-28",
       "title": "Citation coverage and editorial evidence review",
