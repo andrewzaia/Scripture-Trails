@@ -10,8 +10,8 @@ const counts=data('verse-counts.json'),history=data('biblical-history.json'),peo
 test('115 comparisons maintain distinct review status, full citations and nonduplicated pairs',()=>{
  assert.equal(CONNECTION_EVIDENCE.length,115);
  assert.equal(validateConnectionEvidence(counts),true);
- assert.equal(CONNECTION_EVIDENCE.filter(x=>x.review==='scripture-context-screened').length,42);
- assert.equal(CONNECTION_EVIDENCE.filter(x=>x.review==='editorial-reading-aid').length,73);
+ assert.equal(CONNECTION_EVIDENCE.filter(x=>x.review==='scripture-context-screened').length,60);
+ assert.equal(CONNECTION_EVIDENCE.filter(x=>x.review==='editorial-reading-aid').length,55);
  assert.match(REVIEW_LABELS['scripture-context-screened'],/not external peer review/);
  assert.match(REVIEW_LABELS['editorial-reading-aid'],/pending/);
  assert.ok(CONNECTION_EVIDENCE.every(x=>x.explanation.length>20&&x.caution.length>15&&x.context&&x.basis));
@@ -19,15 +19,15 @@ test('115 comparisons maintain distinct review status, full citations and nondup
  assert.equal(new Set(keys).size,115);
 });
 test('cross-account parallels expose distinct readings, not archaeological proof or harmonised chronology',()=>{
- for(const [a,b] of [
+ for(const [a,b,review='editorial-reading-aid'] of [
   ['2 Kings 25:1','Jeremiah 52:4'],['2 Kings 19:35','Isaiah 37:36'],
-  ['1 Kings 10:1','2 Chronicles 9:1'],['2 Samuel 24:1','1 Chronicles 21:1'],
+  ['1 Kings 10:1','2 Chronicles 9:1','scripture-context-screened'],['2 Samuel 24:1','1 Chronicles 21:1'],
   ['Matthew 8:23','Mark 4:35'],['Luke 24:1','John 20:1'],
   ['Acts 9:3','Acts 26:13']]){
   const x=explainConnection(a,b);
   assert.ok(x, a+' versus '+b);
   assert.equal(x.kind,'parallel');
-  assert.equal(x.review,'editorial-reading-aid');
+  assert.equal(x.review,review);
   assert.ok(x.caution.length>30);
  }
  assert.match(explainConnection('2 Samuel 24:1','1 Chronicles 21:1').caution,/Attribution/);

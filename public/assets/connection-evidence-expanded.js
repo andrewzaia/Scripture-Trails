@@ -456,55 +456,55 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "from": "1 Samuel 31:1",
     "to": "1 Chronicles 10:1",
     "kind": "parallel",
-    "explanation": "Samuel and Chronicles narrate Saul's final battle against the Philistines.",
-    "caution": "Each book selects details for its own historiographical purpose.",
+    "explanation": "Both narratives describe Saul's defeat, death and the recovery of the bodies by Jabesh-gilead. Chronicles concludes with a judgment on his unfaithfulness and the transfer to David. Winfried Corduan highlights this evaluative ending.",
+    "caution": "Chronicles adds an explicit theological verdict absent from the selected Samuel chapter. The accounts also differ in descriptions of the body and burial. Do not treat literary overlap as independent corroboration or resolve every death-account tension here.",
     "context": "1 Chronicles 10:1-14",
-    "review": "editorial-reading-aid",
-    "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
+    "review": "scripture-context-screened",
+    "basis": "Selected passages and scoped named commentary checked in citation batch connections-20-04 on 2026-10-29. Access limits and remaining questions recorded there. Independent specialist review pending."
   },
   {
     "id": "ce067",
     "from": "2 Samuel 5:1",
     "to": "1 Chronicles 11:1",
     "kind": "parallel",
-    "explanation": "David's accession over Israel is recounted in Samuel and Chronicles.",
-    "caution": "Narrative emphases and subsequent events are arranged differently.",
+    "explanation": "Both accounts unite Israel around David at Hebron and narrate the capture of Jerusalem. Samuel includes David's age and divided reign totals; Chronicles specifies Joab's leading role. Winfried Corduan discusses the move from divided allegiance to reunification.",
+    "caution": "Chronicles moves rapidly from Saul to David; Samuel supplies the intervening struggle in earlier chapters. Keep those different presentations visible. This selected comparison does not establish an exact chronology or independently reconstruct the capture of Jerusalem.",
     "context": "1 Chronicles 11:1-9",
-    "review": "editorial-reading-aid",
-    "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
+    "review": "scripture-context-screened",
+    "basis": "Selected passages and scoped named commentary checked in citation batch connections-20-04 on 2026-10-29. Access limits and remaining questions recorded there. Independent specialist review pending."
   },
   {
     "id": "ce068",
     "from": "2 Samuel 5:11",
     "to": "1 Chronicles 14:1",
     "kind": "parallel",
-    "explanation": "Hiram of Tyre and his assistance to David appear in both histories.",
-    "caution": "These are related biblical accounts, not independent archaeological proof.",
+    "explanation": "Both accounts name Hiram's messengers, cedar and craftsmen and connect David's established kingship with the people's benefit. Winfried Corduan comments on that public purpose.",
+    "caution": "Samuel places this report before its ark-transfer chapter; Chronicles places it after the first ark attempt. Narrative placement alone does not date the diplomatic exchange. Shared reports do not identify excavated palace remains or independently prove a building attribution.",
     "context": "1 Chronicles 14:1-2",
-    "review": "editorial-reading-aid",
-    "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
+    "review": "scripture-context-screened",
+    "basis": "Selected passages and scoped named commentary checked in citation batch connections-20-04 on 2026-10-29. Access limits and remaining questions recorded there. Independent specialist review pending."
   },
   {
     "id": "ce069",
     "from": "2 Samuel 6:1",
     "to": "1 Chronicles 13:1",
     "kind": "parallel",
-    "explanation": "Samuel and Chronicles both describe David arranging to bring the ark toward Jerusalem.",
-    "caution": "The histories organise and select details differently.",
+    "explanation": "Both accounts describe the cart, Uzzah's death and the ark's stay with Obed-edom. Chronicles begins with consultation of leaders and the assembly. Winfried Corduan discusses that planning and the failed transfer.",
+    "caution": "The chosen ranges cover the first attempt; the later successful transfer belongs to further passages. Samuel and Chronicles organise the events differently and use different threshing-floor names. No single reconstructed itinerary or resolution of those names is claimed.",
     "context": "1 Chronicles 13:1-14",
-    "review": "editorial-reading-aid",
-    "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
+    "review": "scripture-context-screened",
+    "basis": "Selected passages and scoped named commentary checked in citation batch connections-20-04 on 2026-10-29. Access limits and remaining questions recorded there. Independent specialist review pending."
   },
   {
     "id": "ce070",
     "from": "2 Samuel 7:1",
     "to": "1 Chronicles 17:1",
     "kind": "parallel",
-    "explanation": "God's covenant promise concerning David's house appears in both narratives.",
-    "caution": "Compare the different framing and wording of the dynastic promise.",
+    "explanation": "Nathan's message redirects David's proposal to build a house into a promise about his dynasty and a son who will build. Winfried Corduan distinguishes the promised successor's building role.",
+    "caution": "Samuel includes a clause about disciplining the son for wrongdoing; Chronicles omits that clause and speaks of establishment in God's house and kingdom. Preserve these differences. Later messianic reception and the promise's historical fulfilment need separate assessment.",
     "context": "1 Chronicles 17:1-15",
-    "review": "editorial-reading-aid",
-    "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
+    "review": "scripture-context-screened",
+    "basis": "Selected passages and scoped named commentary checked in citation batch connections-20-04 on 2026-10-29. Access limits and remaining questions recorded there. Independent specialist review pending."
   },
   {
     "id": "ce071",
@@ -533,143 +533,143 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "from": "1 Kings 3:5",
     "to": "2 Chronicles 1:7",
     "kind": "parallel",
-    "explanation": "Both books describe God's appearance to Solomon in connection with his request for wisdom.",
-    "caution": "Compare how the surrounding narratives introduce Solomon's reign.",
+    "explanation": "Both accounts place a divine appearance at Gibeon and Solomon's request for the capacity to govern. Kings explicitly calls it a dream and includes a conditional promise of long life. August H. Konkel discusses the request for discernment.",
+    "caution": "Chronicles explains the tabernacle and bronze altar at Gibeon and asks for wisdom and knowledge. The accounts differ in wording and emphasis; the parallel does not make every detail interchangeable or provide an external verification of a private vision.",
     "context": "2 Chronicles 1:1-13",
-    "review": "editorial-reading-aid",
-    "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
+    "review": "scripture-context-screened",
+    "basis": "Selected passages and scoped named commentary checked in citation batch connections-20-04 on 2026-10-29. Access limits and remaining questions recorded there. Independent specialist review pending."
   },
   {
     "id": "ce074",
     "from": "1 Kings 6:1",
     "to": "2 Chronicles 3:1",
     "kind": "parallel",
-    "explanation": "Kings and Chronicles recount the start of the construction of Solomon's temple.",
-    "caution": "Chronicles and Kings select different chronological and architectural details.",
+    "explanation": "Both accounts begin construction in Solomon's fourth year and describe the temple. Kings also dates it in relation to the exodus; Chronicles names Mount Moriah and Ornan's threshing floor. August H. Konkel gives the Kings date a theological reading.",
+    "caution": "Konkel's treatment of the 480 years is an interpretation, not a settled chronological result. Preserve each book's distinct location, dating and architectural details. This comparison does not supply archaeological confirmation or a complete temple reconstruction.",
     "context": "2 Chronicles 3:1-9",
-    "review": "editorial-reading-aid",
-    "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
+    "review": "scripture-context-screened",
+    "basis": "Selected passages and scoped named commentary checked in citation batch connections-20-04 on 2026-10-29. Access limits and remaining questions recorded there. Independent specialist review pending."
   },
   {
     "id": "ce075",
     "from": "1 Kings 8:22",
     "to": "2 Chronicles 6:12",
     "kind": "parallel",
-    "explanation": "Solomon's prayer at the temple dedication is narrated in both books.",
-    "caution": "The prayer should be read in the context of each book's literary presentation.",
-    "context": "2 Chronicles 6:12-42",
-    "review": "editorial-reading-aid",
-    "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
+    "explanation": "Both prayers invoke the covenant with David and ask God to hear from heaven; neither selected text confines God to the building. Chronicles adds the bronze platform and kneeling. Cameron B.R. Howard discusses presence without confinement.",
+    "caution": "These are selected opening portions of longer prayers, not their complete petitions or conclusions. The platform and posture detail in Chronicles must remain visible. Literary similarity does not establish a verbatim transcript of a historical speech.",
+    "context": "2 Chronicles 6:12-21",
+    "review": "scripture-context-screened",
+    "basis": "Selected passages and scoped named commentary checked in citation batch connections-20-04 on 2026-10-29. Access limits and remaining questions recorded there. Independent specialist review pending."
   },
   {
     "id": "ce076",
     "from": "1 Kings 9:1",
     "to": "2 Chronicles 7:11",
     "kind": "parallel",
-    "explanation": "Both passages report God's subsequent address to Solomon after the temple dedication.",
-    "caution": "The accounts differ in sequence and editorial emphasis.",
+    "explanation": "Both accounts follow the building work with divine assurances and warnings about abandoning the covenant. Chronicles also includes humility, prayer and healing of the land in 7:13-16. August H. Konkel connects the second appearance with covenant responsibility.",
+    "caution": "Retain Chronicles' additional wording and its address to Solomon and Israel around the temple. The land-healing promise is not automatically a guarantee about any modern nation or an individual's health. This check does not harmonise the timing of both narratives.",
     "context": "2 Chronicles 7:11-22",
-    "review": "editorial-reading-aid",
-    "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
+    "review": "scripture-context-screened",
+    "basis": "Selected passages and scoped named commentary checked in citation batch connections-20-04 on 2026-10-29. Access limits and remaining questions recorded there. Independent specialist review pending."
   },
   {
     "id": "ce077",
     "from": "1 Kings 10:1",
     "to": "2 Chronicles 9:1",
     "kind": "parallel",
-    "explanation": "The Queen of Sheba's visit to Solomon appears in Kings and Chronicles.",
-    "caution": "The queen remains unnamed in these biblical texts.",
+    "explanation": "Both narratives recount the queen testing Solomon, observing his court and exchanging gifts. The reported praise connects kingship with justice. August H. Konkel reads the visit as a portrayal of Solomon's far-reaching reputation.",
+    "caution": "The queen is unnamed in both passages. Their overlap does not establish her personal identity, a precise itinerary, a romance or later traditions about descendants. Claims about Sheba's location require their own historical evidence.",
     "context": "2 Chronicles 9:1-12",
-    "review": "editorial-reading-aid",
-    "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
+    "review": "scripture-context-screened",
+    "basis": "Selected passages and scoped named commentary checked in citation batch connections-20-04 on 2026-10-29. Access limits and remaining questions recorded there. Independent specialist review pending."
   },
   {
     "id": "ce078",
     "from": "1 Kings 11:41",
     "to": "2 Chronicles 9:29",
     "kind": "parallel",
-    "explanation": "Kings and Chronicles close their accounts of Solomon's reign using different source notices.",
-    "caution": "This is literary source framing, not external confirmation that the cited works survive.",
+    "explanation": "Both closing notices give Solomon a forty-year reign, burial in David's city and Rehoboam as successor. Kings cites a book of Solomon's acts; Chronicles names prophetic records. August H. Konkel's overview traces Kings' movement toward Solomon's failure.",
+    "caution": "The cited commentary supports the broader Kings framing, not the survival or identity of the works named in the notices. These biblical source notices do not demonstrate that those works are extant, independent or consulted in this assessment.",
     "context": "2 Chronicles 9:29-31",
-    "review": "editorial-reading-aid",
-    "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
+    "review": "scripture-context-screened",
+    "basis": "Selected passages and scoped named commentary checked in citation batch connections-20-04 on 2026-10-29. Access limits and remaining questions recorded there. Independent specialist review pending."
   },
   {
     "id": "ce079",
     "from": "1 Kings 12:1",
     "to": "2 Chronicles 10:1",
     "kind": "parallel",
-    "explanation": "Rehoboam and the division of the kingdom are narrated in Kings and Chronicles.",
-    "caution": "Details are presented from different editorial perspectives.",
+    "explanation": "Both accounts describe the demand to ease the yoke, competing advisers, Rehoboam's harsh reply and the break with David's house. August H. Konkel discusses the choice of coercion and ensuing revolt.",
+    "caution": "Preserve wording differences in the advisers' responses and Adoram/Hadoram's name. The books' theological explanation of the split is not an independent sociological reconstruction. Shared narrative material does not establish two independent witnesses.",
     "context": "2 Chronicles 10:1-19",
-    "review": "editorial-reading-aid",
-    "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
+    "review": "scripture-context-screened",
+    "basis": "Selected passages and scoped named commentary checked in citation batch connections-20-04 on 2026-10-29. Access limits and remaining questions recorded there. Independent specialist review pending."
   },
   {
     "id": "ce080",
     "from": "1 Kings 15:1",
     "to": "2 Chronicles 13:1",
     "kind": "parallel",
-    "explanation": "Both books introduce Abijah's reign in Judah.",
-    "caution": "Chronicles includes further narrative material not found in Kings.",
+    "explanation": "Kings gives Abijam a negative evaluation while preserving David's dynastic promise; Chronicles tells an extended victory account about Abijah, priesthood and reliance on God. Winfried Corduan explicitly contrasts the two treatments.",
+    "caution": "The differently named mother and the contrasting royal portraits remain unresolved here. Do not convert a selected favourable episode into identical overall evaluations or independently verified troop totals. Commentary access was limited to indexed passage excerpts.",
     "context": "2 Chronicles 13:1-22",
-    "review": "editorial-reading-aid",
-    "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
+    "review": "scripture-context-screened",
+    "basis": "Selected passages and scoped named commentary checked in citation batch connections-20-04 on 2026-10-29. Access limits and remaining questions recorded there. Independent specialist review pending."
   },
   {
     "id": "ce081",
     "from": "1 Kings 22:2",
     "to": "2 Chronicles 18:2",
     "kind": "parallel",
-    "explanation": "Ahab and Jehoshaphat's military alliance is narrated in Kings and Chronicles.",
-    "caution": "Compare the roles of the prophets and the framing of the battle.",
-    "context": "2 Chronicles 18:1-34",
-    "review": "editorial-reading-aid",
-    "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
+    "explanation": "Both passages introduce the Ramoth-gilead alliance and the request to consult Micaiah. Chronicles first names a marriage alliance and a feast. Winfried Corduan identifies the extensive parallel material in these chapters.",
+    "caution": "The selected ranges cover the consultation's introduction, not the complete vision and battle. Similarity does not decide direct borrowing versus a common source. Corduan's attribution of Chronicles to Ezra is not adopted as an established authorship result.",
+    "context": "2 Chronicles 18:1-8",
+    "review": "scripture-context-screened",
+    "basis": "Selected passages and scoped named commentary checked in citation batch connections-20-04 on 2026-10-29. Access limits and remaining questions recorded there. Independent specialist review pending."
   },
   {
     "id": "ce082",
     "from": "2 Kings 11:1",
     "to": "2 Chronicles 22:10",
     "kind": "parallel",
-    "explanation": "Both books describe Athaliah's attempt to secure the throne and the preservation of Joash.",
-    "caution": "Different books give distinct emphases to priestly and royal roles.",
+    "explanation": "Both passages describe Athaliah's attack on the royal family and Joash's concealment for six years. Chronicles identifies Jehoshabeath as Jehoiada's wife. August H. Konkel places the episode within the preservation of David's line.",
+    "caution": "Retain the added family and priestly connection in Chronicles and the different forms Jehosheba/Jehoshabeath. These selected verses do not narrate the full coronation. The literary parallel is not independent archaeological confirmation of the hiding place.",
     "context": "2 Chronicles 22:10-12",
-    "review": "editorial-reading-aid",
-    "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
+    "review": "scripture-context-screened",
+    "basis": "Selected passages and scoped named commentary checked in citation batch connections-20-04 on 2026-10-29. Access limits and remaining questions recorded there. Independent specialist review pending."
   },
   {
     "id": "ce083",
     "from": "2 Kings 12:1",
     "to": "2 Chronicles 24:1",
     "kind": "parallel",
-    "explanation": "Kings and Chronicles both describe Joash's accession and reign in Judah.",
-    "caution": "Read both reign summaries to see the different evaluations.",
+    "explanation": "Both accounts describe Joash's reign, temple repairs and assassination. Chronicles expands his later abandonment of the temple and the killing of Jehoiada's son. August H. Konkel discusses the repair funds and the assassination report.",
+    "caution": "Kings' assessment and Chronicles' account of later apostasy should not be flattened into one verdict. Temple-vessel funding and burial details also differ. English ESV numbering is used for Kings; other editions shift the chapter boundary. No full textual harmonisation is claimed.",
     "context": "2 Chronicles 24:1-27",
-    "review": "editorial-reading-aid",
-    "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
+    "review": "scripture-context-screened",
+    "basis": "Selected passages and scoped named commentary checked in citation batch connections-20-04 on 2026-10-29. Access limits and remaining questions recorded there. Independent specialist review pending."
   },
   {
     "id": "ce084",
     "from": "2 Kings 14:1",
     "to": "2 Chronicles 25:1",
     "kind": "parallel",
-    "explanation": "Both histories introduce Amaziah's reign in Judah.",
-    "caution": "The books vary in focus and the assessment of royal conduct.",
-    "context": "2 Chronicles 25:1-28",
-    "review": "editorial-reading-aid",
-    "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
+    "explanation": "Both accounts introduce Amaziah and say he spared the children of his father's killers in accordance with the law. Their qualified evaluations differ in wording. August H. Konkel highlights that restraint in the revenge narrative.",
+    "caution": "Keep Kings' comparison with David and Joash distinct from Chronicles' lack-of-wholeheartedness judgment. The selected ranges do not encompass the complete reign or resolve chronological correlations and military figures. Identifying the parallel is not a moral endorsement of every royal act.",
+    "context": "2 Chronicles 25:1-10",
+    "review": "scripture-context-screened",
+    "basis": "Selected passages and scoped named commentary checked in citation batch connections-20-04 on 2026-10-29. Access limits and remaining questions recorded there. Independent specialist review pending."
   },
   {
     "id": "ce085",
     "from": "2 Kings 15:1",
     "to": "2 Chronicles 26:1",
     "kind": "parallel",
-    "explanation": "Kings and Chronicles describe the reign of Azariah, also called Uzziah.",
-    "caution": "The books highlight different incidents; the names refer to the same king.",
+    "explanation": "Kings calls the king Azariah and briefly reports his illness and Jotham's governing role. Chronicles calls him Uzziah and expands his achievements, pride and temple confrontation. August H. Konkel notes Chronicles' additional reign material.",
+    "caution": "Azariah the king and Azariah the chief priest in Chronicles are distinct people. Ancient skin-disease terminology does not establish a modern diagnosis. Preserve Chronicles' priestly confrontation and Kings' shorter evaluation; no independent clinical or chronological conclusion follows.",
     "context": "2 Chronicles 26:1-23",
-    "review": "editorial-reading-aid",
-    "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
+    "review": "scripture-context-screened",
+    "basis": "Selected passages and scoped named commentary checked in citation batch connections-20-04 on 2026-10-29. Access limits and remaining questions recorded there. Independent specialist review pending."
   },
   {
     "id": "ce086",

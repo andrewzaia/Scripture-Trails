@@ -1,4 +1,4 @@
-import {appendCitationReview} from './citation-review.js?v=0.25.0';
+import {appendCitationReview} from './citation-review.js?v=0.26.0';
 import {parseRef} from './books.js';
 import {TRANSLATIONS,getTranslation} from './translations.js';
 /** Licensed Scripture comes from the already authorised, server-side Bible reader endpoint. */
