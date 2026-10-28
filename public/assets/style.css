@@ -188,3 +188,21 @@ body.light .atlas-preview-panel{background:var(--surface2)}
 
 /* Give each personal highlight field a distinct label and control group. */
 .study-side label[for="highlight-ref"],.study-side label[for="highlight-colour"]{display:block;margin:14px 0 6px}
+
+/* Private study collections */
+.collection-workspace form{display:grid;gap:16px;max-width:720px}
+.collection-workspace label{display:grid;gap:7px}
+.collection-workspace input,.collection-workspace textarea,.collection-workspace select{max-width:100%;min-width:0}
+.collection-workspace fieldset{min-width:0;border:1px solid var(--border);border-radius:8px;padding:12px}
+.collection-days{display:flex;flex-wrap:wrap;gap:14px}
+.collection-days label{display:flex;align-items:center;gap:5px}
+.study-collection{border-top:1px solid var(--border);padding:20px 0}
+.study-collection h3{overflow-wrap:anywhere}
+.study-collection>.small-action{margin:0 8px 12px 0}
+.study-collection summary{cursor:pointer;margin:8px 0 14px}
+.study-collection .reading-plan-row{gap:12px;flex-wrap:wrap}
+.study-collection .reading-plan-row label{display:flex;align-items:center;gap:8px}
+.collection-workspace{margin:24px min(6.5%,82px);padding:24px}
+.collection-workspace input:not([type=checkbox]),.collection-workspace textarea,.collection-workspace select{display:block;width:100%;padding:8px;border:1px solid var(--line);background:var(--surface2);color:var(--ink);border-radius:4px}
+.collection-workspace fieldset,.study-collection{border-color:var(--line)}
+.collection-workspace [hidden]{display:none!important}

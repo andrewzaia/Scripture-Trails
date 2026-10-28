@@ -4,7 +4,7 @@
   "description": "A transparent, evidence-aware roadmap. Delivered means implementation exists, not that every scholarly question is settled. The accuracy audit is an initial, publicly documented editorial screening, not external specialist certification.",
   "currentFocus": [
     "Review the Pauline journey location and textual questions against specialist research",
-    "Next study milestone: calendar-based reading schedules and custom study collections",
+    "Next study milestone: place-linked observations and improved study organisation",
     "Expand person-centred trails and Hebrew Bible geography while preserving evidence distinctions"
   ],
   "phases": [
@@ -398,6 +398,20 @@
         "Version 3 backups preserve annotations; version 1 and 2 imports remain supported with conflict previews"
       ],
       "verification": "Reference validation, merge conflicts and old-backup preservation tested. Reader highlight boundaries and translation switching tested with fixture text. Reference numbering may differ between editions; word-selection highlighting is not implemented."
+    },
+    {
+      "id": "collections-schedules",
+      "phase": "platform",
+      "status": "delivered",
+      "title": "Custom study collections and reading schedules",
+      "summary": "Create ordered passage collections, optionally schedule one passage per selected reading day, and track progress locally.",
+      "capabilities": [
+        "Build from six guided studies or enter custom passages",
+        "Choose a start date and reading weekdays, with fixed dates and explicit completion",
+        "Edit collections, resume reading and confirm deletion",
+        "Version 4 notebook backups retain collections and schedules, supporting versions 1 to 3"
+      ],
+      "verification": "Date boundaries, reference validation, backup compatibility, conflicts and storage failures tested. Dates use the device calendar. No reminders or automatic completion."
     }
   ]
 }
