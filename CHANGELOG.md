@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.18.1 - 28/10/2026: Roadmap review and remaining milestones
+
+- Record the official-domain launch, Atlas path and preview improvements, and versioned release safeguards as delivered milestones.
+- Clarify the eight remaining or exploratory milestones, with Hebrew Bible geography next and distinct citation, specialist-review and browser/accessibility work.
+- Align roadmap priorities and completion criteria with the delivered notebook, schedules and twenty person-centred trails.
+
 ## 0.18.0 - 28/10/2026: Twenty person-centred Scripture trails
 
 - Explore twelve further biblical figures in a searchable directory of twenty person-centred Scripture trails.

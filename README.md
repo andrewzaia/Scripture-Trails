@@ -162,12 +162,22 @@ tests/                          Built-in Node tests
 
 ## Roadmap
 
-1. Source a reviewed, complete dataset of reference edges and add provenance, confidence and editorial review status per connection.
-2. Add study annotations, structured notes, verse highlights and user-managed reading plans.
-3. Add canonical biblical chronology, historical maps and people/place indexes with source documentation and competing date models where relevant.
-4. Support original language tools and textual notes with separately licensed lexical datasets.
-5. Optionally enable account sync with a proper authentication and privacy design. No account system exists in this version.
-6. Add browser E2E and accessibility tests in CI, with live ESV API testing against a permitted test key and conservative rate limits.
+The canonical roadmap is [public/data/roadmap.json](public/data/roadmap.json), displayed on the [Project roadmap](https://www.scripturetrails.com/?view=roadmap). Reviewed on 28 October 2026 against the application through v0.18.0; this review is released as v0.18.1. It records 27 delivered implementation milestones and eight remaining or exploratory milestones. Historical expansion cards describe successive releases, not independent feature counts.
+
+Delivered foundations include four reader editions, the local 603,076-link Atlas and passage comparison, 79 Jesus-journey episodes and 35 dossiers, five city studies, Gospel chronology comparison, the expanded people/events index, 83 Pauline stages, twenty person trails with 88 readings, and the private notebook with highlights, place links, backups, collections and schedules. This review also records the official-domain launch, Atlas path/preview improvements and release consistency safeguards as distinct delivered milestones.
+
+| Order / track | Remaining milestone | Completion or decision gate |
+| --- | --- | --- |
+| Next content | Hebrew Bible geography and Exodus traditions | Bounded corpus, primary passages, source register, competing identifications, explicit uncertainty and reference/link checks |
+| Alongside content | Citation coverage and editorial evidence review | Declared priority issues have checked citations or documented unresolved decisions, including limited-access trail checks |
+| Alongside content | Browser, mobile and accessibility release coverage | Critical flows run in CI; accessibility findings are triaged and manual keyboard/screen-reader checks recorded |
+| Specialist availability | Independent historical, textual and nautical review | Actual named, dated specialist review of a declared scope; publish decisions and remaining disagreements |
+| Later content | Kings, prophets and wider historical geography | Build on the first Hebrew Bible collection; audit each collection separately |
+| Later content | Broader people, family and event relationships | Scope each expansion around new study needs and validate identity, passages, relationships and sources |
+| Research | Original-language study | Resolve licensing, datasets, versification and a useful first-tool scope before implementation |
+| Conditional research | Optional encrypted sync and accounts | Demonstrated need plus security, recovery, conflicts, deletion and cost design; no commitment yet |
+
+Citation work and browser coverage can proceed alongside the next content collection. External review depends on suitable specialists and is not implied by editorial checks. Original-language tools and accounts have no committed delivery date. Preserve uncertainty, local licensed supporting data and publisher restrictions in every milestone. Do not describe a universal, settled biblical chronology or a fully classified cross-reference corpus as delivered.
 
 ## Licence
 
@@ -222,7 +232,7 @@ The editable corpus is `public/data/jesus-geography.json` and the interface is i
 
 Historical reading uses a distinction between excavation of a town, traditional site identification and evidence for a **specific Gospel event**. A Roman-period settlement does not independently verify a narrated miracle, while a later church or pilgrimage tradition does not make a first-century house or hill certain. Reconstructed place names, historic routes and the Gospel harmonisation remain qualified throughout the interface. Third-party archaeology sources remain with their publishers and are linked rather than reproduced.
 
-The new **Project roadmap** is a first-class navigation page at `/?view=roadmap`. Its content lives in `public/data/roadmap.json`; filters and expandable details use `public/assets/roadmap.js`. Its statuses are `delivered`, `next`, `planned` and `research`, with separate acceptance criteria and no promised delivery dates. The next priorities are an event-by-event evidence audit, deeper fully documented city research and alternative Gospel chronology views. Update the data when any milestone changes; do not mark an unimplemented feature as delivered. Edit existing cards rather than adding contradictory records. `tests/geography.test.mjs` and `tests/ui-structure.test.mjs` guard these features.
+The new **Project roadmap** is a first-class navigation page at `/?view=roadmap`. Its content lives in `public/data/roadmap.json`; filters and expandable details use `public/assets/roadmap.js`. Its statuses are `delivered`, `next`, `planned` and `research`, with separate acceptance criteria and no promised delivery dates. The initial Gospel screening, five city studies and textual-order comparison are delivered. Remaining priorities and completion gates are listed in the Roadmap section above. Update the data when any milestone changes; do not mark an unimplemented feature as delivered. Edit existing cards rather than adding contradictory records. `tests/geography.test.mjs` and `tests/ui-structure.test.mjs` guard these features.
 
 ### Key independent source starting points
 
@@ -333,7 +343,7 @@ Journeys of Paul includes a separate Voyage to Rome selector for Acts 27-28: 22 
 
 ## Notebook backups
 
-My notebook provides local JSON export and import for saved references and personal notes. Backups carry the `scripture-trails-notebook` format identifier. New exports use schema version 3; version 1 and 2 imports remain supported. Files are limited to 2 MiB, 300 saved references and 2,000 notes (50,000 characters per note). Files are parsed locally without upload. Backups are unencrypted; user notes may contain private information or text the user entered. No publisher passage text is fetched or automatically included.
+My notebook provides local JSON export and import for saved references and personal notes. Backups carry the `scripture-trails-notebook` format identifier. Current exports use schema version 5; versions 1 to 4 remain supported as import formats. Files are limited to 2 MiB, 300 saved references and 2,000 notes (50,000 characters per note). Files are parsed locally without upload. Backups are unencrypted; user notes may contain private information or text the user entered. No publisher passage text is fetched or automatically included.
 
 Import previews additions, identical entries and conflicts, preserving existing notes by default. Each conflicting note has an explicit replacement choice. Invalid schemas, references and oversized merged collections are rejected. A single `scripture-trails:notebook` localStorage entry becomes authoritative on the next save or import; existing legacy notes and bookmarks are read without deletion. Import storage failures leave the persisted notebook unchanged. Stale previews and changes observed in another tab require a fresh preview or reload. Recent reading, preferences, credentials and unsaved note drafts are outside the backup.
 
@@ -341,19 +351,19 @@ Import previews additions, identical entries and conflicts, preserving existing 
 
 The six existing Study journeys offer optional, self-reported passage checklists, completion indicators and a resume-next-unread action. Opening a passage does not mark it read. Reset requires a separate confirmation and affects only that plan. Progress uses the same local notebook snapshot, with storage failure and stale-tab checks before writes. These short editorial passage sequences are not a whole-Bible or calendar schedule.
 
-New notebook exports use schema version 2 and include `readingPlans`, mapping the six plan IDs to completed references from those plans. Schema version 1 imports remain supported and preserve existing progress. Import merges completion sets, reports additional completions in preview and never clears current completions. Old v0.13 clients cannot import version 2 files; use the current website for new backups. Verse highlights, structured annotations and calendar plans remain future milestones.
+Reading progress was introduced in backup schema version 2 as `readingPlans`, mapping the six plan IDs to completed references. Current exports use schema version 5 and preserve support for earlier import formats. Import merges completion sets, reports additional completions in preview and never clears current completions. Older clients cannot necessarily import newer schemas; use the current website for new backups. Verse highlights, structured annotations, custom collections and calendar schedules are delivered; see the sections below.
 
 ## Linked observations and highlights
 
 My notebook has an annotation workspace for up to 1,000 linked notes (20 passage links and ten tags each). Existing single-passage reader notes remain separate and unchanged. Create, edit and confirm deletion of linked notes; filter annotations by passage, note text, tag or highlight colour. The reader provides a single-verse highlight control with amber, green and blue choices plus removal. Highlights wrap displayed verse text, retain publisher text, and carry visible colour labels. They follow canonical reference keys across editions, not character offsets; edition versification can differ. No Bible text is automatically copied into annotation records.
 
-New schema version 3 backups include annotations. Version 1 and 2 imports preserve current annotations; same-ID linked note changes and same-verse colour changes require explicit replacement choices. Existing values are kept by default. Unknown references, colours, duplicate IDs and oversized annotation collections are rejected. Storage writes preserve notes, bookmarks and progress together and reject stale snapshots. Backups remain unencrypted and local. Earlier schema versions are import formats; use the current site to import new version 3 files.
+Annotations were introduced in backup schema version 3 and are included in current schema version 5 exports. Version 1 and 2 imports preserve current annotations; same-ID linked note changes and same-verse colour changes require explicit replacement choices. Existing values are kept by default. Unknown references, colours, duplicate IDs and oversized annotation collections are rejected. Storage writes preserve notes, bookmarks and progress together and reject stale snapshots. Backups remain unencrypted and local. Earlier schema versions are import formats; use the current site to import new exports.
 
 ## Custom study collections and schedules
 
 My notebook supports up to 50 named, ordered collections of up to 100 passages each. Start with a guided study or enter canonical references separated by semicolons. An optional date and selected weekdays assign one passage per reading day. Schedule dates are fixed; missed readings remain due until explicitly completed. Dates use the device calendar. Collections are local and have independent progress from the original guided studies. Editing a collection retains completion for passages that remain in it. Deletion requires confirmation.
 
-Notebook backup schema 4 includes collections and schedules. Versions 1 to 3 remain supported and preserve existing collections. Matching collection definitions union completion; conflicting definitions retain the current collection unless the user selects replacement. Replacement uses the backup collection, including its completion. No Bible text is stored in backups, no reminders are sent and no account is required.
+Collections and schedules were introduced in notebook backup schema 4 and are included in current schema version 5 exports. Versions 1 to 3 remain supported and preserve existing collections. Matching collection definitions union completion; conflicting definitions retain the current collection unless the user selects replacement. Replacement uses the backup collection, including its completion. No Bible text is stored in backups, no reminders are sent and no account is required.
 
 ## Place-linked private observations
 

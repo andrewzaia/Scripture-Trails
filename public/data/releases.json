@@ -1,6 +1,16 @@
 {
   "releases": [
     {
+      "version": "0.18.1",
+      "date": "2026-10-28",
+      "title": "Roadmap review and remaining milestones",
+      "changes": [
+        "Record the official-domain launch, Atlas path and preview improvements, and versioned release safeguards as delivered milestones.",
+        "Clarify the eight remaining or exploratory milestones, with Hebrew Bible geography next and distinct citation, specialist-review and browser/accessibility work.",
+        "Align roadmap priorities and completion criteria with the delivered notebook, schedules and twenty person-centred trails."
+      ]
+    },
+    {
       "version": "0.18.0",
       "date": "2026-10-28",
       "title": "Twenty person-centred Scripture trails",
