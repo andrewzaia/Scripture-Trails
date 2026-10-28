@@ -10,7 +10,7 @@
     "connections": 8
   },
   "deferred": [
-    "Six of the original thirteen assessed place dossiers still lack external archaeological bibliography. Bethany has catalogue/site-history support, but its full monograph remains unread; other source-level limits remain explicit.",
+    "All six previously unlinked named-place assessments now include external research. Bibliographic gaps in this declared batch are addressed at the stated scope; exact identifications, comparative excavation review, textual variants and abstract-only access remain unresolved. Regional placeholders were not upgraded.",
     "The other 107 explained pairs retain their existing review labels and have no new source-level assessment in this batch.",
     "Other person-trail access gaps, full excavation reports, manuscript apparatuses, wider source coverage and independent specialist review remain open.",
     "The full OpenBible corpus remains unclassified."
@@ -557,6 +557,90 @@
       "checkedOn": "2026-10-28",
       "access": "Excavation announcement checked; this is a public project account, not a final stratigraphic report. Oil-production interpretation is explicitly tentative.",
       "rights": "Linked only; no publisher text, photographs or tables redistributed."
+    },
+    "sychar-human-dates": {
+      "title": "New chronological information from radiocarbon dating of human remains at Jacob's Well, Nablus, Palestine (2021)",
+      "author": "Loay Abu Alsaud, Amer Al-Qobbaj, Mohammad Al-Khateeb and Alfonso Fanjul Peraza",
+      "publisher": "Radiocarbon; author copy at An-Najah National University",
+      "kind": "publisher-abstract",
+      "url": "https://staff.najah.edu/media/published_research/2024/02/17/NEW_CHRONOLOGICAL_INFORMATION_FROM_RADIOCARBON.pdf",
+      "checkedOn": "2026-10-28",
+      "access": "Readable author PDF: abstract and introductory site/sample description checked. Raw measurements, calibration and proposed personal identities not independently evaluated.",
+      "rights": "Linked only; no publisher text, tables or images redistributed.",
+      "doi": "10.1017/RDC.2021.17"
+    },
+    "kursi-beach-2015": {
+      "title": "Kursi Beach - 2015 (2017)",
+      "author": "Haim Cohen and Michal Artzy",
+      "publisher": "IAA, Hadashot Arkheologiyot 129",
+      "kind": "excavation-report",
+      "url": "https://hadashot.iaa.org.il/Report_Detail_Eng.aspx?id=25247",
+      "checkedOn": "2026-10-28",
+      "access": "Preliminary report: introduction, Areas A/B and conclusion checked. Excavation scope and later-period dating are retained; related surveys not separately audited.",
+      "rights": "Linked only; no publisher text, tables or images redistributed."
+    },
+    "tabor-gate": {
+      "title": "Mount Tabor (2012)",
+      "author": "Yuval Gur",
+      "publisher": "IAA, Hadashot Arkheologiyot 124",
+      "kind": "excavation-report",
+      "url": "https://hadashot.iaa.org.il/report_detail_eng.aspx?id=2156&mag_id=119",
+      "checkedOn": "2026-10-28",
+      "access": "Final trial-excavation report checked. Evidence concerns the Gate of the Winds and medieval/modern structures, not a first-century Transfiguration site.",
+      "rights": "Linked only; no publisher text, tables or images redistributed."
+    },
+    "transfiguration-location": {
+      "title": "The Glory on the Mountain: The Episode of the Transfiguration of Jesus (2012)",
+      "author": "Armand Puig i Tarrech",
+      "publisher": "New Testament Studies 58(2), 151-172; Cambridge University Press",
+      "kind": "publisher-abstract",
+      "url": "https://www.cambridge.org/core/journals/new-testament-studies/article/abs/glory-on-the-mountain-the-episode-of-the-transfiguration-of-jesus/B2D91E6CB8AD4771F9F727BD3FA88CDF",
+      "checkedOn": "2026-10-28",
+      "access": "Publisher abstract, bibliographic record and visible note 34 checked; the full argument was not reviewed. Note 34 explicitly leaves the location unknown.",
+      "rights": "Linked only; no publisher text, tables or images redistributed.",
+      "doi": "10.1017/S0028688511000373"
+    },
+    "ephraim-john": {
+      "title": "Place-Names in the Fourth Gospel (II): Bethany and Ephraim (2013)",
+      "author": "Jerome Murphy-O'Connor",
+      "publisher": "Revue Biblique 120(1), 85-98; Peeters",
+      "kind": "publisher-abstract",
+      "url": "https://poj.peeters-leuven.be/content.php?id=3144338&journal_code=RBI&url=article.php",
+      "checkedOn": "2026-10-28",
+      "access": "Publisher abstract and metadata checked; full article not read. The abstract explicitly concerns John 11:54 and favours Taiybeh while noting Ain Samieh.",
+      "rights": "Linked only; no publisher text, tables or images redistributed.",
+      "doi": "10.2143/RBI.120.1.3144338"
+    },
+    "ephraim-peq": {
+      "title": "Where was the city of Ephraim? (2015)",
+      "author": "Ehud Keinan, Andrew Abado and Robert West",
+      "publisher": "Palestine Exploration Quarterly 147(3), 220-229; abstract via EBSCO",
+      "kind": "publisher-abstract",
+      "url": "https://openurl.ebsco.com/contentitem/gcd:109141544",
+      "checkedOn": "2026-10-28",
+      "access": "Indexed scholarly abstract and authorship checked; direct publisher access was unavailable. Its argument concerns early Hebrew geography, not independently the identity of John's town.",
+      "rights": "Linked only; no publisher text, tables or images redistributed.",
+      "doi": "10.1179/1743130114Y.0000000010"
+    },
+    "bethphage-slopes": {
+      "title": "Jerusalem, Et-Tur (2009)",
+      "author": "Yonathan Mizrachi",
+      "publisher": "IAA, Hadashot Arkheologiyot 121",
+      "kind": "excavation-report",
+      "url": "https://hadashot.iaa.org.il/Report_Detail_Eng.aspx?id=1147&mag_id=115",
+      "checkedOn": "2026-10-28",
+      "access": "Final report checked: eastern-slope context, rock-cut installations, cave dating and documentation limits. The Gospel village footprint is not established.",
+      "rights": "Linked only; no publisher text, tables or images redistributed."
+    },
+    "emmaus-moza": {
+      "title": "Moza, Highway 1 (2021)",
+      "author": "Uzi Ad and Anna Eirikh-Rose",
+      "publisher": "IAA, Hadashot Arkheologiyot 133",
+      "kind": "excavation-report",
+      "url": "https://hadashot.iaa.org.il/Report_Detail_Eng.aspx?id=25953",
+      "checkedOn": "2026-10-28",
+      "access": "Preliminary report: stratigraphic table, Roman-period sections and summary checked. The proposed identification concerns Vespasian's veteran settlement; other Emmaus candidates and Luke's distance variants are not settled.",
+      "rights": "Linked only; no publisher text, tables or images redistributed."
     }
   },
   "records": [
@@ -996,10 +1080,10 @@
       "kind": "place",
       "target": "sychar",
       "title": "Sychar and Jacob's well",
-      "decision": "warning-retained",
+      "decision": "sources-added",
       "reviewedOn": "2026-10-28",
-      "note": "John distinguishes the town called Sychar and Jacob's well nearby.",
-      "limitation": "Retain the missing external-source warning. A modern town identification, well monument and ancient town limits need separate evidence.",
+      "note": "Abu Alsaud and colleagues dated human remains recovered beside the commemorated well and monastery, supporting later burial and pilgrimage chronology.",
+      "limitation": "Dates of human remains do not date the cutting of the well, identify its biblical user or establish Sychar's town limits. Proposed links to named people or historical events remain interpretations.",
       "passages": [
         "John 4:4-6"
       ],
@@ -1008,6 +1092,11 @@
           "sourceId": "john4",
           "locator": "John 4:4-6",
           "supports": "Narrative setting only"
+        },
+        {
+          "sourceId": "sychar-human-dates",
+          "locator": "Readable author PDF: abstract and introductory site/sample description checked. Raw measurements, calibration and proposed personal identities not independently evaluated.",
+          "supports": "Only the corresponding material-context or attributed scholarly proposal described in this assessment."
         }
       ]
     },
@@ -1039,10 +1128,10 @@
       "kind": "place",
       "target": "east-shore",
       "title": "Eastern lakeshore",
-      "decision": "warning-retained",
+      "decision": "sources-added",
       "reviewedOn": "2026-10-28",
-      "note": "The narrative and publisher note support a regional setting with geographical name variation.",
-      "limitation": "Retain the missing archaeology citation. A textual note is not an excavated landing site.",
+      "note": "The Kursi Beach report documents a breakwater and public-building remains with Byzantine, Umayyad and early Abbasid evidence.",
+      "limitation": "Kursi Beach is distinct from the nearby monastery. Later settlement remains do not establish a first-century landing point or resolve Gerasenes/Gadarenes/Gergesenes readings.",
       "passages": [
         "Mark 5:1-20"
       ],
@@ -1051,6 +1140,11 @@
           "sourceId": "mark5",
           "locator": "Mark 5:1-20",
           "supports": "Narrative setting only"
+        },
+        {
+          "sourceId": "kursi-beach-2015",
+          "locator": "Preliminary report: introduction, Areas A/B and conclusion checked. Excavation scope and later-period dating are retained; related surveys not separately audited.",
+          "supports": "Only the corresponding material-context or attributed scholarly proposal described in this assessment."
         }
       ]
     },
@@ -1101,10 +1195,10 @@
       "kind": "place",
       "target": "mountain",
       "title": "Transfiguration mountain",
-      "decision": "warning-retained",
+      "decision": "sources-added",
       "reviewedOn": "2026-10-28",
-      "note": "Matthew describes a high mountain without giving its name.",
-      "limitation": "Retain the missing external-source warning. This check does not adjudicate Tabor and Hermon traditions.",
+      "note": "The Tabor trial excavation documents medieval fortification; Puig i Tarrech's note 34 discusses Tabor, Hermon and Golan proposals while leaving the mountain unknown.",
+      "limitation": "Medieval remains do not identify a first-century event. The scholarly note supports preserving an unnamed mountain, not endorsing Tabor or Hermon; the full article remains unread.",
       "passages": [
         "Matthew 17:1-9"
       ],
@@ -1113,6 +1207,16 @@
           "sourceId": "matt17",
           "locator": "Matthew 17:1-9",
           "supports": "Narrative setting only"
+        },
+        {
+          "sourceId": "tabor-gate",
+          "locator": "Final trial-excavation report checked. Evidence concerns the Gate of the Winds and medieval/modern structures, not a first-century Transfiguration site.",
+          "supports": "Only the corresponding material-context or attributed scholarly proposal described in this assessment."
+        },
+        {
+          "sourceId": "transfiguration-location",
+          "locator": "Publisher abstract, bibliographic record and visible note 34 checked; the full argument was not reviewed. Note 34 explicitly leaves the location unknown.",
+          "supports": "Only the corresponding material-context or attributed scholarly proposal described in this assessment."
         }
       ]
     },
@@ -1144,10 +1248,10 @@
       "kind": "place",
       "target": "ephraim",
       "title": "Ephraim",
-      "decision": "warning-retained",
+      "decision": "sources-added",
       "reviewedOn": "2026-10-28",
-      "note": "John names a town called Ephraim near the wilderness.",
-      "limitation": "Retain the external-source gap. The verse does not identify a modern town or surveyed town centre.",
+      "note": "Murphy-O'Connor favours Taiybeh for John's Ephraim. Keinan and colleagues argue for Khirbet Marjameh in early Hebrew geography.",
+      "limitation": "The studies address different textual and historical scopes; their Ephraim references cannot automatically be equated. Abstract-only access does not settle John's town or justify moving its marker.",
       "passages": [
         "John 11:54"
       ],
@@ -1156,6 +1260,16 @@
           "sourceId": "john11",
           "locator": "John 11:54",
           "supports": "Narrative setting only"
+        },
+        {
+          "sourceId": "ephraim-john",
+          "locator": "Publisher abstract and metadata checked; full article not read. The abstract explicitly concerns John 11:54 and favours Taiybeh while noting Ain Samieh.",
+          "supports": "Only the corresponding material-context or attributed scholarly proposal described in this assessment."
+        },
+        {
+          "sourceId": "ephraim-peq",
+          "locator": "Indexed scholarly abstract and authorship checked; direct publisher access was unavailable. Its argument concerns early Hebrew geography, not independently the identity of John's town.",
+          "supports": "Only the corresponding material-context or attributed scholarly proposal described in this assessment."
         }
       ]
     },
@@ -1163,10 +1277,10 @@
       "kind": "place",
       "target": "bethphage",
       "title": "Bethphage",
-      "decision": "warning-retained",
+      "decision": "sources-added",
       "reviewedOn": "2026-10-28",
-      "note": "Mark names Bethphage in the Jerusalem approach.",
-      "limitation": "Retain the external-source gap for the ancient village footprint; the donkey retrieval village remains unspecified.",
+      "note": "Mizrachi reports rock-cut installations and caves on Bethphage's eastern slopes, including Byzantine material and a tentatively dated Second Temple burial cave.",
+      "limitation": "Some caves were unexcavated or incompletely documented. Nearby remains do not establish the Gospel village boundary, the donkey retrieval village or a particular street.",
       "passages": [
         "Mark 11:1-6"
       ],
@@ -1175,6 +1289,11 @@
           "sourceId": "mark11",
           "locator": "Mark 11:1-6",
           "supports": "Narrative setting only"
+        },
+        {
+          "sourceId": "bethphage-slopes",
+          "locator": "Final report checked: eastern-slope context, rock-cut installations, cave dating and documentation limits. The Gospel village footprint is not established.",
+          "supports": "Only the corresponding material-context or attributed scholarly proposal described in this assessment."
         }
       ]
     },
@@ -1225,10 +1344,10 @@
       "kind": "place",
       "target": "emmaus",
       "title": "Emmaus",
-      "decision": "warning-retained",
+      "decision": "sources-added",
       "reviewedOn": "2026-10-28",
-      "note": "Luke supplies the name and narrative distance.",
-      "limitation": "Retain the external-source gap for candidate-site archaeology and manuscript distance variants.",
+      "note": "The Moza report proposes identifying its Middle Roman settlement with the Emmaus/Colonia of Vespasian's veterans.",
+      "limitation": "That proposed post-revolt identification does not establish Luke's Emmaus. Nicopolis, el-Qubeibeh and other proposals, the distance variants and their chronology still need comparative assessment.",
       "passages": [
         "Luke 24:13-35"
       ],
@@ -1237,6 +1356,11 @@
           "sourceId": "luke24",
           "locator": "Luke 24:13-35",
           "supports": "Narrative setting only"
+        },
+        {
+          "sourceId": "emmaus-moza",
+          "locator": "Preliminary report: stratigraphic table, Roman-period sections and summary checked. The proposed identification concerns Vespasian's veteran settlement; other Emmaus candidates and Luke's distance variants are not settled.",
+          "supports": "Only the corresponding material-context or attributed scholarly proposal described in this assessment."
         }
       ]
     },
