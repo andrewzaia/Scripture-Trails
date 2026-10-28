@@ -1,6 +1,6 @@
 import {parseRef} from './books.js';
 import {validateCanonicalReference} from './reference-integrity.js';
-import {ADDITIONAL_CONNECTION_EVIDENCE} from './connection-evidence-expanded.js?v=0.23.0';
+import {ADDITIONAL_CONNECTION_EVIDENCE} from './connection-evidence-expanded.js?v=0.24.0';
 /** Selective passage-linked editorial register. The 603k OpenBible links remain unclassified. */
 export const CONNECTION_KINDS=Object.freeze({
   "quotation": "Direct quotation",
@@ -20,7 +20,7 @@ export const CONNECTION_EVIDENCE=Object.freeze([
     "context": "John 1:1-5",
     "review": "scripture-context-screened",
     "basis": "Selected passage wording and immediate context rechecked in the dated citation register, batch connections-20-01; academic access limits recorded there. Independent specialist review pending."
-},
+  },
   {
     "id": "ce002",
     "from": "Genesis 15:6",
@@ -31,7 +31,7 @@ export const CONNECTION_EVIDENCE=Object.freeze([
     "context": "Romans 4:1-8",
     "review": "scripture-context-screened",
     "basis": "Selected passage wording and immediate context rechecked in the dated citation register, batch connections-20-01; academic access limits recorded there. Independent specialist review pending."
-},
+  },
   {
     "id": "ce003",
     "from": "Genesis 15:6",
@@ -42,7 +42,7 @@ export const CONNECTION_EVIDENCE=Object.freeze([
     "context": "James 2:18-26",
     "review": "scripture-context-screened",
     "basis": "Selected passage wording and immediate context rechecked in the dated citation register, batch connections-20-01; academic access limits recorded there. Independent specialist review pending."
-},
+  },
   {
     "id": "ce004",
     "from": "Deuteronomy 8:3",
@@ -52,8 +52,8 @@ export const CONNECTION_EVIDENCE=Object.freeze([
     "caution": "Deuteronomy addresses Israel and its wilderness testing. Identifying the quotation does not reconstruct Jesus' exact spoken language.",
     "context": "Matthew 4:1-11",
     "review": "scripture-context-screened",
-    "basis": "Selected passage wording and immediate context rechecked in the dated citation register, batch connections-20-01; academic access limits recorded there. Independent specialist review pending."
-},
+    "basis": "Selected passages plus named scholarly commentary checked at the scope recorded in citation follow-up connections-support-01. Wider literature and textual questions remain open. Independent specialist review pending."
+  },
   {
     "id": "ce005",
     "from": "Deuteronomy 18:15",
@@ -64,7 +64,7 @@ export const CONNECTION_EVIDENCE=Object.freeze([
     "context": "Acts 3:18-26",
     "review": "scripture-context-screened",
     "basis": "Selected passage wording and immediate context rechecked in the dated citation register, batch connections-20-01; academic access limits recorded there. Independent specialist review pending."
-},
+  },
   {
     "id": "ce006",
     "from": "Psalm 22:1",
@@ -75,7 +75,7 @@ export const CONNECTION_EVIDENCE=Object.freeze([
     "context": "Matthew 27:45-50",
     "review": "scripture-context-screened",
     "basis": "Selected passage wording and immediate context rechecked in the dated citation register, batch connections-20-01; academic access limits recorded there. Independent specialist review pending."
-},
+  },
   {
     "id": "ce007",
     "from": "Psalm 110:1",
@@ -86,7 +86,7 @@ export const CONNECTION_EVIDENCE=Object.freeze([
     "context": "Matthew 22:41-46",
     "review": "scripture-context-screened",
     "basis": "Selected passage wording and immediate context rechecked in the dated citation register, batch connections-20-01; academic access limits recorded there. Independent specialist review pending."
-},
+  },
   {
     "id": "ce008",
     "from": "Isaiah 7:14",
@@ -107,8 +107,8 @@ export const CONNECTION_EVIDENCE=Object.freeze([
     "caution": "Isaiah addresses consolation and restoration. Punctuation and the placement of wilderness language differ between textual traditions and translations.",
     "context": "John 1:19-28",
     "review": "scripture-context-screened",
-    "basis": "Selected passage wording and immediate context rechecked in the dated citation register, batch connections-20-01; academic access limits recorded there. Independent specialist review pending."
-},
+    "basis": "Selected passages plus named scholarly commentary checked at the scope recorded in citation follow-up connections-support-01. Wider literature and textual questions remain open. Independent specialist review pending."
+  },
   {
     "id": "ce010",
     "from": "Isaiah 53:4",
@@ -119,7 +119,7 @@ export const CONNECTION_EVIDENCE=Object.freeze([
     "context": "Matthew 8:14-17",
     "review": "scripture-context-screened",
     "basis": "Selected passage wording and immediate context rechecked in the dated citation register, batch connections-20-01; academic access limits recorded there. Independent specialist review pending."
-},
+  },
   {
     "id": "ce011",
     "from": "Jeremiah 31:31",
@@ -129,8 +129,8 @@ export const CONNECTION_EVIDENCE=Object.freeze([
     "caution": "Jeremiah names Israel and Judah. The quotation does not by itself settle competing Christian accounts of Israel, covenant or supersessionism.",
     "context": "Hebrews 8:6-13",
     "review": "scripture-context-screened",
-    "basis": "Selected passage wording and immediate context rechecked in the dated citation register, batch connections-20-01; academic access limits recorded there. Independent specialist review pending."
-},
+    "basis": "Selected passages plus named scholarly commentary checked at the scope recorded in citation follow-up connections-support-01. Wider literature and textual questions remain open. Independent specialist review pending."
+  },
   {
     "id": "ce012",
     "from": "Joel 2:28",
@@ -140,8 +140,8 @@ export const CONNECTION_EVIDENCE=Object.freeze([
     "caution": "Joel 2:28-32 is numbered Joel 3:1-5 in some editions. Identifying the citation does not settle the timing of every cosmic sign.",
     "context": "Acts 2:14-21",
     "review": "scripture-context-screened",
-    "basis": "Selected passage wording and immediate context rechecked in the dated citation register, batch connections-20-01; academic access limits recorded there. Independent specialist review pending."
-},
+    "basis": "Selected passages plus named scholarly commentary checked at the scope recorded in citation follow-up connections-support-01. Wider literature and textual questions remain open. Independent specialist review pending."
+  },
   {
     "id": "ce013",
     "from": "Micah 5:2",
@@ -151,8 +151,8 @@ export const CONNECTION_EVIDENCE=Object.freeze([
     "caution": "This is a composite/adapted citation, not identical wording from Micah alone. The Gospel's application and Micah's original context both remain relevant.",
     "context": "Matthew 2:1-12",
     "review": "scripture-context-screened",
-    "basis": "Selected passage wording and immediate context rechecked in the dated citation register, batch connections-20-01; academic access limits recorded there. Independent specialist review pending."
-},
+    "basis": "Selected passages plus named scholarly commentary checked at the scope recorded in citation follow-up connections-support-01. Wider literature and textual questions remain open. Independent specialist review pending."
+  },
   {
     "id": "ce014",
     "from": "Isaiah 61:1",
@@ -163,7 +163,7 @@ export const CONNECTION_EVIDENCE=Object.freeze([
     "context": "Luke 4:16-21",
     "review": "scripture-context-screened",
     "basis": "Selected passage wording and immediate context rechecked in the dated citation register, batch connections-20-01; academic access limits recorded there. Independent specialist review pending."
-},
+  },
   {
     "id": "ce015",
     "from": "Genesis 1:1",
@@ -250,8 +250,8 @@ export const CONNECTION_EVIDENCE=Object.freeze([
     "caution": "Retain echo, not direct quotation. Samuel's immediate dynastic setting and Luke's application should not be flattened into one speech.",
     "context": "Luke 1:26-33",
     "review": "scripture-context-screened",
-    "basis": "Selected passage wording and immediate context rechecked in the dated citation register, batch connections-20-01; academic access limits recorded there. Independent specialist review pending."
-},
+    "basis": "Selected passages plus named scholarly commentary checked at the scope recorded in citation follow-up connections-support-01. Wider literature and textual questions remain open. Independent specialist review pending."
+  },
   {
     "id": "ce023",
     "from": "Acts 9:3",
@@ -273,7 +273,8 @@ export const CONNECTION_EVIDENCE=Object.freeze([
     "context": "Acts 7:30-34",
     "review": "scripture-context-screened",
     "basis": "Editorial comparison of cited passages; external specialist review pending"
-  },
+  }
+,
  ...ADDITIONAL_CONNECTION_EVIDENCE
 ]);
 export const REVIEW_LABELS=Object.freeze({

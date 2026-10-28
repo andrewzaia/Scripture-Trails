@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.24.0 - 28/10/2026: About dashboard and deeper connection reviews
+
+- Explore the study library at a glance with a compact About dashboard showing dataset-backed Atlas, people, trail, edition and journey statistics.
+- Add named scholarly commentary to twelve existing connection assessments, with source scope and remaining research limits.
+- Compare twenty further Gospel and Acts passage pairs, bringing dated connection coverage to 48 of 115 while preserving account differences.
+- Clarify the composite Mark citation and manna comparison, and keep dashboard totals and citation batches validated during releases.
+
 ## 0.23.0 - 28/10/2026: Twenty more Scripture connections explained
 
 - Add passage contexts, source links and interpretive cautions for 20 further Scripture connections, bringing the citation register to 28 of 115 connections.

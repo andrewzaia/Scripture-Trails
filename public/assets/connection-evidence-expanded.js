@@ -60,12 +60,12 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "from": "Exodus 16:4",
     "to": "John 6:32",
     "kind": "theme",
-    "explanation": "John explicitly discusses manna and distinguishes Moses from the Father as giver, before presenting Jesus as the bread of life.",
-    "caution": "Retain the thematic label for these anchors; typological interpretation is possible. John 6:31 has its own quotation, whose exact source is not established by pairing Exodus 16:4 with John 6:32.",
+    "explanation": "John 6 discusses manna as the Father's present gift and identifies Jesus as bread of life.",
+    "caution": "The thematic anchors do not alone identify the source of John 6:31's quotation. Do not infer that Jewish listeners regarded Moses as manna's ultimate giver.",
     "context": "John 6:32",
     "review": "editorial-reading-aid",
-    "basis": "Selected passage wording and immediate context rechecked in the dated citation register, batch connections-20-01; academic access limits recorded there. Independent specialist review pending."
-},
+    "basis": "Selected passages plus named scholarly commentary checked at the scope recorded in citation follow-up connections-support-01. Wider literature and textual questions remain open. Independent specialist review pending."
+  },
   {
     "id": "ce031",
     "from": "Deuteronomy 6:5",
@@ -75,8 +75,8 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "caution": "Compare the wording of the faculties across editions and Gospel accounts. A quotation label does not assert letter-for-letter identity.",
     "context": "Mark 12:30",
     "review": "editorial-reading-aid",
-    "basis": "Selected passage wording and immediate context rechecked in the dated citation register, batch connections-20-01; academic access limits recorded there. Independent specialist review pending."
-},
+    "basis": "Selected passages plus named scholarly commentary checked at the scope recorded in citation follow-up connections-support-01. Wider literature and textual questions remain open. Independent specialist review pending."
+  },
   {
     "id": "ce032",
     "from": "Psalm 2:7",
@@ -87,7 +87,7 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "context": "Hebrews 1:5",
     "review": "editorial-reading-aid",
     "basis": "Selected passage wording and immediate context rechecked in the dated citation register, batch connections-20-01; academic access limits recorded there. Independent specialist review pending."
-},
+  },
   {
     "id": "ce033",
     "from": "Psalm 23:1",
@@ -174,8 +174,8 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "caution": "Classify this pair as quotation rather than a merely possible echo. The pastoral context does not license endorsing abuse or promising automatic physical cure.",
     "context": "1 Peter 2:24",
     "review": "editorial-reading-aid",
-    "basis": "Selected passage wording and immediate context rechecked in the dated citation register, batch connections-20-01; academic access limits recorded there. Independent specialist review pending."
-},
+    "basis": "Selected passages plus named scholarly commentary checked at the scope recorded in citation follow-up connections-support-01. Wider literature and textual questions remain open. Independent specialist review pending."
+  },
   {
     "id": "ce041",
     "from": "Jeremiah 31:31",
@@ -185,8 +185,8 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "caution": "Classify as echo rather than a direct quotation of Jeremiah's full promise. Compare Exodus 24:8 and textual variants of Luke's supper account before broader claims.",
     "context": "Luke 22:20",
     "review": "editorial-reading-aid",
-    "basis": "Selected passage wording and immediate context rechecked in the dated citation register, batch connections-20-01; academic access limits recorded there. Independent specialist review pending."
-},
+    "basis": "Selected passages plus named scholarly commentary checked at the scope recorded in citation follow-up connections-support-01. Wider literature and textual questions remain open. Independent specialist review pending."
+  },
   {
     "id": "ce042",
     "from": "Ezekiel 34:11",
@@ -207,18 +207,18 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "caution": "Retain a thematic comparison. A specific allusion is an interpretive proposal; this pairing does not settle baptismal or denominational interpretations.",
     "context": "John 3:5",
     "review": "editorial-reading-aid",
-    "basis": "Selected passage wording and immediate context rechecked in the dated citation register, batch connections-20-01; academic access limits recorded there. Independent specialist review pending."
-},
+    "basis": "Selected passages plus named scholarly commentary checked at the scope recorded in citation follow-up connections-support-01. Wider literature and textual questions remain open. Independent specialist review pending."
+  },
   {
     "id": "ce044",
     "from": "Malachi 3:1",
     "to": "Mark 1:2",
     "kind": "quotation",
-    "explanation": "A messenger prepares the way. Explore how Malachi 3:1 and Mark 1:2 address this subject or imagery from their respective settings.",
-    "caution": "The later text may adapt the earlier wording. Read both contexts and check translation differences.",
+    "explanation": "Mark 1:2-3 combines messenger language associated with Malachi 3:1 and Exodus 23:20 with Isaiah 40:3. Malachi is a component of a composite citation.",
+    "caution": "Read Mark 1:2-3 as a composite citation involving Malachi 3:1, Exodus 23:20 and Isaiah 40:3. Attribution variants need separate textual study.",
     "context": "Mark 1:2",
     "review": "editorial-reading-aid",
-    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
+    "basis": "Selected passages plus named scholarly commentary checked at the scope recorded in citation follow-up connections-support-01. Wider literature and textual questions remain open. Independent specialist review pending."
   },
   {
     "id": "ce045",
@@ -291,7 +291,7 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "from": "John 3:16",
     "to": "Romans 5:8",
     "kind": "theme",
-    "explanation": "God’s love and salvation. Explore how John 3:16 and Romans 5:8 address this subject or imagery from their respective settings.",
+    "explanation": "God\u2019s love and salvation. Explore how John 3:16 and Romans 5:8 address this subject or imagery from their respective settings.",
     "caution": "A shared subject does not establish quotation, fulfilment or historical corroboration.",
     "context": "Romans 5:8",
     "review": "editorial-reading-aid",
@@ -786,219 +786,219 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "from": "Matthew 3:13",
     "to": "Mark 1:9",
     "kind": "parallel",
-    "explanation": "Matthew and Mark both narrate the baptism of Jesus by John.",
-    "caution": "The Gospel accounts include different details and dialogue.",
+    "explanation": "Both accounts describe Jesus' baptism, the descending Spirit and a heavenly declaration of sonship.",
+    "caution": "Matthew includes John's objection and a righteousness dialogue; Mark does not. Compare the heavenly address rather than treating the accounts as identical transcripts.",
     "context": "Mark 1:9-11",
     "review": "editorial-reading-aid",
-    "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
+    "basis": "Selected narrative passages compared in dated citation register batch connections-20-02. Literary parallel does not imply independent corroboration. Fuller literature remains open. Independent specialist review pending."
   },
   {
     "id": "ce097",
     "from": "Mark 1:9",
     "to": "Luke 3:21",
     "kind": "parallel",
-    "explanation": "Mark and Luke both describe Jesus' baptism and the heavenly voice.",
-    "caution": "Narrative setting and wording differ across the Gospels.",
-    "context": "Luke 3:21-22",
+    "explanation": "Mark and Luke connect Jesus' baptism with the Spirit and a heavenly declaration.",
+    "caution": "Luke foregrounds prayer and places John's imprisonment notice before the baptism scene. Narrative arrangement alone does not establish a separate baptism or exact chronology.",
+    "context": "Luke 3:19-22",
     "review": "editorial-reading-aid",
-    "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
+    "basis": "Selected narrative passages compared in dated citation register batch connections-20-02. Literary parallel does not imply independent corroboration. Fuller literature remains open. Independent specialist review pending."
   },
   {
     "id": "ce098",
     "from": "Matthew 4:1",
     "to": "Luke 4:1",
     "kind": "parallel",
-    "explanation": "Matthew and Luke recount Jesus' temptation in the wilderness.",
-    "caution": "The order of the temptations differs.",
+    "explanation": "Both accounts narrate wilderness testing and responses drawn from Deuteronomy.",
+    "caution": "The temple and kingdom tests occur in different orders. Retain parallel without inventing an exact reconciled sequence.",
     "context": "Luke 4:1-13",
     "review": "editorial-reading-aid",
-    "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
+    "basis": "Selected narrative passages compared in dated citation register batch connections-20-02. Literary parallel does not imply independent corroboration. Fuller literature remains open. Independent specialist review pending."
   },
   {
     "id": "ce099",
     "from": "Matthew 8:14",
     "to": "Mark 1:29",
     "kind": "parallel",
-    "explanation": "Matthew and Mark recount Jesus healing Peter's mother-in-law.",
-    "caution": "Narrative placement and wording differ.",
-    "context": "Mark 1:29-31",
+    "explanation": "Both accounts place the healing of Simon Peter's mother-in-law in a house, followed by evening healings.",
+    "caution": "Mark names additional disciples and connects the visit to the synagogue; Matthew gives a shorter account. The narrative link does not supply medical or archaeological verification.",
+    "context": "Mark 1:29-34",
     "review": "editorial-reading-aid",
-    "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
+    "basis": "Selected narrative passages compared in dated citation register batch connections-20-02. Literary parallel does not imply independent corroboration. Fuller literature remains open. Independent specialist review pending."
   },
   {
     "id": "ce100",
     "from": "Matthew 8:23",
     "to": "Mark 4:35",
     "kind": "parallel",
-    "explanation": "Matthew and Mark recount Jesus calming a storm.",
-    "caution": "Each places the miracle within its own narrative flow.",
+    "explanation": "Both describe a sleeping Jesus, a storm, frightened disciples and the calming of wind and water.",
+    "caution": "Matthew places the faith question before the calming; Mark places it after. Do not flatten this order difference or infer an exact sailing route.",
     "context": "Mark 4:35-41",
     "review": "editorial-reading-aid",
-    "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
+    "basis": "Selected narrative passages compared in dated citation register batch connections-20-02. Literary parallel does not imply independent corroboration. Fuller literature remains open. Independent specialist review pending."
   },
   {
     "id": "ce101",
     "from": "Matthew 9:9",
     "to": "Mark 2:14",
     "kind": "parallel",
-    "explanation": "Matthew and Mark relate the calling of a tax collector.",
-    "caution": "The naming of the disciple differs and traditional harmonisation needs care.",
+    "explanation": "Both accounts relate a tax collector's call and a meal with tax collectors and sinners.",
+    "caution": "Matthew names the collector Matthew; Mark names Levi son of Alphaeus. Parallel story structure does not independently establish that these names identify the same historical person.",
     "context": "Mark 2:13-17",
     "review": "editorial-reading-aid",
-    "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
+    "basis": "Selected narrative passages compared in dated citation register batch connections-20-02. Literary parallel does not imply independent corroboration. Fuller literature remains open. Independent specialist review pending."
   },
   {
     "id": "ce102",
     "from": "Matthew 14:13",
     "to": "Mark 6:32",
     "kind": "parallel",
-    "explanation": "Matthew and Mark both recount the feeding of the crowd.",
-    "caution": "Their emphases and narrative transitions differ.",
+    "explanation": "Both accounts describe five loaves, two fish, a large crowd and twelve baskets after the feeding.",
+    "caution": "Mark begins with the apostles' return; Matthew connects the withdrawal with news about John. Read each narrative setting; the parallel does not fix the exact location.",
     "context": "Mark 6:30-44",
     "review": "editorial-reading-aid",
-    "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
+    "basis": "Selected narrative passages compared in dated citation register batch connections-20-02. Literary parallel does not imply independent corroboration. Fuller literature remains open. Independent specialist review pending."
   },
   {
     "id": "ce103",
     "from": "Matthew 16:13",
     "to": "Mark 8:27",
     "kind": "parallel",
-    "explanation": "Matthew and Mark depict a conversation about Jesus' identity near Caesarea Philippi.",
-    "caution": "Matthew's account contains additional material about Peter.",
+    "explanation": "Both place Peter's confession in the Caesarea Philippi setting and include an instruction not to tell others.",
+    "caution": "Matthew expands the confession with teaching about Peter, the church and the keys. Mark has no equivalent speech here; this comparison does not settle later ecclesial interpretations.",
     "context": "Mark 8:27-30",
     "review": "editorial-reading-aid",
-    "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
+    "basis": "Selected narrative passages compared in dated citation register batch connections-20-02. Literary parallel does not imply independent corroboration. Fuller literature remains open. Independent specialist review pending."
   },
   {
     "id": "ce104",
     "from": "Matthew 17:1",
     "to": "Luke 9:28",
     "kind": "parallel",
-    "explanation": "Matthew and Luke narrate the transfiguration of Jesus.",
-    "caution": "Time markers and narrative details vary.",
+    "explanation": "Both describe the mountain scene with Peter, James, John, Moses, Elijah and the voice from the cloud.",
+    "caution": "Matthew says six days; Luke says about eight and emphasises prayer and departure at Jerusalem. No precise mountain identification or harmonised calendar is established.",
     "context": "Luke 9:28-36",
     "review": "editorial-reading-aid",
-    "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
+    "basis": "Selected narrative passages compared in dated citation register batch connections-20-02. Literary parallel does not imply independent corroboration. Fuller literature remains open. Independent specialist review pending."
   },
   {
     "id": "ce105",
     "from": "Matthew 19:13",
     "to": "Luke 18:15",
     "kind": "parallel",
-    "explanation": "Matthew and Luke narrate people bringing children to Jesus.",
-    "caution": "The dialogue and narrative placement differ.",
+    "explanation": "Both accounts show disciples resisting people bringing children and Jesus welcoming them in relation to God's kingdom.",
+    "caution": "Luke explicitly mentions infants and adds a saying about receiving the kingdom. This parallel does not by itself settle infant-baptism disputes.",
     "context": "Luke 18:15-17",
     "review": "editorial-reading-aid",
-    "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
+    "basis": "Selected narrative passages compared in dated citation register batch connections-20-02. Literary parallel does not imply independent corroboration. Fuller literature remains open. Independent specialist review pending."
   },
   {
     "id": "ce106",
     "from": "Matthew 21:1",
     "to": "Luke 19:28",
     "kind": "parallel",
-    "explanation": "Matthew and Luke recount Jesus' approach to Jerusalem.",
-    "caution": "The accounts differ in wording and details about the procession.",
+    "explanation": "Both narrate the approach to Jerusalem, disciples obtaining an animal and acclamation of Jesus.",
+    "caution": "Matthew mentions a donkey and colt; Luke describes a colt. Retain the literary parallel without inventing riding arrangements, a precise route or a single verbatim acclamation.",
     "context": "Luke 19:28-40",
     "review": "editorial-reading-aid",
-    "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
+    "basis": "Selected narrative passages compared in dated citation register batch connections-20-02. Literary parallel does not imply independent corroboration. Fuller literature remains open. Independent specialist review pending."
   },
   {
     "id": "ce107",
     "from": "Matthew 26:26",
     "to": "Mark 14:22",
     "kind": "parallel",
-    "explanation": "Matthew and Mark narrate Jesus' words over bread at the final meal.",
-    "caution": "Different Gospel and Pauline forms of the words should be read independently.",
-    "context": "Mark 14:22-25",
+    "explanation": "Both describe bread, a shared cup, covenant language and a future meal in the kingdom.",
+    "caution": "Matthew includes the forgiveness-of-sins phrase absent from Mark's wording here. Manuscript variants and sacramental interpretations require a wider review.",
+    "context": "Mark 14:22-26",
     "review": "editorial-reading-aid",
-    "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
+    "basis": "Selected narrative passages compared in dated citation register batch connections-20-02. Literary parallel does not imply independent corroboration. Fuller literature remains open. Independent specialist review pending."
   },
   {
     "id": "ce108",
     "from": "Matthew 26:36",
     "to": "Mark 14:32",
     "kind": "parallel",
-    "explanation": "Matthew and Mark narrate Jesus' prayer in Gethsemane.",
-    "caution": "The accounts differ in how individual details are emphasised.",
+    "explanation": "Both name Gethsemane and relate Jesus' distress, prayer about the cup and the disciples' failure to remain awake.",
+    "caution": "Compare repeated prayers and forms of address in each account. The named setting does not identify an exact surviving tree, cave or prayer spot.",
     "context": "Mark 14:32-42",
     "review": "editorial-reading-aid",
-    "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
+    "basis": "Selected narrative passages compared in dated citation register batch connections-20-02. Literary parallel does not imply independent corroboration. Fuller literature remains open. Independent specialist review pending."
   },
   {
     "id": "ce109",
     "from": "Matthew 27:57",
     "to": "Luke 23:50",
     "kind": "parallel",
-    "explanation": "Matthew and Luke identify Joseph as involved in Jesus' burial.",
-    "caution": "Descriptions of Joseph and the burial sequence vary.",
+    "explanation": "Both present Joseph of Arimathea requesting Jesus' body from Pilate and placing it in a rock-cut tomb.",
+    "caution": "Matthew calls Joseph rich and a disciple and identifies the tomb as his own; Luke stresses his council role and dissent. These accounts do not independently verify a modern tomb identification.",
     "context": "Luke 23:50-56",
     "review": "editorial-reading-aid",
-    "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
+    "basis": "Selected narrative passages compared in dated citation register batch connections-20-02. Literary parallel does not imply independent corroboration. Fuller literature remains open. Independent specialist review pending."
   },
   {
     "id": "ce110",
     "from": "Matthew 28:1",
     "to": "Mark 16:1",
     "kind": "parallel",
-    "explanation": "Matthew and Mark record women visiting Jesus' tomb.",
-    "caution": "Accounts differ concerning timing and messengers; manuscript issues affect Mark's ending.",
+    "explanation": "Both narrate women visiting the tomb, finding it empty and receiving a message about Jesus' resurrection and Galilee.",
+    "caution": "The named women, scene details and responses differ. Keep this comparison within Mark 16:1-8; the disputed longer ending is a separate textual issue, not evidence silently supplied here.",
     "context": "Mark 16:1-8",
     "review": "editorial-reading-aid",
-    "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
+    "basis": "Selected narrative passages compared in dated citation register batch connections-20-02. Literary parallel does not imply independent corroboration. Fuller literature remains open. Independent specialist review pending."
   },
   {
     "id": "ce111",
     "from": "Luke 24:1",
     "to": "John 20:1",
     "kind": "parallel",
-    "explanation": "Luke and John report visits to the tomb on the first day of the week.",
-    "caution": "The number and activities of visitors differ across the Gospels.",
+    "explanation": "Luke and John link Mary Magdalene, the first-day tomb visit, an absent body and subsequent reports to disciples.",
+    "caution": "Luke has a group of women and an immediate message; John first foregrounds Mary's uncertainty, then Peter and the other disciple. Do not infer a unified timetable from the parallel label.",
     "context": "John 20:1-18",
     "review": "editorial-reading-aid",
-    "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
+    "basis": "Selected narrative passages compared in dated citation register batch connections-20-02. Literary parallel does not imply independent corroboration. Fuller literature remains open. Independent specialist review pending."
   },
   {
     "id": "ce112",
     "from": "Acts 9:3",
     "to": "Acts 26:13",
     "kind": "parallel",
-    "explanation": "Acts narrates Paul's Damascus-road experience again in his speech to Agrippa.",
-    "caution": "Accounts differ in their wording and particular details.",
-    "context": "Acts 26:12-23",
+    "explanation": "Acts narrates the Damascus encounter and later retells it in Paul's defence before Agrippa.",
+    "caution": "Acts 26 states the commission within Jesus' speech and says all fell; Acts 9 includes Ananias and describes the companions differently. These are accounts within one literary work, not independent corroborating sources.",
+    "context": "Acts 26:12-18",
     "review": "editorial-reading-aid",
-    "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
+    "basis": "Selected narrative passages compared in dated citation register batch connections-20-02. Literary parallel does not imply independent corroboration. Fuller literature remains open. Independent specialist review pending."
   },
   {
     "id": "ce113",
     "from": "Acts 22:6",
     "to": "Acts 26:13",
     "kind": "parallel",
-    "explanation": "Two speeches in Acts recount Paul's experience on the Damascus road.",
-    "caution": "Do not smooth out different reported details without analysis.",
-    "context": "Acts 26:12-23",
+    "explanation": "Paul's Jerusalem defence and his speech before Agrippa both recount the Damascus light and voice.",
+    "caution": "The speeches address different audiences and distribute the commission differently. Compare Acts 9 as well; the hearing/understanding question and textual details are not resolved by this pair.",
+    "context": "Acts 26:12-18",
     "review": "editorial-reading-aid",
-    "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
+    "basis": "Selected narrative passages compared in dated citation register batch connections-20-02. Literary parallel does not imply independent corroboration. Fuller literature remains open. Independent specialist review pending."
   },
   {
     "id": "ce114",
     "from": "John 6:5",
     "to": "Mark 6:35",
     "kind": "parallel",
-    "explanation": "John and Mark both narrate the feeding of a large crowd.",
-    "caution": "Setting and dialogue differ in the two accounts.",
-    "context": "John 6:1-15",
+    "explanation": "Both feeding accounts include five loaves, two fish, about five thousand men and twelve baskets.",
+    "caution": "John names Philip, Andrew and a boy and frames the scene near Passover; Mark foregrounds the disciples collectively. Shared motifs do not erase distinct purposes or establish an exact location.",
+    "context": "Mark 6:35-44",
     "review": "editorial-reading-aid",
-    "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
+    "basis": "Selected narrative passages compared in dated citation register batch connections-20-02. Literary parallel does not imply independent corroboration. Fuller literature remains open. Independent specialist review pending."
   },
   {
     "id": "ce115",
     "from": "Matthew 5:3",
     "to": "Luke 6:20",
     "kind": "parallel",
-    "explanation": "Matthew and Luke report related beatitude teachings.",
-    "caution": "The blessing formulations and literary settings differ.",
-    "context": "Luke 6:20-26",
+    "explanation": "Both open major teaching sections with blessings linked to God's kingdom.",
+    "caution": "Matthew speaks of poor in spirit in a mountain setting; Luke addresses the poor on level ground and includes woes. Do not equate the wording or use the comparison to remove either passage's distinctive emphasis.",
+    "context": "Luke 6:17-26",
     "review": "editorial-reading-aid",
-    "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
+    "basis": "Selected narrative passages compared in dated citation register batch connections-20-02. Literary parallel does not imply independent corroboration. Fuller literature remains open. Independent specialist review pending."
   }
 ]);
