@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.24.1 - 29/10/2026: Safer notebook saves and accessible study navigation
+
+- Protect open linked-note and collection drafts from overwriting reviewed imports, and keep stale reader notes or saved-passage actions from overwriting another tab's changes.
+- Improve light-theme contrast, match accessible names to visible labels, underline source links and announce the selected Gospel episode.
+- Add a keyboard skip link, Escape-to-close mobile navigation, reliable navigation and Gospel episode focus, and accurate theme-switch labels.
+- Check core reading, Atlas, maps, roadmap and notebook journeys automatically on desktop and mobile, with accessibility scans in both themes.
+- Distinguish delivered automated browser coverage from outstanding manual screen-reader and real-device review in the roadmap.
+
 ## 0.24.0 - 28/10/2026: About dashboard and deeper connection reviews
 
 - Explore the study library at a glance with a compact About dashboard showing dataset-backed Atlas, people, trail, edition and journey statistics.

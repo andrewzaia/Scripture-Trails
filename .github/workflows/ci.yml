@@ -18,5 +18,39 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
       - name: Check source and tests
         run: npm run build
+  browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - name: Install Chromium and OS dependencies
+        run: npx playwright install --with-deps chromium
+      - name: Desktop and mobile journeys, accessibility and layout
+        run: npm run test:browser
+      - uses: actions/upload-artifact@v4
+        if: ${{ !cancelled() }}
+        with:
+          name: browser-report
+          path: |
+            playwright-report/
+            test-results/
+          retention-days: 14
+  release-gate:
+    if: ${{ always() }}
+    needs: [test, browser]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Require source and browser checks
+        env:
+          SOURCE_RESULT: ${{ needs.test.result }}
+          BROWSER_RESULT: ${{ needs.browser.result }}
+        run: test "$SOURCE_RESULT" = success && test "$BROWSER_RESULT" = success

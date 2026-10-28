@@ -1,4 +1,4 @@
-import {appendCitationReview} from './citation-review.js?v=0.24.0';
+import {appendCitationReview} from './citation-review.js?v=0.24.1';
 import {parseRef} from './books.js';
 import {GOSPEL_BOOKS,gospelSequence,gospelPassages,validateGospelChronology} from './gospel-chronology.js';
 /** Journeys of Jesus: self-hosted schematic SVG atlas. No tiles or external JavaScript. */
@@ -177,8 +177,9 @@ export function createJesusMap(root,onOpenPassage,onOpenCity){
    if(issue.references.length){const refs=el('div','jesus-audit-sources');for(const url of issue.references){const a=el('a','',new URL(url).hostname+' (research)');a.href=url;a.target='_blank';a.rel='noopener noreferrer';refs.append(a);}row.append(refs);}else row.append(el('small','jesus-map-muted','No secondary research link is attached to this open issue; the Gospel text is its primary narrative source.'));appendCitationReview(row,'issue',issue.id);outstanding.append(row);}
  }
  function selectPlace(id,move=false){const place=placeMap.get(id);if(!place)return;
- const matches=getAccountSequence().filter(e=>e.place===id);const list=$('visits');list.replaceChildren();$('visit-count').textContent=`${matches.length} recorded ${matches.length===1?'episode':'episodes'}`;
- for(const e of matches){const b=el('button','jesus-visit',`${String(data.events.indexOf(e)+1).padStart(2,'0')}  ${e.title}`);b.type='button';b.classList.toggle('active',e.id===data.events[index].id);b.addEventListener('click',()=>{stop();phase='all';$('phase').value='all';selectEvent(data.events.indexOf(e));selectPlace(id);});list.append(b);}
+ const matches=getAccountSequence().filter(e=>e.place===id);const list=$('visits'),focusedVisit=document.activeElement?.dataset.jesusVisit;list.replaceChildren();$('visit-count').textContent=`${matches.length} recorded ${matches.length===1?'episode':'episodes'}`;
+ for(const e of matches){const b=el('button','jesus-visit',`${String(data.events.indexOf(e)+1).padStart(2,'0')}  ${e.title}`);b.type='button';b.dataset.jesusVisit=e.id;b.classList.toggle('active',e.id===data.events[index].id);if(e.id===data.events[index].id)b.setAttribute('aria-current','step');b.addEventListener('click',()=>{stop();phase='all';$('phase').value='all';selectEvent(data.events.indexOf(e));selectPlace(id);});list.append(b);}
+ if(focusedVisit)list.querySelector(`[data-jesus-visit="${focusedVisit}"]`)?.focus({preventScroll:true});
  $('place-caption').textContent=`${place.name} | ${place.region}`;renderPlaceStudy(id);const hasStudy=['jerusalem','nazareth','capernaum','bethlehem','jericho'].includes(id);$('city-deep-link-wrap').hidden=!hasStudy; if(hasStudy)$('city-deep-link').onclick=()=>onOpenCity?.(id);if(move)focus(place.coordinates,true);
  }
  function move(delta){const items=getList();let pos=items.findIndex(e=>e.id===data.events[index].id);const next=items[pos+delta];if(!next){stop();return;}selectEvent(data.events.indexOf(next));selectPlace(next.place);}
