@@ -391,3 +391,7 @@ The About page and affected studies expose 43 dated assessments: 18 Gospel issue
 ## Scientific and archaeological citation expansion
 
 Seven additional research/project sources support five place assessments and two new city-study findings. Reviewed coverage is now 45 records, including 15 place dossiers. Radiocarbon claims distinguish sample age, calibration and event attribution; Bethany catalogue access is explicitly limited. Six of the original thirteen assessed place dossiers retain missing-bibliography warnings. This does not complete site-wide citation remediation or independent specialist review.
+
+## Six geography citation gaps: v0.22.0
+
+Eight external research records now support Sychar/Jacob's Well, the eastern lakeshore, the unnamed Transfiguration mountain, Ephraim, Bethphage and Emmaus. Existing 45 assessments and geographic confidence labels are preserved. The declared six-record bibliography gap is addressed; this is not adjudication of disputed places. Sources distinguish human-remains dates from the age of a well, later Kursi remains from a Gospel landing, medieval Tabor remains from a first-century event, and Vespasian's Emmaus from Luke's setting. Ephraim proposals have different historical scopes. Full-paper access and comparative source review remain explicit follow-ups.

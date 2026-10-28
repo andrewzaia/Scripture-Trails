@@ -12,8 +12,8 @@ test('declared batch resolves real targets, canonical passages and scoped claim-
  assert.deepEqual(CITATION_REVIEW,json('citation-review'));
  assert.equal(validateCitationReview(CITATION_REVIEW,counts,targets),true);
  assert.equal(CITATION_REVIEW.records.length,45);
- assert.equal(CITATION_REVIEW.records.filter(r=>r.kind==='place'&&r.decision==='sources-added').length,9);
- assert.equal(CITATION_REVIEW.records.filter(r=>r.kind==='place'&&r.decision==='warning-retained').length,6);
+ assert.equal(CITATION_REVIEW.records.filter(r=>r.kind==='place'&&r.decision==='sources-added').length,15);
+ assert.equal(CITATION_REVIEW.records.filter(r=>r.kind==='place'&&r.decision==='warning-retained').length,0);
  for(const r of CITATION_REVIEW.records.filter(r=>r.kind==='connection')){
   const e=CONNECTION_EVIDENCE.find(e=>e.id===r.target);
   assert.ok(r.passages.some(p=>p.startsWith(e.from.split(':')[0]+':')));
@@ -66,4 +66,11 @@ test('scientific expansion preserves sample, calibration, publication-access and
   const s=CITATION_REVIEW.sources[key];assert.ok(s.author&&s.publisher&&s.access);assert.equal(s.checkedOn,'2026-10-28');
  }
  const cities=json('city-studies');for(const id of ['jerusalem','jericho']){const f=cities.cities.find(c=>c.id===id).findings.find(f=>f.title==='Radiocarbon evidence and chronology');assert.ok(f.sourceIds.length);assert.ok(f.limitation.length>60);}
+});
+
+test('six geography additions retain event, period and identity limits',()=>{
+ const expected={sychar:/do not date the cutting/, 'east-shore':/do not establish a first-century/,mountain:/not endorsing Tabor or Hermon/,ephraim:/different textual and historical scopes/,bethphage:/unexcavated or incompletely/,emmaus:/does not establish Luke/};
+ for(const [id,pattern] of Object.entries(expected)){const r=citationReviews('place',id)[0];assert.equal(r.decision,'sources-added');assert.match(r.limitation,pattern);assert.ok(r.citations.length>=2);assert.equal(geography.places[id].review.status,'source-linked');}
+ assert.match(CITATION_REVIEW.sources['ephraim-peq'].access,/early Hebrew geography/);
+ assert.match(CITATION_REVIEW.sources['transfiguration-location'].access,/note 34/);
 });

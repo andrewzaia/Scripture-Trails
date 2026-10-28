@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.22.0 - 28/10/2026: Sources for six disputed geography settings
+
+- Add eight excavation and academic source records for Sychar, the eastern lakeshore, the Transfiguration mountain, Ephraim, Bethphage and Emmaus.
+- Distinguish dated human remains, later settlement evidence and scholarly proposals from verified Gospel event locations.
+- Address the six declared bibliography gaps while retaining disputed identifications, source-access limits and further comparative review.
+
 ## 0.21.1 - 28/10/2026: Revalidate updated research datasets
 
 - Revalidate city-study and Gospel research data when loading, so returning browsers receive the updated source records and consistent audit metadata.

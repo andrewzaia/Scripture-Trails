@@ -23,7 +23,8 @@ test('named heritage and archaeology sources are HTTPS and remain editorially se
  for(const [key,source] of Object.entries(geography.sources)){
   assert.match(source.url,/^https:\/\//,key);assert.ok(source.title.length>8);assert.ok(source.kind);
  }
- assert.deepEqual(geography.places.emmaus.literature,[]);
+ assert.deepEqual(geography.places.emmaus.literature,['emmaus-moza']);
+ assert.match(geography.places.emmaus.archaeology,/does not establish Luke/);
  assert.equal(geography.places.emmaus.evidenceLevel,'disputed');
  assert.equal(geography.places.egypt.evidenceLevel,'regional');
  assert.notEqual(geography.places['beyond-jordan'].modernSetting,geography.places.bethany.modernSetting);

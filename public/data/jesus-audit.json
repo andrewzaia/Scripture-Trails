@@ -423,6 +423,46 @@
       "source": "gethsemane-bath",
       "result": "Excavation announcement checked; this is a public project account, not a final stratigraphic report. Oil-production interpretation is explicitly tentative.",
       "checkedOn": "2026-10-28"
+    },
+    {
+      "source": "sychar-human-dates",
+      "result": "Readable author PDF: abstract and introductory site/sample description checked. Raw measurements, calibration and proposed personal identities not independently evaluated.",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "source": "kursi-beach-2015",
+      "result": "Preliminary report: introduction, Areas A/B and conclusion checked. Excavation scope and later-period dating are retained; related surveys not separately audited.",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "source": "tabor-gate",
+      "result": "Final trial-excavation report checked. Evidence concerns the Gate of the Winds and medieval/modern structures, not a first-century Transfiguration site.",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "source": "transfiguration-location",
+      "result": "Publisher abstract, bibliographic record and visible note 34 checked; the full argument was not reviewed. Note 34 explicitly leaves the location unknown.",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "source": "ephraim-john",
+      "result": "Publisher abstract and metadata checked; full article not read. The abstract explicitly concerns John 11:54 and favours Taiybeh while noting Ain Samieh.",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "source": "ephraim-peq",
+      "result": "Indexed scholarly abstract and authorship checked; direct publisher access was unavailable. Its argument concerns early Hebrew geography, not independently the identity of John's town.",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "source": "bethphage-slopes",
+      "result": "Final report checked: eastern-slope context, rock-cut installations, cave dating and documentation limits. The Gospel village footprint is not established.",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "source": "emmaus-moza",
+      "result": "Preliminary report: stratigraphic table, Roman-period sections and summary checked. The proposed identification concerns Vespasian's veteran settlement; other Emmaus candidates and Luke's distance variants are not settled.",
+      "checkedOn": "2026-10-28"
     }
   ],
   "literatureUpdate": {
