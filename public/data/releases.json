@@ -1,6 +1,14 @@
 {
   "releases": [
     {
+      "version": "0.16.1",
+      "date": "2026-10-28",
+      "title": "Reliable live version and changelog display",
+      "changes": [
+        "Keep the footer tied to the loaded website release and prevent cached changelog data from showing an older version."
+      ]
+    },
+    {
       "version": "0.16.0",
       "date": "2026-10-28",
       "title": "Custom study collections and reading schedules",
