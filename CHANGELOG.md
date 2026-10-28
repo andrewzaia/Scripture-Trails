@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.25.0 - 29/10/2026: Twenty more source-backed Scripture connections
+
+- Add dated assessments for twenty creation, shepherd, renewal, Law, mission and salvation comparisons, bringing review coverage to 68 of 115.
+- Link each new comparison to two passage contexts and named commentary, with fifteen readable scholarly sources and claim-specific access notes.
+- Replace generic explanations with attributed readings while retaining distinct settings, thematic labels and unresolved textual or theological questions.
+- Update About and the roadmap: 68 assessed pairs, 47 still outside the dated register, and 36 with commentary or limited publisher-summary support. Independent specialist review remains open.
+
 ## 0.24.1 - 29/10/2026: Safer notebook saves and accessible study navigation
 
 - Protect open linked-note and collection drafts from overwriting reviewed imports, and keep stale reader notes or saved-passage actions from overwriting another tab's changes.

@@ -5,22 +5,22 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "from": "Genesis 2:9",
     "to": "Revelation 22:2",
     "kind": "theme",
-    "explanation": "The tree of life imagery. Explore how Genesis 2:9 and Revelation 22:2 address this subject or imagery from their respective settings.",
-    "caution": "A shared subject does not establish quotation, fulfilment or historical corroboration.",
-    "context": "Revelation 22:2",
-    "review": "editorial-reading-aid",
-    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
+    "explanation": "Genesis places the tree of life in Eden; Revelation places life-giving tree imagery beside the river from the throne. Brian J. Tabb also draws attention to Ezekiel 47 as background to the final vision.",
+    "caution": "Keep the link thematic. Shared imagery does not identify the river with a modern waterway, reconstruct Eden or establish that Revelation merely repeats the garden scene.",
+    "context": "Revelation 22:1-5",
+    "review": "scripture-context-screened",
+    "basis": "Selected passages and named scholarly commentary checked in citation batch connections-20-03 on 2026-10-29. Source scope and remaining questions recorded there. Independent specialist review pending."
   },
   {
     "id": "ce026",
     "from": "Genesis 1:26",
     "to": "Colossians 1:15",
     "kind": "theme",
-    "explanation": "The image of God. Explore how Genesis 1:26 and Colossians 1:15 address this subject or imagery from their respective settings.",
-    "caution": "A shared subject does not establish quotation, fulfilment or historical corroboration.",
-    "context": "Colossians 1:15",
-    "review": "editorial-reading-aid",
-    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
+    "explanation": "Genesis describes humanity made in God's image; Colossians identifies the Son as God's image and relates all creation to him. Alistair I. Wilson discusses the Genesis background while distinguishing the Son's role.",
+    "caution": "This is an interpretive thematic link, not an explicit quotation. Do not collapse humanity's calling into the Son's identity; the meaning of firstborn and wider Christological debates need fuller treatment.",
+    "context": "Colossians 1:15-20",
+    "review": "scripture-context-screened",
+    "basis": "Selected passages and named scholarly commentary checked in citation batch connections-20-03 on 2026-10-29. Source scope and remaining questions recorded there. Independent specialist review pending."
   },
   {
     "id": "ce027",
@@ -49,11 +49,11 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "from": "Genesis 12:3",
     "to": "Matthew 28:19",
     "kind": "theme",
-    "explanation": "Blessing reaching the nations. Explore how Genesis 12:3 and Matthew 28:19 address this subject or imagery from their respective settings.",
-    "caution": "A shared subject does not establish quotation, fulfilment or historical corroboration.",
-    "context": "Matthew 28:19",
-    "review": "editorial-reading-aid",
-    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
+    "explanation": "The promise to Abram reaches beyond his family; Matthew commissions disciples among all nations. Terence E. Fretheim emphasises the wider reach of Genesis's blessing. Connecting that promise to Matthew is this site's Christian thematic comparison.",
+    "caution": "Matthew does not quote Genesis 12:3 here. The pairing does not prove a deliberate literary allusion or erase the promise's particular relationship to Abram and Israel.",
+    "context": "Matthew 28:16-20",
+    "review": "scripture-context-screened",
+    "basis": "Selected passages and named scholarly commentary checked in citation batch connections-20-03 on 2026-10-29. Source scope and remaining questions recorded there. Independent specialist review pending."
   },
   {
     "id": "ce030",
@@ -93,11 +93,11 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "from": "Psalm 23:1",
     "to": "Ezekiel 34:11",
     "kind": "theme",
-    "explanation": "The shepherd caring for the flock. Explore how Psalm 23:1 and Ezekiel 34:11 address this subject or imagery from their respective settings.",
-    "caution": "A shared subject does not establish quotation, fulfilment or historical corroboration.",
-    "context": "Ezekiel 34:11",
-    "review": "editorial-reading-aid",
-    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
+    "explanation": "The psalm's shepherd leads and restores; Ezekiel promises God's search for a scattered flock. Margaret Odell compares Psalm 23 while stressing Ezekiel's response to abusive leadership and the demands of justice.",
+    "caution": "Shared pastoral imagery does not prove direct borrowing. Ezekiel addresses Israel's scattering and restoration; a comforting individual reading must not remove that communal and political setting.",
+    "context": "Ezekiel 34:11-16",
+    "review": "scripture-context-screened",
+    "basis": "Selected passages and named scholarly commentary checked in citation batch connections-20-03 on 2026-10-29. Source scope and remaining questions recorded there. Independent specialist review pending."
   },
   {
     "id": "ce034",
@@ -115,55 +115,55 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "from": "Psalm 46:1",
     "to": "Philippians 4:6",
     "kind": "theme",
-    "explanation": "Help in trouble and prayer. Explore how Psalm 46:1 and Philippians 4:6 address this subject or imagery from their respective settings.",
-    "caution": "A shared subject does not establish quotation, fulfilment or historical corroboration.",
-    "context": "Philippians 4:6",
-    "review": "editorial-reading-aid",
-    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
+    "explanation": "Psalm 46 confesses God's presence amid upheaval; Philippians urges a pressured community toward prayer, thanksgiving and peace. Jane Lancaster Patterson warns against reading Paul's words as a shallow assurance detached from their setting.",
+    "caution": "This is an editorial theme, not a quotation or evidence of literary dependence. Neither passage promises a life without distress or supplies a timetable for the end of a particular crisis.",
+    "context": "Philippians 4:4-9",
+    "review": "scripture-context-screened",
+    "basis": "Selected passages and named scholarly commentary checked in citation batch connections-20-03 on 2026-10-29. Source scope and remaining questions recorded there. Independent specialist review pending."
   },
   {
     "id": "ce036",
     "from": "Psalm 51:10",
     "to": "Ezekiel 36:26",
     "kind": "theme",
-    "explanation": "A renewed heart. Explore how Psalm 51:10 and Ezekiel 36:26 address this subject or imagery from their respective settings.",
-    "caution": "A shared subject does not establish quotation, fulfilment or historical corroboration.",
-    "context": "Ezekiel 36:26",
-    "review": "editorial-reading-aid",
-    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
+    "explanation": "The psalm asks God for inner renewal; Ezekiel promises a new heart and Spirit-enabled obedience to a restored people. Safwat Marzouk explicitly compares Psalm 51:10 within his discussion of Ezekiel's renewal language.",
+    "caution": "The prayer and communal promise are distinct literary acts. Do not treat them as identical wording or detach Ezekiel from restoration to the land and covenant obedience. Psalm numbering can differ across editions.",
+    "context": "Ezekiel 36:24-28",
+    "review": "scripture-context-screened",
+    "basis": "Selected passages and named scholarly commentary checked in citation batch connections-20-03 on 2026-10-29. Source scope and remaining questions recorded there. Independent specialist review pending."
   },
   {
     "id": "ce037",
     "from": "Isaiah 9:6",
     "to": "Luke 2:11",
     "kind": "theme",
-    "explanation": "Messianic royal imagery. Explore how Isaiah 9:6 and Luke 2:11 address this subject or imagery from their respective settings.",
-    "caution": "A shared subject does not establish quotation, fulfilment or historical corroboration.",
-    "context": "Luke 2:11",
-    "review": "editorial-reading-aid",
-    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
+    "explanation": "Isaiah depicts a royal child and a reign of justice and peace; Luke announces Jesus as Saviour, Messiah and Lord. Patricia Tull distinguishes the royal setting of Isaiah from its later Christian reception alongside Luke.",
+    "caution": "Luke 2 does not explicitly quote Isaiah 9:6. This Christian thematic reading does not settle the original child's identity, the royal titles' syntax or differences between Hebrew and Greek traditions.",
+    "context": "Luke 2:8-14",
+    "review": "scripture-context-screened",
+    "basis": "Selected passages and named scholarly commentary checked in citation batch connections-20-03 on 2026-10-29. Source scope and remaining questions recorded there. Independent specialist review pending."
   },
   {
     "id": "ce038",
     "from": "Isaiah 25:8",
     "to": "Revelation 21:4",
     "kind": "echo",
-    "explanation": "The removal of death and tears. Explore how Isaiah 25:8 and Revelation 21:4 address this subject or imagery from their respective settings.",
-    "caution": "The proposed literary echo is an editorial interpretation, not proof of authorial intention.",
-    "context": "Revelation 21:4",
-    "review": "editorial-reading-aid",
-    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
+    "explanation": "Isaiah joins the ending of death and tears to a feast for the peoples; Revelation repeats these motifs within its new-creation vision. Brian J. Tabb identifies Isaiah 25:8 among the backgrounds to Revelation 21:4.",
+    "caution": "Retain literary echo as an editorial classification rather than a quotation formula. Read the Zion feast and the New Jerusalem in their own settings; the link supplies no date for the vision.",
+    "context": "Revelation 21:1-5",
+    "review": "scripture-context-screened",
+    "basis": "Selected passages and named scholarly commentary checked in citation batch connections-20-03 on 2026-10-29. Source scope and remaining questions recorded there. Independent specialist review pending."
   },
   {
     "id": "ce039",
     "from": "Isaiah 40:31",
     "to": "Psalm 46:1",
     "kind": "theme",
-    "explanation": "Strength and reliance upon God. Explore how Isaiah 40:31 and Psalm 46:1 address this subject or imagery from their respective settings.",
-    "caution": "A shared subject does not establish quotation, fulfilment or historical corroboration.",
-    "context": "Psalm 46:1",
-    "review": "editorial-reading-aid",
-    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
+    "explanation": "Isaiah answers a weary people's complaint with the Creator's sustaining strength; Psalm 46 confesses God as refuge amid upheaval. Kristin J. Wendland locates Isaiah's hope within the challenge of return and rebuilding.",
+    "caution": "This is a broad analogy of reliance on God, not a quotation or a demonstrated literary relationship. Preserve the different settings and do not turn renewed strength into a promise of effortless circumstances.",
+    "context": "Psalm 46:1-11",
+    "review": "scripture-context-screened",
+    "basis": "Selected passages and named scholarly commentary checked in citation batch connections-20-03 on 2026-10-29. Source scope and remaining questions recorded there. Independent specialist review pending."
   },
   {
     "id": "ce040",
@@ -192,11 +192,11 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "from": "Ezekiel 34:11",
     "to": "John 10:11",
     "kind": "theme",
-    "explanation": "The shepherd imagery. Explore how Ezekiel 34:11 and John 10:11 address this subject or imagery from their respective settings.",
-    "caution": "A shared subject does not establish quotation, fulfilment or historical corroboration.",
-    "context": "John 10:11",
-    "review": "editorial-reading-aid",
-    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
+    "explanation": "Ezekiel promises that God will seek and tend the scattered flock; John contrasts Jesus' self-giving care with the hired hand's flight. Meda Stamper identifies Ezekiel 34 as scriptural background to John's shepherd discourse.",
+    "caution": "Keep the thematic label without claiming a verbatim citation. Ezekiel's restoration of Israel and John's account of Jesus each retain their own claims; neither is independent historical corroboration of the other.",
+    "context": "John 10:11-18",
+    "review": "scripture-context-screened",
+    "basis": "Selected passages and named scholarly commentary checked in citation batch connections-20-03 on 2026-10-29. Source scope and remaining questions recorded there. Independent specialist review pending."
   },
   {
     "id": "ce043",
@@ -225,77 +225,77 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "from": "Matthew 5:17",
     "to": "Romans 3:31",
     "kind": "theme",
-    "explanation": "The Law in the New Testament. Explore how Matthew 5:17 and Romans 3:31 address this subject or imagery from their respective settings.",
-    "caution": "A shared subject does not establish quotation, fulfilment or historical corroboration.",
-    "context": "Romans 3:31",
-    "review": "editorial-reading-aid",
-    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
+    "explanation": "Matthew's Jesus rejects abolishing the Law and Prophets; Romans rejects the claim that faith nullifies the Law. Warren Carter reads Matthew's teaching as a claim about scriptural continuity and Jesus' interpretive authority.",
+    "caution": "The link does not make the two arguments identical or settle debates over Torah observance, justification or Jewish-Christian relations. Read Romans 3:21-31 and the wider Sermon on the Mount; this is no explicit cross-citation.",
+    "context": "Romans 3:27-31",
+    "review": "scripture-context-screened",
+    "basis": "Selected passages and named scholarly commentary checked in citation batch connections-20-03 on 2026-10-29. Source scope and remaining questions recorded there. Independent specialist review pending."
   },
   {
     "id": "ce046",
     "from": "Matthew 6:25",
     "to": "Philippians 4:6",
     "kind": "theme",
-    "explanation": "Anxiety and trust. Explore how Matthew 6:25 and Philippians 4:6 address this subject or imagery from their respective settings.",
-    "caution": "A shared subject does not establish quotation, fulfilment or historical corroboration.",
-    "context": "Philippians 4:6",
-    "review": "editorial-reading-aid",
-    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
+    "explanation": "Matthew directs disciples toward the Father's care and God's kingdom amid everyday needs; Philippians connects prayer and thanksgiving with peace. Jane Lancaster Patterson stresses the community pressures surrounding Paul's exhortation.",
+    "caution": "This is a thematic comparison, not an identified quotation. The passages have different audiences and arguments; they must not be used to blame distressed readers or promise exemption from hardship.",
+    "context": "Philippians 4:4-9",
+    "review": "scripture-context-screened",
+    "basis": "Selected passages and named scholarly commentary checked in citation batch connections-20-03 on 2026-10-29. Source scope and remaining questions recorded there. Independent specialist review pending."
   },
   {
     "id": "ce047",
     "from": "Matthew 28:19",
     "to": "Acts 1:8",
     "kind": "theme",
-    "explanation": "Witness to the nations. Explore how Matthew 28:19 and Acts 1:8 address this subject or imagery from their respective settings.",
-    "caution": "A shared subject does not establish quotation, fulfilment or historical corroboration.",
-    "context": "Acts 1:8",
-    "review": "editorial-reading-aid",
-    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
+    "explanation": "Matthew commissions disciple-making among all nations; Acts promises the Spirit's power for witness from Jerusalem outward. Gilberto A. Ruiz highlights the widening horizon of Acts 1:8 alongside the disciples' question about Israel's restoration.",
+    "caution": "The commissions have distinct settings and wording: Galilee in Matthew and the Jerusalem/ascension sequence in Acts. Do not construct one speech or a single timetable from the pair, or turn mission into permission for domination.",
+    "context": "Acts 1:6-11",
+    "review": "scripture-context-screened",
+    "basis": "Selected passages and named scholarly commentary checked in citation batch connections-20-03 on 2026-10-29. Source scope and remaining questions recorded there. Independent specialist review pending."
   },
   {
     "id": "ce048",
     "from": "Luke 15:4",
     "to": "John 10:11",
     "kind": "theme",
-    "explanation": "The shepherd seeks the lost. Explore how Luke 15:4 and John 10:11 address this subject or imagery from their respective settings.",
-    "caution": "A shared subject does not establish quotation, fulfilment or historical corroboration.",
-    "context": "John 10:11",
-    "review": "editorial-reading-aid",
-    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
+    "explanation": "Luke's shepherd searches for a lost sheep in a dispute over Jesus welcoming sinners; John's shepherd gives his life for the flock. Greg Carey stresses the table-fellowship setting that frames Luke's parable.",
+    "caution": "These are different teachings and literary forms, linked by a pastoral theme. Do not label them the same event or a direct quotation; seeking a lost sheep and laying down a life are distinct emphases.",
+    "context": "John 10:11-18",
+    "review": "scripture-context-screened",
+    "basis": "Selected passages and named scholarly commentary checked in citation batch connections-20-03 on 2026-10-29. Source scope and remaining questions recorded there. Independent specialist review pending."
   },
   {
     "id": "ce049",
     "from": "John 1:1",
     "to": "Colossians 1:15",
     "kind": "theme",
-    "explanation": "Christ and creation. Explore how John 1:1 and Colossians 1:15 address this subject or imagery from their respective settings.",
-    "caution": "A shared subject does not establish quotation, fulfilment or historical corroboration.",
-    "context": "Colossians 1:15",
-    "review": "editorial-reading-aid",
-    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
+    "explanation": "John relates creation to the Word; Colossians relates all things to the Son. Alistair I. Wilson compares Colossians 1:16 with John 1:3 while noting their different terminology.",
+    "caution": "The shared creation claim does not establish that one text quotes the other or that they use identical categories. Questions about authorship, composition and the development of Christological language remain outside this short comparison.",
+    "context": "Colossians 1:15-20",
+    "review": "scripture-context-screened",
+    "basis": "Selected passages and named scholarly commentary checked in citation batch connections-20-03 on 2026-10-29. Source scope and remaining questions recorded there. Independent specialist review pending."
   },
   {
     "id": "ce050",
     "from": "John 1:14",
     "to": "Philippians 2:7",
     "kind": "theme",
-    "explanation": "The incarnation. Explore how John 1:14 and Philippians 2:7 address this subject or imagery from their respective settings.",
-    "caution": "A shared subject does not establish quotation, fulfilment or historical corroboration.",
-    "context": "Philippians 2:7",
-    "review": "editorial-reading-aid",
-    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
+    "explanation": "John describes the Word's coming in flesh; Philippians presents Christ's taking a servant's role, humility and obedience. Frank L. Crouch emphasises the communal ethical purpose of Philippians 2:5-11.",
+    "caution": "This is a Christian thematic comparison, not a quotation or a complete account of incarnation. It does not settle debates about Christ's self-emptying; preserve Philippians' appeal to humility and John's witness to revelation.",
+    "context": "Philippians 2:5-11",
+    "review": "scripture-context-screened",
+    "basis": "Selected passages and named scholarly commentary checked in citation batch connections-20-03 on 2026-10-29. Source scope and remaining questions recorded there. Independent specialist review pending."
   },
   {
     "id": "ce051",
     "from": "John 3:16",
     "to": "Romans 5:8",
     "kind": "theme",
-    "explanation": "God\u2019s love and salvation. Explore how John 3:16 and Romans 5:8 address this subject or imagery from their respective settings.",
-    "caution": "A shared subject does not establish quotation, fulfilment or historical corroboration.",
-    "context": "Romans 5:8",
-    "review": "editorial-reading-aid",
-    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
+    "explanation": "John connects God's love with the giving of the Son and life through belief; Romans presents Christ's death for sinners as God's demonstration of love. Stephen Chester stresses the undeserved character of that love in Romans 5.",
+    "caution": "A shared theme does not make the passages interchangeable or settle every question about atonement and salvation. Read John's belief, judgment and light language alongside Romans' reconciliation argument; no direct quotation is claimed.",
+    "context": "Romans 5:6-11",
+    "review": "scripture-context-screened",
+    "basis": "Selected passages and named scholarly commentary checked in citation batch connections-20-03 on 2026-10-29. Source scope and remaining questions recorded there. Independent specialist review pending."
   },
   {
     "id": "ce052",
@@ -368,11 +368,11 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "from": "Romans 8:21",
     "to": "Revelation 21:1",
     "kind": "theme",
-    "explanation": "Creation set free. Explore how Romans 8:21 and Revelation 21:1 address this subject or imagery from their respective settings.",
-    "caution": "A shared subject does not establish quotation, fulfilment or historical corroboration.",
-    "context": "Revelation 21:1",
-    "review": "editorial-reading-aid",
-    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
+    "explanation": "Romans portrays creation awaiting freedom from decay; Revelation envisions a renewed heaven and earth. Erin Heim stresses Romans' solidarity with suffering creation and patient expectation, which qualifies the thematic comparison with Revelation.",
+    "caution": "Do not identify Paul's metaphor with John's entire vision or derive a fixed end-times sequence. Both contexts sustain hope, but this pairing does not demonstrate literary dependence or resolve how cosmic renewal occurs.",
+    "context": "Revelation 21:1-5",
+    "review": "scripture-context-screened",
+    "basis": "Selected passages and named scholarly commentary checked in citation batch connections-20-03 on 2026-10-29. Source scope and remaining questions recorded there. Independent specialist review pending."
   },
   {
     "id": "ce059",
