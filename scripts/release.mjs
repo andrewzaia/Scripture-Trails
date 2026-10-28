@@ -21,6 +21,7 @@ const nextGraph=versionedImport(read(graphPath),'atlas-shortest-path.js?v='+oldV
 nextApp=versionedImport(nextApp,'connection-evidence.js?v='+oldVersion,'connection-evidence.js?v='+newVersion,'Atlas evidence module');
 nextApp=versionedImport(nextApp,'atlas-comparison.js?v='+oldVersion,'atlas-comparison.js?v='+newVersion,'licensed side-by-side comparison');
 nextApp=versionedImport(nextApp,'paul-map.js?v='+oldVersion,'paul-map.js?v='+newVersion,'Pauline journeys');
+nextApp=versionedImport(nextApp,'hebrew-geography.js?v='+oldVersion,'hebrew-geography.js?v='+newVersion,'Hebrew Bible geography');
 nextApp=versionedImport(nextApp,'roadmap.js?v='+oldVersion,'roadmap.js?v='+newVersion,'roadmap');
 nextApp=versionedImport(nextApp,'notebook-backup.js?v='+oldVersion,'notebook-backup.js?v='+newVersion,'notebook backups');
 nextApp=versionedImport(nextApp,'reading-plans.js?v='+oldVersion,'reading-plans.js?v='+newVersion,'reading progress');
@@ -44,7 +45,8 @@ const newHtml=html.replace(oldLabel,oldLabel.replace(oldVersion,newVersion))
  .replace('/assets/app.js?v='+oldVersion,'/assets/app.js?v='+newVersion)
  .replace('/assets/style.css?v='+oldVersion,'/assets/style.css?v='+newVersion)
  .replace('/assets/entity-index.css?v='+oldVersion,'/assets/entity-index.css?v='+newVersion)
- .replace('/assets/paul-map.css?v='+oldVersion,'/assets/paul-map.css?v='+newVersion);
+ .replace('/assets/paul-map.css?v='+oldVersion,'/assets/paul-map.css?v='+newVersion)
+ .replace('/assets/hebrew-geography.css?v='+oldVersion,'/assets/hebrew-geography.css?v='+newVersion);
 pkg.version=newVersion;
 history.releases.unshift({version:newVersion,date,title:title.trim(),changes:changes.map(x=>x.trim())});
 validateReleases(history.releases,newVersion);

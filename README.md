@@ -162,14 +162,13 @@ tests/                          Built-in Node tests
 
 ## Roadmap
 
-The canonical roadmap is [public/data/roadmap.json](public/data/roadmap.json), displayed on the [Project roadmap](https://www.scripturetrails.com/?view=roadmap). Reviewed on 28 October 2026 against the application through v0.18.0; this review is released as v0.18.1. It records 27 delivered implementation milestones and eight remaining or exploratory milestones. Historical expansion cards describe successive releases, not independent feature counts.
+The canonical roadmap is [public/data/roadmap.json](public/data/roadmap.json), displayed on the [Project roadmap](https://www.scripturetrails.com/?view=roadmap). Reviewed on 28 October 2026 against the application through v0.19.0. It records 28 delivered implementation milestones and seven remaining or exploratory milestones. Historical expansion cards describe successive releases, not independent feature counts.
 
 Delivered foundations include four reader editions, the local 603,076-link Atlas and passage comparison, 79 Jesus-journey episodes and 35 dossiers, five city studies, Gospel chronology comparison, the expanded people/events index, 83 Pauline stages, twenty person trails with 88 readings, and the private notebook with highlights, place links, backups, collections and schedules. This review also records the official-domain launch, Atlas path/preview improvements and release consistency safeguards as distinct delivered milestones.
 
 | Order / track | Remaining milestone | Completion or decision gate |
 | --- | --- | --- |
-| Next content | Hebrew Bible geography and Exodus traditions | Bounded corpus, primary passages, source register, competing identifications, explicit uncertainty and reference/link checks |
-| Alongside content | Citation coverage and editorial evidence review | Declared priority issues have checked citations or documented unresolved decisions, including limited-access trail checks |
+| Next priority | Citation coverage and editorial evidence review | Declared priority issues have checked citations or documented unresolved decisions, including limited-access trail checks |
 | Alongside content | Browser, mobile and accessibility release coverage | Critical flows run in CI; accessibility findings are triaged and manual keyboard/screen-reader checks recorded |
 | Specialist availability | Independent historical, textual and nautical review | Actual named, dated specialist review of a declared scope; publish decisions and remaining disagreements |
 | Later content | Kings, prophets and wider historical geography | Build on the first Hebrew Bible collection; audit each collection separately |
@@ -177,7 +176,7 @@ Delivered foundations include four reader editions, the local 603,076-link Atlas
 | Research | Original-language study | Resolve licensing, datasets, versification and a useful first-tool scope before implementation |
 | Conditional research | Optional encrypted sync and accounts | Demonstrated need plus security, recovery, conflicts, deletion and cost design; no commitment yet |
 
-Citation work and browser coverage can proceed alongside the next content collection. External review depends on suitable specialists and is not implied by editorial checks. Original-language tools and accounts have no committed delivery date. Preserve uncertainty, local licensed supporting data and publisher restrictions in every milestone. Do not describe a universal, settled biblical chronology or a fully classified cross-reference corpus as delivered.
+The first Exodus/wilderness collection is delivered. Citation work and browser coverage now support further expansion. External review depends on suitable specialists and is not implied by editorial checks. Original-language tools and accounts have no committed delivery date. Preserve uncertainty, local licensed supporting data and publisher restrictions in every milestone. Do not describe a universal, settled biblical chronology or a fully classified cross-reference corpus as delivered.
 
 ## Licence
 
@@ -376,3 +375,11 @@ Notebook schema 5 includes place links. Versions 1 to 4 remain supported, preser
 Study journeys includes a searchable directory of 20 person-centred trails, with 88 selected readings. The original eight trails retain their 40 anchors. Twelve further figures add 48 contextual passage ranges: Ruth, Hannah, Samuel, Elijah, Elisha, Jeremiah, Daniel, Nehemiah, Mary the mother of Jesus, Peter, John the Baptist and Barnabas. Search names, topics or references and filter Hebrew Bible / New Testament coverage.
 
 The directory opens the existing disambiguated profile. Each stage displays its primary Scripture reference and editorial review label, plus reader and starting-verse Atlas actions. Cautions distinguish selected reading sequences from full biographies, harmonised chronologies, settled denominational interpretations or independent historical proof. The editorial method, primary-text reading links and access limitations are documented in `sources/person-trails/README.md`. Independent specialist review remains pending.
+
+## Hebrew Bible geography: Exodus and wilderness
+
+The [Hebrew Bible geography collection](https://www.scripturetrails.com/?view=hebrew-geography) contains 25 selected readings from Exodus 1 to Deuteronomy 34, ending with Moses in Moab. Five reading sections, a search field, previous/next controls and shareable `hb-stage`, `hb-phase` and `hb-q` parameters provide a complete list interface. Read actions use the chosen licensed Bible edition; Atlas actions use the starting verse. Related study profiles reuse existing person/place identities.
+
+The 15 setting records include regions and grouped settings. They have no coordinates, invented routes or event dates. Five expandable comparison panels address the Delta cities, sea crossing, Horeb/Sinai, Kadesh and selected chronological models. Seven supporting source records distinguish excavation projects, a report catalogue, a heritage record, a scholar's essay, a research thesis and a publisher's study introduction. Their access notes say what was actually consulted. No source supplies independent signoff for the collection.
+
+Data: `public/data/hebrew-geography.json`. Interface: `public/assets/hebrew-geography.js` and `.css`. Method, source access and open review tasks: `sources/exodus/README.md`. Tests reject invalid references, unqualified geometry/dates, broken source/profile links and incorrect restored/filter selections. Release tooling updates the page's module and stylesheet cache keys. The collection is selective; it is not a complete Numbers 33 camp list or all Hebrew Bible geography.

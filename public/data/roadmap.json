@@ -1,12 +1,12 @@
 {
   "project": "Scripture Trails",
   "updated": "2026-10-28",
-  "description": "A transparent, evidence-aware roadmap reviewed against the released application through v0.18.0. Delivered records implementation milestones, including successive expansions; it is not a count of independent features or scholarly certification. Future work has completion criteria and no promised delivery dates.",
+  "description": "A transparent, evidence-aware roadmap reviewed against the released application through v0.19.0. Delivered records implementation milestones, including successive expansions; it is not a count of independent features or scholarly certification. Future work has completion criteria and no promised delivery dates.",
   "currentFocus": [
-    "Next content milestone: separately sourced Hebrew Bible geography and Exodus traditions, with competing identifications and no invented route or dates",
-    "Alongside content work: close documented citation and primary-text access gaps across existing studies, trails and connection explanations",
-    "Add repeatable desktop/mobile browser and accessibility checks for the reader, Atlas, maps and private notebook",
-    "Arrange independent historical, textual and nautical review when suitable specialists are available; keep unresolved questions visible"
+    "Next priority: close documented citation and primary-text access gaps across the existing studies, trails and explained connections",
+    "Add repeatable desktop/mobile browser and accessibility checks for the reader, Atlas, geography collections and private notebook",
+    "Arrange independent historical, textual and archaeological review, including the first Exodus collection, when suitable specialists are available",
+    "Then extend the Hebrew Bible geography library with separately scoped kings, prophets, exile and return studies"
   ],
   "phases": [
     {
@@ -445,22 +445,22 @@
     },
     {
       "id": "biblical-geography-expansion",
-      "phase": "next",
-      "status": "next",
+      "phase": "geography",
+      "status": "delivered",
       "title": "Hebrew Bible geography and Exodus traditions",
-      "summary": "The next content milestone is a separately sourced Hebrew Bible collection, beginning with Exodus traditions and selected associated places. Jesus, the three missionary journeys and the voyage to Rome are already delivered.",
+      "summary": "The first Hebrew Bible geography collection follows twenty-five selected Exodus and wilderness readings from Egypt to Moab, with fifteen setting records and five source-linked comparison topics.",
       "capabilities": [
-        "Define a bounded first collection with primary passages and a documented editorial/source method",
-        "Present competing Exodus identifications and date proposals with their evidence and limitations",
-        "Distinguish narrative testimony, later tradition and independent archaeological evidence",
-        "Integrate reader, Atlas and existing entity links with an accessible list; map only defensible approximate locations"
+        "A dedicated searchable page, five reading sections and shareable stage selections",
+        "Twenty-five passage-linked readings, fifteen regional or unresolved setting records and links to existing people and place profiles",
+        "Five comparisons: Delta cities, the sea crossing, Horeb/Sinai, Kadesh and two date proposals",
+        "Seven supporting source records with authorship, scope, access notes and limitations; reader and starting-verse Atlas actions"
       ],
-      "verification": "Complete when the selected corpus, source register, competing interpretations and uncertainty notes are published and reference/link/data checks pass. A drawn route or absolute date is never required where evidence is insufficient. Independent review remains separate."
+      "verification": "Delivered in v0.19.0. Canonical passages, source relationships, profile IDs, selection/filter behaviour and unassigned coordinates/dates are tested. Primary checks are AI-assisted; source access varies and independent specialist review remains pending. No exact Exodus route, summit, burial location or pharaoh is assigned."
     },
     {
       "id": "source-coverage",
       "phase": "next",
-      "status": "planned",
+      "status": "next",
       "title": "Citation coverage and editorial evidence review",
       "summary": "Resolve documented citation and primary-text access gaps in existing material before treating greater content volume as greater confidence.",
       "capabilities": [
