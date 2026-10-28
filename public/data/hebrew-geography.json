@@ -1,0 +1,1052 @@
+{
+  "schema": 1,
+  "updated": "2026-10-28",
+  "collection": {
+    "id": "exodus",
+    "title": "Exodus and wilderness",
+    "scope": "Twenty-five selected readings from Exodus 1 to Deuteronomy 34, ending with Moses in Moab. This is not all of the Pentateuch, a full plague sequence or every camp in Numbers 33.",
+    "method": "The Bible is the primary text. Short original summaries follow selected passages in reading order. Supporting publications are linked for the specific questions they address; archaeological sites, religious traditions and interpretation remain separately labelled.",
+    "review": "AI-assisted editorial reading aid. Selected primary chapter views and supporting source sections were checked on 28 October 2026. Independent historical, textual and archaeological specialist review remains pending.",
+    "geography": "The fifteen setting records include regions and grouped places. Coordinates and travel routes are deliberately unassigned; the complete stage list is the geography study interface.",
+    "chronology": "Reading order is not a calendar chronology. The two dated proposals appear only in the comparison panel, not as dates attached to events."
+  },
+  "phases": [
+    {
+      "id": "egypt",
+      "title": "Moses and Egypt"
+    },
+    {
+      "id": "departure",
+      "title": "Departure and the sea"
+    },
+    {
+      "id": "sinai",
+      "title": "Provision and Sinai"
+    },
+    {
+      "id": "wilderness",
+      "title": "Kadesh and the wilderness"
+    },
+    {
+      "id": "moab",
+      "title": "Moab and Nebo"
+    }
+  ],
+  "places": [
+    {
+      "id": "egypt",
+      "name": "Egypt",
+      "status": "regional",
+      "note": "A broad national setting. The selected passages do not identify a palace or every labour site.",
+      "sourceIds": [
+        "oeaw-delta"
+      ],
+      "related": [],
+      "coordinates": null
+    },
+    {
+      "id": "nile",
+      "name": "The Nile in Egypt",
+      "status": "regional",
+      "note": "The birth account names the Nile. No particular riverbank, palace or modern channel is identified here.",
+      "sourceIds": [],
+      "related": [],
+      "coordinates": null
+    },
+    {
+      "id": "midian",
+      "name": "Midian",
+      "status": "regional",
+      "note": "A regional setting in the Moses narrative. A named well or exact household location is not established by the selected passage.",
+      "sourceIds": [],
+      "related": [],
+      "coordinates": null
+    },
+    {
+      "id": "horeb-sinai",
+      "name": "Horeb / Sinai",
+      "status": "disputed",
+      "note": "Exodus 3 names Horeb; Exodus 19 names Sinai. This shared study setting links their traditional association without assigning a modern summit.",
+      "sourceIds": [
+        "unesco-catherine",
+        "hurn-geography"
+      ],
+      "related": [
+        {
+          "type": "place",
+          "id": "sinai-region",
+          "label": "Sinai index profile"
+        }
+      ],
+      "coordinates": null
+    },
+    {
+      "id": "rameses-succoth",
+      "name": "Rameses to Succoth",
+      "status": "disputed",
+      "note": "The departure passage names both places. Pi-Ramesse archaeology informs the Delta context; the biblical point of departure and the identification of Succoth remain distinct questions.",
+      "sourceIds": [
+        "oeaw-delta",
+        "qantir-project"
+      ],
+      "related": [],
+      "coordinates": null
+    },
+    {
+      "id": "etham",
+      "name": "Etham and the wilderness approach",
+      "status": "unresolved",
+      "note": "Exodus 13 describes Etham at the wilderness edge. No exact campsite or modern boundary is supplied.",
+      "sourceIds": [],
+      "related": [],
+      "coordinates": null
+    },
+    {
+      "id": "sea",
+      "name": "The sea and its approach",
+      "status": "disputed",
+      "note": "Pi-hahiroth, Migdol and Baal-zephon are narrative locators. A precise shoreline or crossing coordinate is not assigned.",
+      "sourceIds": [
+        "beitzel-sea"
+      ],
+      "related": [],
+      "coordinates": null
+    },
+    {
+      "id": "shur-marah-elim",
+      "name": "Shur, Marah and Elim",
+      "status": "unresolved",
+      "note": "This grouped setting follows one selected passage through three named settings. It is not one town or a plotted daily itinerary.",
+      "sourceIds": [],
+      "related": [],
+      "coordinates": null
+    },
+    {
+      "id": "sin-wilderness",
+      "name": "Wilderness of Sin",
+      "status": "unresolved",
+      "note": "Exodus 16 places this wilderness between Elim and Sinai. It is kept distinct from the wilderness of Zin in Numbers 20.",
+      "sourceIds": [],
+      "related": [],
+      "coordinates": null
+    },
+    {
+      "id": "rephidim",
+      "name": "Rephidim",
+      "status": "unresolved",
+      "note": "The text locates the camp and the Amalek encounter at Rephidim. No rock, hill or battle site is pinned.",
+      "sourceIds": [],
+      "related": [],
+      "coordinates": null
+    },
+    {
+      "id": "kadesh",
+      "name": "Kadesh and the surrounding wilderness",
+      "status": "disputed",
+      "note": "Numbers 13 associates Kadesh with Paran; Numbers 20 names the wilderness of Zin. Archaeological proposals and the narrative settings require separate assessment.",
+      "sourceIds": [
+        "iaa-kadesh"
+      ],
+      "related": [],
+      "coordinates": null
+    },
+    {
+      "id": "hor",
+      "name": "Mount Hor",
+      "status": "unresolved",
+      "note": "Numbers 20 places the mountain on the edge of Edom. This collection does not identify a modern mountain or shrine.",
+      "sourceIds": [],
+      "related": [],
+      "coordinates": null
+    },
+    {
+      "id": "edom-bypass",
+      "name": "The journey around Edom",
+      "status": "regional",
+      "note": "Numbers 21 describes travel by the way of the sea to go around Edom. This is a broad narrative movement with no reconstructed track.",
+      "sourceIds": [],
+      "related": [],
+      "coordinates": null
+    },
+    {
+      "id": "moab",
+      "name": "Plains of Moab",
+      "status": "regional",
+      "note": "The camp is described across the Jordan from Jericho. A particular camp footprint or crossing is not inferred.",
+      "sourceIds": [],
+      "related": [],
+      "coordinates": null
+    },
+    {
+      "id": "nebo",
+      "name": "Mount Nebo / Pisgah",
+      "status": "unresolved",
+      "note": "Deuteronomy names Nebo and the top of Pisgah. Its statement that the burial place was unknown is preserved; no grave coordinate is suggested.",
+      "sourceIds": [],
+      "related": [],
+      "coordinates": null
+    }
+  ],
+  "stages": [
+    {
+      "id": "exodus-01",
+      "order": 1,
+      "phase": "egypt",
+      "place": "egypt",
+      "title": "Israel under forced labour",
+      "passages": [
+        "Exodus 1:8-14"
+      ],
+      "summary": "A new king oppresses Israel with forced labour, including construction at Pithom and Raamses.",
+      "caution": "The passage does not name the king; no pharaoh or absolute date is assigned.",
+      "people": [
+        "moses"
+      ],
+      "comparisonIds": [
+        "delta",
+        "dates"
+      ],
+      "review": "editorial-reading-aid",
+      "primaryCheck": {
+        "url": "https://bible.usccb.org/bible/exodus/1",
+        "date": "2026-10-28",
+        "method": "AI-assisted primary chapter reading"
+      },
+      "date": null
+    },
+    {
+      "id": "exodus-02",
+      "order": 2,
+      "phase": "egypt",
+      "place": "nile",
+      "title": "Moses rescued from the Nile",
+      "passages": [
+        "Exodus 2:1-10"
+      ],
+      "summary": "Moses is placed in a basket among the reeds, found by Pharaoh's daughter and cared for by his own mother before his adoption.",
+      "caution": "The river setting does not identify an exact rescue site.",
+      "people": [
+        "moses",
+        "miriam-moses"
+      ],
+      "comparisonIds": [],
+      "review": "editorial-reading-aid",
+      "primaryCheck": {
+        "url": "https://bible.usccb.org/bible/exodus/2",
+        "date": "2026-10-28",
+        "method": "AI-assisted primary chapter reading"
+      },
+      "date": null
+    },
+    {
+      "id": "exodus-03",
+      "order": 3,
+      "phase": "egypt",
+      "place": "midian",
+      "title": "Moses in Midian",
+      "passages": [
+        "Exodus 2:15-22"
+      ],
+      "summary": "Moses flees Pharaoh, helps the daughters of Midian's priest at a well, and settles with the family, marrying Zipporah.",
+      "caution": "The narrative well is not equated with a modern tourist site.",
+      "people": [
+        "moses"
+      ],
+      "comparisonIds": [],
+      "review": "editorial-reading-aid",
+      "primaryCheck": {
+        "url": "https://bible.usccb.org/bible/exodus/2",
+        "date": "2026-10-28",
+        "method": "AI-assisted primary chapter reading"
+      },
+      "date": null
+    },
+    {
+      "id": "exodus-04",
+      "order": 4,
+      "phase": "egypt",
+      "place": "horeb-sinai",
+      "title": "The call at Horeb",
+      "passages": [
+        "Exodus 3:1-12"
+      ],
+      "summary": "While tending Jethro's flock, Moses comes to Horeb and is commissioned to bring Israel out of Egypt.",
+      "caution": "This is before the departure from Egypt; a repeated setting is not a second Exodus route.",
+      "people": [
+        "moses"
+      ],
+      "comparisonIds": [
+        "sinai"
+      ],
+      "review": "editorial-reading-aid",
+      "primaryCheck": {
+        "url": "https://bible.usccb.org/bible/exodus/3",
+        "date": "2026-10-28",
+        "method": "AI-assisted primary chapter reading"
+      },
+      "date": null
+    },
+    {
+      "id": "exodus-05",
+      "order": 5,
+      "phase": "egypt",
+      "place": "midian",
+      "title": "Setting out for Egypt",
+      "passages": [
+        "Exodus 4:18-23"
+      ],
+      "summary": "Moses receives leave from Jethro and sets out toward Egypt with his family and the staff of God.",
+      "caution": "This reading describes departure toward Egypt, not a measured route or an arrival at a named palace.",
+      "people": [
+        "moses"
+      ],
+      "comparisonIds": [],
+      "review": "editorial-reading-aid",
+      "primaryCheck": {
+        "url": "https://bible.usccb.org/bible/exodus/4",
+        "date": "2026-10-28",
+        "method": "AI-assisted primary chapter reading"
+      },
+      "date": null
+    },
+    {
+      "id": "exodus-06",
+      "order": 6,
+      "phase": "egypt",
+      "place": "egypt",
+      "title": "The Passover instructions",
+      "passages": [
+        "Exodus 12:1-14"
+      ],
+      "summary": "Moses and Aaron receive instructions for the Passover, including the household meal, the blood on the doorposts and continuing remembrance.",
+      "caution": "The instructions are selected here; the full plague sequence is outside this bounded collection.",
+      "people": [
+        "moses",
+        "aaron-moses"
+      ],
+      "comparisonIds": [
+        "dates"
+      ],
+      "review": "editorial-reading-aid",
+      "primaryCheck": {
+        "url": "https://bible.usccb.org/bible/exodus/12",
+        "date": "2026-10-28",
+        "method": "AI-assisted primary chapter reading"
+      },
+      "date": null
+    },
+    {
+      "id": "exodus-07",
+      "order": 7,
+      "phase": "departure",
+      "place": "rameses-succoth",
+      "title": "Departure from Rameses",
+      "passages": [
+        "Exodus 12:31-42"
+      ],
+      "summary": "Pharaoh orders Israel to leave. The Israelites depart from Rameses toward Succoth, carrying unleavened dough.",
+      "caution": "Pi-Ramesse and Avaris are archaeological settings, not interchangeable names for every narrated event.",
+      "people": [
+        "moses",
+        "aaron-moses"
+      ],
+      "comparisonIds": [
+        "delta",
+        "dates"
+      ],
+      "review": "editorial-reading-aid",
+      "primaryCheck": {
+        "url": "https://bible.usccb.org/bible/exodus/12",
+        "date": "2026-10-28",
+        "method": "AI-assisted primary chapter reading"
+      },
+      "date": null
+    },
+    {
+      "id": "exodus-08",
+      "order": 8,
+      "phase": "departure",
+      "place": "etham",
+      "title": "The wilderness way",
+      "passages": [
+        "Exodus 13:17-22"
+      ],
+      "summary": "God leads the people away from the nearer Philistine road. They leave Succoth, camp at Etham and are guided by the cloud and fire.",
+      "caution": "The passage supplies sequence and direction without fixing a modern road alignment.",
+      "people": [
+        "moses"
+      ],
+      "comparisonIds": [
+        "sea"
+      ],
+      "review": "editorial-reading-aid",
+      "primaryCheck": {
+        "url": "https://bible.usccb.org/bible/exodus/13",
+        "date": "2026-10-28",
+        "method": "AI-assisted primary chapter reading"
+      },
+      "date": null
+    },
+    {
+      "id": "exodus-09",
+      "order": 9,
+      "phase": "departure",
+      "place": "sea",
+      "title": "Encamped before the sea",
+      "passages": [
+        "Exodus 14:1-14"
+      ],
+      "summary": "Israel camps near the named sea-approach settings. Pharaoh pursues, the people are afraid and Moses tells them to await the Lord's deliverance.",
+      "caution": "The ancient place names do not by themselves supply a unique modern crossing location.",
+      "people": [
+        "moses"
+      ],
+      "comparisonIds": [
+        "sea"
+      ],
+      "review": "editorial-reading-aid",
+      "primaryCheck": {
+        "url": "https://bible.usccb.org/bible/exodus/14",
+        "date": "2026-10-28",
+        "method": "AI-assisted primary chapter reading"
+      },
+      "date": null
+    },
+    {
+      "id": "exodus-10",
+      "order": 10,
+      "phase": "departure",
+      "place": "sea",
+      "title": "Deliverance through the sea",
+      "passages": [
+        "Exodus 14:15-31"
+      ],
+      "summary": "The Lord opens a way through the sea for Israel. The waters return over the pursuing Egyptians, and Israel sees the Lord's deliverance.",
+      "caution": "The biblical account is the primary evidence for this reading. Competing modern site proposals remain separately labelled.",
+      "people": [
+        "moses"
+      ],
+      "comparisonIds": [
+        "sea"
+      ],
+      "review": "editorial-reading-aid",
+      "primaryCheck": {
+        "url": "https://bible.usccb.org/bible/exodus/14",
+        "date": "2026-10-28",
+        "method": "AI-assisted primary chapter reading"
+      },
+      "date": null
+    },
+    {
+      "id": "exodus-11",
+      "order": 11,
+      "phase": "sinai",
+      "place": "shur-marah-elim",
+      "title": "Water at Marah and Elim",
+      "passages": [
+        "Exodus 15:22-27"
+      ],
+      "summary": "After entering Shur, the people reach bitter water at Marah. The Lord provides through Moses, and the people later camp at Elim's springs and palms.",
+      "caution": "The passage groups successive settings; no exact spring or daily travel track is reconstructed.",
+      "people": [
+        "moses"
+      ],
+      "comparisonIds": [],
+      "review": "editorial-reading-aid",
+      "primaryCheck": {
+        "url": "https://bible.usccb.org/bible/exodus/15",
+        "date": "2026-10-28",
+        "method": "AI-assisted primary chapter reading"
+      },
+      "date": null
+    },
+    {
+      "id": "exodus-12",
+      "order": 12,
+      "phase": "sinai",
+      "place": "sin-wilderness",
+      "title": "Provision in the wilderness of Sin",
+      "passages": [
+        "Exodus 16:1-18"
+      ],
+      "summary": "In the wilderness of Sin, the people complain about food. The Lord provides quail and manna and gives instructions for gathering.",
+      "caution": "Sin and Zin are kept distinct. Proposed natural parallels are not substituted for what the passage says.",
+      "people": [
+        "moses",
+        "aaron-moses"
+      ],
+      "comparisonIds": [],
+      "review": "editorial-reading-aid",
+      "primaryCheck": {
+        "url": "https://bible.usccb.org/bible/exodus/16",
+        "date": "2026-10-28",
+        "method": "AI-assisted primary chapter reading"
+      },
+      "date": null
+    },
+    {
+      "id": "exodus-13",
+      "order": 13,
+      "phase": "sinai",
+      "place": "rephidim",
+      "title": "Water at Rephidim",
+      "passages": [
+        "Exodus 17:1-7"
+      ],
+      "summary": "The people lack water at Rephidim. Moses cries to the Lord, strikes the rock as instructed, and the place is named Massah and Meribah.",
+      "caution": "This Exodus episode is kept distinct from the Meribah account at Kadesh in Numbers 20.",
+      "people": [
+        "moses"
+      ],
+      "comparisonIds": [],
+      "review": "editorial-reading-aid",
+      "primaryCheck": {
+        "url": "https://www.esv.org/Exodus%2B17/",
+        "date": "2026-10-28",
+        "method": "AI-assisted primary chapter reading"
+      },
+      "date": null
+    },
+    {
+      "id": "exodus-14",
+      "order": 14,
+      "phase": "sinai",
+      "place": "rephidim",
+      "title": "The encounter with Amalek",
+      "passages": [
+        "Exodus 17:8-16"
+      ],
+      "summary": "Joshua leads the fighting against Amalek while Moses, Aaron and Hur go up the hill. Aaron and Hur support Moses' hands.",
+      "caution": "No hill, battle line or modern territorial boundary is inferred.",
+      "people": [
+        "moses",
+        "aaron-moses",
+        "joshua-nun"
+      ],
+      "comparisonIds": [],
+      "review": "editorial-reading-aid",
+      "primaryCheck": {
+        "url": "https://www.esv.org/Exodus%2B17/",
+        "date": "2026-10-28",
+        "method": "AI-assisted primary chapter reading"
+      },
+      "date": null
+    },
+    {
+      "id": "exodus-15",
+      "order": 15,
+      "phase": "sinai",
+      "place": "horeb-sinai",
+      "title": "Israel before Mount Sinai",
+      "passages": [
+        "Exodus 19:1-8"
+      ],
+      "summary": "The people leave Rephidim and camp before the mountain. Moses receives the covenant call and brings the people's response to the Lord.",
+      "caution": "A named biblical mountain and a modern candidate summit are separate identifications.",
+      "people": [
+        "moses"
+      ],
+      "comparisonIds": [
+        "sinai"
+      ],
+      "review": "editorial-reading-aid",
+      "primaryCheck": {
+        "url": "https://www.esv.org/Exodus%2B19/",
+        "date": "2026-10-28",
+        "method": "AI-assisted primary chapter reading"
+      },
+      "date": null
+    },
+    {
+      "id": "exodus-16",
+      "order": 16,
+      "phase": "sinai",
+      "place": "horeb-sinai",
+      "title": "The covenant words",
+      "passages": [
+        "Exodus 20:1-17"
+      ],
+      "summary": "God speaks the commandments, beginning with his deliverance of Israel from Egypt and setting out obligations toward God and neighbour.",
+      "caution": "The reading follows the cited text; later traditions differ in how they number the commandments.",
+      "people": [
+        "moses"
+      ],
+      "comparisonIds": [
+        "sinai"
+      ],
+      "review": "editorial-reading-aid",
+      "primaryCheck": {
+        "url": "https://bible.usccb.org/bible/exodus/20",
+        "date": "2026-10-28",
+        "method": "AI-assisted primary chapter reading"
+      },
+      "date": null
+    },
+    {
+      "id": "exodus-17",
+      "order": 17,
+      "phase": "sinai",
+      "place": "horeb-sinai",
+      "title": "Departure from Sinai",
+      "passages": [
+        "Numbers 10:11-13"
+      ],
+      "summary": "The cloud rises from the tabernacle, and Israel sets out from the wilderness of Sinai toward the wilderness of Paran.",
+      "caution": "This transition omits intervening episodes from the selected reading list; it is not a complete camp catalogue.",
+      "people": [
+        "moses"
+      ],
+      "comparisonIds": [
+        "sinai"
+      ],
+      "review": "editorial-reading-aid",
+      "primaryCheck": {
+        "url": "https://bible.usccb.org/bible/numbers/10",
+        "date": "2026-10-28",
+        "method": "AI-assisted primary chapter reading"
+      },
+      "date": null
+    },
+    {
+      "id": "exodus-18",
+      "order": 18,
+      "phase": "wilderness",
+      "place": "kadesh",
+      "title": "The scouts report at Kadesh",
+      "passages": [
+        "Numbers 13:25-33"
+      ],
+      "summary": "The scouts return to Moses, Aaron and the congregation at Kadesh. They show the land's fruit, while Caleb and the other scouts differ about entering it.",
+      "caution": "The selected reading is the return and report, not a plotted reconstruction of the scouting journey.",
+      "people": [
+        "moses",
+        "aaron-moses"
+      ],
+      "comparisonIds": [
+        "kadesh"
+      ],
+      "review": "editorial-reading-aid",
+      "primaryCheck": {
+        "url": "https://www.esv.org/Numbers%2B13/",
+        "date": "2026-10-28",
+        "method": "AI-assisted primary chapter reading"
+      },
+      "date": null
+    },
+    {
+      "id": "exodus-19",
+      "order": 19,
+      "phase": "wilderness",
+      "place": "kadesh",
+      "title": "The wilderness judgment",
+      "passages": [
+        "Numbers 14:26-35"
+      ],
+      "summary": "The Lord announces judgment on the grumbling generation and a forty-year wilderness period, while Caleb and Joshua are excepted.",
+      "caution": "The reported duration is retained without converting this stage into an independently fixed calendar date.",
+      "people": [
+        "moses",
+        "aaron-moses",
+        "joshua-nun"
+      ],
+      "comparisonIds": [
+        "dates",
+        "kadesh"
+      ],
+      "review": "editorial-reading-aid",
+      "primaryCheck": {
+        "url": "https://bible.usccb.org/bible/numbers/14",
+        "date": "2026-10-28",
+        "method": "AI-assisted primary chapter reading"
+      },
+      "date": null
+    },
+    {
+      "id": "exodus-20",
+      "order": 20,
+      "phase": "wilderness",
+      "place": "kadesh",
+      "title": "Miriam and the waters of Meribah",
+      "passages": [
+        "Numbers 20:1-13"
+      ],
+      "summary": "Miriam dies at Kadesh. When the community lacks water, Moses strikes the rock; Moses and Aaron are told they will not bring the assembly into the land.",
+      "caution": "This is the Numbers 20 account in the wilderness of Zin, distinct from Exodus 17 at Rephidim.",
+      "people": [
+        "moses",
+        "aaron-moses",
+        "miriam-moses"
+      ],
+      "comparisonIds": [
+        "kadesh"
+      ],
+      "review": "editorial-reading-aid",
+      "primaryCheck": {
+        "url": "https://bible.usccb.org/bible/numbers/20",
+        "date": "2026-10-28",
+        "method": "AI-assisted primary chapter reading"
+      },
+      "date": null
+    },
+    {
+      "id": "exodus-21",
+      "order": 21,
+      "phase": "wilderness",
+      "place": "kadesh",
+      "title": "Edom refuses passage",
+      "passages": [
+        "Numbers 20:14-21"
+      ],
+      "summary": "Moses sends messengers from Kadesh requesting passage through Edom. The request is refused, and Israel turns away.",
+      "caution": "The text reports refusal, not an Israelite arrival inside Edom.",
+      "people": [
+        "moses"
+      ],
+      "comparisonIds": [
+        "kadesh"
+      ],
+      "review": "editorial-reading-aid",
+      "primaryCheck": {
+        "url": "https://bible.usccb.org/bible/numbers/20",
+        "date": "2026-10-28",
+        "method": "AI-assisted primary chapter reading"
+      },
+      "date": null
+    },
+    {
+      "id": "exodus-22",
+      "order": 22,
+      "phase": "wilderness",
+      "place": "hor",
+      "title": "Aaron dies at Mount Hor",
+      "passages": [
+        "Numbers 20:22-29"
+      ],
+      "summary": "Israel travels from Kadesh to Mount Hor. Aaron's garments pass to Eleazar, Aaron dies, and the congregation mourns him.",
+      "caution": "The narrative mountain is not equated with a particular modern shrine.",
+      "people": [
+        "moses",
+        "aaron-moses"
+      ],
+      "comparisonIds": [],
+      "review": "editorial-reading-aid",
+      "primaryCheck": {
+        "url": "https://bible.usccb.org/bible/numbers/20",
+        "date": "2026-10-28",
+        "method": "AI-assisted primary chapter reading"
+      },
+      "date": null
+    },
+    {
+      "id": "exodus-23",
+      "order": 23,
+      "phase": "wilderness",
+      "place": "edom-bypass",
+      "title": "The bronze serpent",
+      "passages": [
+        "Numbers 21:4-9"
+      ],
+      "summary": "During the journey around Edom, the people complain and are bitten by serpents. Moses intercedes and makes the bronze serpent as the Lord directs.",
+      "caution": "This selected episode does not establish the serpent's later archaeological survival or an exact campsite.",
+      "people": [
+        "moses"
+      ],
+      "comparisonIds": [],
+      "review": "editorial-reading-aid",
+      "primaryCheck": {
+        "url": "https://bible.usccb.org/bible/numbers/21",
+        "date": "2026-10-28",
+        "method": "AI-assisted primary chapter reading"
+      },
+      "date": null
+    },
+    {
+      "id": "exodus-24",
+      "order": 24,
+      "phase": "moab",
+      "place": "moab",
+      "title": "The camp in the plains of Moab",
+      "passages": [
+        "Numbers 22:1-6"
+      ],
+      "summary": "Israel camps in the plains of Moab across from Jericho. Balak fears the people and sends for Balaam.",
+      "caution": "Balak's messengers travel to Balaam; Israel is not described here as travelling to Balaam's home.",
+      "people": [
+        "moses"
+      ],
+      "comparisonIds": [],
+      "review": "editorial-reading-aid",
+      "primaryCheck": {
+        "url": "https://www.esv.org/Numbers%2B22/",
+        "date": "2026-10-28",
+        "method": "AI-assisted primary chapter reading"
+      },
+      "date": null
+    },
+    {
+      "id": "exodus-25",
+      "order": 25,
+      "phase": "moab",
+      "place": "nebo",
+      "title": "Moses sees the land from Nebo",
+      "passages": [
+        "Deuteronomy 34:1-8"
+      ],
+      "summary": "Moses goes up from Moab to Nebo and sees the land. He dies in Moab, and Israel mourns him; the account says his burial place was not known.",
+      "caution": "The collection ends before the Jordan crossing. Neither an exact grave nor a modern memorial is identified as the burial site.",
+      "people": [
+        "moses"
+      ],
+      "comparisonIds": [],
+      "review": "editorial-reading-aid",
+      "primaryCheck": {
+        "url": "https://www.esv.org/Deuteronomy%2B34/",
+        "date": "2026-10-28",
+        "method": "AI-assisted primary chapter reading"
+      },
+      "date": null
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "delta",
+      "title": "Rameses, Avaris and Tanis",
+      "passages": [
+        "Exodus 1:11",
+        "Exodus 12:37"
+      ],
+      "summary": "Compare the biblical place names with independently investigated Delta settlements.",
+      "candidates": [
+        {
+          "title": "Qantir / Pi-Ramesse",
+          "basis": "Archaeological city identification",
+          "note": "The excavation project identifies the Ramesside capital at Qantir. Its connection with the biblical Rameses is a further historical interpretation.",
+          "sourceIds": [
+            "qantir-project"
+          ]
+        },
+        {
+          "title": "Tell el-Daba / Avaris",
+          "basis": "Related settlement, distinct site history",
+          "note": "The Austrian project identifies Avaris and its later relationship to southern Pi-Ramesse. It is not simply interchangeable with every biblical Rameses reference.",
+          "sourceIds": [
+            "oeaw-delta"
+          ]
+        },
+        {
+          "title": "Tanis",
+          "basis": "Earlier identification, superseded",
+          "note": "Reused Ramesside monuments contributed to the former identification with Pi-Ramesse; their relocation explains the confusion.",
+          "sourceIds": [
+            "qantir-project"
+          ]
+        }
+      ],
+      "caution": "Evidence for these cities does not identify the Exodus pharaoh or establish a departure year."
+    },
+    {
+      "id": "sea",
+      "title": "Which sea-crossing setting?",
+      "passages": [
+        "Exodus 13:17-22",
+        "Exodus 14:1-14",
+        "Exodus 14:15-31",
+        "1 Kings 9:26"
+      ],
+      "summary": "Compare geographic uses of yam sup with proposed Exodus crossing settings.",
+      "candidates": [
+        {
+          "title": "Eastern Delta lakes",
+          "basis": "Several scholarly proposals",
+          "note": "Beitzel discusses several eastern Delta lakes and favours Timsah; these remain competing proposals.",
+          "sourceIds": [
+            "beitzel-sea"
+          ]
+        },
+        {
+          "title": "Northern Gulf of Suez",
+          "basis": "Alternative near-Egypt proposal",
+          "note": "The essay records northern Gulf of Suez proposals and questions about ancient shorelines.",
+          "sourceIds": [
+            "beitzel-sea"
+          ]
+        },
+        {
+          "title": "Gulf of Aqaba / Elat",
+          "basis": "Proposed, with explicit scholarly objection",
+          "note": "1 Kings 9:26 uses the term in an Aqaba/Elat context. Beitzel rejects an Aqaba crossing on distance grounds.",
+          "sourceIds": [
+            "beitzel-sea"
+          ]
+        }
+      ],
+      "caution": "Use of a sea name elsewhere does not prove that the same crossing location is intended. No candidate receives a definitive pin or route."
+    },
+    {
+      "id": "sinai",
+      "title": "Horeb and the mountain of Sinai",
+      "passages": [
+        "Exodus 3:1-12",
+        "Exodus 19:1-8",
+        "Galatians 4:24-25"
+      ],
+      "summary": "A sacred-site tradition, a regional argument and a modern summit identification have different evidential scopes.",
+      "candidates": [
+        {
+          "title": "Jebel Musa / Saint Catherine area",
+          "basis": "Long-standing religious tradition",
+          "note": "UNESCO documents the sacred landscape and monastery associated with Moses. This records the tradition and heritage rather than an excavated identification of the covenant event.",
+          "sourceIds": [
+            "unesco-catherine"
+          ]
+        },
+        {
+          "title": "Arabia / Midian proposals",
+          "basis": "Textual and regional research proposals",
+          "note": "Hurn surveys arguments from Midian and the term Arabia. Historical regional language cannot simply be equated with a modern national border.",
+          "sourceIds": [
+            "hurn-geography"
+          ]
+        }
+      ],
+      "caution": "The comparison is selective. The collection assigns neither a modern summit nor a measured route between Horeb, Egypt and Sinai."
+    },
+    {
+      "id": "kadesh",
+      "title": "Kadesh: an oasis, a site and a district",
+      "passages": [
+        "Numbers 13:25-33",
+        "Numbers 20:1-13",
+        "Numbers 20:14-21"
+      ],
+      "summary": "The publication and the biblical setting need to be read at their own geographic and chronological scales.",
+      "candidates": [
+        {
+          "title": "Tell el-Qudeirat",
+          "basis": "Published archaeological identification",
+          "note": "The IAA report identifies the oasis site as Kadesh Barnea and describes superimposed Iron Age fortresses.",
+          "sourceIds": [
+            "iaa-kadesh"
+          ]
+        },
+        {
+          "title": "The wider spring district, including Ein Qadis",
+          "basis": "Regional comparison and unresolved extent",
+          "note": "The report includes a survey of Ein el-Qudeirat and Ein Qadis. The geographic extent of the biblical setting remains a separate question from any one excavated fortress.",
+          "sourceIds": [
+            "iaa-kadesh"
+          ]
+        }
+      ],
+      "caution": "The linked abstract and contents were checked, not the full excavation volume. Fortress dates are not automatically dates for the wilderness narratives."
+    },
+    {
+      "id": "dates",
+      "title": "Two chronological readings",
+      "passages": [
+        "1 Kings 6:1",
+        "Exodus 1:11",
+        "Numbers 14:33-34"
+      ],
+      "summary": "The collection presents selected date proposals without assigning calendar dates to its stages.",
+      "candidates": [
+        {
+          "title": "Fifteenth-century calculation",
+          "basis": "Reading of 1 Kings 6:1",
+          "note": "Taking the 480-year interval with a conventional date for Solomon's fourth year produces the often cited proposal around 1446 BC.",
+          "sourceIds": [
+            "crossway-date"
+          ]
+        },
+        {
+          "title": "Ramesside-period proposal",
+          "basis": "Reading of the Raamses place name",
+          "note": "Crossway also describes a thirteenth-century proposal associated with Ramesses II, around 1260 BC, while noting disagreement.",
+          "sourceIds": [
+            "crossway-date"
+          ]
+        }
+      ],
+      "caution": "Both dates are model-dependent proposals. The place name alone does not identify Pharaoh, and the stage order does not settle the chronology."
+    }
+  ],
+  "sources": {
+    "oeaw-delta": {
+      "title": "Tell el-Daba / Avaris excavation project",
+      "author": "Austrian Archaeological Institute, Austrian Academy of Sciences",
+      "url": "https://www.oeaw.ac.at/en/oeai/institute/branches/cairo/excavations-projects/tell-el-dab%CA%BFa",
+      "kind": "excavation-project",
+      "scope": "The identification and settlement history of Avaris and its relationship to Pi-Ramesse.",
+      "limitation": "The excavated city provides historical context; this project page does not establish a specific Exodus event or identify its pharaoh.",
+      "access": "Project page read; linked excavation literature has not received an exhaustive review.",
+      "accessed": "2026-10-28",
+      "rights": "Linked source only. No publisher text, illustrations or datasets are redistributed."
+    },
+    "qantir-project": {
+      "title": "Pi-Ramesse: Chronicle of a City",
+      "author": "Qantir/Pi-Ramesse Project and Roemer- und Pelizaeus-Museum exhibition",
+      "url": "https://piramesse-exhibition.de/en/chronik-einer-stadt/",
+      "kind": "excavation-project",
+      "scope": "Archaeological identification of Qantir/Pi-Ramesse and the earlier confusion with Tanis.",
+      "limitation": "A city identification and its Ramesside history do not by themselves fix the date of the biblical departure.",
+      "access": "The excavation exhibition chronology was read; no third-party imagery is reproduced.",
+      "accessed": "2026-10-28",
+      "rights": "Linked source only. No publisher text, illustrations or datasets are redistributed."
+    },
+    "beitzel-sea": {
+      "title": "The Location of the Biblical Red Sea",
+      "author": "Barry J. Beitzel, The Ancient Near East Today, September 2021",
+      "url": "https://anetoday.org/location-red-sea/",
+      "kind": "scholar-essay",
+      "scope": "Proposed crossing settings and geographic uses of yam sup.",
+      "limitation": "An attributed scholarly assessment, not a conclusive site identification.",
+      "access": "Essay and candidate discussion read.",
+      "accessed": "2026-10-28",
+      "rights": "Linked source only. No publisher text, illustrations or datasets are redistributed."
+    },
+    "unesco-catherine": {
+      "title": "Saint Catherine Area",
+      "author": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/954/",
+      "kind": "heritage-record",
+      "scope": "The Jebel Musa / Saint Catherine religious tradition and surviving monastic heritage.",
+      "limitation": "A heritage designation documents the site and its tradition; it is not an excavation-based identification of the biblical mountain.",
+      "access": "Heritage description and significance statement read; no text, imagery or map is republished.",
+      "accessed": "2026-10-28",
+      "rights": "Linked source only. No publisher text, illustrations or datasets are redistributed."
+    },
+    "hurn-geography": {
+      "title": "Identifying and Delineating the Geographic Regions of the Israelite Migration from Egypt to Canaan Using a Hydrological Approach",
+      "author": "Deborah Anne Hurn, Avondale University doctoral thesis, copyright 2022",
+      "url": "https://research.avondale.edu.au/bitstreams/2a9ea57f-3759-4fdb-b369-fc3446b9abed/download",
+      "kind": "research-thesis",
+      "scope": "A research survey of proposed regions and mountains, including the Arabia proposal and its textual reasoning.",
+      "limitation": "A thesis and its survey do not constitute consensus or independent review of this collection. Its own hydrological reconstruction is not adopted here.",
+      "access": "Title, abstract and selected geography-survey sections consulted; the full thesis has not been audited.",
+      "accessed": "2026-10-28",
+      "rights": "Linked source only. No publisher text, illustrations or datasets are redistributed."
+    },
+    "iaa-kadesh": {
+      "title": "Excavations at Kadesh Barnea (Tell el-Qudeirat) 1976-1982, Part 1: Text",
+      "author": "Rudolph Cohen and Hannah Bernick-Greenberg, Israel Antiquities Authority, 2007",
+      "url": "https://publications.iaa.org.il/iaareports/44/",
+      "kind": "excavation-report",
+      "scope": "Published identification of Tell el-Qudeirat and the excavated Iron Age fortresses; the contents include a survey of Ein el-Qudeirat and Ein Qadis.",
+      "limitation": "The excavated fortresses cannot simply be assigned to Moses. The catalogue abstract and contents do not settle every earlier occupation or location question.",
+      "access": "Publisher abstract and contents checked; the full excavation volume and individual chapters have not been reviewed.",
+      "accessed": "2026-10-28",
+      "rights": "Linked source only. No publisher text, illustrations or datasets are redistributed."
+    },
+    "crossway-date": {
+      "title": "ESV Global Study Bible: Introduction to Exodus",
+      "author": "Crossway",
+      "url": "https://www.esv.org/resources/esv-global-study-bible/introduction-to-exodus/",
+      "kind": "publisher-study-note",
+      "scope": "Two chronological readings: a fifteenth-century calculation and a Ramesside-period proposal.",
+      "limitation": "These are interpretive date proposals, not calendar dates established for the stages below. No pharaoh is assigned to an event.",
+      "access": "Public introduction read; publisher study notes are linked and not bundled.",
+      "accessed": "2026-10-28",
+      "rights": "Linked source only. No publisher text, illustrations or datasets are redistributed."
+    }
+  }
+}
