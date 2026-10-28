@@ -1,6 +1,6 @@
 {
   "name": "scripture-trails",
-  "version": "0.23.0",
+  "version": "0.24.0",
   "private": true,
   "type": "module",
   "description": "A Bible reader with ESV, NASB20, NIV and NKJV translations and visual Scripture discovery",
@@ -9,10 +9,11 @@
     "test": "node --test tests/*.test.mjs",
     "import:refs": "node scripts/import-crossrefs.mjs",
     "deploy": "wrangler pages deploy public --project-name scripture-trails",
-    "build": "npm run check:release && npm run check:refs && npm run test",
+    "build": "npm run check:release && npm run check:refs && npm run check:stats && npm run test",
     "check:refs": "node scripts/check-crossrefs.mjs",
     "release": "node scripts/release.mjs",
-    "check:release": "node scripts/check-release.mjs"
+    "check:release": "node scripts/check-release.mjs",
+    "check:stats": "node scripts/site-stats.mjs --check"
   },
   "devDependencies": {
     "wrangler": "^4.0.0"

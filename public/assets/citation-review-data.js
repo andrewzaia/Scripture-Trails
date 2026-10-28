@@ -7,11 +7,11 @@ export const CITATION_REVIEW = {
     "issues": 18,
     "places": 15,
     "trailReadings": 4,
-    "connections": 28
+    "connections": 48
   },
   "deferred": [
     "All six previously unlinked named-place assessments now include external research. Bibliographic gaps in this declared batch are addressed at the stated scope; exact identifications, comparative excavation review, textual variants and abstract-only access remain unresolved. Regional placeholders were not upgraded.",
-    "The other 87 explained pairs retain their existing review labels and have no new source-level assessment in these batches. Many assessed pairs still need fuller academic literature, textual and specialist review.",
+    "The other 67 explained pairs retain their existing review labels and have no source-level assessment in these batches. Sixteen assessed pairs now have named scholarly commentary or limited publisher-summary support; other assessed pairs still rely on passage comparisons. Fuller literature, textual and independent specialist review remain open.",
     "Other person-trail access gaps, full excavation reports, manuscript apparatuses, wider source coverage and independent specialist review remain open.",
     "The full OpenBible corpus remains unclassified."
   ],
@@ -1051,6 +1051,446 @@ export const CITATION_REVIEW = {
       "checkedOn": "2026-10-28",
       "access": "Selected passage wording and immediate context checked through the publisher view. No manuscript collation or translation-equivalence audit; some USCCB requests required an ESV fallback.",
       "rights": "Linked only; no Bible translation text retained."
+    },
+    "wp-matt4": {
+      "title": "Commentary on Matthew 4:1-11 (2014)",
+      "author": "Judith Jones",
+      "publisher": "Working Preacher, Luther Seminary (Christian lectionary commentary)",
+      "kind": "scholarly-commentary",
+      "url": "https://www.workingpreacher.org/commentaries/revised-common-lectionary/first-sunday-in-lent/commentary-on-matthew-41-11-4",
+      "checkedOn": "2026-10-28",
+      "access": "Selected discussion and authorship checked on the publisher page: Matthew 4:4 and its Deuteronomy 8:3 setting. Confessional scholarly commentary; cited works were not independently examined and no specialist signoff is implied.",
+      "rights": "Linked only; no publication text retained."
+    },
+    "wp-john1": {
+      "title": "Commentary on John 1:6-8, 19-28 (2008)",
+      "author": "Paul S. Berge",
+      "publisher": "Working Preacher, Luther Seminary (Christian lectionary commentary)",
+      "kind": "scholarly-commentary",
+      "url": "https://www.workingpreacher.org/commentaries/revised-common-lectionary/third-sunday-of-advent-2/commentary-on-john-16-8-19-28-2",
+      "checkedOn": "2026-10-28",
+      "access": "Selected discussion and authorship checked on the publisher page: Discussion of John 1:22-23 and Isaiah 40:3. Confessional scholarly commentary; cited works were not independently examined and no specialist signoff is implied.",
+      "rights": "Linked only; no publication text retained."
+    },
+    "wp-jer31": {
+      "title": "Commentary on Jeremiah 31:31-34 (2010)",
+      "author": "Fred Gaiser",
+      "publisher": "Working Preacher, Luther Seminary (Christian lectionary commentary)",
+      "kind": "scholarly-commentary",
+      "url": "https://www.workingpreacher.org/commentaries/revised-common-lectionary/reformation-day/commentary-on-jeremiah-3131-34-6",
+      "checkedOn": "2026-10-28",
+      "access": "Selected discussion and authorship checked on the publisher page: Discussion of Luke 22:20 and Hebrews 8:8-13, followed by Jeremiah 30-31 context. Confessional scholarly commentary; cited works were not independently examined and no specialist signoff is implied.",
+      "rights": "Linked only; no publication text retained."
+    },
+    "wp-acts2": {
+      "title": "Commentary on Acts 2:1-21 (2021)",
+      "author": "Gilberto A. Ruiz",
+      "publisher": "Working Preacher, Luther Seminary (Christian lectionary commentary)",
+      "kind": "scholarly-commentary",
+      "url": "https://www.workingpreacher.org/commentaries/revised-common-lectionary/day-of-pentecost-2/commentary-on-acts-21-21-14",
+      "checkedOn": "2026-10-28",
+      "access": "Selected discussion and authorship checked on the publisher page: Acts 2:16-21 discussion of Joel 2:28-32 and adapted wording. Confessional scholarly commentary; cited works were not independently examined and no specialist signoff is implied.",
+      "rights": "Linked only; no publication text retained."
+    },
+    "wp-matt2": {
+      "title": "Commentary on Matthew 2:1-12 (2025)",
+      "author": "Meda Stamper",
+      "publisher": "Working Preacher, Luther Seminary (Christian lectionary commentary)",
+      "kind": "scholarly-commentary",
+      "url": "https://www.workingpreacher.org/commentaries/revised-common-lectionary/epiphany-of-our-lord/commentary-on-matthew-21-12-14",
+      "checkedOn": "2026-10-28",
+      "access": "Selected discussion and authorship checked on the publisher page: Paragraph on the chief priests, Micah 5:2 and 2 Samuel 5:2. Confessional scholarly commentary; cited works were not independently examined and no specialist signoff is implied.",
+      "rights": "Linked only; no publication text retained."
+    },
+    "wp-luke1": {
+      "title": "Commentary on Luke 1:26-38 (2023)",
+      "author": "Raj Nadella",
+      "publisher": "Working Preacher, Luther Seminary (Christian lectionary commentary)",
+      "kind": "scholarly-commentary",
+      "url": "https://www.workingpreacher.org/commentaries/revised-common-lectionary/fourth-sunday-of-advent-2/commentary-on-luke-126-38-6",
+      "checkedOn": "2026-10-28",
+      "access": "Selected discussion and authorship checked on the publisher page: Discussion of David's throne and 2 Samuel 7:12-13. Confessional scholarly commentary; cited works were not independently examined and no specialist signoff is implied.",
+      "rights": "Linked only; no publication text retained."
+    },
+    "wp-john6": {
+      "title": "Commentary on John 6:24-35 (2018)",
+      "author": "Susan Hylen",
+      "publisher": "Working Preacher, Luther Seminary (Christian lectionary commentary)",
+      "kind": "scholarly-commentary",
+      "url": "https://www.workingpreacher.org/commentaries/revised-common-lectionary/ordinary-18-2/commentary-on-john-624-35-3",
+      "checkedOn": "2026-10-28",
+      "access": "Selected discussion and authorship checked on the publisher page: Manna discussion and the gave/gives distinction in John 6:31-35. Confessional scholarly commentary; cited works were not independently examined and no specialist signoff is implied.",
+      "rights": "Linked only; no publication text retained."
+    },
+    "wp-mark12": {
+      "title": "Commentary on Mark 12:28-34 (2021)",
+      "author": "Amanda Brobst-Renaud",
+      "publisher": "Working Preacher, Luther Seminary (Christian lectionary commentary)",
+      "kind": "scholarly-commentary",
+      "url": "https://www.workingpreacher.org/commentaries/revised-common-lectionary/ordinary-31-2/commentary-on-mark-1228-34-6",
+      "checkedOn": "2026-10-28",
+      "access": "Selected discussion and authorship checked on the publisher page: Shema discussion, The Text section and note 2. Confessional scholarly commentary; cited works were not independently examined and no specialist signoff is implied.",
+      "rights": "Linked only; no publication text retained."
+    },
+    "wp-peter2": {
+      "title": "Commentary on 1 Peter 2:19-25 (2017)",
+      "author": "Jeannine K. Brown",
+      "publisher": "Working Preacher, Luther Seminary (Christian lectionary commentary)",
+      "kind": "scholarly-commentary",
+      "url": "https://www.workingpreacher.org/commentaries/revised-common-lectionary/fourth-sunday-of-easter/commentary-on-1-peter-219-25-3",
+      "checkedOn": "2026-10-28",
+      "access": "Selected discussion and authorship checked on the publisher page: Paragraphs connecting 1 Peter 2:22-25 with Isaiah 53:4-6,9. Confessional scholarly commentary; cited works were not independently examined and no specialist signoff is implied.",
+      "rights": "Linked only; no publication text retained."
+    },
+    "dbts-john3": {
+      "title": "John 3:5 and the Life-giving Work of the Spirit (2012)",
+      "author": "Bob McCabe",
+      "publisher": "Detroit Baptist Theological Seminary (Baptist commentary)",
+      "kind": "scholarly-commentary",
+      "url": "https://dbts.edu/2012/03/19/john-35-and-the-life-giving-work-of-the-spirit/",
+      "checkedOn": "2026-10-28",
+      "access": "Selected discussion and authorship checked on the publisher page: Third argument: Ezekiel 36:25-27 as background to John 3:5. Confessional scholarly commentary; cited works were not independently examined and no specialist signoff is implied.",
+      "rights": "Linked only; no publication text retained."
+    },
+    "wp-mark1": {
+      "title": "Commentary on Mark 1:1-8 (2017)",
+      "author": "David Schnasa Jacobsen",
+      "publisher": "Working Preacher, Luther Seminary (Christian lectionary commentary)",
+      "kind": "scholarly-commentary",
+      "url": "https://www.workingpreacher.org/commentaries/revised-common-lectionary/second-sunday-of-advent-2/commentary-on-mark-11-8-4",
+      "checkedOn": "2026-10-28",
+      "access": "Selected discussion and authorship checked on the publisher page: Paragraph on the conflation of Isaiah 40, Exodus 23:20 and Malachi 3:1. Confessional scholarly commentary; cited works were not independently examined and no specialist signoff is implied.",
+      "rights": "Linked only; no publication text retained."
+    },
+    "parallel-matthew-3": {
+      "title": "Matthew 3 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/matthew/3",
+      "checkedOn": "2026-10-28",
+      "access": "Selected narrative passage checked in the publisher chapter view. No original-language collation, full manuscript apparatus or independent historical audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "parallel-mark-1": {
+      "title": "Mark 1 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/Mark+1/",
+      "checkedOn": "2026-10-28",
+      "access": "Selected narrative passage checked in the publisher chapter view; some views include neighbouring chapters. USCCB access was unavailable for part of this selection. No original-language collation, full manuscript apparatus or independent historical audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "parallel-luke-3": {
+      "title": "Luke 3 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/luke/3",
+      "checkedOn": "2026-10-28",
+      "access": "Selected narrative passage checked in the publisher chapter view. No original-language collation, full manuscript apparatus or independent historical audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "parallel-matthew-4": {
+      "title": "Matthew 4 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/Matthew+4/",
+      "checkedOn": "2026-10-28",
+      "access": "Selected narrative passage checked in the publisher chapter view; some views include neighbouring chapters. USCCB access was unavailable for part of this selection. No original-language collation, full manuscript apparatus or independent historical audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "parallel-luke-4": {
+      "title": "Luke 4 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/luke/4",
+      "checkedOn": "2026-10-28",
+      "access": "Selected narrative passage checked in the publisher chapter view. No original-language collation, full manuscript apparatus or independent historical audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "parallel-matthew-8": {
+      "title": "Matthew 8 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/Matthew+8/",
+      "checkedOn": "2026-10-28",
+      "access": "Selected narrative passage checked in the publisher chapter view; some views include neighbouring chapters. USCCB access was unavailable for part of this selection. No original-language collation, full manuscript apparatus or independent historical audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "parallel-mark-4": {
+      "title": "Mark 4 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/Mark+4/",
+      "checkedOn": "2026-10-28",
+      "access": "Selected narrative passage checked in the publisher chapter view; some views include neighbouring chapters. USCCB access was unavailable for part of this selection. No original-language collation, full manuscript apparatus or independent historical audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "parallel-matthew-9": {
+      "title": "Matthew 9 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/matthew/9",
+      "checkedOn": "2026-10-28",
+      "access": "Selected narrative passage checked in the publisher chapter view. No original-language collation, full manuscript apparatus or independent historical audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "parallel-mark-2": {
+      "title": "Mark 2 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/mark/2",
+      "checkedOn": "2026-10-28",
+      "access": "Selected narrative passage checked in the publisher chapter view. No original-language collation, full manuscript apparatus or independent historical audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "parallel-matthew-14": {
+      "title": "Matthew 14 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/matthew/14",
+      "checkedOn": "2026-10-28",
+      "access": "Selected narrative passage checked in the publisher chapter view. No original-language collation, full manuscript apparatus or independent historical audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "parallel-mark-6": {
+      "title": "Mark 6 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/mark/6",
+      "checkedOn": "2026-10-28",
+      "access": "Selected narrative passage checked in the publisher chapter view. No original-language collation, full manuscript apparatus or independent historical audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "parallel-matthew-16": {
+      "title": "Matthew 16 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/Matthew+16/",
+      "checkedOn": "2026-10-28",
+      "access": "Selected narrative passage checked in the publisher chapter view; some views include neighbouring chapters. USCCB access was unavailable for part of this selection. No original-language collation, full manuscript apparatus or independent historical audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "parallel-mark-8": {
+      "title": "Mark 8 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/Mark+8/",
+      "checkedOn": "2026-10-28",
+      "access": "Selected narrative passage checked in the publisher chapter view; some views include neighbouring chapters. USCCB access was unavailable for part of this selection. No original-language collation, full manuscript apparatus or independent historical audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "parallel-matthew-17": {
+      "title": "Matthew 17 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/Matthew+17/",
+      "checkedOn": "2026-10-28",
+      "access": "Selected narrative passage checked in the publisher chapter view; some views include neighbouring chapters. USCCB access was unavailable for part of this selection. No original-language collation, full manuscript apparatus or independent historical audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "parallel-luke-9": {
+      "title": "Luke 9 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/luke/9",
+      "checkedOn": "2026-10-28",
+      "access": "Selected narrative passage checked in the publisher chapter view. No original-language collation, full manuscript apparatus or independent historical audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "parallel-matthew-19": {
+      "title": "Matthew 19 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/matthew/19",
+      "checkedOn": "2026-10-28",
+      "access": "Selected narrative passage checked in the publisher chapter view. No original-language collation, full manuscript apparatus or independent historical audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "parallel-luke-18": {
+      "title": "Luke 18 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/luke/18",
+      "checkedOn": "2026-10-28",
+      "access": "Selected narrative passage checked in the publisher chapter view. No original-language collation, full manuscript apparatus or independent historical audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "parallel-matthew-21": {
+      "title": "Matthew 21 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/Matthew+21/",
+      "checkedOn": "2026-10-28",
+      "access": "Selected narrative passage checked in the publisher chapter view; some views include neighbouring chapters. USCCB access was unavailable for part of this selection. No original-language collation, full manuscript apparatus or independent historical audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "parallel-luke-19": {
+      "title": "Luke 19 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/luke/19",
+      "checkedOn": "2026-10-28",
+      "access": "Selected narrative passage checked in the publisher chapter view. No original-language collation, full manuscript apparatus or independent historical audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "parallel-matthew-26": {
+      "title": "Matthew 26 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/matthew/26",
+      "checkedOn": "2026-10-28",
+      "access": "Selected narrative passage checked in the publisher chapter view. No original-language collation, full manuscript apparatus or independent historical audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "parallel-mark-14": {
+      "title": "Mark 14 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/mark/14",
+      "checkedOn": "2026-10-28",
+      "access": "Selected narrative passage checked in the publisher chapter view. No original-language collation, full manuscript apparatus or independent historical audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "parallel-matthew-27": {
+      "title": "Matthew 27 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/Matthew+27/",
+      "checkedOn": "2026-10-28",
+      "access": "Selected narrative passage checked in the publisher chapter view; some views include neighbouring chapters. USCCB access was unavailable for part of this selection. No original-language collation, full manuscript apparatus or independent historical audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "parallel-luke-23": {
+      "title": "Luke 23 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/luke/23",
+      "checkedOn": "2026-10-28",
+      "access": "Selected narrative passage checked in the publisher chapter view. No original-language collation, full manuscript apparatus or independent historical audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "parallel-matthew-28": {
+      "title": "Matthew 28 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/matthew/28",
+      "checkedOn": "2026-10-28",
+      "access": "Selected narrative passage checked in the publisher chapter view. No original-language collation, full manuscript apparatus or independent historical audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "parallel-mark-16": {
+      "title": "Mark 16 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/Mark+16/",
+      "checkedOn": "2026-10-28",
+      "access": "Selected narrative passage checked in the publisher chapter view; some views include neighbouring chapters. USCCB access was unavailable for part of this selection. No original-language collation, full manuscript apparatus or independent historical audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "parallel-luke-24": {
+      "title": "Luke 24 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/luke/24",
+      "checkedOn": "2026-10-28",
+      "access": "Selected narrative passage checked in the publisher chapter view. No original-language collation, full manuscript apparatus or independent historical audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "parallel-john-20": {
+      "title": "John 20 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/john/20",
+      "checkedOn": "2026-10-28",
+      "access": "Selected narrative passage checked in the publisher chapter view. No original-language collation, full manuscript apparatus or independent historical audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "parallel-acts-9": {
+      "title": "Acts 9 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/acts/9",
+      "checkedOn": "2026-10-28",
+      "access": "Selected narrative passage checked in the publisher chapter view. No original-language collation, full manuscript apparatus or independent historical audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "parallel-acts-26": {
+      "title": "Acts 26 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/acts/26",
+      "checkedOn": "2026-10-28",
+      "access": "Selected narrative passage checked in the publisher chapter view. No original-language collation, full manuscript apparatus or independent historical audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "parallel-acts-22": {
+      "title": "Acts 22 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/acts/22",
+      "checkedOn": "2026-10-28",
+      "access": "Selected narrative passage checked in the publisher chapter view. No original-language collation, full manuscript apparatus or independent historical audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "parallel-john-6": {
+      "title": "John 6 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/john/6",
+      "checkedOn": "2026-10-28",
+      "access": "Selected narrative passage checked in the publisher chapter view. No original-language collation, full manuscript apparatus or independent historical audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "parallel-matthew-5": {
+      "title": "Matthew 5 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/matthew/5",
+      "checkedOn": "2026-10-28",
+      "access": "Selected narrative passage checked in the publisher chapter view. No original-language collation, full manuscript apparatus or independent historical audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "parallel-luke-6": {
+      "title": "Luke 6 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/luke/6",
+      "checkedOn": "2026-10-28",
+      "access": "Selected narrative passage checked in the publisher chapter view. No original-language collation, full manuscript apparatus or independent historical audit.",
+      "rights": "Linked only; no translation text retained."
     }
   },
   "records": [
@@ -1873,7 +2313,8 @@ export const CITATION_REVIEW = {
           "locator": "Matthew 1:18-25",
           "supports": "Passage context for the stated comparison"
         }
-      ]
+      ],
+      "anchor": "Isaiah 7:14"
     },
     {
       "kind": "connection",
@@ -1898,7 +2339,8 @@ export const CITATION_REVIEW = {
           "locator": "1 Corinthians 5:6-8",
           "supports": "Passage context for the stated comparison"
         }
-      ]
+      ],
+      "anchor": "Exodus 12:13"
     },
     {
       "kind": "connection",
@@ -1923,7 +2365,8 @@ export const CITATION_REVIEW = {
           "locator": "Romans 16:17-20",
           "supports": "Passage context for the stated comparison"
         }
-      ]
+      ],
+      "anchor": "Genesis 3:15"
     },
     {
       "kind": "connection",
@@ -1948,7 +2391,8 @@ export const CITATION_REVIEW = {
           "locator": "Galatians 3:6-9",
           "supports": "Passage context for the stated comparison"
         }
-      ]
+      ],
+      "anchor": "Genesis 12:3"
     },
     {
       "kind": "connection",
@@ -1956,8 +2400,8 @@ export const CITATION_REVIEW = {
       "title": "Malachi 3:1 and Mark 1:1-4",
       "decision": "context-clarified",
       "reviewedOn": "2026-10-28",
-      "note": "Mark's opening uses messenger language associated with Malachi, followed by wilderness-voice language associated with Isaiah.",
-      "limitation": "The opening is a composite scriptural use; the entire quotation must not be attributed solely to Malachi.",
+      "note": "Mark 1:2-3 combines messenger language associated with Malachi 3:1 and Exodus 23:20 with Isaiah 40:3. Malachi is a component of a composite citation.",
+      "limitation": "Keep quotation, but do not attribute the whole opening citation solely to Malachi. The Isaiah attribution and its manuscript variants require separate textual study. Named scholarly commentary supports the composite reading; independent specialist review remains open.",
       "passages": [
         "Malachi 3:1",
         "Mark 1:1-4"
@@ -1972,8 +2416,15 @@ export const CITATION_REVIEW = {
           "sourceId": "mark1",
           "locator": "Mark 1:1-4",
           "supports": "Passage context for the stated comparison"
+        },
+        {
+          "sourceId": "wp-mark1",
+          "locator": "Paragraph on the conflation of Isaiah 40, Exodus 23:20 and Malachi 3:1",
+          "supports": "Mark's opening citation is composite, so Malachi is one component rather than its sole source."
         }
-      ]
+      ],
+      "supportBatch": "connections-support-01",
+      "anchor": "Malachi 3:1"
     },
     {
       "kind": "connection",
@@ -2004,7 +2455,8 @@ export const CITATION_REVIEW = {
           "locator": "2 Samuel 21:18-22",
           "supports": "Passage context for the stated comparison"
         }
-      ]
+      ],
+      "anchor": "1 Samuel 17:4"
     },
     {
       "kind": "connection",
@@ -2029,7 +2481,8 @@ export const CITATION_REVIEW = {
           "locator": "1 Chronicles 20:1-3",
           "supports": "Passage context for the stated comparison"
         }
-      ]
+      ],
+      "anchor": "2 Samuel 11:2"
     },
     {
       "kind": "connection",
@@ -2054,7 +2507,8 @@ export const CITATION_REVIEW = {
           "locator": "1 Chronicles 21:1-8",
           "supports": "Passage context for the stated comparison"
         }
-      ]
+      ],
+      "anchor": "2 Samuel 24:1"
     },
     {
       "kind": "place",
@@ -2192,7 +2646,7 @@ export const CITATION_REVIEW = {
       "decision": "context-clarified",
       "reviewedOn": "2026-10-28",
       "note": "Matthew reports Jesus quoting the wilderness lesson about dependence on God's word when tempted to make bread.",
-      "limitation": "Deuteronomy addresses Israel and its wilderness testing. Identifying the quotation does not reconstruct Jesus' exact spoken language. Additional independent academic literature was not assessed for this pair in this batch.",
+      "limitation": "Deuteronomy addresses Israel and its wilderness testing. Identifying the quotation does not reconstruct Jesus' exact spoken language. The checked commentary does not replace wider literature, textual apparatuses or independent specialist review; those remain open.",
       "passages": [
         "Deuteronomy 8:1-6",
         "Matthew 4:1-11"
@@ -2207,10 +2661,16 @@ export const CITATION_REVIEW = {
           "sourceId": "pair-matthew-4",
           "locator": "Matthew 4:1-11",
           "supports": "Selected passage wording and context for this comparison."
+        },
+        {
+          "sourceId": "wp-matt4",
+          "locator": "Matthew 4:4 and its Deuteronomy 8:3 setting",
+          "supports": "The explicit Deuteronomy quotation and its wilderness context."
         }
       ],
       "batch": "connections-20-01",
-      "anchor": "Deuteronomy 8:3"
+      "anchor": "Deuteronomy 8:3",
+      "supportBatch": "connections-support-01"
     },
     {
       "kind": "connection",
@@ -2300,7 +2760,7 @@ export const CITATION_REVIEW = {
       "decision": "context-clarified",
       "reviewedOn": "2026-10-28",
       "note": "John the Baptist explicitly identifies his voice with Isaiah's wilderness proclamation in a scene distinguishing him from the Messiah.",
-      "limitation": "Isaiah addresses consolation and restoration. Punctuation and the placement of wilderness language differ between textual traditions and translations. Additional independent academic literature was not assessed for this pair in this batch.",
+      "limitation": "Isaiah addresses consolation and restoration. Punctuation and the placement of wilderness language differ between textual traditions and translations. The checked commentary does not replace wider literature, textual apparatuses or independent specialist review; those remain open.",
       "passages": [
         "Isaiah 40:1-5",
         "John 1:19-28"
@@ -2315,10 +2775,16 @@ export const CITATION_REVIEW = {
           "sourceId": "pair-john-1",
           "locator": "John 1:19-28",
           "supports": "Selected passage wording and context for this comparison."
+        },
+        {
+          "sourceId": "wp-john1",
+          "locator": "Discussion of John 1:22-23 and Isaiah 40:3",
+          "supports": "John identifies his witness through the voice language of Isaiah 40:3."
         }
       ],
       "batch": "connections-20-01",
-      "anchor": "Isaiah 40:3"
+      "anchor": "Isaiah 40:3",
+      "supportBatch": "connections-support-01"
     },
     {
       "kind": "connection",
@@ -2354,7 +2820,7 @@ export const CITATION_REVIEW = {
       "decision": "context-clarified",
       "reviewedOn": "2026-10-28",
       "note": "Hebrews quotes Jeremiah's new-covenant promise within its discussion of Jesus' priestly ministry and the covenant.",
-      "limitation": "Jeremiah names Israel and Judah. The quotation does not by itself settle competing Christian accounts of Israel, covenant or supersessionism.",
+      "limitation": "Jeremiah names Israel and Judah. The quotation does not by itself settle competing Christian accounts of Israel, covenant or supersessionism. The checked commentary does not replace wider literature, textual apparatuses or independent specialist review; those remain open.",
       "passages": [
         "Jeremiah 31:31-34",
         "Hebrews 8:6-13"
@@ -2374,10 +2840,16 @@ export const CITATION_REVIEW = {
           "sourceId": "pierce-hebrews",
           "locator": "Publisher chapter summary and metadata checked, not the full chapter. Supports the discussion of quotations in Hebrews 1 and 8, not independent specialist signoff.",
           "supports": "Only the quotation/context discussion identified in this source access note."
+        },
+        {
+          "sourceId": "wp-jer31",
+          "locator": "Discussion of Luke 22:20 and Hebrews 8:8-13, followed by Jeremiah 30-31 context",
+          "supports": "The later new-covenant uses and the need to preserve Jeremiah's Israel/Judah restoration setting."
         }
       ],
       "batch": "connections-20-01",
-      "anchor": "Jeremiah 31:31"
+      "anchor": "Jeremiah 31:31",
+      "supportBatch": "connections-support-01"
     },
     {
       "kind": "connection",
@@ -2386,7 +2858,7 @@ export const CITATION_REVIEW = {
       "decision": "context-clarified",
       "reviewedOn": "2026-10-28",
       "note": "Peter explicitly cites Joel in interpreting Pentecost, with language about the Spirit, prophecy and the day of the Lord.",
-      "limitation": "Joel 2:28-32 is numbered Joel 3:1-5 in some editions. Identifying the citation does not settle the timing of every cosmic sign. Additional independent academic literature was not assessed for this pair in this batch.",
+      "limitation": "Joel 2:28-32 is numbered Joel 3:1-5 in some editions. Identifying the citation does not settle the timing of every cosmic sign. The checked commentary does not replace wider literature, textual apparatuses or independent specialist review; those remain open.",
       "passages": [
         "Joel 2:28-32",
         "Acts 2:14-21"
@@ -2401,10 +2873,16 @@ export const CITATION_REVIEW = {
           "sourceId": "pair-acts-2",
           "locator": "Acts 2:14-21",
           "supports": "Selected passage wording and context for this comparison."
+        },
+        {
+          "sourceId": "wp-acts2",
+          "locator": "Acts 2:16-21 discussion of Joel 2:28-32 and adapted wording",
+          "supports": "Peter uses and adapts Joel in interpreting Pentecost; quotation is not verbatim identity."
         }
       ],
       "batch": "connections-20-01",
-      "anchor": "Joel 2:28"
+      "anchor": "Joel 2:28",
+      "supportBatch": "connections-support-01"
     },
     {
       "kind": "connection",
@@ -2413,7 +2891,7 @@ export const CITATION_REVIEW = {
       "decision": "context-clarified",
       "reviewedOn": "2026-10-28",
       "note": "Matthew's Bethlehem citation adapts Micah's ruler language and includes shepherd wording associated with 2 Samuel 5:2.",
-      "limitation": "This is a composite/adapted citation, not identical wording from Micah alone. The Gospel's application and Micah's original context both remain relevant. Additional independent academic literature was not assessed for this pair in this batch.",
+      "limitation": "This is a composite/adapted citation, not identical wording from Micah alone. The Gospel's application and Micah's original context both remain relevant. The checked commentary does not replace wider literature, textual apparatuses or independent specialist review; those remain open.",
       "passages": [
         "Micah 5:2-5",
         "Matthew 2:1-12",
@@ -2434,10 +2912,16 @@ export const CITATION_REVIEW = {
           "sourceId": "pair-2-samuel-5",
           "locator": "2 Samuel 5:1-3",
           "supports": "Selected passage wording and context for this comparison."
+        },
+        {
+          "sourceId": "wp-matt2",
+          "locator": "Paragraph on the chief priests, Micah 5:2 and 2 Samuel 5:2",
+          "supports": "Matthew 2:6 combines Micah with shepherd-ruler language from 2 Samuel."
         }
       ],
       "batch": "connections-20-01",
-      "anchor": "Micah 5:2"
+      "anchor": "Micah 5:2",
+      "supportBatch": "connections-support-01"
     },
     {
       "kind": "connection",
@@ -2484,7 +2968,7 @@ export const CITATION_REVIEW = {
       "decision": "context-clarified",
       "reviewedOn": "2026-10-28",
       "note": "Luke's annunciation describes David's throne and an enduring kingdom, recalling the dynastic promise in Samuel.",
-      "limitation": "Retain echo, not direct quotation. Samuel's immediate dynastic setting and Luke's application should not be flattened into one speech. Additional independent academic literature was not assessed for this pair in this batch.",
+      "limitation": "Retain echo, not direct quotation. Samuel's immediate dynastic setting and Luke's application should not be flattened into one speech. The checked commentary does not replace wider literature, textual apparatuses or independent specialist review; those remain open.",
       "passages": [
         "2 Samuel 7:12-16",
         "Luke 1:26-33"
@@ -2499,10 +2983,16 @@ export const CITATION_REVIEW = {
           "sourceId": "pair-luke-1",
           "locator": "Luke 1:26-33",
           "supports": "Selected passage wording and context for this comparison."
+        },
+        {
+          "sourceId": "wp-luke1",
+          "locator": "Discussion of David's throne and 2 Samuel 7:12-13",
+          "supports": "Luke's annunciation invokes the Davidic royal promise."
         }
       ],
       "batch": "connections-20-01",
-      "anchor": "2 Samuel 7:12"
+      "anchor": "2 Samuel 7:12",
+      "supportBatch": "connections-support-01"
     },
     {
       "kind": "connection",
@@ -2510,8 +3000,8 @@ export const CITATION_REVIEW = {
       "title": "Exodus 16:1-8 and John 6:30-35",
       "decision": "context-clarified",
       "reviewedOn": "2026-10-28",
-      "note": "John explicitly discusses manna and distinguishes Moses from the Father as giver, before presenting Jesus as the bread of life.",
-      "limitation": "Retain the thematic label for these anchors; typological interpretation is possible. John 6:31 has its own quotation, whose exact source is not established by pairing Exodus 16:4 with John 6:32. Additional independent academic literature was not assessed for this pair in this batch.",
+      "note": "John 6 interprets manna through the Father's present gift and Jesus as bread of life. Hylen cautions against construing the contrast as evidence that Jewish listeners regarded Moses as manna's ultimate giver.",
+      "limitation": "Retain the thematic label for these anchors; typological interpretation is possible. John 6:31 has its own quotation, whose exact source is not established by pairing Exodus 16:4 with John 6:32. The checked commentary does not replace wider literature, textual apparatuses or independent specialist review; those remain open.",
       "passages": [
         "Exodus 16:1-8",
         "John 6:30-35"
@@ -2526,10 +3016,16 @@ export const CITATION_REVIEW = {
           "sourceId": "pair-john-6",
           "locator": "John 6:30-35",
           "supports": "Selected passage wording and context for this comparison."
+        },
+        {
+          "sourceId": "wp-john6",
+          "locator": "Manna discussion and the gave/gives distinction in John 6:31-35",
+          "supports": "John interprets manna as a present divine gift; the comparison should not caricature Jewish belief about Moses."
         }
       ],
       "batch": "connections-20-01",
-      "anchor": "Exodus 16:4"
+      "anchor": "Exodus 16:4",
+      "supportBatch": "connections-support-01"
     },
     {
       "kind": "connection",
@@ -2538,7 +3034,7 @@ export const CITATION_REVIEW = {
       "decision": "context-clarified",
       "reviewedOn": "2026-10-28",
       "note": "Mark quotes the command to love God in the setting of the Shema and joins it to love of neighbour.",
-      "limitation": "Compare the wording of the faculties across editions and Gospel accounts. A quotation label does not assert letter-for-letter identity. Additional independent academic literature was not assessed for this pair in this batch.",
+      "limitation": "Compare the wording of the faculties across editions and Gospel accounts. A quotation label does not assert letter-for-letter identity. The checked commentary does not replace wider literature, textual apparatuses or independent specialist review; those remain open.",
       "passages": [
         "Deuteronomy 6:4-9",
         "Mark 12:28-34"
@@ -2553,10 +3049,16 @@ export const CITATION_REVIEW = {
           "sourceId": "pair-mark-12",
           "locator": "Mark 12:28-34",
           "supports": "Selected passage wording and context for this comparison."
+        },
+        {
+          "sourceId": "wp-mark12",
+          "locator": "Shema discussion, The Text section and note 2",
+          "supports": "The Deuteronomy/Leviticus pairing and differences in Mark's wording."
         }
       ],
       "batch": "connections-20-01",
-      "anchor": "Deuteronomy 6:5"
+      "anchor": "Deuteronomy 6:5",
+      "supportBatch": "connections-support-01"
     },
     {
       "kind": "connection",
@@ -2597,7 +3099,7 @@ export const CITATION_REVIEW = {
       "decision": "context-clarified",
       "reviewedOn": "2026-10-28",
       "note": "First Peter uses Isaiah's suffering-servant language and directly quotes the healing-through-wounds clause in an exhortation about suffering and righteous conduct.",
-      "limitation": "Classify this pair as quotation rather than a merely possible echo. The pastoral context does not license endorsing abuse or promising automatic physical cure. Additional independent academic literature was not assessed for this pair in this batch.",
+      "limitation": "Classify this pair as quotation rather than a merely possible echo. The pastoral context does not license endorsing abuse or promising automatic physical cure. The checked commentary does not replace wider literature, textual apparatuses or independent specialist review; those remain open.",
       "passages": [
         "Isaiah 53:4-6",
         "1 Peter 2:21-25"
@@ -2612,10 +3114,16 @@ export const CITATION_REVIEW = {
           "sourceId": "pair-1-peter-2",
           "locator": "1 Peter 2:21-25",
           "supports": "Selected passage wording and context for this comparison."
+        },
+        {
+          "sourceId": "wp-peter2",
+          "locator": "Paragraphs connecting 1 Peter 2:22-25 with Isaiah 53:4-6,9",
+          "supports": "First Peter adapts the servant song in its suffering and righteous-living context."
         }
       ],
       "batch": "connections-20-01",
-      "anchor": "Isaiah 53:5"
+      "anchor": "Isaiah 53:5",
+      "supportBatch": "connections-support-01"
     },
     {
       "kind": "connection",
@@ -2624,7 +3132,7 @@ export const CITATION_REVIEW = {
       "decision": "context-clarified",
       "reviewedOn": "2026-10-28",
       "note": "Luke's cup saying uses new-covenant language associated with Jeremiah, in a meal setting that also invokes sacrificial blood.",
-      "limitation": "Classify as echo rather than a direct quotation of Jeremiah's full promise. Compare Exodus 24:8 and textual variants of Luke's supper account before broader claims. Additional independent academic literature was not assessed for this pair in this batch.",
+      "limitation": "Classify as echo rather than a direct quotation of Jeremiah's full promise. Compare Exodus 24:8 and textual variants of Luke's supper account before broader claims. The checked commentary does not replace wider literature, textual apparatuses or independent specialist review; those remain open.",
       "passages": [
         "Jeremiah 31:31-34",
         "Luke 22:14-20"
@@ -2639,10 +3147,16 @@ export const CITATION_REVIEW = {
           "sourceId": "pair-luke-22",
           "locator": "Luke 22:14-20",
           "supports": "Selected passage wording and context for this comparison."
+        },
+        {
+          "sourceId": "wp-jer31",
+          "locator": "Discussion of Luke 22:20 and Hebrews 8:8-13, followed by Jeremiah 30-31 context",
+          "supports": "The later new-covenant uses and the need to preserve Jeremiah's Israel/Judah restoration setting."
         }
       ],
       "batch": "connections-20-01",
-      "anchor": "Jeremiah 31:31"
+      "anchor": "Jeremiah 31:31",
+      "supportBatch": "connections-support-01"
     },
     {
       "kind": "connection",
@@ -2651,7 +3165,7 @@ export const CITATION_REVIEW = {
       "decision": "context-clarified",
       "reviewedOn": "2026-10-28",
       "note": "Ezekiel joins cleansing water, a new heart and God's Spirit; John's Nicodemus scene speaks of birth through water and Spirit.",
-      "limitation": "Retain a thematic comparison. A specific allusion is an interpretive proposal; this pairing does not settle baptismal or denominational interpretations. Additional independent academic literature was not assessed for this pair in this batch.",
+      "limitation": "Retain a thematic comparison. A specific allusion is an interpretive proposal; this pairing does not settle baptismal or denominational interpretations. The checked commentary does not replace wider literature, textual apparatuses or independent specialist review; those remain open.",
       "passages": [
         "Ezekiel 36:24-28",
         "John 3:1-10"
@@ -2666,10 +3180,556 @@ export const CITATION_REVIEW = {
           "sourceId": "pair-john-3",
           "locator": "John 3:1-10",
           "supports": "Selected passage wording and context for this comparison."
+        },
+        {
+          "sourceId": "dbts-john3",
+          "locator": "Third argument: Ezekiel 36:25-27 as background to John 3:5",
+          "supports": "An explicitly argued water/Spirit interpretation; a Baptist reading rather than a consensus settlement."
         }
       ],
       "batch": "connections-20-01",
-      "anchor": "Ezekiel 36:26"
+      "anchor": "Ezekiel 36:26",
+      "supportBatch": "connections-support-01"
+    },
+    {
+      "kind": "connection",
+      "target": "ce096",
+      "title": "Matthew 3:13-17 and Mark 1:9-11",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-28",
+      "note": "Both accounts describe Jesus' baptism, the descending Spirit and a heavenly declaration of sonship.",
+      "limitation": "Matthew includes John's objection and a righteousness dialogue; Mark does not. Compare the heavenly address rather than treating the accounts as identical transcripts. This is an AI-assisted selected-passage comparison; fuller academic literature and independent specialist review remain open.",
+      "passages": [
+        "Matthew 3:13-17",
+        "Mark 1:9-11"
+      ],
+      "citations": [
+        {
+          "sourceId": "parallel-matthew-3",
+          "locator": "Matthew 3:13-17",
+          "supports": "Selected narrative wording and immediate context, including the differences retained in this comparison."
+        },
+        {
+          "sourceId": "parallel-mark-1",
+          "locator": "Mark 1:9-11",
+          "supports": "Selected narrative wording and immediate context, including the differences retained in this comparison."
+        }
+      ],
+      "batch": "connections-20-02",
+      "anchor": "Matthew 3:13"
+    },
+    {
+      "kind": "connection",
+      "target": "ce097",
+      "title": "Mark 1:9-11 and Luke 3:19-22",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-28",
+      "note": "Mark and Luke connect Jesus' baptism with the Spirit and a heavenly declaration.",
+      "limitation": "Luke foregrounds prayer and places John's imprisonment notice before the baptism scene. Narrative arrangement alone does not establish a separate baptism or exact chronology. This is an AI-assisted selected-passage comparison; fuller academic literature and independent specialist review remain open.",
+      "passages": [
+        "Mark 1:9-11",
+        "Luke 3:19-22"
+      ],
+      "citations": [
+        {
+          "sourceId": "parallel-mark-1",
+          "locator": "Mark 1:9-11",
+          "supports": "Selected narrative wording and immediate context, including the differences retained in this comparison."
+        },
+        {
+          "sourceId": "parallel-luke-3",
+          "locator": "Luke 3:19-22",
+          "supports": "Selected narrative wording and immediate context, including the differences retained in this comparison."
+        }
+      ],
+      "batch": "connections-20-02",
+      "anchor": "Mark 1:9"
+    },
+    {
+      "kind": "connection",
+      "target": "ce098",
+      "title": "Matthew 4:1-11 and Luke 4:1-13",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-28",
+      "note": "Both accounts narrate wilderness testing and responses drawn from Deuteronomy.",
+      "limitation": "The temple and kingdom tests occur in different orders. Retain parallel without inventing an exact reconciled sequence. This is an AI-assisted selected-passage comparison; fuller academic literature and independent specialist review remain open.",
+      "passages": [
+        "Matthew 4:1-11",
+        "Luke 4:1-13"
+      ],
+      "citations": [
+        {
+          "sourceId": "parallel-matthew-4",
+          "locator": "Matthew 4:1-11",
+          "supports": "Selected narrative wording and immediate context, including the differences retained in this comparison."
+        },
+        {
+          "sourceId": "parallel-luke-4",
+          "locator": "Luke 4:1-13",
+          "supports": "Selected narrative wording and immediate context, including the differences retained in this comparison."
+        }
+      ],
+      "batch": "connections-20-02",
+      "anchor": "Matthew 4:1"
+    },
+    {
+      "kind": "connection",
+      "target": "ce099",
+      "title": "Matthew 8:14-17 and Mark 1:29-34",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-28",
+      "note": "Both accounts place the healing of Simon Peter's mother-in-law in a house, followed by evening healings.",
+      "limitation": "Mark names additional disciples and connects the visit to the synagogue; Matthew gives a shorter account. The narrative link does not supply medical or archaeological verification. This is an AI-assisted selected-passage comparison; fuller academic literature and independent specialist review remain open.",
+      "passages": [
+        "Matthew 8:14-17",
+        "Mark 1:29-34"
+      ],
+      "citations": [
+        {
+          "sourceId": "parallel-matthew-8",
+          "locator": "Matthew 8:14-17",
+          "supports": "Selected narrative wording and immediate context, including the differences retained in this comparison."
+        },
+        {
+          "sourceId": "parallel-mark-1",
+          "locator": "Mark 1:29-34",
+          "supports": "Selected narrative wording and immediate context, including the differences retained in this comparison."
+        }
+      ],
+      "batch": "connections-20-02",
+      "anchor": "Matthew 8:14"
+    },
+    {
+      "kind": "connection",
+      "target": "ce100",
+      "title": "Matthew 8:23-27 and Mark 4:35-41",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-28",
+      "note": "Both describe a sleeping Jesus, a storm, frightened disciples and the calming of wind and water.",
+      "limitation": "Matthew places the faith question before the calming; Mark places it after. Do not flatten this order difference or infer an exact sailing route. This is an AI-assisted selected-passage comparison; fuller academic literature and independent specialist review remain open.",
+      "passages": [
+        "Matthew 8:23-27",
+        "Mark 4:35-41"
+      ],
+      "citations": [
+        {
+          "sourceId": "parallel-matthew-8",
+          "locator": "Matthew 8:23-27",
+          "supports": "Selected narrative wording and immediate context, including the differences retained in this comparison."
+        },
+        {
+          "sourceId": "parallel-mark-4",
+          "locator": "Mark 4:35-41",
+          "supports": "Selected narrative wording and immediate context, including the differences retained in this comparison."
+        }
+      ],
+      "batch": "connections-20-02",
+      "anchor": "Matthew 8:23"
+    },
+    {
+      "kind": "connection",
+      "target": "ce101",
+      "title": "Matthew 9:9-13 and Mark 2:13-17",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-28",
+      "note": "Both accounts relate a tax collector's call and a meal with tax collectors and sinners.",
+      "limitation": "Matthew names the collector Matthew; Mark names Levi son of Alphaeus. Parallel story structure does not independently establish that these names identify the same historical person. This is an AI-assisted selected-passage comparison; fuller academic literature and independent specialist review remain open.",
+      "passages": [
+        "Matthew 9:9-13",
+        "Mark 2:13-17"
+      ],
+      "citations": [
+        {
+          "sourceId": "parallel-matthew-9",
+          "locator": "Matthew 9:9-13",
+          "supports": "Selected narrative wording and immediate context, including the differences retained in this comparison."
+        },
+        {
+          "sourceId": "parallel-mark-2",
+          "locator": "Mark 2:13-17",
+          "supports": "Selected narrative wording and immediate context, including the differences retained in this comparison."
+        }
+      ],
+      "batch": "connections-20-02",
+      "anchor": "Matthew 9:9"
+    },
+    {
+      "kind": "connection",
+      "target": "ce102",
+      "title": "Matthew 14:13-21 and Mark 6:30-44",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-28",
+      "note": "Both accounts describe five loaves, two fish, a large crowd and twelve baskets after the feeding.",
+      "limitation": "Mark begins with the apostles' return; Matthew connects the withdrawal with news about John. Read each narrative setting; the parallel does not fix the exact location. This is an AI-assisted selected-passage comparison; fuller academic literature and independent specialist review remain open.",
+      "passages": [
+        "Matthew 14:13-21",
+        "Mark 6:30-44"
+      ],
+      "citations": [
+        {
+          "sourceId": "parallel-matthew-14",
+          "locator": "Matthew 14:13-21",
+          "supports": "Selected narrative wording and immediate context, including the differences retained in this comparison."
+        },
+        {
+          "sourceId": "parallel-mark-6",
+          "locator": "Mark 6:30-44",
+          "supports": "Selected narrative wording and immediate context, including the differences retained in this comparison."
+        }
+      ],
+      "batch": "connections-20-02",
+      "anchor": "Matthew 14:13"
+    },
+    {
+      "kind": "connection",
+      "target": "ce103",
+      "title": "Matthew 16:13-20 and Mark 8:27-30",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-28",
+      "note": "Both place Peter's confession in the Caesarea Philippi setting and include an instruction not to tell others.",
+      "limitation": "Matthew expands the confession with teaching about Peter, the church and the keys. Mark has no equivalent speech here; this comparison does not settle later ecclesial interpretations. This is an AI-assisted selected-passage comparison; fuller academic literature and independent specialist review remain open.",
+      "passages": [
+        "Matthew 16:13-20",
+        "Mark 8:27-30"
+      ],
+      "citations": [
+        {
+          "sourceId": "parallel-matthew-16",
+          "locator": "Matthew 16:13-20",
+          "supports": "Selected narrative wording and immediate context, including the differences retained in this comparison."
+        },
+        {
+          "sourceId": "parallel-mark-8",
+          "locator": "Mark 8:27-30",
+          "supports": "Selected narrative wording and immediate context, including the differences retained in this comparison."
+        }
+      ],
+      "batch": "connections-20-02",
+      "anchor": "Matthew 16:13"
+    },
+    {
+      "kind": "connection",
+      "target": "ce104",
+      "title": "Matthew 17:1-9 and Luke 9:28-36",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-28",
+      "note": "Both describe the mountain scene with Peter, James, John, Moses, Elijah and the voice from the cloud.",
+      "limitation": "Matthew says six days; Luke says about eight and emphasises prayer and departure at Jerusalem. No precise mountain identification or harmonised calendar is established. This is an AI-assisted selected-passage comparison; fuller academic literature and independent specialist review remain open.",
+      "passages": [
+        "Matthew 17:1-9",
+        "Luke 9:28-36"
+      ],
+      "citations": [
+        {
+          "sourceId": "parallel-matthew-17",
+          "locator": "Matthew 17:1-9",
+          "supports": "Selected narrative wording and immediate context, including the differences retained in this comparison."
+        },
+        {
+          "sourceId": "parallel-luke-9",
+          "locator": "Luke 9:28-36",
+          "supports": "Selected narrative wording and immediate context, including the differences retained in this comparison."
+        }
+      ],
+      "batch": "connections-20-02",
+      "anchor": "Matthew 17:1"
+    },
+    {
+      "kind": "connection",
+      "target": "ce105",
+      "title": "Matthew 19:13-15 and Luke 18:15-17",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-28",
+      "note": "Both accounts show disciples resisting people bringing children and Jesus welcoming them in relation to God's kingdom.",
+      "limitation": "Luke explicitly mentions infants and adds a saying about receiving the kingdom. This parallel does not by itself settle infant-baptism disputes. This is an AI-assisted selected-passage comparison; fuller academic literature and independent specialist review remain open.",
+      "passages": [
+        "Matthew 19:13-15",
+        "Luke 18:15-17"
+      ],
+      "citations": [
+        {
+          "sourceId": "parallel-matthew-19",
+          "locator": "Matthew 19:13-15",
+          "supports": "Selected narrative wording and immediate context, including the differences retained in this comparison."
+        },
+        {
+          "sourceId": "parallel-luke-18",
+          "locator": "Luke 18:15-17",
+          "supports": "Selected narrative wording and immediate context, including the differences retained in this comparison."
+        }
+      ],
+      "batch": "connections-20-02",
+      "anchor": "Matthew 19:13"
+    },
+    {
+      "kind": "connection",
+      "target": "ce106",
+      "title": "Matthew 21:1-11 and Luke 19:28-40",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-28",
+      "note": "Both narrate the approach to Jerusalem, disciples obtaining an animal and acclamation of Jesus.",
+      "limitation": "Matthew mentions a donkey and colt; Luke describes a colt. Retain the literary parallel without inventing riding arrangements, a precise route or a single verbatim acclamation. This is an AI-assisted selected-passage comparison; fuller academic literature and independent specialist review remain open.",
+      "passages": [
+        "Matthew 21:1-11",
+        "Luke 19:28-40"
+      ],
+      "citations": [
+        {
+          "sourceId": "parallel-matthew-21",
+          "locator": "Matthew 21:1-11",
+          "supports": "Selected narrative wording and immediate context, including the differences retained in this comparison."
+        },
+        {
+          "sourceId": "parallel-luke-19",
+          "locator": "Luke 19:28-40",
+          "supports": "Selected narrative wording and immediate context, including the differences retained in this comparison."
+        }
+      ],
+      "batch": "connections-20-02",
+      "anchor": "Matthew 21:1"
+    },
+    {
+      "kind": "connection",
+      "target": "ce107",
+      "title": "Matthew 26:26-30 and Mark 14:22-26",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-28",
+      "note": "Both describe bread, a shared cup, covenant language and a future meal in the kingdom.",
+      "limitation": "Matthew includes the forgiveness-of-sins phrase absent from Mark's wording here. Manuscript variants and sacramental interpretations require a wider review. This is an AI-assisted selected-passage comparison; fuller academic literature and independent specialist review remain open.",
+      "passages": [
+        "Matthew 26:26-30",
+        "Mark 14:22-26"
+      ],
+      "citations": [
+        {
+          "sourceId": "parallel-matthew-26",
+          "locator": "Matthew 26:26-30",
+          "supports": "Selected narrative wording and immediate context, including the differences retained in this comparison."
+        },
+        {
+          "sourceId": "parallel-mark-14",
+          "locator": "Mark 14:22-26",
+          "supports": "Selected narrative wording and immediate context, including the differences retained in this comparison."
+        }
+      ],
+      "batch": "connections-20-02",
+      "anchor": "Matthew 26:26"
+    },
+    {
+      "kind": "connection",
+      "target": "ce108",
+      "title": "Matthew 26:36-46 and Mark 14:32-42",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-28",
+      "note": "Both name Gethsemane and relate Jesus' distress, prayer about the cup and the disciples' failure to remain awake.",
+      "limitation": "Compare repeated prayers and forms of address in each account. The named setting does not identify an exact surviving tree, cave or prayer spot. This is an AI-assisted selected-passage comparison; fuller academic literature and independent specialist review remain open.",
+      "passages": [
+        "Matthew 26:36-46",
+        "Mark 14:32-42"
+      ],
+      "citations": [
+        {
+          "sourceId": "parallel-matthew-26",
+          "locator": "Matthew 26:36-46",
+          "supports": "Selected narrative wording and immediate context, including the differences retained in this comparison."
+        },
+        {
+          "sourceId": "parallel-mark-14",
+          "locator": "Mark 14:32-42",
+          "supports": "Selected narrative wording and immediate context, including the differences retained in this comparison."
+        }
+      ],
+      "batch": "connections-20-02",
+      "anchor": "Matthew 26:36"
+    },
+    {
+      "kind": "connection",
+      "target": "ce109",
+      "title": "Matthew 27:57-61 and Luke 23:50-56",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-28",
+      "note": "Both present Joseph of Arimathea requesting Jesus' body from Pilate and placing it in a rock-cut tomb.",
+      "limitation": "Matthew calls Joseph rich and a disciple and identifies the tomb as his own; Luke stresses his council role and dissent. These accounts do not independently verify a modern tomb identification. This is an AI-assisted selected-passage comparison; fuller academic literature and independent specialist review remain open.",
+      "passages": [
+        "Matthew 27:57-61",
+        "Luke 23:50-56"
+      ],
+      "citations": [
+        {
+          "sourceId": "parallel-matthew-27",
+          "locator": "Matthew 27:57-61",
+          "supports": "Selected narrative wording and immediate context, including the differences retained in this comparison."
+        },
+        {
+          "sourceId": "parallel-luke-23",
+          "locator": "Luke 23:50-56",
+          "supports": "Selected narrative wording and immediate context, including the differences retained in this comparison."
+        }
+      ],
+      "batch": "connections-20-02",
+      "anchor": "Matthew 27:57"
+    },
+    {
+      "kind": "connection",
+      "target": "ce110",
+      "title": "Matthew 28:1-10 and Mark 16:1-8",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-28",
+      "note": "Both narrate women visiting the tomb, finding it empty and receiving a message about Jesus' resurrection and Galilee.",
+      "limitation": "The named women, scene details and responses differ. Keep this comparison within Mark 16:1-8; the disputed longer ending is a separate textual issue, not evidence silently supplied here. This is an AI-assisted selected-passage comparison; fuller academic literature and independent specialist review remain open.",
+      "passages": [
+        "Matthew 28:1-10",
+        "Mark 16:1-8"
+      ],
+      "citations": [
+        {
+          "sourceId": "parallel-matthew-28",
+          "locator": "Matthew 28:1-10",
+          "supports": "Selected narrative wording and immediate context, including the differences retained in this comparison."
+        },
+        {
+          "sourceId": "parallel-mark-16",
+          "locator": "Mark 16:1-8",
+          "supports": "Selected narrative wording and immediate context, including the differences retained in this comparison."
+        }
+      ],
+      "batch": "connections-20-02",
+      "anchor": "Matthew 28:1"
+    },
+    {
+      "kind": "connection",
+      "target": "ce111",
+      "title": "Luke 24:1-12 and John 20:1-18",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-28",
+      "note": "Luke and John link Mary Magdalene, the first-day tomb visit, an absent body and subsequent reports to disciples.",
+      "limitation": "Luke has a group of women and an immediate message; John first foregrounds Mary's uncertainty, then Peter and the other disciple. Do not infer a unified timetable from the parallel label. This is an AI-assisted selected-passage comparison; fuller academic literature and independent specialist review remain open.",
+      "passages": [
+        "Luke 24:1-12",
+        "John 20:1-18"
+      ],
+      "citations": [
+        {
+          "sourceId": "parallel-luke-24",
+          "locator": "Luke 24:1-12",
+          "supports": "Selected narrative wording and immediate context, including the differences retained in this comparison."
+        },
+        {
+          "sourceId": "parallel-john-20",
+          "locator": "John 20:1-18",
+          "supports": "Selected narrative wording and immediate context, including the differences retained in this comparison."
+        }
+      ],
+      "batch": "connections-20-02",
+      "anchor": "Luke 24:1"
+    },
+    {
+      "kind": "connection",
+      "target": "ce112",
+      "title": "Acts 9:1-19 and Acts 26:12-18",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-28",
+      "note": "Acts narrates the Damascus encounter and later retells it in Paul's defence before Agrippa.",
+      "limitation": "Acts 26 states the commission within Jesus' speech and says all fell; Acts 9 includes Ananias and describes the companions differently. These are accounts within one literary work, not independent corroborating sources. This is an AI-assisted selected-passage comparison; fuller academic literature and independent specialist review remain open.",
+      "passages": [
+        "Acts 9:1-19",
+        "Acts 26:12-18"
+      ],
+      "citations": [
+        {
+          "sourceId": "parallel-acts-9",
+          "locator": "Acts 9:1-19",
+          "supports": "Selected narrative wording and immediate context, including the differences retained in this comparison."
+        },
+        {
+          "sourceId": "parallel-acts-26",
+          "locator": "Acts 26:12-18",
+          "supports": "Selected narrative wording and immediate context, including the differences retained in this comparison."
+        }
+      ],
+      "batch": "connections-20-02",
+      "anchor": "Acts 9:3"
+    },
+    {
+      "kind": "connection",
+      "target": "ce113",
+      "title": "Acts 22:6-16 and Acts 26:12-18",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-28",
+      "note": "Paul's Jerusalem defence and his speech before Agrippa both recount the Damascus light and voice.",
+      "limitation": "The speeches address different audiences and distribute the commission differently. Compare Acts 9 as well; the hearing/understanding question and textual details are not resolved by this pair. This is an AI-assisted selected-passage comparison; fuller academic literature and independent specialist review remain open.",
+      "passages": [
+        "Acts 22:6-16",
+        "Acts 26:12-18"
+      ],
+      "citations": [
+        {
+          "sourceId": "parallel-acts-22",
+          "locator": "Acts 22:6-16",
+          "supports": "Selected narrative wording and immediate context, including the differences retained in this comparison."
+        },
+        {
+          "sourceId": "parallel-acts-26",
+          "locator": "Acts 26:12-18",
+          "supports": "Selected narrative wording and immediate context, including the differences retained in this comparison."
+        }
+      ],
+      "batch": "connections-20-02",
+      "anchor": "Acts 22:6"
+    },
+    {
+      "kind": "connection",
+      "target": "ce114",
+      "title": "John 6:5-15 and Mark 6:35-44",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-28",
+      "note": "Both feeding accounts include five loaves, two fish, about five thousand men and twelve baskets.",
+      "limitation": "John names Philip, Andrew and a boy and frames the scene near Passover; Mark foregrounds the disciples collectively. Shared motifs do not erase distinct purposes or establish an exact location. This is an AI-assisted selected-passage comparison; fuller academic literature and independent specialist review remain open.",
+      "passages": [
+        "John 6:5-15",
+        "Mark 6:35-44"
+      ],
+      "citations": [
+        {
+          "sourceId": "parallel-john-6",
+          "locator": "John 6:5-15",
+          "supports": "Selected narrative wording and immediate context, including the differences retained in this comparison."
+        },
+        {
+          "sourceId": "parallel-mark-6",
+          "locator": "Mark 6:35-44",
+          "supports": "Selected narrative wording and immediate context, including the differences retained in this comparison."
+        }
+      ],
+      "batch": "connections-20-02",
+      "anchor": "John 6:5"
+    },
+    {
+      "kind": "connection",
+      "target": "ce115",
+      "title": "Matthew 5:1-12 and Luke 6:17-26",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-28",
+      "note": "Both open major teaching sections with blessings linked to God's kingdom.",
+      "limitation": "Matthew speaks of poor in spirit in a mountain setting; Luke addresses the poor on level ground and includes woes. Do not equate the wording or use the comparison to remove either passage's distinctive emphasis. This is an AI-assisted selected-passage comparison; fuller academic literature and independent specialist review remain open.",
+      "passages": [
+        "Matthew 5:1-12",
+        "Luke 6:17-26"
+      ],
+      "citations": [
+        {
+          "sourceId": "parallel-matthew-5",
+          "locator": "Matthew 5:1-12",
+          "supports": "Selected narrative wording and immediate context, including the differences retained in this comparison."
+        },
+        {
+          "sourceId": "parallel-luke-6",
+          "locator": "Luke 6:17-26",
+          "supports": "Selected narrative wording and immediate context, including the differences retained in this comparison."
+        }
+      ],
+      "batch": "connections-20-02",
+      "anchor": "Matthew 5:3"
     }
   ],
   "batches": [
@@ -2700,6 +3760,54 @@ export const CITATION_REVIEW = {
         "ce043"
       ],
       "method": "AI-assisted selected-passage comparison. Five assessments also include scoped scholarly commentary or publisher-summary support. Other pairs retain an explicit secondary-literature gap; no independent specialist signoff."
+    },
+    {
+      "id": "connections-support-01",
+      "title": "Scholarly commentary follow-up for twelve existing assessments",
+      "count": 12,
+      "targets": [
+        "ce004",
+        "ce009",
+        "ce011",
+        "ce041",
+        "ce012",
+        "ce013",
+        "ce022",
+        "ce030",
+        "ce031",
+        "ce040",
+        "ce043",
+        "ce044"
+      ],
+      "method": "AI-assisted review of named, readable scholarly commentaries for twelve already assessed pairs. Eleven previously had passage-only support; one had a limited publisher chapter summary. Commentaries have stated confessional settings and do not constitute independent specialist signoff."
+    },
+    {
+      "id": "connections-20-02",
+      "title": "Twenty Gospel and Acts narrative comparisons",
+      "count": 20,
+      "targets": [
+        "ce096",
+        "ce097",
+        "ce098",
+        "ce099",
+        "ce100",
+        "ce101",
+        "ce102",
+        "ce103",
+        "ce104",
+        "ce105",
+        "ce106",
+        "ce107",
+        "ce108",
+        "ce109",
+        "ce110",
+        "ce111",
+        "ce112",
+        "ce113",
+        "ce114",
+        "ce115"
+      ],
+      "method": "AI-assisted selected-passage comparison of twenty previously unassessed narrative pairs. Literary parallels remain distinct from independent historical corroboration; order, identity and wording differences are retained. This batch does not claim full secondary-literature or specialist review."
     }
   ]
 };
