@@ -33,3 +33,5 @@ Source and terms: [Natural Earth](https://www.naturalearthdata.com/about/terms-o
 `tests/pauline-journeys.test.mjs` checks canonical passage boundaries, source-point alignment, licence and provenance metadata, known narrative distinctions and connector gaps. Browser interaction checks supplement these structural tests.
 
 The Rome expansion retains ten additional Pleiades records from the same pinned revision. The voyage follows Acts 27-28, separates intended destinations from arrivals, and leaves storm and wreck positions unlocated. Malta is an island-scale orientation point. No source establishes an exact wreck bay here.
+
+The pending specialist review is tracked in [Voyage to Rome specialist-review checklist](voyage-to-rome-review.md). Completing documentation corrections does not complete that review.

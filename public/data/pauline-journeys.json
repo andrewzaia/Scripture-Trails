@@ -34,7 +34,7 @@
         "Acts 21:15-17"
       ],
       "scope": "Regional revisits, Ephesus, Macedonia and Greece, followed by the voyage to Jerusalem.",
-      "note": "Regional summaries do not identify every city. The later arrest, imprisonment and voyage to Rome are outside this release."
+      "note": "Regional summaries do not identify every city. This grouping ends with arrival in Jerusalem. The later prisoner voyage is presented separately as Voyage to Rome; the intervening arrest and imprisonment are not mapped here."
     },
     {
       "id": "rome",
@@ -1947,6 +1947,7 @@
       "description": "This is not labelled a fourth missionary journey. The embarkation at Caesarea follows the preceding custody narrative; Acts 27:1-2 itself does not name the departure port. Phoenix is an intended winter harbour, not a reached stop. Adramyttium and Alexandria describe ships, not visits by Paul. The storm, soundings and wreck remain unpinned. Malta uses only an island-scale marker; no traditional wreck bay is asserted as certain.",
       "passages": [
         "Acts 27:1-16",
+        "Acts 27:17-26",
         "Acts 27:27-44",
         "Acts 28:1-16"
       ]

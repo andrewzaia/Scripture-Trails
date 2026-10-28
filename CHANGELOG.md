@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.15.1 - 28/10/2026: Voyage to Rome evidence notes
+
+- Correct the third-journey scope note to distinguish the separately available Voyage to Rome.
+- Include Acts 27:17-26 in the voyage uncertainty register so the storm-drift discussion has its supporting passage link.
+- Track outstanding independent review, exact unpinned settings and source-file responsibilities in sources/pauline/voyage-to-rome-review.md; retain all existing geographic qualifications.
+
 ## 0.15.0 - 28/10/2026: Linked notes and verse highlights
 
 - Save tagged observations linked to multiple passages and manage them in My notebook.
