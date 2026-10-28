@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.23.0 - 28/10/2026: Twenty more Scripture connections explained
+
+- Add passage contexts, source links and interpretive cautions for 20 further Scripture connections, bringing the citation register to 28 of 115 connections.
+- Clarify composite quotations in Matthew 2 and Luke 4, distinguish quotations from echoes and themes, and correct two connection labels.
+- Add scoped academic or commentary support for five connections while keeping source-access limits and the remaining 87 connection reviews visible.
+- Open reviewed connections in the Atlas at their actual anchor verse.
+
 ## 0.22.0 - 28/10/2026: Sources for six disputed geography settings
 
 - Add eight excavation and academic source records for Sychar, the eastern lakeshore, the Transfiguration mountain, Ephraim, Bethphage and Emmaus.
