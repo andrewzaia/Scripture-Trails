@@ -1,6 +1,14 @@
 {
   "releases": [
     {
+      "version": "0.15.3",
+      "date": "2026-10-28",
+      "title": "More spacious highlight field labels",
+      "changes": [
+        "Add space above the verse-reference and highlight-colour labels, with a small gap before each field."
+      ]
+    },
+    {
       "version": "0.15.2",
       "date": "2026-10-28",
       "title": "Reader and changelog layout refinements",
