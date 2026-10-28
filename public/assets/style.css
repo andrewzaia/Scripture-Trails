@@ -185,3 +185,6 @@ body.light .atlas-preview-panel{background:var(--surface2)}
 
 /* Separate the reader highlight action from its colour selector. */
 #save-highlight{margin-top:14px}
+
+/* Give each personal highlight field a distinct label and control group. */
+.study-side label[for="highlight-ref"],.study-side label[for="highlight-colour"]{display:block;margin:14px 0 6px}

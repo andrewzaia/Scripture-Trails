@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.15.3 - 28/10/2026: More spacious highlight field labels
+
+- Add space above the verse-reference and highlight-colour labels, with a small gap before each field.
+
 ## 0.15.2 - 28/10/2026: Reader and changelog layout refinements
 
 - Add spacing between the highlight colour selector and Save highlight button.
