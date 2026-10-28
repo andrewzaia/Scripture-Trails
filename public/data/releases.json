@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "version": "0.15.1",
+      "date": "2026-10-28",
+      "title": "Voyage to Rome evidence notes",
+      "changes": [
+        "Correct the third-journey scope note to distinguish the separately available Voyage to Rome.",
+        "Include Acts 27:17-26 in the voyage uncertainty register so the storm-drift discussion has its supporting passage link."
+      ]
+    },
+    {
       "version": "0.15.0",
       "date": "2026-10-28",
       "title": "Linked notes and verse highlights",
