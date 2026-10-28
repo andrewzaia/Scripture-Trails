@@ -51,7 +51,7 @@ export function appendCitationReview(parent,kind,target){
 
 export function renderCitationSummary(root){
  if(!root)return;
- root.replaceChildren(make('p','Reviewed coverage: 18 Gospel issues, 15 place dossiers, four Nehemiah readings and twenty-eight selected passage comparisons. Includes the first priority batch and a scientific/archaeological sources and the first twenty-connection review batch. Each assessment records a decision, checked source scope and remaining limitations.'));
+ root.replaceChildren(make('p','Reviewed coverage: 18 Gospel issues, 15 place dossiers, four Nehemiah readings and twenty-eight selected passage comparisons. Includes the first priority batch, scientific and archaeological sources, and twenty further connection assessments. Each assessment records a decision, checked source scope and remaining limitations.'));
  root.append(make('p','The Bible is the authoritative foundation of Scripture Trails. Archaeological and historical publications supply supporting context within their stated scope. This AI-assisted editorial review does not constitute independent specialist signoff.'));
  for(const [kind,title] of [['issue','Gospel issue assessments'],['place','Place citation assessments'],['trail','Nehemiah passage checks'],['connection','Selected passage comparisons']]){
   const group=make('details',undefined,'citation-review-group');group.append(make('summary',title));
