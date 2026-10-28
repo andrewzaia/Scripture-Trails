@@ -3,7 +3,7 @@ import {validateCanonicalReference} from './reference-integrity.js';
 import {PATHS} from './studies.js';
 
 const fields=['id','title','refs','completed','start','days'];
-export function validDate(value){return typeof value==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(value)&&value>='1900-01-01'&&value<='9998-12-31'&&Number.isFinite(Date.parse(value+'T12:00:00Z'))&&new Date(value+'T12:00:00Z').toISOString().slice(0,10)===value;}
+export function validDate(value){return typeof value==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(value)&&value>='1900-01-01'&&value<='9997-12-31'&&Number.isFinite(Date.parse(value+'T12:00:00Z'))&&new Date(value+'T12:00:00Z').toISOString().slice(0,10)===value;}
 export function localDate(now=new Date()){return `${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}-${String(now.getDate()).padStart(2,'0')}`;}
 export function validateCollections(value,counts){
  if(!Array.isArray(value)||value.length>50)throw Error('Use no more than 50 study collections.');
@@ -14,7 +14,7 @@ export function validateCollections(value,counts){
   if(!Array.isArray(c.refs)||!c.refs.length||c.refs.length>100||c.refs.some(r=>typeof r!=='string'||!validateCanonicalReference(r,counts)||!parseRef(r)))throw Error('Each collection needs 1 to 100 valid passages.');
   const refs=c.refs.map(r=>parseRef(r).formatted);
   if(new Set(refs).size!==refs.length||!Array.isArray(c.completed)||new Set(c.completed).size!==c.completed.length||c.completed.some(r=>!refs.includes(r)))throw Error('Duplicate passages or invalid collection progress.');
-  if(c.start!==null&&!validDate(c.start))throw Error('Choose a valid start date from 1900 to 9998.');
+  if(c.start!==null&&!validDate(c.start))throw Error('Choose a valid start date from 1900 to 9997.');
   if(!Array.isArray(c.days)||!c.days.length||new Set(c.days).size!==c.days.length||c.days.some(d=>!Number.isInteger(d)||d<0||d>6))throw Error('Choose at least one reading day.');
   return {id:c.id,title:c.title.trim(),refs,completed:refs.filter(r=>c.completed.includes(r)),start:c.start,days:[...c.days].sort()};
  });

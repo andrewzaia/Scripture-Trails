@@ -8,7 +8,7 @@ const collection=()=>({id:'c-test',title:'Hope',refs:['John 1:1','Psalms 23','Ro
 const notebook=collections=>({bookmarks:[],notes:{},readingPlans:{},annotations:{notes:[],highlights:{}},collections});
 test('collection references canonicalise and invalid, duplicate and excessive data is rejected',()=>{
  const c=collection();c.refs[0]='Jn 1:1';assert.equal(validateCollections([c],counts)[0].refs[0],'John 1:1');
- for(const mutate of [c=>c.refs=['John 1:99'],c=>c.refs=['John 1:1','Jn 1:1'],c=>c.completed=['Mark 1:1'],c=>c.days=[],c=>c.days=[7],c=>c.start='2027-02-29',c=>c.start='2027-13-01',c=>c.title='',c=>c.extra=true,c=>c.id='__proto__']){const c=collection();mutate(c);assert.throws(()=>validateCollections([c],counts));}
+ for(const mutate of [c=>c.refs=['John 1:99'],c=>c.refs=['John 1:1','Jn 1:1'],c=>c.completed=['Mark 1:1'],c=>c.days=[],c=>c.days=[7],c=>c.start='2027-02-29',c=>c.start='2027-13-01',c=>c.start='9998-01-01',c=>c.title='',c=>c.extra=true,c=>c.id='__proto__']){const c=collection();mutate(c);assert.throws(()=>validateCollections([c],counts));}
  assert.throws(()=>validateCollections([collection(),collection()],counts));assert.throws(()=>validateCollections(Array(51).fill(collection()),counts));
 });
 test('calendar handles leap days, year boundaries, skipped weekdays and fixed dates after completion',()=>{
