@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.15.2 - 28/10/2026: Reader and changelog layout refinements
+
+- Add spacing between the highlight colour selector and Save highlight button.
+- Remove the Discover-only navigation number for consistent menu labels.
+- Align changelog dates and version badges in consistent columns, with a compact layout on small screens.
+
 ## 0.15.1 - 28/10/2026: Voyage to Rome evidence notes
 
 - Correct the third-journey scope note to distinguish the separately available Voyage to Rome.
