@@ -31,6 +31,8 @@ nextApp=versionedImport(nextApp,'annotations.js?v='+oldVersion,'annotations.js?v
 let finalBackup=versionedImport(nextBackup,'annotations.js?v='+oldVersion,'annotations.js?v='+newVersion,'backup annotations');
 nextApp=versionedImport(nextApp,'study-collections.js?v='+oldVersion,'study-collections.js?v='+newVersion,'study collections');
 finalBackup=versionedImport(finalBackup,'study-collections.js?v='+oldVersion,'study-collections.js?v='+newVersion,'backup study collections');
+const annotationsPath='public/assets/annotations.js';
+const nextAnnotations=versionedImport(read(annotationsPath),'note-places.js?v='+oldVersion,'note-places.js?v='+newVersion,'notebook place registry');
 const prevIndex=read(indexPath);
 let nextIndex=versionedImport(prevIndex,'entity-index-data.js?v='+oldVersion,'entity-index-data.js?v='+newVersion,'index data module');
 nextIndex=versionedImport(nextIndex,"ENTITY_INDEX_DATA_VERSION='"+oldVersion+"'","ENTITY_INDEX_DATA_VERSION='"+newVersion+"'",'index JSON files');
@@ -55,6 +57,7 @@ writeFileSync(historyPath,JSON.stringify(history,null,2)+'\n');
 writeFileSync(htmlPath,newHtml);
 writeFileSync(appPath,nextApp);
 writeFileSync(backupPath,finalBackup);
+writeFileSync(annotationsPath,nextAnnotations);
 writeFileSync(graphPath,nextGraph);
 writeFileSync(indexPath,nextIndex);
 writeFileSync(evidencePath,nextEvidence);

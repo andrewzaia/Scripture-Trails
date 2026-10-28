@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.17.0 - 28/10/2026: Place-linked observations and notebook organisation
+
+- Link private observations to passages, existing places and regions, or both.
+- Filter notes by place and annotation type, and move between place profiles and your private notes without losing a draft.
+- Include place links in version 5 notebook backups while supporting older files and previewing conflicting links.
+
 ## 0.16.1 - 28/10/2026: Reliable live version and changelog display
 
 - Keep the footer tied to the loaded website release and prevent cached changelog data from showing an older version.

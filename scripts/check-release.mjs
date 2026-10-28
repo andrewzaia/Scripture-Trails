@@ -23,6 +23,7 @@ for(const name of ['paul-map.js','roadmap.js','notebook-backup.js','reading-plan
 const evidence=readFileSync('public/assets/connection-evidence.js','utf8');
 if(!evidence.includes('connection-evidence-expanded.js?v='+pkg.version))throw new Error('Expanded evidence cache key must match release version');
 if(!readFileSync('public/assets/notebook-backup.js','utf8').includes('study-collections.js?v='+pkg.version))throw Error('Backup collection module must match release version');
+if(!readFileSync('public/assets/annotations.js','utf8').includes('note-places.js?v='+pkg.version))throw Error('Notebook place registry must match release version');
 // PR validation covers ALL branch commits. Cloudflare's production checkout can be shallow,
 // so only GitHub Actions must have full history; every build still checks release metadata.
 // GitHub Actions checks out full history (fetch-depth: 0) so the merge base is available.

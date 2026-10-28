@@ -4,7 +4,7 @@
   "description": "A transparent, evidence-aware roadmap. Delivered means implementation exists, not that every scholarly question is settled. The accuracy audit is an initial, publicly documented editorial screening, not external specialist certification.",
   "currentFocus": [
     "Review the Pauline journey location and textual questions against specialist research",
-    "Next study milestone: place-linked observations and improved study organisation",
+    "Next content milestone: expand person-centred Scripture trails with explicit evidence and review labels",
     "Expand person-centred trails and Hebrew Bible geography while preserving evidence distinctions"
   ],
   "phases": [
@@ -226,15 +226,15 @@
     {
       "id": "study-tools",
       "phase": "platform",
-      "status": "next",
+      "status": "delivered",
       "title": "Richer notes, exports and reading plans",
-      "summary": "Bring linked observations, highlights and optional study plans into one private workspace.",
+      "summary": "Linked observations, place links, highlights, notebook backups and optional passage schedules now form a private study workspace.",
       "capabilities": [
         "Notes linked to multiple verses and places",
         "Export and import personal work with clear privacy notices",
         "Reading goals and optional progress tracking"
       ],
-      "verification": "Should be accessible, tested and usable without creating an account."
+      "verification": "Local storage, reference and place validation, backup compatibility, merge conflicts and reading schedules are tested. No account or sync is required."
     },
     {
       "id": "accounts",
@@ -383,7 +383,7 @@
         "Local progress saved without an account",
         "Version 2 notebook backups include progress; older backups remain supported"
       ],
-      "verification": "Plan-reference validation, completion merge and backup compatibility tested. Progress is self-reported and does not measure reading time or comprehension. Structured annotations and calendar-based reading schedules remain future work."
+      "verification": "Plan-reference validation, completion merge and backup compatibility tested. Progress is self-reported and does not measure reading time or comprehension. Structured annotations and calendar-based schedules are now delivered in separate milestones."
     },
     {
       "id": "annotations-highlights",
@@ -412,6 +412,33 @@
         "Version 4 notebook backups retain collections and schedules, supporting versions 1 to 3"
       ],
       "verification": "Date boundaries, reference validation, backup compatibility, conflicts and storage failures tested. Dates use the device calendar. No reminders or automatic completion."
+    },
+    {
+      "id": "place-linked-notes",
+      "phase": "platform",
+      "status": "delivered",
+      "title": "Place-linked observations and notebook organisation",
+      "summary": "Connect private observations to existing places and regions, then move between the notebook and source-qualified place profiles.",
+      "capabilities": [
+        "Link a note to passages, up to 20 indexed places, or both",
+        "Filter annotations by place, note type, tag, passage, text or highlight colour",
+        "Open private notes from a place profile without discarding the current draft",
+        "Version 5 notebook backups include place links and retain support for versions 1 to 4"
+      ],
+      "verification": "The 49-place registry is checked against the existing Gospel and Hebrew Bible source indexes. Notes are private user observations, not geographic evidence. Backup conflicts include changed place links; storage failures and stale writes are tested."
+    },
+    {
+      "id": "person-trails-expansion",
+      "phase": "connections",
+      "status": "next",
+      "title": "Further person-centred Scripture trails",
+      "summary": "Extend the existing eight trails with further passage-linked studies and explicit editorial review labels.",
+      "capabilities": [
+        "Cited passage sequences for further biblical figures",
+        "Context notes, interpretation cautions and source distinctions",
+        "Reader and Atlas navigation with reference validation"
+      ],
+      "verification": "Planned editorial reading aids. Additional content needs its own reference and evidence checks; independent specialist review must remain separately identified."
     }
   ]
 }
