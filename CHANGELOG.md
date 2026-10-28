@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.15.4 - 28/10/2026: Consistent People and Places page spacing
+
+- Align the People, places and events content with the page gutters used elsewhere, including tablet and mobile spacing.
+
 ## 0.15.3 - 28/10/2026: More spacious highlight field labels
 
 - Add space above the verse-reference and highlight-colour labels, with a small gap before each field.

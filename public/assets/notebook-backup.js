@@ -1,5 +1,5 @@
-import {validateAnnotations,mergeAnnotations,emptyAnnotations} from './annotations.js?v=0.15.3';
-import {validateReadingPlans,mergeReadingPlans} from './reading-plans.js?v=0.15.3';
+import {validateAnnotations,mergeAnnotations,emptyAnnotations} from './annotations.js?v=0.15.4';
+import {validateReadingPlans,mergeReadingPlans} from './reading-plans.js?v=0.15.4';
 import {parseRef} from './books.js';
 import {validateCanonicalReference} from './reference-integrity.js';
 export const BACKUP_LIMIT=2*1024*1024;
