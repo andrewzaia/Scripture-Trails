@@ -30,7 +30,7 @@ export function createCityStudies(root,{onRead,onAtlas,onJourney}={}){
  let data,selected='jerusalem',selectedPoint='',selectedDebate='cana',selectedCandidate=0,pending;
  const $=id=>root.querySelector(`[data-city="${id}"]`);
  const linked=(ref,caption,callback)=>{const b=make('button','city-verse-link',caption||ref);b.type='button';b.title=`Read ${ref}`;b.addEventListener('click',()=>callback?.(passageStart(ref)));return b;};
- const sourceAnchor=(key)=>{const src=data.sources[key];const a=make('a','city-source-link',src.title);a.href=src.url;a.target='_blank';a.rel='noopener noreferrer';const small=make('small','',src.publisher+' | '+src.kind);return {a,small};};
+ const sourceAnchor=(key)=>{const src=data.sources[key];const a=make('a','city-source-link',src.title);a.href=src.url;a.target='_blank';a.rel='noopener noreferrer';const small=make('small','',src.publisher+' | '+src.kind+(src.author?' | '+src.author:'')+(src.doi?' | DOI: '+src.doi:'')+(src.access?' | Checked '+src.checkedOn+': '+src.access:''));return {a,small};};
  const sourceList=(keys,target)=>{target.replaceChildren();for(const key of new Set(keys)){const li=make('li');const {a,small}=sourceAnchor(key);li.append(a,small);target.append(li);}};
  const tag=(kind)=>make('span','city-type city-type-'+kind,kindNames[kind]||kind);
  const tinyMap=(target,points,selectedId,onSelect,help)=>{

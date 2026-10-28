@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-10-26",
+  "updated": "2026-10-28",
   "methodology": "Canonical Gospel/Acts and Old Testament references are primary for claims made by biblical authors. External archaeological, heritage and historical sources support only the independent material-history claims to which they are attached. Timelines show approximate periods, not a fully dated life of Jesus. Illustrative pins and outlines are NOT surveyed ancient borders, pilgrim routes or site footprints. This is research-based editorial synthesis, not peer-reviewed certification.",
   "reviewStatus": "Source-linked editorial research; external specialist review outstanding",
   "sources": {
@@ -93,6 +93,78 @@
       "publisher": "Encyclopedia of the Bible, Bible Gateway",
       "url": "https://www.biblegateway.com/resources/encyclopedia-of-the-bible/Emmaus",
       "kind": "Bible geography reference"
+    },
+    "gethsemane-dating": {
+      "title": "The age of the olive trees in the Garden of Gethsemane (2015)",
+      "author": "Mauro Bernabei",
+      "publisher": "Journal of Archaeological Science; CNR repository",
+      "kind": "publisher-abstract",
+      "url": "https://iris.cnr.it/handle/20.500.14243/287216",
+      "checkedOn": "2026-10-28",
+      "access": "Institutional abstract and bibliographic metadata checked. Full paper, laboratory measurements and calibration models not independently reanalysed.",
+      "rights": "Linked only; no publisher text, photographs or tables redistributed.",
+      "doi": "10.1016/j.jas.2014.10.011"
+    },
+    "jerusalem-radiocarbon": {
+      "title": "Radiocarbon chronology of Iron Age Jerusalem reveals calibration offsets and architectural developments (2024)",
+      "author": "Johanna Regev and colleagues",
+      "publisher": "PNAS 121(19), e2321024121; PubMed",
+      "kind": "publisher-abstract",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38683984/",
+      "checkedOn": "2026-10-28",
+      "access": "Abstract, authorship and figure captions checked. Full supplementary dataset and Bayesian models not reanalysed; full-text access was limited.",
+      "rights": "Linked only; no publisher text, photographs or tables redistributed.",
+      "doi": "10.1073/pnas.2321024121"
+    },
+    "jericho-radiocarbon": {
+      "title": "Tell es-Sultan (Jericho): Radiocarbon results of short-lived cereal and multiyear charcoal samples (1995)",
+      "author": "Hendrik J. Bruins and Johannes van der Plicht",
+      "publisher": "Radiocarbon 37(2), 213-220; University of Groningen",
+      "kind": "publisher-abstract",
+      "url": "https://research.rug.nl/en/publications/tell-es-sultan-jericho-radiocarbon-results-of-short-lived-cereal-/",
+      "checkedOn": "2026-10-28",
+      "access": "Institutional abstract and publication record checked. The study uses historical calibration curves; no recalibration or raw-sample reanalysis performed.",
+      "rights": "Linked only; no publisher text, photographs or tables redistributed."
+    },
+    "olives-cave": {
+      "title": "Jerusalem, Mount of Olives (2020)",
+      "author": "Gidon Goldenberg, Eitan Klein and Ilan Hadad",
+      "publisher": "Israel Antiquities Authority, Hadashot Arkheologiyot 132",
+      "kind": "excavation-report",
+      "url": "https://hadashot.iaa.org.il/Report_Detail_Eng.aspx?id=25810",
+      "checkedOn": "2026-10-28",
+      "access": "Readable final report checked, including pottery, ossuary lids and cave context. Cited comparative reports not separately audited.",
+      "rights": "Linked only; no publisher text, photographs or tables redistributed."
+    },
+    "bethany-saller": {
+      "title": "Excavations at Bethany (1949-1953), Collectio Maior 12 (1957)",
+      "author": "Sylvester John Saller",
+      "publisher": "Studium Biblicum Franciscanum",
+      "kind": "access-limited",
+      "url": "https://sbf.custodia.org/en/publications/collectio-maior/excavations-at-bethany",
+      "checkedOn": "2026-10-28",
+      "access": "Publisher catalogue and contents checked only. Full excavation monograph not read; catalogue confirms research exists, not its detailed conclusions.",
+      "rights": "Linked only; no publisher text, photographs or tables redistributed."
+    },
+    "bethany-heritage": {
+      "title": "Tomb of Lazarus - site history",
+      "author": "Bethany Project / Pro Terra Sancta",
+      "publisher": "Pro Terra Sancta",
+      "kind": "project-summary",
+      "url": "https://bethanyproject.proterrasancta.org/betania/en/tomb-of-lazarus/",
+      "checkedOn": "2026-10-28",
+      "access": "Project account of commemoration and architectural alterations checked. Ancient pilgrim texts and excavation stratigraphy not independently audited.",
+      "rights": "Linked only; no publisher text, photographs or tables redistributed."
+    },
+    "gethsemane-bath": {
+      "title": "Second Temple period remains unearthed at Jerusalem's Gethsemane (2020)",
+      "author": "IAA excavation announcement; Amit Re'em and David Yeger quoted",
+      "publisher": "Friends of the Israel Antiquities Authority",
+      "kind": "project-summary",
+      "url": "https://www.friendsofiaa.org/news/2020/12/29/second-temple-period-remains-unearthed-at-jerusalems-gethsemane-the-first-remains-from-the-era-that-jesus-visited-the-site-according-to-christian-belief",
+      "checkedOn": "2026-10-28",
+      "access": "Excavation announcement checked; this is a public project account, not a final stratigraphic report. Oil-production interpretation is explicitly tentative.",
+      "rights": "Linked only; no publisher text, photographs or tables redistributed."
     }
   },
   "cities": [
@@ -277,6 +349,18 @@
           "passages": [
             "John 19:17-42"
           ]
+        },
+        {
+          "title": "Radiocarbon evidence and chronology",
+          "kind": "peer-reviewed",
+          "claim": "Regev and colleagues report 103 radiocarbon measurements across five excavation areas, supporting an Iron Age urban chronology and identifying regional calibration offsets.",
+          "limitation": "Radiocarbon dates organic samples in archaeological contexts. Calibration, stratigraphy and modelling affect interpretation; the study does not date every building or independently establish every biblical event.",
+          "sourceIds": [
+            "jerusalem-radiocarbon"
+          ],
+          "passages": [
+            "2 Kings 25:8-12"
+          ]
         }
       ],
       "mapPoints": [
@@ -338,7 +422,8 @@
       "sourceIds": [
         "jerusalem-upper",
         "jerusalem-arch",
-        "jerusalem-unesco"
+        "jerusalem-unesco",
+        "jerusalem-radiocarbon"
       ],
       "image": {
         "title": "Modern aerial view of Jerusalem and the Temple Mount",
@@ -554,7 +639,7 @@
       "image": {
         "title": "Church of the Annunciation in modern Nazareth",
         "file": "Nazareth_Church_of_the_Annunciation.jpg",
-        "author": "Magalhães",
+        "author": "Magalh\u00e3es",
         "license": "Public domain",
         "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
         "page": "https://commons.wikimedia.org/wiki/File:Nazareth_Church_of_the_Annunciation.jpg",
@@ -1176,6 +1261,18 @@
           "passages": [
             "Luke 19:1-10"
           ]
+        },
+        {
+          "title": "Radiocarbon evidence and chronology",
+          "kind": "peer-reviewed",
+          "claim": "Bruins and van der Plicht analysed 18 samples, distinguishing short-lived cereal grains from charcoal. Their published calibration placed the final Middle Bronze Age destruction in the late seventeenth or sixteenth century BCE.",
+          "limitation": "This is the study's reported 1995 calibration, not a new calculation. It must not be relabelled as a secure fifteenth- or thirteenth-century conquest date; archaeological destruction alone identifies neither attackers nor a biblical event.",
+          "sourceIds": [
+            "jericho-radiocarbon"
+          ],
+          "passages": [
+            "Joshua 6:1-27"
+          ]
         }
       ],
       "mapPoints": [
@@ -1224,7 +1321,8 @@
       ],
       "sourceIds": [
         "jericho-unesco",
-        "jericho-palaces"
+        "jericho-palaces",
+        "jericho-radiocarbon"
       ],
       "image": {
         "title": "Archaeological excavation at Tell es-Sultan (Bronze Age / Neolithic site)",

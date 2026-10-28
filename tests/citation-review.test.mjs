@@ -11,9 +11,9 @@ const targets={issue:new Set(audit.issues.map(x=>x.id)),place:new Set(Object.key
 test('declared batch resolves real targets, canonical passages and scoped claim-level citations',()=>{
  assert.deepEqual(CITATION_REVIEW,json('citation-review'));
  assert.equal(validateCitationReview(CITATION_REVIEW,counts,targets),true);
- assert.equal(CITATION_REVIEW.records.length,43);
- assert.equal(CITATION_REVIEW.records.filter(r=>r.kind==='place'&&r.decision==='sources-added').length,4);
- assert.equal(CITATION_REVIEW.records.filter(r=>r.kind==='place'&&r.decision==='warning-retained').length,9);
+ assert.equal(CITATION_REVIEW.records.length,45);
+ assert.equal(CITATION_REVIEW.records.filter(r=>r.kind==='place'&&r.decision==='sources-added').length,9);
+ assert.equal(CITATION_REVIEW.records.filter(r=>r.kind==='place'&&r.decision==='warning-retained').length,6);
  for(const r of CITATION_REVIEW.records.filter(r=>r.kind==='connection')){
   const e=CONNECTION_EVIDENCE.find(e=>e.id===r.target);
   assert.ok(r.passages.some(p=>p.startsWith(e.from.split(':')[0]+':')));
@@ -47,7 +47,7 @@ test('claim panels and About register show scope, external links and retained wa
  for(const a of all.filter(e=>e.tagName==='a')){assert.match(a.href,/^https:\/\//);assert.equal(a.rel,'noopener noreferrer');}
  root.replaceChildren();appendCitationReview(root,'place','not-indexed');assert.equal(root.children.length,0);
  renderCitationSummary(root);const first=nodes(root).length;renderCitationSummary(root);assert.equal(nodes(root).length,first);
- assert.equal(nodes(root).filter(e=>e.tagName==='article').length,43);
+ assert.equal(nodes(root).filter(e=>e.tagName==='article').length,45);
  assert.ok(nodes(root).some(e=>e.download?.endsWith('.json')));
  assert.ok(nodes(root).some(e=>e.textContent.includes('107')));
 });
@@ -56,4 +56,14 @@ test('review register is reachable from About, Gospel, profiles, Atlas and compa
  assert.match(read('public/assets/app.js'),/if\(name==='about'\)renderCitationSummary/);
  assert.match(read('public/index.html'),/id="citation-review-summary"/);
  const roadmap=json('roadmap');assert.equal(roadmap.milestones.find(m=>m.id==='source-coverage').status,'delivered');assert.equal(roadmap.milestones.find(m=>m.id==='source-coverage-followup').status,'planned');assert.equal(roadmap.milestones.find(m=>m.id==='browser-accessibility').status,'next');
+});
+test('scientific expansion preserves sample, calibration, publication-access and event limits',()=>{
+ const trees=citationReviews('place','gethsemane')[0],jericho=citationReviews('place','jericho')[0];
+ assert.match(trees.note,/three of eight.*twelfth century/);assert.match(trees.limitation,/neither date all trees/);
+ assert.match(jericho.limitation,/1995 calibration/);assert.match(jericho.limitation,/neither attackers/);
+ assert.match(citationReviews('place','bethany')[0].limitation,/full monograph remains unread/);
+ for(const key of ['gethsemane-dating','jerusalem-radiocarbon','jericho-radiocarbon','olives-cave','bethany-saller','bethany-heritage','gethsemane-bath']){
+  const s=CITATION_REVIEW.sources[key];assert.ok(s.author&&s.publisher&&s.access);assert.equal(s.checkedOn,'2026-10-28');
+ }
+ const cities=json('city-studies');for(const id of ['jerusalem','jericho']){const f=cities.cities.find(c=>c.id===id).findings.find(f=>f.title==='Radiocarbon evidence and chronology');assert.ok(f.sourceIds.length);assert.ok(f.limitation.length>60);}
 });

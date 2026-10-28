@@ -48,7 +48,7 @@ test('audit issue IDs, external source provenance, and milestone do not claim sp
  const bad=structuredClone(a);bad.issues[0].events=['not-a-real-episode'];assert.throws(()=>validateAuditData(bad,j,g));
  const bad2=structuredClone(j);delete bad2.events[0].review;assert.throws(()=>validateAuditData(a,bad2,g));
  const noBibliography=Object.values(g.places).filter(x=>!x.literature.length);
- assert.equal(noBibliography.length,21);assert.ok(noBibliography.every(x=>x.review.independentSourceCount===0));
+ assert.equal(noBibliography.length,18);assert.ok(noBibliography.every(x=>x.review.independentSourceCount===0));
  assert.ok(a.issues.some(x=>x.id==='bethany-anointing'&&x.status==='open'));
 });
 test('visible map includes qualified evidence notes and public correction register',()=>{
