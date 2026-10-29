@@ -52,3 +52,11 @@ test('reading progress saved against the earlier short journeys remains valid',(
  assert.ok(merged.creation.includes(earlier.creation[0]));
  assert.ok(merged.creation.includes(later));
 });
+
+test('all expanded journals retain visible, reasonable approximate study times',()=>{
+ const expected={creation:'3-4 hours',messiah:'3-4 hours',shepherd:'2-3 hours',covenant:'4-5 hours',grace:'4-5 hours',comfort:'3-4 hours'};
+ assert.deepEqual(Object.fromEntries(PATHS.map(path=>[path.id,path.time])),expected);
+ const app=readFileSync(new URL('../public/assets/app.js',import.meta.url),'utf8');
+ assert.ok(app.includes('Approx. ${path.time} |'), 'Journey cards should show their estimate');
+ assert.ok(app.includes('Approx. ${path.time} total'), 'The detailed journal should show its estimate');
+});
