@@ -13,7 +13,7 @@ const targets={issue:new Set(audit.issues.map(x=>x.id)),place:new Set(Object.key
 test('declared batch resolves real targets, canonical passages and scoped claim-level citations',()=>{
  assert.deepEqual(CITATION_REVIEW,json('citation-review'));
  assert.equal(validateCitationReview(CITATION_REVIEW,counts,targets),true);
- assert.equal(CITATION_REVIEW.records.length,125);
+ assert.equal(CITATION_REVIEW.records.length,145);
  assert.equal(CITATION_REVIEW.records.filter(r=>r.kind==='place'&&r.decision==='sources-added').length,15);
  assert.equal(CITATION_REVIEW.records.filter(r=>r.kind==='place'&&r.decision==='warning-retained').length,0);
  for(const r of CITATION_REVIEW.records.filter(r=>r.kind==='connection')){
@@ -49,9 +49,9 @@ test('claim panels and About register show scope, external links and retained wa
  for(const a of all.filter(e=>e.tagName==='a')){assert.match(a.href,/^https:\/\//);assert.equal(a.rel,'noopener noreferrer');}
  root.replaceChildren();appendCitationReview(root,'place','not-indexed');assert.equal(root.children.length,0);
  renderCitationSummary(root);const first=nodes(root).length;renderCitationSummary(root);assert.equal(nodes(root).length,first);
- assert.equal(nodes(root).filter(e=>e.tagName==='article').length,125);
+ assert.equal(nodes(root).filter(e=>e.tagName==='article').length,145);
  assert.ok(nodes(root).some(e=>e.download?.endsWith('.json')));
- assert.ok(nodes(root).some(e=>e.textContent.includes('27')));
+ assert.ok(nodes(root).some(e=>e.textContent.includes('The other 7 explained pairs')));
 });
 test('review register is reachable from About, Gospel, profiles, Atlas and comparison panel',()=>{
  for(const path of ['app.js','jesus-map.js','entity-index.js','atlas-comparison.js'])assert.match(read('public/assets/'+path),/appendCitationReview/);
@@ -128,8 +128,8 @@ test('third batch ties twenty distinct anchors to complete contexts and scoped n
   assert.equal(e.kind,id==='ce038'?'echo':'theme');
  }
  const connections=CITATION_REVIEW.records.filter(r=>r.kind==='connection');
- assert.equal(connections.length,88);assert.equal(CONNECTION_EVIDENCE.filter(e=>!connections.some(r=>r.target===e.id)).length,27);
- assert.equal(connections.filter(r=>r.citations.some(c=>['scholarly-commentary','publisher-note','publisher-abstract'].includes(CITATION_REVIEW.sources[c.sourceId].kind))).length,56);
+ assert.equal(connections.length,108);assert.equal(CONNECTION_EVIDENCE.filter(e=>!connections.some(r=>r.target===e.id)).length,7);
+ assert.equal(connections.filter(r=>r.citations.some(c=>['scholarly-commentary','publisher-note','publisher-abstract'].includes(CITATION_REVIEW.sources[c.sourceId].kind))).length,76);
 });
 
 test('third batch keeps quotation, interpretation and suffering limits visible',()=>{
@@ -169,19 +169,58 @@ test('fourth batch adds twenty bounded narrative parallels with scoped commentar
  assert.match(CITATION_REVIEW.sources['b4-1kings'].access,/indexed excerpts.*HTTP 403/);
  assert.match(CITATION_REVIEW.sources['b4-2chronicles'].access,/indexed excerpts.*HTTP 403/);
  assert.match(batch.method,/two commentaries was limited to indexed excerpts/);
- const followup=json('roadmap').milestones.find(m=>m.id==='source-coverage-followup');assert.match(followup.summary,/88 of 115.*27.*56/);
+ const followup=json('roadmap').milestones.find(m=>m.id==='source-coverage-followup');assert.match(followup.summary,/108 of 115.*7.*76/);
 });
 
 test('fourth narrative batch preserves consequential differences and access limits',()=>{
  const review=id=>citationReviews('connection',id)[0];
  for(const [id,pattern] of [['ce020',/tribute/],['ce021',/priests carrying.*Levites/],['ce066',/explicit theological verdict/],['ce068',/Narrative placement alone does not date/],['ce069',/different threshing-floor names/],['ce070',/Chronicles omits that clause/],['ce074',/not a settled chronological result/],['ce076',/modern nation/],['ce077',/queen is unnamed/],['ce078',/not demonstrate that those works are extant/],['ce080',/differently named mother/],['ce081',/Ezra.*not adopted/],['ce083',/English ESV numbering/],['ce085',/distinct people.*modern diagnosis/]])assert.match(review(id).limitation,pattern);
  assert.match(review('ce080').limitation,/indexed passage excerpts/);
- assert.equal(CITATION_REVIEW.scope.connections,88);
- assert.equal(CONNECTION_EVIDENCE.length-CITATION_REVIEW.scope.connections,27);
+ assert.equal(CITATION_REVIEW.scope.connections,108);
+ assert.equal(CONNECTION_EVIDENCE.length-CITATION_REVIEW.scope.connections,7);
 });
 
 test('fourth batch preserves all previous dated assessments and source records',()=>{
  const digest=value=>createHash('sha256').update(JSON.stringify(value)).digest('hex');
- assert.equal(digest(CITATION_REVIEW.records.filter(r=>r.batch!=='connections-20-04')),'65b0a7ad0ff29c87815075702742b7342085c2db3f921e83601c731f37c834ce');
- assert.equal(digest(Object.fromEntries(Object.entries(CITATION_REVIEW.sources).filter(([id])=>!id.startsWith('b4-')))),'35c34ed5434903be0028b2aad319d2de9113df5b7313947e2b3d711e72185268');
+ assert.equal(digest(CITATION_REVIEW.records.slice(0,105)),'65b0a7ad0ff29c87815075702742b7342085c2db3f921e83601c731f37c834ce');
+ assert.equal(digest(Object.fromEntries(Object.entries(CITATION_REVIEW.sources).slice(0,190))),'35c34ed5434903be0028b2aad319d2de9113df5b7313947e2b3d711e72185268');
+});
+
+test('fifth batch assesses twenty remaining pairs with contained anchors and scoped named sources',()=>{
+ const batch=CITATION_REVIEW.batches.find(b=>b.id==='connections-20-05');
+ assert.deepEqual(batch.targets,['ce018','ce019','ce023','ce024','ce034','ce052','ce053','ce054','ce055','ce056','ce057','ce059','ce060','ce061','ce062','ce063','ce064','ce087','ce088','ce089']);
+ assert.equal(batch.count,20);
+ const contains=(range,anchor)=>range.book===anchor.book&&range.startChapter===anchor.startChapter&&range.endChapter===anchor.endChapter&&range.startVerse<=anchor.startVerse&&range.endVerse>=anchor.endVerse;
+ const scholars=new Set(),authors=new Set(),kinds={};
+ for(const id of batch.targets){
+  const r=citationReviews('connection',id)[0],e=CONNECTION_EVIDENCE.find(e=>e.id===id);
+  assert.equal(r.batch,batch.id);assert.equal(r.reviewedOn,'2026-10-29');assert.equal(r.anchor,e.from);
+  assert.equal(e.review,'scripture-context-screened');assert.equal(e.context,r.passages[1]);assert.equal(r.note,e.explanation);assert.ok(r.limitation.startsWith(e.caution));
+  assert.ok(contains(validateCanonicalReference(r.passages[0],counts),validateCanonicalReference(e.from,counts)));
+  assert.ok(contains(validateCanonicalReference(r.passages[1],counts),validateCanonicalReference(e.to,counts)));
+  assert.equal(r.citations.length,3);assert.equal(new Set(r.citations.map(c=>c.sourceId)).size,3);
+  assert.equal(r.citations.filter(c=>CITATION_REVIEW.sources[c.sourceId].kind==='primary-scripture').length,2);
+  const commentary=r.citations.filter(c=>CITATION_REVIEW.sources[c.sourceId].kind==='scholarly-commentary');assert.equal(commentary.length,1);
+  const s=CITATION_REVIEW.sources[commentary[0].sourceId];scholars.add(commentary[0].sourceId);authors.add(s.author);kinds[e.kind]=(kinds[e.kind]||0)+1;
+  assert.ok(r.note.includes(s.author));assert.equal(s.checkedOn,r.reviewedOn);assert.match(s.access,/Selected readable discussion checked/);assert.match(s.access,/Confessional interpretation/);
+  assert.match(r.limitation,/independent specialist review remain open/);
+ }
+ assert.equal(scholars.size,17);assert.equal(authors.size,16);assert.deepEqual(kinds,{parallel:7,theme:13});
+ const assessed=new Set(CITATION_REVIEW.records.filter(r=>r.kind==='connection').map(r=>r.target));
+ assert.deepEqual(CONNECTION_EVIDENCE.filter(e=>!assessed.has(e.id)).map(e=>e.id),['ce086','ce090','ce091','ce092','ce093','ce094','ce095']);
+});
+
+test('fifth batch retains account differences, bodily life, harm and the single Revelation vision',()=>{
+ const review=id=>citationReviews('connection',id)[0];
+ for(const [id,pattern] of [['ce018',/Matthew's additional petitions/],['ce019',/loveless Judaism/],['ce023',/companions' hearing.*not silently harmonised/],['ce024',/later retelling is not independent/],['ce034',/domineering leadership/],['ce052',/good works that follow/],['ce053',/precedes Lazarus's emergence/],['ce054',/permission for coercion/],['ce055',/does not explicitly cite Ecclesiastes/],['ce056',/Ephesians 2:10/],['ce057',/bodies are evil/],['ce059',/must not excuse abuse/],['ce060',/positive thinking/],['ce061',/excuse wrongdoing/],['ce062',/pairing with Ephesians is thematic/],['ce063',/reject evidence/],['ce064',/one passage, not two independent/],['ce087',/not its full implementation/],['ce088',/verified plague diagnosis/],['ce089',/differing order of remedy and sign/]])assert.match(review(id).limitation,pattern);
+ const vision=review('ce064');assert.equal(vision.passages[0],vision.passages[1]);assert.match(vision.title,/within one vision/);
+ const texts=vision.citations.map(c=>CITATION_REVIEW.sources[c.sourceId]).filter(s=>s.kind==='primary-scripture');
+ assert.deepEqual(new Set(texts.map(s=>s.publisher)),new Set(['USCCB','Crossway']));assert.equal(new Set(texts.map(s=>s.url)).size,2);
+ assert.equal(CITATION_REVIEW.scope.connections,108);
+});
+
+test('fifth batch preserves the complete previous assessment and source register',()=>{
+ const digest=value=>createHash('sha256').update(JSON.stringify(value)).digest('hex');
+ assert.equal(digest(CITATION_REVIEW.records.slice(0,125)),'79df0c2a0f6fb62b4206e42029506d89fa5888e6dba37ebe23003e29de8c6265');
+ assert.equal(digest(Object.fromEntries(Object.entries(CITATION_REVIEW.sources).slice(0,233))),'686a306569d6bc31a57ca9344f46a1dae8ea21ddd010fc9cab84ceda543972fe');
 });

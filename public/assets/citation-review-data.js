@@ -7,11 +7,11 @@ export const CITATION_REVIEW = {
     "issues": 18,
     "places": 15,
     "trailReadings": 4,
-    "connections": 88
+    "connections": 108
   },
   "deferred": [
     "All six previously unlinked named-place assessments now include external research. Bibliographic gaps in this declared batch are addressed at the stated scope; exact identifications, comparative excavation review, textual variants and abstract-only access remain unresolved. Regional placeholders were not upgraded.",
-    "The other 27 explained pairs retain their existing review labels and have no source-level assessment in these batches. Fifty-six assessed pairs now have named scholarly commentary or limited publisher-summary support; access includes the recorded indexed-excerpt limits. Other assessed pairs still rely on passage comparisons. Fuller literature, textual and independent specialist review remain open.",
+    "The other 7 explained pairs retain their existing review labels and have no source-level assessment in these batches. Seventy-six assessed pairs now have named scholarly commentary or limited publisher-summary support, with access scope recorded. Other assessed pairs still rely on passage comparisons. Fuller literature, textual and independent specialist review remain open.",
     "Other person-trail access gaps, full excavation reports, manuscript apparatuses, wider source coverage and independent specialist review remain open.",
     "The full OpenBible corpus remains unclassified."
   ],
@@ -2350,6 +2350,536 @@ export const CITATION_REVIEW = {
       "url": "https://www.esv.org/2%2BChronicles%2B26/",
       "checkedOn": "2026-10-29",
       "access": "Selected declared range checked in the publisher chapter view, which also contains neighbouring chapters. English verse numbering used. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no publisher passage text retained."
+    },
+    "b5-luke11": {
+      "title": "Commentary on Luke 11:1-13",
+      "author": "Jennifer S. Wyant",
+      "publisher": "Working Preacher, Luther Seminary (Christian lectionary commentary)",
+      "kind": "scholarly-commentary",
+      "url": "https://www.workingpreacher.org/commentaries/revised-common-lectionary/ordinary-17-3/commentary-on-luke-111-13-6",
+      "checkedOn": "2026-10-29",
+      "access": "Selected readable discussion checked: Shorter Lucan form, trust and prayer as a framework. Confessional interpretation; cited print works, Greek/textual claims and external historical reconstructions not independently examined. No full literature review or independent specialist signoff.",
+      "rights": "Linked only; no publication text retained."
+    },
+    "b5-mark12": {
+      "title": "Commentary on Mark 12:28-34",
+      "author": "Amanda Brobst-Renaud",
+      "publisher": "Working Preacher, Luther Seminary (Christian lectionary commentary)",
+      "kind": "scholarly-commentary",
+      "url": "https://www.workingpreacher.org/commentaries/revised-common-lectionary/ordinary-31-2/commentary-on-mark-1228-34-6",
+      "checkedOn": "2026-10-29",
+      "access": "Selected readable discussion checked: Jewish setting of the Shema and positive treatment of the scribe. Confessional interpretation; cited print works, Greek/textual claims and external historical reconstructions not independently examined. No full literature review or independent specialist signoff.",
+      "rights": "Linked only; no publication text retained."
+    },
+    "b5-acts9": {
+      "title": "Commentary on Acts 9:1-6 [7-20]",
+      "author": "Raj Nadella",
+      "publisher": "Working Preacher, Luther Seminary (Christian lectionary commentary)",
+      "kind": "scholarly-commentary",
+      "url": "https://www.workingpreacher.org/commentaries/revised-common-lectionary/third-sunday-of-easter-3/commentary-on-acts-91-6-7-20-5",
+      "checkedOn": "2026-10-29",
+      "access": "Selected readable discussion checked: Saul, the Way and cautions about modern conversion and triumphalist readings. Confessional interpretation; cited print works, Greek/textual claims and external historical reconstructions not independently examined. No full literature review or independent specialist signoff.",
+      "rights": "Linked only; no publication text retained."
+    },
+    "b5-acts7": {
+      "title": "Acts - selected commentary",
+      "author": "Alan J. Thompson",
+      "publisher": "The Gospel Coalition Bible Commentary (evangelical)",
+      "kind": "scholarly-commentary",
+      "url": "https://www.thegospelcoalition.org/commentary/acts/",
+      "checkedOn": "2026-10-29",
+      "access": "Selected readable discussion checked: Stephen's Moses narrative and divine presence in the wilderness, Acts 7:20-36. Confessional interpretation; cited print works, Greek/textual claims and external historical reconstructions not independently examined. No full literature review or independent specialist signoff.",
+      "rights": "Linked only; no publication text retained."
+    },
+    "b5-peter5": {
+      "title": "Commentary on 1 Peter 5:1-14",
+      "author": "Shively Smith",
+      "publisher": "Working Preacher, Luther Seminary (Christian lectionary commentary)",
+      "kind": "scholarly-commentary",
+      "url": "https://www.workingpreacher.org/commentaries/narrative-lectionary/preaching-series-on-1-peter-5-of-5/commentary-on-1-peter-13-23-5",
+      "checkedOn": "2026-10-29",
+      "access": "Selected readable discussion checked: Mutuality, divine authority and the elder-youth relationship in 5:1-5. Confessional interpretation; cited print works, Greek/textual claims and external historical reconstructions not independently examined. No full literature review or independent specialist signoff.",
+      "rights": "Linked only; no publication text retained."
+    },
+    "b5-ephesians2": {
+      "title": "Commentary on Ephesians 2:1-10",
+      "author": "Israel Kamudzandu",
+      "publisher": "Working Preacher, Luther Seminary (Christian lectionary commentary)",
+      "kind": "scholarly-commentary",
+      "url": "https://www.workingpreacher.org/commentaries/revised-common-lectionary/fourth-sunday-in-lent-2/commentary-on-ephesians-21-10-4",
+      "checkedOn": "2026-10-29",
+      "access": "Selected readable discussion checked: Reconciliation, grace as gift and good works in the community. Confessional interpretation; cited print works, Greek/textual claims and external historical reconstructions not independently examined. No full literature review or independent specialist signoff.",
+      "rights": "Linked only; no publication text retained."
+    },
+    "b5-corinthians15": {
+      "title": "Commentary on 1 Corinthians 15:12-20",
+      "author": "Frank L. Crouch",
+      "publisher": "Working Preacher, Luther Seminary (Christian lectionary commentary)",
+      "kind": "scholarly-commentary",
+      "url": "https://www.workingpreacher.org/commentaries/revised-common-lectionary/sixth-sunday-after-epiphany-3/commentary-on-1-corinthians-1512-20-2",
+      "checkedOn": "2026-10-29",
+      "access": "Selected readable discussion checked: Consequences of denying resurrection and the proclamation of Christ. Confessional interpretation; cited print works, Greek/textual claims and external historical reconstructions not independently examined. No full literature review or independent specialist signoff.",
+      "rights": "Linked only; no publication text retained."
+    },
+    "b5-john14": {
+      "title": "Commentary on John 14:1-14",
+      "author": "Laura Holmes",
+      "publisher": "Working Preacher, Luther Seminary (Christian lectionary commentary)",
+      "kind": "scholarly-commentary",
+      "url": "https://www.workingpreacher.org/commentaries/revised-common-lectionary/fifth-sunday-of-easter/commentary-on-john-141-14-7",
+      "checkedOn": "2026-10-29",
+      "access": "Selected readable discussion checked: Thomas's question and John 14:6 as reassurance in the farewell setting. Confessional interpretation; cited print works, Greek/textual claims and external historical reconstructions not independently examined. No full literature review or independent specialist signoff.",
+      "rights": "Linked only; no publication text retained."
+    },
+    "b5-romans3": {
+      "title": "Commentary on Romans 3:19-28",
+      "author": "Richard Ascough",
+      "publisher": "Working Preacher, Luther Seminary (Christian lectionary commentary)",
+      "kind": "scholarly-commentary",
+      "url": "https://www.workingpreacher.org/commentaries/revised-common-lectionary/reformation-day/commentary-on-romans-319-28-15",
+      "checkedOn": "2026-10-29",
+      "access": "Selected readable discussion checked: Shared accountability, grace and the debated faith-in/faithfulness-of-Christ wording. Confessional interpretation; cited print works, Greek/textual claims and external historical reconstructions not independently examined. No full literature review or independent specialist signoff.",
+      "rights": "Linked only; no publication text retained."
+    },
+    "b5-romans8": {
+      "title": "Commentary on Romans 8:1-11",
+      "author": "Mary Hinkle Shore",
+      "publisher": "Working Preacher, Luther Seminary (Christian lectionary commentary)",
+      "kind": "scholarly-commentary",
+      "url": "https://www.workingpreacher.org/commentaries/revised-common-lectionary/ordinary-15/commentary-on-romans-81-11-6",
+      "checkedOn": "2026-10-29",
+      "access": "Selected readable discussion checked: No condemnation and the flesh/Spirit contrast without rejection of bodily life. Confessional interpretation; cited print works, Greek/textual claims and external historical reconstructions not independently examined. No full literature review or independent specialist signoff.",
+      "rights": "Linked only; no publication text retained."
+    },
+    "b5-genesis50": {
+      "title": "Commentary on Genesis 50:15-21",
+      "author": "Vanessa Lovelace",
+      "publisher": "Working Preacher, Luther Seminary (Christian lectionary commentary)",
+      "kind": "scholarly-commentary",
+      "url": "https://www.workingpreacher.org/commentaries/revised-common-lectionary/ordinary-24/commentary-on-genesis-5015-21-6",
+      "checkedOn": "2026-10-29",
+      "access": "Selected readable discussion checked: Brothers' fear, acknowledged harm and Joseph's assurance of provision. Confessional interpretation; cited print works, Greek/textual claims and external historical reconstructions not independently examined. No full literature review or independent specialist signoff.",
+      "rights": "Linked only; no publication text retained."
+    },
+    "b5-romans12": {
+      "title": "Commentary on Romans 12:1-8",
+      "author": "Frank L. Crouch",
+      "publisher": "Working Preacher, Luther Seminary (Christian lectionary commentary)",
+      "kind": "scholarly-commentary",
+      "url": "https://www.workingpreacher.org/commentaries/revised-common-lectionary/ordinary-21/commentary-on-romans-121-8-4",
+      "checkedOn": "2026-10-29",
+      "access": "Selected readable discussion checked: Divine mercy, transformation and communal service. Confessional interpretation; cited print works, Greek/textual claims and external historical reconstructions not independently examined. No full literature review or independent specialist signoff.",
+      "rights": "Linked only; no publication text retained."
+    },
+    "b5-john15": {
+      "title": "Commentary on John 15:9-17",
+      "author": "Meda Stamper",
+      "publisher": "Working Preacher, Luther Seminary (Christian lectionary commentary)",
+      "kind": "scholarly-commentary",
+      "url": "https://www.workingpreacher.org/commentaries/revised-common-lectionary/sixth-sunday-of-easter-2/commentary-on-john-159-17-3",
+      "checkedOn": "2026-10-29",
+      "access": "Selected readable discussion checked: Abiding in love, the repeated love command and friendship. Confessional interpretation; cited print works, Greek/textual claims and external historical reconstructions not independently examined. No full literature review or independent specialist signoff.",
+      "rights": "Linked only; no publication text retained."
+    },
+    "b5-hebrews11": {
+      "title": "Commentary on Hebrews 11:1-3, 8-16",
+      "author": "Amy L.B. Peeler",
+      "publisher": "Working Preacher, Luther Seminary (Christian lectionary commentary)",
+      "kind": "scholarly-commentary",
+      "url": "https://www.workingpreacher.org/commentaries/revised-common-lectionary/ordinary-19-3/commentary-on-hebrews-111-3-8-16-2",
+      "checkedOn": "2026-10-29",
+      "access": "Selected readable discussion checked: Hebrews 11:1-3 as a foundation for persevering faith. Confessional interpretation; cited print works, Greek/textual claims and external historical reconstructions not independently examined. No full literature review or independent specialist signoff.",
+      "rights": "Linked only; no publication text retained."
+    },
+    "b5-revelation21": {
+      "title": "Revelation - selected commentary",
+      "author": "Brian J. Tabb",
+      "publisher": "The Gospel Coalition Bible Commentary (evangelical)",
+      "kind": "scholarly-commentary",
+      "url": "https://www.thegospelcoalition.org/commentary/revelation/",
+      "checkedOn": "2026-10-29",
+      "access": "Selected readable discussion checked: Vision, voice and divine dwelling in Revelation 21:1-4. Confessional interpretation; cited print works, Greek/textual claims and external historical reconstructions not independently examined. No full literature review or independent specialist signoff.",
+      "rights": "Linked only; no publication text retained."
+    },
+    "b5-kings2": {
+      "title": "2 Kings - selected commentary",
+      "author": "August H. Konkel",
+      "publisher": "The Gospel Coalition Bible Commentary (evangelical)",
+      "kind": "scholarly-commentary",
+      "url": "https://www.thegospelcoalition.org/commentary/2-kings/",
+      "checkedOn": "2026-10-29",
+      "access": "Selected readable discussion checked: Reform and faithfulness in the comments on 18:3-6. Confessional interpretation; cited print works, Greek/textual claims and external historical reconstructions not independently examined. No full literature review or independent specialist signoff.",
+      "rights": "Linked only; no publication text retained."
+    },
+    "b5-isaiah": {
+      "title": "Isaiah - selected commentary",
+      "author": "Ray Ortlund",
+      "publisher": "The Gospel Coalition Bible Commentary (evangelical)",
+      "kind": "scholarly-commentary",
+      "url": "https://www.thegospelcoalition.org/commentary/isaiah/",
+      "checkedOn": "2026-10-29",
+      "access": "Selected readable discussion checked: Assyrian defeat in 37:36-38 and different placement of 38:21-22. Confessional interpretation; cited print works, Greek/textual claims and external historical reconstructions not independently examined. No full literature review or independent specialist signoff.",
+      "rights": "Linked only; no publication text retained."
+    },
+    "b5-text-matthew-6": {
+      "title": "Matthew 6 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/matthew/6",
+      "checkedOn": "2026-10-29",
+      "access": "Selected declared range checked in the publisher chapter view. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no publisher passage text retained."
+    },
+    "b5-text-luke-11": {
+      "title": "Luke 11 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/luke/11",
+      "checkedOn": "2026-10-29",
+      "access": "Selected declared range checked in the publisher chapter view. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no publisher passage text retained."
+    },
+    "b5-text-mark-12": {
+      "title": "Mark 12 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/mark/12",
+      "checkedOn": "2026-10-29",
+      "access": "Selected declared range checked in the publisher chapter view. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no publisher passage text retained."
+    },
+    "b5-text-matthew-22": {
+      "title": "Matthew 22 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/matthew/22",
+      "checkedOn": "2026-10-29",
+      "access": "Selected declared range checked in the publisher chapter view. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no publisher passage text retained."
+    },
+    "b5-text-acts-9": {
+      "title": "Acts 9 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/Acts%2B9/",
+      "checkedOn": "2026-10-29",
+      "access": "Selected declared range checked in the publisher chapter view, which also contains neighbouring chapters. English verse numbering used. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no publisher passage text retained."
+    },
+    "b5-text-acts-22": {
+      "title": "Acts 22 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/acts/22",
+      "checkedOn": "2026-10-29",
+      "access": "Selected declared range checked in the publisher chapter view. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no publisher passage text retained."
+    },
+    "b5-text-exodus-3": {
+      "title": "Exodus 3 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/exodus/3",
+      "checkedOn": "2026-10-29",
+      "access": "Selected declared range checked in the publisher chapter view. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no publisher passage text retained."
+    },
+    "b5-text-acts-7": {
+      "title": "Acts 7 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/Acts%2B7/",
+      "checkedOn": "2026-10-29",
+      "access": "Selected declared range checked in the publisher chapter view, which also contains neighbouring chapters. English verse numbering used. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no publisher passage text retained."
+    },
+    "b5-text-psalm-23": {
+      "title": "Psalm 23 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/Psalm%2B23/",
+      "checkedOn": "2026-10-29",
+      "access": "Selected declared range checked in the publisher chapter view, which also contains neighbouring chapters. English verse numbering used. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no publisher passage text retained."
+    },
+    "b5-text-1-peter-5": {
+      "title": "1 Peter 5 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/1%2BPeter%2B5/",
+      "checkedOn": "2026-10-29",
+      "access": "Selected declared range checked in the publisher chapter view, which also contains neighbouring chapters. English verse numbering used. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no publisher passage text retained."
+    },
+    "b5-text-john-3": {
+      "title": "John 3 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/John%2B3/",
+      "checkedOn": "2026-10-29",
+      "access": "Selected declared range checked in the publisher chapter view, which also contains neighbouring chapters. English verse numbering used. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no publisher passage text retained."
+    },
+    "b5-text-ephesians-2": {
+      "title": "Ephesians 2 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/ephesians/2",
+      "checkedOn": "2026-10-29",
+      "access": "Selected declared range checked in the publisher chapter view. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no publisher passage text retained."
+    },
+    "b5-text-john-11": {
+      "title": "John 11 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/john/11",
+      "checkedOn": "2026-10-29",
+      "access": "Selected declared range checked in the publisher chapter view. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no publisher passage text retained."
+    },
+    "b5-text-1-corinthians-15": {
+      "title": "1 Corinthians 15 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/1corinthians/15",
+      "checkedOn": "2026-10-29",
+      "access": "Selected declared range checked in the publisher chapter view. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no publisher passage text retained."
+    },
+    "b5-text-john-14": {
+      "title": "John 14 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/John%2B14/",
+      "checkedOn": "2026-10-29",
+      "access": "Selected declared range checked in the publisher chapter view, which also contains neighbouring chapters. English verse numbering used. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no publisher passage text retained."
+    },
+    "b5-text-acts-4": {
+      "title": "Acts 4 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/acts/4",
+      "checkedOn": "2026-10-29",
+      "access": "Selected declared range checked in the publisher chapter view. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no publisher passage text retained."
+    },
+    "b5-text-romans-3": {
+      "title": "Romans 3 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/Romans%2B3/",
+      "checkedOn": "2026-10-29",
+      "access": "Selected declared range checked in the publisher chapter view, which also contains neighbouring chapters. English verse numbering used. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no publisher passage text retained."
+    },
+    "b5-text-ecclesiastes-7": {
+      "title": "Ecclesiastes 7 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/ecclesiastes/7",
+      "checkedOn": "2026-10-29",
+      "access": "Selected declared range checked in the publisher chapter view. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no publisher passage text retained."
+    },
+    "b5-text-romans-8": {
+      "title": "Romans 8 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/Romans%2B8/",
+      "checkedOn": "2026-10-29",
+      "access": "Selected declared range checked in the publisher chapter view, which also contains neighbouring chapters. English verse numbering used. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no publisher passage text retained."
+    },
+    "b5-text-john-5": {
+      "title": "John 5 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/john/5",
+      "checkedOn": "2026-10-29",
+      "access": "Selected declared range checked in the publisher chapter view. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no publisher passage text retained."
+    },
+    "b5-text-genesis-50": {
+      "title": "Genesis 50 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/genesis/50",
+      "checkedOn": "2026-10-29",
+      "access": "Selected declared range checked in the publisher chapter view. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no publisher passage text retained."
+    },
+    "b5-text-romans-12": {
+      "title": "Romans 12 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/romans/12",
+      "checkedOn": "2026-10-29",
+      "access": "Selected declared range checked in the publisher chapter view. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no publisher passage text retained."
+    },
+    "b5-text-ephesians-4": {
+      "title": "Ephesians 4 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/ephesians/4",
+      "checkedOn": "2026-10-29",
+      "access": "Selected declared range checked in the publisher chapter view. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no publisher passage text retained."
+    },
+    "b5-text-1-corinthians-13": {
+      "title": "1 Corinthians 13 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/1corinthians/13",
+      "checkedOn": "2026-10-29",
+      "access": "Selected declared range checked in the publisher chapter view. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no publisher passage text retained."
+    },
+    "b5-text-john-15": {
+      "title": "John 15 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/john/15",
+      "checkedOn": "2026-10-29",
+      "access": "Selected declared range checked in the publisher chapter view. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no publisher passage text retained."
+    },
+    "b5-text-galatians-3": {
+      "title": "Galatians 3 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/galatians/3",
+      "checkedOn": "2026-10-29",
+      "access": "Selected declared range checked in the publisher chapter view. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no publisher passage text retained."
+    },
+    "b5-text-hebrews-11": {
+      "title": "Hebrews 11 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/hebrews/11",
+      "checkedOn": "2026-10-29",
+      "access": "Selected declared range checked in the publisher chapter view. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no publisher passage text retained."
+    },
+    "b5-text-2-corinthians-5": {
+      "title": "2 Corinthians 5 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/2%2BCorinthians%2B5/",
+      "checkedOn": "2026-10-29",
+      "access": "Selected declared range checked in the publisher chapter view, which also contains neighbouring chapters. English verse numbering used. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no publisher passage text retained."
+    },
+    "b5-text-revelation-21": {
+      "title": "Revelation 21 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/revelation/21",
+      "checkedOn": "2026-10-29",
+      "access": "Selected declared range checked in the publisher chapter view. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no publisher passage text retained."
+    },
+    "b5-text-revelation-21-esv": {
+      "title": "Revelation 21 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/Revelation%2B21/",
+      "checkedOn": "2026-10-29",
+      "access": "Selected declared range checked in the publisher chapter view, which also contains neighbouring chapters. English verse numbering used. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no publisher passage text retained."
+    },
+    "b5-text-2-kings-18": {
+      "title": "2 Kings 18 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/2%2BKings%2B18/",
+      "checkedOn": "2026-10-29",
+      "access": "Selected declared range checked in the publisher chapter view, which also contains neighbouring chapters. English verse numbering used. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no publisher passage text retained."
+    },
+    "b5-text-2-chronicles-29": {
+      "title": "2 Chronicles 29 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/2%2BChronicles%2B29/",
+      "checkedOn": "2026-10-29",
+      "access": "Selected declared range checked in the publisher chapter view, which also contains neighbouring chapters. English verse numbering used. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no publisher passage text retained."
+    },
+    "b5-text-2-kings-19": {
+      "title": "2 Kings 19 - ESV (in the Kings 20 chapter view)",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/2%2BKings%2B20/",
+      "checkedOn": "2026-10-29",
+      "access": "Selected declared range checked in the publisher chapter view, which also contains neighbouring chapters. English verse numbering used. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no publisher passage text retained."
+    },
+    "b5-text-isaiah-37": {
+      "title": "Isaiah 37 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/Isaiah%2B37/",
+      "checkedOn": "2026-10-29",
+      "access": "Selected declared range checked in the publisher chapter view, which also contains neighbouring chapters. English verse numbering used. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no publisher passage text retained."
+    },
+    "b5-text-2-kings-20": {
+      "title": "2 Kings 20 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/2%2BKings%2B20/",
+      "checkedOn": "2026-10-29",
+      "access": "Selected declared range checked in the publisher chapter view, which also contains neighbouring chapters. English verse numbering used. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no publisher passage text retained."
+    },
+    "b5-text-isaiah-38": {
+      "title": "Isaiah 38 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/isaiah/38",
+      "checkedOn": "2026-10-29",
+      "access": "Selected declared range checked in the publisher chapter view. No manuscript collation or translation-equivalence audit.",
       "rights": "Linked only; no publisher passage text retained."
     }
   },
@@ -5870,6 +6400,646 @@ export const CITATION_REVIEW = {
       ],
       "batch": "connections-20-04",
       "anchor": "2 Kings 15:1"
+    },
+    {
+      "kind": "connection",
+      "target": "ce018",
+      "title": "Matthew 6:5-15 and Luke 11:1-4",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-29",
+      "note": "Matthew gives the prayer within teaching about private prayer and forgiveness; Luke introduces it through a disciple's request after Jesus prays. Jennifer S. Wyant notes Luke's shorter form and its framework of trust.",
+      "limitation": "Retain Matthew's additional petitions and the differing settings and debt/sin wording. Liturgical forms and manuscript variants require their own review. A narrative parallel does not supply one reconstructed verbatim prayer or make prayer a formula guaranteeing an outcome. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "passages": [
+        "Matthew 6:5-15",
+        "Luke 11:1-4"
+      ],
+      "citations": [
+        {
+          "sourceId": "b5-text-matthew-6",
+          "locator": "Matthew 6:5-15",
+          "supports": "Selected wording and immediate context for this comparison"
+        },
+        {
+          "sourceId": "b5-text-luke-11",
+          "locator": "Luke 11:1-4",
+          "supports": "Selected wording and immediate context for this comparison"
+        },
+        {
+          "sourceId": "b5-luke11",
+          "locator": "Comparison with Matthew and prayer as a framework, Luke 11:2-4",
+          "supports": "Discusses the shorter Lucan prayer and trust"
+        }
+      ],
+      "batch": "connections-20-05",
+      "anchor": "Matthew 6:9"
+    },
+    {
+      "kind": "connection",
+      "target": "ce019",
+      "title": "Mark 12:28-34 and Matthew 22:34-40",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-29",
+      "note": "Both accounts join love of God with love of neighbour. Mark includes the Shema and an appreciative exchange with a scribe; Matthew introduces a question intended to test Jesus. Amanda Brobst-Renaud stresses Mark's Jewish setting and the scribe's positive role.",
+      "limitation": "Keep the different introductions, responses and lists of faculties visible. Jesus and his interlocutors discuss Jewish Scripture; this is not a contrast between Christian love and a supposedly loveless Judaism. The parallel does not establish identical wording or independent eyewitness reports. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "passages": [
+        "Mark 12:28-34",
+        "Matthew 22:34-40"
+      ],
+      "citations": [
+        {
+          "sourceId": "b5-text-mark-12",
+          "locator": "Mark 12:28-34",
+          "supports": "Selected wording and immediate context for this comparison"
+        },
+        {
+          "sourceId": "b5-text-matthew-22",
+          "locator": "Matthew 22:34-40",
+          "supports": "Selected wording and immediate context for this comparison"
+        },
+        {
+          "sourceId": "b5-mark12",
+          "locator": "Jewish setting of the Shema and the positively presented scribe",
+          "supports": "Highlights the Jewish setting and positive scribe"
+        }
+      ],
+      "batch": "connections-20-05",
+      "anchor": "Mark 12:30"
+    },
+    {
+      "kind": "connection",
+      "target": "ce023",
+      "title": "Acts 9:1-19 and Acts 22:6-16",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-29",
+      "note": "Acts 9 narrates Saul's encounter and Ananias's role; Acts 22 retells them in Paul's defence speech, with different emphases. Raj Nadella cautions against treating the encounter as a triumphalist rejection of Judaism.",
+      "limitation": "The companions' hearing is described differently in Acts 9:7 and 22:9; translation and Greek-language questions are not silently harmonised here. Both accounts belong to Acts, not two independent historical witnesses. The selected commentary addresses Acts 9's interpretation, not a full comparison of every retelling. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "passages": [
+        "Acts 9:1-19",
+        "Acts 22:6-16"
+      ],
+      "citations": [
+        {
+          "sourceId": "b5-text-acts-9",
+          "locator": "Acts 9:1-19",
+          "supports": "Selected wording and immediate context for this comparison"
+        },
+        {
+          "sourceId": "b5-text-acts-22",
+          "locator": "Acts 22:6-16",
+          "supports": "Selected wording and immediate context for this comparison"
+        },
+        {
+          "sourceId": "b5-acts9",
+          "locator": "Discussion of Saul, the Way and the limits of modern conversion language",
+          "supports": "Warns against a triumphalist conversion reading"
+        }
+      ],
+      "batch": "connections-20-05",
+      "anchor": "Acts 9:3"
+    },
+    {
+      "kind": "connection",
+      "target": "ce024",
+      "title": "Exodus 3:1-12 and Acts 7:30-35",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-29",
+      "note": "Stephen's speech retells Moses's encounter with the angel, divine voice and holy ground, then his commission to Egypt. Exodus narrates that call directly. Alan J. Thompson highlights God's presence with Moses in the wilderness.",
+      "limitation": "Acts condenses the Exodus narrative and places it within Stephen's defence; its forty-year framing and rhetorical purpose remain distinct. A later retelling is not independent confirmation of the event, a location identification or a verbatim transcript of Stephen's speech. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "passages": [
+        "Exodus 3:1-12",
+        "Acts 7:30-35"
+      ],
+      "citations": [
+        {
+          "sourceId": "b5-text-exodus-3",
+          "locator": "Exodus 3:1-12",
+          "supports": "Selected wording and immediate context for this comparison"
+        },
+        {
+          "sourceId": "b5-text-acts-7",
+          "locator": "Acts 7:30-35",
+          "supports": "Selected wording and immediate context for this comparison"
+        },
+        {
+          "sourceId": "b5-acts7",
+          "locator": "Stephen and Moses, comments on Acts 7:20-36",
+          "supports": "Highlights divine presence outside Jerusalem"
+        }
+      ],
+      "batch": "connections-20-05",
+      "anchor": "Exodus 3:2"
+    },
+    {
+      "kind": "connection",
+      "target": "ce034",
+      "title": "Psalm 23:1-6 and 1 Peter 5:1-5",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-29",
+      "note": "Psalm 23 portrays the Lord as shepherd; 1 Peter calls elders to tend God's flock as examples and names Christ the chief shepherd. Shively Smith emphasises mutual obligations within the community under God's authority.",
+      "limitation": "This shared shepherd imagery is a thematic comparison, not an explicit quotation of Psalm 23. Do not equate elders with God or use the image to justify domineering leadership: 1 Peter expressly rejects that conduct. The psalm's individual voice and the letter's communal instruction remain distinct. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "passages": [
+        "Psalm 23:1-6",
+        "1 Peter 5:1-5"
+      ],
+      "citations": [
+        {
+          "sourceId": "b5-text-psalm-23",
+          "locator": "Psalm 23:1-6",
+          "supports": "Selected wording and immediate context for this comparison"
+        },
+        {
+          "sourceId": "b5-text-1-peter-5",
+          "locator": "1 Peter 5:1-5",
+          "supports": "Selected wording and immediate context for this comparison"
+        },
+        {
+          "sourceId": "b5-peter5",
+          "locator": "Mutuality in the elder-youth relationship, 1 Peter 5:1-5",
+          "supports": "Emphasises mutual obligations under divine authority"
+        }
+      ],
+      "batch": "connections-20-05",
+      "anchor": "Psalm 23:1"
+    },
+    {
+      "kind": "connection",
+      "target": "ce052",
+      "title": "John 3:16-21 and Ephesians 2:1-10",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-29",
+      "note": "John connects God's giving of the Son with life, belief and coming to the light; Ephesians describes salvation as God's gift and a new life of good works. Israel Kamudzandu discusses grace alongside the community's resulting vocation.",
+      "limitation": "Retain John's language of judgment and light and Ephesians' distinction between salvation's gift and the good works that follow. Shared salvation language does not establish quotation or settle every debate about faith, works, election or the extent of salvation. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "passages": [
+        "John 3:16-21",
+        "Ephesians 2:1-10"
+      ],
+      "citations": [
+        {
+          "sourceId": "b5-text-john-3",
+          "locator": "John 3:16-21",
+          "supports": "Selected wording and immediate context for this comparison"
+        },
+        {
+          "sourceId": "b5-text-ephesians-2",
+          "locator": "Ephesians 2:1-10",
+          "supports": "Selected wording and immediate context for this comparison"
+        },
+        {
+          "sourceId": "b5-ephesians2",
+          "locator": "Gift, grace and the life of good works, concluding discussion of 2:8-10",
+          "supports": "Relates the gift of grace to good works"
+        }
+      ],
+      "batch": "connections-20-05",
+      "anchor": "John 3:16"
+    },
+    {
+      "kind": "connection",
+      "target": "ce053",
+      "title": "John 11:17-27 and 1 Corinthians 15:12-23",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-29",
+      "note": "John places Jesus's resurrection-and-life claim in conversation with the grieving Martha. Paul argues that Christ's resurrection grounds the hope of those who have died. Frank L. Crouch explains the consequences of denying resurrection in Paul's argument.",
+      "limitation": "The selected John range precedes Lazarus's emergence from the tomb; it should not be presented as a complete account of that sign. A thematic comparison does not make Lazarus's restoration and Christ's resurrection identical events or independently settle historical claims and an end-times timetable. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "passages": [
+        "John 11:17-27",
+        "1 Corinthians 15:12-23"
+      ],
+      "citations": [
+        {
+          "sourceId": "b5-text-john-11",
+          "locator": "John 11:17-27",
+          "supports": "Selected wording and immediate context for this comparison"
+        },
+        {
+          "sourceId": "b5-text-1-corinthians-15",
+          "locator": "1 Corinthians 15:12-23",
+          "supports": "Selected wording and immediate context for this comparison"
+        },
+        {
+          "sourceId": "b5-corinthians15",
+          "locator": "The consequences of denying resurrection and the proclamation of Christ, 15:12-20",
+          "supports": "Explains the logic of Paul's resurrection argument"
+        }
+      ],
+      "batch": "connections-20-05",
+      "anchor": "John 11:25"
+    },
+    {
+      "kind": "connection",
+      "target": "ce054",
+      "title": "John 14:1-7 and Acts 4:5-12",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-29",
+      "note": "John presents Jesus as the way to the Father while reassuring troubled disciples. Acts presents Peter's proclamation of salvation in Jesus's name during questioning about a healing. Laura Holmes reads John 14:6 within its reassurance of the disciples.",
+      "limitation": "These are distinct farewell and public-defence settings, not parallel reports of one speech. Retain both passages' claims without treating the pairing as a complete account of other people's final destinies or permission for coercion. It remains a Christian thematic comparison, not a quotation claim. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "passages": [
+        "John 14:1-7",
+        "Acts 4:5-12"
+      ],
+      "citations": [
+        {
+          "sourceId": "b5-text-john-14",
+          "locator": "John 14:1-7",
+          "supports": "Selected wording and immediate context for this comparison"
+        },
+        {
+          "sourceId": "b5-text-acts-4",
+          "locator": "Acts 4:5-12",
+          "supports": "Selected wording and immediate context for this comparison"
+        },
+        {
+          "sourceId": "b5-john14",
+          "locator": "Thomas's question and the reassurance of John 14:6",
+          "supports": "Reads John 14:6 in its reassuring farewell setting"
+        }
+      ],
+      "batch": "connections-20-05",
+      "anchor": "John 14:6"
+    },
+    {
+      "kind": "connection",
+      "target": "ce055",
+      "title": "Romans 3:21-26 and Ecclesiastes 7:15-22",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-29",
+      "note": "Paul describes universal sin alongside justification by grace; Ecclesiastes warns that even the righteous do wrong within a reflection on wisdom and human limits. Richard Ascough discusses Paul's shared human accountability and the gift of grace.",
+      "limitation": "Romans 3:23 does not explicitly cite Ecclesiastes 7:20. The wisdom reflection and Paul's argument retain their different purposes. This thematic link does not settle the interpretation of Ecclesiastes' counsel about excessive righteousness or Paul's debated faith-in/faithfulness-of-Christ wording. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "passages": [
+        "Romans 3:21-26",
+        "Ecclesiastes 7:15-22"
+      ],
+      "citations": [
+        {
+          "sourceId": "b5-text-romans-3",
+          "locator": "Romans 3:21-26",
+          "supports": "Selected wording and immediate context for this comparison"
+        },
+        {
+          "sourceId": "b5-text-ecclesiastes-7",
+          "locator": "Ecclesiastes 7:15-22",
+          "supports": "Selected wording and immediate context for this comparison"
+        },
+        {
+          "sourceId": "b5-romans3",
+          "locator": "Universal accountability and grace, discussion of Romans 3:21-26",
+          "supports": "Discusses shared accountability and gracious justification"
+        }
+      ],
+      "batch": "connections-20-05",
+      "anchor": "Romans 3:23"
+    },
+    {
+      "kind": "connection",
+      "target": "ce056",
+      "title": "Romans 3:21-26 and Ephesians 2:1-10",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-29",
+      "note": "Romans moves from universal sin to justification as a gift; Ephesians moves from death in trespasses to life with Christ and good works. Richard Ascough identifies grace as central to Romans while retaining questions about its theological language.",
+      "limitation": "Do not flatten the two arguments into interchangeable formulas or erase Ephesians 2:10 after citing 2:8-9. The relationship of faith, works and Christ's faithfulness needs fuller treatment. This comparison does not resolve the authorship of Ephesians or all theories of atonement. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "passages": [
+        "Romans 3:21-26",
+        "Ephesians 2:1-10"
+      ],
+      "citations": [
+        {
+          "sourceId": "b5-text-romans-3",
+          "locator": "Romans 3:21-26",
+          "supports": "Selected wording and immediate context for this comparison"
+        },
+        {
+          "sourceId": "b5-text-ephesians-2",
+          "locator": "Ephesians 2:1-10",
+          "supports": "Selected wording and immediate context for this comparison"
+        },
+        {
+          "sourceId": "b5-romans3",
+          "locator": "Grace and the debated language of faith, Romans 3:21-26",
+          "supports": "Identifies grace while retaining interpretive questions"
+        }
+      ],
+      "batch": "connections-20-05",
+      "anchor": "Romans 3:23"
+    },
+    {
+      "kind": "connection",
+      "target": "ce057",
+      "title": "Romans 8:1-11 and John 5:19-29",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-29",
+      "note": "Romans announces freedom from condemnation for those in Christ and life through the Spirit; John speaks of hearing, believing and passing from death to life, alongside future judgment. Mary Hinkle Shore warns that Paul's flesh/Spirit contrast does not reject bodily existence.",
+      "limitation": "Keep John's future judgment and Romans' promise of life to mortal bodies in view. Shared life language does not imply that bodies are evil or that believers avoid physical death and suffering. This thematic pairing is not a quotation or a complete reconciliation of both authors' eschatology. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "passages": [
+        "Romans 8:1-11",
+        "John 5:19-29"
+      ],
+      "citations": [
+        {
+          "sourceId": "b5-text-romans-8",
+          "locator": "Romans 8:1-11",
+          "supports": "Selected wording and immediate context for this comparison"
+        },
+        {
+          "sourceId": "b5-text-john-5",
+          "locator": "John 5:19-29",
+          "supports": "Selected wording and immediate context for this comparison"
+        },
+        {
+          "sourceId": "b5-romans8",
+          "locator": "No condemnation, flesh and Spirit, Romans 8:1-11",
+          "supports": "Distinguishes life in the Spirit from rejection of bodies"
+        }
+      ],
+      "batch": "connections-20-05",
+      "anchor": "Romans 8:1"
+    },
+    {
+      "kind": "connection",
+      "target": "ce059",
+      "title": "Romans 8:26-30 and Genesis 50:15-21",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-29",
+      "note": "Romans places God's purpose amid weakness and hope, with conformity to the Son in view; Joseph names his brothers' harmful intent while describing preservation of life. Vanessa Lovelace keeps that harm and the brothers' fear visible in reading Joseph's reassurance.",
+      "limitation": "Good does not mean that the original harm was good, nor does the pairing guarantee immediate relief or material success. It must not excuse abuse or require a harmed person to trust someone unsafe. The texts are linked thematically; a complete account of providence and the debates about Joseph's forgiveness remains open. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "passages": [
+        "Romans 8:26-30",
+        "Genesis 50:15-21"
+      ],
+      "citations": [
+        {
+          "sourceId": "b5-text-romans-8",
+          "locator": "Romans 8:26-30",
+          "supports": "Selected wording and immediate context for this comparison"
+        },
+        {
+          "sourceId": "b5-text-genesis-50",
+          "locator": "Genesis 50:15-21",
+          "supports": "Selected wording and immediate context for this comparison"
+        },
+        {
+          "sourceId": "b5-genesis50",
+          "locator": "Joseph's acknowledgment of harm and assurance of provision, 50:19-21",
+          "supports": "Retains acknowledged harm and the brothers' fear"
+        }
+      ],
+      "batch": "connections-20-05",
+      "anchor": "Romans 8:28"
+    },
+    {
+      "kind": "connection",
+      "target": "ce060",
+      "title": "Romans 12:1-8 and Ephesians 4:17-24",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-29",
+      "note": "Romans calls for transformed discernment and humble service through varied gifts; Ephesians describes putting away the old self and renewal of the mind. Frank L. Crouch grounds Romans' ethical appeal in God's mercies.",
+      "limitation": "The shared renewal theme does not establish quotation or identical authorship. Keep Romans' living, bodily service and Ephesians' concrete change of conduct in view. Renewal is not reduced to positive thinking, intellectual superiority or an exemption from the need for ongoing moral discernment. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "passages": [
+        "Romans 12:1-8",
+        "Ephesians 4:17-24"
+      ],
+      "citations": [
+        {
+          "sourceId": "b5-text-romans-12",
+          "locator": "Romans 12:1-8",
+          "supports": "Selected wording and immediate context for this comparison"
+        },
+        {
+          "sourceId": "b5-text-ephesians-4",
+          "locator": "Ephesians 4:17-24",
+          "supports": "Selected wording and immediate context for this comparison"
+        },
+        {
+          "sourceId": "b5-romans12",
+          "locator": "Mercy, transformation and renewing the mind, Romans 12:1-8",
+          "supports": "Grounds transformation and service in divine mercy"
+        }
+      ],
+      "batch": "connections-20-05",
+      "anchor": "Romans 12:2"
+    },
+    {
+      "kind": "connection",
+      "target": "ce061",
+      "title": "1 Corinthians 13:1-7 and John 15:9-17",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-29",
+      "note": "Paul insists that speech, knowledge, faith and generosity need love and describes its conduct. John commands mutual love shaped by Jesus's self-giving friendship. Meda Stamper connects the love command with abiding in Jesus's love.",
+      "limitation": "These are a discussion of community gifts and a farewell discourse, not one shared episode or a proven literary quotation. Endurance in love must not be used to excuse wrongdoing or demand submission to abuse. Retain the active, truthful and self-giving character of love in both contexts. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "passages": [
+        "1 Corinthians 13:1-7",
+        "John 15:9-17"
+      ],
+      "citations": [
+        {
+          "sourceId": "b5-text-1-corinthians-13",
+          "locator": "1 Corinthians 13:1-7",
+          "supports": "Selected wording and immediate context for this comparison"
+        },
+        {
+          "sourceId": "b5-text-john-15",
+          "locator": "John 15:9-17",
+          "supports": "Selected wording and immediate context for this comparison"
+        },
+        {
+          "sourceId": "b5-john15",
+          "locator": "Abiding love, the repeated command and friendship, John 15:9-17",
+          "supports": "Connects the love command with abiding in Jesus"
+        }
+      ],
+      "batch": "connections-20-05",
+      "anchor": "1 Corinthians 13:4"
+    },
+    {
+      "kind": "connection",
+      "target": "ce062",
+      "title": "Galatians 3:6-9 and Ephesians 2:1-10",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-29",
+      "note": "Galatians relates Abraham's blessing to the Gentiles through faith; Ephesians describes salvation as a gift and a life of good works. Israel Kamudzandu reads Ephesians within the letter's concern for reconciliation and shared community.",
+      "limitation": "Galatians explicitly cites Abrahamic Scripture, but this pairing with Ephesians is thematic. Do not turn either passage into a claim that Jewish life is simply opposed to grace or that good works have no place. The relation of promise, law and communal inclusion needs wider contextual review. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "passages": [
+        "Galatians 3:6-9",
+        "Ephesians 2:1-10"
+      ],
+      "citations": [
+        {
+          "sourceId": "b5-text-galatians-3",
+          "locator": "Galatians 3:6-9",
+          "supports": "Selected wording and immediate context for this comparison"
+        },
+        {
+          "sourceId": "b5-text-ephesians-2",
+          "locator": "Ephesians 2:1-10",
+          "supports": "Selected wording and immediate context for this comparison"
+        },
+        {
+          "sourceId": "b5-ephesians2",
+          "locator": "Reconciliation and the grace-given life, introductory and concluding discussion",
+          "supports": "Places grace within reconciliation and community"
+        }
+      ],
+      "batch": "connections-20-05",
+      "anchor": "Galatians 3:8"
+    },
+    {
+      "kind": "connection",
+      "target": "ce063",
+      "title": "Hebrews 11:1-3 and 2 Corinthians 5:6-10",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-29",
+      "note": "Hebrews introduces faith and the commendation of the ancestors; Paul describes confidence while away from the Lord, walking by faith and aiming to please him. Amy L.B. Peeler reads Hebrews' language as a foundation for enduring trust.",
+      "limitation": "The shared unseen/faith language is thematic and does not establish direct borrowing. It is not an instruction to reject evidence or make the visible world unreal. Keep Paul's accountability before Christ in view; the Greek terms in Hebrews and a full account of faith and knowledge remain open questions. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "passages": [
+        "Hebrews 11:1-3",
+        "2 Corinthians 5:6-10"
+      ],
+      "citations": [
+        {
+          "sourceId": "b5-text-hebrews-11",
+          "locator": "Hebrews 11:1-3",
+          "supports": "Selected wording and immediate context for this comparison"
+        },
+        {
+          "sourceId": "b5-text-2-corinthians-5",
+          "locator": "2 Corinthians 5:6-10",
+          "supports": "Selected wording and immediate context for this comparison"
+        },
+        {
+          "sourceId": "b5-hebrews11",
+          "locator": "Faith as a foundation for perseverance, discussion of Hebrews 11:1-3",
+          "supports": "Reads faith as a foundation for perseverance"
+        }
+      ],
+      "batch": "connections-20-05",
+      "anchor": "Hebrews 11:1"
+    },
+    {
+      "kind": "connection",
+      "target": "ce064",
+      "title": "Revelation 21:1 and Revelation 21:4 within one vision",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-29",
+      "note": "The new heaven and earth in verse 1 and the removal of tears and death in verse 4 belong to the same vision, linked by God's dwelling with humanity. Brian J. Tabb explains the relationship between the vision and the voice from the throne.",
+      "limitation": "These anchors belong to one passage, not two independent accounts. Two publisher views are cited for reading access; they do not create independent witnesses. The vision is not a guarantee that present grief should cease immediately or a complete map of the future. Manuscript and interpretive questions remain open. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "passages": [
+        "Revelation 21:1-5",
+        "Revelation 21:1-5"
+      ],
+      "citations": [
+        {
+          "sourceId": "b5-text-revelation-21",
+          "locator": "Revelation 21:1-5",
+          "supports": "Selected wording and immediate context for this comparison"
+        },
+        {
+          "sourceId": "b5-text-revelation-21-esv",
+          "locator": "Revelation 21:1-5",
+          "supports": "Selected wording and immediate context for this comparison"
+        },
+        {
+          "sourceId": "b5-revelation21",
+          "locator": "The new creation and divine dwelling, comments on 21:1-4",
+          "supports": "Connects the vision with the explanation from the throne"
+        }
+      ],
+      "batch": "connections-20-05",
+      "anchor": "Revelation 21:1"
+    },
+    {
+      "kind": "connection",
+      "target": "ce087",
+      "title": "2 Kings 18:1-8 and 2 Chronicles 29:1-11",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-29",
+      "note": "Both accounts introduce Hezekiah favourably. Kings summarises removed cult objects and trust in the Lord; Chronicles opens a detailed temple-restoration programme with priests and Levites. August H. Konkel comments on Kings' reform and faithfulness language.",
+      "limitation": "The selected Chronicles range is the programme's opening, not its full implementation. Abi/Abijah and the books' different emphases remain visible. Literary agreement does not establish independent archaeological confirmation or a resolved accession chronology; cited external historical reconstructions were not independently checked. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "passages": [
+        "2 Kings 18:1-8",
+        "2 Chronicles 29:1-11"
+      ],
+      "citations": [
+        {
+          "sourceId": "b5-text-2-kings-18",
+          "locator": "2 Kings 18:1-8",
+          "supports": "Selected wording and immediate context for this comparison"
+        },
+        {
+          "sourceId": "b5-text-2-chronicles-29",
+          "locator": "2 Chronicles 29:1-11",
+          "supports": "Selected wording and immediate context for this comparison"
+        },
+        {
+          "sourceId": "b5-kings2",
+          "locator": "Hezekiah's faithfulness and reform, comments on 18:3-6",
+          "supports": "Discusses Kings' reform and faithfulness language"
+        }
+      ],
+      "batch": "connections-20-05",
+      "anchor": "2 Kings 18:1"
+    },
+    {
+      "kind": "connection",
+      "target": "ce088",
+      "title": "2 Kings 19:32-37 and Isaiah 37:33-38",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-29",
+      "note": "Kings and Isaiah place the angel's action, the Assyrian withdrawal and Sennacherib's death after the promise to defend Jerusalem. Ray Ortlund reads the sequence as divine deliverance and the defeat of imperial arrogance.",
+      "limitation": "Shared narrative wording is not independent confirmation of the reported casualty total or the mechanism of death. The movement from withdrawal to assassination does not specify an elapsed interval. Do not equate the account with a verified plague diagnosis; annals, casualty figures and chronology need separate evidence. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "passages": [
+        "2 Kings 19:32-37",
+        "Isaiah 37:33-38"
+      ],
+      "citations": [
+        {
+          "sourceId": "b5-text-2-kings-19",
+          "locator": "2 Kings 19:32-37",
+          "supports": "Selected wording and immediate context for this comparison"
+        },
+        {
+          "sourceId": "b5-text-isaiah-37",
+          "locator": "Isaiah 37:33-38",
+          "supports": "Selected wording and immediate context for this comparison"
+        },
+        {
+          "sourceId": "b5-isaiah",
+          "locator": "Assyrian defeat and Sennacherib's end, comments on Isaiah 37:36-38",
+          "supports": "Reads the sequence as deliverance from imperial arrogance"
+        }
+      ],
+      "batch": "connections-20-05",
+      "anchor": "2 Kings 19:35"
+    },
+    {
+      "kind": "connection",
+      "target": "ce089",
+      "title": "2 Kings 20:1-11 and Isaiah 38:1-22",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-29",
+      "note": "Both accounts narrate Hezekiah's illness, prayer, added years and the reversing shadow. Isaiah also contains a thanksgiving poem and places the fig remedy and sign question after it. Ray Ortlund draws attention to that different placement.",
+      "limitation": "Retain Isaiah's poem and the differing order of remedy and sign; Ortlund's further reading of Hezekiah's motives is an interpretation. No exact diagnosis, reconstructed instrument or astronomical mechanism is established. This selected comparison does not independently verify the healing as a historical event. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "passages": [
+        "2 Kings 20:1-11",
+        "Isaiah 38:1-22"
+      ],
+      "citations": [
+        {
+          "sourceId": "b5-text-2-kings-20",
+          "locator": "2 Kings 20:1-11",
+          "supports": "Selected wording and immediate context for this comparison"
+        },
+        {
+          "sourceId": "b5-text-isaiah-38",
+          "locator": "Isaiah 38:1-22",
+          "supports": "Selected wording and immediate context for this comparison"
+        },
+        {
+          "sourceId": "b5-isaiah",
+          "locator": "The sign, the poem and the later placement of 38:21-22",
+          "supports": "Notes the different placement of the remedy and question"
+        }
+      ],
+      "batch": "connections-20-05",
+      "anchor": "2 Kings 20:1"
     }
   ],
   "batches": [
@@ -6004,6 +7174,34 @@ export const CITATION_REVIEW = {
         "ce085"
       ],
       "method": "AI-assisted comparison of two selected publisher passage contexts with one scoped named commentary for each pair. Six commentaries by four authors; access to two commentaries was limited to indexed excerpts. Narrative overlap, divergent evaluations and authorship/chronology limits remain explicit. All twenty links remain narrative parallels; no independent specialist signoff."
+    },
+    {
+      "id": "connections-20-05",
+      "title": "Twenty prayer, faith, hope and Hezekiah comparisons",
+      "count": 20,
+      "targets": [
+        "ce018",
+        "ce019",
+        "ce023",
+        "ce024",
+        "ce034",
+        "ce052",
+        "ce053",
+        "ce054",
+        "ce055",
+        "ce056",
+        "ce057",
+        "ce059",
+        "ce060",
+        "ce061",
+        "ce062",
+        "ce063",
+        "ce064",
+        "ce087",
+        "ce088",
+        "ce089"
+      ],
+      "method": "AI-assisted comparison of selected publisher passage contexts with one scoped named readable commentary for every pair. Seventeen commentary works by sixteen authors support particular claims, not automatically every editorial inference. Seven narrative parallels and thirteen thematic links retain their classifications. The Revelation anchors belong to the same vision; two publisher views are not independent witnesses. No independent specialist signoff."
     }
   ]
 };

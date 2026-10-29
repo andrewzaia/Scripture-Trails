@@ -1,10 +1,10 @@
 {
   "project": "Scripture Trails",
   "updated": "2026-10-29",
-  "description": "A transparent, evidence-aware roadmap reviewed against the released application through v0.26.0. Delivered records implementation milestones, including successive expansions; it is not a count of independent features or scholarly certification. Future work has completion criteria and no promised delivery dates.",
+  "description": "A transparent, evidence-aware roadmap reviewed against the released application through v0.28.0. Delivered records implementation milestones, including successive expansions; it is not a count of independent features or scholarly certification. Future work has completion criteria and no promised delivery dates.",
   "currentFocus": [
     "Next priority: manual screen-reader and real-device accessibility review",
-    "Continue citation remediation: 88 of 115 explained pairs now have dated assessments. The latest twenty narrative parallels have paired passage checks and scoped named commentary, including declared indexed-excerpt limits. The other 27 pairs and fuller literature remain open.",
+    "Continue citation remediation: 108 of 115 explained pairs now have dated assessments. The latest twenty prayer, faith, hope and Hezekiah comparisons have paired contexts and scoped named commentary. The other 7 pairs and fuller literature remain open.",
     "Keep desktop/mobile browser, accessibility and notebook regression checks passing in CI; add manual assistive-technology findings as they are reviewed",
     "Arrange independent historical, textual and archaeological review, including the first Exodus collection, when suitable specialists are available",
     "Then extend the Hebrew Bible geography library with separately scoped kings, prophets, exile and return studies"
@@ -555,13 +555,27 @@
       "verification": "Delivered in v0.26.0. Exact target IDs, canonical contexts, anchor containment, source scopes and derived coverage are checked. Six commentaries by four authors support specific claims; two commentaries had indexed-excerpt access. Fuller literature, manuscript/translation questions and independent specialist review remain open."
     },
     {
+      "id": "source-coverage-20-05",
+      "phase": "connections",
+      "status": "delivered",
+      "title": "Twenty prayer, faith, hope and Hezekiah assessments",
+      "summary": "The seventeen remaining New Testament comparisons and three Hezekiah parallels now have selected reading contexts, specific explanations and scoped named commentary.",
+      "capabilities": [
+        "Compare prayer, grace, love, resurrection and renewal while preserving each passage’s distinct setting",
+        "Retain differences in Acts retellings and the Hezekiah accounts; identify Revelation’s two anchors as parts of one vision",
+        "Follow paired publisher passage views and seventeen named commentaries by sixteen authors",
+        "See dated assessment coverage of 108 of 115, with commentary or limited publisher-summary support for 76 assessed pairs"
+      ],
+      "verification": "Delivered in v0.28.0. Declared targets, canonical contexts, anchor containment, unchanged classifications, source scopes and derived coverage are checked. Existing assessments and sources are preserved. Full literature, manuscript/translation questions and independent specialist review remain open."
+    },
+    {
       "id": "source-coverage-followup",
       "phase": "next",
       "status": "planned",
       "title": "Further citation remediation and context review",
-      "summary": "Four further twenty-connection batches are assessed through v0.26.0; twelve earlier assessments also gained named commentary. Coverage is 88 of 115 pairs, with 27 still outside the dated register. Named commentary or limited publisher-summary support covers 56 assessed pairs, with access limits recorded; assessed does not mean academically certified.",
+      "summary": "Five further twenty-connection batches are assessed through v0.28.0; twelve earlier assessments also gained named commentary. Coverage is 108 of 115 pairs, with 7 still outside the dated register. Named commentary or limited publisher-summary support covers 76 assessed pairs, with source scope recorded; assessed does not mean academically certified.",
       "capabilities": [
-        "Assess the remaining 27 explained pairs in separately declared batches with claim-specific sources and access limits",
+        "Assess the remaining 7 explained pairs in a separately declared batch with claim-specific sources and access limits",
         "Review the newly linked studies in full, compare competing identifications and revisit person-trail access limitations",
         "Compare complete excavation reports and textual apparatuses where access permits; preserve unresolved warnings"
       ],
