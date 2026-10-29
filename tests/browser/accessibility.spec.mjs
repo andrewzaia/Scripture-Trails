@@ -14,7 +14,7 @@ for(const view of views)test(`${view}: WCAG checks, both themes and no horizonta
    await page.screenshot({path});
    await testInfo.attach(`About dashboard: ${theme}`,{path,contentType:'image/png'});
   }
-  const result=await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21a','wcag21aa']).analyze();
+  const result=await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21a','wcag21aa','wcag22aa']).analyze();
   expect(result.violations.map(v=>({id:v.id,impact:v.impact,nodes:v.nodes.map(n=>({target:n.target,summary:n.failureSummary}))})),`${view}, ${theme}`).toEqual([]);
   const size=await page.evaluate(()=>({scroll:document.documentElement.scrollWidth,viewport:innerWidth}));
   expect(size.scroll,`${view}, ${theme}: page width`).toBeLessThanOrEqual(size.viewport+1);
