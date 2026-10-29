@@ -1,6 +1,16 @@
 {
   "releases": [
     {
+      "version": "0.31.0",
+      "date": "2026-10-29",
+      "title": "Expanded Scripture study journals and guided reading pathways",
+      "changes": [
+        "Expand all six study journals to 36 contextual stages with more than 200 curated reading entries and direct links into the Bible reader and connection map.",
+        "Add stage-by-stage reading rationale, textual connections, contextual interpretation cautions and focused reflection questions.",
+        "Keep original study anchors and locally saved reading progress compatible while making the full reading checklist expandable."
+      ]
+    },
+    {
       "version": "0.30.0",
       "date": "2026-10-29",
       "title": "Commentary follow-ups for all explained connections",
