@@ -11,7 +11,7 @@ export const CITATION_REVIEW = {
   },
   "deferred": [
     "All six previously unlinked named-place assessments now include external research. Bibliographic gaps in this declared batch are addressed at the stated scope; exact identifications, comparative excavation review, textual variants and abstract-only access remain unresolved. Regional placeholders were not upgraded.",
-    "All 115 explained pairs now have dated editorial assessments. Eighty-three include named scholarly commentary or limited publisher-summary support; the other 32 rely on selected passage checks. Completion of this register is not independent specialist signoff. Fuller literature, source-access gaps, textual questions and independent review remain open.",
+    "All 115 explained pairs now have dated editorial assessments and at least one scoped secondary citation. The 32 previously passage-based assessments have dated commentary follow-ups. Named commentary or limited publisher-summary support is not independent specialist signoff or agreement with every link. Fuller literature, source-access gaps and textual questions remain open.",
     "Other person-trail access gaps, full excavation reports, manuscript apparatuses, wider source coverage and independent specialist review remain open.",
     "The full OpenBible corpus remains unclassified."
   ],
@@ -3031,6 +3031,166 @@ export const CITATION_REVIEW = {
       "checkedOn": "2026-10-29",
       "access": "Selected passage text checked using English ESV verse numbering. Publisher views include neighbouring chapters; the Kings 23 view also supplied 22:8-20. USCCB access was unavailable or inconsistent for several selected chapters. No manuscript collation or translation-equivalence audit.",
       "rights": "Linked only; no translation text retained."
+    },
+    "follow-john": {
+      "title": "John - selected commentary",
+      "author": "Andreas Kostenberger",
+      "publisher": "The Gospel Coalition",
+      "kind": "scholarly-commentary",
+      "url": "https://www.thegospelcoalition.org/commentary/john/",
+      "checkedOn": "2026-10-29",
+      "access": "Selected readable discussion checked: 1:1-5, 6:5-15 and 20:1-18. Confessional interpretation; cited print literature was not examined.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "follow-acts": {
+      "title": "Acts - selected commentary",
+      "author": "Alan J. Thompson",
+      "publisher": "The Gospel Coalition",
+      "kind": "scholarly-commentary",
+      "url": "https://www.thegospelcoalition.org/commentary/acts/",
+      "checkedOn": "2026-10-29",
+      "access": "Selected readable discussion checked: 3:11-26, 22:1-21 and 26:12-18. Confessional interpretation; no independent verification of the narrated events.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "follow-matthew": {
+      "title": "Matthew - selected indexed commentary",
+      "author": "Douglas Sean O'Donnell",
+      "publisher": "The Gospel Coalition",
+      "kind": "scholarly-commentary",
+      "url": "https://www.thegospelcoalition.org/commentary/matthew/",
+      "checkedOn": "2026-10-29",
+      "access": "Access limited to search-indexed excerpts on 27:45-54. The direct page request returned HTTP 403. Confessional interpretation; no full-page or print commentary review.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "follow-david-lord": {
+      "title": "Commentary on Matthew 22:34-46 (2023)",
+      "author": "Nicholas J. Schaser",
+      "publisher": "Working Preacher, Luther Seminary",
+      "kind": "scholarly-commentary",
+      "url": "https://www.workingpreacher.org/commentaries/revised-common-lectionary/ordinary-30/commentary-on-matthew-2234-46-6",
+      "checkedOn": "2026-10-29",
+      "access": "Readable commentary checked, particularly the final discussion of Psalm 110:1. Homiletical interpretation; the psalm's composition and authorship were not independently established.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "follow-immanuel": {
+      "title": "Commentary on Matthew 1:18-25 (2022)",
+      "author": "Stanley Saunders",
+      "publisher": "Working Preacher, Luther Seminary",
+      "kind": "scholarly-commentary",
+      "url": "https://www.workingpreacher.org/commentaries/revised-common-lectionary/fourth-sunday-of-advent/commentary-on-matthew-118-25-9",
+      "checkedOn": "2026-10-29",
+      "access": "Readable commentary checked, particularly the Isaiah 7 setting and Matthew 1:23. Homiletical interpretation; no Hebrew/Greek manuscript collation.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "follow-healing": {
+      "title": "A Handbook on the Gospel of Matthew - 8:17 excerpt",
+      "author": "Barclay M. Newman and Philip C. Stine",
+      "publisher": "United Bible Societies; excerpt hosted by TIPs / American Bible Society",
+      "kind": "scholarly-commentary",
+      "url": "https://tips.translation.bible/story/translation-commentary-on-matthew-817/",
+      "checkedOn": "2026-10-29",
+      "access": "Readable authorised excerpt on Matthew 8:17 checked. Translation commentary, 1988; the full handbook was not examined.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "follow-passover": {
+      "title": "A Handbook on Paul's First Letter to the Corinthians - 5:7 excerpt",
+      "author": "Paul Ellingworth and Howard A. Hatton",
+      "publisher": "United Bible Societies; excerpt hosted by TIPs / American Bible Society",
+      "kind": "scholarly-commentary",
+      "url": "https://tips.translation.bible/tip_term/translation-commentary-on-1-corinthians-57/",
+      "checkedOn": "2026-10-29",
+      "access": "Readable authorised excerpt on 1 Corinthians 5:7 checked, second edition, 1985/1994. The full handbook was not examined.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "follow-romans": {
+      "title": "Romans - selected commentary",
+      "author": "Donny Ray Mathis II",
+      "publisher": "The Gospel Coalition",
+      "kind": "scholarly-commentary",
+      "url": "https://www.thegospelcoalition.org/commentary/Romans/",
+      "checkedOn": "2026-10-29",
+      "access": "Selected readable discussion checked: closing warnings and Satan's defeat in 16:17-23. Confessional interpretation; its Psalm 110:1 proposal does not endorse the site's Genesis echo.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "follow-galatians": {
+      "title": "Galatians - selected commentary",
+      "author": "Matthew P. Harmon and John Sloat",
+      "publisher": "The Gospel Coalition",
+      "kind": "scholarly-commentary",
+      "url": "https://www.thegospelcoalition.org/commentary/galatians/",
+      "checkedOn": "2026-10-29",
+      "access": "Selected readable discussion checked: The Gospel Preached beforehand to Abraham, 3:6-9. Confessional interpretation; not a survey of competing Pauline scholarship.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "follow-warriors": {
+      "title": "1 Chronicles 20 - study guide commentary",
+      "author": "Bob Utley",
+      "publisher": "Bible Lessons International / Free Bible Commentary",
+      "kind": "scholarly-commentary",
+      "url": "https://www.freebiblecommentary.org/old_testament_studies/VOL07OT/VOL07OT_20.html",
+      "checkedOn": "2026-10-29",
+      "access": "Readable comments on 20:4-8 and 20:5 checked; author attribution checked against the ministry site. Confessional study guide; referenced print works were not examined.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "follow-chronicles": {
+      "title": "1 Chronicles - follow-up selected commentary",
+      "author": "Winfried Corduan",
+      "publisher": "The Gospel Coalition",
+      "kind": "scholarly-commentary",
+      "url": "https://www.thegospelcoalition.org/commentary/1-chronicles/",
+      "checkedOn": "2026-10-29",
+      "access": "Selected readable discussion checked: 20:1-3 and 21:1-22:1. Confessional interpretation; the author's Ezra attribution and proposed census rationale are not adopted as established results.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "follow-mark": {
+      "title": "Mark - selected commentary",
+      "author": "Mark L. Strauss",
+      "publisher": "The Gospel Coalition",
+      "kind": "scholarly-commentary",
+      "url": "https://www.thegospelcoalition.org/commentary/mark/",
+      "checkedOn": "2026-10-29",
+      "access": "Selected readable discussion checked: 1:9-11, 1:29-34, 2:13-17, 4:35-41, 6:30-44, 14:22-25 and 14:32-42. Confessional interpretation; proposed harmonisations remain interpretations.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "follow-luke": {
+      "title": "Luke - selected commentary",
+      "author": "Peter G. Bolt",
+      "publisher": "The Gospel Coalition",
+      "kind": "scholarly-commentary",
+      "url": "https://www.thegospelcoalition.org/commentary/luke/",
+      "checkedOn": "2026-10-29",
+      "access": "Selected readable discussion checked: 3:21-22, 4:1-13, 9:28-36, 18:15-17, 19:28-40 and 23:50-56. Confessional interpretation; proposed locations and reconstructed sequences are not adopted.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "follow-confession": {
+      "title": "Commentary on Matthew 16:13-20 (2020)",
+      "author": "Audrey West",
+      "publisher": "Working Preacher, Luther Seminary",
+      "kind": "scholarly-commentary",
+      "url": "https://www.workingpreacher.org/commentaries/revised-common-lectionary/ordinary-21/commentary-on-matthew-1613-20",
+      "checkedOn": "2026-10-29",
+      "access": "Readable commentary checked, particularly Location, location, location and its explicit Mark comparison. Homiletical interpretation; no later ecclesial dispute is settled.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "follow-empty-tomb": {
+      "title": "Commentary on Mark 16:1-8 (2015)",
+      "author": "Lance Pape",
+      "publisher": "Working Preacher, Luther Seminary",
+      "kind": "scholarly-commentary",
+      "url": "https://www.workingpreacher.org/commentaries/revised-common-lectionary/resurrection-of-our-lord-2/commentary-on-mark-161-8-5",
+      "checkedOn": "2026-10-29",
+      "access": "Readable commentary checked, particularly the women, Galilee message and fear at 16:8. Homiletical interpretation; not a manuscript apparatus or a harmonised Easter timetable.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "follow-blessings": {
+      "title": "Commentary on Luke 6:17-26 (2022)",
+      "author": "Sarah Henrich",
+      "publisher": "Working Preacher, Luther Seminary",
+      "kind": "scholarly-commentary",
+      "url": "https://www.workingpreacher.org/commentaries/revised-common-lectionary/sixth-sunday-after-epiphany-3/commentary-on-luke-617-26-2",
+      "checkedOn": "2026-10-29",
+      "access": "Readable commentary checked, particularly the direct plural address, material circumstances, blessings and woes. Homiletical interpretation; not a reconstruction of one combined sermon.",
+      "rights": "Linked only; no Bible or commentary text retained."
     }
   },
   "records": [
@@ -3854,7 +4014,20 @@ export const CITATION_REVIEW = {
           "supports": "Passage context for the stated comparison"
         }
       ],
-      "anchor": "Isaiah 7:14"
+      "anchor": "Isaiah 7:14",
+      "supplement": {
+        "batch": "connections-support-32",
+        "reviewedOn": "2026-10-29",
+        "note": "Stanley Saunders retains Ahaz's setting when discussing Matthew's Isaiah citation.",
+        "limitation": "Retain the Hebrew/Greek translation question and Isaiah's original political setting. This citation supports the stated observation at the recorded access scope. It does not endorse every cross-passage inference. Fuller literature, textual questions and independent specialist review remain open.",
+        "citations": [
+          {
+            "sourceId": "follow-immanuel",
+            "locator": "Jesus, Son of God and God with us, Matthew 1:23",
+            "supports": "The attributed observation in this follow-up note"
+          }
+        ]
+      }
     },
     {
       "kind": "connection",
@@ -3880,7 +4053,20 @@ export const CITATION_REVIEW = {
           "supports": "Passage context for the stated comparison"
         }
       ],
-      "anchor": "Exodus 12:13"
+      "anchor": "Exodus 12:13",
+      "supplement": {
+        "batch": "connections-support-32",
+        "reviewedOn": "2026-10-29",
+        "note": "Paul Ellingworth and Howard A. Hatton explain Paul's behavioural application of Passover imagery.",
+        "limitation": "The full handbook was not examined. Typology remains distinct from a direct naming of Jesus in Exodus. This citation supports the stated observation at the recorded access scope. It does not endorse every cross-passage inference. Fuller literature, textual questions and independent specialist review remain open.",
+        "citations": [
+          {
+            "sourceId": "follow-passover",
+            "locator": "Translation commentary on 1 Corinthians 5:7",
+            "supports": "The attributed observation in this follow-up note"
+          }
+        ]
+      }
     },
     {
       "kind": "connection",
@@ -3906,7 +4092,20 @@ export const CITATION_REVIEW = {
           "supports": "Passage context for the stated comparison"
         }
       ],
-      "anchor": "Genesis 3:15"
+      "anchor": "Genesis 3:15",
+      "supplement": {
+        "batch": "connections-support-32",
+        "reviewedOn": "2026-10-29",
+        "note": "Donny Ray Mathis II instead relates the defeat language to Psalm 110:1.",
+        "limitation": "The commentary does not affirm a Genesis 3:15 echo. The site's echo label remains an editorial proposal; competing intertexts stay open. This citation supports the stated observation at the recorded access scope. It does not endorse every cross-passage inference. Fuller literature, textual questions and independent specialist review remain open.",
+        "citations": [
+          {
+            "sourceId": "follow-romans",
+            "locator": "Closing warnings and greetings, Romans 16:17-23",
+            "supports": "The attributed observation in this follow-up note"
+          }
+        ]
+      }
     },
     {
       "kind": "connection",
@@ -3932,7 +4131,20 @@ export const CITATION_REVIEW = {
           "supports": "Passage context for the stated comparison"
         }
       ],
-      "anchor": "Genesis 12:3"
+      "anchor": "Genesis 12:3",
+      "supplement": {
+        "batch": "connections-support-32",
+        "reviewedOn": "2026-10-29",
+        "note": "Matthew P. Harmon and John Sloat discuss the Abrahamic blessing for the nations.",
+        "limitation": "This citation supports the stated observation at the recorded access scope. It does not endorse every cross-passage inference. Fuller literature, textual questions and independent specialist review remain open.",
+        "citations": [
+          {
+            "sourceId": "follow-galatians",
+            "locator": "The Gospel Preached beforehand to Abraham, Galatians 3:6-9",
+            "supports": "The attributed observation in this follow-up note"
+          }
+        ]
+      }
     },
     {
       "kind": "connection",
@@ -3996,7 +4208,20 @@ export const CITATION_REVIEW = {
           "supports": "Passage context for the stated comparison"
         }
       ],
-      "anchor": "1 Samuel 17:4"
+      "anchor": "1 Samuel 17:4",
+      "supplement": {
+        "batch": "connections-support-32",
+        "reviewedOn": "2026-10-29",
+        "note": "Bob Utley identifies textual problems in the comparison with 2 Samuel 21:19.",
+        "limitation": "Utley proposes reconciliation, but this assessment does not settle the textual problem or claim the cited print studies were read. This citation supports the stated observation at the recorded access scope. It does not endorse every cross-passage inference. Fuller literature, textual questions and independent specialist review remain open.",
+        "citations": [
+          {
+            "sourceId": "follow-warriors",
+            "locator": "Comments on 1 Chronicles 20:4-8, especially 20:5",
+            "supports": "The attributed observation in this follow-up note"
+          }
+        ]
+      }
     },
     {
       "kind": "connection",
@@ -4022,7 +4247,20 @@ export const CITATION_REVIEW = {
           "supports": "Passage context for the stated comparison"
         }
       ],
-      "anchor": "2 Samuel 11:2"
+      "anchor": "2 Samuel 11:2",
+      "supplement": {
+        "batch": "connections-support-32",
+        "reviewedOn": "2026-10-29",
+        "note": "Winfried Corduan notes Chronicles' omission of David's Bathsheba and Uriah story.",
+        "limitation": "Corduan's Ezra authorship attribution and other historical reconstructions are not adopted. This citation supports the stated observation at the recorded access scope. It does not endorse every cross-passage inference. Fuller literature, textual questions and independent specialist review remain open.",
+        "citations": [
+          {
+            "sourceId": "follow-chronicles",
+            "locator": "Ammon Defeated Once More, 1 Chronicles 20:1-3",
+            "supports": "The attributed observation in this follow-up note"
+          }
+        ]
+      }
     },
     {
       "kind": "connection",
@@ -4048,7 +4286,20 @@ export const CITATION_REVIEW = {
           "supports": "Passage context for the stated comparison"
         }
       ],
-      "anchor": "2 Samuel 24:1"
+      "anchor": "2 Samuel 24:1",
+      "supplement": {
+        "batch": "connections-support-32",
+        "reviewedOn": "2026-10-29",
+        "note": "Winfried Corduan offers a theological reading of Satan's incitement and God's permission.",
+        "limitation": "God's permission is Corduan's interpretation, not identical wording in the two accounts. The differing attributions remain explicit. This citation supports the stated observation at the recorded access scope. It does not endorse every cross-passage inference. Fuller literature, textual questions and independent specialist review remain open.",
+        "citations": [
+          {
+            "sourceId": "follow-chronicles",
+            "locator": "A Lapse in Judgment by David, 1 Chronicles 21:1-22:1",
+            "supports": "The attributed observation in this follow-up note"
+          }
+        ]
+      }
     },
     {
       "kind": "place",
@@ -4113,7 +4364,20 @@ export const CITATION_REVIEW = {
         }
       ],
       "batch": "connections-20-01",
-      "anchor": "Genesis 1:1"
+      "anchor": "Genesis 1:1",
+      "supplement": {
+        "batch": "connections-support-32",
+        "reviewedOn": "2026-10-29",
+        "note": "Andreas Kostenberger explicitly relates John's opening to Genesis 1:1.",
+        "limitation": "This citation supports the stated observation at the recorded access scope. It does not endorse every cross-passage inference. Fuller literature, textual questions and independent specialist review remain open.",
+        "citations": [
+          {
+            "sourceId": "follow-john",
+            "locator": "Prologue, comments on John 1:1-5",
+            "supports": "The attributed observation in this follow-up note"
+          }
+        ]
+      }
     },
     {
       "kind": "connection",
@@ -4237,7 +4501,20 @@ export const CITATION_REVIEW = {
         }
       ],
       "batch": "connections-20-01",
-      "anchor": "Deuteronomy 18:15"
+      "anchor": "Deuteronomy 18:15",
+      "supplement": {
+        "batch": "connections-support-32",
+        "reviewedOn": "2026-10-29",
+        "note": "Alan J. Thompson identifies the prophet-like-Moses application to Jesus.",
+        "limitation": "This citation supports the stated observation at the recorded access scope. It does not endorse every cross-passage inference. Fuller literature, textual questions and independent specialist review remain open.",
+        "citations": [
+          {
+            "sourceId": "follow-acts",
+            "locator": "Peter's temple speech, comments on Acts 3:11-26",
+            "supports": "The attributed observation in this follow-up note"
+          }
+        ]
+      }
     },
     {
       "kind": "connection",
@@ -4264,7 +4541,20 @@ export const CITATION_REVIEW = {
         }
       ],
       "batch": "connections-20-01",
-      "anchor": "Psalm 22:1"
+      "anchor": "Psalm 22:1",
+      "supplement": {
+        "batch": "connections-support-32",
+        "reviewedOn": "2026-10-29",
+        "note": "Douglas Sean O'Donnell identifies Psalm 22:1 in Jesus' cry.",
+        "limitation": "Only indexed excerpts were readable; a full-page review is still open. This citation supports the stated observation at the recorded access scope. It does not endorse every cross-passage inference. Fuller literature, textual questions and independent specialist review remain open.",
+        "citations": [
+          {
+            "sourceId": "follow-matthew",
+            "locator": "Life in His Death, comments on Matthew 27:45-54",
+            "supports": "The attributed observation in this follow-up note"
+          }
+        ]
+      }
     },
     {
       "kind": "connection",
@@ -4291,7 +4581,20 @@ export const CITATION_REVIEW = {
         }
       ],
       "batch": "connections-20-01",
-      "anchor": "Psalm 110:1"
+      "anchor": "Psalm 110:1",
+      "supplement": {
+        "batch": "connections-support-32",
+        "reviewedOn": "2026-10-29",
+        "note": "Nicholas J. Schaser explains the question about David's son and Lord.",
+        "limitation": "This citation supports the stated observation at the recorded access scope. It does not endorse every cross-passage inference. Fuller literature, textual questions and independent specialist review remain open.",
+        "citations": [
+          {
+            "sourceId": "follow-david-lord",
+            "locator": "Final Psalm 110 discussion, Matthew 22:41-46",
+            "supports": "The attributed observation in this follow-up note"
+          }
+        ]
+      }
     },
     {
       "kind": "connection",
@@ -4351,7 +4654,20 @@ export const CITATION_REVIEW = {
         }
       ],
       "batch": "connections-20-01",
-      "anchor": "Isaiah 53:4"
+      "anchor": "Isaiah 53:4",
+      "supplement": {
+        "batch": "connections-support-32",
+        "reviewedOn": "2026-10-29",
+        "note": "Barclay M. Newman and Philip C. Stine distinguish the healing context of Matthew's Isaiah 53:4 citation.",
+        "limitation": "The handbook excerpt is read at its stated verse scope; no promise of automatic physical healing follows. This citation supports the stated observation at the recorded access scope. It does not endorse every cross-passage inference. Fuller literature, textual questions and independent specialist review remain open.",
+        "citations": [
+          {
+            "sourceId": "follow-healing",
+            "locator": "Translation commentary on Matthew 8:17",
+            "supports": "The attributed observation in this follow-up note"
+          }
+        ]
+      }
     },
     {
       "kind": "connection",
@@ -4756,7 +5072,20 @@ export const CITATION_REVIEW = {
         }
       ],
       "batch": "connections-20-02",
-      "anchor": "Matthew 3:13"
+      "anchor": "Matthew 3:13",
+      "supplement": {
+        "batch": "connections-support-32",
+        "reviewedOn": "2026-10-29",
+        "note": "Mark L. Strauss discusses the Spirit and heavenly declaration of sonship.",
+        "limitation": "This citation supports the stated observation at the recorded access scope. It does not endorse every cross-passage inference. Fuller literature, textual questions and independent specialist review remain open.",
+        "citations": [
+          {
+            "sourceId": "follow-mark",
+            "locator": "Comments on Mark 1:9-11",
+            "supports": "The attributed observation in this follow-up note"
+          }
+        ]
+      }
     },
     {
       "kind": "connection",
@@ -4783,7 +5112,20 @@ export const CITATION_REVIEW = {
         }
       ],
       "batch": "connections-20-02",
-      "anchor": "Mark 1:9"
+      "anchor": "Mark 1:9",
+      "supplement": {
+        "batch": "connections-support-32",
+        "reviewedOn": "2026-10-29",
+        "note": "Peter G. Bolt foregrounds prayer and the heavenly declaration.",
+        "limitation": "This citation supports the stated observation at the recorded access scope. It does not endorse every cross-passage inference. Fuller literature, textual questions and independent specialist review remain open.",
+        "citations": [
+          {
+            "sourceId": "follow-luke",
+            "locator": "Comments on Luke 3:19-22",
+            "supports": "The attributed observation in this follow-up note"
+          }
+        ]
+      }
     },
     {
       "kind": "connection",
@@ -4810,7 +5152,20 @@ export const CITATION_REVIEW = {
         }
       ],
       "batch": "connections-20-02",
-      "anchor": "Matthew 4:1"
+      "anchor": "Matthew 4:1",
+      "supplement": {
+        "batch": "connections-support-32",
+        "reviewedOn": "2026-10-29",
+        "note": "Peter G. Bolt traces Luke's testing sequence and scriptural responses.",
+        "limitation": "This citation supports the stated observation at the recorded access scope. It does not endorse every cross-passage inference. Fuller literature, textual questions and independent specialist review remain open.",
+        "citations": [
+          {
+            "sourceId": "follow-luke",
+            "locator": "Comments on Luke 4:1-13",
+            "supports": "The attributed observation in this follow-up note"
+          }
+        ]
+      }
     },
     {
       "kind": "connection",
@@ -4837,7 +5192,20 @@ export const CITATION_REVIEW = {
         }
       ],
       "batch": "connections-20-02",
-      "anchor": "Matthew 8:14"
+      "anchor": "Matthew 8:14",
+      "supplement": {
+        "batch": "connections-support-32",
+        "reviewedOn": "2026-10-29",
+        "note": "Mark L. Strauss places the healing after the synagogue visit.",
+        "limitation": "This citation supports the stated observation at the recorded access scope. It does not endorse every cross-passage inference. Fuller literature, textual questions and independent specialist review remain open.",
+        "citations": [
+          {
+            "sourceId": "follow-mark",
+            "locator": "Comments on Mark 1:29-34",
+            "supports": "The attributed observation in this follow-up note"
+          }
+        ]
+      }
     },
     {
       "kind": "connection",
@@ -4864,7 +5232,20 @@ export const CITATION_REVIEW = {
         }
       ],
       "batch": "connections-20-02",
-      "anchor": "Matthew 8:23"
+      "anchor": "Matthew 8:23",
+      "supplement": {
+        "batch": "connections-support-32",
+        "reviewedOn": "2026-10-29",
+        "note": "Mark L. Strauss discusses the disciples' fear and deficient faith.",
+        "limitation": "This citation supports the stated observation at the recorded access scope. It does not endorse every cross-passage inference. Fuller literature, textual questions and independent specialist review remain open.",
+        "citations": [
+          {
+            "sourceId": "follow-mark",
+            "locator": "Comments on Mark 4:35-41",
+            "supports": "The attributed observation in this follow-up note"
+          }
+        ]
+      }
     },
     {
       "kind": "connection",
@@ -4891,7 +5272,20 @@ export const CITATION_REVIEW = {
         }
       ],
       "batch": "connections-20-02",
-      "anchor": "Matthew 9:9"
+      "anchor": "Matthew 9:9",
+      "supplement": {
+        "batch": "connections-support-32",
+        "reviewedOn": "2026-10-29",
+        "note": "Mark L. Strauss discusses the debated Matthew and Levi identification.",
+        "limitation": "Strauss favours a two-name explanation; that preference does not independently establish historical identity. This citation supports the stated observation at the recorded access scope. It does not endorse every cross-passage inference. Fuller literature, textual questions and independent specialist review remain open.",
+        "citations": [
+          {
+            "sourceId": "follow-mark",
+            "locator": "Comments on Mark 2:13-17",
+            "supports": "The attributed observation in this follow-up note"
+          }
+        ]
+      }
     },
     {
       "kind": "connection",
@@ -4918,7 +5312,20 @@ export const CITATION_REVIEW = {
         }
       ],
       "batch": "connections-20-02",
-      "anchor": "Matthew 14:13"
+      "anchor": "Matthew 14:13",
+      "supplement": {
+        "batch": "connections-support-32",
+        "reviewedOn": "2026-10-29",
+        "note": "Mark L. Strauss notes the apostles' return before the feeding.",
+        "limitation": "This citation supports the stated observation at the recorded access scope. It does not endorse every cross-passage inference. Fuller literature, textual questions and independent specialist review remain open.",
+        "citations": [
+          {
+            "sourceId": "follow-mark",
+            "locator": "Comments on Mark 6:30-44",
+            "supports": "The attributed observation in this follow-up note"
+          }
+        ]
+      }
     },
     {
       "kind": "connection",
@@ -4945,7 +5352,20 @@ export const CITATION_REVIEW = {
         }
       ],
       "batch": "connections-20-02",
-      "anchor": "Matthew 16:13"
+      "anchor": "Matthew 16:13",
+      "supplement": {
+        "batch": "connections-support-32",
+        "reviewedOn": "2026-10-29",
+        "note": "Audrey West explicitly compares the confessions and Matthew's added sonship wording.",
+        "limitation": "This citation supports the stated observation at the recorded access scope. It does not endorse every cross-passage inference. Fuller literature, textual questions and independent specialist review remain open.",
+        "citations": [
+          {
+            "sourceId": "follow-confession",
+            "locator": "Location, location, location, Matthew 16:13-20",
+            "supports": "The attributed observation in this follow-up note"
+          }
+        ]
+      }
     },
     {
       "kind": "connection",
@@ -4972,7 +5392,20 @@ export const CITATION_REVIEW = {
         }
       ],
       "batch": "connections-20-02",
-      "anchor": "Matthew 17:1"
+      "anchor": "Matthew 17:1",
+      "supplement": {
+        "batch": "connections-support-32",
+        "reviewedOn": "2026-10-29",
+        "note": "Peter G. Bolt discusses prayer and the departure conversation.",
+        "limitation": "The commentary's probable mountain identification is not established here. Keep the six days/about eight days difference. This citation supports the stated observation at the recorded access scope. It does not endorse every cross-passage inference. Fuller literature, textual questions and independent specialist review remain open.",
+        "citations": [
+          {
+            "sourceId": "follow-luke",
+            "locator": "Comments on Luke 9:28-36",
+            "supports": "The attributed observation in this follow-up note"
+          }
+        ]
+      }
     },
     {
       "kind": "connection",
@@ -4999,7 +5432,20 @@ export const CITATION_REVIEW = {
         }
       ],
       "batch": "connections-20-02",
-      "anchor": "Matthew 19:13"
+      "anchor": "Matthew 19:13",
+      "supplement": {
+        "batch": "connections-support-32",
+        "reviewedOn": "2026-10-29",
+        "note": "Peter G. Bolt relates the child imagery to dependency.",
+        "limitation": "This reading does not settle infant baptism. This citation supports the stated observation at the recorded access scope. It does not endorse every cross-passage inference. Fuller literature, textual questions and independent specialist review remain open.",
+        "citations": [
+          {
+            "sourceId": "follow-luke",
+            "locator": "Comments on Luke 18:15-17",
+            "supports": "The attributed observation in this follow-up note"
+          }
+        ]
+      }
     },
     {
       "kind": "connection",
@@ -5026,7 +5472,20 @@ export const CITATION_REVIEW = {
         }
       ],
       "batch": "connections-20-02",
-      "anchor": "Matthew 21:1"
+      "anchor": "Matthew 21:1",
+      "supplement": {
+        "batch": "connections-support-32",
+        "reviewedOn": "2026-10-29",
+        "note": "Peter G. Bolt reads the colt and acclamation as royal imagery.",
+        "limitation": "This citation supports the stated observation at the recorded access scope. It does not endorse every cross-passage inference. Fuller literature, textual questions and independent specialist review remain open.",
+        "citations": [
+          {
+            "sourceId": "follow-luke",
+            "locator": "Comments on Luke 19:28-40",
+            "supports": "The attributed observation in this follow-up note"
+          }
+        ]
+      }
     },
     {
       "kind": "connection",
@@ -5053,7 +5512,20 @@ export const CITATION_REVIEW = {
         }
       ],
       "batch": "connections-20-02",
-      "anchor": "Matthew 26:26"
+      "anchor": "Matthew 26:26",
+      "supplement": {
+        "batch": "connections-support-32",
+        "reviewedOn": "2026-10-29",
+        "note": "Mark L. Strauss connects the meal's covenant language with Exodus 24:8.",
+        "limitation": "This citation supports the stated observation at the recorded access scope. It does not endorse every cross-passage inference. Fuller literature, textual questions and independent specialist review remain open.",
+        "citations": [
+          {
+            "sourceId": "follow-mark",
+            "locator": "Comments on Mark 14:22-26",
+            "supports": "The attributed observation in this follow-up note"
+          }
+        ]
+      }
     },
     {
       "kind": "connection",
@@ -5080,7 +5552,20 @@ export const CITATION_REVIEW = {
         }
       ],
       "batch": "connections-20-02",
-      "anchor": "Matthew 26:36"
+      "anchor": "Matthew 26:36",
+      "supplement": {
+        "batch": "connections-support-32",
+        "reviewedOn": "2026-10-29",
+        "note": "Mark L. Strauss contrasts Jesus' prayer with the disciples' sleep.",
+        "limitation": "This citation supports the stated observation at the recorded access scope. It does not endorse every cross-passage inference. Fuller literature, textual questions and independent specialist review remain open.",
+        "citations": [
+          {
+            "sourceId": "follow-mark",
+            "locator": "Comments on Mark 14:32-42",
+            "supports": "The attributed observation in this follow-up note"
+          }
+        ]
+      }
     },
     {
       "kind": "connection",
@@ -5107,7 +5592,20 @@ export const CITATION_REVIEW = {
         }
       ],
       "batch": "connections-20-02",
-      "anchor": "Matthew 27:57"
+      "anchor": "Matthew 27:57",
+      "supplement": {
+        "batch": "connections-support-32",
+        "reviewedOn": "2026-10-29",
+        "note": "Peter G. Bolt notes Joseph's dissent and the women's Sabbath rest.",
+        "limitation": "No reconstructed resurrection itinerary or modern tomb identification is adopted. This citation supports the stated observation at the recorded access scope. It does not endorse every cross-passage inference. Fuller literature, textual questions and independent specialist review remain open.",
+        "citations": [
+          {
+            "sourceId": "follow-luke",
+            "locator": "Comments on Luke 23:50-56",
+            "supports": "The attributed observation in this follow-up note"
+          }
+        ]
+      }
     },
     {
       "kind": "connection",
@@ -5134,7 +5632,20 @@ export const CITATION_REVIEW = {
         }
       ],
       "batch": "connections-20-02",
-      "anchor": "Matthew 28:1"
+      "anchor": "Matthew 28:1",
+      "supplement": {
+        "batch": "connections-support-32",
+        "reviewedOn": "2026-10-29",
+        "note": "Lance Pape retains the women's fear and the Galilee summons.",
+        "limitation": "This citation supports the stated observation at the recorded access scope. It does not endorse every cross-passage inference. Fuller literature, textual questions and independent specialist review remain open.",
+        "citations": [
+          {
+            "sourceId": "follow-empty-tomb",
+            "locator": "Galilee message and final fear, Mark 16:1-8",
+            "supports": "The attributed observation in this follow-up note"
+          }
+        ]
+      }
     },
     {
       "kind": "connection",
@@ -5161,7 +5672,20 @@ export const CITATION_REVIEW = {
         }
       ],
       "batch": "connections-20-02",
-      "anchor": "Luke 24:1"
+      "anchor": "Luke 24:1",
+      "supplement": {
+        "batch": "connections-support-32",
+        "reviewedOn": "2026-10-29",
+        "note": "Andreas Kostenberger discusses Mary's initial assumption that the body was removed.",
+        "limitation": "This citation supports the stated observation at the recorded access scope. It does not endorse every cross-passage inference. Fuller literature, textual questions and independent specialist review remain open.",
+        "citations": [
+          {
+            "sourceId": "follow-john",
+            "locator": "Resurrection Appearances, comments on John 20:1-18",
+            "supports": "The attributed observation in this follow-up note"
+          }
+        ]
+      }
     },
     {
       "kind": "connection",
@@ -5188,7 +5712,20 @@ export const CITATION_REVIEW = {
         }
       ],
       "batch": "connections-20-02",
-      "anchor": "Acts 9:3"
+      "anchor": "Acts 9:3",
+      "supplement": {
+        "batch": "connections-support-32",
+        "reviewedOn": "2026-10-29",
+        "note": "Alan J. Thompson notes added emphases in this Damascus retelling.",
+        "limitation": "This citation supports the stated observation at the recorded access scope. It does not endorse every cross-passage inference. Fuller literature, textual questions and independent specialist review remain open.",
+        "citations": [
+          {
+            "sourceId": "follow-acts",
+            "locator": "Paul before Agrippa, comments on Acts 26:12-18",
+            "supports": "The attributed observation in this follow-up note"
+          }
+        ]
+      }
     },
     {
       "kind": "connection",
@@ -5215,7 +5752,20 @@ export const CITATION_REVIEW = {
         }
       ],
       "batch": "connections-20-02",
-      "anchor": "Acts 22:6"
+      "anchor": "Acts 22:6",
+      "supplement": {
+        "batch": "connections-support-32",
+        "reviewedOn": "2026-10-29",
+        "note": "Alan J. Thompson distinguishes the speeches' audience and commission emphases.",
+        "limitation": "The proposed hearing/understanding distinction is an interpretation, not a completed Greek-text investigation. This citation supports the stated observation at the recorded access scope. It does not endorse every cross-passage inference. Fuller literature, textual questions and independent specialist review remain open.",
+        "citations": [
+          {
+            "sourceId": "follow-acts",
+            "locator": "Paul's conversion speeches, Acts 22:1-21 and 26:12-18",
+            "supports": "The attributed observation in this follow-up note"
+          }
+        ]
+      }
     },
     {
       "kind": "connection",
@@ -5242,7 +5792,20 @@ export const CITATION_REVIEW = {
         }
       ],
       "batch": "connections-20-02",
-      "anchor": "John 6:5"
+      "anchor": "John 6:5",
+      "supplement": {
+        "batch": "connections-support-32",
+        "reviewedOn": "2026-10-29",
+        "note": "Andreas Kostenberger notes Philip and Andrew in John's feeding account.",
+        "limitation": "This citation supports the stated observation at the recorded access scope. It does not endorse every cross-passage inference. Fuller literature, textual questions and independent specialist review remain open.",
+        "citations": [
+          {
+            "sourceId": "follow-john",
+            "locator": "Feeding sign, comments on John 6:5-15",
+            "supports": "The attributed observation in this follow-up note"
+          }
+        ]
+      }
     },
     {
       "kind": "connection",
@@ -5269,7 +5832,20 @@ export const CITATION_REVIEW = {
         }
       ],
       "batch": "connections-20-02",
-      "anchor": "Matthew 5:3"
+      "anchor": "Matthew 5:3",
+      "supplement": {
+        "batch": "connections-support-32",
+        "reviewedOn": "2026-10-29",
+        "note": "Sarah Henrich retains Luke's material and social emphasis.",
+        "limitation": "This citation supports the stated observation at the recorded access scope. It does not endorse every cross-passage inference. Fuller literature, textual questions and independent specialist review remain open.",
+        "citations": [
+          {
+            "sourceId": "follow-blessings",
+            "locator": "Direct address, blessings and woes, Luke 6:20-26",
+            "supports": "The attributed observation in this follow-up note"
+          }
+        ]
+      }
     },
     {
       "kind": "connection",
@@ -7591,6 +8167,46 @@ export const CITATION_REVIEW = {
         "ce095"
       ],
       "method": "AI-assisted comparison of selected publisher passage contexts with scoped named commentary for seven previously unassessed pairs. Three readable commentaries by three authors from one evangelical collection support stated claims, not a complete survey of competing interpretations. All seven retain their narrative-parallel classification. All 115 explained pairs now have dated assessments; the full OpenBible corpus, fuller literature and independent specialist review remain outside this completion claim."
+    },
+    {
+      "id": "connections-support-32",
+      "title": "Commentary follow-up for the remaining thirty-two passage-based assessments",
+      "count": 32,
+      "targets": [
+        "ce001",
+        "ce005",
+        "ce006",
+        "ce007",
+        "ce008",
+        "ce010",
+        "ce017",
+        "ce027",
+        "ce028",
+        "ce065",
+        "ce071",
+        "ce072",
+        "ce096",
+        "ce097",
+        "ce098",
+        "ce099",
+        "ce100",
+        "ce101",
+        "ce102",
+        "ce103",
+        "ce104",
+        "ce105",
+        "ce106",
+        "ce107",
+        "ce108",
+        "ce109",
+        "ce110",
+        "ce111",
+        "ce112",
+        "ce113",
+        "ce114",
+        "ce115"
+      ],
+      "method": "AI-assisted claim-specific commentary follow-up for all 32 previously passage-based assessments. Sixteen named commentary entries have recorded locators and access limits; one was available only through indexed excerpts, two are authorised handbook excerpts. Earlier assessment fields, classifications and cautions are preserved. These citations do not imply endorsement of every link, a complete literature review or independent specialist signoff."
     }
   ]
 };

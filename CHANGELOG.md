@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.30.0 - 29/10/2026: Commentary follow-ups for all explained connections
+
+- Read dated, attributed commentary follow-ups for the 32 previously passage-based assessments, with exact source locators and access limits.
+- See scoped secondary citations for all 115 explained pairs in About and the Atlas, alongside the preserved earlier assessments and cautions.
+- Keep competing interpretations, indexed-only and handbook-excerpt limits, fuller literature and independent specialist review visible.
+
 ## 0.29.1 - 29/10/2026: Keyboard and mobile accessibility repairs
 
 - Keep keyboard focus in the visible destination when opening passages, searching Scripture and using browser history, with clear current-navigation and section labels.

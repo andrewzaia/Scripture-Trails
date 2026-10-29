@@ -1,4 +1,4 @@
-import {CITATION_REVIEW} from './citation-review-data.js?v=0.29.1';
+import {CITATION_REVIEW} from './citation-review-data.js?v=0.30.0';
 import {validateCanonicalReference} from './reference-integrity.js';
 export {CITATION_REVIEW};
 
@@ -11,6 +11,8 @@ export const REVIEW_DECISIONS=Object.freeze({
 });
 const scopeKeys={issue:'issues',place:'places',trail:'trailReadings',connection:'connections'};
 export function citationReviews(kind,target,data=CITATION_REVIEW){return data.records.filter(r=>r.kind===kind&&r.target===target);}
+export const reviewCitations=record=>[...record.citations,...(record.supplement?.citations||[])];
+export function commentaryCoverage(data=CITATION_REVIEW){return data.records.filter(r=>r.kind==='connection'&&reviewCitations(r).some(c=>['scholarly-commentary','publisher-note','publisher-abstract'].includes(data.sources[c.sourceId]?.kind))).length;}
 const safeUrl=value=>{try{const u=new URL(value);return u.protocol==='https:'&&!u.username&&!u.password;}catch{return false;}};
 const date=value=>/^\d{4}-\d{2}-\d{2}$/.test(value)&&!Number.isNaN(Date.parse(value))&&new Date(value).toISOString().slice(0,10)===value;
 export function validateCitationReview(data,counts,targets){
@@ -26,6 +28,11 @@ export function validateCitationReview(data,counts,targets){
   if(targets&&!targets[r.kind]?.has(r.target))throw Error('Unknown citation target '+k);
   if(!r.citations?.length||r.citations.some(c=>!data.sources[c.sourceId]||!c.locator||!c.supports))throw Error('Missing claim-level source '+k);
   if(new Set(r.citations.map(c=>c.sourceId)).size!==r.citations.length)throw Error('Duplicate claim source '+k);
+  if(r.supplement){
+   const s=r.supplement;
+   if(r.kind!=='connection'||!s.batch||!date(s.reviewedOn)||s.reviewedOn<r.reviewedOn||s.reviewedOn>data.updated||!s.note||!s.limitation||!s.citations?.length||s.citations.some(c=>data.sources[c.sourceId]?.kind!=='scholarly-commentary'||data.sources[c.sourceId].checkedOn>s.reviewedOn||!c.locator||!c.supports))throw Error('Invalid commentary follow-up '+k);
+   if(new Set(reviewCitations(r).map(c=>c.sourceId)).size!==reviewCitations(r).length)throw Error('Duplicate follow-up source '+k);
+  }
   if(r.kind==='place'&&r.decision==='sources-added'&&!r.citations.some(c=>['excavation-report','publisher-abstract','project-summary'].includes(data.sources[c.sourceId].kind)))throw Error('Place support needs a historical source '+k);
   totals[scopeKeys[r.kind]]++;seen.add(k);
  }
@@ -33,10 +40,11 @@ export function validateCitationReview(data,counts,targets){
  const batchIds=new Set();
  for(const batch of data.batches||[]){
   if(!batch.id||batchIds.has(batch.id)||!batch.title||!batch.method||!Number.isInteger(batch.count)||batch.count<1||batch.targets?.length!==batch.count||new Set(batch.targets).size!==batch.count)throw Error('Invalid citation batch '+batch.id);
-  for(const id of batch.targets)if(!data.records.some(r=>r.kind==='connection'&&r.target===id&&(r.batch===batch.id||r.supportBatch===batch.id)))throw Error('Unresolved citation batch target '+id);
+  for(const id of batch.targets)if(!data.records.some(r=>r.kind==='connection'&&r.target===id&&(r.batch===batch.id||r.supportBatch===batch.id||r.supplement?.batch===batch.id)))throw Error('Unresolved citation batch target '+id);
   batchIds.add(batch.id);
  }
  for(const r of data.records)for(const key of ['batch','supportBatch'])if(r[key]&&!batchIds.has(r[key]))throw Error('Unknown citation batch '+r[key]);
+ for(const r of data.records)if(r.supplement&&!data.batches?.some(b=>b.id===r.supplement.batch&&b.targets.includes(r.target)))throw Error('Unknown commentary follow-up batch or target');
  return true;
 }
 
@@ -46,8 +54,9 @@ export function appendCitationReview(parent,kind,target){
   const detail=make('details',undefined,'citation-review');
   detail.append(make('summary','Citation review: '+REVIEW_DECISIONS[record.decision]));
   detail.append(make('p',record.note),make('p',record.limitation),make('p','Reviewed '+record.reviewedOn+' | AI-assisted editorial check. Independent specialist review pending.','soft-note'));
+  if(record.supplement){const s=record.supplement;detail.append(make('h4','Commentary follow-up'),make('p',s.note),make('p',s.limitation),make('p','Follow-up reviewed '+s.reviewedOn+' | Earlier assessment retained above.','soft-note'));}
   const list=make('ul');
-  for(const c of record.citations){
+  for(const c of reviewCitations(record)){
    const s=CITATION_REVIEW.sources[c.sourceId],item=make('li'),link=make('a',s.title);
    link.href=s.url;link.target='_blank';link.rel='noopener noreferrer';
    item.append(link,make('p',s.author+' | '+s.publisher+' | '+s.kind.replaceAll('-',' ')),make('p','Checked: '+c.locator+'. Supports: '+c.supports+'.'),make('p','Access on '+s.checkedOn+': '+s.access,'soft-note'));list.append(item);
@@ -59,8 +68,9 @@ export function appendCitationReview(parent,kind,target){
 export function renderCitationSummary(root){
  if(!root)return;
  const scope=CITATION_REVIEW.scope;
- const commentaryCount=CITATION_REVIEW.records.filter(r=>r.kind==='connection'&&r.citations.some(c=>['scholarly-commentary','publisher-note','publisher-abstract'].includes(CITATION_REVIEW.sources[c.sourceId].kind))).length;
- root.replaceChildren(make('p',`Reviewed coverage: ${scope.issues} Gospel issues, ${scope.places} place dossiers, ${scope.trailReadings} Nehemiah readings and ${scope.connections} selected passage comparisons. ${commentaryCount} comparisons include named scholarly commentary or limited publisher-summary support; other comparisons rely on selected passage checks. Each assessment records a decision, checked source scope and remaining limitations.`));
+ const commentaryCount=commentaryCoverage();
+ const remaining=scope.connections-commentaryCount;
+ root.replaceChildren(make('p',`Reviewed coverage: ${scope.issues} Gospel issues, ${scope.places} place dossiers, ${scope.trailReadings} Nehemiah readings and ${scope.connections} selected passage comparisons. ${commentaryCount} comparisons include named scholarly commentary or limited publisher-summary support. ${remaining?remaining+' comparisons rely on selected passage checks.':'Every explained pair has at least one scoped secondary citation; this does not imply scholarly agreement with every link.'} Each assessment records a decision, checked source scope and remaining limitations.`));
  root.append(make('p','The Bible is the authoritative foundation of Scripture Trails. Archaeological and historical publications supply supporting context within their stated scope. This AI-assisted editorial review does not constitute independent specialist signoff.'));
  for(const [kind,title] of [['issue','Gospel issue assessments'],['place','Place citation assessments'],['trail','Nehemiah passage checks'],['connection','Selected passage comparisons']]){
   const group=make('details',undefined,'citation-review-group');group.append(make('summary',title));
@@ -76,5 +86,5 @@ export function renderCitationSummary(root){
  }
  root.append(make('h3','Remaining source work'));
  const list=make('ul');for(const text of CITATION_REVIEW.deferred)list.append(make('li',text));root.append(list);
- const download=make('a','Download the dated citation review register (JSON)');download.href='/data/citation-review.json?v=0.29.1';download.download='scripture-trails-citation-review-'+CITATION_REVIEW.updated+'.json';root.append(download);
+ const download=make('a','Download the dated citation review register (JSON)');download.href='/data/citation-review.json?v=0.30.0';download.download='scripture-trails-citation-review-'+CITATION_REVIEW.updated+'.json';root.append(download);
 }

@@ -1,10 +1,10 @@
 {
   "project": "Scripture Trails",
   "updated": "2026-10-29",
-  "description": "A transparent, evidence-aware roadmap reviewed against the released application through v0.29.1. Delivered records implementation milestones, including successive expansions; it is not a count of independent features or scholarly certification. Future work has completion criteria and no promised delivery dates.",
+  "description": "A transparent, evidence-aware roadmap reviewed against the released application through v0.30.0. Delivered records implementation milestones, including successive expansions; it is not a count of independent features or scholarly certification. Future work has completion criteria and no promised delivery dates.",
   "currentFocus": [
     "Next priority: manual screen-reader and real-device accessibility review, following the browser keyboard, drawer and text-reflow repairs in v0.29.1",
-    "Deepen source coverage: all 115 explained pairs now have dated editorial assessments. Eighty-three include named commentary or limited publisher-summary support; the other 32 rely on passage checks. Fuller literature, recorded access limits and independent specialist review remain open.",
+    "Deepen source coverage: all 115 explained pairs have dated editorial assessments and scoped secondary citations after the 32 commentary follow-ups. Fuller literature, recorded access limits, competing interpretations and independent specialist review remain open.",
     "Keep desktop/mobile browser, accessibility and notebook regression checks passing in CI; add manual assistive-technology findings as they are reviewed",
     "Arrange independent historical, textual and archaeological review, including the first Exodus collection, when suitable specialists are available",
     "Then extend the Hebrew Bible geography library with separately scoped kings, prophets, exile and return studies"
@@ -597,13 +597,26 @@
       "verification": "Delivered in v0.29.0. Exact final targets, contained anchors, unchanged classifications, scoped citations, complete target coverage and preservation of earlier assessments are checked. Three readable commentaries by three named authors support selected claims. Wider literature, manuscript and translation questions and independent specialist review remain open."
     },
     {
+      "id": "source-support-32",
+      "phase": "connections",
+      "status": "delivered",
+      "title": "Secondary citations for the remaining 32 passage-based assessments",
+      "summary": "Dated claim-specific commentary follow-ups now accompany all previously passage-based assessments, bringing scoped secondary-citation coverage to 115 of 115 explained pairs.",
+      "capabilities": [
+        "Read attributed observations, source locators and access limits from About and the Atlas",
+        "Keep every earlier assessment and its cautions alongside the dated follow-up",
+        "Distinguish a supporting observation from endorsement of an entire cross-passage interpretation"
+      ],
+      "verification": "Delivered in v0.30.0. Exact targets, citation resolution, dates, derived coverage and preservation of the earlier register are checked. Sixteen commentary entries include one indexed-only page and two authorised handbook excerpts. Fuller literature and independent specialist review remain open."
+    },
+    {
       "id": "source-coverage-followup",
       "phase": "next",
       "status": "planned",
       "title": "Further citation remediation and context review",
-      "summary": "All 115 of 115 explained pairs have dated editorial assessments through v0.29.0. Named commentary or limited publisher-summary support covers 83 assessed pairs; 32 still rely on selected passage checks. Completing the register does not constitute scholarly certification, full source access or independent specialist signoff.",
+      "summary": "All 115 of 115 explained pairs have dated editorial assessments and scoped secondary citations through v0.30.0. The 32 previously passage-based notes now have commentary follow-ups. This does not constitute scholarly certification, agreement with every link, full source access or independent specialist signoff.",
       "capabilities": [
-        "Add claim-specific external commentary for the 32 passage-based assessments and deepen the recorded limited-access sources",
+        "Deepen the recorded limited-access sources and compare competing interpretations of the existing 115 explained pairs",
         "Review the newly linked studies in full, compare competing identifications and revisit person-trail access limitations",
         "Compare complete excavation reports and textual apparatuses where access permits; preserve unresolved warnings"
       ],
