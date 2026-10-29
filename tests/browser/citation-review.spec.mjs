@@ -4,7 +4,7 @@ test('new citation reviews are reachable from About and the Atlas with accurate 
  await open(page,'about');
  await expect(page.locator('#about-review-meter')).toHaveAttribute('value','115');
  await expect(page.locator('#citation-review-summary')).toContainText('115 selected passage comparisons');
- await expect(page.locator('#citation-review-summary')).toContainText('83 comparisons include named scholarly commentary');
+ await expect(page.locator('#citation-review-summary')).toContainText('115 comparisons include named scholarly commentary');
  const group=page.locator('.citation-review-group').filter({has:page.getByText('Selected passage comparisons',{exact:true})});
  await group.locator('> summary').click();
  const article=group.locator('article').filter({has:page.getByRole('heading',{name:'Isaiah 9:2-7 and Luke 2:8-14',exact:true})});
@@ -66,7 +66,7 @@ test('completed register retains siege dates and returnee differences from About
  await open(page,'about');
  await expect(page.locator('#about-review-meter')).toHaveAttribute('value','115');
  await expect(page.locator('#citation-review-summary')).toContainText('All 115 explained pairs now have dated editorial assessments');
- await expect(page.locator('#citation-review-summary')).toContainText('the other 32 rely on selected passage checks');
+ await expect(page.locator('#citation-review-summary')).toContainText('32 previously passage-based assessments have dated commentary follow-ups');
  const group=page.locator('.citation-review-group').filter({has:page.getByText('Selected passage comparisons',{exact:true})});
  await group.locator('> summary').click();
  const siege=group.locator('article').filter({has:page.getByRole('heading',{name:'2 Kings 25:1-12 and Jeremiah 52:4-16',exact:true})});
@@ -85,4 +85,37 @@ test('completed register retains siege dates and returnee differences from About
  await expect(row).toContainText('Arah has 775 in Ezra 2:5 and 652 in Nehemiah 7:10');
  await expect(row).toContainText('No full literature review or independent specialist signoff');
  await expect(row.getByRole('link',{name:'Nehemiah - selected commentary',exact:true})).toBeVisible();
+});
+
+test('commentary follow-up retains a competing intertext from About into the Atlas',async({page})=>{
+ await open(page,'about');
+ await expect(page.locator('#citation-review-summary')).toContainText('Every explained pair has at least one scoped secondary citation');
+ const group=page.locator('.citation-review-group').filter({has:page.getByText('Selected passage comparisons',{exact:true})});
+ await group.locator('> summary').click();
+ const article=group.locator('article').filter({has:page.getByRole('heading',{name:'Genesis 3:14-15 and Romans 16:17-20',exact:true})});
+ await article.locator('.citation-review > summary').click();
+ await expect(article).toContainText('A proposed echo remains an editorial interpretation');
+ await expect(article.getByRole('heading',{name:'Commentary follow-up',exact:true})).toBeVisible();
+ await expect(article).toContainText('instead relates the defeat language to Psalm 110:1');
+ await article.getByRole('link',{name:'Open in Atlas',exact:true}).click();
+ await expect(page.locator('#graph-current')).toHaveText('Genesis 3:15');
+ const row=page.locator('.atlas-reference-row').filter({has:page.getByText('Romans 16:20',{exact:true})});
+ await row.getByText('Why these passages connect',{exact:true}).click();
+ await row.locator('.citation-review > summary').click();
+ await expect(row).toContainText('does not affirm a Genesis 3:15 echo');
+ await expect(row).toContainText('Follow-up reviewed 2026-10-29');
+ await expect(row.getByRole('link',{name:'Romans - selected commentary',exact:true})).toHaveAttribute('href','https://www.thegospelcoalition.org/commentary/Romans/');
+});
+
+test('indexed-only commentary discloses its access limit alongside the original lament warning',async({page})=>{
+ await open(page,'about');
+ const group=page.locator('.citation-review-group').filter({has:page.getByText('Selected passage comparisons',{exact:true})});
+ await group.locator('> summary').click();
+ const article=group.locator('article').filter({has:page.getByRole('heading',{name:'Psalm 22:1-5 and Matthew 27:45-50',exact:true})});
+ await article.locator('.citation-review > summary').click();
+ await expect(article).toContainText('Keep the lament audible');
+ await expect(article).toContainText('Douglas Sean O\'Donnell');
+ await expect(article).toContainText('search-indexed excerpts');
+ await expect(article).toContainText('HTTP 403');
+ await expect(article.getByRole('link',{name:'Matthew - selected indexed commentary',exact:true})).toHaveAttribute('href','https://www.thegospelcoalition.org/commentary/matthew/');
 });

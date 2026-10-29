@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {createHash} from 'node:crypto';
-import {CITATION_REVIEW,validateCitationReview,citationReviews,appendCitationReview,renderCitationSummary} from '../public/assets/citation-review.js';
+import {CITATION_REVIEW,validateCitationReview,citationReviews,appendCitationReview,renderCitationSummary,commentaryCoverage,reviewCitations} from '../public/assets/citation-review.js';
 import {CONNECTION_EVIDENCE} from '../public/assets/connection-evidence.js';
 import {personTrail} from '../public/assets/person-trails.js';
 import {validateCanonicalReference} from '../public/assets/reference-integrity.js';
@@ -169,7 +169,7 @@ test('fourth batch adds twenty bounded narrative parallels with scoped commentar
  assert.match(CITATION_REVIEW.sources['b4-1kings'].access,/indexed excerpts.*HTTP 403/);
  assert.match(CITATION_REVIEW.sources['b4-2chronicles'].access,/indexed excerpts.*HTTP 403/);
  assert.match(batch.method,/two commentaries was limited to indexed excerpts/);
- const followup=json('roadmap').milestones.find(m=>m.id==='source-coverage-followup');assert.match(followup.summary,/115 of 115.*83.*32/);
+ const followup=json('roadmap').milestones.find(m=>m.id==='source-coverage-followup');assert.match(followup.summary,/115 of 115.*32.*commentary follow-ups/);
 });
 
 test('fourth narrative batch preserves consequential differences and access limits',()=>{
@@ -181,7 +181,7 @@ test('fourth narrative batch preserves consequential differences and access limi
 });
 
 test('fourth batch preserves all previous dated assessments and source records',()=>{
- const digest=value=>createHash('sha256').update(JSON.stringify(value)).digest('hex');
+ const digest=value=>createHash('sha256').update(JSON.stringify(value, (key,value)=>key==='supplement'?undefined:value)).digest('hex');
  assert.equal(digest(CITATION_REVIEW.records.slice(0,105)),'65b0a7ad0ff29c87815075702742b7342085c2db3f921e83601c731f37c834ce');
  assert.equal(digest(Object.fromEntries(Object.entries(CITATION_REVIEW.sources).slice(0,190))),'35c34ed5434903be0028b2aad319d2de9113df5b7313947e2b3d711e72185268');
 });
@@ -220,7 +220,7 @@ test('fifth batch retains account differences, bodily life, harm and the single 
 });
 
 test('fifth batch preserves the complete previous assessment and source register',()=>{
- const digest=value=>createHash('sha256').update(JSON.stringify(value)).digest('hex');
+ const digest=value=>createHash('sha256').update(JSON.stringify(value, (key,value)=>key==='supplement'?undefined:value)).digest('hex');
  assert.equal(digest(CITATION_REVIEW.records.slice(0,125)),'79df0c2a0f6fb62b4206e42029506d89fa5888e6dba37ebe23003e29de8c6265');
  assert.equal(digest(Object.fromEntries(Object.entries(CITATION_REVIEW.sources).slice(0,233))),'686a306569d6bc31a57ca9344f46a1dae8ea21ddd010fc9cab84ceda543972fe');
 });
@@ -247,7 +247,7 @@ test('final seven assessments complete the exact explained-pair register with co
  assert.equal(scholars.size,3);assert.equal(authors.size,3);assert.equal(texts.size,12);
  const records=CITATION_REVIEW.records.filter(r=>r.kind==='connection');
  assert.equal(records.length,115);assert.deepEqual(new Set(records.map(r=>r.target)),new Set(CONNECTION_EVIDENCE.map(e=>e.id)));
- assert.equal(Object.keys(CITATION_REVIEW.sources).length,301);
+ assert.equal(Object.keys(CITATION_REVIEW.sources).length,317);
  assert.equal(records.filter(r=>r.citations.some(c=>['scholarly-commentary','publisher-note','publisher-abstract'].includes(CITATION_REVIEW.sources[c.sourceId].kind))).length,83);
  assert.equal(CITATION_REVIEW.scope.connections,115);assert.match(batch.method,/full OpenBible corpus.*outside/);
 });
@@ -259,17 +259,74 @@ test('completed coverage retains final narrative differences and further-review 
  assert.deepEqual(review('ce091').passages,['2 Kings 22:8-23:3','2 Chronicles 34:14-33']);
  assert.deepEqual(review('ce094').passages,['2 Kings 25:1-12','Jeremiah 52:4-16']);
  assert.match(CITATION_REVIEW.sources['b6-text-2-kings-23'].access,/Kings 23 view also supplied 22:8-20/);
- assert.ok(CITATION_REVIEW.deferred.some(s=>/All 115.*other 32.*not independent specialist signoff/.test(s)));
+ assert.ok(CITATION_REVIEW.deferred.some(s=>/All 115.*32 previously passage-based.*not independent specialist signoff/.test(s)));
  assert.equal(CITATION_REVIEW.deferred.some(s=>s.includes('The other 7 explained pairs')),false);
  const roadmap=json('roadmap');assert.equal(roadmap.milestones.find(m=>m.id==='source-coverage-final-07').status,'delivered');
- const followup=roadmap.milestones.find(m=>m.id==='source-coverage-followup');assert.equal(followup.status,'planned');assert.match(followup.summary,/115 of 115.*83.*32.*not constitute scholarly certification/);
+ const followup=roadmap.milestones.find(m=>m.id==='source-coverage-followup');assert.equal(followup.status,'planned');assert.match(followup.summary,/115 of 115.*32.*not constitute scholarly certification/);
  assert.match(roadmap.currentFocus[0],/manual screen-reader and real-device/);
 });
 
 test('final batch preserves all earlier assessments, sources, anchors and classifications',()=>{
- const digest=value=>createHash('sha256').update(JSON.stringify(value)).digest('hex');
+ const digest=value=>createHash('sha256').update(JSON.stringify(value, (key,value)=>key==='supplement'?undefined:value)).digest('hex');
  assert.equal(digest(CITATION_REVIEW.records.slice(0,145)),'4f815f85a238cc8667e9199ecd39010bc4563fabe109c644d7a93139381fee7b');
  assert.equal(digest(Object.fromEntries(Object.entries(CITATION_REVIEW.sources).slice(0,286))),'45b9a095de603e52ef7ff6693faf898a51af86dc5a5a69b203892d8860174ab7');
  const expected={ce086:['2 Kings 16:1','2 Chronicles 28:1'],ce090:['2 Kings 21:1','2 Chronicles 33:1'],ce091:['2 Kings 22:8','2 Chronicles 34:14'],ce092:['2 Kings 23:29','2 Chronicles 35:20'],ce093:['2 Kings 24:18','Jeremiah 52:1'],ce094:['2 Kings 25:1','Jeremiah 52:4'],ce095:['Ezra 2:1','Nehemiah 7:6']};
  for(const [id,anchors] of Object.entries(expected)){const e=CONNECTION_EVIDENCE.find(e=>e.id===id);assert.deepEqual([e.from,e.to],anchors);assert.equal(e.kind,'parallel');}
+});
+
+test('commentary follow-up covers exactly the previously passage-based targets',()=>{
+ const batch=CITATION_REVIEW.batches.find(b=>b.id==='connections-support-32');
+ const original=CITATION_REVIEW.records.filter(r=>r.kind==='connection'&&!r.citations.some(c=>['scholarly-commentary','publisher-note','publisher-abstract'].includes(CITATION_REVIEW.sources[c.sourceId].kind)));
+ assert.equal(batch.count,32);assert.deepEqual(new Set(batch.targets),new Set(original.map(r=>r.target)));
+ assert.equal(commentaryCoverage(),115);
+ assert.equal(CITATION_REVIEW.records.filter(r=>r.supplement).length,32);
+ for(const r of original){
+  const s=r.supplement;assert.equal(s.batch,batch.id);assert.equal(s.reviewedOn,'2026-10-29');assert.equal(s.citations.length,1);
+  const c=s.citations[0],source=CITATION_REVIEW.sources[c.sourceId];
+  assert.equal(source.kind,'scholarly-commentary');assert.ok(s.note.includes(source.author));assert.ok(c.locator.length>15&&c.supports.length>15);
+  assert.match(s.limitation,/independent specialist review remain open/);
+  assert.equal(reviewCitations(r).length,r.citations.length+1);
+ }
+ assert.equal(new Set(original.flatMap(r=>r.supplement.citations.map(c=>c.sourceId))).size,16);
+ // A source on one claim cannot satisfy coverage for a different assessment.
+ const d=structuredClone(CITATION_REVIEW);delete d.records.find(r=>r.target==='ce027').supplement;assert.equal(commentaryCoverage(d),114);
+});
+
+test('follow-up rejects missing claims, invalid dates, non-commentary sources and undeclared targets',()=>{
+ const record=d=>d.records.find(r=>r.target==='ce027'&&r.kind==='connection');
+ for(const mutate of [d=>record(d).supplement.reviewedOn='2099-01-01',d=>record(d).supplement.reviewedOn='2026-10-27',d=>record(d).supplement.batch='missing',d=>record(d).supplement.note='',d=>record(d).supplement.limitation='',d=>record(d).supplement.citations=[],d=>record(d).supplement.citations[0].sourceId='missing',d=>record(d).supplement.citations[0].sourceId='rom16',d=>record(d).supplement.citations[0].locator='',d=>record(d).supplement.citations.push(record(d).supplement.citations[0]),d=>d.batches.find(b=>b.id==='connections-support-32').targets[0]='ce015']){
+  const d=structuredClone(CITATION_REVIEW);mutate(d);assert.throws(()=>validateCitationReview(d,counts,targets));
+ }
+});
+
+test('all earlier assessment fields, sources and classifications survive the supplements',()=>{
+ const digest=value=>createHash('sha256').update(JSON.stringify(value)).digest('hex');
+ const original=CITATION_REVIEW.records.map(({supplement,...record})=>record);
+ assert.equal(digest(original),'17e9a33374b20e963fc9c664d75486acfce30fa7d3478a47dfa7e5523d5dc396');
+ assert.equal(digest(Object.fromEntries(Object.entries(CITATION_REVIEW.sources).slice(0,301))),'2d48c0299bad22deb186aea5f8d90d71ce5ef67dcee0c36116a071b87f46551a');
+ assert.equal(CONNECTION_EVIDENCE.find(e=>e.id==='ce027').kind,'echo');
+ for(const id of ['ce065','ce071'])assert.equal(CONNECTION_EVIDENCE.find(e=>e.id===id).kind,'theme');
+ for(const id of CITATION_REVIEW.batches.find(b=>b.id==='connections-20-02').targets)assert.equal(CONNECTION_EVIDENCE.find(e=>e.id===id).kind,'parallel');
+});
+
+test('new commentary retains competing interpretations and access limits',()=>{
+ const s=id=>citationReviews('connection',id)[0].supplement;
+ assert.match(s('ce027').note,/instead.*Psalm 110:1/);assert.match(s('ce027').limitation,/does not affirm a Genesis 3:15 echo/);
+ assert.match(s('ce065').limitation,/does not settle the textual problem/);assert.match(s('ce072').limitation,/not identical wording/);
+ assert.match(s('ce101').limitation,/does not independently establish historical identity/);
+ assert.match(s('ce104').limitation,/six days\/about eight days/);assert.match(s('ce113').limitation,/not a completed Greek-text investigation/);
+ assert.match(CITATION_REVIEW.sources['follow-matthew'].access,/indexed excerpts.*HTTP 403/);
+ for(const k of ['healing','passover'])assert.match(CITATION_REVIEW.sources['follow-'+k].access,/full handbook was not examined/);
+ const roadmap=json('roadmap');assert.equal(roadmap.milestones.find(m=>m.id==='source-support-32').status,'delivered');assert.equal(roadmap.milestones.find(m=>m.id==='source-coverage-followup').status,'planned');
+});
+
+test('About and claim panels render the dated supplement and current coverage without stale gap claims',t=>{
+ const previous=globalThis.document;globalThis.document={createElement:tag=>new El(tag)};t.after(()=>{if(previous===undefined)delete globalThis.document;else globalThis.document=previous;});
+ const root=new El('div');renderCitationSummary(root);const all=nodes(root);
+ assert.ok(all.some(e=>e.textContent.includes('115 comparisons include named scholarly commentary')));
+ assert.ok(all.some(e=>e.textContent.includes('does not imply scholarly agreement with every link')));
+ assert.equal(all.some(e=>e.textContent.includes('the other 32 rely')),false);
+ root.replaceChildren();appendCitationReview(root,'connection','ce027');const text=nodes(root).map(e=>e.textContent).join(' ');
+ assert.match(text,/Genesis describes enmity/);assert.match(text,/Commentary follow-up/);assert.match(text,/Donny Ray Mathis II.*Psalm 110:1/);assert.match(text,/Earlier assessment retained above/);
+ assert.ok(nodes(root).some(e=>e.href==='https://www.thegospelcoalition.org/commentary/Romans/'));
 });
