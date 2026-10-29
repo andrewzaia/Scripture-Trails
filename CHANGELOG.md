@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.31.1 - 29/10/2026: Study journey time estimates restored
+
+- Restore approximate study-duration ranges to all six expanded study journeys, visible on journey cards and inside the detailed journals.
+- Base the estimates on the current six-stage reading pathways rather than outdated short-study durations, with a clear reminder that each journal is self-paced.
+
 ## 0.31.0 - 29/10/2026: Expanded Scripture study journals and guided reading pathways
 
 - Expand all six study journals to 36 contextual stages with more than 200 curated reading entries and direct links into the Bible reader and connection map.

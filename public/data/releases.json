@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "version": "0.31.1",
+      "date": "2026-10-29",
+      "title": "Study journey time estimates restored",
+      "changes": [
+        "Restore approximate study-duration ranges to all six expanded study journeys, visible on journey cards and inside the detailed journals.",
+        "Base the estimates on the current six-stage reading pathways rather than outdated short-study durations, with a clear reminder that each journal is self-paced."
+      ]
+    },
+    {
       "version": "0.31.0",
       "date": "2026-10-29",
       "title": "Expanded Scripture study journals and guided reading pathways",
