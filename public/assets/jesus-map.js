@@ -1,4 +1,4 @@
-import {appendCitationReview} from './citation-review.js?v=0.29.0';
+import {appendCitationReview} from './citation-review.js?v=0.29.1';
 import {parseRef} from './books.js';
 import {GOSPEL_BOOKS,gospelSequence,gospelPassages,validateGospelChronology} from './gospel-chronology.js';
 /** Journeys of Jesus: self-hosted schematic SVG atlas. No tiles or external JavaScript. */

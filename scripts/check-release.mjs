@@ -11,7 +11,7 @@ const publicVersions=notes.releases.map(entry=>entry.version);
 if(JSON.stringify(headings)!==JSON.stringify(publicVersions))throw new Error('Development and public changelogs must list the same versions in the same order');
 const version='v'+pkg.version;
 if(!html.includes(`id="site-version" class="site-version" aria-label="Website version">${version}</span>`))throw new Error('Footer version must match package.json');
-for(const name of ['app.js','style.css','entity-index.css','paul-map.css','hebrew-geography.css'])if(!html.includes(name+'?v='+pkg.version))throw new Error('Asset cache keys must match website version: '+name);
+for(const name of ['app.js','style.css','entity-index.css','paul-map.css','hebrew-geography.css','city-studies.css','analytics.js'])if(!html.includes(name+'?v='+pkg.version))throw new Error('Asset cache keys must match website version: '+name);
 const app=readFileSync('public/assets/app.js','utf8'),index=readFileSync('public/assets/entity-index.js','utf8');
 if(!app.includes('entity-index.js?v='+pkg.version))throw new Error('Index module cache key must match version');
 if(!app.includes('graph.js?v='+pkg.version))throw new Error('Atlas renderer cache key must match version');

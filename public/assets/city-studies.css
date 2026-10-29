@@ -1,4 +1,6 @@
 /* City Studies: manuscript ink, restrained gold, explicit research metadata. */
+.city-panel{min-width:0;overflow-wrap:anywhere}
+.city-marker-option{max-width:100%;white-space:normal;overflow-wrap:anywhere}
 .city-library-page{padding:12px min(5.2%,68px) 68px;max-width:1760px;margin:0 auto;--city-map-bg:#d7ded6}
 .city-library-page .city-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}
 .city-tab,.city-debate-tab,.city-marker-option{border:1px solid var(--line);padding:11px 16px;color:var(--ink);background:var(--surface2);border-radius:5px;cursor:pointer;font-size:12px;transition:border-color .15s,background .15s}

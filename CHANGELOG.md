@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.29.1 - 29/10/2026: Keyboard and mobile accessibility repairs
+
+- Keep keyboard focus in the visible destination when opening passages, searching Scripture and using browser history, with clear current-navigation and section labels.
+- Use a mobile navigation drawer with an accessible close button, contained keyboard focus, background interaction control and reliable close and resize behaviour.
+- Read enlarged city-study text without page overflow, supported by expanded browser accessibility checks and a roadmap that keeps human screen-reader and device review open.
+
 ## 0.29.0 - 29/10/2026: All 115 explained connections assessed
 
 - Read the final seven royal, siege and returnee-list comparisons with paired passage contexts and scoped named commentary.

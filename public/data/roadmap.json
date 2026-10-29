@@ -1,9 +1,9 @@
 {
   "project": "Scripture Trails",
   "updated": "2026-10-29",
-  "description": "A transparent, evidence-aware roadmap reviewed against the released application through v0.29.0. Delivered records implementation milestones, including successive expansions; it is not a count of independent features or scholarly certification. Future work has completion criteria and no promised delivery dates.",
+  "description": "A transparent, evidence-aware roadmap reviewed against the released application through v0.29.1. Delivered records implementation milestones, including successive expansions; it is not a count of independent features or scholarly certification. Future work has completion criteria and no promised delivery dates.",
   "currentFocus": [
-    "Next priority: manual screen-reader and real-device accessibility review",
+    "Next priority: manual screen-reader and real-device accessibility review, following the browser keyboard, drawer and text-reflow repairs in v0.29.1",
     "Deepen source coverage: all 115 explained pairs now have dated editorial assessments. Eighty-three include named commentary or limited publisher-summary support; the other 32 rely on passage checks. Fuller literature, recorded access limits and independent specialist review remain open.",
     "Keep desktop/mobile browser, accessibility and notebook regression checks passing in CI; add manual assistive-technology findings as they are reviewed",
     "Arrange independent historical, textual and archaeological review, including the first Exodus collection, when suitable specialists are available",
@@ -487,17 +487,31 @@
       "verification": "Delivered in v0.24.1: 48 browser scenarios across desktop and mobile Chromium, with automated accessibility findings fixed and keyboard scenarios recorded. Fixtures do not establish publisher service availability. Manual screen-reader, real-device, Safari and Firefox review remains open."
     },
     {
+      "id": "browser-keyboard-reflow",
+      "phase": "foundation",
+      "status": "delivered",
+      "title": "Keyboard focus, mobile navigation and enlarged-text repairs",
+      "summary": "A browser accessibility pass repairs passage/search focus, mobile drawer interaction and city-study text wrapping, while preserving the human-review milestone.",
+      "capabilities": [
+        "Move focus to the visible destination after passage links, searches and browser history, with current navigation and section titles exposed",
+        "Use an accessible mobile drawer with an internal close control, contained focus, background inertness and resize cleanup",
+        "Check all twelve views at 320 CSS pixels and with enlarged text, with automated WCAG 2.2 AA rule coverage",
+        "Keep screen-reader, actual browser-zoom, physical-device and other-browser testing explicitly open"
+      ],
+      "verification": "Delivered in v0.29.1. Browser behaviour checks and deterministic text/viewport tests cover the repaired paths. Live Chromium reproduced the original reference-focus defect. These checks do not constitute assistive-technology signoff or complete WCAG certification; detailed scope and the human test protocol are in the development audit record."
+    },
+    {
       "id": "browser-accessibility",
       "phase": "next",
       "status": "next",
       "title": "Manual assistive-technology and real-device review",
-      "summary": "Complement the automated Chromium release coverage with recorded screen-reader and real-device reviews.",
+      "summary": "Follow the automated and Chromium browser checks with recorded human screen-reader, actual-zoom and physical-device reviews. Browser focus and enlarged-text defects were repaired in v0.29.1; assistive-technology signoff remains open.",
       "capabilities": [
         "Manual screen-reader checks for reading order, control names, announcements, maps and private notebook flows",
         "Real-device and browser checks beyond emulated desktop/mobile Chromium, including Safari and Firefox",
         "Record keyboard and assistive-technology findings, resolve barriers and retain regression coverage"
       ],
-      "verification": "Open. Automated axe and keyboard scenarios are delivered separately; no complete accessibility certification, manual screen-reader signoff or real-device audit is claimed."
+      "verification": "Open. Browser keyboard and layout repairs and automated WCAG rule checks are delivered separately. No VoiceOver/NVDA/TalkBack, actual browser-zoom, physical-device, Safari/Firefox or complete accessibility certification is claimed."
     },
     {
       "id": "independent-audit",

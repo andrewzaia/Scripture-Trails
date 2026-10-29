@@ -44,6 +44,7 @@ const nextEvidence=versionedImport(read(evidencePath),'connection-evidence-expan
 const newHtml=html.replace(oldLabel,oldLabel.replace(oldVersion,newVersion))
  .replace('/assets/app.js?v='+oldVersion,'/assets/app.js?v='+newVersion)
  .replace('/assets/analytics.js?v='+oldVersion,'/assets/analytics.js?v='+newVersion)
+ .replace('/assets/city-studies.css?v='+oldVersion,'/assets/city-studies.css?v='+newVersion)
  .replace('/assets/style.css?v='+oldVersion,'/assets/style.css?v='+newVersion)
  .replace('/assets/entity-index.css?v='+oldVersion,'/assets/entity-index.css?v='+newVersion)
  .replace('/assets/paul-map.css?v='+oldVersion,'/assets/paul-map.css?v='+newVersion)
