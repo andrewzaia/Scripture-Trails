@@ -282,3 +282,33 @@ body.light .analytics-consent{background:#fffdf8;color:#243b42;box-shadow:0 10px
  .navigation-close{display:flex;align-items:center;justify-content:center;align-self:flex-end;gap:8px;min-height:36px;padding:7px 10px;margin-bottom:10px;border:1px solid var(--line);border-radius:5px;background:transparent;color:var(--ink);font:inherit;font-size:12px;cursor:pointer}
 }
 @media(max-width:560px){.analytics-consent{bottom:10px;right:10px;width:calc(100% - 20px);padding:13px 15px}}
+
+/* Guided study journals: substantive pathways with readable, compact stages. */
+.journal-intro{padding:15px 18px;margin:20px 0;background:var(--surface2);border:1px solid var(--line);border-radius:7px}
+.journal-intro .journal-intro-count{font-size:12px;font-weight:750;color:var(--gold);letter-spacing:.2px}
+.journal-foundations,.journal-route{margin:25px 0}
+.journal-foundations h3,.journal-route h3{font:normal 24px/1.25 var(--serif);margin:0 0 8px}
+.journal-foundations>p,.journal-route>p{margin:0 0 14px}
+.journal-reading-links{display:flex;flex-wrap:wrap;gap:9px;margin:12px 0 18px}
+.journal-reading-links .journey-step{min-height:42px;max-width:100%;text-align:left}
+.journal-chapters{display:grid;gap:13px;margin:15px 0 26px}
+.journal-chapter{background:var(--surface2);border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.journal-chapter[open]{border-color:#847659}
+.journal-chapter>summary{padding:16px 18px;cursor:pointer;display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.journal-chapter>summary:hover{background:rgba(179,150,107,.1)}
+.journal-chapter>summary:focus-visible,.reading-plan-checklist>summary:focus-visible{outline:2px solid var(--gold);outline-offset:-2px}
+.journal-chapter-number{font-size:11px;color:var(--gold);font-weight:750;letter-spacing:1px}
+.journal-chapter>summary strong{font:normal 19px/1.35 var(--serif);flex:1;min-width:180px}
+.journal-chapter-count{font-size:11px;color:var(--muted);white-space:nowrap}
+.journal-chapter-body{border-top:1px solid var(--line);padding:18px}
+.journal-chapter-focus{font-size:13px!important;line-height:1.8}
+.journal-atlas-link{margin:0 0 18px}
+.journal-bridge,.journal-reflection,.journal-caution{padding:12px 15px;border-left:2px solid #a88b5d;margin:12px 0;background:rgba(179,150,107,.055)}
+.journal-reflection{border-left-color:#76a9a4}
+.journal-caution{border-left-color:#a4a8a5}
+.journal-bridge h4,.journal-reflection h4,.journal-caution h4{font-size:10px;letter-spacing:1.2px;color:var(--muted);margin:0 0 6px}
+.journal-bridge p,.journal-reflection p,.journal-caution p{margin:0;line-height:1.8;font-size:13px}
+.reading-plan-checklist{margin:14px 0;border:1px solid var(--line);border-radius:6px;padding:0 13px}
+.reading-plan-checklist>summary{padding:12px 0;cursor:pointer;font-weight:650}
+.reading-plan-checklist .reading-plan-row:last-child{border-bottom:0}
+@media(max-width:760px){.journal-chapter>summary{padding:13px}.journal-chapter-body{padding:14px}.journal-reading-links .journey-step{width:100%;justify-content:flex-start}.journal-chapter>summary strong{font-size:17px}}
