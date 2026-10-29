@@ -5,7 +5,7 @@ import {createAnnotations,applyHighlights,canonicalVerse,validateAnnotations,emp
 import {renderReadingPlan} from './reading-plans.js?v=0.31.0';
 import {createNotebookBackup,persistNotebook} from './notebook-backup.js?v=0.31.0';
 import {BOOKS,findBook,parseRef,referenceFor,chapterRef,adjacentChapter,readerScope} from './books.js';
-import {PATHS,EDITORIAL_LINKS} from './studies.js';
+import {PATHS,EDITORIAL_LINKS} from './studies.js?v=0.31.0';
 import {ScriptureGraph} from './graph.js?v=0.31.0';
 import {createJesusMap} from './jesus-map.js?v=0.31.0';
 import {createPaulMap} from './paul-map.js?v=0.31.0';
