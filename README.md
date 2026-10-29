@@ -78,12 +78,12 @@ For testing the production release, visit `/api/passage?q=John%201%3A1` and `/ap
 
 ### Google Analytics 4 - optional site usage statistics
 
-Scripture Trails has a **dedicated, consent-based GA4 integration**, rather than sharing a measurement ID with any other website. The public measurement ID is supplied by Cloudflare Pages and must be created by the site owner in Google Analytics.
+Scripture Trails has a **dedicated, consent-based GA4 integration**, rather than sharing a measurement ID with any other website. The public measurement ID is supplied by Cloudflare Pages from the production-only Wrangler configuration after the site owner creates the GA4 property.
 
 1. In [Google Analytics](https://analytics.google.com/), under Admin, create a property named **Scripture Trails** in the existing account. Use **Australia/Sydney** and **AUD**.
 2. Add a **Web** data stream for `https://www.scripturetrails.com/` and copy its **G-** measurement ID.
 3. In the web stream, **turn Enhanced measurement off**, including history-change page views, outbound clicks, site search and form interactions. The site supplies its own manually scoped page views; automatic history tracking would otherwise risk sending Bible references from the URL and duplicate events.
-4. In Cloudflare > Workers & Pages > **scripture-trails** > Settings > Variables and Secrets, create a **Production** plain-text variable `GA4_MEASUREMENT_ID` with the real measurement ID, then redeploy production. The ID is public, not an API secret. Leave the variable unset until the property exists.
+4. The real measurement ID `G-GDZ1R1Q61N` is stored in `wrangler.toml` under `[env.production.vars]`, the source of truth for Pages deployment settings. Do **not** duplicate it in Cloudflare dashboard variables: Pages Git deployments can replace dashboard variables with the Wrangler configuration. This GA4 ID is public, not an API secret. The server and browser also enforce the official hostname, and there is no preview binding.
 5. Visit the production URL, choose **Allow analytics** in the small consent notice, navigate between reader and Atlas, then inspect GA4 Realtime and the browser's Network panel. Preview Pages and `localhost` must never request Google's library.
 6. Refresh the existing Windsor.ai GA4 connection or select the new property there, so ChatGPT can analyse it along with the other websites.
 
