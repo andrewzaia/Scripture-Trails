@@ -567,7 +567,7 @@ const JOURNAL_CHAPTERS={
 };
 export const PATHS=CORE_PATHS.map(path=>{
  const chapters=JOURNAL_CHAPTERS[path.id]||[];
- return {...path,chapters,refs:[...new Set([...path.refs,...chapters.flatMap(section=>section.readings)])],time:'Self-paced'};
+ return {...path,anchors:[...path.refs],chapters,refs:[...new Set([...path.refs,...chapters.flatMap(section=>section.readings)])],time:'Self-paced'};
 });
 
 export const EDITORIAL_LINKS = [
