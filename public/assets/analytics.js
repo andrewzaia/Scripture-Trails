@@ -21,6 +21,13 @@ export function sectionPageview(view) {
   };
 }
 
+export function sanitiseReferrer(referrer) {
+  try {
+    const source = new URL(referrer);
+    return source.protocol === 'https:' || source.protocol === 'http:' ? source.origin + '/' : '';
+  } catch { return ''; }
+}
+
 function readConsent(storage) {
   try {
     const value = storage.getItem(CONSENT_KEY);
@@ -61,7 +68,11 @@ export async function initialiseAnalytics(win, doc) {
     if (!enabled || safe === lastSection) return;
     lastSection = safe;
     // Do not send Bible references, searches, notes, highlights or URL parameters.
-    win.gtag('event', 'page_view', sectionPageview(safe));
+    const page = sectionPageview(safe);
+    page.page_referrer = sanitiseReferrer(doc.referrer);
+    // The global location is also sanitised for GA4's automatic session events.
+    win.gtag('set', {page_location: page.page_location, page_referrer: page.page_referrer});
+    win.gtag('event', 'page_view', page);
   }
   doc.addEventListener('scripturetrails:view-change', event => trackSection(event.detail?.view));
 
@@ -77,6 +88,8 @@ export async function initialiseAnalytics(win, doc) {
     });
     win.gtag('config', measurementId, {
       send_page_view: false,
+      page_location: sectionPageview(currentSection()).page_location,
+      page_referrer: sanitiseReferrer(doc.referrer),
       allow_google_signals: false,
       allow_ad_personalization_signals: false
     });

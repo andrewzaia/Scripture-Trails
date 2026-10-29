@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {analyticsConfig} from '../functions/api/analytics-config.js';
-import {isProductionHost,normaliseSection,sectionPageview,initialiseAnalytics} from '../public/assets/analytics.js';
+import {isProductionHost,normaliseSection,sectionPageview,sanitiseReferrer,initialiseAnalytics} from '../public/assets/analytics.js';
 
 test('configuration only publishes a valid ID on the canonical hostname', async () => {
   const env = {GA4_MEASUREMENT_ID: 'G-ABC1234DEF'};
@@ -14,6 +14,13 @@ test('configuration only publishes a valid ID on the canonical hostname', async 
   assert.equal(response.status, 200);
   assert.deepEqual(await response.json(), {measurementId: env.GA4_MEASUREMENT_ID});
   assert.equal(response.headers.get('Cache-Control'), 'no-store');
+});
+
+test('referrers cannot forward paths, verse queries or fragment content', () => {
+  assert.equal(sanitiseReferrer('https://www.scripturetrails.com/?ref=John%203:16'), 'https://www.scripturetrails.com/');
+  assert.equal(sanitiseReferrer('https://www.google.com/search?q=John+3:16'), 'https://www.google.com/');
+  assert.equal(sanitiseReferrer('javascript:alert(1)'), '');
+  assert.equal(sanitiseReferrer(), '');
 });
 
 test('event URLs expose only broad site sections, not reader or notebook details', () => {
