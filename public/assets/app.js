@@ -1,23 +1,23 @@
-import {appendCitationReview,renderCitationSummary} from './citation-review.js?v=0.30.0';
-import {PERSON_TRAILS,findPersonTrails} from './person-trails.js?v=0.30.0';
-import {createStudyCollections} from './study-collections.js?v=0.30.0';
-import {createAnnotations,applyHighlights,canonicalVerse,validateAnnotations,emptyAnnotations} from './annotations.js?v=0.30.0';
-import {renderReadingPlan} from './reading-plans.js?v=0.30.0';
-import {createNotebookBackup,persistNotebook} from './notebook-backup.js?v=0.30.0';
+import {appendCitationReview,renderCitationSummary} from './citation-review.js?v=0.31.0';
+import {PERSON_TRAILS,findPersonTrails} from './person-trails.js?v=0.31.0';
+import {createStudyCollections} from './study-collections.js?v=0.31.0';
+import {createAnnotations,applyHighlights,canonicalVerse,validateAnnotations,emptyAnnotations} from './annotations.js?v=0.31.0';
+import {renderReadingPlan} from './reading-plans.js?v=0.31.0';
+import {createNotebookBackup,persistNotebook} from './notebook-backup.js?v=0.31.0';
 import {BOOKS,findBook,parseRef,referenceFor,chapterRef,adjacentChapter,readerScope} from './books.js';
-import {PATHS,EDITORIAL_LINKS} from './studies.js';
-import {ScriptureGraph} from './graph.js?v=0.30.0';
-import {createJesusMap} from './jesus-map.js?v=0.30.0';
-import {createPaulMap} from './paul-map.js?v=0.30.0';
-import {createHebrewGeography} from './hebrew-geography.js?v=0.30.0';
-import {createRoadmap} from './roadmap.js?v=0.30.0';
-import {createCityStudies} from './city-studies.js?v=0.30.0';
-import {createEntityIndex} from './entity-index.js?v=0.30.0';
+import {PATHS,EDITORIAL_LINKS} from './studies.js?v=0.31.0';
+import {ScriptureGraph} from './graph.js?v=0.31.0';
+import {createJesusMap} from './jesus-map.js?v=0.31.0';
+import {createPaulMap} from './paul-map.js?v=0.31.0';
+import {createHebrewGeography} from './hebrew-geography.js?v=0.31.0';
+import {createRoadmap} from './roadmap.js?v=0.31.0';
+import {createCityStudies} from './city-studies.js?v=0.31.0';
+import {createEntityIndex} from './entity-index.js?v=0.31.0';
 import {buildAtlas} from './atlas-paths.js';
-import {initPublicReleases} from './release-notes.js?v=0.30.0';
+import {initPublicReleases} from './release-notes.js?v=0.31.0';
 import {maxDatasetVotes,relativeVoteBars} from './atlas-strength.js';
-import {CONNECTION_EVIDENCE,CONNECTION_KINDS,explainConnection,REVIEW_LABELS} from './connection-evidence.js?v=0.30.0';
-import {createPassageComparison} from './atlas-comparison.js?v=0.30.0';
+import {CONNECTION_EVIDENCE,CONNECTION_KINDS,explainConnection,REVIEW_LABELS} from './connection-evidence.js?v=0.31.0';
+import {createPassageComparison} from './atlas-comparison.js?v=0.31.0';
 import {TRANSLATIONS,getTranslation} from './translations.js';
 import {reportScriptureView} from './fums.js';
 import {TRANSLATION_STATUS,statusForResponse} from './translation-status.js?v=20261027-indicators';
@@ -100,7 +100,7 @@ function comparePassages(from,to,evidence=null){
 }
 function openCityStudy(cityId){const url=new URL(location.href);url.searchParams.set('city',cityId);history.replaceState(history.state,'',url);showView('city-studies');cityStudiesPage?.activate(cityId);}
 function selectRef(ref,view='reader',updateHistory=true){const parsed=parseRef(ref);if(!parsed){toast('Please enter a valid Bible reference.');return;}state.ref=(view==='connections'&&parsed.verse===null)?`${parsed.book.name} ${parsed.chapter}:1`:parsed.formatted;state.history=[state.ref,...state.history.filter(x=>x!==state.ref)].slice(0,12);putSaved('history',state.history);const sameView=state.view===view;if(sameView&&view==='reader'){if($('passage-content').contains(document.activeElement))$('main').focus({preventScroll:true});void renderReader();}else if(sameView&&view==='connections'){void renderGraph();}else showView(view,false,true);if(updateHistory)updateUrl();}
-function makeJourneyCard(path){const button=create('button','journey-card');button.type='button';const meta=create('div','card-meta');meta.append(create('span','',path.label),create('span','card-number',path.number));const heading=create('h3','',path.name);const summary=create('p','',path.summary);const bottom=create('div','card-bottom');bottom.append(create('span','',`${(state.readingPlans[path.id]||[]).length}/${path.refs.length} read  ·  ${path.time}`),create('span','','↗'));button.append(meta,heading,summary,bottom);button.addEventListener('click',()=>openJourney(path.id));return button;}
+function makeJourneyCard(path){const button=create('button','journey-card');button.type='button';const meta=create('div','card-meta');meta.append(create('span','',path.label),create('span','card-number',path.number));const heading=create('h3','',path.name);const summary=create('p','',path.summary);const bottom=create('div','card-bottom');bottom.append(create('span','',`${path.chapters.length} stages | ${(state.readingPlans[path.id]||[]).length}/${path.refs.length} passages read`),create('span','','↗'));button.append(meta,heading,summary,bottom);button.addEventListener('click',()=>openJourney(path.id));return button;}
 function openPersonTrail(id){if(!PERSON_TRAILS.some(t=>t.personId===id))return;const url=new URL(location.href);url.searchParams.set('type','person');url.searchParams.set('id',id);history.replaceState(history.state,'',url);showView('entities');}
 function renderPersonTrailDirectory(){
  const list=$('person-trail-list'),items=findPersonTrails($('person-trail-search').value,$('person-trail-corpus').value);list.replaceChildren();
@@ -110,7 +110,53 @@ function renderPersonTrailDirectory(){
 }
 function buildJourneys(){renderPersonTrailDirectory();PATHS.slice(0,3).forEach(x=>$('home-journeys').append(makeJourneyCard(x)));PATHS.forEach(x=>$('all-journeys').append(makeJourneyCard(x)));}
 function openJourney(id){if(!PATHS.some(p=>p.id===id))return;state.journey=id;showView('journeys');$('journey-detail').scrollIntoView({behavior:'smooth',block:'start'});}
-function drawJourney(id){const path=PATHS.find(p=>p.id===id);if(!path)return;const target=$('journey-detail');target.hidden=false;target.replaceChildren();target.append(create('p','eyebrow',path.label),create('h2','',path.name),create('p','',path.summary));const steps=create('div','journey-steps');path.refs.forEach((ref,i)=>{const b=create('button','journey-step');b.append(create('span','',String(i+1).padStart(2,'0')),create('strong','',ref));b.addEventListener('click',()=>selectRef(ref));steps.append(b);});const q=create('div','journey-question',path.question);target.append(steps,create('p','overline','QUESTION FOR REFLECTION'),q);renderReadingPlan(target,path,{current:()=>state.readingPlans,read:ref=>selectRef(ref),save:progress=>{persistNotebook(localStorage,{...currentNotebook(),readingPlans:progress},currentNotebook());state.readingPlans=progress;$('all-journeys').replaceChildren(...PATHS.map(makeJourneyCard));$('home-journeys').replaceChildren(...PATHS.slice(0,3).map(makeJourneyCard));}});}
+function drawJourney(id){
+ const path=PATHS.find(p=>p.id===id);if(!path)return;
+ const target=$('journey-detail');target.hidden=false;target.replaceChildren();
+ target.append(create('p','eyebrow',path.label),create('h2','',path.name),create('p','',path.summary));
+ const intro=create('div','journal-intro');
+ intro.append(create('p','journal-intro-count',`${path.chapters.length} guided stages | ${path.refs.length} distinct reading references | Self-paced`),
+  create('p','', 'Each stage follows a thematic reading route: begin with the passages, compare the stated connection, then consider the question and contextual caution. These are editorial guides, not independent historical proofs or a substitute for reading the full chapters.'));
+ target.append(intro);
+ const anchorSection=create('section','journal-foundations');
+ anchorSection.append(create('h3','','Starting passages'),create('p','', 'The original anchor references remain available, and previously saved reading progress is preserved.'));
+ const anchorLinks=create('div','journal-reading-links');
+ for(const ref of path.anchors){
+  const b=create('button','journey-step');b.type='button';b.append(create('span','','\u25c7'),create('strong','',ref));
+  b.setAttribute('aria-label','Read '+ref);b.addEventListener('click',()=>selectRef(ref));anchorLinks.append(b);
+ }
+ anchorSection.append(anchorLinks);target.append(anchorSection);
+ const route=create('section','journal-route');
+ route.append(create('h3','','Guided reading pathway'),create('p','', 'Open a stage for its passages, reading rationale, cross-reference and reflection. Passage buttons open the Bible reader; the Atlas link explores the first reference in the connection map.'));
+ const cards=create('div','journal-chapters');
+ path.chapters.forEach((stage,i)=>{
+  const item=create('details','journal-chapter');item.open=i===0;
+  const heading=create('summary');heading.append(create('span','journal-chapter-number',String(i+1).padStart(2,'0')),create('strong','',stage.title),create('span','journal-chapter-count',stage.readings.length+' readings'));item.append(heading);
+  const body=create('div','journal-chapter-body');
+  body.append(create('p','journal-chapter-focus',stage.focus),create('p','overline','READ IN THIS ORDER'));
+  const links=create('div','journal-reading-links');
+  stage.readings.forEach((ref,j)=>{
+   const b=create('button','journey-step');b.type='button';
+   b.append(create('span','',String(j+1).padStart(2,'0')),create('strong','',ref));
+   b.setAttribute('aria-label','Read '+ref);b.addEventListener('click',()=>selectRef(ref));links.append(b);
+  });
+  body.append(links);
+  const atlas=create('button','small-action journal-atlas-link','Explore the first passage in the Atlas');
+  atlas.type='button';atlas.addEventListener('click',()=>selectRef(stage.readings[0],'connections'));body.append(atlas);
+  const bridge=create('div','journal-bridge');bridge.append(create('h4','','CONNECTION TO EXAMINE'),create('p','',stage.connection));
+  const question=create('div','journal-reflection');question.append(create('h4','','REFLECTION QUESTION'),create('p','',stage.question));
+  const caution=create('div','journal-caution');caution.append(create('h4','','READING CONTEXT'),create('p','',stage.context));
+  body.append(bridge,question,caution);item.append(body);cards.append(item);
+ });
+ route.append(cards);target.append(route);
+ target.append(create('p','overline','JOURNEY-WIDE QUESTION'),create('div','journey-question',path.question));
+ renderReadingPlan(target,path,{current:()=>state.readingPlans,read:ref=>selectRef(ref),save:progress=>{
+  persistNotebook(localStorage,{...currentNotebook(),readingPlans:progress},currentNotebook());
+  state.readingPlans=progress;
+  $('all-journeys').replaceChildren(...PATHS.map(makeJourneyCard));
+  $('home-journeys').replaceChildren(...PATHS.slice(0,3).map(makeJourneyCard));
+ }});
+}
 function renderJourneys(){renderPersonTrailDirectory();$('all-journeys').replaceChildren(...PATHS.map(makeJourneyCard));const target=$('journey-detail');if(!state.journey){target.hidden=true;return;}target.hidden=false;drawJourney(state.journey);}
 function populateBookPicker(){const frag=document.createDocumentFragment();for(const [label,books] of [['OLD TESTAMENT',BOOKS.slice(0,39)],['NEW TESTAMENT',BOOKS.slice(39)]]){const group=create('optgroup');group.label=label;for(const book of books){const opt=create('option','',book.name);opt.value=book.name;group.append(opt);}frag.append(group);}$('side-book').replaceChildren(frag);$('side-book').value='John';populateChapters();}
 function populateChapters(){const book=findBook($('side-book').value);if(!book)return;$('side-chapter').replaceChildren(...Array.from({length:book.chapters},(_,i)=>{const opt=create('option','',String(i+1));opt.value=i+1;return opt;}));$('side-chapter').value=1;}
