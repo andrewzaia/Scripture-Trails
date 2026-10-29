@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.27.1 - 29/10/2026: Persistent production analytics configuration
+
+- Activate the dedicated Scripture Trails GA4 measurement destination in Cloudflare Pages production configuration.
+- Keep the public measurement ID in the deployment's Wrangler source of truth so rebuilds cannot silently remove it.
+- Preserve production-only domain restrictions, visitor consent, and existing licensed Bible provider credentials.
+
 ## 0.27.0 - 29/10/2026: Privacy-conscious website analytics
 
 - Prepare an optional Google Analytics 4 integration exclusively for the official Scripture Trails domain, with a separate owner-configured measurement ID.
