@@ -7,11 +7,11 @@
     "issues": 18,
     "places": 15,
     "trailReadings": 4,
-    "connections": 108
+    "connections": 115
   },
   "deferred": [
     "All six previously unlinked named-place assessments now include external research. Bibliographic gaps in this declared batch are addressed at the stated scope; exact identifications, comparative excavation review, textual variants and abstract-only access remain unresolved. Regional placeholders were not upgraded.",
-    "The other 7 explained pairs retain their existing review labels and have no source-level assessment in these batches. Seventy-six assessed pairs now have named scholarly commentary or limited publisher-summary support, with access scope recorded. Other assessed pairs still rely on passage comparisons. Fuller literature, textual and independent specialist review remain open.",
+    "All 115 explained pairs now have dated editorial assessments. Eighty-three include named scholarly commentary or limited publisher-summary support; the other 32 rely on selected passage checks. Completion of this register is not independent specialist signoff. Fuller literature, source-access gaps, textual questions and independent review remain open.",
     "Other person-trail access gaps, full excavation reports, manuscript apparatuses, wider source coverage and independent specialist review remain open.",
     "The full OpenBible corpus remains unclassified."
   ],
@@ -2881,6 +2881,156 @@
       "checkedOn": "2026-10-29",
       "access": "Selected declared range checked in the publisher chapter view. No manuscript collation or translation-equivalence audit.",
       "rights": "Linked only; no publisher passage text retained."
+    },
+    "b6-chronicles": {
+      "title": "2 Chronicles - selected commentary",
+      "author": "Winfried Corduan",
+      "publisher": "The Gospel Coalition Bible Commentary (evangelical)",
+      "kind": "scholarly-commentary",
+      "url": "https://www.thegospelcoalition.org/commentary/2-chronicles/",
+      "checkedOn": "2026-10-29",
+      "access": "Selected readable discussion checked: Ahaz and Oded (28:1-27), Manasseh (33:1-20), Josiah's scroll and Huldah (34:8-33), and his death (35:20-27). Confessional interpretation; cited print works and external historical reconstructions were not independently checked. No full literature review or independent specialist signoff.",
+      "rights": "Linked only; original scoped paraphrase, no commentary text retained."
+    },
+    "b6-jeremiah": {
+      "title": "Jeremiah - selected commentary",
+      "author": "Matthew H. Patton",
+      "publisher": "The Gospel Coalition Bible Commentary (evangelical)",
+      "kind": "scholarly-commentary",
+      "url": "https://www.thegospelcoalition.org/commentary/jeremiah/",
+      "checkedOn": "2026-10-29",
+      "access": "Selected readable discussion checked: The concluding assessment of Jeremiah 52:1-34 as a literary vindication of the prophetic warnings. Confessional interpretation; cited print works and external historical reconstructions were not independently checked. No full literature review or independent specialist signoff.",
+      "rights": "Linked only; original scoped paraphrase, no commentary text retained."
+    },
+    "b6-nehemiah": {
+      "title": "Nehemiah - selected commentary",
+      "author": "Russell Meek",
+      "publisher": "The Gospel Coalition Bible Commentary (evangelical)",
+      "kind": "scholarly-commentary",
+      "url": "https://www.thegospelcoalition.org/commentary/nehemiah/",
+      "checkedOn": "2026-10-29",
+      "access": "Selected readable discussion checked: List of Returned Exiles (7:5-73), including competing views of literary dependence. Confessional interpretation; cited print works and external historical reconstructions were not independently checked. No full literature review or independent specialist signoff.",
+      "rights": "Linked only; original scoped paraphrase, no commentary text retained."
+    },
+    "b6-text-2-kings-16": {
+      "title": "2 Kings 16 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/2kings/16",
+      "checkedOn": "2026-10-29",
+      "access": "Selected passage text checked. Publisher notes and historical proposals were not treated as independent confirmation. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "b6-text-2-chronicles-28": {
+      "title": "2 Chronicles 28 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/2chronicles/28",
+      "checkedOn": "2026-10-29",
+      "access": "Selected passage text checked. Publisher notes and historical proposals were not treated as independent confirmation. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "b6-text-2-kings-21": {
+      "title": "2 Kings 21 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/2kings/21",
+      "checkedOn": "2026-10-29",
+      "access": "Selected passage text checked. Publisher notes and historical proposals were not treated as independent confirmation. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "b6-text-2-chronicles-33": {
+      "title": "2 Chronicles 33 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/2chronicles/33",
+      "checkedOn": "2026-10-29",
+      "access": "Selected passage text checked. Publisher notes and historical proposals were not treated as independent confirmation. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "b6-text-2-kings-23": {
+      "title": "2 Kings 22-23 - ESV (in the Kings 23 chapter view)",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/2%2BKings%2B23/",
+      "checkedOn": "2026-10-29",
+      "access": "Selected passage text checked using English ESV verse numbering. Publisher views include neighbouring chapters; the Kings 23 view also supplied 22:8-20. USCCB access was unavailable or inconsistent for several selected chapters. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "b6-text-2-chronicles-34": {
+      "title": "2 Chronicles 34 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/2%2BChronicles%2B34/",
+      "checkedOn": "2026-10-29",
+      "access": "Selected passage text checked using English ESV verse numbering. Publisher views include neighbouring chapters; the Kings 23 view also supplied 22:8-20. USCCB access was unavailable or inconsistent for several selected chapters. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "b6-text-2-chronicles-35": {
+      "title": "2 Chronicles 35 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/2%2BChronicles%2B35/",
+      "checkedOn": "2026-10-29",
+      "access": "Selected passage text checked using English ESV verse numbering. Publisher views include neighbouring chapters; the Kings 23 view also supplied 22:8-20. USCCB access was unavailable or inconsistent for several selected chapters. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "b6-text-2-kings-24": {
+      "title": "2 Kings 24 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/2%2BKings%2B24/",
+      "checkedOn": "2026-10-29",
+      "access": "Selected passage text checked using English ESV verse numbering. Publisher views include neighbouring chapters; the Kings 23 view also supplied 22:8-20. USCCB access was unavailable or inconsistent for several selected chapters. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "b6-text-jeremiah-52": {
+      "title": "Jeremiah 52 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/Jeremiah%2B52/",
+      "checkedOn": "2026-10-29",
+      "access": "Selected passage text checked using English ESV verse numbering. Publisher views include neighbouring chapters; the Kings 23 view also supplied 22:8-20. USCCB access was unavailable or inconsistent for several selected chapters. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "b6-text-2-kings-25": {
+      "title": "2 Kings 25 - USCCB",
+      "author": "USCCB Bible editorial team",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/2kings/25",
+      "checkedOn": "2026-10-29",
+      "access": "Selected passage text checked. Publisher notes and historical proposals were not treated as independent confirmation. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "b6-text-ezra-2": {
+      "title": "Ezra 2 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/Ezra%2B2/",
+      "checkedOn": "2026-10-29",
+      "access": "Selected passage text checked using English ESV verse numbering. Publisher views include neighbouring chapters; the Kings 23 view also supplied 22:8-20. USCCB access was unavailable or inconsistent for several selected chapters. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no translation text retained."
+    },
+    "b6-text-nehemiah-7": {
+      "title": "Nehemiah 7 - ESV",
+      "author": "Crossway",
+      "publisher": "Crossway",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/Nehemiah%2B7/",
+      "checkedOn": "2026-10-29",
+      "access": "Selected passage text checked using English ESV verse numbering. Publisher views include neighbouring chapters; the Kings 23 view also supplied 22:8-20. USCCB access was unavailable or inconsistent for several selected chapters. No manuscript collation or translation-equivalence audit.",
+      "rights": "Linked only; no translation text retained."
     }
   },
   "records": [
@@ -7040,6 +7190,230 @@
       ],
       "batch": "connections-20-05",
       "anchor": "2 Kings 20:1"
+    },
+    {
+      "kind": "connection",
+      "target": "ce086",
+      "title": "2 Kings 16:1-20 and 2 Chronicles 28:1-27",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-29",
+      "note": "Both books condemn Ahaz's worship and describe his appeal to Assyria. Kings details the Damascus altar; Chronicles includes Oded's rebuke and the care and release of Judahite captives. Winfried Corduan highlights that intervention.",
+      "limitation": "Kings says the Assyrian king listened to Ahaz and attacked Damascus; Chronicles says Assyria oppressed him and gave no help. Preserve those different evaluations, the fuller captive episode and the burial descriptions. The comparison does not verify troop or captive totals, reconstruct a single sequence of campaigns or independently establish the international history. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "passages": [
+        "2 Kings 16:1-20",
+        "2 Chronicles 28:1-27"
+      ],
+      "citations": [
+        {
+          "sourceId": "b6-text-2-kings-16",
+          "locator": "2 Kings 16:1-20",
+          "supports": "Selected wording and immediate context for this comparison"
+        },
+        {
+          "sourceId": "b6-text-2-chronicles-28",
+          "locator": "2 Chronicles 28:1-27",
+          "supports": "Selected wording and immediate context for this comparison"
+        },
+        {
+          "sourceId": "b6-chronicles",
+          "locator": "Ahaz, especially Oded and the released captives in 28:9-15",
+          "supports": "Highlights Oded and the return of the captives"
+        }
+      ],
+      "batch": "connections-final-07",
+      "anchor": "2 Kings 16:1"
+    },
+    {
+      "kind": "connection",
+      "target": "ce090",
+      "title": "2 Kings 21:1-18 and 2 Chronicles 33:1-20",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-29",
+      "note": "Both books describe Manasseh's idolatry. Kings stresses the judgment on Judah and innocent blood; Chronicles adds his captivity, prayer, return and reforms. Winfried Corduan discusses that reversal in Chronicles.",
+      "limitation": "Chronicles' repentance is absent from Kings, whose judgment must not be rewritten as though it narrated the same ending. Retain the victims and innocent blood alongside the later reform account. The shared material does not independently corroborate the Babylonian captivity episode or establish the date, authorship or wording of Manasseh's prayer. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "passages": [
+        "2 Kings 21:1-18",
+        "2 Chronicles 33:1-20"
+      ],
+      "citations": [
+        {
+          "sourceId": "b6-text-2-kings-21",
+          "locator": "2 Kings 21:1-18",
+          "supports": "Selected wording and immediate context for this comparison"
+        },
+        {
+          "sourceId": "b6-text-2-chronicles-33",
+          "locator": "2 Chronicles 33:1-20",
+          "supports": "Selected wording and immediate context for this comparison"
+        },
+        {
+          "sourceId": "b6-chronicles",
+          "locator": "Manasseh, especially captivity, prayer and reform in 33:10-20",
+          "supports": "Discusses the repentance and reform account in Chronicles"
+        }
+      ],
+      "batch": "connections-final-07",
+      "anchor": "2 Kings 21:1"
+    },
+    {
+      "kind": "connection",
+      "target": "ce091",
+      "title": "2 Kings 22:8-23:3 and 2 Chronicles 34:14-33",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-29",
+      "note": "Hilkiah finds a law book, Shaphan reads it, Josiah seeks Huldah's prophetic counsel, and a public covenant follows. Winfried Corduan discusses the scroll and Huldah's response, considering Deuteronomy as a possible identification.",
+      "limitation": "The exact extent and composition of the discovered scroll remain debated; identifying it with Deuteronomy is an interpretation. Preserve Huldah's role, the different delegation names and Chronicles' additional concluding reform summary. The report of discovery does not itself date the composition of the Torah. The promise of burial in peace needs to be read alongside Josiah's later death; this comparison does not settle that interpretive question. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "passages": [
+        "2 Kings 22:8-23:3",
+        "2 Chronicles 34:14-33"
+      ],
+      "citations": [
+        {
+          "sourceId": "b6-text-2-kings-23",
+          "locator": "2 Kings 22:8-23:3",
+          "supports": "Selected wording and immediate context for this comparison"
+        },
+        {
+          "sourceId": "b6-text-2-chronicles-34",
+          "locator": "2 Chronicles 34:14-33",
+          "supports": "Selected wording and immediate context for this comparison"
+        },
+        {
+          "sourceId": "b6-chronicles",
+          "locator": "Josiah, Finding the Torah Scroll and Huldah, comments on 34:8-33",
+          "supports": "Discusses the scroll, Huldah and the covenant response"
+        }
+      ],
+      "batch": "connections-final-07",
+      "anchor": "2 Kings 22:8"
+    },
+    {
+      "kind": "connection",
+      "target": "ce092",
+      "title": "2 Kings 23:28-30 and 2 Chronicles 35:20-27",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-29",
+      "note": "Both accounts connect Josiah's death with Neco and Megiddo. Chronicles adds a warning attributed to God, disguise, archers and mourning. Winfried Corduan discusses the warning and wounded return.",
+      "limitation": "Kings has Josiah carried dead from Megiddo; Chronicles describes a wounded return to Jerusalem before his death. These details are not silently harmonised. Chronicles' attribution of Neco's words to God remains part of that narrative's explanation. The selected readings do not establish Josiah's political motive or a reconstructed final itinerary, and they do not make every ruler's claim to divine instruction authoritative. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "passages": [
+        "2 Kings 23:28-30",
+        "2 Chronicles 35:20-27"
+      ],
+      "citations": [
+        {
+          "sourceId": "b6-text-2-kings-23",
+          "locator": "2 Kings 23:28-30",
+          "supports": "Selected wording and immediate context for this comparison"
+        },
+        {
+          "sourceId": "b6-text-2-chronicles-35",
+          "locator": "2 Chronicles 35:20-27",
+          "supports": "Selected wording and immediate context for this comparison"
+        },
+        {
+          "sourceId": "b6-chronicles",
+          "locator": "Josiah's Death, comments on 35:20-27",
+          "supports": "Discusses the ignored warning and wounded return"
+        }
+      ],
+      "batch": "connections-final-07",
+      "anchor": "2 Kings 23:29"
+    },
+    {
+      "kind": "connection",
+      "target": "ce093",
+      "title": "2 Kings 24:18-20 and Jeremiah 52:1-3",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-29",
+      "note": "The introductions give Zedekiah's age, reign, mother, adverse evaluation and rebellion in closely shared language. Matthew H. Patton reads Jeremiah's final chapter as a literary confirmation of its warnings about Judah's fall.",
+      "limitation": "Close wording is a literary parallel, not two demonstrably independent eyewitness reports. These short openings do not settle accession chronology, the direction of textual dependence or the identity of the appendix's compiler. Hamutal's father Jeremiah is not identified here as the prophet; a shared personal name is insufficient to establish that identity. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "passages": [
+        "2 Kings 24:18-20",
+        "Jeremiah 52:1-3"
+      ],
+      "citations": [
+        {
+          "sourceId": "b6-text-2-kings-24",
+          "locator": "2 Kings 24:18-20",
+          "supports": "Selected wording and immediate context for this comparison"
+        },
+        {
+          "sourceId": "b6-text-jeremiah-52",
+          "locator": "Jeremiah 52:1-3",
+          "supports": "Selected wording and immediate context for this comparison"
+        },
+        {
+          "sourceId": "b6-jeremiah",
+          "locator": "The Accomplishment of Judah's Plucking Up and Tearing Down, comments on 52:1-34",
+          "supports": "Explains the final chapter's role within the book of Jeremiah"
+        }
+      ],
+      "batch": "connections-final-07",
+      "anchor": "2 Kings 24:18"
+    },
+    {
+      "kind": "connection",
+      "target": "ce094",
+      "title": "2 Kings 25:1-12 and Jeremiah 52:4-16",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-29",
+      "note": "Both accounts narrate siege, famine, the city's breach, Zedekiah's capture and Jerusalem's destruction. Jeremiah adds details of his imprisonment. Matthew H. Patton relates the destruction account to the book's earlier prophetic warnings.",
+      "limitation": "The fifth-month entry of Nebuzaradan is dated to the seventh day in 2 Kings 25:8 and the tenth in Jeremiah 52:12. Keep both dates visible; a proposed multi-day sequence is not established here. Jeremiah's fuller captivity account, the different treatment of deportees and the poor who remain also deserve comparison. Shared wording does not independently confirm casualty totals or resolve absolute chronology and manuscript questions. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "passages": [
+        "2 Kings 25:1-12",
+        "Jeremiah 52:4-16"
+      ],
+      "citations": [
+        {
+          "sourceId": "b6-text-2-kings-25",
+          "locator": "2 Kings 25:1-12",
+          "supports": "Selected wording and immediate context for this comparison"
+        },
+        {
+          "sourceId": "b6-text-jeremiah-52",
+          "locator": "Jeremiah 52:4-16",
+          "supports": "Selected wording and immediate context for this comparison"
+        },
+        {
+          "sourceId": "b6-jeremiah",
+          "locator": "The final chapter, especially siege, captivity and destruction in 52:4-16",
+          "supports": "Relates the destruction account to Jeremiah's warnings"
+        }
+      ],
+      "batch": "connections-final-07",
+      "anchor": "2 Kings 25:1"
+    },
+    {
+      "kind": "connection",
+      "target": "ce095",
+      "title": "Ezra 2:1-70 and Nehemiah 7:5-73",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-29",
+      "note": "Ezra presents returning families; Nehemiah frames a related list as a recovered genealogy. Russell Meek records competing views of dependence. Both give a total of 42,360, while names and individual figures differ: Arah has 775 in Ezra 2:5 and 652 in Nehemiah 7:10.",
+      "limitation": "Retain the differing family counts, names, singers and gifts rather than replacing them with one harmonised list. A shared total does not settle the component figures or prove an unchanged census. Direct borrowing, a common source and transmission or registration explanations require further textual evidence. These ancient lineage and priesthood records do not establish modern ethnic superiority or permission to exclude people today. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "passages": [
+        "Ezra 2:1-70",
+        "Nehemiah 7:5-73"
+      ],
+      "citations": [
+        {
+          "sourceId": "b6-text-ezra-2",
+          "locator": "Ezra 2:1-70",
+          "supports": "Selected wording and immediate context for this comparison"
+        },
+        {
+          "sourceId": "b6-text-nehemiah-7",
+          "locator": "Nehemiah 7:5-73",
+          "supports": "Selected wording and immediate context for this comparison"
+        },
+        {
+          "sourceId": "b6-nehemiah",
+          "locator": "List of Returned Exiles, comments on 7:5-73",
+          "supports": "Records competing views of dependence and a possible shared source"
+        }
+      ],
+      "batch": "connections-final-07",
+      "anchor": "Ezra 2:1"
     }
   ],
   "batches": [
@@ -7202,6 +7576,21 @@
         "ce089"
       ],
       "method": "AI-assisted comparison of selected publisher passage contexts with one scoped named readable commentary for every pair. Seventeen commentary works by sixteen authors support particular claims, not automatically every editorial inference. Seven narrative parallels and thirteen thematic links retain their classifications. The Revelation anchors belong to the same vision; two publisher views are not independent witnesses. No independent specialist signoff."
+    },
+    {
+      "id": "connections-final-07",
+      "title": "Final seven royal, siege and returnee comparisons",
+      "count": 7,
+      "targets": [
+        "ce086",
+        "ce090",
+        "ce091",
+        "ce092",
+        "ce093",
+        "ce094",
+        "ce095"
+      ],
+      "method": "AI-assisted comparison of selected publisher passage contexts with scoped named commentary for seven previously unassessed pairs. Three readable commentaries by three authors from one evangelical collection support stated claims, not a complete survey of competing interpretations. All seven retain their narrative-parallel classification. All 115 explained pairs now have dated assessments; the full OpenBible corpus, fuller literature and independent specialist review remain outside this completion claim."
     }
   ]
 }

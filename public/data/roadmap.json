@@ -1,10 +1,10 @@
 {
   "project": "Scripture Trails",
   "updated": "2026-10-29",
-  "description": "A transparent, evidence-aware roadmap reviewed against the released application through v0.28.0. Delivered records implementation milestones, including successive expansions; it is not a count of independent features or scholarly certification. Future work has completion criteria and no promised delivery dates.",
+  "description": "A transparent, evidence-aware roadmap reviewed against the released application through v0.29.0. Delivered records implementation milestones, including successive expansions; it is not a count of independent features or scholarly certification. Future work has completion criteria and no promised delivery dates.",
   "currentFocus": [
     "Next priority: manual screen-reader and real-device accessibility review",
-    "Continue citation remediation: 108 of 115 explained pairs now have dated assessments. The latest twenty prayer, faith, hope and Hezekiah comparisons have paired contexts and scoped named commentary. The other 7 pairs and fuller literature remain open.",
+    "Deepen source coverage: all 115 explained pairs now have dated editorial assessments. Eighty-three include named commentary or limited publisher-summary support; the other 32 rely on passage checks. Fuller literature, recorded access limits and independent specialist review remain open.",
     "Keep desktop/mobile browser, accessibility and notebook regression checks passing in CI; add manual assistive-technology findings as they are reviewed",
     "Arrange independent historical, textual and archaeological review, including the first Exodus collection, when suitable specialists are available",
     "Then extend the Hebrew Bible geography library with separately scoped kings, prophets, exile and return studies"
@@ -569,13 +569,27 @@
       "verification": "Delivered in v0.28.0. Declared targets, canonical contexts, anchor containment, unchanged classifications, source scopes and derived coverage are checked. Existing assessments and sources are preserved. Full literature, manuscript/translation questions and independent specialist review remain open."
     },
     {
+      "id": "source-coverage-final-07",
+      "phase": "connections",
+      "status": "delivered",
+      "title": "Dated editorial assessment coverage for all 115 explained connections",
+      "summary": "The final seven Ahaz, Manasseh, Josiah, siege and returnee-list comparisons complete the existing 115-pair register with paired contexts and scoped named commentary.",
+      "capabilities": [
+        "Follow sources for all 115 explained pairs from About and the Atlas",
+        "Retain differing royal evaluations, Josiah's death accounts, seventh/tenth-day dates and returnee-list figures",
+        "Distinguish 83 pairs with commentary or limited publisher-summary support from 32 based on passage checks",
+        "Keep the 603,076-link OpenBible corpus and independent specialist review outside this completion claim"
+      ],
+      "verification": "Delivered in v0.29.0. Exact final targets, contained anchors, unchanged classifications, scoped citations, complete target coverage and preservation of earlier assessments are checked. Three readable commentaries by three named authors support selected claims. Wider literature, manuscript and translation questions and independent specialist review remain open."
+    },
+    {
       "id": "source-coverage-followup",
       "phase": "next",
       "status": "planned",
       "title": "Further citation remediation and context review",
-      "summary": "Five further twenty-connection batches are assessed through v0.28.0; twelve earlier assessments also gained named commentary. Coverage is 108 of 115 pairs, with 7 still outside the dated register. Named commentary or limited publisher-summary support covers 76 assessed pairs, with source scope recorded; assessed does not mean academically certified.",
+      "summary": "All 115 of 115 explained pairs have dated editorial assessments through v0.29.0. Named commentary or limited publisher-summary support covers 83 assessed pairs; 32 still rely on selected passage checks. Completing the register does not constitute scholarly certification, full source access or independent specialist signoff.",
       "capabilities": [
-        "Assess the remaining 7 explained pairs in a separately declared batch with claim-specific sources and access limits",
+        "Add claim-specific external commentary for the 32 passage-based assessments and deepen the recorded limited-access sources",
         "Review the newly linked studies in full, compare competing identifications and revisit person-trail access limitations",
         "Compare complete excavation reports and textual apparatuses where access permits; preserve unresolved warnings"
       ],
