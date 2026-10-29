@@ -5,10 +5,10 @@ import {analyticsConfig} from '../functions/api/analytics-config.js';
 import {isProductionHost,normaliseSection,sectionPageview,sanitiseReferrer,initialiseAnalytics} from '../public/assets/analytics.js';
 
 test('production GA4 destination remains pinned in the deployable Wrangler file', () => {
-  const file = readFileSync(new URL('../wrangler.toml', import.meta.url),'utf8');
-  assert.match(file, /\\[env\\.production\\.vars\\][\\s\\S]*GA4_MEASUREMENT_ID\\s*=\\s*"G-GDZ1R1Q61N"/);
-  assert.doesNotMatch(file, /\\[env\\.preview\\.vars\\][\\s\\S]*GA4_MEASUREMENT_ID/);
-  assert.doesNotMatch(file, /\\[vars\\][\\s\\S]*GA4_MEASUREMENT_ID/);
+  const file = readFileSync(new URL('../wrangler.toml', import.meta.url), 'utf8');
+  assert.ok(file.includes('[env.production.vars]\nGA4_MEASUREMENT_ID = "G-GDZ1R1Q61N"'));
+  assert.equal(file.includes('[env.preview.vars]'), false);
+  assert.equal(file.includes('\n[vars]\n'), false);
 });
 
 test('configuration only publishes a valid ID on the canonical hostname', async () => {
@@ -42,7 +42,7 @@ test('event URLs expose only broad site sections, not reader or notebook details
   const html = readFileSync(new URL('../public/index.html', import.meta.url), 'utf8');
   assert.match(html, /id="analytics-consent"/);
   assert.match(html, /id="analytics-manage"/);
-  assert.match(html, /\/assets\/analytics\.js\?v=0\.27\.0/);
+  assert.match(html, /\/assets\/analytics\.js\?v=0\.27\.1/);
 });
 
 function browser(hostname, choice = null) {
