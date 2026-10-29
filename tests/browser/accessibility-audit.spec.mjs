@@ -48,6 +48,7 @@ test('mobile navigation contains keyboard focus, closes accessibly and resets on
  await menu.press('Enter');await sidebar.locator('[data-view="reader"]').press('Enter');await expect(page.locator('#view-reader')).toBeVisible();await expect(page.locator('#main')).toBeFocused();
  await menu.press('Enter');await page.setViewportSize({width:1280,height:900});await expect(sidebar).not.toHaveAttribute('aria-modal');await expect(page.locator('.main-column')).not.toHaveAttribute('inert');
  await expect(sidebar.locator('[data-view="reader"]')).toBeFocused();
+ await page.setViewportSize({width:390,height:844});await expect(menu).toBeFocused();
 });
 
 test('all main views reflow at 320 CSS pixels',async({page},testInfo)=>{

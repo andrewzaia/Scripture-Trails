@@ -16,7 +16,7 @@ It is not a WCAG conformance certification or a screen-reader test. No VoiceOver
 | City content grows beyond the page at enlarged text size | At a 1280px viewport with 200 percent computed text sizes, Historical Cities reached 1399px document width | Allow city panels and marker choices to shrink and wrap their text, without hiding page overflow |
 | Navigation context lacks an exposed current destination | Visual selection did not set aria-current, and every view kept the Discover document title | Mark the active navigation control, update the broad-section document title, and give the main landmark the current section's accessible name |
 
-The initial targeted desktop run had four failing scenarios and one passing scenario. All twelve views already passed the 320px reflow scenario; no narrow-width defect is claimed from that baseline. The five targeted scenarios passed after the repairs. Final source, browser, CI and production results are recorded in the release PR.
+The initial targeted desktop run had four failing scenarios and one passing scenario. All twelve views already passed the 320px reflow scenario; no narrow-width defect is claimed from that baseline. The five targeted scenarios passed after the initial repairs. GitHub's pinned Chromium then exposed a resize race: CSS could hide the close button and blur it before the media-query callback inspected focus. The handler now recovers from the drawer's open state and tracks the last meaningful navigation focus, with both resize directions covered. Final source, browser, CI and production results are recorded in the release PR.
 
 ## Verification design
 
