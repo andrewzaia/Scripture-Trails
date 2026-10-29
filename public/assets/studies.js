@@ -17,8 +17,8 @@ const JOURNAL_CHAPTERS={
         "Genesis 1",
         "Genesis 1:26-31",
         "Genesis 2:1-3",
-        "Psalm 8",
-        "Psalm 104:24-30",
+        "Psalms 8",
+        "Psalms 104:24-30",
         "Job 38:4-11"
       ],
       "connection": "Genesis 1 and Psalm 104 approach creation through different literary forms. Compare what each says about God's work and human place.",
@@ -122,9 +122,9 @@ const JOURNAL_CHAPTERS={
       "focus": "Study royal promises and psalms before considering their New Testament reception.",
       "readings": [
         "2 Samuel 7:8-16",
-        "Psalm 2",
-        "Psalm 72",
-        "Psalm 110",
+        "Psalms 2",
+        "Psalms 72",
+        "Psalms 110",
         "Isaiah 9:1-7",
         "Luke 1:30-33"
       ],
@@ -167,7 +167,7 @@ const JOURNAL_CHAPTERS={
       "title": "Suffering and rejection",
       "focus": "Follow lament and suffering-servant language through Gospel narratives and apostolic explanation.",
       "readings": [
-        "Psalm 22",
+        "Psalms 22",
         "Isaiah 53",
         "Zechariah 12:10",
         "Mark 15:21-39",
@@ -182,7 +182,7 @@ const JOURNAL_CHAPTERS={
       "title": "Resurrection and exaltation",
       "focus": "Conclude with resurrection testimony, enthronement texts and later worship imagery.",
       "readings": [
-        "Psalm 16:7-11",
+        "Psalms 16:7-11",
         "Daniel 7:13-14",
         "Luke 24:44-49",
         "Acts 2:22-36",
@@ -203,7 +203,7 @@ const JOURNAL_CHAPTERS={
         "Genesis 48:15",
         "Numbers 27:15-23",
         "2 Samuel 5:1-3",
-        "Psalm 78:52-72",
+        "Psalms 78:52-72",
         "Jeremiah 23:1-8",
         "Zechariah 11:4-17"
       ],
@@ -215,11 +215,11 @@ const JOURNAL_CHAPTERS={
       "title": "The Lord as shepherd",
       "focus": "Read personal songs of trust beside the communal confession of divine care.",
       "readings": [
-        "Psalm 23",
-        "Psalm 80:1-3",
-        "Psalm 95:6-7",
+        "Psalms 23",
+        "Psalms 80:1-3",
+        "Psalms 95:6-7",
         "Isaiah 40:10-11",
-        "Psalm 100",
+        "Psalms 100",
         "Genesis 49:22-24"
       ],
       "connection": "Psalm 23 is personal testimony while Psalm 80 speaks for the community. Isaiah 40 portrays a restoring shepherd.",
@@ -297,7 +297,7 @@ const JOURNAL_CHAPTERS={
         "Genesis 8:20-22",
         "Genesis 9:8-17",
         "Isaiah 54:7-10",
-        "Psalm 89:1-4"
+        "Psalms 89:1-4"
       ],
       "connection": "Genesis 9 explicitly names a covenant with Noah and living creatures; Isaiah 54 recalls its enduring assurance.",
       "question": "Who receives the promise, and is the promise conditional in its immediate context?",
@@ -339,8 +339,8 @@ const JOURNAL_CHAPTERS={
       "readings": [
         "Exodus 12:1-28",
         "2 Samuel 7:8-16",
-        "Psalm 89:19-37",
-        "Psalm 132:11-18",
+        "Psalms 89:19-37",
+        "Psalms 132:11-18",
         "Isaiah 55:1-5",
         "Luke 1:68-79"
       ],
@@ -386,7 +386,7 @@ const JOURNAL_CHAPTERS={
       "focus": "Read biblical assessments of wrongdoing and the law's moral challenge before moving to grace.",
       "readings": [
         "Genesis 3",
-        "Psalm 14",
+        "Psalms 14",
         "Ecclesiastes 7:15-22",
         "Romans 1:18-32",
         "Romans 3:9-26",
@@ -477,9 +477,9 @@ const JOURNAL_CHAPTERS={
       "title": "Lament is part of Scripture",
       "focus": "Start with prayers and narratives that give suffering a voice rather than dismissing it.",
       "readings": [
-        "Psalm 13",
-        "Psalm 22",
-        "Psalm 42",
+        "Psalms 13",
+        "Psalms 22",
+        "Psalms 42",
         "Lamentations 3:19-33",
         "Job 3",
         "Habakkuk 1:1-4"
@@ -492,9 +492,9 @@ const JOURNAL_CHAPTERS={
       "title": "Trust in trouble",
       "focus": "Read songs of refuge and prophetic hope with the original circumstances and audiences in view.",
       "readings": [
-        "Psalm 23",
-        "Psalm 46",
-        "Psalm 121",
+        "Psalms 23",
+        "Psalms 46",
+        "Psalms 121",
         "Isaiah 40:27-31",
         "Isaiah 43:1-7",
         "Proverbs 3:1-8"
