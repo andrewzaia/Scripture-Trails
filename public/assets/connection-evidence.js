@@ -1,6 +1,6 @@
 import {parseRef} from './books.js';
 import {validateCanonicalReference} from './reference-integrity.js';
-import {ADDITIONAL_CONNECTION_EVIDENCE} from './connection-evidence-expanded.js?v=0.27.1';
+import {ADDITIONAL_CONNECTION_EVIDENCE} from './connection-evidence-expanded.js?v=0.28.0';
 /** Selective passage-linked editorial register. The 603k OpenBible links remain unclassified. */
 export const CONNECTION_KINDS=Object.freeze({
   "quotation": "Direct quotation",
@@ -202,22 +202,22 @@ export const CONNECTION_EVIDENCE=Object.freeze([
     "from": "Matthew 6:9",
     "to": "Luke 11:2",
     "kind": "parallel",
-    "explanation": "Matthew and Luke preserve related forms of prayer attributed to Jesus.",
-    "caution": "The two accounts differ in setting and wording.",
+    "explanation": "Matthew gives the prayer within teaching about private prayer and forgiveness; Luke introduces it through a disciple's request after Jesus prays. Jennifer S. Wyant notes Luke's shorter form and its framework of trust.",
+    "caution": "Retain Matthew's additional petitions and the differing settings and debt/sin wording. Liturgical forms and manuscript variants require their own review. A narrative parallel does not supply one reconstructed verbatim prayer or make prayer a formula guaranteeing an outcome.",
     "context": "Luke 11:1-4",
     "review": "scripture-context-screened",
-    "basis": "Editorial comparison of cited passages; external specialist review pending"
+    "basis": "Selected passages and scoped named commentary checked in citation batch connections-20-05 on 2026-10-29. Access limits and remaining questions recorded there. Independent specialist review pending."
   },
   {
     "id": "ce019",
     "from": "Mark 12:30",
     "to": "Matthew 22:37",
     "kind": "parallel",
-    "explanation": "Mark and Matthew narrate related teachings about loving God.",
-    "caution": "Compare the surrounding narrative differences.",
+    "explanation": "Both accounts join love of God with love of neighbour. Mark includes the Shema and an appreciative exchange with a scribe; Matthew introduces a question intended to test Jesus. Amanda Brobst-Renaud stresses Mark's Jewish setting and the scribe's positive role.",
+    "caution": "Keep the different introductions, responses and lists of faculties visible. Jesus and his interlocutors discuss Jewish Scripture; this is not a contrast between Christian love and a supposedly loveless Judaism. The parallel does not establish identical wording or independent eyewitness reports.",
     "context": "Matthew 22:34-40",
     "review": "scripture-context-screened",
-    "basis": "Editorial comparison of cited passages; external specialist review pending"
+    "basis": "Selected passages and scoped named commentary checked in citation batch connections-20-05 on 2026-10-29. Access limits and remaining questions recorded there. Independent specialist review pending."
   },
   {
     "id": "ce020",
@@ -257,22 +257,22 @@ export const CONNECTION_EVIDENCE=Object.freeze([
     "from": "Acts 9:3",
     "to": "Acts 22:6",
     "kind": "parallel",
-    "explanation": "Acts tells the Damascus road encounter twice, with different narrative perspectives.",
-    "caution": "Details differ between the retellings.",
+    "explanation": "Acts 9 narrates Saul's encounter and Ananias's role; Acts 22 retells them in Paul's defence speech, with different emphases. Raj Nadella cautions against treating the encounter as a triumphalist rejection of Judaism.",
+    "caution": "The companions' hearing is described differently in Acts 9:7 and 22:9; translation and Greek-language questions are not silently harmonised here. Both accounts belong to Acts, not two independent historical witnesses. The selected commentary addresses Acts 9's interpretation, not a full comparison of every retelling.",
     "context": "Acts 22:6-16",
     "review": "scripture-context-screened",
-    "basis": "Editorial comparison of cited passages; external specialist review pending"
+    "basis": "Selected passages and scoped named commentary checked in citation batch connections-20-05 on 2026-10-29. Access limits and remaining questions recorded there. Independent specialist review pending."
   },
   {
     "id": "ce024",
     "from": "Exodus 3:2",
     "to": "Acts 7:30",
     "kind": "parallel",
-    "explanation": "Stephen's speech retells the story of Moses at the burning bush.",
-    "caution": "A later narrative retelling is not independent historical proof.",
-    "context": "Acts 7:30-34",
+    "explanation": "Stephen's speech retells Moses's encounter with the angel, divine voice and holy ground, then his commission to Egypt. Exodus narrates that call directly. Alan J. Thompson highlights God's presence with Moses in the wilderness.",
+    "caution": "Acts condenses the Exodus narrative and places it within Stephen's defence; its forty-year framing and rhetorical purpose remain distinct. A later retelling is not independent confirmation of the event, a location identification or a verbatim transcript of Stephen's speech.",
+    "context": "Acts 7:30-35",
     "review": "scripture-context-screened",
-    "basis": "Editorial comparison of cited passages; external specialist review pending"
+    "basis": "Selected passages and scoped named commentary checked in citation batch connections-20-05 on 2026-10-29. Access limits and remaining questions recorded there. Independent specialist review pending."
   }
 ,
  ...ADDITIONAL_CONNECTION_EVIDENCE

@@ -1,6 +1,17 @@
 {
   "releases": [
     {
+      "version": "0.28.0",
+      "date": "2026-10-29",
+      "title": "Twenty prayer, faith, hope and Hezekiah reviews",
+      "changes": [
+        "Read twenty more explained connections with paired passage contexts and scoped commentary from seventeen works by sixteen named authors.",
+        "Keep prayer forms, Acts retellings and Hezekiah narratives distinct, and identify the Revelation anchors as parts of one vision.",
+        "See 108 of 115 explained connections assessed on the About dashboard and roadmap, with seven remaining and independent review still open.",
+        "Keep the optional analytics asset refreshed automatically with each website release."
+      ]
+    },
+    {
       "version": "0.27.1",
       "date": "2026-10-29",
       "title": "Persistent production analytics configuration",

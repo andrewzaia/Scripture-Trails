@@ -42,7 +42,8 @@ test('event URLs expose only broad site sections, not reader or notebook details
   const html = readFileSync(new URL('../public/index.html', import.meta.url), 'utf8');
   assert.match(html, /id="analytics-consent"/);
   assert.match(html, /id="analytics-manage"/);
-  assert.match(html, /\/assets\/analytics\.js\?v=0\.27\.1/);
+  const {version} = JSON.parse(readFileSync(new URL('../package.json', import.meta.url), 'utf8'));
+  assert.ok(html.includes('/assets/analytics.js?v=' + version));
 });
 
 function browser(hostname, choice = null) {

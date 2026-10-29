@@ -104,11 +104,11 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "from": "Psalm 23:1",
     "to": "1 Peter 5:4",
     "kind": "theme",
-    "explanation": "The chief shepherd. Explore how Psalm 23:1 and 1 Peter 5:4 address this subject or imagery from their respective settings.",
-    "caution": "A shared subject does not establish quotation, fulfilment or historical corroboration.",
-    "context": "1 Peter 5:4",
-    "review": "editorial-reading-aid",
-    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
+    "explanation": "Psalm 23 portrays the Lord as shepherd; 1 Peter calls elders to tend God's flock as examples and names Christ the chief shepherd. Shively Smith emphasises mutual obligations within the community under God's authority.",
+    "caution": "This shared shepherd imagery is a thematic comparison, not an explicit quotation of Psalm 23. Do not equate elders with God or use the image to justify domineering leadership: 1 Peter expressly rejects that conduct. The psalm's individual voice and the letter's communal instruction remain distinct.",
+    "context": "1 Peter 5:1-5",
+    "review": "scripture-context-screened",
+    "basis": "Selected passages and scoped named commentary checked in citation batch connections-20-05 on 2026-10-29. Access limits and remaining questions recorded there. Independent specialist review pending."
   },
   {
     "id": "ce035",
@@ -302,66 +302,66 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "from": "John 3:16",
     "to": "Ephesians 2:8",
     "kind": "theme",
-    "explanation": "Salvation through grace. Explore how John 3:16 and Ephesians 2:8 address this subject or imagery from their respective settings.",
-    "caution": "A shared subject does not establish quotation, fulfilment or historical corroboration.",
-    "context": "Ephesians 2:8",
-    "review": "editorial-reading-aid",
-    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
+    "explanation": "John connects God's giving of the Son with life, belief and coming to the light; Ephesians describes salvation as God's gift and a new life of good works. Israel Kamudzandu discusses grace alongside the community's resulting vocation.",
+    "caution": "Retain John's language of judgment and light and Ephesians' distinction between salvation's gift and the good works that follow. Shared salvation language does not establish quotation or settle every debate about faith, works, election or the extent of salvation.",
+    "context": "Ephesians 2:1-10",
+    "review": "scripture-context-screened",
+    "basis": "Selected passages and scoped named commentary checked in citation batch connections-20-05 on 2026-10-29. Access limits and remaining questions recorded there. Independent specialist review pending."
   },
   {
     "id": "ce053",
     "from": "John 11:25",
     "to": "1 Corinthians 15:20",
     "kind": "theme",
-    "explanation": "Resurrection hope. Explore how John 11:25 and 1 Corinthians 15:20 address this subject or imagery from their respective settings.",
-    "caution": "A shared subject does not establish quotation, fulfilment or historical corroboration.",
-    "context": "1 Corinthians 15:20",
-    "review": "editorial-reading-aid",
-    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
+    "explanation": "John places Jesus's resurrection-and-life claim in conversation with the grieving Martha. Paul argues that Christ's resurrection grounds the hope of those who have died. Frank L. Crouch explains the consequences of denying resurrection in Paul's argument.",
+    "caution": "The selected John range precedes Lazarus's emergence from the tomb; it should not be presented as a complete account of that sign. A thematic comparison does not make Lazarus's restoration and Christ's resurrection identical events or independently settle historical claims and an end-times timetable.",
+    "context": "1 Corinthians 15:12-23",
+    "review": "scripture-context-screened",
+    "basis": "Selected passages and scoped named commentary checked in citation batch connections-20-05 on 2026-10-29. Access limits and remaining questions recorded there. Independent specialist review pending."
   },
   {
     "id": "ce054",
     "from": "John 14:6",
     "to": "Acts 4:12",
     "kind": "theme",
-    "explanation": "Salvation in Christ. Explore how John 14:6 and Acts 4:12 address this subject or imagery from their respective settings.",
-    "caution": "A shared subject does not establish quotation, fulfilment or historical corroboration.",
-    "context": "Acts 4:12",
-    "review": "editorial-reading-aid",
-    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
+    "explanation": "John presents Jesus as the way to the Father while reassuring troubled disciples. Acts presents Peter's proclamation of salvation in Jesus's name during questioning about a healing. Laura Holmes reads John 14:6 within its reassurance of the disciples.",
+    "caution": "These are distinct farewell and public-defence settings, not parallel reports of one speech. Retain both passages' claims without treating the pairing as a complete account of other people's final destinies or permission for coercion. It remains a Christian thematic comparison, not a quotation claim.",
+    "context": "Acts 4:5-12",
+    "review": "scripture-context-screened",
+    "basis": "Selected passages and scoped named commentary checked in citation batch connections-20-05 on 2026-10-29. Access limits and remaining questions recorded there. Independent specialist review pending."
   },
   {
     "id": "ce055",
     "from": "Romans 3:23",
     "to": "Ecclesiastes 7:20",
     "kind": "theme",
-    "explanation": "Human sinfulness. Explore how Romans 3:23 and Ecclesiastes 7:20 address this subject or imagery from their respective settings.",
-    "caution": "A shared subject does not establish quotation, fulfilment or historical corroboration.",
-    "context": "Ecclesiastes 7:20",
-    "review": "editorial-reading-aid",
-    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
+    "explanation": "Paul describes universal sin alongside justification by grace; Ecclesiastes warns that even the righteous do wrong within a reflection on wisdom and human limits. Richard Ascough discusses Paul's shared human accountability and the gift of grace.",
+    "caution": "Romans 3:23 does not explicitly cite Ecclesiastes 7:20. The wisdom reflection and Paul's argument retain their different purposes. This thematic link does not settle the interpretation of Ecclesiastes' counsel about excessive righteousness or Paul's debated faith-in/faithfulness-of-Christ wording.",
+    "context": "Ecclesiastes 7:15-22",
+    "review": "scripture-context-screened",
+    "basis": "Selected passages and scoped named commentary checked in citation batch connections-20-05 on 2026-10-29. Access limits and remaining questions recorded there. Independent specialist review pending."
   },
   {
     "id": "ce056",
     "from": "Romans 3:23",
     "to": "Ephesians 2:8",
     "kind": "theme",
-    "explanation": "Human need and grace. Explore how Romans 3:23 and Ephesians 2:8 address this subject or imagery from their respective settings.",
-    "caution": "A shared subject does not establish quotation, fulfilment or historical corroboration.",
-    "context": "Ephesians 2:8",
-    "review": "editorial-reading-aid",
-    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
+    "explanation": "Romans moves from universal sin to justification as a gift; Ephesians moves from death in trespasses to life with Christ and good works. Richard Ascough identifies grace as central to Romans while retaining questions about its theological language.",
+    "caution": "Do not flatten the two arguments into interchangeable formulas or erase Ephesians 2:10 after citing 2:8-9. The relationship of faith, works and Christ's faithfulness needs fuller treatment. This comparison does not resolve the authorship of Ephesians or all theories of atonement.",
+    "context": "Ephesians 2:1-10",
+    "review": "scripture-context-screened",
+    "basis": "Selected passages and scoped named commentary checked in citation batch connections-20-05 on 2026-10-29. Access limits and remaining questions recorded there. Independent specialist review pending."
   },
   {
     "id": "ce057",
     "from": "Romans 8:1",
     "to": "John 5:24",
     "kind": "theme",
-    "explanation": "No condemnation and life. Explore how Romans 8:1 and John 5:24 address this subject or imagery from their respective settings.",
-    "caution": "A shared subject does not establish quotation, fulfilment or historical corroboration.",
-    "context": "John 5:24",
-    "review": "editorial-reading-aid",
-    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
+    "explanation": "Romans announces freedom from condemnation for those in Christ and life through the Spirit; John speaks of hearing, believing and passing from death to life, alongside future judgment. Mary Hinkle Shore warns that Paul's flesh/Spirit contrast does not reject bodily existence.",
+    "caution": "Keep John's future judgment and Romans' promise of life to mortal bodies in view. Shared life language does not imply that bodies are evil or that believers avoid physical death and suffering. This thematic pairing is not a quotation or a complete reconciliation of both authors' eschatology.",
+    "context": "John 5:19-29",
+    "review": "scripture-context-screened",
+    "basis": "Selected passages and scoped named commentary checked in citation batch connections-20-05 on 2026-10-29. Access limits and remaining questions recorded there. Independent specialist review pending."
   },
   {
     "id": "ce058",
@@ -379,66 +379,66 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "from": "Romans 8:28",
     "to": "Genesis 50:20",
     "kind": "theme",
-    "explanation": "Providence and human actions. Explore how Romans 8:28 and Genesis 50:20 address this subject or imagery from their respective settings.",
-    "caution": "A shared subject does not establish quotation, fulfilment or historical corroboration.",
-    "context": "Genesis 50:20",
-    "review": "editorial-reading-aid",
-    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
+    "explanation": "Romans places God's purpose amid weakness and hope, with conformity to the Son in view; Joseph names his brothers' harmful intent while describing preservation of life. Vanessa Lovelace keeps that harm and the brothers' fear visible in reading Joseph's reassurance.",
+    "caution": "Good does not mean that the original harm was good, nor does the pairing guarantee immediate relief or material success. It must not excuse abuse or require a harmed person to trust someone unsafe. The texts are linked thematically; a complete account of providence and the debates about Joseph's forgiveness remains open.",
+    "context": "Genesis 50:15-21",
+    "review": "scripture-context-screened",
+    "basis": "Selected passages and scoped named commentary checked in citation batch connections-20-05 on 2026-10-29. Access limits and remaining questions recorded there. Independent specialist review pending."
   },
   {
     "id": "ce060",
     "from": "Romans 12:2",
     "to": "Ephesians 4:23",
     "kind": "theme",
-    "explanation": "Renewal of the mind. Explore how Romans 12:2 and Ephesians 4:23 address this subject or imagery from their respective settings.",
-    "caution": "A shared subject does not establish quotation, fulfilment or historical corroboration.",
-    "context": "Ephesians 4:23",
-    "review": "editorial-reading-aid",
-    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
+    "explanation": "Romans calls for transformed discernment and humble service through varied gifts; Ephesians describes putting away the old self and renewal of the mind. Frank L. Crouch grounds Romans' ethical appeal in God's mercies.",
+    "caution": "The shared renewal theme does not establish quotation or identical authorship. Keep Romans' living, bodily service and Ephesians' concrete change of conduct in view. Renewal is not reduced to positive thinking, intellectual superiority or an exemption from the need for ongoing moral discernment.",
+    "context": "Ephesians 4:17-24",
+    "review": "scripture-context-screened",
+    "basis": "Selected passages and scoped named commentary checked in citation batch connections-20-05 on 2026-10-29. Access limits and remaining questions recorded there. Independent specialist review pending."
   },
   {
     "id": "ce061",
     "from": "1 Corinthians 13:4",
     "to": "John 15:12",
     "kind": "theme",
-    "explanation": "Love in Christian life. Explore how 1 Corinthians 13:4 and John 15:12 address this subject or imagery from their respective settings.",
-    "caution": "A shared subject does not establish quotation, fulfilment or historical corroboration.",
-    "context": "John 15:12",
-    "review": "editorial-reading-aid",
-    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
+    "explanation": "Paul insists that speech, knowledge, faith and generosity need love and describes its conduct. John commands mutual love shaped by Jesus's self-giving friendship. Meda Stamper connects the love command with abiding in Jesus's love.",
+    "caution": "These are a discussion of community gifts and a farewell discourse, not one shared episode or a proven literary quotation. Endurance in love must not be used to excuse wrongdoing or demand submission to abuse. Retain the active, truthful and self-giving character of love in both contexts.",
+    "context": "John 15:9-17",
+    "review": "scripture-context-screened",
+    "basis": "Selected passages and scoped named commentary checked in citation batch connections-20-05 on 2026-10-29. Access limits and remaining questions recorded there. Independent specialist review pending."
   },
   {
     "id": "ce062",
     "from": "Galatians 3:8",
     "to": "Ephesians 2:8",
     "kind": "theme",
-    "explanation": "The gospel and grace. Explore how Galatians 3:8 and Ephesians 2:8 address this subject or imagery from their respective settings.",
-    "caution": "A shared subject does not establish quotation, fulfilment or historical corroboration.",
-    "context": "Ephesians 2:8",
-    "review": "editorial-reading-aid",
-    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
+    "explanation": "Galatians relates Abraham's blessing to the Gentiles through faith; Ephesians describes salvation as a gift and a life of good works. Israel Kamudzandu reads Ephesians within the letter's concern for reconciliation and shared community.",
+    "caution": "Galatians explicitly cites Abrahamic Scripture, but this pairing with Ephesians is thematic. Do not turn either passage into a claim that Jewish life is simply opposed to grace or that good works have no place. The relation of promise, law and communal inclusion needs wider contextual review.",
+    "context": "Ephesians 2:1-10",
+    "review": "scripture-context-screened",
+    "basis": "Selected passages and scoped named commentary checked in citation batch connections-20-05 on 2026-10-29. Access limits and remaining questions recorded there. Independent specialist review pending."
   },
   {
     "id": "ce063",
     "from": "Hebrews 11:1",
     "to": "2 Corinthians 5:7",
     "kind": "theme",
-    "explanation": "Faith and what is unseen. Explore how Hebrews 11:1 and 2 Corinthians 5:7 address this subject or imagery from their respective settings.",
-    "caution": "A shared subject does not establish quotation, fulfilment or historical corroboration.",
-    "context": "2 Corinthians 5:7",
-    "review": "editorial-reading-aid",
-    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
+    "explanation": "Hebrews introduces faith and the commendation of the ancestors; Paul describes confidence while away from the Lord, walking by faith and aiming to please him. Amy L.B. Peeler reads Hebrews' language as a foundation for enduring trust.",
+    "caution": "The shared unseen/faith language is thematic and does not establish direct borrowing. It is not an instruction to reject evidence or make the visible world unreal. Keep Paul's accountability before Christ in view; the Greek terms in Hebrews and a full account of faith and knowledge remain open questions.",
+    "context": "2 Corinthians 5:6-10",
+    "review": "scripture-context-screened",
+    "basis": "Selected passages and scoped named commentary checked in citation batch connections-20-05 on 2026-10-29. Access limits and remaining questions recorded there. Independent specialist review pending."
   },
   {
     "id": "ce064",
     "from": "Revelation 21:1",
     "to": "Revelation 21:4",
     "kind": "theme",
-    "explanation": "The new creation and comfort. Explore how Revelation 21:1 and Revelation 21:4 address this subject or imagery from their respective settings.",
-    "caution": "A shared subject does not establish quotation, fulfilment or historical corroboration.",
-    "context": "Revelation 21:4",
-    "review": "editorial-reading-aid",
-    "basis": "Existing Scripture Trails editorial cross-reference; specialist textual review pending."
+    "explanation": "The new heaven and earth in verse 1 and the removal of tears and death in verse 4 belong to the same vision, linked by God's dwelling with humanity. Brian J. Tabb explains the relationship between the vision and the voice from the throne.",
+    "caution": "These anchors belong to one passage, not two independent accounts. Two publisher views are cited for reading access; they do not create independent witnesses. The vision is not a guarantee that present grief should cease immediately or a complete map of the future. Manuscript and interpretive questions remain open.",
+    "context": "Revelation 21:1-5",
+    "review": "scripture-context-screened",
+    "basis": "Selected passages and scoped named commentary checked in citation batch connections-20-05 on 2026-10-29. Access limits and remaining questions recorded there. Independent specialist review pending."
   },
   {
     "id": "ce065",
@@ -687,33 +687,33 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "from": "2 Kings 18:1",
     "to": "2 Chronicles 29:1",
     "kind": "parallel",
-    "explanation": "Kings and Chronicles each introduce Hezekiah and his religious reform programme.",
-    "caution": "Chronicles gives additional temple-reform detail.",
-    "context": "2 Chronicles 29:1-36",
-    "review": "editorial-reading-aid",
-    "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
+    "explanation": "Both accounts introduce Hezekiah favourably. Kings summarises removed cult objects and trust in the Lord; Chronicles opens a detailed temple-restoration programme with priests and Levites. August H. Konkel comments on Kings' reform and faithfulness language.",
+    "caution": "The selected Chronicles range is the programme's opening, not its full implementation. Abi/Abijah and the books' different emphases remain visible. Literary agreement does not establish independent archaeological confirmation or a resolved accession chronology; cited external historical reconstructions were not independently checked.",
+    "context": "2 Chronicles 29:1-11",
+    "review": "scripture-context-screened",
+    "basis": "Selected passages and scoped named commentary checked in citation batch connections-20-05 on 2026-10-29. Access limits and remaining questions recorded there. Independent specialist review pending."
   },
   {
     "id": "ce088",
     "from": "2 Kings 19:35",
     "to": "Isaiah 37:36",
     "kind": "parallel",
-    "explanation": "Kings and Isaiah narrate the fate of the Assyrian army outside Jerusalem.",
-    "caution": "Biblical literary agreement is not itself independent archaeological verification.",
+    "explanation": "Kings and Isaiah place the angel's action, the Assyrian withdrawal and Sennacherib's death after the promise to defend Jerusalem. Ray Ortlund reads the sequence as divine deliverance and the defeat of imperial arrogance.",
+    "caution": "Shared narrative wording is not independent confirmation of the reported casualty total or the mechanism of death. The movement from withdrawal to assassination does not specify an elapsed interval. Do not equate the account with a verified plague diagnosis; annals, casualty figures and chronology need separate evidence.",
     "context": "Isaiah 37:33-38",
-    "review": "editorial-reading-aid",
-    "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
+    "review": "scripture-context-screened",
+    "basis": "Selected passages and scoped named commentary checked in citation batch connections-20-05 on 2026-10-29. Access limits and remaining questions recorded there. Independent specialist review pending."
   },
   {
     "id": "ce089",
     "from": "2 Kings 20:1",
     "to": "Isaiah 38:1",
     "kind": "parallel",
-    "explanation": "Both books tell of Hezekiah's serious illness and encounter with Isaiah.",
-    "caution": "Compare how the signs and royal responses are narrated.",
+    "explanation": "Both accounts narrate Hezekiah's illness, prayer, added years and the reversing shadow. Isaiah also contains a thanksgiving poem and places the fig remedy and sign question after it. Ray Ortlund draws attention to that different placement.",
+    "caution": "Retain Isaiah's poem and the differing order of remedy and sign; Ortlund's further reading of Hezekiah's motives is an interpretation. No exact diagnosis, reconstructed instrument or astronomical mechanism is established. This selected comparison does not independently verify the healing as a historical event.",
     "context": "Isaiah 38:1-22",
-    "review": "editorial-reading-aid",
-    "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
+    "review": "scripture-context-screened",
+    "basis": "Selected passages and scoped named commentary checked in citation batch connections-20-05 on 2026-10-29. Access limits and remaining questions recorded there. Independent specialist review pending."
   },
   {
     "id": "ce090",

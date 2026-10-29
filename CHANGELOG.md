@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.28.0 - 29/10/2026: Twenty prayer, faith, hope and Hezekiah reviews
+
+- Read twenty more explained connections with paired passage contexts and scoped commentary from seventeen works by sixteen named authors.
+- Keep prayer forms, Acts retellings and Hezekiah narratives distinct, and identify the Revelation anchors as parts of one vision.
+- See 108 of 115 explained connections assessed on the About dashboard and roadmap, with seven remaining and independent review still open.
+- Keep the optional analytics asset refreshed automatically with each website release.
+
 ## 0.27.1 - 29/10/2026: Persistent production analytics configuration
 
 - Activate the dedicated Scripture Trails GA4 measurement destination in Cloudflare Pages production configuration.
