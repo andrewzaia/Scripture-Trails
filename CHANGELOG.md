@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.31.0 - 29/10/2026: Expanded Scripture study journals and guided reading pathways
+
+- Expand all six study journals to 36 contextual stages with more than 200 curated reading entries and direct links into the Bible reader and connection map.
+- Add stage-by-stage reading rationale, textual connections, contextual interpretation cautions and focused reflection questions.
+- Keep original study anchors and locally saved reading progress compatible while making the full reading checklist expandable.
+
 ## 0.30.0 - 29/10/2026: Commentary follow-ups for all explained connections
 
 - Read dated, attributed commentary follow-ups for the 32 previously passage-based assessments, with exact source locators and access limits.
