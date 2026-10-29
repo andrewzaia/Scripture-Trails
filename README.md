@@ -75,6 +75,20 @@ Obtain an ESV API key from <https://api.esv.org/> and configure `ESV_API_KEY` as
 
 For testing the production release, visit `/api/passage?q=John%201%3A1` and `/api/search?q=faith`. Without a configured secret each endpoint should give a 503 JSON response containing `not_configured`. With a valid key, verify official response data and licensing conditions. These endpoints expose the ESV content but never reveal the key.
 
+
+### Google Analytics 4 - optional site usage statistics
+
+Scripture Trails has a **dedicated, consent-based GA4 integration**, rather than sharing a measurement ID with any other website. The public measurement ID is supplied by Cloudflare Pages and must be created by the site owner in Google Analytics.
+
+1. In [Google Analytics](https://analytics.google.com/), under Admin, create a property named **Scripture Trails** in the existing account. Use **Australia/Sydney** and **AUD**.
+2. Add a **Web** data stream for `https://www.scripturetrails.com/` and copy its **G-** measurement ID.
+3. In the web stream, **turn Enhanced measurement off**, including history-change page views, outbound clicks, site search and form interactions. The site supplies its own manually scoped page views; automatic history tracking would otherwise risk sending Bible references from the URL and duplicate events.
+4. In Cloudflare > Workers & Pages > **scripture-trails** > Settings > Variables and Secrets, create a **Production** plain-text variable `GA4_MEASUREMENT_ID` with the real measurement ID, then redeploy production. The ID is public, not an API secret. Leave the variable unset until the property exists.
+5. Visit the production URL, choose **Allow analytics** in the small consent notice, navigate between reader and Atlas, then inspect GA4 Realtime and the browser's Network panel. Preview Pages and `localhost` must never request Google's library.
+6. Refresh the existing Windsor.ai GA4 connection or select the new property there, so ChatGPT can analyse it along with the other websites.
+
+The Pages Function `/api/analytics-config` returns **204** for previews, the apex domain and unconfigured IDs, and returns the validated measurement ID only on `www.scripturetrails.com`. Client code also checks the exact hostname before requesting the config. No Google tag is loaded until the visitor opts in; preferences can be changed in the About page. The site emits only broad-section `page_view` events using a sanitised URL containing `?view=<section>`, not the actual passage/reference/search/translation URL. Personal notes, notebooks, highlights and search text are never forwarded by the custom integration. GA4 itself may still collect technical/browser information and cookies after consent. The site does not use Google signals or ad personalisation.
+
 ### API.Bible credentials and approved translations
 
 In **Cloudflare > Workers & Pages > scripture-trails > Settings > Variables and Secrets**, add an encrypted **Production** secret named **`API_BIBLE_KEY`**. Use the API key issued for this application at <https://api.bible/>. Keep `ESV_API_KEY` for ESV. After adding or changing a Pages secret, redeploy the production build so the Functions receive it. No extra endpoint environment variable is needed: the server uses `https://rest.api.bible/v1`.

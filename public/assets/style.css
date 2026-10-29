@@ -267,3 +267,13 @@ body.light .toolbar-left strong{color:#344b50}
 body.light .jesus-timeline-actions .primary-action,
 body.light .jesus-journey-promo button,body.light .roadmap-discover-link button,
 body.light .atlas-open{color:#fffdf7}
+
+/* Optional GA4 consent: non-modal and readable in both themes. */
+.analytics-consent{position:fixed;z-index:110;right:18px;bottom:18px;width:min(530px,calc(100% - 36px));padding:17px 20px;background:var(--surface,#192831);color:var(--ink,#f2eee7);border:1px solid var(--gold,#c9a56f);border-radius:10px;box-shadow:0 12px 38px #0006}
+.analytics-consent[hidden],#analytics-manage[hidden]{display:none!important}
+.analytics-consent strong{font-size:15px;color:var(--gold,#d2aa75)}
+.analytics-consent p{font-size:13px;line-height:1.55;margin:7px 0 12px;color:inherit}
+.analytics-consent-actions{display:flex;gap:10px;flex-wrap:wrap}
+.analytics-consent-actions button{min-height:40px;cursor:pointer}
+body.light .analytics-consent{background:#fffdf8;color:#243b42;box-shadow:0 10px 30px #2335}
+@media(max-width:560px){.analytics-consent{bottom:10px;right:10px;width:calc(100% - 20px);padding:13px 15px}}
