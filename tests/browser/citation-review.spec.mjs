@@ -2,9 +2,9 @@ import {test,expect,open} from './fixtures.mjs';
 
 test('new citation reviews are reachable from About and the Atlas with accurate coverage',async({page})=>{
  await open(page,'about');
- await expect(page.locator('#about-review-meter')).toHaveAttribute('value','108');
- await expect(page.locator('#citation-review-summary')).toContainText('108 selected passage comparisons');
- await expect(page.locator('#citation-review-summary')).toContainText('76 comparisons include named scholarly commentary');
+ await expect(page.locator('#about-review-meter')).toHaveAttribute('value','115');
+ await expect(page.locator('#citation-review-summary')).toContainText('115 selected passage comparisons');
+ await expect(page.locator('#citation-review-summary')).toContainText('83 comparisons include named scholarly commentary');
  const group=page.locator('.citation-review-group').filter({has:page.getByText('Selected passage comparisons',{exact:true})});
  await group.locator('> summary').click();
  const article=group.locator('article').filter({has:page.getByRole('heading',{name:'Isaiah 9:2-7 and Luke 2:8-14',exact:true})});
@@ -60,4 +60,29 @@ test('Acts retelling and single-vision reviews retain their limits from About in
  await expect(row).toContainText('Raj Nadella');
  await expect(row).toContainText('not silently harmonised');
  await expect(row.getByRole('link',{name:'Commentary on Acts 9:1-6 [7-20]',exact:true})).toBeVisible();
+});
+
+test('completed register retains siege dates and returnee differences from About into the Atlas',async({page})=>{
+ await open(page,'about');
+ await expect(page.locator('#about-review-meter')).toHaveAttribute('value','115');
+ await expect(page.locator('#citation-review-summary')).toContainText('All 115 explained pairs now have dated editorial assessments');
+ await expect(page.locator('#citation-review-summary')).toContainText('the other 32 rely on selected passage checks');
+ const group=page.locator('.citation-review-group').filter({has:page.getByText('Selected passage comparisons',{exact:true})});
+ await group.locator('> summary').click();
+ const siege=group.locator('article').filter({has:page.getByRole('heading',{name:'2 Kings 25:1-12 and Jeremiah 52:4-16',exact:true})});
+ await siege.locator('.citation-review > summary').click();
+ await expect(siege).toContainText('seventh day in 2 Kings 25:8 and the tenth in Jeremiah 52:12');
+ await expect(siege).toContainText('a proposed multi-day sequence is not established here');
+ const list=group.locator('article').filter({has:page.getByRole('heading',{name:'Ezra 2:1-70 and Nehemiah 7:5-73',exact:true})});
+ await list.locator('.citation-review > summary').click();
+ await expect(list).toContainText('Arah has 775 in Ezra 2:5 and 652 in Nehemiah 7:10');
+ await list.getByRole('link',{name:'Open in Atlas',exact:true}).click();
+ await expect(page.locator('#graph-current')).toHaveText('Ezra 2:1');
+ const row=page.locator('.atlas-reference-row').filter({has:page.getByText('Nehemiah 7:6',{exact:true})});
+ await row.getByText('Why these passages connect',{exact:true}).click();
+ await row.locator('.citation-review > summary').click();
+ await expect(row).toContainText('Russell Meek');
+ await expect(row).toContainText('Arah has 775 in Ezra 2:5 and 652 in Nehemiah 7:10');
+ await expect(row).toContainText('No full literature review or independent specialist signoff');
+ await expect(row.getByRole('link',{name:'Nehemiah - selected commentary',exact:true})).toBeVisible();
 });

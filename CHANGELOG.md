@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.29.0 - 29/10/2026: All 115 explained connections assessed
+
+- Read the final seven royal, siege and returnee-list comparisons with paired passage contexts and scoped named commentary.
+- See all 115 explained connections covered by dated editorial assessments on the About dashboard and roadmap, with 83 supported by commentary or limited publisher summaries and 32 based on passage checks.
+- Keep differing accounts, dates and list figures visible, with fuller source work and independent specialist review still open.
+
 ## 0.28.0 - 29/10/2026: Twenty prayer, faith, hope and Hezekiah reviews
 
 - Read twenty more explained connections with paired passage contexts and scoped commentary from seventeen works by sixteen named authors.

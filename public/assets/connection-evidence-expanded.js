@@ -676,11 +676,11 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "from": "2 Kings 16:1",
     "to": "2 Chronicles 28:1",
     "kind": "parallel",
-    "explanation": "Both books recount the reign of Ahaz in Judah.",
-    "caution": "Compare the descriptions of Judah's international and religious crises.",
+    "explanation": "Both books condemn Ahaz's worship and describe his appeal to Assyria. Kings details the Damascus altar; Chronicles includes Oded's rebuke and the care and release of Judahite captives. Winfried Corduan highlights that intervention.",
+    "caution": "Kings says the Assyrian king listened to Ahaz and attacked Damascus; Chronicles says Assyria oppressed him and gave no help. Preserve those different evaluations, the fuller captive episode and the burial descriptions. The comparison does not verify troop or captive totals, reconstruct a single sequence of campaigns or independently establish the international history.",
     "context": "2 Chronicles 28:1-27",
-    "review": "editorial-reading-aid",
-    "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
+    "review": "scripture-context-screened",
+    "basis": "Selected passages and scoped named commentary checked in citation batch connections-final-07 on 2026-10-29. Source limits and remaining questions recorded there. Independent specialist review pending."
   },
   {
     "id": "ce087",
@@ -720,66 +720,66 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "from": "2 Kings 21:1",
     "to": "2 Chronicles 33:1",
     "kind": "parallel",
-    "explanation": "Kings and Chronicles tell of Manasseh's reign, with major differences in emphasis.",
-    "caution": "Chronicles includes a repentance episode not found in Kings.",
+    "explanation": "Both books describe Manasseh's idolatry. Kings stresses the judgment on Judah and innocent blood; Chronicles adds his captivity, prayer, return and reforms. Winfried Corduan discusses that reversal in Chronicles.",
+    "caution": "Chronicles' repentance is absent from Kings, whose judgment must not be rewritten as though it narrated the same ending. Retain the victims and innocent blood alongside the later reform account. The shared material does not independently corroborate the Babylonian captivity episode or establish the date, authorship or wording of Manasseh's prayer.",
     "context": "2 Chronicles 33:1-20",
-    "review": "editorial-reading-aid",
-    "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
+    "review": "scripture-context-screened",
+    "basis": "Selected passages and scoped named commentary checked in citation batch connections-final-07 on 2026-10-29. Source limits and remaining questions recorded there. Independent specialist review pending."
   },
   {
     "id": "ce091",
     "from": "2 Kings 22:8",
     "to": "2 Chronicles 34:14",
     "kind": "parallel",
-    "explanation": "Both accounts describe the discovery of a book of the Law during Josiah's reign.",
-    "caution": "The book's precise composition and identification are debated.",
+    "explanation": "Hilkiah finds a law book, Shaphan reads it, Josiah seeks Huldah's prophetic counsel, and a public covenant follows. Winfried Corduan discusses the scroll and Huldah's response, considering Deuteronomy as a possible identification.",
+    "caution": "The exact extent and composition of the discovered scroll remain debated; identifying it with Deuteronomy is an interpretation. Preserve Huldah's role, the different delegation names and Chronicles' additional concluding reform summary. The report of discovery does not itself date the composition of the Torah. The promise of burial in peace needs to be read alongside Josiah's later death; this comparison does not settle that interpretive question.",
     "context": "2 Chronicles 34:14-33",
-    "review": "editorial-reading-aid",
-    "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
+    "review": "scripture-context-screened",
+    "basis": "Selected passages and scoped named commentary checked in citation batch connections-final-07 on 2026-10-29. Source limits and remaining questions recorded there. Independent specialist review pending."
   },
   {
     "id": "ce092",
     "from": "2 Kings 23:29",
     "to": "2 Chronicles 35:20",
     "kind": "parallel",
-    "explanation": "Kings and Chronicles recount Josiah's fatal confrontation near Megiddo.",
-    "caution": "The literary explanations of Josiah's death differ.",
+    "explanation": "Both accounts connect Josiah's death with Neco and Megiddo. Chronicles adds a warning attributed to God, disguise, archers and mourning. Winfried Corduan discusses the warning and wounded return.",
+    "caution": "Kings has Josiah carried dead from Megiddo; Chronicles describes a wounded return to Jerusalem before his death. These details are not silently harmonised. Chronicles' attribution of Neco's words to God remains part of that narrative's explanation. The selected readings do not establish Josiah's political motive or a reconstructed final itinerary, and they do not make every ruler's claim to divine instruction authoritative.",
     "context": "2 Chronicles 35:20-27",
-    "review": "editorial-reading-aid",
-    "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
+    "review": "scripture-context-screened",
+    "basis": "Selected passages and scoped named commentary checked in citation batch connections-final-07 on 2026-10-29. Source limits and remaining questions recorded there. Independent specialist review pending."
   },
   {
     "id": "ce093",
     "from": "2 Kings 24:18",
     "to": "Jeremiah 52:1",
     "kind": "parallel",
-    "explanation": "Kings and Jeremiah recount the beginning of Zedekiah's reign.",
-    "caution": "The accounts share language but do not settle all textual or historical questions.",
+    "explanation": "The introductions give Zedekiah's age, reign, mother, adverse evaluation and rebellion in closely shared language. Matthew H. Patton reads Jeremiah's final chapter as a literary confirmation of its warnings about Judah's fall.",
+    "caution": "Close wording is a literary parallel, not two demonstrably independent eyewitness reports. These short openings do not settle accession chronology, the direction of textual dependence or the identity of the appendix's compiler. Hamutal's father Jeremiah is not identified here as the prophet; a shared personal name is insufficient to establish that identity.",
     "context": "Jeremiah 52:1-3",
-    "review": "editorial-reading-aid",
-    "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
+    "review": "scripture-context-screened",
+    "basis": "Selected passages and scoped named commentary checked in citation batch connections-final-07 on 2026-10-29. Source limits and remaining questions recorded there. Independent specialist review pending."
   },
   {
     "id": "ce094",
     "from": "2 Kings 25:1",
     "to": "Jeremiah 52:4",
     "kind": "parallel",
-    "explanation": "Kings and Jeremiah narrate the Babylonian siege of Jerusalem.",
-    "caution": "Differences of date notation and narrative scope require care.",
-    "context": "Jeremiah 52:4-11",
-    "review": "editorial-reading-aid",
-    "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
+    "explanation": "Both accounts narrate siege, famine, the city's breach, Zedekiah's capture and Jerusalem's destruction. Jeremiah adds details of his imprisonment. Matthew H. Patton relates the destruction account to the book's earlier prophetic warnings.",
+    "caution": "The fifth-month entry of Nebuzaradan is dated to the seventh day in 2 Kings 25:8 and the tenth in Jeremiah 52:12. Keep both dates visible; a proposed multi-day sequence is not established here. Jeremiah's fuller captivity account, the different treatment of deportees and the poor who remain also deserve comparison. Shared wording does not independently confirm casualty totals or resolve absolute chronology and manuscript questions.",
+    "context": "Jeremiah 52:4-16",
+    "review": "scripture-context-screened",
+    "basis": "Selected passages and scoped named commentary checked in citation batch connections-final-07 on 2026-10-29. Source limits and remaining questions recorded there. Independent specialist review pending."
   },
   {
     "id": "ce095",
     "from": "Ezra 2:1",
     "to": "Nehemiah 7:6",
     "kind": "parallel",
-    "explanation": "Ezra and Nehemiah contain related lists of those returning from exile.",
-    "caution": "The lists have differences in figures and names that should not be concealed.",
-    "context": "Nehemiah 7:6-73",
-    "review": "editorial-reading-aid",
-    "basis": "Explicitly identified parallel scriptural narrative; textual review and independent specialist assessment pending."
+    "explanation": "Ezra presents returning families; Nehemiah frames a related list as a recovered genealogy. Russell Meek records competing views of dependence. Both give a total of 42,360, while names and individual figures differ: Arah has 775 in Ezra 2:5 and 652 in Nehemiah 7:10.",
+    "caution": "Retain the differing family counts, names, singers and gifts rather than replacing them with one harmonised list. A shared total does not settle the component figures or prove an unchanged census. Direct borrowing, a common source and transmission or registration explanations require further textual evidence. These ancient lineage and priesthood records do not establish modern ethnic superiority or permission to exclude people today.",
+    "context": "Nehemiah 7:5-73",
+    "review": "scripture-context-screened",
+    "basis": "Selected passages and scoped named commentary checked in citation batch connections-final-07 on 2026-10-29. Source limits and remaining questions recorded there. Independent specialist review pending."
   },
   {
     "id": "ce096",
