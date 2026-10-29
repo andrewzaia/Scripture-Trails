@@ -4,6 +4,13 @@ import {readFileSync} from 'node:fs';
 import {analyticsConfig} from '../functions/api/analytics-config.js';
 import {isProductionHost,normaliseSection,sectionPageview,sanitiseReferrer,initialiseAnalytics} from '../public/assets/analytics.js';
 
+test('production GA4 destination remains pinned in the deployable Wrangler file', () => {
+  const file = readFileSync(new URL('../wrangler.toml', import.meta.url),'utf8');
+  assert.match(file, /\\[env\\.production\\.vars\\][\\s\\S]*GA4_MEASUREMENT_ID\\s*=\\s*"G-GDZ1R1Q61N"/);
+  assert.doesNotMatch(file, /\\[env\\.preview\\.vars\\][\\s\\S]*GA4_MEASUREMENT_ID/);
+  assert.doesNotMatch(file, /\\[vars\\][\\s\\S]*GA4_MEASUREMENT_ID/);
+});
+
 test('configuration only publishes a valid ID on the canonical hostname', async () => {
   const env = {GA4_MEASUREMENT_ID: 'G-ABC1234DEF'};
   const request = url => ({url});

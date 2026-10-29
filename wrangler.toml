@@ -2,3 +2,8 @@
 name = "scripture-trails"
 pages_build_output_dir = "./public"
 compatibility_date = "2026-10-26"
+
+# This ID is public; only production enables the GA4 Pages Function binding.
+# The Wrangler file is the source of truth for Pages deployment settings.
+[env.production.vars]
+GA4_MEASUREMENT_ID = "G-GDZ1R1Q61N"
