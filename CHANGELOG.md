@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.27.0 - 29/10/2026: Privacy-conscious website analytics
+
+- Prepare an optional Google Analytics 4 integration exclusively for the official Scripture Trails domain, with a separate owner-configured measurement ID.
+- Keep study activity private: analytics is off until visitors opt in, and site sections are measured without sending Bible references, search text, personal notes or highlights.
+- Add hostname and consent tests, a Cloudflare Pages configuration endpoint, and instructions for enabling a dedicated GA4 property.
+
 ## 0.26.0 - 29/10/2026: Twenty Old Testament narrative reviews
 
 - Compare twenty more Samuel, Kings, Chronicles and Isaiah narratives with paired reading contexts, named commentary and explicit differences.

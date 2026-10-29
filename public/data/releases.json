@@ -1,6 +1,16 @@
 {
   "releases": [
     {
+      "version": "0.27.0",
+      "date": "2026-10-29",
+      "title": "Privacy-conscious website analytics",
+      "changes": [
+        "Prepare an optional Google Analytics 4 integration exclusively for the official Scripture Trails domain, with a separate owner-configured measurement ID.",
+        "Keep study activity private: analytics is off until visitors opt in, and site sections are measured without sending Bible references, search text, personal notes or highlights.",
+        "Add hostname and consent tests, a Cloudflare Pages configuration endpoint, and instructions for enabling a dedicated GA4 property."
+      ]
+    },
+    {
       "version": "0.26.0",
       "date": "2026-10-29",
       "title": "Twenty Old Testament narrative reviews",
