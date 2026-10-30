@@ -250,3 +250,21 @@ test('stale reader notes and bookmark actions preserve another tab changes',asyn
  expect(saved.notes['John 3:16']).toBe('Newer note in another tab');
  expect(saved.bookmarks).toEqual(['Romans 5:8']);
 });
+
+test('Paul's first two journeys show contextual reading and hide it for unfinished stages',async({page})=>{
+ await open(page,'paul-map');
+ await expect(page.locator('[data-paul="study-section"]')).toBeVisible();
+ await expect(page.locator('[data-paul="study-context"]')).toContainText('community of prophets and teachers');
+ await expect(page.locator('[data-paul="study-links"] .jesus-passage-row')).toHaveCount(2);
+ await page.locator('[data-paul="study-links"] .jesus-passage-row').first().getByRole('button',{name:'Read'}).click();
+ await expect(page.locator('#reader-title')).toHaveText(/^Acts 11:19/);
+ await navigate(page,'paul-map');
+ await page.locator('[data-paul="journey"]').selectOption('second');
+ await expect(page.locator('[data-paul="study-section"]')).toBeVisible();
+ await expect(page.locator('[data-paul="study-context"]')).toContainText('disagreement over John Mark');
+ await page.locator('[data-paul="journey"]').selectOption('third');
+ await expect(page.locator('[data-paul="study-section"]')).toBeHidden();
+ await expect(page.locator('[data-paul="study-links"]')).toBeEmpty();
+ await page.locator('[data-paul="journey"]').selectOption('rome');
+ await expect(page.locator('[data-paul="study-section"]')).toBeHidden();
+});
