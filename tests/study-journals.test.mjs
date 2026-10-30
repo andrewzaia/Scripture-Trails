@@ -60,3 +60,25 @@ test('all expanded journals retain visible, reasonable approximate study times',
  assert.ok(app.includes('Approx. ${path.time} |'), 'Journey cards should show their estimate');
  assert.ok(app.includes('Approx. ${path.time} total'), 'The detailed journal should show its estimate');
 });
+
+
+test('all six journals provide distinct literary-context guides without changing progress identifiers',()=>{
+ const ids=PATHS.map(x=>x.id);assert.deepEqual(ids,expectedIds);
+ const briefs=new Set();
+ for(const path of PATHS){
+  assert.ok(path.guide.overview.split(/\s+/).length>=70,path.id);
+  assert.ok(path.guide.distinction.length>=110,path.id);
+  assert.ok(path.guide.practice.length>=90,path.id);
+  assert.ok(!briefs.has(path.guide.overview),path.id);briefs.add(path.guide.overview);
+  assert.deepEqual(path.refs.slice(0,path.anchors.length),path.anchors);
+  assert.equal(path.chapters.length,6);
+ }
+ assert.match(PATHS.find(x=>x.id==='comfort').guide.overview,/not a guarantee/);
+ assert.match(PATHS.find(x=>x.id==='messiah').guide.overview,/original prophetic audience/);
+ assert.match(PATHS.find(x=>x.id==='grace').guide.overview,/James/);
+ const app=readFileSync(new URL('../public/assets/app.js',import.meta.url),'utf8');
+ assert.match(app,/journal-editorial-guide/);
+ assert.match(app,/path.guide.overview/);
+ assert.match(app,/path.guide.distinction/);
+ assert.match(app,/path.guide.practice/);
+});
