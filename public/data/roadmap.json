@@ -1,13 +1,13 @@
 {
   "project": "Scripture Trails",
   "updated": "2026-10-30",
-  "description": "A transparent, evidence-aware roadmap reviewed against the released application through v0.32.0. Delivered records implementation milestones, including successive expansions; it is not a count of independent features or scholarly certification. Future work has completion criteria and no promised delivery dates.",
+  "description": "A transparent, evidence-aware development and v1.0 release-readiness roadmap, reviewed against the delivered application through v0.32.0. Current readiness refers to launch acceptance criteria rather than percentage of Scripture covered; automated checks cannot certify scholarship, manual accessibility or production security.",
   "currentFocus": [
-    "Next priority: manual screen-reader and real-device accessibility review, following the browser keyboard, drawer and text-reflow repairs in v0.29.1",
-    "Expand Atlas explanation coverage responsibly: 161 annotated pairs are available, including 46 new passage-linked reading aids without separate dated secondary-source assessments. The previous 115 assessments retain their scoped citations; independent specialist review remains open.",
-    "Keep desktop/mobile browser, accessibility and notebook regression checks passing in CI; add manual assistive-technology findings as they are reviewed",
-    "Arrange independent historical, textual and archaeological review, including the first Exodus collection, when suitable specialists are available",
-    "Then extend the Hebrew Bible geography library with separately scoped kings, prophets, exile and return studies"
+    "Establish v1.0 acceptance criteria and keep launch readiness visible separately from the wider feature roadmap.",
+    "Review the 46 new Atlas explanations without implying the 301,392 unexplained pairs must all be annotated before v1.0.",
+    "Close significant content, citation and licensing issues in the core Bible reader, Atlas and principal study paths.",
+    "Record manual screen-reader, Safari/Firefox, real-device and 200%/400% zoom test results, fixing launch-blocking defects.",
+    "Complete security/privacy review, production recovery drills and documented release-candidate signoff before v1.0."
   ],
   "phases": [
     {
@@ -649,6 +649,269 @@
         "Keep About explanation counts and reviewed counts independent and generated from the data"
       ],
       "verification": "A batch closes only after source assessment records, access limits, regression tests and appropriate versioned releases are complete; no assumption of independent specialist review."
+    },
+    {
+      "id": "v1-readiness-framework",
+      "phase": "next",
+      "status": "delivered",
+      "title": "v1.0 release readiness and acceptance framework",
+      "summary": "Establish five auditable release gates with actionable criteria across biblical evidence, core content, accessibility, security/privacy and production launch.",
+      "capabilities": [
+        "Public v1.0 readiness section with open and met criteria and explicit next actions",
+        "Launch-blocking criteria distinguished from exploratory post-v1.0 enhancements",
+        "Validated source-review backlog and automated launch guard for release 1.0.0 or later"
+      ],
+      "verification": "Planned for v0.33.0: validate the gate schema and current open claims, CI tests and release consistency; manual and specialist signoff remains open."
+    },
+    {
+      "id": "v1-evidence-closeout",
+      "phase": "next",
+      "status": "next",
+      "title": "v1.0 editorial evidence and core-content closeout",
+      "summary": "Assess outstanding Atlas citations and review flagship studies and significant historical or theological assertions before launch.",
+      "capabilities": [
+        "Dated evidence review for 46 new Atlas pairs",
+        "Prioritised high-impact disputed historical and interpretive claims",
+        "Coverage review for flagship people, locations and guided studies"
+      ],
+      "verification": "Complete only after source-linked assessments, material corrections or visible qualifications, and an accessible editorial record; specialist signoff must be documented rather than assumed."
+    },
+    {
+      "id": "v1-accessibility-and-hardening",
+      "phase": "next",
+      "status": "planned",
+      "title": "v1.0 manual accessibility, privacy and resilience checks",
+      "summary": "Supplement automated tests with real assistive technology and device reviews, security/privacy audit and provider failure drills.",
+      "capabilities": [
+        "NVDA/VoiceOver/TalkBack journeys with recorded outcomes",
+        "Safari, Firefox, zoom and real-device verification",
+        "Threat model, backup/recovery and publisher obligations review"
+      ],
+      "verification": "Document actual devices, browsers, review scope, defects, remediations and remaining limitations. Automated Chromium success alone does not close this milestone."
+    },
+    {
+      "id": "v1-release-candidate",
+      "phase": "next",
+      "status": "planned",
+      "title": "v1.0 release candidate, rollback and launch approval",
+      "summary": "Use the five release-readiness gates to govern the go/no-go decision, rerun release checks and verify the precise production deployment.",
+      "capabilities": [
+        "No unresolved critical launch defects",
+        "Reproducible versioned release and production deployment verification",
+        "Documented recovery plan and explicit approval"
+      ],
+      "verification": "All blockers met with evidence and dated signoff; production deployment must succeed for the intended commit and public footer must report the intended version."
     }
-  ]
+  ],
+  "v1Readiness": {
+    "target": "1.0.0",
+    "baseline": "0.32.0",
+    "updated": "2026-10-30",
+    "note": "These are required signoff conditions, not a prediction of delivery dates. Items are marked complete only within their stated verification scope. Independent specialist review may retain qualified or contested conclusions where uncertainty is clearly disclosed.",
+    "stages": [
+      {
+        "id": "baseline",
+        "title": "Readiness baseline",
+        "goal": "Define acceptance criteria, evidence locations and blockers before new feature work."
+      },
+      {
+        "id": "evidence",
+        "title": "Evidence and content remediation",
+        "goal": "Prioritise source review and correct material inaccuracies and incomplete flagship studies."
+      },
+      {
+        "id": "accessibility",
+        "title": "Accessibility and compatibility",
+        "goal": "Test actual assistive technologies, browser engines, zoom and devices, then repair important defects."
+      },
+      {
+        "id": "hardening",
+        "title": "Privacy, security and resilience",
+        "goal": "Test production-critical flows, provider failures, data export, recovery and publisher obligations."
+      },
+      {
+        "id": "candidate",
+        "title": "Release candidate and v1.0 signoff",
+        "goal": "Freeze scope, rerun checks, document outstanding qualifications and verify the deployed commit."
+      }
+    ],
+    "gates": [
+      {
+        "id": "evidence",
+        "title": "Biblical evidence and editorial quality",
+        "summary": "Important interpretations must be traceable to Scripture, with interpretive uncertainty, original contexts and external sources stated accurately.",
+        "next": "Source-assess the 46 new Atlas annotations in declared batches; then review high-impact historical and fulfilment claims.",
+        "criteria": [
+          {
+            "id": "atlas-context",
+            "title": "Annotated Atlas pairs have validated references, reasoning and cautions",
+            "status": "met",
+            "mode": "automated",
+            "evidence": "tests/connection-evidence.test.mjs",
+            "acceptance": "Every annotated pair has canonical references, a kind, explanation, caution, context and declared review status."
+          },
+          {
+            "id": "atlas-reviews",
+            "title": "Close the 46 new Atlas source-assessment gaps",
+            "status": "open",
+            "mode": "editorial",
+            "evidence": "public/data/citation-review.json",
+            "acceptance": "Every annotated pair has a dated, source-linked assessment with access limits; the current 46 pending pairs must be resolved."
+          },
+          {
+            "id": "critical-claims",
+            "title": "Review disputed or high-impact historical and theological claims",
+            "status": "open",
+            "mode": "specialist",
+            "evidence": "public/data/jesus-audit.json",
+            "acceptance": "Record correction, evidence limits, or qualified interpretation for each critical claim; secure specialist input where indispensable, without implying total academic consensus."
+          },
+          {
+            "id": "source-licences",
+            "title": "Verify citations, content rights and source attribution",
+            "status": "open",
+            "mode": "manual",
+            "evidence": "public/index.html",
+            "acceptance": "Audit publisher/API conditions, stored data permissions, rights notices and bibliographic links for published material."
+          }
+        ]
+      },
+      {
+        "id": "content",
+        "title": "Core study experience and content",
+        "summary": "The four-translation reader, Atlas, people index and major journeys need sufficient depth and reliable passage navigation.",
+        "next": "Inventory flagship pages and journeys for incomplete prose, weak citations, dead ends and inconsistent references.",
+        "criteria": [
+          {
+            "id": "crossrefs-integrity",
+            "title": "Local cross-reference corpus integrity",
+            "status": "met",
+            "mode": "automated",
+            "evidence": "scripts/check-crossrefs.mjs",
+            "acceptance": "All reference shards match the reviewed source snapshot, checksums and canonical reference constraints."
+          },
+          {
+            "id": "content-audit",
+            "title": "Complete flagship content and navigation audit",
+            "status": "open",
+            "mode": "editorial",
+            "evidence": "public/data/roadmap.json",
+            "acceptance": "Review major people, place and study pages for substantive content, factual accuracy, source links and dead ends; resolve all critical findings."
+          },
+          {
+            "id": "reader-provider-smoke",
+            "title": "Verify all four authorised translations in production",
+            "status": "open",
+            "mode": "manual",
+            "evidence": "public/assets/translations.js",
+            "acceptance": "Check ESV, NASB20, NIV and NKJV live responses, copyright notices, unavailable-provider handling and representative passages."
+          }
+        ]
+      },
+      {
+        "id": "accessibility",
+        "title": "Accessibility and browser compatibility",
+        "summary": "Automated Chromium checks must be supplemented with independent interaction using assistive technology and other browser engines.",
+        "next": "Record an NVDA + Firefox and VoiceOver + Safari walkthrough, then actual mobile screen-reader and 200%/400% zoom testing.",
+        "criteria": [
+          {
+            "id": "automated-accessibility",
+            "title": "Automated regression and accessibility coverage",
+            "status": "met",
+            "mode": "automated",
+            "evidence": ".github/workflows/ci.yml",
+            "acceptance": "Desktop/mobile browser, keyboard and automated accessibility checks run as a required GitHub CI gate."
+          },
+          {
+            "id": "screen-readers",
+            "title": "Manual screen-reader journeys",
+            "status": "open",
+            "mode": "manual",
+            "evidence": "sources/editorial/accessibility-audit-v0.29.1.md",
+            "acceptance": "Record NVDA or JAWS on Windows, VoiceOver on Apple devices and a mobile screen-reader journey with remediation for blocking defects."
+          },
+          {
+            "id": "cross-browser-zoom",
+            "title": "Cross-browser, real-device and zoom acceptance",
+            "status": "open",
+            "mode": "manual",
+            "evidence": "public/assets/roadmap.css",
+            "acceptance": "Document Safari and Firefox, physical mobile devices, reduced motion and 200%/400% zoom; remedy critical keyboard, layout and readability failures."
+          }
+        ]
+      },
+      {
+        "id": "privacy",
+        "title": "Security, privacy and licensed content",
+        "summary": "Protect private notes and licensed Bible access without promising that automated tests amount to a security audit.",
+        "next": "Threat-model the Bible APIs, Turnstile/analytics boundaries, browser storage, imports and outbound links; record remediation and ownership.",
+        "criteria": [
+          {
+            "id": "security-review",
+            "title": "Security and privacy threat-model review",
+            "status": "open",
+            "mode": "manual",
+            "evidence": "functions/api/passage.js",
+            "acceptance": "Review API secret handling, third-party telemetry, CSP, injection, access controls, rate limits and sensitive browser storage; remediate high-severity issues."
+          },
+          {
+            "id": "data-recovery",
+            "title": "Test notebook import/export, data-loss and recovery cases",
+            "status": "open",
+            "mode": "manual",
+            "evidence": "tests/notebook-backup.test.mjs",
+            "acceptance": "Run realistic corrupt backup, conflict, quota and multi-session scenarios; clearly document any unrecoverable local-only data risks."
+          },
+          {
+            "id": "provider-failures",
+            "title": "Test operational and publishing failure paths",
+            "status": "open",
+            "mode": "manual",
+            "evidence": "tests/translations.test.mjs",
+            "acceptance": "Simulate provider outages, missing keys and licence-related failure paths, then verify user messaging, request security and service recovery."
+          }
+        ]
+      },
+      {
+        "id": "release",
+        "title": "Release operations and launch decision",
+        "summary": "v1.0 requires traceable source, successful checks, a reproducible deployment, rollback planning and explicit acceptance of residual risks.",
+        "next": "Create a versioned release-candidate checklist, confirm rollback instructions and conduct a production smoke test before a signed-off v1.0 release.",
+        "criteria": [
+          {
+            "id": "semantic-versioning",
+            "title": "Semantic release consistency and required CI checks",
+            "status": "met",
+            "mode": "automated",
+            "evidence": "scripts/check-release.mjs",
+            "acceptance": "Build enforces versioned asset references, matching public/development changelogs and a PR release gate against the destination branch."
+          },
+          {
+            "id": "rollback",
+            "title": "Document and exercise production rollback",
+            "status": "open",
+            "mode": "manual",
+            "evidence": ".github/workflows/ci.yml",
+            "acceptance": "Demonstrate a safe rollback to a known-good Cloudflare deployment, including how to preserve or recover service after a bad release."
+          },
+          {
+            "id": "live-smoke",
+            "title": "Verify production user journeys after release candidate",
+            "status": "open",
+            "mode": "manual",
+            "evidence": "public/index.html",
+            "acceptance": "Check live website version, exact Git commit, translations, Atlas, notes, responsive navigation and no critical production errors."
+          },
+          {
+            "id": "launch-signoff",
+            "title": "Document v1.0 go/no-go decision",
+            "status": "open",
+            "mode": "manual",
+            "evidence": "public/data/roadmap.json",
+            "acceptance": "Record reviewer, scope, results, resolved defects, accepted qualifications and final approval. All launch-blocking criteria must be met."
+          }
+        ]
+      }
+    ]
+  }
 }

@@ -6,3 +6,38 @@
 @media(max-width:850px){.roadmap-focus{grid-template-columns:1fr}.roadmap-cards{grid-template-columns:1fr}}@media(max-width:500px){.roadmap-page{padding:20px 16px 45px}.roadmap-focus{padding:19px}.roadmap-intro>div{padding:17px}.roadmap-card{padding:19px}}
 
 .roadmap-stat-value.roadmap-stat-date{font-size:25px}
+
+/* Version 1.0 readiness gate inventory is separate from feature milestone status. */
+.v1-readiness{margin:20px 0 26px;border:1px solid var(--line);background:var(--surface);padding:clamp(18px,3vw,29px)}
+.v1-readiness-header{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.v1-readiness-header>div:first-child{flex:1 1 360px}
+.v1-readiness h2{font:400 32px/1.2 var(--serif);color:var(--ink);margin:6px 0 10px}
+.v1-readiness-header p:not(.eyebrow){font-size:13px;line-height:1.7;color:var(--muted);max-width:790px}
+.v1-readiness-progress{display:flex;flex-direction:column;gap:6px;min-width:165px;border:1px solid var(--line);padding:13px 16px}
+.v1-readiness-progress strong{font-size:15px;color:var(--ink)}
+.v1-readiness-progress span{font-size:11px;line-height:1.5;color:var(--muted);max-width:220px}
+.v1-stages{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:14px 0;margin:20px 0}
+.v1-stages>summary,.v1-gate-detail>summary{color:var(--gold);font-weight:700;font-size:12px;cursor:pointer}
+.v1-stages ol{padding-left:25px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 26px;margin:15px 0}
+.v1-stages li{color:var(--ink);font-size:12px;line-height:1.5}
+.v1-stages li span{display:block;color:var(--muted);margin-top:4px}
+.v1-gates{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.v1-gate{border:1px solid var(--line);padding:17px 18px;min-width:0;background:var(--surface2)}
+.v1-gate-top{display:flex;gap:12px;align-items:baseline;justify-content:space-between}
+.v1-gate h3{color:var(--ink);font:400 22px/1.2 var(--serif);margin:0}
+.v1-gate-count{color:var(--gold);white-space:nowrap;font-size:11px}
+.v1-gate-summary,.v1-gate-next,.v1-disclaimer{font-size:12px;line-height:1.7;color:var(--muted)}
+.v1-gate-summary{margin:10px 0}
+.v1-gate-next{border-top:1px solid var(--line);padding-top:11px;margin:13px 0 0}
+.v1-gate-detail{margin:12px 0}
+.v1-criteria{list-style:none;padding:0;margin:12px 0}
+.v1-criteria li{border-bottom:1px solid var(--line);padding:10px 0;font-size:12px;line-height:1.6}
+.v1-criteria li:last-child{border-bottom:0}
+.v1-criterion-state{display:inline-block;min-width:76px;color:var(--muted)}
+.v1-criteria li[data-readiness=met] .v1-criterion-state{color:var(--gold)}
+.v1-criterion-title{color:var(--ink);font-weight:600}
+.v1-criterion-acceptance{margin:5px 0;color:var(--muted)}
+.v1-criterion-evidence{overflow-wrap:anywhere;color:var(--muted)}
+.v1-disclaimer{margin:15px 0 0}
+@media(max-width:850px){.v1-gates,.v1-stages ol{grid-template-columns:1fr}}
+@media(max-width:500px){.v1-readiness{padding:17px}.v1-readiness h2{font-size:27px}.v1-gate{padding:14px}.v1-readiness-progress{width:100%}}

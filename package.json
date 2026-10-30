@@ -1,6 +1,6 @@
 {
   "name": "scripture-trails",
-  "version": "0.32.0",
+  "version": "0.33.0",
   "private": true,
   "type": "module",
   "description": "A Bible reader with ESV, NASB20, NIV and NKJV translations and visual Scripture discovery",
@@ -11,11 +11,12 @@
     "test:browser:report": "playwright show-report",
     "import:refs": "node scripts/import-crossrefs.mjs",
     "deploy": "wrangler pages deploy public --project-name scripture-trails",
-    "build": "npm run check:release && npm run check:refs && npm run check:stats && npm run test",
+    "build": "npm run check:release && npm run check:refs && npm run check:stats && npm run check:v1 && npm run test",
     "check:refs": "node scripts/check-crossrefs.mjs",
     "release": "node scripts/release.mjs",
     "check:release": "node scripts/check-release.mjs",
-    "check:stats": "node scripts/site-stats.mjs --check"
+    "check:stats": "node scripts/site-stats.mjs --check",
+    "check:v1": "node scripts/check-v1-readiness.mjs"
   },
   "devDependencies": {
     "@axe-core/playwright": "4.14.0",
