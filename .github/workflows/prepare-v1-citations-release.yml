@@ -1,0 +1,42 @@
+name: One-time v0.34.0 evidence release preparation
+
+on:
+  pull_request:
+
+permissions:
+  contents: write
+
+jobs:
+  prepare:
+    if: github.head_ref == 'v1-atlas-citations-batch1-20261031' && github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+      - name: Generate dashboard, browser register, and v0.34.0 via existing scripts
+        shell: bash
+        run: |
+          set -euo pipefail
+          VERSION="$(node -p 'require("./package.json").version')"
+          if [ "$VERSION" != "0.33.0" ]; then
+            echo "Already versioned: $VERSION"
+            exit 0
+          fi
+          node scripts/import-citation-review.mjs
+          node scripts/site-stats.mjs
+          npm run release -- minor \
+            "Twelve source-assessed Atlas quotation connections" \
+            "Assess twelve additional biblical quotation connections with paired Scripture contexts, named scholarly commentary and explicit textual or interpretive limits." \
+            "Increase the Atlas citation review register from 115 to 127 explained pairs while retaining all earlier source assessments and historical notes." \
+            "Display 34 newer explanations still awaiting assessment in the About source register, Atlas evidence labels and roadmap to version 1.0." \
+            "Clarify that routine verification is handled through available automated and connected tools, while physical-device and independent specialist evidence are never asserted without actual access."
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add package.json public/data/releases.json CHANGELOG.md public/index.html public/assets
+          git commit -m "Prepare v0.34.0 with the required release command and generated source statistics"
+          git push origin HEAD:refs/heads/v1-atlas-citations-batch1-20261031
