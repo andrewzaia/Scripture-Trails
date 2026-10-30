@@ -456,12 +456,14 @@
         "Matthew 2:1"
       ],
       "evidence": "named",
-      "qualification": "",
+      "qualification": "Luke connects the birth to a registration associated with Quirinius (Luke 2:1-2), while Matthew begins in Herod's reign (Matthew 2:1). The conventional historical dates produce a genuine chronology debate; the itinerary does not assign a verified calendar year or assume an earlier census is established.",
       "review": {
-        "status": "screened",
+        "status": "qualified",
         "basis": "passage-index-and-location-screen",
         "reviewedOn": "2026-10-26",
-        "issueIds": []
+        "issueIds": [
+          "census-herod-dating"
+        ]
       },
       "study": {
         "context": "Luke places the birth within a narrative about imperial registration and a journey to Bethlehem, while Matthew starts with Bethlehem in the days of Herod. Their accounts should be read in their own sequences; the census dating and precise modern year remain debated.",
@@ -514,10 +516,12 @@
       "evidence": "named",
       "qualification": "Matthew does not specify that the visit occurred on the night of the birth.",
       "review": {
-        "status": "screened",
+        "status": "qualified",
         "basis": "passage-index-and-location-screen",
         "reviewedOn": "2026-10-26",
-        "issueIds": []
+        "issueIds": [
+          "census-herod-dating"
+        ]
       },
       "study": {
         "context": "Matthew narrates visitors from the east following a star and paying homage to the child. Herod's inquiries and the visitors' changed return route matter more than a reconstructed travel map: Matthew gives neither their number nor an exact arrival day.",
@@ -575,7 +579,8 @@
         "basis": "passage-index-and-location-screen",
         "reviewedOn": "2026-10-26",
         "issueIds": [
-          "chronology-birth"
+          "chronology-birth",
+          "census-herod-dating"
         ]
       },
       "study": {
@@ -2552,14 +2557,15 @@
         "John 20:1-18"
       ],
       "evidence": "named",
-      "qualification": "Accounts differ in the presentation of visitors and sequence; no single modern site is assumed.",
+      "qualification": "The resurrection accounts present visitors, empty tomb and appearances differently. Mark 16:1-8 is cited without treating the manuscript-disputed longer ending (Mark 16:9-20) as an undisputed original continuation. No precise modern tomb site or single harmonised morning timetable is claimed.",
       "review": {
         "status": "qualified",
         "basis": "passage-index-and-location-screen",
         "reviewedOn": "2026-10-26",
         "issueIds": [
           "passion-tomb-sites",
-          "resurrection-sequence"
+          "resurrection-sequence",
+          "mark-longer-ending"
         ]
       },
       "study": {
@@ -2702,13 +2708,14 @@
         "Acts 1:6-12"
       ],
       "evidence": "region",
-      "qualification": "Luke 24:50 describes Jesus leading the disciples toward Bethany; Acts 1:12 places their return from the Mount of Olives. These identify a broad area, not surveyed coordinates for the ascension, and do not supply a continuous dated route for all resurrection appearances.",
+      "qualification": "Luke 24:50 places the blessing near Bethany, and Acts 1:12 associates the return with the Mount of Olives. These identify a broad area, not surveyed coordinates. Luke 24:51-52 also has a recognised textual-critical history; precise dating and a complete cross-Gospel resurrection itinerary remain unestablished.",
       "review": {
         "status": "qualified",
         "basis": "passage-index-and-location-screen",
         "reviewedOn": "2026-10-26",
         "issueIds": [
-          "resurrection-sequence"
+          "resurrection-sequence",
+          "luke-ascension-variants"
         ]
       },
       "study": {
