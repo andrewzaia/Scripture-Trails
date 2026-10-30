@@ -247,7 +247,7 @@ test('final seven assessments complete the exact explained-pair register with co
  assert.equal(scholars.size,3);assert.equal(authors.size,3);assert.equal(texts.size,12);
  const records=CITATION_REVIEW.records.filter(r=>r.kind==='connection');
  assert.equal(records.length,161);assert.deepEqual(new Set(records.filter(r=>Number(r.target.slice(2))<=115).map(r=>r.target)),new Set(CONNECTION_EVIDENCE.filter(e=>Number(e.id.slice(2))<=115).map(e=>e.id)));
- assert.equal(Object.keys(CITATION_REVIEW.sources).length,333);
+ assert.equal(Object.keys(CITATION_REVIEW.sources).length,410);
  assert.equal(records.filter(r=>Number(r.target.slice(2))<=115&&r.citations.some(c=>['scholarly-commentary','publisher-note','publisher-abstract'].includes(CITATION_REVIEW.sources[c.sourceId].kind))).length,83);
  assert.equal(CITATION_REVIEW.scope.connections,161);assert.match(batch.method,/full OpenBible corpus.*outside/);
 });
