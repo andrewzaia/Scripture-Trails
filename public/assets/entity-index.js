@@ -35,7 +35,7 @@ export function createEntityIndex(root,handlers={}){
    if(trail){
     panel.append(make('h3','',"Follow this person's Scripture trail"),make('p','entity-muted',trail.qualification),make('p','entity-muted',trail.caution));
     const study=make('section','entity-trail-context');
-    study.append(make('h4','','Read the person's story in context'),make('p','',trail.study.overview),make('h4','','Compare the texts'),make('p','',trail.study.comparison),make('h4','','Question for reflection'),make('p','',trail.study.question),make('p','entity-trail-boundary','Evidence limit: '+trail.study.limits));
+    study.append(make('h4','',"Read the person\u0027s story in context"),make('p','',trail.study.overview),make('h4','','Compare the texts'),make('p','',trail.study.comparison),make('h4','','Question for reflection'),make('p','',trail.study.question),make('p','entity-trail-boundary','Evidence limit: '+trail.study.limits));
     const sources=make('p','entity-trail-primary','Primary Scripture: '+trail.stages.map(s=>s.ref).join(' | '));
     study.append(sources);
     const further=make('div','entity-trail-further');
