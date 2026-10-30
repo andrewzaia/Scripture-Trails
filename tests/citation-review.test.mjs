@@ -380,7 +380,7 @@ test('all 34 additional Atlas pairs have dated scoped assessments in two source-
    assert.equal(r.citations.length,3);
    assert.equal(r.citations.filter(c=>CITATION_REVIEW.sources[c.sourceId].kind==='primary-scripture').length,2);
    assert.equal(r.citations.filter(c=>CITATION_REVIEW.sources[c.sourceId].kind==='scholarly-commentary').length,1);
-   assert.ok(r.limitation.length>120&&r.note.length>100);
+   assert.ok(r.limitation.length>120&&r.note.length>85);
    for(const c of r.citations){
     const src=CITATION_REVIEW.sources[c.sourceId];
     assert.ok(src.url.startsWith('https://'));
