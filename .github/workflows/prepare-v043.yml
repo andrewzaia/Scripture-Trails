@@ -1,0 +1,31 @@
+name: Temporary prepare v0.43.0 flagship navigation
+on:
+  push:
+    branches:
+      - release/v0.43-flagship-navigation-20261031
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: release/v0.43-flagship-navigation-20261031
+          fetch-depth: 0
+          persist-credentials: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - name: Generate and validate v0.43.0 with mandatory release script
+        run: |
+          test "$(node -p "require('./package.json').version")" = "0.42.0"
+          npm run release -- minor "Study journeys: shareable pathways and reliable navigation" "Keep guided study journal choices in validated, reload-safe URLs, with browser Back and Forward returning to the same pathway." "Preserve the previous history entry when following a person trail and retain saved reading progress when moving between journeys and the reader." "Expand automated navigation checks across all six study journals, twenty person trails, 79 Gospel stages, 83 Pauline stages and historical city links."
+          npm run build
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Prepare v0.43.0 with npm run release"
+          git push origin HEAD:release/v0.43-flagship-navigation-20261031
