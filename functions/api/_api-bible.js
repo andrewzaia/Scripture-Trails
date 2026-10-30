@@ -5,7 +5,7 @@ export async function apiBiblePassage(ref,edition,env,reply){
  if(!env.API_BIBLE_KEY)return reply(503,{code:'not_configured',message:`${edition.code} reading is awaiting API.Bible configuration. Please try again later or select another translation.`});
  const target=apiBibleTarget(ref.formatted);
  const params=new URLSearchParams({
-  'content-type':'html','include-notes':'false','include-titles':ref.verse===null?'true':'false',
+  'fums-version':'3','content-type':'html','include-notes':'false','include-titles':ref.verse===null?'true':'false',
   'include-chapter-numbers':'false','include-verse-numbers':'true','include-verse-spans':'true'
  });
  const url=`https://rest.api.bible/v1/bibles/${edition.bibleId}/${target.resource}/${target.id}?${params}`;

@@ -3,10 +3,10 @@
   "updated": "2026-10-31",
   "description": "An evidence-aware v1.0 release roadmap checked against the current versioned Scripture Trails source and test data. All 161 written Atlas explanations now have dated scoped AI-assisted source assessments. The 31 October source-linked journey corrections cover selected high-risk passages, not a complete re-audit of all 162 stages. Full reference corpus, physical-device accessibility and independent specialist certification remain separate. No unverified evidence is implied.",
   "currentFocus": [
-    "Complete the security and privacy threat-model review of API keys, Crossway/API.Bible, browser notebook storage, third-party analytics, CSP, rate limits and untrusted content; remediate critical findings.",
-    "Verify contractual permissions and restrictions for all four publisher editions, FUMS obligations, translation data retention and attribution independently of successful API responses.",
-    "Perform cross-engine and assistive-technology checks with accessible real-device evidence where possible, then implement and exercise production rollback safeguards.",
-    "Create and verify release candidate smoke coverage for Bible reader, Atlas, notebooks, site version, responsive layout and final go/no-go signoff."
+    "Audit the exact Crossway ESV and API.Bible licences, publisher copyright and FUMS obligations, territories, non-commercial definitions and source credits against the latest terms, preserving content-rights blockers until supported.",
+    "Close high-risk biblical historical and geographical content issues and verify flagship people, places and guided studies with direct primary and secondary evidence.",
+    "Expand real Safari/Firefox and screen-reader journey tests, reduced motion and 200/400 percent zoom acceptance; do not claim unavailable devices were manually tested.",
+    "Exercise a production-safe Cloudflare Pages rollback and full release-candidate smoke path before final go/no-go v1.0 approval."
   ],
   "phases": [
     {
@@ -870,6 +870,22 @@
         "Public data-loss limitations and encrypted private-backup recommendations"
       ],
       "verification": "Reviewed local storage implementation and tests using synthetic browser profiles. There is no cloud copy, automatic recovery or guarantee of retrieving data after device loss or storage eviction. Publisher-rights, specialist security and physical screen-reader acceptance remain separate."
+    },
+    {
+      "id": "v1-security-privacy-threat-model",
+      "phase": "next",
+      "status": "delivered",
+      "title": "Security threat-model review and private-study safeguards",
+      "summary": "Audit the server-side Crossway/API.Bible endpoints, publisher-supplied markup, analytics consent, mandatory FUMS reporting, CSP, notebook persistence, unsafe redirects and quota exhaustion; remediate the highest-risk issues found, including removing third-party FUMS JavaScript and protecting search queries.",
+      "capabilities": [
+        "Use API.Bible's supported manual FUMS v3 usage reporting without executing its tracker JavaScript in the private-notebook page",
+        "Harden Crossway keyword search with pinned host, manual redirect rejection, ten-second timeout, bounded response body and strict result validation",
+        "Tighten Content Security Policy and eliminate all outbound referrer URLs",
+        "Apply and verify a narrowly scoped Cloudflare WAF rate-limiting rule for /api/passage and /api/search",
+        "Add publisher-HTML injection, remote-script, privacy, credential and API abuse regression tests",
+        "Publish a dated bounded risk register with disclosed limits of consented analytics and unencrypted browser-local notes"
+      ],
+      "verification": "AI-assisted source security review and real Cloudflare configuration readback plus automated negative unit/browser tests. Not an independent penetration test, supplier contract authorisation, third-party audit or promise of zero vulnerabilities."
     }
   ],
   "v1Readiness": {
@@ -1017,15 +1033,17 @@
         "id": "privacy",
         "title": "Security, privacy and licensed content",
         "summary": "Protect private notes and licensed Bible access without promising that automated tests amount to a security audit.",
-        "next": "Browser notebook corruption, storage-access, quota, multi-tab and backup recovery scenarios are now tested, including fail-closed raw recovery. The full security/privacy threat model, publisher permissions, cross-browser accessibility and operational rollback still require separate acceptance evidence.",
+        "next": "Scoped API secret, remote publisher markup, optional analytics, FUMS, CSP and browser note-storage threats were documented and tested. Continue separate source-licence, cross-browser/assistive-tech, rollback and release-candidate acceptance; no external penetration-test claim.",
         "criteria": [
           {
             "id": "security-review",
             "title": "Security and privacy threat-model review",
-            "status": "open",
+            "status": "met",
             "mode": "manual",
-            "evidence": "functions/api/passage.js",
-            "acceptance": "Review API secret handling, third-party telemetry, CSP, injection, access controls, rate limits and sensitive browser storage; remediate high-severity issues."
+            "evidence": "sources/security/v1-privacy-threat-model-2026-10-31.md",
+            "acceptance": "Review API secret handling, third-party telemetry, CSP, injection, access controls, rate limits and sensitive browser storage; remediate high-severity issues.",
+            "reviewedOn": "2026-10-31",
+            "reviewer": "Scripture Trails AI-assisted bounded threat-model review, security-specific unit and browser tests, and verified Cloudflare WAF rate-limit rule; not an independent penetration test"
           },
           {
             "id": "data-recovery",

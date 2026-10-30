@@ -1,22 +1,35 @@
-// Report only passages actually shown, using API.Bible's official trackers.
-const scripts=new Map();
-function loadTracker(src){
- if(!scripts.has(src))scripts.set(src,new Promise((resolve,reject)=>{
-  const script=document.createElement('script');script.src=src;script.async=true;
-  script.onload=resolve;script.onerror=()=>{scripts.delete(src);script.remove();reject(new Error('Usage tracker unavailable'));};document.head.append(script);
- }));
- return scripts.get(src);
+// API.Bible documents a manual FUMS v3 GET endpoint. No third-party JavaScript
+// needs to run in the origin that also stores visitors' private study notes.
+const DEVICE_KEY='scripture-trails:fums-device-id';
+const SESSION_KEY='scripture-trails:fums-session-id';
+let fallbackDevice=null,fallbackSession=null;
+const safeStore=kind=>{try{return kind==='session'?window.sessionStorage:window.localStorage;}catch{return null;}};
+function identifier(kind){
+ const store=safeStore(kind),key=kind==='session'?SESSION_KEY:DEVICE_KEY;
+ try{const saved=store?.getItem(key);if(saved&&/^[0-9a-f-]{36}$/i.test(saved))return saved;}catch{}
+ const prior=kind==='session'?fallbackSession:fallbackDevice;
+ if(prior)return prior;
+ const id=crypto.randomUUID();
+ if(kind==='session')fallbackSession=id;else fallbackDevice=id;
+ try{store?.setItem(key,id);}catch{/* Consent-independent pseudonymous fallback is in memory only. */}
+ return id;
+}
+export function fumsViewUrl(token,deviceId,sessionId){
+ if(typeof token!=='string'||token.length<12||token.length>4096||!/^[a-zA-Z0-9_-]+$/.test(token))return null;
+ if(!/^[0-9a-f-]{36}$/i.test(deviceId)||!/^[0-9a-f-]{36}$/i.test(sessionId))return null;
+ const url=new URL('https://fums.api.bible/f3');
+ url.searchParams.set('t',token);
+ url.searchParams.set('dId',deviceId);
+ url.searchParams.set('sId',sessionId);
+ return url;
 }
 export async function reportScriptureView(meta){
+ const token=meta?.token;
+ const url=fumsViewUrl(token,identifier('device'),identifier('session'));
+ if(!url)return;
  try{
-  if(typeof meta?.token==='string'&&meta.token.length>0&&meta.token.length<8192){
-   window.fumsData=window.fumsData||[];
-   window.fums=window.fums||function(){window.fumsData.push(arguments);};
-   await loadTracker('https://pkg.api.bible/fumsV3.min.js');
-   window.fums('trackView',meta.token);
-  }else if(typeof meta?.id==='string'&&/^[0-9a-f]{8}(?:-[0-9a-f]{4}){3}-[0-9a-f]{12}$/i.test(meta.id)){
-   await loadTracker('https://cdn.scripture.api.bible/fums/fumsv2.min.js');
-   window._BAPI.t(meta.id);
-  }
- }catch{/* A blocked tracker must not remove the passage the user is reading. */}
+  // GET is the API.Bible-documented mechanism. No cookies, referrer, notebook
+  // contents, search queries or reader URL are sent. Errors do not hide Scripture.
+  await fetch(url.href,{method:'GET',mode:'no-cors',credentials:'omit',referrerPolicy:'no-referrer',cache:'no-store',keepalive:true,redirect:'error'});
+ }catch{/* A blocked reporting pixel must not remove the requested passage. */}
 }

@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.44.1 - 31/10/2026: Security and privacy: safer Scripture access
+
+- Remove executable API.Bible usage-tracker scripts, replacing them with the documented privacy-conscious FUMS v3 GET while preserving required publisher usage reporting.
+- Harden Crossway search redirects, stalled requests, excessive responses and malformed results, and tighten site CSP and referrer protections.
+- Add scoped Cloudflare rate limiting for public Scripture APIs, security regression coverage and a transparent documented threat model with outstanding privacy and publisher-rights qualifications.
+
 ## 0.44.0 - 31/10/2026: Notebook recovery: protect personal study data
 
 - Detect unreadable browser notebook storage and show accessible recovery guidance instead of silently treating stored notes as missing.
