@@ -12,7 +12,8 @@ validateReleases(history.releases,pkg.version);
 const oldVersion=pkg.version,newVersion=nextVersion(oldVersion,level);
 const parts=Object.fromEntries(new Intl.DateTimeFormat('en-GB',{timeZone:'Australia/Sydney',day:'2-digit',month:'2-digit',year:'numeric'}).formatToParts(new Date()).map(x=>[x.type,x.value]));
 const date=`${parts.year}-${parts.month}-${parts.day}`;
-const html=read(htmlPath),oldLabel='<span id="site-version" class="site-version" aria-label="Website version">v'+oldVersion+'</span>';
+const html=read(htmlPath),roadmapCssVersion=html.match(/\/assets\/roadmap\.css\?v=([^"']+)/)?.[1],oldLabel='<span id="site-version" class="site-version" aria-label="Website version">v'+oldVersion+'</span>';
+if(!roadmapCssVersion)throw Error('Roadmap stylesheet cache key missing');
 if(!html.includes(oldLabel))throw new Error('Footer version is out of sync; run npm run check:release');
 if(!html.includes('/assets/app.js?v='+oldVersion)||!html.includes('/assets/style.css?v='+oldVersion)||!html.includes('/assets/entity-index.css?v='+oldVersion))throw new Error('Asset cache keys are out of sync');
 let nextApp=versionedImport(read(appPath),'entity-index.js?v='+oldVersion,'entity-index.js?v='+newVersion,'index module');
@@ -52,7 +53,8 @@ const newHtml=html.replace(oldLabel,oldLabel.replace(oldVersion,newVersion))
  .replace('/assets/style.css?v='+oldVersion,'/assets/style.css?v='+newVersion)
  .replace('/assets/entity-index.css?v='+oldVersion,'/assets/entity-index.css?v='+newVersion)
  .replace('/assets/paul-map.css?v='+oldVersion,'/assets/paul-map.css?v='+newVersion)
- .replace('/assets/hebrew-geography.css?v='+oldVersion,'/assets/hebrew-geography.css?v='+newVersion);
+ .replace('/assets/hebrew-geography.css?v='+oldVersion,'/assets/hebrew-geography.css?v='+newVersion)
+ .replace('/assets/roadmap.css?v='+roadmapCssVersion,'/assets/roadmap.css?v='+newVersion);
 pkg.version=newVersion;
 history.releases.unshift({version:newVersion,date,title:title.trim(),changes:changes.map(x=>x.trim())});
 validateReleases(history.releases,newVersion);
