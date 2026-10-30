@@ -357,3 +357,43 @@ test('first v1.0 quotation batch records twelve contextual sources without erasi
  assert.equal(commentaryCoverage(),161);
  assert.equal(json('roadmap').milestones.find(m=>m.id==='v1-citations-12-01').status,'delivered');
 });
+
+
+test('all 34 additional Atlas pairs have dated scoped assessments in two source-linked batches',()=>{
+ const first=['ce125','ce128','ce132','ce133','ce135','ce136','ce137','ce141','ce143','ce145','ce146','ce147','ce148','ce149','ce150','ce151','ce154'];
+ const second=['ce116','ce117','ce119','ce120','ce121','ce134','ce138','ce144','ce152','ce153','ce155','ce156','ce157','ce158','ce159','ce160','ce161'];
+ const all=[...first,...second];
+ assert.equal(new Set(all).size,34);
+ for(const [name,expected] of [['v1-citations-17-02',first],['v1-citations-17-03',second]]){
+  const batch=CITATION_REVIEW.batches.find(x=>x.id===name);
+  assert.ok(batch);assert.equal(batch.count,17);assert.deepEqual(batch.targets,expected);
+  assert.match(batch.method,/independent specialist|specialist signoff/i);
+  for(const id of expected){
+   const r=citationReviews('connection',id)[0],ev=CONNECTION_EVIDENCE.find(x=>x.id===id);
+   assert.ok(r&&ev);assert.equal(r.batch,name);
+   assert.equal(r.reviewedOn,'2026-10-31');
+   assert.equal(r.decision,'context-clarified');
+   assert.equal(r.anchor,ev.from);
+   assert.deepEqual(r.passages,[ev.from,ev.to]);
+   assert.equal(ev.review,'scripture-context-screened');
+   assert.match(ev.basis,/Independent specialist review remains open/);
+   assert.equal(r.citations.length,3);
+   assert.equal(r.citations.filter(c=>CITATION_REVIEW.sources[c.sourceId].kind==='primary-scripture').length,2);
+   assert.equal(r.citations.filter(c=>CITATION_REVIEW.sources[c.sourceId].kind==='scholarly-commentary').length,1);
+   assert.ok(r.limitation.length>120&&r.note.length>100);
+   for(const c of r.citations){
+    const src=CITATION_REVIEW.sources[c.sourceId];
+    assert.ok(src.url.startsWith('https://'));
+    assert.equal(src.rights,'Linked only; no Bible or commentary text retained.');
+    assert.ok(c.locator&&c.supports);
+   }
+  }
+ }
+ assert.equal(CITATION_REVIEW.scope.connections,161);
+ assert.equal(commentaryCoverage(),161);
+ assert.deepEqual(new Set(CITATION_REVIEW.records.filter(x=>x.kind==='connection').map(x=>x.target)),new Set(CONNECTION_EVIDENCE.map(x=>x.id)));
+ const gate=json('roadmap').v1Readiness.gates.find(g=>g.id==='evidence').criteria.find(c=>c.id==='atlas-reviews');
+ assert.equal(gate.status,'met');
+ assert.match(gate.reviewer,/AI-assisted/);
+ assert.match(gate.reviewer,/not independent specialist/);
+});
