@@ -1,6 +1,16 @@
 {
   "releases": [
     {
+      "version": "0.44.3",
+      "date": "2026-10-31",
+      "title": "Cross-browser accessibility verification",
+      "changes": [
+        "Expand automated regression testing to Chromium, Firefox and WebKit across desktop and mobile device profiles.",
+        "Improve light-theme contrast of Historical Cities controls and wait for stable theme transitions during accessibility audits.",
+        "Allow Firefox accessibility scans to complete without suppressing any WCAG checks."
+      ]
+    },
+    {
       "version": "0.44.2",
       "date": "2026-10-31",
       "title": "Bible publisher permissions and source-rights transparency",
