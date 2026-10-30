@@ -1,0 +1,41 @@
+name: One-time v0.37.0 people and journals release preparation
+
+on:
+  pull_request:
+
+permissions:
+  contents: write
+
+jobs:
+  prepare:
+    if: github.head_ref == 'v1-person-journals-depth-20261031' && github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+      - name: Run the mandatory versioned release command once
+        shell: bash
+        run: |
+          set -euo pipefail
+          VERSION="$(node -p 'require("./package.json").version')"
+          if [ "$VERSION" != "0.36.0" ]; then
+            echo "Already versioned: $VERSION"
+            exit 0
+          fi
+          npm run release -- minor \
+            "Deeper people trails and guided Scripture journals" \
+            "Expand all 20 people trails with substantial literary context, comparison readings, reflection questions and explicit evidence limitations." \
+            "Add sixty validated follow-up Bible references linking directly to the Reader and Atlas, while preserving all 88 established stages." \
+            "Introduce six extended reading guides for creation, Messiah, shepherd imagery, covenant, faith and works, and biblical hope, preserving 36 journal stages, reading progress and approximate study times." \
+            "Add bounded academic source references for historical claims about Esther and Daniel and automated/browser checks for content quality and continuity." \
+            "Record this flagship-content audit batch without prematurely closing the wider v1.0 content and independent specialist verification gates."
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add package.json public/data/releases.json CHANGELOG.md public/index.html public/assets
+          git commit -m "Prepare v0.37.0 using the existing npm run release command"
+          git push origin HEAD:refs/heads/v1-person-journals-depth-20261031
