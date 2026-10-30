@@ -84,8 +84,8 @@ test('journey review limits and future Rome milestone remain explicit',()=>{
 
 test('first two journeys include 39 individually contextualised Scripture reading notes',()=>{
  const early=data.events.filter(e=>['first','second'].includes(e.journey));
- assert.equal(early.length,39);assert.equal(data.events.filter(e=>e.study).length,39);
- assert.equal(data.events.filter(e=>['third','rome'].includes(e.journey)&&!e.study).length,44);
+ assert.equal(early.length,39);assert.equal(data.events.filter(e=>e.study).length,83);
+ assert.equal(data.events.filter(e=>['third','rome'].includes(e.journey)&&e.study).length,44);
  for(const e of early){assert.ok(e.study.context.length>=100,e.id);assert.ok(e.study.crossReferences.length>0,e.id);}
  assert.match(data.studyCoverage.limit,/not independent specialist historical reviews/);
  assert.match(data.review,/Independent historical and textual specialist review has not occurred/);
@@ -106,4 +106,51 @@ test('invalid Scripture study notes fail closed',()=>{
   bad=>{bad.events.find(e=>e.journey==='second').study.crossReferences=['Acts 16:1','Acts 16:1'];}
  ];
  for(const change of mutate){const bad=clone();change(bad);assert.throws(()=>validatePaulineData(bad,counts),/study note/);}
+});
+
+test('all 83 Pauline stages carry complete, distinct Scripture study notes',()=>{
+ const contexts=new Set(),ids=new Set();
+ for(const journey of ['first','second','third','rome']){
+  const events=journeyEvents(data,journey);
+  assert.equal(events.length,{first:18,second:21,third:22,rome:22}[journey]);
+  for(const e of events){
+   assert.ok(e.study,'Missing study '+e.id);
+   assert.equal(e.study.method,'editorial-scripture-context');
+   assert.equal(e.study.reviewedOn,'2026-10-31');
+   assert.ok(e.study.context.length>=110,'Insufficient detail '+e.id);
+   assert.ok(e.study.crossReferences.length>=1&&e.study.crossReferences.length<=3,'Reading links '+e.id);
+   assert.ok(!contexts.has(e.study.context),'Duplicated reading '+e.id);
+   assert.ok(!ids.has(e.id),'Duplicate id '+e.id);
+   contexts.add(e.study.context);ids.add(e.id);
+  }
+ }
+ assert.equal(ids.size,83);assert.equal(validatePaulineData(data,counts),true);
+ assert.match(data.studyCoverage.scope,/All 83 of 83 Pauline stages/);
+ assert.match(data.studyCoverage.limit,/not independent specialist historical reviews/);
+ assert.equal(read('public/data/roadmap.json').milestones.find(m=>m.id==='v1-paul-all-stages-depth')?.status,'delivered');
+});
+test('the remaining 44 notes protect specific route uncertainties and academic limits',()=>{
+ const contexts=new Map(data.events.map(e=>[e.id,e.study.context]));
+ for(const [id,phrase] of [
+  ['paul-third-06','not named'],
+  ['paul-third-10','by land'],
+  ['paul-third-12','not that they landed'],
+  ['paul-third-14','to Miletus'],
+  ['paul-third-18','navigational sighting'],
+  ['paul-third-21','Agabus'],
+  ['paul-rome-01','inferred'],
+  ['paul-rome-05','not proof'],
+  ['paul-rome-08','proposed destination'],
+  ['paul-rome-09','not evidence of landing'],
+  ['paul-rome-10','Syrtis'],
+  ['paul-rome-11','do not identify'],
+  ['paul-rome-12','no particular beach'],
+  ['paul-rome-22','does not narrate']
+ ])assert.ok(contexts.get(id)?.includes(phrase),id);
+ for(const id of ['wreck','storm-drift','cauda-offshore'])assert.equal(data.places.find(p=>p.id===id).coordinates,null);
+ assert.equal(data.places.find(p=>p.id==='malta').certainty,'island');
+ const spirit=data.issues.find(i=>i.id==='spirit-warnings-jerusalem'),voyage=data.issues.find(i=>i.id==='rome-voyage-literary-and-geographical');
+ assert.ok(spirit?.passages.includes('Acts 21:4-6'));
+ assert.ok(voyage?.sourceLinks.some(link=>link.url.includes('doi.org/10.1017/')));
+ assert.match(voyage.sourceLinks[0].scope,/abstract consulted/);
 });
