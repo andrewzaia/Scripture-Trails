@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.35.0 - 31/10/2026: Complete source assessments for 161 Atlas explanations
+
+- Assess the final 34 previously unreviewed Atlas passage connections in two dated Scripture-context batches, with named sources and specific interpretation limits.
+- Document original contexts, composite quotations and Hebrew or Greek textual issues for typological and prophetic connections, including Hosea, Amos, Daniel and the Passover narratives.
+- Complete scoped internal editorial source-review coverage for all 161 written Atlas explanations, while preserving all 115 historical reviews and keeping independent academic signoff separate.
+- Update the public About evidence meter, version 1.0 readiness dashboard and regression checks to distinguish reviewed explanations from the much larger unclassified Atlas corpus.
+
 ## 0.34.0 - 31/10/2026: Twelve source-assessed Atlas quotation connections
 
 - Assess twelve additional biblical quotation connections with paired Scripture contexts, named scholarly commentary and explicit textual or interpretive limits.
