@@ -34,6 +34,10 @@ export function createEntityIndex(root,handlers={}){
    const trail=personTrail(record.id);
    if(trail){
     panel.append(make('h3','',"Follow this person's Scripture trail"),make('p','entity-muted',trail.qualification),make('p','entity-muted',trail.caution));
+    const study=make('section','entity-trail-context');
+    study.append(make('h4','','Read the person's story in context'),make('p','',trail.study.overview),make('h4','','Compare the texts'),make('p','',trail.study.comparison),make('h4','','Question for reflection'),make('p','',trail.study.question),make('p','entity-trail-boundary','Evidence limit: '+trail.study.limits));
+    const sources=make('p','entity-trail-primary','Primary Scripture: '+trail.stages.map(s=>s.ref).join(' | '));
+    study.append(sources);panel.append(study);
     panel.append(make('p','entity-muted','Related comparisons overlap a selected passage; they do not establish that this person appears in both texts.'));
     const steps=make('ol','entity-study-trail');
     for(const step of trail.stages){
