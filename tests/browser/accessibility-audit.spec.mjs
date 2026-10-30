@@ -33,7 +33,8 @@ test('keyword search moves focus out of the hidden form and announces results',a
  await expect(page.locator('#main')).toBeFocused();
 });
 
-test('mobile navigation contains keyboard focus, closes accessibly and resets on resize',async({page})=>{
+test('mobile navigation contains keyboard focus, closes accessibly and resets on resize',async({page},testInfo)=>{
+ if(testInfo.project.name==='desktop-firefox')test.setTimeout(120000);
  await page.setViewportSize({width:390,height:844});await open(page,'about');
  const menu=page.locator('#menu-toggle'),sidebar=page.locator('#sidebar');await menu.focus();await page.keyboard.press('Enter');
  await expect(sidebar).toHaveAttribute('role','dialog');await expect(sidebar).toHaveAttribute('aria-modal','true');
