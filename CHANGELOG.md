@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.33.0 - 30/10/2026: Version 1.0 readiness roadmap and release gates
+
+- Introduce a dedicated Road to v1.0 section with five public acceptance gates and 17 measurable requirements covering evidence, content, accessibility, privacy and launch verification.
+- Publish a transparent baseline of four scoped automated criteria met and 13 outstanding criteria, with actionable next steps and a proposed release sequence.
+- Prevent a v1.0 launch while required conditions remain open, and validate editorial citation gaps, evidence records and release-readiness consistency in website builds.
+- Improve cache versioning for the public roadmap stylesheet, and add automated and browser regression coverage for readiness reporting.
+
 ## 0.32.0 - 30/10/2026: Deeper Atlas Scripture connections and transparent coverage
 
 - Explain 46 additional Bible-to-Bible connections with passage-specific reasoning, source context, relationship types and interpretive cautions; expand the annotated Atlas from 115 to 161 pairs.
