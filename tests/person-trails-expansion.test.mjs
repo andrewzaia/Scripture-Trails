@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {PERSON_TRAILS,personTrail,findPersonTrails,validatePersonTrails} from '../public/assets/person-trails.js';
+import {validateCanonicalReference} from '../public/assets/reference-integrity.js';
 const read=p=>readFileSync(new URL('../'+p,import.meta.url),'utf8');
 const counts=JSON.parse(read('public/data/verse-counts.json'));
 const ids=new Set(['biblical-people.json','biblical-history.json','biblical-people-expanded.json'].flatMap(n=>JSON.parse(read('public/data/'+n)).people.map(p=>p.id)));
@@ -31,4 +32,40 @@ test('directory and profiles wire review labels, reader ranges and starting-vers
  assert.match(app,/findPersonTrails\(\$\('person-trail-search'\)/);assert.match(app,/openPersonTrail\(trail.personId\)/);
  assert.match(index,/TRAIL_SOURCE_LABELS\[step.source\]/);assert.match(index,/TRAIL_REVIEW_LABELS\[step.review\]/);
  assert.match(index,/onRead\?\.\(step.ref\)/);assert.match(index,/onAtlas\?\.\(sourcePassage\(step.ref\)\)/);
+});
+
+
+test('all twenty people have substantive individual readings and validated extended Scripture links',()=>{
+ assert.equal(PERSON_TRAILS.length,20);
+ let words=0,refs=0;
+ for(const trail of PERSON_TRAILS){
+  assert.ok(trail.study.overview.split(/\s+/).length>=65,trail.personId+' context too thin');
+  assert.ok(trail.study.comparison.length>=65&&trail.study.question.length>=65&&trail.study.limits.length>=65,trail.personId);
+  assert.equal(trail.study.furtherRefs.length,3,trail.personId);
+  for(const ref of trail.study.furtherRefs)assert.ok(validateCanonicalReference(ref,counts),trail.personId+': '+ref);
+  words+=trail.study.overview.split(/\s+/).length;refs+=trail.study.furtherRefs.length;
+ }
+ assert.ok(words>=1400);assert.equal(refs,60);
+ assert.match(personTrail('esther').study.limits,/historical status|composition/);
+ assert.match(personTrail('daniel').study.overview,/chapter 3/);
+ assert.match(personTrail('jeremiah').study.overview,/Jeremiah 29:11/);
+ const entity=read('public/assets/entity-index.js');
+ assert.match(entity,/entity-trail-context/);
+ assert.match(entity,/trail.study.furtherRefs/);
+ assert.match(entity,/handlers.onRead\?\.\(ref\)/);
+ assert.match(entity,/handlers.onAtlas\?\.\(sourcePassage\(ref\)\)/);
+});
+
+test('missing original person study content and invalid extended references are rejected',()=>{
+ for(const mutate of [
+  t=>delete t.study.overview,
+  t=>t.study.comparison='Too short',
+  t=>t.study.furtherRefs[0]='Genesis 1:999',
+  t=>t.study.furtherRefs[1]=t.study.furtherRefs[0],
+  t=>t.study.furtherRefs=[]
+ ]){
+  const trail=structuredClone(personTrail('abraham'));
+  mutate(trail);
+  assert.throws(()=>validatePersonTrails(counts,ids,[trail]));
+ }
 });
