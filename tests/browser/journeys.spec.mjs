@@ -79,15 +79,15 @@ test('map alternatives navigate Gospel stops and an unpinned Pauline stage',asyn
 test('v1.0 roadmap shows honest scoped progress and accessible launch acceptance criteria',async({page})=>{
  await open(page,'roadmap');
  await expect(page.locator('[data-roadmap=""]')).toHaveAttribute('data-ready','true');
- await expect(page.locator('[data-roadmap="v1-summary"]')).toContainText('4 of 17 criteria met');
- await expect(page.locator('[data-roadmap="v1-summary"]')).toContainText('13 criteria remain open');
+ await expect(page.locator('[data-roadmap="v1-summary"]')).toContainText('5 of 17 criteria met');
+ await expect(page.locator('[data-roadmap="v1-summary"]')).toContainText('12 criteria remain open');
  await expect(page.locator('.v1-gate')).toHaveCount(5);
  await page.locator('.v1-stages > summary').click();
  await expect(page.locator('[data-roadmap="v1-stages"] > li')).toHaveCount(5);
  const evidence=page.locator('.v1-gate').filter({has:page.getByRole('heading',{name:'Biblical evidence and editorial quality'})});
  await evidence.locator('.v1-gate-detail > summary').click();
- await expect(evidence.locator('[data-readiness="open"]')).toHaveCount(3);
- await expect(evidence).toContainText('Complete source assessments for the remaining Atlas explanations');
+ await expect(evidence.locator('[data-readiness="open"]')).toHaveCount(2);
+ await expect(evidence).toContainText('Dated editorial source assessments for all 161 explained Atlas pairs');
  await expect(evidence).toContainText('dated, source-linked editorial assessments');
 });
 
