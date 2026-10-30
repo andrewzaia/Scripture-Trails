@@ -1,19 +1,20 @@
 {
   "schema": 1,
-  "updated": "2026-10-29",
+  "updated": "2026-10-31",
   "status": "declared-batch-assessed",
   "method": "AI-assisted editorial source-level review of a declared priority batch. The Bible is the authoritative foundation; supporting historical and archaeological sources are limited to the claims and access scope recorded here. No independent specialist signoff is claimed.",
   "scope": {
     "issues": 18,
     "places": 15,
     "trailReadings": 4,
-    "connections": 115
+    "connections": 127
   },
   "deferred": [
     "All six previously unlinked named-place assessments now include external research. Bibliographic gaps in this declared batch are addressed at the stated scope; exact identifications, comparative excavation review, textual variants and abstract-only access remain unresolved. Regional placeholders were not upgraded.",
     "All 115 explained pairs now have dated editorial assessments and at least one scoped secondary citation. The 32 previously passage-based assessments have dated commentary follow-ups. Named commentary or limited publisher-summary support is not independent specialist signoff or agreement with every link. Fuller literature, source-access gaps and textual questions remain open.",
     "Other person-trail access gaps, full excavation reports, manuscript apparatuses, wider source coverage and independent specialist review remain open.",
-    "The full OpenBible corpus remains unclassified."
+    "The full OpenBible corpus remains unclassified.",
+    "Of the 46 explanations introduced in v0.32.0, twelve now have dated Scripture-context and named-commentary assessments in v1-citations-12-01; 34 remain pending. Access restrictions and commentary scope are recorded; no external peer review is implied."
   ],
   "sources": {
     "luke2": {
@@ -3190,6 +3191,166 @@
       "url": "https://www.workingpreacher.org/commentaries/revised-common-lectionary/sixth-sunday-after-epiphany-3/commentary-on-luke-617-26-2",
       "checkedOn": "2026-10-29",
       "access": "Readable commentary checked, particularly the direct plural address, material circumstances, blessings and woes. Homiletical interpretation; not a reconstruction of one combined sermon.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b1-hebrews": {
+      "title": "Hebrews - selected commentary",
+      "author": "Dennis Johnson",
+      "publisher": "The Gospel Coalition (TGC Bible Commentary)",
+      "kind": "scholarly-commentary",
+      "url": "https://www.thegospelcoalition.org/commentary/hebrews/",
+      "checkedOn": "2026-10-31",
+      "access": "Hebrews 4:1-11 explicitly relates Genesis 2:2 to God's rest, alongside Psalm 95. Confessional perspective; independent specialist signoff not claimed.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b1-matthew": {
+      "title": "Matthew - selected commentary",
+      "author": "Douglas Sean O'Donnell",
+      "publisher": "The Gospel Coalition (TGC Bible Commentary)",
+      "kind": "scholarly-commentary",
+      "url": "https://www.thegospelcoalition.org/commentary/matthew/",
+      "checkedOn": "2026-10-31",
+      "access": "Readable discussion checked of Matthew 4:8-11, 13:10-17 and 22:34-40; quotations and literary setting, not a manuscript apparatus. Confessional perspective; independent specialist signoff not claimed.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b1-acts": {
+      "title": "Acts - selected commentary",
+      "author": "Alan J. Thompson",
+      "publisher": "The Gospel Coalition (TGC Bible Commentary)",
+      "kind": "scholarly-commentary",
+      "url": "https://www.thegospelcoalition.org/commentary/acts/",
+      "checkedOn": "2026-10-31",
+      "access": "Readable discussion checked of Acts 2:25-36, 8:26-40 and 13:26-37; some discussion summarises Scripture application without resolving all interpretive differences. Confessional perspective; independent specialist signoff not claimed.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b1-romans": {
+      "title": "Romans - selected commentary",
+      "author": "Donny Ray Mathis",
+      "publisher": "The Gospel Coalition (TGC Bible Commentary)",
+      "kind": "scholarly-commentary",
+      "url": "https://www.thegospelcoalition.org/commentary/Romans/",
+      "checkedOn": "2026-10-31",
+      "access": "Readable discussion checked of Romans 1:16-17 with Habakkuk 2:4; not a survey of Greek and Hebrew textual witnesses. Confessional perspective; independent specialist signoff not claimed.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b1-galatians": {
+      "title": "Galatians - selected commentary",
+      "author": "Matthew P. Harmon and John Sloat",
+      "publisher": "The Gospel Coalition (TGC Bible Commentary)",
+      "kind": "scholarly-commentary",
+      "url": "https://www.thegospelcoalition.org/commentary/galatians/",
+      "checkedOn": "2026-10-31",
+      "access": "Readable discussion checked of Galatians 3:10-14 citing Habakkuk and Deuteronomy; confessional exposition, not a comprehensive critical source survey. Confessional perspective; independent specialist signoff not claimed.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b1-mark": {
+      "title": "Mark - selected commentary",
+      "author": "Mark L. Strauss",
+      "publisher": "The Gospel Coalition (TGC Bible Commentary)",
+      "kind": "scholarly-commentary",
+      "url": "https://www.thegospelcoalition.org/commentary/mark/",
+      "checkedOn": "2026-10-31",
+      "access": "Readable discussion checked of Mark 12:28-34, including the Shema and Leviticus 19:18. Confessional perspective; independent specialist signoff not claimed.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b1-text-hebrews-4": {
+      "title": "Hebrews 4 - publisher passage reference",
+      "author": "Crossway (ESV.org)",
+      "publisher": "Crossway (ESV.org)",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/Hebrews+4/",
+      "checkedOn": "2026-10-31",
+      "access": "Publisher passage link recorded as a reference locator. Selected context checked against named commentary and the cited biblical passages; direct access varied and a manuscript apparatus was not inspected.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b1-text-leviticus-19": {
+      "title": "Leviticus 19 - publisher passage reference",
+      "author": "Crossway (ESV.org)",
+      "publisher": "Crossway (ESV.org)",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/Leviticus+19/",
+      "checkedOn": "2026-10-31",
+      "access": "Publisher passage link recorded as a reference locator. Selected context checked against named commentary and the cited biblical passages; direct access varied and a manuscript apparatus was not inspected.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b1-text-acts-13": {
+      "title": "Acts 13 - publisher passage reference",
+      "author": "Crossway (ESV.org)",
+      "publisher": "Crossway (ESV.org)",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/Acts+13/",
+      "checkedOn": "2026-10-31",
+      "access": "Publisher passage link recorded as a reference locator. Selected context checked against named commentary and the cited biblical passages; direct access varied and a manuscript apparatus was not inspected.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b1-text-psalm-16": {
+      "title": "Psalm 16 - publisher passage reference",
+      "author": "Crossway (ESV.org)",
+      "publisher": "Crossway (ESV.org)",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/Psalm+16/",
+      "checkedOn": "2026-10-31",
+      "access": "Publisher passage link recorded as a reference locator. Selected context checked against named commentary and the cited biblical passages; direct access varied and a manuscript apparatus was not inspected.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b1-text-isaiah-6": {
+      "title": "Isaiah 6 - publisher passage reference",
+      "author": "USCCB",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/isaiah/6",
+      "checkedOn": "2026-10-31",
+      "access": "Publisher passage link recorded as a reference locator. Selected context checked against named commentary and the cited biblical passages; direct access varied and a manuscript apparatus was not inspected.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b1-text-matthew-13": {
+      "title": "Matthew 13 - publisher passage reference",
+      "author": "USCCB",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/matthew/13",
+      "checkedOn": "2026-10-31",
+      "access": "Publisher passage link recorded as a reference locator. Selected context checked against named commentary and the cited biblical passages; direct access varied and a manuscript apparatus was not inspected.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b1-text-acts-8": {
+      "title": "Acts 8 - publisher passage reference",
+      "author": "USCCB",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/acts/8",
+      "checkedOn": "2026-10-31",
+      "access": "Publisher passage link recorded as a reference locator. Selected context checked against named commentary and the cited biblical passages; direct access varied and a manuscript apparatus was not inspected.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b1-text-habakkuk-2": {
+      "title": "Habakkuk 2 - publisher passage reference",
+      "author": "USCCB",
+      "publisher": "USCCB",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/habakkuk/2",
+      "checkedOn": "2026-10-31",
+      "access": "Publisher passage link recorded as a reference locator. Selected context checked against named commentary and the cited biblical passages; direct access varied and a manuscript apparatus was not inspected.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b1-text-romans-1": {
+      "title": "Romans 1 - publisher passage reference",
+      "author": "Crossway (ESV.org)",
+      "publisher": "Crossway (ESV.org)",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/Romans+1/",
+      "checkedOn": "2026-10-31",
+      "access": "Publisher passage link recorded as a reference locator. Selected context checked against named commentary and the cited biblical passages; direct access varied and a manuscript apparatus was not inspected.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b1-text-deuteronomy-21": {
+      "title": "Deuteronomy 21 - publisher passage reference",
+      "author": "Crossway (ESV.org)",
+      "publisher": "Crossway (ESV.org)",
+      "kind": "primary-scripture",
+      "url": "https://www.esv.org/Deuteronomy+21/",
+      "checkedOn": "2026-10-31",
+      "access": "Publisher passage link recorded as a reference locator. Selected context checked against named commentary and the cited biblical passages; direct access varied and a manuscript apparatus was not inspected.",
       "rights": "Linked only; no Bible or commentary text retained."
     }
   },
@@ -7990,6 +8151,390 @@
       ],
       "batch": "connections-final-07",
       "anchor": "Ezra 2:1"
+    },
+    {
+      "kind": "connection",
+      "target": "ce118",
+      "title": "Genesis 2:2 and Hebrews 4:4",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-31",
+      "note": "Hebrews links the seventh day of Genesis to rest still available to the addressed community; Dennis Johnson discusses God's creator rest as distinct from Joshua's land-rest.",
+      "limitation": "Do not treat Genesis 2:2 as a direct command about modern worship days. Psalm 95, Israel's wilderness unbelief and the later 'Sabbath rest' language in Hebrews 4:9-11 remain integral. AI-assisted selective Scripture-context and named-commentary review; wider literature, original-language variants and independent specialist review remain open.",
+      "passages": [
+        "Genesis 2:2",
+        "Hebrews 4:4"
+      ],
+      "citations": [
+        {
+          "sourceId": "b3-text-genesis-2",
+          "locator": "Genesis 2:2",
+          "supports": "Original biblical passage and nearby literary setting"
+        },
+        {
+          "sourceId": "v1b1-text-hebrews-4",
+          "locator": "Hebrews 4:4",
+          "supports": "Explicit quotation and New Testament argument"
+        },
+        {
+          "sourceId": "v1b1-hebrews",
+          "locator": "Hebrews 4:1-11, especially 4:3-5",
+          "supports": "Hebrews explicitly cites Genesis 2:2, setting creation rest beside Psalm 95 and the continuing call to enter God's rest."
+        }
+      ],
+      "batch": "v1-citations-12-01",
+      "anchor": "Genesis 2:2"
+    },
+    {
+      "kind": "connection",
+      "target": "ce122",
+      "title": "Leviticus 19:18 and Matthew 22:39",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-31",
+      "note": "In Leviticus the neighbour command belongs to instructions against vengeance and injustice; Douglas Sean O'Donnell identifies Jesus' use of this command in the double-love summary of the Law.",
+      "limitation": "The commentary explains Jesus' synthesis but does not exhaust Leviticus 19's social setting, nor settle disputes about the scope of 'neighbour' across Jewish interpretive traditions. AI-assisted selective Scripture-context and named-commentary review; wider literature, original-language variants and independent specialist review remain open.",
+      "passages": [
+        "Leviticus 19:18",
+        "Matthew 22:39"
+      ],
+      "citations": [
+        {
+          "sourceId": "v1b1-text-leviticus-19",
+          "locator": "Leviticus 19:18",
+          "supports": "Original biblical passage and nearby literary setting"
+        },
+        {
+          "sourceId": "pair-matthew-22",
+          "locator": "Matthew 22:39",
+          "supports": "Explicit quotation and New Testament argument"
+        },
+        {
+          "sourceId": "v1b1-matthew",
+          "locator": "The Great Commandment, Matthew 22:34-40",
+          "supports": "Matthew quotes Leviticus 19:18 alongside Deuteronomy 6:5 as paired commands of love."
+        }
+      ],
+      "batch": "v1-citations-12-01",
+      "anchor": "Leviticus 19:18"
+    },
+    {
+      "kind": "connection",
+      "target": "ce123",
+      "title": "Psalm 2:7 and Acts 13:33",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-31",
+      "note": "The Psalm addresses an anointed ruler. In Acts Paul's Pisidian Antioch speech relates the sonship oracle to the proclamation of Jesus; Alan J. Thompson treats the speech as a Davidic promise and resurrection argument.",
+      "limitation": "The temporal relationship of resurrection, enthronement and 'today I have begotten you' is debated. The commentary is not a survey of these readings; do not claim the psalm had only one original horizon. AI-assisted selective Scripture-context and named-commentary review; wider literature, original-language variants and independent specialist review remain open.",
+      "passages": [
+        "Psalm 2:7",
+        "Acts 13:33"
+      ],
+      "citations": [
+        {
+          "sourceId": "pair-psalm-2",
+          "locator": "Psalm 2:7",
+          "supports": "Original biblical passage and nearby literary setting"
+        },
+        {
+          "sourceId": "v1b1-text-acts-13",
+          "locator": "Acts 13:33",
+          "supports": "Explicit quotation and New Testament argument"
+        },
+        {
+          "sourceId": "v1b1-acts",
+          "locator": "Ministry in Pisidian Antioch, Acts 13:26-37",
+          "supports": "Acts 13:33 applies Psalm 2:7's royal sonship wording within Paul's declaration that God has fulfilled promises made to the fathers."
+        }
+      ],
+      "batch": "v1-citations-12-01",
+      "anchor": "Psalm 2:7"
+    },
+    {
+      "kind": "connection",
+      "target": "ce124",
+      "title": "Psalm 16:10 and Acts 2:27",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-31",
+      "note": "The original psalm expresses confidence in God's preserving presence; Alan J. Thompson examines Peter's use of Psalm 16 in the Pentecost sermon as a Davidic hope read through Jesus' resurrection.",
+      "limitation": "Peter's Christological argument in Acts is a primary textual claim, not archaeological confirmation. Greek/Hebrew wording and the scope of the psalm's original claim remain distinct research questions. AI-assisted selective Scripture-context and named-commentary review; wider literature, original-language variants and independent specialist review remain open.",
+      "passages": [
+        "Psalm 16:10",
+        "Acts 2:27"
+      ],
+      "citations": [
+        {
+          "sourceId": "v1b1-text-psalm-16",
+          "locator": "Psalm 16:10",
+          "supports": "Original biblical passage and nearby literary setting"
+        },
+        {
+          "sourceId": "pair-acts-2",
+          "locator": "Acts 2:27",
+          "supports": "Explicit quotation and New Testament argument"
+        },
+        {
+          "sourceId": "v1b1-acts",
+          "locator": "The Lord Reigns, Acts 2:25-31",
+          "supports": "Peter quotes Psalm 16:8-11 and contrasts David's known death with the proclaimed resurrection of Jesus."
+        }
+      ],
+      "batch": "v1-citations-12-01",
+      "anchor": "Psalm 16:10"
+    },
+    {
+      "kind": "connection",
+      "target": "ce126",
+      "title": "Psalm 110:1 and Acts 2:34",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-31",
+      "note": "The royal oracle speaks of sitting at the Lord's right hand; Alan J. Thompson explicitly relates Acts 2:34-36 to Psalm 110 and Peter's argument about divine kingship.",
+      "limitation": "The right-hand image is a theological royal claim; it is not a directly observed astronomical location. The original royal psalm's setting and later messianic uses are not identical questions. AI-assisted selective Scripture-context and named-commentary review; wider literature, original-language variants and independent specialist review remain open.",
+      "passages": [
+        "Psalm 110:1",
+        "Acts 2:34"
+      ],
+      "citations": [
+        {
+          "sourceId": "pair-psalm-110",
+          "locator": "Psalm 110:1",
+          "supports": "Original biblical passage and nearby literary setting"
+        },
+        {
+          "sourceId": "pair-acts-2",
+          "locator": "Acts 2:34",
+          "supports": "Explicit quotation and New Testament argument"
+        },
+        {
+          "sourceId": "v1b1-acts",
+          "locator": "The Lord Reigns, Acts 2:32-36",
+          "supports": "Peter quotes Psalm 110:1 when reasoning about Jesus' exaltation and the distinction between David and David's Lord."
+        }
+      ],
+      "batch": "v1-citations-12-01",
+      "anchor": "Psalm 110:1"
+    },
+    {
+      "kind": "connection",
+      "target": "ce127",
+      "title": "Isaiah 6:9 and Matthew 13:14",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-31",
+      "note": "Isaiah's commission includes a warning of an unreceptive audience; Matthew applies it to contrasting responses to Jesus' teaching in parables, as Douglas Sean O'Donnell notes.",
+      "limitation": "Do not generalise the critique to all Jewish people, erase Isaiah's commissioning setting or infer a single explanation of divine agency and human responsibility from a short citation. AI-assisted selective Scripture-context and named-commentary review; wider literature, original-language variants and independent specialist review remain open.",
+      "passages": [
+        "Isaiah 6:9",
+        "Matthew 13:14"
+      ],
+      "citations": [
+        {
+          "sourceId": "v1b1-text-isaiah-6",
+          "locator": "Isaiah 6:9",
+          "supports": "Original biblical passage and nearby literary setting"
+        },
+        {
+          "sourceId": "v1b1-text-matthew-13",
+          "locator": "Matthew 13:14",
+          "supports": "Explicit quotation and New Testament argument"
+        },
+        {
+          "sourceId": "v1b1-matthew",
+          "locator": "Jesus Teaches in Parables, Matthew 13:10-17",
+          "supports": "Matthew 13:14-15 quotes Isaiah 6:9-10 about hearing and seeing without understanding."
+        }
+      ],
+      "batch": "v1-citations-12-01",
+      "anchor": "Isaiah 6:9"
+    },
+    {
+      "kind": "connection",
+      "target": "ce129",
+      "title": "Isaiah 53:7 and Acts 8:32",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-31",
+      "note": "Isaiah depicts the servant's silent suffering; Alan J. Thompson explicitly notes Isaiah 53 as the passage read in Acts 8:32, in an account of the mission beyond Jerusalem.",
+      "limitation": "Acts does not transcribe Philip's entire teaching. The identity of Isaiah's servant and differences between Greek and Hebrew wordings require wider textual inquiry. AI-assisted selective Scripture-context and named-commentary review; wider literature, original-language variants and independent specialist review remain open.",
+      "passages": [
+        "Isaiah 53:7",
+        "Acts 8:32"
+      ],
+      "citations": [
+        {
+          "sourceId": "pair-isaiah-53",
+          "locator": "Isaiah 53:7",
+          "supports": "Original biblical passage and nearby literary setting"
+        },
+        {
+          "sourceId": "v1b1-text-acts-8",
+          "locator": "Acts 8:32",
+          "supports": "Explicit quotation and New Testament argument"
+        },
+        {
+          "sourceId": "v1b1-acts",
+          "locator": "An Ethiopian Official, Acts 8:26-40",
+          "supports": "Acts describes an Ethiopian official reading Isaiah 53:7-8 and Philip beginning his proclamation of Jesus from it."
+        }
+      ],
+      "batch": "v1-citations-12-01",
+      "anchor": "Isaiah 53:7"
+    },
+    {
+      "kind": "connection",
+      "target": "ce130",
+      "title": "Habakkuk 2:4 and Romans 1:17",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-31",
+      "note": "Habakkuk addresses proud domination and waiting for God's appointed action; Donny Ray Mathis relates the prophet's call to enduring trust to Paul's summary of the gospel in Romans 1:16-17.",
+      "limitation": "'Faith' and 'faithfulness', Hebrew and Greek phrase structure, and the perspective on God's righteousness remain contested. This commentary is one confessional interpretation, not a textual consensus. AI-assisted selective Scripture-context and named-commentary review; wider literature, original-language variants and independent specialist review remain open.",
+      "passages": [
+        "Habakkuk 2:4",
+        "Romans 1:17"
+      ],
+      "citations": [
+        {
+          "sourceId": "v1b1-text-habakkuk-2",
+          "locator": "Habakkuk 2:4",
+          "supports": "Original biblical passage and nearby literary setting"
+        },
+        {
+          "sourceId": "v1b1-text-romans-1",
+          "locator": "Romans 1:17",
+          "supports": "Explicit quotation and New Testament argument"
+        },
+        {
+          "sourceId": "v1b1-romans",
+          "locator": "Thesis: Romans 1:16-17",
+          "supports": "Romans 1:17 quotes Habakkuk 2:4 as Paul introduces God's righteousness and the gospel."
+        }
+      ],
+      "batch": "v1-citations-12-01",
+      "anchor": "Habakkuk 2:4"
+    },
+    {
+      "kind": "connection",
+      "target": "ce131",
+      "title": "Habakkuk 2:4 and Galatians 3:11",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-31",
+      "note": "Paul uses the statement about the righteous living by faith within an argument contrasting justification by faith and reliance on works of the Law; Matthew P. Harmon and John Sloat discuss that precise citation.",
+      "limitation": "Paul's use of Habakkuk does not erase the prophet's original crisis or decide all Jewish readings of Torah. The commentary is a confessional reading, not a full survey of Pauline scholarship. AI-assisted selective Scripture-context and named-commentary review; wider literature, original-language variants and independent specialist review remain open.",
+      "passages": [
+        "Habakkuk 2:4",
+        "Galatians 3:11"
+      ],
+      "citations": [
+        {
+          "sourceId": "v1b1-text-habakkuk-2",
+          "locator": "Habakkuk 2:4",
+          "supports": "Original biblical passage and nearby literary setting"
+        },
+        {
+          "sourceId": "gal3",
+          "locator": "Galatians 3:11",
+          "supports": "Explicit quotation and New Testament argument"
+        },
+        {
+          "sourceId": "v1b1-galatians",
+          "locator": "The Curse and the Christ, Galatians 3:10-14",
+          "supports": "Galatians 3:11 explicitly quotes Habakkuk 2:4 in a chain of appeals to Deuteronomy and Leviticus."
+        }
+      ],
+      "batch": "v1-citations-12-01",
+      "anchor": "Habakkuk 2:4"
+    },
+    {
+      "kind": "connection",
+      "target": "ce139",
+      "title": "Deuteronomy 6:4 and Mark 12:29",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-31",
+      "note": "Mark situates the quotation in a friendly exchange with a scribe; Mark L. Strauss identifies the Shema as a central Jewish confession and Jesus' twofold command as a summary of covenant allegiance.",
+      "limitation": "The Jewish confession retains its own integrity and centuries of interpretation. The text does not license a claim that Judaism lacks concern for neighbour-love. AI-assisted selective Scripture-context and named-commentary review; wider literature, original-language variants and independent specialist review remain open.",
+      "passages": [
+        "Deuteronomy 6:4",
+        "Mark 12:29"
+      ],
+      "citations": [
+        {
+          "sourceId": "pair-deuteronomy-6",
+          "locator": "Deuteronomy 6:4",
+          "supports": "Original biblical passage and nearby literary setting"
+        },
+        {
+          "sourceId": "pair-mark-12",
+          "locator": "Mark 12:29",
+          "supports": "Explicit quotation and New Testament argument"
+        },
+        {
+          "sourceId": "v1b1-mark",
+          "locator": "A Question about the Greatest Commandment, Mark 12:28-34",
+          "supports": "Jesus quotes the Shema from Deuteronomy 6:4-5 as the first commandment before adding Leviticus 19:18."
+        }
+      ],
+      "batch": "v1-citations-12-01",
+      "anchor": "Deuteronomy 6:4"
+    },
+    {
+      "kind": "connection",
+      "target": "ce140",
+      "title": "Deuteronomy 6:13 and Matthew 4:10",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-31",
+      "note": "Deuteronomy warns Israel against following other gods in the land; Matthew depicts Jesus rejecting the tempter's demand. Douglas Sean O'Donnell names Deuteronomy 6:13 in his commentary on Matthew 4:10.",
+      "limitation": "Matthew adapts the command's wording. Do not claim verbatim identity across a specific Hebrew and Greek text, or equate the wilderness settings in every respect. AI-assisted selective Scripture-context and named-commentary review; wider literature, original-language variants and independent specialist review remain open.",
+      "passages": [
+        "Deuteronomy 6:13",
+        "Matthew 4:10"
+      ],
+      "citations": [
+        {
+          "sourceId": "pair-deuteronomy-6",
+          "locator": "Deuteronomy 6:13",
+          "supports": "Original biblical passage and nearby literary setting"
+        },
+        {
+          "sourceId": "pair-matthew-4",
+          "locator": "Matthew 4:10",
+          "supports": "Explicit quotation and New Testament argument"
+        },
+        {
+          "sourceId": "v1b1-matthew",
+          "locator": "Temptation in the Wilderness, Matthew 4:8-11",
+          "supports": "Jesus responds to the offer of kingdoms with the Deuteronomy 6:13 demand for exclusive worship of God."
+        }
+      ],
+      "batch": "v1-citations-12-01",
+      "anchor": "Deuteronomy 6:13"
+    },
+    {
+      "kind": "connection",
+      "target": "ce142",
+      "title": "Deuteronomy 21:23 and Galatians 3:13",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-31",
+      "note": "Deuteronomy 21 concerns the burial of a body exposed after execution; Harmon and Sloat discuss how Paul applies this judicial curse image to redemption in Galatians 3:10-14.",
+      "limitation": "Deuteronomy does not directly describe Roman crucifixion. Paul's application and atonement explanation are theological arguments that require context; different interpretations remain possible. AI-assisted selective Scripture-context and named-commentary review; wider literature, original-language variants and independent specialist review remain open.",
+      "passages": [
+        "Deuteronomy 21:23",
+        "Galatians 3:13"
+      ],
+      "citations": [
+        {
+          "sourceId": "v1b1-text-deuteronomy-21",
+          "locator": "Deuteronomy 21:23",
+          "supports": "Original biblical passage and nearby literary setting"
+        },
+        {
+          "sourceId": "gal3",
+          "locator": "Galatians 3:13",
+          "supports": "Explicit quotation and New Testament argument"
+        },
+        {
+          "sourceId": "v1b1-galatians",
+          "locator": "The Curse and the Christ, Galatians 3:10-14",
+          "supports": "Galatians 3:13 quotes the curse-on-a-tree language of Deuteronomy 21:23 in Paul's argument about Christ's death."
+        }
+      ],
+      "batch": "v1-citations-12-01",
+      "anchor": "Deuteronomy 21:23"
     }
   ],
   "batches": [
@@ -8207,6 +8752,26 @@
         "ce115"
       ],
       "method": "AI-assisted claim-specific commentary follow-up for all 32 previously passage-based assessments. Sixteen named commentary entries have recorded locators and access limits; one was available only through indexed excerpts, two are authorised handbook excerpts. Earlier assessment fields, classifications and cautions are preserved. These citations do not imply endorsement of every link, a complete literature review or independent specialist signoff."
+    },
+    {
+      "id": "v1-citations-12-01",
+      "title": "First twelve priority quotations for v1.0 source review",
+      "count": 12,
+      "targets": [
+        "ce118",
+        "ce122",
+        "ce123",
+        "ce124",
+        "ce126",
+        "ce127",
+        "ce129",
+        "ce130",
+        "ce131",
+        "ce139",
+        "ce140",
+        "ce142"
+      ],
+      "method": "AI-assisted, claim-specific examination of twelve explicit Hebrew Bible quotations in the New Testament. Both biblical contexts and one scoped named, readable confessional commentary are cited per pair. Six selected TGC commentary pages, by seven named contributors, support scoped claims; passage link access varies, and source links are not independent scholarly confirmation. Full textual witnesses, competing interpretations and specialist review remain open."
     }
   ]
 }

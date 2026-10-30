@@ -87,8 +87,8 @@ test('v1.0 roadmap shows honest scoped progress and accessible launch acceptance
  const evidence=page.locator('.v1-gate').filter({has:page.getByRole('heading',{name:'Biblical evidence and editorial quality'})});
  await evidence.locator('.v1-gate-detail > summary').click();
  await expect(evidence.locator('[data-readiness="open"]')).toHaveCount(3);
- await expect(evidence).toContainText('Close the 46 new Atlas source-assessment gaps');
- await expect(evidence).toContainText('dated, source-linked assessment');
+ await expect(evidence).toContainText('Complete source assessments for the remaining Atlas explanations');
+ await expect(evidence).toContainText('dated, source-linked editorial assessments');
 });
 
 test('roadmap filters retain an accessible selected state',async({page})=>{

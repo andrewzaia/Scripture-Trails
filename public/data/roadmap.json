@@ -1,13 +1,13 @@
 {
   "project": "Scripture Trails",
-  "updated": "2026-10-30",
-  "description": "A transparent, evidence-aware development and v1.0 release-readiness roadmap, reviewed against the delivered application through v0.32.0. Current readiness refers to launch acceptance criteria rather than percentage of Scripture covered; automated checks cannot certify scholarship, manual accessibility or production security.",
+  "updated": "2026-10-31",
+  "description": "A transparent, evidence-aware development and v1.0 release-readiness roadmap, reviewed against the delivered application through the current versioned release. Current readiness refers to launch acceptance criteria rather than percentage of Scripture covered; automated checks cannot certify scholarship, manual accessibility or production security.",
   "currentFocus": [
-    "Establish v1.0 acceptance criteria and keep launch readiness visible separately from the wider feature roadmap.",
-    "Review the 46 new Atlas explanations without implying the 301,392 unexplained pairs must all be annotated before v1.0.",
-    "Close significant content, citation and licensing issues in the core Bible reader, Atlas and principal study paths.",
-    "Record manual screen-reader, Safari/Firefox, real-device and 200%/400% zoom test results, fixing launch-blocking defects.",
-    "Complete security/privacy review, production recovery drills and documented release-candidate signoff before v1.0."
+    "Complete source-linked review of the 34 Atlas explanations remaining after the first twelve quotation assessments. Do not require commentary for all 301,553 imported pairs.",
+    "Audit flagship study content and material claims using cited Scripture, named scholarship and transparently recorded access limitations.",
+    "Run every feasible compatibility, security and data-recovery check through connected tools, automated browsers and Cloudflare; record inaccessible physical-device or external-review requirements as open without assigning manual QA to visitors or the site owner.",
+    "Record qualifications for disputed historical or theological conclusions; seek independent specialist evidence when obtainable and never infer it from automated testing.",
+    "Prepare a documented v1.0 release candidate only after its declared evidence and verification gates have been met."
   ],
   "phases": [
     {
@@ -641,9 +641,9 @@
       "phase": "next",
       "status": "planned",
       "title": "Source assess new Atlas explanations and expand high-value connections",
-      "summary": "Assess the 46 new editorial reading aids in dated Scripture-context and secondary-source batches, then prioritise further direct quotations and strong narrative parallels before weaker thematic associations.",
+      "summary": "Twelve of the 46 newer Atlas explanations now have source-linked, dated and bounded editorial assessments. Source-assess the remaining 34 in further batches, favouring strong quotations before less certain thematic links.",
       "capabilities": [
-        "Add accessible, attributed supporting sources and source-level limitations for the newly annotated pairs",
+        "Add precise, attributed sources and access limits for each remaining Atlas comparison",
         "Recheck original-language and textual-tradition differences for sensitive quotation and fulfilment claims",
         "Review clear explicit citations before adding speculative theological connections",
         "Keep About explanation counts and reviewed counts independent and generated from the data"
@@ -661,16 +661,16 @@
         "Launch-blocking criteria distinguished from exploratory post-v1.0 enhancements",
         "Validated source-review backlog and automated launch guard for release 1.0.0 or later"
       ],
-      "verification": "Planned for v0.33.0: validate the gate schema and current open claims, CI tests and release consistency; manual and specialist signoff remains open."
+      "verification": "Delivered in v0.33.0: validate the gate schema and current open claims, CI tests and release consistency; manual and specialist signoff remains open."
     },
     {
       "id": "v1-evidence-closeout",
       "phase": "next",
       "status": "next",
       "title": "v1.0 editorial evidence and core-content closeout",
-      "summary": "Assess outstanding Atlas citations and review flagship studies and significant historical or theological assertions before launch.",
+      "summary": "Twelve of 46 recently added Atlas explanations have dated contextual source assessments. Complete the other 34 while auditing flagship studies and material interpretive claims.",
       "capabilities": [
-        "Dated evidence review for 46 new Atlas pairs",
+        "Complete scoped evidence review for the remaining 34 Atlas pairs",
         "Prioritised high-impact disputed historical and interpretive claims",
         "Coverage review for flagship people, locations and guided studies"
       ],
@@ -701,13 +701,27 @@
         "Documented recovery plan and explicit approval"
       ],
       "verification": "All blockers met with evidence and dated signoff; production deployment must succeed for the intended commit and public footer must report the intended version."
+    },
+    {
+      "id": "v1-citations-12-01",
+      "phase": "next",
+      "status": "delivered",
+      "title": "First twelve v1.0 Atlas quotation source assessments",
+      "summary": "Twelve new annotated quotation pairs now have dated assessments linking original Scripture contexts, New Testament reuse and scoped named commentaries. Total explained-pair assessments advance from 115 to 127, leaving 34 of the v0.32.0 additions pending.",
+      "capabilities": [
+        "Review Genesis, Leviticus, Deuteronomy, Psalms, Isaiah and Habakkuk quotations in Hebrews, the Gospels, Acts and Paul",
+        "Provide two named canonical passage references and one named scholarly commentary with source-specific rationale and access limitations per pair",
+        "Retain original 115 assessments and mark 34 unreviewed newer pairs as editorial reading aids",
+        "Update the About source register and public citation meter using actual reviewed records"
+      ],
+      "verification": "Dated v1-citations-12-01 assessment identifies exact targets, passages, contextual cautions and six attributed commentary works; CI verifies batch scope, source metadata and unchanged historical evidence. Source access gaps and independent specialist review remain open."
     }
   ],
   "v1Readiness": {
     "target": "1.0.0",
     "baseline": "0.32.0",
-    "updated": "2026-10-30",
-    "note": "These are required signoff conditions, not a prediction of delivery dates. Items are marked complete only within their stated verification scope. Independent specialist review may retain qualified or contested conclusions where uncertainty is clearly disclosed.",
+    "updated": "2026-10-31",
+    "note": "The project owner is not required to perform manual website verification. The assistant must gather testing and source evidence using connected tools wherever possible, and record missing physical-device, assistive-technology, independent-specialist and permission evidence as open rather than claiming certification. These are launch acceptance criteria, not a prediction of delivery dates.",
     "stages": [
       {
         "id": "baseline",
@@ -740,7 +754,7 @@
         "id": "evidence",
         "title": "Biblical evidence and editorial quality",
         "summary": "Important interpretations must be traceable to Scripture, with interpretive uncertainty, original contexts and external sources stated accurately.",
-        "next": "Source-assess the 46 new Atlas annotations in declared batches; then review high-impact historical and fulfilment claims.",
+        "next": "Source-assess the remaining 34 recently added Atlas explanations with passage context and named commentary, then review high-impact historical and interpretive claims.",
         "criteria": [
           {
             "id": "atlas-context",
@@ -752,11 +766,11 @@
           },
           {
             "id": "atlas-reviews",
-            "title": "Close the 46 new Atlas source-assessment gaps",
+            "title": "Complete source assessments for the remaining Atlas explanations",
             "status": "open",
             "mode": "editorial",
             "evidence": "public/data/citation-review.json",
-            "acceptance": "Every annotated pair has a dated, source-linked assessment with access limits; the current 46 pending pairs must be resolved."
+            "acceptance": "All 161 annotated pairs need dated, source-linked editorial assessments with stated limits. As of this release, 127 are assessed and 34 remain; separate external specialist approval is not implied."
           },
           {
             "id": "critical-claims",

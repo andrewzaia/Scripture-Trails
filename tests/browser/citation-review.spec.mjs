@@ -2,9 +2,9 @@ import {test,expect,open} from './fixtures.mjs';
 
 test('new citation reviews are reachable from About and the Atlas with accurate coverage',async({page})=>{
  await open(page,'about');
- await expect(page.locator('#about-review-meter')).toHaveAttribute('value','115');
- await expect(page.locator('#citation-review-summary')).toContainText('115 selected passage comparisons');
- await expect(page.locator('#citation-review-summary')).toContainText('115 comparisons include named scholarly commentary');
+ await expect(page.locator('#about-review-meter')).toHaveAttribute('value','127');
+ await expect(page.locator('#citation-review-summary')).toContainText('127 selected passage comparisons');
+ await expect(page.locator('#citation-review-summary')).toContainText('127 comparisons include named scholarly commentary');
  const group=page.locator('.citation-review-group').filter({has:page.getByText('Selected passage comparisons',{exact:true})});
  await group.locator('> summary').click();
  const article=group.locator('article').filter({has:page.getByRole('heading',{name:'Isaiah 9:2-7 and Luke 2:8-14',exact:true})});
@@ -64,8 +64,8 @@ test('Acts retelling and single-vision reviews retain their limits from About in
 
 test('completed register retains siege dates and returnee differences from About into the Atlas',async({page})=>{
  await open(page,'about');
- await expect(page.locator('#about-review-meter')).toHaveAttribute('value','115');
- await expect(page.locator('#citation-review-summary')).toContainText('All 115 previously assessed pairs have dated editorial assessments');
+ await expect(page.locator('#about-review-meter')).toHaveAttribute('value','127');
+ await expect(page.locator('#citation-review-summary')).toContainText('The original 115 explained pairs retain their earlier dated assessments');
  await expect(page.locator('#citation-review-summary')).toContainText('32 previously passage-based assessments have dated commentary follow-ups');
  const group=page.locator('.citation-review-group').filter({has:page.getByText('Selected passage comparisons',{exact:true})});
  await group.locator('> summary').click();
@@ -89,7 +89,7 @@ test('completed register retains siege dates and returnee differences from About
 
 test('commentary follow-up retains a competing intertext from About into the Atlas',async({page})=>{
  await open(page,'about');
- await expect(page.locator('#citation-review-summary')).toContainText('All previously assessed pairs have at least one scoped secondary citation');
+ await expect(page.locator('#citation-review-summary')).toContainText('All assessed pairs have at least one scoped secondary citation');
  const group=page.locator('.citation-review-group').filter({has:page.getByText('Selected passage comparisons',{exact:true})});
  await group.locator('> summary').click();
  const article=group.locator('article').filter({has:page.getByRole('heading',{name:'Genesis 3:14-15 and Romans 16:17-20',exact:true})});
@@ -118,4 +118,23 @@ test('indexed-only commentary discloses its access limit alongside the original 
  await expect(article).toContainText('search-indexed excerpts');
  await expect(article).toContainText('HTTP 403');
  await expect(article.getByRole('link',{name:'Matthew - selected indexed commentary',exact:true})).toHaveAttribute('href','https://www.thegospelcoalition.org/commentary/matthew/');
+});
+
+test('twelve new biblical quotation assessments are available from About with named accessible source links',async({page})=>{
+ await open(page,'about');
+ await expect(page.locator('#about-review-meter')).toHaveAttribute('value','127');
+ await expect(page.locator('#citation-review-summary')).toContainText('34 remain pending');
+ const group=page.locator('.citation-review-group').filter({has:page.getByText('Selected passage comparisons',{exact:true})});
+ await group.locator('> summary').click();
+ for(const [title,author] of [
+  ['Genesis 2:2 and Hebrews 4:4','Dennis Johnson'],
+  ['Habakkuk 2:4 and Romans 1:17','Donny Ray Mathis'],
+  ['Deuteronomy 6:4 and Mark 12:29','Mark L. Strauss']
+ ]){
+  const article=group.locator('article').filter({has:page.getByRole('heading',{name:title,exact:true})});
+  await article.locator('.citation-review > summary').click();
+  await expect(article).toContainText(author);
+  await expect(article).toContainText('independent specialist');
+  await expect(article.locator('.citation-review a[href^="https://"]')).toHaveCount(3);
+ }
 });

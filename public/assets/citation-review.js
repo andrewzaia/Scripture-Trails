@@ -1,4 +1,4 @@
-import {CITATION_REVIEW} from './citation-review-data.js?v=0.33.0';
+import {CITATION_REVIEW} from './citation-review-data.js?v=0.34.0';
 import {validateCanonicalReference} from './reference-integrity.js';
 export {CITATION_REVIEW};
 
@@ -70,8 +70,10 @@ export function renderCitationSummary(root){
  const scope=CITATION_REVIEW.scope;
  const commentaryCount=commentaryCoverage();
  const remaining=scope.connections-commentaryCount;
- root.replaceChildren(make('p',`Reviewed coverage: ${scope.issues} Gospel issues, ${scope.places} place dossiers, ${scope.trailReadings} Nehemiah readings and ${scope.connections} selected passage comparisons. ${commentaryCount} comparisons include named scholarly commentary or limited publisher-summary support. ${remaining?remaining+' comparisons rely on selected passage checks.':'All previously assessed pairs have at least one scoped secondary citation; newer editorial reading aids await separate dated reviews; this does not imply scholarly agreement with every link.'} The additional 46 annotated pairs are not yet included in this dated citation register. Each existing assessment records a decision, checked source scope and remaining limitations.`));
- root.append(make('p','All 115 previously assessed pairs have dated editorial assessments. The 46 additional passage explanations are reading aids pending independent source review. The Bible is the authoritative foundation of Scripture Trails. Archaeological and historical publications supply supporting context within their stated scope. This AI-assisted editorial review does not constitute independent specialist signoff.'));
+ const newReviews=Math.max(0,scope.connections-115);
+ const pending=Math.max(0,46-newReviews);
+ root.replaceChildren(make('p',`Reviewed coverage: ${scope.issues} Gospel issues, ${scope.places} place dossiers, ${scope.trailReadings} Nehemiah readings and ${scope.connections} selected passage comparisons. ${commentaryCount} comparisons include named scholarly commentary or limited publisher-summary support. ${remaining?remaining+' comparisons rely on selected passage checks.':'All assessed pairs have at least one scoped secondary citation; this does not imply scholarly agreement with every link.'} Of the 46 explanations introduced in v0.32.0, ${newReviews} have dated assessments and ${pending} remain pending. Each assessment records a decision, checked source scope and limitations.`));
+ root.append(make('p',`The original 115 explained pairs retain their earlier dated assessments and commentary follow-ups. ${newReviews} of the 46 newer pairs now have source assessments; ${pending} remain editorial reading aids pending review. The Bible is the authoritative foundation of Scripture Trails. Archaeological and historical publications supply supporting context within their stated scope. These AI-assisted editorial checks are not independent specialist signoff.`));
  for(const [kind,title] of [['issue','Gospel issue assessments'],['place','Place citation assessments'],['trail','Nehemiah passage checks'],['connection','Selected passage comparisons']]){
   const group=make('details',undefined,'citation-review-group');group.append(make('summary',title));
   for(const r of CITATION_REVIEW.records.filter(r=>r.kind===kind)){
@@ -86,5 +88,5 @@ export function renderCitationSummary(root){
  }
  root.append(make('h3','Remaining source work'));
  const list=make('ul');for(const text of CITATION_REVIEW.deferred)list.append(make('li',text));root.append(list);
- const download=make('a','Download the dated citation review register (JSON)');download.href='/data/citation-review.json?v=0.33.0';download.download='scripture-trails-citation-review-'+CITATION_REVIEW.updated+'.json';root.append(download);
+ const download=make('a','Download the dated citation review register (JSON)');download.href='/data/citation-review.json?v=0.34.0';download.download='scripture-trails-citation-review-'+CITATION_REVIEW.updated+'.json';root.append(download);
 }
