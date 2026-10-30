@@ -3,11 +3,12 @@
   "updated": "2026-10-31",
   "description": "An evidence-aware v1.0 release roadmap checked against the current versioned Scripture Trails source and test data. All 161 written Atlas explanations now have dated scoped AI-assisted source assessments. The 31 October source-linked journey corrections cover selected high-risk passages, not a complete re-audit of all 162 stages. Full reference corpus, physical-device accessibility and independent specialist certification remain separate. No unverified evidence is implied.",
   "currentFocus": [
+    "Verify all four translation providers' licence agreements, distribution terms, territories, FUMS obligations and usage quotas separately from live response health. Do not equate API success with publisher permission.",
+    "Exercise realistic notebook import/export failure and storage quota/recovery scenarios, then complete the independent security/privacy threat model.",
+    "Extend cross-browser and screen-reader accessibility testing using actual assistive technology and physical mobile devices where accessible.",
+    "Develop and exercise a safe Cloudflare Pages rollback procedure, then run complete production release-candidate smoke tests before v1.0 signoff.",
     "Finish remaining v1.0 critical evidence and source-rights assessments for uncertain Gospel and Hebrew Bible claims, followed by live-provider translation verification.",
-    "Expand cross-browser, screen-reader, security, resilience, recovery and rollback verification beyond the new full-flagship navigation regression suite, without claiming manual signoff.",
-    "Verify the four authorised Bible translations against real production provider behaviour and copyright requirements wherever connected tools permit.",
-    "Expand independent historical and textual source coverage for contested claims in Daniel, Esther, the Exodus and the journey sites; distinguish AI-assisted editorial synthesis from specialist signoff.",
-    "Continue real-browser, accessibility, privacy/security and rollback checks for the v1.0 launch gates without assigning routine QA to the site owner."
+    "Expand cross-browser, screen-reader, security, resilience, recovery and rollback verification beyond the new full-flagship navigation regression suite, without claiming manual signoff."
   ],
   "phases": [
     {
@@ -842,6 +843,20 @@
         "Expanded browser regression for six journal entry points, progress, read and resume actions, person-trail handoff and invalid-link fallback"
       ],
       "verification": "End-to-end browser tests use synthetic Bible provider fixtures and current local catalogue data. Automated checks do not verify live provider entitlements, specialist historical facts, every assistive-technology path or every possible browser device. Wider v1.0 evidence, source-licence and QA gates remain open."
+    },
+    {
+      "id": "v1-four-edition-production-smoke",
+      "phase": "next",
+      "status": "delivered",
+      "title": "Four-edition production reader verified and provider failure paths hardened",
+      "summary": "Use actual public production reader responses across ESV, NASB20, NIV and NKJV for three representative passages; document publisher attribution and release boundaries. Close the two provider-runtime verification criteria with reproducible evidence, not a copyright licence claim.",
+      "capabilities": [
+        "Twelve live production translation/passage observations completed without copying publisher text or secrets",
+        "Repeatable npm live-reader smoke command checks twelve provider response and publisher attribution conditions without logging passages",
+        "Crossway proxy now rejects upstream redirects, stalls, malformed/oversized replies and exposes no credentials",
+        "Additional unit and browser regression evidence covers upstream 401, 403, 404, 429, 502, missing keys, late responses, user-facing recovery and safe fallback"
+      ],
+      "verification": "AI-assisted real production browser rendering against v0.43.0 and post-release verification, plus isolated synthetic fault tests. Publisher distribution rights, specialist security review, independent device accessibility and complete release-candidate smoke remain separate open v1 gates."
     }
   ],
   "v1Readiness": {
@@ -923,7 +938,7 @@
         "id": "content",
         "title": "Core study experience and content",
         "summary": "The four-translation reader, Atlas, people index and major journeys need sufficient depth and reliable passage navigation.",
-        "next": "Journal permalink and saved-progress continuity improved, and all 6 journals, 20 person trails, 79 Gospel stages and 83 Pauline stages now have automated navigation/data coverage. Continue independent high-risk claim review, external publisher/translation verification and broader experience testing before marking the content audit met.",
+        "next": "The live production reader returned official ESV, NASB20, NIV and NKJV passages and publisher attribution for representative New and Old Testament requests. Continue the independent content audit and legal provider/rights assessment; real provider availability is now separately evidenced.",
         "criteria": [
           {
             "id": "crossrefs-integrity",
@@ -944,10 +959,12 @@
           {
             "id": "reader-provider-smoke",
             "title": "Verify all four authorised translations in production",
-            "status": "open",
+            "status": "met",
             "mode": "manual",
-            "evidence": "public/assets/translations.js",
-            "acceptance": "Check ESV, NASB20, NIV and NKJV live responses, copyright notices, unavailable-provider handling and representative passages."
+            "evidence": "sources/operations/v1-reader-provider-production-smoke-2026-10-31.md",
+            "acceptance": "Check ESV, NASB20, NIV and NKJV live responses, copyright notices, unavailable-provider handling and representative passages.",
+            "reviewedOn": "2026-10-31",
+            "reviewer": "Scripture Trails AI-assisted verification - real Cloudflare production browser checks and isolated failure/regression tests, not independent publisher licence approval"
           }
         ]
       },
@@ -987,7 +1004,7 @@
         "id": "privacy",
         "title": "Security, privacy and licensed content",
         "summary": "Protect private notes and licensed Bible access without promising that automated tests amount to a security audit.",
-        "next": "Threat-model the Bible APIs, Turnstile/analytics boundaries, browser storage, imports and outbound links; record remediation and ownership.",
+        "next": "Publisher and server-side failure paths were tested and the ESV proxy gained matching redirect, timeout and response limits. Continue the independent licence-rights audit, browser-data recovery investigation and full security threat model.",
         "criteria": [
           {
             "id": "security-review",
@@ -1008,10 +1025,12 @@
           {
             "id": "provider-failures",
             "title": "Test operational and publishing failure paths",
-            "status": "open",
+            "status": "met",
             "mode": "manual",
-            "evidence": "tests/translations.test.mjs",
-            "acceptance": "Simulate provider outages, missing keys and licence-related failure paths, then verify user messaging, request security and service recovery."
+            "evidence": "sources/operations/v1-reader-provider-production-smoke-2026-10-31.md",
+            "acceptance": "Simulate provider outages, missing keys and licence-related failure paths, then verify user messaging, request security and service recovery.",
+            "reviewedOn": "2026-10-31",
+            "reviewer": "Scripture Trails AI-assisted verification - real Cloudflare production browser checks and isolated failure/regression tests, not independent publisher licence approval"
           }
         ]
       },

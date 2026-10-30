@@ -28,3 +28,42 @@ test('ESV proxy requests only the selected verse, selected range, or full chapte
   ]);
  }finally{globalThis.fetch=original;}
 });
+
+test('ESV proxy refuses redirects and does not forward the Crossway key',async()=>{
+ const original=globalThis.fetch;let calls=0;
+ globalThis.fetch=async(url,options)=>{
+  calls++;assert.equal(new URL(url).origin,'https://api.esv.org');
+  assert.equal(options.redirect,'manual');assert.ok(options.signal instanceof AbortSignal);
+  return new Response(null,{status:302,headers:{Location:'https://untrusted.example/'}});
+ };
+ try{
+  const res=await getPassage({request:req('John 3:16'),env:{ESV_API_KEY:'private-only-key'}});
+  assert.equal(res.status,502);assert.equal((await res.json()).code,'upstream_failure');assert.equal(calls,1);
+ }finally{globalThis.fetch=original;}
+});
+test('ESV upstream rejects malformed and oversized responses without leaking credentials',async()=>{
+ const original=globalThis.fetch;
+ const fixtures=[
+  new Response('bad JSON',{status:200}),
+  Response.json({canonical:'John 3:16',passages:[]}),
+  Response.json({canonical:'John 3:16',passages:['']}),
+  new Response('x'.repeat(1024*1024+1),{status:200})
+ ];
+ try{for(const response of fixtures){
+   globalThis.fetch=async()=>response;
+   const res=await getPassage({request:req('John 3:16'),env:{ESV_API_KEY:'private-only-key'}});
+   const body=await res.text();assert.equal(res.status,502);assert.ok(!body.includes('private-only-key'));assert.equal(JSON.parse(body).code,'upstream_unavailable');
+  }
+ }finally{globalThis.fetch=original;}
+});
+test('ESV upstream outages and throttling return bounded actionable errors',async()=>{
+ const original=globalThis.fetch;
+ try{
+  globalThis.fetch=async()=>new Response('Sensitive upstream error',{status:429});
+  let r=await getPassage({request:req('John 3:16'),env:{ESV_API_KEY:'private-key'}});
+  assert.equal(r.status,429);assert.equal((await r.json()).code,'upstream_failure');
+  globalThis.fetch=async()=>{throw new Error('Publisher connection down');};
+  r=await getPassage({request:req('John 3:16'),env:{ESV_API_KEY:'private-key'}});
+  assert.equal(r.status,502);assert.equal((await r.json()).code,'upstream_unavailable');
+ }finally{globalThis.fetch=original;}
+});

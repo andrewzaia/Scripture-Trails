@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.43.1 - 31/10/2026: Bible reader: verified four editions and safer provider failures
+
+- Verify live ESV, NASB20, NIV and NKJV passage delivery, visible publisher notices and safe failure-and-recovery paths with reproducible no-text logging checks.
+- Harden the Crossway integration against redirects, excessive responses, malformed payloads and network timeouts, matching existing API.Bible protections.
+- Close two evidence-backed v1 reader provider criteria while preserving separate open publisher permissions, wider security, accessibility and launch verification requirements.
+
 ## 0.43.0 - 31/10/2026: Study journeys: shareable pathways and reliable navigation
 
 - Keep guided study journal choices in validated, reload-safe URLs, with browser Back and Forward returning to the same pathway.
