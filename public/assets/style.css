@@ -319,3 +319,17 @@ body.light .analytics-consent{background:#fffdf8;color:#243b42;box-shadow:0 10px
 .journal-editorial-guide h4{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--gold);margin:16px 0 7px}
 .journal-editorial-guide p{font-size:13px;line-height:1.8;color:var(--ink);margin:0 0 10px}
 @media(max-width:760px){.journal-editorial-guide{padding:16px}.journal-editorial-guide h3{font-size:21px}}
+
+/* Non-destructive browser notebook recovery warnings. */
+.notebook-storage-warning,.notebook-recovery-warning{margin:12px 0 18px;padding:15px;border:1px solid var(--gold);border-radius:6px;background:var(--surface2);color:var(--ink);line-height:1.65}
+.notebook-storage-warning[hidden],.notebook-recovery-warning[hidden]{display:none}
+.notebook-storage-warning strong{font-weight:700}
+.notebook-storage-warning .small-action{margin-left:12px}
+.notebook-recovery-warning h3{font-size:15px;margin:0 0 9px}
+.notebook-recovery-warning p{margin:0 0 10px}
+.notebook-recovery-warning .notebook-recovery-confirm{display:block;margin:12px 0 0;line-height:1.7}
+.notebook-recovery-confirm input{margin-right:7px;vertical-align:middle}
+@media(max-width:760px){.notebook-storage-warning .small-action{display:block;margin:10px 0 0}}
+
+/* Keep unavailable recovery controls hidden even when button classes set display. */
+.notebook-recovery-warning [hidden]{display:none}

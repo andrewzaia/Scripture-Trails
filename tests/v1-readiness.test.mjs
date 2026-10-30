@@ -14,7 +14,7 @@ test('v1.0 roadmap declares five launch gates with honest current baseline',()=>
  assert.equal(roadmap.v1Readiness.target,'1.0.0');
  assert.equal(roadmap.v1Readiness.gates.length,5);
  assert.equal(roadmap.v1Readiness.stages.length,5);
- assert.deepEqual(v1ReadinessCounts(roadmap.v1Readiness),{met:7,open:10,total:17,ready:false});
+ assert.deepEqual(v1ReadinessCounts(roadmap.v1Readiness),{met:8,open:9,total:17,ready:false});
  assert.equal(roadmap.milestones.find(m=>m.id==='v1-evidence-closeout')?.status,'next');
 });
 
@@ -70,4 +70,16 @@ test('provider acceptance has traceable live and simulated evidence without impl
  for(const name of ['ESV','NASB20','NIV','NKJV','John 3:16','Psalms 23:1','Romans 8:28','not','licence'])assert.ok(report.includes(name));
  const packageJson=JSON.parse(read('package.json'));
  assert.equal(packageJson.scripts['check:live-reader'],'node scripts/check-live-reader.mjs');
+});
+
+test('local backup recovery is accepted by evidence while physical data loss and other gates remain open',()=>{
+ const criteria=roadmap.v1Readiness.gates.flatMap(g=>g.criteria);
+ const recovery=criteria.find(c=>c.id==='data-recovery');
+ assert.equal(recovery.status,'met');assert.equal(recovery.mode,'manual');
+ assert.equal(recovery.reviewedOn,'2026-10-31');
+ assert.match(recovery.reviewer,/AI-assisted review/);
+ assert.equal(recovery.evidence,'sources/operations/v1-notebook-recovery-audit-2026-10-31.md');
+ const report=read(recovery.evidence);
+ for(const item of ['quota','another tab','Raw','permanently lost','unencrypted','Backups'])assert.ok(report.toLowerCase().includes(item.toLowerCase()),item);
+ for(const id of ['security-review','source-licences','screen-readers','live-smoke','launch-signoff'])assert.equal(criteria.find(c=>c.id===id).status,'open',id);
 });

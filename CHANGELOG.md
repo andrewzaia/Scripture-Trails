@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.44.0 - 31/10/2026: Notebook recovery: protect personal study data
+
+- Detect unreadable browser notebook storage and show accessible recovery guidance instead of silently treating stored notes as missing.
+- Allow private download of original damaged data and explicitly confirmed restoration from a validated backup, without deleting original storage before a successful replacement.
+- Expand multi-tab, quota and corrupt-data regression tests and document the limits of locally stored notes that have never been backed up.
+
 ## 0.43.1 - 31/10/2026: Bible reader: verified four editions and safer provider failures
 
 - Verify live ESV, NASB20, NIV and NKJV passage delivery, visible publisher notices and safe failure-and-recovery paths with reproducible no-text logging checks.

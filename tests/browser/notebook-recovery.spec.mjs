@@ -1,0 +1,74 @@
+import {readFile} from 'node:fs/promises';
+import {test,expect,open,chooseBackup,backup,notebook} from './fixtures.mjs';
+
+const damaged='{"notes":{"John 3:16":"original local-only data';
+const restored=backup({bookmarks:['John 3:16'],notes:{'John 3:16':'Recovered synthetic note'}});
+test('unreadable local notebook is never silently erased and requires explicit reviewed recovery',async({page})=>{
+ await open(page,'notebook');
+ await page.evaluate(raw=>localStorage.setItem('scripture-trails:notebook',raw),damaged);
+ await page.reload();
+ await expect(page.locator('#notebook-storage-warning')).toBeVisible();
+ await expect(page.locator('[data-backup="recovery"]')).toBeVisible();
+ await expect(page.locator('[data-backup="recovery-description"]')).toContainText('not erased or replaced');
+ const downloadPromise=page.waitForEvent('download');
+ await page.locator('[data-backup="recovery-download"]').click();
+ const download=await downloadPromise;
+ expect(download.suggestedFilename()).toMatch(/^scripture-trails-unreadable-notebook-/);
+ expect(await readFile(await download.path(),'utf8')).toBe(damaged);
+ await chooseBackup(page,restored);
+ await expect(page.locator('[data-backup="preview"]')).toBeVisible();
+ await page.locator('[data-backup="apply"]').click();
+ await expect(page.locator('[data-backup="status"]')).toContainText('tick the recovery confirmation');
+ expect(await page.evaluate(()=>localStorage.getItem('scripture-trails:notebook'))).toBe(damaged);
+ await page.locator('[data-backup="recovery-confirm"]').check();
+ await page.locator('[data-backup="apply"]').click();
+ await expect(page.locator('[data-backup="status"]')).toContainText('Notebook imported and saved');
+ await expect(page.locator('#notebook-storage-warning')).toBeHidden();
+ await expect(page.locator('[data-backup="recovery"]')).toBeHidden();
+ expect((await notebook(page)).notes['John 3:16']).toBe('Recovered synthetic note');
+ await page.reload();
+ await expect(page.locator('#notebook-storage-warning')).toBeHidden();
+ await expect(page.locator('#notes-list')).toContainText('Recovered synthetic note');
+});
+test('recovery rejects another tab changing the damaged snapshot after preview',async({page,context})=>{
+ await open(page,'notebook');
+ await page.evaluate(raw=>localStorage.setItem('scripture-trails:notebook',raw),damaged);
+ await page.reload();
+ await chooseBackup(page,restored);
+ const other=await context.newPage();
+ await other.goto('/assets/favicon.svg');
+ await other.evaluate(()=>localStorage.setItem('scripture-trails:notebook','{"broken":'));
+ await other.close();
+ await expect(page.locator('[data-backup="recovery"]')).toBeVisible();
+ await page.locator('[data-backup="recovery-confirm"]').check();
+ await page.locator('[data-backup="apply"]').click();
+ await expect(page.locator('[data-backup="status"]')).toContainText('changed in another tab');
+ expect(await page.evaluate(()=>localStorage.getItem('scripture-trails:notebook'))).toBe('{"broken":');
+});
+test('quota failure preserves damaged storage and recoverable backup preview',async({page})=>{
+ await open(page,'notebook');
+ await page.evaluate(raw=>localStorage.setItem('scripture-trails:notebook',raw),damaged);
+ await page.reload();
+ await chooseBackup(page,restored);
+ await page.locator('[data-backup="recovery-confirm"]').check();
+ await page.evaluate(()=>{
+  const original=Storage.prototype.setItem;
+  Storage.prototype.setItem=function(k,v){if(k==='scripture-trails:notebook')throw new DOMException('Quota reached','QuotaExceededError');return original.call(this,k,v);};
+ });
+ await page.locator('[data-backup="apply"]').click();
+ await expect(page.locator('[data-backup="status"]')).toContainText('could not save the import');
+ await expect(page.locator('[data-backup="preview"]')).toBeVisible();
+ expect(await page.evaluate(()=>localStorage.getItem('scripture-trails:notebook'))).toBe(damaged);
+ await expect(page.locator('#notebook-storage-warning')).toBeVisible();
+});
+
+test('browser storage denial keeps the reader and notebook recovery guidance accessible',async({page})=>{
+ await page.addInitScript(()=>{Object.defineProperty(window,'localStorage',{configurable:true,get(){throw new DOMException('Storage denied','SecurityError');}});});
+ await open(page,'notebook');
+ await expect(page.locator('#view-notebook')).toBeVisible();
+ await expect(page.locator('#notebook-storage-warning')).toBeVisible();
+ await expect(page.locator('[data-backup="recovery"]')).toBeVisible();
+ await expect(page.locator('[data-backup="recovery-description"]')).toContainText('storage is inaccessible');
+ await expect(page.locator('[data-backup="recovery-download"]')).toBeHidden();
+ await expect(page.locator('[data-backup="recovery-confirm"]')).toBeDisabled();
+});

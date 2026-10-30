@@ -1,6 +1,16 @@
 {
   "releases": [
     {
+      "version": "0.44.0",
+      "date": "2026-10-31",
+      "title": "Notebook recovery: protect personal study data",
+      "changes": [
+        "Detect unreadable browser notebook storage and show accessible recovery guidance instead of silently treating stored notes as missing.",
+        "Allow private download of original damaged data and explicitly confirmed restoration from a validated backup, without deleting original storage before a successful replacement.",
+        "Expand multi-tab, quota and corrupt-data regression tests and document the limits of locally stored notes that have never been backed up."
+      ]
+    },
+    {
       "version": "0.43.1",
       "date": "2026-10-31",
       "title": "Bible reader: verified four editions and safer provider failures",
