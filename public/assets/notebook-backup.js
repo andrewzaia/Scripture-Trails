@@ -26,8 +26,8 @@ export function mergeNotebook(current,incoming,replace=new Set()){
 }
 const STORAGE_KEY='scripture-trails:notebook';
 /** A denied browser Storage property must not prevent the rest of the site initialising. */
-export function safeBrowserStorage(){
- try{return globalThis.localStorage;}catch{return {getItem(){throw Error('Browser storage denied');},setItem(){throw Error('Browser storage denied');}};}
+export function safeBrowserStorage(access=()=>globalThis.localStorage){
+ try{const storage=access();if(!storage||typeof storage.getItem!=='function'||typeof storage.setItem!=='function')throw Error('Browser storage missing');return storage;}catch{return {getItem(){throw Error('Browser storage denied');},setItem(){throw Error('Browser storage denied');}};}
 }
 
 /** Detect unreadable notebook snapshots without clearing or rewriting the original bytes. */
