@@ -24,7 +24,7 @@ export const PERSON_TRAILS=Object.freeze([
       },
       {
         "label": "Covenant sign",
-        "ref": "Genesis 17:1",
+        "ref": "Genesis 17:9-14",
         "note": "A new covenant stage is narrated.",
         "source": "primary-scripture",
         "review": "editorial-reading-aid"
