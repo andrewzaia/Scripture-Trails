@@ -14,7 +14,7 @@ test('v1.0 roadmap declares five launch gates with honest current baseline',()=>
  assert.equal(roadmap.v1Readiness.target,'1.0.0');
  assert.equal(roadmap.v1Readiness.gates.length,5);
  assert.equal(roadmap.v1Readiness.stages.length,5);
- assert.deepEqual(v1ReadinessCounts(roadmap.v1Readiness),{met:5,open:12,total:17,ready:false});
+ assert.deepEqual(v1ReadinessCounts(roadmap.v1Readiness),{met:7,open:10,total:17,ready:false});
  assert.equal(roadmap.milestones.find(m=>m.id==='v1-evidence-closeout')?.status,'next');
 });
 
@@ -53,4 +53,21 @@ test('release process enforces readiness criteria and protects unfinished launch
  assert.match(html,/data-roadmap="v1-summary"/);
  assert.match(html,/data-roadmap="v1-stages"/);
  assert.match(html,/data-roadmap="v1-gates"/);
+});
+
+test('provider acceptance has traceable live and simulated evidence without implied licence approval',()=>{
+ const gates=roadmap.v1Readiness.gates.flatMap(g=>g.criteria);
+ for(const id of ['reader-provider-smoke','provider-failures']){
+  const criterion=gates.find(c=>c.id===id);
+  assert.equal(criterion.status,'met');
+  assert.equal(criterion.mode,'manual');
+  assert.equal(criterion.reviewedOn,'2026-10-31');
+  assert.match(criterion.reviewer,/AI-assisted verification/);
+  assert.equal(criterion.evidence,'sources/operations/v1-reader-provider-production-smoke-2026-10-31.md');
+ }
+ for(const id of ['source-licences','security-review','live-smoke','launch-signoff'])assert.equal(gates.find(c=>c.id===id).status,'open');
+ const report=read('sources/operations/v1-reader-provider-production-smoke-2026-10-31.md');
+ for(const name of ['ESV','NASB20','NIV','NKJV','John 3:16','Psalms 23:1','Romans 8:28','not','licence'])assert.ok(report.includes(name));
+ const packageJson=JSON.parse(read('package.json'));
+ assert.equal(packageJson.scripts['check:live-reader'],'node scripts/check-live-reader.mjs');
 });
