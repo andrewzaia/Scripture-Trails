@@ -1031,8 +1031,8 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "explanation": "Hebrews explicitly cites God's rest on the seventh day in Genesis 2:2. The argument joins the completed work of creation with Psalm 95's warning about hardened hearts, presenting entry into God's rest as an ongoing exhortation.",
     "caution": "The seventh-day statement in Genesis and the call to enter rest in Hebrews are not interchangeable. Read Hebrews 3-4 and Psalm 95 before drawing conclusions about Sabbath observance.",
     "context": "Hebrews 4:1-11",
-    "review": "editorial-reading-aid",
-    "basis": "Editorial reading aid based on the cited Scripture contexts and an existing indexed cross-reference. A separate dated secondary-source assessment has not been completed; independent specialist review pending."
+    "review": "scripture-context-screened",
+    "basis": "Dated paired-passage and scoped named-commentary assessment in v1-citations-12-01 (2026-10-31). Consult citation review for precise source support, translation limitations and unresolved interpretive questions. No independent specialist signoff."
   },
   {
     "id": "ce119",
@@ -1075,8 +1075,8 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "explanation": "Leviticus commands love of one's neighbour within instructions about community justice and holiness. Jesus quotes that command as the second great commandment, alongside the call to love God from Deuteronomy 6:5, and says the Law and Prophets depend on these commands.",
     "caution": "Leviticus 19 addresses concrete practices, not merely an abstract sentiment. Jesus' quotation should not be detached from its original ethical setting.",
     "context": "Matthew 22:34-40",
-    "review": "editorial-reading-aid",
-    "basis": "Editorial reading aid based on the cited Scripture contexts and an existing indexed cross-reference. A separate dated secondary-source assessment has not been completed; independent specialist review pending."
+    "review": "scripture-context-screened",
+    "basis": "Dated paired-passage and scoped named-commentary assessment in v1-citations-12-01 (2026-10-31). Consult citation review for precise source support, translation limitations and unresolved interpretive questions. No independent specialist signoff."
   },
   {
     "id": "ce123",
@@ -1086,8 +1086,8 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "explanation": "Psalm 2 speaks of the Lord's anointed king and contains the declaration 'You are my Son'. Paul cites the declaration in his synagogue address at Pisidian Antioch while announcing God's fulfilment of the promises made to Israel in Jesus.",
     "caution": "The connection belongs within Paul's larger argument in Acts 13:32-37, which also quotes Isaiah and Psalm 16. The citation does not settle all interpretive questions about royal sonship or resurrection.",
     "context": "Acts 13:26-37",
-    "review": "editorial-reading-aid",
-    "basis": "Editorial reading aid based on the cited Scripture contexts and an existing indexed cross-reference. A separate dated secondary-source assessment has not been completed; independent specialist review pending."
+    "review": "scripture-context-screened",
+    "basis": "Dated paired-passage and scoped named-commentary assessment in v1-citations-12-01 (2026-10-31). Consult citation review for precise source support, translation limitations and unresolved interpretive questions. No independent specialist signoff."
   },
   {
     "id": "ce124",
@@ -1097,8 +1097,8 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "explanation": "The psalm voices confidence that God will not abandon the faithful speaker to the grave or allow decay. Peter quotes this text at Pentecost and argues that David's known death contrasts with Jesus' resurrection, which the apostles proclaim.",
     "caution": "This is Peter's Christological reading of the psalm. It does not erase the psalm's own context as a prayer of trust or constitute independent archaeological proof of the events narrated.",
     "context": "Acts 2:22-32",
-    "review": "editorial-reading-aid",
-    "basis": "Editorial reading aid based on the cited Scripture contexts and an existing indexed cross-reference. A separate dated secondary-source assessment has not been completed; independent specialist review pending."
+    "review": "scripture-context-screened",
+    "basis": "Dated paired-passage and scoped named-commentary assessment in v1-citations-12-01 (2026-10-31). Consult citation review for precise source support, translation limitations and unresolved interpretive questions. No independent specialist signoff."
   },
   {
     "id": "ce125",
@@ -1119,8 +1119,8 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "explanation": "Psalm 110 opens with a royal invitation to sit at the Lord's right hand. Peter quotes it after his proclamation of the resurrection and applies the enthronement image to Jesus' exaltation, distinguishing David from the one he calls Lord.",
     "caution": "Royal, Davidic and messianic interpretations should be distinguished. Acts reports Peter's theological argument, not an independently observed view of the heavenly throne.",
     "context": "Acts 2:32-36",
-    "review": "editorial-reading-aid",
-    "basis": "Editorial reading aid based on the cited Scripture contexts and an existing indexed cross-reference. A separate dated secondary-source assessment has not been completed; independent specialist review pending."
+    "review": "scripture-context-screened",
+    "basis": "Dated paired-passage and scoped named-commentary assessment in v1-citations-12-01 (2026-10-31). Consult citation review for precise source support, translation limitations and unresolved interpretive questions. No independent specialist signoff."
   },
   {
     "id": "ce127",
@@ -1130,8 +1130,8 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "explanation": "Isaiah's commissioning vision describes people who hear without understanding and see without perceiving. Matthew quotes that warning during Jesus' explanation of parables and contrasting responses to his teaching.",
     "caution": "The quotation concerns the response to a prophetic message. It should not be generalised to all Jewish listeners or separated from Isaiah's commission and Matthew's distinction between crowds and disciples.",
     "context": "Matthew 13:10-17",
-    "review": "editorial-reading-aid",
-    "basis": "Editorial reading aid based on the cited Scripture contexts and an existing indexed cross-reference. A separate dated secondary-source assessment has not been completed; independent specialist review pending."
+    "review": "scripture-context-screened",
+    "basis": "Dated paired-passage and scoped named-commentary assessment in v1-citations-12-01 (2026-10-31). Consult citation review for precise source support, translation limitations and unresolved interpretive questions. No independent specialist signoff."
   },
   {
     "id": "ce128",
@@ -1152,8 +1152,8 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "explanation": "Isaiah portrays the servant as silent before oppression, like a sheep led to slaughter. Acts depicts an Ethiopian official reading this precise passage; Philip begins from it and explains the good news concerning Jesus.",
     "caution": "Acts does not provide Philip's entire exposition. The identity and vocation of the servant remain questions to study in Isaiah's full literary setting rather than being reduced to a single verse.",
     "context": "Acts 8:26-35",
-    "review": "editorial-reading-aid",
-    "basis": "Editorial reading aid based on the cited Scripture contexts and an existing indexed cross-reference. A separate dated secondary-source assessment has not been completed; independent specialist review pending."
+    "review": "scripture-context-screened",
+    "basis": "Dated paired-passage and scoped named-commentary assessment in v1-citations-12-01 (2026-10-31). Consult citation review for precise source support, translation limitations and unresolved interpretive questions. No independent specialist signoff."
   },
   {
     "id": "ce130",
@@ -1163,8 +1163,8 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "explanation": "Habakkuk contrasts the proud with the righteous who live by faith or faithfulness while awaiting God's response to injustice. Paul quotes that line in introducing his argument about God's righteousness and the gospel.",
     "caution": "The Hebrew term and Greek rendering have interpretive nuances, and Habakkuk addresses a specific prophetic crisis. Paul's argument should not be read as a verbatim restatement of the prophet's setting.",
     "context": "Romans 1:16-17",
-    "review": "editorial-reading-aid",
-    "basis": "Editorial reading aid based on the cited Scripture contexts and an existing indexed cross-reference. A separate dated secondary-source assessment has not been completed; independent specialist review pending."
+    "review": "scripture-context-screened",
+    "basis": "Dated paired-passage and scoped named-commentary assessment in v1-citations-12-01 (2026-10-31). Consult citation review for precise source support, translation limitations and unresolved interpretive questions. No independent specialist signoff."
   },
   {
     "id": "ce131",
@@ -1174,8 +1174,8 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "explanation": "Paul quotes Habakkuk's statement about the righteous living by faith as he argues that justification before God is not secured through works of the Law. The surrounding discussion also cites Deuteronomy and Leviticus.",
     "caution": "Habakkuk originally discusses faithfulness amid judgment and delay. This later Pauline application should not erase the prophetic setting or settle every debate over faith and works.",
     "context": "Galatians 3:10-14",
-    "review": "editorial-reading-aid",
-    "basis": "Editorial reading aid based on the cited Scripture contexts and an existing indexed cross-reference. A separate dated secondary-source assessment has not been completed; independent specialist review pending."
+    "review": "scripture-context-screened",
+    "basis": "Dated paired-passage and scoped named-commentary assessment in v1-citations-12-01 (2026-10-31). Consult citation review for precise source support, translation limitations and unresolved interpretive questions. No independent specialist signoff."
   },
   {
     "id": "ce132",
@@ -1262,8 +1262,8 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "explanation": "The Shema begins by calling Israel to hear that the Lord is one. Jesus quotes it when asked which commandment is greatest, and then joins the command to love God to Leviticus 19:18's command to love one's neighbour.",
     "caution": "The passage is an affirmation of Israel's covenant allegiance. Christian readings of its implications should not erase its original address or flatten later Jewish interpretation.",
     "context": "Mark 12:28-34",
-    "review": "editorial-reading-aid",
-    "basis": "Editorial reading aid based on the cited Scripture contexts and an existing indexed cross-reference. A separate dated secondary-source assessment has not been completed; independent specialist review pending."
+    "review": "scripture-context-screened",
+    "basis": "Dated paired-passage and scoped named-commentary assessment in v1-citations-12-01 (2026-10-31). Consult citation review for precise source support, translation limitations and unresolved interpretive questions. No independent specialist signoff."
   },
   {
     "id": "ce140",
@@ -1273,8 +1273,8 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "explanation": "Deuteronomy commands Israel to fear and serve the Lord alone amid the danger of following other gods. Jesus invokes this exclusive worship principle in response to the temptation to gain the world's kingdoms by worshipping the tempter.",
     "caution": "Matthew's Greek wording adapts the language of Deuteronomy. Do not assume it reproduces a single Hebrew verse word for word or remove the command from Israel's wilderness context.",
     "context": "Matthew 4:8-11",
-    "review": "editorial-reading-aid",
-    "basis": "Editorial reading aid based on the cited Scripture contexts and an existing indexed cross-reference. A separate dated secondary-source assessment has not been completed; independent specialist review pending."
+    "review": "scripture-context-screened",
+    "basis": "Dated paired-passage and scoped named-commentary assessment in v1-citations-12-01 (2026-10-31). Consult citation review for precise source support, translation limitations and unresolved interpretive questions. No independent specialist signoff."
   },
   {
     "id": "ce141",
@@ -1295,8 +1295,8 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "explanation": "Deuteronomy requires the body of an executed person hung on a tree to be buried before nightfall and speaks of a curse. Paul cites the curse language while explaining Christ's death as part of his argument about redemption from the Law's curse.",
     "caution": "Deuteronomy's immediate setting concerns judicial treatment and burial. Paul's theological application should not be collapsed into a claim that the ancient law directly describes Roman crucifixion.",
     "context": "Galatians 3:10-14",
-    "review": "editorial-reading-aid",
-    "basis": "Editorial reading aid based on the cited Scripture contexts and an existing indexed cross-reference. A separate dated secondary-source assessment has not been completed; independent specialist review pending."
+    "review": "scripture-context-screened",
+    "basis": "Dated paired-passage and scoped named-commentary assessment in v1-citations-12-01 (2026-10-31). Consult citation review for precise source support, translation limitations and unresolved interpretive questions. No independent specialist signoff."
   },
   {
     "id": "ce143",
