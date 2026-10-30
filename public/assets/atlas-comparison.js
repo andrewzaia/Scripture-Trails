@@ -1,4 +1,4 @@
-import {appendCitationReview} from './citation-review.js?v=0.44.1';
+import {appendCitationReview} from './citation-review.js?v=0.44.2';
 import {parseRef} from './books.js';
 import {TRANSLATIONS,getTranslation} from './translations.js';
 /** Licensed Scripture comes from the already authorised, server-side Bible reader endpoint. */
@@ -27,6 +27,13 @@ export function createPassageComparison(root,handlers={}){
    status.textContent=edition+' via '+provider.provider;
    if(typeof result.copyright==='string'&&result.copyright.trim())copyright.append(handlers.sanitize(result.copyright));
    else copyright.textContent=edition==='ESV'?'ESV text supplied by Crossway. See About for translation copyright.':'Copyright information is available from the translation provider.';
+   // Publisher links must accompany every visible quotation, including both
+   // Atlas comparison columns. NIV specifically requires a direct Biblica link.
+   if(provider?.publisherUrl){
+    const link=make('a',provider.publisher+' - publisher information');
+    link.href=provider.publisherUrl;link.target='_blank';link.rel='noopener noreferrer';
+    copyright.append(make('span',' '),link);
+   }
    if(result.fums)void handlers.onViewed?.(result.fums);
   }catch(error){
    if(round!==revision||root.hidden||controller.signal.aborted)return;

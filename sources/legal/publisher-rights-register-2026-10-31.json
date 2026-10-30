@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "reviewedOn": "2026-10-31",
+  "project": "Scripture Trails",
+  "method": "Public publisher terms and repository implementation audit only.",
+  "allPublisherPermissionsVerified": false,
+  "blockedCriterion": "source-licences",
+  "items": [
+    {
+      "id": "esv-crossway",
+      "resource": "ESV Bible reader and keyword search",
+      "type": "copyrighted-translation",
+      "edition": "ESV",
+      "provider": "Crossway",
+      "status": "public-terms-reviewed",
+      "sourceUrl": "https://www.esv.org/api/",
+      "risks": [
+        "Non-commercial site and use required; site must not primarily solicit donations, sales or advertising",
+        "ESV wording must not be altered; 500 verse/half-book limits and daily/hourly/minute query caps",
+        "Full copyright notice and ESV.org link required wherever text is displayed",
+        "Published API key response confirms provider service, not grant scope or continuing account status"
+      ],
+      "nextEvidence": "Continue checking Crossway public attribution, server API use and display limits against the implementation."
+    },
+    {
+      "id": "nasb20-lockman",
+      "resource": "NASB20 Bible reader",
+      "type": "copyrighted-translation",
+      "edition": "NASB20",
+      "provider": "API.Bible / The Lockman Foundation",
+      "status": "public-terms-reviewed",
+      "sourceUrl": "https://care.api.bible/article/396-licensing-policies-quick-reference",
+      "risks": [
+        "Standard versus unique licence and publisher terms depend on the active API.Bible app plan",
+        "Approved Bible ID and live response do not by themselves prove the operator accepted the licence",
+        "Copyright must display next to every passage; FUMS reporting required"
+      ],
+      "nextEvidence": "Validate reader and Atlas display against published API.Bible/Lockman attribution, FUMS and usage requirements."
+    },
+    {
+      "id": "niv-biblica",
+      "resource": "NIV (2011) Bible reader",
+      "type": "copyrighted-translation",
+      "edition": "NIV",
+      "provider": "API.Bible / Biblica",
+      "status": "public-terms-reviewed",
+      "sourceUrl": "https://www.biblica.com/permissions/",
+      "risks": [
+        "Biblica express licensing restricts qualifying free use to genuinely non-commercial applications without AI/ML features",
+        "API.Bible express/commercial availability and territory depend on translation and agreement",
+        "Publisher notice must display for each passage and FUMS is required"
+      ],
+      "nextEvidence": "Validate NIV display, Biblica attribution, passage limits and non-commercial reader functionality against published terms."
+    },
+    {
+      "id": "nkjv-thomas-nelson",
+      "resource": "NKJV Bible reader",
+      "type": "copyrighted-translation",
+      "edition": "NKJV",
+      "provider": "API.Bible / Thomas Nelson (HarperCollins Christian Publishing)",
+      "status": "public-terms-reviewed",
+      "sourceUrl": "https://api.bible/terms-and-conditions",
+      "risks": [
+        "API.Bible September 2026 NKJV availability restriction for Starter/Pro non-commercial applications: 5,000 monthly end users maximum",
+        "Exceeding this audience threshold requires ceasing NKJV or a suitable commercial plan/licence",
+        "Publisher copyright notices, FUMS and translation-specific plan permissions apply"
+      ],
+      "nextEvidence": "Monitor public usage limits and provider availability for the non-commercial site; preserve notices and reporting."
+    },
+    {
+      "id": "openbible-crossrefs",
+      "resource": "Locally imported cross-reference links and relevance votes",
+      "type": "licenced-dataset",
+      "status": "attribution-reviewed-not-entire-provenance",
+      "sourceUrl": "https://www.openbible.info/labs/cross-references/",
+      "risks": [
+        "OpenBible.info identifies a Creative Commons Attribution licence for its material but the reference datasets include components drawn from other sources",
+        "OpenBible.info attribution does not grant permission to redistribute Crossway ESV verse text",
+        "Snapshot provenance and exact licence version should be archived; existing attribution claims CC BY 4.0"
+      ],
+      "nextEvidence": "Retain dated source snapshot, upstream attribution/license record and transformation ledger; separately re-check original source licence if its scope changes."
+    },
+    {
+      "id": "historical-city-photographs",
+      "resource": "Five locally hosted contemporary city photographs",
+      "type": "licensed-images",
+      "status": "metadata-and-local-hashes-reviewed",
+      "sourceUrl": "https://commons.wikimedia.org/",
+      "risks": [
+        "CC BY-SA images require appropriate credit, licence reference and change disclosure and may impose ShareAlike requirements on adaptations",
+        "A Wikimedia Commons page's current licence statement may change or have source-specific conditions",
+        "Some imagery is marked public domain and is not automatically covered by other photographs' licences"
+      ],
+      "nextEvidence": "Verify each original Commons file page's author, source and licence and retain evidence of transforms, URLs and exact SHA-256 bytes."
+    }
+  ],
+  "projectUse": "Non-commercial academic Bible study"
+}

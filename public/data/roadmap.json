@@ -3,10 +3,10 @@
   "updated": "2026-10-31",
   "description": "An evidence-aware v1.0 release roadmap checked against the current versioned Scripture Trails source and test data. All 161 written Atlas explanations now have dated scoped AI-assisted source assessments. The 31 October source-linked journey corrections cover selected high-risk passages, not a complete re-audit of all 162 stages. Full reference corpus, physical-device accessibility and independent specialist certification remain separate. No unverified evidence is implied.",
   "currentFocus": [
-    "Audit the exact Crossway ESV and API.Bible licences, publisher copyright and FUMS obligations, territories, non-commercial definitions and source credits against the latest terms, preserving content-rights blockers until supported.",
-    "Close high-risk biblical historical and geographical content issues and verify flagship people, places and guided studies with direct primary and secondary evidence.",
-    "Expand real Safari/Firefox and screen-reader journey tests, reduced motion and 200/400 percent zoom acceptance; do not claim unavailable devices were manually tested.",
-    "Exercise a production-safe Cloudflare Pages rollback and full release-candidate smoke path before final go/no-go v1.0 approval."
+    "Continue the public-source publisher attribution and licence implementation review for this non-commercial academic website, including passage limits and NKJV usage thresholds. Check the separate Crossway ESV integration.",
+    "Audit disputed biblical and historical claims and substantively review flagship people, place and study pages; correct high-impact evidence gaps before v1.0.",
+    "Run actual Safari/Firefox, physical-device zoom and NVDA/VoiceOver screen-reader tests when accessible, without claiming synthetic browser automation replaces them.",
+    "Exercise safe Cloudflare production rollback and release-candidate live smoke; record final go/no-go approval only after outstanding gates pass."
   ],
   "phases": [
     {
@@ -886,6 +886,21 @@
         "Publish a dated bounded risk register with disclosed limits of consented analytics and unencrypted browser-local notes"
       ],
       "verification": "AI-assisted source security review and real Cloudflare configuration readback plus automated negative unit/browser tests. Not an independent penetration test, supplier contract authorisation, third-party audit or promise of zero vulnerabilities."
+    },
+    {
+      "id": "v1-publisher-rights-evidence-ledger",
+      "phase": "next",
+      "status": "delivered",
+      "title": "Public publisher rights and attribution review",
+      "summary": "Review public publisher requirements for ESV, NASB20, NIV and NKJV, document cited third-party dataset and photograph licences and improve direct attribution beside Bible passages.",
+      "capabilities": [
+        "Review publicly available Crossway, API.Bible, Lockman, Biblica and Thomas Nelson licensing requirements",
+        "Identify non-commercial usage, copyright attribution, FUMS and audience caps that affect the public reader",
+        "Record public sources for OpenBible.info cross-reference data and five credited Wikimedia city photographs",
+        "Include a direct publisher link beside both displayed passages in the Atlas comparison",
+        "Add code and browser regression tests for the website's attribution, keeping the wider source-rights criterion open until the public implementation review completes"
+      ],
+      "verification": "The project operator confirms non-commercial academic use. Public-source attribution and technical implementation are subject to automated validation. v1 readiness remains 9/17 with the source-rights criterion open."
     }
   ],
   "v1Readiness": {
@@ -958,7 +973,7 @@
             "title": "Verify citations, content rights and source attribution",
             "status": "open",
             "mode": "manual",
-            "evidence": "public/index.html",
+            "evidence": "sources/legal/publisher-rights-review-2026-10-31.md",
             "acceptance": "Audit publisher/API conditions, stored data permissions, rights notices and bibliographic links for published material."
           }
         ]
@@ -967,7 +982,7 @@
         "id": "content",
         "title": "Core study experience and content",
         "summary": "The four-translation reader, Atlas, people index and major journeys need sufficient depth and reliable passage navigation.",
-        "next": "The live production reader returned official ESV, NASB20, NIV and NKJV passages and publisher attribution for representative New and Old Testament requests. Continue the independent content audit and legal provider/rights assessment; real provider availability is now separately evidenced.",
+        "next": "Formal public publisher terms and local image/cross-reference attribution reviewed in v0.44.2. Source-licences stays open until edition-specific private API.Bible grant/plan, NKJV audience and Crossway eligibility are independently evidenced. Continue critical-claim and flagship editorial reviews.",
         "criteria": [
           {
             "id": "crossrefs-integrity",
