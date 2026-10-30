@@ -24,7 +24,7 @@ jobs:
         run: npm run build
   browser:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -32,9 +32,9 @@ jobs:
           node-version-file: .nvmrc
           cache: npm
       - run: npm ci
-      - name: Install Chromium and OS dependencies
-        run: npx playwright install --with-deps chromium
-      - name: Desktop and mobile journeys, accessibility and layout
+      - name: Install Chromium, Firefox, WebKit and OS dependencies
+        run: npx playwright install --with-deps chromium firefox webkit
+      - name: Cross-browser desktop/mobile journeys, accessibility and layout
         run: npm run test:browser
       - uses: actions/upload-artifact@v4
         if: ${{ !cancelled() }}
