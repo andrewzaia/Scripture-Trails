@@ -1009,8 +1009,8 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "explanation": "Genesis begins with God's creation of heaven and earth. Hebrews uses the creation of the visible order by God's word to illustrate faith's confidence in realities that are not seen; it reasons from God's act rather than supplying another creation sequence.",
     "caution": "Hebrews 11 is an exhortation about faith, not a scientific explanation of how the universe formed. Avoid treating this comparison as an argument for a particular cosmological timeline.",
     "context": "Hebrews 11:1-6",
-    "review": "editorial-reading-aid",
-    "basis": "Editorial reading aid based on the cited Scripture contexts and an existing indexed cross-reference. A separate dated secondary-source assessment has not been completed; independent specialist review pending."
+    "review": "scripture-context-screened",
+    "basis": "Dated source-specific Scripture-context assessment with two canonical passage locators and scoped named secondary commentary, 2026-10-31 (batch v1-citations-17-03). Refer to the citation register for access limits, competing readings and cautions. Independent specialist review remains open."
   },
   {
     "id": "ce117",
@@ -1020,8 +1020,8 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "explanation": "Genesis identifies God as the source of creation. John expands the opening creation imagery by saying that all created things came to be through the Word, placing the Word on the creator's side of the distinction between maker and what is made.",
     "caution": "John is a theological prologue, not an exact restatement of Genesis 1:1. Shared creation language does not remove the distinctive claims and literary purpose of either passage.",
     "context": "John 1:1-5",
-    "review": "editorial-reading-aid",
-    "basis": "Editorial reading aid based on the cited Scripture contexts and an existing indexed cross-reference. A separate dated secondary-source assessment has not been completed; independent specialist review pending."
+    "review": "scripture-context-screened",
+    "basis": "Dated source-specific Scripture-context assessment with two canonical passage locators and scoped named secondary commentary, 2026-10-31 (batch v1-citations-17-03). Refer to the citation register for access limits, competing readings and cautions. Independent specialist review remains open."
   },
   {
     "id": "ce118",
@@ -1042,8 +1042,8 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "explanation": "Genesis recounts God's testing of Abraham through the command concerning Isaac, the son of promise. Hebrews interprets Abraham's obedience as trust that God could still fulfil the promise, even describing Abraham's reasoning in terms of resurrection.",
     "caution": "Hebrews provides a later theological interpretation of the narrative. It does not eliminate the ethical questions raised by Genesis 22 or establish a verbatim transcript of Abraham's thoughts.",
     "context": "Hebrews 11:17-19",
-    "review": "editorial-reading-aid",
-    "basis": "Editorial reading aid based on the cited Scripture contexts and an existing indexed cross-reference. A separate dated secondary-source assessment has not been completed; independent specialist review pending."
+    "review": "scripture-context-screened",
+    "basis": "Dated source-specific Scripture-context assessment with two canonical passage locators and scoped named secondary commentary, 2026-10-31 (batch v1-citations-17-03). Refer to the citation register for access limits, competing readings and cautions. Independent specialist review remains open."
   },
   {
     "id": "ce120",
@@ -1053,8 +1053,8 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "explanation": "At the burning bush, God reveals his name to Moses with language commonly translated 'I AM'. In John 8, Jesus contrasts his existence with Abraham's lifetime and uses the expression 'I am', after which his opponents attempt to stone him.",
     "caution": "The Greek wording and the exact relationship between the expressions are debated. This is a possible allusion, not a direct citation or proof that their grammar is identical.",
     "context": "John 8:48-59",
-    "review": "editorial-reading-aid",
-    "basis": "Editorial reading aid based on the cited Scripture contexts and an existing indexed cross-reference. A separate dated secondary-source assessment has not been completed; independent specialist review pending."
+    "review": "scripture-context-screened",
+    "basis": "Dated source-specific Scripture-context assessment with two canonical passage locators and scoped named secondary commentary, 2026-10-31 (batch v1-citations-17-03). Refer to the citation register for access limits, competing readings and cautions. Independent specialist review remains open."
   },
   {
     "id": "ce121",
@@ -1064,8 +1064,8 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "explanation": "The Passover regulations instruct Israel not to break any bone of the lamb. John reports that Jesus' legs were not broken and identifies this detail with Scripture's fulfilment, encouraging comparison with the Gospel's wider Passover imagery.",
     "caution": "Psalm 34:20 is another possible textual source for John's statement. Do not present Exodus 12:46 as the only certain source or assume the Gospel passage directly quotes it.",
     "context": "John 19:31-37",
-    "review": "editorial-reading-aid",
-    "basis": "Editorial reading aid based on the cited Scripture contexts and an existing indexed cross-reference. A separate dated secondary-source assessment has not been completed; independent specialist review pending."
+    "review": "scripture-context-screened",
+    "basis": "Dated source-specific Scripture-context assessment with two canonical passage locators and scoped named secondary commentary, 2026-10-31 (batch v1-citations-17-03). Refer to the citation register for access limits, competing readings and cautions. Independent specialist review remains open."
   },
   {
     "id": "ce122",
@@ -1108,8 +1108,8 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "explanation": "Psalm 22 depicts opponents dividing a sufferer's garments and casting lots for his clothing. John narrates the soldiers dividing Jesus' garments and casting lots for his tunic, explicitly associating that action with the scriptural wording.",
     "caution": "The passion narrative uses a psalm with a wider movement from suffering to praise. Do not assume that every detail in Psalm 22 is a direct transcript of the crucifixion.",
     "context": "John 19:23-27",
-    "review": "editorial-reading-aid",
-    "basis": "Editorial reading aid based on the cited Scripture contexts and an existing indexed cross-reference. A separate dated secondary-source assessment has not been completed; independent specialist review pending."
+    "review": "scripture-context-screened",
+    "basis": "Dated source-specific Scripture-context assessment with two canonical passage locators and scoped named secondary commentary, 2026-10-31 (batch v1-citations-17-02). Refer to the citation register for access limits, competing readings and cautions. Independent specialist review remains open."
   },
   {
     "id": "ce126",
@@ -1141,8 +1141,8 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "explanation": "Isaiah celebrates the messenger proclaiming peace, good news and God's reign to Zion. Paul cites the messenger image while explaining the sequence of sending, preaching, hearing and believing in the gospel.",
     "caution": "Isaiah's immediate context concerns Zion's consolation and restoration. Paul's application should be read as a later use, not a replacement of Isaiah's original setting.",
     "context": "Romans 10:9-17",
-    "review": "editorial-reading-aid",
-    "basis": "Editorial reading aid based on the cited Scripture contexts and an existing indexed cross-reference. A separate dated secondary-source assessment has not been completed; independent specialist review pending."
+    "review": "scripture-context-screened",
+    "basis": "Dated source-specific Scripture-context assessment with two canonical passage locators and scoped named secondary commentary, 2026-10-31 (batch v1-citations-17-02). Refer to the citation register for access limits, competing readings and cautions. Independent specialist review remains open."
   },
   {
     "id": "ce129",
@@ -1185,8 +1185,8 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "explanation": "Zechariah calls Zion to rejoice at the coming of a humble king riding on a donkey. Matthew cites the royal image while narrating Jesus' entry into Jerusalem, describing disciples obtaining the animals before the public acclamation.",
     "caution": "Matthew's citation and account of the animals require careful reading alongside the Hebrew poetic parallelism and the other Gospels. Do not infer a precise modern route from this verse.",
     "context": "Matthew 21:1-11",
-    "review": "editorial-reading-aid",
-    "basis": "Editorial reading aid based on the cited Scripture contexts and an existing indexed cross-reference. A separate dated secondary-source assessment has not been completed; independent specialist review pending."
+    "review": "scripture-context-screened",
+    "basis": "Dated source-specific Scripture-context assessment with two canonical passage locators and scoped named secondary commentary, 2026-10-31 (batch v1-citations-17-02). Refer to the citation register for access limits, competing readings and cautions. Independent specialist review remains open."
   },
   {
     "id": "ce133",
@@ -1196,8 +1196,8 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "explanation": "Zechariah describes a future looking upon one who has been pierced within an oracle about mourning. John invokes the piercing language after reporting the soldier's spear thrust, making it part of his scriptural interpretation of Jesus' death.",
     "caution": "The wording and referent of Zechariah 12:10 differ across textual traditions and remain interpretively disputed. John's use should not be represented as a literal reproduction of every phrase.",
     "context": "John 19:31-37",
-    "review": "editorial-reading-aid",
-    "basis": "Editorial reading aid based on the cited Scripture contexts and an existing indexed cross-reference. A separate dated secondary-source assessment has not been completed; independent specialist review pending."
+    "review": "scripture-context-screened",
+    "basis": "Dated source-specific Scripture-context assessment with two canonical passage locators and scoped named secondary commentary, 2026-10-31 (batch v1-citations-17-02). Refer to the citation register for access limits, competing readings and cautions. Independent specialist review remains open."
   },
   {
     "id": "ce134",
@@ -1207,8 +1207,8 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "explanation": "Daniel sees a figure like a son of man coming with the clouds and receiving dominion in a vision of God's judgment and kingdom. In Mark, Jesus responds to the high priest with Son of Man language that also invokes Psalm 110's right-hand enthronement.",
     "caution": "Mark combines scriptural imagery rather than quoting Daniel 7:13 verbatim. The interpretation of Daniel's humanlike figure and the timing of Mark's saying remain debated.",
     "context": "Mark 14:60-65",
-    "review": "editorial-reading-aid",
-    "basis": "Editorial reading aid based on the cited Scripture contexts and an existing indexed cross-reference. A separate dated secondary-source assessment has not been completed; independent specialist review pending."
+    "review": "scripture-context-screened",
+    "basis": "Dated source-specific Scripture-context assessment with two canonical passage locators and scoped named secondary commentary, 2026-10-31 (batch v1-citations-17-03). Refer to the citation register for access limits, competing readings and cautions. Independent specialist review remains open."
   },
   {
     "id": "ce135",
@@ -1218,8 +1218,8 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "explanation": "Jeremiah's new-covenant promise describes God's instruction placed within the people and written on their hearts. Hebrews quotes this promise when explaining the significance of Christ's offering and contrasting repeated sacrifices with forgiveness.",
     "caution": "Jeremiah addresses the houses of Israel and Judah. Hebrews' argument is a later Christian application and does not alone settle contested accounts of Israel's covenant identity.",
     "context": "Hebrews 10:11-18",
-    "review": "editorial-reading-aid",
-    "basis": "Editorial reading aid based on the cited Scripture contexts and an existing indexed cross-reference. A separate dated secondary-source assessment has not been completed; independent specialist review pending."
+    "review": "scripture-context-screened",
+    "basis": "Dated source-specific Scripture-context assessment with two canonical passage locators and scoped named secondary commentary, 2026-10-31 (batch v1-citations-17-02). Refer to the citation register for access limits, competing readings and cautions. Independent specialist review remains open."
   },
   {
     "id": "ce136",
@@ -1229,8 +1229,8 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "explanation": "Psalm 118 speaks of a rejected stone becoming the cornerstone. Jesus quotes this image after the parable of the tenants, challenging leaders who reject the son sent to the vineyard.",
     "caution": "The psalm's original thanksgiving context and Matthew's parable should both be read. The saying does not justify extending a critique of particular leaders into condemnation of an entire people.",
     "context": "Matthew 21:33-46",
-    "review": "editorial-reading-aid",
-    "basis": "Editorial reading aid based on the cited Scripture contexts and an existing indexed cross-reference. A separate dated secondary-source assessment has not been completed; independent specialist review pending."
+    "review": "scripture-context-screened",
+    "basis": "Dated source-specific Scripture-context assessment with two canonical passage locators and scoped named secondary commentary, 2026-10-31 (batch v1-citations-17-02). Refer to the citation register for access limits, competing readings and cautions. Independent specialist review remains open."
   },
   {
     "id": "ce137",
@@ -1240,8 +1240,8 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "explanation": "Paul quotes the report that Abraham believed God and it was counted as righteousness. In Galatians he uses Abraham's example to discuss faith, the promised blessing of the nations and the place of the Law in God's purposes.",
     "caution": "Genesis concerns the promise to Abraham in its own narrative. Paul's theological application should not be treated as erasing that setting or settling all debates about justification.",
     "context": "Galatians 3:6-14",
-    "review": "editorial-reading-aid",
-    "basis": "Editorial reading aid based on the cited Scripture contexts and an existing indexed cross-reference. A separate dated secondary-source assessment has not been completed; independent specialist review pending."
+    "review": "scripture-context-screened",
+    "basis": "Dated source-specific Scripture-context assessment with two canonical passage locators and scoped named secondary commentary, 2026-10-31 (batch v1-citations-17-02). Refer to the citation register for access limits, competing readings and cautions. Independent specialist review remains open."
   },
   {
     "id": "ce138",
@@ -1251,8 +1251,8 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "explanation": "Numbers recounts Moses lifting a bronze serpent so that Israelites bitten by serpents could look and live. Jesus compares that lifting up with the Son of Man being lifted up, moving from physical deliverance in the wilderness to the life offered through belief in him.",
     "caution": "John uses an explicit analogy, not an assertion that the bronze serpent and Jesus are the same object. The connection does not endorse later worship of the bronze image, which 2 Kings 18:4 criticises.",
     "context": "John 3:10-17",
-    "review": "editorial-reading-aid",
-    "basis": "Editorial reading aid based on the cited Scripture contexts and an existing indexed cross-reference. A separate dated secondary-source assessment has not been completed; independent specialist review pending."
+    "review": "scripture-context-screened",
+    "basis": "Dated source-specific Scripture-context assessment with two canonical passage locators and scoped named secondary commentary, 2026-10-31 (batch v1-citations-17-03). Refer to the citation register for access limits, competing readings and cautions. Independent specialist review remains open."
   },
   {
     "id": "ce139",
@@ -1284,8 +1284,8 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "explanation": "Deuteronomy forbids testing God as Israel did at Massah. Jesus quotes that injunction in response to the suggestion that he should leap from the temple and force a demonstration of divine protection.",
     "caution": "The narrative also quotes Psalm 91 in the tempter's challenge. The contrast is about faithful trust versus manufacturing a test, not a denial of God's capacity to protect.",
     "context": "Matthew 4:5-7",
-    "review": "editorial-reading-aid",
-    "basis": "Editorial reading aid based on the cited Scripture contexts and an existing indexed cross-reference. A separate dated secondary-source assessment has not been completed; independent specialist review pending."
+    "review": "scripture-context-screened",
+    "basis": "Dated source-specific Scripture-context assessment with two canonical passage locators and scoped named secondary commentary, 2026-10-31 (batch v1-citations-17-02). Refer to the citation register for access limits, competing readings and cautions. Independent specialist review remains open."
   },
   {
     "id": "ce142",
@@ -1306,8 +1306,8 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "explanation": "The law forbids muzzling an ox while it treads out grain. Paul cites it to defend the principle that those who labour in proclaiming the gospel may receive material support, alongside arguments from agriculture and temple service.",
     "caution": "The regulation first protects working animals. Paul's analogy does not cancel its literal ethical setting or establish every detail of modern financial arrangements for ministry.",
     "context": "1 Corinthians 9:7-14",
-    "review": "editorial-reading-aid",
-    "basis": "Editorial reading aid based on the cited Scripture contexts and an existing indexed cross-reference. A separate dated secondary-source assessment has not been completed; independent specialist review pending."
+    "review": "scripture-context-screened",
+    "basis": "Dated source-specific Scripture-context assessment with two canonical passage locators and scoped named secondary commentary, 2026-10-31 (batch v1-citations-17-02). Refer to the citation register for access limits, competing readings and cautions. Independent specialist review remains open."
   },
   {
     "id": "ce144",
@@ -1317,8 +1317,8 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "explanation": "The Song of Moses assigns vengeance and repayment to God. Paul quotes that principle when instructing believers to forgo personal revenge and leave judgment to God, immediately encouraging constructive care towards enemies.",
     "caution": "Deuteronomy speaks in the context of covenant warning and judgment. Paul's pastoral use is not a warrant for passivity in the face of abuse or for denying legitimate civil justice.",
     "context": "Romans 12:17-21",
-    "review": "editorial-reading-aid",
-    "basis": "Editorial reading aid based on the cited Scripture contexts and an existing indexed cross-reference. A separate dated secondary-source assessment has not been completed; independent specialist review pending."
+    "review": "scripture-context-screened",
+    "basis": "Dated source-specific Scripture-context assessment with two canonical passage locators and scoped named secondary commentary, 2026-10-31 (batch v1-citations-17-03). Refer to the citation register for access limits, competing readings and cautions. Independent specialist review remains open."
   },
   {
     "id": "ce145",
@@ -1328,8 +1328,8 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "explanation": "Psalm 8 marvels that God attends to human beings and grants humanity a place within creation. Hebrews quotes the passage and develops it through the humiliation and exaltation of Jesus, while observing that humanity does not yet visibly enjoy complete dominion.",
     "caution": "Hebrews reads a human-vocation psalm through a Christological lens. The Greek 'angels' and Hebrew 'God/divine beings' wording deserves attention across translations.",
     "context": "Hebrews 2:5-10",
-    "review": "editorial-reading-aid",
-    "basis": "Editorial reading aid based on the cited Scripture contexts and an existing indexed cross-reference. A separate dated secondary-source assessment has not been completed; independent specialist review pending."
+    "review": "scripture-context-screened",
+    "basis": "Dated source-specific Scripture-context assessment with two canonical passage locators and scoped named secondary commentary, 2026-10-31 (batch v1-citations-17-02). Refer to the citation register for access limits, competing readings and cautions. Independent specialist review remains open."
   },
   {
     "id": "ce146",
@@ -1339,8 +1339,8 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "explanation": "The psalmist describes zeal for God's house and the reproach borne for that zeal. After Jesus' action in the temple, John's disciples remember the statement about zeal for God's house, interpreting the event through the psalm.",
     "caution": "The psalm's original voice concerns a suffering worshipper. John's narrative places the remembered line in a specific temple scene; the citation does not provide a full reconstruction of the event's chronology.",
     "context": "John 2:13-22",
-    "review": "editorial-reading-aid",
-    "basis": "Editorial reading aid based on the cited Scripture contexts and an existing indexed cross-reference. A separate dated secondary-source assessment has not been completed; independent specialist review pending."
+    "review": "scripture-context-screened",
+    "basis": "Dated source-specific Scripture-context assessment with two canonical passage locators and scoped named secondary commentary, 2026-10-31 (batch v1-citations-17-02). Refer to the citation register for access limits, competing readings and cautions. Independent specialist review remains open."
   },
   {
     "id": "ce147",
@@ -1350,8 +1350,8 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "explanation": "Psalm 110 declares a royal figure to be a priest forever according to the order of Melchizedek. Hebrews quotes the verse while explaining Jesus' appointment and introduces an extended comparison with Melchizedek and Levitical priesthood.",
     "caution": "The psalm's royal setting and Hebrews' priestly interpretation are distinguishable. The quotation should not be taken as resolving the historical identity of Melchizedek without further study.",
     "context": "Hebrews 5:1-10",
-    "review": "editorial-reading-aid",
-    "basis": "Editorial reading aid based on the cited Scripture contexts and an existing indexed cross-reference. A separate dated secondary-source assessment has not been completed; independent specialist review pending."
+    "review": "scripture-context-screened",
+    "basis": "Dated source-specific Scripture-context assessment with two canonical passage locators and scoped named secondary commentary, 2026-10-31 (batch v1-citations-17-02). Refer to the citation register for access limits, competing readings and cautions. Independent specialist review remains open."
   },
   {
     "id": "ce148",
@@ -1361,8 +1361,8 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "explanation": "Psalm 118 blesses the one who comes in the name of the Lord as part of a liturgy of thanksgiving and procession. Matthew reports the crowds using that language as Jesus enters Jerusalem, joined with a plea of 'Hosanna' and Davidic acclamation.",
     "caution": "The Gospel situates the psalm's words within the entry narrative. It does not establish that everyone in Jerusalem shared the crowds' understanding or that the psalm was originally composed for that event.",
     "context": "Matthew 21:1-11",
-    "review": "editorial-reading-aid",
-    "basis": "Editorial reading aid based on the cited Scripture contexts and an existing indexed cross-reference. A separate dated secondary-source assessment has not been completed; independent specialist review pending."
+    "review": "scripture-context-screened",
+    "basis": "Dated source-specific Scripture-context assessment with two canonical passage locators and scoped named secondary commentary, 2026-10-31 (batch v1-citations-17-02). Refer to the citation register for access limits, competing readings and cautions. Independent specialist review remains open."
   },
   {
     "id": "ce149",
@@ -1372,8 +1372,8 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "explanation": "Isaiah criticises worship expressed with lips while hearts remain distant from God and human instruction replaces genuine devotion. Jesus quotes the prophetic rebuke in a dispute about tradition, purity and the interpretation of commandments.",
     "caution": "Isaiah addresses its own people and leadership in a particular prophetic crisis. The quotation should not become a general condemnation of Jewish traditions or all ritual practice.",
     "context": "Matthew 15:1-20",
-    "review": "editorial-reading-aid",
-    "basis": "Editorial reading aid based on the cited Scripture contexts and an existing indexed cross-reference. A separate dated secondary-source assessment has not been completed; independent specialist review pending."
+    "review": "scripture-context-screened",
+    "basis": "Dated source-specific Scripture-context assessment with two canonical passage locators and scoped named secondary commentary, 2026-10-31 (batch v1-citations-17-02). Refer to the citation register for access limits, competing readings and cautions. Independent specialist review remains open."
   },
   {
     "id": "ce150",
@@ -1383,8 +1383,8 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "explanation": "Isaiah announces preparation of a way for the Lord in the context of comfort and return from exile. Mark includes that wilderness voice in a composite scriptural introduction to John the Baptist and the beginning of Jesus' ministry.",
     "caution": "Mark 1:2-3 also draws on Malachi and possibly Exodus; the citation heading is composite. Punctuation and the location of the wilderness phrase vary across textual traditions.",
     "context": "Mark 1:1-8",
-    "review": "editorial-reading-aid",
-    "basis": "Editorial reading aid based on the cited Scripture contexts and an existing indexed cross-reference. A separate dated secondary-source assessment has not been completed; independent specialist review pending."
+    "review": "scripture-context-screened",
+    "basis": "Dated source-specific Scripture-context assessment with two canonical passage locators and scoped named secondary commentary, 2026-10-31 (batch v1-citations-17-02). Refer to the citation register for access limits, competing readings and cautions. Independent specialist review remains open."
   },
   {
     "id": "ce151",
@@ -1394,8 +1394,8 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "explanation": "Isaiah introduces God's chosen servant, upheld by the divine Spirit, who brings justice without crushing the vulnerable. Matthew quotes a longer servant passage following a dispute about Sabbath healing and presents Jesus' withdrawal and healing ministry in that light.",
     "caution": "Matthew adapts the servant passage in translation and application. Interpretations of the servant in Isaiah's original context should be considered before assuming a single uncontested referent.",
     "context": "Matthew 12:15-21",
-    "review": "editorial-reading-aid",
-    "basis": "Editorial reading aid based on the cited Scripture contexts and an existing indexed cross-reference. A separate dated secondary-source assessment has not been completed; independent specialist review pending."
+    "review": "scripture-context-screened",
+    "basis": "Dated source-specific Scripture-context assessment with two canonical passage locators and scoped named secondary commentary, 2026-10-31 (batch v1-citations-17-02). Refer to the citation register for access limits, competing readings and cautions. Independent specialist review remains open."
   },
   {
     "id": "ce152",
@@ -1405,8 +1405,8 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "explanation": "Isaiah says the suffering servant was numbered among transgressors. At the Last Supper, Jesus cites this line as a Scripture that must be fulfilled in him, within Luke's account of his approaching arrest and suffering.",
     "caution": "The surrounding dialogue about money bags and swords is disputed. The citation should not be used alone to settle whether Jesus was advocating armed resistance.",
     "context": "Luke 22:35-38",
-    "review": "editorial-reading-aid",
-    "basis": "Editorial reading aid based on the cited Scripture contexts and an existing indexed cross-reference. A separate dated secondary-source assessment has not been completed; independent specialist review pending."
+    "review": "scripture-context-screened",
+    "basis": "Dated source-specific Scripture-context assessment with two canonical passage locators and scoped named secondary commentary, 2026-10-31 (batch v1-citations-17-03). Refer to the citation register for access limits, competing readings and cautions. Independent specialist review remains open."
   },
   {
     "id": "ce153",
@@ -1416,8 +1416,8 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "explanation": "Isaiah promises Zion that her children will be taught by the Lord in a passage about restoration and peace. Jesus quotes the teaching promise in a dispute over coming to him, relating it to hearing and learning from the Father.",
     "caution": "Isaiah speaks about the restored community of Zion. John's use is a distinct theological application, not a claim that the prophetic restoration setting is irrelevant.",
     "context": "John 6:41-51",
-    "review": "editorial-reading-aid",
-    "basis": "Editorial reading aid based on the cited Scripture contexts and an existing indexed cross-reference. A separate dated secondary-source assessment has not been completed; independent specialist review pending."
+    "review": "scripture-context-screened",
+    "basis": "Dated source-specific Scripture-context assessment with two canonical passage locators and scoped named secondary commentary, 2026-10-31 (batch v1-citations-17-03). Refer to the citation register for access limits, competing readings and cautions. Independent specialist review remains open."
   },
   {
     "id": "ce154",
@@ -1427,8 +1427,8 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "explanation": "Isaiah envisages God's house as a place of prayer for all peoples, including foreigners who join themselves to the Lord. Jesus cites that purpose when challenging commerce in the temple, pairing it with Jeremiah's warning about a den of robbers.",
     "caution": "The scene combines Isaiah 56:7 with Jeremiah 7:11. The quotation concerns the temple's intended function; it should not be simplified into an argument against every form of economic exchange.",
     "context": "Mark 11:15-18",
-    "review": "editorial-reading-aid",
-    "basis": "Editorial reading aid based on the cited Scripture contexts and an existing indexed cross-reference. A separate dated secondary-source assessment has not been completed; independent specialist review pending."
+    "review": "scripture-context-screened",
+    "basis": "Dated source-specific Scripture-context assessment with two canonical passage locators and scoped named secondary commentary, 2026-10-31 (batch v1-citations-17-02). Refer to the citation register for access limits, competing readings and cautions. Independent specialist review remains open."
   },
   {
     "id": "ce155",
@@ -1438,8 +1438,8 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "explanation": "Hosea recalls God's love for Israel as a child and the call bringing Israel out of Egypt. Matthew quotes the line after narrating the family's stay in Egypt, presenting Jesus' return as a recapitulation of Israel's story.",
     "caution": "Hosea 11:1 originally looks backward to the exodus, not forward as a straightforward predictive oracle. Matthew's fulfilment claim is a later typological application that should be labelled accordingly.",
     "context": "Matthew 2:13-15",
-    "review": "editorial-reading-aid",
-    "basis": "Editorial reading aid based on the cited Scripture contexts and an existing indexed cross-reference. A separate dated secondary-source assessment has not been completed; independent specialist review pending."
+    "review": "scripture-context-screened",
+    "basis": "Dated source-specific Scripture-context assessment with two canonical passage locators and scoped named secondary commentary, 2026-10-31 (batch v1-citations-17-03). Refer to the citation register for access limits, competing readings and cautions. Independent specialist review remains open."
   },
   {
     "id": "ce156",
@@ -1449,8 +1449,8 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "explanation": "Hosea contrasts God's desire for steadfast love and knowledge of God with reliance on sacrifice divorced from covenant loyalty. Jesus quotes the preference for mercy while defending his table fellowship with tax collectors and sinners.",
     "caution": "Hosea is not abolishing worship or sacrifice in its original setting. Matthew applies the prophet's priority to a particular dispute, not a blanket rejection of Jewish practice.",
     "context": "Matthew 9:9-13",
-    "review": "editorial-reading-aid",
-    "basis": "Editorial reading aid based on the cited Scripture contexts and an existing indexed cross-reference. A separate dated secondary-source assessment has not been completed; independent specialist review pending."
+    "review": "scripture-context-screened",
+    "basis": "Dated source-specific Scripture-context assessment with two canonical passage locators and scoped named secondary commentary, 2026-10-31 (batch v1-citations-17-03). Refer to the citation register for access limits, competing readings and cautions. Independent specialist review remains open."
   },
   {
     "id": "ce157",
@@ -1460,8 +1460,8 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "explanation": "Amos promises the restoration of David's fallen shelter after judgment. James quotes the restoration language at the Jerusalem council while arguing for the inclusion of Gentiles without requiring them to become Jews first.",
     "caution": "The Greek wording in Acts differs meaningfully from many Hebrew translations of Amos, especially regarding the nations. The relationship deserves textual comparison rather than assuming the versions are identical.",
     "context": "Acts 15:12-21",
-    "review": "editorial-reading-aid",
-    "basis": "Editorial reading aid based on the cited Scripture contexts and an existing indexed cross-reference. A separate dated secondary-source assessment has not been completed; independent specialist review pending."
+    "review": "scripture-context-screened",
+    "basis": "Dated source-specific Scripture-context assessment with two canonical passage locators and scoped named secondary commentary, 2026-10-31 (batch v1-citations-17-03). Refer to the citation register for access limits, competing readings and cautions. Independent specialist review remains open."
   },
   {
     "id": "ce158",
@@ -1471,8 +1471,8 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "explanation": "Zechariah's oracle speaks of striking the shepherd and scattering the sheep. Jesus quotes that imagery before predicting the disciples' flight at his arrest and subsequently their reunion with him after resurrection.",
     "caution": "Zechariah 13 sits within a difficult prophetic sequence about judgment and purification. Matthew's application does not make the shepherd's original referent or every detail of the oracle uncontroversial.",
     "context": "Matthew 26:30-35",
-    "review": "editorial-reading-aid",
-    "basis": "Editorial reading aid based on the cited Scripture contexts and an existing indexed cross-reference. A separate dated secondary-source assessment has not been completed; independent specialist review pending."
+    "review": "scripture-context-screened",
+    "basis": "Dated source-specific Scripture-context assessment with two canonical passage locators and scoped named secondary commentary, 2026-10-31 (batch v1-citations-17-03). Refer to the citation register for access limits, competing readings and cautions. Independent specialist review remains open."
   },
   {
     "id": "ce159",
@@ -1482,8 +1482,8 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "explanation": "Malachi announces a messenger who prepares the way before the Lord's coming. Jesus quotes that promise when explaining John the Baptist's role after messengers from John ask about Jesus' identity.",
     "caution": "The Gospel adapts the pronouns in its quotation, and Malachi speaks within a wider warning about judgment and covenant faithfulness. Do not ignore the original messenger imagery.",
     "context": "Matthew 11:7-15",
-    "review": "editorial-reading-aid",
-    "basis": "Editorial reading aid based on the cited Scripture contexts and an existing indexed cross-reference. A separate dated secondary-source assessment has not been completed; independent specialist review pending."
+    "review": "scripture-context-screened",
+    "basis": "Dated source-specific Scripture-context assessment with two canonical passage locators and scoped named secondary commentary, 2026-10-31 (batch v1-citations-17-03). Refer to the citation register for access limits, competing readings and cautions. Independent specialist review remains open."
   },
   {
     "id": "ce160",
@@ -1493,8 +1493,8 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "explanation": "Joel promises deliverance to those who call on the Lord amid the day-of-the-Lord imagery. Paul quotes the line while explaining that the same Lord is accessible to Jews and Greeks and that proclamation makes calling possible.",
     "caution": "Joel's surrounding prophecy includes judgment, Zion and restoration; Paul's application should not be used to erase those details or assume every eschatological question is resolved.",
     "context": "Romans 10:9-17",
-    "review": "editorial-reading-aid",
-    "basis": "Editorial reading aid based on the cited Scripture contexts and an existing indexed cross-reference. A separate dated secondary-source assessment has not been completed; independent specialist review pending."
+    "review": "scripture-context-screened",
+    "basis": "Dated source-specific Scripture-context assessment with two canonical passage locators and scoped named secondary commentary, 2026-10-31 (batch v1-citations-17-03). Refer to the citation register for access limits, competing readings and cautions. Independent specialist review remains open."
   },
   {
     "id": "ce161",
@@ -1504,7 +1504,7 @@ export const ADDITIONAL_CONNECTION_EVIDENCE=Object.freeze([
     "explanation": "Habakkuk contrasts the presumptuous with the righteous who live by faithfulness while waiting for God's appointed time. Hebrews cites the line alongside the warning about shrinking back to encourage perseverance under pressure.",
     "caution": "Hebrews draws from the Greek textual tradition and adapts its order and pronouns. The quotation should not be detached from Habakkuk's setting or conflated with Paul's distinct use of the verse.",
     "context": "Hebrews 10:32-39",
-    "review": "editorial-reading-aid",
-    "basis": "Editorial reading aid based on the cited Scripture contexts and an existing indexed cross-reference. A separate dated secondary-source assessment has not been completed; independent specialist review pending."
+    "review": "scripture-context-screened",
+    "basis": "Dated source-specific Scripture-context assessment with two canonical passage locators and scoped named secondary commentary, 2026-10-31 (batch v1-citations-17-03). Refer to the citation register for access limits, competing readings and cautions. Independent specialist review remains open."
   }
 ]);
