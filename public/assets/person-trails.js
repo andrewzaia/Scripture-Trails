@@ -38,7 +38,7 @@ export const PERSON_TRAILS=Object.freeze([
       },
       {
         "label": "End of Abraham's life",
-        "ref": "Genesis 25:8",
+        "ref": "Genesis 25:8-10",
         "note": "Genesis records Abraham's death and burial context.",
         "source": "primary-scripture",
         "review": "editorial-reading-aid"
@@ -74,7 +74,7 @@ export const PERSON_TRAILS=Object.freeze([
       },
       {
         "label": "The burning bush",
-        "ref": "Exodus 3:2",
+        "ref": "Exodus 3:2-10",
         "note": "Moses encounters the burning bush and is called to lead Israel.",
         "source": "primary-scripture",
         "review": "editorial-reading-aid"
@@ -88,7 +88,7 @@ export const PERSON_TRAILS=Object.freeze([
       },
       {
         "label": "At Sinai",
-        "ref": "Exodus 20:1",
+        "ref": "Exodus 20:1-17",
         "note": "The covenant's commandments are presented to Israel.",
         "source": "primary-scripture",
         "review": "editorial-reading-aid"
@@ -145,7 +145,7 @@ export const PERSON_TRAILS=Object.freeze([
       },
       {
         "label": "Dynastic promise",
-        "ref": "2 Samuel 7:12",
+        "ref": "2 Samuel 7:12-16",
         "note": "A promise concerning David's house and successor is conveyed.",
         "source": "primary-scripture",
         "review": "editorial-reading-aid"
