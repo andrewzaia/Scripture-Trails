@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.36.0 - 31/10/2026: Deeper Scripture and history in five flagship city studies
+
+- Add fifteen substantive Scripture-first historical readings for Jerusalem, Nazareth, Capernaum, Bethlehem and Jericho, each with primary passage links, historical context and documented evidence boundaries.
+- Correct the Nazareth excavation report's publication year from 2025 to 2020 and distinguish later pilgrimage traditions, dated ruins and archaeological contexts from specific Gospel event locations.
+- Add desktop/mobile and data-integrity regression coverage for all five city essays, including precise source citations and preservation of previously supported navigation.
+- Record the scoped city-content v1.0 audit and keep the wider people, journey, security and academic-review gates open until genuinely verified.
+
 ## 0.35.0 - 31/10/2026: Complete source assessments for 161 Atlas explanations
 
 - Assess the final 34 previously unreviewed Atlas passage connections in two dated Scripture-context batches, with named sources and specific interpretation limits.

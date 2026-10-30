@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "updated": "2026-10-28",
-  "methodology": "Canonical Gospel/Acts and Old Testament references are primary for claims made by biblical authors. External archaeological, heritage and historical sources support only the independent material-history claims to which they are attached. Timelines show approximate periods, not a fully dated life of Jesus. Illustrative pins and outlines are NOT surveyed ancient borders, pilgrim routes or site footprints. This is research-based editorial synthesis, not peer-reviewed certification.",
+  "updated": "2026-10-31",
+  "methodology": "Canonical Gospel/Acts and Old Testament references are primary for claims made by biblical authors. External archaeological, heritage and historical sources support only the independent material-history claims to which they are attached. Timelines show approximate periods, not a fully dated life of Jesus. Illustrative pins and outlines are NOT surveyed ancient borders, pilgrim routes or site footprints. This is research-based editorial synthesis, not peer-reviewed certification. Fifteen layered reading essays now distinguish the primary biblical narrative, archaeological chronology and unresolved interpretation, each retaining clickable canonical passages and claim-specific named external sources. A first source metadata cross-check corrected the publication year of the Nazareth excavation report to 2020. Historical material is contextual evidence, not verification of each biblical episode.",
   "reviewStatus": "Source-linked editorial research; external specialist review outstanding",
   "sources": {
     "jerusalem-upper": {
@@ -24,9 +24,9 @@
     },
     "nazareth-iaa": {
       "title": "The Settlement History of Nazareth in the Iron Age and Early Roman Period",
-      "publisher": "Yardenna Alexandre, Israel Antiquities Authority, Atiqot 98",
+      "publisher": "Yardenna Alexandre, Israel Antiquities Authority, 'Atiqot 98 (2020)",
       "url": "https://publications.iaa.org.il/atiqot/vol98/iss1/3/",
-      "kind": "Excavation report, 2025"
+      "kind": "Excavation report, 2020"
     },
     "nazareth-cambridge": {
       "title": "Early Roman-period Nazareth and the Sisters of Nazareth convent",
@@ -436,7 +436,50 @@
         "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/48/Jerusalem-2013-Aerial-Temple_Mount_01.jpg",
         "sha256": "6380ed8116f49af4c10124bbe7fdb204b2d59520fd5dd3720a500eee61486298",
         "changes": "Resized without cropping and re-encoded as WebP for web delivery; no retouching."
-      }
+      },
+      "studyLayers": [
+        {
+          "kind": "biblical-reading",
+          "title": "Royal city, covenant and pilgrimage",
+          "body": "Second Samuel describes David taking Jerusalem and establishing his royal centre. The dedication account in 1 Kings presents the Temple as the place where Israel prays towards the Lord, while Psalm 122 voices the city's importance for pilgrimage and communal peace. These passages belong to distinct moments in Jerusalem's biblical history: they should not be compressed into a single undated city map. The biblical texts, rather than later monuments, establish what those writers say happened.",
+          "passages": [
+            "2 Samuel 5:6-10",
+            "1 Kings 8:1-13",
+            "Psalm 122:1-9"
+          ],
+          "sourceIds": [],
+          "qualification": "The Davidic narrative is the primary textual account; archaeological disputes over tenth-century urban scale are independent questions."
+        },
+        {
+          "kind": "material-context",
+          "title": "What the excavated city can date",
+          "body": "Occupation on the southeastern ridge precedes the Herodian building projects visible in parts of the modern archaeological landscape. Regev and colleagues published 103 radiocarbon dates from five Iron Age excavation areas, refining a chronology through stratified deposits and calibration comparisons. Separately, the Upper City and approaches to the Temple document substantial Second Temple settlement and pilgrimage infrastructure. These remains help locate broad periods and urban practices, but none assigns a surviving stone to a particular saying of Jesus.",
+          "passages": [
+            "2 Samuel 5:6-10",
+            "Luke 19:28-48"
+          ],
+          "sourceIds": [
+            "jerusalem-radiocarbon",
+            "jerusalem-upper",
+            "jerusalem-arch"
+          ],
+          "qualification": "Radiocarbon dates sampled contexts; it does not date named biblical persons, a specific Temple conversation or every surviving structure."
+        },
+        {
+          "kind": "interpretive-question",
+          "title": "One city, different Gospel narrative sequences",
+          "body": "John describes Jerusalem festival visits and a temple confrontation early in his narrative, while the Synoptic accounts place Jesus' public entry and temple actions near the final week. The accounts agree on Jerusalem's importance without offering a modern itinerary that fixes every visit, trial hearing or burial location. Read John 2 alongside Luke 19 and Mark 14-15 before constructing a single chronology. Later pilgrimage locations reflect centuries of commemoration and do not independently determine where each event unfolded.",
+          "passages": [
+            "John 2:13-25",
+            "Luke 19:28-48",
+            "Mark 14:12-15:47"
+          ],
+          "sourceIds": [
+            "jerusalem-unesco"
+          ],
+          "qualification": "The relationship between the temple accounts and specific trial locations remains an unresolved narrative and archaeological question."
+        }
+      ]
     },
     {
       "id": "nazareth",
@@ -639,7 +682,7 @@
       "image": {
         "title": "Church of the Annunciation in modern Nazareth",
         "file": "Nazareth_Church_of_the_Annunciation.jpg",
-        "author": "Magalh\u00e3es",
+        "author": "Magalhães",
         "license": "Public domain",
         "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
         "page": "https://commons.wikimedia.org/wiki/File:Nazareth_Church_of_the_Annunciation.jpg",
@@ -647,7 +690,50 @@
         "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Nazareth_Church_of_the_Annunciation.jpg",
         "sha256": "ae6fe5a485cced87b5707de7d6e5b607ac96e02842855ba42609536bf515068d",
         "changes": "Resized without cropping and re-encoded as WebP for web delivery; no retouching."
-      }
+      },
+      "studyLayers": [
+        {
+          "kind": "biblical-reading",
+          "title": "The home-town narrative in its own setting",
+          "body": "Matthew describes the family's return from Egypt and settlement in Nazareth; Luke portrays Jesus growing up there and later reading in a synagogue. Mark also records the response to his teaching in his home region. These texts support Nazareth as a meaningful place in the Gospel accounts, but they neither supply a street address nor identify a surviving synagogue building. The familiar phrase 'Jesus of Nazareth' is a textual identity, not an excavated household label.",
+          "passages": [
+            "Matthew 2:19-23",
+            "Luke 2:51-52",
+            "Luke 4:16-30",
+            "Mark 6:1-6"
+          ],
+          "sourceIds": [],
+          "qualification": "Whether Luke 4 and Mark 6 describe distinct visits, and how their narrative placement relates, is a question of Gospel interpretation."
+        },
+        {
+          "kind": "material-context",
+          "title": "A first-century village, not a named family house",
+          "body": "Yardenna Alexandre's excavation report in 'Atiqot 98 (2020) records Iron Age occupation and a later dwelling with a three-level complex of subterranean storage pits from the late Hellenistic to Early Roman period. Separately, Ken Dark's study of the Sisters of Nazareth convent describes a partially rock-cut early Roman domestic structure and later reuse. These sites establish that settlement existed at the appropriate broad period; material layers do not identify Mary, Joseph or Jesus as occupants of a particular structure.",
+          "passages": [
+            "Luke 2:39-40",
+            "Luke 2:51-52"
+          ],
+          "sourceIds": [
+            "nazareth-iaa",
+            "nazareth-cambridge"
+          ],
+          "qualification": "The excavations are limited areas within a later city; reconstructions of complete first-century settlement boundaries and household ownership remain tentative."
+        },
+        {
+          "kind": "interpretive-question",
+          "title": "Synagogue, identity and later commemoration",
+          "body": "Luke 4 places Jesus in a synagogue at Nazareth, reading Isaiah and speaking to those gathered. That is a narrative claim about a Jewish communal setting, not proof that a modern church or a particular surviving wall marks the room. Christians later developed commemorative sites associated with the Annunciation and the Holy Family; those buildings tell us about the history of devotion as well as the settlement. Read Luke 4 as its own literary scene while keeping the archaeology of occupation separate from identification of sacred premises.",
+          "passages": [
+            "Luke 4:16-30",
+            "John 1:45-46"
+          ],
+          "sourceIds": [
+            "nazareth-cambridge",
+            "nazareth-oxford"
+          ],
+          "qualification": "No excavated synagogue or dwelling can presently be assigned securely to the named Gospel household or this precise scene."
+        }
+      ]
     },
     {
       "id": "capernaum",
@@ -887,7 +973,48 @@
         "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Capernaum_Synagogue_Ruins.jpg",
         "sha256": "bebcb2d78697f603e119ec123a9b9245154c3bebf7869efc7e123d58894341ae",
         "changes": "Resized without cropping and re-encoded as WebP for web delivery; no retouching."
-      }
+      },
+      "studyLayers": [
+        {
+          "kind": "biblical-reading",
+          "title": "Teaching, healing and the lakeside community",
+          "body": "Mark presents Jesus teaching in Capernaum and visiting households there; Matthew narrates the healing of a centurion's servant, and John situates a major bread-of-life discourse in the town's synagogue. These are multiple narrated episodes set in a recognisable Galilean community, not a census of distinct journeys or an architectural floor plan. The text is the basis for identifying what each evangelist reports, while individual rooms and streets remain unspecified.",
+          "passages": [
+            "Mark 1:21-34",
+            "Matthew 8:5-13",
+            "John 6:22-59"
+          ],
+          "sourceIds": [],
+          "qualification": "Shared settings across the Gospels should not automatically be harmonised into one precise visit or one archaeological building."
+        },
+        {
+          "kind": "material-context",
+          "title": "Why the visible white synagogue is later",
+          "body": "Excavations reveal a Roman-period village with basalt domestic remains. The conspicuous white limestone synagogue stands over earlier material, including basalt construction, but an academic archaeological inventory classifies it as Late Roman or Byzantine and explicitly notes disagreement about its date. Coin and pottery finds beneath the paving have led many researchers to place the monumental building centuries after Jesus. An earlier meeting place may have existed, but its exact layout or continuity cannot be established from the white building alone.",
+          "passages": [
+            "Mark 1:21-28",
+            "Luke 7:1-10"
+          ],
+          "sourceIds": [
+            "capernaum-syn",
+            "capernaum-franciscans"
+          ],
+          "qualification": "Earlier basalt foundations are not secure identification of the same first-century synagogue; dates for construction phases remain debated."
+        },
+        {
+          "kind": "interpretive-question",
+          "title": "The traditional house of Peter",
+          "body": "The Gospel accounts describe entering Simon's household and later ministry in Capernaum. Excavators also document houses and later Christian memorial architecture at a site venerated as Peter's home. The sequence from domestic occupation to Christian commemorative use is historically significant, even without proving who lived in the earlier dwelling. Distinguish the Gospel's named household from the archaeological record of a long-used site and from subsequent identification by pilgrims.",
+          "passages": [
+            "Mark 1:29-34",
+            "Mark 2:1-12"
+          ],
+          "sourceIds": [
+            "capernaum-franciscans"
+          ],
+          "qualification": "The traditional attribution is a devotional identification; the name of a particular first-century occupant is not demonstrable from the house remains."
+        }
+      ]
     },
     {
       "id": "bethlehem",
@@ -1102,7 +1229,50 @@
         "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Bethlehem-BW-10.jpg/960px-Bethlehem-BW-10.jpg",
         "sha256": "4939cefc18e7cce8b1f917f6a8cd818ff445234d8a4d561ff9e839e0b9869ca7",
         "changes": "Resized without cropping and re-encoded as WebP for web delivery; no retouching."
-      }
+      },
+      "studyLayers": [
+        {
+          "kind": "biblical-reading",
+          "title": "Bethlehem in David's family and the birth narratives",
+          "body": "Ruth places Bethlehem within a family history culminating in David's ancestry, and 1 Samuel locates David's anointing in the area. Micah names Bethlehem Ephrathah in an oracle concerning a coming ruler. Luke and Matthew then place Jesus' birth in Bethlehem but supply different surrounding details: shepherds, census and a visit of eastern visitors belong in their respective narrative contexts. Their combined use should not imply a precise chronology that neither Gospel provides.",
+          "passages": [
+            "Ruth 4:11-22",
+            "1 Samuel 16:1-13",
+            "Micah 5:2",
+            "Luke 2:1-20",
+            "Matthew 2:1-12"
+          ],
+          "sourceIds": [],
+          "qualification": "Matthew and Luke do not give an independently verifiable interval between the birth and the visitors; chronology and historical questions around the census are debated."
+        },
+        {
+          "kind": "material-context",
+          "title": "What the Church of the Nativity actually preserves",
+          "body": "UNESCO records a Christian association of a particular Bethlehem cave with the birth of Jesus since at least the second century. A church was completed above it in 339 CE, and the surviving building largely reflects a sixth-century reconstruction with later alterations. These physical phases document a remarkably long history of commemoration and pilgrimage. They are centuries later than the narrated birth, however, and the excavated church cannot itself establish the exact place of the event.",
+          "passages": [
+            "Luke 2:1-20",
+            "Matthew 2:1-12"
+          ],
+          "sourceIds": [
+            "bethlehem-unesco"
+          ],
+          "qualification": "Architectural history confirms the later church and tradition; it cannot independently verify a stable, cave or individual birth event."
+        },
+        {
+          "kind": "interpretive-question",
+          "title": "Reading Micah and Matthew without losing either context",
+          "body": "Micah's reference to Bethlehem Ephrathah belongs to prophetic discourse about leadership and security amid Judah's troubles. Matthew draws on that royal expectation in his account of Herod, the visitors and Jesus' birth. The Christian identification is central to the Gospel's argument, but it is a later application of a Hebrew Bible text whose literary setting deserves study in full. The modern pilgrimage route should likewise be recognised as commemoration, not traced backwards into an authenticated journey by Mary and Joseph.",
+          "passages": [
+            "Micah 5:2",
+            "Matthew 2:1-12",
+            "Matthew 2:13-23"
+          ],
+          "sourceIds": [
+            "bethlehem-unesco"
+          ],
+          "qualification": "Matthew's scriptural interpretation and the later commemorative landscape are separate types of evidence."
+        }
+      ]
     },
     {
       "id": "jericho",
@@ -1335,7 +1505,52 @@
         "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Ausgrabungen_bei_Tell_es-Sultan_%283709391491%29.jpg",
         "sha256": "152d55bb51437e5abfab840ad737a2cb5f6f25fc9dd46539183bc0699ca2b2a4",
         "changes": "Resized without cropping and re-encoded as WebP for web delivery; no retouching."
-      }
+      },
+      "studyLayers": [
+        {
+          "kind": "biblical-reading",
+          "title": "Jericho across very different biblical centuries",
+          "body": "Joshua narrates the city's fall and Rahab's part in Israel's story; Kings and the Elisha accounts refer to later life in the region. In the Gospels, Mark and Matthew speak of healing blind people in relation to Jericho, and Luke describes both a healing and Jesus' encounter with Zacchaeus. These writings concern different periods and distinct narrative questions, so a single modern archaeological marker cannot stand for every occurrence of the name.",
+          "passages": [
+            "Joshua 6:1-27",
+            "2 Kings 2:19-22",
+            "Mark 10:46-52",
+            "Luke 19:1-10"
+          ],
+          "sourceIds": [],
+          "qualification": "The Gospels vary in the number of blind people and whether Jesus is approaching or leaving Jericho; the difference must remain visible."
+        },
+        {
+          "kind": "material-context",
+          "title": "Three periods, not one excavated Jericho",
+          "body": "UNESCO describes Tell es-Sultan as an ancient settlement mound with Neolithic monuments and urban Bronze Age levels. Bruins and van der Plicht studied eighteen samples associated with the end of the Middle Bronze Age, distinguishing short-lived cereal grains from older charcoal and reporting a broadly late seventeenth- or sixteenth-century BCE destruction horizon. Much later, Hellenistic and Herodian palaces near Wadi Qelt illustrate the Roman-era oasis setting. The older mound and the palace landscape must not be treated as the same period or the same Gospel-era address.",
+          "passages": [
+            "Joshua 6:1-27",
+            "Luke 19:1-10"
+          ],
+          "sourceIds": [
+            "jericho-unesco",
+            "jericho-radiocarbon",
+            "jericho-palaces"
+          ],
+          "qualification": "The 1995 radiocarbon findings do not identify attackers or demonstrate an event in Joshua. The UNESCO palace entry is a tentative listing submitted in 2026, not an inscribed World Heritage site."
+        },
+        {
+          "kind": "interpretive-question",
+          "title": "A healing near Jericho and a visitor called Zacchaeus",
+          "body": "Mark's account has Bartimaeus encounter Jesus as he leaves Jericho; Luke places a blind man's appeal as Jesus approaches the town, followed by the account of Zacchaeus. Matthew speaks of two blind men. Those literary differences are part of what readers can compare, not errors to conceal by inventing a precise road or identical encounter. The sycamore and domestic sites shown to visitors today are useful for studying pilgrimage tradition but cannot be assigned to a named person from the narrative.",
+          "passages": [
+            "Mark 10:46-52",
+            "Luke 18:35-43",
+            "Matthew 20:29-34",
+            "Luke 19:1-10"
+          ],
+          "sourceIds": [
+            "jericho-palaces"
+          ],
+          "qualification": "The palace archaeological source helps describe the region and period, not the particular tree, route or Zacchaeus' household."
+        }
+      ]
     }
   ],
   "disputed": [
