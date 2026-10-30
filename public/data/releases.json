@@ -1,6 +1,16 @@
 {
   "releases": [
     {
+      "version": "0.43.1",
+      "date": "2026-10-31",
+      "title": "Bible reader: verified four editions and safer provider failures",
+      "changes": [
+        "Verify live ESV, NASB20, NIV and NKJV passage delivery, visible publisher notices and safe failure-and-recovery paths with reproducible no-text logging checks.",
+        "Harden the Crossway integration against redirects, excessive responses, malformed payloads and network timeouts, matching existing API.Bible protections.",
+        "Close two evidence-backed v1 reader provider criteria while preserving separate open publisher permissions, wider security, accessibility and launch verification requirements."
+      ]
+    },
+    {
       "version": "0.43.0",
       "date": "2026-10-31",
       "title": "Study journeys: shareable pathways and reliable navigation",
