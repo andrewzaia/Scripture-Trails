@@ -1,0 +1,48 @@
+name: Temporary release-command reproducibility check
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  reproduce-atlas-032:
+    if: github.head_ref == 'atlas-explanations-batch-20261030'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+      - name: Recreate version 0.32.0 using the project's existing release command
+        shell: bash
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: |
+          set -euo pipefail
+          staging="$(mktemp -d)"
+          git worktree add --detach "$staging/repro" "$BASE_SHA"
+          cp public/assets/connection-evidence-expanded.js "$staging/repro/public/assets/connection-evidence-expanded.js"
+          cp public/assets/citation-review.js "$staging/repro/public/assets/citation-review.js"
+          cp scripts/site-stats.mjs "$staging/repro/scripts/site-stats.mjs"
+          sed -i 's/citation-review-data.js?v=0.32.0/citation-review-data.js?v=0.31.1/g' "$staging/repro/public/assets/citation-review.js"
+          (cd "$staging/repro" && node scripts/site-stats.mjs)
+          SRC="$PWD" REPRO="$staging/repro" node -e '
+            const fs=require("node:fs"),cp=require("node:child_process");
+            const branch=JSON.parse(fs.readFileSync(process.env.SRC+"/public/data/releases.json","utf8")).releases[0];
+            if(branch.version!=="0.32.0")throw Error("Unexpected release version");
+            const res=cp.spawnSync("npm",["run","release","--","minor",branch.title,...branch.changes],{cwd:process.env.REPRO,stdio:"inherit"});
+            if(res.status!==0)process.exit(res.status||1);
+          '
+          for path in package.json public/data/releases.json CHANGELOG.md public/index.html \
+              public/assets/app.js public/assets/graph.js public/assets/entity-index.js \
+              public/assets/connection-evidence.js public/assets/reading-plans.js \
+              public/assets/study-collections.js public/assets/notebook-backup.js \
+              public/assets/annotations.js public/assets/jesus-map.js \
+              public/assets/atlas-comparison.js public/assets/citation-review.js; do
+            cmp "$path" "$staging/repro/$path"
+          done
+          echo "Reproduced the version 0.32.0 release metadata and every versioned asset using npm run release."
