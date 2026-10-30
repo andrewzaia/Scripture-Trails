@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.42.0 - 31/10/2026: Gospel geography: candidate sites and evidence clarity
+
+- Compare competing archaeological identifications for Bethsaida, Emmaus, Magadan and Sychar, with a separate evidence-limits assessment of Gethsemane tradition.
+- Add five named academic references and source-specific claim, evidence and uncertainty notes visible in historical place dossiers.
+- Preserve twelve regional placeholders without invented site citations and leave independent specialist verification and v1.0 launch checks open.
+
 ## 0.41.0 - 31/10/2026: Gospel journeys: substantive Scripture study for every event
 
 - Add 79 original Gospel episode study contexts and 156 connected canonical reading references across the entire journey.

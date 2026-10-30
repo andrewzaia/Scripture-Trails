@@ -3,8 +3,8 @@
   "updated": "2026-10-31",
   "description": "An evidence-aware v1.0 release roadmap checked against the current versioned Scripture Trails source and test data. All 161 written Atlas explanations now have dated scoped AI-assisted source assessments. The 31 October source-linked journey corrections cover selected high-risk passages, not a complete re-audit of all 162 stages. Full reference corpus, physical-device accessibility and independent specialist certification remain separate. No unverified evidence is implied.",
   "currentFocus": [
-    "Conduct a risk-ranked external evidence and source-rights audit of the 79 Gospel journey notes and 35 geography dossiers, with priority for competing Bethsaida/Emmaus site claims, early chronology, later textual endings and Gospel harmony. Record scholarly disagreements without manufacturing consensus.",
-    "Run complete Gospel and Pauline page navigation journeys, flagship people and journal reading-path checks and saved-progress browser scenarios before closing the v1 content-audit gate.",
+    "Expand scholarly risk reviews beyond the five highest priority Gospel site identifications to remaining contested chronology and historical-critical claims, documenting source access and the distinction between identified city, traditional site and site proof.",
+    "Complete end-to-end flagship Gospel, Pauline, people and journal navigation and saved-progress regression tests; keep the v1 content-audit gate open until both source review and navigation acceptance are credible.",
     "Verify the four authorised Bible translations against real production provider behaviour and copyright requirements wherever connected tools permit.",
     "Expand independent historical and textual source coverage for contested claims in Daniel, Esther, the Exodus and the journey sites; distinguish AI-assisted editorial synthesis from specialist signoff.",
     "Continue real-browser, accessibility, privacy/security and rollback checks for the v1.0 launch gates without assigning routine QA to the site owner."
@@ -814,6 +814,20 @@
         "Seven named chronology comparisons in total, all original 79 stage IDs, geography, selectors, deep links and previous corrections preserved"
       ],
       "verification": "AI-assisted passage-context and targeted published-abstract review, not independent specialist historical, archaeological or original manuscript signoff. Canonical verse addresses, full browser navigation, release validation and live production deployment must be checked. v1.0 flagship claims, translation rights and external QA remain open."
+    },
+    {
+      "id": "v1-gospel-site-evidence-05",
+      "phase": "next",
+      "status": "delivered",
+      "title": "Candidate Gospel sites receive claim-to-source evidence comparisons",
+      "summary": "Review all 35 Gospel geography dossier classifications and expand five contested or commemorative sites with independent published research positions, evidence limits and named citations, without manufacturing precise locations for 12 regional placeholders.",
+      "capabilities": [
+        "Five visible claim, evidence and uncertainty comparisons covering Bethsaida, Emmaus, Magadan/Dalmanutha, Sychar and Gethsemane",
+        "Five newly traceable published academic sources, including competing Bethsaida interpretations and publication access limits",
+        "Preserved all twelve deliberately regional/place-unnamed geography placeholders and explicit avoidance of invented archaeological citations",
+        "Automated consistency checks for each source and all 35 dossier classifications, plus desktop/mobile navigation regressions"
+      ],
+      "verification": "Source-specific reading of public academic abstracts, scholarly publisher metadata and existing excavation summaries. Independent peer consultation and full-text archaeological reviews remain outstanding; no site identification is marked verified. CI release, browser and production checks required."
     }
   ],
   "v1Readiness": {
@@ -853,7 +867,7 @@
         "id": "evidence",
         "title": "Biblical evidence and editorial quality",
         "summary": "Important interpretations must be traceable to Scripture, with interpretive uncertainty, original contexts and external sources stated accurately.",
-        "next": "Review critical historical and theological claims, original-language variant gaps, redistributable source rights and potential conflicts across flagship studies.",
+        "next": "Five disputed Gospel locations now have explicit named academic source positions and limits; obtain stronger direct sources and independent historical or archaeological review for remaining critical claims, while maintaining the existing source-licensing gate.",
         "criteria": [
           {
             "id": "atlas-context",

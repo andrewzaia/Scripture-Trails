@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated": "2026-10-28",
+  "updated": "2026-10-31",
   "methodology": "Gospels and Acts are primary evidence for the episodes; OT references illuminate the broader history of a named region, not evidence Jesus visited that Old Testament event. Independent archaeological scholarship is cited where available. Absence of an external archaeology citation is explicitly not proof of a site identification.",
   "evidenceGuide": {
     "excavated": "Archaeological settlement or material remains established, not the particular Gospel event",
@@ -267,6 +267,56 @@
       "access": "Preliminary report: stratigraphic table, Roman-period sections and summary checked. The proposed identification concerns Vespasian's veteran settlement; other Emmaus candidates and Luke's distance variants are not settled.",
       "rights": "Linked only; no publisher text, tables or images redistributed.",
       "scope": "Preliminary report: stratigraphic table, Roman-period sections and summary checked. The proposed identification concerns Vespasian's veteran settlement; other Emmaus candidates and Luke's distance variants are not settled."
+    },
+    "bethsaida-et-tell-arav": {
+      "title": "Rami Arav, Searching for Bethsaida: The Case for et-Tell (2020)",
+      "url": "https://cris.haifa.ac.il/en/publications/searching-for-bethsaida-the-case-for-et-tell/",
+      "kind": "published-research-abstract",
+      "author": "Rami Arav",
+      "publisher": "Biblical Archaeology Review 46(2); University of Haifa research listing",
+      "checkedOn": "2026-10-31",
+      "scope": "Institutional bibliographic record confirms publication advocating et-Tell. Does not establish consensus; full article not accessed.",
+      "rights": "Linked only; no article text, photos or tables republished."
+    },
+    "bethsaida-araj-av-notley": {
+      "title": "Mordechai Aviam and R. Steven Notley, In Search of the City of the Apostles (2021)",
+      "url": "https://doi.org/10.1163/15685365-12341710",
+      "kind": "published-research-abstract",
+      "author": "Mordechai Aviam and R. Steven Notley",
+      "publisher": "Novum Testamentum 63(2), 143-158",
+      "checkedOn": "2026-10-31",
+      "scope": "Article abstract reports first-century settlement and Roman-period finds and argues for el-Araj over et-Tell. Identification remains an argument, not independently proven consensus; full text not accessed.",
+      "rights": "Linked only; no article text, photos or tables republished."
+    },
+    "magadan-taylor-2014": {
+      "title": "Joan E. Taylor, Missing Magdala and the Name of Mary 'Magdalene' (2014)",
+      "url": "https://doi.org/10.1179/0031032814Z.000000000110",
+      "kind": "published-research-abstract",
+      "author": "Joan E. Taylor",
+      "publisher": "Palestine Exploration Quarterly 146(3), 205-223",
+      "checkedOn": "2026-10-31",
+      "scope": "King's College London institutional abstract proposes early Roman Magadan and discusses Dalmanutha and Magdala naming. It is a scholarly hypothesis, not an established name-equivalence or mapped landing; full paper not accessed.",
+      "rights": "Linked only; no article text, photos or tables republished."
+    },
+    "emmaus-robinson-1984": {
+      "title": "B. P. Robinson, The Place of the Emmaus Story in Luke-Acts (1984)",
+      "url": "https://doi.org/10.1017/S0028688500013199",
+      "kind": "published-research-abstract",
+      "author": "B. P. Robinson",
+      "publisher": "New Testament Studies 30(4), 481-497",
+      "checkedOn": "2026-10-31",
+      "scope": "Cambridge publisher extract calls the village's location uncertain and discusses Luke 24 as narrative. Does not select a verified Emmaus location or settle distance-variant transmission. Full article not accessed.",
+      "rights": "Linked only; no article text, photos or tables republished."
+    },
+    "sychar-pummer-2022": {
+      "title": "Reinhard Pummer, Shechem and the Samaritans (2022)",
+      "url": "https://doi.org/10.2143/ANES.59.0.3291193",
+      "kind": "published-research-abstract",
+      "author": "Reinhard Pummer",
+      "publisher": "Ancient Near Eastern Studies 59, 171-189",
+      "checkedOn": "2026-10-31",
+      "scope": "Publisher abstract evaluates Samaritan claims involving Shechem and later place-name transfers. It does not identify the exact city of Sychar in John 4; full paper not accessed.",
+      "rights": "Linked only; no article text, photos or tables republished."
     }
   },
   "places": {
@@ -552,14 +602,28 @@
         }
       ],
       "literature": [
-        "sychar-human-dates"
+        "sychar-human-dates",
+        "sychar-pummer-2022"
       ],
       "caution": "Shechem is not automatically identical to the town called Sychar.",
       "review": {
         "status": "source-linked",
         "reviewedOn": "2026-10-26",
         "basis": "geography-source-and-uncertainty-screen",
-        "independentSourceCount": 1
+        "independentSourceCount": 2
+      },
+      "identificationReview": {
+        "question": "Does the identification of Jacob's Well establish the location of Sychar?",
+        "claim": "John 4 identifies Sychar near land associated with Jacob, while the modern well and surrounding settlement history have distinct evidence. Sychar, ancient Shechem and later Nablus should not be casually equated.",
+        "support": "Radiocarbon work at Jacob's Well concerns dated human remains and later site history. Pummer analyses historical usage of Shechem and Samaritan history, providing regional context without identifying the Gospel town.",
+        "limit": "Dating material from the well complex neither proves the identity of the woman nor fixes the first-century settlement boundaries of Sychar.",
+        "sourceIds": [
+          "sychar-human-dates",
+          "sychar-pummer-2022"
+        ],
+        "status": "contested-identification",
+        "reviewedOn": "2026-10-31",
+        "method": "bounded-publisher-and-primary-text-comparison"
       }
     },
     "galilee-shore": {
@@ -658,14 +722,30 @@
       "evidenceLevel": "disputed",
       "oldTestament": [],
       "literature": [
-        "bethsaida-excavation"
+        "bethsaida-excavation",
+        "bethsaida-araj-av-notley",
+        "bethsaida-et-tell-arav"
       ],
       "caution": "Both el-Araj and et-Tell appear in identification debates. The el-Araj season report confirms excavated material, not a consensus that it is the Gospel Bethsaida.",
       "review": {
         "status": "source-linked",
         "reviewedOn": "2026-10-26",
         "basis": "geography-source-and-uncertainty-screen",
-        "independentSourceCount": 1
+        "independentSourceCount": 3
+      },
+      "identificationReview": {
+        "question": "Which archaeological site corresponds to the Bethsaida of the Gospel accounts?",
+        "claim": "El-Araj and et-Tell are competing proposed identifications. The available reports support archaeological occupation and rival geographic arguments, not a scholarly consensus or the exact locations of individual Gospel episodes.",
+        "support": "The el-Araj excavation team reports Roman-period occupation and material near the lakeshore; Arav publishes a competing scholarly case for et-Tell. Both contributions are researcher positions and must be read with provenance.",
+        "limit": "Neither excavation directly identifies a site of the feeding, healing or a specific disciple's house. The unverified alternative must remain visible.",
+        "sourceIds": [
+          "bethsaida-excavation",
+          "bethsaida-araj-av-notley",
+          "bethsaida-et-tell-arav"
+        ],
+        "status": "contested-identification",
+        "reviewedOn": "2026-10-31",
+        "method": "bounded-publisher-and-primary-text-comparison"
       }
     },
     "gennesaret": {
@@ -747,14 +827,28 @@
       "evidenceLevel": "disputed",
       "oldTestament": [],
       "literature": [
-        "magdala-iaa"
+        "magdala-iaa",
+        "magadan-taylor-2014"
       ],
       "caution": "Distinguish well-attested Magdala archaeology from uncertain Magadan/Dalmanutha identification.",
       "review": {
         "status": "source-linked",
         "reviewedOn": "2026-10-26",
         "basis": "geography-source-and-uncertainty-screen",
-        "independentSourceCount": 1
+        "independentSourceCount": 2
+      },
+      "identificationReview": {
+        "question": "Are Magadan, Dalmanutha and later Magdala the same location?",
+        "claim": "Matthew 15:39 and Mark 8:10 name Magadan and Dalmanutha respectively; later Magdala traditions and excavated sites require a separate identification argument. Equating the names remains a proposal.",
+        "support": "Excavations at the modern Magdala site establish an ancient settlement. Joan E. Taylor proposes a relationship among Magadan, Dalmanutha and later Magdala naming, explicitly as a research interpretation.",
+        "limit": "Ancient settlement evidence at Magdala does not confirm that Jesus' boat landed at that precise excavation or that Dalmanutha is its securely attested synonym.",
+        "sourceIds": [
+          "magdala-iaa",
+          "magadan-taylor-2014"
+        ],
+        "status": "contested-identification",
+        "reviewedOn": "2026-10-31",
+        "method": "bounded-publisher-and-primary-text-comparison"
       }
     },
     "caesarea-philippi": {
@@ -1003,6 +1097,19 @@
         "reviewedOn": "2026-10-26",
         "basis": "geography-source-and-uncertainty-screen",
         "independentSourceCount": 2
+      },
+      "identificationReview": {
+        "question": "Can later garden tradition or excavated features locate the exact site of Jesus' prayer?",
+        "claim": "The Synoptic accounts name Gethsemane and the Mount of Olives area, while a modern pilgrimage garden is not an independently surveyed Gospel event location.",
+        "support": "Published tree-age research addresses sampled living olives; an excavation announcement reports Second Temple-era remains in the vicinity. Both are evidence of vegetation or occupation, not the precise prayer location.",
+        "limit": "Dating the cores of surviving trees or nearby features does not identify the precise garden boundary in the first century or authenticate any single prayer spot.",
+        "sourceIds": [
+          "gethsemane-dating",
+          "gethsemane-bath"
+        ],
+        "status": "tradition-not-site-proof",
+        "reviewedOn": "2026-10-31",
+        "method": "bounded-publisher-and-primary-text-comparison"
       }
     },
     "emmaus": {
@@ -1016,14 +1123,28 @@
       "evidenceLevel": "disputed",
       "oldTestament": [],
       "literature": [
-        "emmaus-moza"
+        "emmaus-moza",
+        "emmaus-robinson-1984"
       ],
       "caution": "The map point is illustrative and does not select one candidate as definitive.",
       "review": {
         "status": "source-linked",
         "reviewedOn": "2026-10-26",
         "basis": "geography-source-and-uncertainty-screen",
-        "independentSourceCount": 1
+        "independentSourceCount": 2
+      },
+      "identificationReview": {
+        "question": "Which Emmaus village is intended by Luke 24:13?",
+        "claim": "Luke names Emmaus but the modern identification remains unresolved. The approximately sixty-stadia reading is commonly printed; other manuscript traditions report a longer distance, adding complexity to proposed sites.",
+        "support": "A published archaeological report documents Roman-era material near Moza, and Robinson's scholarly article discusses Emmaus as a narrative destination of uncertain location.",
+        "limit": "Moza, Emmaus-Nicopolis and other proposed sites cannot be selected as conclusively verified from this dossier. Textual-variant questions require their own manuscript collation.",
+        "sourceIds": [
+          "emmaus-moza",
+          "emmaus-robinson-1984"
+        ],
+        "status": "contested-identification",
+        "reviewedOn": "2026-10-31",
+        "method": "bounded-publisher-and-primary-text-comparison"
       }
     },
     "galilee-mountain": {
@@ -1108,6 +1229,14 @@
   "audit": {
     "scope": "Location/source metadata checked for 35 place dossiers. Text of external literature not independently peer reviewed by this project. Source links checked 26 October 2026.",
     "revision": "2026-10-26",
-    "verification": "Bibliographic and location-confidence screening; scholarly review remains ongoing."
+    "verification": "Bibliographic and location-confidence screening; scholarly review remains ongoing.",
+    "identificationAddendum": {
+      "date": "2026-10-31",
+      "placesReviewed": 35,
+      "disputedDossiersExpanded": 5,
+      "regionalPlaceholdersPreserved": 12,
+      "method": "Five contested/traditional locations received claim-to-source assessments of competing interpretations. All 35 place records were checked for explicit evidence levels, original sources and consistent study notes. Twelve deliberately regional or unnamed locations retain no independent place-site bibliography instead of receiving misleading exact-site sources.",
+      "limits": "This is a bounded AI-assisted review of publication metadata, accessible academic abstracts, project reports and existing sources. Specialist archaeological review, manuscript collation and exhaustive original excavation-text checking remain open."
+    }
   }
 }

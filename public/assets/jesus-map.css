@@ -43,3 +43,14 @@ body.light .jesus-map-filters select{color:#273740;background:#f3ede1}body.light
 .jesus-episode-study .jesus-map-subheading{margin-top:14px}
 .jesus-episode-study .jesus-passage-row{flex-wrap:wrap}
 .jesus-episode-study .jesus-episode-study-limit{font-size:11px;line-height:1.6;margin:12px 12px 0 0}
+
+/* Scoped comparisons of candidate sites and their research limits. */
+.jesus-site-identification{margin:19px 0 0;border:1px solid var(--line);border-radius:5px;padding:15px;background:var(--surface2)}
+.jesus-site-identification[hidden]{display:none}
+.jesus-site-identification h3{font:700 14px/1.45 var(--sans);color:var(--ink);margin:0 0 10px}
+.jesus-site-identification h4{font:600 12px/1.6 var(--sans);color:var(--ink);margin:5px 0 12px}
+.jesus-site-identification p{font-size:12px;line-height:1.75;color:var(--muted);margin:0 0 12px}
+.jesus-site-identification p strong,.jesus-site-identification p span{display:block}
+.jesus-site-identification p strong{color:var(--ink);margin-bottom:3px}
+.jesus-site-identification-sources{display:grid;gap:8px;margin:10px 0;overflow-wrap:anywhere}
+.jesus-site-identification-sources a{font-size:12px;line-height:1.6;color:var(--gold)}

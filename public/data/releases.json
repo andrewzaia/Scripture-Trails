@@ -1,6 +1,16 @@
 {
   "releases": [
     {
+      "version": "0.42.0",
+      "date": "2026-10-31",
+      "title": "Gospel geography: candidate sites and evidence clarity",
+      "changes": [
+        "Compare competing archaeological identifications for Bethsaida, Emmaus, Magadan and Sychar, with a separate evidence-limits assessment of Gethsemane tradition.",
+        "Add five named academic references and source-specific claim, evidence and uncertainty notes visible in historical place dossiers.",
+        "Preserve twelve regional placeholders without invented site citations and leave independent specialist verification and v1.0 launch checks open."
+      ]
+    },
+    {
       "version": "0.41.0",
       "date": "2026-10-31",
       "title": "Gospel journeys: substantive Scripture study for every event",
