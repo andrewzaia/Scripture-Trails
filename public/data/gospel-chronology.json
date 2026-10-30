@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-10-27",
+  "updated": "2026-10-31",
   "scope": "Narrative-order comparison of entries already catalogued in the 79-event Gospel journey map. Book chapter and verse numbers order the selected Gospel's descriptions, not the dates when the events happened. A shared study entry may cover distinct literary presentations. The dataset is not a source-critical synopsis and does not identify two related accounts as the same historical occurrence without qualification. Full chapter and verse ordering is displayed for only the mapped entries, not for every incident in each Gospel. A claim of literary correspondence must not be mistaken for verification of the number of visits or chronology.",
   "methodology": "Each Gospel view selects only journey entries with an explicit passage from that Gospel, then sorts them by the first cited chapter and verse within that book. Multiple citations in the same Gospel are grouped under one entry and listed together. Canonical chapter and verse positions are editorial reading coordinates, not historical time stamps. No unreported dates, independent journeys or missing Gospel narratives are inferred.",
   "sources": [
@@ -24,6 +24,13 @@
       "kind": "Peer-reviewed journal article, New Testament Studies, 2020",
       "url": "https://doi.org/10.1017/S0028688519000468",
       "claim": "Shows how a historical Gospel harmony arranged temple-action traditions differently; it is evidence about harmonisation choices, not proof of the original event date."
+    },
+    {
+      "id": "andrejevs-2022",
+      "title": "Olegs Andrejevs, Mark's Framing of the Walking on the Sea Incident (Mark 6,45.53)",
+      "kind": "Peer-reviewed journal article, Ephemerides Theologicae Lovanienses 98.2 (2022), pp. 293-312",
+      "url": "https://doi.org/10.2143/ETL.98.2.3290792",
+      "claim": "The publisher abstract identifies the Bethsaida destination and Gennesaret arrival as a textual issue and surveys proposed readings. This review consulted the abstract, not the subscription-only full argument; the article does not prove a maritime route."
     }
   ],
   "comparisons": [
@@ -105,6 +112,25 @@
       "analysis": "Mark presents the lakeside call before synagogue teaching in Capernaum; Luke places the catch-and-call scene after Capernaum teaching. The chosen textual view displays each author's ordering without constructing dates.",
       "sourceIds": [
         "tyson-order"
+      ]
+    },
+    {
+      "id": "bethsaida-gennesaret-crossing",
+      "title": "Sea crossing: intended Bethsaida, reported Gennesaret",
+      "events": [
+        "j035",
+        "j036"
+      ],
+      "issueId": "sea-crossing-destinations",
+      "passages": [
+        "Mark 6:45-52",
+        "Mark 6:53-56",
+        "John 6:16-21"
+      ],
+      "status": "reported route and intended destination distinguished",
+      "analysis": "Mark 6:45 directs the disciples toward Bethsaida, whereas 6:53 reports that they moored at Gennesaret. John 6:17 describes a Capernaum-directed crossing. The map does not turn those different narrative statements into a single measured landing track. The linked study discusses narrative and compositional explanations but is not evidence for GPS coordinates.",
+      "sourceIds": [
+        "andrejevs-2022"
       ]
     }
   ]

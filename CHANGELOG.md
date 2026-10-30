@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.38.0 - 31/10/2026: Biblical journey evidence and route clarity
+
+- Clarify the Bethsaida and Gennesaret crossing with a named academic source and directly linked Gospel passages.
+- Distinguish named locations from inferred routes in the Jericho, ascension and Pauline itinerary notes.
+- Expand Scripture-linked research cautions for Paul's island crossings, planned harbour, storm drift and Malta arrival.
+
 ## 0.37.0 - 31/10/2026: Deeper people trails and guided Scripture journals
 
 - Expand all 20 people trails with substantial literary context, comparison readings, reflection questions and explicit evidence limitations.

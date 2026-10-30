@@ -1119,12 +1119,14 @@
         "John 6:16-21"
       ],
       "evidence": "region",
-      "qualification": "The route is schematic, not a boat track.",
+      "qualification": "Mark 6:45 describes Bethsaida as the disciples' intended destination, but Mark 6:53 records their landing at Gennesaret; John 6:17 names Capernaum as a direction of travel. These accounts do not establish one surveyed route. The mapped crossing is schematic and does not identify a precise boat track.",
       "review": {
-        "status": "screened",
+        "status": "qualified",
         "basis": "passage-index-and-location-screen",
         "reviewedOn": "2026-10-26",
-        "issueIds": []
+        "issueIds": [
+          "sea-crossing-destinations"
+        ]
       }
     },
     {
@@ -1138,12 +1140,14 @@
         "Matthew 14:34-36"
       ],
       "evidence": "named",
-      "qualification": "",
+      "qualification": "Mark 6:53 explicitly reports landfall at Gennesaret. It follows Mark 6:45, which named Bethsaida as the intended destination; the difference should not be silently harmonised into a verified route.",
       "review": {
-        "status": "screened",
+        "status": "qualified",
         "basis": "passage-index-and-location-screen",
         "reviewedOn": "2026-10-26",
-        "issueIds": []
+        "issueIds": [
+          "sea-crossing-destinations"
+        ]
       }
     },
     {
@@ -1557,7 +1561,7 @@
         "Matthew 20:29-34"
       ],
       "evidence": "named",
-      "qualification": "The Gospel accounts differ over approach/departure details and number of people.",
+      "qualification": "Luke 18:35 presents the healing as Jesus approaches Jericho; Mark 10:46 and Matthew 20:29 describe departure from Jericho. Matthew mentions two blind men, while Mark names Bartimaeus. These accounts are grouped for comparison, not proof of a single precise roadside location or an undisputed itinerary.",
       "review": {
         "status": "qualified",
         "basis": "passage-index-and-location-screen",
@@ -1998,7 +2002,7 @@
         "Acts 1:6-12"
       ],
       "evidence": "region",
-      "qualification": "Luke 24:50 locates the scene toward Bethany; Acts 1:12 names the Mount of Olives as the disciples return. Neither identifies the exact footprint or specifies the entire intervening itinerary.",
+      "qualification": "Luke 24:50 describes Jesus leading the disciples toward Bethany; Acts 1:12 places their return from the Mount of Olives. These identify a broad area, not surveyed coordinates for the ascension, and do not supply a continuous dated route for all resurrection appearances.",
       "review": {
         "status": "qualified",
         "basis": "passage-index-and-location-screen",

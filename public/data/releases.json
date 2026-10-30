@@ -1,6 +1,16 @@
 {
   "releases": [
     {
+      "version": "0.38.0",
+      "date": "2026-10-31",
+      "title": "Biblical journey evidence and route clarity",
+      "changes": [
+        "Clarify the Bethsaida and Gennesaret crossing with a named academic source and directly linked Gospel passages.",
+        "Distinguish named locations from inferred routes in the Jericho, ascension and Pauline itinerary notes.",
+        "Expand Scripture-linked research cautions for Paul's island crossings, planned harbour, storm drift and Malta arrival."
+      ]
+    },
+    {
       "version": "0.37.0",
       "date": "2026-10-31",
       "title": "Deeper people trails and guided Scripture journals",

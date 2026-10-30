@@ -1,9 +1,9 @@
 {
   "project": "Scripture Trails",
   "updated": "2026-10-31",
-  "description": "An evidence-aware v1.0 release roadmap checked against the current versioned Scripture Trails source and test data. All 161 written Atlas explanations now have dated scoped AI-assisted source assessments. Full reference corpus, physical-device accessibility and independent specialist certification remain separate. No unverified evidence is implied.",
+  "description": "An evidence-aware v1.0 release roadmap checked against the current versioned Scripture Trails source and test data. All 161 written Atlas explanations now have dated scoped AI-assisted source assessments. The 31 October source-linked journey corrections cover selected high-risk passages, not a complete re-audit of all 162 stages. Full reference corpus, physical-device accessibility and independent specialist certification remain separate. No unverified evidence is implied.",
   "currentFocus": [
-    "Audit all 79 Gospel journey events and 83 Pauline itinerary stages for source accuracy, narrative chronology, location uncertainty and material interpretive claims.",
+    "Continue stage-by-stage source and chronology review across the 79 Gospel and 83 Pauline records beyond the newly source-linked sea-crossing and Acts itinerary corrections; retain unverified geography as unpinned.",
     "Check the flagship people and journal reading links in full browser scenarios, retain reading-progress compatibility and address any remaining inaccurate descriptions.",
     "Verify the four authorised Bible translations against real production provider behaviour and copyright requirements wherever connected tools permit.",
     "Expand independent historical and textual source coverage for contested claims in Daniel, Esther, the Exodus and the journey sites; distinguish AI-assisted editorial synthesis from specialist signoff.",
@@ -758,6 +758,20 @@
         "Existing reading progress, study times and passage orders preserved"
       ],
       "verification": "Source integrity and release consistency checks plus desktop/mobile browser tests required before publication. The full v1.0 flagship-content audit remains OPEN because the Jesus and Pauline journey corpora and broader claims still require assessment; the added profiles are not independent scholarly signoff."
+    },
+    {
+      "id": "v1-journey-evidence-pass-01",
+      "phase": "next",
+      "status": "delivered",
+      "title": "Targeted Gospel and Pauline journey evidence corrections",
+      "summary": "Publish a source-specific comparison of the Bethsaida/Gennesaret crossing and targeted Acts itinerary qualifications, protecting the 79 Gospel events and 83 Pauline stages. The entire corpus still requires further scene-by-scene research and independent specialist review.",
+      "capabilities": [
+        "New source-linked Gospel comparison for Mark 6:45-53 and John 6:16-21, with the difference between intended destination and recorded landfall made visible",
+        "Qualified Jericho, resurrection-route and selected Pauline land, island, voyage and wreck descriptions where the text does not support precise geography",
+        "Publisher Scripture links, bounded scholarly source claims and automated regression checks for risky itinerary assumptions",
+        "Original stage IDs, passages, study chronology selectors, route pins and reading links preserved"
+      ],
+      "verification": "Scoped editorial evidence pass dated 31 October 2026; primary publisher passages and a published article abstract compared, with no claim that the complete 162-stage corpus or external historical reconstruction has been independently certified. Required CI and production checks remain separate."
     }
   ],
   "v1Readiness": {
