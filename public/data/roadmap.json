@@ -3,8 +3,8 @@
   "updated": "2026-10-31",
   "description": "An evidence-aware v1.0 release roadmap checked against the current versioned Scripture Trails source and test data. All 161 written Atlas explanations now have dated scoped AI-assisted source assessments. The 31 October source-linked journey corrections cover selected high-risk passages, not a complete re-audit of all 162 stages. Full reference corpus, physical-device accessibility and independent specialist certification remain separate. No unverified evidence is implied.",
   "currentFocus": [
-    "Complete passage-by-passage evidence review across all 79 Gospel stages, carefully distinguishing named places, narrative sequence, proposed geography and disputed textual details; do not mark the content audit completed without checks of the wider flagship experience.",
-    "Check the flagship people and journal reading links in full browser scenarios, retain reading-progress compatibility and address any remaining inaccurate descriptions.",
+    "Conduct a risk-ranked external evidence and source-rights audit of the 79 Gospel journey notes and 35 geography dossiers, with priority for competing Bethsaida/Emmaus site claims, early chronology, later textual endings and Gospel harmony. Record scholarly disagreements without manufacturing consensus.",
+    "Run complete Gospel and Pauline page navigation journeys, flagship people and journal reading-path checks and saved-progress browser scenarios before closing the v1 content-audit gate.",
     "Verify the four authorised Bible translations against real production provider behaviour and copyright requirements wherever connected tools permit.",
     "Expand independent historical and textual source coverage for contested claims in Daniel, Esther, the Exodus and the journey sites; distinguish AI-assisted editorial synthesis from specialist signoff.",
     "Continue real-browser, accessibility, privacy/security and rollback checks for the v1.0 launch gates without assigning routine QA to the site owner."
@@ -800,6 +800,20 @@
         "All original IDs, map locations, source credits, deep links, first two journey contexts and reader navigation preserved"
       ],
       "verification": "Complete 83-stage Scripture-first editorial depth coverage, not an independent historical specialist, text-critical or archaeologically surveyed audit. Automated and cross-device browser tests, release history checks and production verification required before shipping. Gospel event historical review and 12 outstanding v1.0 gates remain open."
+    },
+    {
+      "id": "v1-gospel-79-context",
+      "phase": "next",
+      "status": "delivered",
+      "title": "Seventy-nine Gospel events receive Scripture-first contextual readings",
+      "summary": "Write individual original reading contexts and 156 linked comparison passages for all 79 Gospel journey events; add scoped publisher and academic references for census chronology, Mark's textual ending and the ascension narrative.",
+      "capabilities": [
+        "79 individually contextualised original Gospel reading paragraphs with relevant navigable canonical passages",
+        "Visible literature-linked caution for Quirinius census and Herod-era chronological conflict without asserting a solved historical year",
+        "Preserved Mark 16:1-8 citation with the longer-ending textual history disclosed, and Luke-Acts ascension manuscript scholarship qualified",
+        "Seven named chronology comparisons in total, all original 79 stage IDs, geography, selectors, deep links and previous corrections preserved"
+      ],
+      "verification": "AI-assisted passage-context and targeted published-abstract review, not independent specialist historical, archaeological or original manuscript signoff. Canonical verse addresses, full browser navigation, release validation and live production deployment must be checked. v1.0 flagship claims, translation rights and external QA remain open."
     }
   ],
   "v1Readiness": {
@@ -881,7 +895,7 @@
         "id": "content",
         "title": "Core study experience and content",
         "summary": "The four-translation reader, Atlas, people index and major journeys need sufficient depth and reliable passage navigation.",
-        "next": "All 83 Pauline narrative stages now have individual Scripture-first reading notes. Complete source-specific review for all 79 Gospel stages, flagship people/place/journal navigation and dead-end checks before closing the content-audit gate.",
+        "next": "All 83 Pauline and 79 Gospel journey stages now contain original Scripture reading contexts. The historical/source verification of the Gospel stage narratives and wider flagship navigation remains open; the new textual and census issues require careful review.",
         "criteria": [
           {
             "id": "crossrefs-integrity",
