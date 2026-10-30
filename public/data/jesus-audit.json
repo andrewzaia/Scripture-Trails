@@ -528,6 +528,31 @@
       "source": "emmaus-moza",
       "result": "Preliminary report: stratigraphic table, Roman-period sections and summary checked. The proposed identification concerns Vespasian's veteran settlement; other Emmaus candidates and Luke's distance variants are not settled.",
       "checkedOn": "2026-10-28"
+    },
+    {
+      "source": "bethsaida-et-tell-arav",
+      "checkedOn": "2026-10-31",
+      "result": "Institutional bibliographic record confirms publication advocating et-Tell. Does not establish consensus; full article not accessed."
+    },
+    {
+      "source": "bethsaida-araj-av-notley",
+      "checkedOn": "2026-10-31",
+      "result": "Article abstract reports first-century settlement and Roman-period finds and argues for el-Araj over et-Tell. Identification remains an argument, not independently proven consensus; full text not accessed."
+    },
+    {
+      "source": "magadan-taylor-2014",
+      "checkedOn": "2026-10-31",
+      "result": "King's College London institutional abstract proposes early Roman Magadan and discusses Dalmanutha and Magdala naming. It is a scholarly hypothesis, not an established name-equivalence or mapped landing; full paper not accessed."
+    },
+    {
+      "source": "emmaus-robinson-1984",
+      "checkedOn": "2026-10-31",
+      "result": "Cambridge publisher extract calls the village's location uncertain and discusses Luke 24 as narrative. Does not select a verified Emmaus location or settle distance-variant transmission. Full article not accessed."
+    },
+    {
+      "source": "sychar-pummer-2022",
+      "checkedOn": "2026-10-31",
+      "result": "Publisher abstract evaluates Samaritan claims involving Shechem and later place-name transfers. It does not identify the exact city of Sychar in John 4; full paper not accessed."
     }
   ],
   "literatureUpdate": {
@@ -555,5 +580,17 @@
     "scope": "All 79 Gospel events now contain individually written Scripture-context notes and 156 canonical comparison reading links. Targeted source-linked research issues additionally clarify census/Herod dating, the transmitted ending of Mark and ascension textual variants. The status of the historical audit remains a bounded editorial first pass.",
     "sourceLimit": "Publisher academic abstracts (Oxford Handbook census and Cambridge New Testament Studies ascension) and ESV publisher manuscript footnotes were consulted. Complete subscription articles, original manuscript collation, independent historical specialist appraisal and independent archaeological identification were not performed. Full article access was not obtained.",
     "pending": "The 79-event corpus has complete editorial reading-context coverage, but comprehensive specialist textual/archaeological corroboration, contested claims, site identifications and sitewide navigation quality assurance remain open."
+  },
+  "siteReviewAddendum": {
+    "reviewedOn": "2026-10-31",
+    "scope": "Reviewed the evidence classification and bibliography of all 35 Gospel geography dossiers, and added explicit research claim/evidence/limits assessments to five high-risk site identifications. Twelve region-only placeholders deliberately lack precise external site bibliography; that is not considered a broken citation.",
+    "newResearch": [
+      "el-Araj and et-Tell Bethsaida alternatives",
+      "Emmaus and variable distance traditions",
+      "Magadan, Dalmanutha and Magdala name traditions",
+      "Sychar, Jacob's Well and Shechem",
+      "Gethsemane tradition versus material remains"
+    ],
+    "limits": "Publication abstracts, scholarly bibliographic descriptions and existing archaeological project summaries were consulted; full articles and original field datasets have not all been inspected. This does not amount to archaeologist certification or acceptance of one disputed site."
   }
 }
