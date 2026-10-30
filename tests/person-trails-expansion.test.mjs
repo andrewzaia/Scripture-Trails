@@ -87,3 +87,20 @@ test('historically sensitive profiles attribute limits to named academic works',
  corrupted.study.research[0].url='javascript:alert(1)';
  assert.throws(()=>validatePersonTrails(counts,ids,[corrupted]));
 });
+
+test('person trail source range stays precise for six audited descriptions',()=>{
+ const expected=[
+  ['abraham','Covenant sign','Genesis 17:9-14'],
+  ['abraham',"End of Abraham's life",'Genesis 25:8-10'],
+  ['moses','The burning bush','Exodus 3:2-10'],
+  ['moses','At Sinai','Exodus 20:1-17'],
+  ['david-king','Dynastic promise','2 Samuel 7:12-16'],
+  ['hezekiah','Accession and reforms','2 Kings 18:3-6']
+ ];
+ for(const [person,label,reference] of expected){
+  const stage=personTrail(person).stages.find(s=>s.label===label);
+  assert.ok(stage,person+' missing stage: '+label);
+  assert.equal(stage.ref,reference,person+' '+label);
+  assert.ok(validateCanonicalReference(stage.ref,counts),person+' '+label+' must remain in verse bounds');
+ }
+});
