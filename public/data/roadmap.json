@@ -3,11 +3,11 @@
   "updated": "2026-10-31",
   "description": "An evidence-aware v1.0 release roadmap checked against the current versioned Scripture Trails source and test data. All 161 written Atlas explanations now have dated scoped AI-assisted source assessments. Full reference corpus, physical-device accessibility and independent specialist certification remain separate. No unverified evidence is implied.",
   "currentFocus": [
-    "Audit flagship studies, people, places and journeys for substantive explanation, source context, broken references and unsupported high-impact claims.",
-    "Test the Bible reader and source citations in production under provider errors, unavailable editions and normal navigation; distinguish verified responses from service assumptions.",
-    "Conduct browser-based accessibility, cross-engine and privacy/security testing with available connected tools; keep physical-device and independent specialist checks transparently open where direct evidence cannot be obtained.",
-    "Address remaining scholarly access gaps, original-language textual variants, contested geographical identifications and the highest-impact outstanding editorial warnings.",
-    "Plan a v1.0 release candidate only when documented launch gates and production recovery checks have actually been satisfied."
+    "Audit the 20 flagship person-trail studies and six guided study journals for interpretation quality, depth, working passage links and citation attribution.",
+    "Extend the v1.0 claims register to the journeys of Jesus and Paul, distinguishing scriptural accounts from modern itinerary conjectures and identifying serious historical contradictions.",
+    "Test all four authorised Bible editions through available production/browser tooling and verify failure states, copyright presentation and provider handling without exposing API keys.",
+    "Review privacy, security, backups and browser compatibility with verifiable tool-based evidence; keep inaccessible screen-reader, real-device and independent expert checks openly qualified.",
+    "Prepare a version 1.0 release candidate only after all genuine launch-blocking criteria have acceptable verification evidence."
   ],
   "phases": [
     {
@@ -668,7 +668,7 @@
       "phase": "next",
       "status": "next",
       "title": "v1.0 editorial evidence and core-content closeout",
-      "summary": "All 161 explained Atlas pairs have dated scoped source assessments. Next, audit flagship studies and high-impact historical and interpretive claims for substantive content, accurate citations and limitations.",
+      "summary": "All 161 explained Atlas pairs have dated scoped editorial assessments. First flagship-content audit now adds fifteen substantial historical reading essays across five city studies and corrects the Nazareth report's publication year. People, journeys and major claim verification remain open.",
       "capabilities": [
         "All 161 explained pairs have dated internal assessments; full Atlas corpus is outside this commitment",
         "Prioritised high-impact disputed historical and interpretive claims",
@@ -729,6 +729,20 @@
         "Provide About citation counts and accessible individual source links"
       ],
       "verification": "v0.35.0 source record, original-pair preservation checks, browser and node regression tests, and production release checks; specialist and source-licensing audits remain separate."
+    },
+    {
+      "id": "v1-city-studies-depth",
+      "phase": "next",
+      "status": "delivered",
+      "title": "Flagship city studies: deeper Scripture and archaeology integration",
+      "summary": "Five city dossiers now contain fifteen substantive readings that connect the Bible's narratives with excavated historical setting and unresolved interpretation. Correct the Nazareth 'Atiqot report's publication date from 2025 to 2020.",
+      "capabilities": [
+        "Three substantial linked reading layers each for Jerusalem, Nazareth, Capernaum, Bethlehem and Jericho",
+        "Clickable Scripture references, source-specific external research and explicit evidence boundaries for every layer",
+        "Correct the bibliographic year of Yardenna Alexandre's published Nazareth excavation report to 2020",
+        "Protect the existing city explorer, photography provenance, site debates and navigation behaviour"
+      ],
+      "verification": "Scoped flagship city audit from published excavation reports, heritage records and a peer-reviewed journal article. Automated citation/reference checks and desktop/mobile browser tests required before release. Other core study content, independent expert evaluation and live provider testing remain open."
     }
   ],
   "v1Readiness": {
@@ -810,7 +824,7 @@
         "id": "content",
         "title": "Core study experience and content",
         "summary": "The four-translation reader, Atlas, people index and major journeys need sufficient depth and reliable passage navigation.",
-        "next": "Inventory flagship pages and journeys for incomplete prose, weak citations, dead ends and inconsistent references.",
+        "next": "Five principal historical city dossiers now contain fifteen substantial Scripture-first readings with contextual research and evidence limits. Next: check the 20 people trails and six study journals, then audit journeys and related claims.",
         "criteria": [
           {
             "id": "crossrefs-integrity",
