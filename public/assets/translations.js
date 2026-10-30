@@ -2,7 +2,7 @@ import {parseRef} from './books.js';
 
 // Public edition identifiers only. API credentials belong in Cloudflare secrets.
 export const TRANSLATIONS=Object.freeze([
- {code:'ESV',name:'English Standard Version',provider:'Crossway'},
+ {code:'ESV',name:'English Standard Version',provider:'Crossway',publisher:'Crossway',publisherUrl:'https://www.esv.org/'},
  {code:'NASB20',name:'New American Standard Bible 2020',provider:'API.Bible',bibleId:'a761ca71e0b3ddcf-01',publisher:'The Lockman Foundation',publisherUrl:'https://www.lockman.org/'},
  {code:'NIV',name:'New International Version 2011',provider:'API.Bible',bibleId:'78a9f6124f344018-01',publisher:'Biblica, Inc.',publisherUrl:'https://www.biblica.com/'},
  {code:'NKJV',name:'New King James Version',provider:'API.Bible',bibleId:'63097d2a0a2f7db3-01',publisher:'HarperCollins Christian Publishing',publisherUrl:'https://www.harpercollinschristian.com/'}
