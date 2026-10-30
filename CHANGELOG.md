@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.34.0 - 31/10/2026: Twelve source-assessed Atlas quotation connections
+
+- Assess twelve additional biblical quotation connections with paired Scripture contexts, named scholarly commentary and explicit textual or interpretive limits.
+- Increase the Atlas citation review register from 115 to 127 explained pairs while retaining all earlier source assessments and historical notes.
+- Display 34 newer explanations still awaiting assessment in the About source register, Atlas evidence labels and roadmap to version 1.0.
+- Clarify that routine verification is handled through available automated and connected tools, while physical-device and independent specialist evidence are never asserted without actual access.
+
 ## 0.33.0 - 30/10/2026: Version 1.0 readiness roadmap and release gates
 
 - Introduce a dedicated Road to v1.0 section with five public acceptance gates and 17 measurable requirements covering evidence, content, accessibility, privacy and launch verification.
