@@ -56,7 +56,8 @@ export const PERSON_TRAILS=Object.freeze([
         "Genesis 15:1-6",
         "Romans 4:1-5",
         "James 2:21-24"
-      ]
+      ],
+      "research": []
     }
   },
   {
@@ -112,7 +113,8 @@ export const PERSON_TRAILS=Object.freeze([
         "Exodus 3:7-15",
         "Deuteronomy 6:4-9",
         "Numbers 27:12-23"
-      ]
+      ],
+      "research": []
     }
   },
   {
@@ -168,7 +170,8 @@ export const PERSON_TRAILS=Object.freeze([
         "2 Samuel 7:8-16",
         "Psalm 51:1-12",
         "1 Kings 2:1-4"
-      ]
+      ],
+      "research": []
     }
   },
   {
@@ -224,7 +227,8 @@ export const PERSON_TRAILS=Object.freeze([
         "1 Kings 3:4-15",
         "1 Kings 8:22-30",
         "1 Kings 11:1-13"
-      ]
+      ],
+      "research": []
     }
   },
   {
@@ -280,7 +284,8 @@ export const PERSON_TRAILS=Object.freeze([
         "2 Kings 18:13-19",
         "Isaiah 37:14-20",
         "2 Chronicles 32:24-26"
-      ]
+      ],
+      "research": []
     }
   },
   {
@@ -336,6 +341,14 @@ export const PERSON_TRAILS=Object.freeze([
         "Esther 3:8-15",
         "Esther 4:12-17",
         "Esther 9:20-28"
+      ],
+      "research": [
+        {
+          "title": "Esther, Book of - Encyclopaedia Iranica",
+          "author": "Shaul Shaked",
+          "url": "https://www.iranicaonline.org/articles/esther-book-of/",
+          "scope": "Source discusses Persian narrative setting, literary form and debate about historical status; it does not independently verify individual scenes."
+        }
       ]
     }
   },
@@ -392,7 +405,8 @@ export const PERSON_TRAILS=Object.freeze([
         "Acts 9:1-19",
         "Galatians 1:11-24",
         "Acts 15:36-41"
-      ]
+      ],
+      "research": []
     }
   },
   {
@@ -448,7 +462,8 @@ export const PERSON_TRAILS=Object.freeze([
         "Mark 1:14-15",
         "Luke 4:16-21",
         "John 20:24-31"
-      ]
+      ],
+      "research": []
     }
   },
   {
@@ -497,7 +512,8 @@ export const PERSON_TRAILS=Object.freeze([
         "Ruth 1:16-17",
         "Ruth 2:8-12",
         "Ruth 4:13-17"
-      ]
+      ],
+      "research": []
     }
   },
   {
@@ -546,7 +562,8 @@ export const PERSON_TRAILS=Object.freeze([
         "1 Samuel 1:9-18",
         "1 Samuel 2:1-10",
         "Luke 1:46-55"
-      ]
+      ],
+      "research": []
     }
   },
   {
@@ -595,7 +612,8 @@ export const PERSON_TRAILS=Object.freeze([
         "1 Samuel 8:4-22",
         "1 Samuel 12:13-25",
         "1 Samuel 16:1-13"
-      ]
+      ],
+      "research": []
     }
   },
   {
@@ -644,7 +662,8 @@ export const PERSON_TRAILS=Object.freeze([
         "1 Kings 18:20-40",
         "1 Kings 19:1-18",
         "2 Kings 2:6-14"
-      ]
+      ],
+      "research": []
     }
   },
   {
@@ -693,7 +712,8 @@ export const PERSON_TRAILS=Object.freeze([
         "2 Kings 4:1-7",
         "2 Kings 5:1-19",
         "2 Kings 6:8-23"
-      ]
+      ],
+      "research": []
     }
   },
   {
@@ -742,7 +762,8 @@ export const PERSON_TRAILS=Object.freeze([
         "Jeremiah 7:1-15",
         "Jeremiah 29:4-14",
         "Jeremiah 31:31-34"
-      ]
+      ],
+      "research": []
     }
   },
   {
@@ -791,6 +812,20 @@ export const PERSON_TRAILS=Object.freeze([
         "Daniel 1:8-21",
         "Daniel 6:16-23",
         "Daniel 7:9-14"
+      ],
+      "research": [
+        {
+          "title": "Book of Daniel - Oxford Research Encyclopedia of Religion",
+          "author": "Tawny Holm, 2019",
+          "url": "https://academic.oup.com/edited-volume/62249/chapter-abstract/551358644",
+          "scope": "Academic abstract distinguishes court tales, apocalyptic visions, setting and competing composition chronology; complete work is access-limited."
+        },
+        {
+          "title": "Daniel 3 and 6 - Yale Bible Study",
+          "author": "Yale Bible Study",
+          "url": "https://yalebiblestudy.org/courses/daniel/lessons/daniel-3-and-6-study-guide/",
+          "scope": "Study guide distinguishes Daniel's companions in the furnace narrative from Daniel in chapter 6."
+        }
       ]
     }
   },
@@ -840,7 +875,8 @@ export const PERSON_TRAILS=Object.freeze([
         "Nehemiah 2:11-20",
         "Nehemiah 5:1-13",
         "Nehemiah 8:1-12"
-      ]
+      ],
+      "research": []
     }
   },
   {
@@ -889,7 +925,8 @@ export const PERSON_TRAILS=Object.freeze([
         "Luke 1:26-38",
         "Luke 1:46-55",
         "John 19:25-27"
-      ]
+      ],
+      "research": []
     }
   },
   {
@@ -938,7 +975,8 @@ export const PERSON_TRAILS=Object.freeze([
         "Matthew 16:13-20",
         "Luke 22:54-62",
         "Acts 10:24-35"
-      ]
+      ],
+      "research": []
     }
   },
   {
@@ -987,7 +1025,8 @@ export const PERSON_TRAILS=Object.freeze([
         "Mark 1:1-8",
         "John 1:19-34",
         "Mark 6:17-29"
-      ]
+      ],
+      "research": []
     }
   },
   {
@@ -1036,7 +1075,8 @@ export const PERSON_TRAILS=Object.freeze([
         "Acts 4:32-37",
         "Acts 11:22-26",
         "Acts 15:36-41"
-      ]
+      ],
+      "research": []
     }
   }
 ]);
@@ -1054,6 +1094,7 @@ export function validatePersonTrails(counts,personIds,trails=PERSON_TRAILS){
   seen.add(trail.personId);
   if(!trail.study||!['overview','comparison','question','limits'].every(k=>typeof trail.study[k]==='string'&&trail.study[k].length>=65))throw Error('Missing contextual person study '+trail.personId);
   if(!Array.isArray(trail.study.furtherRefs)||trail.study.furtherRefs.length<2||trail.study.furtherRefs.length>6||new Set(trail.study.furtherRefs).size!==trail.study.furtherRefs.length||trail.study.furtherRefs.some(ref=>!validateCanonicalReference(ref,counts)))throw Error('Invalid extended Scripture references '+trail.personId);
+  if(!Array.isArray(trail.study.research)||trail.study.research.some(s=>!s.title||!s.author||!s.scope||!/^https:\/\//.test(s.url)))throw Error('Invalid person study research citation '+trail.personId);
   if(!trail.title||!trail.qualification||!trail.caution||!['Hebrew Bible','New Testament'].includes(trail.corpus)||!Object.hasOwn(TRAIL_REVIEW_LABELS,trail.review)||!Array.isArray(trail.stages)||trail.stages.length<3)throw Error('Incomplete person trail '+trail.personId);
   const refs=new Set();
   for(const s of trail.stages){const ref=validateCanonicalReference(s.ref,counts);if(!s.label||!s.note||!ref||ref.startVerse===null||ref.startChapter!==ref.endChapter||ref.endVerse-ref.startVerse>=30||!Object.hasOwn(TRAIL_SOURCE_LABELS,s.source)||!Object.hasOwn(TRAIL_REVIEW_LABELS,s.review)||refs.has(s.ref))throw Error('Invalid person trail source '+trail.personId);refs.add(s.ref);}
