@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.39.0 - 31/10/2026: Paul's first and second journeys: deeper Scripture study
+
+- Add original biblical reading context and relevant Scripture links to all 39 stages of Paul's first two missionary journeys.
+- Clarify the uncertain Berea-to-Athens route with a source-linked academic geographic assessment and preserve location cautions.
+- Keep the 44 later Pauline stages and remaining v1.0 editorial acceptance checks explicitly open.
+
 ## 0.38.0 - 31/10/2026: Biblical journey evidence and route clarity
 
 - Clarify the Bethsaida and Gennesaret crossing with a named academic source and directly linked Gospel passages.
