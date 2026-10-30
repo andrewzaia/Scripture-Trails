@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {validateBackup,mergeNotebook,persistNotebook,inspectNotebookStorage,replaceUnreadableNotebook} from '../public/assets/notebook-backup.js';
+import {validateBackup,mergeNotebook,persistNotebook,inspectNotebookStorage,replaceUnreadableNotebook,safeBrowserStorage} from '../public/assets/notebook-backup.js';
 const counts=JSON.parse(readFileSync(new URL('../public/data/verse-counts.json',import.meta.url)));
 const backup=()=>({format:'scripture-trails-notebook',schemaVersion:1,exportedAt:new Date().toISOString(),bookmarks:['John 1:1'],notes:{'John 1:1':'A personal observation'}});
 test('backup round trip preserves Unicode, newlines and passage references',()=>{const b=backup();b.notes['John 1:1']='Study: שלום\nSecond line';const result=validateBackup(JSON.parse(JSON.stringify(b)),counts);assert.equal(result.notes['John 1:1'],b.notes['John 1:1']);assert.deepEqual(result.bookmarks,b.bookmarks);});
@@ -49,4 +49,12 @@ test('failed recovery cannot erase damaged bytes on quota or cross-tab change',(
  assert.equal(stored,'{"bookmarks":');
  assert.throws(()=>replaceUnreadableNotebook({getItem:()=>{throw Error('SecurityError');}},replacement,raw),/unavailable/);
  assert.throws(()=>replaceUnreadableNotebook(guarded,replacement,null),/snapshot is required/);
+});
+
+test('denied or absent browser Storage property can be inspected without crashing',()=>{
+ for(const access of [()=>{throw Error('SecurityError');},()=>undefined,()=>({})]){
+  const storage=safeBrowserStorage(access);
+  assert.equal(inspectNotebookStorage(storage).kind,'unavailable');
+  assert.throws(()=>storage.setItem('scripture-trails:notebook','{}'),/denied/);
+ }
 });
