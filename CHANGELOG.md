@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.43.0 - 31/10/2026: Study journeys: shareable pathways and reliable navigation
+
+- Keep guided study journal choices in validated, reload-safe URLs, with browser Back and Forward returning to the same pathway.
+- Preserve the previous history entry when following a person trail and retain saved reading progress when moving between journeys and the reader.
+- Expand automated navigation checks across all six study journals, twenty person trails, 79 Gospel stages, 83 Pauline stages and historical city links.
+
 ## 0.42.0 - 31/10/2026: Gospel geography: candidate sites and evidence clarity
 
 - Compare competing archaeological identifications for Bethsaida, Emmaus, Magadan and Sychar, with a separate evidence-limits assessment of Gethsemane tradition.
