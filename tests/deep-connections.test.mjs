@@ -7,16 +7,16 @@ import {createPassageComparison} from '../public/assets/atlas-comparison.js';
 const read=path=>readFileSync(new URL('../'+path,import.meta.url),'utf8');
 const data=n=>JSON.parse(read('public/data/'+n));
 const counts=data('verse-counts.json'),history=data('biblical-history.json'),people=data('biblical-people.json'),extra=data('biblical-people-expanded.json');
-test('115 comparisons maintain distinct review status, full citations and nonduplicated pairs',()=>{
- assert.equal(CONNECTION_EVIDENCE.length,115);
+test('161 comparisons retain review status and nonduplicated pairs',()=>{
+ assert.equal(CONNECTION_EVIDENCE.length,161);
  assert.equal(validateConnectionEvidence(counts),true);
  assert.equal(CONNECTION_EVIDENCE.filter(x=>x.review==='scripture-context-screened').length,83);
- assert.equal(CONNECTION_EVIDENCE.filter(x=>x.review==='editorial-reading-aid').length,32);
+ assert.equal(CONNECTION_EVIDENCE.filter(x=>x.review==='editorial-reading-aid').length,78);
  assert.match(REVIEW_LABELS['scripture-context-screened'],/not external peer review/);
  assert.match(REVIEW_LABELS['editorial-reading-aid'],/pending/);
  assert.ok(CONNECTION_EVIDENCE.every(x=>x.explanation.length>20&&x.caution.length>15&&x.context&&x.basis));
  const keys=CONNECTION_EVIDENCE.map(x=>[x.from,x.to].sort().join('|'));
- assert.equal(new Set(keys).size,115);
+ assert.equal(new Set(keys).size,161);
 });
 test('cross-account parallels expose distinct readings, not archaeological proof or harmonised chronology',()=>{
  for(const [a,b,review='editorial-reading-aid'] of [
