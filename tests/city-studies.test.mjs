@@ -77,3 +77,51 @@ test('all five city photographs are local licensed assets with verified byte has
  assert.match(script,/photo\.onerror=\(\)=>\{photoIndex\+\+/);
  assert.match(script,/photo\.onload=\(\)=>/);
 });
+
+
+test('Each flagship city has substantial Scripture-first historical reading layers with traceable support',()=>{
+ const expected=['jerusalem','nazareth','capernaum','bethlehem','jericho'];
+ assert.deepEqual(cities.cities.map(c=>c.id),expected);
+ assert.equal(cities.cities.reduce((n,c)=>n+c.studyLayers.length,0),15);
+ for(const city of cities.cities){
+  assert.deepEqual(city.studyLayers.map(l=>l.kind),['biblical-reading','material-context','interpretive-question']);
+  for(const layer of city.studyLayers){
+   assert.ok(layer.body.split(/\s+/).length>=45,city.id+' '+layer.title);
+   assert.ok(layer.qualification.length>=65,city.id);
+   for(const ref of layer.passages)assert.ok(parseRef(passageStart(ref)),city.id+' '+ref);
+   for(const id of layer.sourceIds)assert.ok(cities.sources[id],city.id+' '+id);
+   assert.ok(!/verified the miracle|proof of (?:the )?birth|certainly belonged to/i.test(layer.body),city.id);
+  }
+  assert.ok(city.studyLayers.find(l=>l.kind==='material-context').sourceIds.length>=1);
+ }
+ assert.equal(cities.sources['nazareth-iaa'].kind,'Excavation report, 2020');
+ assert.match(cities.sources['nazareth-iaa'].publisher,/2020/);
+ const nz=cities.cities.find(c=>c.id==='nazareth');
+ assert.match(nz.studyLayers[1].body,/2020/);
+ const c=cities.cities.find(c=>c.id==='capernaum');
+ assert.match(c.studyLayers[1].qualification,/debated/);
+ const b=cities.cities.find(c=>c.id==='bethlehem');
+ assert.match(b.studyLayers[1].body,/339 CE/);
+ const j=cities.cities.find(c=>c.id==='jericho');
+ assert.match(j.studyLayers[1].body,/eighteen samples/);
+ assert.match(j.studyLayers[1].qualification,/tentative listing/);
+ const hist=cities.cities.find(c=>c.id==='jerusalem');
+ assert.match(hist.studyLayers[1].body,/103 radiocarbon dates/);
+});
+
+test('Layered historical studies fail closed for unsupported or missing material',()=>{
+ for(const mutate of [
+  d=>d.cities[0].studyLayers.pop(),
+  d=>d.cities[1].studyLayers[1].sourceIds.push('invented-report'),
+  d=>d.cities[2].studyLayers[1].passages=['Mark 1:999'],
+  d=>d.cities[3].studyLayers[0].body='Vague source links only.',
+  d=>d.cities[4].studyLayers[1].sourceIds=[]
+ ]){
+  const d=structuredClone(cities);mutate(d);assert.throws(()=>validateCityStudies(d));
+ }
+ const html=read('../public/index.html');
+ assert.match(html,/data-city="study-layers"/);
+ const ui=read('../public/assets/city-studies.js');
+ assert.match(ui,/city-study-layer-body/);
+ assert.match(ui,/document.createTextNode\(item.qualification\)/);
+});
