@@ -3,12 +3,22 @@ import {test,expect,open} from './fixtures.mjs';
 
 const views=['discover','reader','connections','jesus-map','paul-map','hebrew-geography','city-studies','entities','roadmap','journeys','notebook','about'];
 for(const view of views)test(`${view}: WCAG checks, both themes and no horizontal page overflow`,async({page},testInfo)=>{
+ // Firefox axe traverses a larger accessibility tree more slowly than Chromium.
+ // Preserve all WCAG assertions and give this full-page scan a bounded runtime.
+ if(testInfo.project.name==='desktop-firefox')test.setTimeout(120000);
  await open(page,view);
  // Wait for lazy data and fixture text, rather than auditing a loading placeholder.
  const ready={reader:'#passage-content[aria-busy="false"]',connections:'#atlas-preview-content[aria-busy="false"]','jesus-map':'[data-jesus="visits"] button','paul-map':'[data-paul="list"] button',roadmap:'[data-roadmap][data-ready="true"]','city-studies':'[data-city-studies][data-ready="true"]',entities:'[data-entity-index][data-ready="true"]','hebrew-geography':'[data-hebrew-geography][data-ready="true"]'};
  if(ready[view])await expect(page.locator(ready[view]).first()).toBeAttached();
  for(const theme of ['dark','light']){
   if(theme==='light')await page.locator('#theme-toggle').click();
+  if(view==='city-studies'){
+   // A 150ms background transition otherwise exposes intermediate low-contrast
+   // frames to fast engines immediately after the theme toggle. Audit the final
+   // stable state, not the transition, without excluding any axe rules.
+   const expected=theme==='light'?'rgb(246, 240, 229)':'rgb(24, 42, 52)';
+   await expect(page.locator('.city-tab').first()).toHaveCSS('background-color',expected);
+  }
   if(view==='about'){
    const path=testInfo.outputPath(`about-${theme}.png`);
    await page.screenshot({path});
