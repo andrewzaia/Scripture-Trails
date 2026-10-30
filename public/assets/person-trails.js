@@ -238,7 +238,7 @@ export const PERSON_TRAILS=Object.freeze([
     "stages": [
       {
         "label": "Accession and reforms",
-        "ref": "2 Kings 18:3",
+        "ref": "2 Kings 18:3-6",
         "note": "The narrative praises Hezekiah's religious reforms.",
         "source": "primary-scripture",
         "review": "editorial-reading-aid"
