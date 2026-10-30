@@ -14,6 +14,13 @@ export function validateCityStudies(data){
  for(const city of data.cities){
   if(cityIds.has(city.id)||!city.name||!city.lead||!city.status||city.timeline?.length<4||city.findings?.length<4||city.biblical?.length<5||city.mapPoints?.length<2)throw Error('Incomplete city study '+city.id);cityIds.add(city.id);
   if(!Array.isArray(city.location)||city.location.length!==2||!city.location.every(Number.isFinite))throw Error('Invalid city coordinates '+city.id);
+  if(!Array.isArray(city.studyLayers)||city.studyLayers.length!==3||new Set(city.studyLayers.map(x=>x.kind)).size!==3)throw Error('Missing layered historical reading '+city.id);
+  for(const layer of city.studyLayers){
+   if(!['biblical-reading','material-context','interpretive-question'].includes(layer.kind)||!layer.title||typeof layer.body!=='string'||layer.body.length<300||!layer.qualification||layer.qualification.length<65||!Array.isArray(layer.passages)||layer.passages.length<1||!Array.isArray(layer.sourceIds))throw Error('Incomplete historical study essay '+city.id);
+   for(const ref of layer.passages)parse(ref,city.id);
+   for(const id of layer.sourceIds)if(!data.sources[id])throw Error('Unknown historical study citation '+id);
+   if(layer.kind==='material-context'&&!layer.sourceIds.length)throw Error('Unsourced archaeological essay '+city.id);
+  }
   for(const ref of city.biblical)parse(ref.ref,city.id);
   for(const era of city.timeline){if(!era.dates||!era.description||!['historical-context','biblical-and-historical','biblical-narrative','archaeology-versus-narrative'].includes(era.classification))throw Error('Invalid timeline '+city.id);for(const ref of era.passages)parse(ref,city.id);for(const source of era.sourceIds)if(!data.sources[source])throw Error('Missing source '+source);}
   for(const finding of city.findings){if(!finding.limitation||!finding.claim||!kindNames[finding.kind])throw Error('Unsourced finding '+city.id);for(const ref of finding.passages)parse(ref,city.id);for(const source of finding.sourceIds)if(!data.sources[source])throw Error('Missing finding source '+source);if(!finding.sourceIds.length&&!finding.passages.length)throw Error('Finding without evidence '+city.id);}
@@ -76,6 +83,15 @@ export function createCityStudies(root,{onRead,onAtlas,onJourney}={}){
   photo.onerror=()=>{photoIndex++;if(photoIndex<candidates.length)photo.src=candidates[photoIndex];else fallbackIllustration();};
   if(candidates.length)photo.src=candidates[0];else fallbackIllustration();
   const n=city.biblical.length; $('bible-total').textContent=String(n);$('finding-total').textContent=String(city.findings.length);$('era-total').textContent=String(city.timeline.length);
+  const studies=$('study-layers');studies.replaceChildren();
+  for(const item of city.studyLayers){
+   const article=make('article','city-study-layer');const label=make('p','city-study-layer-label',item.kind==='biblical-reading'?'Scripture narrative':item.kind==='material-context'?'Material historical setting':'Interpretation and open questions');
+   article.append(label,make('h3','',item.title),make('p','city-study-layer-body',item.body));
+   const refs=make('div','city-study-layer-refs');for(const ref of item.passages)refs.append(linked(ref,ref,onRead));article.append(refs);
+   const limit=make('p','city-study-layer-limit');limit.append(make('strong','','Evidence boundary: '),document.createTextNode(item.qualification));article.append(limit);
+   if(item.sourceIds.length){const ul=make('ul','city-mini-sources');sourceList(item.sourceIds,ul);article.append(ul);}
+   studies.append(article);
+  }
   const verses=$('bible-refs');verses.replaceChildren();for(const item of city.biblical){const row=make('div','city-bible-row');row.append(linked(item.ref,item.ref,onRead),make('p','',item.note),tag(item.kind==='old-testament'?'old-testament':'new-testament'));verses.append(row);}
   const eras=$('periods');eras.replaceChildren();for(const item of city.timeline){const wrap=make('article','city-era');const left=make('div','city-era-marker');left.append(make('small','',item.dates),make('h3','',item.period));const right=make('div','city-era-body');right.append(tag(item.classification),make('p','',item.description));const refs=make('div','city-era-refs');for(const ref of item.passages)refs.append(linked(ref,ref,onRead));right.append(refs);if(item.sourceIds.length){const ul=make('ul','city-mini-sources');sourceList(item.sourceIds,ul);right.append(ul);}wrap.append(left,right);eras.append(wrap);}
   const finds=$('findings');finds.replaceChildren();for(const item of city.findings){const wrap=make('article','city-finding');wrap.append(tag(item.kind),make('h3','',item.title),make('p','',item.claim));const limit=make('div','city-limitation');limit.append(make('strong','','Evidence limit'),make('p','',item.limitation));wrap.append(limit);if(item.passages.length){const refs=make('div','city-find-refs');for(const ref of item.passages)refs.append(linked(ref,ref,onRead));wrap.append(refs);}if(item.sourceIds.length){const ul=make('ul','city-mini-sources');sourceList(item.sourceIds,ul);wrap.append(ul);}finds.append(wrap);}
