@@ -6,16 +6,19 @@ import {EDITORIAL_LINKS} from '../public/assets/studies.js';
 const read=n=>readFileSync(new URL('../'+n,import.meta.url),'utf8');
 const json=n=>JSON.parse(read('public/data/'+n));
 const counts=json('verse-counts.json'),history=json('biblical-history.json'),expanded=json('biblical-people-expanded.json');
-test('115 editorial passage comparisons are explicit, source-cited and uniquely addressed',()=>{
- assert.equal(CONNECTION_EVIDENCE.length,115);
+test('161 editorial passage comparisons are explicit, appropriately qualified and uniquely addressed',()=>{
+ assert.equal(CONNECTION_EVIDENCE.length,161);
  assert.equal(validateConnectionEvidence(counts),true);
  assert.deepEqual(new Set(CONNECTION_EVIDENCE.map(e=>e.kind)),new Set(['quotation','parallel','echo','typology','theme']));
  assert.equal(Object.keys(CONNECTION_KINDS).length,5);
  const keys=new Set(CONNECTION_EVIDENCE.map(e=>[e.from,e.to].sort().join('|')));
  assert.equal(keys.size,CONNECTION_EVIDENCE.length);
  assert.equal(CONNECTION_EVIDENCE.filter(e=>e.review==='scripture-context-screened').length,83);
- assert.equal(CONNECTION_EVIDENCE.filter(e=>e.review==='editorial-reading-aid').length,32);
+ assert.equal(CONNECTION_EVIDENCE.filter(e=>e.review==='editorial-reading-aid').length,78);
  assert.ok(CONNECTION_EVIDENCE.every(e=>/pending/i.test(e.basis)));
+ assert.ok(CONNECTION_EVIDENCE.filter(e=>Number(e.id.slice(2))>=116).every(e=>e.review==='editorial-reading-aid'&&/separate dated secondary-source assessment has not been completed/.test(e.basis)));
+ assert.match(explainConnection('Genesis 3:15','Romans 16:20').explanation,/serpent/);
+ assert.match(explainConnection('Genesis 12:3','Galatians 3:8').explanation,/Abraham/);
 });
 test('quotation, parallel, echo and typology are bounded by explicit Scripture pairs',()=>{
  for(const [from,to,kind] of [
