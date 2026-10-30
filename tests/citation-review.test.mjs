@@ -51,7 +51,7 @@ test('claim panels and About register show scope, external links and retained wa
  renderCitationSummary(root);const first=nodes(root).length;renderCitationSummary(root);assert.equal(nodes(root).length,first);
  assert.equal(nodes(root).filter(e=>e.tagName==='article').length,164);
  assert.ok(nodes(root).some(e=>e.download?.endsWith('.json')));
- assert.ok(nodes(root).some(e=>e.textContent.includes('All 115 previously assessed pairs have dated editorial assessments')));
+ assert.ok(nodes(root).some(e=>e.textContent.includes('The original 115 explained pairs retain their earlier dated assessments')));
 });
 test('review register is reachable from About, Gospel, profiles, Atlas and comparison panel',()=>{
  for(const path of ['app.js','jesus-map.js','entity-index.js','atlas-comparison.js'])assert.match(read('public/assets/'+path),/appendCitationReview/);
