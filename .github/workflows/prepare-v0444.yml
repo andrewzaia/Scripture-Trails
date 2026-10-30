@@ -1,0 +1,42 @@
+name: Prepare v0.44.4 content patch
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: write
+
+jobs:
+  prepare:
+    if: ${{ github.event.pull_request.head.repo.full_name == github.repository && github.head_ref == 'work/v1-people-trail-citations-0444' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - name: Generate versioned patch release and validate source
+        run: |
+          set -eu
+          CURRENT_VERSION="$(node -p 'require("./package.json").version')"
+          if [ "$CURRENT_VERSION" != "0.44.3" ]; then
+            echo "Expected release baseline 0.44.3; found $CURRENT_VERSION. Stop."
+            exit 1
+          fi
+          npm run release -- patch "More precise Scripture passages in people trails" "Expand six study references for Abraham, Moses, David and Hezekiah to include the verses that support their full stage descriptions." "Preserve the existing study notes, reading pathways and editorial qualifications."
+          npm run build
+      - name: Remove one-time release preparation and commit result
+        run: |
+          set -eu
+          git rm .github/workflows/prepare-v0444.yml
+          git add -A
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore(release): prepare v0.44.4 people-trail citation patch"
+          git push origin HEAD:work/v1-people-trail-citations-0444
