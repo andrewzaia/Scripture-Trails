@@ -17,7 +17,7 @@ for(const view of views)test(`${view}: WCAG checks, both themes and no horizonta
    // frames to fast engines immediately after the theme toggle. Audit the final
    // stable state, not the transition, without excluding any axe rules.
    const expected=theme==='light'?'rgb(246, 240, 229)':'rgb(24, 42, 52)';
-   await expect(page.locator('.city-tab').first()).toHaveCSS('background-color',expected);
+   await expect(page.locator('.city-tab:not(.selected)').first()).toHaveCSS('background-color',expected);
   }
   if(view==='about'){
    const path=testInfo.outputPath(`about-${theme}.png`);
