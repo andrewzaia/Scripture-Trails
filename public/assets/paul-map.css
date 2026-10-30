@@ -23,3 +23,9 @@
 .paul-sources{margin-top:15px;padding-top:10px;border-top:1px solid var(--line)}
 @media(max-width:900px){.paul-map-page .paul-map-svg{height:500px}.paul-map-page .jesus-map-side{max-height:none;grid-row:3}.paul-map-page .jesus-map-grid{grid-template-columns:minmax(0,1fr)}.paul-map-page .jesus-map-grid>div{display:contents}.paul-map-page .paul-stage-list-panel{grid-row:4}}
 @media(max-width:600px){.paul-map-page .paul-map-svg{height:400px}.paul-stage-list-panel{padding:18px}.paul-map-page .paul-route-toggle{flex-basis:100%}}
+
+.paul-stage-study{border-left:3px solid var(--gold);border-radius:2px;margin:19px 0;padding:2px 0 7px 15px;background:var(--surface2)}
+.paul-stage-study[hidden]{display:none}
+.paul-stage-study p[data-paul=study-context]{font-size:13px;line-height:1.7;margin:0 14px 10px 0;color:var(--ink)}
+.paul-stage-study .jesus-map-subheading{margin-top:12px}
+.paul-stage-study .paul-study-limit{font-size:11px;line-height:1.6;color:var(--muted);margin:12px 12px 0 0}
