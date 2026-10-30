@@ -70,5 +70,5 @@ test('all twenty person trails have distinct indexed identities and usable passa
  }
  await page.locator('[data-entity="detail"] .entity-trail-further-row').first().getByRole('button',{name:'Read'}).click();
  await expect(page.locator('#view-reader')).toBeVisible();
- await expect(page.locator('#reader-title')).toHaveText(PERSON_TRAILS.at(-1).study.furtherRefs[0].split('-')[0]);
+ await expect(page.locator('#reader-title')).toHaveText(PERSON_TRAILS.at(-1).study.furtherRefs[0]);
 });
