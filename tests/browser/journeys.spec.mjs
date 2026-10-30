@@ -79,8 +79,8 @@ test('map alternatives navigate Gospel stops and an unpinned Pauline stage',asyn
 test('v1.0 roadmap shows honest scoped progress and accessible launch acceptance criteria',async({page})=>{
  await open(page,'roadmap');
  await expect(page.locator('[data-roadmap=""]')).toHaveAttribute('data-ready','true');
- await expect(page.locator('[data-roadmap="v1-summary"]')).toContainText('7 of 17 criteria met');
- await expect(page.locator('[data-roadmap="v1-summary"]')).toContainText('10 criteria remain open');
+ await expect(page.locator('[data-roadmap="v1-summary"]')).toContainText('8 of 17 criteria met');
+ await expect(page.locator('[data-roadmap="v1-summary"]')).toContainText('9 criteria remain open');
  await expect(page.locator('.v1-gate')).toHaveCount(5);
  await page.locator('.v1-stages > summary').click();
  await expect(page.locator('[data-roadmap="v1-stages"] > li')).toHaveCount(5);
