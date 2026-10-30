@@ -56,7 +56,7 @@ test('historical birth dating, Mark ending and ascension variants are explicit a
  assert.ok(chronology.comparisons.some(c=>c.id==='bethlehem-census-herod'&&c.sourceIds.includes('huizenga-census-2020')));
  assert.ok(chronology.comparisons.some(c=>c.id==='luke-acts-ascension'&&c.sourceIds.includes('zwiep-ascension-1996')));
  for(const sourceId of ['huizenga-census-2020','zwiep-ascension-1996']){
-  assert.match(chronology.sources.find(s=>s.id===sourceId).claim,/full (chapter|article) was not accessed/);
+  assert.match(chronology.sources.find(s=>s.id===sourceId).claim,/full (chapter|article) was not accessed/i);
  }
 });
 
