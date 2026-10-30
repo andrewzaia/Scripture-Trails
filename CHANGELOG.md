@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.44.4 - 31/10/2026: More precise Scripture passages in people trails
+
+- Expand six study references for Abraham, Moses, David and Hezekiah to include the verses that support their full stage descriptions.
+- Preserve the existing study notes, reading pathways and editorial qualifications.
+
 ## 0.44.3 - 31/10/2026: Cross-browser accessibility verification
 
 - Expand automated regression testing to Chromium, Firefox and WebKit across desktop and mobile device profiles.
