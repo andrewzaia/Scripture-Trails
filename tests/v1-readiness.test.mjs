@@ -22,8 +22,8 @@ test('Atlas review deficit is displayed as pending rather than mistaken for comp
  const records=review.records.filter(x=>x.kind==='connection');
  const reviewed=new Set(records.map(x=>x.target));
  assert.equal(CONNECTION_EVIDENCE.length,161);
- assert.equal(records.length,115);
- assert.equal(CONNECTION_EVIDENCE.filter(e=>!reviewed.has(e.id)).length,46);
+ assert.equal(records.length,127);
+ assert.equal(CONNECTION_EVIDENCE.filter(e=>!reviewed.has(e.id)).length,34);
  const evidence=roadmap.v1Readiness.gates.find(g=>g.id==='evidence');
  assert.equal(evidence.criteria.find(c=>c.id==='atlas-context').status,'met');
  assert.equal(evidence.criteria.find(c=>c.id==='atlas-reviews').status,'open');
