@@ -14,7 +14,7 @@ test('v1.0 roadmap declares five launch gates with honest current baseline',()=>
  assert.equal(roadmap.v1Readiness.target,'1.0.0');
  assert.equal(roadmap.v1Readiness.gates.length,5);
  assert.equal(roadmap.v1Readiness.stages.length,5);
- assert.deepEqual(v1ReadinessCounts(roadmap.v1Readiness),{met:4,open:13,total:17,ready:false});
+ assert.deepEqual(v1ReadinessCounts(roadmap.v1Readiness),{met:5,open:12,total:17,ready:false});
  assert.equal(roadmap.milestones.find(m=>m.id==='v1-evidence-closeout')?.status,'next');
 });
 
@@ -22,11 +22,11 @@ test('Atlas review deficit is displayed as pending rather than mistaken for comp
  const records=review.records.filter(x=>x.kind==='connection');
  const reviewed=new Set(records.map(x=>x.target));
  assert.equal(CONNECTION_EVIDENCE.length,161);
- assert.equal(records.length,127);
- assert.equal(CONNECTION_EVIDENCE.filter(e=>!reviewed.has(e.id)).length,34);
+ assert.equal(records.length,161);
+ assert.equal(CONNECTION_EVIDENCE.filter(e=>!reviewed.has(e.id)).length,0);
  const evidence=roadmap.v1Readiness.gates.find(g=>g.id==='evidence');
  assert.equal(evidence.criteria.find(c=>c.id==='atlas-context').status,'met');
- assert.equal(evidence.criteria.find(c=>c.id==='atlas-reviews').status,'open');
+ assert.equal(evidence.criteria.find(c=>c.id==='atlas-reviews').status,'met');
  assert.equal(evidence.criteria.find(c=>c.id==='critical-claims').status,'open');
 });
 
@@ -36,7 +36,7 @@ test('missing release gates, unsupported status and unverified manual signoff ar
   d=>d.gates[0].criteria[0].status='guessed',
   d=>d.gates[0].criteria[0].evidence='',
   d=>d.gates[0].criteria[0].id=d.gates[1].criteria[0].id,
-  d=>d.gates[0].criteria[1].status='met'
+  d=>d.gates[0].criteria[2].status='met'
  ]){
   const d=structuredClone(roadmap.v1Readiness);
   mutate(d);assert.throws(()=>validateV1Readiness(d));
