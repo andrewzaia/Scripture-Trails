@@ -36,3 +36,10 @@ body.light .jesus-map-filters select{color:#273740;background:#f3ede1}body.light
 /* Selectable canonical narrative order and evidence-linked literary comparisons. */
 .jesus-account-notice{margin:0 0 13px;padding:9px 14px;border:1px solid var(--line);border-radius:4px;color:var(--muted);font-size:11px;line-height:1.65;background:var(--surface2)}
 .jesus-chronology-comparisons{display:grid;gap:10px}.jesus-chronology-case{border:1px solid var(--line);border-radius:5px;padding:13px;background:var(--surface2)}.jesus-chronology-case h4{color:var(--ink);font:700 14px/1.35 var(--sans);margin:0 0 4px}.jesus-chronology-case small{color:var(--gold)}.jesus-chronology-case p{margin:7px 0}.jesus-chronology-related{display:flex;flex-wrap:wrap;gap:7px;margin:10px 0}.jesus-chronology-sources{display:grid;gap:6px;margin-top:10px}.jesus-chronology-sources a{font-size:10px;line-height:1.5;color:var(--gold);overflow-wrap:anywhere}
+
+/* Original narrative reading context for every Gospel journey event. */
+.jesus-episode-study{background:var(--surface2);border-left:3px solid var(--gold);margin:19px 0;padding:3px 0 10px 15px;border-radius:2px}
+.jesus-episode-study>[data-jesus=episode-study-context]{font-size:13px;line-height:1.75;color:var(--ink);margin:0 14px 12px 0}
+.jesus-episode-study .jesus-map-subheading{margin-top:14px}
+.jesus-episode-study .jesus-passage-row{flex-wrap:wrap}
+.jesus-episode-study .jesus-episode-study-limit{font-size:11px;line-height:1.6;margin:12px 12px 0 0}
