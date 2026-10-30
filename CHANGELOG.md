@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.44.2 - 31/10/2026: Bible publisher permissions and source-rights transparency
+
+- Expand the About attribution section with direct publisher terms and clear statements distinguishing functioning translation APIs from independent licence approval.
+- Review ESV, NASB20, NIV and NKJV conditions, including NIV eligibility and NKJV audience limits, and record source-linked rights questions that still require verified publisher agreements.
+- Audit local OpenBible cross-reference provenance and credits for five hosted historical-city photographs with a repeatable source-rights evidence register.
+- Add direct publisher attribution links to both Atlas comparison columns and clarify Scripture Trails' non-commercial academic purpose.
+
 ## 0.44.1 - 31/10/2026: Security and privacy: safer Scripture access
 
 - Remove executable API.Bible usage-tracker scripts, replacing them with the documented privacy-conscious FUMS v3 GET while preserving required publisher usage reporting.
