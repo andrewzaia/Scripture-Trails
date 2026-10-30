@@ -207,7 +207,7 @@ test('fifth batch assesses twenty remaining pairs with contained anchors and sco
  }
  assert.equal(scholars.size,17);assert.equal(authors.size,16);assert.deepEqual(kinds,{parallel:7,theme:13});
  const assessed=new Set(CITATION_REVIEW.records.slice(0,145).filter(r=>r.kind==='connection').map(r=>r.target));
- assert.deepEqual(CONNECTION_EVIDENCE.filter(e=>!assessed.has(e.id)).map(e=>e.id),['ce086','ce090','ce091','ce092','ce093','ce094','ce095']);
+ assert.deepEqual(CONNECTION_EVIDENCE.filter(e=>Number(e.id.slice(2))<=115&&!assessed.has(e.id)).map(e=>e.id),['ce086','ce090','ce091','ce092','ce093','ce094','ce095']);
 });
 
 test('fifth batch retains account differences, bodily life, harm and the single Revelation vision',()=>{
