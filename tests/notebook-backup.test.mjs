@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {validateBackup,mergeNotebook,persistNotebook} from '../public/assets/notebook-backup.js';
+import {validateBackup,mergeNotebook,persistNotebook,inspectNotebookStorage,replaceUnreadableNotebook} from '../public/assets/notebook-backup.js';
 const counts=JSON.parse(readFileSync(new URL('../public/data/verse-counts.json',import.meta.url)));
 const backup=()=>({format:'scripture-trails-notebook',schemaVersion:1,exportedAt:new Date().toISOString(),bookmarks:['John 1:1'],notes:{'John 1:1':'A personal observation'}});
 test('backup round trip preserves Unicode, newlines and passage references',()=>{const b=backup();b.notes['John 1:1']='Study: שלום\nSecond line';const result=validateBackup(JSON.parse(JSON.stringify(b)),counts);assert.equal(result.notes['John 1:1'],b.notes['John 1:1']);assert.deepEqual(result.bookmarks,b.bookmarks);});
@@ -9,3 +9,44 @@ test('unsupported schemas, extra data, invalid references and dangerous object k
 test('merge preserves existing notes and duplicates unless a specific replacement is chosen',()=>{const current={bookmarks:['John 1:1'],notes:{'John 1:1':'Existing'}},incoming=validateBackup(backup(),counts);let plan=mergeNotebook(current,incoming);assert.equal(plan.conflicts.length,1);assert.equal(plan.merged.notes['John 1:1'],'Existing');assert.equal(plan.duplicateBookmarks,1);plan=mergeNotebook(current,incoming,new Set(['John 1:1']));assert.equal(plan.merged.notes['John 1:1'],'A personal observation');assert.equal(current.notes['John 1:1'],'Existing');assert.equal(mergeNotebook(incoming,incoming).duplicates.length,1);});
 test('single storage write preserves legacy data when quota fails and refuses stale imports',()=>{const current={bookmarks:['John 1:1'],notes:{'John 1:1':'Existing'}},values=new Map([['scripture-trails:bookmarks',JSON.stringify(current.bookmarks)],['scripture-trails:notes',JSON.stringify(current.notes)]]);let writes=0;const storage={getItem:k=>values.get(k)||null,setItem:(k,v)=>{writes++;throw Error('Quota');}};assert.throws(()=>persistNotebook(storage,{bookmarks:[],notes:{}},current),/Quota/);assert.equal(writes,1);assert.equal(values.has('scripture-trails:notebook'),false);assert.throws(()=>persistNotebook(storage,{bookmarks:[],notes:{}},{bookmarks:[],notes:{}}),/another tab/);assert.equal(writes,1);storage.setItem=(k,v)=>values.set(k,v);persistNotebook(storage,current,current);assert.deepEqual(JSON.parse(values.get('scripture-trails:notebook')),current);});
 test('entry and merged payload limits reject imports without mutating the notebook',()=>{const b=backup();b.notes['John 1:1']='x'.repeat(50001);assert.throws(()=>validateBackup(b,counts));const current={bookmarks:Array.from({length:300},(_,i)=>'ref'+i),notes:{}};assert.throws(()=>mergeNotebook(current,{bookmarks:['John 1:1'],notes:{}}),/300/);assert.equal(current.bookmarks.length,300);});
+
+test('unreadable notebook snapshots are detected without mutation',()=>{
+ for(const raw of ['{ malformed','null','[]','{}',JSON.stringify({bookmarks:{},notes:{}})]){
+  const values=new Map([['scripture-trails:notebook',raw]]);
+  const storage={getItem:k=>values.get(k)??null,setItem:()=>assert.fail('Inspection must not mutate storage')};
+  const issue=inspectNotebookStorage(storage);
+  assert.deepEqual(issue,{kind:'corrupt',raw});
+  assert.equal(values.get('scripture-trails:notebook'),raw);
+ }
+ const ready={getItem:()=>null};
+ assert.equal(inspectNotebookStorage(ready).kind,'ready');
+ const inaccessible={getItem:()=>{throw Error('SecurityError');}};
+ assert.equal(inspectNotebookStorage(inaccessible).kind,'unavailable');
+ const normal=JSON.stringify({bookmarks:[],notes:{},readingPlans:{},annotations:{notes:[],highlights:{}},collections:[]});
+ assert.equal(inspectNotebookStorage({getItem:()=>normal}).kind,'ready');
+});
+test('explicit recovery atomically replaces only the exact corrupted snapshot',()=>{
+ const broken='{"notes":{"John 1:1":"unfinished';
+ let raw=broken,writes=0;
+ const storage={getItem:()=>raw,setItem:(key,value)=>{writes++;assert.equal(key,'scripture-trails:notebook');raw=value;}};
+ const recovered={bookmarks:['John 1:1'],notes:{'John 1:1':'Restored synthetic note'},readingPlans:{},annotations:{notes:[],highlights:{}},collections:[]};
+ assert.throws(()=>replaceUnreadableNotebook(storage,recovered,'other damaged bytes'),/changed in another tab/);
+ assert.equal(raw,broken);assert.equal(writes,0);
+ replaceUnreadableNotebook(storage,recovered,broken);
+ assert.deepEqual(JSON.parse(raw),recovered);assert.equal(writes,1);
+ assert.throws(()=>replaceUnreadableNotebook(storage,{bookmarks:[],notes:{}},raw),/readable/);
+ assert.equal(writes,1);
+});
+test('failed recovery cannot erase damaged bytes on quota or cross-tab change',()=>{
+ const raw='not valid json',replacement={bookmarks:[],notes:{}};
+ let stored=raw;
+ const quota={getItem:()=>stored,setItem:()=>{throw Error('QuotaExceededError');}};
+ assert.throws(()=>replaceUnreadableNotebook(quota,replacement,raw),/QuotaExceeded/);
+ assert.equal(stored,raw);
+ stored='{"bookmarks":';
+ const guarded={getItem:()=>stored,setItem:()=>assert.fail('Stale recovery must not write')};
+ assert.throws(()=>replaceUnreadableNotebook(guarded,replacement,raw),/changed in another tab/);
+ assert.equal(stored,'{"bookmarks":');
+ assert.throws(()=>replaceUnreadableNotebook({getItem:()=>{throw Error('SecurityError');}},replacement,raw),/unavailable/);
+ assert.throws(()=>replaceUnreadableNotebook(guarded,replacement,null),/snapshot is required/);
+});
