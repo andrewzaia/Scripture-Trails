@@ -330,3 +330,6 @@ body.light .analytics-consent{background:#fffdf8;color:#243b42;box-shadow:0 10px
 .notebook-recovery-warning .notebook-recovery-confirm{display:block;margin:12px 0 0;line-height:1.7}
 .notebook-recovery-confirm input{margin-right:7px;vertical-align:middle}
 @media(max-width:760px){.notebook-storage-warning .small-action{display:block;margin:10px 0 0}}
+
+/* Keep unavailable recovery controls hidden even when button classes set display. */
+.notebook-recovery-warning [hidden]{display:none}
