@@ -7,7 +7,7 @@
     "issues": 18,
     "places": 15,
     "trailReadings": 4,
-    "connections": 144
+    "connections": 161
   },
   "deferred": [
     "All six previously unlinked named-place assessments now include external research. Bibliographic gaps in this declared batch are addressed at the stated scope; exact identifications, comparative excavation review, textual variants and abstract-only access remain unresolved. Regional placeholders were not upgraded.",
@@ -15,7 +15,8 @@
     "Other person-trail access gaps, full excavation reports, manuscript apparatuses, wider source coverage and independent specialist review remain open.",
     "The full OpenBible corpus remains unclassified.",
     "Of the 46 explanations introduced in v0.32.0, twelve now have dated Scripture-context and named-commentary assessments in v1-citations-12-01; 34 remain pending. Access restrictions and commentary scope are recorded; no external peer review is implied.",
-    "Of the original 46 v0.32.0 reading aids, 29 now have dated scoped assessments and fifteen remain. No unreviewed pair is represented as peer reviewed; new publisher chapter references may be access-limited."
+    "All 46 v0.32.0 newer Atlas explanations now have dated scoped source assessments, subject to access, original-language and interpretive limitations. This is not independent specialist approval.",
+    "All 161 explained Atlas pairs are covered by dated editorial source assessments. This is not equivalent to assessing the 301,553 distinct Atlas pairs, verifying each historical event independently or obtaining external academic peer review."
   ],
   "sources": {
     "luke2": {
@@ -3732,6 +3733,396 @@
       "url": "https://bible.usccb.org/bible/mark/11",
       "checkedOn": "2026-10-31",
       "access": "Publisher chapter link supplied for direct biblical-context reading. Automated access varies by page, and source content is not reproduced or represented as independent manuscript verification.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-genesis": {
+      "title": "Genesis - commentary",
+      "author": "T. Desmond Alexander",
+      "publisher": "The Gospel Coalition - TGC Bible Commentary",
+      "kind": "scholarly-commentary",
+      "url": "https://www.thegospelcoalition.org/commentary/genesis/",
+      "checkedOn": "2026-10-31",
+      "access": "Public commentary section accessed on 2026-10-31. Readable Genesis 22:1-19 discussion explicitly compares Hebrews 11:19, preserving the original narrative and Isaac's uncertain age. Does not represent independent scholarly signoff.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-luke": {
+      "title": "Luke - commentary",
+      "author": "Peter G. Bolt",
+      "publisher": "The Gospel Coalition - TGC Bible Commentary",
+      "kind": "scholarly-commentary",
+      "url": "https://www.thegospelcoalition.org/commentary/luke/",
+      "checkedOn": "2026-10-31",
+      "access": "Public commentary section accessed on 2026-10-31. Luke 22:35-38 identifies Isaiah 53:12 as Jesus' explicit citation; the sword exchange requires textual care. Does not represent independent scholarly signoff.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-acts": {
+      "title": "Acts - commentary",
+      "author": "Alan J. Thompson",
+      "publisher": "The Gospel Coalition - TGC Bible Commentary",
+      "kind": "scholarly-commentary",
+      "url": "https://www.thegospelcoalition.org/commentary/acts/",
+      "checkedOn": "2026-10-31",
+      "access": "Public commentary section accessed on 2026-10-31. Acts 15 traces James's scriptural reasoning about Gentile inclusion; wording and textual tradition differences must be assessed separately. Does not represent independent scholarly signoff.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-hosea": {
+      "title": "Hosea - commentary",
+      "author": "Eric J. Tully",
+      "publisher": "The Gospel Coalition - TGC Bible Commentary",
+      "kind": "scholarly-commentary",
+      "url": "https://www.thegospelcoalition.org/commentary/hosea/",
+      "checkedOn": "2026-10-31",
+      "access": "Public commentary section accessed on 2026-10-31. Hosea 11:1-11 looks backward to Israel's exodus and ahead to restoration; does not originally predict a baby's future trip to Egypt. Does not represent independent scholarly signoff.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-amos": {
+      "title": "Amos - commentary",
+      "author": "Andrew E. Hill",
+      "publisher": "The Gospel Coalition - TGC Bible Commentary",
+      "kind": "scholarly-commentary",
+      "url": "https://www.thegospelcoalition.org/commentary/amos/",
+      "checkedOn": "2026-10-31",
+      "access": "Public commentary section accessed on 2026-10-31. Amos 9:11-15 describes restoring David's shelter; notes James's quotation at Acts 15 and a later interpretation. Does not represent independent scholarly signoff.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-malachi": {
+      "title": "Malachi - commentary",
+      "author": "Matthew P. Harmon",
+      "publisher": "The Gospel Coalition - TGC Bible Commentary",
+      "kind": "scholarly-commentary",
+      "url": "https://www.thegospelcoalition.org/commentary/malachi/",
+      "checkedOn": "2026-10-31",
+      "access": "Public commentary section accessed on 2026-10-31. Malachi 3:1 discusses the messenger in the context of divine arrival, judgment and purification; explicitly identifies Gospel application to John the Baptist. Does not represent independent scholarly signoff.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-joel": {
+      "title": "Joel - commentary",
+      "author": "Irv A. Busenitz",
+      "publisher": "The Gospel Coalition - TGC Bible Commentary",
+      "kind": "scholarly-commentary",
+      "url": "https://www.thegospelcoalition.org/commentary/joel/",
+      "checkedOn": "2026-10-31",
+      "access": "Public commentary section accessed on 2026-10-31. Joel 2:28-32 includes original Zion/judgment context and identifies Paul's broader use of 2:32 at Romans 10:13. Does not represent independent scholarly signoff.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-daniel": {
+      "title": "Daniel - commentary",
+      "author": "Mitchell L. Chase",
+      "publisher": "The Gospel Coalition - TGC Bible Commentary",
+      "kind": "scholarly-commentary",
+      "url": "https://www.thegospelcoalition.org/commentary/Daniel/",
+      "checkedOn": "2026-10-31",
+      "access": "Public commentary section accessed on 2026-10-31. Daniel 7:13-14 discusses a humanlike figure receiving a kingdom and later Jesus traditions; Christian identification is attributed interpretation. Does not represent independent scholarly signoff.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-exodus-essay": {
+      "title": "Exodus from Egypt: A Biblical Theology",
+      "author": "L. Michael Morales",
+      "publisher": "The Gospel Coalition",
+      "kind": "scholarly-commentary",
+      "url": "https://www.thegospelcoalition.org/essay/a-biblical-theology-of-israels-exodus-out-of-egypt/",
+      "checkedOn": "2026-10-31",
+      "access": "Public article/commentary checked on 2026-10-31. The Gospel of John and the New Exodus: explicitly connects John 19:36 with Exodus 12:46 and Psalm 34:20, without declaring one exclusively proven source. Confessional interpretation with limited external review.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-psalm-commentary": {
+      "title": "Psalms 1-41 - commentary",
+      "author": "Bruce K. Waltke",
+      "publisher": "The Gospel Coalition - TGC Bible Commentary",
+      "kind": "scholarly-commentary",
+      "url": "https://www.thegospelcoalition.org/commentary/psalm-1-psalm-41/",
+      "checkedOn": "2026-10-31",
+      "access": "Public article/commentary checked on 2026-10-31. Psalm 34:20 section explicitly notes John's application alongside the Passover rule Exodus 12:46. Confessional interpretation with limited external review.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-text-genesis-1": {
+      "title": "Genesis 1 - publisher chapter",
+      "author": "United States Conference of Catholic Bishops",
+      "publisher": "USCCB Bible",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/genesis/1",
+      "checkedOn": "2026-10-31",
+      "access": "Publisher chapter link for verse and immediate context. Automated page access is not consistent; no manuscripts or copyright text are hosted.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-text-hebrews-11": {
+      "title": "Hebrews 11 - publisher chapter",
+      "author": "United States Conference of Catholic Bishops",
+      "publisher": "USCCB Bible",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/hebrews/11",
+      "checkedOn": "2026-10-31",
+      "access": "Publisher chapter link for verse and immediate context. Automated page access is not consistent; no manuscripts or copyright text are hosted.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-text-john-1": {
+      "title": "John 1 - publisher chapter",
+      "author": "United States Conference of Catholic Bishops",
+      "publisher": "USCCB Bible",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/john/1",
+      "checkedOn": "2026-10-31",
+      "access": "Publisher chapter link for verse and immediate context. Automated page access is not consistent; no manuscripts or copyright text are hosted.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-text-genesis-22": {
+      "title": "Genesis 22 - publisher chapter",
+      "author": "United States Conference of Catholic Bishops",
+      "publisher": "USCCB Bible",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/genesis/22",
+      "checkedOn": "2026-10-31",
+      "access": "Publisher chapter link for verse and immediate context. Automated page access is not consistent; no manuscripts or copyright text are hosted.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-text-exodus-3": {
+      "title": "Exodus 3 - publisher chapter",
+      "author": "United States Conference of Catholic Bishops",
+      "publisher": "USCCB Bible",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/exodus/3",
+      "checkedOn": "2026-10-31",
+      "access": "Publisher chapter link for verse and immediate context. Automated page access is not consistent; no manuscripts or copyright text are hosted.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-text-john-8": {
+      "title": "John 8 - publisher chapter",
+      "author": "United States Conference of Catholic Bishops",
+      "publisher": "USCCB Bible",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/john/8",
+      "checkedOn": "2026-10-31",
+      "access": "Publisher chapter link for verse and immediate context. Automated page access is not consistent; no manuscripts or copyright text are hosted.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-text-exodus-12": {
+      "title": "Exodus 12 - publisher chapter",
+      "author": "United States Conference of Catholic Bishops",
+      "publisher": "USCCB Bible",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/exodus/12",
+      "checkedOn": "2026-10-31",
+      "access": "Publisher chapter link for verse and immediate context. Automated page access is not consistent; no manuscripts or copyright text are hosted.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-text-daniel-7": {
+      "title": "Daniel 7 - publisher chapter",
+      "author": "United States Conference of Catholic Bishops",
+      "publisher": "USCCB Bible",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/daniel/7",
+      "checkedOn": "2026-10-31",
+      "access": "Publisher chapter link for verse and immediate context. Automated page access is not consistent; no manuscripts or copyright text are hosted.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-text-mark-14": {
+      "title": "Mark 14 - publisher chapter",
+      "author": "United States Conference of Catholic Bishops",
+      "publisher": "USCCB Bible",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/mark/14",
+      "checkedOn": "2026-10-31",
+      "access": "Publisher chapter link for verse and immediate context. Automated page access is not consistent; no manuscripts or copyright text are hosted.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-text-numbers-21": {
+      "title": "Numbers 21 - publisher chapter",
+      "author": "United States Conference of Catholic Bishops",
+      "publisher": "USCCB Bible",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/numbers/21",
+      "checkedOn": "2026-10-31",
+      "access": "Publisher chapter link for verse and immediate context. Automated page access is not consistent; no manuscripts or copyright text are hosted.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-text-john-3": {
+      "title": "John 3 - publisher chapter",
+      "author": "United States Conference of Catholic Bishops",
+      "publisher": "USCCB Bible",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/john/3",
+      "checkedOn": "2026-10-31",
+      "access": "Publisher chapter link for verse and immediate context. Automated page access is not consistent; no manuscripts or copyright text are hosted.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-text-deuteronomy-32": {
+      "title": "Deuteronomy 32 - publisher chapter",
+      "author": "United States Conference of Catholic Bishops",
+      "publisher": "USCCB Bible",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/deuteronomy/32",
+      "checkedOn": "2026-10-31",
+      "access": "Publisher chapter link for verse and immediate context. Automated page access is not consistent; no manuscripts or copyright text are hosted.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-text-romans-12": {
+      "title": "Romans 12 - publisher chapter",
+      "author": "United States Conference of Catholic Bishops",
+      "publisher": "USCCB Bible",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/romans/12",
+      "checkedOn": "2026-10-31",
+      "access": "Publisher chapter link for verse and immediate context. Automated page access is not consistent; no manuscripts or copyright text are hosted.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-text-isaiah-53": {
+      "title": "Isaiah 53 - publisher chapter",
+      "author": "United States Conference of Catholic Bishops",
+      "publisher": "USCCB Bible",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/isaiah/53",
+      "checkedOn": "2026-10-31",
+      "access": "Publisher chapter link for verse and immediate context. Automated page access is not consistent; no manuscripts or copyright text are hosted.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-text-luke-22": {
+      "title": "Luke 22 - publisher chapter",
+      "author": "United States Conference of Catholic Bishops",
+      "publisher": "USCCB Bible",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/luke/22",
+      "checkedOn": "2026-10-31",
+      "access": "Publisher chapter link for verse and immediate context. Automated page access is not consistent; no manuscripts or copyright text are hosted.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-text-isaiah-54": {
+      "title": "Isaiah 54 - publisher chapter",
+      "author": "United States Conference of Catholic Bishops",
+      "publisher": "USCCB Bible",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/isaiah/54",
+      "checkedOn": "2026-10-31",
+      "access": "Publisher chapter link for verse and immediate context. Automated page access is not consistent; no manuscripts or copyright text are hosted.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-text-john-6": {
+      "title": "John 6 - publisher chapter",
+      "author": "United States Conference of Catholic Bishops",
+      "publisher": "USCCB Bible",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/john/6",
+      "checkedOn": "2026-10-31",
+      "access": "Publisher chapter link for verse and immediate context. Automated page access is not consistent; no manuscripts or copyright text are hosted.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-text-hosea-11": {
+      "title": "Hosea 11 - publisher chapter",
+      "author": "United States Conference of Catholic Bishops",
+      "publisher": "USCCB Bible",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/hosea/11",
+      "checkedOn": "2026-10-31",
+      "access": "Publisher chapter link for verse and immediate context. Automated page access is not consistent; no manuscripts or copyright text are hosted.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-text-matthew-2": {
+      "title": "Matthew 2 - publisher chapter",
+      "author": "United States Conference of Catholic Bishops",
+      "publisher": "USCCB Bible",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/matthew/2",
+      "checkedOn": "2026-10-31",
+      "access": "Publisher chapter link for verse and immediate context. Automated page access is not consistent; no manuscripts or copyright text are hosted.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-text-hosea-6": {
+      "title": "Hosea 6 - publisher chapter",
+      "author": "United States Conference of Catholic Bishops",
+      "publisher": "USCCB Bible",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/hosea/6",
+      "checkedOn": "2026-10-31",
+      "access": "Publisher chapter link for verse and immediate context. Automated page access is not consistent; no manuscripts or copyright text are hosted.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-text-matthew-9": {
+      "title": "Matthew 9 - publisher chapter",
+      "author": "United States Conference of Catholic Bishops",
+      "publisher": "USCCB Bible",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/matthew/9",
+      "checkedOn": "2026-10-31",
+      "access": "Publisher chapter link for verse and immediate context. Automated page access is not consistent; no manuscripts or copyright text are hosted.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-text-amos-9": {
+      "title": "Amos 9 - publisher chapter",
+      "author": "United States Conference of Catholic Bishops",
+      "publisher": "USCCB Bible",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/amos/9",
+      "checkedOn": "2026-10-31",
+      "access": "Publisher chapter link for verse and immediate context. Automated page access is not consistent; no manuscripts or copyright text are hosted.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-text-acts-15": {
+      "title": "Acts 15 - publisher chapter",
+      "author": "United States Conference of Catholic Bishops",
+      "publisher": "USCCB Bible",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/acts/15",
+      "checkedOn": "2026-10-31",
+      "access": "Publisher chapter link for verse and immediate context. Automated page access is not consistent; no manuscripts or copyright text are hosted.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-text-zechariah-13": {
+      "title": "Zechariah 13 - publisher chapter",
+      "author": "United States Conference of Catholic Bishops",
+      "publisher": "USCCB Bible",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/zechariah/13",
+      "checkedOn": "2026-10-31",
+      "access": "Publisher chapter link for verse and immediate context. Automated page access is not consistent; no manuscripts or copyright text are hosted.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-text-matthew-26": {
+      "title": "Matthew 26 - publisher chapter",
+      "author": "United States Conference of Catholic Bishops",
+      "publisher": "USCCB Bible",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/matthew/26",
+      "checkedOn": "2026-10-31",
+      "access": "Publisher chapter link for verse and immediate context. Automated page access is not consistent; no manuscripts or copyright text are hosted.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-text-malachi-3": {
+      "title": "Malachi 3 - publisher chapter",
+      "author": "United States Conference of Catholic Bishops",
+      "publisher": "USCCB Bible",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/malachi/3",
+      "checkedOn": "2026-10-31",
+      "access": "Publisher chapter link for verse and immediate context. Automated page access is not consistent; no manuscripts or copyright text are hosted.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-text-matthew-11": {
+      "title": "Matthew 11 - publisher chapter",
+      "author": "United States Conference of Catholic Bishops",
+      "publisher": "USCCB Bible",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/matthew/11",
+      "checkedOn": "2026-10-31",
+      "access": "Publisher chapter link for verse and immediate context. Automated page access is not consistent; no manuscripts or copyright text are hosted.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-text-joel-2": {
+      "title": "Joel 2 - publisher chapter",
+      "author": "United States Conference of Catholic Bishops",
+      "publisher": "USCCB Bible",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/joel/2",
+      "checkedOn": "2026-10-31",
+      "access": "Publisher chapter link for verse and immediate context. Automated page access is not consistent; no manuscripts or copyright text are hosted.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-text-habakkuk-2": {
+      "title": "Habakkuk 2 - publisher chapter",
+      "author": "United States Conference of Catholic Bishops",
+      "publisher": "USCCB Bible",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/habakkuk/2",
+      "checkedOn": "2026-10-31",
+      "access": "Publisher chapter link for verse and immediate context. Automated page access is not consistent; no manuscripts or copyright text are hosted.",
       "rights": "Linked only; no Bible or commentary text retained."
     }
   },
@@ -9460,6 +9851,550 @@
       ],
       "batch": "v1-citations-17-02",
       "anchor": "Isaiah 56:7"
+    },
+    {
+      "kind": "connection",
+      "target": "ce116",
+      "title": "Genesis 1:1 and Hebrews 11:3",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-31",
+      "note": "Hebrews 11:3 reasons that visible creation originates through divine speech, consonant with Genesis 1's account of God's initiative.",
+      "limitation": "A literary-theological connection does not establish a measurable cosmological process, the age of the earth or a scientific mechanism; Hebrews 11 is a faith exhortation. Source-specific AI-assisted contextual assessment; competing interpretations, manuscript variants and independent specialist review are not certified.",
+      "passages": [
+        "Genesis 1:1",
+        "Hebrews 11:3"
+      ],
+      "citations": [
+        {
+          "sourceId": "v1b2-text-genesis-1",
+          "locator": "Genesis 1:1",
+          "supports": "Original Hebrew Bible context and source of later comparison"
+        },
+        {
+          "sourceId": "v1b2-text-hebrews-11",
+          "locator": "Hebrews 11:3",
+          "supports": "New Testament passage and its quotation, echo or typological reuse"
+        },
+        {
+          "sourceId": "v1b2-hebrews",
+          "locator": "Hebrews 11:1-3, creation by the word of God",
+          "supports": "Named source discusses the stated connection and contextual limits; other conclusions are not automatically endorsed"
+        }
+      ],
+      "batch": "v1-citations-17-03",
+      "anchor": "Genesis 1:1"
+    },
+    {
+      "kind": "connection",
+      "target": "ce117",
+      "title": "Genesis 1:1 and John 1:3",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-31",
+      "note": "Köstenberger treats the Word in John's prologue as the agent of creation, deliberately invoking Genesis's theological opening.",
+      "limitation": "John 1:3 is an echo of creation rather than a direct quotation of Genesis 1:1; the prologue's Christological purpose should remain distinct. Source-specific AI-assisted contextual assessment; competing interpretations, manuscript variants and independent specialist review are not certified.",
+      "passages": [
+        "Genesis 1:1",
+        "John 1:3"
+      ],
+      "citations": [
+        {
+          "sourceId": "v1b2-text-genesis-1",
+          "locator": "Genesis 1:1",
+          "supports": "Original Hebrew Bible context and source of later comparison"
+        },
+        {
+          "sourceId": "v1b2-text-john-1",
+          "locator": "John 1:3",
+          "supports": "New Testament passage and its quotation, echo or typological reuse"
+        },
+        {
+          "sourceId": "v1b2-john",
+          "locator": "John 1:1-5, the Word and Creation",
+          "supports": "Named source discusses the stated connection and contextual limits; other conclusions are not automatically endorsed"
+        }
+      ],
+      "batch": "v1-citations-17-03",
+      "anchor": "Genesis 1:1"
+    },
+    {
+      "kind": "connection",
+      "target": "ce119",
+      "title": "Genesis 22:2 and Hebrews 11:17",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-31",
+      "note": "Alexander identifies the later Hebrews interpretation of Abraham's statement about returning with Isaac and the possibility of resurrection.",
+      "limitation": "The test in Genesis 22 raises ethical and narrative questions that Hebrews does not erase. Hebrews is a later canonical portrayal of Abraham's faith, not a stenographic account of his thoughts. Source-specific AI-assisted contextual assessment; competing interpretations, manuscript variants and independent specialist review are not certified.",
+      "passages": [
+        "Genesis 22:2",
+        "Hebrews 11:17"
+      ],
+      "citations": [
+        {
+          "sourceId": "v1b2-text-genesis-22",
+          "locator": "Genesis 22:2",
+          "supports": "Original Hebrew Bible context and source of later comparison"
+        },
+        {
+          "sourceId": "v1b2-text-hebrews-11",
+          "locator": "Hebrews 11:17",
+          "supports": "New Testament passage and its quotation, echo or typological reuse"
+        },
+        {
+          "sourceId": "v1b2-genesis",
+          "locator": "Genesis 22:1-19, Abraham and Isaac; Hebrews 11:17-19",
+          "supports": "Named source discusses the stated connection and contextual limits; other conclusions are not automatically endorsed"
+        }
+      ],
+      "batch": "v1-citations-17-03",
+      "anchor": "Genesis 22:2"
+    },
+    {
+      "kind": "connection",
+      "target": "ce120",
+      "title": "Exodus 3:14 and John 8:58",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-31",
+      "note": "Köstenberger discusses the Johannine 'I am' expression and its relationship to the language of God's name and divine identity.",
+      "limitation": "The Hebrew 'ehyeh' in Exodus 3:14, its ancient Greek renderings and the Johannine 'ego eimi' are not identical grammatical constructions. The allusion is interpretive, not verbatim citation. Source-specific AI-assisted contextual assessment; competing interpretations, manuscript variants and independent specialist review are not certified.",
+      "passages": [
+        "Exodus 3:14",
+        "John 8:58"
+      ],
+      "citations": [
+        {
+          "sourceId": "v1b2-text-exodus-3",
+          "locator": "Exodus 3:14",
+          "supports": "Original Hebrew Bible context and source of later comparison"
+        },
+        {
+          "sourceId": "v1b2-text-john-8",
+          "locator": "John 8:58",
+          "supports": "New Testament passage and its quotation, echo or typological reuse"
+        },
+        {
+          "sourceId": "v1b2-john",
+          "locator": "John 8:48-59, before Abraham was; Exodus 3:13-15",
+          "supports": "Named source discusses the stated connection and contextual limits; other conclusions are not automatically endorsed"
+        }
+      ],
+      "batch": "v1-citations-17-03",
+      "anchor": "Exodus 3:14"
+    },
+    {
+      "kind": "connection",
+      "target": "ce121",
+      "title": "Exodus 12:46 and John 19:36",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-31",
+      "note": "Morales directly compares the unbroken-bone detail with Passover rules in Exodus 12:46 and the righteous-sufferer language of Psalm 34:20.",
+      "limitation": "Because John 19:36 does not name a single Old Testament location, Exodus 12:46 cannot be identified as the sole certain source; Psalm 34:20 remains relevant. Source-specific AI-assisted contextual assessment; competing interpretations, manuscript variants and independent specialist review are not certified.",
+      "passages": [
+        "Exodus 12:46",
+        "John 19:36"
+      ],
+      "citations": [
+        {
+          "sourceId": "v1b2-text-exodus-12",
+          "locator": "Exodus 12:46",
+          "supports": "Original Hebrew Bible context and source of later comparison"
+        },
+        {
+          "sourceId": "v1b2-text-john-19",
+          "locator": "John 19:36",
+          "supports": "New Testament passage and its quotation, echo or typological reuse"
+        },
+        {
+          "sourceId": "v1b2-exodus-essay",
+          "locator": "The Gospel of John and the New Exodus; John 19:31-37",
+          "supports": "Named source discusses the stated connection and contextual limits; other conclusions are not automatically endorsed"
+        }
+      ],
+      "batch": "v1-citations-17-03",
+      "anchor": "Exodus 12:46"
+    },
+    {
+      "kind": "connection",
+      "target": "ce134",
+      "title": "Daniel 7:13 and Mark 14:62",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-31",
+      "note": "Chase describes the humanlike figure receiving dominion; Mark's hearing combines the clouds motif with Psalm 110's right-hand language.",
+      "limitation": "Mark combines distinct Hebrew Bible passages. Daniel's individual and corporate interpretations and the timing of Jesus' statement remain disputed; do not treat this as a single literal quotation. Source-specific AI-assisted contextual assessment; competing interpretations, manuscript variants and independent specialist review are not certified.",
+      "passages": [
+        "Daniel 7:13",
+        "Mark 14:62"
+      ],
+      "citations": [
+        {
+          "sourceId": "v1b2-text-daniel-7",
+          "locator": "Daniel 7:13",
+          "supports": "Original Hebrew Bible context and source of later comparison"
+        },
+        {
+          "sourceId": "v1b2-text-mark-14",
+          "locator": "Mark 14:62",
+          "supports": "New Testament passage and its quotation, echo or typological reuse"
+        },
+        {
+          "sourceId": "v1b2-daniel",
+          "locator": "Daniel 7:9-14, the humanlike figure; Mark 14:61-64",
+          "supports": "Named source discusses the stated connection and contextual limits; other conclusions are not automatically endorsed"
+        }
+      ],
+      "batch": "v1-citations-17-03",
+      "anchor": "Daniel 7:13"
+    },
+    {
+      "kind": "connection",
+      "target": "ce138",
+      "title": "Numbers 21:9 and John 3:14",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-31",
+      "note": "John explicitly compares the elevation of Moses' bronze serpent with the Son of Man being lifted up; the figures are analogous rather than identical.",
+      "limitation": "Numbers recounts healing during a wilderness crisis. The bronze image's later destruction in 2 Kings 18:4 is relevant; typology should not encourage veneration of the image or replace the original account. Source-specific AI-assisted contextual assessment; competing interpretations, manuscript variants and independent specialist review are not certified.",
+      "passages": [
+        "Numbers 21:9",
+        "John 3:14"
+      ],
+      "citations": [
+        {
+          "sourceId": "v1b2-text-numbers-21",
+          "locator": "Numbers 21:9",
+          "supports": "Original Hebrew Bible context and source of later comparison"
+        },
+        {
+          "sourceId": "v1b2-text-john-3",
+          "locator": "John 3:14",
+          "supports": "New Testament passage and its quotation, echo or typological reuse"
+        },
+        {
+          "sourceId": "v1b2-john",
+          "locator": "John 3:14-16; Numbers 21:4-9",
+          "supports": "Named source discusses the stated connection and contextual limits; other conclusions are not automatically endorsed"
+        }
+      ],
+      "batch": "v1-citations-17-03",
+      "anchor": "Numbers 21:9"
+    },
+    {
+      "kind": "connection",
+      "target": "ce144",
+      "title": "Deuteronomy 32:35 and Romans 12:19",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-31",
+      "note": "Mathis directly identifies Deuteronomy 32:35 in Paul's warning against private retaliation, linked to enemy-directed kindness.",
+      "limitation": "Deuteronomy's Song of Moses has its own covenant-judgment setting. Paul's command to refrain from revenge does not prohibit reporting abuse or seeking lawful protection. Source-specific AI-assisted contextual assessment; competing interpretations, manuscript variants and independent specialist review are not certified.",
+      "passages": [
+        "Deuteronomy 32:35",
+        "Romans 12:19"
+      ],
+      "citations": [
+        {
+          "sourceId": "v1b2-text-deuteronomy-32",
+          "locator": "Deuteronomy 32:35",
+          "supports": "Original Hebrew Bible context and source of later comparison"
+        },
+        {
+          "sourceId": "v1b2-text-romans-12",
+          "locator": "Romans 12:19",
+          "supports": "New Testament passage and its quotation, echo or typological reuse"
+        },
+        {
+          "sourceId": "v1b2-romans",
+          "locator": "Romans 12:14-21, especially 12:19",
+          "supports": "Named source discusses the stated connection and contextual limits; other conclusions are not automatically endorsed"
+        }
+      ],
+      "batch": "v1-citations-17-03",
+      "anchor": "Deuteronomy 32:35"
+    },
+    {
+      "kind": "connection",
+      "target": "ce152",
+      "title": "Isaiah 53:12 and Luke 22:37",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-31",
+      "note": "Bolt identifies Luke 22:37 as an explicit appeal to Isaiah 53:12 in the lead-up to Jesus' arrest.",
+      "limitation": "Luke's exchange about swords is interpretively disputed and should not be used alone to justify armed force. The servant's original identity remains a wider Isaiah research question. Source-specific AI-assisted contextual assessment; competing interpretations, manuscript variants and independent specialist review are not certified.",
+      "passages": [
+        "Isaiah 53:12",
+        "Luke 22:37"
+      ],
+      "citations": [
+        {
+          "sourceId": "v1b2-text-isaiah-53",
+          "locator": "Isaiah 53:12",
+          "supports": "Original Hebrew Bible context and source of later comparison"
+        },
+        {
+          "sourceId": "v1b2-text-luke-22",
+          "locator": "Luke 22:37",
+          "supports": "New Testament passage and its quotation, echo or typological reuse"
+        },
+        {
+          "sourceId": "v1b2-luke",
+          "locator": "Luke 22:35-38, the numbered-with-transgressors quotation",
+          "supports": "Named source discusses the stated connection and contextual limits; other conclusions are not automatically endorsed"
+        }
+      ],
+      "batch": "v1-citations-17-03",
+      "anchor": "Isaiah 53:12"
+    },
+    {
+      "kind": "connection",
+      "target": "ce153",
+      "title": "Isaiah 54:13 and John 6:45",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-31",
+      "note": "Köstenberger directly identifies Isaiah 54:13 in Jesus' statement about those taught by the Father and their coming to him.",
+      "limitation": "Isaiah's promise refers to Zion's restored children in its own context. John's application does not erase that community-oriented promise or settle every account of divine drawing. Source-specific AI-assisted contextual assessment; competing interpretations, manuscript variants and independent specialist review are not certified.",
+      "passages": [
+        "Isaiah 54:13",
+        "John 6:45"
+      ],
+      "citations": [
+        {
+          "sourceId": "v1b2-text-isaiah-54",
+          "locator": "Isaiah 54:13",
+          "supports": "Original Hebrew Bible context and source of later comparison"
+        },
+        {
+          "sourceId": "v1b2-text-john-6",
+          "locator": "John 6:45",
+          "supports": "New Testament passage and its quotation, echo or typological reuse"
+        },
+        {
+          "sourceId": "v1b2-john",
+          "locator": "John 6:41-51, taught by God",
+          "supports": "Named source discusses the stated connection and contextual limits; other conclusions are not automatically endorsed"
+        }
+      ],
+      "batch": "v1-citations-17-03",
+      "anchor": "Isaiah 54:13"
+    },
+    {
+      "kind": "connection",
+      "target": "ce155",
+      "title": "Hosea 11:1 and Matthew 2:15",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-31",
+      "note": "Tully describes Hosea 11:1 as a backward-looking recollection of Israel's exodus, while Matthew 2:15 reuses the line in a Jesus-as-Israel interpretive pattern.",
+      "limitation": "Hosea 11:1 does not literally predict a future infant's Egyptian exile. Matthew's fulfilment formula is best described as a Christian typological reuse; historical and Jewish interpretive horizons remain distinct. Source-specific AI-assisted contextual assessment; competing interpretations, manuscript variants and independent specialist review are not certified.",
+      "passages": [
+        "Hosea 11:1",
+        "Matthew 2:15"
+      ],
+      "citations": [
+        {
+          "sourceId": "v1b2-text-hosea-11",
+          "locator": "Hosea 11:1",
+          "supports": "Original Hebrew Bible context and source of later comparison"
+        },
+        {
+          "sourceId": "v1b2-text-matthew-2",
+          "locator": "Matthew 2:15",
+          "supports": "New Testament passage and its quotation, echo or typological reuse"
+        },
+        {
+          "sourceId": "v1b2-hosea",
+          "locator": "Hosea 11:1-11, Israel's childhood and restoration",
+          "supports": "Named source discusses the stated connection and contextual limits; other conclusions are not automatically endorsed"
+        }
+      ],
+      "batch": "v1-citations-17-03",
+      "anchor": "Hosea 11:1"
+    },
+    {
+      "kind": "connection",
+      "target": "ce156",
+      "title": "Hosea 6:6 and Matthew 9:13",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-31",
+      "note": "O'Donnell explicitly identifies Matthew 9:13 as a quotation of Hosea 6:6 in the dispute over eating with tax collectors and other sinners.",
+      "limitation": "In Hosea, covenant loyalty and knowing God challenge ritual detached from moral fidelity. Neither author demands a blanket rejection of Jewish worship or sacrifice. Source-specific AI-assisted contextual assessment; competing interpretations, manuscript variants and independent specialist review are not certified.",
+      "passages": [
+        "Hosea 6:6",
+        "Matthew 9:13"
+      ],
+      "citations": [
+        {
+          "sourceId": "v1b2-text-hosea-6",
+          "locator": "Hosea 6:6",
+          "supports": "Original Hebrew Bible context and source of later comparison"
+        },
+        {
+          "sourceId": "v1b2-text-matthew-9",
+          "locator": "Matthew 9:13",
+          "supports": "New Testament passage and its quotation, echo or typological reuse"
+        },
+        {
+          "sourceId": "v1b2-matthew",
+          "locator": "Matthew 9:9-13, table fellowship and mercy",
+          "supports": "Named source discusses the stated connection and contextual limits; other conclusions are not automatically endorsed"
+        }
+      ],
+      "batch": "v1-citations-17-03",
+      "anchor": "Hosea 6:6"
+    },
+    {
+      "kind": "connection",
+      "target": "ce157",
+      "title": "Amos 9:11 and Acts 15:16",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-31",
+      "note": "Hill identifies James' use of Amos 9:11-12 at the Jerusalem council in the discussion of Gentile inclusion.",
+      "limitation": "The Hebrew text refers to Edom in many editions where the Greek rendering used by Acts is associated with 'humanity' or the nations. This textual issue cannot be resolved by treating the versions as identical. Source-specific AI-assisted contextual assessment; competing interpretations, manuscript variants and independent specialist review are not certified.",
+      "passages": [
+        "Amos 9:11",
+        "Acts 15:16"
+      ],
+      "citations": [
+        {
+          "sourceId": "v1b2-text-amos-9",
+          "locator": "Amos 9:11",
+          "supports": "Original Hebrew Bible context and source of later comparison"
+        },
+        {
+          "sourceId": "v1b2-text-acts-15",
+          "locator": "Acts 15:16",
+          "supports": "New Testament passage and its quotation, echo or typological reuse"
+        },
+        {
+          "sourceId": "v1b2-amos",
+          "locator": "Amos 9:11-15 and the restored shelter; Acts 15:12-21",
+          "supports": "Named source discusses the stated connection and contextual limits; other conclusions are not automatically endorsed"
+        }
+      ],
+      "batch": "v1-citations-17-03",
+      "anchor": "Amos 9:11"
+    },
+    {
+      "kind": "connection",
+      "target": "ce158",
+      "title": "Zechariah 13:7 and Matthew 26:31",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-31",
+      "note": "Barrett directly connects Zechariah 13:7 with Matthew 26:31 and Jesus' prediction of the disciples' scattering.",
+      "limitation": "The shepherd's original oracle follows complicated prophetic imagery. Barrett's Trinitarian interpretation is not independently demonstrated by a single Hebrew phrase; keep it attributed. Source-specific AI-assisted contextual assessment; competing interpretations, manuscript variants and independent specialist review are not certified.",
+      "passages": [
+        "Zechariah 13:7",
+        "Matthew 26:31"
+      ],
+      "citations": [
+        {
+          "sourceId": "v1b2-text-zechariah-13",
+          "locator": "Zechariah 13:7",
+          "supports": "Original Hebrew Bible context and source of later comparison"
+        },
+        {
+          "sourceId": "v1b2-text-matthew-26",
+          "locator": "Matthew 26:31",
+          "supports": "New Testament passage and its quotation, echo or typological reuse"
+        },
+        {
+          "sourceId": "v1b2-zechariah",
+          "locator": "Zechariah 13:7-9, strike the shepherd; Matthew 26:30-35",
+          "supports": "Named source discusses the stated connection and contextual limits; other conclusions are not automatically endorsed"
+        }
+      ],
+      "batch": "v1-citations-17-03",
+      "anchor": "Zechariah 13:7"
+    },
+    {
+      "kind": "connection",
+      "target": "ce159",
+      "title": "Malachi 3:1 and Matthew 11:10",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-31",
+      "note": "Harmon directly identifies the Gospel association of Malachi's messenger with John the Baptist in Matthew 11:10.",
+      "limitation": "Matthew's quotation adapts pronouns, while Malachi's original warning addresses priesthood, injustice and covenant loyalty. No harmonised original-language form is established. Source-specific AI-assisted contextual assessment; competing interpretations, manuscript variants and independent specialist review are not certified.",
+      "passages": [
+        "Malachi 3:1",
+        "Matthew 11:10"
+      ],
+      "citations": [
+        {
+          "sourceId": "v1b2-text-malachi-3",
+          "locator": "Malachi 3:1",
+          "supports": "Original Hebrew Bible context and source of later comparison"
+        },
+        {
+          "sourceId": "v1b2-text-matthew-11",
+          "locator": "Matthew 11:10",
+          "supports": "New Testament passage and its quotation, echo or typological reuse"
+        },
+        {
+          "sourceId": "v1b2-malachi",
+          "locator": "Malachi 3:1-5, the messenger and coming judge",
+          "supports": "Named source discusses the stated connection and contextual limits; other conclusions are not automatically endorsed"
+        }
+      ],
+      "batch": "v1-citations-17-03",
+      "anchor": "Malachi 3:1"
+    },
+    {
+      "kind": "connection",
+      "target": "ce160",
+      "title": "Joel 2:32 and Romans 10:13",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-31",
+      "note": "Busenitz explicitly distinguishes Joel's Zion-and-restoration horizon from Paul's broader use of the call-on-the-Lord promise for Jew and Gentile alike.",
+      "limitation": "Joel's day-of-the-Lord imagery and specific historical/eschatological referents remain contested. Paul's application is a later interpretation, not a deletion of Zion from the prophet. Source-specific AI-assisted contextual assessment; competing interpretations, manuscript variants and independent specialist review are not certified.",
+      "passages": [
+        "Joel 2:32",
+        "Romans 10:13"
+      ],
+      "citations": [
+        {
+          "sourceId": "v1b2-text-joel-2",
+          "locator": "Joel 2:32",
+          "supports": "Original Hebrew Bible context and source of later comparison"
+        },
+        {
+          "sourceId": "v1b2-text-romans-10",
+          "locator": "Romans 10:13",
+          "supports": "New Testament passage and its quotation, echo or typological reuse"
+        },
+        {
+          "sourceId": "v1b2-joel",
+          "locator": "Joel 2:28-32, calling on the Lord; Romans 10:9-17",
+          "supports": "Named source discusses the stated connection and contextual limits; other conclusions are not automatically endorsed"
+        }
+      ],
+      "batch": "v1-citations-17-03",
+      "anchor": "Joel 2:32"
+    },
+    {
+      "kind": "connection",
+      "target": "ce161",
+      "title": "Habakkuk 2:4 and Hebrews 10:38",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-31",
+      "note": "Johnson identifies an adapted citation of Habakkuk 2:4 in Hebrews' appeal to endure rather than shrink back.",
+      "limitation": "Hebrews' Greek wording, pronoun order and perseverance emphasis differ from a straightforward Hebrew quotation; its use must not be flattened into Paul's separate arguments in Romans and Galatians. Source-specific AI-assisted contextual assessment; competing interpretations, manuscript variants and independent specialist review are not certified.",
+      "passages": [
+        "Habakkuk 2:4",
+        "Hebrews 10:38"
+      ],
+      "citations": [
+        {
+          "sourceId": "v1b2-text-habakkuk-2",
+          "locator": "Habakkuk 2:4",
+          "supports": "Original Hebrew Bible context and source of later comparison"
+        },
+        {
+          "sourceId": "v1b2-text-hebrews-10",
+          "locator": "Hebrews 10:38",
+          "supports": "New Testament passage and its quotation, echo or typological reuse"
+        },
+        {
+          "sourceId": "v1b2-hebrews",
+          "locator": "Hebrews 10:36-39, endurance and Habakkuk's righteous one",
+          "supports": "Named source discusses the stated connection and contextual limits; other conclusions are not automatically endorsed"
+        }
+      ],
+      "batch": "v1-citations-17-03",
+      "anchor": "Habakkuk 2:4"
     }
   ],
   "batches": [
@@ -9722,6 +10657,31 @@
         "ce154"
       ],
       "method": "AI-assisted, dated examination of explicit scriptural quotations and their New Testament contexts with named, publicly accessible TGC commentaries; sources support only the specified reading claims. Hebrew and Greek variants, original settings, competing interpretations and external specialist signoff remain qualified. Full OpenBible corpus is outside this work."
+    },
+    {
+      "id": "v1-citations-17-03",
+      "title": "Final seventeen interpretive, textual and quotation Atlas assessments",
+      "count": 17,
+      "targets": [
+        "ce116",
+        "ce117",
+        "ce119",
+        "ce120",
+        "ce121",
+        "ce134",
+        "ce138",
+        "ce144",
+        "ce152",
+        "ce153",
+        "ce155",
+        "ce156",
+        "ce157",
+        "ce158",
+        "ce159",
+        "ce160",
+        "ce161"
+      ],
+      "method": "AI-assisted scoped biblical-context assessment of seventeen remaining new Atlas explanation pairs against accessible named scholarly commentary and essays; original quotation, textual variants, typological reuse and contested interpretations are distinguished. No independent specialist signoff; complete manuscripts and full comparative literature outside scope."
     }
   ]
 }
