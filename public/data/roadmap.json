@@ -3,12 +3,10 @@
   "updated": "2026-10-31",
   "description": "An evidence-aware v1.0 release roadmap checked against the current versioned Scripture Trails source and test data. All 161 written Atlas explanations now have dated scoped AI-assisted source assessments. The 31 October source-linked journey corrections cover selected high-risk passages, not a complete re-audit of all 162 stages. Full reference corpus, physical-device accessibility and independent specialist certification remain separate. No unverified evidence is implied.",
   "currentFocus": [
-    "Verify all four translation providers' licence agreements, distribution terms, territories, FUMS obligations and usage quotas separately from live response health. Do not equate API success with publisher permission.",
-    "Exercise realistic notebook import/export failure and storage quota/recovery scenarios, then complete the independent security/privacy threat model.",
-    "Extend cross-browser and screen-reader accessibility testing using actual assistive technology and physical mobile devices where accessible.",
-    "Develop and exercise a safe Cloudflare Pages rollback procedure, then run complete production release-candidate smoke tests before v1.0 signoff.",
-    "Finish remaining v1.0 critical evidence and source-rights assessments for uncertain Gospel and Hebrew Bible claims, followed by live-provider translation verification.",
-    "Expand cross-browser, screen-reader, security, resilience, recovery and rollback verification beyond the new full-flagship navigation regression suite, without claiming manual signoff."
+    "Complete the security and privacy threat-model review of API keys, Crossway/API.Bible, browser notebook storage, third-party analytics, CSP, rate limits and untrusted content; remediate critical findings.",
+    "Verify contractual permissions and restrictions for all four publisher editions, FUMS obligations, translation data retention and attribution independently of successful API responses.",
+    "Perform cross-engine and assistive-technology checks with accessible real-device evidence where possible, then implement and exercise production rollback safeguards.",
+    "Create and verify release candidate smoke coverage for Bible reader, Atlas, notebooks, site version, responsive layout and final go/no-go signoff."
   ],
   "phases": [
     {
@@ -857,6 +855,21 @@
         "Additional unit and browser regression evidence covers upstream 401, 403, 404, 429, 502, missing keys, late responses, user-facing recovery and safe fallback"
       ],
       "verification": "AI-assisted real production browser rendering against v0.43.0 and post-release verification, plus isolated synthetic fault tests. Publisher distribution rights, specialist security review, independent device accessibility and complete release-candidate smoke remain separate open v1 gates."
+    },
+    {
+      "id": "v1-notebook-corruption-recovery",
+      "phase": "next",
+      "status": "delivered",
+      "title": "Recover unreadable local notebooks without silent data loss",
+      "summary": "Detect malformed canonical notebook storage instead of silently showing empty saved data, warn the user, allow private raw snapshot retrieval and require an explicitly reviewed backup before atomic recovery.",
+      "capabilities": [
+        "Sitewide accessible warning on corrupt or blocked browser notebook storage",
+        "Download original unreadable notebook bytes privately before optional replacement",
+        "Explicitly confirmed valid-backup recovery with exact snapshot comparison to protect against simultaneous changes",
+        "Automated unit and desktop/mobile browser tests for malformed files, quota failures, multi-tab conflicts and successful restoration",
+        "Public data-loss limitations and encrypted private-backup recommendations"
+      ],
+      "verification": "Reviewed local storage implementation and tests using synthetic browser profiles. There is no cloud copy, automatic recovery or guarantee of retrieving data after device loss or storage eviction. Publisher-rights, specialist security and physical screen-reader acceptance remain separate."
     }
   ],
   "v1Readiness": {
@@ -1004,7 +1017,7 @@
         "id": "privacy",
         "title": "Security, privacy and licensed content",
         "summary": "Protect private notes and licensed Bible access without promising that automated tests amount to a security audit.",
-        "next": "Publisher and server-side failure paths were tested and the ESV proxy gained matching redirect, timeout and response limits. Continue the independent licence-rights audit, browser-data recovery investigation and full security threat model.",
+        "next": "Browser notebook corruption, storage-access, quota, multi-tab and backup recovery scenarios are now tested, including fail-closed raw recovery. The full security/privacy threat model, publisher permissions, cross-browser accessibility and operational rollback still require separate acceptance evidence.",
         "criteria": [
           {
             "id": "security-review",
@@ -1017,10 +1030,12 @@
           {
             "id": "data-recovery",
             "title": "Test notebook import/export, data-loss and recovery cases",
-            "status": "open",
+            "status": "met",
             "mode": "manual",
-            "evidence": "tests/notebook-backup.test.mjs",
-            "acceptance": "Run realistic corrupt backup, conflict, quota and multi-session scenarios; clearly document any unrecoverable local-only data risks."
+            "evidence": "sources/operations/v1-notebook-recovery-audit-2026-10-31.md",
+            "acceptance": "Run realistic corrupt backup, conflict, quota and multi-session scenarios; clearly document any unrecoverable local-only data risks.",
+            "reviewedOn": "2026-10-31",
+            "reviewer": "Scripture Trails AI-assisted review, simulated browser multi-session/quota/recovery tests and checked local source; no user backup or device was inspected"
           },
           {
             "id": "provider-failures",
