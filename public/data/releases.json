@@ -1,6 +1,16 @@
 {
   "releases": [
     {
+      "version": "0.39.0",
+      "date": "2026-10-31",
+      "title": "Paul's first and second journeys: deeper Scripture study",
+      "changes": [
+        "Add original biblical reading context and relevant Scripture links to all 39 stages of Paul's first two missionary journeys.",
+        "Clarify the uncertain Berea-to-Athens route with a source-linked academic geographic assessment and preserve location cautions.",
+        "Keep the 44 later Pauline stages and remaining v1.0 editorial acceptance checks explicitly open."
+      ]
+    },
+    {
       "version": "0.38.0",
       "date": "2026-10-31",
       "title": "Biblical journey evidence and route clarity",

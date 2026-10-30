@@ -3,7 +3,7 @@
   "updated": "2026-10-31",
   "description": "An evidence-aware v1.0 release roadmap checked against the current versioned Scripture Trails source and test data. All 161 written Atlas explanations now have dated scoped AI-assisted source assessments. The 31 October source-linked journey corrections cover selected high-risk passages, not a complete re-audit of all 162 stages. Full reference corpus, physical-device accessibility and independent specialist certification remain separate. No unverified evidence is implied.",
   "currentFocus": [
-    "Continue stage-by-stage source and chronology review across the 79 Gospel and 83 Pauline records beyond the newly source-linked sea-crossing and Acts itinerary corrections; retain unverified geography as unpinned.",
+    "Complete Scripture-context notes for 44 remaining Pauline stages (third journey and prisoner voyage), then continue the 79-event Gospel audit and location qualifications. Do not treat any inferred path as a known road.",
     "Check the flagship people and journal reading links in full browser scenarios, retain reading-progress compatibility and address any remaining inaccurate descriptions.",
     "Verify the four authorised Bible translations against real production provider behaviour and copyright requirements wherever connected tools permit.",
     "Expand independent historical and textual source coverage for contested claims in Daniel, Esther, the Exodus and the journey sites; distinguish AI-assisted editorial synthesis from specialist signoff.",
@@ -772,6 +772,20 @@
         "Original stage IDs, passages, study chronology selectors, route pins and reading links preserved"
       ],
       "verification": "Scoped editorial evidence pass dated 31 October 2026; primary publisher passages and a published article abstract compared, with no claim that the complete 162-stage corpus or external historical reconstruction has been independently certified. Required CI and production checks remain separate."
+    },
+    {
+      "id": "v1-paul-first-second-depth",
+      "phase": "next",
+      "status": "delivered",
+      "title": "Thirty-nine Pauline journey stages receive fuller Scripture study",
+      "summary": "Expand all 18 first-journey and 21 second-journey stages with original contextual biblical reading notes and canonical comparison links. Retain the 44 third-journey and prisoner-voyage stages for a later content batch.",
+      "capabilities": [
+        "39 original passage-context explanations with additional linked Scriptures and functioning reader/Atlas actions",
+        "Explicit editorial evidence boundaries, including distinction between textual travel reports and geographic reconstructions",
+        "Peer-reviewed methodological source and a qualified Berea-to-Athens uncertainty record",
+        "Unchanged 83 stage IDs, four journey groups, map pins, route breaks and deep links"
+      ],
+      "verification": "Source-linked editorial Scripture pass for Acts 13-18, with published itinerary comparisons and a scholarly route-methodology source. Automated data, navigation and browser checks required before publication. The 44 remaining Pauline stages and independent specialist review remain open."
     }
   ],
   "v1Readiness": {
@@ -853,7 +867,7 @@
         "id": "content",
         "title": "Core study experience and content",
         "summary": "The four-translation reader, Atlas, people index and major journeys need sufficient depth and reliable passage navigation.",
-        "next": "The five city dossiers, 20 person trails and six guided study journals now have expanded substantive reading context. Next audit all Jesus and Paul journey records, source metadata and dead-end navigation.",
+        "next": "The five city dossiers, twenty person trails and six journals have expanded context. All 39 early Pauline stages now have substantial Scripture study notes; complete the 44 later stages, assess Gospel events and dead-end navigation before closing this gate.",
         "criteria": [
           {
             "id": "crossrefs-integrity",

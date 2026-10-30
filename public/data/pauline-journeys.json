@@ -2,8 +2,8 @@
   "title": "Journeys of Paul",
   "updated": "2026-10-31",
   "scope": "Three conventional missionary journey groupings in Acts 13-21 and a separately labelled prisoner voyage to Rome in Acts 27-28.",
-  "method": "Acts is primary for the narrated movements. Each entry is an editorial paraphrase with a passage link; no Bible text is bundled. Markers are rounded Pleiades representative points. Regions, unnamed settings and offshore passages have no invented pins. Dashed connectors join only consecutive mapped entries within one journey and are not roads or sailing tracks.",
-  "review": "AI-assisted editorial source and reference screening, with a targeted published-text comparison of Acts 18:22, 20:13-17 and 27:1-28:1 on 31 October 2026. The remaining stages retain their original editorial reading-aid classification. Independent historical and textual specialist review has not occurred.",
+  "method": "Acts is primary for the narrated movements. Each entry is an editorial paraphrase with a passage link; no Bible text is bundled. Markers are rounded Pleiades representative points. Regions, unnamed settings and offshore passages have no invented pins. Dashed connectors join only consecutive mapped entries within one journey and are not roads or sailing tracks. First- and second-journey stages also carry original Scripture study contexts; related texts support reading without establishing precise travel dates or routes.",
+  "review": "AI-assisted editorial source and reference screening. All 39 first- and second-journey stages now include original passage-focused contextual reading and linked canonical cross-references; the 44 third-journey and Rome stages retain their existing shorter presentation. Berea-to-Athens GIS research is cited to explain uncertainty, not to establish an exact route. Independent historical and textual specialist review has not occurred.",
   "chronology": "The timeline counts narrative stages, not elapsed time. No absolute years are assigned. Acts and Pauline-letter chronology require separate comparison; letters are not silently used to add unnamed Acts stops.",
   "journeys": [
     {
@@ -871,7 +871,16 @@
         "Acts 13:1-3"
       ],
       "qualification": "",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "Acts opens the mission in an existing community of prophets and teachers, rather than with Paul travelling alone. Worship and the church's sending establish the shared responsibility behind the later report.",
+        "crossReferences": [
+          "Acts 11:19-26",
+          "Acts 14:26-28"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-first-02",
@@ -883,7 +892,15 @@
         "Acts 13:4"
       ],
       "qualification": "",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "Seleucia is the departure point after Antioch's commissioning. The verse is a travel transition; proclamation that follows in Cyprus supplies the next narrated activity, not an unreported teaching episode at the port.",
+        "crossReferences": [
+          "Acts 13:1-5"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-first-03",
@@ -895,7 +912,15 @@
         "Acts 13:5"
       ],
       "qualification": "",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "At Salamis the travellers proclaim the word in Jewish synagogues, with John assisting. The scene establishes their initial audience and team before the confrontation at Paphos elsewhere on Cyprus.",
+        "crossReferences": [
+          "Acts 13:4-12"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-first-04",
@@ -907,7 +932,16 @@
         "Acts 13:6"
       ],
       "qualification": "",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "Luke compresses the passage across Cyprus into a statement that they traversed the island. Paphos is named as the destination, but the intervening settlements and roads are not listed.",
+        "crossReferences": [
+          "Acts 13:5-6",
+          "Acts 13:6-12"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-first-05",
@@ -919,7 +953,16 @@
         "Acts 13:6-12"
       ],
       "qualification": "",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "Sergius Paulus seeks to hear the message, while Elymas opposes the missionaries. The episode links proclamation, resistance and the proconsul's response, rather than supplying a separate journey outside Cyprus.",
+        "crossReferences": [
+          "Acts 13:6-12",
+          "Acts 13:16-41"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-first-06",
@@ -931,7 +974,16 @@
         "Acts 13:13"
       ],
       "qualification": "John's return is not plotted as a journey made by Paul.",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "At Perga, John Mark departs for Jerusalem. The later dispute over taking him on another journey gives this separation narrative significance, without proving additional stops in Pamphylia.",
+        "crossReferences": [
+          "Acts 15:36-39",
+          "Acts 13:13-14"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-first-07",
@@ -944,7 +996,16 @@
         "Acts 13:42-52"
       ],
       "qualification": "",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "Paul's synagogue speech recalls Israel's history, David and the announced forgiveness through Jesus. The next Sabbath brings a mixed response and opposition, shaping the turn to Gentile hearers.",
+        "crossReferences": [
+          "Acts 13:16-41",
+          "Acts 13:42-52"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-first-08",
@@ -956,7 +1017,16 @@
         "Acts 14:1-7"
       ],
       "qualification": "",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "At Iconium both Jews and Greeks believe, while opposition divides the city. The missionaries remain for a time before threats cause them to leave; Acts does not provide the exact duration.",
+        "crossReferences": [
+          "Acts 14:1-7",
+          "Acts 14:21-23"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-first-09",
@@ -968,7 +1038,16 @@
         "Acts 14:8-20"
       ],
       "qualification": "",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "After a man is healed at Lystra, the crowd mistakes the missionaries for gods. Their response points to the living Creator, and the ensuing attack reverses the crowd's apparent enthusiasm.",
+        "crossReferences": [
+          "Acts 14:8-20",
+          "Acts 17:22-31"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-first-10",
@@ -980,7 +1059,15 @@
         "Acts 14:20-21"
       ],
       "qualification": "",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "Derbe is the final named ministry town before the mission retraces its steps. Acts reports many disciples being made here, but gives no particular meeting place or length of residence.",
+        "crossReferences": [
+          "Acts 14:20-23"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-first-11",
@@ -992,7 +1079,15 @@
         "Acts 14:21-23"
       ],
       "qualification": "These named revisits are retained separately from the outward visits.",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "Returning to Lystra after persecution allows the travellers to strengthen new believers instead of leaving them isolated. Acts associates this work with encouragement amid suffering and appointing elders.",
+        "crossReferences": [
+          "Acts 14:19-23"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-first-12",
@@ -1004,7 +1099,16 @@
         "Acts 14:21-23"
       ],
       "qualification": "These named revisits are retained separately from the outward visits.",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "The second visit to Iconium belongs to the pastoral return, rather than a second outward mission. Acts explicitly describes revisiting disciples and organising churches established earlier.",
+        "crossReferences": [
+          "Acts 14:1-7",
+          "Acts 14:21-23"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-first-13",
@@ -1016,7 +1120,16 @@
         "Acts 14:21-23"
       ],
       "qualification": "These named revisits are retained separately from the outward visits.",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "The return to Pisidian Antioch follows the opposition narrated in Acts 13. Re-entering a community despite hostility illustrates the continuing care given to new disciples beyond initial proclamation.",
+        "crossReferences": [
+          "Acts 13:44-52",
+          "Acts 14:21-23"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-first-14",
@@ -1028,7 +1141,15 @@
         "Acts 14:24"
       ],
       "qualification": "",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "Acts says the travellers passed through Pisidia towards Pamphylia. This is a regional transition rather than an independently recorded stop in a newly named city or proof of the exact road.",
+        "crossReferences": [
+          "Acts 14:21-25"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-first-15",
@@ -1040,7 +1161,16 @@
         "Acts 14:24"
       ],
       "qualification": "",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "Pamphylia is named as a region on the return journey. The next explicit preaching action occurs at Perga; a chain of additional towns cannot be inferred solely from the regional label.",
+        "crossReferences": [
+          "Acts 14:24-25",
+          "Acts 13:13-14"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-first-16",
@@ -1052,7 +1182,16 @@
         "Acts 14:25"
       ],
       "qualification": "",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "Perga appears again, now with an explicit statement that the word was spoken there. The contrast with the brief outward arrival explains why the visits are retained as separate study stages.",
+        "crossReferences": [
+          "Acts 13:13-14",
+          "Acts 14:24-26"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-first-17",
@@ -1064,7 +1203,15 @@
         "Acts 14:25-26"
       ],
       "qualification": "",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "After Perga the missionaries descend to Attalia and set sail towards Syria. The text identifies the port and destination, but not the exact sea course or stops between them.",
+        "crossReferences": [
+          "Acts 14:24-28"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-first-18",
@@ -1076,7 +1223,16 @@
         "Acts 14:26-28"
       ],
       "qualification": "",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "The sending church hears what happened through the missionaries and how a door of faith opened to Gentiles. This report completes the narrative mission unit and returns the focus to the Antioch community.",
+        "crossReferences": [
+          "Acts 13:1-3",
+          "Acts 14:26-28"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-second-01",
@@ -1088,7 +1244,16 @@
         "Acts 15:36-41"
       ],
       "qualification": "Barnabas and Mark sail to Cyprus separately; that journey is not assigned to Paul.",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "Paul proposes revisiting earlier communities, but disagreement over John Mark divides the teams. Silas accompanies Paul; the separate Barnabas-and-Mark voyage must not be treated as another Pauline stop.",
+        "crossReferences": [
+          "Acts 13:13",
+          "Acts 15:36-41"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-second-02",
@@ -1100,7 +1265,16 @@
         "Acts 15:41"
       ],
       "qualification": "",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "Acts describes strengthening churches through Syria and Cilicia without enumerating each town or road. The regional label establishes purpose, not a licence to invent settlement-level map markers.",
+        "crossReferences": [
+          "Acts 15:40-41",
+          "Acts 16:4-5"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-second-03",
@@ -1112,7 +1286,16 @@
         "Acts 16:1"
       ],
       "qualification": "",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "Returning to Derbe joins the second journey to believers established on the earlier visit. Acts 16:1 names Derbe and Lystra before introducing Timothy, but not a surveyed road between them.",
+        "crossReferences": [
+          "Acts 14:20-23",
+          "Acts 16:1-5"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-second-04",
@@ -1124,7 +1307,16 @@
         "Acts 16:1-5"
       ],
       "qualification": "",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "Timothy is already a respected disciple when he joins the team. The journey also communicates the Jerusalem decisions to churches, presenting a cooperative mission rather than one person's travel log.",
+        "crossReferences": [
+          "Acts 16:1-5",
+          "Acts 15:22-29"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-second-05",
@@ -1136,7 +1328,16 @@
         "Acts 16:6"
       ],
       "qualification": "The restriction is not a denial of the later recorded visit to Ephesus.",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "The travellers pass through Phrygia and Galatia while being restrained from speaking in Asia at that point. Luke does not name a chain of towns in this region; later Ephesus activity does not erase this earlier restriction.",
+        "crossReferences": [
+          "Acts 16:6-8",
+          "Acts 19:1-10"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-second-06",
@@ -1148,7 +1349,15 @@
         "Acts 16:7-8"
       ],
       "qualification": "",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "An attempted entry into Bithynia is prevented and the party proceeds towards Troas. The narrative is about redirection, not an accomplished visit to Bithynia or a fully specified road through Mysia.",
+        "crossReferences": [
+          "Acts 16:6-10"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-second-07",
@@ -1160,7 +1369,15 @@
         "Acts 16:8-10"
       ],
       "qualification": "",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "At Troas the night vision leads the travellers to seek passage into Macedonia. The shift to 'we' narration in Acts is a literary feature, not independent evidence identifying every companion.",
+        "crossReferences": [
+          "Acts 16:8-12"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-second-08",
@@ -1172,7 +1389,15 @@
         "Acts 16:11"
       ],
       "qualification": "",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "Samothrace appears in a short sea-crossing itinerary. Acts does not describe an independent preaching episode there, and an island-scale map point does not establish a specific harbour or landing.",
+        "crossReferences": [
+          "Acts 16:10-12"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-second-09",
@@ -1184,7 +1409,15 @@
         "Acts 16:11"
       ],
       "qualification": "",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "Neapolis is the named arrival point before travelling inland to Philippi. The passage supplies an ordered movement but no dated sailing log or separate ministry scene in Neapolis.",
+        "crossReferences": [
+          "Acts 16:11-12"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-second-10",
@@ -1196,7 +1429,16 @@
         "Acts 16:12-40"
       ],
       "qualification": "",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "Philippi pairs Lydia's welcome and hospitality with later conflict, imprisonment and the jailer's household. These scenes trace the formation of relationships as well as the public consequences of the message.",
+        "crossReferences": [
+          "Acts 16:11-15",
+          "Acts 16:16-40"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-second-11",
@@ -1208,7 +1450,15 @@
         "Acts 17:1"
       ],
       "qualification": "No separate teaching episode is reported here.",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "Amphipolis is mentioned as a town passed through on the way to Thessalonica. Acts does not narrate a sermon or the formation of a church there, so the entry remains a travel stage.",
+        "crossReferences": [
+          "Acts 17:1-4"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-second-12",
@@ -1220,7 +1470,15 @@
         "Acts 17:1"
       ],
       "qualification": "No separate teaching episode is reported here.",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "Apollonia, like Amphipolis, is named on the passing itinerary rather than described as a separate preaching venue. The named settlement should not be taken as proof of an otherwise unmentioned church.",
+        "crossReferences": [
+          "Acts 17:1-4"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-second-13",
@@ -1232,7 +1490,16 @@
         "Acts 17:1-9"
       ],
       "qualification": "",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "At Thessalonica Paul reasons from Scripture about the Messiah's suffering and resurrection. Some respond while others oppose the new community, making this episode more than a geographic waypoint.",
+        "crossReferences": [
+          "Acts 17:1-9",
+          "1 Thessalonians 2:1-2"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-second-14",
@@ -1244,7 +1511,16 @@
         "Acts 17:10-15"
       ],
       "qualification": "",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "At Berea people examine the Scriptures carefully and opposition follows from Thessalonica. Paul's departure is distinguished from Silas and Timothy remaining, so a single route line for the whole team would be misleading.",
+        "crossReferences": [
+          "Acts 17:10-15",
+          "Acts 18:5"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-second-15",
@@ -1255,8 +1531,17 @@
       "passages": [
         "Acts 17:15-34"
       ],
-      "qualification": "Acts does not establish the precise transport route from Berea to Athens.",
-      "reviewStatus": "editorial-reading-aid"
+      "qualification": "Acts 17:14-15 names Paul's arrival at Athens after leaving Berea but does not fix his precise transit path. Published GIS analysis compares plausible reconstructions rather than establishing one certain itinerary; companion movements and letter chronology require separate analysis.",
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "In Athens Paul addresses an audience familiar with multiple philosophical traditions and speaks of the Creator, repentance and resurrection. Acts does not state his precise route from Berea or resolve the separate movements of his companions.",
+        "crossReferences": [
+          "Acts 17:15-34",
+          "Acts 17:10-15"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-second-16",
@@ -1268,7 +1553,16 @@
         "Acts 18:1-18"
       ],
       "qualification": "",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "At Corinth Paul works alongside Aquila and Priscilla, teaches and encounters opposition. Acts mentions an eighteen-month period, but this does not establish every intermediate journey or an exact total regional itinerary.",
+        "crossReferences": [
+          "Acts 18:1-18",
+          "1 Corinthians 2:1-5"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-second-17",
@@ -1280,7 +1574,15 @@
         "Acts 18:18"
       ],
       "qualification": "",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "Cenchreae is part of the departure account that also mentions a vow. The passage's grammatical subject deserves care; the geographical stage is established more firmly than some readings of who made the vow.",
+        "crossReferences": [
+          "Acts 18:18-21"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-second-18",
@@ -1292,7 +1594,16 @@
         "Acts 18:19-21"
       ],
       "qualification": "",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "At Ephesus Paul reasons in the synagogue but does not extend this visit. His intention to return distinguishes this brief scene from the extended Ephesian ministry narrated later.",
+        "crossReferences": [
+          "Acts 18:19-21",
+          "Acts 19:1-10"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-second-19",
@@ -1304,7 +1615,15 @@
         "Acts 18:22"
       ],
       "qualification": "",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "The travellers land at Caesarea before Paul goes up to greet a church and then returns to Antioch. Caesarea is explicit, whereas the intermediate church's city is not named in Acts 18:22.",
+        "crossReferences": [
+          "Acts 18:18-23"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-second-20",
@@ -1316,7 +1635,16 @@
         "Acts 18:22"
       ],
       "qualification": "Acts 18:22 says Paul went up and greeted the church after landing at Caesarea, but does not name the church's city. Jerusalem is a common interpretation of 'went up', not an explicit place-name in this verse. This stage remains unpinned.",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "The unnamed church is frequently taken to be Jerusalem because Acts says Paul 'went up'. That is an inference, not the written place name, and no Jerusalem pin has been added for this stage.",
+        "crossReferences": [
+          "Acts 18:22",
+          "Acts 15:30-35"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-second-21",
@@ -1328,7 +1656,16 @@
         "Acts 18:22"
       ],
       "qualification": "",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "Paul returns to Antioch for an unspecified period before setting out again. This endpoint separates the second narrative journey unit from subsequent strengthening of disciples in Galatia and Phrygia.",
+        "crossReferences": [
+          "Acts 18:22-23",
+          "Acts 13:1-3"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-third-01",
@@ -1993,6 +2330,33 @@
           "scope": "Primary narrative comparison for reached, planned, offshore and unlocated settings; not an external maritime reconstruction."
         }
       ]
+    },
+    {
+      "id": "berea-athens-route",
+      "title": "Berea to Athens: reconstructed route, not a recorded road",
+      "description": "Acts 17:14-15 narrates Paul's departure from Berea and arrival at Athens without fixing intervening roads or a definite sea crossing. A peer-reviewed GIS study analyses plausible alternatives and companion movements; one inferred route must not be treated as an explicit biblical statement or independently verified ancient track.",
+      "passages": [
+        "Acts 17:10-15",
+        "Acts 18:1-5"
+      ],
+      "sourceLinks": [
+        {
+          "title": "Altena et al. (2021), GIS as a heuristic tool to interpret ancient historiography, Transactions in GIS",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8361720/",
+          "scope": "Peer-reviewed reconstruction study of Berea-to-Athens route uncertainty and companions; not proof of a unique historical route."
+        },
+        {
+          "title": "Crossway ESV, Acts 17",
+          "url": "https://www.esv.org/Acts+17/",
+          "scope": "Primary narrative for Berea, departure and Athens."
+        }
+      ]
     }
-  ]
+  ],
+  "studyCoverage": {
+    "reviewedOn": "2026-10-31",
+    "scope": "39 of 83 stages: first and second conventional missionary journeys. Third journey and prisoner voyage await substantive reading-context expansion.",
+    "method": "Original Scripture-first editorial notes based on Acts, with linked comparison passages and a bounded published scholarly geography discussion. Passage references and existing place records are kept distinct from independent verification of travel routes.",
+    "limit": "Scripture reading aids are not independent specialist historical reviews; thematic links to Pauline letters do not independently establish a precise Acts travel date or route."
+  }
 }
