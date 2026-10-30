@@ -14,7 +14,7 @@ test('v1.0 roadmap declares five launch gates with honest current baseline',()=>
  assert.equal(roadmap.v1Readiness.target,'1.0.0');
  assert.equal(roadmap.v1Readiness.gates.length,5);
  assert.equal(roadmap.v1Readiness.stages.length,5);
- assert.deepEqual(v1ReadinessCounts(roadmap.v1Readiness),{met:8,open:9,total:17,ready:false});
+ assert.deepEqual(v1ReadinessCounts(roadmap.v1Readiness),{met:9,open:8,total:17,ready:false});
  assert.equal(roadmap.milestones.find(m=>m.id==='v1-evidence-closeout')?.status,'next');
 });
 
@@ -65,7 +65,7 @@ test('provider acceptance has traceable live and simulated evidence without impl
   assert.match(criterion.reviewer,/AI-assisted verification/);
   assert.equal(criterion.evidence,'sources/operations/v1-reader-provider-production-smoke-2026-10-31.md');
  }
- for(const id of ['source-licences','security-review','live-smoke','launch-signoff'])assert.equal(gates.find(c=>c.id===id).status,'open');
+ for(const id of ['source-licences','critical-claims','live-smoke','launch-signoff'])assert.equal(gates.find(c=>c.id===id).status,'open');
  const report=read('sources/operations/v1-reader-provider-production-smoke-2026-10-31.md');
  for(const name of ['ESV','NASB20','NIV','NKJV','John 3:16','Psalms 23:1','Romans 8:28','not','licence'])assert.ok(report.includes(name));
  const packageJson=JSON.parse(read('package.json'));
@@ -81,5 +81,17 @@ test('local backup recovery is accepted by evidence while physical data loss and
  assert.equal(recovery.evidence,'sources/operations/v1-notebook-recovery-audit-2026-10-31.md');
  const report=read(recovery.evidence);
  for(const item of ['quota','another tab','Raw','permanently lost','unencrypted','Backups'])assert.ok(report.toLowerCase().includes(item.toLowerCase()),item);
- for(const id of ['security-review','source-licences','screen-readers','live-smoke','launch-signoff'])assert.equal(criteria.find(c=>c.id===id).status,'open',id);
+ for(const id of ['source-licences','screen-readers','cross-browser-zoom','live-smoke','launch-signoff'])assert.equal(criteria.find(c=>c.id===id).status,'open',id);
+});
+
+test('threat-model acceptance is source-linked while publisher licences and independent testing remain open',()=>{
+ const gates=roadmap.v1Readiness.gates.flatMap(g=>g.criteria),review=gates.find(x=>x.id==='security-review');
+ assert.equal(review.status,'met');assert.equal(review.mode,'manual');
+ assert.equal(review.reviewedOn,'2026-10-31');
+ assert.match(review.reviewer,/AI-assisted bounded threat-model review/);
+ assert.equal(review.evidence,'sources/security/v1-privacy-threat-model-2026-10-31.md');
+ const content=read(review.evidence);
+ for(const term of ['FUMS','Crossway','API.Bible','XSS','CSP','rate limits','30 requests','no-referrer','unencrypted','penetration test'])assert.ok(content.includes(term),'Threat model lacks '+term);
+ for(const id of ['source-licences','critical-claims','screen-readers','cross-browser-zoom','rollback','launch-signoff'])assert.equal(gates.find(x=>x.id===id).status,'open');
+ assert.equal(roadmap.milestones.find(m=>m.id==='v1-security-privacy-threat-model')?.status,'delivered');
 });
