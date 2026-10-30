@@ -18,6 +18,8 @@ for(const view of views)test(`${view}: WCAG checks, both themes and no horizonta
    // stable state, not the transition, without excluding any axe rules.
    const expected=theme==='light'?'rgb(246, 240, 229)':'rgb(24, 42, 52)';
    await expect(page.locator('.city-tab:not(.selected)').first()).toHaveCSS('background-color',expected);
+   const activeExpected=theme==='light'?'rgb(255, 253, 247)':'rgb(20, 35, 44)';
+   await expect(page.locator('.city-tab.selected').first()).toHaveCSS('background-color',activeExpected);
   }
   if(view==='about'){
    const path=testInfo.outputPath(`about-${theme}.png`);
