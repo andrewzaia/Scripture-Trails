@@ -1,10 +1,10 @@
 {
   "project": "Scripture Trails",
-  "updated": "2026-10-29",
-  "description": "A transparent, evidence-aware roadmap reviewed against the released application through v0.30.0. Delivered records implementation milestones, including successive expansions; it is not a count of independent features or scholarly certification. Future work has completion criteria and no promised delivery dates.",
+  "updated": "2026-10-30",
+  "description": "A transparent, evidence-aware roadmap reviewed against the released application through v0.32.0. Delivered records implementation milestones, including successive expansions; it is not a count of independent features or scholarly certification. Future work has completion criteria and no promised delivery dates.",
   "currentFocus": [
     "Next priority: manual screen-reader and real-device accessibility review, following the browser keyboard, drawer and text-reflow repairs in v0.29.1",
-    "Deepen source coverage: all 115 explained pairs have dated editorial assessments and scoped secondary citations after the 32 commentary follow-ups. Fuller literature, recorded access limits, competing interpretations and independent specialist review remain open.",
+    "Expand Atlas explanation coverage responsibly: 161 annotated pairs are available, including 46 new passage-linked reading aids without separate dated secondary-source assessments. The previous 115 assessments retain their scoped citations; independent specialist review remains open.",
     "Keep desktop/mobile browser, accessibility and notebook regression checks passing in CI; add manual assistive-technology findings as they are reviewed",
     "Arrange independent historical, textual and archaeological review, including the first Exodus collection, when suitable specialists are available",
     "Then extend the Hebrew Bible geography library with separately scoped kings, prophets, exile and return studies"
@@ -621,6 +621,34 @@
         "Compare complete excavation reports and textual apparatuses where access permits; preserve unresolved warnings"
       ],
       "verification": "Each declared batch needs checked supporting citations, implemented corrections or retained warnings with stated source-level reasons. Source-link presence does not establish specialist signoff."
+    },
+    {
+      "id": "atlas-explanations-46",
+      "phase": "connections",
+      "status": "delivered",
+      "title": "First 46-pair Atlas explanation expansion and coverage audit",
+      "summary": "Expand the passage-specific 'Why these passages connect' register from 115 to 161 annotated pairs, including explicit quotations, textual echoes and bounded typological comparisons. Quantify imported and editorial-only pairs separately.",
+      "capabilities": [
+        "46 new indexed reference pairs with passage-specific rationale, limitations, context and review status",
+        "Two older generic explanations rewritten to identify their textual basis and interpretive caution",
+        "Separate counts for 301,553 unique pairs, 161 explanations and 301,392 unexplained pairs",
+        "Preserve the 115 dated citation assessments, without falsely representing the 46 new aids as externally reviewed"
+      ],
+      "verification": "Proposed for v0.32.0. Each new pair is present in the locally imported cross-reference snapshot; canonical references, duplicate prevention, review-status distinctions, coverage statistics and regression checks require release verification."
+    },
+    {
+      "id": "atlas-explanations-followup",
+      "phase": "next",
+      "status": "planned",
+      "title": "Source assess new Atlas explanations and expand high-value connections",
+      "summary": "Assess the 46 new editorial reading aids in dated Scripture-context and secondary-source batches, then prioritise further direct quotations and strong narrative parallels before weaker thematic associations.",
+      "capabilities": [
+        "Add accessible, attributed supporting sources and source-level limitations for the newly annotated pairs",
+        "Recheck original-language and textual-tradition differences for sensitive quotation and fulfilment claims",
+        "Review clear explicit citations before adding speculative theological connections",
+        "Keep About explanation counts and reviewed counts independent and generated from the data"
+      ],
+      "verification": "A batch closes only after source assessment records, access limits, regression tests and appropriate versioned releases are complete; no assumption of independent specialist review."
     }
   ]
 }
