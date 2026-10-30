@@ -1,6 +1,16 @@
 {
   "releases": [
     {
+      "version": "0.41.0",
+      "date": "2026-10-31",
+      "title": "Gospel journeys: substantive Scripture study for every event",
+      "changes": [
+        "Add 79 original Gospel episode study contexts and 156 connected canonical reading references across the entire journey.",
+        "Document the disputed census and Herod-era dating, Mark's transmitted ending and Luke-Acts ascension variants using bounded publisher and academic sources.",
+        "Preserve the Gospel geography and chronology warnings while leaving independent specialist review and remaining v1.0 acceptance criteria open."
+      ]
+    },
+    {
       "version": "0.40.0",
       "date": "2026-10-31",
       "title": "All Pauline journeys: complete Scripture study depth",

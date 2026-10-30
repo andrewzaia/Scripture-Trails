@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.41.0 - 31/10/2026: Gospel journeys: substantive Scripture study for every event
+
+- Add 79 original Gospel episode study contexts and 156 connected canonical reading references across the entire journey.
+- Document the disputed census and Herod-era dating, Mark's transmitted ending and Luke-Acts ascension variants using bounded publisher and academic sources.
+- Preserve the Gospel geography and chronology warnings while leaving independent specialist review and remaining v1.0 acceptance criteria open.
+
 ## 0.40.0 - 31/10/2026: All Pauline journeys: complete Scripture study depth
 
 - Add original Acts-based context and connected reading passages to the remaining 44 third-journey and Rome-voyage stages, completing all 83 Pauline studies.

@@ -284,3 +284,26 @@ test('Rome wreck study retains an unpinned stage and navigable biblical context'
  await page.locator('[data-paul="study-links"] .jesus-passage-row').last().getByRole('button',{name:'Read'}).click();
  await expect(page.locator('#reader-title')).toHaveText(/^Acts 28:1/);
 });
+
+test('Gospel journey stages show individual Scripture contexts and open comparison passages',async({page})=>{
+ await open(page,'jesus-map');
+ await expect(page.locator('[data-jesus="episode-study-context"]')).toContainText("Luke places the birth within a narrative");
+ await expect(page.locator('[data-jesus="episode-study-links"] .jesus-passage-row')).toHaveCount(2);
+ await page.locator('[data-jesus="episode-study-links"] .jesus-passage-row').first().getByRole('button',{name:'Read in Bible reader'}).click();
+ await expect(page.locator('#reader-title')).toHaveText(/^Luke 2:8/);
+ await navigate(page,'jesus-map');
+ await page.goto('/?view=jesus-map&stop=j059&translation=ESV');
+ await expect(page.locator('[data-jesus="event-heading"]')).toHaveText('Zacchaeus welcomed');
+ await expect(page.locator('[data-jesus="episode-study-context"]')).toContainText('restitution and generosity');
+});
+test('Gospel disputed ending and ascension show qualified sources and maintain stable deep links',async({page})=>{
+ await page.goto('/?view=jesus-map&stop=j074&translation=ESV');
+ await expect(page.locator('#view-jesus-map')).toBeVisible();
+ await expect(page.locator('[data-jesus="event-heading"]')).toHaveText('The empty tomb and appearances');
+ await expect(page.locator('[data-jesus="episode-study-context"]')).toContainText('longer ending at 16:9-20');
+ await expect(page.locator('[data-jesus="audit-event-issues"]')).toContainText('Several early witnesses');
+ await page.goto('/?view=jesus-map&stop=j079&translation=ESV');
+ await expect(page.locator('[data-jesus="event-heading"]')).toHaveText('Ascension near Bethany');
+ await expect(page.locator('[data-jesus="episode-study-context"]')).toContainText('textual variants in Luke 24:51-52');
+ await expect(page.locator('[data-jesus="chronology-comparisons"]')).toContainText('Ascension: narrative continuity');
+});

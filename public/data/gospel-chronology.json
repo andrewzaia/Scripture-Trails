@@ -31,6 +31,20 @@
       "kind": "Peer-reviewed journal article, Ephemerides Theologicae Lovanienses 98.2 (2022), pp. 293-312",
       "url": "https://doi.org/10.2143/ETL.98.2.3290792",
       "claim": "The publisher abstract identifies the Bethsaida destination and Gennesaret arrival as a textual issue and surveys proposed readings. This review consulted the abstract, not the subscription-only full argument; the article does not prove a maritime route."
+    },
+    {
+      "id": "huizenga-census-2020",
+      "title": "Leroy A. Huizenga, Bethlehem and the Census, The Oxford Handbook of Christmas (2020), pp. 203-212",
+      "kind": "Academic book chapter, Oxford University Press, abstract accessible",
+      "url": "https://doi.org/10.1093/oxfordhb/9780198831464.013.17",
+      "claim": "Publisher abstract describes the tension between conventional Quirinius-census and Herod-era dates, and discusses a possible alternative reading; it does not establish a consensus historical date or prove an otherwise unattested census. Full chapter was not accessed."
+    },
+    {
+      "id": "zwiep-ascension-1996",
+      "title": "A. W. Zwiep, The Text of the Ascension Narratives (Luke 24.50-3; Acts 1.1-2, 9-11), New Testament Studies 42 (1996), pp. 219-244",
+      "kind": "Peer-reviewed journal article, Cambridge University Press, abstract/extract accessible",
+      "url": "https://doi.org/10.1017/S0028688500020713",
+      "claim": "The publisher extract discusses manuscript support for longer readings in Luke 24:51-52 and Acts 1 and reports their acceptance in many critical editions. The extract alone is not an original manuscript collation; the full article was not accessed."
     }
   ],
   "comparisons": [
@@ -131,6 +145,45 @@
       "analysis": "Mark 6:45 directs the disciples toward Bethsaida, whereas 6:53 reports that they moored at Gennesaret. John 6:17 describes a Capernaum-directed crossing. The map does not turn those different narrative statements into a single measured landing track. The linked study discusses narrative and compositional explanations but is not evidence for GPS coordinates.",
       "sourceIds": [
         "andrejevs-2022"
+      ]
+    },
+    {
+      "id": "bethlehem-census-herod",
+      "title": "Birth narratives: census language and Herod",
+      "events": [
+        "j001",
+        "j003",
+        "j005"
+      ],
+      "issueId": "census-herod-dating",
+      "passages": [
+        "Luke 2:1-7",
+        "Matthew 2:1-12",
+        "Matthew 2:19-23"
+      ],
+      "status": "historical dating unresolved",
+      "analysis": "Luke narrates a census associated with Quirinius while Matthew locates the birth account in Herod's reign. The conventional external dates have prompted competing historical and grammatical interpretations. The map follows each Gospel's witness but does not claim a proved single modern calendar year or a historically confirmed earlier census.",
+      "sourceIds": [
+        "huizenga-census-2020"
+      ]
+    },
+    {
+      "id": "luke-acts-ascension",
+      "title": "Ascension: narrative continuity and textual witnesses",
+      "events": [
+        "j076",
+        "j079"
+      ],
+      "issueId": "luke-ascension-variants",
+      "passages": [
+        "Luke 24:36-49",
+        "Luke 24:50-53",
+        "Acts 1:6-12"
+      ],
+      "status": "text-critical and narrative sequence qualified",
+      "analysis": "Luke 24 presents appearances, instruction and a departure near Bethany, while Acts 1 supplies further chronological framing and identifies the Mount of Olives. The text of Luke 24:51-52 itself has a documented manuscript history. Neither passage provides an exact surveyed location or a complete harmonised timetable for every Gospel appearance.",
+      "sourceIds": [
+        "zwiep-ascension-1996"
       ]
     }
   ]

@@ -1,7 +1,7 @@
 {
   "version": 2,
   "title": "The journeys of Jesus",
-  "method": "Gospel-referenced itinerary, not a reconstructed GPS track. Chronological ordering blends the Gospel narratives and is debated, especially across John and the Synoptics. The slider shows narrative stops, not measured dates or distances. Each stop describes a recorded episode, not proof of a distinct trip. The first-pass evidence register documents corrected assumptions, unresolved scholarly issues and limited screening status at each stop.",
+  "method": "Gospel-referenced itinerary, not a reconstructed GPS track. Chronological ordering blends the Gospel narratives and is debated, especially across John and the Synoptics. The slider shows narrative stops, not measured dates or distances. Each stop describes a recorded episode, not proof of a distinct trip. The first-pass evidence register documents corrected assumptions, unresolved scholarly issues and limited screening status at each stop. Each episode includes an original Scripture reading-context paragraph and canonical comparison references; this editorial depth must not be confused with independent academic verification.",
   "sources": [
     {
       "id": "gospels",
@@ -456,12 +456,23 @@
         "Matthew 2:1"
       ],
       "evidence": "named",
-      "qualification": "",
+      "qualification": "Luke connects the birth to a registration associated with Quirinius (Luke 2:1-2), while Matthew begins in Herod's reign (Matthew 2:1). The conventional historical dates produce a genuine chronology debate; the itinerary does not assign a verified calendar year or assume an earlier census is established.",
       "review": {
-        "status": "screened",
+        "status": "qualified",
         "basis": "passage-index-and-location-screen",
         "reviewedOn": "2026-10-26",
-        "issueIds": []
+        "issueIds": [
+          "census-herod-dating"
+        ]
+      },
+      "study": {
+        "context": "Luke places the birth within a narrative about imperial registration and a journey to Bethlehem, while Matthew starts with Bethlehem in the days of Herod. Their accounts should be read in their own sequences; the census dating and precise modern year remain debated.",
+        "crossReferences": [
+          "Luke 2:8-20",
+          "Matthew 2:1-6"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -482,6 +493,15 @@
         "issueIds": [
           "chronology-birth"
         ]
+      },
+      "study": {
+        "context": "Mary and Joseph bring Jesus to the Jerusalem temple, where Simeon and Anna recognise his significance. Luke connects faithful worship, Israel's hope and an approaching sorrow; the scene does not independently establish the interval before Matthew's flight to Egypt.",
+        "crossReferences": [
+          "Luke 2:25-38",
+          "Matthew 2:13-15"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -496,10 +516,21 @@
       "evidence": "named",
       "qualification": "Matthew does not specify that the visit occurred on the night of the birth.",
       "review": {
-        "status": "screened",
+        "status": "qualified",
         "basis": "passage-index-and-location-screen",
         "reviewedOn": "2026-10-26",
-        "issueIds": []
+        "issueIds": [
+          "census-herod-dating"
+        ]
+      },
+      "study": {
+        "context": "Matthew narrates visitors from the east following a star and paying homage to the child. Herod's inquiries and the visitors' changed return route matter more than a reconstructed travel map: Matthew gives neither their number nor an exact arrival day.",
+        "crossReferences": [
+          "Matthew 2:7-16",
+          "Luke 2:1-7"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -520,6 +551,15 @@
         "issueIds": [
           "chronology-birth"
         ]
+      },
+      "study": {
+        "context": "Matthew describes Joseph leaving for Egypt after a warning and returning when danger passes. Egypt functions as refuge and is connected by Matthew to Hosea's language of God's son; no Egyptian city or route is supplied.",
+        "crossReferences": [
+          "Matthew 2:19-23",
+          "Hosea 11:1"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -539,8 +579,18 @@
         "basis": "passage-index-and-location-screen",
         "reviewedOn": "2026-10-26",
         "issueIds": [
-          "chronology-birth"
+          "chronology-birth",
+          "census-herod-dating"
         ]
+      },
+      "study": {
+        "context": "Matthew associates the family's settling in Nazareth with the return from Egypt; Luke moves from Jerusalem temple duties to growth in Nazareth. The two narrative presentations cannot be merged into an independently timed itinerary by adding dates the texts do not give.",
+        "crossReferences": [
+          "Matthew 2:19-23",
+          "Luke 2:39-40"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -559,6 +609,14 @@
         "basis": "passage-index-and-location-screen",
         "reviewedOn": "2026-10-26",
         "issueIds": []
+      },
+      "study": {
+        "context": "Luke's account of the twelve-year-old Jesus at Passover depicts sustained attention to discussion in the temple and parental concern. His return with his family frames the episode as childhood growth, not the start of a separately dated teaching tour.",
+        "crossReferences": [
+          "Luke 2:41-52"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -577,6 +635,15 @@
         "basis": "passage-index-and-location-screen",
         "reviewedOn": "2026-10-26",
         "issueIds": []
+      },
+      "study": {
+        "context": "Luke briefly describes Jesus' obedience to his parents and growth in wisdom, stature and favour. The summary gives an upbringing setting in Nazareth, rather than a dated sequence of travels or a record of every childhood event.",
+        "crossReferences": [
+          "Luke 2:41-52",
+          "Matthew 2:23"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -597,6 +664,15 @@
         "basis": "passage-index-and-location-screen",
         "reviewedOn": "2026-10-26",
         "issueIds": []
+      },
+      "study": {
+        "context": "Jesus comes for baptism by John, and the Synoptic accounts connect the act to the Spirit and divine affirmation. Matthew, Mark and Luke describe the river setting, but the precise bank and present-day baptism-site claims need separate historical evidence.",
+        "crossReferences": [
+          "Mark 1:4-11",
+          "John 1:28-34"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -617,6 +693,15 @@
         "basis": "passage-index-and-location-screen",
         "reviewedOn": "2026-10-26",
         "issueIds": []
+      },
+      "study": {
+        "context": "Matthew and Luke expand the temptation narrative with scriptural replies while Mark reports the wilderness period more briefly. The account speaks of testing and obedience rather than identifying a particular named peak, road or surveyed wilderness camp.",
+        "crossReferences": [
+          "Deuteronomy 8:3",
+          "Luke 4:1-13"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -635,6 +720,15 @@
         "basis": "passage-index-and-location-screen",
         "reviewedOn": "2026-10-26",
         "issueIds": []
+      },
+      "study": {
+        "context": "John's account presents the Baptist's testimony and disciples beginning to follow Jesus, including Andrew's introduction of Simon. 'Bethany beyond the Jordan' is the text's place designation, but its archaeological identification and chronology beside the Synoptic call narratives remain contested.",
+        "crossReferences": [
+          "John 1:19-34",
+          "Mark 1:16-20"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -653,6 +747,15 @@
         "basis": "passage-index-and-location-screen",
         "reviewedOn": "2026-10-26",
         "issueIds": []
+      },
+      "study": {
+        "context": "In John, Jesus resolves to depart for Galilee and meets Philip, who then tells Nathanael about him. The narrative names the broader region and the disciples' responses but does not state an intermediate visit to Nazareth or specify a travel road.",
+        "crossReferences": [
+          "John 1:43-51",
+          "John 2:1-2"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -671,6 +774,15 @@
         "basis": "passage-index-and-location-screen",
         "reviewedOn": "2026-10-26",
         "issueIds": []
+      },
+      "study": {
+        "context": "John calls the Cana wedding sign the beginning of Jesus' signs, leading his disciples to believe. The social setting, abundance and sign language are central to John's purpose; an exact house or modern wedding venue cannot be proved from the story.",
+        "crossReferences": [
+          "John 2:1-12",
+          "John 20:30-31"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -689,6 +801,14 @@
         "basis": "passage-index-and-location-screen",
         "reviewedOn": "2026-10-26",
         "issueIds": []
+      },
+      "study": {
+        "context": "John reports a short stay in Capernaum with Jesus' mother, brothers and disciples after the wedding. The few days mentioned form a bridge to Jerusalem, not a separate account of specific ministry acts in the town.",
+        "crossReferences": [
+          "John 2:1-13"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -709,6 +829,15 @@
         "issueIds": [
           "temple-chronology"
         ]
+      },
+      "study": {
+        "context": "John places a temple confrontation near an early Passover and links it to the temple of Jesus' body. The Synoptics narrate a similar disruption in the last week; their relationship is a chronology question, not evidence for two independently dated actions.",
+        "crossReferences": [
+          "Mark 11:15-19",
+          "John 2:18-22"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -727,6 +856,15 @@
         "basis": "passage-index-and-location-screen",
         "reviewedOn": "2026-10-26",
         "issueIds": []
+      },
+      "study": {
+        "context": "The night-time exchange with Nicodemus develops the themes of birth from above, the Spirit and believing in the Son. Jerusalem is inherited from John's surrounding setting, while the conversation itself supplies no identifiable building or street.",
+        "crossReferences": [
+          "John 2:23-25",
+          "John 3:1-21"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -746,6 +884,15 @@
         "basis": "passage-index-and-location-screen",
         "reviewedOn": "2026-10-26",
         "issueIds": []
+      },
+      "study": {
+        "context": "John describes Jesus and his disciples spending time in the Judean countryside and later discusses their baptising activity. The subject becomes how John's ministry relates to Jesus', while towns and precise Jordan approaches are not identified.",
+        "crossReferences": [
+          "John 3:22-36",
+          "John 4:1-3"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -764,6 +911,15 @@
         "basis": "passage-index-and-location-screen",
         "reviewedOn": "2026-10-26",
         "issueIds": []
+      },
+      "study": {
+        "context": "At Jacob's well, Jesus speaks with a Samaritan woman about living water and worship, and the account expands to the town's response. John names Sychar and the well tradition, but the exact ancient settlement match and modern site's claim are separate questions.",
+        "crossReferences": [
+          "John 4:4-26",
+          "Genesis 33:18-20"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -782,6 +938,15 @@
         "basis": "passage-index-and-location-screen",
         "reviewedOn": "2026-10-26",
         "issueIds": []
+      },
+      "study": {
+        "context": "Jesus is at Cana when an official pleads for his son in Capernaum; the healing is described at a distance. Distinguishing the location of the speaker from the child's location prevents adding a Capernaum visit that the scene does not narrate.",
+        "crossReferences": [
+          "John 2:1-11",
+          "John 4:46-54"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -800,6 +965,15 @@
         "basis": "passage-index-and-location-screen",
         "reviewedOn": "2026-10-26",
         "issueIds": []
+      },
+      "study": {
+        "context": "John narrates a healing at a Jerusalem pool during an unnamed feast, followed by teaching about Jesus' authority and witness. The setting is identified in the narrative, but the unnamed festival does not secure this scene's date in a cross-Gospel harmony.",
+        "crossReferences": [
+          "John 5:1-18",
+          "John 5:19-47"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -820,6 +994,15 @@
         "issueIds": [
           "nazareth-order"
         ]
+      },
+      "study": {
+        "context": "Luke places the Nazareth synagogue reading of Isaiah early and follows it with rejection. Mark and Matthew recount hometown rejection later; their sequence may reflect distinct presentations of an encounter rather than two proved visits.",
+        "crossReferences": [
+          "Isaiah 61:1-2",
+          "Mark 6:1-6"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -838,6 +1021,15 @@
         "basis": "passage-index-and-location-screen",
         "reviewedOn": "2026-10-26",
         "issueIds": []
+      },
+      "study": {
+        "context": "Matthew reports Jesus leaving Nazareth for Capernaum and connects the Galilean setting with Isaiah's language about light. The town is named, but the account does not locate a specific household or establish every intermediate visit.",
+        "crossReferences": [
+          "Matthew 4:12-17",
+          "Isaiah 9:1-2"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -860,6 +1052,15 @@
         "issueIds": [
           "disciples-call"
         ]
+      },
+      "study": {
+        "context": "Matthew and Mark present a lakeside call of fishermen, while Luke presents a catch of fish and Simon's response. These are legitimate parallel readings, but their exact order and whether all details describe one meeting are interpretive matters.",
+        "crossReferences": [
+          "Luke 5:1-11",
+          "John 1:35-42"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -881,6 +1082,15 @@
         "issueIds": [
           "disciples-call"
         ]
+      },
+      "study": {
+        "context": "Mark narrates the call before Capernaum synagogue teaching, whereas Luke narrates the synagogue before the catch-and-call episode. The authority of Jesus' teaching is central; neither author supplies a modern calendar reconciling the accounts.",
+        "crossReferences": [
+          "Mark 1:16-28",
+          "Luke 4:31-37"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -901,6 +1111,15 @@
         "basis": "passage-index-and-location-screen",
         "reviewedOn": "2026-10-26",
         "issueIds": []
+      },
+      "study": {
+        "context": "Simon’s mother-in-law is healed, followed by many brought to Jesus at evening. The house is presented as a place of hospitality and restoration, but neither Gospel names an excavated building as the verified scene.",
+        "crossReferences": [
+          "Mark 1:29-39",
+          "Luke 4:38-44"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -921,6 +1140,15 @@
         "basis": "passage-index-and-location-screen",
         "reviewedOn": "2026-10-26",
         "issueIds": []
+      },
+      "study": {
+        "context": "The paralysed man's friends overcome a crowd's obstruction to bring him before Jesus, who speaks of forgiveness and then heals. Mark places the event at Capernaum, while its roof and exact house cannot be matched to a surveyed structure.",
+        "crossReferences": [
+          "Mark 2:1-12",
+          "Luke 5:17-26"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -940,6 +1168,15 @@
         "basis": "passage-index-and-location-screen",
         "reviewedOn": "2026-10-26",
         "issueIds": []
+      },
+      "study": {
+        "context": "The centurion's confidence in Jesus' authority prompts the servant's healing. Matthew describes direct dialogue and Luke reports intermediaries, so the two presentations should be compared rather than forced into one detailed reconstruction.",
+        "crossReferences": [
+          "Luke 7:1-10",
+          "Matthew 8:5-13"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -959,6 +1196,15 @@
         "basis": "passage-index-and-location-screen",
         "reviewedOn": "2026-10-26",
         "issueIds": []
+      },
+      "study": {
+        "context": "Matthew's mountain teaching and Luke's level-place discourse overlap in ethics and kingdom themes but differ in framing and arrangement. The map groups them for study without claiming a single precisely located speech or an established shared date.",
+        "crossReferences": [
+          "Matthew 5:1-12",
+          "Luke 6:17-26"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -977,6 +1223,15 @@
         "basis": "passage-index-and-location-screen",
         "reviewedOn": "2026-10-26",
         "issueIds": []
+      },
+      "study": {
+        "context": "At Nain, Jesus encounters a widow during her son's funeral procession and raises him in Luke's account. The compassion and the town's response are explicit; a present-day procession route or house cannot be derived from the text.",
+        "crossReferences": [
+          "Luke 7:11-17",
+          "1 Kings 17:17-24"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -996,6 +1251,15 @@
         "basis": "passage-index-and-location-screen",
         "reviewedOn": "2026-10-26",
         "issueIds": []
+      },
+      "study": {
+        "context": "Mark describes teaching from a boat to a crowd gathered beside the lake, with parables interpreting different responses to the word. Matthew arranges a substantial collection of parables; neither supplies a precise shore location.",
+        "crossReferences": [
+          "Mark 4:1-20",
+          "Matthew 13:1-23"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -1016,6 +1280,15 @@
         "basis": "passage-index-and-location-screen",
         "reviewedOn": "2026-10-26",
         "issueIds": []
+      },
+      "study": {
+        "context": "The Synoptics relate a storm during a crossing and Jesus' command bringing calm. The contrast between fear and trust carries the narrative; the direction of the journey can be read from context, not the ship's surveyed course.",
+        "crossReferences": [
+          "Mark 4:35-41",
+          "Luke 8:22-25"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -1038,6 +1311,15 @@
         "issueIds": [
           "eastern-lake-variants"
         ]
+      },
+      "study": {
+        "context": "After the crossing, Jesus confronts demonic oppression in eastern lakeshore territory. Gospel manuscripts and traditions differ on Gerasenes, Gadarenes and Gergesenes; this is regional narrative geography rather than a proven landing site.",
+        "crossReferences": [
+          "Mark 5:1-20",
+          "Matthew 8:28-34"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -1060,6 +1342,15 @@
         "issueIds": [
           "jairus-location"
         ]
+      },
+      "study": {
+        "context": "On reaching the opposite shore, Jesus responds to a synagogue leader's plea while a woman is healed in the crowd. Mark names the lakeside but not Capernaum for the encounter, so a city-specific marker would overstate this passage.",
+        "crossReferences": [
+          "Mark 5:21-43",
+          "Luke 8:40-56"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -1081,6 +1372,15 @@
         "issueIds": [
           "nazareth-order"
         ]
+      },
+      "study": {
+        "context": "Mark and Matthew describe neighbours taking offence when Jesus teaches in his hometown. Luke narrates a related confrontation earlier in his Gospel, so the second map entry denotes a textual presentation, not a confirmed extra return trip.",
+        "crossReferences": [
+          "Luke 4:16-30",
+          "Mark 6:1-6"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -1105,6 +1405,15 @@
           "feeding-site",
           "bethsaida-identification"
         ]
+      },
+      "study": {
+        "context": "The five-loaves-and-two-fish feeding precedes a journey across the lake. Luke associates it with Bethsaida and other accounts stress a deserted place; neither supplies a definitive modern hillside or measured approach track.",
+        "crossReferences": [
+          "Luke 9:10-17",
+          "John 6:1-15"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -1127,6 +1436,15 @@
         "issueIds": [
           "sea-crossing-destinations"
         ]
+      },
+      "study": {
+        "context": "Jesus comes to the disciples during their night crossing, and the accounts emphasise fear, recognition and rescue. Mark reports Bethsaida as an intended destination, Gennesaret as landfall, while John directs the travel towards Capernaum; none yields a measured course.",
+        "crossReferences": [
+          "Mark 6:45-56",
+          "John 6:16-21"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -1148,6 +1466,15 @@
         "issueIds": [
           "sea-crossing-destinations"
         ]
+      },
+      "study": {
+        "context": "Mark and Matthew record widespread healing after arrival in Gennesaret. The actual landfall named in Mark should be read against the preceding destination instruction toward Bethsaida, not silently conflated into one exact crossing.",
+        "crossReferences": [
+          "Mark 6:45-56",
+          "Matthew 14:34-36"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -1166,6 +1493,15 @@
         "basis": "passage-index-and-location-screen",
         "reviewedOn": "2026-10-26",
         "issueIds": []
+      },
+      "study": {
+        "context": "John locates the bread-of-life teaching in a Capernaum synagogue after the feeding and crossing. Themes of provision, faith and Jesus as the bread from heaven continue the narrative, while exact building archaeology is not part of this textual claim.",
+        "crossReferences": [
+          "John 6:22-40",
+          "Exodus 16:4-15"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -1185,6 +1521,15 @@
         "basis": "passage-index-and-location-screen",
         "reviewedOn": "2026-10-26",
         "issueIds": []
+      },
+      "study": {
+        "context": "In the region of Tyre, Jesus responds to a Gentile mother's plea for her daughter. Mark and Matthew differ in presentation and terminology, and the region cannot be reduced to a proven house or single city point.",
+        "crossReferences": [
+          "Mark 7:24-30",
+          "Matthew 15:21-28"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -1203,6 +1548,14 @@
         "basis": "passage-index-and-location-screen",
         "reviewedOn": "2026-10-26",
         "issueIds": []
+      },
+      "study": {
+        "context": "Mark explicitly describes a journey through Sidon towards the Decapolis. This unusual circuit is a geographical narrative, but no independent healing or synagogue address in Sidon is reported at this stop.",
+        "crossReferences": [
+          "Mark 7:24-37"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -1221,6 +1574,15 @@
         "basis": "passage-index-and-location-screen",
         "reviewedOn": "2026-10-26",
         "issueIds": []
+      },
+      "study": {
+        "context": "Jesus heals a man who is deaf and has difficulty speaking in the Decapolis region. The scene focuses on his personal interaction and public reaction, without naming the town or a modern archaeological location.",
+        "crossReferences": [
+          "Mark 7:31-37",
+          "Isaiah 35:5-6"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -1240,6 +1602,15 @@
         "basis": "passage-index-and-location-screen",
         "reviewedOn": "2026-10-26",
         "issueIds": []
+      },
+      "study": {
+        "context": "The second mass feeding is narrated with seven loaves and a large crowd, distinguished by Jesus' own later reference to the two feedings. Its location is a broad lakeside setting in Matthew, not a verified archaeological point.",
+        "crossReferences": [
+          "Mark 8:1-21",
+          "Matthew 15:29-39"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -1259,6 +1630,15 @@
         "basis": "passage-index-and-location-screen",
         "reviewedOn": "2026-10-26",
         "issueIds": []
+      },
+      "study": {
+        "context": "Matthew names Magadan and Mark names Dalmanutha after the feeding. The terms describe the arrival area differently and should be studied as parallel geographical witnesses, not assumed to prove that the two names are exact equivalents.",
+        "crossReferences": [
+          "Matthew 15:39",
+          "Mark 8:10-13"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -1279,6 +1659,15 @@
         "issueIds": [
           "bethsaida-identification"
         ]
+      },
+      "study": {
+        "context": "At Bethsaida, Jesus leads a blind man out of the village and restores his sight in stages. The village name is explicit in Mark, but the competing ancient-site identifications remain open questions and do not validate a particular modern house or road.",
+        "crossReferences": [
+          "Mark 8:22-30",
+          "Luke 9:10-17"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -1301,6 +1690,15 @@
         "issueIds": [
           "caesarea-district"
         ]
+      },
+      "study": {
+        "context": "Jesus asks his disciples who they say he is in the district of Caesarea Philippi, and Peter answers that he is the Christ. The region is specified in Mark and Matthew, but the scene is not placed at an identifiable rock, cave or shrine.",
+        "crossReferences": [
+          "Mark 8:27-33",
+          "Matthew 16:13-20"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -1322,6 +1720,15 @@
         "issueIds": [
           "caesarea-district"
         ]
+      },
+      "study": {
+        "context": "Following Peter's confession, Jesus speaks openly of suffering, rejection, death and discipleship. The narrative carries on from the Caesarea Philippi district without supplying another named stop or a newly verified location.",
+        "crossReferences": [
+          "Mark 8:31-9:1",
+          "Luke 9:22-27"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -1342,6 +1749,15 @@
         "basis": "passage-index-and-location-screen",
         "reviewedOn": "2026-10-26",
         "issueIds": []
+      },
+      "study": {
+        "context": "The transfiguration narrative joins divine affirmation, Moses and Elijah, and the disciples' response to Jesus' glory. Matthew, Mark and Luke leave the mountain unnamed; identifying Mount Tabor or Hermon is a later geographical proposal.",
+        "crossReferences": [
+          "Mark 9:2-13",
+          "Exodus 34:29-35"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -1360,6 +1776,15 @@
         "basis": "passage-index-and-location-screen",
         "reviewedOn": "2026-10-26",
         "issueIds": []
+      },
+      "study": {
+        "context": "Matthew situates a discussion about the temple tax at Capernaum, ending with a coin from a fish to prevent offence. The town is named, but the narrative does not specify a particular house, fishing spot or tax-collection building.",
+        "crossReferences": [
+          "Matthew 17:24-27",
+          "Exodus 30:11-16"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -1379,6 +1804,15 @@
         "basis": "passage-index-and-location-screen",
         "reviewedOn": "2026-10-26",
         "issueIds": []
+      },
+      "study": {
+        "context": "In Capernaum, Jesus places a child among the disciples to teach humility and welcome. Mark's account grows from their argument about greatness; Matthew organises related teaching in a wider discourse, so the exact framing varies.",
+        "crossReferences": [
+          "Mark 9:33-37",
+          "Matthew 18:1-6"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -1397,6 +1831,15 @@
         "basis": "passage-index-and-location-screen",
         "reviewedOn": "2026-10-26",
         "issueIds": []
+      },
+      "study": {
+        "context": "On the journey towards Jerusalem, a Samaritan village refuses hospitality because of the direction Jesus has set. Luke highlights his response to the disciples' proposed retaliation; the village is neither named nor locatable from the text.",
+        "crossReferences": [
+          "Luke 9:51-56",
+          "John 4:4-9"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -1417,6 +1860,15 @@
         "issueIds": [
           "galilee-samaria-border"
         ]
+      },
+      "study": {
+        "context": "Luke narrates ten people with leprosy being cleansed while Jesus travels in the border country of Samaria and Galilee. The returning Samaritan's gratitude matters in the story; the verse does not define a single crossing point or precise date.",
+        "crossReferences": [
+          "Luke 17:11-19",
+          "Luke 10:30-37"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -1438,6 +1890,15 @@
         "issueIds": [
           "john-textual-note"
         ]
+      },
+      "study": {
+        "context": "At the Feast of Booths Jesus teaches publicly in Jerusalem and faces divided reactions. The passage register skips John 7:53-8:11, whose manuscript transmission is disputed; its omission here is deliberate rather than a claim of universal textual agreement.",
+        "crossReferences": [
+          "John 7:14-39",
+          "John 8:12-20"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -1456,6 +1917,15 @@
         "basis": "passage-index-and-location-screen",
         "reviewedOn": "2026-10-26",
         "issueIds": []
+      },
+      "study": {
+        "context": "John describes Jesus healing a man blind from birth, followed by extended questioning and his witness. The scene is bound to Jerusalem and the pool of Siloam, but the social conflict and testimony are not reducible to an excavated coordinate.",
+        "crossReferences": [
+          "John 9:1-41",
+          "John 8:12"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -1474,6 +1944,15 @@
         "basis": "passage-index-and-location-screen",
         "reviewedOn": "2026-10-26",
         "issueIds": []
+      },
+      "study": {
+        "context": "Jesus teaches during the winter Feast of Dedication in the temple's Solomon's Colonnade. John names this specific precinct and festival, but neither establishes the building's exact surviving footprint nor the event's date in a combined Gospel calendar.",
+        "crossReferences": [
+          "John 10:22-39",
+          "John 10:1-18"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -1492,6 +1971,15 @@
         "basis": "passage-index-and-location-screen",
         "reviewedOn": "2026-10-26",
         "issueIds": []
+      },
+      "study": {
+        "context": "John says Jesus returned beyond the Jordan to the area where John had first baptised. This establishes a relationship with earlier Baptist testimony, but does not yield an undisputed modern Bethany-beyond-the-Jordan site.",
+        "crossReferences": [
+          "John 1:28-34",
+          "John 10:40-42"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -1510,6 +1998,15 @@
         "basis": "passage-index-and-location-screen",
         "reviewedOn": "2026-10-26",
         "issueIds": []
+      },
+      "study": {
+        "context": "In Bethany, Jesus speaks with Martha and Mary amid grief and calls Lazarus from the tomb. John gives a named village near Jerusalem, while identifying an exact surviving tomb or dating a particular visit requires different evidence.",
+        "crossReferences": [
+          "John 11:1-44",
+          "John 12:1-2"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -1528,6 +2025,14 @@
         "basis": "passage-index-and-location-screen",
         "reviewedOn": "2026-10-26",
         "issueIds": []
+      },
+      "study": {
+        "context": "After opposition grows, John says Jesus withdraws to Ephraim near the wilderness with his disciples. The town's identity and modern site remain debated, so the stop is a narrative place-name rather than a certified location.",
+        "crossReferences": [
+          "John 11:45-57"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -1547,6 +2052,15 @@
         "basis": "passage-index-and-location-screen",
         "reviewedOn": "2026-10-26",
         "issueIds": []
+      },
+      "study": {
+        "context": "Matthew and Mark place ministry in the region across the Jordan following earlier Galilean activity. The general geographical designation is not a list of named Perea towns, and it cannot establish a precise border crossing.",
+        "crossReferences": [
+          "Matthew 19:1-15",
+          "Mark 10:1-16"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -1569,6 +2083,16 @@
         "issueIds": [
           "jericho-direction"
         ]
+      },
+      "study": {
+        "context": "Mark and Matthew describe a healing as Jesus leaves Jericho, while Luke places a related account on the approach and Matthew names two men. These differences should remain visible when reading accounts together; no exact roadside point is established.",
+        "crossReferences": [
+          "Mark 10:46-52",
+          "Luke 18:35-43",
+          "Matthew 20:29-34"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -1587,6 +2111,15 @@
         "basis": "passage-index-and-location-screen",
         "reviewedOn": "2026-10-26",
         "issueIds": []
+      },
+      "study": {
+        "context": "Luke describes Zacchaeus, a chief tax collector, receiving Jesus and responding with restitution and generosity. The named Jericho setting is explicit, but the particular sycamore tree or host dwelling cannot be identified by the passage.",
+        "crossReferences": [
+          "Luke 19:1-10",
+          "Luke 18:35-43"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -1607,6 +2140,15 @@
         "issueIds": [
           "bethany-anointing"
         ]
+      },
+      "study": {
+        "context": "John places a dinner in Bethany before Passover and describes Mary anointing Jesus' feet. Mark and Matthew recount an anointing at Bethany in a different narrative position; the entries are parallel texts, not proof of two separate meals.",
+        "crossReferences": [
+          "John 12:1-11",
+          "Mark 14:3-9"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -1629,6 +2171,15 @@
         "issueIds": [
           "donkey-village"
         ]
+      },
+      "study": {
+        "context": "The disciples obtain a colt as Jesus approaches Jerusalem near Bethphage and Bethany. The accounts describe instructions involving a village, but do not independently identify that village with Bethphage or fix its modern position.",
+        "crossReferences": [
+          "Matthew 21:1-7",
+          "Zechariah 9:9"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -1647,6 +2198,15 @@
         "basis": "passage-index-and-location-screen",
         "reviewedOn": "2026-10-26",
         "issueIds": []
+      },
+      "study": {
+        "context": "Luke recounts the crowd's praise as Jesus comes down from the Mount of Olives, followed by his lament over Jerusalem. The landscape is broadly identified, but the scene supplies no exact overlook or road coordinate.",
+        "crossReferences": [
+          "Luke 19:37-44",
+          "Zechariah 9:9"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -1668,6 +2228,15 @@
         "basis": "passage-index-and-location-screen",
         "reviewedOn": "2026-10-26",
         "issueIds": []
+      },
+      "study": {
+        "context": "All four Gospels narrate Jesus entering Jerusalem to acclamation, but their choice of details and emphasis varies. The procession's meaning is described in Scripture; a single reconstructed urban route is not given in the narratives.",
+        "crossReferences": [
+          "John 12:12-19",
+          "Mark 11:1-11"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -1690,6 +2259,15 @@
         "issueIds": [
           "temple-chronology"
         ]
+      },
+      "study": {
+        "context": "In the final week the Synoptic accounts describe Jesus challenging commerce in the temple precincts. John's earlier temple action is a disputed parallel, so the map should not use these separate literary positions as proof of two distinct episodes.",
+        "crossReferences": [
+          "John 2:13-22",
+          "Mark 11:15-19"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -1709,6 +2287,15 @@
         "basis": "passage-index-and-location-screen",
         "reviewedOn": "2026-10-26",
         "issueIds": []
+      },
+      "study": {
+        "context": "Mark and Matthew note Jesus leaving Jerusalem for Bethany during the final days. These brief travel notices establish a recurring village setting without identifying a particular lodging house on every evening.",
+        "crossReferences": [
+          "Mark 11:11-19",
+          "Matthew 21:17-18"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -1729,6 +2316,15 @@
         "basis": "passage-index-and-location-screen",
         "reviewedOn": "2026-10-26",
         "issueIds": []
+      },
+      "study": {
+        "context": "The temple debates bring together questions of Jesus' authority, resurrection, Scripture and the greatest commandment. The Synoptics organise the material differently, so this grouped entry is a teaching sequence, not one uninterrupted speech.",
+        "crossReferences": [
+          "Mark 12:13-34",
+          "Matthew 22:34-46"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -1749,6 +2345,15 @@
         "basis": "passage-index-and-location-screen",
         "reviewedOn": "2026-10-26",
         "issueIds": []
+      },
+      "study": {
+        "context": "Jesus' teaching on the Mount of Olives follows the disciples' questions about the temple and coming events. Matthew, Mark and Luke preserve different emphases; identifying every prediction with a single securely dated later event requires interpretation.",
+        "crossReferences": [
+          "Mark 13:1-37",
+          "Luke 21:5-36"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -1770,6 +2375,15 @@
         "issueIds": [
           "bethany-anointing"
         ]
+      },
+      "study": {
+        "context": "Mark and Matthew place an anointing at Simon the leper's house in Bethany. John records a related meal involving Mary; the similarities and differences invite comparison but do not prove a second event or additional journey.",
+        "crossReferences": [
+          "Mark 14:3-9",
+          "John 12:1-8"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -1793,6 +2407,15 @@
         "issueIds": [
           "last-supper-calendar"
         ]
+      },
+      "study": {
+        "context": "The Synoptics present preparations for Passover and bread-and-cup teaching, while John frames supper before Passover and emphasises foot-washing and farewell teaching. Their relationship to Passover dates is debated; the venue and calendar are not mapped as certainties.",
+        "crossReferences": [
+          "Luke 22:7-38",
+          "John 13:1-17"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -1814,6 +2437,15 @@
         "basis": "passage-index-and-location-screen",
         "reviewedOn": "2026-10-26",
         "issueIds": []
+      },
+      "study": {
+        "context": "The Gospels describe prayer, distress, Judas' arrival and arrest after the supper. Synoptic accounts name Gethsemane, while John's account identifies a garden across the Kidron; the traditional modern garden's exact boundaries are not independently proved.",
+        "crossReferences": [
+          "Mark 14:32-52",
+          "John 18:1-12"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -1837,6 +2469,15 @@
         "issueIds": [
           "passion-tomb-sites"
         ]
+      },
+      "study": {
+        "context": "Jesus is brought before Jewish and Roman authorities in the passion narratives. The Gospels differ in the order and selection of hearings; grouping them for study does not establish a precise route between identifiable surviving buildings.",
+        "crossReferences": [
+          "Luke 22:54-23:25",
+          "John 18:12-19:16"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -1860,6 +2501,15 @@
         "issueIds": [
           "passion-tomb-sites"
         ]
+      },
+      "study": {
+        "context": "The Gospels identify Golgotha as the place of crucifixion and report Jesus' death in distinct narrative presentations. A named site within ancient Jerusalem need not imply that every later commemorative location is archaeologically certain.",
+        "crossReferences": [
+          "Mark 15:21-41",
+          "John 19:16-30"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -1883,6 +2533,15 @@
         "issueIds": [
           "passion-tomb-sites"
         ]
+      },
+      "study": {
+        "context": "Joseph of Arimathea secures Jesus' body and places it in a tomb ahead of the Sabbath. The texts supply burial context and witnesses, not the surveyed coordinates of a tomb proven beyond competing historical proposals.",
+        "crossReferences": [
+          "Mark 15:42-47",
+          "John 19:38-42"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -1898,15 +2557,26 @@
         "John 20:1-18"
       ],
       "evidence": "named",
-      "qualification": "Accounts differ in the presentation of visitors and sequence; no single modern site is assumed.",
+      "qualification": "The resurrection accounts present visitors, empty tomb and appearances differently. Mark 16:1-8 is cited without treating the manuscript-disputed longer ending (Mark 16:9-20) as an undisputed original continuation. No precise modern tomb site or single harmonised morning timetable is claimed.",
       "review": {
         "status": "qualified",
         "basis": "passage-index-and-location-screen",
         "reviewedOn": "2026-10-26",
         "issueIds": [
           "passion-tomb-sites",
-          "resurrection-sequence"
+          "resurrection-sequence",
+          "mark-longer-ending"
         ]
+      },
+      "study": {
+        "context": "The empty-tomb accounts describe visitors, a missing body and messages of resurrection, with differences in order and emphasis across the four Gospels. Mark 16:1-8 is cited deliberately; the longer ending at 16:9-20 has a documented manuscript history and is not silently treated as undisputed.",
+        "crossReferences": [
+          "Mark 16:1-8",
+          "John 20:1-18",
+          "Matthew 28:1-10"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -1928,6 +2598,15 @@
           "resurrection-sequence",
           "emmaus-identification"
         ]
+      },
+      "study": {
+        "context": "Luke tells of two travellers who recognise the risen Jesus at a meal after he interprets the Scriptures. Emmaus is named and a distance indicated, but its geographical identification remains disputed and the map does not resolve all proposed sites.",
+        "crossReferences": [
+          "Luke 24:13-35",
+          "Luke 24:36-49"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -1949,6 +2628,15 @@
         "issueIds": [
           "resurrection-sequence"
         ]
+      },
+      "study": {
+        "context": "Luke and John report appearances to gathered disciples, and John distinguishes a later encounter when Thomas is present. This event groups related accounts without claiming that all episodes occurred in one continuous evening.",
+        "crossReferences": [
+          "Luke 24:36-49",
+          "John 20:19-29"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -1969,6 +2657,15 @@
         "issueIds": [
           "resurrection-sequence"
         ]
+      },
+      "study": {
+        "context": "John describes Jesus appearing beside the Sea of Tiberias, directing a catch of fish and questioning Peter about love and pastoral care. The scene is located on the lake generally, not at an authenticated modern shoreline point.",
+        "crossReferences": [
+          "John 21:1-23",
+          "Luke 5:1-11"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -1989,6 +2686,15 @@
         "issueIds": [
           "resurrection-sequence"
         ]
+      },
+      "study": {
+        "context": "Matthew places the commission to the eleven on a mountain in Galilee. Its identity is unnamed and its timing relative to John's lakeshore appearance is not specified; the map's sequence is an editorial reading order.",
+        "crossReferences": [
+          "Matthew 28:16-20",
+          "John 21:1-23"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     },
     {
@@ -2002,15 +2708,31 @@
         "Acts 1:6-12"
       ],
       "evidence": "region",
-      "qualification": "Luke 24:50 describes Jesus leading the disciples toward Bethany; Acts 1:12 places their return from the Mount of Olives. These identify a broad area, not surveyed coordinates for the ascension, and do not supply a continuous dated route for all resurrection appearances.",
+      "qualification": "Luke 24:50 places the blessing near Bethany, and Acts 1:12 associates the return with the Mount of Olives. These identify a broad area, not surveyed coordinates. Luke 24:51-52 also has a recognised textual-critical history; precise dating and a complete cross-Gospel resurrection itinerary remain unestablished.",
       "review": {
         "status": "qualified",
         "basis": "passage-index-and-location-screen",
         "reviewedOn": "2026-10-26",
         "issueIds": [
-          "resurrection-sequence"
+          "resurrection-sequence",
+          "luke-ascension-variants"
         ]
+      },
+      "study": {
+        "context": "Luke places Jesus' blessing and departure towards Bethany, while Acts refers to the disciples returning from the Mount of Olives and later describes the time since resurrection. These texts locate a broad area, not a pinpoint site; textual variants in Luke 24:51-52 need their own manuscript-critical consideration.",
+        "crossReferences": [
+          "Luke 24:50-53",
+          "Acts 1:1-12"
+        ],
+        "method": "scripture-context-editorial",
+        "reviewedOn": "2026-10-31"
       }
     }
-  ]
+  ],
+  "contextCoverage": {
+    "reviewedOn": "2026-10-31",
+    "scope": "All 79 Gospel journey entries include distinct original biblical reading-context notes and canonical comparison passages. Existing chronology, location and first-pass issues remain; this is not a comprehensive independent historical or textual audit.",
+    "method": "AI-assisted source-first narrative context and parallel-passage comparison across the Gospel itinerary. Source links address particular text-critical, chronological and site interpretations; unpublished underlying routes are not inferred.",
+    "limitations": "Canonical texts are primary sources for their respective narrative and doctrinal claims, not archaeological proof of event locations. Further publisher-accessible source examination, original-manuscript work, independent historical review and flagship navigation QA remain v1.0 tasks."
+  }
 }

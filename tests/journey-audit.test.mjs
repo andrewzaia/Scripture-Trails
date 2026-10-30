@@ -10,7 +10,7 @@ const j=read('jesus-journeys.json'),g=read('jesus-geography.json'),a=read('jesus
 test('all 79 events and 35 places have first-pass review records but retain open research issues',()=>{
  assert.equal(validateJourneyData(j),true);assert.equal(validatePlaceStudies(g,j),true);assert.equal(validateAuditData(a,j,g),true);
  assert.equal(j.events.length,79);assert.equal(Object.keys(g.places).length,35);
- assert.equal(a.issues.length,19);assert.equal(a.corrections.length,10);
+ assert.equal(a.issues.length,22);assert.equal(a.corrections.length,10);
  assert.ok(a.issues.some(x=>x.status==='open'));
  assert.equal(j.events.every(x=>x.review.basis==='passage-index-and-location-screen'),true);
  assert.ok(/not a claim of independent scholarly certification/i.test(a.methodology.scope));

@@ -4,7 +4,7 @@
   "status": "first-pass-screened",
   "methodology": {
     "primary": "Biblical passages listed with each Gospel/Acts episode are primary narrative sources. The published sequence is a Gospel harmony, not a separately dated GPS reconstruction.",
-    "scope": "First-pass editorial and machine-assisted reference/location screening of 79 episodes and 35 dossiers. Corrected particular overclaims and recorded disputes. NOT a claim of independent scholarly certification or of having verified every historical assertion.",
+    "scope": "First-pass editorial and machine-assisted reference/location screening of 79 episodes and 35 dossiers, now supplemented by individually written biblical reading context for all 79 entries and three additional bounded historical/textual research issues. Corrected particular overclaims and recorded disputes. NOT independent specialist historical, textual or archaeological certification. This is not a claim of independent scholarly certification.",
     "sourceTypes": {
       "scripture": "Canonical Gospel/Acts narrative cited for each episode; text is opened in authorised reader.",
       "historical": "External archaeological or academic reference; proves only its stated archaeological/historical claim.",
@@ -246,6 +246,48 @@
       "references": [
         "https://www.esv.org/verses/Mark%2B6%3A45%E2%80%9356/",
         "https://poj.peeters-leuven.be/content.php?id=3290792&journal_code=ETL&url=article"
+      ],
+      "status": "qualified"
+    },
+    {
+      "id": "census-herod-dating",
+      "category": "historical chronology",
+      "events": [
+        "j001",
+        "j003",
+        "j005"
+      ],
+      "description": "Luke 2:1-2 places Jesus' birth in the setting of an imperial census associated with Quirinius, while Matthew 2:1 begins in the time of Herod the Great. Conventional dates for the Quirinius census and Herod's death create a significant historical chronology question. Published scholarship offers competing readings, but this itinerary does not assert a resolved year or a proved earlier census.",
+      "references": [
+        "https://doi.org/10.1093/oxfordhb/9780198831464.013.17",
+        "https://www.esv.org/Luke+2/",
+        "https://www.esv.org/Matthew+2/"
+      ],
+      "status": "open"
+    },
+    {
+      "id": "mark-longer-ending",
+      "category": "textual transmission",
+      "events": [
+        "j074"
+      ],
+      "description": "Several early witnesses and critical modern Bible editions end Mark's continuous narrative at 16:8 or bracket 16:9-20. Many other manuscripts transmit the longer ending. The resurrection-stop reference deliberately uses Mark 16:1-8, rather than implying Mark 16:9-20 has no textual dispute. Manuscript age and transmission require specialised evaluation.",
+      "references": [
+        "https://www.biblegateway.com/passage/?search=Mark.16.9-Mark.16.20&version=ESV"
+      ],
+      "status": "qualified"
+    },
+    {
+      "id": "luke-ascension-variants",
+      "category": "textual transmission",
+      "events": [
+        "j079"
+      ],
+      "description": "Luke 24:51-52 includes readings with different manuscript support concerning the ascension and worship, discussed in textual criticism alongside Acts 1. The current reader passage is a translated canonical text, not a comprehensive manuscript comparison. The broad Bethany/Mount of Olives identification must not be turned into exact coordinates or a synchronised hour.",
+      "references": [
+        "https://doi.org/10.1017/S0028688500020713",
+        "https://www.esv.org/Luke+24/",
+        "https://www.esv.org/Acts+1/"
       ],
       "status": "qualified"
     }
@@ -510,8 +552,8 @@
   },
   "evidenceAddendum": {
     "reviewedOn": "2026-10-31",
-    "scope": "Targeted passage/source comparison of the Mark 6 crossing and related route cautions, not a renewal of all 79 first-pass event assessments.",
-    "sourceLimit": "Publisher passage text and a peer-reviewed article abstract were consulted. Full article access, original manuscript comparison and independent specialist review were not performed.",
-    "pending": "The 79-event dataset retains first-pass screening; comprehensive scene-by-scene historical source evaluation remains open."
+    "scope": "All 79 Gospel events now contain individually written Scripture-context notes and 156 canonical comparison reading links. Targeted source-linked research issues additionally clarify census/Herod dating, the transmitted ending of Mark and ascension textual variants. The status of the historical audit remains a bounded editorial first pass.",
+    "sourceLimit": "Publisher academic abstracts (Oxford Handbook census and Cambridge New Testament Studies ascension) and ESV publisher manuscript footnotes were consulted. Complete subscription articles, original manuscript collation, independent historical specialist appraisal and independent archaeological identification were not performed. Full article access was not obtained.",
+    "pending": "The 79-event corpus has complete editorial reading-context coverage, but comprehensive specialist textual/archaeological corroboration, contested claims, site identifications and sitewide navigation quality assurance remain open."
   }
 }
