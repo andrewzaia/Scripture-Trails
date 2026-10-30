@@ -13,7 +13,7 @@ const targets={issue:new Set(audit.issues.map(x=>x.id)),place:new Set(Object.key
 test('declared batch resolves real targets, canonical passages and scoped claim-level citations',()=>{
  assert.deepEqual(CITATION_REVIEW,json('citation-review'));
  assert.equal(validateCitationReview(CITATION_REVIEW,counts,targets),true);
- assert.equal(CITATION_REVIEW.records.length,152);
+ assert.equal(CITATION_REVIEW.records.length,164);
  assert.equal(CITATION_REVIEW.records.filter(r=>r.kind==='place'&&r.decision==='sources-added').length,15);
  assert.equal(CITATION_REVIEW.records.filter(r=>r.kind==='place'&&r.decision==='warning-retained').length,0);
  for(const r of CITATION_REVIEW.records.filter(r=>r.kind==='connection')){
@@ -216,7 +216,7 @@ test('fifth batch retains account differences, bodily life, harm and the single 
  const vision=review('ce064');assert.equal(vision.passages[0],vision.passages[1]);assert.match(vision.title,/within one vision/);
  const texts=vision.citations.map(c=>CITATION_REVIEW.sources[c.sourceId]).filter(s=>s.kind==='primary-scripture');
  assert.deepEqual(new Set(texts.map(s=>s.publisher)),new Set(['USCCB','Crossway']));assert.equal(new Set(texts.map(s=>s.url)).size,2);
- assert.equal(CITATION_REVIEW.scope.connections,115);
+ assert.equal(CITATION_REVIEW.scope.connections,127);
 });
 
 test('fifth batch preserves the complete previous assessment and source register',()=>{
@@ -249,7 +249,7 @@ test('final seven assessments complete the exact explained-pair register with co
  assert.equal(records.length,127);assert.deepEqual(new Set(records.filter(r=>Number(r.target.slice(2))<=115).map(r=>r.target)),new Set(CONNECTION_EVIDENCE.filter(e=>Number(e.id.slice(2))<=115).map(e=>e.id)));
  assert.equal(Object.keys(CITATION_REVIEW.sources).length,317);
  assert.equal(records.filter(r=>Number(r.target.slice(2))<=115&&r.citations.some(c=>['scholarly-commentary','publisher-note','publisher-abstract'].includes(CITATION_REVIEW.sources[c.sourceId].kind))).length,83);
- assert.equal(CITATION_REVIEW.scope.connections,115);assert.match(batch.method,/full OpenBible corpus.*outside/);
+ assert.equal(CITATION_REVIEW.scope.connections,127);assert.match(batch.method,/full OpenBible corpus.*outside/);
 });
 
 test('completed coverage retains final narrative differences and further-review work',()=>{
@@ -329,4 +329,31 @@ test('About and claim panels render the dated supplement and current coverage wi
  root.replaceChildren();appendCitationReview(root,'connection','ce027');const text=nodes(root).map(e=>e.textContent).join(' ');
  assert.match(text,/Genesis describes enmity/);assert.match(text,/Commentary follow-up/);assert.match(text,/Donny Ray Mathis II.*Psalm 110:1/);assert.match(text,/Earlier assessment retained above/);
  assert.ok(nodes(root).some(e=>e.href==='https://www.thegospelcoalition.org/commentary/Romans/'));
+});
+
+
+test('first v1.0 quotation batch records twelve contextual sources without erasing 115 historical reviews',()=>{
+ const ids=['ce118','ce122','ce123','ce124','ce126','ce127','ce129','ce130','ce131','ce139','ce140','ce142'];
+ const batch=CITATION_REVIEW.batches.find(b=>b.id==='v1-citations-12-01');
+ assert.ok(batch);assert.equal(batch.count,12);assert.deepEqual(batch.targets,ids);
+ assert.equal(new Set(batch.targets).size,12);
+ assert.equal(CITATION_REVIEW.scope.connections,127);
+ const historical=CITATION_REVIEW.records.filter(r=>r.kind==='connection'&&Number(r.target.slice(2))<=115);
+ assert.equal(historical.length,115);
+ for(const id of ids){
+  const records=citationReviews('connection',id),r=records[0],e=CONNECTION_EVIDENCE.find(x=>x.id===id);
+  assert.equal(records.length,1);assert.equal(r.batch,batch.id);assert.equal(r.anchor,e.from);
+  assert.deepEqual(r.passages,[e.from,e.to]);assert.equal(r.reviewedOn,'2026-10-31');
+  assert.equal(r.decision,'context-clarified');
+  assert.equal(e.review,'scripture-context-screened');
+  assert.match(e.basis,/v1-citations-12-01/);
+  assert.equal(r.citations.length,3);
+  assert.equal(r.citations.filter(c=>CITATION_REVIEW.sources[c.sourceId].kind==='primary-scripture').length,2);
+  assert.equal(r.citations.filter(c=>CITATION_REVIEW.sources[c.sourceId].kind==='scholarly-commentary').length,1);
+  assert.ok(r.note.length>90&&r.limitation.length>150);
+  assert.ok(r.citations.every(c=>c.locator&&c.supports.length>20));
+ }
+ assert.equal(CONNECTION_EVIDENCE.filter(e=>!CITATION_REVIEW.records.some(r=>r.kind==='connection'&&r.target===e.id)).length,34);
+ assert.equal(commentaryCoverage(),127);
+ assert.equal(json('roadmap').milestones.find(m=>m.id==='v1-citations-12-01').status,'delivered');
 });
