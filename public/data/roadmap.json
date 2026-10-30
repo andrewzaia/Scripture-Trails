@@ -3,11 +3,11 @@
   "updated": "2026-10-31",
   "description": "An evidence-aware v1.0 release roadmap checked against the current versioned Scripture Trails source and test data. All 161 written Atlas explanations now have dated scoped AI-assisted source assessments. Full reference corpus, physical-device accessibility and independent specialist certification remain separate. No unverified evidence is implied.",
   "currentFocus": [
-    "Audit the 20 flagship person-trail studies and six guided study journals for interpretation quality, depth, working passage links and citation attribution.",
-    "Extend the v1.0 claims register to the journeys of Jesus and Paul, distinguishing scriptural accounts from modern itinerary conjectures and identifying serious historical contradictions.",
-    "Test all four authorised Bible editions through available production/browser tooling and verify failure states, copyright presentation and provider handling without exposing API keys.",
-    "Review privacy, security, backups and browser compatibility with verifiable tool-based evidence; keep inaccessible screen-reader, real-device and independent expert checks openly qualified.",
-    "Prepare a version 1.0 release candidate only after all genuine launch-blocking criteria have acceptable verification evidence."
+    "Audit all 79 Gospel journey events and 83 Pauline itinerary stages for source accuracy, narrative chronology, location uncertainty and material interpretive claims.",
+    "Check the flagship people and journal reading links in full browser scenarios, retain reading-progress compatibility and address any remaining inaccurate descriptions.",
+    "Verify the four authorised Bible translations against real production provider behaviour and copyright requirements wherever connected tools permit.",
+    "Expand independent historical and textual source coverage for contested claims in Daniel, Esther, the Exodus and the journey sites; distinguish AI-assisted editorial synthesis from specialist signoff.",
+    "Continue real-browser, accessibility, privacy/security and rollback checks for the v1.0 launch gates without assigning routine QA to the site owner."
   ],
   "phases": [
     {
@@ -668,7 +668,7 @@
       "phase": "next",
       "status": "next",
       "title": "v1.0 editorial evidence and core-content closeout",
-      "summary": "All 161 explained Atlas pairs have dated scoped editorial assessments. First flagship-content audit now adds fifteen substantial historical reading essays across five city studies and corrects the Nazareth report's publication year. People, journeys and major claim verification remain open.",
+      "summary": "All 161 Atlas explanations are source assessed. Content-depth passes now cover 5 historical city dossiers, 20 person trails and six guided study journals. The Gospel and Pauline journey audit, external specialist evidence and comprehensive source-rights checks remain open.",
       "capabilities": [
         "All 161 explained pairs have dated internal assessments; full Atlas corpus is outside this commitment",
         "Prioritised high-impact disputed historical and interpretive claims",
@@ -743,6 +743,21 @@
         "Protect the existing city explorer, photography provenance, site debates and navigation behaviour"
       ],
       "verification": "Scoped flagship city audit from published excavation reports, heritage records and a peer-reviewed journal article. Automated citation/reference checks and desktop/mobile browser tests required before release. Other core study content, independent expert evaluation and live provider testing remain open."
+    },
+    {
+      "id": "v1-people-journals-depth",
+      "phase": "next",
+      "status": "delivered",
+      "title": "Twenty people trails and six guided journals deepened",
+      "summary": "Add twenty original Scripture-first person studies, sixty validated supplementary biblical references and six longer journal reading guides without changing the original 88 person stages, 36 journal stages, estimated durations or saved-progress identities.",
+      "capabilities": [
+        "Individual literary context, cross-passage comparisons, reflection questions and explicit evidence limits for all twenty person profiles",
+        "Sixty additional canonical Scripture references linked to the Bible reader and Atlas",
+        "Six extended thematic reading guides across creation, Messiah, shepherd, covenant, grace and hope",
+        "Named, scoped research citations for contested Esther and Daniel historical or compositional claims",
+        "Existing reading progress, study times and passage orders preserved"
+      ],
+      "verification": "Source integrity and release consistency checks plus desktop/mobile browser tests required before publication. The full v1.0 flagship-content audit remains OPEN because the Jesus and Pauline journey corpora and broader claims still require assessment; the added profiles are not independent scholarly signoff."
     }
   ],
   "v1Readiness": {
@@ -824,7 +839,7 @@
         "id": "content",
         "title": "Core study experience and content",
         "summary": "The four-translation reader, Atlas, people index and major journeys need sufficient depth and reliable passage navigation.",
-        "next": "Five principal historical city dossiers now contain fifteen substantial Scripture-first readings with contextual research and evidence limits. Next: check the 20 people trails and six study journals, then audit journeys and related claims.",
+        "next": "The five city dossiers, 20 person trails and six guided study journals now have expanded substantive reading context. Next audit all Jesus and Paul journey records, source metadata and dead-end navigation.",
         "criteria": [
           {
             "id": "crossrefs-integrity",

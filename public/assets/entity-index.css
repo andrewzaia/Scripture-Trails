@@ -56,3 +56,18 @@
 /* Match the main content gutters used by the reader and other pages. */
 @media(max-width:1200px){[data-entity-index]{padding-left:4%;padding-right:4%}}
 @media(max-width:760px){[data-entity-index]{padding:20px 16px 45px}}
+
+/* Primary Scripture first: explanatory context complements the existing person-trail steps. */
+.entity-trail-context{border:1px solid var(--line);border-left:3px solid var(--gold);background:var(--surface2);padding:19px 22px;margin:17px 0;max-width:100%;overflow-wrap:anywhere}
+.entity-trail-context h4{font:normal 20px/1.25 var(--serif);color:var(--ink);margin:13px 0 8px}
+.entity-trail-context h4:first-child{margin-top:0}
+.entity-trail-context p{font-size:13px;line-height:1.8;color:var(--ink);margin:0 0 13px}
+.entity-trail-context .entity-trail-boundary{border-left:2px solid var(--line);background:var(--surface);padding:10px 12px;color:var(--muted)}
+.entity-trail-context .entity-trail-primary{font-size:11px;color:var(--muted);overflow-wrap:anywhere}
+@media(max-width:760px){.entity-trail-context{padding:15px}}
+
+.entity-trail-further{display:grid;gap:9px;border-top:1px solid var(--line);padding-top:12px}
+.entity-trail-further-row{display:flex;flex-wrap:wrap;align-items:center;gap:8px 11px;padding:5px 0;font-size:12px}
+.entity-trail-further-row span{color:var(--ink);flex:1 1 160px}
+.entity-trail-further-row button{font-size:11px;padding:7px 10px;border:1px solid var(--line);background:var(--surface);color:var(--gold);border-radius:4px;cursor:pointer}
+.entity-trail-further-row button:hover{border-color:var(--gold)}

@@ -1,15 +1,15 @@
-import {appendCitationReview} from './citation-review.js?v=0.36.0';
-import {buildEntityCatalog,findEntities,ENTITY_TYPES} from './entity-index-data.js?v=0.36.0';
+import {appendCitationReview} from './citation-review.js?v=0.37.0';
+import {buildEntityCatalog,findEntities,ENTITY_TYPES} from './entity-index-data.js?v=0.37.0';
 import {validateCanonicalReference} from './reference-integrity.js';
-import {connectionsForPassages,CONNECTION_KINDS,REVIEW_LABELS} from './connection-evidence.js?v=0.36.0';
-import {personTrail,TRAIL_SOURCE_LABELS,TRAIL_REVIEW_LABELS} from './person-trails.js?v=0.36.0';
+import {connectionsForPassages,CONNECTION_KINDS,REVIEW_LABELS} from './connection-evidence.js?v=0.37.0';
+import {personTrail,TRAIL_SOURCE_LABELS,TRAIL_REVIEW_LABELS} from './person-trails.js?v=0.37.0';
 
 const make=(tag,cls,text)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(text!==undefined)e.textContent=text;return e;};
 const key=(type,id)=>type+':'+id;
 /** Indexed entities reuse local source datasets. Source text is not rehosted. */
 export function createEntityIndex(root,handlers={}){
  const $=id=>root.querySelector('[data-entity="'+id+'"]')||root.closest('section')?.querySelector('[data-entity="'+id+'"]');
- const ENTITY_INDEX_DATA_VERSION='0.36.0';
+ const ENTITY_INDEX_DATA_VERSION='0.37.0';
  let initial=null,catalog,counts,filter='all',period='all',query='',selected=null,shown=32,pendingReference=null;
  const label=record=>record.type==='person'?'Person':record.type==='place'?(record.kind==='polity'?'Kingdom / polity':'Place'):'Event';
  const by=(type,id)=>catalog.byKey.get(key(type,id));
@@ -34,6 +34,28 @@ export function createEntityIndex(root,handlers={}){
    const trail=personTrail(record.id);
    if(trail){
     panel.append(make('h3','',"Follow this person's Scripture trail"),make('p','entity-muted',trail.qualification),make('p','entity-muted',trail.caution));
+    const study=make('section','entity-trail-context');
+    study.append(make('h4','',"Read the person\u0027s story in context"),make('p','',trail.study.overview),make('h4','','Compare the texts'),make('p','',trail.study.comparison),make('h4','','Question for reflection'),make('p','',trail.study.question),make('p','entity-trail-boundary','Evidence limit: '+trail.study.limits));
+    const sources=make('p','entity-trail-primary','Primary Scripture: '+trail.stages.map(s=>s.ref).join(' | '));
+    study.append(sources);
+    const further=make('div','entity-trail-further');
+    further.append(make('h4','','Continue reading'));
+    for(const ref of trail.study.furtherRefs){
+      const line=make('div','entity-trail-further-row');
+      line.append(make('span','',ref),btn('Read',()=>handlers.onRead?.(ref)),btn('Atlas',()=>handlers.onAtlas?.(sourcePassage(ref))));
+      further.append(line);
+    }
+    study.append(further);
+    if(trail.study.research.length){
+      const sources=make('ul','entity-trail-research');study.append(make('h4','','Additional academic context'));
+      for(const item of trail.study.research){
+        const li=make('li'),link=make('a','entity-external',item.title+' - '+item.author);
+        link.href=item.url;link.target='_blank';link.rel='noopener noreferrer';
+        li.append(link,make('p','entity-muted',item.scope));sources.append(li);
+      }
+      study.append(sources);
+    }
+    panel.append(study);
     panel.append(make('p','entity-muted','Related comparisons overlap a selected passage; they do not establish that this person appears in both texts.'));
     const steps=make('ol','entity-study-trail');
     for(const step of trail.stages){

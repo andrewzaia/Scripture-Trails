@@ -565,9 +565,42 @@ const JOURNAL_CHAPTERS={
     }
   ]
 };
+const JOURNAL_EDITORIAL_GUIDES = {
+  "creation": {
+    "overview": "The creation readings move deliberately between narrative, praise, wisdom, apostolic argument and apocalyptic vision. Genesis 1 and 2 provide the opening literary framework; Psalms 8 and 104 reflect on human vocation and the natural world rather than furnishing a second scientific timeline. Romans 8 interprets suffering and longing for renewal in Paul's theological argument, and Revelation returns to river and tree imagery found earlier in Ezekiel. The strongest connection is the progression of biblical imagery and hope, not a claim that every writer describes an identical physical event.",
+    "distinction": "Compare Genesis 2's garden with Ezekiel 47 and Revelation 22 as separate scenes before treating them as a single historical location. Proverbs 8 uses personified wisdom; John 1 and Colossians 1 develop distinct claims about Christ.",
+    "practice": "Keep track of literary genre, audience and speaker at each stage. Record which claims are explicit quotations, thematic echoes, or your own interpretive conclusions."
+  },
+  "messiah": {
+    "overview": "This journal distinguishes promises made within Israel's ancestral and royal histories from the ways New Testament authors identify and apply them to Jesus. Genesis 12 concerns blessing through Abraham; Isaiah 7 addresses a particular political crisis; Micah speaks of a ruler linked to Bethlehem; Isaiah 53 belongs to the complex servant passages. Matthew, Luke, John and the letters read these earlier texts within their own theological arguments. A useful study must distinguish an original prophetic audience, a direct later quotation and a retrospective Christian interpretation rather than labelling every Old Testament verse an unambiguous standalone prediction.",
+    "distinction": "Read Isaiah 7:10-17 with its immediate setting before Matthew 1:22-23, and read Isaiah 52:13-53:12 before citing later apostolic uses. Notice when wording changes between Hebrew, Greek and New Testament citation.",
+    "practice": "For each passage record the original speaker, audience and crisis; then record precisely what the later writer quotes, echoes or infers."
+  },
+  "shepherd": {
+    "overview": "Pastoral imagery is not merely a comforting individual metaphor. Psalm 23 speaks in the voice of a worshipper relying on the Lord; Ezekiel 34 criticises leaders who exploit and neglect the flock and promises divine care. John 10 places Jesus' shepherd language alongside conflict over leadership and the protection of vulnerable people. Luke 15 focuses on recovering the lost, while 1 Peter brings the metaphor into the care of communities. Consider protection, justice, accountability and sacrificial service together rather than turning the texts into an idealised description of authority.",
+    "distinction": "The Lord as shepherd in Psalm 23, the condemnation of failed shepherds in Ezekiel 34 and Jesus as shepherd in John 10 are connected but speak in different literary and historical settings.",
+    "practice": "Ask who the flock represents, which leaders are being criticised and what actions demonstrate care rather than mere titles."
+  },
+  "covenant": {
+    "overview": "Covenant language spans distinct relationships and circumstances. Genesis associates Abraham with land, descendants and blessing; Exodus narrates rescue and communal obligations; the Passover becomes a foundational marker in Israel's memory. Jeremiah 31 promises renewal while explicitly addressing Israel and Judah, and Luke, Hebrews and Paul later draw on covenant language in Christian arguments. Retaining these original audiences prevents a simple chronological diagram from replacing real differences in purpose. The focus should be on what God promises, what people are called to do and how later writers interpret prior commitments.",
+    "distinction": "Distinguish Genesis 12 and 15, the Passover in Exodus 12, Sinai's communal laws and Jeremiah's new-covenant oracle. Hebrews 8 quotes Jeremiah at length, while Luke 22 uses covenant language in the supper narrative.",
+    "practice": "Write down who is addressed and what signs or obligations appear in each covenant passage before attempting a synthesis."
+  },
+  "grace": {
+    "overview": "Paul and James speak about Abraham, faith, righteousness and works in overlapping language but within different arguments. Romans 3-4 concerns human justification, the law and God's initiative; Galatians 3 links Abraham's faith to the promise reaching the nations; Ephesians 2 describes salvation as gift and also speaks of a life prepared for good works. James 2 challenges a claim to faith disconnected from actual care and action. The study is strongest when it lets the writers pose their own questions before comparing their conclusions. Avoid forcing each passage into one slogan that ignores the argument surrounding it.",
+    "distinction": "Read Genesis 15:6 and 22 together, then compare Romans 4:3, Galatians 3:6 and James 2:21-24. The cited verse is the same in some places, but its rhetorical use differs.",
+    "practice": "For each author identify the audience, the disputed behaviour or claim, and how examples of Abraham are used in that argument."
+  },
+  "comfort": {
+    "overview": "Biblical comfort is not a guarantee that suffering will disappear immediately. Psalms contain both trust and lament; Isaiah 40 offers hope to a community in distress, and Jesus' teaching on anxiety belongs within the broader call to seek God's kingdom. Romans 8 confronts suffering while awaiting future hope, and Philippians connects prayer with perseverance within Paul's circumstances. Revelation's final vision is not a denial of present grief but a literary vision of its ultimate removal. These passages provide room for both sorrow and trust, and should not be used to blame someone whose circumstances remain difficult.",
+    "distinction": "Keep the lament of Psalm 13 and the hope of Isaiah 40 in their respective settings. Compare Romans 8:18-28 with Revelation 21 without treating them as promises of immediate prosperity or guaranteed recovery.",
+    "practice": "Ask what help is promised, to whom, and on what horizon. Acknowledge uncertainty rather than turning encouragement into a prediction about another person's life."
+  }
+};
+
 export const PATHS=CORE_PATHS.map(path=>{
  const chapters=JOURNAL_CHAPTERS[path.id]||[];
- return {...path,anchors:[...path.refs],chapters,refs:[...new Set([...path.refs,...chapters.flatMap(section=>section.readings)])]};
+ return {...path,guide:JOURNAL_EDITORIAL_GUIDES[path.id],anchors:[...path.refs],chapters,refs:[...new Set([...path.refs,...chapters.flatMap(section=>section.readings)])]};
 });
 
 export const EDITORIAL_LINKS = [

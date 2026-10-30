@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.37.0 - 31/10/2026: Deeper people trails and guided Scripture journals
+
+- Expand all 20 people trails with substantial literary context, comparison readings, reflection questions and explicit evidence limitations.
+- Add sixty validated follow-up Bible references linking directly to the Reader and Atlas, while preserving all 88 established stages.
+- Introduce six extended reading guides for creation, Messiah, shepherd imagery, covenant, faith and works, and biblical hope, preserving 36 journal stages, reading progress and approximate study times.
+- Add bounded academic source references for historical claims about Esther and Daniel and automated/browser checks for content quality and continuity.
+- Record this flagship-content audit batch without prematurely closing the wider v1.0 content and independent specialist verification gates.
+
 ## 0.36.0 - 31/10/2026: Deeper Scripture and history in five flagship city studies
 
 - Add fifteen substantive Scripture-first historical readings for Jerusalem, Nazareth, Capernaum, Bethlehem and Jericho, each with primary passage links, historical context and documented evidence boundaries.
