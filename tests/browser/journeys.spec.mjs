@@ -292,7 +292,7 @@ test('Gospel journey stages show individual Scripture contexts and open comparis
  await page.locator('[data-jesus="episode-study-links"] .jesus-passage-row').first().getByRole('button',{name:'Read in Bible reader'}).click();
  await expect(page.locator('#reader-title')).toHaveText(/^Luke 2:8/);
  await navigate(page,'jesus-map');
- await page.locator('[data-jesus="timeline"]').fill('58');
+ await page.goto('/?view=jesus-map&stop=j059&translation=ESV');
  await expect(page.locator('[data-jesus="event-heading"]')).toHaveText('Zacchaeus welcomed');
  await expect(page.locator('[data-jesus="episode-study-context"]')).toContainText('restitution and generosity');
 });
