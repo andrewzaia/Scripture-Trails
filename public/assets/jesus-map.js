@@ -45,6 +45,10 @@ export function validatePlaceStudies(geography,journeys){
   if(!p||!p.ancientNames?.length||!p.modernSetting||!p.historicalContext||!p.archaeology||!p.caution||!geography.evidenceGuide[p.evidenceLevel])throw Error('Invalid historical place '+id);
   for(const item of p.oldTestament||[])if(!passageStart(item.ref)||!item.note)throw Error('Invalid OT note '+id);
   for(const key of p.literature||[])if(!geography.sources[key]||!/^https:\/\//.test(geography.sources[key].url))throw Error('Unsourced claim '+id);
+  if(p.identificationReview){
+   const x=p.identificationReview;
+   if(!['contested-identification','tradition-not-site-proof'].includes(x.status)||x.method!=='bounded-publisher-and-primary-text-comparison'||!/^\d{4}-\d{2}-\d{2}$/.test(x.reviewedOn)||!x.question||!x.claim||!x.support||!x.limit||[x.claim,x.support,x.limit].some(z=>z.length<95)||!Array.isArray(x.sourceIds)||x.sourceIds.length<2||new Set(x.sourceIds).size!==x.sourceIds.length||x.sourceIds.some(key=>!p.literature.includes(key)||!geography.sources[key]))throw Error('Invalid identification evidence '+id);
+  }
  }
  return true;
 }
@@ -162,6 +166,15 @@ export function createJesusMap(root,onOpenPassage,onOpenCity){
   $('study-context').textContent=record.historicalContext;
   $('study-archaeology').textContent=record.archaeology;
   $('study-caution').textContent=record.caution;
+  const detail=record.identificationReview,review=$('study-identification-review');
+  review.hidden=!detail;$('study-identification-question').textContent=detail?.question||'';
+  $('study-identification-claim').textContent=detail?.claim||'';
+  $('study-identification-support').textContent=detail?.support||'';
+  $('study-identification-limit').textContent=detail?.limit||'';
+  const idSources=$('study-identification-sources');idSources.replaceChildren();
+  for(const key of detail?.sourceIds||[]){const entry=geography.sources[key];const a=el('a','jesus-study-literature',entry.title);
+   a.href=entry.url;a.target='_blank';a.rel='noopener noreferrer';idSources.append(a);}
+
   const check=record.review;
   $('study-source-status').textContent=check.status==='source-linked'?`${check.independentSourceCount} external bibliographic ${check.independentSourceCount===1?'source':'sources'} attached - site evidence, not Gospel event proof`:check.status==='regional-placeholder'?'Regional schematic marker; no exact ancient site claimed':'Independent archaeology citation needed; the summary is contextual and unverified by a linked source';
   const ot=$('study-old');ot.replaceChildren();
