@@ -88,7 +88,7 @@ test('v1.0 roadmap shows honest scoped progress and accessible launch acceptance
  await evidence.locator('.v1-gate-detail > summary').click();
  await expect(evidence.locator('[data-readiness="open"]')).toHaveCount(2);
  await expect(evidence).toContainText('Dated editorial source assessments for all 161 explained Atlas pairs');
- await expect(evidence).toContainText('dated, source-linked editorial assessments');
+ await expect(evidence).toContainText('dated canonical Scripture-context and scoped named secondary-source assessments');
 });
 
 test('roadmap filters retain an accessible selected state',async({page})=>{
