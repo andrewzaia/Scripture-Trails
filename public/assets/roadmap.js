@@ -1,7 +1,7 @@
 /** Public roadmap: data-backed milestones with deliberately plain status labels. */
 /** The public gate descriptions are commitments, not automatic academic certification. */
 export function validateV1Readiness(readiness){
- if(!readiness||readiness.target!=='1.0.0'||!/^0\\.\\d+\\.\\d+$/.test(readiness.baseline)||!/^\\d{4}-\\d{2}-\\d{2}$/.test(readiness.updated)||!readiness.note)throw Error('Invalid v1 readiness header');
+ if(!readiness||readiness.target!=='1.0.0'||!/^0\.\d+\.\d+$/.test(readiness.baseline)||!/^\d{4}-\d{2}-\d{2}$/.test(readiness.updated)||!readiness.note)throw Error('Invalid v1 readiness header');
  if(!Array.isArray(readiness.stages)||readiness.stages.length!==5||!Array.isArray(readiness.gates)||readiness.gates.length!==5)throw Error('Expected five readiness stages and gates');
  const stageIds=new Set(),gateIds=new Set(),criteriaIds=new Set();
  for(const stage of readiness.stages){if(!stage.id||stageIds.has(stage.id)||!stage.title||!stage.goal)throw Error('Invalid readiness stage');stageIds.add(stage.id);}
