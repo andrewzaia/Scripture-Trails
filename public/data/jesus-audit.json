@@ -4,7 +4,7 @@
   "status": "first-pass-screened",
   "methodology": {
     "primary": "Biblical passages listed with each Gospel/Acts episode are primary narrative sources. The published sequence is a Gospel harmony, not a separately dated GPS reconstruction.",
-    "scope": "First-pass editorial and machine-assisted reference/location screening of 79 episodes and 35 dossiers, now supplemented by individually written biblical reading context for all 79 entries and three additional bounded historical/textual research issues. Corrected particular overclaims and recorded disputes. NOT independent specialist historical, textual or archaeological certification.",
+    "scope": "First-pass editorial and machine-assisted reference/location screening of 79 episodes and 35 dossiers, now supplemented by individually written biblical reading context for all 79 entries and three additional bounded historical/textual research issues. Corrected particular overclaims and recorded disputes. NOT independent specialist historical, textual or archaeological certification. This is not a claim of independent scholarly certification.",
     "sourceTypes": {
       "scripture": "Canonical Gospel/Acts narrative cited for each episode; text is opened in authorised reader.",
       "historical": "External archaeological or academic reference; proves only its stated archaeological/historical claim.",
@@ -553,7 +553,7 @@
   "evidenceAddendum": {
     "reviewedOn": "2026-10-31",
     "scope": "All 79 Gospel events now contain individually written Scripture-context notes and 156 canonical comparison reading links. Targeted source-linked research issues additionally clarify census/Herod dating, the transmitted ending of Mark and ascension textual variants. The status of the historical audit remains a bounded editorial first pass.",
-    "sourceLimit": "Publisher academic abstracts (Oxford Handbook census and Cambridge New Testament Studies ascension) and ESV publisher manuscript footnotes were consulted. Complete subscription articles, original manuscript collation, independent historical specialist appraisal and independent archaeological identification were not performed.",
+    "sourceLimit": "Publisher academic abstracts (Oxford Handbook census and Cambridge New Testament Studies ascension) and ESV publisher manuscript footnotes were consulted. Complete subscription articles, original manuscript collation, independent historical specialist appraisal and independent archaeological identification were not performed. Full article access was not obtained.",
     "pending": "The 79-event corpus has complete editorial reading-context coverage, but comprehensive specialist textual/archaeological corroboration, contested claims, site identifications and sitewide navigation quality assurance remain open."
   }
 }
