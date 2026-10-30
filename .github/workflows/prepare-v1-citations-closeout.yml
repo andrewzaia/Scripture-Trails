@@ -1,0 +1,42 @@
+name: One-time v0.35.0 citation closeout release preparation
+
+on:
+  pull_request:
+
+permissions:
+  contents: write
+
+jobs:
+  prepare:
+    if: github.head_ref == 'v1-atlas-citations-batch2-20261031' && github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+      - name: Generate registers and perform required MINOR release
+        shell: bash
+        run: |
+          set -euo pipefail
+          VERSION="$(node -p 'require("./package.json").version')"
+          if [ "$VERSION" != "0.34.0" ]; then
+            echo "Already versioned: $VERSION"
+            exit 0
+          fi
+          node scripts/import-citation-review.mjs
+          node scripts/site-stats.mjs
+          npm run release -- minor \
+            "Complete source assessments for 161 Atlas explanations" \
+            "Assess the final 34 previously unreviewed Atlas passage connections in two dated Scripture-context batches, with named sources and specific interpretation limits." \
+            "Document original contexts, composite quotations and Hebrew or Greek textual issues for typological and prophetic connections, including Hosea, Amos, Daniel and the Passover narratives." \
+            "Complete scoped internal editorial source-review coverage for all 161 written Atlas explanations, while preserving all 115 historical reviews and keeping independent academic signoff separate." \
+            "Update the public About evidence meter, version 1.0 readiness dashboard and regression checks to distinguish reviewed explanations from the much larger unclassified Atlas corpus."
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add package.json public/data/releases.json CHANGELOG.md public/index.html public/assets
+          git commit -m "Prepare v0.35.0 using the existing npm release command"
+          git push origin HEAD:refs/heads/v1-atlas-citations-batch2-20261031
