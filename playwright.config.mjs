@@ -14,7 +14,10 @@ export default defineConfig({
  },
  projects:[
   {name:'desktop-chromium',use:{...devices['Desktop Chrome'],viewport:{width:1440,height:1000}}},
-  {name:'mobile-chromium',use:{...devices['Pixel 7'],viewport:{width:390,height:844}}}
+  {name:'mobile-chromium',use:{...devices['Pixel 7'],viewport:{width:390,height:844}}},
+  {name:'desktop-firefox',use:{...devices['Desktop Firefox'],viewport:{width:1440,height:1000}}},
+  {name:'desktop-webkit',use:{...devices['Desktop Safari'],viewport:{width:1440,height:1000}}},
+  {name:'mobile-webkit',use:{...devices['iPhone 13'],viewport:{width:390,height:844}}}
  ],
  webServer:{command:'node tests/browser/server.mjs',url:'http://127.0.0.1:4387',reuseExistingServer:!process.env.CI}
 });
