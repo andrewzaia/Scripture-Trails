@@ -51,7 +51,7 @@ test('claim panels and About register show scope, external links and retained wa
  renderCitationSummary(root);const first=nodes(root).length;renderCitationSummary(root);assert.equal(nodes(root).length,first);
  assert.equal(nodes(root).filter(e=>e.tagName==='article').length,152);
  assert.ok(nodes(root).some(e=>e.download?.endsWith('.json')));
- assert.ok(nodes(root).some(e=>e.textContent.includes('All 115 explained pairs now have dated editorial assessments')));
+ assert.ok(nodes(root).some(e=>e.textContent.includes('All 115 previously assessed pairs have dated editorial assessments')));
 });
 test('review register is reachable from About, Gospel, profiles, Atlas and comparison panel',()=>{
  for(const path of ['app.js','jesus-map.js','entity-index.js','atlas-comparison.js'])assert.match(read('public/assets/'+path),/appendCitationReview/);
@@ -128,7 +128,7 @@ test('third batch ties twenty distinct anchors to complete contexts and scoped n
   assert.equal(e.kind,id==='ce038'?'echo':'theme');
  }
  const connections=CITATION_REVIEW.records.filter(r=>r.kind==='connection');
- assert.equal(connections.length,115);assert.equal(CONNECTION_EVIDENCE.filter(e=>!connections.some(r=>r.target===e.id)).length,0);
+ assert.equal(connections.length,115);assert.equal(CONNECTION_EVIDENCE.filter(e=>!connections.some(r=>r.target===e.id)).length,46);
  assert.equal(connections.filter(r=>r.citations.some(c=>['scholarly-commentary','publisher-note','publisher-abstract'].includes(CITATION_REVIEW.sources[c.sourceId].kind))).length,83);
 });
 
@@ -142,7 +142,7 @@ test('third batch keeps quotation, interpretation and suffering limits visible',
  assert.match(review('ce046').limitation,/not be used to blame distressed readers/);
  assert.match(review('ce047').limitation,/Galilee.*Jerusalem/);
  assert.match(review('ce058').limitation,/fixed end-times sequence/);
- assert.equal(CONNECTION_EVIDENCE.length,115);
+ assert.equal(CONNECTION_EVIDENCE.length,161);
 });
 
 test('fourth batch adds twenty bounded narrative parallels with scoped commentary',()=>{
@@ -177,7 +177,7 @@ test('fourth narrative batch preserves consequential differences and access limi
  for(const [id,pattern] of [['ce020',/tribute/],['ce021',/priests carrying.*Levites/],['ce066',/explicit theological verdict/],['ce068',/Narrative placement alone does not date/],['ce069',/different threshing-floor names/],['ce070',/Chronicles omits that clause/],['ce074',/not a settled chronological result/],['ce076',/modern nation/],['ce077',/queen is unnamed/],['ce078',/not demonstrate that those works are extant/],['ce080',/differently named mother/],['ce081',/Ezra.*not adopted/],['ce083',/English ESV numbering/],['ce085',/distinct people.*modern diagnosis/]])assert.match(review(id).limitation,pattern);
  assert.match(review('ce080').limitation,/indexed passage excerpts/);
  assert.equal(CITATION_REVIEW.scope.connections,115);
- assert.equal(CONNECTION_EVIDENCE.length-CITATION_REVIEW.scope.connections,0);
+ assert.equal(CONNECTION_EVIDENCE.length-CITATION_REVIEW.scope.connections,46);
 });
 
 test('fourth batch preserves all previous dated assessments and source records',()=>{
@@ -207,7 +207,7 @@ test('fifth batch assesses twenty remaining pairs with contained anchors and sco
  }
  assert.equal(scholars.size,17);assert.equal(authors.size,16);assert.deepEqual(kinds,{parallel:7,theme:13});
  const assessed=new Set(CITATION_REVIEW.records.slice(0,145).filter(r=>r.kind==='connection').map(r=>r.target));
- assert.deepEqual(CONNECTION_EVIDENCE.filter(e=>!assessed.has(e.id)).map(e=>e.id),['ce086','ce090','ce091','ce092','ce093','ce094','ce095']);
+ assert.deepEqual(CONNECTION_EVIDENCE.filter(e=>Number(e.id.slice(2))<=115&&!assessed.has(e.id)).map(e=>e.id),['ce086','ce090','ce091','ce092','ce093','ce094','ce095']);
 });
 
 test('fifth batch retains account differences, bodily life, harm and the single Revelation vision',()=>{
@@ -246,7 +246,7 @@ test('final seven assessments complete the exact explained-pair register with co
  }
  assert.equal(scholars.size,3);assert.equal(authors.size,3);assert.equal(texts.size,12);
  const records=CITATION_REVIEW.records.filter(r=>r.kind==='connection');
- assert.equal(records.length,115);assert.deepEqual(new Set(records.map(r=>r.target)),new Set(CONNECTION_EVIDENCE.map(e=>e.id)));
+ assert.equal(records.length,115);assert.deepEqual(new Set(records.map(r=>r.target)),new Set(CONNECTION_EVIDENCE.filter(e=>Number(e.id.slice(2))<=115).map(e=>e.id)));
  assert.equal(Object.keys(CITATION_REVIEW.sources).length,317);
  assert.equal(records.filter(r=>r.citations.some(c=>['scholarly-commentary','publisher-note','publisher-abstract'].includes(CITATION_REVIEW.sources[c.sourceId].kind))).length,83);
  assert.equal(CITATION_REVIEW.scope.connections,115);assert.match(batch.method,/full OpenBible corpus.*outside/);

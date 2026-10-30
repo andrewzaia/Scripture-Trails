@@ -65,7 +65,7 @@ test('Acts retelling and single-vision reviews retain their limits from About in
 test('completed register retains siege dates and returnee differences from About into the Atlas',async({page})=>{
  await open(page,'about');
  await expect(page.locator('#about-review-meter')).toHaveAttribute('value','115');
- await expect(page.locator('#citation-review-summary')).toContainText('All 115 explained pairs now have dated editorial assessments');
+ await expect(page.locator('#citation-review-summary')).toContainText('All 115 previously assessed pairs have dated editorial assessments');
  await expect(page.locator('#citation-review-summary')).toContainText('32 previously passage-based assessments have dated commentary follow-ups');
  const group=page.locator('.citation-review-group').filter({has:page.getByText('Selected passage comparisons',{exact:true})});
  await group.locator('> summary').click();
@@ -89,7 +89,7 @@ test('completed register retains siege dates and returnee differences from About
 
 test('commentary follow-up retains a competing intertext from About into the Atlas',async({page})=>{
  await open(page,'about');
- await expect(page.locator('#citation-review-summary')).toContainText('Every explained pair has at least one scoped secondary citation');
+ await expect(page.locator('#citation-review-summary')).toContainText('All previously assessed pairs have at least one scoped secondary citation');
  const group=page.locator('.citation-review-group').filter({has:page.getByText('Selected passage comparisons',{exact:true})});
  await group.locator('> summary').click();
  const article=group.locator('article').filter({has:page.getByRole('heading',{name:'Genesis 3:14-15 and Romans 16:17-20',exact:true})});

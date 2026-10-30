@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.32.0 - 30/10/2026: Deeper Atlas Scripture connections and transparent coverage
+
+- Explain 46 additional Bible-to-Bible connections with passage-specific reasoning, source context, relationship types and interpretive cautions; expand the annotated Atlas from 115 to 161 pairs.
+- Strengthen two previously generic explanations about Genesis 3:15 / Romans 16:20 and Genesis 12:3 / Galatians 3:8 without overstating quotation or authorial intent.
+- Show distinct Atlas pair coverage on the About dashboard: 301,553 total pairs, 161 explained and 301,392 without explanations, separately from 603,076 directional navigation links.
+- Preserve all 115 dated historical citation reviews and clearly distinguish the 46 newly added editorial reading aids that still need separate source review.
+
 ## 0.31.1 - 29/10/2026: Study journey time estimates restored
 
 - Restore approximate study-duration ranges to all six expanded study journeys, visible on journey cards and inside the detailed journals.
