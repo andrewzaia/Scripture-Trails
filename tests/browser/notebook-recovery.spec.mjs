@@ -61,3 +61,14 @@ test('quota failure preserves damaged storage and recoverable backup preview',as
  expect(await page.evaluate(()=>localStorage.getItem('scripture-trails:notebook'))).toBe(damaged);
  await expect(page.locator('#notebook-storage-warning')).toBeVisible();
 });
+
+test('browser storage denial keeps the reader and notebook recovery guidance accessible',async({page})=>{
+ await page.addInitScript(()=>{Object.defineProperty(window,'localStorage',{configurable:true,get(){throw new DOMException('Storage denied','SecurityError');}});});
+ await open(page,'notebook');
+ await expect(page.locator('#view-notebook')).toBeVisible();
+ await expect(page.locator('#notebook-storage-warning')).toBeVisible();
+ await expect(page.locator('[data-backup="recovery"]')).toBeVisible();
+ await expect(page.locator('[data-backup="recovery-description"]')).toContainText('storage is inaccessible');
+ await expect(page.locator('[data-backup="recovery-download"]')).toBeHidden();
+ await expect(page.locator('[data-backup="recovery-confirm"]')).toBeDisabled();
+});
