@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.40.0 - 31/10/2026: All Pauline journeys: complete Scripture study depth
+
+- Add original Acts-based context and connected reading passages to the remaining 44 third-journey and Rome-voyage stages, completing all 83 Pauline studies.
+- Explain Spirit-related Jerusalem warnings and preserve distinctions between reached harbours, offshore passages, planned ports and unknown wreck sites.
+- Add scoped academic and commentary sources while leaving independent specialist review and the remaining v1.0 acceptance criteria open.
+
 ## 0.39.0 - 31/10/2026: Paul's first and second journeys: deeper Scripture study
 
 - Add original biblical reading context and relevant Scripture links to all 39 stages of Paul's first two missionary journeys.
