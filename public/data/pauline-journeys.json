@@ -3,7 +3,7 @@
   "updated": "2026-10-31",
   "scope": "Three conventional missionary journey groupings in Acts 13-21 and a separately labelled prisoner voyage to Rome in Acts 27-28.",
   "method": "Acts is primary for the narrated movements. Each entry is an editorial paraphrase with a passage link; no Bible text is bundled. Markers are rounded Pleiades representative points. Regions, unnamed settings and offshore passages have no invented pins. Dashed connectors join only consecutive mapped entries within one journey and are not roads or sailing tracks. First- and second-journey stages also carry original Scripture study contexts; related texts support reading without establishing precise travel dates or routes.",
-  "review": "AI-assisted editorial source and reference screening. All 39 first- and second-journey stages now include original passage-focused contextual reading and linked canonical cross-references; the 44 third-journey and Rome stages retain their existing shorter presentation. Berea-to-Athens GIS research is cited to explain uncertainty, not to establish an exact route. Independent historical and textual specialist review has not occurred.",
+  "review": "AI-assisted editorial source and reference screening. All 83 Pauline stages now have original passage-focused study context and canonical cross-references. The third journey and prisoner voyage explicitly distinguish named landfalls, inferred routes and intended destinations. Independent historical and textual specialist review has not occurred.",
   "chronology": "The timeline counts narrative stages, not elapsed time. No absolute years are assigned. Acts and Pauline-letter chronology require separate comparison; letters are not silently used to add unnamed Acts stops.",
   "journeys": [
     {
@@ -1677,7 +1677,16 @@
         "Acts 18:23"
       ],
       "qualification": "",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "The new departure begins after Paul's return to Antioch. Acts 18:23 joins this visit to his continuing responsibility to strengthen disciples, rather than presenting a fresh commissioning ceremony with a fixed departure date.",
+        "crossReferences": [
+          "Acts 18:22-23",
+          "Acts 15:36-41"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-third-02",
@@ -1689,7 +1698,16 @@
         "Acts 18:23"
       ],
       "qualification": "",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "Galatia and Phrygia are regional terms in Acts 18:23. Their appearance underscores encouragement of existing communities, but the account neither lists each visited town nor settles the disputed geographical scope of Galatia.",
+        "crossReferences": [
+          "Acts 16:6-8",
+          "Acts 18:23"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-third-03",
@@ -1701,7 +1719,16 @@
         "Acts 19:1"
       ],
       "qualification": "",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "Paul reaches Ephesus after travelling through the inland country. Luke contrasts him with Apollos, who has appeared in the preceding narrative; the passage does not give named intermediate roads or stages.",
+        "crossReferences": [
+          "Acts 18:24-28",
+          "Acts 19:1-7"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-third-04",
@@ -1714,7 +1741,17 @@
         "Acts 19:21-41"
       ],
       "qualification": "Apollos' travels in Acts 18:24-28 are not added as visits made by Paul.",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "At Ephesus, teaching moves from the synagogue to the hall of Tyrannus after opposition. Luke also records the encounter with the sons of Sceva, public renunciation of magic and the silversmiths' disturbance. These episodes concern discipleship and the city's economy as well as Paul's duration there.",
+        "crossReferences": [
+          "Acts 19:8-20",
+          "Acts 19:23-41",
+          "Acts 20:17-21"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-third-05",
@@ -1726,7 +1763,16 @@
         "Acts 20:1-2"
       ],
       "qualification": "",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "Paul encourages believers in Macedonia after the disturbance at Ephesus. Acts compresses several communities into a regional summary; recalling earlier Macedonian encounters helps readers follow the relationships without turning each possible city into a documented stop.",
+        "crossReferences": [
+          "Acts 16:11-17",
+          "Acts 17:1-14"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-third-06",
@@ -1738,7 +1784,16 @@
         "Acts 20:2-3"
       ],
       "qualification": "",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "Acts 20:2-3 describes a three-month stay in Greece and a plot that changes the planned departure. Although Corinth is often proposed as the main setting, it is not named in these verses, so the study remains geographically qualified.",
+        "crossReferences": [
+          "Acts 18:1-18",
+          "Acts 20:1-6"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-third-07",
@@ -1750,7 +1805,15 @@
         "Acts 20:3-6"
       ],
       "qualification": "",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "A discovered plot prompts Paul to return through Macedonia instead of sailing as planned. Acts 20:4 names several companions, but the text should not be flattened into proof that every companion followed precisely the same route on every leg.",
+        "crossReferences": [
+          "Acts 20:3-6"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-third-08",
@@ -1762,7 +1825,15 @@
         "Acts 20:6"
       ],
       "qualification": "Acts names Philippi; an otherwise unmentioned departure port is not substituted.",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "The narrative says the party sails from Philippi after the days of Unleavened Bread and joins others at Troas. The festival supplies relative narrative timing, not an independently established year or a named departure quay.",
+        "crossReferences": [
+          "Acts 20:4-7"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-third-09",
@@ -1774,7 +1845,15 @@
         "Acts 20:6-12"
       ],
       "qualification": "",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "During a gathering at Troas, Eutychus falls from an upper window and is taken up alive after Paul attends to him. The account emphasises the gathered community, the extended conversation and their consolation, not only an incident on a travel schedule.",
+        "crossReferences": [
+          "Acts 20:6-12"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-third-10",
@@ -1786,7 +1865,15 @@
         "Acts 20:13-14"
       ],
       "qualification": "Acts 20:13 distinguishes Paul's journey by land to Assos from his companions' sailing there. The plotted sequence must not imply that Paul sailed the preceding leg.",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "Luke distinguishes the companions sailing to Assos from Paul, who intends to travel there by land before boarding with them. That textual distinction is essential: a continuous ship-track through this leg would misrepresent Paul's actual movement in the account.",
+        "crossReferences": [
+          "Acts 20:13-16"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-third-11",
@@ -1798,7 +1885,15 @@
         "Acts 20:14"
       ],
       "qualification": "",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "After Paul rejoins the party at Assos, they proceed to Mitylene. This is an explicitly named stage in an otherwise compressed maritime itinerary, without an account of a sermon or independently located anchorage in the town.",
+        "crossReferences": [
+          "Acts 20:13-16"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-third-12",
@@ -1810,7 +1905,16 @@
         "Acts 20:15"
       ],
       "qualification": "Acts 20:15 says the ship sailed opposite Chios; it does not describe landing there. This stage remains offshore and unpinned.",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "Acts 20:15 says the party came opposite Chios, not that they landed on the island. An offshore passing reference should be read as a navigational description and kept distinct from the later arrival at Samos.",
+        "crossReferences": [
+          "Acts 20:13-16",
+          "Acts 21:1-3"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-third-13",
@@ -1822,7 +1926,15 @@
         "Acts 20:15"
       ],
       "qualification": "Acts 20:15 reports that the travellers touched at Samos. The map's marker locates only the island generally, not a particular ancient quay or a reconstructed sailing track.",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "The travellers reach Samos after passing opposite Chios. The island is named, but the canonical passage does not supply the quay, full approach route or exact arrival position represented by a modern island-scale marker.",
+        "crossReferences": [
+          "Acts 20:13-16"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-third-14",
@@ -1834,7 +1946,16 @@
         "Acts 20:15-38"
       ],
       "qualification": "The elders come from Ephesus to Paul. Their travel is not plotted as a new Ephesian visit by Paul.",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "Paul summons Ephesian elders to Miletus instead of entering Ephesus again. His farewell looks back on service, warns of danger to the community and commends the elders to God; the travel decision and the pastoral charge are integral to the scene.",
+        "crossReferences": [
+          "Acts 20:17-38",
+          "Acts 19:8-10"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-third-15",
@@ -1846,7 +1967,16 @@
         "Acts 21:1"
       ],
       "qualification": "",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "Cos is named in a rapid itinerary after the farewell at Miletus. Acts gives the next sailing stage, not a distinct evangelistic episode or a specific island harbour; the departure's significance also lies in the emotional parting just narrated.",
+        "crossReferences": [
+          "Acts 20:36-38",
+          "Acts 21:1-3"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-third-16",
@@ -1858,7 +1988,15 @@
         "Acts 21:1"
       ],
       "qualification": "",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "The sea journey continues through Rhodes on the way to Patara. This is a sequential navigational notice rather than a record of missionary work at Rhodes or evidence for the precise path the vessel followed.",
+        "crossReferences": [
+          "Acts 21:1-3"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-third-17",
@@ -1870,7 +2008,15 @@
         "Acts 21:1-2"
       ],
       "qualification": "",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "At Patara the party finds a ship crossing towards Phoenicia. Acts distinguishes this change of vessel from later sighting of Cyprus; the separate stages should not be collapsed into an imagined direct trip with known ports throughout.",
+        "crossReferences": [
+          "Acts 21:1-3"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-third-18",
@@ -1882,7 +2028,15 @@
         "Acts 21:3"
       ],
       "qualification": "",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "Cyprus appears to the travellers' left as they sail towards Syria. The island is a navigational sighting rather than a narrated landing, so a visible marker is deliberately withheld for this offshore stage.",
+        "crossReferences": [
+          "Acts 21:1-6"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-third-19",
@@ -1894,7 +2048,16 @@
         "Acts 21:3-6"
       ],
       "qualification": "",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "At Tyre the ship unloads and believers host the travellers for seven days. Their warning concerning Jerusalem and their farewell with families praying on the beach turn a port stop into an account of solidarity and discernment.",
+        "crossReferences": [
+          "Acts 20:22-24",
+          "Acts 21:3-6"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-third-20",
@@ -1906,7 +2069,15 @@
         "Acts 21:7"
       ],
       "qualification": "",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "Ptolemais is a brief visit in which the travellers greet fellow believers for one day. Luke's brevity is itself a limit: the text does not document an extended ministry or a detailed itinerary within the town.",
+        "crossReferences": [
+          "Acts 21:7-8"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-third-21",
@@ -1918,7 +2089,16 @@
         "Acts 21:8-14"
       ],
       "qualification": "",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "At Caesarea, Philip's household welcomes the company and Agabus acts out a warning about Paul's coming imprisonment. The different reactions to these warnings raise a question of discernment, not a directly mapped detour away from Jerusalem.",
+        "crossReferences": [
+          "Acts 20:22-24",
+          "Acts 21:8-14"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-third-22",
@@ -1930,7 +2110,16 @@
         "Acts 21:15-17"
       ],
       "qualification": "No precise road, lodging position or calendar date is supplied by this map.",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "Paul and his companions continue from Caesarea to Jerusalem and receive a welcome from believers. Luke describes companions and lodging arrangements in the surrounding verses, but not an exact road, address or date for the arrival.",
+        "crossReferences": [
+          "Acts 21:15-19",
+          "Acts 20:22-24"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-rome-01",
@@ -1942,7 +2131,17 @@
         "Acts 27:1-2"
       ],
       "qualification": "The port is inferred from the preceding Caesarea custody setting, not named in these embarkation verses.",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "The custody voyage follows Paul's extended imprisonment and appeal. Acts 27 introduces the centurion Julius and a ship from Adramyttium; Caesarea as the embarkation setting is inferred from the preceding custody narrative, not named in 27:1-2 itself.",
+        "crossReferences": [
+          "Acts 25:10-12",
+          "Acts 26:30-32",
+          "Acts 27:1-3"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-rome-02",
@@ -1954,7 +2153,15 @@
         "Acts 27:3"
       ],
       "qualification": "",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "At Sidon, Julius allows Paul to visit friends and receive their care. The small episode gives a human dimension to a guarded prisoner voyage and must not be confused with Paul travelling free or making an independent missionary visit.",
+        "crossReferences": [
+          "Acts 27:1-4"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-rome-03",
@@ -1966,7 +2173,15 @@
         "Acts 27:4"
       ],
       "qualification": "",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "Contrary winds lead the ship to sail under the lee of Cyprus. The passage indicates a weather-driven change in sailing conditions, not an island landing or a traced coastal route verified by modern navigational reconstruction.",
+        "crossReferences": [
+          "Acts 27:3-7"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-rome-04",
@@ -1978,7 +2193,15 @@
         "Acts 27:5"
       ],
       "qualification": "",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "The account mentions sailing across the sea off Cilicia and Pamphylia before reaching Myra. These are coastal orientation terms; the text does not give named intermediate disembarkations, dates or coordinates along that waterway.",
+        "crossReferences": [
+          "Acts 27:4-7"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-rome-05",
@@ -1990,7 +2213,15 @@
         "Acts 27:5-6"
       ],
       "qualification": "",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "At Myra, Julius transfers the prisoners to an Alexandrian ship bound for Italy. 'Alexandrian' identifies the vessel's association and direction, not proof that Paul travelled to Alexandria during this voyage.",
+        "crossReferences": [
+          "Acts 27:5-8"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-rome-06",
@@ -2002,7 +2233,15 @@
         "Acts 27:7"
       ],
       "qualification": "",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "Slow sailing and contrary winds bring the ship off Cnidus, but the text does not say it landed there. The stage matters because the vessel redirects towards Crete after the failed progress on its intended course.",
+        "crossReferences": [
+          "Acts 27:6-9"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-rome-07",
@@ -2014,7 +2253,15 @@
         "Acts 27:7"
       ],
       "qualification": "",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "The ship passes Salmone and works along Crete with difficulty. Luke depicts sailing under the island's shelter rather than a known overland visit; exact wind histories and modern plotted routes remain reconstructions.",
+        "crossReferences": [
+          "Acts 27:7-10"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-rome-08",
@@ -2026,7 +2273,16 @@
         "Acts 27:8-12"
       ],
       "qualification": "Acts 27:8 identifies Fair Havens as a reached anchorage. Phoenix appears in Acts 27:12 as an intended winter harbour, not a stop the narrative says the ship reached. The harbour decision is not a precise sailing route.",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "Fair Havens is reached, and Paul warns against further sailing after the dangerous season has begun. Most favour reaching Phoenix for winter, but Acts 27:12 names that harbour as a proposed destination, not a recorded arrival.",
+        "crossReferences": [
+          "Acts 27:8-13",
+          "Acts 27:21-26"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-rome-09",
@@ -2038,7 +2294,15 @@
         "Acts 27:13-16"
       ],
       "qualification": "Acts 27:13-16 reports a favourable wind followed by a violent northeaster and passage in the lee of Cauda. The text does not provide a navigational track or an actual landing on Cauda; this is an offshore stage.",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "A brief favourable wind gives way to a violent northeaster that drives the vessel near Cauda, where the crew struggles to secure the boat. Cauda is a sheltered offshore passage, not evidence of landing on the island or fixing an exact track.",
+        "crossReferences": [
+          "Acts 27:13-17"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-rome-10",
@@ -2050,7 +2314,16 @@
         "Acts 27:17-26"
       ],
       "qualification": "Acts 27:17-26 reports the danger of the Syrtis, storm-driven movement, jettisoned cargo and Paul's assurance, but gives no coordinates or measured heading. The Syrtis was feared, not visited, and the drift is not pinned.",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "The storm forces protective measures, jettisoned cargo and prolonged uncertainty. Paul recounts an assurance that the passengers will survive while the ship is lost; the feared Syrtis is not a destination and the drift cannot be pinned from Acts alone.",
+        "crossReferences": [
+          "Acts 27:17-26",
+          "Acts 27:33-38"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-rome-11",
@@ -2062,7 +2335,15 @@
         "Acts 27:27-38"
       ],
       "qualification": "Acts 27:27-38 describes soundings and anchoring during the fourteenth night, without a named surveyed bay or precise offshore position. A traditional reconstruction is not a location verified by the text.",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "On the fourteenth night the sailors take soundings, drop anchors and attempt to manage the vessel while Paul urges everyone to eat. The measurements are part of the narrative but do not identify a verified modern offshore coordinate.",
+        "crossReferences": [
+          "Acts 27:27-38"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-rome-12",
@@ -2074,7 +2355,16 @@
         "Acts 27:39-44"
       ],
       "qualification": "Acts 27:39-44 describes an unidentified bay, beach, shoal and wreck. Acts identifies the island as Malta only after the survivors reach shore (28:1). The shipwreck is intentionally unpinned.",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "When daylight comes the sailors see an unfamiliar bay and try to beach the vessel, which breaks apart. The narrative separates the shipwreck scene in Acts 27 from the identification of the island as Malta in 28:1; no particular beach is proven.",
+        "crossReferences": [
+          "Acts 27:39-44",
+          "Acts 28:1-2"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-rome-13",
@@ -2086,7 +2376,16 @@
         "Acts 28:1-6"
       ],
       "qualification": "Acts 28:1 names Malta after the wreck. The island identification is explicit, but Acts 27:39-28:1 does not establish which modern bay or beach was the wreck location.",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "After reaching shore the survivors learn that the island is Malta. Luke relates local hospitality and the snake incident, but the named island does not establish which modern bay held the wreck, or where each event took place.",
+        "crossReferences": [
+          "Acts 27:39-44",
+          "Acts 28:1-6"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-rome-14",
@@ -2098,7 +2397,15 @@
         "Acts 28:7-10"
       ],
       "qualification": "",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "Publius welcomes the group, and Acts describes the healing of his father and others on Malta. These encounters are narrated after the wreck and are distinct from attempts to locate a specific shoreline or prove a later commemorative site.",
+        "crossReferences": [
+          "Acts 28:7-11"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-rome-15",
@@ -2110,7 +2417,15 @@
         "Acts 28:11"
       ],
       "qualification": "",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "After three months on Malta, the company departs in another Alexandrian ship that had wintered there. The ship's figurehead and origin are vessel details; neither establishes Paul's visit to Alexandria or a precise winter calendar.",
+        "crossReferences": [
+          "Acts 28:10-13"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-rome-16",
@@ -2122,7 +2437,15 @@
         "Acts 28:12"
       ],
       "qualification": "",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "The travellers stop at Syracuse for three days. Luke provides the duration and place name, but does not narrate a sermon or identify a landing facility, so the visit should not acquire an invented ministry episode.",
+        "crossReferences": [
+          "Acts 28:11-13"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-rome-17",
@@ -2134,7 +2457,15 @@
         "Acts 28:13"
       ],
       "qualification": "",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "At Rhegium the party pauses before a favourable south wind carries the vessel onward. The named harbour illustrates the continued importance of weather even after Malta, without proving every point of the crossing.",
+        "crossReferences": [
+          "Acts 28:12-14"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-rome-18",
@@ -2146,7 +2477,16 @@
         "Acts 28:13-14"
       ],
       "qualification": "",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "At Puteoli, believers invite the travellers to stay a week. Hospitality reappears at the end of the maritime journey, showing social continuity between communities even while Paul remains bound for Rome.",
+        "crossReferences": [
+          "Acts 28:13-16",
+          "Acts 27:3"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-rome-19",
@@ -2158,7 +2498,15 @@
         "Acts 28:15"
       ],
       "qualification": "These meeting points follow the approach towards Rome; Acts does not supply a complete measured road itinerary.",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "Believers from Rome travel out as far as the Forum of Appius to meet Paul, who takes courage at their arrival. These are named meeting places in a road approach, not proof of the exact course or pace of every segment.",
+        "crossReferences": [
+          "Acts 28:14-16"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-rome-20",
@@ -2170,7 +2518,15 @@
         "Acts 28:15"
       ],
       "qualification": "These meeting points follow the approach towards Rome; Acts does not supply a complete measured road itinerary.",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "Three Taverns is also named among the places where believers came out to welcome Paul. The two meeting points describe a developing reception along the approach, not two unrelated arrivals in Rome.",
+        "crossReferences": [
+          "Acts 28:14-16"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-rome-21",
@@ -2182,7 +2538,15 @@
         "Acts 28:16"
       ],
       "qualification": "",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "On arrival in Rome, Paul is allowed lodging under a soldier's guard. The detail marks a change from dangerous transit to constrained residence; it does not indicate release or an independently known Roman street address.",
+        "crossReferences": [
+          "Acts 28:16-20"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     },
     {
       "id": "paul-rome-22",
@@ -2194,7 +2558,16 @@
         "Acts 28:17-31"
       ],
       "qualification": "",
-      "reviewStatus": "editorial-reading-aid"
+      "reviewStatus": "editorial-reading-aid",
+      "study": {
+        "context": "Acts closes with Paul explaining the hope of Israel to Jewish leaders and welcoming listeners while under restriction. The final two-year notice describes continued proclamation, but the book does not narrate a subsequent release, execution or additional journey.",
+        "crossReferences": [
+          "Acts 28:17-31",
+          "Acts 1:6-8"
+        ],
+        "method": "editorial-scripture-context",
+        "reviewedOn": "2026-10-31"
+      }
     }
   ],
   "sources": {
@@ -2351,12 +2724,46 @@
           "scope": "Primary narrative for Berea, departure and Athens."
         }
       ]
+    },
+    {
+      "id": "spirit-warnings-jerusalem",
+      "title": "Warnings on the journey to Jerusalem and Paul's decision",
+      "description": "Acts 20:22-24, 21:4 and 21:10-14 record Paul's compulsion to continue and the responses of disciples and Agabus who anticipate his suffering. Readers differ over how to reconcile the Spirit's warnings and the companions' appeals not to go. The site records both textual contexts without claiming an uncontroversial harmonisation.",
+      "passages": [
+        "Acts 20:22-24",
+        "Acts 21:4-6",
+        "Acts 21:10-14"
+      ],
+      "sourceLinks": [
+        {
+          "title": "Alan J. Thompson, Acts commentary, The Gospel Coalition",
+          "url": "https://www.thegospelcoalition.org/commentary/acts/",
+          "scope": "Published commentary on Acts 21:1-14, including divergent understandings of warnings and the decision to continue; interpretive resource, not independent historical evidence."
+        }
+      ]
+    },
+    {
+      "id": "rome-voyage-literary-and-geographical",
+      "title": "The voyage's literary meaning is not a surveyed sailing route",
+      "description": "Acts 27-28 contains storm, prisoner, maritime and providential themes alongside geographical names. Literary interpretation and historical maritime reconstruction address different questions. The published article abstract considers an imperial reading of the nautical narrative, without certifying an exact ancient route or wreck location.",
+      "passages": [
+        "Acts 27:1-12",
+        "Acts 27:13-44",
+        "Acts 28:1-16"
+      ],
+      "sourceLinks": [
+        {
+          "title": "Warren Carter, Aquatic Display: Navigating the Roman Imperial World in Acts 27, New Testament Studies 62 (2016), 79-96",
+          "url": "https://doi.org/10.1017/S0028688515000284",
+          "scope": "Peer-reviewed academic literary interpretation of Acts 27-28.10; abstract consulted, not the full text. This is not a geographic survey or proof of a wreck site."
+        }
+      ]
     }
   ],
   "studyCoverage": {
     "reviewedOn": "2026-10-31",
-    "scope": "39 of 83 stages: first and second conventional missionary journeys. Third journey and prisoner voyage await substantive reading-context expansion.",
-    "method": "Original Scripture-first editorial notes based on Acts, with linked comparison passages and a bounded published scholarly geography discussion. Passage references and existing place records are kept distinct from independent verification of travel routes.",
-    "limit": "Scripture reading aids are not independent specialist historical reviews; thematic links to Pauline letters do not independently establish a precise Acts travel date or route."
+    "scope": "All 83 of 83 Pauline stages, covering the first, second and third conventional missionary journeys and the separate prisoner voyage to Rome, have original Scripture-based study contexts and related canonical reading passages.",
+    "method": "AI-assisted original Scripture-first editorial reading and cross-passage comparison. Geographical limitations, groupings, text variants and other research cautions remain visible; not a certification of exact sailing paths, city visits, textual chronology or archaeological site matches.",
+    "limit": "Scripture reading aids are not independent specialist historical reviews; published academic interpretation of the Acts voyage is not an independently surveyed route. The wider flagship historical audit and specialist consultation remain open."
   }
 }
