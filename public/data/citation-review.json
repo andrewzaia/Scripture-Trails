@@ -7,14 +7,15 @@
     "issues": 18,
     "places": 15,
     "trailReadings": 4,
-    "connections": 127
+    "connections": 144
   },
   "deferred": [
     "All six previously unlinked named-place assessments now include external research. Bibliographic gaps in this declared batch are addressed at the stated scope; exact identifications, comparative excavation review, textual variants and abstract-only access remain unresolved. Regional placeholders were not upgraded.",
     "All 115 explained pairs now have dated editorial assessments and at least one scoped secondary citation. The 32 previously passage-based assessments have dated commentary follow-ups. Named commentary or limited publisher-summary support is not independent specialist signoff or agreement with every link. Fuller literature, source-access gaps and textual questions remain open.",
     "Other person-trail access gaps, full excavation reports, manuscript apparatuses, wider source coverage and independent specialist review remain open.",
     "The full OpenBible corpus remains unclassified.",
-    "Of the 46 explanations introduced in v0.32.0, twelve now have dated Scripture-context and named-commentary assessments in v1-citations-12-01; 34 remain pending. Access restrictions and commentary scope are recorded; no external peer review is implied."
+    "Of the 46 explanations introduced in v0.32.0, twelve now have dated Scripture-context and named-commentary assessments in v1-citations-12-01; 34 remain pending. Access restrictions and commentary scope are recorded; no external peer review is implied.",
+    "Of the original 46 v0.32.0 reading aids, 29 now have dated scoped assessments and fifteen remain. No unreviewed pair is represented as peer reviewed; new publisher chapter references may be access-limited."
   ],
   "sources": {
     "luke2": {
@@ -3351,6 +3352,386 @@
       "url": "https://www.esv.org/Deuteronomy+21/",
       "checkedOn": "2026-10-31",
       "access": "Publisher passage link recorded as a reference locator. Selected context checked against named commentary and the cited biblical passages; direct access varied and a manuscript apparatus was not inspected.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-john": {
+      "title": "John - commentary",
+      "author": "Andreas J. Köstenberger",
+      "publisher": "The Gospel Coalition - TGC Bible Commentary",
+      "kind": "scholarly-commentary",
+      "url": "https://www.thegospelcoalition.org/commentary/john/",
+      "checkedOn": "2026-10-31",
+      "access": "Readable relevant sections retrieved and compared on 2026-10-31. Relevant readable passages: John 19:16-37 refers to Psalm 22:18, John 2:12-22 refers to Psalm 69:9. The commentary's historical and theological interpretations are attributed, not settled conclusions. Not independent specialist signoff.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-romans": {
+      "title": "Romans - commentary",
+      "author": "Donny Ray Mathis",
+      "publisher": "The Gospel Coalition - TGC Bible Commentary",
+      "kind": "scholarly-commentary",
+      "url": "https://www.thegospelcoalition.org/commentary/Romans/",
+      "checkedOn": "2026-10-31",
+      "access": "Readable relevant sections retrieved and compared on 2026-10-31. Romans 10:14-21 explicitly identifies Paul's Isaiah 52:7 quotation. Selective accessible commentary; does not establish all competing interpretations. Not independent specialist signoff.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-matthew": {
+      "title": "Matthew - commentary",
+      "author": "Douglas Sean O'Donnell",
+      "publisher": "The Gospel Coalition - TGC Bible Commentary",
+      "kind": "scholarly-commentary",
+      "url": "https://www.thegospelcoalition.org/commentary/matthew/",
+      "checkedOn": "2026-10-31",
+      "access": "Readable relevant sections retrieved and compared on 2026-10-31. Readable Matthew 21:1-46 includes Zechariah 9:9 and Psalm 118:22-23; Matthew 12:18 discusses Isaiah 42:1; Matthew 15:1-20 explicitly quotes Isaiah 29:13. Confessional interpretation. Not independent specialist signoff.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-zechariah": {
+      "title": "Zechariah - commentary",
+      "author": "Michael P. V. Barrett",
+      "publisher": "The Gospel Coalition - TGC Bible Commentary",
+      "kind": "scholarly-commentary",
+      "url": "https://www.thegospelcoalition.org/commentary/zechariah/",
+      "checkedOn": "2026-10-31",
+      "access": "Readable relevant sections retrieved and compared on 2026-10-31. Zechariah 12:10-14 discussed in relation to John 19:37, with theological interpretive claims distinguished from established textual equivalence. Not independent specialist signoff.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-hebrews": {
+      "title": "Hebrews - commentary",
+      "author": "Dennis E. Johnson",
+      "publisher": "The Gospel Coalition - TGC Bible Commentary",
+      "kind": "scholarly-commentary",
+      "url": "https://www.thegospelcoalition.org/commentary/hebrews/",
+      "checkedOn": "2026-10-31",
+      "access": "Readable relevant sections retrieved and compared on 2026-10-31. Hebrews 2:5-10 discusses Psalm 8; Hebrews 5:5-6 and chapter 7 discuss Psalm 110:4; Hebrews 10:15-18 discusses Jeremiah 31. Selective confessional exposition. Not independent specialist signoff.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-galatians": {
+      "title": "Galatians - commentary",
+      "author": "Matthew P. Harmon and John Sloat",
+      "publisher": "The Gospel Coalition - TGC Bible Commentary",
+      "kind": "scholarly-commentary",
+      "url": "https://www.thegospelcoalition.org/commentary/galatians/",
+      "checkedOn": "2026-10-31",
+      "access": "Readable relevant sections retrieved and compared on 2026-10-31. Galatians 3:6-9 directly names Genesis 15:6 and the Abraham promise; theological interpretation belongs to later Pauline argument. Not independent specialist signoff.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-corinthians": {
+      "title": "1 Corinthians - commentary",
+      "author": "Eric C. Redmond",
+      "publisher": "The Gospel Coalition - TGC Bible Commentary",
+      "kind": "scholarly-commentary",
+      "url": "https://www.thegospelcoalition.org/commentary/1-corinthians/",
+      "checkedOn": "2026-10-31",
+      "access": "Readable relevant sections retrieved and compared on 2026-10-31. 1 Corinthians 9:8-11 explicitly addresses Deuteronomy 25:4, working animals and Paul's analogy about labour and ministry support. Not independent specialist signoff.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-mark": {
+      "title": "Mark - commentary",
+      "author": "Mark L. Strauss",
+      "publisher": "The Gospel Coalition - TGC Bible Commentary",
+      "kind": "scholarly-commentary",
+      "url": "https://www.thegospelcoalition.org/commentary/mark/",
+      "checkedOn": "2026-10-31",
+      "access": "Readable relevant sections retrieved and compared on 2026-10-31. Mark 1:2-3 has a composite citation from Isaiah and Malachi; Mark 11:17 explicitly cites Isaiah 56:7 and Jeremiah 7:11. Confessional and not full textual-critical apparatus. Not independent specialist signoff.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-text-psalm-22": {
+      "title": "Psalm 22 - canonical chapter reference",
+      "author": "United States Conference of Catholic Bishops",
+      "publisher": "USCCB Bible",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/psalms/22",
+      "checkedOn": "2026-10-31",
+      "access": "Publisher chapter link supplied for direct biblical-context reading. Automated access varies by page, and source content is not reproduced or represented as independent manuscript verification.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-text-john-19": {
+      "title": "John 19 - canonical chapter reference",
+      "author": "United States Conference of Catholic Bishops",
+      "publisher": "USCCB Bible",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/john/19",
+      "checkedOn": "2026-10-31",
+      "access": "Publisher chapter link supplied for direct biblical-context reading. Automated access varies by page, and source content is not reproduced or represented as independent manuscript verification.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-text-isaiah-52": {
+      "title": "Isaiah 52 - canonical chapter reference",
+      "author": "United States Conference of Catholic Bishops",
+      "publisher": "USCCB Bible",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/isaiah/52",
+      "checkedOn": "2026-10-31",
+      "access": "Publisher chapter link supplied for direct biblical-context reading. Automated access varies by page, and source content is not reproduced or represented as independent manuscript verification.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-text-romans-10": {
+      "title": "Romans 10 - canonical chapter reference",
+      "author": "United States Conference of Catholic Bishops",
+      "publisher": "USCCB Bible",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/romans/10",
+      "checkedOn": "2026-10-31",
+      "access": "Publisher chapter link supplied for direct biblical-context reading. Automated access varies by page, and source content is not reproduced or represented as independent manuscript verification.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-text-zechariah-9": {
+      "title": "Zechariah 9 - canonical chapter reference",
+      "author": "United States Conference of Catholic Bishops",
+      "publisher": "USCCB Bible",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/zechariah/9",
+      "checkedOn": "2026-10-31",
+      "access": "Publisher chapter link supplied for direct biblical-context reading. Automated access varies by page, and source content is not reproduced or represented as independent manuscript verification.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-text-matthew-21": {
+      "title": "Matthew 21 - canonical chapter reference",
+      "author": "United States Conference of Catholic Bishops",
+      "publisher": "USCCB Bible",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/matthew/21",
+      "checkedOn": "2026-10-31",
+      "access": "Publisher chapter link supplied for direct biblical-context reading. Automated access varies by page, and source content is not reproduced or represented as independent manuscript verification.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-text-zechariah-12": {
+      "title": "Zechariah 12 - canonical chapter reference",
+      "author": "United States Conference of Catholic Bishops",
+      "publisher": "USCCB Bible",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/zechariah/12",
+      "checkedOn": "2026-10-31",
+      "access": "Publisher chapter link supplied for direct biblical-context reading. Automated access varies by page, and source content is not reproduced or represented as independent manuscript verification.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-text-jeremiah-31": {
+      "title": "Jeremiah 31 - canonical chapter reference",
+      "author": "United States Conference of Catholic Bishops",
+      "publisher": "USCCB Bible",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/jeremiah/31",
+      "checkedOn": "2026-10-31",
+      "access": "Publisher chapter link supplied for direct biblical-context reading. Automated access varies by page, and source content is not reproduced or represented as independent manuscript verification.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-text-hebrews-10": {
+      "title": "Hebrews 10 - canonical chapter reference",
+      "author": "United States Conference of Catholic Bishops",
+      "publisher": "USCCB Bible",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/hebrews/10",
+      "checkedOn": "2026-10-31",
+      "access": "Publisher chapter link supplied for direct biblical-context reading. Automated access varies by page, and source content is not reproduced or represented as independent manuscript verification.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-text-psalm-118": {
+      "title": "Psalm 118 - canonical chapter reference",
+      "author": "United States Conference of Catholic Bishops",
+      "publisher": "USCCB Bible",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/psalms/118",
+      "checkedOn": "2026-10-31",
+      "access": "Publisher chapter link supplied for direct biblical-context reading. Automated access varies by page, and source content is not reproduced or represented as independent manuscript verification.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-text-genesis-15": {
+      "title": "Genesis 15 - canonical chapter reference",
+      "author": "United States Conference of Catholic Bishops",
+      "publisher": "USCCB Bible",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/genesis/15",
+      "checkedOn": "2026-10-31",
+      "access": "Publisher chapter link supplied for direct biblical-context reading. Automated access varies by page, and source content is not reproduced or represented as independent manuscript verification.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-text-galatians-3": {
+      "title": "Galatians 3 - canonical chapter reference",
+      "author": "United States Conference of Catholic Bishops",
+      "publisher": "USCCB Bible",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/galatians/3",
+      "checkedOn": "2026-10-31",
+      "access": "Publisher chapter link supplied for direct biblical-context reading. Automated access varies by page, and source content is not reproduced or represented as independent manuscript verification.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-text-deuteronomy-6": {
+      "title": "Deuteronomy 6 - canonical chapter reference",
+      "author": "United States Conference of Catholic Bishops",
+      "publisher": "USCCB Bible",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/deuteronomy/6",
+      "checkedOn": "2026-10-31",
+      "access": "Publisher chapter link supplied for direct biblical-context reading. Automated access varies by page, and source content is not reproduced or represented as independent manuscript verification.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-text-matthew-4": {
+      "title": "Matthew 4 - canonical chapter reference",
+      "author": "United States Conference of Catholic Bishops",
+      "publisher": "USCCB Bible",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/matthew/4",
+      "checkedOn": "2026-10-31",
+      "access": "Publisher chapter link supplied for direct biblical-context reading. Automated access varies by page, and source content is not reproduced or represented as independent manuscript verification.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-text-deuteronomy-25": {
+      "title": "Deuteronomy 25 - canonical chapter reference",
+      "author": "United States Conference of Catholic Bishops",
+      "publisher": "USCCB Bible",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/deuteronomy/25",
+      "checkedOn": "2026-10-31",
+      "access": "Publisher chapter link supplied for direct biblical-context reading. Automated access varies by page, and source content is not reproduced or represented as independent manuscript verification.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-text-1-corinthians-9": {
+      "title": "1 Corinthians 9 - canonical chapter reference",
+      "author": "United States Conference of Catholic Bishops",
+      "publisher": "USCCB Bible",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/1corinthians/9",
+      "checkedOn": "2026-10-31",
+      "access": "Publisher chapter link supplied for direct biblical-context reading. Automated access varies by page, and source content is not reproduced or represented as independent manuscript verification.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-text-psalm-8": {
+      "title": "Psalm 8 - canonical chapter reference",
+      "author": "United States Conference of Catholic Bishops",
+      "publisher": "USCCB Bible",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/psalms/8",
+      "checkedOn": "2026-10-31",
+      "access": "Publisher chapter link supplied for direct biblical-context reading. Automated access varies by page, and source content is not reproduced or represented as independent manuscript verification.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-text-hebrews-2": {
+      "title": "Hebrews 2 - canonical chapter reference",
+      "author": "United States Conference of Catholic Bishops",
+      "publisher": "USCCB Bible",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/hebrews/2",
+      "checkedOn": "2026-10-31",
+      "access": "Publisher chapter link supplied for direct biblical-context reading. Automated access varies by page, and source content is not reproduced or represented as independent manuscript verification.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-text-psalm-69": {
+      "title": "Psalm 69 - canonical chapter reference",
+      "author": "United States Conference of Catholic Bishops",
+      "publisher": "USCCB Bible",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/psalms/69",
+      "checkedOn": "2026-10-31",
+      "access": "Publisher chapter link supplied for direct biblical-context reading. Automated access varies by page, and source content is not reproduced or represented as independent manuscript verification.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-text-john-2": {
+      "title": "John 2 - canonical chapter reference",
+      "author": "United States Conference of Catholic Bishops",
+      "publisher": "USCCB Bible",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/john/2",
+      "checkedOn": "2026-10-31",
+      "access": "Publisher chapter link supplied for direct biblical-context reading. Automated access varies by page, and source content is not reproduced or represented as independent manuscript verification.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-text-psalm-110": {
+      "title": "Psalm 110 - canonical chapter reference",
+      "author": "United States Conference of Catholic Bishops",
+      "publisher": "USCCB Bible",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/psalms/110",
+      "checkedOn": "2026-10-31",
+      "access": "Publisher chapter link supplied for direct biblical-context reading. Automated access varies by page, and source content is not reproduced or represented as independent manuscript verification.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-text-hebrews-5": {
+      "title": "Hebrews 5 - canonical chapter reference",
+      "author": "United States Conference of Catholic Bishops",
+      "publisher": "USCCB Bible",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/hebrews/5",
+      "checkedOn": "2026-10-31",
+      "access": "Publisher chapter link supplied for direct biblical-context reading. Automated access varies by page, and source content is not reproduced or represented as independent manuscript verification.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-text-isaiah-29": {
+      "title": "Isaiah 29 - canonical chapter reference",
+      "author": "United States Conference of Catholic Bishops",
+      "publisher": "USCCB Bible",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/isaiah/29",
+      "checkedOn": "2026-10-31",
+      "access": "Publisher chapter link supplied for direct biblical-context reading. Automated access varies by page, and source content is not reproduced or represented as independent manuscript verification.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-text-matthew-15": {
+      "title": "Matthew 15 - canonical chapter reference",
+      "author": "United States Conference of Catholic Bishops",
+      "publisher": "USCCB Bible",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/matthew/15",
+      "checkedOn": "2026-10-31",
+      "access": "Publisher chapter link supplied for direct biblical-context reading. Automated access varies by page, and source content is not reproduced or represented as independent manuscript verification.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-text-isaiah-40": {
+      "title": "Isaiah 40 - canonical chapter reference",
+      "author": "United States Conference of Catholic Bishops",
+      "publisher": "USCCB Bible",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/isaiah/40",
+      "checkedOn": "2026-10-31",
+      "access": "Publisher chapter link supplied for direct biblical-context reading. Automated access varies by page, and source content is not reproduced or represented as independent manuscript verification.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-text-mark-1": {
+      "title": "Mark 1 - canonical chapter reference",
+      "author": "United States Conference of Catholic Bishops",
+      "publisher": "USCCB Bible",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/mark/1",
+      "checkedOn": "2026-10-31",
+      "access": "Publisher chapter link supplied for direct biblical-context reading. Automated access varies by page, and source content is not reproduced or represented as independent manuscript verification.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-text-isaiah-42": {
+      "title": "Isaiah 42 - canonical chapter reference",
+      "author": "United States Conference of Catholic Bishops",
+      "publisher": "USCCB Bible",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/isaiah/42",
+      "checkedOn": "2026-10-31",
+      "access": "Publisher chapter link supplied for direct biblical-context reading. Automated access varies by page, and source content is not reproduced or represented as independent manuscript verification.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-text-matthew-12": {
+      "title": "Matthew 12 - canonical chapter reference",
+      "author": "United States Conference of Catholic Bishops",
+      "publisher": "USCCB Bible",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/matthew/12",
+      "checkedOn": "2026-10-31",
+      "access": "Publisher chapter link supplied for direct biblical-context reading. Automated access varies by page, and source content is not reproduced or represented as independent manuscript verification.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-text-isaiah-56": {
+      "title": "Isaiah 56 - canonical chapter reference",
+      "author": "United States Conference of Catholic Bishops",
+      "publisher": "USCCB Bible",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/isaiah/56",
+      "checkedOn": "2026-10-31",
+      "access": "Publisher chapter link supplied for direct biblical-context reading. Automated access varies by page, and source content is not reproduced or represented as independent manuscript verification.",
+      "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "v1b2-text-mark-11": {
+      "title": "Mark 11 - canonical chapter reference",
+      "author": "United States Conference of Catholic Bishops",
+      "publisher": "USCCB Bible",
+      "kind": "primary-scripture",
+      "url": "https://bible.usccb.org/bible/mark/11",
+      "checkedOn": "2026-10-31",
+      "access": "Publisher chapter link supplied for direct biblical-context reading. Automated access varies by page, and source content is not reproduced or represented as independent manuscript verification.",
       "rights": "Linked only; no Bible or commentary text retained."
     }
   },
@@ -8535,6 +8916,550 @@
       ],
       "batch": "v1-citations-12-01",
       "anchor": "Deuteronomy 21:23"
+    },
+    {
+      "kind": "connection",
+      "target": "ce125",
+      "title": "Psalm 22:18 and John 19:24",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-31",
+      "note": "Köstenberger identifies John 19:24 as a use of Psalm 22:18; the Gospel narrates separate treatment of divided clothing and a garment allocated by lot.",
+      "limitation": "Psalm 22 is a lament moving towards public praise; matching wording shows the evangelist's scriptural interpretation but does not independently date or verify the soldiers' actions. AI-assisted selected-passage and scoped accessible named-commentary assessment; complete literature and independent specialist review remain open.",
+      "passages": [
+        "Psalm 22:18",
+        "John 19:24"
+      ],
+      "citations": [
+        {
+          "sourceId": "v1b2-text-psalm-22",
+          "locator": "Psalm 22:18",
+          "supports": "Original quotation source and context; available publisher passage reference"
+        },
+        {
+          "sourceId": "v1b2-text-john-19",
+          "locator": "John 19:24",
+          "supports": "New Testament reuse and immediate literary setting"
+        },
+        {
+          "sourceId": "v1b2-john",
+          "locator": "Crucifixion and Aftermath, John 19:16-27",
+          "supports": "Named interpretive support for the specific quoted passage relationship and its limits"
+        }
+      ],
+      "batch": "v1-citations-17-02",
+      "anchor": "Psalm 22:18"
+    },
+    {
+      "kind": "connection",
+      "target": "ce128",
+      "title": "Isaiah 52:7 and Romans 10:15",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-31",
+      "note": "Mathis explicitly identifies Isaiah 52:7 as Paul's good-news messenger quotation; Romans connects it with sending, proclamation, hearing and faith.",
+      "limitation": "Isaiah's original horizon concerns Zion's comfort, the return of the Lord and salvation made visible to nations; do not erase that background or assume the source commentary represents every view of Israel. AI-assisted selected-passage and scoped accessible named-commentary assessment; complete literature and independent specialist review remain open.",
+      "passages": [
+        "Isaiah 52:7",
+        "Romans 10:15"
+      ],
+      "citations": [
+        {
+          "sourceId": "v1b2-text-isaiah-52",
+          "locator": "Isaiah 52:7",
+          "supports": "Original quotation source and context; available publisher passage reference"
+        },
+        {
+          "sourceId": "v1b2-text-romans-10",
+          "locator": "Romans 10:15",
+          "supports": "New Testament reuse and immediate literary setting"
+        },
+        {
+          "sourceId": "v1b2-romans",
+          "locator": "Romans 10:14-21, especially 10:15",
+          "supports": "Named interpretive support for the specific quoted passage relationship and its limits"
+        }
+      ],
+      "batch": "v1-citations-17-02",
+      "anchor": "Isaiah 52:7"
+    },
+    {
+      "kind": "connection",
+      "target": "ce132",
+      "title": "Zechariah 9:9 and Matthew 21:5",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-31",
+      "note": "O'Donnell identifies Zechariah 9:9 in Matthew 21:4-5 and discusses the donkey and colt narrative in the royal entry.",
+      "limitation": "Zechariah's poetic donkey parallelism, differences among the Gospels and Matthew's animal details must not be silently harmonised into a single reconstructed riding arrangement. AI-assisted selected-passage and scoped accessible named-commentary assessment; complete literature and independent specialist review remain open.",
+      "passages": [
+        "Zechariah 9:9",
+        "Matthew 21:5"
+      ],
+      "citations": [
+        {
+          "sourceId": "v1b2-text-zechariah-9",
+          "locator": "Zechariah 9:9",
+          "supports": "Original quotation source and context; available publisher passage reference"
+        },
+        {
+          "sourceId": "v1b2-text-matthew-21",
+          "locator": "Matthew 21:5",
+          "supports": "New Testament reuse and immediate literary setting"
+        },
+        {
+          "sourceId": "v1b2-matthew",
+          "locator": "The Triumphal Entry, Matthew 21:1-11",
+          "supports": "Named interpretive support for the specific quoted passage relationship and its limits"
+        }
+      ],
+      "batch": "v1-citations-17-02",
+      "anchor": "Zechariah 9:9"
+    },
+    {
+      "kind": "connection",
+      "target": "ce133",
+      "title": "Zechariah 12:10 and John 19:37",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-31",
+      "note": "Barrett explicitly reads Zechariah 12:10 in connection with John 19:37; John's narrative cites the pierced figure after the spear report.",
+      "limitation": "The Hebrew text's pronouns, the Greek textual tradition and differing theological referents remain contested. The commentary advances a confessional Christological interpretation rather than establishing unambiguous wording. AI-assisted selected-passage and scoped accessible named-commentary assessment; complete literature and independent specialist review remain open.",
+      "passages": [
+        "Zechariah 12:10",
+        "John 19:37"
+      ],
+      "citations": [
+        {
+          "sourceId": "v1b2-text-zechariah-12",
+          "locator": "Zechariah 12:10",
+          "supports": "Original quotation source and context; available publisher passage reference"
+        },
+        {
+          "sourceId": "v1b2-text-john-19",
+          "locator": "John 19:37",
+          "supports": "New Testament reuse and immediate literary setting"
+        },
+        {
+          "sourceId": "v1b2-zechariah",
+          "locator": "Spiritual Deliverance, Zechariah 12:10-14",
+          "supports": "Named interpretive support for the specific quoted passage relationship and its limits"
+        }
+      ],
+      "batch": "v1-citations-17-02",
+      "anchor": "Zechariah 12:10"
+    },
+    {
+      "kind": "connection",
+      "target": "ce135",
+      "title": "Jeremiah 31:33 and Hebrews 10:16",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-31",
+      "note": "Johnson describes the brief quotation of Jeremiah 31:33-34 in Hebrews 10 after its fuller appearance in Hebrews 8, in a discussion of forgiveness and transformed hearts.",
+      "limitation": "Jeremiah directly addresses Israel and Judah; the cited Christian exposition does not independently settle continuity, supersessionism or the full diversity of Jewish covenant interpretations. AI-assisted selected-passage and scoped accessible named-commentary assessment; complete literature and independent specialist review remain open.",
+      "passages": [
+        "Jeremiah 31:33",
+        "Hebrews 10:16"
+      ],
+      "citations": [
+        {
+          "sourceId": "v1b2-text-jeremiah-31",
+          "locator": "Jeremiah 31:33",
+          "supports": "Original quotation source and context; available publisher passage reference"
+        },
+        {
+          "sourceId": "v1b2-text-hebrews-10",
+          "locator": "Hebrews 10:16",
+          "supports": "New Testament reuse and immediate literary setting"
+        },
+        {
+          "sourceId": "v1b2-hebrews",
+          "locator": "Hebrews 10:15-18 and Jeremiah 31:31-34",
+          "supports": "Named interpretive support for the specific quoted passage relationship and its limits"
+        }
+      ],
+      "batch": "v1-citations-17-02",
+      "anchor": "Jeremiah 31:33"
+    },
+    {
+      "kind": "connection",
+      "target": "ce136",
+      "title": "Psalm 118:22 and Matthew 21:42",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-31",
+      "note": "O'Donnell identifies Psalm 118:22-23 in Matthew 21:42 and relates the rejected stone to the conflict with particular religious leaders.",
+      "limitation": "The critique addresses specific characters and leaders in a narrative context. It cannot responsibly be generalised into collective guilt or a condemnation of the Jewish people. AI-assisted selected-passage and scoped accessible named-commentary assessment; complete literature and independent specialist review remain open.",
+      "passages": [
+        "Psalm 118:22",
+        "Matthew 21:42"
+      ],
+      "citations": [
+        {
+          "sourceId": "v1b2-text-psalm-118",
+          "locator": "Psalm 118:22",
+          "supports": "Original quotation source and context; available publisher passage reference"
+        },
+        {
+          "sourceId": "v1b2-text-matthew-21",
+          "locator": "Matthew 21:42",
+          "supports": "New Testament reuse and immediate literary setting"
+        },
+        {
+          "sourceId": "v1b2-matthew",
+          "locator": "The Parable of the Tenants, Matthew 21:33-46",
+          "supports": "Named interpretive support for the specific quoted passage relationship and its limits"
+        }
+      ],
+      "batch": "v1-citations-17-02",
+      "anchor": "Psalm 118:22"
+    },
+    {
+      "kind": "connection",
+      "target": "ce137",
+      "title": "Genesis 15:6 and Galatians 3:6",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-31",
+      "note": "Harmon and Sloat explicitly describe Paul's quotation of Genesis 15:6 as an argument about Abraham's faith and the nations' promised blessing.",
+      "limitation": "Genesis 15 concerns Abraham's covenant and heir; Paul's subsequent theological argument does not demonstrate that the earlier narrative had no distinct historical setting. AI-assisted selected-passage and scoped accessible named-commentary assessment; complete literature and independent specialist review remain open.",
+      "passages": [
+        "Genesis 15:6",
+        "Galatians 3:6"
+      ],
+      "citations": [
+        {
+          "sourceId": "v1b2-text-genesis-15",
+          "locator": "Genesis 15:6",
+          "supports": "Original quotation source and context; available publisher passage reference"
+        },
+        {
+          "sourceId": "v1b2-text-galatians-3",
+          "locator": "Galatians 3:6",
+          "supports": "New Testament reuse and immediate literary setting"
+        },
+        {
+          "sourceId": "v1b2-galatians",
+          "locator": "A Gospel-Centric Reading of the Abraham Story, Galatians 3:6-9",
+          "supports": "Named interpretive support for the specific quoted passage relationship and its limits"
+        }
+      ],
+      "batch": "v1-citations-17-02",
+      "anchor": "Genesis 15:6"
+    },
+    {
+      "kind": "connection",
+      "target": "ce141",
+      "title": "Deuteronomy 6:16 and Matthew 4:7",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-31",
+      "note": "Jesus replies to the temple temptation with Deuteronomy 6:16, answering the use of Psalm 91 by distinguishing trust from putting God to the test.",
+      "limitation": "The original prohibition concerns Israel's testing of the Lord at Massah (Exodus 17). Deuteronomy and Matthew are not interchangeable historical scenes; this application does not imply God cannot protect. AI-assisted selected-passage and scoped accessible named-commentary assessment; complete literature and independent specialist review remain open.",
+      "passages": [
+        "Deuteronomy 6:16",
+        "Matthew 4:7"
+      ],
+      "citations": [
+        {
+          "sourceId": "v1b2-text-deuteronomy-6",
+          "locator": "Deuteronomy 6:16",
+          "supports": "Original quotation source and context; available publisher passage reference"
+        },
+        {
+          "sourceId": "v1b2-text-matthew-4",
+          "locator": "Matthew 4:7",
+          "supports": "New Testament reuse and immediate literary setting"
+        },
+        {
+          "sourceId": "v1b2-matthew",
+          "locator": "The Temptation of Jesus, Matthew 4:1-11",
+          "supports": "Named interpretive support for the specific quoted passage relationship and its limits"
+        }
+      ],
+      "batch": "v1-citations-17-02",
+      "anchor": "Deuteronomy 6:16"
+    },
+    {
+      "kind": "connection",
+      "target": "ce143",
+      "title": "Deuteronomy 25:4 and 1 Corinthians 9:9",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-31",
+      "note": "Redmond explicitly identifies Paul's appeal to Deuteronomy 25:4 and its principle of allowing workers a share in their labour, extending an animal rule by analogy.",
+      "limitation": "The ox's welfare is part of Deuteronomy's original ethical claim. Paul's wider argument includes his voluntary refusal to demand payment and cannot be reduced to a universal ministerial fee schedule. AI-assisted selected-passage and scoped accessible named-commentary assessment; complete literature and independent specialist review remain open.",
+      "passages": [
+        "Deuteronomy 25:4",
+        "1 Corinthians 9:9"
+      ],
+      "citations": [
+        {
+          "sourceId": "v1b2-text-deuteronomy-25",
+          "locator": "Deuteronomy 25:4",
+          "supports": "Original quotation source and context; available publisher passage reference"
+        },
+        {
+          "sourceId": "v1b2-text-1-corinthians-9",
+          "locator": "1 Corinthians 9:9",
+          "supports": "New Testament reuse and immediate literary setting"
+        },
+        {
+          "sourceId": "v1b2-corinthians",
+          "locator": "Supporting Discourse on the Corinthians' Liberties, 1 Corinthians 9:8-11",
+          "supports": "Named interpretive support for the specific quoted passage relationship and its limits"
+        }
+      ],
+      "batch": "v1-citations-17-02",
+      "anchor": "Deuteronomy 25:4"
+    },
+    {
+      "kind": "connection",
+      "target": "ce145",
+      "title": "Psalm 8:4 and Hebrews 2:6",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-31",
+      "note": "Johnson explicitly reads Psalm 8 as a human vocation text re-applied in Hebrews to Jesus' humiliation and exaltation, including present incomplete dominion.",
+      "limitation": "Psalm 8 speaks of humanity in creation. Hebrew 'elohim' and Greek 'angels' readings are not identical and should not be flattened as if all translations use the same word. AI-assisted selected-passage and scoped accessible named-commentary assessment; complete literature and independent specialist review remain open.",
+      "passages": [
+        "Psalm 8:4",
+        "Hebrews 2:6"
+      ],
+      "citations": [
+        {
+          "sourceId": "v1b2-text-psalm-8",
+          "locator": "Psalm 8:4",
+          "supports": "Original quotation source and context; available publisher passage reference"
+        },
+        {
+          "sourceId": "v1b2-text-hebrews-2",
+          "locator": "Hebrews 2:6",
+          "supports": "New Testament reuse and immediate literary setting"
+        },
+        {
+          "sourceId": "v1b2-hebrews",
+          "locator": "Hebrews 2:5-10 and Psalm 8:4-6",
+          "supports": "Named interpretive support for the specific quoted passage relationship and its limits"
+        }
+      ],
+      "batch": "v1-citations-17-02",
+      "anchor": "Psalm 8:4"
+    },
+    {
+      "kind": "connection",
+      "target": "ce146",
+      "title": "Psalm 69:9 and John 2:17",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-31",
+      "note": "Köstenberger connects the disciples' recollection of Psalm 69:9 with Jesus' zeal during the temple confrontation in John 2:17.",
+      "limitation": "John's setting does not resolve whether this and the Synoptic temple accounts describe one historical incident or more. The psalm's original voice belongs to a suffering worshipper. AI-assisted selected-passage and scoped accessible named-commentary assessment; complete literature and independent specialist review remain open.",
+      "passages": [
+        "Psalm 69:9",
+        "John 2:17"
+      ],
+      "citations": [
+        {
+          "sourceId": "v1b2-text-psalm-69",
+          "locator": "Psalm 69:9",
+          "supports": "Original quotation source and context; available publisher passage reference"
+        },
+        {
+          "sourceId": "v1b2-text-john-2",
+          "locator": "John 2:17",
+          "supports": "New Testament reuse and immediate literary setting"
+        },
+        {
+          "sourceId": "v1b2-john",
+          "locator": "Jerusalem Sign: Jesus Clears the Temple, John 2:12-22",
+          "supports": "Named interpretive support for the specific quoted passage relationship and its limits"
+        }
+      ],
+      "batch": "v1-citations-17-02",
+      "anchor": "Psalm 69:9"
+    },
+    {
+      "kind": "connection",
+      "target": "ce147",
+      "title": "Psalm 110:4 and Hebrews 5:6",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-31",
+      "note": "Johnson identifies Psalm 110:4 as Hebrews' scriptural basis for a priestly appointment in the order of Melchizedek, distinct from Levitical descent.",
+      "limitation": "The psalm's royal-priestly setting, historical Melchizedek tradition and Christian exposition are separate layers. An author's confessional conclusions do not resolve all historical questions. AI-assisted selected-passage and scoped accessible named-commentary assessment; complete literature and independent specialist review remain open.",
+      "passages": [
+        "Psalm 110:4",
+        "Hebrews 5:6"
+      ],
+      "citations": [
+        {
+          "sourceId": "v1b2-text-psalm-110",
+          "locator": "Psalm 110:4",
+          "supports": "Original quotation source and context; available publisher passage reference"
+        },
+        {
+          "sourceId": "v1b2-text-hebrews-5",
+          "locator": "Hebrews 5:6",
+          "supports": "New Testament reuse and immediate literary setting"
+        },
+        {
+          "sourceId": "v1b2-hebrews",
+          "locator": "Hebrews 5:5-6 and 7:11-28; Psalm 110:4",
+          "supports": "Named interpretive support for the specific quoted passage relationship and its limits"
+        }
+      ],
+      "batch": "v1-citations-17-02",
+      "anchor": "Psalm 110:4"
+    },
+    {
+      "kind": "connection",
+      "target": "ce148",
+      "title": "Psalm 118:26 and Matthew 21:9",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-31",
+      "note": "Matthew narrates crowds acclaiming Jesus with language from Psalm 118:26 and additional Davidic language; the quotation is placed in the Jerusalem entry.",
+      "limitation": "Psalm 118's original blessing has a communal liturgical setting. The narrative does not demonstrate that every resident of Jerusalem shared the crowds' acclamation. AI-assisted selected-passage and scoped accessible named-commentary assessment; complete literature and independent specialist review remain open.",
+      "passages": [
+        "Psalm 118:26",
+        "Matthew 21:9"
+      ],
+      "citations": [
+        {
+          "sourceId": "v1b2-text-psalm-118",
+          "locator": "Psalm 118:26",
+          "supports": "Original quotation source and context; available publisher passage reference"
+        },
+        {
+          "sourceId": "v1b2-text-matthew-21",
+          "locator": "Matthew 21:9",
+          "supports": "New Testament reuse and immediate literary setting"
+        },
+        {
+          "sourceId": "v1b2-matthew",
+          "locator": "The Triumphal Entry, Matthew 21:1-11, especially 21:9",
+          "supports": "Named interpretive support for the specific quoted passage relationship and its limits"
+        }
+      ],
+      "batch": "v1-citations-17-02",
+      "anchor": "Psalm 118:26"
+    },
+    {
+      "kind": "connection",
+      "target": "ce149",
+      "title": "Isaiah 29:13 and Matthew 15:8",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-31",
+      "note": "O'Donnell directly identifies Isaiah 29:13 in Matthew 15:7-9 during Jesus' dispute about traditions, honouring parents and the heart.",
+      "limitation": "Isaiah's warning and Matthew's criticism address religious sincerity and particular conduct; neither permits wholesale hostility towards Jewish people or the assumption that all ritual observance is insincere. AI-assisted selected-passage and scoped accessible named-commentary assessment; complete literature and independent specialist review remain open.",
+      "passages": [
+        "Isaiah 29:13",
+        "Matthew 15:8"
+      ],
+      "citations": [
+        {
+          "sourceId": "v1b2-text-isaiah-29",
+          "locator": "Isaiah 29:13",
+          "supports": "Original quotation source and context; available publisher passage reference"
+        },
+        {
+          "sourceId": "v1b2-text-matthew-15",
+          "locator": "Matthew 15:8",
+          "supports": "New Testament reuse and immediate literary setting"
+        },
+        {
+          "sourceId": "v1b2-matthew",
+          "locator": "In Vain Do They Worship Me, Matthew 15:1-20",
+          "supports": "Named interpretive support for the specific quoted passage relationship and its limits"
+        }
+      ],
+      "batch": "v1-citations-17-02",
+      "anchor": "Isaiah 29:13"
+    },
+    {
+      "kind": "connection",
+      "target": "ce150",
+      "title": "Isaiah 40:3 and Mark 1:3",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-31",
+      "note": "Strauss discusses Mark's composite scriptural introduction combining the messenger motif and the wilderness voice before the description of John the Baptist.",
+      "limitation": "The attribution to Isaiah accompanies words associated with Malachi 3:1 and Exodus 23:20; textual headings and the wilderness punctuation have variants. Do not label the entire quotation as solely Isaiah 40:3. AI-assisted selected-passage and scoped accessible named-commentary assessment; complete literature and independent specialist review remain open.",
+      "passages": [
+        "Isaiah 40:3",
+        "Mark 1:3"
+      ],
+      "citations": [
+        {
+          "sourceId": "v1b2-text-isaiah-40",
+          "locator": "Isaiah 40:3",
+          "supports": "Original quotation source and context; available publisher passage reference"
+        },
+        {
+          "sourceId": "v1b2-text-mark-1",
+          "locator": "Mark 1:3",
+          "supports": "New Testament reuse and immediate literary setting"
+        },
+        {
+          "sourceId": "v1b2-mark",
+          "locator": "Mark's Prologue, Mark 1:1-8, especially 1:2-3",
+          "supports": "Named interpretive support for the specific quoted passage relationship and its limits"
+        }
+      ],
+      "batch": "v1-citations-17-02",
+      "anchor": "Isaiah 40:3"
+    },
+    {
+      "kind": "connection",
+      "target": "ce151",
+      "title": "Isaiah 42:1 and Matthew 12:18",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-31",
+      "note": "O'Donnell describes the longer quotation of Isaiah 42:1-4 as a key summary of Matthew's servant theology, linked to withdrawal and healing.",
+      "limitation": "The servant figure and justice to the nations belong to Isaiah's own literary context. Matthew adapts its use; a single confessional commentary is not proof of universal interpretive agreement. AI-assisted selected-passage and scoped accessible named-commentary assessment; complete literature and independent specialist review remain open.",
+      "passages": [
+        "Isaiah 42:1",
+        "Matthew 12:18"
+      ],
+      "citations": [
+        {
+          "sourceId": "v1b2-text-isaiah-42",
+          "locator": "Isaiah 42:1",
+          "supports": "Original quotation source and context; available publisher passage reference"
+        },
+        {
+          "sourceId": "v1b2-text-matthew-12",
+          "locator": "Matthew 12:18",
+          "supports": "New Testament reuse and immediate literary setting"
+        },
+        {
+          "sourceId": "v1b2-matthew",
+          "locator": "The Chosen Servant, Matthew 12:15-21",
+          "supports": "Named interpretive support for the specific quoted passage relationship and its limits"
+        }
+      ],
+      "batch": "v1-citations-17-02",
+      "anchor": "Isaiah 42:1"
+    },
+    {
+      "kind": "connection",
+      "target": "ce154",
+      "title": "Isaiah 56:7 and Mark 11:17",
+      "decision": "context-clarified",
+      "reviewedOn": "2026-10-31",
+      "note": "Strauss identifies Isaiah 56:7 and Jeremiah 7:11 as the combined sources of Jesus' temple declaration, stressing prayer for all nations.",
+      "limitation": "The scene is a protest against behaviour obstructing worship in a particular narrative. Do not treat the two Hebrew Bible texts as one quotation or infer a blanket ban on commerce unrelated to the temple. AI-assisted selected-passage and scoped accessible named-commentary assessment; complete literature and independent specialist review remain open.",
+      "passages": [
+        "Isaiah 56:7",
+        "Mark 11:17"
+      ],
+      "citations": [
+        {
+          "sourceId": "v1b2-text-isaiah-56",
+          "locator": "Isaiah 56:7",
+          "supports": "Original quotation source and context; available publisher passage reference"
+        },
+        {
+          "sourceId": "v1b2-text-mark-11",
+          "locator": "Mark 11:17",
+          "supports": "New Testament reuse and immediate literary setting"
+        },
+        {
+          "sourceId": "v1b2-mark",
+          "locator": "Mark 11:15-19, Temple Cleansing and Purpose",
+          "supports": "Named interpretive support for the specific quoted passage relationship and its limits"
+        }
+      ],
+      "batch": "v1-citations-17-02",
+      "anchor": "Isaiah 56:7"
     }
   ],
   "batches": [
@@ -8772,6 +9697,31 @@
         "ce142"
       ],
       "method": "AI-assisted, claim-specific examination of twelve explicit Hebrew Bible quotations in the New Testament. Both biblical contexts and one scoped named, readable confessional commentary are cited per pair. Six selected TGC commentary pages, by seven named contributors, support scoped claims; passage link access varies, and source links are not independent scholarly confirmation. Full textual witnesses, competing interpretations and specialist review remain open."
+    },
+    {
+      "id": "v1-citations-17-02",
+      "title": "Seventeen quotation and textual context assessments",
+      "count": 17,
+      "targets": [
+        "ce125",
+        "ce128",
+        "ce132",
+        "ce133",
+        "ce135",
+        "ce136",
+        "ce137",
+        "ce141",
+        "ce143",
+        "ce145",
+        "ce146",
+        "ce147",
+        "ce148",
+        "ce149",
+        "ce150",
+        "ce151",
+        "ce154"
+      ],
+      "method": "AI-assisted, dated examination of explicit scriptural quotations and their New Testament contexts with named, publicly accessible TGC commentaries; sources support only the specified reading claims. Hebrew and Greek variants, original settings, competing interpretations and external specialist signoff remain qualified. Full OpenBible corpus is outside this work."
     }
   ]
 }
