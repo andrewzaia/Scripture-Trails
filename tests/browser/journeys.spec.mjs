@@ -251,7 +251,7 @@ test('stale reader notes and bookmark actions preserve another tab changes',asyn
  expect(saved.bookmarks).toEqual(['Romans 5:8']);
 });
 
-test('Paul's first two journeys show contextual reading and hide it for unfinished stages',async({page})=>{
+test("Paul's first two journeys show contextual reading and hide it for unfinished stages",async({page})=>{
  await open(page,'paul-map');
  await expect(page.locator('[data-paul="study-section"]')).toBeVisible();
  await expect(page.locator('[data-paul="study-context"]')).toContainText('community of prophets and teachers');
