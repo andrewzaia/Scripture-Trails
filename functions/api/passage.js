@@ -15,9 +15,24 @@ export async function onRequestGet({request,env}){
   if(!env.ESV_API_KEY)return reply(503,{code:'not_configured',message:'The ESV integration is not configured on this deployment.'});
   const p=new URLSearchParams({q:ref.formatted,'include-passage-references':'true','include-verse-numbers':'true','include-footnotes':'true','include-headings':ref.verse===null?'true':'false','include-crossrefs':'true','include-verse-anchors':'true','include-audio-link':'false','include-short-copyright':'true','include-css-link':'false','inline-styles':'false','wrapping-div':'false'});
   try{
-    const response=await fetch(`https://api.esv.org/v3/passage/html/?${p}`,{headers:{Authorization:`Token ${env.ESV_API_KEY}`,Accept:'application/json'}});
+    const response=await fetch(`https://api.esv.org/v3/passage/html/?${p}`,{
+      headers:{Authorization:`Token ${env.ESV_API_KEY}`,Accept:'application/json'},
+      // Do not forward the publisher credential on any unexpected redirect.
+      redirect:'manual',signal:AbortSignal.timeout(10000)
+    });
     if(!response.ok)return reply(response.status===429?429:502,{code:'upstream_failure',message:response.status===429?'ESV request limit reached. Try again later.':'Could not retrieve the passage from Crossway.'});
-    const body=await response.json();
-    return reply(200,{canonical:body.canonical||ref.formatted,passages:body.passages||[]});
+    // A bounded upstream response prevents malformed or oversized replies exhausting the Worker.
+    const reader=response.body?.getReader();
+    if(!reader)throw Error('Missing Crossway passage body');
+    const chunks=[];let size=0;
+    while(true){const {done,value}=await reader.read();if(done)break;size+=value.byteLength;
+      if(size>1024*1024){await reader.cancel();throw Error('Oversized Crossway passage');}
+      chunks.push(value);
+    }
+    const bytes=new Uint8Array(size);let offset=0;
+    for(const chunk of chunks){bytes.set(chunk,offset);offset+=chunk.byteLength;}
+    const body=JSON.parse(new TextDecoder().decode(bytes));
+    if(!Array.isArray(body.passages)||!body.passages.length||body.passages.some(item=>typeof item!=='string'||!item.trim()))throw Error('Incomplete Crossway passage');
+    return reply(200,{canonical:body.canonical||ref.formatted,passages:body.passages});
   }catch{return reply(502,{code:'upstream_unavailable',message:'The Scripture text service is temporarily unreachable.'});}
 }
