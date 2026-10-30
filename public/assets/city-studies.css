@@ -37,3 +37,7 @@ body.light .city-library-page{--city-map-bg:#d8e2d8}body.light .city-hero-art{ba
 .city-study-layer-limit strong{color:var(--ink)}
 .city-study-layer .city-mini-sources{margin-top:14px;border-top:1px solid var(--line);padding-top:11px}
 @media(max-width:760px){.city-study-layer{padding:17px}.city-study-layer h3{font-size:21px}}
+
+/* Explicit light-theme surfaces prevent mixed light text/dark backgrounds in WebKit. */
+body.light .city-library-page .city-tab,body.light .city-library-page .city-debate-tab,body.light .city-library-page .city-marker-option{background:#f6f0e5;color:#24353b;border-color:#a8b4ad}
+body.light .city-library-page .city-tab.selected,body.light .city-library-page .city-tab:hover,body.light .city-library-page .city-debate-tab.selected,body.light .city-library-page .city-debate-tab:hover,body.light .city-library-page .city-marker-option.selected{background:#fffdf7;color:#79511c;border-color:#9d7238}

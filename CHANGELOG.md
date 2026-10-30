@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.44.3 - 31/10/2026: Cross-browser accessibility verification
+
+- Expand automated regression testing to Chromium, Firefox and WebKit across desktop and mobile device profiles.
+- Improve light-theme contrast of Historical Cities controls and wait for stable theme transitions during accessibility audits.
+- Allow Firefox accessibility scans to complete without suppressing any WCAG checks.
+
 ## 0.44.2 - 31/10/2026: Bible publisher permissions and source-rights transparency
 
 - Expand the About attribution section with direct publisher terms and clear statements distinguishing functioning translation APIs from independent licence approval.
