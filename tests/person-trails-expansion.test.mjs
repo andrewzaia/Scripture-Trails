@@ -69,3 +69,21 @@ test('missing original person study content and invalid extended references are 
   assert.throws(()=>validatePersonTrails(counts,ids,[trail]));
  }
 });
+
+test('historically sensitive profiles attribute limits to named academic works',()=>{
+ const esther=personTrail('esther'),daniel=personTrail('daniel');
+ assert.equal(esther.study.research.length,1);
+ assert.equal(daniel.study.research.length,2);
+ for(const entry of [...esther.study.research,...daniel.study.research]){
+  assert.match(entry.url,/^https:\/\//);
+  assert.ok(entry.title.length>15&&entry.author.length>5&&entry.scope.length>55);
+ }
+ const all=PERSON_TRAILS.filter(t=>t.study.research.length);
+ assert.deepEqual(all.map(t=>t.personId),['esther','daniel']);
+ const entity=read('public/assets/entity-index.js');
+ assert.match(entity,/entity-trail-research/);
+ assert.match(entity,/noopener noreferrer/);
+ const corrupted=structuredClone(daniel);
+ corrupted.study.research[0].url='javascript:alert(1)';
+ assert.throws(()=>validatePersonTrails(counts,ids,[corrupted]));
+});
