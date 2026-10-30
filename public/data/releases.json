@@ -1,6 +1,16 @@
 {
   "releases": [
     {
+      "version": "0.44.1",
+      "date": "2026-10-31",
+      "title": "Security and privacy: safer Scripture access",
+      "changes": [
+        "Remove executable API.Bible usage-tracker scripts, replacing them with the documented privacy-conscious FUMS v3 GET while preserving required publisher usage reporting.",
+        "Harden Crossway search redirects, stalled requests, excessive responses and malformed results, and tighten site CSP and referrer protections.",
+        "Add scoped Cloudflare rate limiting for public Scripture APIs, security regression coverage and a transparent documented threat model with outstanding privacy and publisher-rights qualifications."
+      ]
+    },
+    {
       "version": "0.44.0",
       "date": "2026-10-31",
       "title": "Notebook recovery: protect personal study data",
