@@ -65,7 +65,7 @@ test('Acts retelling and single-vision reviews retain their limits from About in
 test('completed register retains siege dates and returnee differences from About into the Atlas',async({page})=>{
  await open(page,'about');
  await expect(page.locator('#about-review-meter')).toHaveAttribute('value','127');
- await expect(page.locator('#citation-review-summary')).toContainText('All 115 previously assessed pairs have dated editorial assessments');
+ await expect(page.locator('#citation-review-summary')).toContainText('The original 115 explained pairs retain their earlier dated assessments');
  await expect(page.locator('#citation-review-summary')).toContainText('32 previously passage-based assessments have dated commentary follow-ups');
  const group=page.locator('.citation-review-group').filter({has:page.getByText('Selected passage comparisons',{exact:true})});
  await group.locator('> summary').click();
