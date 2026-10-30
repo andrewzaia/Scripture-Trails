@@ -118,6 +118,9 @@ function drawJourney(id){
  intro.append(create('p','journal-intro-count',`${path.chapters.length} guided stages | ${path.refs.length} distinct reading references | Approx. ${path.time} total`),
   create('p','', 'The estimated time covers reading and reflection across all six stages. This is a self-paced journal, so a close textual study may take longer. Each stage follows a thematic reading route: begin with the passages, compare the stated connection, then consider the question and contextual caution. These are editorial guides, not independent historical proofs or a substitute for reading the full chapters.'));
  target.append(intro);
+ const guide=create('section','journal-editorial-guide');
+ guide.append(create('h3','','Reading this journal in context'),create('p','',path.guide.overview),create('h4','','Important distinction'),create('p','',path.guide.distinction),create('h4','','Study method'),create('p','',path.guide.practice));
+ target.append(guide);
  const anchorSection=create('section','journal-foundations');
  anchorSection.append(create('h3','','Starting passages'),create('p','', 'The original anchor references remain available, and previously saved reading progress is preserved.'));
  const anchorLinks=create('div','journal-reading-links');
