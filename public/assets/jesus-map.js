@@ -32,7 +32,9 @@ export function validateJourneyData(data){
  const sites=new Set(data.places.map(x=>x.id)),phases=new Set(data.phases.map(x=>x.id));
  if(sites.size!==data.places.length||phases.size!==data.phases.length)throw Error('Duplicate place or phase');
  for(const p of data.places)if(!p.name||!Array.isArray(p.coordinates)||p.coordinates.length!==2||!p.coordinates.every(Number.isFinite)||!['identified','approximate','uncertain','traditional','region'].includes(p.certainty))throw Error(`Invalid place ${p.id}`);
- const ids=new Set();for(const e of data.events){if(ids.has(e.id)||!sites.has(e.place)||!phases.has(e.phase)||!e.title||!e.summary||!e.passages?.length||!e.passages.every(passageStart))throw Error(`Invalid journey event ${e.id}`);ids.add(e.id);}
+ const ids=new Set();for(const e of data.events){if(ids.has(e.id)||!sites.has(e.place)||!phases.has(e.phase)||!e.title||!e.summary||!e.passages?.length||!e.passages.every(passageStart))throw Error(`Invalid journey event ${e.id}`);ids.add(e.id);
+  const note=e.study;if(!note||note.method!=='scripture-context-editorial'||!/^[0-9]{4}-[0-9]{2}-[0-9]{2}$/.test(note.reviewedOn)||typeof note.context!=='string'||note.context.trim().length<120||!Array.isArray(note.crossReferences)||note.crossReferences.length<1||note.crossReferences.length>3||new Set(note.crossReferences).size!==note.crossReferences.length||note.crossReferences.some(ref=>!passageStart(ref)))throw Error('Invalid Gospel Scripture study '+e.id);
+ }
  return true;
 }
 export function validatePlaceStudies(geography,journeys){
@@ -114,6 +116,15 @@ export function createJesusMap(root,onOpenPassage,onOpenCity){
   }
  }
  function sourceButtons(event){const div=$('passages');div.replaceChildren();for(const ref of event.passages){const wrapper=el('div','jesus-passage-row');const title=el('span','',ref);const b=el('button','jesus-reading-action','Read in Bible reader');b.type='button';b.addEventListener('click',()=>{const v=passageStart(ref);if(v)onOpenPassage(v);});wrapper.append(title,b);div.append(wrapper);}}
+ function renderEpisodeStudy(event){
+  $('episode-study-context').textContent=event.study.context;
+  const links=$('episode-study-links');links.replaceChildren();
+  for(const ref of event.study.crossReferences){
+   const row=el('div','jesus-passage-row'),b=el('button','jesus-reading-action','Read in Bible reader');
+   b.type='button';b.addEventListener('click',()=>onOpenPassage(passageStart(ref)));
+   row.append(el('span','',ref),b);links.append(row);
+  }
+ }
  function renderComparisons(event){
   const target=$('chronology-comparisons');target.replaceChildren();const cases=chronology.comparisons.filter(c=>c.events.includes(event.id));
   if(!cases.length){target.append(el('p','jesus-map-muted','No additional documented parallel-order issue is attached to this entry. This is not evidence of agreement about its date.'));return;}
@@ -137,7 +148,7 @@ export function createJesusMap(root,onOpenPassage,onOpenCity){
   const sequence=getList(),position=sequence.findIndex(x=>x.id===e.id);$('event-number').textContent=`${gospel==='harmony'?'STOP':'TEXT ORDER'} ${String(position+1).padStart(2,'0')} / ${sequence.length}`;
   $('chronology-note').textContent=gospel==='harmony'?'Editorial Gospel harmony: episode order is interpretative, not a dated itinerary.':`${gospel}: passage sequence within this Gospel, not an event date. Only entries currently catalogued for this account appear; absence does not mean the event never happened. Map travel connectors are hidden.`;
   renderComparisons(e);
-  sourceButtons(e);setTimeline();route();drawPins();if(autoFocus)focus(p.coordinates);
+  sourceButtons(e);renderEpisodeStudy(e);setTimeline();route();drawPins();if(autoFocus)focus(p.coordinates);
   $('map').setAttribute('aria-label',`Schematic map of Jesus' journeys, selected ${p.name}: ${e.title}`);
   const qp=new URL(window.location.href);qp.searchParams.set('stop',e.id);history.replaceState(history.state,'',qp);
  }
