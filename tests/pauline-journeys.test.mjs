@@ -81,3 +81,29 @@ test('journey review limits and future Rome milestone remain explicit',()=>{
  const roadmap=read('public/data/roadmap.json');assert.equal(roadmap.milestones.find(m=>m.id==='pauline-journeys').status,'delivered');assert.equal(roadmap.milestones.find(m=>m.id==='paul-rome').status,'delivered');
  assert.ok(data.issues.some(i=>i.id==='unnamed-church'));assert.ok(data.issues.some(i=>i.id==='greece-corinth'));
 });
+
+test('first two journeys include 39 individually contextualised Scripture reading notes',()=>{
+ const early=data.events.filter(e=>['first','second'].includes(e.journey));
+ assert.equal(early.length,39);assert.equal(data.events.filter(e=>e.study).length,39);
+ assert.equal(data.events.filter(e=>['third','rome'].includes(e.journey)&&!e.study).length,44);
+ for(const e of early){assert.ok(e.study.context.length>=100,e.id);assert.ok(e.study.crossReferences.length>0,e.id);}
+ assert.match(data.studyCoverage.limit,/not independent specialist historical reviews/);
+ assert.match(data.review,/Independent historical and textual specialist review has not occurred/);
+ const issue=data.issues.find(i=>i.id==='berea-athens-route');
+ assert.ok(issue?.sourceLinks.some(s=>s.url.includes('pmc.ncbi.nlm.nih.gov')));
+ assert.match(data.events.find(e=>e.id==='paul-second-15').qualification,/does not fix his precise transit path/);
+ const html=readFileSync(new URL('../public/index.html',import.meta.url),'utf8');
+ for(const hook of ['study-section','study-context','study-links'])assert.ok(html.includes('data-paul="'+hook+'"'));
+ const js=readFileSync(new URL('../public/assets/paul-map.js',import.meta.url),'utf8');
+ assert.match(js,/study\.crossReferences\.map\(passageActions\)/);
+ assert.equal(read('public/data/roadmap.json').milestones.find(m=>m.id==='v1-paul-first-second-depth')?.status,'delivered');
+});
+test('invalid Scripture study notes fail closed',()=>{
+ const mutate=[
+  bad=>{bad.events[0].study.crossReferences=['Acts 999:1'];},
+  bad=>{bad.events[0].study.context='Too short.';},
+  bad=>{bad.events[0].study.method='peer-reviewed';},
+  bad=>{bad.events.find(e=>e.journey==='second').study.crossReferences=['Acts 16:1','Acts 16:1'];}
+ ];
+ for(const change of mutate){const bad=clone();change(bad);assert.throws(()=>validatePaulineData(bad,counts),/study note/);}
+});
