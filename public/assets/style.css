@@ -312,3 +312,10 @@ body.light .analytics-consent{background:#fffdf8;color:#243b42;box-shadow:0 10px
 .reading-plan-checklist>summary{padding:12px 0;cursor:pointer;font-weight:650}
 .reading-plan-checklist .reading-plan-row:last-child{border-bottom:0}
 @media(max-width:760px){.journal-chapter>summary{padding:13px}.journal-chapter-body{padding:14px}.journal-reading-links .journey-step{width:100%;justify-content:flex-start}.journal-chapter>summary strong{font-size:17px}}
+
+/* Guided journals: full context before the existing reference-based reading pathway. */
+.journal-editorial-guide{border:1px solid var(--line);border-left:3px solid var(--gold);padding:18px 23px;background:var(--surface2);margin:16px 0 24px;max-width:100%;overflow-wrap:anywhere}
+.journal-editorial-guide h3{font:normal 23px/1.25 var(--serif);color:var(--ink);margin:0 0 12px}
+.journal-editorial-guide h4{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--gold);margin:16px 0 7px}
+.journal-editorial-guide p{font-size:13px;line-height:1.8;color:var(--ink);margin:0 0 10px}
+@media(max-width:760px){.journal-editorial-guide{padding:16px}.journal-editorial-guide h3{font-size:21px}}
