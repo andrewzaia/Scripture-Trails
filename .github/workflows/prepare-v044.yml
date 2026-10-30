@@ -1,0 +1,31 @@
+name: Temporary prepare v0.44.0 notebook recovery
+on:
+  push:
+    branches:
+      - release/v044-notebook-recovery-20261031
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: release/v044-notebook-recovery-20261031
+          fetch-depth: 0
+          persist-credentials: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - name: Generate and validate v0.44.0 with mandatory release script
+        run: |
+          test "$(node -p "require('./package.json').version")" = "0.43.1"
+          npm run release -- minor "Notebook recovery: protect personal study data" "Detect unreadable browser notebook storage and show accessible recovery guidance instead of silently treating stored notes as missing." "Allow private download of original damaged data and explicitly confirmed restoration from a validated backup, without deleting original storage before a successful replacement." "Expand multi-tab, quota and corrupt-data regression tests and document the limits of locally stored notes that have never been backed up."
+          npm run build
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Prepare v0.44.0 with npm run release"
+          git push origin HEAD:release/v044-notebook-recovery-20261031
