@@ -13,10 +13,10 @@ test('161 editorial passage comparisons are explicit, appropriately qualified an
  assert.equal(Object.keys(CONNECTION_KINDS).length,5);
  const keys=new Set(CONNECTION_EVIDENCE.map(e=>[e.from,e.to].sort().join('|')));
  assert.equal(keys.size,CONNECTION_EVIDENCE.length);
- assert.equal(CONNECTION_EVIDENCE.filter(e=>e.review==='scripture-context-screened').length,95);
- assert.equal(CONNECTION_EVIDENCE.filter(e=>e.review==='editorial-reading-aid').length,66);
+ assert.equal(CONNECTION_EVIDENCE.filter(e=>e.review==='scripture-context-screened').length,129);
+ assert.equal(CONNECTION_EVIDENCE.filter(e=>e.review==='editorial-reading-aid').length,32);
  assert.ok(CONNECTION_EVIDENCE.every(e=>/pending|independent specialist/i.test(e.basis)));
- assert.ok(CONNECTION_EVIDENCE.filter(e=>Number(e.id.slice(2))>=116&&e.review==='editorial-reading-aid').every(e=>/separate dated secondary-source assessment has not been completed/.test(e.basis)));
+ assert.ok(CONNECTION_EVIDENCE.filter(e=>Number(e.id.slice(2))>=116).every(e=>e.review==='scripture-context-screened'&&/v1-citations-/.test(e.basis)));
  assert.match(explainConnection('Genesis 3:15','Romans 16:20').explanation,/serpent/);
  assert.match(explainConnection('Genesis 12:3','Galatians 3:8').explanation,/Abraham/);
 });
