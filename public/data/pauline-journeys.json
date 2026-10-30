@@ -1,9 +1,9 @@
 {
   "title": "Journeys of Paul",
-  "updated": "2026-10-28",
+  "updated": "2026-10-31",
   "scope": "Three conventional missionary journey groupings in Acts 13-21 and a separately labelled prisoner voyage to Rome in Acts 27-28.",
   "method": "Acts is primary for the narrated movements. Each entry is an editorial paraphrase with a passage link; no Bible text is bundled. Markers are rounded Pleiades representative points. Regions, unnamed settings and offshore passages have no invented pins. Dashed connectors join only consecutive mapped entries within one journey and are not roads or sailing tracks.",
-  "review": "AI-assisted editorial source and reference screening. Independent historical and textual specialist review has not occurred.",
+  "review": "AI-assisted editorial source and reference screening, with a targeted published-text comparison of Acts 18:22, 20:13-17 and 27:1-28:1 on 31 October 2026. The remaining stages retain their original editorial reading-aid classification. Independent historical and textual specialist review has not occurred.",
   "chronology": "The timeline counts narrative stages, not elapsed time. No absolute years are assigned. Acts and Pauline-letter chronology require separate comparison; letters are not silently used to add unnamed Acts stops.",
   "journeys": [
     {
@@ -1315,7 +1315,7 @@
       "passages": [
         "Acts 18:22"
       ],
-      "qualification": "",
+      "qualification": "Acts 18:22 says Paul went up and greeted the church after landing at Caesarea, but does not name the church's city. Jerusalem is a common interpretation of 'went up', not an explicit place-name in this verse. This stage remains unpinned.",
       "reviewStatus": "editorial-reading-aid"
     },
     {
@@ -1448,7 +1448,7 @@
       "passages": [
         "Acts 20:13-14"
       ],
-      "qualification": "The distinction between Paul's land travel and his companions' sailing is explicit; the exact road is not reconstructed.",
+      "qualification": "Acts 20:13 distinguishes Paul's journey by land to Assos from his companions' sailing there. The plotted sequence must not imply that Paul sailed the preceding leg.",
       "reviewStatus": "editorial-reading-aid"
     },
     {
@@ -1472,7 +1472,7 @@
       "passages": [
         "Acts 20:15"
       ],
-      "qualification": "",
+      "qualification": "Acts 20:15 says the ship sailed opposite Chios; it does not describe landing there. This stage remains offshore and unpinned.",
       "reviewStatus": "editorial-reading-aid"
     },
     {
@@ -1484,7 +1484,7 @@
       "passages": [
         "Acts 20:15"
       ],
-      "qualification": "",
+      "qualification": "Acts 20:15 reports that the travellers touched at Samos. The map's marker locates only the island generally, not a particular ancient quay or a reconstructed sailing track.",
       "reviewStatus": "editorial-reading-aid"
     },
     {
@@ -1688,7 +1688,7 @@
       "passages": [
         "Acts 27:8-12"
       ],
-      "qualification": "",
+      "qualification": "Acts 27:8 identifies Fair Havens as a reached anchorage. Phoenix appears in Acts 27:12 as an intended winter harbour, not a stop the narrative says the ship reached. The harbour decision is not a precise sailing route.",
       "reviewStatus": "editorial-reading-aid"
     },
     {
@@ -1700,7 +1700,7 @@
       "passages": [
         "Acts 27:13-16"
       ],
-      "qualification": "",
+      "qualification": "Acts 27:13-16 reports a favourable wind followed by a violent northeaster and passage in the lee of Cauda. The text does not provide a navigational track or an actual landing on Cauda; this is an offshore stage.",
       "reviewStatus": "editorial-reading-aid"
     },
     {
@@ -1712,7 +1712,7 @@
       "passages": [
         "Acts 27:17-26"
       ],
-      "qualification": "",
+      "qualification": "Acts 27:17-26 reports the danger of the Syrtis, storm-driven movement, jettisoned cargo and Paul's assurance, but gives no coordinates or measured heading. The Syrtis was feared, not visited, and the drift is not pinned.",
       "reviewStatus": "editorial-reading-aid"
     },
     {
@@ -1724,7 +1724,7 @@
       "passages": [
         "Acts 27:27-38"
       ],
-      "qualification": "",
+      "qualification": "Acts 27:27-38 describes soundings and anchoring during the fourteenth night, without a named surveyed bay or precise offshore position. A traditional reconstruction is not a location verified by the text.",
       "reviewStatus": "editorial-reading-aid"
     },
     {
@@ -1736,7 +1736,7 @@
       "passages": [
         "Acts 27:39-44"
       ],
-      "qualification": "",
+      "qualification": "Acts 27:39-44 describes an unidentified bay, beach, shoal and wreck. Acts identifies the island as Malta only after the survivors reach shore (28:1). The shipwreck is intentionally unpinned.",
       "reviewStatus": "editorial-reading-aid"
     },
     {
@@ -1748,7 +1748,7 @@
       "passages": [
         "Acts 28:1-6"
       ],
-      "qualification": "",
+      "qualification": "Acts 28:1 names Malta after the wreck. The island identification is explicit, but Acts 27:39-28:1 does not establish which modern bay or beach was the wreck location.",
       "reviewStatus": "editorial-reading-aid"
     },
     {
@@ -1905,6 +1905,13 @@
       "description": "Acts 18:22 does not name the city of the church Paul greets. Jerusalem is a common inference from the travel wording, not an explicit place-name here. No Jerusalem pin is added for this entry.",
       "passages": [
         "Acts 18:22"
+      ],
+      "sourceLinks": [
+        {
+          "title": "Crossway ESV, Acts 18:18-22",
+          "url": "https://www.esv.org/verses/Acts%2018%3A18%E2%80%9322/",
+          "scope": "The published verse names Caesarea and Antioch, but not the city of the intervening church; a Jerusalem destination remains interpretative."
+        }
       ]
     },
     {
@@ -1929,6 +1936,11 @@
           "title": "Acts 20:15, ESV publisher text and manuscript footnote",
           "url": "https://www.biblegateway.com/passage/?search=Acts+20%3A15&version=ESV",
           "scope": "Documents the manuscript addition at Trogyllium; it does not establish a precise landing coordinate."
+        },
+        {
+          "title": "Crossway ESV, Acts 20:13-38",
+          "url": "https://www.esv.org/verses/Acts%2B20%3A13%E2%80%9338/",
+          "scope": "Distinguishes Paul's land approach to Assos, passage opposite Chios, touching at Samos and the Miletus meeting. This is narrative, not a surveyed sea track."
         }
       ]
     },
@@ -1950,6 +1962,36 @@
         "Acts 27:17-26",
         "Acts 27:27-44",
         "Acts 28:1-16"
+      ],
+      "sourceLinks": [
+        {
+          "title": "Crossway ESV, Acts 27",
+          "url": "https://www.esv.org/verses/Acts%2027/",
+          "scope": "Names the reached Fair Havens, planned Phoenix, Cauda lee, offshore storm and unnamed wreck approach. Does not demonstrate a specific modern wreck bay."
+        },
+        {
+          "title": "Crossway ESV, Acts 27-28:16",
+          "url": "https://www.esv.org/verses/Acts%2B27%E2%80%9328%3A16/",
+          "scope": "Acts identifies Malta after the wreck, not the exact geographical location of the wreck."
+        }
+      ]
+    },
+    {
+      "id": "rome-storm-drift",
+      "title": "Intended harbour, forced drift and island identification",
+      "description": "The narrative distinguishes Fair Havens, the proposed but unreached Phoenix winter harbour, the lee of Cauda, a storm-driven unlocated drift and an unnamed wreck bay. Malta is named as the island of arrival only after landfall. The route remains schematic and cannot be reverse-engineered into exact coordinates from Acts alone.",
+      "passages": [
+        "Acts 27:8-16",
+        "Acts 27:17-26",
+        "Acts 27:27-44",
+        "Acts 28:1"
+      ],
+      "sourceLinks": [
+        {
+          "title": "Crossway ESV, Acts 27-28",
+          "url": "https://www.esv.org/verses/Acts%2B27%E2%80%9328%3A16/",
+          "scope": "Primary narrative comparison for reached, planned, offshore and unlocated settings; not an external maritime reconstruction."
+        }
       ]
     }
   ]

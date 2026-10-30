@@ -1,0 +1,31 @@
+name: Temporary prepare journey evidence v0.38.0
+on:
+  push:
+    branches:
+      - release/v0.38-journey-evidence-20261031
+permissions:
+  contents: write
+jobs:
+  release:
+    if: github.repository == 'andrewzaia/Scripture-Trails'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: release/v0.38-journey-evidence-20261031
+          persist-credentials: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - name: Generate v0.38.0 using repository release command
+        run: |
+          test "$(node -p "require('./package.json').version")" = "0.37.0"
+          npm run release -- minor "Biblical journey evidence and route clarity" "Clarify the Bethsaida and Gennesaret crossing with a named academic source and directly linked Gospel passages." "Distinguish named locations from inferred routes in the Jericho, ascension and Pauline itinerary notes." "Expand Scripture-linked research cautions for Paul's island crossings, planned harbour, storm drift and Malta arrival."
+          npm run build
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Prepare v0.38.0 with npm run release"
+          git push origin HEAD:release/v0.38-journey-evidence-20261031

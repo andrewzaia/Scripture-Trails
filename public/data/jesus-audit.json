@@ -234,6 +234,20 @@
       "description": "The biblical name Emmaus is clear but its modern identification remains contested.",
       "references": [],
       "status": "open"
+    },
+    {
+      "id": "sea-crossing-destinations",
+      "category": "narrative geography",
+      "events": [
+        "j035",
+        "j036"
+      ],
+      "description": "Mark 6:45 gives Bethsaida as an intended destination, whereas 6:53 gives Gennesaret as the landfall. John 6:17 uses Capernaum as the direction of travel. The text distinguishes intention from arrival; a physical course or single harmonisation is not established. A published narrative-critical article examines the Markan destination tension.",
+      "references": [
+        "https://www.esv.org/verses/Mark%2B6%3A45%E2%80%9356/",
+        "https://poj.peeters-leuven.be/content.php?id=3290792&journal_code=ETL&url=article"
+      ],
+      "status": "qualified"
     }
   ],
   "corrections": [
@@ -310,6 +324,15 @@
       "reason": "Matthew 15:29 describes the lakeside setting preceding the feeding.",
       "passages": [
         "Matthew 15:29-38"
+      ]
+    },
+    {
+      "event": "j035",
+      "change": "Distinguish intended Bethsaida destination from Gennesaret landfall",
+      "reason": "Mark 6:45 and 6:53 give different geographical statements; John 6:17 adds a Capernaum-oriented crossing. None establishes a surveyed course. The map now states the textual difference rather than flattening it.",
+      "passages": [
+        "Mark 6:45-53",
+        "John 6:16-21"
       ]
     }
   ],
@@ -484,5 +507,11 @@
       "Curated guided-study and Atlas references"
     ],
     "limitations": "Some Bible editions, textual traditions and psalm titles use different versification. The checks do not establish textual or historical accuracy. Bibliography claims require separate source-level examination."
+  },
+  "evidenceAddendum": {
+    "reviewedOn": "2026-10-31",
+    "scope": "Targeted passage/source comparison of the Mark 6 crossing and related route cautions, not a renewal of all 79 first-pass event assessments.",
+    "sourceLimit": "Publisher passage text and a peer-reviewed article abstract were consulted. Full article access, original manuscript comparison and independent specialist review were not performed.",
+    "pending": "The 79-event dataset retains first-pass screening; comprehensive scene-by-scene historical source evaluation remains open."
   }
 }
