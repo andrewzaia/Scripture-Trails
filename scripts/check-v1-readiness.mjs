@@ -25,7 +25,7 @@ const expectedAutomated=new Set(['atlas-context','crossrefs-integrity','automate
 for(const criterion of gates.values()){
  if(criterion.status==='met'&&criterion.mode==='automated'&&!expectedAutomated.has(criterion.id))throw Error('Unsupported automatic signoff for '+criterion.id);
  if(criterion.status==='met'&&criterion.mode!=='automated'){
-  if(!criterion.reviewer||!criterion.reviewedOn)throw Error('Human signoff requires a date and reviewer: '+criterion.id);
+  if(!criterion.reviewer||!criterion.reviewedOn)throw Error('Declared review provenance requires a date and reviewer: '+criterion.id);
   if(!/^\d{4}-\d{2}-\d{2}$/.test(criterion.reviewedOn))throw Error('Invalid signoff date '+criterion.id);
  }
  if(!criterion.evidence.startsWith('https://')&&!existsSync(new URL('../'+criterion.evidence,import.meta.url)))throw Error('Missing declared evidence source '+criterion.evidence);
