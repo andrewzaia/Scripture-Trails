@@ -340,5 +340,5 @@ test('v1 readiness preserves separate open rights review after live reader check
  await expect(content).toContainText('Verify all four authorised translations in production');
  await expect(content).toContainText('Test operational and publishing failure paths');
  await expect(content).toContainText('Verify citations, content rights and source attribution');
- await expect(page.locator('[data-roadmap="v1-summary"]')).toContainText('7 of 17 criteria met');
+ await expect(page.locator('[data-roadmap="v1-summary"]')).toContainText('8 of 17 criteria met');
 });
