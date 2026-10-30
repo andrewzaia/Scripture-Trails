@@ -45,7 +45,17 @@ export function createEntityIndex(root,handlers={}){
       line.append(make('span','',ref),btn('Read',()=>handlers.onRead?.(ref)),btn('Atlas',()=>handlers.onAtlas?.(sourcePassage(ref))));
       further.append(line);
     }
-    study.append(further);panel.append(study);
+    study.append(further);
+    if(trail.study.research.length){
+      const sources=make('ul','entity-trail-research');study.append(make('h4','','Additional academic context'));
+      for(const item of trail.study.research){
+        const li=make('li'),link=make('a','entity-external',item.title+' - '+item.author);
+        link.href=item.url;link.target='_blank';link.rel='noopener noreferrer';
+        li.append(link,make('p','entity-muted',item.scope));sources.append(li);
+      }
+      study.append(sources);
+    }
+    panel.append(study);
     panel.append(make('p','entity-muted','Related comparisons overlap a selected passage; they do not establish that this person appears in both texts.'));
     const steps=make('ol','entity-study-trail');
     for(const step of trail.stages){
