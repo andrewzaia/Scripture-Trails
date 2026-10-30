@@ -46,7 +46,7 @@ test('Acts distinguishes real landings from overclaimed routes, unreached ports 
  assert.match(P('paul-rome-08').qualification,/not a stop/);
  assert.equal(paul.events.some(e=>e.place==='phoenix'),false);
  for(const id of ['storm-drift','wreck','cauda-offshore'])assert.equal(paul.places.find(p=>p.id===id).coordinates,null);
- assert.match(P('paul-rome-12').qualification,/unnamed bay/);
+ assert.match(P('paul-rome-12').qualification,/unidentified bay/);
  assert.match(P('paul-rome-13').qualification,/island identification is explicit/);
  const sources=paul.issues.find(x=>x.id==='rome-storm-drift').sourceLinks;
  assert.ok(sources.length&&sources.every(s=>s.url.startsWith('https://')&&s.scope.length>30));
