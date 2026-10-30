@@ -35,6 +35,7 @@ export function validatePaulineData(data,counts){
  const closed=new Set();let previous=null;
  for(const event of data.events){
   if(!journeys.has(event.journey)||!places.has(event.place)||!event.title||!event.summary||typeof event.qualification!=='string'||event.reviewStatus!=='editorial-reading-aid')throw Error('Invalid stage '+event.id);
+  if(event.study!==undefined){const n=event.study;if(!n||n.method!=='editorial-scripture-context'||!/^[0-9]{4}-[0-9]{2}-[0-9]{2}$/.test(n.reviewedOn)||typeof n.context!=='string'||n.context.trim().length<100||!Array.isArray(n.crossReferences)||n.crossReferences.length<1||n.crossReferences.length>3||new Set(n.crossReferences).size!==n.crossReferences.length||n.crossReferences.some(ref=>!validateCanonicalReference(ref,counts)))throw Error('Invalid Scripture study note '+event.id);}
   if(event.journey!==previous){if(closed.has(event.journey))throw Error('Journey stages must remain contiguous');if(previous)closed.add(previous);previous=event.journey;}refs(event.passages);
  }
  if(data.places.some(place=>!data.events.some(e=>e.place===place.id)))throw Error('Unused itinerary place');
@@ -107,6 +108,7 @@ export function createPaulMap(root,handlers={}){
   $('basis').textContent=place.kind==='offshore'?'Acts travel passage':place.kind==='unlocated'?'Unnamed setting in Acts':place.kind==='region'?'Region named in Acts':'Named setting in Acts';
   $('location-grade').textContent=CERTAINTY[place.certainty];$('site-note').textContent=place.note;$('qualification').textContent=event.qualification;$('qualification').hidden=!event.qualification;
   $('passages').replaceChildren(...event.passages.map(passageActions));
+  const hasStudy=Boolean(event.study);$('study-section').hidden=!hasStudy;$('study-context').textContent=hasStudy?event.study.context:'';$('study-links').replaceChildren(...(hasStudy?event.study.crossReferences.map(passageActions):[]));
   $('source').replaceChildren();if(place.sourceUrl){const a=element('a','',`Pleiades: ${place.sourceTitle}`);a.href=place.sourceUrl;a.target='_blank';a.rel='noopener noreferrer';$('source').append(a,element('p','jesus-map-muted','Ancient place geography, not independent evidence of this visit. CC BY 3.0; contributor credits are retained in the local source snapshot.'));}else $('source').append(element('p','jesus-map-muted','The linked Acts passage supplies the setting. No point coordinate or precise boundary has been assigned.'));
   $('status').textContent=place.coordinates?'Approximate marker selected. Dashed lines show narrative connections only.':'This stage has no pin. Its location is regional, unnamed or offshore; the map remains available for orientation.';
   $('timeline').max=String(entries.length-1);$('timeline').value=String(pos);$('timeline').setAttribute('aria-valuetext',`${pos+1} of ${entries.length}: ${event.title}, ${place.name}`);
