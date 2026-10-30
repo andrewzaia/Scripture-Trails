@@ -307,3 +307,29 @@ test('Gospel disputed ending and ascension show qualified sources and maintain s
  await expect(page.locator('[data-jesus="episode-study-context"]')).toContainText('textual variants in Luke 24:51-52');
  await expect(page.locator('[data-jesus="chronology-comparisons"]')).toContainText('Ascension: narrative continuity');
 });
+
+test('Gospel site dossiers distinguish Bethsaida evidence and retain unpinned region cautions',async({page})=>{
+ await open(page,'jesus-map');
+ await page.locator('[data-jesus="place"]').selectOption('bethsaida');
+ await expect(page.locator('[data-jesus="study-identification-review"]')).toBeVisible();
+ await expect(page.locator('[data-jesus="study-identification-claim"]')).toContainText('competing proposed identifications');
+ await expect(page.locator('[data-jesus="study-identification-support"]')).toContainText('competing scholarly case for et-Tell');
+ await expect(page.locator('[data-jesus="study-identification-sources"] a')).toHaveCount(3);
+ await page.locator('[data-jesus="place"]').selectOption('magadan');
+ await expect(page.locator('[data-jesus="study-identification-limit"]')).toContainText('does not confirm');
+ await page.locator('[data-jesus="place"]').selectOption('galilee-shore');
+ await expect(page.locator('[data-jesus="study-identification-review"]')).toBeHidden();
+ await expect(page.locator('[data-jesus="study-identification-sources"]')).toBeEmpty();
+ await expect(page.locator('[data-jesus="study-source-status"]')).toContainText('Regional schematic marker');
+});
+
+test('Emmaus and Gethsemane keep site-identity limitations visible through deep links',async({page})=>{
+ await page.goto('/?view=jesus-map&stop=j075&translation=ESV');
+ await expect(page.locator('[data-jesus="study-identification-review"]')).toBeVisible();
+ await expect(page.locator('[data-jesus="study-identification-question"]')).toContainText('Emmaus village');
+ await expect(page.locator('[data-jesus="study-identification-limit"]')).toContainText('cannot be selected as conclusively verified');
+ await expect(page.locator('[data-jesus="study-identification-sources"] a')).toHaveCount(2);
+ await page.goto('/?view=jesus-map&stop=j070&translation=ESV');
+ await expect(page.locator('[data-jesus="study-identification-review"]')).toBeVisible();
+ await expect(page.locator('[data-jesus="study-identification-claim"]')).toContainText('modern pilgrimage garden');
+});
