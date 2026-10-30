@@ -49,7 +49,7 @@ test('claim panels and About register show scope, external links and retained wa
  for(const a of all.filter(e=>e.tagName==='a')){assert.match(a.href,/^https:\/\//);assert.equal(a.rel,'noopener noreferrer');}
  root.replaceChildren();appendCitationReview(root,'place','not-indexed');assert.equal(root.children.length,0);
  renderCitationSummary(root);const first=nodes(root).length;renderCitationSummary(root);assert.equal(nodes(root).length,first);
- assert.equal(nodes(root).filter(e=>e.tagName==='article').length,152);
+ assert.equal(nodes(root).filter(e=>e.tagName==='article').length,164);
  assert.ok(nodes(root).some(e=>e.download?.endsWith('.json')));
  assert.ok(nodes(root).some(e=>e.textContent.includes('All 115 previously assessed pairs have dated editorial assessments')));
 });
@@ -247,7 +247,7 @@ test('final seven assessments complete the exact explained-pair register with co
  assert.equal(scholars.size,3);assert.equal(authors.size,3);assert.equal(texts.size,12);
  const records=CITATION_REVIEW.records.filter(r=>r.kind==='connection');
  assert.equal(records.length,127);assert.deepEqual(new Set(records.filter(r=>Number(r.target.slice(2))<=115).map(r=>r.target)),new Set(CONNECTION_EVIDENCE.filter(e=>Number(e.id.slice(2))<=115).map(e=>e.id)));
- assert.equal(Object.keys(CITATION_REVIEW.sources).length,317);
+ assert.equal(Object.keys(CITATION_REVIEW.sources).length,333);
  assert.equal(records.filter(r=>Number(r.target.slice(2))<=115&&r.citations.some(c=>['scholarly-commentary','publisher-note','publisher-abstract'].includes(CITATION_REVIEW.sources[c.sourceId].kind))).length,83);
  assert.equal(CITATION_REVIEW.scope.connections,127);assert.match(batch.method,/full OpenBible corpus.*outside/);
 });
@@ -263,7 +263,7 @@ test('completed coverage retains final narrative differences and further-review 
  assert.equal(CITATION_REVIEW.deferred.some(s=>s.includes('The other 7 explained pairs')),false);
  const roadmap=json('roadmap');assert.equal(roadmap.milestones.find(m=>m.id==='source-coverage-final-07').status,'delivered');
  const followup=roadmap.milestones.find(m=>m.id==='source-coverage-followup');assert.equal(followup.status,'planned');assert.match(followup.summary,/115 of 115.*32.*not constitute scholarly certification/);
- assert.ok(roadmap.currentFocus.some(item=>/manual screen-reader.*real-device/.test(item)));
+ assert.ok(roadmap.v1Readiness.gates.find(g=>g.id==='accessibility').criteria.some(c=>c.id==='screen-readers'&&c.status==='open'));
 });
 
 test('final batch preserves all earlier assessments, sources, anchors and classifications',()=>{
@@ -301,7 +301,7 @@ test('follow-up rejects missing claims, invalid dates, non-commentary sources an
 
 test('all earlier assessment fields, sources and classifications survive the supplements',()=>{
  const digest=value=>createHash('sha256').update(JSON.stringify(value)).digest('hex');
- const original=CITATION_REVIEW.records.map(({supplement,...record})=>record);
+ const original=CITATION_REVIEW.records.slice(0,152).map(({supplement,...record})=>record);
  assert.equal(digest(original),'17e9a33374b20e963fc9c664d75486acfce30fa7d3478a47dfa7e5523d5dc396');
  assert.equal(digest(Object.fromEntries(Object.entries(CITATION_REVIEW.sources).slice(0,301))),'2d48c0299bad22deb186aea5f8d90d71ce5ef67dcee0c36116a071b87f46551a');
  assert.equal(CONNECTION_EVIDENCE.find(e=>e.id==='ce027').kind,'echo');
