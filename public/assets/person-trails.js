@@ -25,13 +25,13 @@ export const PERSON_TRAILS=Object.freeze([
       {
         "label": "Covenant sign",
         "ref": "Genesis 17:9-14",
-        "note": "A new covenant stage is narrated.",
+        "note": "Genesis presents circumcision as a sign and obligation within God's covenant with Abraham and his descendants.",
         "source": "primary-scripture",
         "review": "editorial-reading-aid"
       },
       {
         "label": "Isaac and the test",
-        "ref": "Genesis 22:2",
+        "ref": "Genesis 22:1-19",
         "note": "A difficult test is narrated; consult the whole passage.",
         "source": "primary-scripture",
         "review": "editorial-reading-aid"
@@ -124,7 +124,7 @@ export const PERSON_TRAILS=Object.freeze([
     "stages": [
       {
         "label": "Anointing",
-        "ref": "1 Samuel 16:12",
+        "ref": "1 Samuel 16:12-13",
         "note": "Samuel is instructed to anoint David.",
         "source": "primary-scripture",
         "review": "editorial-reading-aid"
@@ -359,7 +359,7 @@ export const PERSON_TRAILS=Object.freeze([
     "stages": [
       {
         "label": "Encounter near Damascus",
-        "ref": "Acts 9:3",
+        "ref": "Acts 9:3-9",
         "note": "Acts narrates Saul's encounter on the road to Damascus.",
         "source": "primary-scripture",
         "review": "editorial-reading-aid"
