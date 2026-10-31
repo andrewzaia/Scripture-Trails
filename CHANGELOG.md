@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.44.8 - 31/10/2026: Site-specific archaeology for Cana candidates
+
+- Add separately attributed archaeological sources for Kafr Kanna and Khirbet Qana, keeping the uncertain identification of Cana and the limits of archaeology explicit.
+- Update the historical-city comparison to display sources for the highlighted proposal, while retaining the general geographical index and validating candidate citations.
+- Add source-integrity and browser navigation regression tests for the proposed locations.
+- Report the source/build and browser-matrix results explicitly in the GitHub release gate, retaining its fail-closed behaviour and regression coverage.
+
+- Cancel superseded pull-request validation runs automatically, retaining all required browser and source checks for the final PR commit.
+
 ## 0.44.7 - 31/10/2026: Clearer archaeological chronology for Jericho
 
 - Qualify the 1995 Tell es-Sultan radiocarbon calibration as provisional, distinguish cereal and charcoal results, and avoid attributing the dated destruction to the events or actors narrated in Joshua 6.

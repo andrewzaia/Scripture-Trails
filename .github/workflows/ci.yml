@@ -8,6 +8,12 @@ on:
 permissions:
   contents: read
 
+# PR runs are disposable until the latest head is validated. Pushes to main
+# never cancel one another; the final PR head still needs every required gate.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
 jobs:
   # Pin the tested image while ubuntu-latest transitions to Ubuntu 26.04.
   # Upgrade the runner explicitly after a full cross-browser compatibility run.
@@ -64,9 +70,18 @@ jobs:
     if: ${{ always() }}
     needs: [test, browser]
     runs-on: ubuntu-24.04
+    timeout-minutes: 5
     steps:
-      - name: Require source and browser checks
+      - name: Explain and enforce source and cross-browser gate
         env:
           SOURCE_RESULT: ${{ needs.test.result }}
           BROWSER_RESULT: ${{ needs.browser.result }}
-        run: test "$SOURCE_RESULT" = success && test "$BROWSER_RESULT" = success
+        run: |
+          set -eu
+          echo "Source/build validation: $SOURCE_RESULT"
+          echo "Chromium, Firefox, WebKit matrix: $BROWSER_RESULT"
+          if [ "$SOURCE_RESULT" != "success" ] || [ "$BROWSER_RESULT" != "success" ]; then
+            echo "::error::Refusing an unverified release: source and every browser project must pass."
+            exit 1
+          fi
+          echo "All mandatory release checks passed."
