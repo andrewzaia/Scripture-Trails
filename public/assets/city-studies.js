@@ -30,7 +30,7 @@ export function validateCityStudies(data){
  }
  if(!['jerusalem','nazareth','capernaum','bethlehem','jericho'].every(x=>cityIds.has(x)))throw Error('Missing flagship city');
  for(const s of Object.values(data.sources))if(!s.title||!s.publisher||!/^https:\/\//.test(s.url))throw Error('Invalid source URL');
- for(const d of data.disputed){if(!d.id||d.candidates?.length<2||!d.statement)throw Error('Missing site comparisons');parse(d.ref,d.id);for(const candidate of d.candidates)if(!candidate.point?.every(Number.isFinite)||!candidate.note)throw Error('Invalid candidate '+d.id);for(const id of d.sourceIds)if(!data.sources[id])throw Error('Missing candidate source '+id);}
+ for(const d of data.disputed){if(!d.id||d.candidates?.length<2||!d.statement)throw Error('Missing site comparisons');parse(d.ref,d.id);for(const candidate of d.candidates){if(!candidate.point?.every(Number.isFinite)||!candidate.note)throw Error('Invalid candidate '+d.id);if(candidate.sourceIds!==undefined){if(!Array.isArray(candidate.sourceIds)||!candidate.sourceIds.length)throw Error('Invalid candidate sources '+d.id);for(const id of candidate.sourceIds)if(!data.sources[id])throw Error('Unknown candidate citation '+id);}}for(const id of d.sourceIds)if(!data.sources[id])throw Error('Missing candidate source '+id);}
  return true;
 }
 export function createCityStudies(root,{onRead,onAtlas,onJourney}={}){
@@ -63,7 +63,7 @@ export function createCityStudies(root,{onRead,onAtlas,onJourney}={}){
   $('debate-title').textContent=d.name;$('debate-desc').textContent=d.statement;
   const list=$('debate-list');list.replaceChildren();for(const [i,v] of d.candidates.entries()){const div=make('article','city-debate-candidate');div.classList.toggle('selected',i===selectedCandidate);div.append(tag(v.type==='traditional'?'tradition':'research'),make('h4','',v.name),make('p','',v.note));const button=make('button','city-verse-link','Highlight on comparison map');button.type='button';button.addEventListener('click',()=>{selectedCandidate=i;renderDebate();});div.append(button);list.append(div);}
   tinyMap($('debate-map'),d.candidates.map((p,i)=>({id:String(i),title:p.name,coordinates:p.point,kind:p.type})),String(selectedCandidate),id=>{selectedCandidate=Number(id);renderDebate();},`Illustrative geographical comparison for ${d.name}`);$('debate-active').textContent=`Highlighted proposal: ${d.candidates[selectedCandidate]?.name}. ${d.candidates[selectedCandidate]?.note}`;
-  const refs=$('debate-refs');refs.replaceChildren(linked(d.ref,d.ref,onRead));sourceList(d.sourceIds,$('debate-sources'));
+  const refs=$('debate-refs');refs.replaceChildren(linked(d.ref,d.ref,onRead));sourceList([...d.sourceIds,...(d.candidates[selectedCandidate]?.sourceIds||[])],$('debate-sources'));
  }
  function renderCity(){if(!data)return;const city=data.cities.find(c=>c.id===selected)||data.cities[0];selected=city.id;selectedPoint=city.mapPoints[0].id;
   root.querySelectorAll('[data-city-select]').forEach(b=>{const active=b.dataset.citySelect===city.id;b.classList.toggle('selected',active);b.setAttribute('aria-pressed',String(active));});
