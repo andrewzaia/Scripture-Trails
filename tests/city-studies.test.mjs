@@ -127,3 +127,25 @@ test('Layered historical studies fail closed for unsupported or missing material
  assert.match(ui,/city-study-layer-body/);
  assert.match(ui,/document.createTextNode\(item.qualification\)/);
 });
+
+test('Jericho radiocarbon conclusions retain the publisher calibration limits and distinguish Joshua',()=>{
+ const jericho=cities.cities.find(c=>c.id==='jericho');
+ const finding=jericho.findings.find(f=>f.title==='Radiocarbon evidence and chronology');
+ const material=jericho.studyLayers.find(l=>l.kind==='material-context');
+ const source=cities.sources['jericho-radiocarbon'];
+ assert.ok(finding&&material&&source);
+ assert.match(finding.claim,/eighteen radiocarbon samples/);
+ assert.match(finding.claim,/preliminary calendar calibrations/);
+ assert.match(finding.limitation,/calibration curves/);
+ assert.match(finding.limitation,/Joshua 6/);
+ assert.match(material.body,/six short-lived cereal-grain samples and twelve charcoal samples/);
+ assert.match(material.body,/calibration-curve uncertainty/);
+ assert.match(material.qualification,/preliminary/);
+ assert.match(material.qualification,/tentative listing/);
+ assert.equal(source.doi,'10.1017/S0033822200030666');
+ assert.match(source.publisher,/Radiocarbon 37\(2\)/);
+ assert.match(source.rights,/Linked only/);
+ assert.match(finding.limitation,/neither attackers nor the particular event narrated in Joshua 6/);
+ assert.match(source.url,/^https:\/\/www\.cambridge\.org\/core\/journals\/radiocarbon\/article\//);
+ assert.match(source.access,/not independently reanalysed/);
+});

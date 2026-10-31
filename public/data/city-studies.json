@@ -119,12 +119,13 @@
     "jericho-radiocarbon": {
       "title": "Tell es-Sultan (Jericho): Radiocarbon results of short-lived cereal and multiyear charcoal samples (1995)",
       "author": "Hendrik J. Bruins and Johannes van der Plicht",
-      "publisher": "Radiocarbon 37(2), 213-220; University of Groningen",
+      "publisher": "Radiocarbon 37(2), 213-220; Cambridge University Press",
       "kind": "publisher-abstract",
-      "url": "https://research.rug.nl/en/publications/tell-es-sultan-jericho-radiocarbon-results-of-short-lived-cereal-/",
-      "checkedOn": "2026-10-28",
-      "access": "Institutional abstract and publication record checked. The study uses historical calibration curves; no recalibration or raw-sample reanalysis performed.",
-      "rights": "Linked only; no publisher text, photographs or tables redistributed."
+      "url": "https://www.cambridge.org/core/journals/radiocarbon/article/tell-essultan-jericho-radiocarbon-results-of-shortlived-cereal-and-multiyear-charcoal-samples-from-the-end-of-the-middle-bronze-age/49BF732173E7890A2B0EC1B21CB6A817",
+      "checkedOn": "2026-10-31",
+      "access": "Publisher's abstract, journal volume and date reviewed. The 1995 calibration is historical; underlying samples, calibration curves and updated models were not independently reanalysed.",
+      "rights": "Linked only; no publisher text, photographs or tables redistributed.",
+      "doi": "10.1017/S0033822200030666"
     },
     "olives-cave": {
       "title": "Jerusalem, Mount of Olives (2020)",
@@ -1435,8 +1436,8 @@
         {
           "title": "Radiocarbon evidence and chronology",
           "kind": "peer-reviewed",
-          "claim": "Bruins and van der Plicht analysed 18 samples, distinguishing short-lived cereal grains from charcoal. Their published calibration placed the final Middle Bronze Age destruction in the late seventeenth or sixteenth century BCE.",
-          "limitation": "This is the study's reported 1995 calibration, not a new calculation. It must not be relabelled as a secure fifteenth- or thirteenth-century conquest date; archaeological destruction alone identifies neither attackers nor a biblical event.",
+          "claim": "Bruins and van der Plicht examined eighteen radiocarbon samples from end-of-Middle-Bronze-Age contexts at Tell es-Sultan: six short-lived cereal samples and twelve charcoal samples. Their 1995 paper offered preliminary calendar calibrations broadly compatible with a late seventeenth- or sixteenth-century BCE destruction, not a uniquely established historical year.",
+          "limitation": "The authors cautioned that differences between calibration curves prevent a more definite calendar date. Older average charcoal ages and curve uncertainties must be kept distinct from the cereal sample results. Radiocarbon measurements alone identify neither attackers nor the particular event narrated in Joshua 6.",
           "sourceIds": [
             "jericho-radiocarbon"
           ],
@@ -1523,7 +1524,7 @@
         {
           "kind": "material-context",
           "title": "Three periods, not one excavated Jericho",
-          "body": "UNESCO describes Tell es-Sultan as an ancient settlement mound with Neolithic monuments and urban Bronze Age levels. Bruins and van der Plicht studied eighteen samples associated with the end of the Middle Bronze Age, distinguishing short-lived cereal grains from older charcoal and reporting a broadly late seventeenth- or sixteenth-century BCE destruction horizon. Much later, Hellenistic and Herodian palaces near Wadi Qelt illustrate the Roman-era oasis setting. The older mound and the palace landscape must not be treated as the same period or the same Gospel-era address.",
+          "body": "UNESCO describes Tell es-Sultan as an ancient settlement mound with Neolithic monuments and urban Bronze Age levels. Bruins and van der Plicht examined eighteen samples associated with the end of the Middle Bronze Age: six short-lived cereal-grain samples and twelve charcoal samples, with charcoal showing an older average radiocarbon age. Their 1995 paper presented preliminary calendar calibrations using different curves and computer methods, suggesting a broad late seventeenth- or sixteenth-century BCE destruction horizon rather than one secure calendar year. The authors specifically cautioned that calibration-curve uncertainty prevented more definitive dating. The samples provide chronological evidence about excavated deposits, not the identity of an attacking group or independent verification of Joshua 6. Much later, Hellenistic and Herodian palaces near Wadi Qelt illustrate the Roman-era oasis setting. The Bronze Age mound and the palace landscape must not be treated as the same period or the same Gospel-era address.",
           "passages": [
             "Joshua 6:1-27",
             "Luke 19:1-10"
@@ -1533,7 +1534,7 @@
             "jericho-radiocarbon",
             "jericho-palaces"
           ],
-          "qualification": "The 1995 radiocarbon findings do not identify attackers or demonstrate an event in Joshua. The UNESCO palace entry is a tentative listing submitted in 2026, not an inscribed World Heritage site."
+          "qualification": "The 1995 radiocarbon paper explicitly described its calendar calibration as preliminary; its dates cannot identify attackers or independently authenticate Joshua 6. The UNESCO palace entry is a tentative listing submitted in 2026, not an inscribed World Heritage site."
         },
         {
           "kind": "interpretive-question",
