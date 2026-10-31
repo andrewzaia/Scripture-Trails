@@ -342,3 +342,20 @@ test('v1 readiness preserves separate open rights review after live reader check
  await expect(content).toContainText('Verify citations, content rights and source attribution');
  await expect(page.locator('[data-roadmap="v1-summary"]')).toContainText('9 of 17 criteria met');
 });
+
+test('Gospel Last Supper audit names relevant scholarship and keeps the calendar disputed',async({page})=>{
+ await page.goto('/?view=jesus-map&stop=j069&translation=ESV');
+ await expect(page.locator('#view-jesus-map')).toBeVisible();
+ await expect(page.locator('[data-jesus="event-heading"]')).toHaveText('Last Supper');
+ await expect(page.locator('[data-jesus="episode-study-context"]')).toContainText('1 Corinthians 11:23-26');
+ const audit=page.locator('[data-jesus="audit-open"]');
+ const row=audit.locator('.jesus-audit-correction').filter({hasText:'last-supper-calendar'});
+ await expect(row).toContainText('scholars');
+ await expect(row).toContainText('Passover');
+ for(const title of ['Passover and Last Supper Revisited','Dating the Death of Jesus','Ratzinger and Aquinas']){
+  const link=row.getByRole('link',{name:new RegExp(title)});
+  await expect(link).toBeVisible();
+  await expect(link).toHaveAttribute('href',/^https:\/\/www\.cambridge\.org\//);
+  await expect(link).toHaveAttribute('rel','noopener noreferrer');
+ }
+});

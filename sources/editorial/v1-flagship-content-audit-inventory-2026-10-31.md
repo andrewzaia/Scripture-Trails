@@ -82,10 +82,10 @@ These are **content precision** findings, not broken references. The named ancho
 
 | Finding | Stage | Current reference | Proposed replacement | Reason | Status |
 | --- | --- | --- | --- | --- | --- |
-| P-02 | Moses: burning bush and commissioning | `Exodus 3:2` | `Exodus 3:2-10` | 3:2 describes the bush; God's sending Moses to Pharaoh is explicit in 3:10 | Open - requires versioned website change |
-| P-03 | Moses: commandments at Sinai | `Exodus 20:1` | `Exodus 20:1-17` | Verse 1 introduces the speech; the commandments follow in verses 2-17 | Open - requires versioned website change |
-| P-04 | Abraham: death and burial | `Genesis 25:8` | `Genesis 25:8-10` | Death occurs in verse 8, while burial is narrated in verses 9-10 | Open - requires versioned website change |
-| P-05 | David: house and successor | `2 Samuel 7:12` | `2 Samuel 7:12-16` | Verse 12 introduces the successor; the enduring royal house is developed in verses 13-16 | Open - requires versioned website change |
+| P-02 | Moses: burning bush and commissioning | `Exodus 3:2` | `Exodus 3:2-10` | 3:2 describes the bush; God's sending Moses to Pharaoh is explicit in 3:10 | Closed - v0.44.4 (published and regression tested) |
+| P-03 | Moses: commandments at Sinai | `Exodus 20:1` | `Exodus 20:1-17` | Verse 1 introduces the speech; the commandments follow in verses 2-17 | Closed - v0.44.4 (published and regression tested) |
+| P-04 | Abraham: death and burial | `Genesis 25:8` | `Genesis 25:8-10` | Death occurs in verse 8, while burial is narrated in verses 9-10 | Closed - v0.44.4 (published and regression tested) |
+| P-05 | David: house and successor | `2 Samuel 7:12` | `2 Samuel 7:12-16` | Verse 12 introduces the successor; the enduring royal house is developed in verses 13-16 | Closed - v0.44.4 (published and regression tested) |
 
 Publisher passage references, link only, no copied ESV text retained:
 
@@ -94,4 +94,9 @@ Publisher passage references, link only, no copied ESV text retained:
 - Crossway, [Genesis 25:8-10](https://www.esv.org/Gn25.8-10/) (death and burial).
 - Crossway, [2 Samuel 7:12-13 and 7:16](https://www.esv.org/2%2BSamuel%2B7%3A12%E2%80%9313%3B2%2BSamuel%2B7%3A16/) (descendants and royal house).
 
-**Release dependency:** PR #66 remains a separate, unfinished cross-browser release, and its source gate requires Semantic Versioning. Do not introduce competing patch versions against the same baseline or silently edit the published site. Make the four people-trail address corrections as one scoped PATCH release after resolving the production release ordering, run the existing `npm run release`, and verify all required checks and Cloudflare deployment. These four findings do not justify marking `content-audit` met; substantive per-stage verification, city dossiers, itinerary stages and browser navigation remain open.
+**Historical release note (superseded):** The four P-02 to P-05 reference-range corrections were published in v0.44.4. The prior branch-order warning referred to PR #66, which is no longer an open release dependency. This document records their closure but does not imply complete passage-by-passage editorial certification.
+
+
+## Status reconciliation - 1 November 2026
+
+Rechecked the published main-branch person trails after v0.44.10: P-02 `Exodus 3:2-10`, P-03 `Exodus 20:1-17`, P-04 `Genesis 25:8-10` and P-05 `2 Samuel 7:12-16` are all present, and v0.44.4 includes their change descriptions. The inventory's previous *Open* labels had become stale. These four address corrections are closed; the encompassing 219 journal readings, 88 people stages and other flagship content still require substantive textual verification under Issue #67.

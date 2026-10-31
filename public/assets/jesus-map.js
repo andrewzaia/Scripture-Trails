@@ -58,6 +58,12 @@ export function validateAuditData(audit,journeys,geography){
  const issueStatuses=new Set(['open','qualified','corrected']);
  for(const issue of audit.issues){
   if(known.has(issue.id)||!issueStatuses.has(issue.status)||!issue.description||!issue.category||!issue.events?.length||!issue.events.every(id=>ids.has(id))||!(issue.references||[]).every(url=>/^https:\/\//.test(url)))throw Error('Invalid audit issue '+issue.id);
+  if(issue.referenceTitles!==undefined){
+   if(!issue.referenceTitles||Array.isArray(issue.referenceTitles)||typeof issue.referenceTitles!=='object')throw Error('Invalid audit reference labels '+issue.id);
+   for(const [url,title] of Object.entries(issue.referenceTitles)){
+    if(!issue.references.includes(url)||typeof title!=='string'||title.trim().length<10)throw Error('Unattributed audit source '+issue.id);
+   }
+  }
   known.add(issue.id);
  }
  for(const e of journeys.events){
@@ -198,7 +204,7 @@ export function createJesusMap(root,onOpenPassage,onOpenCity){
   for(const c of audit.corrections){const row=el('div','jesus-audit-correction');const b=el('button','jesus-study-ref',`${c.event.toUpperCase()} | ${c.change}`);b.type='button';b.addEventListener('click',()=>{stop();phase='all';$('phase').value='all';const i=data.events.findIndex(e=>e.id===c.event);selectEvent(i);selectPlace(data.events[i].place);root.querySelector('.jesus-map-grid')?.scrollIntoView({behavior:'smooth',block:'start'});});row.append(b,el('p','',c.reason),el('small','',c.passages.join(' | ')));corrections.append(row);}
   const outstanding=$('audit-open');outstanding.replaceChildren();
   for(const issue of audit.issues.filter(i=>i.status==='open')){const row=el('div','jesus-audit-correction');row.append(el('strong','',`${issue.category} | ${issue.id}`),el('p','',issue.description),el('small','',`Affected entries: ${issue.events.join(', ')}`));
-   if(issue.references.length){const refs=el('div','jesus-audit-sources');for(const url of issue.references){const a=el('a','',new URL(url).hostname+' (research)');a.href=url;a.target='_blank';a.rel='noopener noreferrer';refs.append(a);}row.append(refs);}else row.append(el('small','jesus-map-muted','No secondary research link is attached to this open issue; the Gospel text is its primary narrative source.'));appendCitationReview(row,'issue',issue.id);outstanding.append(row);}
+   if(issue.references.length){const refs=el('div','jesus-audit-sources');for(const url of issue.references){const a=el('a','',(issue.referenceTitles?.[url]||new URL(url).hostname)+' (research)');a.href=url;a.target='_blank';a.rel='noopener noreferrer';refs.append(a);}row.append(refs);}else row.append(el('small','jesus-map-muted','No secondary research link is attached to this open issue; the Gospel text is its primary narrative source.'));appendCitationReview(row,'issue',issue.id);outstanding.append(row);}
  }
  function selectPlace(id,move=false){const place=placeMap.get(id);if(!place)return;
  const matches=getAccountSequence().filter(e=>e.place===id);const list=$('visits'),focusedVisit=document.activeElement?.dataset.jesusVisit;list.replaceChildren();$('visit-count').textContent=`${matches.length} recorded ${matches.length===1?'episode':'episodes'}`;
