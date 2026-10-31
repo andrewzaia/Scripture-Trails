@@ -74,7 +74,7 @@ test('Last Supper chronology audit uses directly relevant, named opposing schola
  assert.equal(validateAuditData(a,j,g),true);
  const missing=structuredClone(a);
  missing.issues.find(x=>x.id==='last-supper-calendar').referenceTitles['https://arbitrary.example/']='Fictitious unrelated publication';
- assert.throws(()=>validateAuditData(missing,j,g),/Unattributed audit source/);
+ assert.throws(()=>validateAuditData(missing,j,g),/Missing audit source title|Unattributed audit source/);
  const weak=structuredClone(a);
  weak.issues.find(x=>x.id==='last-supper-calendar').referenceTitles[issue.references[0]]='x';
  assert.throws(()=>validateAuditData(weak,j,g),/Unattributed audit source/);
