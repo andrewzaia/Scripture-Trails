@@ -15,7 +15,10 @@ test('CI runs supported Node 24 actions on a stable runner with all three browse
  assert.match(ci,/actions\/upload-artifact@v6/);
  for(const engine of ['chromium','firefox','webkit'])assert.match(ci,new RegExp('engine: '+engine));
  assert.match(ci,/needs: \[test, browser\]/);
- assert.match(ci,/test "\$SOURCE_RESULT" = success && test "\$BROWSER_RESULT" = success/);
+ assert.match(ci,/\$SOURCE_RESULT/);
+ assert.match(ci,/\$BROWSER_RESULT/);
+ assert.match(ci,/\[ "\$SOURCE_RESULT" != "success" \] \|\| \[ "\$BROWSER_RESULT" != "success" \]/);
+ assert.match(ci,/exit 1/,'a failing required source or browser job must block release');
 });
 
 test('Atlas reference rebuild cannot bypass semantic release reviews by directly pushing to main',()=>{
