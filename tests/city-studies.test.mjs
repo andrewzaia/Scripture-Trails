@@ -149,3 +149,26 @@ test('Jericho radiocarbon conclusions retain the publisher calibration limits an
  assert.match(source.url,/^https:\/\/www\.cambridge\.org\/core\/journals\/radiocarbon\/article\//);
  assert.match(source.access,/not independently reanalysed/);
 });
+
+test('Cana competing sites have distinct archaeological citations and no claimed wedding-site identification',()=>{
+ const cana=cities.disputed.find(d=>d.id==='cana');
+ assert.ok(cana);
+ assert.match(cana.statement,/Neither candidate is established/);
+ assert.match(cana.statement,/do not authenticate/);
+ assert.equal(cana.candidates.length,2);
+ const [kafr,qana]=cana.candidates;
+ assert.deepEqual(kafr.sourceIds,['cana-kafr-iaa']);
+ assert.deepEqual(qana.sourceIds,['cana-qana-kinneret']);
+ assert.match(kafr.note,/early Roman occupation/);
+ assert.match(qana.note,/Late Roman and\/or Byzantine/);
+ assert.match(cities.sources[kafr.sourceIds[0]].url,/^https:\/\/hadashot\.iaa\.org\.il\//);
+ assert.equal(cities.sources[qana.sourceIds[0]].url,'https://synagogues.kinneret.ac.il/synagogues/qana/');
+ assert.ok(validateCityStudies(cities));
+ for(const mutate of [
+  d=>d.disputed.find(x=>x.id==='cana').candidates[0].sourceIds=['unregistered-source'],
+  d=>d.disputed.find(x=>x.id==='cana').candidates[1].sourceIds='wrong-type'
+ ]){
+  const invalid=structuredClone(cities);mutate(invalid);
+  assert.throws(()=>validateCityStudies(invalid));
+ }
+});
