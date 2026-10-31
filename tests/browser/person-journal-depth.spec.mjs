@@ -31,3 +31,14 @@ test('six guided journals expose distinct context guides without changing readin
   await expect(page.locator('.journal-intro-count')).toContainText('Approx.');
  }
 });
+
+test('audited person-trail passage range opens fully in the reader',async({page})=>{
+ await open(page,'journeys');
+ await page.locator('#person-trail-list .person-trail-card').filter({hasText:'Abraham: promise and family'}).getByRole('button').click();
+ await expect(page.locator('#view-entities')).toBeVisible();
+ const firstStep=page.locator('.entity-detail .entity-trail-step').first();
+ await expect(firstStep).toContainText('Genesis 12:1-3');
+ await firstStep.getByRole('button',{name:'Read passage',exact:true}).click();
+ await expect(page.locator('#view-reader')).toBeVisible();
+ await expect.poll(()=>new URL(page.url()).searchParams.get('ref')).toBe('Genesis 12:1-3');
+});
