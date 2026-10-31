@@ -143,6 +143,9 @@ test('Jericho radiocarbon conclusions retain the publisher calibration limits an
  assert.match(material.qualification,/preliminary/);
  assert.match(material.qualification,/tentative listing/);
  assert.equal(source.doi,'10.1017/S0033822200030666');
+ assert.match(source.publisher,/Radiocarbon 37\(2\)/);
+ assert.match(source.rights,/Linked only/);
+ assert.match(finding.limitation,/neither attackers nor the particular event narrated in Joshua 6/);
  assert.match(source.url,/^https:\/\/www\.cambridge\.org\/core\/journals\/radiocarbon\/article\//);
  assert.match(source.access,/not independently reanalysed/);
 });
