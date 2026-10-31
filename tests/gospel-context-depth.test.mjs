@@ -20,7 +20,9 @@ test('every one of 79 Gospel journey entries has unique original biblical readin
  for(const e of journeys.events){
   assert.ok(!ids.has(e.id),'Duplicate stage '+e.id);ids.add(e.id);
   const n=e.study;assert.ok(n,'Missing episode study '+e.id);
-  assert.equal(n.method,'scripture-context-editorial');assert.equal(n.reviewedOn,'2026-10-31');
+  assert.equal(n.method,'scripture-context-editorial');
+  assert.match(n.reviewedOn,/^\d{4}-\d{2}-\d{2}$/,'Missing dated study review '+e.id);
+  assert.ok(n.reviewedOn>='2026-10-31','Review predates established editorial baseline '+e.id);
   assert.ok(n.context.trim().length>=120,'Underdeveloped context '+e.id);
   assert.ok(!contexts.has(n.context),'Repeated context '+e.id);contexts.add(n.context);
   assert.ok(n.crossReferences.length>=1&&n.crossReferences.length<=3,e.id);
