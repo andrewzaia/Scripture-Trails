@@ -88,14 +88,17 @@ test('historically sensitive profiles attribute limits to named academic works',
  assert.throws(()=>validatePersonTrails(counts,ids,[corrupted]));
 });
 
-test('person trail source range stays precise for six audited descriptions',()=>{
+test('person trail source ranges stay precise for nine audited descriptions',()=>{
  const expected=[
   ['abraham','Covenant sign','Genesis 17:9-14'],
   ['abraham',"End of Abraham's life",'Genesis 25:8-10'],
   ['moses','The burning bush','Exodus 3:2-10'],
   ['moses','At Sinai','Exodus 20:1-17'],
   ['david-king','Dynastic promise','2 Samuel 7:12-16'],
-  ['hezekiah','Accession and reforms','2 Kings 18:3-6']
+  ['hezekiah','Accession and reforms','2 Kings 18:3-6'],
+  ['abraham','Call of Abram','Genesis 12:1-3'],
+  ['hezekiah','Petition in Jerusalem','2 Kings 19:14-19'],
+  ['paul-apostle','Ministry in Rome','Acts 28:30-31']
  ];
  for(const [person,label,reference] of expected){
   const stage=personTrail(person).stages.find(s=>s.label===label);
