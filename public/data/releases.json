@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "version": "0.44.5",
+      "date": "2026-10-31",
+      "title": "Clearer source passages for biblical people",
+      "changes": [
+        "Widen Abraham's call to include the promise in Genesis 12, Hezekiah's letter to include his prayer in 2 Kings 19, and Paul's Rome account to include Acts 28:31.",
+        "Protect the nine corrected passage ranges with regression tests while retaining existing study text and source qualifications."
+      ]
+    },
+    {
       "version": "0.44.4",
       "date": "2026-10-31",
       "title": "More precise Scripture passages in people trails",
