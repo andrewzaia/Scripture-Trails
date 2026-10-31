@@ -379,4 +379,5 @@ test('Gospel research register offers balanced Bethsaida and Emmaus site citatio
  await expect(etTell).toHaveAttribute('rel','noopener noreferrer');
  await expect(bethsaida.getByRole('link',{name:/Season 9 field updates/})).toHaveAttribute('href','https://www.bethsaida-julias.com/updates');
  await expect(emmaus.getByRole('link',{name:/Bible.org textual commentary/})).toHaveAttribute('href','https://bible.org/seriespage/luke-24');
+ await expect(emmaus.getByRole('link',{name:/Bible.org textual commentary/})).toHaveAttribute('rel','noopener noreferrer');
 });
