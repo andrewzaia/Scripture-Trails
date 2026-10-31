@@ -9,7 +9,7 @@ function mockFetcher(version='0.44.10',overrides={}){
  const routes={
  '/':{text:page},
  '/data/releases.json':{json:{releases:[{version}]}},
- '/data/roadmap.json':{json:{v1Readiness:{target:'1.0.0',gates:[{},{},{},{},{}]}}},
+ '/data/roadmap.json':{json:{v1Readiness:{target:'1.0.0',gates:[4,4,3,3,3].map(n=>({criteria:Array.from({length:n},(_,i)=>({id:'id-'+n+'-'+i,status:'open'}))}))}}},
  '/assets/app.js':{text:'import {APP} from "./books.js?v='+version+'";'}
  };
  return {records,fetcher:async(url,opts)=>{
@@ -26,6 +26,8 @@ test('public v1 release smoke checks exact footer, release history, module and a
  assert.equal(result.version,'0.44.10');
  assert.equal(result.viewsChecked,7);
  assert.equal(result.roadmapGates,5);
+ assert.equal(result.criteriaTotal,17);
+ assert.equal(result.criteriaOpen,17);
  assert.equal(records.length,4);
  assert.ok(records.every(x=>x.redirect==='error'));
  assert.ok(records.every(x=>x.url.startsWith('https://www.scripturetrails.com/')));
@@ -36,6 +38,7 @@ test('public v1 smoke fails closed for stale deployments and missing release ass
   [{'/':{text:'<html>stale site version</html>'}},/footer version/],
   [{'/data/releases.json':{json:{releases:[{version:'0.44.9'}]}}},/changelog version/],
   [{'/data/roadmap.json':{json:{v1Readiness:{target:'1.0.0',gates:[]}}}},/roadmap readiness/],
+  [{'/data/roadmap.json':{json:{v1Readiness:{target:'1.0.0',gates:[{},{},{},{},{}]}}}},/readiness criteria incomplete/],
   [{'/assets/app.js':{text:'no versioned imports'}},/main module/]
  ]){
   const {fetcher}=mockFetcher('0.44.10',overrides);
