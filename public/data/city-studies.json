@@ -211,6 +211,26 @@
       "access": "Notes that many textual witnesses read 60 stadia, while others read 160; this does not independently settle the first-century Emmaus site.",
       "checkedOn": "2026-11-01",
       "rights": "External commentary linked, not reproduced."
+    },
+    "nazareth-annunciation-oxford": {
+      "title": "Pilgrims, monks, and digs - Archaeology of Jesus' Nazareth, chapter 2",
+      "publisher": "Ken Dark, Oxford University Press, 2023, pp. 23-51",
+      "url": "https://academic.oup.com/book/45361/chapter-abstract/389285524",
+      "kind": "Academic archaeology, publisher abstract",
+      "author": "Ken Dark",
+      "doi": "10.1093/oso/9780192865397.003.0002",
+      "checkedOn": "2026-11-01",
+      "access": "Publisher chapter abstract and metadata checked; full paywalled chapter not accessed.",
+      "scope": "The publisher abstract specifically identifies the Church of the Annunciation site and its archaeology, not an excavated verification of Luke 1."
+    },
+    "nazareth-annunciation-custody": {
+      "title": "Nazareth - Basilica of the Annunciation: sanctuary history and archaeology",
+      "publisher": "Franciscan Custody of the Holy Land",
+      "url": "https://www.custodia.org/en/sanctuaries/nazareth-basilica-of-the-annunciation/",
+      "kind": "Sacred-site custodian history and devotional tradition",
+      "checkedOn": "2026-11-01",
+      "access": "Sanctuary history reviewed; its devotional claims describe veneration, not independently authenticated coordinates.",
+      "scope": "Records traditions, church phases and local archaeology associated with the venerated site."
     }
   },
   "cities": [
@@ -615,8 +635,9 @@
           "description": "Church and pilgrimage landscapes developed around traditional accounts of the Annunciation and Jesus' upbringing.",
           "passages": [],
           "sourceIds": [
-            "nazareth-cambridge",
-            "nazareth-oxford"
+            "nazareth-annunciation-oxford",
+            "nazareth-annunciation-custody",
+            "nazareth-cambridge"
           ],
           "classification": "historical-context"
         },
@@ -666,10 +687,11 @@
         {
           "title": "Annunciation traditions",
           "kind": "tradition",
-          "claim": "Christian churches and local commemoration preserve later religious traditions tied to Nazareth.",
-          "limitation": "The Gospel narratives do not provide coordinates for these traditional holy sites.",
+          "claim": "The Basilica of the Annunciation preserves later Christian commemoration associated with Luke 1:26-38; archaeological and sanctuary accounts describe earlier occupation and later church phases.",
+          "limitation": "Commemoration and excavated structures cannot establish the precise place of the angelic announcement; the Gospel text gives no archaeological coordinates.",
           "sourceIds": [
-            "nazareth-oxford"
+            "nazareth-annunciation-oxford",
+            "nazareth-annunciation-custody"
           ],
           "passages": [
             "Luke 1:26-38"
@@ -723,7 +745,9 @@
       "sourceIds": [
         "nazareth-iaa",
         "nazareth-cambridge",
-        "nazareth-oxford"
+        "nazareth-oxford",
+        "nazareth-annunciation-oxford",
+        "nazareth-annunciation-custody"
       ],
       "image": {
         "title": "Church of the Annunciation in modern Nazareth",
@@ -774,6 +798,8 @@
             "John 1:45-46"
           ],
           "sourceIds": [
+            "nazareth-annunciation-oxford",
+            "nazareth-annunciation-custody",
             "nazareth-cambridge",
             "nazareth-oxford"
           ],
