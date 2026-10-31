@@ -1,4 +1,4 @@
-import {appendCitationReview} from './citation-review.js?v=0.44.11';
+import {appendCitationReview} from './citation-review.js?v=0.44.12';
 import {parseRef} from './books.js';
 import {GOSPEL_BOOKS,gospelSequence,gospelPassages,validateGospelChronology} from './gospel-chronology.js';
 /** Journeys of Jesus: self-hosted schematic SVG atlas. No tiles or external JavaScript. */
@@ -60,6 +60,7 @@ export function validateAuditData(audit,journeys,geography){
   if(known.has(issue.id)||!issueStatuses.has(issue.status)||!issue.description||!issue.category||!issue.events?.length||!issue.events.every(id=>ids.has(id))||!(issue.references||[]).every(url=>/^https:\/\//.test(url)))throw Error('Invalid audit issue '+issue.id);
   if(issue.referenceTitles!==undefined){
    if(!issue.referenceTitles||Array.isArray(issue.referenceTitles)||typeof issue.referenceTitles!=='object')throw Error('Invalid audit reference labels '+issue.id);
+   if(Object.keys(issue.referenceTitles).length!==issue.references.length)throw Error('Missing audit source title '+issue.id);
    for(const [url,title] of Object.entries(issue.referenceTitles)){
     if(!issue.references.includes(url)||typeof title!=='string'||title.trim().length<10)throw Error('Unattributed audit source '+issue.id);
    }

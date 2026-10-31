@@ -929,6 +929,20 @@
         "Reconcile four stale people-trail citation findings already corrected in v0.44.4; retain the broader v1 critical-claims and content-audit gates as open"
       ],
       "verification": "Requires source-build tests, explicit bibliography integrity tests, browser source-link checks, SemVer release and exact-SHA Cloudflare deployment verification. Independent chronological specialist signoff is still pending."
+    },
+    {
+      "id": "v1-flagship-site-evidence-consistency",
+      "phase": "next",
+      "status": "delivered",
+      "title": "Bethsaida and Emmaus - consistent evidence across Gospel and city studies",
+      "summary": "Cross-link named, balanced excavation and textual sources from existing historical-city records into the Gospel audit, preserving both identifications as disputed.",
+      "capabilities": [
+        "Provide named et-Tell and el-Araj excavation sources and Emmaus textual-location references",
+        "Reject incomplete academic link labels and unregistered evidence links through source integrity checks",
+        "Test source visibility on the real Gospel audit browser panel",
+        "Keep specialist and comprehensive content verification gates open"
+      ],
+      "verification": "Full source build, browser suite, release gate, and exact-commit Cloudflare production deployment required before publication."
     }
   ],
   "v1Readiness": {
@@ -968,7 +982,7 @@
         "id": "evidence",
         "title": "Biblical evidence and editorial quality",
         "summary": "Important interpretations must be traceable to Scripture, with interpretive uncertainty, original contexts and external sources stated accurately.",
-        "next": "Prioritise independent specialist review of high-impact Gospel chronology and archaeology, plus confidential publisher-rights verification. The Last Supper source audit now cites directly relevant but competing academic interpretations without asserting a harmonised calendar.",
+        "next": "The Bethsaida and Emmaus Gospel research registers now align with named and qualified historical-city sources. Independently verify remaining high-impact disputed chronology, archaeology and contractual permissions before v1 acceptance.",
         "criteria": [
           {
             "id": "atlas-context",

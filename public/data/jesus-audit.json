@@ -226,11 +226,18 @@
         "j034",
         "j043"
       ],
-      "description": "El-Araj and et-Tell remain competing Bethsaida candidates; excavations must not be treated as proof of the Gospel event.",
+      "description": "Bethsaida is named in the Gospel narratives, but et-Tell and el-Araj remain competing archaeological identifications. Both excavation teams report ancient settlement, while the el-Araj team has described additional Roman-period finds in its 2025 field reports. Excavation strata, historical-geographic arguments and shoreline reconstruction do not independently identify the precise Gospel location or prove a narrated episode.",
       "references": [
-        "https://www.bethsaida-julias.com/season8report"
+        "https://ngsba.org/excavations/bethsaida/",
+        "https://www.bethsaida-julias.com/season8report",
+        "https://www.bethsaida-julias.com/updates"
       ],
-      "status": "open"
+      "status": "open",
+      "referenceTitles": {
+        "https://ngsba.org/excavations/bethsaida/": "Bethsaida et-Tell - Nelson Glueck School excavations",
+        "https://www.bethsaida-julias.com/season8report": "Bethsaida el-Araj - Season 8 excavation report",
+        "https://www.bethsaida-julias.com/updates": "Bethsaida el-Araj - Season 9 field updates"
+      }
     },
     {
       "id": "emmaus-identification",
@@ -238,9 +245,16 @@
       "events": [
         "j075"
       ],
-      "description": "The biblical name Emmaus is clear but its modern identification remains contested.",
-      "references": [],
-      "status": "open"
+      "description": "Luke 24:13 commonly reads 60 stadia to Emmaus, but some manuscript witnesses read 160. Josephus' nearby Emmaus/Colonia account has a separate 30-versus-60-stadia variant. The different geographical and historical arguments for Qalunya/Motza, el-Qubeibeh and Emmaus Nicopolis do not establish which village the Gospel names; later pilgrimage traditions and manuscript variants cannot independently prove the event site.",
+      "references": [
+        "https://www.biblegateway.com/resources/encyclopedia-of-the-bible/Emmaus",
+        "https://bible.org/seriespage/luke-24"
+      ],
+      "status": "open",
+      "referenceTitles": {
+        "https://www.biblegateway.com/resources/encyclopedia-of-the-bible/Emmaus": "Emmaus - Encyclopedia of the Bible, geography and Josephus",
+        "https://bible.org/seriespage/luke-24": "Luke 24 - Bible.org textual commentary"
+      }
     },
     {
       "id": "sea-crossing-destinations",

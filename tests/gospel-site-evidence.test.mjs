@@ -5,6 +5,7 @@ import {validatePlaceStudies,validateAuditData,validateJourneyData} from '../pub
 import {validateRoadmap} from '../public/assets/roadmap.js';
 const read=p=>JSON.parse(readFileSync(new URL('../'+p,import.meta.url),'utf8'));
 const geo=read('public/data/jesus-geography.json');
+const cityStudies=read('public/data/city-studies.json');
 const jes=read('public/data/jesus-journeys.json');
 const audit=read('public/data/jesus-audit.json');
 const roadmap=read('public/data/roadmap.json');
@@ -75,4 +76,21 @@ test('unsubstantiated site comparisons and invented bibliography fail closed',()
  const js=readFileSync(new URL('../public/assets/jesus-map.js',import.meta.url),'utf8');
  for(const hook of ['study-identification-review','study-identification-claim','study-identification-support','study-identification-limit','study-identification-sources'])assert.ok(html.includes('data-jesus="'+hook+'"'),hook);
  assert.match(js,/review.hidden=!detail/);
+});
+
+test('Bethsaida and Emmaus Gospel research links agree with historical-city citations',()=>{
+ for(const id of ['bethsaida','emmaus']){
+  const issue=audit.issues.find(x=>x.id===id+'-identification'),city=cityStudies.disputed.find(x=>x.id===id);
+  assert.equal(issue.status,'open');assert.ok(city);
+  const approved=new Set([...city.sourceIds,...city.candidates.flatMap(c=>c.sourceIds||[])].map(x=>cityStudies.sources[x]?.url));
+  assert.deepEqual(new Set(Object.keys(issue.referenceTitles)),new Set(issue.references));
+  assert.equal(new Set(issue.references).size,issue.references.length);
+  for(const url of issue.references)assert.ok(approved.has(url),'Unregistered cross-study source '+url);
+  assert.match(issue.description,/do not|cannot independently/i);
+ }
+ assert.equal(audit.issues.find(x=>x.id==='bethsaida-identification').references.length,3);
+ assert.equal(audit.issues.find(x=>x.id==='emmaus-identification').references.length,2);
+ const broken=structuredClone(audit);
+ delete broken.issues.find(x=>x.id==='emmaus-identification').referenceTitles['https://bible.org/seriespage/luke-24'];
+ assert.throws(()=>validateAuditData(broken,jes,geo),/Missing audit source title/);
 });

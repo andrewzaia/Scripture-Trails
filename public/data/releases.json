@@ -1,6 +1,16 @@
 {
   "releases": [
     {
+      "version": "0.44.12",
+      "date": "2026-11-01",
+      "title": "Consistent sources for disputed Gospel locations",
+      "changes": [
+        "Add named et-Tell, el-Araj and Emmaus archaeological and textual research links to the Gospel audit, using references already verified in the historical-city studies.",
+        "Cross-check both source registries and require complete descriptive link labels; preserve unresolved identifications and independent review requirements.",
+        "Protect source provenance and rendered audit links through content and browser regression tests."
+      ]
+    },
+    {
       "version": "0.44.11",
       "date": "2026-11-01",
       "title": "Better evidenced Last Supper chronology",

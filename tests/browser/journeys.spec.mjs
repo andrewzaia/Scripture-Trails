@@ -362,3 +362,22 @@ test('Gospel Last Supper audit names relevant scholarship and keeps the calendar
   await expect(link).toHaveAttribute('rel','noopener noreferrer');
  }
 });
+
+test('Gospel research register offers balanced Bethsaida and Emmaus site citations',async({page})=>{
+ await page.goto('/?view=jesus-map&stop=j075&translation=ESV');
+ await expect(page.locator('#view-jesus-map')).toBeVisible();
+ await page.locator('.jesus-audit-expand summary').filter({hasText:'Open questions requiring further study'}).click();
+ const root=page.locator('[data-jesus="audit-open"]');
+ const bethsaida=root.locator('.jesus-audit-correction').filter({hasText:'bethsaida-identification'});
+ const emmaus=root.locator('.jesus-audit-correction').filter({hasText:'emmaus-identification'});
+ await expect(bethsaida.getByRole('link')).toHaveCount(3);
+ await expect(emmaus.getByRole('link')).toHaveCount(2);
+ await expect(bethsaida).toContainText('competing archaeological identifications');
+ await expect(emmaus).toContainText('160');
+ const etTell=bethsaida.getByRole('link',{name:/Nelson Glueck School/});
+ await expect(etTell).toHaveAttribute('href','https://ngsba.org/excavations/bethsaida/');
+ await expect(etTell).toHaveAttribute('rel','noopener noreferrer');
+ await expect(bethsaida.getByRole('link',{name:/Season 9 field updates/})).toHaveAttribute('href','https://www.bethsaida-julias.com/updates');
+ await expect(emmaus.getByRole('link',{name:/Bible.org textual commentary/})).toHaveAttribute('href','https://bible.org/seriespage/luke-24');
+ await expect(emmaus.getByRole('link',{name:/Bible.org textual commentary/})).toHaveAttribute('rel','noopener noreferrer');
+});
