@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.44.5 - 31/10/2026: Clearer source passages for biblical people
+
+- Widen Abraham's call to include the promise in Genesis 12, Hezekiah's letter to include his prayer in 2 Kings 19, and Paul's Rome account to include Acts 28:31.
+- Protect the nine corrected passage ranges with regression tests while retaining existing study text and source qualifications.
+
 ## 0.44.4 - 31/10/2026: More precise Scripture passages in people trails
 
 - Expand six study references for Abraham, Moses, David and Hezekiah to include the verses that support their full stage descriptions.

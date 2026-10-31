@@ -10,7 +10,7 @@ export const PERSON_TRAILS=Object.freeze([
     "stages": [
       {
         "label": "Call of Abram",
-        "ref": "Genesis 12:1",
+        "ref": "Genesis 12:1-3",
         "note": "Abram is told to depart and receives a promise.",
         "source": "primary-scripture",
         "review": "editorial-reading-aid"
@@ -252,7 +252,7 @@ export const PERSON_TRAILS=Object.freeze([
       },
       {
         "label": "Petition in Jerusalem",
-        "ref": "2 Kings 19:14",
+        "ref": "2 Kings 19:14-19",
         "note": "Hezekiah receives the Assyrian communication and prays.",
         "source": "primary-scripture",
         "review": "editorial-reading-aid"
@@ -387,7 +387,7 @@ export const PERSON_TRAILS=Object.freeze([
       },
       {
         "label": "Ministry in Rome",
-        "ref": "Acts 28:30",
+        "ref": "Acts 28:30-31",
         "note": "Acts closes with Paul teaching in Rome.",
         "source": "primary-scripture",
         "review": "editorial-reading-aid"
