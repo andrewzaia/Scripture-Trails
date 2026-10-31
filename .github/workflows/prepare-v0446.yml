@@ -1,0 +1,42 @@
+name: Prepare v0.44.6 CI safety patch
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: write
+
+jobs:
+  prepare:
+    if: ${{ github.event.pull_request.head.repo.full_name == github.repository && github.head_ref == 'work/v0446-actions-runtime-hardening' }}
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: ${{ github.head_ref }}
+          fetch-depth: 0
+      - uses: actions/setup-node@v5
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - name: Generate versioned patch release and check source
+        run: |
+          set -eu
+          CURRENT_VERSION="$(node -p 'require("./package.json").version')"
+          if [ "$CURRENT_VERSION" != "0.44.5" ]; then
+            echo "Expected release baseline v0.44.5 but found $CURRENT_VERSION; refusing duplicate release."
+            exit 1
+          fi
+          npm run release -- patch "Maintainable GitHub Actions and safer Atlas rebuilds" "Move CI to Node 24-compatible action versions and pin Ubuntu 24.04 during the Ubuntu 26.04 transition, retaining full Chromium, Firefox and WebKit validation." "Prevent direct unversioned Atlas reference changes from being pushed to main; require the normal versioned pull-request checks." "Add workflow regression tests for action versions, supported runners and release safeguards."
+          npm run build
+      - name: Remove preparation workflow and commit generated release
+        run: |
+          set -eu
+          git rm .github/workflows/prepare-v0446.yml
+          git add -A
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore(release): prepare v0.44.6 workflow safety patch"
+          git push origin HEAD:work/v0446-actions-runtime-hardening
