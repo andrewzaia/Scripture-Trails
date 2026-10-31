@@ -21,6 +21,17 @@ test('CI runs supported Node 24 actions on a stable runner with all three browse
  assert.match(ci,/exit 1/,'a failing required source or browser job must block release');
 });
 
+test('superseded PR validations cancel without canceling main or weakening release gates',()=>{
+ const ci=read('ci.yml');
+ assert.match(ci,/^concurrency:/m);
+ assert.ok(ci.includes("group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}"));
+ assert.ok(ci.includes("cancel-in-progress: ${{ github.event_name == 'pull_request' }}"));
+ assert.match(ci,/needs: \[test, browser\]/);
+ assert.match(ci,/SOURCE_RESULT/);
+ assert.match(ci,/BROWSER_RESULT/);
+ assert.match(ci,/exit 1/);
+});
+
 test('Atlas reference rebuild cannot bypass semantic release reviews by directly pushing to main',()=>{
  const flow=read('import-crossrefs.yml');
  assert.match(flow,/contents: read/);

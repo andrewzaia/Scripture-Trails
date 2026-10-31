@@ -8,6 +8,12 @@ on:
 permissions:
   contents: read
 
+# PR runs are disposable until the latest head is validated. Pushes to main
+# never cancel one another; the final PR head still needs every required gate.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
 jobs:
   # Pin the tested image while ubuntu-latest transitions to Ubuntu 26.04.
   # Upgrade the runner explicitly after a full cross-browser compatibility run.
