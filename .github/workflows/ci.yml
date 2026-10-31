@@ -22,9 +22,23 @@ jobs:
       - run: npm ci
       - name: Check source and tests
         run: npm run build
+  # Each engine gets an isolated runner. Firefox's full-page axe scans are
+  # resource-heavy; sharing a VM with other browser engines caused intermittent
+  # timeouts, hiding real regressions behind runner contention.
   browser:
+    name: Browser - ${{ matrix.engine }}
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 35
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - engine: chromium
+            projects: '--project=desktop-chromium --project=mobile-chromium'
+          - engine: firefox
+            projects: '--project=desktop-firefox'
+          - engine: webkit
+            projects: '--project=desktop-webkit --project=mobile-webkit'
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -32,14 +46,14 @@ jobs:
           node-version-file: .nvmrc
           cache: npm
       - run: npm ci
-      - name: Install Chromium, Firefox, WebKit and OS dependencies
-        run: npx playwright install --with-deps chromium firefox webkit
+      - name: Install ${{ matrix.engine }} and OS dependencies
+        run: npx playwright install --with-deps ${{ matrix.engine }}
       - name: Cross-browser desktop/mobile journeys, accessibility and layout
-        run: npm run test:browser
+        run: npm run test:browser -- ${{ matrix.projects }} --workers=1
       - uses: actions/upload-artifact@v4
         if: ${{ !cancelled() }}
         with:
-          name: browser-report
+          name: browser-report-${{ matrix.engine }}
           path: |
             playwright-report/
             test-results/
