@@ -348,9 +348,10 @@ test('Gospel Last Supper audit names relevant scholarship and keeps the calendar
  await expect(page.locator('#view-jesus-map')).toBeVisible();
  await expect(page.locator('[data-jesus="event-heading"]')).toHaveText('Last Supper');
  await expect(page.locator('[data-jesus="episode-study-context"]')).toContainText('1 Corinthians 11:23-26');
+ await page.locator('.jesus-audit-expand summary').filter({hasText:'Open questions requiring further study'}).click();
  const audit=page.locator('[data-jesus="audit-open"]');
  const row=audit.locator('.jesus-audit-correction').filter({hasText:'last-supper-calendar'});
- await expect(row).toContainText('scholars');
+ await expect(row).toContainText('Academic analyses');
  await expect(row).toContainText('Passover');
  for(const title of ['Passover and Last Supper Revisited','Dating the Death of Jesus','Ratzinger and Aquinas']){
   const link=row.getByRole('link',{name:new RegExp(title)});

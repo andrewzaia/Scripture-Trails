@@ -70,7 +70,7 @@ test('Last Supper chronology audit uses directly relevant, named opposing schola
  assert.match(issue.description,/scholarly interpretations remain debated|scholarly interpretations|Academic analyses/);
  assert.match(event.qualification,/No specific modern date/);
  assert.match(event.study.context,/1 Corinthians 11:23-26/);
- assert.deepEqual(event.study.crossReferences,['Mark 14:12-26','John 18:28-19:14','1 Corinthians 11:23-26']);
+ assert.deepEqual(event.study.crossReferences,['Mark 14:12-26','John 19:14','1 Corinthians 11:23-26']);
  assert.equal(validateAuditData(a,j,g),true);
  const missing=structuredClone(a);
  missing.issues.find(x=>x.id==='last-supper-calendar').referenceTitles['https://arbitrary.example/']='Fictitious unrelated publication';
