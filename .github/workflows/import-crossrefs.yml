@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
   group: scripture-atlas-reference-refresh
@@ -12,29 +12,27 @@ concurrency:
 
 jobs:
   import:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 15
     steps:
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: Set up Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version-file: .nvmrc
+      - run: npm ci
       - name: Rebuild from the reviewed local source archive
         run: npm run import:refs
       - name: Validate local data and website
         run: npm run build
-      - name: Commit deterministic Atlas data if changed
+      - name: Reject unversioned regenerated Atlas data
         shell: bash
         run: |
           set -euo pipefail
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add public/data/refs/*.json
-          if ! git diff --cached --quiet; then
-            git commit -m 'Rebuild Atlas from reviewed local OpenBible snapshot'
-            git push origin HEAD:main
-          else
-            echo 'Local Atlas data is unchanged.'
+          if [ -n "$(git status --porcelain -- public/data/refs)" ]; then
+            echo "::error::Atlas data changed. A versioned pull request with matching changelogs, footer and full release checks is required."
+            git status --short -- public/data/refs
+            exit 1
           fi
+          echo "Reviewed Atlas data is deterministic and unchanged."

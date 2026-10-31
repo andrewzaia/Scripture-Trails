@@ -9,13 +9,15 @@ permissions:
   contents: read
 
 jobs:
+  # Pin the tested image while ubuntu-latest transitions to Ubuntu 26.04.
+  # Upgrade the runner explicitly after a full cross-browser compatibility run.
   test:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           fetch-depth: 0 # Compare the complete PR with its merge base
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v5
         with:
           node-version-file: .nvmrc
           cache: npm
@@ -27,7 +29,7 @@ jobs:
   # timeouts, hiding real regressions behind runner contention.
   browser:
     name: Browser - ${{ matrix.engine }}
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 35
     strategy:
       fail-fast: false
@@ -40,8 +42,8 @@ jobs:
           - engine: webkit
             projects: '--project=desktop-webkit --project=mobile-webkit'
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
         with:
           node-version-file: .nvmrc
           cache: npm
@@ -50,7 +52,7 @@ jobs:
         run: npx playwright install --with-deps ${{ matrix.engine }}
       - name: Cross-browser desktop/mobile journeys, accessibility and layout
         run: npm run test:browser -- ${{ matrix.projects }} --workers=1
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v6
         if: ${{ !cancelled() }}
         with:
           name: browser-report-${{ matrix.engine }}
@@ -61,7 +63,7 @@ jobs:
   release-gate:
     if: ${{ always() }}
     needs: [test, browser]
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - name: Require source and browser checks
         env:

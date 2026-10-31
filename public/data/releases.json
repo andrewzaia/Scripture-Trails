@@ -1,6 +1,16 @@
 {
   "releases": [
     {
+      "version": "0.44.6",
+      "date": "2026-10-31",
+      "title": "Maintainable GitHub Actions and safer Atlas rebuilds",
+      "changes": [
+        "Move CI to Node 24-compatible action versions and pin Ubuntu 24.04 during the Ubuntu 26.04 transition, retaining full Chromium, Firefox and WebKit validation.",
+        "Prevent direct unversioned Atlas reference changes from being pushed to main; require the normal versioned pull-request checks.",
+        "Add workflow regression tests for action versions, supported runners and release safeguards."
+      ]
+    },
+    {
       "version": "0.44.5",
       "date": "2026-10-31",
       "title": "Clearer source passages for biblical people",

@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.44.6 - 31/10/2026: Maintainable GitHub Actions and safer Atlas rebuilds
+
+- Move CI to Node 24-compatible action versions and pin Ubuntu 24.04 during the Ubuntu 26.04 transition, retaining full Chromium, Firefox and WebKit validation.
+- Prevent direct unversioned Atlas reference changes from being pushed to main; require the normal versioned pull-request checks.
+- Add workflow regression tests for action versions, supported runners and release safeguards.
+
 ## 0.44.5 - 31/10/2026: Clearer source passages for biblical people
 
 - Widen Abraham's call to include the promise in Genesis 12, Hezekiah's letter to include his prayer in 2 Kings 19, and Paul's Rome account to include Acts 28:31.
