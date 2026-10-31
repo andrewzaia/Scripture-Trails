@@ -1,6 +1,16 @@
 {
   "releases": [
     {
+      "version": "0.44.7",
+      "date": "2026-10-31",
+      "title": "Clearer archaeological chronology for Jericho",
+      "changes": [
+        "Qualify the 1995 Tell es-Sultan radiocarbon calibration as provisional, distinguish cereal and charcoal results, and avoid attributing the dated destruction to the events or actors narrated in Joshua 6.",
+        "Link to the original Radiocarbon publisher record and DOI, retaining source rights and the distinction between Bronze Age and Gospel-era Jericho.",
+        "Add regression coverage protecting the archaeological dating caveats."
+      ]
+    },
+    {
       "version": "0.44.6",
       "date": "2026-10-31",
       "title": "Maintainable GitHub Actions and safer Atlas rebuilds",

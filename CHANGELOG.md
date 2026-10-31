@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.44.7 - 31/10/2026: Clearer archaeological chronology for Jericho
+
+- Qualify the 1995 Tell es-Sultan radiocarbon calibration as provisional, distinguish cereal and charcoal results, and avoid attributing the dated destruction to the events or actors narrated in Joshua 6.
+- Link to the original Radiocarbon publisher record and DOI, retaining source rights and the distinction between Bronze Age and Gospel-era Jericho.
+- Add regression coverage protecting the archaeological dating caveats.
+
 ## 0.44.6 - 31/10/2026: Maintainable GitHub Actions and safer Atlas rebuilds
 
 - Move CI to Node 24-compatible action versions and pin Ubuntu 24.04 during the Ubuntu 26.04 transition, retaining full Chromium, Firefox and WebKit validation.
