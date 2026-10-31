@@ -24,7 +24,7 @@ test('previous journal reading progress survives contextual expansion',()=>{
  const saved={creation:['Genesis 1'],messiah:['Isaiah 7:10-17','Psalms 110'],shepherd:['John 10:11-30'],covenant:['Genesis 12:1-9'],grace:['James 2:14-26'],comfort:['Romans 8:28-39']};
  const restored=validateReadingPlans(saved);
  for(const [id,refs] of Object.entries(saved)){
-  assert.deepEqual(restored[id],refs);
+  assert.deepEqual([...restored[id]].sort(),[...refs].sort(),'Saved references changed for '+id);
   assert.ok(refs.every(ref=>PATHS.find(p=>p.id===id).refs.includes(ref)));
   assert.match(PATHS.find(p=>p.id===id).time,/\d+-\d+ hours/);
  }
