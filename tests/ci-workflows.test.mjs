@@ -15,6 +15,7 @@ test('CI runs supported Node 24 actions on a stable runner with all three browse
  assert.match(ci,/actions\/upload-artifact@v6/);
  for(const engine of ['chromium','firefox','webkit'])assert.match(ci,new RegExp('engine: '+engine));
  assert.match(ci,/needs: \[test, browser\]/);
+ assert.ok(ci.includes('  browser:\n    name: Browser - ${{ matrix.engine }}\n    needs: test'),'browser matrix must wait for source checks');
  assert.match(ci,/\$SOURCE_RESULT/);
  assert.match(ci,/\$BROWSER_RESULT/);
  assert.match(ci,/\[ "\$SOURCE_RESULT" != "success" \] \|\| \[ "\$BROWSER_RESULT" != "success" \]/);
