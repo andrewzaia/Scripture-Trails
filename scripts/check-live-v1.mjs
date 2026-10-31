@@ -4,7 +4,7 @@ import {resolve} from 'node:path';
 // Public, read-only release smoke. No API keys, private notes or Bible text are
 // requested, stored or logged. The separate check:live-reader probes publishers.
 export async function checkLiveV1({origin='https://www.scripturetrails.com',expectedVersion,fetcher=fetch}={}){
- if(!/^\\d+\\.\\d+\\.\\d+$/.test(expectedVersion||''))throw Error('Expected semantic release version required');
+ if(!/^[0-9]+[.][0-9]+[.][0-9]+$/.test(expectedVersion||''))throw Error('Expected semantic release version required');
  const base=new URL(origin);
  if(base.protocol!=='https:'||base.username||base.password||base.search||base.hash||base.pathname!=='/')throw Error('Origin must be an HTTPS site root');
  async function get(path){
@@ -15,7 +15,7 @@ export async function checkLiveV1({origin='https://www.scripturetrails.com',expe
   return res;
  }
  const page=(await (await get('/')).text());
- const versionMarker=new RegExp('id="site-version"[^>]*>v'+expectedVersion.replace(/\\./g,'\\.')+'<');
+ const versionMarker=new RegExp('id="site-version"[^>]*>v'+expectedVersion.replaceAll('.','[.]')+'<');
  if(!versionMarker.test(page))throw Error('Published footer version differs from expected '+expectedVersion);
  if(!page.includes('/assets/app.js?v='+expectedVersion))throw Error('Published entry-point cache version mismatch');
  for(const id of ['view-reader','view-connections','view-journeys','view-entities','view-city-studies','view-roadmap','view-notebook']){
