@@ -62,7 +62,7 @@ test('Cana comparison changes archaeological sources with highlighted candidate'
  await expect(sources).toContainText('Cana location proposals and ancient names');
 });
 
-test('Bethsaida comparison displays the selected excavation team's evidence without claiming consensus',async({page})=>{
+test('Bethsaida comparison displays evidence from both excavation teams without claiming consensus',async({page})=>{
  await open(page,'city-studies');
  const root=page.locator('[data-city-studies]');
  await expect(root).toHaveAttribute('data-ready','true');

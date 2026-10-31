@@ -7,7 +7,8 @@
       "changes": [
         "Provide candidate-specific excavation citations for et-Tell and el-Araj, including 2025 Roman-period field reports, while explicitly retaining the disputed Gospel identification.",
         "Protect source integrity and interactive selection with unit and browser tests, distinguishing excavated material from excavation-team interpretations.",
-        "Run the full browser matrix only after successful source and build checks, retaining complete coverage and the required release gate."
+        "Run the full browser matrix only after successful source and build checks, retaining complete coverage and the required release gate.",
+        "Pre-parse Playwright test files during the fast source/build job, avoiding browser runner usage for malformed tests."
       ]
     },
     {
