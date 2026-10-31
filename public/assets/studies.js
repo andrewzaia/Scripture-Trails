@@ -59,6 +59,7 @@ const JOURNAL_CHAPTERS={
       "title": "Wisdom, Word and the work of Christ",
       "focus": "Compare creation language in wisdom and prophetic literature with the New Testament's descriptions of Christ.",
       "readings": [
+        "Genesis 1",
         "Proverbs 8:22-31",
         "Isaiah 40:12-31",
         "John 1:1-18",
@@ -136,6 +137,7 @@ const JOURNAL_CHAPTERS={
       "title": "Birth and preparation",
       "focus": "Read the texts used in the infancy and forerunner narratives, keeping quotation and interpretation distinct.",
       "readings": [
+        "Isaiah 7:1-9",
         "Isaiah 7:10-17",
         "Micah 5:1-5",
         "Isaiah 40:1-11",
@@ -183,6 +185,7 @@ const JOURNAL_CHAPTERS={
       "focus": "Conclude with resurrection testimony, enthronement texts and later worship imagery.",
       "readings": [
         "Psalms 16:7-11",
+        "Psalms 110",
         "Daniel 7:13-14",
         "Luke 24:44-49",
         "Acts 2:22-36",
@@ -260,6 +263,7 @@ const JOURNAL_CHAPTERS={
       "title": "The Good Shepherd lays down his life",
       "focus": "Read Jesus' self-description alongside his ministry, passion and subsequent pastoral commission.",
       "readings": [
+        "Isaiah 53:4-6",
         "John 10:11-30",
         "Mark 6:30-44",
         "Matthew 26:30-35",
@@ -554,6 +558,7 @@ const JOURNAL_CHAPTERS={
       "readings": [
         "Isaiah 25:6-9",
         "Isaiah 65:17-25",
+        "Romans 8:18-27",
         "Romans 8:28-39",
         "1 Thessalonians 4:13-18",
         "Revelation 7:13-17",

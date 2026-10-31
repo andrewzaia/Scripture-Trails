@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.44.13 - 01/11/2026: Contextual readings for journals and people trails
+
+- Add five missing biblical context readings to guided journals, retaining previous progress entries and approximate study times.
+- Extend Abraham, David and Paul person trails to include their narrated events, and clarify the Abrahamic covenant sign.
+- Add source-qualified regression tests for canonical ranges, saved progress, and editorial review labels; keep full v1 scholarly review open.
+
 ## 0.44.12 - 01/11/2026: Consistent sources for disputed Gospel locations
 
 - Add named et-Tell, el-Araj and Emmaus archaeological and textual research links to the Gospel audit, using references already verified in the historical-city studies.
