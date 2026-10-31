@@ -4,6 +4,7 @@
 
 - Expand six study references for Abraham, Moses, David and Hezekiah to include the verses that support their full stage descriptions.
 - Preserve the existing study notes, reading pathways and editorial qualifications.
+- Isolate Chromium, Firefox and WebKit browser tests in separate CI runners, using single-worker test execution to reduce resource contention without dropping accessibility assertions.
 
 ## 0.44.3 - 31/10/2026: Cross-browser accessibility verification
 
