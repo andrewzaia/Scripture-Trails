@@ -1,6 +1,16 @@
 {
   "releases": [
     {
+      "version": "0.44.4",
+      "date": "2026-10-31",
+      "title": "More precise Scripture passages in people trails",
+      "changes": [
+        "Expand six study references for Abraham, Moses, David and Hezekiah to include the verses that support their full stage descriptions.",
+        "Preserve the existing study notes, reading pathways and editorial qualifications.",
+        "Run Chromium, Firefox and WebKit checks in separate CI environments to improve accessibility-test reliability while retaining full coverage."
+      ]
+    },
+    {
       "version": "0.44.3",
       "date": "2026-10-31",
       "title": "Cross-browser accessibility verification",
