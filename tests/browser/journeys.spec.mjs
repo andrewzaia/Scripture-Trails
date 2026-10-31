@@ -353,6 +353,8 @@ test('Gospel Last Supper audit names relevant scholarship and keeps the calendar
  const row=audit.locator('.jesus-audit-correction').filter({hasText:'last-supper-calendar'});
  await expect(row).toContainText('Academic analyses');
  await expect(row).toContainText('Passover');
+ await expect(row.getByRole('link')).toHaveCount(3);
+ await expect(row).not.toContainText('independently proved');
  for(const title of ['Passover and Last Supper Revisited','Dating the Death of Jesus','Ratzinger and Aquinas']){
   const link=row.getByRole('link',{name:new RegExp(title)});
   await expect(link).toBeVisible();
