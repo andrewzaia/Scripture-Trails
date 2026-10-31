@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.44.9 - 01/11/2026: Balanced archaeological evidence for Bethsaida
+
+- Provide candidate-specific excavation citations for et-Tell and el-Araj, including 2025 Roman-period field reports, while explicitly retaining the disputed Gospel identification.
+- Protect source integrity and interactive selection with unit and browser tests, distinguishing excavated material from excavation-team interpretations.
+- Run the full browser matrix only after successful source and build checks, retaining complete coverage and the required release gate.
+
+- Pre-parse Playwright test files in the inexpensive source/build job so malformed tests fail before the browser runners start.
+
 ## 0.44.8 - 31/10/2026: Site-specific archaeology for Cana candidates
 
 - Add separately attributed archaeological sources for Kafr Kanna and Khirbet Qana, keeping the uncertain identification of Cana and the limits of archaeology explicit.

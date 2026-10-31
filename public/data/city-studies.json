@@ -183,6 +183,25 @@
       "kind": "Academic site inventory; recorded synagogue dated Late Roman and/or Byzantine",
       "access": "Excavation summary and scholarly references, including McCollough and Edwards. Late Roman/Byzantine synagogue evidence alone cannot determine the first-century Cana of John 2.",
       "checkedOn": "2026-10-31"
+    },
+    "bethsaida-et-tell": {
+      "title": "Bethsaida (et-Tell): excavation interpretation and site chronology",
+      "author": "Rami Arav",
+      "publisher": "The Nelson Glueck School of Biblical Archaeology, Hebrew Union College",
+      "url": "https://ngsba.org/excavations/bethsaida/",
+      "kind": "Et-Tell excavation-team summary; contested site identification",
+      "access": "Describes Iron Age architecture, Hellenistic and Early Roman occupation, and a proposed earlier shoreline. Excavation remains and geological reconstructions do not establish Gospel-era Bethsaida's precise location.",
+      "checkedOn": "2026-11-01",
+      "rights": "Linked source only; no copied photographs or excavation text."
+    },
+    "bethsaida-araj-2025": {
+      "title": "Bethsaida-Julias el-Araj: 2025 Season 9 excavation updates",
+      "publisher": "El-Araj Excavation Project, 2025 season field reporting",
+      "url": "https://www.bethsaida-julias.com/updates",
+      "kind": "El-Araj excavation-team field updates; identification disputed",
+      "access": "The excavation team reports Roman pottery and coins below Byzantine floors in Area F during 2025. These are site-team field observations, not independent confirmation that el-Araj is the Bethsaida in the Gospels.",
+      "checkedOn": "2026-11-01",
+      "rights": "Linked field updates only; no reproduced report text or photographs."
     }
   },
   "cities": [
@@ -1611,7 +1630,7 @@
       "id": "bethsaida",
       "name": "Bethsaida / Julias",
       "ref": "John 1:44",
-      "statement": "Multiple candidate sites near the northeastern Sea of Galilee compete; discoveries at one excavation do not end the identification debate.",
+      "statement": "The Gospels name Bethsaida, but modern identification remains contested between et-Tell and el-Araj. Both excavations report ancient settlement, and each team interprets historical geography differently; occupation evidence and proposed ancient shorelines do not independently identify the Gospel town or particular events.",
       "candidates": [
         {
           "name": "et-Tell",
@@ -1620,7 +1639,10 @@
             32.909
           ],
           "type": "proposed",
-          "note": "Longstanding inland candidate; questions remain about its setting relative to ancient shorelines."
+          "note": "Et-Tell has substantial Iron Age remains and Hellenistic/Early Roman material. Its excavation team argues that ancient shoreline change reconciles the mound's inland position with Bethsaida; this remains a disputed geographical identification.",
+          "sourceIds": [
+            "bethsaida-et-tell"
+          ]
         },
         {
           "name": "el-Araj",
@@ -1629,7 +1651,11 @@
             32.89
           ],
           "type": "proposed",
-          "note": "Excavated lakeside candidate with Roman and Byzantine strata; supported by the excavation team, not universally agreed."
+          "note": "El-Araj is a lakeside alternative with Byzantine architecture and reported Roman-period coins and pottery from 2025 excavation layers beneath Byzantine floors. The excavation team's proposed identification is not an independent consensus.",
+          "sourceIds": [
+            "bethsaida-dig",
+            "bethsaida-araj-2025"
+          ]
         }
       ],
       "sourceIds": [

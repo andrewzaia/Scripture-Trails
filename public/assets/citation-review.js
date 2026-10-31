@@ -1,4 +1,4 @@
-import {CITATION_REVIEW} from './citation-review-data.js?v=0.44.8';
+import {CITATION_REVIEW} from './citation-review-data.js?v=0.44.9';
 import {validateCanonicalReference} from './reference-integrity.js';
 export {CITATION_REVIEW};
 
@@ -88,5 +88,5 @@ export function renderCitationSummary(root){
  }
  root.append(make('h3','Remaining source work'));
  const list=make('ul');for(const text of CITATION_REVIEW.deferred)list.append(make('li',text));root.append(list);
- const download=make('a','Download the dated citation review register (JSON)');download.href='/data/citation-review.json?v=0.44.8';download.download='scripture-trails-citation-review-'+CITATION_REVIEW.updated+'.json';root.append(download);
+ const download=make('a','Download the dated citation review register (JSON)');download.href='/data/citation-review.json?v=0.44.9';download.download='scripture-trails-citation-review-'+CITATION_REVIEW.updated+'.json';root.append(download);
 }

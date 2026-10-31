@@ -172,3 +172,28 @@ test('Cana competing sites have distinct archaeological citations and no claimed
   assert.throws(()=>validateCityStudies(invalid));
  }
 });
+
+test('Bethsaida candidate references distinguish finds and unresolved Gospel identifications',()=>{
+ const bethsaida=cities.disputed.find(x=>x.id==='bethsaida');
+ assert.ok(bethsaida);
+ assert.match(bethsaida.statement,/identification remains contested/);
+ assert.match(bethsaida.statement,/do not independently identify/);
+ assert.deepEqual(bethsaida.candidates.map(c=>c.name),['et-Tell','el-Araj']);
+ const [tell,araj]=bethsaida.candidates;
+ assert.deepEqual(tell.sourceIds,['bethsaida-et-tell']);
+ assert.deepEqual(araj.sourceIds,['bethsaida-dig','bethsaida-araj-2025']);
+ assert.match(tell.note,/shoreline change/);
+ assert.match(tell.note,/disputed/);
+ assert.match(araj.note,/2025 excavation/);
+ assert.match(araj.note,/not an independent consensus/);
+ assert.equal(cities.sources[tell.sourceIds[0]].url,'https://ngsba.org/excavations/bethsaida/');
+ assert.equal(cities.sources['bethsaida-araj-2025'].url,'https://www.bethsaida-julias.com/updates');
+ for(const sourceId of ['bethsaida-et-tell','bethsaida-araj-2025']){
+  assert.match(cities.sources[sourceId].access,/not (?:establish|independent)|do not establish/i);
+  assert.match(cities.sources[sourceId].rights,/Linked/);
+ }
+ assert.ok(validateCityStudies(cities));
+ const broken=structuredClone(cities);
+ broken.disputed.find(x=>x.id==='bethsaida').candidates[0].sourceIds=['invented-source'];
+ assert.throws(()=>validateCityStudies(broken));
+});

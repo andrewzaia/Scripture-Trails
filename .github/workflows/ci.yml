@@ -30,11 +30,16 @@ jobs:
       - run: npm ci
       - name: Check source and tests
         run: npm run build
+      - name: Parse all Playwright browser tests before allocating browser runners
+        run: npx playwright test --list
   # Each engine gets an isolated runner. Firefox's full-page axe scans are
   # resource-heavy; sharing a VM with other browser engines caused intermittent
   # timeouts, hiding real regressions behind runner contention.
+  # Skip browser setup when the inexpensive source/build job already fails.
+  # Every browser engine remains mandatory after source validation succeeds.
   browser:
     name: Browser - ${{ matrix.engine }}
+    needs: test
     runs-on: ubuntu-24.04
     timeout-minutes: 35
     strategy:

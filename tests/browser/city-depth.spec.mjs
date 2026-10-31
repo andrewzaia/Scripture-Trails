@@ -61,3 +61,24 @@ test('Cana comparison changes archaeological sources with highlighted candidate'
  await expect(site).toHaveAttribute('rel','noopener noreferrer');
  await expect(sources).toContainText('Cana location proposals and ancient names');
 });
+
+test('Bethsaida comparison displays evidence from both excavation teams without claiming consensus',async({page})=>{
+ await open(page,'city-studies');
+ const root=page.locator('[data-city-studies]');
+ await expect(root).toHaveAttribute('data-ready','true');
+ await root.locator('[data-city="debate-tabs"]').getByRole('button',{name:'Bethsaida / Julias'}).click();
+ const list=root.locator('[data-city="debate-list"]');
+ const sources=root.locator('[data-city="debate-sources"]');
+ await expect(list.locator('.city-debate-candidate')).toHaveCount(2);
+ await list.locator('.city-debate-candidate').nth(0).getByRole('button',{name:'Highlight on comparison map'}).click();
+ await expect(sources).toContainText('Bethsaida (et-Tell): excavation interpretation');
+ await expect(sources).not.toContainText('2025 Season 9');
+ await list.locator('.city-debate-candidate').nth(1).getByRole('button',{name:'Highlight on comparison map'}).click();
+ await expect(sources).toContainText('Bethsaida-Julias el-Araj: 2025 Season 9');
+ await expect(sources).toContainText('Bethsaida-Julias el-Araj excavation, season eight');
+ await expect(sources).not.toContainText('Bethsaida (et-Tell): excavation interpretation');
+ await expect(root.locator('[data-city="debate-desc"]')).toContainText('identification remains contested');
+ const elArajLink=sources.getByRole('link',{name:'Bethsaida-Julias el-Araj: 2025 Season 9 excavation updates'});
+ await expect(elArajLink).toHaveAttribute('href','https://www.bethsaida-julias.com/updates');
+ await expect(elArajLink).toHaveAttribute('rel','noopener noreferrer');
+});
