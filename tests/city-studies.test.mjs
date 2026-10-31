@@ -197,3 +197,20 @@ test('Bethsaida candidate references distinguish finds and unresolved Gospel ide
  broken.disputed.find(x=>x.id==='bethsaida').candidates[0].sourceIds=['invented-source'];
  assert.throws(()=>validateCityStudies(broken));
 });
+
+test('Emmaus source comparison distinguishes Luke and Josephus distance witnesses without claiming a fixed site',()=>{
+ const e=cities.disputed.find(x=>x.id==='emmaus');
+ assert.ok(e);
+ assert.match(e.statement,/60 stadia/);
+ assert.match(e.statement,/160 stadia/);
+ assert.match(e.statement,/Neither manuscript variants nor later pilgrimage traditions establish/);
+ assert.deepEqual(e.candidates.map(x=>x.name),['Qalunya / Motza','el-Qubeibeh','Emmaus Nicopolis / Imwas']);
+ assert.match(e.candidates[0].note,/30 and 60 stadia/);
+ assert.match(e.candidates[0].note,/30 better supported/);
+ assert.match(e.candidates[1].note,/later pilgrimage traditions/);
+ assert.match(e.candidates[2].note,/minority 160-stadia reading/);
+ assert.equal(cities.sources['emmaus-luke-textual'].url,'https://bible.org/seriespage/luke-24');
+ for(const candidate of e.candidates)for(const id of candidate.sourceIds)assert.ok(cities.sources[id],id);
+ assert.ok(validateCityStudies(cities));
+ const broken=structuredClone(cities);broken.disputed.find(x=>x.id==='emmaus').candidates[2].sourceIds=['fabricated-critical-edition'];assert.throws(()=>validateCityStudies(broken));
+});

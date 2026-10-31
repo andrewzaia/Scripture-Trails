@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.44.10 - 01/11/2026: Emmaus evidence and v1 launch acceptance tooling
+
+- Clarify the competing Luke 24 Emmaus distances, historical Josephus readings and location uncertainty with traceable academic and Bible commentary references.
+- Add a read-only versioned production HTML, roadmap, changelog and asset verification command and focused offline regression tests without copying publisher Bible text.
+- Publish an honest eight-blocker v1 launch evidence ledger and Cloudflare rollback procedure, retaining all mandatory acceptance gates and source/browser CI checks.
+
 ## 0.44.9 - 01/11/2026: Balanced archaeological evidence for Bethsaida
 
 - Provide candidate-specific excavation citations for et-Tell and el-Araj, including 2025 Roman-period field reports, while explicitly retaining the disputed Gospel identification.

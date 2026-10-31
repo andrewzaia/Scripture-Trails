@@ -1,12 +1,12 @@
 {
   "project": "Scripture Trails",
-  "updated": "2026-10-31",
+  "updated": "2026-11-01",
   "description": "An evidence-aware v1.0 release roadmap checked against the current versioned Scripture Trails source and test data. All 161 written Atlas explanations now have dated scoped AI-assisted source assessments. The 31 October source-linked journey corrections cover selected high-risk passages, not a complete re-audit of all 162 stages. Full reference corpus, physical-device accessibility and independent specialist certification remain separate. No unverified evidence is implied.",
   "currentFocus": [
-    "Continue the public-source publisher attribution and licence implementation review for this non-commercial academic website, including passage limits and NKJV usage thresholds. Check the separate Crossway ESV integration.",
-    "Audit disputed biblical and historical claims and substantively review flagship people, place and study pages; correct high-impact evidence gaps before v1.0.",
-    "Run actual Safari/Firefox, physical-device zoom and NVDA/VoiceOver screen-reader tests when accessible, without claiming synthetic browser automation replaces them.",
-    "Exercise safe Cloudflare production rollback and release-candidate live smoke; record final go/no-go approval only after outstanding gates pass."
+    "Resolve each remaining flagship historical/textual claim against biblical primary passages and identified secondary scholarship. Maintain a dated finding ledger and do not imply independent specialist certification.",
+    "Complete non-commercial ESV/API.Bible source-rights and current-plan verification without putting private publisher agreements or access credentials in public Git history.",
+    "Expand the existing automated 320px reflow, keyboard, browser and screen-reader semantics coverage. Treat real NVDA, VoiceOver, physical-device and true browser zoom checks as separate requirements until independently evidenced.",
+    "Run release-candidate production HTTP, translation and user-journey smoke checks, record a safe Cloudflare rollback rehearsal, and make an explicit go/no-go decision only with all required evidence."
   ],
   "phases": [
     {
@@ -901,13 +901,27 @@
         "Add code and browser regression tests for the website's attribution, keeping the wider source-rights criterion open until the public implementation review completes"
       ],
       "verification": "The project operator confirms non-commercial academic use. Public-source attribution and technical implementation are subject to automated validation. v1 readiness remains 9/17 with the source-rights criterion open."
+    },
+    {
+      "id": "v1-emmaus-source-and-launch-smoke",
+      "phase": "next",
+      "status": "delivered",
+      "title": "Emmaus textual-variant evidence and release-candidate smoke tooling",
+      "summary": "Correct the disputed Emmaus site comparison with specific manuscript-distance and Josephus limitations, and provide a repeatable public production release smoke command and honest acceptance ledger.",
+      "capabilities": [
+        "Retain all three Emmaus candidate markers while separating Luke 24 manuscript distance variants from historical-site identification",
+        "Attach named secondary source evidence to each proposed location and protect the comparison through source-integrity and browser tests",
+        "Provide a public HTML, release-history, asset and roadmap smoke script with offline fixture tests; do not copy or log licensed Bible passages",
+        "Publish an internal eight-blocker launch-evidence ledger and a safe rollback runbook, without certifying any unperformed physical-device or independent expert review"
+      ],
+      "verification": "Focused build/source regression and browser checks are required for this release. The complete 1.0 launch decision remains blocked by eight separately tracked acceptance criteria and requires a verified future release candidate."
     }
   ],
   "v1Readiness": {
     "target": "1.0.0",
     "baseline": "0.32.0",
-    "updated": "2026-10-31",
-    "note": "The project owner is not required to perform manual website verification. The assistant must gather testing and source evidence using connected tools wherever possible, and record missing physical-device, assistive-technology, independent-specialist and permission evidence as open rather than claiming certification. These are launch acceptance criteria, not a prediction of delivery dates.",
+    "updated": "2026-11-01",
+    "note": "v1.0 continues to require independently supported acceptance evidence for each criterion. Nine of seventeen gates are scoped as met; eight remain open. Automated source checks, CI browser emulation and publisher response success cannot substitute for physical-device or assistive-technology testing, independent specialist evidence, full publication-rights confirmation, rollback exercise or final release approval.",
     "stages": [
       {
         "id": "baseline",
@@ -940,7 +954,7 @@
         "id": "evidence",
         "title": "Biblical evidence and editorial quality",
         "summary": "Important interpretations must be traceable to Scripture, with interpretive uncertainty, original contexts and external sources stated accurately.",
-        "next": "Five disputed Gospel locations now have explicit named academic source positions and limits; obtain stronger direct sources and independent historical or archaeological review for remaining critical claims, while maintaining the existing source-licensing gate.",
+        "next": "Complete specialist review of high-impact Gospel/Acts/historical claims and verify publisher-specific authorisations; the Emmaus site comparison now explicitly distinguishes Luke 24 textual variants from location proof.",
         "criteria": [
           {
             "id": "atlas-context",
@@ -982,7 +996,7 @@
         "id": "content",
         "title": "Core study experience and content",
         "summary": "The four-translation reader, Atlas, people index and major journeys need sufficient depth and reliable passage navigation.",
-        "next": "Formal public publisher terms and local image/cross-reference attribution reviewed in v0.44.2. Source-licences stays open until edition-specific private API.Bible grant/plan, NKJV audience and Crossway eligibility are independently evidenced. Continue critical-claim and flagship editorial reviews.",
+        "next": "Continue the full biblical-context and navigation assessment of 219 journal readings, 88 people stages, 79 Gospel events and 83 Pauline stages; the Emmaus location caveat and supporting manuscript-distance sources are expanded.",
         "criteria": [
           {
             "id": "crossrefs-integrity",
@@ -1016,7 +1030,7 @@
         "id": "accessibility",
         "title": "Accessibility and browser compatibility",
         "summary": "Automated Chromium checks must be supplemented with independent interaction using assistive technology and other browser engines.",
-        "next": "Record an NVDA + Firefox and VoiceOver + Safari walkthrough, then actual mobile screen-reader and 200%/400% zoom testing.",
+        "next": "Use automated cross-browser keyboard, reflow and enlarged-text checks as preliminary evidence; independent NVDA/JAWS, VoiceOver, physical-device and true 200%/400% browser-zoom acceptance remain open.",
         "criteria": [
           {
             "id": "automated-accessibility",
@@ -1086,7 +1100,7 @@
         "id": "release",
         "title": "Release operations and launch decision",
         "summary": "v1.0 requires traceable source, successful checks, a reproducible deployment, rollback planning and explicit acceptance of residual risks.",
-        "next": "Create a versioned release-candidate checklist, confirm rollback instructions and conduct a production smoke test before a signed-off v1.0 release.",
+        "next": "Run the reproducible live v1 HTTP smoke and publisher probe against the exact production candidate, document and exercise Cloudflare rollback safely, then record explicit final go/no-go without weakening gates.",
         "criteria": [
           {
             "id": "semantic-versioning",
@@ -1101,7 +1115,7 @@
             "title": "Document and exercise production rollback",
             "status": "open",
             "mode": "manual",
-            "evidence": ".github/workflows/ci.yml",
+            "evidence": "sources/operations/v1-launch-evidence-ledger-2026-11-01.md",
             "acceptance": "Demonstrate a safe rollback to a known-good Cloudflare deployment, including how to preserve or recover service after a bad release."
           },
           {
@@ -1109,7 +1123,7 @@
             "title": "Verify production user journeys after release candidate",
             "status": "open",
             "mode": "manual",
-            "evidence": "public/index.html",
+            "evidence": "sources/operations/v1-launch-evidence-ledger-2026-11-01.md",
             "acceptance": "Check live website version, exact Git commit, translations, Atlas, notes, responsive navigation and no critical production errors."
           },
           {
@@ -1117,7 +1131,7 @@
             "title": "Document v1.0 go/no-go decision",
             "status": "open",
             "mode": "manual",
-            "evidence": "public/data/roadmap.json",
+            "evidence": "sources/operations/v1-launch-evidence-ledger-2026-11-01.md",
             "acceptance": "Record reviewer, scope, results, resolved defects, accepted qualifications and final approval. All launch-blocking criteria must be met."
           }
         ]
