@@ -82,3 +82,21 @@ test('Bethsaida comparison displays evidence from both excavation teams without 
  await expect(elArajLink).toHaveAttribute('href','https://www.bethsaida-julias.com/updates');
  await expect(elArajLink).toHaveAttribute('rel','noopener noreferrer');
 });
+
+test('Emmaus source links follow the selected proposed location without presenting proof',async({page})=>{
+ await open(page,'city-studies');
+ const root=page.locator('[data-city-studies]');
+ await expect(root).toHaveAttribute('data-ready','true');
+ await root.locator('[data-city="debate-tabs"]').getByRole('button',{name:'Emmaus',exact:true}).click();
+ const list=root.locator('[data-city="debate-list"]'),sources=root.locator('[data-city="debate-sources"]');
+ await expect(list.locator('.city-debate-candidate')).toHaveCount(3);
+ await expect(root.locator('[data-city="debate-desc"]')).toContainText('160 stadia');
+ await list.locator('.city-debate-candidate').nth(0).getByRole('button',{name:'Highlight on comparison map'}).click();
+ await expect(root.locator('[data-city="debate-active"]')).toContainText('30 and 60 stadia');
+ await expect(sources).toContainText('Emmaus entry');
+ await list.locator('.city-debate-candidate').nth(2).getByRole('button',{name:'Highlight on comparison map'}).click();
+ await expect(root.locator('[data-city="debate-active"]')).toContainText('minority 160-stadia reading');
+ await expect(sources.getByRole('link',{name:'Luke 24:13 - 60 and 160 stadia textual variants'}))
+  .toHaveAttribute('href','https://bible.org/seriespage/luke-24');
+ await expect(sources).toContainText('Emmaus proposed modern identifications');
+});

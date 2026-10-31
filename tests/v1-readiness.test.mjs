@@ -95,3 +95,17 @@ test('threat-model acceptance is source-linked while publisher licences and inde
  for(const id of ['source-licences','critical-claims','screen-readers','cross-browser-zoom','rollback','launch-signoff'])assert.equal(gates.find(x=>x.id===id).status,'open');
  assert.equal(roadmap.milestones.find(m=>m.id==='v1-security-privacy-threat-model')?.status,'delivered');
 });
+
+test('v1 launch ledger remains explicit about unresolved gates and documents production verification commands',()=>{
+ const r=roadmap.v1Readiness;
+ assert.equal(r.updated,'2026-11-01');
+ const counts=v1ReadinessCounts(r);
+ assert.deepEqual(counts,{met:9,open:8,total:17,ready:false});
+ const ledger=read('sources/operations/v1-launch-evidence-ledger-2026-11-01.md');
+ for(const id of ['critical-claims','source-licences','content-audit','screen-readers','cross-browser-zoom','rollback','live-smoke','launch-signoff'])assert.ok(ledger.includes(id),id);
+ assert.match(ledger,/not a completed production rollback/);
+ assert.match(ledger,/not a screen-reader certification/);
+ const p=JSON.parse(read('package.json'));
+ assert.equal(p.scripts['check:live-v1'],'node scripts/check-live-v1.mjs');
+ assert.match(ledger,/check:live-v1/);
+});

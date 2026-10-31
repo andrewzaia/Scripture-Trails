@@ -202,6 +202,15 @@
       "access": "The excavation team reports Roman pottery and coins below Byzantine floors in Area F during 2025. These are site-team field observations, not independent confirmation that el-Araj is the Bethsaida in the Gospels.",
       "checkedOn": "2026-11-01",
       "rights": "Linked field updates only; no reproduced report text or photographs."
+    },
+    "emmaus-luke-textual": {
+      "title": "Luke 24:13 - 60 and 160 stadia textual variants",
+      "publisher": "Bible.org, Gospel of Luke chapter 24 textual and geographical commentary",
+      "url": "https://bible.org/seriespage/luke-24",
+      "kind": "Textual commentary summarising manuscript variants, not a modern geographical identification",
+      "access": "Notes that many textual witnesses read 60 stadia, while others read 160; this does not independently settle the first-century Emmaus site.",
+      "checkedOn": "2026-11-01",
+      "rights": "External commentary linked, not reproduced."
     }
   },
   "cities": [
@@ -1666,7 +1675,7 @@
       "id": "emmaus",
       "name": "Emmaus",
       "ref": "Luke 24:13-35",
-      "statement": "Luke names Emmaus but does not establish modern coordinates; differing manuscript distance traditions complicate identification.",
+      "statement": "Luke 24:13 names Emmaus and commonly reads 60 stadia (roughly 11 km) from Jerusalem; other ancient manuscript witnesses give 160 stadia (roughly 30 km). These readings inform, but do not settle, the identification among Qalunya/Motza, el-Qubeibeh and Emmaus Nicopolis. Neither manuscript variants nor later pilgrimage traditions establish the exact location of the resurrection appearance.",
       "candidates": [
         {
           "name": "Qalunya / Motza",
@@ -1675,7 +1684,10 @@
             31.793
           ],
           "type": "proposed",
-          "note": "Proposed site broadly consistent with the shorter-distance reading in Luke 24."
+          "note": "Qalunya/Motza lies roughly four miles west of Jerusalem. Josephus' nearby Emmaus/Colonia reference has competing readings of 30 and 60 stadia, with 30 better supported according to the cited encyclopaedia; this is not a straightforward match to Luke's 60 stadia.",
+          "sourceIds": [
+            "emmaus-biblegateway"
+          ]
         },
         {
           "name": "el-Qubeibeh",
@@ -1684,7 +1696,11 @@
             31.851
           ],
           "type": "traditional",
-          "note": "Later pilgrimage identification northwest of Jerusalem."
+          "note": "El-Qubeibeh is approximately seven miles northwest of Jerusalem, near the familiar 60-stadia reading, but its identification rests substantially on later pilgrimage traditions rather than a demonstrated first-century Gospel address.",
+          "sourceIds": [
+            "emmaus-biblegateway",
+            "emmaus-luke-textual"
+          ]
         },
         {
           "name": "Emmaus Nicopolis / Imwas",
@@ -1693,12 +1709,17 @@
             31.84
           ],
           "type": "traditional",
-          "note": "Historically attested Emmaus and pilgrimage site farther west; relation to Luke 24 contested."
+          "note": "Emmaus Nicopolis/Imwas is farther west, closer to the minority 160-stadia reading. Its ancient name and later tradition are historically relevant, but the variant reading does not prove the exact village visited in Luke 24.",
+          "sourceIds": [
+            "emmaus-biblegateway",
+            "emmaus-luke-textual"
+          ]
         }
       ],
       "sourceIds": [
         "emmaus-openbible",
-        "emmaus-biblegateway"
+        "emmaus-biblegateway",
+        "emmaus-luke-textual"
       ]
     }
   ]

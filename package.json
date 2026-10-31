@@ -17,7 +17,8 @@
     "check:release": "node scripts/check-release.mjs",
     "check:stats": "node scripts/site-stats.mjs --check",
     "check:v1": "node scripts/check-v1-readiness.mjs",
-    "check:live-reader": "node scripts/check-live-reader.mjs"
+    "check:live-reader": "node scripts/check-live-reader.mjs",
+    "check:live-v1": "node scripts/check-live-v1.mjs"
   },
   "devDependencies": {
     "@axe-core/playwright": "4.14.0",
