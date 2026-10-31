@@ -27,6 +27,8 @@ test('Atlas reference rebuild cannot bypass semantic release reviews by directly
  assert.match(flow,/npm run import:refs/);
  assert.match(flow,/npm run build/);
  assert.match(flow,/git status --porcelain -- public\/data\/refs/);
+ assert.match(flow,/workflow_dispatch:/,'Atlas import is an explicitly requested maintenance task');
+ assert.match(flow,/exit 1/,'Atlas import must fail closed when refreshed data differs');
  assert.doesNotMatch(flow,/git push/);
  assert.doesNotMatch(flow,/contents: write/);
 });
