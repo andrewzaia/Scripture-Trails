@@ -78,6 +78,7 @@ test('Bethsaida comparison displays the selected excavation team's evidence with
  await expect(sources).toContainText('Bethsaida-Julias el-Araj excavation, season eight');
  await expect(sources).not.toContainText('Bethsaida (et-Tell): excavation interpretation');
  await expect(root.locator('[data-city="debate-desc"]')).toContainText('identification remains contested');
- await expect(sources.getByRole('link',{name:'Bethsaida-Julias el-Araj: 2025 Season 9 excavation updates'}))
-  .toHaveAttribute('href','https://www.bethsaida-julias.com/updates');
+ const elArajLink=sources.getByRole('link',{name:'Bethsaida-Julias el-Araj: 2025 Season 9 excavation updates'});
+ await expect(elArajLink).toHaveAttribute('href','https://www.bethsaida-julias.com/updates');
+ await expect(elArajLink).toHaveAttribute('rel','noopener noreferrer');
 });
