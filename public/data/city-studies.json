@@ -166,6 +166,23 @@
       "checkedOn": "2026-10-28",
       "access": "Excavation announcement checked; this is a public project account, not a final stratigraphic report. Oil-production interpretation is explicitly tentative.",
       "rights": "Linked only; no publisher text, photographs or tables redistributed."
+    },
+    "cana-kafr-iaa": {
+      "title": "Karm er-Ras, early Roman-period excavation (2022)",
+      "author": "Barak Tzin",
+      "publisher": "Israel Antiquities Authority, Hadashot Arkheologiyot 134 (2022)",
+      "url": "https://hadashot.iaa.org.il/Report_Detail_eng.aspx?id=26247&mag_id=134&print=all",
+      "kind": "Excavation report, site-specific early Roman occupation",
+      "access": "Architectural remains and pottery-production material dated early in the Early Roman period at Karm er-Ras, within modern Kafr Kanna. Does not identify the wedding site.",
+      "checkedOn": "2026-10-31"
+    },
+    "cana-qana-kinneret": {
+      "title": "Qana (Khirbet Qana): synagogue excavation and bibliography",
+      "publisher": "Bornblum Eretz Israel Synagogues Website, Kinneret College",
+      "url": "https://synagogues.kinneret.ac.il/synagogues/qana/",
+      "kind": "Academic site inventory; recorded synagogue dated Late Roman and/or Byzantine",
+      "access": "Excavation summary and scholarly references, including McCollough and Edwards. Late Roman/Byzantine synagogue evidence alone cannot determine the first-century Cana of John 2.",
+      "checkedOn": "2026-10-31"
     }
   },
   "cities": [
@@ -1559,7 +1576,7 @@
       "id": "cana",
       "name": "Cana of Galilee",
       "ref": "John 2:1-11",
-      "statement": "The Gospel names Cana; neither Kafr Kanna nor Khirbet Qana is universally accepted as the exact New Testament site.",
+      "statement": "John 2:1-11 names Cana in Galilee without providing a modern coordinate. Kafr Kanna preserves later pilgrimage identification and excavated early Roman occupation at Karm er-Ras; Khirbet Qana has separate archaeological and later synagogue evidence. Neither candidate is established as the exact site of the wedding, and the finds do not authenticate the reported miracle.",
       "candidates": [
         {
           "name": "Kafr Kanna",
@@ -1568,7 +1585,10 @@
             32.746
           ],
           "type": "traditional",
-          "note": "Prominent later Christian pilgrimage identification; this is not proof of the first-century wedding setting."
+          "note": "Later Christian pilgrimage tradition associates Kafr Kanna with Cana. Excavations at nearby Karm er-Ras document early Roman occupation, but the finds do not identify the wedding setting or verify the event in John 2.",
+          "sourceIds": [
+            "cana-kafr-iaa"
+          ]
         },
         {
           "name": "Khirbet Qana",
@@ -1577,7 +1597,10 @@
             32.79
           ],
           "type": "proposed",
-          "note": "Archaeological alternative often discussed in site-identification scholarship; not resolved by the Gospel text."
+          "note": "An alternative proposed Cana. Archaeological investigations document the village and a synagogue dated Late Roman and/or Byzantine; those later remains do not settle its first-century identification or the location of the wedding.",
+          "sourceIds": [
+            "cana-qana-kinneret"
+          ]
         }
       ],
       "sourceIds": [
