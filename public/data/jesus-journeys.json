@@ -2399,7 +2399,7 @@
         "John 13:1-17:26"
       ],
       "evidence": "named",
-      "qualification": "Synoptics describe Passover preparation and meal; John introduces supper before Passover. The chronology/calendar and precise room are debated; this map does not resolve them.",
+      "qualification": "The Synoptics portray Passover preparation and a final meal (Mark 14:12-26; Luke 22:7-38); John 13:1 and John 18:28-19:14 frame the meal and crucifixion differently in relation to Passover. Historical calendars, theological presentation and scholarly interpretations remain debated. No specific modern date or room location is proved here.",
       "review": {
         "status": "needs-further-review",
         "basis": "passage-index-and-location-screen",
@@ -2409,13 +2409,14 @@
         ]
       },
       "study": {
-        "context": "The Synoptics present preparations for Passover and bread-and-cup teaching, while John frames supper before Passover and emphasises foot-washing and farewell teaching. Their relationship to Passover dates is debated; the venue and calendar are not mapped as certainties.",
+        "context": "Mark 14:12-26 and Luke 22:7-38 describe preparation for Passover and Jesus' final meal with his disciples, including words about the bread and cup. John 13:1 introduces the supper in relation to Passover, describes foot-washing and farewell teaching, and John 18:28 and 19:14 place later events in a different festival sequence. Paul in 1 Corinthians 11:23-26 also passes on a supper tradition, but it does not determine a precise historical Nisan date. Scholars disagree on how to relate John's chronology to the Synoptics; an individual reconstruction must not be stated as a demonstrated date.",
         "crossReferences": [
-          "Luke 22:7-38",
-          "John 13:1-17"
+          "Mark 14:12-26",
+          "John 19:14",
+          "1 Corinthians 11:23-26"
         ],
         "method": "scripture-context-editorial",
-        "reviewedOn": "2026-10-31"
+        "reviewedOn": "2026-11-01"
       }
     },
     {

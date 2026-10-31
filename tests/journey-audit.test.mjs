@@ -57,3 +57,25 @@ test('visible map includes qualified evidence notes and public correction regist
  for(const name of ['audit-status','audit-event-issues','audit-summary','audit-corrections','audit-open','study-source-status'])assert.ok(html.includes(`data-jesus="${name}"`),name);
  assert.match(js,/renderAuditRegister/);assert.match(js,/validateAuditData\(audit,data,geography\)/);
 });
+
+test('Last Supper chronology audit uses directly relevant, named opposing scholarly research and retains uncertainty',()=>{
+ const issue=a.issues.find(x=>x.id==='last-supper-calendar'),event=j.events.find(x=>x.id==='j069');
+ assert.equal(issue.status,'open');
+ assert.equal(issue.references.length,3);
+ assert.equal(Object.keys(issue.referenceTitles).length,3);
+ assert.ok(issue.references.every(url=>/^https:\/\/www\.cambridge\.org\/core\/journals\//.test(url)));
+ assert.ok(!issue.references.some(url=>url.includes('diatessaron')),'Unrelated Diatessaron paper must not be used as Last Supper chronology evidence');
+ for(const url of issue.references)assert.ok(issue.referenceTitles[url].length>=10,url);
+ assert.match(issue.description,/John 13:1, 18:28 and 19:14/);
+ assert.match(issue.description,/scholarly interpretations remain debated|scholarly interpretations|Academic analyses/);
+ assert.match(event.qualification,/No specific modern date/);
+ assert.match(event.study.context,/1 Corinthians 11:23-26/);
+ assert.deepEqual(event.study.crossReferences,['Mark 14:12-26','John 19:14','1 Corinthians 11:23-26']);
+ assert.equal(validateAuditData(a,j,g),true);
+ const missing=structuredClone(a);
+ missing.issues.find(x=>x.id==='last-supper-calendar').referenceTitles['https://arbitrary.example/']='Fictitious unrelated publication';
+ assert.throws(()=>validateAuditData(missing,j,g),/Unattributed audit source/);
+ const weak=structuredClone(a);
+ weak.issues.find(x=>x.id==='last-supper-calendar').referenceTitles[issue.references[0]]='x';
+ assert.throws(()=>validateAuditData(weak,j,g),/Unattributed audit source/);
+});

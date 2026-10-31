@@ -915,6 +915,20 @@
         "Publish an internal eight-blocker launch-evidence ledger and a safe rollback runbook, without certifying any unperformed physical-device or independent expert review"
       ],
       "verification": "Focused build/source regression and browser checks are required for this release. The complete 1.0 launch decision remains blocked by eight separately tracked acceptance criteria and requires a verified future release candidate."
+    },
+    {
+      "id": "v1-last-supper-chronology-sources",
+      "phase": "next",
+      "status": "delivered",
+      "title": "Last Supper chronology: primary texts and disputed scholarship",
+      "summary": "Correct an indirect secondary citation in the Gospel audit and clarify the distinction between the Synoptic and Johannine Passover sequences, with source titles and counterarguments.",
+      "capabilities": [
+        "Compare the cited Mark, Luke, John and 1 Corinthians passages without creating an independently dated Gospel harmony",
+        "Replace the unrelated Diatessaron reference with peer-reviewed research that directly addresses the Last Supper and contrasting scholarly interpretations",
+        "Display descriptive titles for named Gospel audit sources rather than only hostnames and preserve safe external links",
+        "Reconcile four stale people-trail citation findings already corrected in v0.44.4; retain the broader v1 critical-claims and content-audit gates as open"
+      ],
+      "verification": "Requires source-build tests, explicit bibliography integrity tests, browser source-link checks, SemVer release and exact-SHA Cloudflare deployment verification. Independent chronological specialist signoff is still pending."
     }
   ],
   "v1Readiness": {
@@ -954,7 +968,7 @@
         "id": "evidence",
         "title": "Biblical evidence and editorial quality",
         "summary": "Important interpretations must be traceable to Scripture, with interpretive uncertainty, original contexts and external sources stated accurately.",
-        "next": "Complete specialist review of high-impact Gospel/Acts/historical claims and verify publisher-specific authorisations; the Emmaus site comparison now explicitly distinguishes Luke 24 textual variants from location proof.",
+        "next": "Prioritise independent specialist review of high-impact Gospel chronology and archaeology, plus confidential publisher-rights verification. The Last Supper source audit now cites directly relevant but competing academic interpretations without asserting a harmonised calendar.",
         "criteria": [
           {
             "id": "atlas-context",

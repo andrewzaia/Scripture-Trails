@@ -166,11 +166,18 @@
       "events": [
         "j069"
       ],
-      "description": "John and the Synoptics relate the final supper to Passover differently, and no uncontroversial harmonised date is fixed.",
+      "description": "Mark 14:12-26, Matthew 26:17-30 and Luke 22:7-38 portray Passover preparation and the Last Supper within the festival setting. John 13:1, 18:28 and 19:14 use a different Passover preparation sequence. Academic analyses weigh the Gospel chronology differently: some favour John's apparent earlier supper, while others defend a Synoptic harmonisation. The present map cannot establish a single uncontested historical Nisan date or a measured modern address.",
       "references": [
-        "https://www.cambridge.org/core/journals/new-testament-studies/article/abs/narrative-chronology-of-tatians-diatessaron/D7A86FA6776CDE57BA2BE31207E754AA"
+        "https://www.cambridge.org/core/journals/new-testament-studies/article/passover-and-last-supper-revisited/B7955FEA669F7DD71A36F008A2FE5144",
+        "https://www.cambridge.org/core/journals/new-testament-studies/article/dating-the-death-of-jesus-memory-and-the-religious-imagination/0458FC0CA55BEF810BCC411AC2765860",
+        "https://www.cambridge.org/core/journals/new-blackfriars/article/abs/ratzinger-and-aquinas-on-the-dating-of-the-last-supper-in-defense-of-the-synoptic-chronology/CDABC5A633A6F3DCB86C3174F2AB2964"
       ],
-      "status": "open"
+      "status": "open",
+      "referenceTitles": {
+        "https://www.cambridge.org/core/journals/new-testament-studies/article/passover-and-last-supper-revisited/B7955FEA669F7DD71A36F008A2FE5144": "Passover and Last Supper Revisited - Joel Marcus, New Testament Studies",
+        "https://www.cambridge.org/core/journals/new-testament-studies/article/dating-the-death-of-jesus-memory-and-the-religious-imagination/0458FC0CA55BEF810BCC411AC2765860": "Dating the Death of Jesus: Memory and the Religious Imagination - New Testament Studies",
+        "https://www.cambridge.org/core/journals/new-blackfriars/article/abs/ratzinger-and-aquinas-on-the-dating-of-the-last-supper-in-defense-of-the-synoptic-chronology/CDABC5A633A6F3DCB86C3174F2AB2964": "Ratzinger and Aquinas on the Dating of the Last Supper - New Blackfriars"
+      }
     },
     {
       "id": "passion-tomb-sites",

@@ -1,6 +1,16 @@
 {
   "releases": [
     {
+      "version": "0.44.11",
+      "date": "2026-11-01",
+      "title": "Better evidenced Last Supper chronology",
+      "changes": [
+        "Correct an indirect Gospel audit citation to cite primary Gospel Passover distinctions and three directly relevant peer-reviewed historical chronology analyses.",
+        "Display descriptive named links for academic audit sources, retaining the open historical interpretation and independent-specialist review requirement.",
+        "Reconcile four older people-trail reference findings confirmed resolved in v0.44.4, with browser and data regression coverage."
+      ]
+    },
+    {
       "version": "0.44.10",
       "date": "2026-11-01",
       "title": "Emmaus evidence and v1 launch acceptance tooling",

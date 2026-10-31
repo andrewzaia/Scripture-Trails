@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.44.11 - 01/11/2026: Better evidenced Last Supper chronology
+
+- Correct an indirect Gospel audit citation to cite primary Gospel Passover distinctions and three directly relevant peer-reviewed historical chronology analyses.
+- Display descriptive named links for academic audit sources, retaining the open historical interpretation and independent-specialist review requirement.
+- Reconcile four older people-trail reference findings confirmed resolved in v0.44.4, with browser and data regression coverage.
+
 ## 0.44.10 - 01/11/2026: Emmaus evidence and v1 launch acceptance tooling
 
 - Clarify the competing Luke 24 Emmaus distances, historical Josephus readings and location uncertainty with traceable academic and Bible commentary references.
