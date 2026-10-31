@@ -50,6 +50,7 @@ test('Cana comparison changes archaeological sources with highlighted candidate'
  await list.locator('.city-debate-candidate').nth(0).getByRole('button',{name:'Highlight on comparison map'}).click();
  const sources=root.locator('[data-city="debate-sources"]');
  await expect(sources).toContainText('Karm er-Ras');
+ await expect(sources).toContainText('Cana location proposals and ancient names');
  await expect(sources).not.toContainText('Qana (Khirbet Qana): synagogue excavation');
  await list.locator('.city-debate-candidate').nth(1).getByRole('button',{name:'Highlight on comparison map'}).click();
  await expect(sources).toContainText('Qana (Khirbet Qana): synagogue excavation');
@@ -58,4 +59,5 @@ test('Cana comparison changes archaeological sources with highlighted candidate'
  const site=sources.getByRole('link',{name:'Qana (Khirbet Qana): synagogue excavation and bibliography'});
  await expect(site).toHaveAttribute('href','https://synagogues.kinneret.ac.il/synagogues/qana/');
  await expect(site).toHaveAttribute('rel','noopener noreferrer');
+ await expect(sources).toContainText('Cana location proposals and ancient names');
 });
