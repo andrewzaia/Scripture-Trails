@@ -7,7 +7,8 @@
       "changes": [
         "Add separately attributed archaeological sources for Kafr Kanna and Khirbet Qana, keeping the uncertain identification of Cana and the limits of archaeology explicit.",
         "Update the historical-city comparison to display sources for the highlighted proposal, while retaining the general geographical index and validating candidate citations.",
-        "Add source-integrity and browser navigation regression tests for the proposed locations."
+        "Add source-integrity and browser navigation regression tests for the proposed locations.",
+        "Clarify GitHub release-gate diagnostics while keeping a failed source or browser check blocking publication."
       ]
     },
     {
