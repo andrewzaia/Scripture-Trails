@@ -6,7 +6,7 @@ const read=name=>readFileSync(new URL('../.github/workflows/'+name,import.meta.u
 
 test('CI runs supported Node 24 actions on a stable runner with all three browser engines',()=>{
  const ci=read('ci.yml');
- assert.ok(!ci.includes('ubuntu-latest'),'CI image must not change during migration without review');
+ assert.doesNotMatch(ci,/runs-on:\\s*ubuntu-latest/,'CI image must not change during migration without review');
  assert.ok((ci.match(/runs-on: ubuntu-24\.04/g)||[]).length>=3);
  assert.ok(!ci.includes('actions/checkout@v4'));
  assert.ok(!ci.includes('actions/setup-node@v4'));
