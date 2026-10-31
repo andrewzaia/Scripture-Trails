@@ -30,7 +30,7 @@ test('every one of 79 Gospel journey entries has unique original biblical readin
   for(const ref of n.crossReferences)assert.ok(validateCanonicalReference(ref,counts),'Invalid canonical reading '+e.id+': '+ref);
  }
  assert.equal(ids.size,79);assert.equal(contexts.size,79);
- assert.equal(journeys.events.reduce((n,e)=>n+e.study.crossReferences.length,0),156);
+ assert.equal(journeys.events.reduce((n,e)=>n+e.study.crossReferences.length,0),157); // One additional source-specific reading for the Last Supper chronology
  assert.match(journeys.contextCoverage.limitations,/independent historical review/);
  assert.match(audit.evidenceAddendum.sourceLimit,/full article access/i);
  assert.equal(road.milestones.find(m=>m.id==='v1-gospel-79-context')?.status,'delivered');
