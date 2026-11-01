@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "version": "0.44.22",
+      "date": "2026-11-01",
+      "title": "Accessible navigation between study sections",
+      "changes": [
+        "Move keyboard and screen-reader focus to the active section heading when navigating across study pages.",
+        "Preserve initial page focus, Skip to content, passage navigation and mobile navigation behaviour."
+      ]
+    },
+    {
       "version": "0.44.21",
       "date": "2026-11-01",
       "title": "Publisher view reporting and recovery readiness",

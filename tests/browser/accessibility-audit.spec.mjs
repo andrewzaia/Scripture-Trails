@@ -13,18 +13,18 @@ async function overflow(page){
 test('reference links and browser history retain focus in the visible destination',async({page})=>{
  await open(page,'discover');
  const example=page.getByRole('button',{name:'Genesis 1:1',exact:true});await example.focus();await page.keyboard.press('Enter');
- await expect(page.locator('#view-reader')).toBeVisible();await expect(page.locator('#main')).toBeFocused();
+ await expect(page.locator('#view-reader')).toBeVisible();await expect(page.locator('#view-reader h1')).toBeFocused();
  await expect(page.locator('.nav-link[data-view="reader"]')).toHaveAttribute('aria-current','page');
  await expect(page).toHaveTitle('Scripture Trails | Bible reader');
- await page.goBack();await expect(page.locator('#view-discover')).toBeVisible();await expect(page.locator('#main')).toBeFocused();
+ await page.goBack();await expect(page.locator('#view-discover')).toBeVisible();await expect(page.locator('#view-discover h1')).toBeFocused();
  await expect(page.locator('.nav-link[data-view="discover"]')).toHaveAttribute('aria-current','page');
- await page.goForward();await expect(page.locator('#view-reader')).toBeVisible();await expect(page.locator('#main')).toBeFocused();
+ await page.goForward();await expect(page.locator('#view-reader')).toBeVisible();await expect(page.locator('#view-reader h1')).toBeFocused();
 });
 
 test('keyword search moves focus out of the hidden form and announces results',async({page})=>{
  await page.route('**/api/search?**',route=>route.fulfill({json:{total_results:1,results:[{reference:'John 3:16',content:'Synthetic keyword-search fixture.'}]}}));
  await open(page,'discover');await page.locator('#passage-input').fill('hope');await page.locator('#passage-input').press('Enter');
- await expect(page.locator('#view-reader')).toBeVisible();await expect(page.locator('#main')).toBeFocused();
+ await expect(page.locator('#view-reader')).toBeVisible();await expect(page.locator('#view-reader h1')).toBeFocused();
  await expect(page.locator('#passage-status')).toHaveAttribute('role','status');
  await expect(page.locator('#passage-content')).toHaveAttribute('aria-busy','false');
  await expect(page.locator('#passage-content')).toContainText('1 matching verses');
@@ -46,10 +46,27 @@ test('mobile navigation contains keyboard focus, closes accessibly and resets on
  await page.keyboard.press('Escape');await expect(menu).toBeFocused();await expect(menu).toHaveAttribute('aria-expanded','false');
  await expect(page.locator('.main-column')).not.toHaveAttribute('inert');
  await menu.press('Enter');await page.getByRole('button',{name:'Close navigation',exact:true}).press('Enter');await expect(menu).toBeFocused();
- await menu.press('Enter');await sidebar.locator('[data-view="reader"]').press('Enter');await expect(page.locator('#view-reader')).toBeVisible();await expect(page.locator('#main')).toBeFocused();
+ await menu.press('Enter');await sidebar.locator('[data-view="reader"]').press('Enter');await expect(page.locator('#view-reader')).toBeVisible();await expect(page.locator('#view-reader h1')).toBeFocused();
  await menu.press('Enter');await page.setViewportSize({width:1280,height:900});await expect(sidebar).not.toHaveAttribute('aria-modal');await expect(page.locator('.main-column')).not.toHaveAttribute('inert');
  await expect(sidebar.locator('[data-view="reader"]')).toBeFocused();
  await page.setViewportSize({width:390,height:844});await expect(menu).toBeFocused();
+});
+
+test('client-side navigation focuses each visible section heading and retains the skip link',async({page})=>{
+ await page.setViewportSize({width:1280,height:900});
+ await open(page,'about');
+ for(const view of ['reader','connections','notebook','about']){
+  await page.locator('.nav-link[data-view="'+view+'"]').click();
+  await expect(page.locator('#view-'+view)).toBeVisible();
+  await expect(page.locator('#view-'+view+' h1')).toBeFocused();
+  await expect(page.locator('#view-'+view+' h1')).toHaveAttribute('tabindex','-1');
+  await expect(page.locator('.nav-link[data-view="'+view+'"]')).toHaveAttribute('aria-current','page');
+ }
+ await page.goto('/?view=about');
+ await page.keyboard.press('Tab');
+ await expect(page.getByRole('link',{name:'Skip to content'})).toBeFocused();
+ await page.keyboard.press('Enter');
+ await expect(page.locator('#main')).toBeFocused();
 });
 
 test('all main views reflow at 320 CSS pixels',async({page},testInfo)=>{
