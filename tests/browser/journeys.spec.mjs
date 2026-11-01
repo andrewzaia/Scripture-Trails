@@ -80,7 +80,7 @@ test('v1.0 roadmap shows honest scoped progress and accessible launch acceptance
  await open(page,'roadmap');
  await expect(page.locator('[data-roadmap=""]')).toHaveAttribute('data-ready','true');
  await expect(page.locator('[data-roadmap="v1-summary"]')).toContainText('15 verified, 2 accepted with limitations, 0 open (17 total)');
- await expect(page.locator('[data-roadmap="v1-summary"]')).toContainText('All v1.0 launch criteria are accepted');
+ await expect(page.locator('[data-roadmap="v1-summary"]')).toContainText('All v1.0 launch criteria accepted');
  await expect(page.locator('.v1-gate')).toHaveCount(5);
  await page.locator('.v1-stages > summary').click();
  await expect(page.locator('[data-roadmap="v1-stages"] > li')).toHaveCount(5);
