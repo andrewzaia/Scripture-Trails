@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.44.17 - 01/11/2026: Accurate people readings and efficient release verification
+
+- Expand Moses' departure and Solomon's ark-entry readings to include the narrated actions, preserving all stable people trails.
+- Keep Chromium, Firefox and WebKit mandatory for pull requests while eliminating redundant browser installations after strictly checked main merges.
+- Add regression tests for canonical reading ranges and fail-closed release gates under permitted and rejected GitHub event states.
+
 ## 0.44.16 - 01/11/2026: Clearer chronology and passage boundaries in Gospel journeys
 
 - Clarify that two Nazareth hometown-rejection study stages present Gospel narratives, not a historically proven second visit.
