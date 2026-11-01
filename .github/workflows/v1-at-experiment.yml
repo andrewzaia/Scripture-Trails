@@ -1,4 +1,4 @@
-name: Acceptance - real NVDA and VoiceOver v0.44.22 production verification
+name: Diagnostic - VoiceOver focus capture on published v0.44.22
 
 on:
   push:
@@ -15,9 +15,6 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - os: windows-2025
-            mode: nvda
-            browser: chromium
           - os: macos-15
             mode: voiceover
             browser: webkit
@@ -38,7 +35,7 @@ jobs:
         run: npx @guidepup/setup install
       - name: Install headed browser
         run: npx playwright install ${{ matrix.browser }}
-      - name: Verify real screen-reader heading focus on published v0.44.22
+      - name: Record VoiceOver route-click speech and cursor evidence
         env:
           SCREEN_READER_PLATFORM: ${{ matrix.mode }}
         run: npx playwright test --config playwright.assistive.config.mjs --reporter=list
