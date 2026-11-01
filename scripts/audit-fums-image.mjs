@@ -9,7 +9,9 @@ const output={origin:'www.scripturetrails.com',test:'FUMS pixel with in-browser 
 try{
  const context=await browser.newContext({viewport:{width:1280,height:900}});
  const page=await context.newPage();
- await page.route(url,async route=>{
+ await page.route('**/*',async route=>{
+  const requestUrl=new URL(route.request().url());
+  if(requestUrl.origin!==new URL(url).origin||requestUrl.pathname!=='/')return route.continue();
   const response=await route.fetch();
   const headers={...response.headers()};
   const original=headers['content-security-policy']||'';
