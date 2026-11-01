@@ -1,4 +1,4 @@
-name: Experiment - actual browser zoom probe, native viewport (one-time)
+name: Experiment - actual browser zoom with X11 window manager (one-time)
 
 on:
   push:
@@ -23,6 +23,11 @@ jobs:
         run: |
           npx playwright install --with-deps chromium
           sudo apt-get update -qq
-          sudo apt-get install -y xdotool
+          sudo apt-get install -y xdotool openbox
       - name: Test authentic browser zoom through keyboard shortcuts
-        run: xvfb-run --auto-servernum --server-args="-screen 0 1600x1100x24" node tests/zoom/actual-browser-zoom-probe.mjs
+        run: |
+          xvfb-run --auto-servernum --server-args="-screen 0 1600x1100x24" bash -c '
+            openbox >/tmp/scripture-trails-openbox.log 2>&1 &
+            sleep 2
+            node tests/zoom/actual-browser-zoom-probe.mjs
+          '
