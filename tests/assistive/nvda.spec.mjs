@@ -32,6 +32,17 @@ test('NVDA announces the main heading across four live study journeys',async({pa
    // Heading navigation only: no copyrighted Bible body text is captured.
    console.log('NVDA_ATLAS_SPEECH_HEADING_DIAGNOSTIC',JSON.stringify(speechHeadings));
    if(!matched){
+    // Probe an explicitly focused heading, as recommended for SPA view changes.
+    await page.locator('#view-connections h1').evaluate(h=>{h.tabIndex=-1;h.focus({preventScroll:true});});
+    const focusSpeech=String(await nvda.lastSpokenPhrase());
+    const afterFocused=[];
+    for(let j=0;j<6;j++){
+     await nvda.nextHeading();
+     const spoke=String(await nvda.lastSpokenPhrase());
+     afterFocused.push(spoke.slice(0,150));
+     if(/thread/i.test(spoke))break;
+    }
+    console.log('NVDA_ATLAS_FOCUSED_HEADING_DIAGNOSTIC',JSON.stringify({focusSpeech:focusSpeech.slice(0,150),afterFocused}));
     await page.goto('/?view=connections',{waitUntil:'load'});
     await expect(page.locator('#atlas-preview-content')).toHaveAttribute('aria-busy','false',{timeout:18000});
     await nvda.navigateToWebContent();
