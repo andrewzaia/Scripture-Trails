@@ -33,7 +33,13 @@ The website does not sell Bible translations, provide bulk downloads or host a s
 
 This is a source-and-code audit of the published application, not a legal opinion, contractual disclosure, proof of all future publisher decisions or independent penetration test. The app's real-world traffic and external publisher dashboard status cannot be reconstructed from local repository files.
 
-**Readiness remains 9 of 17 met, 8 open** pending a complete tested release. No confidential agreements are published with this report.
+**Readiness is 13 of 17 met, 4 open** in the prepared v0.44.21 patch after the exercised production rollback. The source-licences criterion stays open: working API responses, visible publisher notices and the owner's separate confidential-agreement compliance attestation do not independently verify the live API.Bible account's edition selection, publisher-side FUMS attribution or end-user quota. No confidential agreements are published with this report.
+
+### 1 November 2026 implementation recheck
+
+Real production browser sessions for v0.44.20 retrieved representative ESV, NASB20, NIV and NKJV passages. The API.Bible editions retained their publisher/copyright links; the ESV's full standard copyright is visible in the site footer. Code inspection identified a scoped defect in cached API.Bible reader views: navigating away and returning to the same visible passage did not resubmit its reusable FUMS token, even though API.Bible's published guidance requires a report each time content is displayed. The v0.44.21 candidate reuses only the token from the successful passage response for a returning view, retaining the existing pseudonymous device/session IDs, and adds a browser regression. See https://care.api.bible/article/417-understanding-fums and https://github.com/andrewzaia/Scripture-Trails/issues/79.
+
+The owner previously provided private API.Bible/ABS service agreements (including the NIV-specific extra agreement) and affirmed this academic website's non-commercial compliance. The agreements remain private and were not republished or re-extracted for this document. Actual current publisher account settings and utilisation cannot be reconstructed from public source code, so this report does not certify them.
 
 ## Public references
 
