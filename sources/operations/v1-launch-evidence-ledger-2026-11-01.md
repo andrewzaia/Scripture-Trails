@@ -1,12 +1,17 @@
 # v1.0 launch evidence ledger and release-candidate checklist
 
-Updated: 1 November 2026
-Current evidence baseline: v0.44.20, production verified
+Updated: 2 November 2026
+Current working release: v0.44.23, production verified; v1.0 remains unpublished.
+Historical recovery evidence baseline: v0.44.20, production verified
 Completed operational rehearsal: successful v0.44.19 rollback and v0.44.20 restoration on the canonical domain
 
-## Non-negotiable decision
+## Current decision - qualified compatibility acceptance (2 November 2026)
 
-Thirteen of 17 version 1.0 acceptance criteria have scoped evidence; four remain **open**. This ledger is a release-blocking checklist, not a declaration of v1 readiness or independent expert certification. The existing `npm run check:v1` and required `release-gate` must remain enforced. **Do not set package.json to 1.0.0, merge, tag or publish v1 while any required criterion remains open.**
+**14 criteria met on their recorded evidence; 2 device/accessibility criteria accepted by the owner with explicitly unverified scope; 1 final launch approval remains open.** The owner does not wish to perform further manual device checks. The physical mobile and native Safari zoom gaps are accepted residual risks for the intended v1.0 release scope, not successfully executed tests. See `sources/operations/v1-device-compatibility-owner-acceptance-2026-11-02.md` and GitHub issue #65. Required Chromium/Firefox/WebKit PR validation, source and build checks, legal account obligations and final owner go/no-go remain intact. Do not publish v1.0 until the final candidate has passed its release gates and the owner has made the launch decision.
+
+## Historical decision - 1 November 2026
+
+At the original checkpoint, thirteen of 17 version 1.0 acceptance criteria had scoped evidence and four remained **open**. This ledger is a release-blocking checklist, not a declaration of v1 readiness or independent expert certification. The existing `npm run check:v1` and required `release-gate` must remain enforced. **Do not set package.json to 1.0.0, merge, tag or publish v1 while any required criterion remains open.**
 
 The project owner is the final scholarly and editorial reviewer for Scripture Trails. The owner explicitly accepted published content on 1 November 2026 and does not require an external professor. Technical, publisher and physical-device evidence must still be verified within each remaining gate. No missing test or private rights entitlement may be replaced by an unsupported model assertion.
 
@@ -18,7 +23,7 @@ Two criteria are closed on this owner attestation: `critical-claims` and `conten
 
 Publisher permissions and usage accounting, real assistive technologies and physical zoom, and final release go/no-go **remain distinct and cannot be satisfied by scholarly content acceptance alone**. Production rollback and recovery were exercised separately on the live canonical domain.
 
-## Four open acceptance criteria and evidence needed
+## Historical four open acceptance criteria - 1 November 2026
 
 | ID | Current evidence | Minimum closeout record |
 | --- | --- | --- |
@@ -76,3 +81,12 @@ Actual macOS **Safari desktop rendering** is now independently tested in [run 41
 ## First-pass audit limitations
 
 The documented 13/17 readiness score reflects scoped automated, owner-led editorial and live operational verification. Real screen-reader and physical-device testing, private publisher plan/territory verification, controlled production rollback and final launch acceptance remain outstanding. A Chromium accessibility-tree and automated axe checks are not a screen-reader certification. The owner has accepted the scholarly content without external professor approval. No self-certified academic consensus or undisclosed licence permission is implied. This document contains no confidential publisher agreements or credentials.
+
+
+## Device compatibility qualification and remaining launch decision - 2 November 2026
+
+The project owner explicitly accepts the comprehensive compatibility checks already performed and limits additional manual testing by the owner. The accepted-risk statuses for `screen-readers` and `cross-browser-zoom` are neither empirical physical-device passes nor permissions to turn off the browser and accessibility release matrix. The accepted scope includes real desktop browser zoom and Safari reflow, desktop assistive-technology checks, and required mobile-profile automation; untested mobile assistive technology and Safari zoom remain visible in the [acceptance record](v1-device-compatibility-owner-acceptance-2026-11-02.md).
+
+**Current gate reconciliation:** 14 `met`, 2 `accepted-risk`, 1 `open`, 17 total. Only `launch-signoff` is still open. A release cannot claim all seventeen empirically tested, and cannot claim `v1.0` published until final-owner go/no-go, required exact-commit CI and Cloudflare verification succeed.
+
+The previous 13/17 and 14/17 descriptions above are dated historical checkpoints, not the present status. The historical rights and real-device uncertainty descriptions are retained for traceability and superseded by this section only where explicit owner acceptance has changed the launch blocking policy. The underlying limitations are not erased.
