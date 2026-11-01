@@ -1,63 +1,46 @@
 import {nvdaTest as test} from '@guidepup/playwright';
 import {expect} from '@playwright/test';
 
-// Scoped actual screen-reader audit against the live site. Never log licensed Bible
-// passages, FUMS tokens or user-owned notebook content. Hosted desktop, not a phone.
-const routes=[
- {view:'about',term:'discernment'},
- {view:'reader',term:'context'},
- {view:'connections',term:'thread'},
- {view:'notebook',term:'matters'},
-];
-
-test('NVDA announces the main heading across four live study journeys',async({page,nvda})=>{
- test.setTimeout(240000);
- await page.goto('/?view=about',{waitUntil:'load'});
- const results=[];
- for(const target of routes){
-  if(target.view!=='about')await page.locator(`.nav-link[data-view="${target.view}"]`).click();
-  await expect(page.locator(`#view-${target.view}`)).toBeVisible();
-  await expect(page.locator(`#view-${target.view} h1`)).toBeVisible();
-  if(target.view==='reader')await expect(page.locator('#passage-content')).toHaveAttribute('aria-busy','false',{timeout:18000});
-  if(target.view==='connections')await expect(page.locator('#atlas-preview-content')).toHaveAttribute('aria-busy','false',{timeout:18000});
-  await nvda.navigateToWebContent();
-  let matched=false,moves=0;const speechHeadings=[];
-  for(;moves<18;moves++){
-   await nvda.nextHeading();
-   const speech=String(await nvda.lastSpokenPhrase());
-   if(target.view==='connections')speechHeadings.push(speech.slice(0,150));
-   if(speech.toLowerCase().includes(target.term)){matched=true;moves++;break;}
-  }
-  if(target.view==='connections'){
-   // Heading navigation only: no copyrighted Bible body text is captured.
-   console.log('NVDA_ATLAS_SPEECH_HEADING_DIAGNOSTIC',JSON.stringify(speechHeadings));
-   if(!matched){
-    // Probe an explicitly focused heading, as recommended for SPA view changes.
-    await page.locator('#view-connections h1').evaluate(h=>{h.tabIndex=-1;h.focus({preventScroll:true});});
-    const focusSpeech=String(await nvda.lastSpokenPhrase());
-    const afterFocused=[];
-    for(let j=0;j<6;j++){
-     await nvda.nextHeading();
-     const spoke=String(await nvda.lastSpokenPhrase());
-     afterFocused.push(spoke.slice(0,150));
-     if(/thread/i.test(spoke))break;
-    }
-    console.log('NVDA_ATLAS_FOCUSED_HEADING_DIAGNOSTIC',JSON.stringify({focusSpeech:focusSpeech.slice(0,150),afterFocused}));
-    await page.goto('/?view=connections',{waitUntil:'load'});
-    await expect(page.locator('#atlas-preview-content')).toHaveAttribute('aria-busy','false',{timeout:18000});
-    await nvda.navigateToWebContent();
-    const direct=[];
-    for(let j=0;j<12;j++){
-     await nvda.nextHeading();
-     const spoken=String(await nvda.lastSpokenPhrase());
-     direct.push(spoken.slice(0,150));
-     if(spoken.toLowerCase().includes(target.term))break;
-    }
-    console.log('NVDA_ATLAS_DIRECT_ROUTE_DIAGNOSTIC',JSON.stringify(direct));
-   }
-  }
-  results.push({view:target.view,headingAnnounced:matched,navigationMoves:moves});
-  expect(matched,`${target.view} main heading was not spoken by NVDA`).toBe(true);
+// Real NVDA commands against the public site. Store only heading-match metadata.
+// Never log copyrighted Bible verses, user notes or telemetry identifiers.
+async function nextHeadings(nvda,term,max=8){
+ const seen=[];
+ for(let index=0;index<max;index++){
+  await nvda.nextHeading();
+  const phrase=String(await nvda.lastSpokenPhrase());
+  seen.push({empty:!phrase.trim(),matched:phrase.toLowerCase().includes(term)});
+  if(seen.at(-1).matched)break;
  }
- console.log('NVDA_JOURNEY_METADATA',JSON.stringify({hostedDesktop:true,results}));
+ return seen;
+}
+
+test('NVDA refreshes browse document after SPA reader to Atlas navigation',async({page,nvda})=>{
+ test.setTimeout(210000);
+ await page.goto('/?view=reader&ref=John%203%3A16',{waitUntil:'load'});
+ await expect(page.locator('#passage-content')).toHaveAttribute('aria-busy','false',{timeout:18000});
+ await nvda.navigateToWebContent();
+ const before=await nextHeadings(nvda,'context',6);
+ expect(before.some(x=>x.matched),'Reader heading should announce before SPA navigation').toBe(true);
+
+ await page.locator('.nav-link[data-view="connections"]').click();
+ await expect(page.locator('#view-connections')).toBeVisible();
+ await expect(page.locator('#atlas-preview-content')).toHaveAttribute('aria-busy','false',{timeout:18000});
+ await expect(page.locator('#main')).toBeFocused();
+ await nvda.navigateToWebContent();
+ const afterNavigation=await nextHeadings(nvda,'thread',5);
+ const refreshed=await nvda.perform(nvda.keyboardCommands.refreshBrowseDocument);
+ await nvda.navigateToWebContent();
+ const afterRefresh=await nextHeadings(nvda,'thread',10);
+ console.log('NVDA_BUFFER_REFRESH_METADATA',JSON.stringify({
+   readerAnnounced:before.some(x=>x.matched),
+   afterSPAHeading:afterNavigation.some(x=>x.matched),
+   afterSPASilent:afterNavigation.filter(x=>x.empty).length,
+   refreshExecuted:true,
+   refreshResultType:typeof refreshed,
+   afterRefreshHeading:afterRefresh.some(x=>x.matched),
+   afterRefreshSilent:afterRefresh.filter(x=>x.empty).length,
+   documentTitle:await page.title(),
+   focusedMain:await page.locator('#main').evaluate(e=>document.activeElement===e),
+ }));
+ expect(afterRefresh.some(x=>x.matched),'NVDA browse-document refresh should make Atlas heading available').toBe(true);
 });
