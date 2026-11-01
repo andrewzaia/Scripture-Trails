@@ -22,7 +22,7 @@ try{
  function host(request){try{return new URL(request.url()).hostname}catch{return null}}
  page.on('request',r=>{if(host(r)==='fums.api.bible')output.requestCount++});
  page.on('response',r=>{if(host(r)==='fums.api.bible')output.responseStatuses.push(r.status())});
- page.on('requestfailed',r=>{if(host(r)==='fums.api.bible')output.requestFailureCategories.push(r.failure()?.replace(/https?:\/\/[^\s]+/g,'[redacted-url]')||'unknown')});
+ page.on('requestfailed',r=>{if(host(r)==='fums.api.bible')output.requestFailureCategories.push(String(r.failure()?.errorText||r.failure()||'unknown').replace(/https?:\/\/[^\s]+/g,'[redacted-url]'))});
  await page.goto(url+'?view=reader&ref=John%203%3A16&translation=NIV',{waitUntil:'domcontentloaded'});
  await expect(page.locator('#passage-status')).toHaveText('Official NIV text',{timeout:30000});
  const result=await page.evaluate(async()=>{
