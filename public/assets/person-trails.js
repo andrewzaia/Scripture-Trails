@@ -81,8 +81,8 @@ export const PERSON_TRAILS=Object.freeze([
       },
       {
         "label": "Departure from Egypt",
-        "ref": "Exodus 12:31",
-        "note": "Pharaoh calls Moses and Aaron during the Exodus narrative.",
+        "ref": "Exodus 12:31-42",
+        "note": "Pharaoh orders Israel to leave, and the narrative follows with the departure from Egypt.",
         "source": "primary-scripture",
         "review": "editorial-reading-aid"
       },
@@ -195,8 +195,8 @@ export const PERSON_TRAILS=Object.freeze([
       },
       {
         "label": "The ark enters the temple",
-        "ref": "1 Kings 8:1",
-        "note": "Leaders assemble to bring the ark into the temple.",
+        "ref": "1 Kings 8:1-11",
+        "note": "The elders assemble, the priests place the ark in the inner sanctuary, and the cloud fills the temple.",
         "source": "primary-scripture",
         "review": "editorial-reading-aid"
       },

@@ -19,7 +19,11 @@ test('CI runs supported Node 24 actions on a stable runner with all three browse
  assert.match(ci,/npx playwright test --list/,'browser test definitions must be parsed before browser runners start');
  assert.match(ci,/\$SOURCE_RESULT/);
  assert.match(ci,/\$BROWSER_RESULT/);
- assert.match(ci,/\[ "\$SOURCE_RESULT" != "success" \] \|\| \[ "\$BROWSER_RESULT" != "success" \]/);
+ assert.match(ci,/if \[ "\$SOURCE_RESULT" != "success" \]; then/);
+ assert.match(ci,/if \[ "\$BROWSER_RESULT" != "success" \]; then/);
+ assert.match(ci,/if \[ "\$BROWSER_RESULT" != "skipped" \] \|\| \[ "\$REF_NAME" != "refs\/heads\/main" \]; then/);
+ assert.match(ci,/EVENT_NAME/);
+ assert.match(ci,/if: \$\{\{ github.event_name == 'pull_request' \}\}/);
  assert.match(ci,/exit 1/,'a failing required source or browser job must block release');
 });
 

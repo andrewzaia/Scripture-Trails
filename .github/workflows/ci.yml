@@ -36,8 +36,10 @@ jobs:
   # resource-heavy; sharing a VM with other browser engines caused intermittent
   # timeouts, hiding real regressions behind runner contention.
   # Skip browser setup when the inexpensive source/build job already fails.
-  # Every browser engine remains mandatory after source validation succeeds.
+  # Every browser engine remains mandatory on PRs after source validation.
+  # Protected main merges repeat full source checks but skip a duplicate browser matrix.
   browser:
+    if: ${{ github.event_name == 'pull_request' }}
     name: Browser - ${{ matrix.engine }}
     needs: test
     runs-on: ubuntu-24.04
@@ -77,16 +79,36 @@ jobs:
     runs-on: ubuntu-24.04
     timeout-minutes: 5
     steps:
-      - name: Explain and enforce source and cross-browser gate
+      - name: Enforce PR browsers and source-verified main releases
         env:
           SOURCE_RESULT: ${{ needs.test.result }}
           BROWSER_RESULT: ${{ needs.browser.result }}
+          EVENT_NAME: ${{ github.event_name }}
+          REF_NAME: ${{ github.ref }}
         run: |
           set -eu
-          echo "Source/build validation: $SOURCE_RESULT"
-          echo "Chromium, Firefox, WebKit matrix: $BROWSER_RESULT"
-          if [ "$SOURCE_RESULT" != "success" ] || [ "$BROWSER_RESULT" != "success" ]; then
-            echo "::error::Refusing an unverified release: source and every browser project must pass."
+          echo "Validation event: $EVENT_NAME; ref: $REF_NAME"
+          echo "Source: $SOURCE_RESULT; browser matrix: $BROWSER_RESULT"
+          if [ "$SOURCE_RESULT" != "success" ]; then
+            echo "::error::Source/build validation failed."
             exit 1
           fi
-          echo "All mandatory release checks passed."
+          case "$EVENT_NAME" in
+            pull_request)
+              if [ "$BROWSER_RESULT" != "success" ]; then
+                echo "::error::Every PR browser must pass; skipped/cancelled browsers block merge."
+                exit 1
+              fi
+              ;;
+            push)
+              if [ "$BROWSER_RESULT" != "skipped" ] || [ "$REF_NAME" != "refs/heads/main" ]; then
+                echo "::error::Main push must pass source validation and skip duplicate browsers."
+                exit 1
+              fi
+              ;;
+            *)
+              echo "::error::Unexpected validation event."
+              exit 1
+              ;;
+          esac
+          echo "Required release checks passed."
