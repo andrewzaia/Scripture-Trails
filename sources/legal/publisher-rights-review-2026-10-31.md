@@ -2,6 +2,21 @@
 
 Date: 2026-10-31
 
+## Acceptance addendum - 2 November 2026
+
+**Outcome: the project owner has accepted the scoped publisher and third-party source-rights review for Scripture Trails' existing non-commercial academic use.** The owner previously supplied private ABS/API.Bible contracts for reference, including the NIV-specific agreement, and expressly declared that Scripture Trails complies with those agreements. This is **owner contractual acceptance**, **not an independent legal opinion or a claim that an AI inspected the current private API.Bible billing/licensing dashboard**. Those agreements and credentials are confidential and remain outside the public repository.
+
+Supporting independently observed implementation evidence:
+
+- The four supported reader editions, ESV, NASB20, NIV and NKJV, loaded official provider text on the live production site, with visible copyright and publisher links for all editions. The API.Bible editions are retrieved through server-side authenticated API integrations, with no permanent licensed-text corpus or private notebook text included in exports.
+- FUMS v3 is implemented for displays of API.Bible text; regression coverage specifically verifies reporting when the user returns to a previously loaded cached passage (released in v0.44.21). FUMS is a required publisher control, but API.Bible's public information does not offer a developer dashboard that proves receipt of each individual FUMS report. The application tests establish client-side emission, not server-side publisher ingestion.
+- Copyrighted Bible publisher reference links and the local historical-city media licence, author, source and transformation metadata are covered by source reviews and automated tests. Cross-references do not convey rights to reuse copyrighted Bible translations.
+- Official primary sources: [API.Bible terms](https://api.bible/terms-and-conditions), [API.Bible licensing overview](https://care.api.bible/article/369-understanding-api-bible-licensing), [API.Bible app configuration](https://care.api.bible/article/414-managing-apps), [FUMS policies](https://care.api.bible/article/396-licensing-policies-quick-reference) and [Crossway ESV API terms](https://www.esv.org/api/).
+
+**Ongoing conditions and uncertainty:** API.Bible's NKJV non-commercial availability depends on the application retaining an eligible plan and not exceeding **5,000 monthly end users**. The operator must maintain the correct edition selections, non-commercial designation, FUMS integration and applicable quota, and reassess permissions before any advertising, fundraising or other monetisation that the agreement treats as commercial. The actual app plan, selected-end-user range and account-side licence configuration have **not been independently read through this integration**. Owner acceptance relies on the operator's existing contractual declaration and continuing obligation to keep those settings accurate. Successful passage retrieval alone is not proof of the legal terms.
+
+This addendum supersedes only the former **OPEN** status for the scope defined by the v1 `source-licences` criterion, `Audit publisher/API conditions, stored data permissions, rights notices and bibliographic links for published material`. The dated 31 October review below is retained as a historical snapshot; it does not mean the account dashboard is now independently verified. The gate is accepted with the limitations above. See [GitHub issue #79](https://github.com/andrewzaia/Scripture-Trails/issues/79).
+
 ## Scope and decision
 
 Scripture Trails is a **non-commercial academic Bible-study website**. This review covers publicly available publisher terms, website citation/attribution practices, local data and images, and observable software controls. It is not a copy of an account agreement or private publisher correspondence. No non-public contractual text or details belong in this repository.
