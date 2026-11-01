@@ -3,10 +3,10 @@
   "updated": "2026-11-02",
   "description": "An evidence-aware v1.0 release roadmap checked against the current versioned Scripture Trails source and test data. All 161 written Atlas explanations now have dated scoped AI-assisted source assessments. The 31 October source-linked journey corrections cover selected high-risk passages, not a complete re-audit of all 162 stages. Full reference corpus, physical-device accessibility and independent specialist certification remain separate. No unverified evidence is implied.",
   "currentFocus": [
-    "Maintain the project owner's scholarly acceptance of Scripture Trails' published content, preserving primary biblical references, source qualifications and versioned corrections.",
-    "Maintain the owner's attested non-commercial ESV/API.Bible publisher permissions, selected Bible licences, FUMS reporting and monthly-user limits; recheck terms whenever traffic, monetisation or API.Bible plan changes.",
-    "Verify actual Windows and Apple screen readers, physical device/browser combinations and true 200%/400% zoom beyond synthetic automation.",
-    "Preserve the verified Cloudflare production rollback/recovery evidence, rerun live acceptance on the final v1.0 candidate, and obtain the project owner's final launch decision."
+    "Maintain the project owner's scholarly acceptance and the published Scripture-first source review, with versioned corrections as necessary.",
+    "Maintain the owner's qualified non-commercial edition permissions, source attribution, FUMS usage reports and publisher account limits.",
+    "Record the owner's acceptance of existing browser/device compatibility evidence while preserving unverified physical-device and native Safari zoom limitations for future testing.",
+    "Revalidate the candidate GitHub SHA, full PR checks, Cloudflare production deployment and the project owner's final v1.0 go/no-go decision."
   ],
   "phases": [
     {
@@ -678,15 +678,15 @@
     {
       "id": "v1-accessibility-and-hardening",
       "phase": "next",
-      "status": "planned",
+      "status": "delivered",
       "title": "v1.0 manual accessibility, privacy and resilience checks",
-      "summary": "Supplement automated tests with real assistive technology and device reviews, security/privacy audit and provider failure drills.",
+      "summary": "Complete required Chromium, Firefox and WebKit browser automation, genuine desktop Chromium/Firefox zoom, native desktop Safari reflow, scoped NVDA/VoiceOver routes, privacy and provider resilience audits. The owner accepts remaining physical/mobile testing uncertainty for the v1.0 scope.",
       "capabilities": [
         "NVDA/VoiceOver/TalkBack journeys with recorded outcomes",
         "Safari, Firefox, zoom and real-device verification",
         "Threat model, backup/recovery and publisher obligations review"
       ],
-      "verification": "Document actual devices, browsers, review scope, defects, remediations and remaining limitations. Automated Chromium success alone does not close this milestone."
+      "verification": "Tested scope and explicit owner-accepted risk are recorded separately. Full physical mobile VoiceOver/TalkBack paths and native Safari 200%/400% page zoom remain unverified and are tracked for follow-up, not represented as passed."
     },
     {
       "id": "v1-release-candidate",
@@ -949,7 +949,7 @@
     "target": "1.0.0",
     "baseline": "0.32.0",
     "updated": "2026-11-02",
-    "note": "Fourteen of seventeen v1.0 criteria now have scoped acceptance evidence, including the owner's declared non-commercial publisher-rights acceptance, tested FUMS/attribution controls, owner-led biblical scholarship and exercised Cloudflare production recovery. Three remain open: complete real-device and mobile screen-reader interactions, physical-device and native Safari page-zoom acceptance, and final owner launch go/no-go. Publisher account settings and confidential agreements have not been independently inspected; the owner remains responsible for maintaining eligible licences, selected Bible editions and end-user range.",
+    "note": "Fourteen v1.0 criteria have scoped evidence, two accessibility criteria are explicitly owner-accepted with outstanding physical-device and native Safari zoom limitations, and final launch approval remains open. Owner acceptance does not prove perfect compatibility on every device, and private publisher account settings are not independently inspected.",
     "stages": [
       {
         "id": "baseline",
@@ -1063,8 +1063,8 @@
       {
         "id": "accessibility",
         "title": "Accessibility and browser compatibility",
-        "summary": "Automated Chromium checks must be supplemented with independent interaction using assistive technology and other browser engines.",
-        "next": "Use automated cross-browser keyboard, reflow and enlarged-text checks as preliminary evidence; independent NVDA/JAWS, VoiceOver, physical-device and true 200%/400% browser-zoom acceptance remain open.",
+        "summary": "Required automated cross-browser coverage, genuine desktop browser zoom, native Safari reflow and scoped desktop screen-reader findings are available. The owner accepts remaining real-device and mobile assistive-technology uncertainty for v1.0; it is not certified as tested.",
+        "next": "Retain the accepted testing limitations and gather physical mobile VoiceOver/TalkBack and native Safari zoom evidence after v1.0 as capacity allows. Fix reported defects through versioned releases.",
         "criteria": [
           {
             "id": "automated-accessibility",
@@ -1077,18 +1077,24 @@
           {
             "id": "screen-readers",
             "title": "Manual screen-reader journeys",
-            "status": "open",
+            "status": "accepted-risk",
             "mode": "manual",
-            "evidence": "sources/editorial/accessibility-audit-v0.29.1.md",
-            "acceptance": "Record NVDA or JAWS on Windows, VoiceOver on Apple devices and a mobile screen-reader journey with remediation for blocking defects."
+            "evidence": "sources/operations/v1-device-compatibility-owner-acceptance-2026-11-02.md",
+            "acceptance": "Owner accepts existing automated mobile-profile and real desktop NVDA/VoiceOver evidence for v1.0. Full physical mobile screen-reader journeys are an explicitly unverified residual risk, not a tested pass.",
+            "risk": "No verified VoiceOver/TalkBack interaction journeys on physical iPhone/iPad/Android devices, and desktop NVDA/VoiceOver route testing does not establish equivalent mobile announcements.",
+            "reviewedOn": "2026-11-02",
+            "reviewer": "Scripture Trails project owner - explicit acceptance of existing compatibility evidence with unverified physical-device scope recorded; not a claim of completed device testing"
           },
           {
             "id": "cross-browser-zoom",
             "title": "Cross-browser, real-device and zoom acceptance",
-            "status": "open",
+            "status": "accepted-risk",
             "mode": "manual",
-            "evidence": "public/assets/roadmap.css",
-            "acceptance": "Document Safari and Firefox, physical mobile devices, reduced motion and 200%/400% zoom; remedy critical keyboard, layout and readability failures."
+            "evidence": "sources/operations/v1-device-compatibility-owner-acceptance-2026-11-02.md",
+            "acceptance": "Owner accepts tested desktop Chromium/Firefox genuine 200%/400% zoom and native Safari viewport reflow for v1.0. Physical mobile devices and actual Safari page zoom remain untested.",
+            "risk": "No verified physical mobile device compatibility or native Safari 200%/400% page zoom. Automated mobile profiles and SafariDriver window resizing are not substitute tests.",
+            "reviewedOn": "2026-11-02",
+            "reviewer": "Scripture Trails project owner - explicit acceptance of existing compatibility evidence with unverified physical-device scope recorded; not a claim of completed device testing"
           }
         ]
       },
@@ -1134,7 +1140,7 @@
         "id": "release",
         "title": "Release operations and launch decision",
         "summary": "v1.0 requires traceable source, successful checks, a reproducible deployment, rollback planning and explicit acceptance of residual risks.",
-        "next": "The v0.44.19-to-v0.44.20 production rollback rehearsal succeeded with exact deployment alias and live reader/Atlas checks. Recheck the final v1.0 release candidate, preserve provider and accessibility acceptance, then obtain the project owner's explicit go/no-go decision.",
+        "next": "The verified rollback and scoped live smoke remain accepted. Obtain owner go/no-go for the exact final candidate and confirm all mandatory CI and Cloudflare production checks; do not treat accepted device risk as proof of physical testing.",
         "criteria": [
           {
             "id": "semantic-versioning",
