@@ -1,4 +1,4 @@
-name: Audit - real Apple Safari browser zoom (one-time)
+name: Audit - bounded Safari WebDriver browser zoom shortcut (one-time)
 
 on:
   push:
