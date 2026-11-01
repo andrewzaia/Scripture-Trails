@@ -1,0 +1,44 @@
+name: Experiment - real NVDA and VoiceOver audit (one-time)
+
+on:
+  push:
+    branches: [audit/real-screenreaders-v1-20261101]
+    paths:
+      - .github/workflows/v1-at-experiment.yml
+
+permissions:
+  contents: read
+
+jobs:
+  real-screen-reader:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: windows-2025
+            mode: nvda
+            browser: chromium
+          - os: macos-15
+            mode: voiceover
+            browser: webkit
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - name: Install isolated Guidepup audit dependencies without changing project lockfile
+        run: npm install --no-save @guidepup/playwright @guidepup/guidepup @guidepup/setup
+      - name: Prepare hosted OS to operate actual assistive technology
+        uses: guidepup/setup-action@v0.21.0
+      - name: Install screen reader runtime for this hosted OS
+        run: npx @guidepup/setup install
+      - name: Install headed browser
+        run: npx playwright install ${{ matrix.browser }}
+      - name: Run actual screen reader against the live About page
+        env:
+          SCREEN_READER_PLATFORM: ${{ matrix.mode }}
+        run: npx playwright test --config playwright.assistive.config.mjs --reporter=list
