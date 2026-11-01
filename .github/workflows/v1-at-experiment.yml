@@ -1,4 +1,4 @@
-name: Experiment - NVDA route-heading focus prototype (one-time)
+name: Acceptance - real NVDA and VoiceOver v0.44.22 production verification
 
 on:
   push:
@@ -18,6 +18,9 @@ jobs:
           - os: windows-2025
             mode: nvda
             browser: chromium
+          - os: macos-15
+            mode: voiceover
+            browser: webkit
     runs-on: ${{ matrix.os }}
     timeout-minutes: 25
     steps:
@@ -35,7 +38,7 @@ jobs:
         run: npx @guidepup/setup install
       - name: Install headed browser
         run: npx playwright install ${{ matrix.browser }}
-      - name: Test heading-focus announcement on real NVDA without production changes
+      - name: Verify real screen-reader heading focus on published v0.44.22
         env:
           SCREEN_READER_PLATFORM: ${{ matrix.mode }}
         run: npx playwright test --config playwright.assistive.config.mjs --reporter=list
