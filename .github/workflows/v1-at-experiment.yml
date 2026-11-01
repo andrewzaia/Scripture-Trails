@@ -1,4 +1,4 @@
-name: Experiment - NVDA Atlas navigation diagnostic (one-time)
+name: Experiment - NVDA heading-focus probe (one-time)
 
 on:
   push:
