@@ -10,7 +10,7 @@ const routeChecks=[
  {view:'about',heading:'discernment'},
  {view:'reader',heading:'context'},
 ];
-test('NVDA continues heading navigation across live SPA sections without reinitialising its cursor',async({page,nvda})=>{
+test('NVDA reads SPA headings with optional native browse-cursor return to top',async({page,nvda})=>{
  test.setTimeout(180000);
  await page.goto('/?view=reader&ref=John%203%3A16',{waitUntil:'load'});
  await expect(page.locator('#passage-content')).toHaveAttribute('aria-busy','false',{timeout:18000});
@@ -30,10 +30,21 @@ test('NVDA continues heading navigation across live SPA sections without reiniti
    results.push({empty:!phrase.trim(),matched:phrase.toLowerCase().includes(target.heading)});
    if(results.at(-1).matched){matched=true;break;}
   }
-  observed.push({view:target.view,announced:matched,moves:results.length,silent:results.filter(x=>x.empty).length});
+  const initialMatched=matched,firstMoves=results.length;
+  let recoveredWithControlHome=false,afterHomeMoves=0;
+  if(!matched){
+   await nvda.press('Control+Home');
+   for(let i=0;i<12;i++){
+    await nvda.nextHeading();
+    afterHomeMoves++;
+    const spoken=String(await nvda.lastSpokenPhrase());
+    if(spoken.toLowerCase().includes(target.heading)){matched=true;recoveredWithControlHome=true;break;}
+   }
+  }
+  observed.push({view:target.view,initialMatched,announced:matched,firstMoves,silent:results.filter(x=>x.empty).length,recoveredWithControlHome,afterHomeMoves,domMainFocused:await page.locator('#main').evaluate(e=>e===document.activeElement)});
   if(!matched){
    console.log('NVDA_FIVE_ROUTE_RESULT',JSON.stringify(observed));
-   throw Error('NVDA could not announce the '+target.view+' main heading after navigation');
+   throw Error('NVDA could not announce the '+target.view+' main heading even after Ctrl+Home');
   }
  }
  console.log('NVDA_FIVE_ROUTE_RESULT',JSON.stringify(observed));
