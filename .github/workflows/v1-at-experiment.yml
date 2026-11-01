@@ -1,4 +1,4 @@
-name: Experiment - NVDA browse-document refresh probe (one-time)
+name: Experiment - NVDA SPA mode and announcement diagnostic (one-time)
 
 on:
   push:
@@ -35,7 +35,7 @@ jobs:
         run: npx @guidepup/setup install
       - name: Install headed browser
         run: npx playwright install ${{ matrix.browser }}
-      - name: Verify NVDA virtual-buffer refresh after Atlas transition
+      - name: Diagnose NVDA browse mode and test-only route status on live site
         env:
           SCREEN_READER_PLATFORM: ${{ matrix.mode }}
         run: npx playwright test --config playwright.assistive.config.mjs --reporter=list
