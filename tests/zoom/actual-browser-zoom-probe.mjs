@@ -17,6 +17,31 @@ const metrics=()=>page.evaluate(()=>({
   activeView:document.querySelector('.view.active-view')?.id||null,
 }));
 const findings=[];
+const routeResults=[];
+const routeNames=['discover','reader','connections','jesus-map','paul-map','hebrew-geography','city-studies','entities','roadmap','journeys','notebook','about'];
+async function inspectRoutesAtActualZoom(zoom){
+ for(const view of routeNames){
+  await page.goto('https://www.scripturetrails.com/?view='+view,{waitUntil:'load',timeout:30000});
+  await page.locator('#view-'+view).waitFor({state:'visible',timeout:18000});
+  if(view==='reader')await page.locator('#passage-content[aria-busy="false"]').waitFor({state:'attached',timeout:18000});
+  if(view==='connections')await page.locator('#atlas-preview-content[aria-busy="false"]').waitFor({state:'attached',timeout:18000});
+  const measured=await metrics();
+  const browserZoomMatches=Math.abs(measured.dpr-zoom/100)<0.08;
+  const overflow=measured.scrollWidth>measured.layoutWidth+4;
+  let drawer='not-tested';
+  if(['discover','reader'].includes(view)){
+   const button=page.locator('#menu-toggle');
+   if(await button.isVisible()){
+    await button.click();
+    const expanded=await button.getAttribute('aria-expanded');
+    await page.keyboard.press('Escape');
+    const collapsed=await button.getAttribute('aria-expanded');
+    drawer=expanded==='true'&&collapsed==='false'?'pass':'fail';
+   }
+  }
+  routeResults.push({zoom,view,dpr:measured.dpr,cssViewport:measured.layoutWidth,overflow,overflowPixels:measured.scrollWidth-measured.layoutWidth,drawer,version:measured.version,browserZoomMatches});
+ }
+}
 try{
  await page.goto(url,{waitUntil:'load'});
  await page.locator('#site-version').waitFor({state:'visible',timeout:20000});
@@ -45,8 +70,8 @@ try{
  for(let i=0;i<11;i++){
   const current=await metrics();
   const zoom=current.dpr/baseline.dpr;
-  if(!reached200&&zoom>=1.9){reached200=true;findings.push({phase:'200-percent-candidate',...current});}
-  if(!reached400&&zoom>=3.9){reached400=true;findings.push({phase:'400-percent-candidate',...current});break;}
+  if(!reached200&&zoom>=1.9){reached200=true;findings.push({phase:'200-percent-candidate',...current});await inspectRoutesAtActualZoom(200);}
+  if(!reached400&&zoom>=3.9){reached400=true;findings.push({phase:'400-percent-candidate',...current});await inspectRoutesAtActualZoom(400);break;}
   const raw=execFileSync('xdotool',['search','--onlyvisible','--name','Scripture Trails'],{encoding:'utf8'}).trim();
   const windows=raw.split(/\s+/).filter(Boolean);
   execFileSync('xdotool',['windowactivate','--sync',windows.at(-1)]);
@@ -59,7 +84,9 @@ try{
  console.log('ACTUAL_BROWSER_ZOOM_PROBE',JSON.stringify({
   baseline,final:end,keyboardWorked,
   nativeZoomMeasured:measured,reached200,reached400,
-  snapshots:findings
+  snapshots:findings,routeResults
  }));
  if(!measured)throw Error('Real headed browser zoom could not be verified; no true-zoom acceptance may be claimed');
+ const violations=routeResults.filter(x=>x.overflow||x.drawer==='fail'||!x.browserZoomMatches||x.version!=='v0.44.22');
+ if(violations.length)throw Error('Actual browser zoom failed '+violations.length+' of '+routeResults.length+' sampled view checks; inspect ACTUAL_BROWSER_ZOOM_PROBE output');
 }finally{await browser.close();}
