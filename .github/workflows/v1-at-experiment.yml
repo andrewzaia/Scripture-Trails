@@ -1,4 +1,4 @@
-name: Experiment - NVDA native cursor repositioning check (one-time)
+name: Experiment - NVDA route-heading focus prototype (one-time)
 
 on:
   push:
@@ -35,7 +35,7 @@ jobs:
         run: npx @guidepup/setup install
       - name: Install headed browser
         run: npx playwright install ${{ matrix.browser }}
-      - name: Check native NVDA browse cursor across five SPA routes
+      - name: Test heading-focus announcement on real NVDA without production changes
         env:
           SCREEN_READER_PLATFORM: ${{ matrix.mode }}
         run: npx playwright test --config playwright.assistive.config.mjs --reporter=list
