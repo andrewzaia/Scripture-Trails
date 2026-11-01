@@ -4,7 +4,7 @@
 
 - Use the API.Bible-documented reporting pixel when displaying licensed translations, replacing browser requests that failed to reach the publisher.
 - Permit only the publisher's FUMS image endpoint in the restrictive image security policy, without adding external JavaScript or exposing private notebook data.
-- Add reporting-token, anonymous identifier and cross-browser network regressions with synthetic Bible content.
+- Prevent cached reporting images from suppressing repeated Scripture-view reports, with anonymous per-view nonces and cross-browser tests using synthetic Bible content.
 
 ## 0.44.18 - 01/11/2026: Accessible Scripture reader publisher links
 

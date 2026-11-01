@@ -28,12 +28,14 @@ test('FUMS makes private-referrer GET pixels without executing third-party scrip
    assert.equal(p.request.pathname,'/f3');
    assert.equal(p.request.searchParams.get('t'),'TEST_FUMS_USAGE_TOKEN_1234');
    assert.equal(p.referrerPolicy,'no-referrer');
-   assert.deepEqual([...p.request.searchParams.keys()].sort(),['dId','sId','t']);
+   assert.deepEqual([...p.request.searchParams.keys()].sort(),['cb','dId','sId','t']);
+   assert.match(p.request.searchParams.get('cb'),/^[0-9a-f-]{36}$/i);
    assert.ok(!p.request.href.includes('John')&&!p.request.href.includes('notes'));
   }
   assert.equal(pixels[0].request.searchParams.get('dId'),pixels[1].request.searchParams.get('dId'));
   assert.equal(pixels[0].request.searchParams.get('sId'),pixels[1].request.searchParams.get('sId'));
   assert.notEqual(pixels[0].request.searchParams.get('dId'),pixels[0].request.searchParams.get('sId'));
+  assert.notEqual(pixels[0].request.searchParams.get('cb'),pixels[1].request.searchParams.get('cb'));
   assert.equal(stored.size,1);
   assert.equal(session.size,1);
  }finally{

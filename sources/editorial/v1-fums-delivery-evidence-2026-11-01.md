@@ -20,3 +20,7 @@ Reference: https://care.api.bible/article/417-understanding-fums and https://doc
 
 ## Verification limits
 HTTP 200 indicates the FUMS GET reached the endpoint but does not independently prove API.Bible counted the event in its private publisher dashboard. Actual delivery after deployment must be rechecked. Contractual entitlements, full account usage and signed NIV terms must still be evaluated separately; keep `source-licences` OPEN pending that evidence. Do not claim scholarly or physical accessibility gates complete.
+
+## Repeat-view cache safety identified during PR testing
+
+The initial cross-browser reporting test observed one real synthetic pixel GET for two displayed API.Bible editions when the fixture reused the same FUMS token and anonymous identifiers. The second image instance was served from the browser image cache instead of issuing a second network GET. API.Bible explicitly requires a new FUMS report each time the same cached content is displayed, so a per-view unique URL is necessary irrespective of publisher cache policy. Add an anonymous random `cb` query parameter generated for each display, preserving stable device and session identifiers. Browser and unit regressions now require two GETs for the same token and verify nonce uniqueness and no personal data. The additional `cb` field is not documented in API.Bible's canonical parameter list; confirm that the live publisher endpoint accepts its presence and, where available, verify ingestion with the publisher before treating contractual rights as cleared.

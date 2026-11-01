@@ -45,6 +45,9 @@ export function reportScriptureView(meta){
   pixel.onerror=cleanup;
   activePixels.add(pixel);
   timeout=setTimeout(cleanup,12000);
+  // FUMS must record every display, even if the same token is reused from cache.
+  // A per-view nonce prevents browser image-cache reuse without changing device/session IDs.
+  url.searchParams.set('cb',crypto.randomUUID());
   pixel.src=url.href;
   return true;
  }catch{cleanup();return false;}
