@@ -74,20 +74,23 @@
       "scope": "Online report introduction and survey descriptions checked; cited earlier excavations were not separately audited."
     },
     "citation-review-nein": {
-      "title": "An Early Roman-Period Residence at Nein (2025)",
+      "title": "An Early Roman-Period Residence at Nein and Episodes of the First Jewish Revolt in the Jezreel Valley (2022)",
       "url": "https://publications.iaa.org.il/atiqot/vol107/iss1/6/",
       "kind": "publisher-abstract",
       "author": "Fadi Abu-Zidan, Yardenna Alexandre and Danny Syon",
-      "checkedOn": "2026-10-28",
-      "scope": "Publisher abstract and bibliographic record checked. Full Hebrew report and specialist finds reports not reviewed."
+      "checkedOn": "2026-11-01",
+      "scope": "Original publication: 'Atiqot volume 107 (2022), Hebrew pp. 1-26 and English summary pp. 271-272. The publisher's downloads date from January 2025, which does not change the publication year. This excavation establishes Late Hellenistic and Early Roman residence, not the location of Luke 7's encounter. Full Hebrew report and specialist finds were not independently reanalysed.",
+      "publisher": "Fadi Abu-Zidan, Yardenna Alexandre and Danny Syon, 'Atiqot 107 (2022), Israel Antiquities Authority",
+      "doi": "10.70967/2948-040X.1843"
     },
     "citation-review-sidon": {
-      "title": "Sidon Excavation - project history",
-      "url": "https://www.sidonexcavation.com/",
-      "kind": "project-summary",
-      "author": "Sidon Excavation project",
-      "checkedOn": "2026-10-28",
-      "scope": "Indexed public project summary checked; direct page requests timed out. Field reports and full stratigraphy not reviewed."
+      "title": "Nineteen years of excavation on Sidon's College site (2018)",
+      "url": "https://www.oeaw.ac.at/en/oeai/media/news-archive/news-detail/nineteen-years-of-excavation-on-sidons-college-site",
+      "kind": "institutional excavation-director summary",
+      "author": "Claude Doumet-Serhal, Director of the Sidon excavations",
+      "checkedOn": "2026-11-01",
+      "scope": "Original excavation director's institutional summary of ancient Sidon's College site and its long occupation, not a reconstruction of Jesus' precise route or street-level meetings. Earlier Sidon project homepage intermittently returned HTTP 502; detailed excavation stratigraphy not independently reanalysed.",
+      "publisher": "Austrian Academy of Sciences, Austrian Archaeological Institute"
     },
     "citation-review-banias": {
       "title": "Banias (2025 preliminary report)",
