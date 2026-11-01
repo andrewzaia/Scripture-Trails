@@ -1,4 +1,4 @@
-name: Test licensed FUMS reporting via isolated pixel, one browser
+name: Verify FUMS cache nonce acceptance - one low-cost runner
 on:
   push:
     branches:
@@ -6,16 +6,13 @@ on:
 permissions:
   contents: read
 jobs:
-  test:
+  inspect:
     runs-on: ubuntu-24.04
-    timeout-minutes: 12
+    timeout-minutes: 8
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-node@v5
         with:
           node-version-file: .nvmrc
-          cache: npm
-      - run: npm ci
-      - run: npx playwright install --with-deps chromium
-      - name: Probe manual publisher pixel using real origin with test-only CSP
-        run: node scripts/audit-fums-image.mjs
+      - name: Check two real publisher GETs with stable anonymous IDs and fresh cache nonce
+        run: node scripts/audit-fums-cache-nonce.mjs
