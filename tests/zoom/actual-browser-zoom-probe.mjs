@@ -1,9 +1,11 @@
-import {chromium} from '@playwright/test';
+import {chromium,firefox} from '@playwright/test';
 import {execFileSync} from 'node:child_process';
 
 // Real headed browser zoom experiment. No CSS transform, text-size injection,
 // viewport emulation, DevTools page-scale override or simulated device metrics.
-const browser=await chromium.launch({headless:false,args:['--window-size=1280,900']});
+const engine=process.env.ZOOM_ENGINE==='firefox'?'firefox':'chromium';
+const browserType=engine==='firefox'?firefox:chromium;
+const browser=await browserType.launch({headless:false,args:engine==='firefox'?[]:['--window-size=1280,900']});
 const context=await browser.newContext({viewport:null});
 const page=await context.newPage();
 const url='https://www.scripturetrails.com/?view=about';
@@ -61,6 +63,12 @@ async function inspectRoutesAtActualZoom(zoom){
 try{
  await page.goto(url,{waitUntil:'load'});
  await page.locator('#site-version').waitFor({state:'visible',timeout:20000});
+ if(engine==='firefox'){
+  const ids=execFileSync('xdotool',['search','--onlyvisible','--name','Scripture Trails'],{encoding:'utf8'}).trim().split(/\s+/).filter(Boolean);
+  if(!ids.length)throw Error('Firefox browser window not found');
+  execFileSync('xdotool',['windowsize',ids.at(-1),'1280','900']);
+  await page.waitForTimeout(250);
+ }
  const baseline=await metrics();
  if(baseline.version!=='v0.44.22')throw Error('Version mismatch '+baseline.version);
  findings.push({phase:'baseline',...baseline});
@@ -98,7 +106,7 @@ try{
  const end=await metrics();
  const measured=end.cssWidth>0&&baseline.cssWidth/end.cssWidth>=1.9&&end.dpr/baseline.dpr>=1.9;
  console.log('ACTUAL_BROWSER_ZOOM_PROBE',JSON.stringify({
-  baseline,final:end,keyboardWorked,
+  engine,baseline,final:end,keyboardWorked,
   nativeZoomMeasured:measured,reached200,reached400,
   snapshots:findings,routeResults
  }));
