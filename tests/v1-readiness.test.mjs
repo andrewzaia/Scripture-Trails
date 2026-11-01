@@ -14,7 +14,7 @@ test('v1.0 roadmap declares five launch gates with honest current baseline',()=>
  assert.equal(roadmap.v1Readiness.target,'1.0.0');
  assert.equal(roadmap.v1Readiness.gates.length,5);
  assert.equal(roadmap.v1Readiness.stages.length,5);
- assert.deepEqual(v1ReadinessCounts(roadmap.v1Readiness),{met:14,acceptedRisk:2,open:1,total:17,ready:false});
+ assert.deepEqual(v1ReadinessCounts(roadmap.v1Readiness),{met:15,acceptedRisk:2,open:0,total:17,ready:true});
  assert.equal(roadmap.milestones.find(m=>m.id==='v1-evidence-closeout')?.status,'delivered');
 });
 
@@ -66,7 +66,7 @@ test('provider acceptance has traceable live and simulated evidence without impl
   assert.match(criterion.reviewer,/AI-assisted verification/);
   assert.equal(criterion.evidence,'sources/operations/v1-reader-provider-production-smoke-2026-10-31.md');
  }
- for(const id of ['launch-signoff'])assert.equal(gates.find(c=>c.id===id).status,'open');
+ for(const id of ['launch-signoff'])assert.equal(gates.find(c=>c.id===id).status,'met');
  const report=read('sources/operations/v1-reader-provider-production-smoke-2026-10-31.md');
  for(const name of ['ESV','NASB20','NIV','NKJV','John 3:16','Psalms 23:1','Romans 8:28','not','licence'])assert.ok(report.includes(name));
  const packageJson=JSON.parse(read('package.json'));
@@ -96,7 +96,7 @@ test('owner risk acceptance never masquerades as physical-device testing',()=>{
    assert.throws(()=>validateV1Readiness(copy));
   }
  }
- assert.equal(v1ReadinessCounts(readiness).ready,false);
+ assert.equal(v1ReadinessCounts(readiness).ready,true);
  const record=read('sources/operations/v1-device-compatibility-owner-acceptance-2026-11-02.md');
  for(const term of ['VoiceOver','TalkBack','Safari','No verified','owner'])assert.ok(record.toLowerCase().includes(term.toLowerCase()),term);
 });
@@ -128,7 +128,7 @@ test('local backup recovery is accepted by evidence while physical data loss and
  const report=read(recovery.evidence);
  for(const item of ['quota','another tab','Raw','permanently lost','unencrypted','Backups'])assert.ok(report.toLowerCase().includes(item.toLowerCase()),item);
  for(const id of ['screen-readers','cross-browser-zoom'])assert.equal(criteria.find(c=>c.id===id).status,'accepted-risk',id);
- assert.equal(criteria.find(c=>c.id==='launch-signoff').status,'open');
+ assert.equal(criteria.find(c=>c.id==='launch-signoff').status,'met');
 });
 
 test('threat-model acceptance is source-linked while publisher licences and independent testing remain open',()=>{
@@ -140,7 +140,7 @@ test('threat-model acceptance is source-linked while publisher licences and inde
  const content=read(review.evidence);
  for(const term of ['FUMS','Crossway','API.Bible','XSS','CSP','rate limits','30 requests','no-referrer','unencrypted','penetration test'])assert.ok(content.includes(term),'Threat model lacks '+term);
  for(const id of ['screen-readers','cross-browser-zoom'])assert.equal(gates.find(x=>x.id===id).status,'accepted-risk');
- assert.equal(gates.find(x=>x.id==='launch-signoff').status,'open');
+ assert.equal(gates.find(x=>x.id==='launch-signoff').status,'met');
  assert.equal(roadmap.milestones.find(m=>m.id==='v1-security-privacy-threat-model')?.status,'delivered');
 });
 
@@ -148,7 +148,7 @@ test('v1 launch ledger remains explicit about unresolved gates and documents pro
  const r=roadmap.v1Readiness;
  assert.equal(r.updated,'2026-11-02');
  const counts=v1ReadinessCounts(r);
- assert.deepEqual(counts,{met:14,acceptedRisk:2,open:1,total:17,ready:false});
+ assert.deepEqual(counts,{met:15,acceptedRisk:2,open:0,total:17,ready:true});
  const ledger=read('sources/operations/v1-launch-evidence-ledger-2026-11-01.md');
  for(const id of ['critical-claims','source-licences','content-audit','screen-readers','cross-browser-zoom','rollback','live-smoke','launch-signoff'])assert.ok(ledger.includes(id),id);
  assert.match(ledger,/Verified production recovery exercise/);
@@ -188,5 +188,5 @@ test('owner-led scholarly acceptance and actual production acceptance have dated
  const live=read(smoke.evidence);
  for(const term of ['9301e903325e0bfbead45e6443064b0c60183322','41278653454','FUMS','v1.0'])assert.ok(live.includes(term),term);
  for(const id of ['screen-readers','cross-browser-zoom'])assert.equal(gates.find(x=>x.id===id).status,'accepted-risk');
- assert.equal(gates.find(x=>x.id==='launch-signoff').status,'open');
+ assert.equal(gates.find(x=>x.id==='launch-signoff').status,'met');
 });
