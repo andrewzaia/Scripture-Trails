@@ -263,7 +263,7 @@ test('completed coverage retains final narrative differences and further-review 
  assert.equal(CITATION_REVIEW.deferred.some(s=>s.includes('The other 7 explained pairs')),false);
  const roadmap=json('roadmap');assert.equal(roadmap.milestones.find(m=>m.id==='source-coverage-final-07').status,'delivered');
  const followup=roadmap.milestones.find(m=>m.id==='source-coverage-followup');assert.equal(followup.status,'planned');assert.match(followup.summary,/115 of 115.*32.*not constitute scholarly certification/);
- assert.ok(roadmap.v1Readiness.gates.find(g=>g.id==='accessibility').criteria.some(c=>c.id==='screen-readers'&&c.status==='open'));
+ assert.ok(roadmap.v1Readiness.gates.find(g=>g.id==='accessibility').criteria.some(c=>c.id==='screen-readers'&&c.status==='accepted-risk'));
 });
 
 test('final batch preserves all earlier assessments, sources, anchors and classifications',()=>{

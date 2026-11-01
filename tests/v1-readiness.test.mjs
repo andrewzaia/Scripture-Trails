@@ -98,7 +98,7 @@ test('owner risk acceptance never masquerades as physical-device testing',()=>{
  }
  assert.equal(v1ReadinessCounts(readiness).ready,false);
  const record=read('sources/operations/v1-device-compatibility-owner-acceptance-2026-11-02.md');
- for(const term of ['VoiceOver','TalkBack','Safari','unverified','not','owner'])assert.ok(record.toLowerCase().includes(term.toLowerCase()),term);
+ for(const term of ['VoiceOver','TalkBack','Safari','not verified','not','owner'])assert.ok(record.toLowerCase().includes(term.toLowerCase()),term);
 });
 
 test('owner-accepted publisher rights are qualified, dated and not described as an independent account audit',()=>{
