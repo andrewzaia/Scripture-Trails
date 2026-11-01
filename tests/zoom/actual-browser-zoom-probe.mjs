@@ -4,7 +4,7 @@ import {execFileSync} from 'node:child_process';
 // Real headed browser zoom experiment. No CSS transform, text-size injection,
 // viewport emulation, DevTools page-scale override or simulated device metrics.
 const browser=await chromium.launch({headless:false,args:['--window-size=1280,900']});
-const context=await browser.newContext({viewport:null,deviceScaleFactor:1});
+const context=await browser.newContext({viewport:null});
 const page=await context.newPage();
 const url='https://www.scripturetrails.com/?view=about';
 const metrics=()=>page.evaluate(()=>({
