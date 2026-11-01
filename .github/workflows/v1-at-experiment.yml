@@ -1,4 +1,4 @@
-name: Experiment - NVDA heading-focus probe (one-time)
+name: Experiment - NVDA browse-document refresh probe (one-time)
 
 on:
   push:
@@ -35,7 +35,7 @@ jobs:
         run: npx @guidepup/setup install
       - name: Install headed browser
         run: npx playwright install ${{ matrix.browser }}
-      - name: Verify real screen-reader headings across About, reader, Atlas and notebook
+      - name: Verify NVDA virtual-buffer refresh after Atlas transition
         env:
           SCREEN_READER_PLATFORM: ${{ matrix.mode }}
         run: npx playwright test --config playwright.assistive.config.mjs --reporter=list
