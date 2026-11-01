@@ -43,7 +43,7 @@ export function createRoadmap(root){
  function renderReadiness(){
   const readiness=data.v1Readiness,counts=v1ReadinessCounts(readiness),summary=$('v1-summary'),steps=$('v1-stages'),gates=$('v1-gates');
   summary.replaceChildren();
-  summary.append(make('strong','',counts.met+' verified, '+counts.acceptedRisk+' accepted with limitations, '+counts.open+' open ('+counts.total+' total)'),make('span','',counts.ready?'No remaining launch criteria open. Final release still requires CI, deployment verification and owner go/no-go.':counts.open+' release criterion remains open. v1.0 is not yet approved.'));
+  summary.append(make('strong','',counts.met+' verified, '+counts.acceptedRisk+' accepted with limitations, '+counts.open+' open ('+counts.total+' total)'),make('span','',counts.ready?'All v1.0 launch criteria accepted. Every release still requires CI, verified production deployment and monitoring of documented limitations.':counts.open+' release criterion remains open. v1.0 is not yet approved.'));
   steps.replaceChildren();
   for(const [i,stage] of readiness.stages.entries()){
    const li=make('li');li.append(make('strong','',(i+1)+'. '+stage.title),make('span','',stage.goal));steps.append(li);
