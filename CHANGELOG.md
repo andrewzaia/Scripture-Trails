@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.44.22 - 01/11/2026: Accessible navigation between study sections
+
+- Move keyboard and screen-reader focus to the active section heading when navigating across study pages.
+- Preserve initial page focus, Skip to content, passage navigation and mobile navigation behaviour.
+
 ## 0.44.21 - 01/11/2026: Publisher view reporting and recovery readiness
 
 - Report API.Bible Scripture views when returning to a cached passage.

@@ -1,4 +1,4 @@
-import {PATHS} from './studies.js?v=0.44.21';
+import {PATHS} from './studies.js?v=0.44.22';
 export function validateReadingPlans(value){
  if(!value||typeof value!=='object'||Array.isArray(value))throw Error('Invalid reading progress.');
  const result=Object.create(null);
