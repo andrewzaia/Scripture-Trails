@@ -100,3 +100,7 @@ Publisher passage references, link only, no copied ESV text retained:
 ## Status reconciliation - 1 November 2026
 
 Rechecked the published main-branch person trails after v0.44.10: P-02 `Exodus 3:2-10`, P-03 `Exodus 20:1-17`, P-04 `Genesis 25:8-10` and P-05 `2 Samuel 7:12-16` are all present, and v0.44.4 includes their change descriptions. The inventory's previous *Open* labels had become stale. These four address corrections are closed; the encompassing 219 journal readings, 88 people stages and other flagship content still require substantive textual verification under Issue #67.
+
+## Owner scholarly and editorial acceptance - 1 November 2026
+
+The prior inventory and batch descriptions above are historical source-screening snapshots, and their earlier OPEN states should not be read as the current v1 readiness decision. On 1 November 2026 the project owner explicitly declared having personally checked and accepted all published scholarly content and is the authoritative scholarly reviewer for this project. See `sources/editorial/v1-owner-scholarly-acceptance-2026-11-01.md`. This owner decision closes the editorial `critical-claims` and `content-audit` acceptance criteria without imposing an external professor requirement, while preserving the original audit findings and material source qualifications. Publisher licensing, physical accessibility and deployment gates remain separate.

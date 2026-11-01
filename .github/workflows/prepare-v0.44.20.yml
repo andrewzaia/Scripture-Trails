@@ -1,0 +1,41 @@
+name: Prepare v0.44.20 owner editorial and scoped production signoff
+on:
+  push:
+    branches:
+      - release/v0.44.20-owner-scholar-acceptance
+permissions:
+  contents: write
+jobs:
+  prepare:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v5
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - name: Generate the properly versioned public and repository change history
+        run: |
+          npm run release -- patch "Owner-led scholarly review and verified launch readiness" \
+            "Record the project owner's scholarly and editorial approval of published Scripture study content, without requiring a second professor or external specialist." \
+            "Recognise independently evidenced live production checks for the four Bible editions, Atlas, notebook and publisher usage reports, while retaining the final-candidate recheck." \
+            "Update the v1.0 readiness roadmap, evidence records and tests to show twelve of seventeen acceptance criteria met, leaving rights, physical accessibility, rollback and final approval open."
+      - name: Validate all source checks and browser test registration
+        run: |
+          npm run build
+          npx playwright test --list
+      - name: Remove this preparation workflow and push the release commit
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm .github/workflows/prepare-v0.44.20.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --check
+          git commit -m "chore(release): prepare v0.44.20 owner scholarly acceptance"
+          git push origin HEAD:release/v0.44.20-owner-scholar-acceptance
