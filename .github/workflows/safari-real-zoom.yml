@@ -1,0 +1,25 @@
+name: Audit - real Apple Safari browser zoom (one-time)
+
+on:
+  push:
+    branches: [audit/native-safari-zoom-v1-20261102]
+    paths: [.github/workflows/safari-real-zoom.yml]
+
+permissions:
+  contents: read
+
+jobs:
+  real-safari-zoom:
+    runs-on: macos-15
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Enable genuine Safari WebDriver
+        run: sudo /usr/bin/safaridriver --enable
+      - name: Install isolated Selenium client
+        run: python -m pip install 'selenium>=4.28,<5'
+      - name: Measure live Safari zoom through real macOS keyboard
+        run: python tests/zoom/native-safari-zoom.py
