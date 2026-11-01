@@ -15,7 +15,7 @@ test('v1.0 roadmap declares five launch gates with honest current baseline',()=>
  assert.equal(roadmap.v1Readiness.gates.length,5);
  assert.equal(roadmap.v1Readiness.stages.length,5);
  assert.deepEqual(v1ReadinessCounts(roadmap.v1Readiness),{met:14,acceptedRisk:2,open:1,total:17,ready:false});
- assert.equal(roadmap.milestones.find(m=>m.id==='v1-evidence-closeout')?.status,'next');
+ assert.equal(roadmap.milestones.find(m=>m.id==='v1-evidence-closeout')?.status,'delivered');
 });
 
 test('Atlas review deficit is displayed as pending rather than mistaken for completed scholarship',()=>{
