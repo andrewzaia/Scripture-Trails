@@ -14,8 +14,8 @@ test('v1.0 roadmap declares five launch gates with honest current baseline',()=>
  assert.equal(roadmap.v1Readiness.target,'1.0.0');
  assert.equal(roadmap.v1Readiness.gates.length,5);
  assert.equal(roadmap.v1Readiness.stages.length,5);
- assert.deepEqual(v1ReadinessCounts(roadmap.v1Readiness),{met:14,open:3,total:17,ready:false});
- assert.equal(roadmap.milestones.find(m=>m.id==='v1-evidence-closeout')?.status,'next');
+ assert.deepEqual(v1ReadinessCounts(roadmap.v1Readiness),{met:14,acceptedRisk:2,open:1,total:17,ready:false});
+ assert.equal(roadmap.milestones.find(m=>m.id==='v1-evidence-closeout')?.status,'delivered');
 });
 
 test('Atlas review deficit is displayed as pending rather than mistaken for completed scholarship',()=>{
@@ -73,6 +73,34 @@ test('provider acceptance has traceable live and simulated evidence without impl
  assert.equal(packageJson.scripts['check:live-reader'],'node scripts/check-live-reader.mjs');
 });
 
+test('owner risk acceptance never masquerades as physical-device testing',()=>{
+ const readiness=roadmap.v1Readiness;
+ const criteria=readiness.gates.flatMap(g=>g.criteria);
+ for(const id of ['screen-readers','cross-browser-zoom']){
+  const criterion=criteria.find(c=>c.id===id);
+  assert.equal(criterion.status,'accepted-risk');
+  assert.equal(criterion.mode,'manual');
+  assert.equal(criterion.reviewedOn,'2026-11-02');
+  assert.match(criterion.reviewer,/project owner/i);
+  assert.equal(criterion.evidence,'sources/operations/v1-device-compatibility-owner-acceptance-2026-11-02.md');
+  assert.match(criterion.risk,/No verified/i);
+  for(const mutation of [
+   c=>{delete c.risk;},
+   c=>{delete c.reviewer;},
+   c=>{c.mode='automated';},
+   c=>{c.id='launch-signoff';}
+  ]){
+   const copy=structuredClone(readiness);
+   const target=copy.gates.flatMap(g=>g.criteria).find(c=>c.id===id);
+   mutation(target);
+   assert.throws(()=>validateV1Readiness(copy));
+  }
+ }
+ assert.equal(v1ReadinessCounts(readiness).ready,false);
+ const record=read('sources/operations/v1-device-compatibility-owner-acceptance-2026-11-02.md');
+ for(const term of ['VoiceOver','TalkBack','Safari','No verified','owner'])assert.ok(record.toLowerCase().includes(term.toLowerCase()),term);
+});
+
 test('owner-accepted publisher rights are qualified, dated and not described as an independent account audit',()=>{
  const gates=roadmap.v1Readiness.gates.flatMap(g=>g.criteria);
  const c=gates.find(x=>x.id==='source-licences');
@@ -99,7 +127,8 @@ test('local backup recovery is accepted by evidence while physical data loss and
  assert.equal(recovery.evidence,'sources/operations/v1-notebook-recovery-audit-2026-10-31.md');
  const report=read(recovery.evidence);
  for(const item of ['quota','another tab','Raw','permanently lost','unencrypted','Backups'])assert.ok(report.toLowerCase().includes(item.toLowerCase()),item);
- for(const id of ['screen-readers','cross-browser-zoom','launch-signoff'])assert.equal(criteria.find(c=>c.id===id).status,'open',id);
+ for(const id of ['screen-readers','cross-browser-zoom'])assert.equal(criteria.find(c=>c.id===id).status,'accepted-risk',id);
+ assert.equal(criteria.find(c=>c.id==='launch-signoff').status,'open');
 });
 
 test('threat-model acceptance is source-linked while publisher licences and independent testing remain open',()=>{
@@ -110,7 +139,8 @@ test('threat-model acceptance is source-linked while publisher licences and inde
  assert.equal(review.evidence,'sources/security/v1-privacy-threat-model-2026-10-31.md');
  const content=read(review.evidence);
  for(const term of ['FUMS','Crossway','API.Bible','XSS','CSP','rate limits','30 requests','no-referrer','unencrypted','penetration test'])assert.ok(content.includes(term),'Threat model lacks '+term);
- for(const id of ['screen-readers','cross-browser-zoom','launch-signoff'])assert.equal(gates.find(x=>x.id===id).status,'open');
+ for(const id of ['screen-readers','cross-browser-zoom'])assert.equal(gates.find(x=>x.id===id).status,'accepted-risk');
+ assert.equal(gates.find(x=>x.id==='launch-signoff').status,'open');
  assert.equal(roadmap.milestones.find(m=>m.id==='v1-security-privacy-threat-model')?.status,'delivered');
 });
 
@@ -118,7 +148,7 @@ test('v1 launch ledger remains explicit about unresolved gates and documents pro
  const r=roadmap.v1Readiness;
  assert.equal(r.updated,'2026-11-02');
  const counts=v1ReadinessCounts(r);
- assert.deepEqual(counts,{met:14,open:3,total:17,ready:false});
+ assert.deepEqual(counts,{met:14,acceptedRisk:2,open:1,total:17,ready:false});
  const ledger=read('sources/operations/v1-launch-evidence-ledger-2026-11-01.md');
  for(const id of ['critical-claims','source-licences','content-audit','screen-readers','cross-browser-zoom','rollback','live-smoke','launch-signoff'])assert.ok(ledger.includes(id),id);
  assert.match(ledger,/Verified production recovery exercise/);
@@ -157,5 +187,6 @@ test('owner-led scholarly acceptance and actual production acceptance have dated
  assert.equal(smoke.evidence,'sources/operations/v1-production-acceptance-v0.44.19-2026-11-01.md');
  const live=read(smoke.evidence);
  for(const term of ['9301e903325e0bfbead45e6443064b0c60183322','41278653454','FUMS','v1.0'])assert.ok(live.includes(term),term);
- for(const id of ['screen-readers','cross-browser-zoom','launch-signoff'])assert.equal(gates.find(x=>x.id===id).status,'open');
+ for(const id of ['screen-readers','cross-browser-zoom'])assert.equal(gates.find(x=>x.id===id).status,'accepted-risk');
+ assert.equal(gates.find(x=>x.id==='launch-signoff').status,'open');
 });

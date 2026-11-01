@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.44.24 - 02/11/2026: Qualified v1 readiness compatibility acceptance
+
+- Record the project's owner-accepted device and accessibility testing limitations, without claiming untested devices passed.
+- Distinguish tested, owner-accepted risk and open criteria in the public v1 roadmap and accompanying regression checks.
+- Complete scoped evidence and accessibility roadmap milestones while retaining mandatory CI and final launch approval.
+- Check genuine 200% and 400% Chromium/Firefox page zoom with OS keyboard input on the release candidate, within existing CI runners.
+- Add semantic accessibility, touch, reduced motion and reflow tests plus free native Windows NVDA and macOS VoiceOver audit paths.
+- Reduce browser test artifact retention to three days to limit storage consumption.
+
 ## 0.44.23 - 02/11/2026: Publisher rights acceptance and Safari verification
 
 - Record the project owner's qualified non-commercial publisher-rights acceptance and ongoing licence obligations.

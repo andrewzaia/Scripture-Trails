@@ -1,31 +1,13 @@
-# Browser release coverage
+# Scripture Trails browser and assistive technology testing
 
-Run `npm ci`, `npx playwright install --with-deps chromium`, then `npm run test:browser`.
-Use `npm run test:browser:report` to inspect the HTML report and retained failure traces.
-Set `PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH` to use a locally installed Chromium
-when its matching Playwright browser download is unavailable. CI installs the
-pinned Playwright Chromium build. The static test server binds only to loopback. It does not run the Pages Functions.
+The required PR browser matrix runs desktop/mobile Chromium, desktop Firefox and desktop/mobile WebKit. Tests use a localhost fixture server, mock Bible publisher APIs and reject external network calls. No licensed passages, tokens or real notebook data are used.
 
-The same journeys run in desktop Chromium (1440 px) and mobile Chromium (390 px,
-touch enabled). They cover passage and edition navigation, error recovery, Atlas
-preview/focus using its keyboard list, Gospel and Pauline map alternatives,
-roadmap filters, local notes/highlights/bookmarks, linked places, dated collections,
-backup round trips, explicit conflict replacement, import-versus-draft conflicts
-and cross-tab stale-write protection for collections, reader notes and bookmarks.
+Run `npm ci`, install the Playwright engines, then run `npm run test:browser`. The source/build gate runs first, including release consistency, canonical reference checks, the v1 readiness guard and Node regression tests.
 
-All twelve views receive axe WCAG 2 A/AA and 2.1 A/AA checks in dark and light
-themes and a horizontal page overflow check. Keyboard checks cover the skip link,
-mobile navigation dismissal, Atlas and map lists, and roadmap filters. CI has no
-test retries; the release-gate job fails if either source or browser checks fail.
-Reports and failure traces are retained for 14 days and contain synthetic data.
+The existing Chromium and Firefox jobs additionally run `tests/zoom/actual-browser-zoom-regression.mjs` inside headed browsers, with native X11 Ctrl+plus keyboard input. The check requires measured DPR and effective CSS viewport changes at both true 200% and 400% zoom, no document overflow and functioning menu and consent controls across twelve main views. It fails if zoom was not actually achieved. WebKit's viewport and text tests are not represented as actual native Safari zoom.
 
-Passage responses are invented fixture prose with synthetic attribution and no
-Scripture-view token. Unexpected API requests and external network requests fail
-the fixture. No publisher Bible text, account, API credential or live service is
-used. API.Bible/Crossway adapters retain their separate Node tests; browser fixtures
-do not establish live publisher availability or real response compatibility.
+Playwright also checks axe WCAG 2.2 AA, keyboard focus, route headings, control names, mobile touch-profile navigation, reduced motion, landscape and 320px/640px layout. Traces are retained for three days on CI.
 
-Automated scans and keyboard scenarios do not establish complete accessibility.
-A manual screen-reader audit, real-device testing, Firefox and Safari coverage,
-and subjective readability remain separate review work. The public roadmap keeps
-manual assistive-technology review open.
+The separate `.github/workflows/v1-native-at.yml` audit uses real Windows NVDA and macOS VoiceOver on standard GitHub-hosted machines with local synthetic Bible fixtures. Its outcomes must be assessed separately; a failed speech assertion remains a failure. This is not mobile iOS VoiceOver or Android TalkBack.
+
+Physical mobile AT use and genuine native Safari 200%/400% page zoom remain unverified; no simulator or desktop runner can certify universal device compatibility. Do not bypass any source, browser, release or deployment checks.

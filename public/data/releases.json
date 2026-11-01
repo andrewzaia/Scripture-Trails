@@ -1,6 +1,19 @@
 {
   "releases": [
     {
+      "version": "0.44.24",
+      "date": "2026-11-02",
+      "title": "Qualified v1 readiness compatibility acceptance",
+      "changes": [
+        "Record the project's owner-accepted device and accessibility testing limitations, without claiming untested devices passed.",
+        "Distinguish tested, owner-accepted risk and open criteria in the public v1 roadmap and accompanying regression checks.",
+        "Complete scoped evidence and accessibility roadmap milestones while retaining mandatory CI and final launch approval.",
+        "Verify true 200% and 400% Chromium and Firefox browser zoom on the release candidate within the existing test runners.",
+        "Expand accessibility, mobile interaction, reduced-motion and reflow checks, with optional free real desktop NVDA and VoiceOver auditing.",
+        "Reduce browser report storage duration while preserving all existing release validation checks."
+      ]
+    },
+    {
       "version": "0.44.23",
       "date": "2026-11-02",
       "title": "Publisher rights acceptance and Safari verification",
