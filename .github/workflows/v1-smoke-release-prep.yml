@@ -1,0 +1,46 @@
+name: Prepare v1 live-smoke compatibility patch (one time)
+
+on:
+  push:
+    branches: [fix/v1-live-smoke-accepted-risk-20261102]
+    paths:
+      - .github/workflows/v1-smoke-release-prep.yml
+
+permissions:
+  contents: write
+
+jobs:
+  prepare-release:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 16
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+      - uses: actions/setup-node@v5
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - name: Validate corrected smoke-regression tests before release
+        run: node --test tests/live-v1.test.mjs
+      - name: Prepare semantic PATCH using the existing release command
+        run: |
+          npm run release -- patch "Reliable v1 candidate live verification" \
+            "Correct production readiness smoke checks to recognise only the two documented, owner-accepted device-testing limits." \
+            "Block any published v1 release without an explicit owner launch approval and add malformed-readiness regression coverage." \
+            "Reconcile the v1 launch evidence ledger with the verified v0.44.24 production deployment."
+      - name: Verify full release consistency, source tests and evidence data
+        run: npm run build
+      - name: Exercise the corrected public smoke against verified production v0.44.24
+        env:
+          SCRIPTURE_TRAILS_EXPECTED_VERSION: 0.44.24
+        run: npm run check:live-v1
+      - name: Save the prepared release on the feature branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add package.json public/data/releases.json public/index.html public/assets CHANGELOG.md
+          git commit -m "release: v0.44.25 live v1 smoke validation and evidence reconciliation"
+          git push origin HEAD
