@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "version": "0.44.23",
+      "date": "2026-11-02",
+      "title": "Publisher rights acceptance and Safari verification",
+      "changes": [
+        "Record the project owner's qualified non-commercial publisher-rights acceptance and ongoing licence obligations.",
+        "Document native Safari desktop reflow checks while retaining physical-device and native Safari zoom acceptance as open."
+      ]
+    },
+    {
       "version": "0.44.22",
       "date": "2026-11-01",
       "title": "Accessible navigation between study sections",

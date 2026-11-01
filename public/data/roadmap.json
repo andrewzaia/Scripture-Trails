@@ -1,10 +1,10 @@
 {
   "project": "Scripture Trails",
-  "updated": "2026-11-01",
+  "updated": "2026-11-02",
   "description": "An evidence-aware v1.0 release roadmap checked against the current versioned Scripture Trails source and test data. All 161 written Atlas explanations now have dated scoped AI-assisted source assessments. The 31 October source-linked journey corrections cover selected high-risk passages, not a complete re-audit of all 162 stages. Full reference corpus, physical-device accessibility and independent specialist certification remain separate. No unverified evidence is implied.",
   "currentFocus": [
     "Maintain the project owner's scholarly acceptance of Scripture Trails' published content, preserving primary biblical references, source qualifications and versioned corrections.",
-    "Confirm private ESV/API.Bible publisher entitlements, non-commercial licence terms and FUMS account reporting evidence without publishing confidential contracts.",
+    "Maintain the owner's attested non-commercial ESV/API.Bible publisher permissions, selected Bible licences, FUMS reporting and monthly-user limits; recheck terms whenever traffic, monetisation or API.Bible plan changes.",
     "Verify actual Windows and Apple screen readers, physical device/browser combinations and true 200%/400% zoom beyond synthetic automation.",
     "Preserve the verified Cloudflare production rollback/recovery evidence, rerun live acceptance on the final v1.0 candidate, and obtain the project owner's final launch decision."
   ],
@@ -948,8 +948,8 @@
   "v1Readiness": {
     "target": "1.0.0",
     "baseline": "0.32.0",
-    "updated": "2026-11-01",
-    "note": "Thirteen of seventeen v1.0 acceptance criteria have scoped evidence, including owner-led scholarly acceptance and a successful, exercised Cloudflare production rollback and recovery. Four remain open: account-specific publisher permissions and FUMS compliance evidence, real screen-reader journeys, real-device and true browser zoom acceptance, and final owner launch signoff. Working APIs and automated tests are not substitutes for licence or physical-device evidence.",
+    "updated": "2026-11-02",
+    "note": "Fourteen of seventeen v1.0 criteria now have scoped acceptance evidence, including the owner's declared non-commercial publisher-rights acceptance, tested FUMS/attribution controls, owner-led biblical scholarship and exercised Cloudflare production recovery. Three remain open: complete real-device and mobile screen-reader interactions, physical-device and native Safari page-zoom acceptance, and final owner launch go/no-go. Publisher account settings and confidential agreements have not been independently inspected; the owner remains responsible for maintaining eligible licences, selected Bible editions and end-user range.",
     "stages": [
       {
         "id": "baseline",
@@ -1015,10 +1015,12 @@
           {
             "id": "source-licences",
             "title": "Verify citations, content rights and source attribution",
-            "status": "open",
+            "status": "met",
             "mode": "manual",
             "evidence": "sources/legal/publisher-rights-review-2026-10-31.md",
-            "acceptance": "Audit publisher/API conditions, stored data permissions, rights notices and bibliographic links for published material."
+            "acceptance": "Audit publisher/API conditions, stored data permissions, rights notices and bibliographic links for published material.",
+            "reviewedOn": "2026-11-02",
+            "reviewer": "Project owner - explicit non-commercial publisher agreement compliance declaration; AI-assisted official publisher terms, rights notice, attribution, privacy and FUMS implementation audit, with private account settings not independently inspected"
           }
         ]
       },
