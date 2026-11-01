@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.44.16 - 01/11/2026: Clearer chronology and passage boundaries in Gospel journeys
+
+- Clarify that two Nazareth hometown-rejection study stages present Gospel narratives, not a historically proven second visit.
+- Keep crucifixion summaries within their cited Scripture ranges, leaving subsequent burial arrangements in the existing burial study stage.
+- Add targeted regression tests to protect passage accuracy, stable event references and the required research qualifications.
+
 ## 0.44.15 - 01/11/2026: More accurate Gospel geography source references
 
 - Correct Nain's archaeological report date to its official 2022 journal citation and add precise bibliographic details.
