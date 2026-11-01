@@ -10,14 +10,16 @@ const routes=[
  {view:'notebook',term:'matters'},
 ];
 
-test('VoiceOver announces the main heading across four live study journeys',async({page,voiceOver})=>{
+test('VoiceOver verifies v0.44.22 headings and focus across four live study journeys',async({page,voiceOver})=>{
  test.setTimeout(240000);
  await page.goto('/?view=about',{waitUntil:'load'});
+ await expect(page.locator('#site-version')).toHaveText('v0.44.22');
  const results=[];
  for(const target of routes){
   if(target.view!=='about')await page.locator(`.nav-link[data-view="${target.view}"]`).click();
   await expect(page.locator(`#view-${target.view}`)).toBeVisible();
   await expect(page.locator(`#view-${target.view} h1`)).toBeVisible();
+  if(target.view!=='about')await expect(page.locator(`#view-${target.view} h1`)).toBeFocused();
   if(target.view==='reader')await expect(page.locator('#passage-content')).toHaveAttribute('aria-busy','false',{timeout:18000});
   if(target.view==='connections')await expect(page.locator('#atlas-preview-content')).toHaveAttribute('aria-busy','false',{timeout:18000});
   await voiceOver.navigateToWebContent();
