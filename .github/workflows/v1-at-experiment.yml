@@ -1,4 +1,4 @@
-name: Experiment - NVDA SPA mode and announcement diagnostic (one-time)
+name: Experiment - real NVDA five-route acceptance (one-time)
 
 on:
   push:
@@ -35,7 +35,7 @@ jobs:
         run: npx @guidepup/setup install
       - name: Install headed browser
         run: npx playwright install ${{ matrix.browser }}
-      - name: Diagnose NVDA browse mode and test-only route status on live site
+      - name: Validate NVDA navigation across five real SPA destinations
         env:
           SCREEN_READER_PLATFORM: ${{ matrix.mode }}
         run: npx playwright test --config playwright.assistive.config.mjs --reporter=list
