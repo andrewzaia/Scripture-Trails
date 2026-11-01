@@ -1,0 +1,41 @@
+name: Prepare v0.44.19 publisher usage-reporting release
+on:
+  push:
+    branches:
+      - release/v0.44.19-fums-pixel
+permissions:
+  contents: write
+jobs:
+  prepare:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v5
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - name: Generate semver PATCH with retained public and repository changelogs
+        run: |
+          npm run release -- patch "Reliable Bible publisher usage reporting" \
+            "Use the API.Bible-documented reporting pixel when displaying licensed translations, replacing browser requests that failed to reach the publisher." \
+            "Permit only the publisher's FUMS image endpoint in the restrictive image security policy, without adding external JavaScript or exposing private notebook data." \
+            "Add reporting-token, anonymous identifier and cross-browser network regressions with synthetic Bible content."
+      - name: Validate release consistency, website and browser test registry
+        run: |
+          npm run build
+          npx playwright test --list
+      - name: Remove one-time workflow and commit full checked release
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm .github/workflows/prepare-v0.44.19.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --check
+          git commit -m "chore(release): prepare v0.44.19 FUMS reporting"
+          git push origin HEAD:release/v0.44.19-fums-pixel

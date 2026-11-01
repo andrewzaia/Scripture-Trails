@@ -5,34 +5,41 @@ import {onRequestGet as searchESV} from '../functions/api/search.js';
 import {fumsViewUrl,reportScriptureView} from '../public/assets/fums.js';
 const read=path=>readFileSync(new URL('../'+path,import.meta.url),'utf8');
 
-test('FUMS usage reporting uses GET pixels without executing third-party scripts',async()=>{
- const oldFetch=globalThis.fetch,oldWindow=globalThis.window;
- const stored=new Map(),session=new Map(),calls=[],scripts=[];
+test('FUMS makes private-referrer GET pixels without executing third-party scripts',()=>{
+ const oldImage=globalThis.Image,oldWindow=globalThis.window,oldFetch=globalThis.fetch;
+ const stored=new Map(),session=new Map(),pixels=[],networkFetches=[];
  globalThis.window={
   localStorage:{getItem:k=>stored.get(k)??null,setItem:(k,v)=>stored.set(k,v)},
   sessionStorage:{getItem:k=>session.get(k)??null,setItem:(k,v)=>session.set(k,v)}
  };
- globalThis.fetch=async (url,options)=>{calls.push({url:new URL(url),options});return new Response(null,{status:204});};
+ globalThis.fetch=(...args)=>{networkFetches.push(args);throw new Error('FUMS must not make a browser fetch');};
+ globalThis.Image=class{
+  constructor(width,height){assert.equal(width,1);assert.equal(height,1);pixels.push(this);}
+  set src(url){this.request=new URL(url);this.onload?.();}
+ };
  try{
-  for(const i of [0,1])await reportScriptureView({token:'TEST_FUMS_USAGE_TOKEN_1234'});
-  assert.equal(calls.length,2);
-  for(const call of calls){
-   assert.equal(call.url.origin,'https://fums.api.bible');
-   assert.equal(call.url.pathname,'/f3');
-   assert.equal(call.url.searchParams.get('t'),'TEST_FUMS_USAGE_TOKEN_1234');
-   assert.equal(call.options.method,'GET');
-   assert.equal(call.options.mode,'no-cors');
-   assert.equal(call.options.credentials,'omit');
-   assert.equal(call.options.referrerPolicy,'no-referrer');
-   assert.equal(call.options.redirect,'error');
-   assert.deepEqual([...call.url.searchParams.keys()].sort(),['dId','sId','t']);
-   assert.ok(!call.url.href.includes('John')&&!call.url.href.includes('notes'));
+  assert.equal(reportScriptureView(null),false);
+  assert.equal(reportScriptureView({token:'invalid&uId=secret'}),false);
+  for(let i=0;i<2;i++)assert.equal(reportScriptureView({token:'TEST_FUMS_USAGE_TOKEN_1234'}),true);
+  assert.equal(pixels.length,2);
+  assert.equal(networkFetches.length,0);
+  for(const p of pixels){
+   assert.equal(p.request.origin,'https://fums.api.bible');
+   assert.equal(p.request.pathname,'/f3');
+   assert.equal(p.request.searchParams.get('t'),'TEST_FUMS_USAGE_TOKEN_1234');
+   assert.equal(p.referrerPolicy,'no-referrer');
+   assert.deepEqual([...p.request.searchParams.keys()].sort(),['dId','sId','t']);
+   assert.ok(!p.request.href.includes('John')&&!p.request.href.includes('notes'));
   }
-  assert.equal(calls[0].url.searchParams.get('dId'),calls[1].url.searchParams.get('dId'));
-  assert.equal(calls[0].url.searchParams.get('sId'),calls[1].url.searchParams.get('sId'));
-  assert.notEqual(calls[0].url.searchParams.get('dId'),calls[0].url.searchParams.get('sId'));
-  assert.equal(stored.size,1);assert.equal(session.size,1);
- }finally{globalThis.fetch=oldFetch;globalThis.window=oldWindow;}
+  assert.equal(pixels[0].request.searchParams.get('dId'),pixels[1].request.searchParams.get('dId'));
+  assert.equal(pixels[0].request.searchParams.get('sId'),pixels[1].request.searchParams.get('sId'));
+  assert.notEqual(pixels[0].request.searchParams.get('dId'),pixels[0].request.searchParams.get('sId'));
+  assert.equal(stored.size,1);
+  assert.equal(session.size,1);
+ }finally{
+  if(oldImage===undefined)delete globalThis.Image;else globalThis.Image=oldImage;
+  globalThis.fetch=oldFetch;globalThis.window=oldWindow;
+ }
 });
 test('invalid FUMS identifiers and tokens cannot create tracking requests',async()=>{
  assert.equal(fumsViewUrl('bad&uId=private','00000000-0000-4000-8000-000000000001','00000000-0000-4000-8000-000000000002'),null);
@@ -87,6 +94,7 @@ test('CSP blocks executable FUMS scripts, disallows inline scripts and unsafe re
  assert.ok(!/script-src[^\n]*pkg\.api\.bible/.test(headers));
  assert.ok(!/script-src[^\n]*cdn\.scripture\.api\.bible/.test(headers));
  assert.match(headers,/connect-src[^\n]*https:\/\/fums\.api\.bible/);
+ assert.match(headers,/img-src[^\n]*https:\/\/fums\.api\.bible/);
  assert.match(read('functions/api/_api-bible.js'),/'fums-version':'3'/);
  const scripts=read('public/assets/fums.js');
  assert.ok(!scripts.includes('createElement(\'script\')'));
