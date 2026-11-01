@@ -1,4 +1,4 @@
-name: Audit - real Firefox 200 and 400 percent zoom across 12 views
+name: Audit - Firefox native keyboard and 200 to 400 percent zoom
 
 on:
   push:
