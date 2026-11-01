@@ -28,7 +28,7 @@ jobs:
             "Publisher view reporting and recovery readiness" \
             "Report API.Bible Scripture views when returning to a cached passage." \
             "Document successful live production rollback and restoration in the v1.0 readiness roadmap."
-      - name: Run full source validation and tests before committing
+      - name: Validate updated 13-of-17 readiness, source tests and browser test discovery
         run: |
           npm run build
           npx playwright test --list
