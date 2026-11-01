@@ -665,15 +665,15 @@
     {
       "id": "v1-evidence-closeout",
       "phase": "next",
-      "status": "next",
+      "status": "delivered",
       "title": "v1.0 editorial evidence and core-content closeout",
-      "summary": "All 161 explained Atlas pairs are source assessed; the owner has personally reviewed and accepted published scholarly and editorial content across flagship journeys, people, places and study pathways. Publisher permissions and technical launch gates remain independently open.",
+      "summary": "Complete all 161 explained Atlas source reviews and the owner's declared scholarly/editorial acceptance of the major journeys, people, places and guided study pathways. Publisher contractual acceptance is separately recorded with account-level obligations.",
       "capabilities": [
         "All 161 explained pairs have dated internal assessments; full Atlas corpus is outside this commitment",
         "Prioritised high-impact disputed historical and interpretive claims",
         "Coverage review for flagship people, locations and guided studies"
       ],
-      "verification": "Owner's stated scholarly acceptance is dated and source-linked. It does not imply external peer review, universal historical certainty or publisher licence clearance. Later corrections follow versioned release discipline."
+      "verification": "Dated owner scholarship, Atlas review records, tested publishing attribution and qualified rights acceptance are linked in the v1 readiness ledger. No independent professor certification or universal historical consensus is asserted."
     },
     {
       "id": "v1-accessibility-and-hardening",
@@ -691,15 +691,15 @@
     {
       "id": "v1-release-candidate",
       "phase": "next",
-      "status": "planned",
+      "status": "next",
       "title": "v1.0 release candidate, rollback and launch approval",
-      "summary": "Use the five release-readiness gates to govern the go/no-go decision, rerun release checks and verify the precise production deployment.",
+      "summary": "The single remaining v1 criterion is final launch signoff. Preserve required code, publisher and browser checks, record accepted device limitations and verify exact Cloudflare deployment of the release candidate.",
       "capabilities": [
         "No unresolved critical launch defects",
         "Reproducible versioned release and production deployment verification",
         "Documented recovery plan and explicit approval"
       ],
-      "verification": "All blockers met with evidence and dated signoff; production deployment must succeed for the intended commit and public footer must report the intended version."
+      "verification": "Full PR CI and release/build validation must succeed before merge; exact production commit and footer must match after deployment; record final owner go/no-go for v1.0 only after the candidate checks."
     },
     {
       "id": "v1-citations-12-01",
@@ -982,7 +982,7 @@
         "id": "evidence",
         "title": "Biblical evidence and editorial quality",
         "summary": "Important interpretations must be traceable to Scripture, with interpretive uncertainty, original contexts and external sources stated accurately.",
-        "next": "Owner-scholar has accepted the published biblical and historical content following source checks and qualified editorial corrections. Verify edition-specific publisher rights and confidential account terms independently of that scholarly approval.",
+        "next": "Maintain publisher rights and attribution obligations, biblical source corrections and periodic editorial updates. No external professor approval is needed.",
         "criteria": [
           {
             "id": "atlas-context",
@@ -1102,7 +1102,7 @@
         "id": "privacy",
         "title": "Security, privacy and licensed content",
         "summary": "Protect private notes and licensed Bible access without promising that automated tests amount to a security audit.",
-        "next": "Scoped API secret, remote publisher markup, optional analytics, FUMS, CSP and browser note-storage threats were documented and tested. Continue separate source-licence, cross-browser/assistive-tech, rollback and release-candidate acceptance; no external penetration-test claim.",
+        "next": "Continue monitoring publisher FUMS, attribution and licence terms plus private note-storage and provider security risks. No third-party penetration-test certification is asserted.",
         "criteria": [
           {
             "id": "security-review",
