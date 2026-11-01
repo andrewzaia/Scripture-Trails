@@ -1,7 +1,7 @@
 # v1.0 launch evidence ledger and release-candidate checklist
 
 Updated: 2 November 2026
-Current working release: v0.44.24, production verified at commit e03b73d3383691d7b704fff124a249a2a0872986; v1.0 remains unpublished.
+Latest verified pre-launch baseline: v0.44.25 at commit aa6f936fb91a09cf3dababc14b5bd047ae25eb49. The owner authorised v1.0.0 on 2 November 2026; full release checks remain mandatory.
 Historical recovery evidence baseline: v0.44.20, production verified
 Completed operational rehearsal: successful v0.44.19 rollback and v0.44.20 restoration on the canonical domain
 

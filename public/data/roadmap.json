@@ -3,10 +3,10 @@
   "updated": "2026-11-02",
   "description": "An evidence-aware v1.0 release roadmap checked against the current versioned Scripture Trails source and test data. All 161 written Atlas explanations now have dated scoped AI-assisted source assessments. The 31 October source-linked journey corrections cover selected high-risk passages, not a complete re-audit of all 162 stages. Full reference corpus, physical-device accessibility and independent specialist certification remain separate. No unverified evidence is implied.",
   "currentFocus": [
-    "Maintain the project owner's scholarly acceptance and the published Scripture-first source review, with versioned corrections as necessary.",
-    "Maintain the owner's qualified non-commercial edition permissions, source attribution, FUMS usage reports and publisher account limits.",
-    "Record the owner's acceptance of existing browser/device compatibility evidence while preserving unverified physical-device and native Safari zoom limitations for future testing.",
-    "Revalidate the candidate GitHub SHA, full PR checks, Cloudflare production deployment and the project owner's final v1.0 go/no-go decision."
+    "Maintain Scripture-first studies and evidence-linked corrections through versioned releases.",
+    "Maintain non-commercial publisher permissions, copyright attribution, FUMS and account-usage monitoring.",
+    "Retain documented physical-device accessibility and native Safari zoom limitations until real evidence replaces them.",
+    "Maintain release checks, verified production deployment, rollback readiness and long-term platform support."
   ],
   "phases": [
     {
@@ -691,15 +691,15 @@
     {
       "id": "v1-release-candidate",
       "phase": "next",
-      "status": "next",
-      "title": "v1.0 release candidate, rollback and launch approval",
-      "summary": "The single remaining v1 criterion is final launch signoff. Preserve required code, publisher and browser checks, record accepted device limitations and verify exact Cloudflare deployment of the release candidate.",
+      "status": "delivered",
+      "title": "v1.0 stable release and owner launch approval",
+      "summary": "The owner authorised the stable v1.0 release on scoped editorial, provider, accessibility and operational evidence, with two specifically documented compatibility limitations.",
       "capabilities": [
         "No unresolved critical launch defects",
         "Reproducible versioned release and production deployment verification",
         "Documented recovery plan and explicit approval"
       ],
-      "verification": "Full PR CI and release/build validation must succeed before merge; exact production commit and footer must match after deployment; record final owner go/no-go for v1.0 only after the candidate checks."
+      "verification": "Owner launch GO on 2 November 2026. Required CI, exact-commit Cloudflare production deployment and live version/reader checks are prerequisites for treating v1.0 as shipped."
     },
     {
       "id": "v1-citations-12-01",
@@ -949,7 +949,7 @@
     "target": "1.0.0",
     "baseline": "0.32.0",
     "updated": "2026-11-02",
-    "note": "Fourteen v1.0 criteria have scoped evidence, two accessibility criteria are explicitly owner-accepted with outstanding physical-device and native Safari zoom limitations, and final launch approval remains open. Owner acceptance does not prove perfect compatibility on every device, and private publisher account settings are not independently inspected.",
+    "note": "Project owner approved v1.0.0 publication on 2 November 2026: 15 scoped acceptance criteria met and two owner-accepted compatibility limitations. Untested physical mobile screen readers and native Safari page zoom remain explicitly unverified. Final publication requires verified protected CI, deployment and live checks.",
     "stages": [
       {
         "id": "baseline",
@@ -1139,8 +1139,8 @@
       {
         "id": "release",
         "title": "Release operations and launch decision",
-        "summary": "v1.0 requires traceable source, successful checks, a reproducible deployment, rollback planning and explicit acceptance of residual risks.",
-        "next": "The verified rollback and scoped live smoke remain accepted. Obtain owner go/no-go for the exact final candidate and confirm all mandatory CI and Cloudflare production checks; do not treat accepted device risk as proof of physical testing.",
+        "summary": "The owner approved v1.0.0 with two documented compatibility limitations. Exact-commit deployment, live checks and continuing publisher/security monitoring remain mandatory.",
+        "next": "Maintain release verification, published copyright and non-commercial publisher obligations, and versioned remediation of reported compatibility defects.",
         "criteria": [
           {
             "id": "semantic-versioning",
@@ -1173,10 +1173,12 @@
           {
             "id": "launch-signoff",
             "title": "Document v1.0 go/no-go decision",
-            "status": "open",
+            "status": "met",
             "mode": "manual",
-            "evidence": "sources/operations/v1-launch-evidence-ledger-2026-11-01.md",
-            "acceptance": "Record reviewer, scope, results, resolved defects, accepted qualifications and final approval. All launch-blocking criteria must be met."
+            "evidence": "sources/operations/v1-final-owner-go-2026-11-02.md",
+            "acceptance": "The project owner approved publishing v1.0.0 with two documented compatibility limitations. Completion still requires full protected CI, successful exact-commit Cloudflare deployment and live production checks.",
+            "reviewedOn": "2026-11-02",
+            "reviewer": "Scripture Trails project owner - explicit v1.0 launch approval in this conversation on 2 November 2026"
           }
         ]
       }

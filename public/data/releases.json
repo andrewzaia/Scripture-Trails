@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "version": "1.0.0",
+      "date": "2026-11-02",
+      "title": "Scripture Trails 1.0 - stable launch",
+      "changes": [
+        "Introduce the first stable Scripture Trails release with its Bible reader and Scripture studies.",
+        "Record owner approval with the retained real-device and Safari zoom limitations."
+      ]
+    },
+    {
       "version": "0.44.25",
       "date": "2026-11-02",
       "title": "Reliable v1 candidate live verification",

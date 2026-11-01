@@ -1,6 +1,6 @@
-import {validateCollections,mergeCollections} from './study-collections.js?v=0.44.25';
-import {validateAnnotations,mergeAnnotations,emptyAnnotations} from './annotations.js?v=0.44.25';
-import {validateReadingPlans,mergeReadingPlans} from './reading-plans.js?v=0.44.25';
+import {validateCollections,mergeCollections} from './study-collections.js?v=1.0.0';
+import {validateAnnotations,mergeAnnotations,emptyAnnotations} from './annotations.js?v=1.0.0';
+import {validateReadingPlans,mergeReadingPlans} from './reading-plans.js?v=1.0.0';
 import {parseRef} from './books.js';
 import {validateCanonicalReference} from './reference-integrity.js';
 export const BACKUP_LIMIT=2*1024*1024;
