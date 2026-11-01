@@ -1,4 +1,4 @@
-name: Verify FUMS cache nonce acceptance - one low-cost runner
+name: v1 live production release and FUMS receipt acceptance
 on:
   push:
     branches:
@@ -6,13 +6,34 @@ on:
 permissions:
   contents: read
 jobs:
-  inspect:
+  live:
     runs-on: ubuntu-24.04
-    timeout-minutes: 8
+    timeout-minutes: 20
+    env:
+      SCRIPTURE_TRAILS_EXPECTED_VERSION: '0.44.19'
+      SCRIPTURE_TRAILS_ORIGIN: https://www.scripturetrails.com
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-node@v5
         with:
           node-version-file: .nvmrc
-      - name: Check two real publisher GETs with stable anonymous IDs and fresh cache nonce
-        run: node scripts/audit-fums-cache-nonce.mjs
+          cache: npm
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - name: Check release, four editions, publisher HTTP 200 reporting, Atlas and notebook
+        shell: bash
+        run: |
+          set +e
+          npm run check:live-v1
+          release_code=$?
+          npm run check:live-reader
+          reader_code=$?
+          node scripts/audit-v1-production-live.mjs
+          browser_code=$?
+          set -e
+          echo "Live version and release metadata: $release_code"
+          echo "Four-edition passage availability: $reader_code"
+          echo "Real browser publisher reporting and core journeys: $browser_code"
+          test "$release_code" -eq 0
+          test "$reader_code" -eq 0
+          test "$browser_code" -eq 0

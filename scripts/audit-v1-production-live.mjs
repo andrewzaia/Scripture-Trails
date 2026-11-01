@@ -6,7 +6,7 @@ import {chromium,expect} from '@playwright/test';
 const origin='https://www.scripturetrails.com';
 const expectedVersion=process.env.SCRIPTURE_TRAILS_EXPECTED_VERSION;
 assert.match(expectedVersion||'',/^\d+\.\d+\.\d+$/);
-const checks=[],errors=[],fums={requests:0};
+const checks=[],errors=[],fums={requests:0,successfulResponses:0,failedResponses:[]};
 const browser=await chromium.launch({headless:true});
 const pass=async(name,action)=>{await action();checks.push(name);};
 const watch=page=>page.on('pageerror',e=>errors.push(e.name||'Error'));
@@ -14,6 +14,7 @@ try{
  const context=await browser.newContext({baseURL:origin,viewport:{width:1280,height:900}});
  const page=await context.newPage();watch(page);
  page.on('request',request=>{try{if(new URL(request.url()).hostname==='fums.api.bible')fums.requests++;}catch{}});
+ page.on('response',response=>{try{if(new URL(response.url()).hostname!=='fums.api.bible')return;if(response.status()===200)fums.successfulResponses++;else fums.failedResponses.push(response.status());}catch{}});
  await pass('four live editions with reader attribution',async()=>{
   await page.goto('/?view=reader&ref=John%203%3A16&translation=ESV',{waitUntil:'domcontentloaded'});
   for(const code of ['ESV','NASB20','NIV','NKJV']){
@@ -30,6 +31,7 @@ try{
    }
   }
  });
+ await expect.poll(()=>fums.successfulResponses,{timeout:18000}).toBeGreaterThanOrEqual(3);
  await pass('live Atlas preview, centre refocus and linked reader',async()=>{
   await page.goto('/?view=connections&ref=John%201%3A1&translation=ESV',{waitUntil:'domcontentloaded'});
   const node=page.locator('#graph-details-list .atlas-reference-row > button').filter({has:page.locator('span',{hasText:/^Genesis 1:1$/})}).first();
@@ -71,5 +73,5 @@ try{
   }finally{await mobile.close()}
  });
  assert.deepEqual(errors,[],'Uncaught production page errors');
- console.log(JSON.stringify({origin,version:expectedVersion,checksPassed:checks,observedFumsRequests:fums.requests,pageErrors:errors.length,notesScope:'temporary isolated browser profile',copyrightTextLogged:false}));
+ console.log(JSON.stringify({origin,version:expectedVersion,checksPassed:checks,observedFumsRequests:fums.requests,successfulFumsHttpResponses:fums.successfulResponses,non200FumsStatuses:fums.failedResponses,pageErrors:errors.length,notesScope:'temporary isolated browser profile',copyrightTextLogged:false}));
 }finally{await browser.close()}
