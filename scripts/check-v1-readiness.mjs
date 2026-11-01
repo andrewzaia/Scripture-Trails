@@ -24,7 +24,7 @@ if(notes.releases[0].version!==pkg.version)throw Error('Version mismatch in v1 r
 const expectedAutomated=new Set(['atlas-context','crossrefs-integrity','automated-accessibility','semantic-versioning']);
 for(const criterion of gates.values()){
  if(criterion.status==='met'&&criterion.mode==='automated'&&!expectedAutomated.has(criterion.id))throw Error('Unsupported automatic signoff for '+criterion.id);
- if(criterion.status==='met'&&criterion.mode!=='automated'){
+ if(['met','accepted-risk'].includes(criterion.status)&&criterion.mode!=='automated'){
   if(!criterion.reviewer||!criterion.reviewedOn)throw Error('Declared review provenance requires a date and reviewer: '+criterion.id);
   if(!/^\d{4}-\d{2}-\d{2}$/.test(criterion.reviewedOn))throw Error('Invalid signoff date '+criterion.id);
  }
@@ -32,4 +32,4 @@ for(const criterion of gates.values()){
 }
 const counts=v1ReadinessCounts(data);
 if(pkg.version.split('.').map(Number)[0]>=1&&!counts.ready)throw Error('Version 1.0 release blocked: '+counts.open+' required criteria remain open');
-console.log('v1.0 readiness: '+counts.met+'/'+counts.total+' criteria met; '+counts.open+' launch blockers; '+unreviewed.length+' Atlas explanation source reviews pending.');
+console.log('v1.0 readiness: '+counts.met+' verified, '+counts.acceptedRisk+' owner-accepted risks, '+counts.open+' launch blockers out of '+counts.total+' criteria; '+unreviewed.length+' Atlas explanation source reviews pending.');
