@@ -35,6 +35,7 @@
 .v1-criteria li:last-child{border-bottom:0}
 .v1-criterion-state{display:inline-block;min-width:76px;color:var(--muted)}
 .v1-criteria li[data-readiness=met] .v1-criterion-state{color:var(--gold)}
+.v1-criteria li[data-readiness=accepted-risk] .v1-criterion-state{color:var(--ink);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px}
 .v1-criterion-title{color:var(--ink);font-weight:600}
 .v1-criterion-acceptance{margin:5px 0;color:var(--muted)}
 .v1-criterion-evidence{overflow-wrap:anywhere;color:var(--muted)}
