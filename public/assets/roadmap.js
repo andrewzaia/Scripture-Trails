@@ -8,8 +8,9 @@ export function validateV1Readiness(readiness){
  for(const gate of readiness.gates){
   if(!gate.id||gateIds.has(gate.id)||!gate.title||!gate.summary||!gate.next||!Array.isArray(gate.criteria)||!gate.criteria.length)throw Error('Invalid readiness gate');gateIds.add(gate.id);
   for(const item of gate.criteria){
-   if(!item.id||criteriaIds.has(item.id)||!item.title||!item.acceptance||!item.evidence||!['met','open'].includes(item.status)||!['automated','editorial','manual','specialist'].includes(item.mode))throw Error('Invalid readiness criterion '+item.id);
-   if(item.status==='met'&&item.mode!=='automated'&&(!item.reviewedOn||!item.reviewer))throw Error('Missing human verification for '+item.id);
+   if(!item.id||criteriaIds.has(item.id)||!item.title||!item.acceptance||!item.evidence||!['met','accepted-risk','open'].includes(item.status)||!['automated','editorial','manual','specialist'].includes(item.mode))throw Error('Invalid readiness criterion '+item.id);
+   if(item.status==='accepted-risk'&&(!['screen-readers','cross-browser-zoom'].includes(item.id)||item.mode!=='manual'||!item.risk?.trim()||!item.reviewedOn||!item.reviewer))throw Error('Unsupported or undocumented launch risk acceptance for '+item.id);
+   if(['met','accepted-risk'].includes(item.status)&&item.mode!=='automated'&&(!item.reviewedOn||!item.reviewer))throw Error('Missing human verification for '+item.id);
    criteriaIds.add(item.id);
   }
  }
@@ -18,7 +19,7 @@ export function validateV1Readiness(readiness){
 export function v1ReadinessCounts(readiness){
  validateV1Readiness(readiness);
  const items=readiness.gates.flatMap(g=>g.criteria);
- return {met:items.filter(x=>x.status==='met').length,open:items.filter(x=>x.status==='open').length,total:items.length,ready:items.every(x=>x.status==='met')};
+ return {met:items.filter(x=>x.status==='met').length,acceptedRisk:items.filter(x=>x.status==='accepted-risk').length,open:items.filter(x=>x.status==='open').length,total:items.length,ready:items.every(x=>x.status!=='open')};
 }
 
 
@@ -42,23 +43,23 @@ export function createRoadmap(root){
  function renderReadiness(){
   const readiness=data.v1Readiness,counts=v1ReadinessCounts(readiness),summary=$('v1-summary'),steps=$('v1-stages'),gates=$('v1-gates');
   summary.replaceChildren();
-  summary.append(make('strong','',counts.met+' of '+counts.total+' criteria met'),make('span','',counts.ready?'All declared gates met - launch still requires live verification and approval.':counts.open+' criteria remain open. v1.0 is not ready for release.'));
+  summary.append(make('strong','',counts.met+' verified, '+counts.acceptedRisk+' accepted with limitations, '+counts.open+' open ('+counts.total+' total)'),make('span','',counts.ready?'No remaining launch criteria open. Final release still requires CI, deployment verification and owner go/no-go.':counts.open+' release criterion remains open. v1.0 is not yet approved.'));
   steps.replaceChildren();
   for(const [i,stage] of readiness.stages.entries()){
    const li=make('li');li.append(make('strong','',(i+1)+'. '+stage.title),make('span','',stage.goal));steps.append(li);
   }
   gates.replaceChildren();
   for(const gate of readiness.gates){
-   const met=gate.criteria.filter(c=>c.status==='met').length;
+   const met=gate.criteria.filter(c=>c.status==='met').length,accepted=gate.criteria.filter(c=>c.status==='accepted-risk').length;
    const card=make('article','v1-gate');const top=make('div','v1-gate-top');
-   top.append(make('h3','',gate.title),make('span','v1-gate-count',met+' / '+gate.criteria.length+' met'));
+   top.append(make('h3','',gate.title),make('span','v1-gate-count',met+' verified'+(accepted?', '+accepted+' accepted risk':'')+' / '+gate.criteria.length));
    card.append(top,make('p','v1-gate-summary',gate.summary));
    const detail=make('details','v1-gate-detail');detail.append(make('summary','','Review acceptance criteria'));
    const ul=make('ul','v1-criteria');
    for(const criterion of gate.criteria){
     const li=make('li');li.dataset.readiness=criterion.status;
-    const state=make('strong','v1-criterion-state',criterion.status==='met'?'Met (scoped)':'Open');
-    li.append(state,make('span','v1-criterion-title',criterion.title),make('p','v1-criterion-acceptance',criterion.acceptance),make('small','v1-criterion-evidence','Evidence: '+criterion.evidence));
+    const state=make('strong','v1-criterion-state',criterion.status==='met'?'Met (scoped)':criterion.status==='accepted-risk'?'Accepted risk':'Open');
+    li.append(state,make('span','v1-criterion-title',criterion.title),make('p','v1-criterion-acceptance',criterion.acceptance),make('small','v1-criterion-evidence','Evidence: '+criterion.evidence+(criterion.status==='accepted-risk'?' | Untested: '+criterion.risk:'')));
     ul.append(li);
    }
    detail.append(ul);card.append(detail,make('p','v1-gate-next','Next: '+gate.next));gates.append(card);
