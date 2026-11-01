@@ -65,6 +65,22 @@ jobs:
         run: npx playwright install --with-deps ${{ matrix.engine }}
       - name: Cross-browser desktop/mobile journeys, accessibility and layout
         run: npm run test:browser -- ${{ matrix.projects }} --workers=1
+      # Reuse the existing Chromium/Firefox runners. Unlike viewport emulation,
+      # X11 keys change the real headed browser's page zoom; the probe fails
+      # unless DPR and CSS viewport prove both 200% and 400% were reached.
+      - name: Install native page zoom keyboard tools
+        if: ${{ matrix.engine != 'webkit' }}
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y xdotool openbox
+      - name: Verify genuine 200% and 400% browser page zoom on the local candidate
+        if: ${{ matrix.engine != 'webkit' }}
+        run: |
+          xvfb-run --auto-servernum --server-args="-screen 0 1600x1100x24" bash -c '
+            openbox >/tmp/scripture-trails-openbox.log 2>&1 &
+            sleep 2
+            ZOOM_ENGINE=${{ matrix.engine }} node tests/zoom/actual-browser-zoom-regression.mjs
+          '
       - uses: actions/upload-artifact@v6
         if: ${{ !cancelled() }}
         with:
