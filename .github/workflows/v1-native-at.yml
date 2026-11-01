@@ -1,0 +1,46 @@
+name: Native NVDA and VoiceOver release audit
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [release/qualified-device-acceptance-20261102]
+    paths: [.github/workflows/v1-native-at.yml]
+
+permissions:
+  contents: read
+
+# A one-time v1 candidate proof, then manual dispatch on later releases.
+# No paid device cloud and no additional default PR browser-matrix runners.
+jobs:
+  real-screen-reader:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: windows-2025
+            mode: nvda
+            browser: chromium
+          - os: macos-15
+            mode: voiceover
+            browser: webkit
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - name: Install isolated open-source screen-reader test dependencies
+        run: npm install --no-save @guidepup/playwright @guidepup/guidepup @guidepup/setup
+      - name: Prepare hosted OS for real assistive technology
+        run: npx @guidepup/setup setup --ci
+      - name: Install native screen-reader runtime
+        run: npx @guidepup/setup install
+      - name: Install headed browser
+        run: npx playwright install ${{ matrix.browser }}
+      - name: Exercise real screen reader on local synthetic release candidate
+        env:
+          SCREEN_READER_PLATFORM: ${{ matrix.mode }}
+        run: npx playwright test --config playwright.assistive.config.mjs --reporter=list
