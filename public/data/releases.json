@@ -1,6 +1,16 @@
 {
   "releases": [
     {
+      "version": "0.44.24",
+      "date": "2026-11-02",
+      "title": "Qualified v1 readiness compatibility acceptance",
+      "changes": [
+        "Record the project's owner-accepted device and accessibility testing limitations, without claiming untested devices passed.",
+        "Distinguish tested, owner-accepted risk and open criteria in the public v1 roadmap and accompanying regression checks.",
+        "Complete scoped evidence and accessibility roadmap milestones while retaining mandatory CI and final launch approval."
+      ]
+    },
+    {
       "version": "0.44.23",
       "date": "2026-11-02",
       "title": "Publisher rights acceptance and Safari verification",
