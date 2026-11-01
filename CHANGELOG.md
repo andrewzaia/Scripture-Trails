@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.44.14 - 01/11/2026: More precise Nazareth Annunciation evidence
+
+- Link the specific archaeological chapter and sacred-site history behind Nazareth's Annunciation study, with transparent source attribution.
+- Clarify the difference between commemorative tradition, excavation records and an independently confirmed biblical event location.
+- Add regression tests that validate study citations across the city findings, chronology and detailed interpretation.
+
 ## 0.44.13 - 01/11/2026: Contextual readings for journals and people trails
 
 - Add five missing biblical context readings to guided journals, retaining previous progress entries and approximate study times.
