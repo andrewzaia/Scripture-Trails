@@ -19,8 +19,8 @@ test('public licence review covers all four editions and non-commercial academic
   assert.match(item.sourceUrl,/^https:\/\//);
   assert.ok(item.risks.length>=2);
  }
- assert.equal(roadmap.v1Readiness.gates.flatMap(g=>g.criteria).filter(x=>x.status==='met').length,13);
- assert.equal(roadmap.v1Readiness.gates.flatMap(g=>g.criteria).find(x=>x.id==='source-licences').status,'open');
+ assert.equal(roadmap.v1Readiness.gates.flatMap(g=>g.criteria).filter(x=>x.status==='met').length,14);
+ assert.equal(roadmap.v1Readiness.gates.flatMap(g=>g.criteria).find(x=>x.id==='source-licences').status,'met');
  assert.equal(roadmap.milestones.find(x=>x.id==='v1-publisher-rights-evidence-ledger')?.status,'delivered');
 });
 
@@ -54,7 +54,9 @@ test('published review documents API restrictions and retains appropriate limits
  assert.ok(refs.risks.some(x=>x.includes('exact licence version')||x.includes('CC BY 4.0')));
  const review=read('sources/legal/publisher-rights-review-2026-10-31.md');
  assert.match(review,/non-commercial academic Bible-study website/);
- assert.match(review,/source-licences.*remains OPEN/);
+ assert.match(review,/Acceptance addendum - 2 November 2026/);
+ assert.match(review,/owner contractual acceptance/i);
+ assert.match(review,/private API.Bible billing\/licensing dashboard/);
  assert.match(review,/publicly available publisher terms/);
 });
 
