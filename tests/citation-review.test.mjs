@@ -30,7 +30,7 @@ test('false source scope, unsafe URLs, unknown targets and future review dates f
 test('new place bibliography is scoped and original open issues remain open',()=>{
  for(const id of ['cana','nain','sidon','caesarea-philippi']){
   const p=geography.places[id];assert.equal(p.review.status,'source-linked');assert.equal(p.review.independentSourceCount,p.literature.length);
-  assert.ok(p.literature.some(k=>geography.sources[k].checkedOn==='2026-10-28'));
+  assert.ok(p.literature.every(k=>{const date=geography.sources[k].checkedOn;return /^\d{4}-\d{2}-\d{2}$/.test(date)&&Number.isFinite(Date.parse(date))&&new Date(date).toISOString().slice(0,10)===date&&Date.parse(date)<=Date.now();}),id+' has an invalid or future source-review date');
  }
  for(const id of ['bethsaida-identification','emmaus-identification','nazareth-order'])assert.equal(audit.issues.find(i=>i.id===id).status,'open');
  for(const id of ['ce065','ce071']){assert.equal(CONNECTION_EVIDENCE.find(e=>e.id===id).kind,'theme');assert.equal(CONNECTION_EVIDENCE.find(e=>e.id===id).review,'editorial-reading-aid');}
