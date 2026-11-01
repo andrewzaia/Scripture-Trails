@@ -1,6 +1,16 @@
 {
   "releases": [
     {
+      "version": "0.44.25",
+      "date": "2026-11-02",
+      "title": "Reliable v1 candidate live verification",
+      "changes": [
+        "Correct production readiness smoke checks to recognise only the two documented, owner-accepted device-testing limits.",
+        "Block any published v1 release without an explicit owner launch approval and add malformed-readiness regression coverage.",
+        "Reconcile the v1 launch evidence ledger with the verified v0.44.24 production deployment."
+      ]
+    },
+    {
       "version": "0.44.24",
       "date": "2026-11-02",
       "title": "Qualified v1 readiness compatibility acceptance",

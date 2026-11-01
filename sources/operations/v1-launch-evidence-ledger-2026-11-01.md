@@ -1,9 +1,21 @@
 # v1.0 launch evidence ledger and release-candidate checklist
 
 Updated: 2 November 2026
-Current working release: v0.44.23, production verified; v1.0 remains unpublished.
+Current working release: v0.44.24, production verified at commit e03b73d3383691d7b704fff124a249a2a0872986; v1.0 remains unpublished.
 Historical recovery evidence baseline: v0.44.20, production verified
 Completed operational rehearsal: successful v0.44.19 rollback and v0.44.20 restoration on the canonical domain
+
+## Latest verified release and v1 candidate preflight - 2 November 2026
+
+v0.44.24 was shipped through protected [PR #94](https://github.com/andrewzaia/Scripture-Trails/pull/94), merged as commit `e03b73d3383691d7b704fff124a249a2a0872986`. Exact-commit [required PR CI](https://github.com/andrewzaia/Scripture-Trails/actions/runs/41326431822) and [main source checks](https://github.com/andrewzaia/Scripture-Trails/actions/runs/41327472752) passed. The source suite passed 300 tests; Chromium 146 browser tests, Firefox 73, WebKit 146. Both native Chrome and Firefox browser zoom checks passed 24/24 page observations at verified 200% and 400% without page overflow.
+
+A dedicated actual desktop [NVDA and VoiceOver audit](https://github.com/andrewzaia/Scripture-Trails/actions/runs/41326426178) passed. NVDA spoke four focused route headings; macOS VoiceOver reached five route headings, with reverse navigation required for notebook and About (27 and 37 heading commands respectively). This is a measured navigation-efficiency limitation, not a physical mobile-screen-reader pass.
+
+Cloudflare Pages production deployment `b277aad5-bdff-44d6-ad9f-9af06c8254ec` reported success for the exact merged SHA and canonical `https://www.scripturetrails.com` alias. Read-only Cloudflare browser-rendered checks confirmed the live v0.44.24 footer and versioned app and roadmap assets. Those browser checks did not constitute an executed `npm run check:live-v1` CLI smoke or a fresh four-edition provider API audit.
+
+**Live-smoke defect found during v1 candidate preflight:** `scripts/check-live-v1.mjs` only recognised `met` and `open` statuses, despite the public v1 readiness schema allowing two specifically documented `accepted-risk` statuses. It would reject the valid published readiness data. The next PATCH release corrects that mismatch, tests malformed/unauthorised risk decisions and requires a genuine `met` final owner decision before any 1.0.x live smoke can pass.
+
+The current readiness reconciliation remains **14 evidenced, 2 accepted-risk, 1 owner launch approval open**, with the accepted real-device and native Safari zoom limits preserved. The technical preflight is not final owner go/no-go; no version 1.0.0 has been authorised or released.
 
 ## Current decision - qualified compatibility acceptance (2 November 2026)
 
