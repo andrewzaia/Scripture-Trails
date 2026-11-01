@@ -18,6 +18,21 @@ const metrics=()=>page.evaluate(()=>({
   version:document.querySelector('#site-version')?.textContent?.trim()||null,
   activeView:document.querySelector('.view.active-view')?.id||null,
 }));
+async function activateButton(locator){
+ if(engine!=='firefox'){await locator.click({timeout:4500});return;}
+ await locator.focus();
+ const ids=execFileSync('xdotool',['search','--onlyvisible','--name','Scripture Trails'],{encoding:'utf8'}).trim().split(/\s+/).filter(Boolean);
+ if(!ids.length)throw Error('Firefox window missing for native keyboard activation');
+ execFileSync('xdotool',['windowactivate','--sync',ids.at(-1)]);
+ execFileSync('xdotool',['key','--clearmodifiers','Return']);
+ await page.waitForTimeout(200);
+}
+async function dismissMenuNative(){
+ if(engine==='firefox'){
+  execFileSync('xdotool',['key','--clearmodifiers','Escape']);
+  await page.waitForTimeout(150);
+ }else await dismissMenuNative();
+}
 const findings=[];
 const routeResults=[];
 const routeNames=['discover','reader','connections','jesus-map','paul-map','hebrew-geography','city-studies','entities','roadmap','journeys','notebook','about'];
@@ -34,7 +49,7 @@ async function inspectRoutesAtActualZoom(zoom){
   const panel=page.locator('#analytics-consent');
   if(await panel.isVisible()){
    try{
-    await page.locator('#analytics-decline').click({timeout:4500});
+    await activateButton(page.locator('#analytics-decline'));
     await panel.waitFor({state:'hidden',timeout:4500});
     consent='dismissed';
    }catch(e){consent='blocked';}
@@ -49,7 +64,7 @@ async function inspectRoutesAtActualZoom(zoom){
    const button=page.locator('#menu-toggle');
    if(await button.isVisible()){
     try{
-     await button.click({timeout:4500});
+     await activateButton(button);
      const expanded=await button.getAttribute('aria-expanded');
      await page.keyboard.press('Escape');
      const collapsed=await button.getAttribute('aria-expanded');
@@ -91,7 +106,7 @@ try{
   findings.push({phase:'native xdotool ctrl+plus',...(await metrics())});
  }
  let reached200=false,reached400=false;
- for(let i=0;i<11;i++){
+ for(let i=0;i<21;i++){
   const current=await metrics();
   const zoom=current.dpr/baseline.dpr;
   if(!reached200&&zoom>=1.9){reached200=true;findings.push({phase:'200-percent-candidate',...current});await inspectRoutesAtActualZoom(200);}
