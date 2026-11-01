@@ -31,7 +31,7 @@ try:
     print("SAFARI_NATIVE_BASELINE "+json.dumps(baseline),flush=True)
     assert baseline['version']=='v0.44.22'
     steps=[]
-    for keyname,key in [('equal',Keys.EQUAL),('add',Keys.ADD),('plus', '+')]:
+    for keyname,key in [('equals',Keys.EQUALS),('add',Keys.ADD),('plus', '+')]:
         try:
             ActionChains(driver).key_down(Keys.COMMAND).send_keys(key).key_up(Keys.COMMAND).perform()
             time.sleep(0.5)
