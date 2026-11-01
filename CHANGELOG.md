@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.44.18 - 01/11/2026: Accessible Scripture reader publisher links
+
+- Remove invisible unnamed anchors returned in publisher Scripture markup, avoiding an unnecessary keyboard focus stop in the Bible reader.
+- Preserve accessible names on intentionally labelled links and retain trusted publisher destinations, existing passages and attribution.
+- Add cross-browser regression coverage using synthetic text, without copying copyrighted Scripture into tests.
+
 ## 0.44.17 - 01/11/2026: Accurate people readings and efficient release verification
 
 - Expand Moses' departure and Solomon's ark-entry readings to include the narrated actions, preserving all stable people trails.
