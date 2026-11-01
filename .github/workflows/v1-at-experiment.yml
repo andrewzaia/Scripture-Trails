@@ -1,4 +1,4 @@
-name: Experiment - real NVDA and VoiceOver audit (one-time)
+name: Experiment - NVDA Atlas navigation diagnostic (one-time)
 
 on:
   push:
@@ -18,9 +18,6 @@ jobs:
           - os: windows-2025
             mode: nvda
             browser: chromium
-          - os: macos-15
-            mode: voiceover
-            browser: webkit
     runs-on: ${{ matrix.os }}
     timeout-minutes: 25
     steps:
