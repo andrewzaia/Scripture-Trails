@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.44.15 - 01/11/2026: More accurate Gospel geography source references
+
+- Correct Nain's archaeological report date to its official 2022 journal citation and add precise bibliographic details.
+- Use the original excavation director's institutional Sidon study to improve provenance and replace an intermittently inaccessible project link.
+- Preserve existing Scripture references and location uncertainty while adding regression tests for the cited research.
+
 ## 0.44.14 - 01/11/2026: More precise Nazareth Annunciation evidence
 
 - Link the specific archaeological chapter and sacred-site history behind Nazareth's Annunciation study, with transparent source attribution.
