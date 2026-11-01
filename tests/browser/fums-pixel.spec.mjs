@@ -33,4 +33,18 @@ test('API.Bible views issue a scoped privacy-safe reporting pixel each time cont
  expect(reports[0].device).toBe(reports[1].device);
  expect(reports[0].session).toBe(reports[1].session);
  expect(reports[0].cacheNonce).not.toBe(reports[1].cacheNonce);
+ // Re-entering the reader must report a fresh view of the cached API.Bible text,
+ // without refetching the passage or inventing a new FUMS token.
+ await page.evaluate(()=>document.querySelector('.nav-link[data-view="about"]').click());
+ await expect(page.locator('#view-about')).toBeVisible();
+ await page.evaluate(()=>document.querySelector('.nav-link[data-view="reader"]').click());
+ await expect(page.locator('#view-reader')).toBeVisible();
+ await expect.poll(()=>reports.length).toBe(3);
+ expect(reports[2].method).toBe('GET');
+ expect(reports[2].referrer).toBe(null);
+ expect(reports[2].keys).toEqual(['cb','dId','sId','t']);
+ expect(reports[2].token).toBe(reports[1].token);
+ expect(reports[2].device).toBe(reports[1].device);
+ expect(reports[2].session).toBe(reports[1].session);
+ expect(reports[2].cacheNonce).not.toBe(reports[1].cacheNonce);
 });
