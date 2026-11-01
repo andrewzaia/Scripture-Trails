@@ -1,6 +1,16 @@
 {
   "releases": [
     {
+      "version": "0.44.17",
+      "date": "2026-11-01",
+      "title": "Accurate people readings and efficient release verification",
+      "changes": [
+        "Expand Moses' departure and Solomon's ark-entry readings to include the narrated actions, preserving all stable people trails.",
+        "Keep Chromium, Firefox and WebKit mandatory for pull requests while eliminating redundant browser installations after strictly checked main merges.",
+        "Add regression tests for canonical reading ranges and fail-closed release gates under permitted and rejected GitHub event states."
+      ]
+    },
+    {
       "version": "0.44.16",
       "date": "2026-11-01",
       "title": "Clearer chronology and passage boundaries in Gospel journeys",
