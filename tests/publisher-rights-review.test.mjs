@@ -19,7 +19,7 @@ test('public licence review covers all four editions and non-commercial academic
   assert.match(item.sourceUrl,/^https:\/\//);
   assert.ok(item.risks.length>=2);
  }
- assert.equal(roadmap.v1Readiness.gates.flatMap(g=>g.criteria).filter(x=>x.status==='met').length,12);
+ assert.equal(roadmap.v1Readiness.gates.flatMap(g=>g.criteria).filter(x=>x.status==='met').length,13);
  assert.equal(roadmap.v1Readiness.gates.flatMap(g=>g.criteria).find(x=>x.id==='source-licences').status,'open');
  assert.equal(roadmap.milestones.find(x=>x.id==='v1-publisher-rights-evidence-ledger')?.status,'delivered');
 });

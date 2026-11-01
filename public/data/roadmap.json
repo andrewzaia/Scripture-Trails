@@ -6,7 +6,7 @@
     "Maintain the project owner's scholarly acceptance of Scripture Trails' published content, preserving primary biblical references, source qualifications and versioned corrections.",
     "Confirm private ESV/API.Bible publisher entitlements, non-commercial licence terms and FUMS account reporting evidence without publishing confidential contracts.",
     "Verify actual Windows and Apple screen readers, physical device/browser combinations and true 200%/400% zoom beyond synthetic automation.",
-    "Exercise and document controlled production rollback, rerun live acceptance on the v1.0 release candidate, and obtain the project owner's final launch decision."
+    "Preserve the verified Cloudflare production rollback/recovery evidence, rerun live acceptance on the final v1.0 candidate, and obtain the project owner's final launch decision."
   ],
   "phases": [
     {
@@ -949,7 +949,7 @@
     "target": "1.0.0",
     "baseline": "0.32.0",
     "updated": "2026-11-01",
-    "note": "Twelve of seventeen v1.0 acceptance criteria have scoped evidence and declared reviewer provenance, including explicit owner-scholar acceptance of all published content. Five remain open: verified publisher permissions, real screen-reader journeys, real-device and true browser zoom acceptance, exercised production rollback, and final owner launch signoff. Owner editorial approval is not independent peer review and a successful API response alone is not licence clearance.",
+    "note": "Thirteen of seventeen v1.0 acceptance criteria have scoped evidence, including owner-led scholarly acceptance and a successful, exercised Cloudflare production rollback and recovery. Four remain open: account-specific publisher permissions and FUMS compliance evidence, real screen-reader journeys, real-device and true browser zoom acceptance, and final owner launch signoff. Working APIs and automated tests are not substitutes for licence or physical-device evidence.",
     "stages": [
       {
         "id": "baseline",
@@ -1132,7 +1132,7 @@
         "id": "release",
         "title": "Release operations and launch decision",
         "summary": "v1.0 requires traceable source, successful checks, a reproducible deployment, rollback planning and explicit acceptance of residual risks.",
-        "next": "v0.44.19 passed the scoped live production smoke. Recheck on the eventual v1.0 candidate, exercise safe Cloudflare rollback with production recovery evidence, then record the project owner's final go/no-go decision.",
+        "next": "The v0.44.19-to-v0.44.20 production rollback rehearsal succeeded with exact deployment alias and live reader/Atlas checks. Recheck the final v1.0 release candidate, preserve provider and accessibility acceptance, then obtain the project owner's explicit go/no-go decision.",
         "criteria": [
           {
             "id": "semantic-versioning",
@@ -1145,10 +1145,12 @@
           {
             "id": "rollback",
             "title": "Document and exercise production rollback",
-            "status": "open",
+            "status": "met",
             "mode": "manual",
             "evidence": "sources/operations/v1-launch-evidence-ledger-2026-11-01.md",
-            "acceptance": "Demonstrate a safe rollback to a known-good Cloudflare deployment, including how to preserve or recover service after a bad release."
+            "acceptance": "Demonstrate a safe rollback to a known-good Cloudflare deployment, including how to preserve or recover service after a bad release.",
+            "reviewedOn": "2026-11-01",
+            "reviewer": "Scripture Trails AI-assisted Cloudflare live-production operational verification - actual v0.44.20 to v0.44.19 rollback and restoration of the original v0.44.20 commit, custom domain and live reader/Atlas checks"
           },
           {
             "id": "live-smoke",

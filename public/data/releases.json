@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "version": "0.44.21",
+      "date": "2026-11-01",
+      "title": "Publisher view reporting and recovery readiness",
+      "changes": [
+        "Report API.Bible Scripture views when returning to a cached passage.",
+        "Document successful live production rollback and restoration in the v1.0 readiness roadmap."
+      ]
+    },
+    {
       "version": "0.44.20",
       "date": "2026-11-01",
       "title": "Owner-led scholarly review and verified launch readiness",
