@@ -1,1 +1,1177 @@
-{"project":"Scripture Trails","updated":"2026-11-01","description":"An evidence-aware v1.0 release roadmap checked against the current versioned Scripture Trails source and test data. All 161 written Atlas explanations now have dated scoped AI-assisted source assessments. The 31 October source-linked journey corrections cover selected high-risk passages, not a complete re-audit of all 162 stages. Full reference corpus, physical-device accessibility and independent specialist certification remain separate. No unverified evidence is implied.","currentFocus":["Maintain the project owner's scholarly acceptance of Scripture Trails' published content, preserving primary biblical references, source qualifications and versioned corrections.","Confirm private ESV/API.Bible publisher entitlements, non-commercial licence terms and FUMS account reporting evidence without publishing confidential contracts.","Verify actual Windows and Apple screen readers, physical device/browser combinations and true 200%/400% zoom beyond synthetic automation.","Preserve the verified Cloudflare production rollback/recovery evidence, rerun live acceptance on the final v1.0 candidate, and obtain the project owner's final launch decision."],"phases":[{"id":"foundation","title":"Platform and Bible discovery"},{"id":"geography","title":"Biblical geography"},{"id":"next","title":"Next priorities"},{"id":"connections","title":"Deeper connections"},{"id":"editions","title":"Texts and languages"},{"id":"platform","title":"Future study tools"}],"milestones":[{"id":"reader","phase":"foundation","status":"delivered","title":"Bible reading and personal study","summary":"The 66-book navigator, ESV reader, verse search, bookmarks, local notes and reading history form the foundation.","capabilities":["All 66 books and chapter navigation","Official Crossway ESV text via server-side API","Bookmarks, private local notes and recent reading"],"verification":"Available in the live application; text retrieval depends on the Crossway service and applicable licensing."},{"id":"atlas","phase":"foundation","status":"delivered","title":"Ten-hop Connection Atlas","summary":"Explore Scripture connections using curated notes and attributed OpenBible.info cross-references, without treating community vote scores as scholarly confidence.","capabilities":["Up to 10 reference hops with bounded rendering","Book / chapter / verse selection and per-verse Atlas actions","603,076 directed reference links imported from 344,753 valid non-self OpenBible.info source rows"],"verification":"Dataset importer and CI checks validate reference structure and provenance, not the exegetical validity of each connection. Seven bars are normalised source scores relative to the selected verse, not academic confidence ratings."},{"id":"guided","phase":"foundation","status":"delivered","title":"Guided study journeys","summary":"Six theme-based entry points and deep links into Scripture.","capabilities":["Six curated journeys","Reader links and study notes"],"verification":"Curated paths are tested for valid Bible references."},{"id":"gospel","phase":"geography","status":"delivered","title":"Journeys of Jesus","summary":"A self-hosted geographic itinerary following Gospel and Acts passages without drawing invented historical roads.","capabilities":["79 episode entries and 35 places or regions","Interactive pins, repeated visit lists and draggable timeline","Passage links, location confidence and qualified route reconstruction"],"verification":"Narrative sequence is an editorial harmonisation and not a complete historically dated itinerary."},{"id":"places","phase":"geography","status":"delivered","title":"Place history and archaeology panels","summary":"Historical context for each of the 35 journey markers, while distinguishing scriptural claims from external scholarship.","capabilities":["Ancient and modern names and location context","Archaeology summaries with source links where available","Old Testament historical connections and Gospel episode index"],"verification":"All 35 places have a dossier; depth of independent archaeological references varies by place."},{"id":"deployment","phase":"foundation","status":"delivered","title":"Production platform and automated builds","summary":"The public site is deployed from private GitHub source to Cloudflare Pages, with server-side Bible retrieval and automated source/data checks.","capabilities":["Production branch builds from the private GitHub repository","Automated Node tests, data validation and Pages Functions","Bible-provider credentials remain server-side; licensed text is retrieved on demand"],"verification":"Production deployment and source checks are verified per release. Browser end-to-end and accessibility automation remain a separate planned milestone."},{"id":"audit","phase":"next","status":"delivered","title":"Gospel journey audit - initial editorial pass","summary":"All 79 episode entries and 35 place dossiers now have traceable screening states, a publicly visible corrections register, and open historical questions.","capabilities":["Passage-reference syntax and Gospel/Acts scope checks","Corrected Capernaum, Jairus lakeshore, Caesarea Philippi district, Bethphage and supper summaries","Published correction history, evidence categories and chronology concerns","Explicitly report unresolved research issues without attached independent secondary-source links"],"verification":"Initial AI-assisted screening, provenance checks and dated academic bibliography links are documented. Missing secondary citations remain visible. No independent external peer review has occurred."},{"id":"place-deep-dives","phase":"next","status":"delivered","title":"Five deep historical city studies","summary":"Five browsable studies of Jerusalem, Nazareth, Capernaum, Bethlehem and Jericho, each with source-linked biblical history, chronology and archaeological qualification, plus contested identification comparisons.","capabilities":["Five dedicated, independently selectable city pages using one reusable design","40 primary Scripture links, 25 historical period summaries, 20 individually source-qualified findings","Modern site photo licensing and source attribution with illustrative site-orientation maps","Comparative location studies for Cana, Bethsaida and Emmaus","Direct navigation from Journeys of Jesus and to Bible Reader or Connection Atlas"],"verification":"Implementation, data schema and citations tested. The studies are sourced editorial summaries, not externally peer-reviewed archaeological monographs; coordinate markers are approximations and the photo gallery depicts modern sites."},{"id":"timeline-evidence","phase":"next","status":"delivered","title":"Gospel chronology comparison","summary":"Compare the order in which the four Gospel texts present the catalogued Jesus-journey episodes, alongside the combined editorial study sequence.","capabilities":["Independent Matthew, Mark, Luke and John textual-order selectors based on each account's cited passages","Chronology and possible-parallel notes for disputed Nazareth, temple, Bethany and disciple-call passages","Original Scripture references and linked academic reading, with no invented calendar dates or physical journeys"],"verification":"Textual sequence follows chapter and verse ordering within each Gospel, not established event dates. Dataset and issue links are validated in automated tests. Full source-critical synoptic comparison and external scholarly review remain outstanding."},{"id":"book-atlas","phase":"connections","status":"delivered","title":"Explain sourced Scripture connections","summary":"Introduced selective passage-by-passage evidence categories in the Atlas, without implying the complete OpenBible archive is classified.","capabilities":["24 selected passage comparisons spanning quotations, narrative parallels, literary echoes, interpretive typology and shared themes","Each annotated connection includes a context passage and interpretation caution","Filters separate explained and unclassified links while preserving OpenBible vote bars","People Index profiles surface related Atlas paths for overlapping cited passages"],"verification":"Canonical passage references and pair identity are checked in CI. These are internal editorial passage comparisons, not independent specialist certification. The OpenBible corpus stays unclassified by default."},{"id":"people-places","phase":"connections","status":"delivered","title":"People, places and events index","summary":"A cross-linked Gospel knowledge index with disambiguated people, all 35 mapped places and all 79 recorded journey events.","capabilities":["Curated biblical person profiles with cited passages, alternate names and disambiguation","Reusable 35-place dossiers and associated archaeology sources, all 79 Gospel journey events","Search by name, aliases, reference or narrative, with deep links to the reader, Atlas, journey map and city studies","Evidence-status warnings and source limitations preserved across links"],"verification":"Indexed IDs, relationship targets and cited passage boundaries are checked in CI. Profiles rely on the Gospel text as primary narrative testimony; the curated people list is intentionally incomplete and has not received independent specialist peer review."},{"id":"entity-expansion","phase":"connections","status":"delivered","title":"Expand the biblical people, places and events index","summary":"Expanded the local people and events index into the Hebrew Bible and added further named biblical figures across both Testaments, with discoverable featured entries and improved category guidance.","capabilities":["Disambiguated Old Testament figures including monarchs, prophets and similarly named individuals","Narrative events from ancestral traditions to the Persian-era return, with relevant people and places linked","Distinct political realms and ancient locations without invented map pins or timeless borders","Selected museum references about Assyrian inscriptions, Lachish reliefs, Babylonian inscriptions and the Cyrus Cylinder","Featured people and kingdoms are directly discoverable without browsing multiple result pages"],"verification":"Biblical addresses, related entities, museum-source identifiers and disambiguations are validated in CI. Only historical statements specifically attested by an external source are attributed to it. No claim of independent peer review or complete Old Testament coverage."},{"id":"translation-reader","phase":"editions","status":"delivered","title":"Switch reader translations","summary":"Read the same verse, range or chapter in ESV, NASB20, NIV (2011) or NKJV without leaving Scripture Trails.","capabilities":["Translation selector with saved device preference and shareable edition links","NASB20, NIV and NKJV through a server-side API.Bible integration","Publisher attribution and API.Bible Scripture-view reporting","Translation-neutral Atlas actions retained in every reader edition"],"verification":"Production verse and full-chapter requests for NASB20, NIV and NKJV verified on 27 October 2026, including returned copyright notices and Scripture-view tokens. ESV retrieval, 56 automated tests, Cloudflare runtime request settings and desktop/mobile browser checks also passed."},{"id":"bible-languages","phase":"editions","status":"research","title":"Original-language study","summary":"Research separately licensed Hebrew and Greek lexical, morphology and textual-study resources after the existing four-edition reader; define a useful first study tool before implementation.","capabilities":["Identify licensed Hebrew and Greek lexical datasets","Compare variant renderings only where permissions allow","Carefully sourced original-language study tools"],"verification":"Research gate: identify usable datasets, redistribution rights, attribution, versification and a maintainable technical scope before committing implementation. No additional copyrighted text may be hosted without permission."},{"id":"study-tools","phase":"platform","status":"delivered","title":"Richer notes, exports and reading plans","summary":"Linked observations, place links, highlights, notebook backups and optional passage schedules now form a private study workspace.","capabilities":["Notes linked to multiple verses and places","Export and import personal work with clear privacy notices","Reading goals and optional progress tracking"],"verification":"Local storage, reference and place validation, backup compatibility, merge conflicts and reading schedules are tested. No account or sync is required."},{"id":"accounts","phase":"platform","status":"research","title":"Optional encrypted sync and accounts","summary":"Consider private device sync only after a clear privacy/security design and an actual user need.","capabilities":["Opt-in login rather than a sign-up gate","Secure note synchronisation and deletion tools","Privacy policy and encrypted data handling"],"verification":"Exploratory and not committed. Proceed only after a demonstrated cross-device need and documented threat model, encryption/key recovery, conflict handling, export/deletion and operating-cost decisions. Existing local study tools and backups are delivered."},{"id":"maps","phase":"platform","status":"planned","title":"Kings, prophets and wider historical geography","summary":"After the first Hebrew Bible geography collection, add separately scoped studies of the monarchy, prophets, exile and return where sources support useful comparisons.","capabilities":["Choose one historically bounded collection at a time, extending the existing people and event index","Compare changing realms, date models and disputed places with attributed sources","Provide passage-linked accessible lists and maps only where geographic evidence permits"],"verification":"Depends on the first Hebrew Bible geography milestone. Complete each collection only after its own source, chronology and geographic-uncertainty audit; no timeless borders or unsupported coordinates."},{"id":"local-reference-data","phase":"foundation","status":"delivered","title":"Locally stored reference data and supporting assets","summary":"The original OpenBible.info archive and all 66 generated Atlas files are stored with the project. Five credited city photographs are also served locally.","capabilities":["344799 source reference rows, with 344753 valid non-self rows imported","603076 directed navigation links across 66 book files","Source and generated-file checksums, provenance and attribution","Offline dataset regeneration with no reference download during builds","Local history, geography, verse metadata and city photographs"],"verification":"All source reference pairs match an official OpenBible download. Vote counts differ by snapshot date. The original archive is retained unchanged, generated-file checksums are validated during builds, and publisher Bible APIs remain separate."},{"id":"atlas-evidence-expansion","phase":"connections","status":"delivered","title":"Deep Scripture connections and comparison","summary":"Expanded passage-anchored comparisons, added paired Bible reading from official translation APIs, and introduced study trails for key biblical figures.","capabilities":["115 editorial passage-pair comparisons, including quotations, echoes, shared themes and parallel accounts, each with explicit review status","Side-by-side passage reader with selected Bible edition, individual publisher attributions and API.Bible usage reporting","Eight original person-centred reading trails (now expanded in a separate milestone) with Scripture passages, Atlas navigation and linked comparison actions","Provenance labels distinguish the original 24 context-screened records from 91 additional editorial reading aids; unclassified community links retain vote bars"],"verification":"Release tests validate 115 unique pairs, reference boundaries, review classifications, and trail citations. Independent specialist review is not claimed and translations remain publisher-API dependent."},{"id":"pauline-journeys","phase":"geography","status":"delivered","title":"Journeys of Paul","summary":"Explore 61 passage-linked narrative stages in Acts 13-21 with 33 approximate markers, repeat visits and explicit unpinned regional, unnamed and offshore stages.","capabilities":["Three journey filters, an all-journeys view, timeline, playback, pan/zoom and a complete keyboard-accessible stage list","Reader and Atlas actions, Paul's index profile and related passage search","Pinned, locally retained Pleiades location sources and public-domain coastal orientation","Public location, narrative and textual uncertainty register without invented dates, roads or regional pins"],"verification":"Canonical references, source-point alignment and narrative connector gaps are tested. The itinerary is an editorial reading aid, not externally peer-reviewed historical reconstruction. Island positions indicate island-scale orientation."},{"id":"paul-rome","phase":"next","status":"delivered","title":"Paul's voyage to Rome","summary":"A separately selectable prisoner voyage with 22 passage-linked stages in Acts 27-28, approximate named-place markers and unpinned offshore, storm and wreck settings.","capabilities":["Passage-linked sailing stages and wintering locations","Explicitly uncertain or unlocated sea positions","Separate source and textual audit before adding new markers"],"verification":"References and sourced marker alignment tested. No exact wreck bay, storm track or daily ship positions are claimed. Independent specialist review remains outstanding."},{"id":"notebook-backups","phase":"platform","status":"delivered","title":"Private notebook export and import","summary":"Download a versioned JSON backup of saved passages and notes; preview additions, duplicates and note conflicts before importing.","capabilities":["Local file processing without an account or file upload","Preserve existing notes by default, with individual replacement choices","Validate references, file size and schema; reject unsupported files","Single-write notebook persistence with storage failure and stale-import handling"],"verification":"Automated validation and merge tests plus browser round-trip checks. Backups are unencrypted and should be kept private. No publisher Bible text is fetched for export."},{"id":"reading-progress","phase":"platform","status":"delivered","title":"Optional study journey reading progress","summary":"Track completed passages in the six existing guided study journeys and resume the next unread passage.","capabilities":["Explicit per-passage checklists and completion indicators","Resume the next unread passage and confirm before resetting a plan","Local progress saved without an account","Version 2 notebook backups include progress; older backups remain supported"],"verification":"Plan-reference validation, completion merge and backup compatibility tested. Progress is self-reported and does not measure reading time or comprehension. Structured annotations and calendar-based schedules are now delivered in separate milestones."},{"id":"annotations-highlights","phase":"platform","status":"delivered","title":"Linked observations and verse highlights","summary":"Save tagged observations linked to multiple passages and colour-labelled, verse-reference highlights across reader editions.","capabilities":["Linked note creation, editing and confirmed deletion in My notebook","Amber, green and blue highlights with visible text labels","Filter linked notes and highlights by passage, text, tag or highlight colour","Version 3 backups preserve annotations; version 1 and 2 imports remain supported with conflict previews"],"verification":"Reference validation, merge conflicts and old-backup preservation tested. Reader highlight boundaries and translation switching tested with fixture text. Reference numbering may differ between editions; word-selection highlighting is not implemented."},{"id":"collections-schedules","phase":"platform","status":"delivered","title":"Custom study collections and reading schedules","summary":"Create ordered passage collections, optionally schedule one passage per selected reading day, and track progress locally.","capabilities":["Build from six guided studies or enter custom passages","Choose a start date and reading weekdays, with fixed dates and explicit completion","Edit collections, resume reading and confirm deletion","Version 4 notebook backups retain collections and schedules, supporting versions 1 to 3"],"verification":"Date boundaries, reference validation, backup compatibility, conflicts and storage failures tested. Dates use the device calendar. No reminders or automatic completion."},{"id":"place-linked-notes","phase":"platform","status":"delivered","title":"Place-linked observations and notebook organisation","summary":"Connect private observations to existing places and regions, then move between the notebook and source-qualified place profiles.","capabilities":["Link a note to passages, up to 20 indexed places, or both","Filter annotations by place, note type, tag, passage, text or highlight colour","Open private notes from a place profile without discarding the current draft","Version 5 notebook backups include place links and retain support for versions 1 to 4"],"verification":"The 49-place registry is checked against the existing Gospel and Hebrew Bible source indexes. Notes are private user observations, not geographic evidence. Backup conflicts include changed place links; storage failures and stale writes are tested."},{"id":"person-trails-expansion","phase":"connections","status":"delivered","title":"Further person-centred Scripture trails","summary":"Twenty person-centred trails now include twelve further figures and a searchable directory, with explicit primary-passage and editorial review labels.","capabilities":["Twenty disambiguated profiles: the original eight plus twelve additional figures","Eighty-eight selected Scripture readings, including forty-eight additional contextual ranges","Search by name, passage or topic and filter Hebrew Bible / New Testament","Per-stage source and review labels, tailored interpretation cautions, reader and starting-verse Atlas navigation"],"verification":"Canonical references, profile IDs, source/review metadata and bounded reading ranges are validated in CI. Primary-text checks are AI-assisted and partly limited by source access; independent specialist and source-critical review remain outstanding. No historical reconstruction or complete biography is claimed."},{"id":"official-domain","phase":"foundation","status":"delivered","title":"Official Scripture Trails domain launch","summary":"The production website has its own canonical HTTPS address at www.scripturetrails.com, with shared passage links preserved through redirects.","capabilities":["Custom production domain and HTTPS canonical address","Permanent apex and HTTP redirects preserving paths and query strings","Canonical/social metadata, robots instructions and sitemap using the official address"],"verification":"Recorded in release v0.2.11 and the production configuration documentation. This is a completed launch milestone; ongoing domain and deployment availability remains an operational responsibility."},{"id":"atlas-navigation","phase":"connections","status":"delivered","title":"Atlas path tracing and in-place passage preview","summary":"The Atlas now distinguishes the shortest displayed route, directly connected verses and an in-place Bible passage preview.","capabilities":["Hover highlights the shortest displayed route to the centre and the separate one-hop neighbourhood","A first node click previews the passage; a second click on that node explicitly recentres the graph","Selected-edition passage retrieval, publisher attribution and required view reporting remain in place"],"verification":"Recorded in releases v0.9.1, v0.9.4 and v0.10.0, with graph and preview tests. Shortest means within the bounded displayed graph, not every relationship in the underlying archive."},{"id":"release-governance","phase":"foundation","status":"delivered","title":"Versioned releases and deployment consistency","summary":"Every public website update has a semantic version, matching public/development release notes and a footer tied to the loaded application.","capabilities":["Release command updates version, both changelogs, footer and asset cache keys together","Checks reject duplicate, inconsistent or out-of-order release metadata and website changes without a version increment","Full pull-request comparison checks version advancement while production metadata checks support shallow Cloudflare checkouts","Matching-version release-note loading prevents stale history from replacing the loaded footer version"],"verification":"Recorded across v0.3.0-v0.3.1, v0.9.2-v0.9.3 and v0.16.1. GitHub checks, the production commit and deployment result must still be verified for every release; validation is never bypassed."},{"id":"biblical-geography-expansion","phase":"geography","status":"delivered","title":"Hebrew Bible geography and Exodus traditions","summary":"The first Hebrew Bible geography collection follows twenty-five selected Exodus and wilderness readings from Egypt to Moab, with fifteen setting records and five source-linked comparison topics.","capabilities":["A dedicated searchable page, five reading sections and shareable stage selections","Twenty-five passage-linked readings, fifteen regional or unresolved setting records and links to existing people and place profiles","Five comparisons: Delta cities, the sea crossing, Horeb/Sinai, Kadesh and two date proposals","Seven supporting source records with authorship, scope, access notes and limitations; reader and starting-verse Atlas actions"],"verification":"Delivered in v0.19.0. Canonical passages, source relationships, profile IDs, selection/filter behaviour and unassigned coordinates/dates are tested. Primary checks are AI-assisted; source access varies and independent specialist review remains pending. No exact Exodus route, summit, burial location or pharaoh is assigned."},{"id":"source-coverage","phase":"next","status":"delivered","title":"Citation coverage and editorial evidence review - first priority batch","summary":"Forty-three source-level assessments cover 18 Gospel issues, 13 place dossiers, four Nehemiah readings and eight passage comparisons, with retained warnings and precise source-access limits.","capabilities":["Dated claim-level sources and decisions alongside affected studies and in a downloadable About-page register","Add scoped bibliography for Cana, Nain, Sidon and Caesarea Philippi; retain nine place-source warnings","Close four Nehemiah primary-passage access gaps without claiming a manuscript or translation audit","Clarify eight selected comparisons and correct two related narratives from parallel to thematic labels"],"verification":"Delivered in v0.20.0 for the declared 43-record batch. AI-assisted editorial assessment, not independent specialist signoff. Unresolved geography, chronology, source access and textual questions remain explicit; other 107 explained pairs and wider source gaps are not newly assessed."},{"id":"browser-automation","phase":"foundation","status":"delivered","title":"Automated desktop/mobile release coverage","summary":"Repeatable Chromium journeys and accessibility/layout checks protect the main study workspace in GitHub CI.","capabilities":["Reader navigation, four editions, outage recovery, Atlas preview/focus, map/list navigation and roadmap filters","Private notebook round trips, explicit conflict replacement, stale drafts and cross-tab write protection, highlights, place links and reading schedules","All twelve views scanned with axe WCAG 2 A/AA and 2.1 A/AA rules in dark/light themes at desktop/mobile sizes, plus horizontal overflow checks","Deterministic synthetic passage fixtures; source and browser jobs feed a failing release gate with retained failure traces"],"verification":"Delivered in v0.24.1: 48 browser scenarios across desktop and mobile Chromium, with automated accessibility findings fixed and keyboard scenarios recorded. Fixtures do not establish publisher service availability. Manual screen-reader, real-device, Safari and Firefox review remains open."},{"id":"browser-keyboard-reflow","phase":"foundation","status":"delivered","title":"Keyboard focus, mobile navigation and enlarged-text repairs","summary":"A browser accessibility pass repairs passage/search focus, mobile drawer interaction and city-study text wrapping, while preserving the human-review milestone.","capabilities":["Move focus to the visible destination after passage links, searches and browser history, with current navigation and section titles exposed","Use an accessible mobile drawer with an internal close control, contained focus, background inertness and resize cleanup","Check all twelve views at 320 CSS pixels and with enlarged text, with automated WCAG 2.2 AA rule coverage","Keep screen-reader, actual browser-zoom, physical-device and other-browser testing explicitly open"],"verification":"Delivered in v0.29.1. Browser behaviour checks and deterministic text/viewport tests cover the repaired paths. Live Chromium reproduced the original reference-focus defect. These checks do not constitute assistive-technology signoff or complete WCAG certification; detailed scope and the human test protocol are in the development audit record."},{"id":"browser-accessibility","phase":"next","status":"next","title":"Manual assistive-technology and real-device review","summary":"Follow the automated and Chromium browser checks with recorded human screen-reader, actual-zoom and physical-device reviews. Browser focus and enlarged-text defects were repaired in v0.29.1; assistive-technology signoff remains open.","capabilities":["Manual screen-reader checks for reading order, control names, announcements, maps and private notebook flows","Real-device and browser checks beyond emulated desktop/mobile Chromium, including Safari and Firefox","Record keyboard and assistive-technology findings, resolve barriers and retain regression coverage"],"verification":"Open. Browser keyboard and layout repairs and automated WCAG rule checks are delivered separately. No VoiceOver/NVDA/TalkBack, actual browser-zoom, physical-device, Safari/Firefox or complete accessibility certification is claimed."},{"id":"independent-audit","phase":"next","status":"research","title":"Independent historical, textual and nautical review","summary":"Seek independent specialist assessment of flagged Gospel chronology, Pauline geography and nautical questions, archaeological identifications, person trails and interpretive connection explanations.","capabilities":["Use the Gospel issue register, Pauline source notes and Voyage to Rome specialist-review checklist","Review Caesarea embarkation, unpinned/offshore settings, Malta and gazetteer identifications without assuming more precise coordinates","Assess interpretation and textual-context questions in the 115 explained pairs and twenty person trails","Publish reviewer expertise, date, method, bibliography, decisions and remaining disagreements when review occurs"],"verification":"Research dependency: no independent reviewer has signed off. Completion requires an actual documented specialist review of a declared scope; AI-assisted screening, automated checks and source-link presence cannot supply that signoff."},{"id":"people-index-review","phase":"next","status":"planned","title":"Broader people, family and event relationships","summary":"Extend the curated people index and its relationships after the delivered twenty-trail library, prioritising figures needed by new geography collections.","capabilities":["Publish a bounded list of additional profiles and passage-linked family or event relationships","Preserve identity distinctions, uncertain identifications and scoped external evidence","Connect new profiles to reader, Atlas, trails and places where supported"],"verification":"Complete each expansion when its declared coverage, relationship targets, canonical passages and source notes are checked. Citation remediation and independent specialist review have separate milestones; twenty existing trails are already delivered."},{"id":"source-coverage-20-03","phase":"connections","status":"delivered","title":"Twenty creation, shepherd, renewal and mission assessments","summary":"Twenty previously unassessed thematic and echo links now have passage-specific explanations, paired reading contexts and named scholarly commentary.","capabilities":["Read selected creation, shepherd, renewal, Law, mission and salvation passages in their distinct settings","Follow claim-specific citations to fifteen readable named commentaries and publisher passage views","Retain thematic links as themes and the Isaiah 25/Revelation 21 echo as an editorial classification; no new direct-quotation claims","See dated assessment coverage of 68 of 115, with commentary or limited publisher-summary support for 36 assessed pairs"],"verification":"Delivered in v0.25.0. Twenty new target IDs and canonical contexts are checked against the dated register; each has two primary-passage citations and one scoped named commentary. Confessional readings are attributed. Wider literature, manuscript/translation questions and independent specialist review remain open."},{"id":"source-coverage-20-04","phase":"connections","status":"delivered","title":"Twenty Old Testament narrative assessments","summary":"Twenty existing Samuel, Kings, Chronicles and Isaiah parallels now have paired reading contexts, source-specific explanations and scoped named commentary.","capabilities":["Compare shared narratives while preserving tribute, priestly, dynastic and royal-evaluation differences","Follow two publisher passage citations and one scoped named commentary for each pair; indexed-excerpt access is explicitly marked","Retain all twenty narrative-parallel classifications; distinguish textual overlap from independent historical evidence","See dated assessment coverage of 88 of 115, with commentary or limited publisher-summary support for 56 assessed pairs"],"verification":"Delivered in v0.26.0. Exact target IDs, canonical contexts, anchor containment, source scopes and derived coverage are checked. Six commentaries by four authors support specific claims; two commentaries had indexed-excerpt access. Fuller literature, manuscript/translation questions and independent specialist review remain open."},{"id":"source-coverage-20-05","phase":"connections","status":"delivered","title":"Twenty prayer, faith, hope and Hezekiah assessments","summary":"The seventeen remaining New Testament comparisons and three Hezekiah parallels now have selected reading contexts, specific explanations and scoped named commentary.","capabilities":["Compare prayer, grace, love, resurrection and renewal while preserving each passage’s distinct setting","Retain differences in Acts retellings and the Hezekiah accounts; identify Revelation’s two anchors as parts of one vision","Follow paired publisher passage views and seventeen named commentaries by sixteen authors","See dated assessment coverage of 108 of 115, with commentary or limited publisher-summary support for 76 assessed pairs"],"verification":"Delivered in v0.28.0. Declared targets, canonical contexts, anchor containment, unchanged classifications, source scopes and derived coverage are checked. Existing assessments and sources are preserved. Full literature, manuscript/translation questions and independent specialist review remain open."},{"id":"source-coverage-final-07","phase":"connections","status":"delivered","title":"Dated editorial assessment coverage for all 115 explained connections","summary":"The final seven Ahaz, Manasseh, Josiah, siege and returnee-list comparisons complete the existing 115-pair register with paired contexts and scoped named commentary.","capabilities":["Follow sources for all 115 explained pairs from About and the Atlas","Retain differing royal evaluations, Josiah's death accounts, seventh/tenth-day dates and returnee-list figures","Distinguish 83 pairs with commentary or limited publisher-summary support from 32 based on passage checks","Keep the 603,076-link OpenBible corpus and independent specialist review outside this completion claim"],"verification":"Delivered in v0.29.0. Exact final targets, contained anchors, unchanged classifications, scoped citations, complete target coverage and preservation of earlier assessments are checked. Three readable commentaries by three named authors support selected claims. Wider literature, manuscript and translation questions and independent specialist review remain open."},{"id":"source-support-32","phase":"connections","status":"delivered","title":"Secondary citations for the remaining 32 passage-based assessments","summary":"Dated claim-specific commentary follow-ups now accompany all previously passage-based assessments, bringing scoped secondary-citation coverage to 115 of 115 explained pairs.","capabilities":["Read attributed observations, source locators and access limits from About and the Atlas","Keep every earlier assessment and its cautions alongside the dated follow-up","Distinguish a supporting observation from endorsement of an entire cross-passage interpretation"],"verification":"Delivered in v0.30.0. Exact targets, citation resolution, dates, derived coverage and preservation of the earlier register are checked. Sixteen commentary entries include one indexed-only page and two authorised handbook excerpts. Fuller literature and independent specialist review remain open."},{"id":"source-coverage-followup","phase":"next","status":"planned","title":"Further citation remediation and context review","summary":"All 115 of 115 explained pairs have dated editorial assessments and scoped secondary citations through v0.30.0. The 32 previously passage-based notes now have commentary follow-ups. This does not constitute scholarly certification, agreement with every link, full source access or independent specialist signoff.","capabilities":["Deepen the recorded limited-access sources and compare competing interpretations of the existing 115 explained pairs","Review the newly linked studies in full, compare competing identifications and revisit person-trail access limitations","Compare complete excavation reports and textual apparatuses where access permits; preserve unresolved warnings"],"verification":"Each declared batch needs checked supporting citations, implemented corrections or retained warnings with stated source-level reasons. Source-link presence does not establish specialist signoff."},{"id":"atlas-explanations-46","phase":"connections","status":"delivered","title":"First 46-pair Atlas explanation expansion and coverage audit","summary":"Expand the passage-specific 'Why these passages connect' register from 115 to 161 annotated pairs, including explicit quotations, textual echoes and bounded typological comparisons. Quantify imported and editorial-only pairs separately.","capabilities":["46 new indexed reference pairs with passage-specific rationale, limitations, context and review status","Two older generic explanations rewritten to identify their textual basis and interpretive caution","Separate counts for 301,553 unique pairs, 161 explanations and 301,392 unexplained pairs","Preserve the 115 dated citation assessments, without falsely representing the 46 new aids as externally reviewed"],"verification":"Proposed for v0.32.0. Each new pair is present in the locally imported cross-reference snapshot; canonical references, duplicate prevention, review-status distinctions, coverage statistics and regression checks require release verification."},{"id":"atlas-explanations-followup","phase":"next","status":"delivered","title":"Source assess all 46 newly explained Atlas quotations and thematic links","summary":"All 46 explanations added in v0.32.0 now have dated internal source assessments in v0.34.0 and v0.35.0, increasing assessed Atlas explanations from 115 to 161. Original contexts, textual variants, interpretive cautions and access limitations remain explicit.","capabilities":["Retain dated assessments and original Scripture anchors for all 161 explained pairs","Compare direct quotations, typologies, echoes and thematic interpretations without conflating their evidence levels","Link specific named commentaries and state access limitations and unresolved external specialist reviews","Preserve prior published review batches and keep the public About dashboard derived from data"],"verification":"Dated v1-citations-17-02 and v1-citations-17-03 review batches complete the remaining 34. CI validates exact targets, preserved historical assessments, citation source registry, source/status consistency and generated About counts. External peer review remains outstanding."},{"id":"v1-readiness-framework","phase":"next","status":"delivered","title":"v1.0 release readiness and acceptance framework","summary":"Establish five auditable release gates with actionable criteria across biblical evidence, core content, accessibility, security/privacy and production launch.","capabilities":["Public v1.0 readiness section with open and met criteria and explicit next actions","Launch-blocking criteria distinguished from exploratory post-v1.0 enhancements","Validated source-review backlog and automated launch guard for release 1.0.0 or later"],"verification":"Delivered in v0.33.0: validate the gate schema and current open claims, CI tests and release consistency; manual and specialist signoff remains open."},{"id":"v1-evidence-closeout","phase":"next","status":"next","title":"v1.0 editorial evidence and core-content closeout","summary":"All 161 explained Atlas pairs are source assessed; the owner has personally reviewed and accepted published scholarly and editorial content across flagship journeys, people, places and study pathways. Publisher permissions and technical launch gates remain independently open.","capabilities":["All 161 explained pairs have dated internal assessments; full Atlas corpus is outside this commitment","Prioritised high-impact disputed historical and interpretive claims","Coverage review for flagship people, locations and guided studies"],"verification":"Owner's stated scholarly acceptance is dated and source-linked. It does not imply external peer review, universal historical certainty or publisher licence clearance. Later corrections follow versioned release discipline."},{"id":"v1-accessibility-and-hardening","phase":"next","status":"planned","title":"v1.0 manual accessibility, privacy and resilience checks","summary":"Supplement automated tests with real assistive technology and device reviews, security/privacy audit and provider failure drills.","capabilities":["NVDA/VoiceOver/TalkBack journeys with recorded outcomes","Safari, Firefox, zoom and real-device verification","Threat model, backup/recovery and publisher obligations review"],"verification":"Document actual devices, browsers, review scope, defects, remediations and remaining limitations. Automated Chromium success alone does not close this milestone."},{"id":"v1-release-candidate","phase":"next","status":"planned","title":"v1.0 release candidate, rollback and launch approval","summary":"Use the five release-readiness gates to govern the go/no-go decision, rerun release checks and verify the precise production deployment.","capabilities":["No unresolved critical launch defects","Reproducible versioned release and production deployment verification","Documented recovery plan and explicit approval"],"verification":"All blockers met with evidence and dated signoff; production deployment must succeed for the intended commit and public footer must report the intended version."},{"id":"v1-citations-12-01","phase":"next","status":"delivered","title":"First twelve v1.0 Atlas quotation source assessments","summary":"Twelve new annotated quotation pairs now have dated assessments linking original Scripture contexts, New Testament reuse and scoped named commentaries. Total explained-pair assessments advance from 115 to 127, with the remaining 34 assessed in the next versioned batch.","capabilities":["Review Genesis, Leviticus, Deuteronomy, Psalms, Isaiah and Habakkuk quotations in Hebrews, the Gospels, Acts and Paul","Provide two named canonical passage references and one named scholarly commentary with source-specific rationale and access limitations per pair","Retain original 115 assessments and mark 34 unreviewed newer pairs as editorial reading aids","Update the About source register and public citation meter using actual reviewed records"],"verification":"Dated v1-citations-12-01 assessment identifies exact targets, passages, contextual cautions and six attributed commentary works; CI verifies batch scope, source metadata and unchanged historical evidence. Source access gaps and independent specialist review remain open."},{"id":"v1-citations-34-complete","phase":"next","status":"delivered","title":"All 46 new Atlas explanations receive sourced editorial assessment","summary":"Complete the 34 explanation assessments remaining after v0.34.0, covering quotation, narrative echo and typology, so all 161 written Atlas explanations have scoped dated citations. Independent specialist review is not implied.","capabilities":["Seventeen straightforward quotations with explicit biblical context and named commentary","Seventeen interpretively sensitive connections with textual and original-context qualifications","Maintain a 161-of-161 editorial review register, with no invented peer-review or manuscript-access assertions","Provide About citation counts and accessible individual source links"],"verification":"v0.35.0 source record, original-pair preservation checks, browser and node regression tests, and production release checks; specialist and source-licensing audits remain separate."},{"id":"v1-city-studies-depth","phase":"next","status":"delivered","title":"Flagship city studies: deeper Scripture and archaeology integration","summary":"Five city dossiers now contain fifteen substantive readings that connect the Bible's narratives with excavated historical setting and unresolved interpretation. Correct the Nazareth 'Atiqot report's publication date from 2025 to 2020.","capabilities":["Three substantial linked reading layers each for Jerusalem, Nazareth, Capernaum, Bethlehem and Jericho","Clickable Scripture references, source-specific external research and explicit evidence boundaries for every layer","Correct the bibliographic year of Yardenna Alexandre's published Nazareth excavation report to 2020","Protect the existing city explorer, photography provenance, site debates and navigation behaviour"],"verification":"Scoped flagship city audit from published excavation reports, heritage records and a peer-reviewed journal article. Automated citation/reference checks and desktop/mobile browser tests required before release. Other core study content, independent expert evaluation and live provider testing remain open."},{"id":"v1-people-journals-depth","phase":"next","status":"delivered","title":"Twenty people trails and six guided journals deepened","summary":"Add twenty original Scripture-first person studies, sixty validated supplementary biblical references and six longer journal reading guides without changing the original 88 person stages, 36 journal stages, estimated durations or saved-progress identities.","capabilities":["Individual literary context, cross-passage comparisons, reflection questions and explicit evidence limits for all twenty person profiles","Sixty additional canonical Scripture references linked to the Bible reader and Atlas","Six extended thematic reading guides across creation, Messiah, shepherd, covenant, grace and hope","Named, scoped research citations for contested Esther and Daniel historical or compositional claims","Existing reading progress, study times and passage orders preserved"],"verification":"Source integrity and release consistency checks plus desktop/mobile browser tests required before publication. The full v1.0 flagship-content audit remains OPEN because the Jesus and Pauline journey corpora and broader claims still require assessment; the added profiles are not independent scholarly signoff."},{"id":"v1-journey-evidence-pass-01","phase":"next","status":"delivered","title":"Targeted Gospel and Pauline journey evidence corrections","summary":"Publish a source-specific comparison of the Bethsaida/Gennesaret crossing and targeted Acts itinerary qualifications, protecting the 79 Gospel events and 83 Pauline stages. The entire corpus still requires further scene-by-scene research and independent specialist review.","capabilities":["New source-linked Gospel comparison for Mark 6:45-53 and John 6:16-21, with the difference between intended destination and recorded landfall made visible","Qualified Jericho, resurrection-route and selected Pauline land, island, voyage and wreck descriptions where the text does not support precise geography","Publisher Scripture links, bounded scholarly source claims and automated regression checks for risky itinerary assumptions","Original stage IDs, passages, study chronology selectors, route pins and reading links preserved"],"verification":"Scoped editorial evidence pass dated 31 October 2026; primary publisher passages and a published article abstract compared, with no claim that the complete 162-stage corpus or external historical reconstruction has been independently certified. Required CI and production checks remain separate."},{"id":"v1-paul-first-second-depth","phase":"next","status":"delivered","title":"Thirty-nine Pauline journey stages receive fuller Scripture study","summary":"Expand all 18 first-journey and 21 second-journey stages with original contextual biblical reading notes and canonical comparison links. Retain the 44 third-journey and prisoner-voyage stages for a later content batch.","capabilities":["39 original passage-context explanations with additional linked Scriptures and functioning reader/Atlas actions","Explicit editorial evidence boundaries, including distinction between textual travel reports and geographic reconstructions","Peer-reviewed methodological source and a qualified Berea-to-Athens uncertainty record","Unchanged 83 stage IDs, four journey groups, map pins, route breaks and deep links"],"verification":"Source-linked editorial Scripture pass for Acts 13-18, with published itinerary comparisons and a scholarly route-methodology source. Automated data, navigation and browser checks required before publication. The 44 remaining Pauline stages and independent specialist review remain open."},{"id":"v1-paul-all-stages-depth","phase":"next","status":"delivered","title":"All eighty-three Pauline itinerary stages expanded for Scripture study","summary":"Complete individual contextual Scripture study notes and linked reading passages for all 22 third-journey and 22 Rome-voyage stages, building on the 39 first- and second-journey stages already published.","capabilities":["83 of 83 original Acts-based stage explanations with canonical linked comparison passages","Prisoner voyage separately distinguished from numbered missionary journeys, including reached harbours, intended ports, offshore islands, uncertain drift and unpinned wreck","New named, scoped sources for Jerusalem Spirit-warnings and academic literary readings of the voyage","All original IDs, map locations, source credits, deep links, first two journey contexts and reader navigation preserved"],"verification":"Complete 83-stage Scripture-first editorial depth coverage, not an independent historical specialist, text-critical or archaeologically surveyed audit. Automated and cross-device browser tests, release history checks and production verification required before shipping. Gospel event historical review and 12 outstanding v1.0 gates remain open."},{"id":"v1-gospel-79-context","phase":"next","status":"delivered","title":"Seventy-nine Gospel events receive Scripture-first contextual readings","summary":"Write individual original reading contexts and 156 linked comparison passages for all 79 Gospel journey events; add scoped publisher and academic references for census chronology, Mark's textual ending and the ascension narrative.","capabilities":["79 individually contextualised original Gospel reading paragraphs with relevant navigable canonical passages","Visible literature-linked caution for Quirinius census and Herod-era chronological conflict without asserting a solved historical year","Preserved Mark 16:1-8 citation with the longer-ending textual history disclosed, and Luke-Acts ascension manuscript scholarship qualified","Seven named chronology comparisons in total, all original 79 stage IDs, geography, selectors, deep links and previous corrections preserved"],"verification":"AI-assisted passage-context and targeted published-abstract review, not independent specialist historical, archaeological or original manuscript signoff. Canonical verse addresses, full browser navigation, release validation and live production deployment must be checked. v1.0 flagship claims, translation rights and external QA remain open."},{"id":"v1-gospel-site-evidence-05","phase":"next","status":"delivered","title":"Candidate Gospel sites receive claim-to-source evidence comparisons","summary":"Review all 35 Gospel geography dossier classifications and expand five contested or commemorative sites with independent published research positions, evidence limits and named citations, without manufacturing precise locations for 12 regional placeholders.","capabilities":["Five visible claim, evidence and uncertainty comparisons covering Bethsaida, Emmaus, Magadan/Dalmanutha, Sychar and Gethsemane","Five newly traceable published academic sources, including competing Bethsaida interpretations and publication access limits","Preserved all twelve deliberately regional/place-unnamed geography placeholders and explicit avoidance of invented archaeological citations","Automated consistency checks for each source and all 35 dossier classifications, plus desktop/mobile navigation regressions"],"verification":"Source-specific reading of public academic abstracts, scholarly publisher metadata and existing excavation summaries. Independent peer consultation and full-text archaeological reviews remain outstanding; no site identification is marked verified. CI release, browser and production checks required."},{"id":"v1-flagship-navigation-links","phase":"next","status":"delivered","title":"Guided journal permalinks and flagship navigation regression coverage","summary":"Resolve a confirmed guided-journal deep-link defect and restore browser Back/Forward flows between journals, person trails and Bible reading. Introduce end-to-end coverage of all six journals and twenty person trails, plus integrated checks for 79 Gospel and 83 Pauline journey-stage reading destinations.","capabilities":["Shareable, refresh-stable journal selection via validated journal IDs in the URL","Back/Forward correctly restores journal selections, person-trail origins and saved reading progress without replacing history entries","Navigation-integrity assertions cover 20 indexed people, 79 Gospel stages, 83 Pauline stages, 35 Gospel places, five city entry points, six journals and canonical passage destinations","Expanded browser regression for six journal entry points, progress, read and resume actions, person-trail handoff and invalid-link fallback"],"verification":"End-to-end browser tests use synthetic Bible provider fixtures and current local catalogue data. Automated checks do not verify live provider entitlements, specialist historical facts, every assistive-technology path or every possible browser device. Wider v1.0 evidence, source-licence and QA gates remain open."},{"id":"v1-four-edition-production-smoke","phase":"next","status":"delivered","title":"Four-edition production reader verified and provider failure paths hardened","summary":"Use actual public production reader responses across ESV, NASB20, NIV and NKJV for three representative passages; document publisher attribution and release boundaries. Close the two provider-runtime verification criteria with reproducible evidence, not a copyright licence claim.","capabilities":["Twelve live production translation/passage observations completed without copying publisher text or secrets","Repeatable npm live-reader smoke command checks twelve provider response and publisher attribution conditions without logging passages","Crossway proxy now rejects upstream redirects, stalls, malformed/oversized replies and exposes no credentials","Additional unit and browser regression evidence covers upstream 401, 403, 404, 429, 502, missing keys, late responses, user-facing recovery and safe fallback"],"verification":"AI-assisted real production browser rendering against v0.43.0 and post-release verification, plus isolated synthetic fault tests. Publisher distribution rights, specialist security review, independent device accessibility and complete release-candidate smoke remain separate open v1 gates."},{"id":"v1-notebook-corruption-recovery","phase":"next","status":"delivered","title":"Recover unreadable local notebooks without silent data loss","summary":"Detect malformed canonical notebook storage instead of silently showing empty saved data, warn the user, allow private raw snapshot retrieval and require an explicitly reviewed backup before atomic recovery.","capabilities":["Sitewide accessible warning on corrupt or blocked browser notebook storage","Download original unreadable notebook bytes privately before optional replacement","Explicitly confirmed valid-backup recovery with exact snapshot comparison to protect against simultaneous changes","Automated unit and desktop/mobile browser tests for malformed files, quota failures, multi-tab conflicts and successful restoration","Public data-loss limitations and encrypted private-backup recommendations"],"verification":"Reviewed local storage implementation and tests using synthetic browser profiles. There is no cloud copy, automatic recovery or guarantee of retrieving data after device loss or storage eviction. Publisher-rights, specialist security and physical screen-reader acceptance remain separate."},{"id":"v1-security-privacy-threat-model","phase":"next","status":"delivered","title":"Security threat-model review and private-study safeguards","summary":"Audit the server-side Crossway/API.Bible endpoints, publisher-supplied markup, analytics consent, mandatory FUMS reporting, CSP, notebook persistence, unsafe redirects and quota exhaustion; remediate the highest-risk issues found, including removing third-party FUMS JavaScript and protecting search queries.","capabilities":["Use API.Bible's supported manual FUMS v3 usage reporting without executing its tracker JavaScript in the private-notebook page","Harden Crossway keyword search with pinned host, manual redirect rejection, ten-second timeout, bounded response body and strict result validation","Tighten Content Security Policy and eliminate all outbound referrer URLs","Apply and verify a narrowly scoped Cloudflare WAF rate-limiting rule for /api/passage and /api/search","Add publisher-HTML injection, remote-script, privacy, credential and API abuse regression tests","Publish a dated bounded risk register with disclosed limits of consented analytics and unencrypted browser-local notes"],"verification":"AI-assisted source security review and real Cloudflare configuration readback plus automated negative unit/browser tests. Not an independent penetration test, supplier contract authorisation, third-party audit or promise of zero vulnerabilities."},{"id":"v1-publisher-rights-evidence-ledger","phase":"next","status":"delivered","title":"Public publisher rights and attribution review","summary":"Review public publisher requirements for ESV, NASB20, NIV and NKJV, document cited third-party dataset and photograph licences and improve direct attribution beside Bible passages.","capabilities":["Review publicly available Crossway, API.Bible, Lockman, Biblica and Thomas Nelson licensing requirements","Identify non-commercial usage, copyright attribution, FUMS and audience caps that affect the public reader","Record public sources for OpenBible.info cross-reference data and five credited Wikimedia city photographs","Include a direct publisher link beside both displayed passages in the Atlas comparison","Add code and browser regression tests for the website's attribution, keeping the wider source-rights criterion open until the public implementation review completes"],"verification":"The project operator confirms non-commercial academic use. Public-source attribution and technical implementation are subject to automated validation. v1 readiness remains 9/17 with the source-rights criterion open."},{"id":"v1-emmaus-source-and-launch-smoke","phase":"next","status":"delivered","title":"Emmaus textual-variant evidence and release-candidate smoke tooling","summary":"Correct the disputed Emmaus site comparison with specific manuscript-distance and Josephus limitations, and provide a repeatable public production release smoke command and honest acceptance ledger.","capabilities":["Retain all three Emmaus candidate markers while separating Luke 24 manuscript distance variants from historical-site identification","Attach named secondary source evidence to each proposed location and protect the comparison through source-integrity and browser tests","Provide a public HTML, release-history, asset and roadmap smoke script with offline fixture tests; do not copy or log licensed Bible passages","Publish an internal eight-blocker launch-evidence ledger and a safe rollback runbook, without certifying any unperformed physical-device or independent expert review"],"verification":"Focused build/source regression and browser checks are required for this release. The complete 1.0 launch decision remains blocked by eight separately tracked acceptance criteria and requires a verified future release candidate."},{"id":"v1-last-supper-chronology-sources","phase":"next","status":"delivered","title":"Last Supper chronology: primary texts and disputed scholarship","summary":"Correct an indirect secondary citation in the Gospel audit and clarify the distinction between the Synoptic and Johannine Passover sequences, with source titles and counterarguments.","capabilities":["Compare the cited Mark, Luke, John and 1 Corinthians passages without creating an independently dated Gospel harmony","Replace the unrelated Diatessaron reference with peer-reviewed research that directly addresses the Last Supper and contrasting scholarly interpretations","Display descriptive titles for named Gospel audit sources rather than only hostnames and preserve safe external links","Reconcile four stale people-trail citation findings already corrected in v0.44.4; retain the broader v1 critical-claims and content-audit gates as open"],"verification":"Requires source-build tests, explicit bibliography integrity tests, browser source-link checks, SemVer release and exact-SHA Cloudflare deployment verification. Independent chronological specialist signoff is still pending."},{"id":"v1-flagship-site-evidence-consistency","phase":"next","status":"delivered","title":"Bethsaida and Emmaus - consistent evidence across Gospel and city studies","summary":"Cross-link named, balanced excavation and textual sources from existing historical-city records into the Gospel audit, preserving both identifications as disputed.","capabilities":["Provide named et-Tell and el-Araj excavation sources and Emmaus textual-location references","Reject incomplete academic link labels and unregistered evidence links through source integrity checks","Test source visibility on the real Gospel audit browser panel","Keep specialist and comprehensive content verification gates open"],"verification":"Full source build, browser suite, release gate, and exact-commit Cloudflare production deployment required before publication."}],"v1Readiness":{"target":"1.0.0","baseline":"0.32.0","updated":"2026-11-01","note":"Thirteen of seventeen v1.0 acceptance criteria have scoped evidence, including owner-led scholarly acceptance and a successful, exercised Cloudflare production rollback and recovery. Four remain open: account-specific publisher permissions and FUMS compliance evidence, real screen-reader journeys, real-device and true browser zoom acceptance, and final owner launch signoff. Working APIs and automated tests are not substitutes for licence or physical-device evidence.","stages":[{"id":"baseline","title":"Readiness baseline","goal":"Define acceptance criteria, evidence locations and blockers before new feature work."},{"id":"evidence","title":"Evidence and content remediation","goal":"Prioritise source review and correct material inaccuracies and incomplete flagship studies."},{"id":"accessibility","title":"Accessibility and compatibility","goal":"Test actual assistive technologies, browser engines, zoom and devices, then repair important defects."},{"id":"hardening","title":"Privacy, security and resilience","goal":"Test production-critical flows, provider failures, data export, recovery and publisher obligations."},{"id":"candidate","title":"Release candidate and v1.0 signoff","goal":"Freeze scope, rerun checks, document outstanding qualifications and verify the deployed commit."}],"gates":[{"id":"evidence","title":"Biblical evidence and editorial quality","summary":"Important interpretations must be traceable to Scripture, with interpretive uncertainty, original contexts and external sources stated accurately.","next":"Owner-scholar has accepted the published biblical and historical content following source checks and qualified editorial corrections. Verify edition-specific publisher rights and confidential account terms independently of that scholarly approval.","criteria":[{"id":"atlas-context","title":"Annotated Atlas pairs have validated references, reasoning and cautions","status":"met","mode":"automated","evidence":"tests/connection-evidence.test.mjs","acceptance":"Every annotated pair has canonical references, a kind, explanation, caution, context and declared review status."},{"id":"atlas-reviews","title":"Dated editorial source assessments for all 161 explained Atlas pairs","status":"met","mode":"editorial","evidence":"public/data/citation-review.json","acceptance":"All 161 explained pairs have dated canonical Scripture-context and scoped named secondary-source assessments, including the 46 added in v0.32.0. This is a bounded AI-assisted editorial coverage claim, not external expert approval or verification of 301,553 distinct Atlas pairs.","reviewedOn":"2026-10-31","reviewer":"Scripture Trails AI-assisted internal source review, not independent specialist"},{"id":"critical-claims","title":"Review disputed or high-impact historical and theological claims","status":"met","mode":"editorial","evidence":"sources/editorial/v1-owner-scholarly-acceptance-2026-11-01.md","acceptance":"Owner-scholar accepts the published historical and theological interpretation with biblical evidence and qualified archaeological claims. Independent professor approval is not required; acceptance does not claim universal historical consensus.","reviewedOn":"2026-11-01","reviewer":"Scripture Trails project owner - explicit personally completed scholarly content review and acceptance on 1 November 2026, not external peer review"},{"id":"source-licences","title":"Verify citations, content rights and source attribution","status":"open","mode":"manual","evidence":"sources/legal/publisher-rights-review-2026-10-31.md","acceptance":"Audit publisher/API conditions, stored data permissions, rights notices and bibliographic links for published material."}]},{"id":"content","title":"Core study experience and content","summary":"The four-translation reader, Atlas, people index and major journeys need sufficient depth and reliable passage navigation.","next":"Owner scholarly content acceptance and scoped live navigation evidence are recorded. Maintain corrections through versioned releases without requiring an external professor's approval.","criteria":[{"id":"crossrefs-integrity","title":"Local cross-reference corpus integrity","status":"met","mode":"automated","evidence":"scripts/check-crossrefs.mjs","acceptance":"All reference shards match the reviewed source snapshot, checksums and canonical reference constraints."},{"id":"content-audit","title":"Complete flagship content and navigation audit","status":"met","mode":"editorial","evidence":"sources/editorial/v1-owner-scholarly-acceptance-2026-11-01.md","acceptance":"The project owner has reviewed and accepted the published people, places, journeys and guided study content, after source-linked editorial and live navigation checks. Material new issues remain subject to versioned corrections.","reviewedOn":"2026-11-01","reviewer":"Scripture Trails project owner - personally reviewed and accepted published editorial content on 1 November 2026, supported by recorded source and browser audits"},{"id":"reader-provider-smoke","title":"Verify all four authorised translations in production","status":"met","mode":"manual","evidence":"sources/operations/v1-reader-provider-production-smoke-2026-10-31.md","acceptance":"Check ESV, NASB20, NIV and NKJV live responses, copyright notices, unavailable-provider handling and representative passages.","reviewedOn":"2026-10-31","reviewer":"Scripture Trails AI-assisted verification - real Cloudflare production browser checks and isolated failure/regression tests, not independent publisher licence approval"}]},{"id":"accessibility","title":"Accessibility and browser compatibility","summary":"Automated Chromium checks must be supplemented with independent interaction using assistive technology and other browser engines.","next":"Use automated cross-browser keyboard, reflow and enlarged-text checks as preliminary evidence; independent NVDA/JAWS, VoiceOver, physical-device and true 200%/400% browser-zoom acceptance remain open.","criteria":[{"id":"automated-accessibility","title":"Automated regression and accessibility coverage","status":"met","mode":"automated","evidence":".github/workflows/ci.yml","acceptance":"Desktop/mobile browser, keyboard and automated accessibility checks run as a required GitHub CI gate."},{"id":"screen-readers","title":"Manual screen-reader journeys","status":"open","mode":"manual","evidence":"sources/editorial/accessibility-audit-v0.29.1.md","acceptance":"Record NVDA or JAWS on Windows, VoiceOver on Apple devices and a mobile screen-reader journey with remediation for blocking defects."},{"id":"cross-browser-zoom","title":"Cross-browser, real-device and zoom acceptance","status":"open","mode":"manual","evidence":"public/assets/roadmap.css","acceptance":"Document Safari and Firefox, physical mobile devices, reduced motion and 200%/400% zoom; remedy critical keyboard, layout and readability failures."}]},{"id":"privacy","title":"Security, privacy and licensed content","summary":"Protect private notes and licensed Bible access without promising that automated tests amount to a security audit.","next":"Scoped API secret, remote publisher markup, optional analytics, FUMS, CSP and browser note-storage threats were documented and tested. Continue separate source-licence, cross-browser/assistive-tech, rollback and release-candidate acceptance; no external penetration-test claim.","criteria":[{"id":"security-review","title":"Security and privacy threat-model review","status":"met","mode":"manual","evidence":"sources/security/v1-privacy-threat-model-2026-10-31.md","acceptance":"Review API secret handling, third-party telemetry, CSP, injection, access controls, rate limits and sensitive browser storage; remediate high-severity issues.","reviewedOn":"2026-10-31","reviewer":"Scripture Trails AI-assisted bounded threat-model review, security-specific unit and browser tests, and verified Cloudflare WAF rate-limit rule; not an independent penetration test"},{"id":"data-recovery","title":"Test notebook import/export, data-loss and recovery cases","status":"met","mode":"manual","evidence":"sources/operations/v1-notebook-recovery-audit-2026-10-31.md","acceptance":"Run realistic corrupt backup, conflict, quota and multi-session scenarios; clearly document any unrecoverable local-only data risks.","reviewedOn":"2026-10-31","reviewer":"Scripture Trails AI-assisted review, simulated browser multi-session/quota/recovery tests and checked local source; no user backup or device was inspected"},{"id":"provider-failures","title":"Test operational and publishing failure paths","status":"met","mode":"manual","evidence":"sources/operations/v1-reader-provider-production-smoke-2026-10-31.md","acceptance":"Simulate provider outages, missing keys and licence-related failure paths, then verify user messaging, request security and service recovery.","reviewedOn":"2026-10-31","reviewer":"Scripture Trails AI-assisted verification - real Cloudflare production browser checks and isolated failure/regression tests, not independent publisher licence approval"}]},{"id":"release","title":"Release operations and launch decision","summary":"v1.0 requires traceable source, successful checks, a reproducible deployment, rollback planning and explicit acceptance of residual risks.","next":"The v0.44.19-to-v0.44.20 production rollback rehearsal succeeded with exact deployment alias and live reader/Atlas checks. Recheck the final v1.0 release candidate, preserve provider and accessibility acceptance, then obtain the project owner's explicit go/no-go decision.","criteria":[{"id":"semantic-versioning","title":"Semantic release consistency and required CI checks","status":"met","mode":"automated","evidence":"scripts/check-release.mjs","acceptance":"Build enforces versioned asset references, matching public/development changelogs and a PR release gate against the destination branch."},{"id":"rollback","title":"Document and exercise production rollback","status":"met","mode":"manual","evidence":"sources/operations/v1-launch-evidence-ledger-2026-11-01.md","acceptance":"Demonstrate a safe rollback to a known-good Cloudflare deployment, including how to preserve or recover service after a bad release.","reviewedOn":"2026-11-01","reviewer":"Scripture Trails AI-assisted Cloudflare live-production operational verification - actual v0.44.20 to v0.44.19 rollback and restoration of the original v0.44.20 commit, custom domain and live reader/Atlas checks"},{"id":"live-smoke","title":"Verify production user journeys after release candidate","status":"met","mode":"manual","evidence":"sources/operations/v1-production-acceptance-v0.44.19-2026-11-01.md","acceptance":"Run real production publisher and reader checks, exact release version and commit checks, Atlas/navigation and isolated notebook tests, and capture critical browser errors. The scoped v0.44.19 baseline passed; repeat against the final v1.0 release candidate.","reviewedOn":"2026-11-01","reviewer":"Scripture Trails AI-assisted live production verification - exact deployed SHA, real provider responses, Atlas, notebook, mobile emulation and FUMS HTTP receipts; not physical-device testing"},{"id":"launch-signoff","title":"Document v1.0 go/no-go decision","status":"open","mode":"manual","evidence":"sources/operations/v1-launch-evidence-ledger-2026-11-01.md","acceptance":"Record reviewer, scope, results, resolved defects, accepted qualifications and final approval. All launch-blocking criteria must be met."}]}]}}
+{
+  "project": "Scripture Trails",
+  "updated": "2026-11-01",
+  "description": "An evidence-aware v1.0 release roadmap checked against the current versioned Scripture Trails source and test data. All 161 written Atlas explanations now have dated scoped AI-assisted source assessments. The 31 October source-linked journey corrections cover selected high-risk passages, not a complete re-audit of all 162 stages. Full reference corpus, physical-device accessibility and independent specialist certification remain separate. No unverified evidence is implied.",
+  "currentFocus": [
+    "Maintain the project owner's scholarly acceptance of Scripture Trails' published content, preserving primary biblical references, source qualifications and versioned corrections.",
+    "Confirm private ESV/API.Bible publisher entitlements, non-commercial licence terms and FUMS account reporting evidence without publishing confidential contracts.",
+    "Verify actual Windows and Apple screen readers, physical device/browser combinations and true 200%/400% zoom beyond synthetic automation.",
+    "Preserve the verified Cloudflare production rollback/recovery evidence, rerun live acceptance on the final v1.0 candidate, and obtain the project owner's final launch decision."
+  ],
+  "phases": [
+    {
+      "id": "foundation",
+      "title": "Platform and Bible discovery"
+    },
+    {
+      "id": "geography",
+      "title": "Biblical geography"
+    },
+    {
+      "id": "next",
+      "title": "Next priorities"
+    },
+    {
+      "id": "connections",
+      "title": "Deeper connections"
+    },
+    {
+      "id": "editions",
+      "title": "Texts and languages"
+    },
+    {
+      "id": "platform",
+      "title": "Future study tools"
+    }
+  ],
+  "milestones": [
+    {
+      "id": "reader",
+      "phase": "foundation",
+      "status": "delivered",
+      "title": "Bible reading and personal study",
+      "summary": "The 66-book navigator, ESV reader, verse search, bookmarks, local notes and reading history form the foundation.",
+      "capabilities": [
+        "All 66 books and chapter navigation",
+        "Official Crossway ESV text via server-side API",
+        "Bookmarks, private local notes and recent reading"
+      ],
+      "verification": "Available in the live application; text retrieval depends on the Crossway service and applicable licensing."
+    },
+    {
+      "id": "atlas",
+      "phase": "foundation",
+      "status": "delivered",
+      "title": "Ten-hop Connection Atlas",
+      "summary": "Explore Scripture connections using curated notes and attributed OpenBible.info cross-references, without treating community vote scores as scholarly confidence.",
+      "capabilities": [
+        "Up to 10 reference hops with bounded rendering",
+        "Book / chapter / verse selection and per-verse Atlas actions",
+        "603,076 directed reference links imported from 344,753 valid non-self OpenBible.info source rows"
+      ],
+      "verification": "Dataset importer and CI checks validate reference structure and provenance, not the exegetical validity of each connection. Seven bars are normalised source scores relative to the selected verse, not academic confidence ratings."
+    },
+    {
+      "id": "guided",
+      "phase": "foundation",
+      "status": "delivered",
+      "title": "Guided study journeys",
+      "summary": "Six theme-based entry points and deep links into Scripture.",
+      "capabilities": [
+        "Six curated journeys",
+        "Reader links and study notes"
+      ],
+      "verification": "Curated paths are tested for valid Bible references."
+    },
+    {
+      "id": "gospel",
+      "phase": "geography",
+      "status": "delivered",
+      "title": "Journeys of Jesus",
+      "summary": "A self-hosted geographic itinerary following Gospel and Acts passages without drawing invented historical roads.",
+      "capabilities": [
+        "79 episode entries and 35 places or regions",
+        "Interactive pins, repeated visit lists and draggable timeline",
+        "Passage links, location confidence and qualified route reconstruction"
+      ],
+      "verification": "Narrative sequence is an editorial harmonisation and not a complete historically dated itinerary."
+    },
+    {
+      "id": "places",
+      "phase": "geography",
+      "status": "delivered",
+      "title": "Place history and archaeology panels",
+      "summary": "Historical context for each of the 35 journey markers, while distinguishing scriptural claims from external scholarship.",
+      "capabilities": [
+        "Ancient and modern names and location context",
+        "Archaeology summaries with source links where available",
+        "Old Testament historical connections and Gospel episode index"
+      ],
+      "verification": "All 35 places have a dossier; depth of independent archaeological references varies by place."
+    },
+    {
+      "id": "deployment",
+      "phase": "foundation",
+      "status": "delivered",
+      "title": "Production platform and automated builds",
+      "summary": "The public site is deployed from private GitHub source to Cloudflare Pages, with server-side Bible retrieval and automated source/data checks.",
+      "capabilities": [
+        "Production branch builds from the private GitHub repository",
+        "Automated Node tests, data validation and Pages Functions",
+        "Bible-provider credentials remain server-side; licensed text is retrieved on demand"
+      ],
+      "verification": "Production deployment and source checks are verified per release. Browser end-to-end and accessibility automation remain a separate planned milestone."
+    },
+    {
+      "id": "audit",
+      "phase": "next",
+      "status": "delivered",
+      "title": "Gospel journey audit - initial editorial pass",
+      "summary": "All 79 episode entries and 35 place dossiers now have traceable screening states, a publicly visible corrections register, and open historical questions.",
+      "capabilities": [
+        "Passage-reference syntax and Gospel/Acts scope checks",
+        "Corrected Capernaum, Jairus lakeshore, Caesarea Philippi district, Bethphage and supper summaries",
+        "Published correction history, evidence categories and chronology concerns",
+        "Explicitly report unresolved research issues without attached independent secondary-source links"
+      ],
+      "verification": "Initial AI-assisted screening, provenance checks and dated academic bibliography links are documented. Missing secondary citations remain visible. No independent external peer review has occurred."
+    },
+    {
+      "id": "place-deep-dives",
+      "phase": "next",
+      "status": "delivered",
+      "title": "Five deep historical city studies",
+      "summary": "Five browsable studies of Jerusalem, Nazareth, Capernaum, Bethlehem and Jericho, each with source-linked biblical history, chronology and archaeological qualification, plus contested identification comparisons.",
+      "capabilities": [
+        "Five dedicated, independently selectable city pages using one reusable design",
+        "40 primary Scripture links, 25 historical period summaries, 20 individually source-qualified findings",
+        "Modern site photo licensing and source attribution with illustrative site-orientation maps",
+        "Comparative location studies for Cana, Bethsaida and Emmaus",
+        "Direct navigation from Journeys of Jesus and to Bible Reader or Connection Atlas"
+      ],
+      "verification": "Implementation, data schema and citations tested. The studies are sourced editorial summaries, not externally peer-reviewed archaeological monographs; coordinate markers are approximations and the photo gallery depicts modern sites."
+    },
+    {
+      "id": "timeline-evidence",
+      "phase": "next",
+      "status": "delivered",
+      "title": "Gospel chronology comparison",
+      "summary": "Compare the order in which the four Gospel texts present the catalogued Jesus-journey episodes, alongside the combined editorial study sequence.",
+      "capabilities": [
+        "Independent Matthew, Mark, Luke and John textual-order selectors based on each account's cited passages",
+        "Chronology and possible-parallel notes for disputed Nazareth, temple, Bethany and disciple-call passages",
+        "Original Scripture references and linked academic reading, with no invented calendar dates or physical journeys"
+      ],
+      "verification": "Textual sequence follows chapter and verse ordering within each Gospel, not established event dates. Dataset and issue links are validated in automated tests. Full source-critical synoptic comparison and external scholarly review remain outstanding."
+    },
+    {
+      "id": "book-atlas",
+      "phase": "connections",
+      "status": "delivered",
+      "title": "Explain sourced Scripture connections",
+      "summary": "Introduced selective passage-by-passage evidence categories in the Atlas, without implying the complete OpenBible archive is classified.",
+      "capabilities": [
+        "24 selected passage comparisons spanning quotations, narrative parallels, literary echoes, interpretive typology and shared themes",
+        "Each annotated connection includes a context passage and interpretation caution",
+        "Filters separate explained and unclassified links while preserving OpenBible vote bars",
+        "People Index profiles surface related Atlas paths for overlapping cited passages"
+      ],
+      "verification": "Canonical passage references and pair identity are checked in CI. These are internal editorial passage comparisons, not independent specialist certification. The OpenBible corpus stays unclassified by default."
+    },
+    {
+      "id": "people-places",
+      "phase": "connections",
+      "status": "delivered",
+      "title": "People, places and events index",
+      "summary": "A cross-linked Gospel knowledge index with disambiguated people, all 35 mapped places and all 79 recorded journey events.",
+      "capabilities": [
+        "Curated biblical person profiles with cited passages, alternate names and disambiguation",
+        "Reusable 35-place dossiers and associated archaeology sources, all 79 Gospel journey events",
+        "Search by name, aliases, reference or narrative, with deep links to the reader, Atlas, journey map and city studies",
+        "Evidence-status warnings and source limitations preserved across links"
+      ],
+      "verification": "Indexed IDs, relationship targets and cited passage boundaries are checked in CI. Profiles rely on the Gospel text as primary narrative testimony; the curated people list is intentionally incomplete and has not received independent specialist peer review."
+    },
+    {
+      "id": "entity-expansion",
+      "phase": "connections",
+      "status": "delivered",
+      "title": "Expand the biblical people, places and events index",
+      "summary": "Expanded the local people and events index into the Hebrew Bible and added further named biblical figures across both Testaments, with discoverable featured entries and improved category guidance.",
+      "capabilities": [
+        "Disambiguated Old Testament figures including monarchs, prophets and similarly named individuals",
+        "Narrative events from ancestral traditions to the Persian-era return, with relevant people and places linked",
+        "Distinct political realms and ancient locations without invented map pins or timeless borders",
+        "Selected museum references about Assyrian inscriptions, Lachish reliefs, Babylonian inscriptions and the Cyrus Cylinder",
+        "Featured people and kingdoms are directly discoverable without browsing multiple result pages"
+      ],
+      "verification": "Biblical addresses, related entities, museum-source identifiers and disambiguations are validated in CI. Only historical statements specifically attested by an external source are attributed to it. No claim of independent peer review or complete Old Testament coverage."
+    },
+    {
+      "id": "translation-reader",
+      "phase": "editions",
+      "status": "delivered",
+      "title": "Switch reader translations",
+      "summary": "Read the same verse, range or chapter in ESV, NASB20, NIV (2011) or NKJV without leaving Scripture Trails.",
+      "capabilities": [
+        "Translation selector with saved device preference and shareable edition links",
+        "NASB20, NIV and NKJV through a server-side API.Bible integration",
+        "Publisher attribution and API.Bible Scripture-view reporting",
+        "Translation-neutral Atlas actions retained in every reader edition"
+      ],
+      "verification": "Production verse and full-chapter requests for NASB20, NIV and NKJV verified on 27 October 2026, including returned copyright notices and Scripture-view tokens. ESV retrieval, 56 automated tests, Cloudflare runtime request settings and desktop/mobile browser checks also passed."
+    },
+    {
+      "id": "bible-languages",
+      "phase": "editions",
+      "status": "research",
+      "title": "Original-language study",
+      "summary": "Research separately licensed Hebrew and Greek lexical, morphology and textual-study resources after the existing four-edition reader; define a useful first study tool before implementation.",
+      "capabilities": [
+        "Identify licensed Hebrew and Greek lexical datasets",
+        "Compare variant renderings only where permissions allow",
+        "Carefully sourced original-language study tools"
+      ],
+      "verification": "Research gate: identify usable datasets, redistribution rights, attribution, versification and a maintainable technical scope before committing implementation. No additional copyrighted text may be hosted without permission."
+    },
+    {
+      "id": "study-tools",
+      "phase": "platform",
+      "status": "delivered",
+      "title": "Richer notes, exports and reading plans",
+      "summary": "Linked observations, place links, highlights, notebook backups and optional passage schedules now form a private study workspace.",
+      "capabilities": [
+        "Notes linked to multiple verses and places",
+        "Export and import personal work with clear privacy notices",
+        "Reading goals and optional progress tracking"
+      ],
+      "verification": "Local storage, reference and place validation, backup compatibility, merge conflicts and reading schedules are tested. No account or sync is required."
+    },
+    {
+      "id": "accounts",
+      "phase": "platform",
+      "status": "research",
+      "title": "Optional encrypted sync and accounts",
+      "summary": "Consider private device sync only after a clear privacy/security design and an actual user need.",
+      "capabilities": [
+        "Opt-in login rather than a sign-up gate",
+        "Secure note synchronisation and deletion tools",
+        "Privacy policy and encrypted data handling"
+      ],
+      "verification": "Exploratory and not committed. Proceed only after a demonstrated cross-device need and documented threat model, encryption/key recovery, conflict handling, export/deletion and operating-cost decisions. Existing local study tools and backups are delivered."
+    },
+    {
+      "id": "maps",
+      "phase": "platform",
+      "status": "planned",
+      "title": "Kings, prophets and wider historical geography",
+      "summary": "After the first Hebrew Bible geography collection, add separately scoped studies of the monarchy, prophets, exile and return where sources support useful comparisons.",
+      "capabilities": [
+        "Choose one historically bounded collection at a time, extending the existing people and event index",
+        "Compare changing realms, date models and disputed places with attributed sources",
+        "Provide passage-linked accessible lists and maps only where geographic evidence permits"
+      ],
+      "verification": "Depends on the first Hebrew Bible geography milestone. Complete each collection only after its own source, chronology and geographic-uncertainty audit; no timeless borders or unsupported coordinates."
+    },
+    {
+      "id": "local-reference-data",
+      "phase": "foundation",
+      "status": "delivered",
+      "title": "Locally stored reference data and supporting assets",
+      "summary": "The original OpenBible.info archive and all 66 generated Atlas files are stored with the project. Five credited city photographs are also served locally.",
+      "capabilities": [
+        "344799 source reference rows, with 344753 valid non-self rows imported",
+        "603076 directed navigation links across 66 book files",
+        "Source and generated-file checksums, provenance and attribution",
+        "Offline dataset regeneration with no reference download during builds",
+        "Local history, geography, verse metadata and city photographs"
+      ],
+      "verification": "All source reference pairs match an official OpenBible download. Vote counts differ by snapshot date. The original archive is retained unchanged, generated-file checksums are validated during builds, and publisher Bible APIs remain separate."
+    },
+    {
+      "id": "atlas-evidence-expansion",
+      "phase": "connections",
+      "status": "delivered",
+      "title": "Deep Scripture connections and comparison",
+      "summary": "Expanded passage-anchored comparisons, added paired Bible reading from official translation APIs, and introduced study trails for key biblical figures.",
+      "capabilities": [
+        "115 editorial passage-pair comparisons, including quotations, echoes, shared themes and parallel accounts, each with explicit review status",
+        "Side-by-side passage reader with selected Bible edition, individual publisher attributions and API.Bible usage reporting",
+        "Eight original person-centred reading trails (now expanded in a separate milestone) with Scripture passages, Atlas navigation and linked comparison actions",
+        "Provenance labels distinguish the original 24 context-screened records from 91 additional editorial reading aids; unclassified community links retain vote bars"
+      ],
+      "verification": "Release tests validate 115 unique pairs, reference boundaries, review classifications, and trail citations. Independent specialist review is not claimed and translations remain publisher-API dependent."
+    },
+    {
+      "id": "pauline-journeys",
+      "phase": "geography",
+      "status": "delivered",
+      "title": "Journeys of Paul",
+      "summary": "Explore 61 passage-linked narrative stages in Acts 13-21 with 33 approximate markers, repeat visits and explicit unpinned regional, unnamed and offshore stages.",
+      "capabilities": [
+        "Three journey filters, an all-journeys view, timeline, playback, pan/zoom and a complete keyboard-accessible stage list",
+        "Reader and Atlas actions, Paul's index profile and related passage search",
+        "Pinned, locally retained Pleiades location sources and public-domain coastal orientation",
+        "Public location, narrative and textual uncertainty register without invented dates, roads or regional pins"
+      ],
+      "verification": "Canonical references, source-point alignment and narrative connector gaps are tested. The itinerary is an editorial reading aid, not externally peer-reviewed historical reconstruction. Island positions indicate island-scale orientation."
+    },
+    {
+      "id": "paul-rome",
+      "phase": "next",
+      "status": "delivered",
+      "title": "Paul's voyage to Rome",
+      "summary": "A separately selectable prisoner voyage with 22 passage-linked stages in Acts 27-28, approximate named-place markers and unpinned offshore, storm and wreck settings.",
+      "capabilities": [
+        "Passage-linked sailing stages and wintering locations",
+        "Explicitly uncertain or unlocated sea positions",
+        "Separate source and textual audit before adding new markers"
+      ],
+      "verification": "References and sourced marker alignment tested. No exact wreck bay, storm track or daily ship positions are claimed. Independent specialist review remains outstanding."
+    },
+    {
+      "id": "notebook-backups",
+      "phase": "platform",
+      "status": "delivered",
+      "title": "Private notebook export and import",
+      "summary": "Download a versioned JSON backup of saved passages and notes; preview additions, duplicates and note conflicts before importing.",
+      "capabilities": [
+        "Local file processing without an account or file upload",
+        "Preserve existing notes by default, with individual replacement choices",
+        "Validate references, file size and schema; reject unsupported files",
+        "Single-write notebook persistence with storage failure and stale-import handling"
+      ],
+      "verification": "Automated validation and merge tests plus browser round-trip checks. Backups are unencrypted and should be kept private. No publisher Bible text is fetched for export."
+    },
+    {
+      "id": "reading-progress",
+      "phase": "platform",
+      "status": "delivered",
+      "title": "Optional study journey reading progress",
+      "summary": "Track completed passages in the six existing guided study journeys and resume the next unread passage.",
+      "capabilities": [
+        "Explicit per-passage checklists and completion indicators",
+        "Resume the next unread passage and confirm before resetting a plan",
+        "Local progress saved without an account",
+        "Version 2 notebook backups include progress; older backups remain supported"
+      ],
+      "verification": "Plan-reference validation, completion merge and backup compatibility tested. Progress is self-reported and does not measure reading time or comprehension. Structured annotations and calendar-based schedules are now delivered in separate milestones."
+    },
+    {
+      "id": "annotations-highlights",
+      "phase": "platform",
+      "status": "delivered",
+      "title": "Linked observations and verse highlights",
+      "summary": "Save tagged observations linked to multiple passages and colour-labelled, verse-reference highlights across reader editions.",
+      "capabilities": [
+        "Linked note creation, editing and confirmed deletion in My notebook",
+        "Amber, green and blue highlights with visible text labels",
+        "Filter linked notes and highlights by passage, text, tag or highlight colour",
+        "Version 3 backups preserve annotations; version 1 and 2 imports remain supported with conflict previews"
+      ],
+      "verification": "Reference validation, merge conflicts and old-backup preservation tested. Reader highlight boundaries and translation switching tested with fixture text. Reference numbering may differ between editions; word-selection highlighting is not implemented."
+    },
+    {
+      "id": "collections-schedules",
+      "phase": "platform",
+      "status": "delivered",
+      "title": "Custom study collections and reading schedules",
+      "summary": "Create ordered passage collections, optionally schedule one passage per selected reading day, and track progress locally.",
+      "capabilities": [
+        "Build from six guided studies or enter custom passages",
+        "Choose a start date and reading weekdays, with fixed dates and explicit completion",
+        "Edit collections, resume reading and confirm deletion",
+        "Version 4 notebook backups retain collections and schedules, supporting versions 1 to 3"
+      ],
+      "verification": "Date boundaries, reference validation, backup compatibility, conflicts and storage failures tested. Dates use the device calendar. No reminders or automatic completion."
+    },
+    {
+      "id": "place-linked-notes",
+      "phase": "platform",
+      "status": "delivered",
+      "title": "Place-linked observations and notebook organisation",
+      "summary": "Connect private observations to existing places and regions, then move between the notebook and source-qualified place profiles.",
+      "capabilities": [
+        "Link a note to passages, up to 20 indexed places, or both",
+        "Filter annotations by place, note type, tag, passage, text or highlight colour",
+        "Open private notes from a place profile without discarding the current draft",
+        "Version 5 notebook backups include place links and retain support for versions 1 to 4"
+      ],
+      "verification": "The 49-place registry is checked against the existing Gospel and Hebrew Bible source indexes. Notes are private user observations, not geographic evidence. Backup conflicts include changed place links; storage failures and stale writes are tested."
+    },
+    {
+      "id": "person-trails-expansion",
+      "phase": "connections",
+      "status": "delivered",
+      "title": "Further person-centred Scripture trails",
+      "summary": "Twenty person-centred trails now include twelve further figures and a searchable directory, with explicit primary-passage and editorial review labels.",
+      "capabilities": [
+        "Twenty disambiguated profiles: the original eight plus twelve additional figures",
+        "Eighty-eight selected Scripture readings, including forty-eight additional contextual ranges",
+        "Search by name, passage or topic and filter Hebrew Bible / New Testament",
+        "Per-stage source and review labels, tailored interpretation cautions, reader and starting-verse Atlas navigation"
+      ],
+      "verification": "Canonical references, profile IDs, source/review metadata and bounded reading ranges are validated in CI. Primary-text checks are AI-assisted and partly limited by source access; independent specialist and source-critical review remain outstanding. No historical reconstruction or complete biography is claimed."
+    },
+    {
+      "id": "official-domain",
+      "phase": "foundation",
+      "status": "delivered",
+      "title": "Official Scripture Trails domain launch",
+      "summary": "The production website has its own canonical HTTPS address at www.scripturetrails.com, with shared passage links preserved through redirects.",
+      "capabilities": [
+        "Custom production domain and HTTPS canonical address",
+        "Permanent apex and HTTP redirects preserving paths and query strings",
+        "Canonical/social metadata, robots instructions and sitemap using the official address"
+      ],
+      "verification": "Recorded in release v0.2.11 and the production configuration documentation. This is a completed launch milestone; ongoing domain and deployment availability remains an operational responsibility."
+    },
+    {
+      "id": "atlas-navigation",
+      "phase": "connections",
+      "status": "delivered",
+      "title": "Atlas path tracing and in-place passage preview",
+      "summary": "The Atlas now distinguishes the shortest displayed route, directly connected verses and an in-place Bible passage preview.",
+      "capabilities": [
+        "Hover highlights the shortest displayed route to the centre and the separate one-hop neighbourhood",
+        "A first node click previews the passage; a second click on that node explicitly recentres the graph",
+        "Selected-edition passage retrieval, publisher attribution and required view reporting remain in place"
+      ],
+      "verification": "Recorded in releases v0.9.1, v0.9.4 and v0.10.0, with graph and preview tests. Shortest means within the bounded displayed graph, not every relationship in the underlying archive."
+    },
+    {
+      "id": "release-governance",
+      "phase": "foundation",
+      "status": "delivered",
+      "title": "Versioned releases and deployment consistency",
+      "summary": "Every public website update has a semantic version, matching public/development release notes and a footer tied to the loaded application.",
+      "capabilities": [
+        "Release command updates version, both changelogs, footer and asset cache keys together",
+        "Checks reject duplicate, inconsistent or out-of-order release metadata and website changes without a version increment",
+        "Full pull-request comparison checks version advancement while production metadata checks support shallow Cloudflare checkouts",
+        "Matching-version release-note loading prevents stale history from replacing the loaded footer version"
+      ],
+      "verification": "Recorded across v0.3.0-v0.3.1, v0.9.2-v0.9.3 and v0.16.1. GitHub checks, the production commit and deployment result must still be verified for every release; validation is never bypassed."
+    },
+    {
+      "id": "biblical-geography-expansion",
+      "phase": "geography",
+      "status": "delivered",
+      "title": "Hebrew Bible geography and Exodus traditions",
+      "summary": "The first Hebrew Bible geography collection follows twenty-five selected Exodus and wilderness readings from Egypt to Moab, with fifteen setting records and five source-linked comparison topics.",
+      "capabilities": [
+        "A dedicated searchable page, five reading sections and shareable stage selections",
+        "Twenty-five passage-linked readings, fifteen regional or unresolved setting records and links to existing people and place profiles",
+        "Five comparisons: Delta cities, the sea crossing, Horeb/Sinai, Kadesh and two date proposals",
+        "Seven supporting source records with authorship, scope, access notes and limitations; reader and starting-verse Atlas actions"
+      ],
+      "verification": "Delivered in v0.19.0. Canonical passages, source relationships, profile IDs, selection/filter behaviour and unassigned coordinates/dates are tested. Primary checks are AI-assisted; source access varies and independent specialist review remains pending. No exact Exodus route, summit, burial location or pharaoh is assigned."
+    },
+    {
+      "id": "source-coverage",
+      "phase": "next",
+      "status": "delivered",
+      "title": "Citation coverage and editorial evidence review - first priority batch",
+      "summary": "Forty-three source-level assessments cover 18 Gospel issues, 13 place dossiers, four Nehemiah readings and eight passage comparisons, with retained warnings and precise source-access limits.",
+      "capabilities": [
+        "Dated claim-level sources and decisions alongside affected studies and in a downloadable About-page register",
+        "Add scoped bibliography for Cana, Nain, Sidon and Caesarea Philippi; retain nine place-source warnings",
+        "Close four Nehemiah primary-passage access gaps without claiming a manuscript or translation audit",
+        "Clarify eight selected comparisons and correct two related narratives from parallel to thematic labels"
+      ],
+      "verification": "Delivered in v0.20.0 for the declared 43-record batch. AI-assisted editorial assessment, not independent specialist signoff. Unresolved geography, chronology, source access and textual questions remain explicit; other 107 explained pairs and wider source gaps are not newly assessed."
+    },
+    {
+      "id": "browser-automation",
+      "phase": "foundation",
+      "status": "delivered",
+      "title": "Automated desktop/mobile release coverage",
+      "summary": "Repeatable Chromium journeys and accessibility/layout checks protect the main study workspace in GitHub CI.",
+      "capabilities": [
+        "Reader navigation, four editions, outage recovery, Atlas preview/focus, map/list navigation and roadmap filters",
+        "Private notebook round trips, explicit conflict replacement, stale drafts and cross-tab write protection, highlights, place links and reading schedules",
+        "All twelve views scanned with axe WCAG 2 A/AA and 2.1 A/AA rules in dark/light themes at desktop/mobile sizes, plus horizontal overflow checks",
+        "Deterministic synthetic passage fixtures; source and browser jobs feed a failing release gate with retained failure traces"
+      ],
+      "verification": "Delivered in v0.24.1: 48 browser scenarios across desktop and mobile Chromium, with automated accessibility findings fixed and keyboard scenarios recorded. Fixtures do not establish publisher service availability. Manual screen-reader, real-device, Safari and Firefox review remains open."
+    },
+    {
+      "id": "browser-keyboard-reflow",
+      "phase": "foundation",
+      "status": "delivered",
+      "title": "Keyboard focus, mobile navigation and enlarged-text repairs",
+      "summary": "A browser accessibility pass repairs passage/search focus, mobile drawer interaction and city-study text wrapping, while preserving the human-review milestone.",
+      "capabilities": [
+        "Move focus to the visible destination after passage links, searches and browser history, with current navigation and section titles exposed",
+        "Use an accessible mobile drawer with an internal close control, contained focus, background inertness and resize cleanup",
+        "Check all twelve views at 320 CSS pixels and with enlarged text, with automated WCAG 2.2 AA rule coverage",
+        "Keep screen-reader, actual browser-zoom, physical-device and other-browser testing explicitly open"
+      ],
+      "verification": "Delivered in v0.29.1. Browser behaviour checks and deterministic text/viewport tests cover the repaired paths. Live Chromium reproduced the original reference-focus defect. These checks do not constitute assistive-technology signoff or complete WCAG certification; detailed scope and the human test protocol are in the development audit record."
+    },
+    {
+      "id": "browser-accessibility",
+      "phase": "next",
+      "status": "next",
+      "title": "Manual assistive-technology and real-device review",
+      "summary": "Follow the automated and Chromium browser checks with recorded human screen-reader, actual-zoom and physical-device reviews. Browser focus and enlarged-text defects were repaired in v0.29.1; assistive-technology signoff remains open.",
+      "capabilities": [
+        "Manual screen-reader checks for reading order, control names, announcements, maps and private notebook flows",
+        "Real-device and browser checks beyond emulated desktop/mobile Chromium, including Safari and Firefox",
+        "Record keyboard and assistive-technology findings, resolve barriers and retain regression coverage"
+      ],
+      "verification": "Open. Browser keyboard and layout repairs and automated WCAG rule checks are delivered separately. No VoiceOver/NVDA/TalkBack, actual browser-zoom, physical-device, Safari/Firefox or complete accessibility certification is claimed."
+    },
+    {
+      "id": "independent-audit",
+      "phase": "next",
+      "status": "research",
+      "title": "Independent historical, textual and nautical review",
+      "summary": "Seek independent specialist assessment of flagged Gospel chronology, Pauline geography and nautical questions, archaeological identifications, person trails and interpretive connection explanations.",
+      "capabilities": [
+        "Use the Gospel issue register, Pauline source notes and Voyage to Rome specialist-review checklist",
+        "Review Caesarea embarkation, unpinned/offshore settings, Malta and gazetteer identifications without assuming more precise coordinates",
+        "Assess interpretation and textual-context questions in the 115 explained pairs and twenty person trails",
+        "Publish reviewer expertise, date, method, bibliography, decisions and remaining disagreements when review occurs"
+      ],
+      "verification": "Research dependency: no independent reviewer has signed off. Completion requires an actual documented specialist review of a declared scope; AI-assisted screening, automated checks and source-link presence cannot supply that signoff."
+    },
+    {
+      "id": "people-index-review",
+      "phase": "next",
+      "status": "planned",
+      "title": "Broader people, family and event relationships",
+      "summary": "Extend the curated people index and its relationships after the delivered twenty-trail library, prioritising figures needed by new geography collections.",
+      "capabilities": [
+        "Publish a bounded list of additional profiles and passage-linked family or event relationships",
+        "Preserve identity distinctions, uncertain identifications and scoped external evidence",
+        "Connect new profiles to reader, Atlas, trails and places where supported"
+      ],
+      "verification": "Complete each expansion when its declared coverage, relationship targets, canonical passages and source notes are checked. Citation remediation and independent specialist review have separate milestones; twenty existing trails are already delivered."
+    },
+    {
+      "id": "source-coverage-20-03",
+      "phase": "connections",
+      "status": "delivered",
+      "title": "Twenty creation, shepherd, renewal and mission assessments",
+      "summary": "Twenty previously unassessed thematic and echo links now have passage-specific explanations, paired reading contexts and named scholarly commentary.",
+      "capabilities": [
+        "Read selected creation, shepherd, renewal, Law, mission and salvation passages in their distinct settings",
+        "Follow claim-specific citations to fifteen readable named commentaries and publisher passage views",
+        "Retain thematic links as themes and the Isaiah 25/Revelation 21 echo as an editorial classification; no new direct-quotation claims",
+        "See dated assessment coverage of 68 of 115, with commentary or limited publisher-summary support for 36 assessed pairs"
+      ],
+      "verification": "Delivered in v0.25.0. Twenty new target IDs and canonical contexts are checked against the dated register; each has two primary-passage citations and one scoped named commentary. Confessional readings are attributed. Wider literature, manuscript/translation questions and independent specialist review remain open."
+    },
+    {
+      "id": "source-coverage-20-04",
+      "phase": "connections",
+      "status": "delivered",
+      "title": "Twenty Old Testament narrative assessments",
+      "summary": "Twenty existing Samuel, Kings, Chronicles and Isaiah parallels now have paired reading contexts, source-specific explanations and scoped named commentary.",
+      "capabilities": [
+        "Compare shared narratives while preserving tribute, priestly, dynastic and royal-evaluation differences",
+        "Follow two publisher passage citations and one scoped named commentary for each pair; indexed-excerpt access is explicitly marked",
+        "Retain all twenty narrative-parallel classifications; distinguish textual overlap from independent historical evidence",
+        "See dated assessment coverage of 88 of 115, with commentary or limited publisher-summary support for 56 assessed pairs"
+      ],
+      "verification": "Delivered in v0.26.0. Exact target IDs, canonical contexts, anchor containment, source scopes and derived coverage are checked. Six commentaries by four authors support specific claims; two commentaries had indexed-excerpt access. Fuller literature, manuscript/translation questions and independent specialist review remain open."
+    },
+    {
+      "id": "source-coverage-20-05",
+      "phase": "connections",
+      "status": "delivered",
+      "title": "Twenty prayer, faith, hope and Hezekiah assessments",
+      "summary": "The seventeen remaining New Testament comparisons and three Hezekiah parallels now have selected reading contexts, specific explanations and scoped named commentary.",
+      "capabilities": [
+        "Compare prayer, grace, love, resurrection and renewal while preserving each passage’s distinct setting",
+        "Retain differences in Acts retellings and the Hezekiah accounts; identify Revelation’s two anchors as parts of one vision",
+        "Follow paired publisher passage views and seventeen named commentaries by sixteen authors",
+        "See dated assessment coverage of 108 of 115, with commentary or limited publisher-summary support for 76 assessed pairs"
+      ],
+      "verification": "Delivered in v0.28.0. Declared targets, canonical contexts, anchor containment, unchanged classifications, source scopes and derived coverage are checked. Existing assessments and sources are preserved. Full literature, manuscript/translation questions and independent specialist review remain open."
+    },
+    {
+      "id": "source-coverage-final-07",
+      "phase": "connections",
+      "status": "delivered",
+      "title": "Dated editorial assessment coverage for all 115 explained connections",
+      "summary": "The final seven Ahaz, Manasseh, Josiah, siege and returnee-list comparisons complete the existing 115-pair register with paired contexts and scoped named commentary.",
+      "capabilities": [
+        "Follow sources for all 115 explained pairs from About and the Atlas",
+        "Retain differing royal evaluations, Josiah's death accounts, seventh/tenth-day dates and returnee-list figures",
+        "Distinguish 83 pairs with commentary or limited publisher-summary support from 32 based on passage checks",
+        "Keep the 603,076-link OpenBible corpus and independent specialist review outside this completion claim"
+      ],
+      "verification": "Delivered in v0.29.0. Exact final targets, contained anchors, unchanged classifications, scoped citations, complete target coverage and preservation of earlier assessments are checked. Three readable commentaries by three named authors support selected claims. Wider literature, manuscript and translation questions and independent specialist review remain open."
+    },
+    {
+      "id": "source-support-32",
+      "phase": "connections",
+      "status": "delivered",
+      "title": "Secondary citations for the remaining 32 passage-based assessments",
+      "summary": "Dated claim-specific commentary follow-ups now accompany all previously passage-based assessments, bringing scoped secondary-citation coverage to 115 of 115 explained pairs.",
+      "capabilities": [
+        "Read attributed observations, source locators and access limits from About and the Atlas",
+        "Keep every earlier assessment and its cautions alongside the dated follow-up",
+        "Distinguish a supporting observation from endorsement of an entire cross-passage interpretation"
+      ],
+      "verification": "Delivered in v0.30.0. Exact targets, citation resolution, dates, derived coverage and preservation of the earlier register are checked. Sixteen commentary entries include one indexed-only page and two authorised handbook excerpts. Fuller literature and independent specialist review remain open."
+    },
+    {
+      "id": "source-coverage-followup",
+      "phase": "next",
+      "status": "planned",
+      "title": "Further citation remediation and context review",
+      "summary": "All 115 of 115 explained pairs have dated editorial assessments and scoped secondary citations through v0.30.0. The 32 previously passage-based notes now have commentary follow-ups. This does not constitute scholarly certification, agreement with every link, full source access or independent specialist signoff.",
+      "capabilities": [
+        "Deepen the recorded limited-access sources and compare competing interpretations of the existing 115 explained pairs",
+        "Review the newly linked studies in full, compare competing identifications and revisit person-trail access limitations",
+        "Compare complete excavation reports and textual apparatuses where access permits; preserve unresolved warnings"
+      ],
+      "verification": "Each declared batch needs checked supporting citations, implemented corrections or retained warnings with stated source-level reasons. Source-link presence does not establish specialist signoff."
+    },
+    {
+      "id": "atlas-explanations-46",
+      "phase": "connections",
+      "status": "delivered",
+      "title": "First 46-pair Atlas explanation expansion and coverage audit",
+      "summary": "Expand the passage-specific 'Why these passages connect' register from 115 to 161 annotated pairs, including explicit quotations, textual echoes and bounded typological comparisons. Quantify imported and editorial-only pairs separately.",
+      "capabilities": [
+        "46 new indexed reference pairs with passage-specific rationale, limitations, context and review status",
+        "Two older generic explanations rewritten to identify their textual basis and interpretive caution",
+        "Separate counts for 301,553 unique pairs, 161 explanations and 301,392 unexplained pairs",
+        "Preserve the 115 dated citation assessments, without falsely representing the 46 new aids as externally reviewed"
+      ],
+      "verification": "Proposed for v0.32.0. Each new pair is present in the locally imported cross-reference snapshot; canonical references, duplicate prevention, review-status distinctions, coverage statistics and regression checks require release verification."
+    },
+    {
+      "id": "atlas-explanations-followup",
+      "phase": "next",
+      "status": "delivered",
+      "title": "Source assess all 46 newly explained Atlas quotations and thematic links",
+      "summary": "All 46 explanations added in v0.32.0 now have dated internal source assessments in v0.34.0 and v0.35.0, increasing assessed Atlas explanations from 115 to 161. Original contexts, textual variants, interpretive cautions and access limitations remain explicit.",
+      "capabilities": [
+        "Retain dated assessments and original Scripture anchors for all 161 explained pairs",
+        "Compare direct quotations, typologies, echoes and thematic interpretations without conflating their evidence levels",
+        "Link specific named commentaries and state access limitations and unresolved external specialist reviews",
+        "Preserve prior published review batches and keep the public About dashboard derived from data"
+      ],
+      "verification": "Dated v1-citations-17-02 and v1-citations-17-03 review batches complete the remaining 34. CI validates exact targets, preserved historical assessments, citation source registry, source/status consistency and generated About counts. External peer review remains outstanding."
+    },
+    {
+      "id": "v1-readiness-framework",
+      "phase": "next",
+      "status": "delivered",
+      "title": "v1.0 release readiness and acceptance framework",
+      "summary": "Establish five auditable release gates with actionable criteria across biblical evidence, core content, accessibility, security/privacy and production launch.",
+      "capabilities": [
+        "Public v1.0 readiness section with open and met criteria and explicit next actions",
+        "Launch-blocking criteria distinguished from exploratory post-v1.0 enhancements",
+        "Validated source-review backlog and automated launch guard for release 1.0.0 or later"
+      ],
+      "verification": "Delivered in v0.33.0: validate the gate schema and current open claims, CI tests and release consistency; manual and specialist signoff remains open."
+    },
+    {
+      "id": "v1-evidence-closeout",
+      "phase": "next",
+      "status": "next",
+      "title": "v1.0 editorial evidence and core-content closeout",
+      "summary": "All 161 explained Atlas pairs are source assessed; the owner has personally reviewed and accepted published scholarly and editorial content across flagship journeys, people, places and study pathways. Publisher permissions and technical launch gates remain independently open.",
+      "capabilities": [
+        "All 161 explained pairs have dated internal assessments; full Atlas corpus is outside this commitment",
+        "Prioritised high-impact disputed historical and interpretive claims",
+        "Coverage review for flagship people, locations and guided studies"
+      ],
+      "verification": "Owner's stated scholarly acceptance is dated and source-linked. It does not imply external peer review, universal historical certainty or publisher licence clearance. Later corrections follow versioned release discipline."
+    },
+    {
+      "id": "v1-accessibility-and-hardening",
+      "phase": "next",
+      "status": "planned",
+      "title": "v1.0 manual accessibility, privacy and resilience checks",
+      "summary": "Supplement automated tests with real assistive technology and device reviews, security/privacy audit and provider failure drills.",
+      "capabilities": [
+        "NVDA/VoiceOver/TalkBack journeys with recorded outcomes",
+        "Safari, Firefox, zoom and real-device verification",
+        "Threat model, backup/recovery and publisher obligations review"
+      ],
+      "verification": "Document actual devices, browsers, review scope, defects, remediations and remaining limitations. Automated Chromium success alone does not close this milestone."
+    },
+    {
+      "id": "v1-release-candidate",
+      "phase": "next",
+      "status": "planned",
+      "title": "v1.0 release candidate, rollback and launch approval",
+      "summary": "Use the five release-readiness gates to govern the go/no-go decision, rerun release checks and verify the precise production deployment.",
+      "capabilities": [
+        "No unresolved critical launch defects",
+        "Reproducible versioned release and production deployment verification",
+        "Documented recovery plan and explicit approval"
+      ],
+      "verification": "All blockers met with evidence and dated signoff; production deployment must succeed for the intended commit and public footer must report the intended version."
+    },
+    {
+      "id": "v1-citations-12-01",
+      "phase": "next",
+      "status": "delivered",
+      "title": "First twelve v1.0 Atlas quotation source assessments",
+      "summary": "Twelve new annotated quotation pairs now have dated assessments linking original Scripture contexts, New Testament reuse and scoped named commentaries. Total explained-pair assessments advance from 115 to 127, with the remaining 34 assessed in the next versioned batch.",
+      "capabilities": [
+        "Review Genesis, Leviticus, Deuteronomy, Psalms, Isaiah and Habakkuk quotations in Hebrews, the Gospels, Acts and Paul",
+        "Provide two named canonical passage references and one named scholarly commentary with source-specific rationale and access limitations per pair",
+        "Retain original 115 assessments and mark 34 unreviewed newer pairs as editorial reading aids",
+        "Update the About source register and public citation meter using actual reviewed records"
+      ],
+      "verification": "Dated v1-citations-12-01 assessment identifies exact targets, passages, contextual cautions and six attributed commentary works; CI verifies batch scope, source metadata and unchanged historical evidence. Source access gaps and independent specialist review remain open."
+    },
+    {
+      "id": "v1-citations-34-complete",
+      "phase": "next",
+      "status": "delivered",
+      "title": "All 46 new Atlas explanations receive sourced editorial assessment",
+      "summary": "Complete the 34 explanation assessments remaining after v0.34.0, covering quotation, narrative echo and typology, so all 161 written Atlas explanations have scoped dated citations. Independent specialist review is not implied.",
+      "capabilities": [
+        "Seventeen straightforward quotations with explicit biblical context and named commentary",
+        "Seventeen interpretively sensitive connections with textual and original-context qualifications",
+        "Maintain a 161-of-161 editorial review register, with no invented peer-review or manuscript-access assertions",
+        "Provide About citation counts and accessible individual source links"
+      ],
+      "verification": "v0.35.0 source record, original-pair preservation checks, browser and node regression tests, and production release checks; specialist and source-licensing audits remain separate."
+    },
+    {
+      "id": "v1-city-studies-depth",
+      "phase": "next",
+      "status": "delivered",
+      "title": "Flagship city studies: deeper Scripture and archaeology integration",
+      "summary": "Five city dossiers now contain fifteen substantive readings that connect the Bible's narratives with excavated historical setting and unresolved interpretation. Correct the Nazareth 'Atiqot report's publication date from 2025 to 2020.",
+      "capabilities": [
+        "Three substantial linked reading layers each for Jerusalem, Nazareth, Capernaum, Bethlehem and Jericho",
+        "Clickable Scripture references, source-specific external research and explicit evidence boundaries for every layer",
+        "Correct the bibliographic year of Yardenna Alexandre's published Nazareth excavation report to 2020",
+        "Protect the existing city explorer, photography provenance, site debates and navigation behaviour"
+      ],
+      "verification": "Scoped flagship city audit from published excavation reports, heritage records and a peer-reviewed journal article. Automated citation/reference checks and desktop/mobile browser tests required before release. Other core study content, independent expert evaluation and live provider testing remain open."
+    },
+    {
+      "id": "v1-people-journals-depth",
+      "phase": "next",
+      "status": "delivered",
+      "title": "Twenty people trails and six guided journals deepened",
+      "summary": "Add twenty original Scripture-first person studies, sixty validated supplementary biblical references and six longer journal reading guides without changing the original 88 person stages, 36 journal stages, estimated durations or saved-progress identities.",
+      "capabilities": [
+        "Individual literary context, cross-passage comparisons, reflection questions and explicit evidence limits for all twenty person profiles",
+        "Sixty additional canonical Scripture references linked to the Bible reader and Atlas",
+        "Six extended thematic reading guides across creation, Messiah, shepherd, covenant, grace and hope",
+        "Named, scoped research citations for contested Esther and Daniel historical or compositional claims",
+        "Existing reading progress, study times and passage orders preserved"
+      ],
+      "verification": "Source integrity and release consistency checks plus desktop/mobile browser tests required before publication. The full v1.0 flagship-content audit remains OPEN because the Jesus and Pauline journey corpora and broader claims still require assessment; the added profiles are not independent scholarly signoff."
+    },
+    {
+      "id": "v1-journey-evidence-pass-01",
+      "phase": "next",
+      "status": "delivered",
+      "title": "Targeted Gospel and Pauline journey evidence corrections",
+      "summary": "Publish a source-specific comparison of the Bethsaida/Gennesaret crossing and targeted Acts itinerary qualifications, protecting the 79 Gospel events and 83 Pauline stages. The entire corpus still requires further scene-by-scene research and independent specialist review.",
+      "capabilities": [
+        "New source-linked Gospel comparison for Mark 6:45-53 and John 6:16-21, with the difference between intended destination and recorded landfall made visible",
+        "Qualified Jericho, resurrection-route and selected Pauline land, island, voyage and wreck descriptions where the text does not support precise geography",
+        "Publisher Scripture links, bounded scholarly source claims and automated regression checks for risky itinerary assumptions",
+        "Original stage IDs, passages, study chronology selectors, route pins and reading links preserved"
+      ],
+      "verification": "Scoped editorial evidence pass dated 31 October 2026; primary publisher passages and a published article abstract compared, with no claim that the complete 162-stage corpus or external historical reconstruction has been independently certified. Required CI and production checks remain separate."
+    },
+    {
+      "id": "v1-paul-first-second-depth",
+      "phase": "next",
+      "status": "delivered",
+      "title": "Thirty-nine Pauline journey stages receive fuller Scripture study",
+      "summary": "Expand all 18 first-journey and 21 second-journey stages with original contextual biblical reading notes and canonical comparison links. Retain the 44 third-journey and prisoner-voyage stages for a later content batch.",
+      "capabilities": [
+        "39 original passage-context explanations with additional linked Scriptures and functioning reader/Atlas actions",
+        "Explicit editorial evidence boundaries, including distinction between textual travel reports and geographic reconstructions",
+        "Peer-reviewed methodological source and a qualified Berea-to-Athens uncertainty record",
+        "Unchanged 83 stage IDs, four journey groups, map pins, route breaks and deep links"
+      ],
+      "verification": "Source-linked editorial Scripture pass for Acts 13-18, with published itinerary comparisons and a scholarly route-methodology source. Automated data, navigation and browser checks required before publication. The 44 remaining Pauline stages and independent specialist review remain open."
+    },
+    {
+      "id": "v1-paul-all-stages-depth",
+      "phase": "next",
+      "status": "delivered",
+      "title": "All eighty-three Pauline itinerary stages expanded for Scripture study",
+      "summary": "Complete individual contextual Scripture study notes and linked reading passages for all 22 third-journey and 22 Rome-voyage stages, building on the 39 first- and second-journey stages already published.",
+      "capabilities": [
+        "83 of 83 original Acts-based stage explanations with canonical linked comparison passages",
+        "Prisoner voyage separately distinguished from numbered missionary journeys, including reached harbours, intended ports, offshore islands, uncertain drift and unpinned wreck",
+        "New named, scoped sources for Jerusalem Spirit-warnings and academic literary readings of the voyage",
+        "All original IDs, map locations, source credits, deep links, first two journey contexts and reader navigation preserved"
+      ],
+      "verification": "Complete 83-stage Scripture-first editorial depth coverage, not an independent historical specialist, text-critical or archaeologically surveyed audit. Automated and cross-device browser tests, release history checks and production verification required before shipping. Gospel event historical review and 12 outstanding v1.0 gates remain open."
+    },
+    {
+      "id": "v1-gospel-79-context",
+      "phase": "next",
+      "status": "delivered",
+      "title": "Seventy-nine Gospel events receive Scripture-first contextual readings",
+      "summary": "Write individual original reading contexts and 156 linked comparison passages for all 79 Gospel journey events; add scoped publisher and academic references for census chronology, Mark's textual ending and the ascension narrative.",
+      "capabilities": [
+        "79 individually contextualised original Gospel reading paragraphs with relevant navigable canonical passages",
+        "Visible literature-linked caution for Quirinius census and Herod-era chronological conflict without asserting a solved historical year",
+        "Preserved Mark 16:1-8 citation with the longer-ending textual history disclosed, and Luke-Acts ascension manuscript scholarship qualified",
+        "Seven named chronology comparisons in total, all original 79 stage IDs, geography, selectors, deep links and previous corrections preserved"
+      ],
+      "verification": "AI-assisted passage-context and targeted published-abstract review, not independent specialist historical, archaeological or original manuscript signoff. Canonical verse addresses, full browser navigation, release validation and live production deployment must be checked. v1.0 flagship claims, translation rights and external QA remain open."
+    },
+    {
+      "id": "v1-gospel-site-evidence-05",
+      "phase": "next",
+      "status": "delivered",
+      "title": "Candidate Gospel sites receive claim-to-source evidence comparisons",
+      "summary": "Review all 35 Gospel geography dossier classifications and expand five contested or commemorative sites with independent published research positions, evidence limits and named citations, without manufacturing precise locations for 12 regional placeholders.",
+      "capabilities": [
+        "Five visible claim, evidence and uncertainty comparisons covering Bethsaida, Emmaus, Magadan/Dalmanutha, Sychar and Gethsemane",
+        "Five newly traceable published academic sources, including competing Bethsaida interpretations and publication access limits",
+        "Preserved all twelve deliberately regional/place-unnamed geography placeholders and explicit avoidance of invented archaeological citations",
+        "Automated consistency checks for each source and all 35 dossier classifications, plus desktop/mobile navigation regressions"
+      ],
+      "verification": "Source-specific reading of public academic abstracts, scholarly publisher metadata and existing excavation summaries. Independent peer consultation and full-text archaeological reviews remain outstanding; no site identification is marked verified. CI release, browser and production checks required."
+    },
+    {
+      "id": "v1-flagship-navigation-links",
+      "phase": "next",
+      "status": "delivered",
+      "title": "Guided journal permalinks and flagship navigation regression coverage",
+      "summary": "Resolve a confirmed guided-journal deep-link defect and restore browser Back/Forward flows between journals, person trails and Bible reading. Introduce end-to-end coverage of all six journals and twenty person trails, plus integrated checks for 79 Gospel and 83 Pauline journey-stage reading destinations.",
+      "capabilities": [
+        "Shareable, refresh-stable journal selection via validated journal IDs in the URL",
+        "Back/Forward correctly restores journal selections, person-trail origins and saved reading progress without replacing history entries",
+        "Navigation-integrity assertions cover 20 indexed people, 79 Gospel stages, 83 Pauline stages, 35 Gospel places, five city entry points, six journals and canonical passage destinations",
+        "Expanded browser regression for six journal entry points, progress, read and resume actions, person-trail handoff and invalid-link fallback"
+      ],
+      "verification": "End-to-end browser tests use synthetic Bible provider fixtures and current local catalogue data. Automated checks do not verify live provider entitlements, specialist historical facts, every assistive-technology path or every possible browser device. Wider v1.0 evidence, source-licence and QA gates remain open."
+    },
+    {
+      "id": "v1-four-edition-production-smoke",
+      "phase": "next",
+      "status": "delivered",
+      "title": "Four-edition production reader verified and provider failure paths hardened",
+      "summary": "Use actual public production reader responses across ESV, NASB20, NIV and NKJV for three representative passages; document publisher attribution and release boundaries. Close the two provider-runtime verification criteria with reproducible evidence, not a copyright licence claim.",
+      "capabilities": [
+        "Twelve live production translation/passage observations completed without copying publisher text or secrets",
+        "Repeatable npm live-reader smoke command checks twelve provider response and publisher attribution conditions without logging passages",
+        "Crossway proxy now rejects upstream redirects, stalls, malformed/oversized replies and exposes no credentials",
+        "Additional unit and browser regression evidence covers upstream 401, 403, 404, 429, 502, missing keys, late responses, user-facing recovery and safe fallback"
+      ],
+      "verification": "AI-assisted real production browser rendering against v0.43.0 and post-release verification, plus isolated synthetic fault tests. Publisher distribution rights, specialist security review, independent device accessibility and complete release-candidate smoke remain separate open v1 gates."
+    },
+    {
+      "id": "v1-notebook-corruption-recovery",
+      "phase": "next",
+      "status": "delivered",
+      "title": "Recover unreadable local notebooks without silent data loss",
+      "summary": "Detect malformed canonical notebook storage instead of silently showing empty saved data, warn the user, allow private raw snapshot retrieval and require an explicitly reviewed backup before atomic recovery.",
+      "capabilities": [
+        "Sitewide accessible warning on corrupt or blocked browser notebook storage",
+        "Download original unreadable notebook bytes privately before optional replacement",
+        "Explicitly confirmed valid-backup recovery with exact snapshot comparison to protect against simultaneous changes",
+        "Automated unit and desktop/mobile browser tests for malformed files, quota failures, multi-tab conflicts and successful restoration",
+        "Public data-loss limitations and encrypted private-backup recommendations"
+      ],
+      "verification": "Reviewed local storage implementation and tests using synthetic browser profiles. There is no cloud copy, automatic recovery or guarantee of retrieving data after device loss or storage eviction. Publisher-rights, specialist security and physical screen-reader acceptance remain separate."
+    },
+    {
+      "id": "v1-security-privacy-threat-model",
+      "phase": "next",
+      "status": "delivered",
+      "title": "Security threat-model review and private-study safeguards",
+      "summary": "Audit the server-side Crossway/API.Bible endpoints, publisher-supplied markup, analytics consent, mandatory FUMS reporting, CSP, notebook persistence, unsafe redirects and quota exhaustion; remediate the highest-risk issues found, including removing third-party FUMS JavaScript and protecting search queries.",
+      "capabilities": [
+        "Use API.Bible's supported manual FUMS v3 usage reporting without executing its tracker JavaScript in the private-notebook page",
+        "Harden Crossway keyword search with pinned host, manual redirect rejection, ten-second timeout, bounded response body and strict result validation",
+        "Tighten Content Security Policy and eliminate all outbound referrer URLs",
+        "Apply and verify a narrowly scoped Cloudflare WAF rate-limiting rule for /api/passage and /api/search",
+        "Add publisher-HTML injection, remote-script, privacy, credential and API abuse regression tests",
+        "Publish a dated bounded risk register with disclosed limits of consented analytics and unencrypted browser-local notes"
+      ],
+      "verification": "AI-assisted source security review and real Cloudflare configuration readback plus automated negative unit/browser tests. Not an independent penetration test, supplier contract authorisation, third-party audit or promise of zero vulnerabilities."
+    },
+    {
+      "id": "v1-publisher-rights-evidence-ledger",
+      "phase": "next",
+      "status": "delivered",
+      "title": "Public publisher rights and attribution review",
+      "summary": "Review public publisher requirements for ESV, NASB20, NIV and NKJV, document cited third-party dataset and photograph licences and improve direct attribution beside Bible passages.",
+      "capabilities": [
+        "Review publicly available Crossway, API.Bible, Lockman, Biblica and Thomas Nelson licensing requirements",
+        "Identify non-commercial usage, copyright attribution, FUMS and audience caps that affect the public reader",
+        "Record public sources for OpenBible.info cross-reference data and five credited Wikimedia city photographs",
+        "Include a direct publisher link beside both displayed passages in the Atlas comparison",
+        "Add code and browser regression tests for the website's attribution, keeping the wider source-rights criterion open until the public implementation review completes"
+      ],
+      "verification": "The project operator confirms non-commercial academic use. Public-source attribution and technical implementation are subject to automated validation. v1 readiness remains 9/17 with the source-rights criterion open."
+    },
+    {
+      "id": "v1-emmaus-source-and-launch-smoke",
+      "phase": "next",
+      "status": "delivered",
+      "title": "Emmaus textual-variant evidence and release-candidate smoke tooling",
+      "summary": "Correct the disputed Emmaus site comparison with specific manuscript-distance and Josephus limitations, and provide a repeatable public production release smoke command and honest acceptance ledger.",
+      "capabilities": [
+        "Retain all three Emmaus candidate markers while separating Luke 24 manuscript distance variants from historical-site identification",
+        "Attach named secondary source evidence to each proposed location and protect the comparison through source-integrity and browser tests",
+        "Provide a public HTML, release-history, asset and roadmap smoke script with offline fixture tests; do not copy or log licensed Bible passages",
+        "Publish an internal eight-blocker launch-evidence ledger and a safe rollback runbook, without certifying any unperformed physical-device or independent expert review"
+      ],
+      "verification": "Focused build/source regression and browser checks are required for this release. The complete 1.0 launch decision remains blocked by eight separately tracked acceptance criteria and requires a verified future release candidate."
+    },
+    {
+      "id": "v1-last-supper-chronology-sources",
+      "phase": "next",
+      "status": "delivered",
+      "title": "Last Supper chronology: primary texts and disputed scholarship",
+      "summary": "Correct an indirect secondary citation in the Gospel audit and clarify the distinction between the Synoptic and Johannine Passover sequences, with source titles and counterarguments.",
+      "capabilities": [
+        "Compare the cited Mark, Luke, John and 1 Corinthians passages without creating an independently dated Gospel harmony",
+        "Replace the unrelated Diatessaron reference with peer-reviewed research that directly addresses the Last Supper and contrasting scholarly interpretations",
+        "Display descriptive titles for named Gospel audit sources rather than only hostnames and preserve safe external links",
+        "Reconcile four stale people-trail citation findings already corrected in v0.44.4; retain the broader v1 critical-claims and content-audit gates as open"
+      ],
+      "verification": "Requires source-build tests, explicit bibliography integrity tests, browser source-link checks, SemVer release and exact-SHA Cloudflare deployment verification. Independent chronological specialist signoff is still pending."
+    },
+    {
+      "id": "v1-flagship-site-evidence-consistency",
+      "phase": "next",
+      "status": "delivered",
+      "title": "Bethsaida and Emmaus - consistent evidence across Gospel and city studies",
+      "summary": "Cross-link named, balanced excavation and textual sources from existing historical-city records into the Gospel audit, preserving both identifications as disputed.",
+      "capabilities": [
+        "Provide named et-Tell and el-Araj excavation sources and Emmaus textual-location references",
+        "Reject incomplete academic link labels and unregistered evidence links through source integrity checks",
+        "Test source visibility on the real Gospel audit browser panel",
+        "Keep specialist and comprehensive content verification gates open"
+      ],
+      "verification": "Full source build, browser suite, release gate, and exact-commit Cloudflare production deployment required before publication."
+    }
+  ],
+  "v1Readiness": {
+    "target": "1.0.0",
+    "baseline": "0.32.0",
+    "updated": "2026-11-01",
+    "note": "Thirteen of seventeen v1.0 acceptance criteria have scoped evidence, including owner-led scholarly acceptance and a successful, exercised Cloudflare production rollback and recovery. Four remain open: account-specific publisher permissions and FUMS compliance evidence, real screen-reader journeys, real-device and true browser zoom acceptance, and final owner launch signoff. Working APIs and automated tests are not substitutes for licence or physical-device evidence.",
+    "stages": [
+      {
+        "id": "baseline",
+        "title": "Readiness baseline",
+        "goal": "Define acceptance criteria, evidence locations and blockers before new feature work."
+      },
+      {
+        "id": "evidence",
+        "title": "Evidence and content remediation",
+        "goal": "Prioritise source review and correct material inaccuracies and incomplete flagship studies."
+      },
+      {
+        "id": "accessibility",
+        "title": "Accessibility and compatibility",
+        "goal": "Test actual assistive technologies, browser engines, zoom and devices, then repair important defects."
+      },
+      {
+        "id": "hardening",
+        "title": "Privacy, security and resilience",
+        "goal": "Test production-critical flows, provider failures, data export, recovery and publisher obligations."
+      },
+      {
+        "id": "candidate",
+        "title": "Release candidate and v1.0 signoff",
+        "goal": "Freeze scope, rerun checks, document outstanding qualifications and verify the deployed commit."
+      }
+    ],
+    "gates": [
+      {
+        "id": "evidence",
+        "title": "Biblical evidence and editorial quality",
+        "summary": "Important interpretations must be traceable to Scripture, with interpretive uncertainty, original contexts and external sources stated accurately.",
+        "next": "Owner-scholar has accepted the published biblical and historical content following source checks and qualified editorial corrections. Verify edition-specific publisher rights and confidential account terms independently of that scholarly approval.",
+        "criteria": [
+          {
+            "id": "atlas-context",
+            "title": "Annotated Atlas pairs have validated references, reasoning and cautions",
+            "status": "met",
+            "mode": "automated",
+            "evidence": "tests/connection-evidence.test.mjs",
+            "acceptance": "Every annotated pair has canonical references, a kind, explanation, caution, context and declared review status."
+          },
+          {
+            "id": "atlas-reviews",
+            "title": "Dated editorial source assessments for all 161 explained Atlas pairs",
+            "status": "met",
+            "mode": "editorial",
+            "evidence": "public/data/citation-review.json",
+            "acceptance": "All 161 explained pairs have dated canonical Scripture-context and scoped named secondary-source assessments, including the 46 added in v0.32.0. This is a bounded AI-assisted editorial coverage claim, not external expert approval or verification of 301,553 distinct Atlas pairs.",
+            "reviewedOn": "2026-10-31",
+            "reviewer": "Scripture Trails AI-assisted internal source review, not independent specialist"
+          },
+          {
+            "id": "critical-claims",
+            "title": "Review disputed or high-impact historical and theological claims",
+            "status": "met",
+            "mode": "editorial",
+            "evidence": "sources/editorial/v1-owner-scholarly-acceptance-2026-11-01.md",
+            "acceptance": "Owner-scholar accepts the published historical and theological interpretation with biblical evidence and qualified archaeological claims. Independent professor approval is not required; acceptance does not claim universal historical consensus.",
+            "reviewedOn": "2026-11-01",
+            "reviewer": "Scripture Trails project owner - explicit personally completed scholarly content review and acceptance on 1 November 2026, not external peer review"
+          },
+          {
+            "id": "source-licences",
+            "title": "Verify citations, content rights and source attribution",
+            "status": "open",
+            "mode": "manual",
+            "evidence": "sources/legal/publisher-rights-review-2026-10-31.md",
+            "acceptance": "Audit publisher/API conditions, stored data permissions, rights notices and bibliographic links for published material."
+          }
+        ]
+      },
+      {
+        "id": "content",
+        "title": "Core study experience and content",
+        "summary": "The four-translation reader, Atlas, people index and major journeys need sufficient depth and reliable passage navigation.",
+        "next": "Owner scholarly content acceptance and scoped live navigation evidence are recorded. Maintain corrections through versioned releases without requiring an external professor's approval.",
+        "criteria": [
+          {
+            "id": "crossrefs-integrity",
+            "title": "Local cross-reference corpus integrity",
+            "status": "met",
+            "mode": "automated",
+            "evidence": "scripts/check-crossrefs.mjs",
+            "acceptance": "All reference shards match the reviewed source snapshot, checksums and canonical reference constraints."
+          },
+          {
+            "id": "content-audit",
+            "title": "Complete flagship content and navigation audit",
+            "status": "met",
+            "mode": "editorial",
+            "evidence": "sources/editorial/v1-owner-scholarly-acceptance-2026-11-01.md",
+            "acceptance": "The project owner has reviewed and accepted the published people, places, journeys and guided study content, after source-linked editorial and live navigation checks. Material new issues remain subject to versioned corrections.",
+            "reviewedOn": "2026-11-01",
+            "reviewer": "Scripture Trails project owner - personally reviewed and accepted published editorial content on 1 November 2026, supported by recorded source and browser audits"
+          },
+          {
+            "id": "reader-provider-smoke",
+            "title": "Verify all four authorised translations in production",
+            "status": "met",
+            "mode": "manual",
+            "evidence": "sources/operations/v1-reader-provider-production-smoke-2026-10-31.md",
+            "acceptance": "Check ESV, NASB20, NIV and NKJV live responses, copyright notices, unavailable-provider handling and representative passages.",
+            "reviewedOn": "2026-10-31",
+            "reviewer": "Scripture Trails AI-assisted verification - real Cloudflare production browser checks and isolated failure/regression tests, not independent publisher licence approval"
+          }
+        ]
+      },
+      {
+        "id": "accessibility",
+        "title": "Accessibility and browser compatibility",
+        "summary": "Automated Chromium checks must be supplemented with independent interaction using assistive technology and other browser engines.",
+        "next": "Use automated cross-browser keyboard, reflow and enlarged-text checks as preliminary evidence; independent NVDA/JAWS, VoiceOver, physical-device and true 200%/400% browser-zoom acceptance remain open.",
+        "criteria": [
+          {
+            "id": "automated-accessibility",
+            "title": "Automated regression and accessibility coverage",
+            "status": "met",
+            "mode": "automated",
+            "evidence": ".github/workflows/ci.yml",
+            "acceptance": "Desktop/mobile browser, keyboard and automated accessibility checks run as a required GitHub CI gate."
+          },
+          {
+            "id": "screen-readers",
+            "title": "Manual screen-reader journeys",
+            "status": "open",
+            "mode": "manual",
+            "evidence": "sources/editorial/accessibility-audit-v0.29.1.md",
+            "acceptance": "Record NVDA or JAWS on Windows, VoiceOver on Apple devices and a mobile screen-reader journey with remediation for blocking defects."
+          },
+          {
+            "id": "cross-browser-zoom",
+            "title": "Cross-browser, real-device and zoom acceptance",
+            "status": "open",
+            "mode": "manual",
+            "evidence": "public/assets/roadmap.css",
+            "acceptance": "Document Safari and Firefox, physical mobile devices, reduced motion and 200%/400% zoom; remedy critical keyboard, layout and readability failures."
+          }
+        ]
+      },
+      {
+        "id": "privacy",
+        "title": "Security, privacy and licensed content",
+        "summary": "Protect private notes and licensed Bible access without promising that automated tests amount to a security audit.",
+        "next": "Scoped API secret, remote publisher markup, optional analytics, FUMS, CSP and browser note-storage threats were documented and tested. Continue separate source-licence, cross-browser/assistive-tech, rollback and release-candidate acceptance; no external penetration-test claim.",
+        "criteria": [
+          {
+            "id": "security-review",
+            "title": "Security and privacy threat-model review",
+            "status": "met",
+            "mode": "manual",
+            "evidence": "sources/security/v1-privacy-threat-model-2026-10-31.md",
+            "acceptance": "Review API secret handling, third-party telemetry, CSP, injection, access controls, rate limits and sensitive browser storage; remediate high-severity issues.",
+            "reviewedOn": "2026-10-31",
+            "reviewer": "Scripture Trails AI-assisted bounded threat-model review, security-specific unit and browser tests, and verified Cloudflare WAF rate-limit rule; not an independent penetration test"
+          },
+          {
+            "id": "data-recovery",
+            "title": "Test notebook import/export, data-loss and recovery cases",
+            "status": "met",
+            "mode": "manual",
+            "evidence": "sources/operations/v1-notebook-recovery-audit-2026-10-31.md",
+            "acceptance": "Run realistic corrupt backup, conflict, quota and multi-session scenarios; clearly document any unrecoverable local-only data risks.",
+            "reviewedOn": "2026-10-31",
+            "reviewer": "Scripture Trails AI-assisted review, simulated browser multi-session/quota/recovery tests and checked local source; no user backup or device was inspected"
+          },
+          {
+            "id": "provider-failures",
+            "title": "Test operational and publishing failure paths",
+            "status": "met",
+            "mode": "manual",
+            "evidence": "sources/operations/v1-reader-provider-production-smoke-2026-10-31.md",
+            "acceptance": "Simulate provider outages, missing keys and licence-related failure paths, then verify user messaging, request security and service recovery.",
+            "reviewedOn": "2026-10-31",
+            "reviewer": "Scripture Trails AI-assisted verification - real Cloudflare production browser checks and isolated failure/regression tests, not independent publisher licence approval"
+          }
+        ]
+      },
+      {
+        "id": "release",
+        "title": "Release operations and launch decision",
+        "summary": "v1.0 requires traceable source, successful checks, a reproducible deployment, rollback planning and explicit acceptance of residual risks.",
+        "next": "The v0.44.19-to-v0.44.20 production rollback rehearsal succeeded with exact deployment alias and live reader/Atlas checks. Recheck the final v1.0 release candidate, preserve provider and accessibility acceptance, then obtain the project owner's explicit go/no-go decision.",
+        "criteria": [
+          {
+            "id": "semantic-versioning",
+            "title": "Semantic release consistency and required CI checks",
+            "status": "met",
+            "mode": "automated",
+            "evidence": "scripts/check-release.mjs",
+            "acceptance": "Build enforces versioned asset references, matching public/development changelogs and a PR release gate against the destination branch."
+          },
+          {
+            "id": "rollback",
+            "title": "Document and exercise production rollback",
+            "status": "met",
+            "mode": "manual",
+            "evidence": "sources/operations/v1-launch-evidence-ledger-2026-11-01.md",
+            "acceptance": "Demonstrate a safe rollback to a known-good Cloudflare deployment, including how to preserve or recover service after a bad release.",
+            "reviewedOn": "2026-11-01",
+            "reviewer": "Scripture Trails AI-assisted Cloudflare live-production operational verification - actual v0.44.20 to v0.44.19 rollback and restoration of the original v0.44.20 commit, custom domain and live reader/Atlas checks"
+          },
+          {
+            "id": "live-smoke",
+            "title": "Verify production user journeys after release candidate",
+            "status": "met",
+            "mode": "manual",
+            "evidence": "sources/operations/v1-production-acceptance-v0.44.19-2026-11-01.md",
+            "acceptance": "Run real production publisher and reader checks, exact release version and commit checks, Atlas/navigation and isolated notebook tests, and capture critical browser errors. The scoped v0.44.19 baseline passed; repeat against the final v1.0 release candidate.",
+            "reviewedOn": "2026-11-01",
+            "reviewer": "Scripture Trails AI-assisted live production verification - exact deployed SHA, real provider responses, Atlas, notebook, mobile emulation and FUMS HTTP receipts; not physical-device testing"
+          },
+          {
+            "id": "launch-signoff",
+            "title": "Document v1.0 go/no-go decision",
+            "status": "open",
+            "mode": "manual",
+            "evidence": "sources/operations/v1-launch-evidence-ledger-2026-11-01.md",
+            "acceptance": "Record reviewer, scope, results, resolved defects, accepted qualifications and final approval. All launch-blocking criteria must be met."
+          }
+        ]
+      }
+    ]
+  }
+}
