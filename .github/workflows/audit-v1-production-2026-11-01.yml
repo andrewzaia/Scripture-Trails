@@ -1,4 +1,4 @@
-name: Diagnose production FUMS view reporting - one runner
+name: Test licensed FUMS reporting via isolated pixel, one browser
 on:
   push:
     branches:
@@ -6,7 +6,7 @@ on:
 permissions:
   contents: read
 jobs:
-  diagnose:
+  test:
     runs-on: ubuntu-24.04
     timeout-minutes: 12
     steps:
@@ -17,5 +17,5 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npx playwright install --with-deps chromium
-      - name: Inspect real NIV view and client FUMS reporting without leaking tokens
-        run: node scripts/audit-fums-production.mjs
+      - name: Probe manual publisher pixel using real origin with test-only CSP
+        run: node scripts/audit-fums-image.mjs
