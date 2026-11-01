@@ -85,7 +85,7 @@ test('owner-accepted publisher rights are qualified, dated and not described as 
  const evidence=read(c.evidence);
  assert.match(evidence,/Acceptance addendum - 2 November 2026/);
  assert.match(evidence,/owner contractual acceptance/i);
- assert.match(evidence,/not independently read through this integration/i);
+ assert.match(evidence,/not an independent legal opinion/i);
  assert.match(evidence,/5,000 monthly end users/);
  assert.match(evidence,/confidential/i);
 });
