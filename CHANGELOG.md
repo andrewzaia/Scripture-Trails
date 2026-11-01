@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.0 - 02/11/2026: Scripture Trails 1.0 - stable launch
+
+- Introduce the first stable Scripture Trails release with its Bible reader and Scripture studies.
+- Record owner approval with the retained real-device and Safari zoom limitations.
+
 ## 0.44.25 - 02/11/2026: Reliable v1 candidate live verification
 
 - Correct production readiness smoke checks to recognise only the two documented, owner-accepted device-testing limits.
