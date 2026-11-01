@@ -18,12 +18,16 @@ try{
  const page=await context.newPage(),events={requests:0,failed:0,networkCspErrors:0,uncaught:0};
  page.on('request',r=>{try{if(new URL(r.url()).hostname==='fums.api.bible')events.requests++;}catch{}});
  page.on('requestfailed',r=>{try{if(new URL(r.url()).hostname==='fums.api.bible')events.failed++;}catch{}});
- page.on('console',msg=>{if(msg.type()==='error'&&/fums\.api\.bible|content security policy/i.test(msg.text()))events.networkCspErrors++;});
+ const consoleDetails=[];
+ page.on('console',msg=>{if(msg.type()!=='error')return;const m=msg.text();if(!/fums\.api\.bible|content security policy/i.test(m))return;events.networkCspErrors++;let host=null;try{host=new URL((m.match(/https?:\/\/[^\s'\"()]+/)||[])[0]).hostname}catch{}consoleDetails.push({fumsMentioned:m.includes('fums.api.bible'),cspMentioned:/content security policy/i.test(m),blockedHost:host,directive:['connect-src','img-src','script-src','default-src'].find(d=>m.includes(d))||null});});
  page.on('pageerror',()=>events.uncaught++);
  await page.goto('https://www.scripturetrails.com/?view=reader&ref=John%203%3A16&translation=NIV',{waitUntil:'domcontentloaded'});
  await expect(page.locator('#passage-status')).toHaveText('Official NIV text',{timeout:30000});
  await page.waitForTimeout(800);
  const natural=await page.evaluate(()=>window.__fumsAttempted||0);
+ const htmlResponse=await fetch('https://www.scripturetrails.com/');
+ const servedCsp=htmlResponse.headers.get('content-security-policy')||'';
+ const connectPolicy=(servedCsp.match(/connect-src\s+([^;]+)/)||[])[1]||null;
  const diagnostic=await page.evaluate(async()=>{
   const response=await fetch('/api/passage?q=John%203%3A16&translation=NIV',{cache:'no-store'});
   const payload=await response.json();
@@ -37,7 +41,7 @@ try{
   return {apiStatus:response.status,hasValidToken:valid,urlConstructed:constructed,manualFetchAttempted:(window.__fumsAttempted||0)>before};
  });
  await page.waitForTimeout(1000);
- const summary={productionVersion:'0.44.18',naturalFumsAttempts:natural,manualFumsDiagnostic:diagnostic,observedNetworkRequests:events.requests,observedNetworkFailures:events.failed,cspErrorCount:events.networkCspErrors,uncaughtErrors:events.uncaught,tokenValuesRecorded:false,passageTextRecorded:false};
+ const summary={productionVersion:'0.44.18',naturalFumsAttempts:natural,manualFumsDiagnostic:diagnostic,observedNetworkRequests:events.requests,observedNetworkFailures:events.failed,cspErrorCount:events.networkCspErrors,consoleErrorsWithoutTokens:consoleDetails,servedCspConnectPolicy:connectPolicy,servedPolicyAllowsFums:!!connectPolicy?.includes('https://fums.api.bible'),uncaughtErrors:events.uncaught,tokenValuesRecorded:false,passageTextRecorded:false};
  console.log(JSON.stringify(summary));
  assert.equal(diagnostic.apiStatus,200);
  assert.equal(diagnostic.hasValidToken,true);
