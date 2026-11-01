@@ -1,4 +1,4 @@
-name: Audit - bounded Safari WebDriver browser zoom shortcut (one-time)
+name: Audit - Safari WebDriver shortcut compatibility probe (one-time)
 
 on:
   push:
