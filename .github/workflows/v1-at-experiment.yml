@@ -38,7 +38,7 @@ jobs:
         run: npx @guidepup/setup install
       - name: Install headed browser
         run: npx playwright install ${{ matrix.browser }}
-      - name: Run actual screen reader against the live About page
+      - name: Verify real screen-reader headings across About, reader, Atlas and notebook
         env:
           SCREEN_READER_PLATFORM: ${{ matrix.mode }}
         run: npx playwright test --config playwright.assistive.config.mjs --reporter=list
