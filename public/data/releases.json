@@ -1,6 +1,16 @@
 {
   "releases": [
     {
+      "version": "0.44.16",
+      "date": "2026-11-01",
+      "title": "Clearer chronology and passage boundaries in Gospel journeys",
+      "changes": [
+        "Clarify that two Nazareth hometown-rejection study stages present Gospel narratives, not a historically proven second visit.",
+        "Keep crucifixion summaries within their cited Scripture ranges, leaving subsequent burial arrangements in the existing burial study stage.",
+        "Add targeted regression tests to protect passage accuracy, stable event references and the required research qualifications."
+      ]
+    },
+    {
       "version": "0.44.15",
       "date": "2026-11-01",
       "title": "More accurate Gospel geography source references",

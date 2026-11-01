@@ -1357,14 +1357,14 @@
       "id": "j033",
       "phase": "galilee",
       "place": "nazareth",
-      "title": "A return to his hometown",
-      "summary": "Jesus teaches again in his hometown, where people take offence at him.",
+      "title": "Hometown rejection in Mark and Matthew",
+      "summary": "Mark and Matthew recount Jesus teaching in his hometown, where residents take offence at him.",
       "passages": [
         "Mark 6:1-6",
         "Matthew 13:53-58"
       ],
       "evidence": "named",
-      "qualification": "Some harmonisations treat this as the same Nazareth rejection described by Luke.",
+      "qualification": "Mark and Matthew place the hometown rejection later in their narratives than Luke 4. This separate study stage represents their textual presentation, not a proven second historical visit.",
       "review": {
         "status": "needs-further-review",
         "basis": "passage-index-and-location-screen",
@@ -2486,7 +2486,7 @@
       "phase": "passion",
       "place": "jerusalem",
       "title": "Crucifixion at Golgotha",
-      "summary": "Jesus is crucified outside the city; the Gospels record his death and burial preparations.",
+      "summary": "Jesus is crucified at Golgotha; the Gospels narrate his death and the people who witness it.",
       "passages": [
         "Matthew 27:32-56",
         "Mark 15:21-41",
