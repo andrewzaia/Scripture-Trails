@@ -34,7 +34,7 @@ test('every one of 79 Gospel journey entries has unique original biblical readin
  assert.match(journeys.contextCoverage.limitations,/independent historical review/);
  assert.match(audit.evidenceAddendum.sourceLimit,/full article access/i);
  assert.equal(road.milestones.find(m=>m.id==='v1-gospel-79-context')?.status,'delivered');
- assert.equal(road.v1Readiness.gates.flatMap(g=>g.criteria).find(c=>c.id==='content-audit')?.status,'open');
+ assert.equal(road.v1Readiness.gates.flatMap(g=>g.criteria).find(c=>c.id==='content-audit')?.status,'met');
 });
 
 test('historical birth dating, Mark ending and ascension variants are explicit and source-linked',()=>{

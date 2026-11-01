@@ -42,7 +42,7 @@ Use `npm run check:live-reader` separately to test ESV, NASB20, NIV and NKJV aga
 4. Verify that the custom domain actually serves the known-good website version and the appropriate reader/Atlas/notebook user journeys. Confirm the Cloudflare deployment environment and success status against the restored commit.
 5. Treat an emergency rollback as temporary restoration, **not** a new release. Investigate the regression and create a new properly incremented public version and both changelog entries to return to a forward release. Preserve release history and rerun full CI before deployment.
 
-There has been **no completed production rollback rehearsal** under this checklist. Do not call `rollback` met until an executed recovery with observed production behaviour has been recorded. A rollback to an old public version may temporarily expose an older footer, which must be explicitly reported as emergency restoration, not silently republished as a new version.
+A written procedure is not a completed production rollback. There has been **no completed production rollback rehearsal** under this checklist. Do not call `rollback` met until an executed recovery with observed production behaviour has been recorded. A rollback to an old public version may temporarily expose an older footer, which must be explicitly reported as emergency restoration, not silently republished as a new version.
 
 ## First-pass audit limitations
 

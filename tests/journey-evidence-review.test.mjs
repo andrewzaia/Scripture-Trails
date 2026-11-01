@@ -16,7 +16,7 @@ test('targeted evidence pass preserves all 162 stable journey stages and schemas
  assert.equal(validateAuditData(audit,jes,geography),true);assert.equal(validateGospelChronology(chron,jes,audit),true);
  assert.equal(validatePaulineData(paul,counts),true);
  assert.ok(road.milestones.some(m=>m.id==='v1-journey-evidence-pass-01'&&m.status==='delivered'));
- assert.equal(road.v1Readiness.gates.flatMap(g=>g.criteria).find(c=>c.id==='content-audit').status,'open');
+ assert.equal(road.v1Readiness.gates.flatMap(g=>g.criteria).find(c=>c.id==='content-audit').status,'met');
 });
 test('Markan Bethsaida destination and Gennesaret landfall are explicitly distinguished with bounded research',()=>{
  const a=J('j035'),b=J('j036'),issue=audit.issues.find(i=>i.id==='sea-crossing-destinations');
