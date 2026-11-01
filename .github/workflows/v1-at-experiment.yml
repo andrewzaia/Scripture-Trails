@@ -1,4 +1,4 @@
-name: Experiment - real NVDA five-route acceptance (one-time)
+name: Experiment - NVDA native cursor repositioning check (one-time)
 
 on:
   push:
@@ -35,7 +35,7 @@ jobs:
         run: npx @guidepup/setup install
       - name: Install headed browser
         run: npx playwright install ${{ matrix.browser }}
-      - name: Validate NVDA navigation across five real SPA destinations
+      - name: Check native NVDA browse cursor across five SPA routes
         env:
           SCREEN_READER_PLATFORM: ${{ matrix.mode }}
         run: npx playwright test --config playwright.assistive.config.mjs --reporter=list
