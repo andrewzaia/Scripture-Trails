@@ -1,6 +1,16 @@
 {
   "releases": [
     {
+      "version": "0.44.20",
+      "date": "2026-11-01",
+      "title": "Owner-led scholarly review and verified launch readiness",
+      "changes": [
+        "Record the project owner's scholarly and editorial approval of published Scripture study content, without requiring a second professor or external specialist.",
+        "Recognise independently evidenced live production checks for the four Bible editions, Atlas, notebook and publisher usage reports, while retaining the final-candidate recheck.",
+        "Update the v1.0 readiness roadmap, evidence records and tests to show twelve of seventeen acceptance criteria met, leaving rights, physical accessibility, rollback and final approval open."
+      ]
+    },
+    {
       "version": "0.44.19",
       "date": "2026-11-01",
       "title": "Reliable Bible publisher usage reporting",

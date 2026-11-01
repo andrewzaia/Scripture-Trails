@@ -56,9 +56,9 @@ test('all six journal permalinks reference immutable plan identifiers and saved 
  assert.match(app,/history\.pushState\(\{\},'',url\);showView\('journeys',false,true\)/);
  assert.match(app,/history\.pushState\(\{\},'',url\);showView\('entities',false,true\)/);
 });
-test('flagship navigation milestone leaves independent evidence and v1 acceptance open',()=>{
+test('flagship navigation retains source evidence alongside owner scholarly content acceptance',()=>{
  const roadmap=read('roadmap.json');
  assert.equal(validateRoadmap(roadmap),true);
  assert.equal(roadmap.milestones.find(m=>m.id==='v1-flagship-navigation-links')?.status,'delivered');
- assert.equal(roadmap.v1Readiness.gates.flatMap(g=>g.criteria).find(c=>c.id==='content-audit')?.status,'open');
+ assert.equal(roadmap.v1Readiness.gates.flatMap(g=>g.criteria).find(c=>c.id==='content-audit')?.status,'met');
 });

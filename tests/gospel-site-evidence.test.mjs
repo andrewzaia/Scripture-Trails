@@ -29,7 +29,7 @@ test('35 dossiers preserve honest source classes and original regional placehold
  assert.equal(geo.audit.identificationAddendum.placesReviewed,35);
  assert.equal(audit.siteReviewAddendum.reviewedOn,'2026-10-31');
  assert.equal(roadmap.milestones.find(x=>x.id==='v1-gospel-site-evidence-05')?.status,'delivered');
- assert.equal(roadmap.v1Readiness.gates.flatMap(g=>g.criteria).find(c=>c.id==='critical-claims').status,'open');
+ assert.equal(roadmap.v1Readiness.gates.flatMap(g=>g.criteria).find(c=>c.id==='critical-claims').status,'met');
 });
 
 test('five disputed site dossiers distinguish evidence, interpretation and unresolved location',()=>{

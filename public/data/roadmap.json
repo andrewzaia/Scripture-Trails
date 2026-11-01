@@ -3,10 +3,10 @@
   "updated": "2026-11-01",
   "description": "An evidence-aware v1.0 release roadmap checked against the current versioned Scripture Trails source and test data. All 161 written Atlas explanations now have dated scoped AI-assisted source assessments. The 31 October source-linked journey corrections cover selected high-risk passages, not a complete re-audit of all 162 stages. Full reference corpus, physical-device accessibility and independent specialist certification remain separate. No unverified evidence is implied.",
   "currentFocus": [
-    "Resolve each remaining flagship historical/textual claim against biblical primary passages and identified secondary scholarship. Maintain a dated finding ledger and do not imply independent specialist certification.",
-    "Complete non-commercial ESV/API.Bible source-rights and current-plan verification without putting private publisher agreements or access credentials in public Git history.",
-    "Expand the existing automated 320px reflow, keyboard, browser and screen-reader semantics coverage. Treat real NVDA, VoiceOver, physical-device and true browser zoom checks as separate requirements until independently evidenced.",
-    "Run release-candidate production HTTP, translation and user-journey smoke checks, record a safe Cloudflare rollback rehearsal, and make an explicit go/no-go decision only with all required evidence."
+    "Maintain the project owner's scholarly acceptance of Scripture Trails' published content, preserving primary biblical references, source qualifications and versioned corrections.",
+    "Confirm private ESV/API.Bible publisher entitlements, non-commercial licence terms and FUMS account reporting evidence without publishing confidential contracts.",
+    "Verify actual Windows and Apple screen readers, physical device/browser combinations and true 200%/400% zoom beyond synthetic automation.",
+    "Exercise and document controlled production rollback, rerun live acceptance on the v1.0 release candidate, and obtain the project owner's final launch decision."
   ],
   "phases": [
     {
@@ -667,13 +667,13 @@
       "phase": "next",
       "status": "next",
       "title": "v1.0 editorial evidence and core-content closeout",
-      "summary": "All 161 Atlas explanations are source assessed. Content-depth passes now cover 5 historical city dossiers, 20 person trails and six guided study journals. The Gospel and Pauline journey audit, external specialist evidence and comprehensive source-rights checks remain open.",
+      "summary": "All 161 explained Atlas pairs are source assessed; the owner has personally reviewed and accepted published scholarly and editorial content across flagship journeys, people, places and study pathways. Publisher permissions and technical launch gates remain independently open.",
       "capabilities": [
         "All 161 explained pairs have dated internal assessments; full Atlas corpus is outside this commitment",
         "Prioritised high-impact disputed historical and interpretive claims",
         "Coverage review for flagship people, locations and guided studies"
       ],
-      "verification": "Complete only after source-linked assessments, material corrections or visible qualifications, and an accessible editorial record; specialist signoff must be documented rather than assumed."
+      "verification": "Owner's stated scholarly acceptance is dated and source-linked. It does not imply external peer review, universal historical certainty or publisher licence clearance. Later corrections follow versioned release discipline."
     },
     {
       "id": "v1-accessibility-and-hardening",
@@ -949,7 +949,7 @@
     "target": "1.0.0",
     "baseline": "0.32.0",
     "updated": "2026-11-01",
-    "note": "v1.0 continues to require independently supported acceptance evidence for each criterion. Nine of seventeen gates are scoped as met; eight remain open. Automated source checks, CI browser emulation and publisher response success cannot substitute for physical-device or assistive-technology testing, independent specialist evidence, full publication-rights confirmation, rollback exercise or final release approval.",
+    "note": "Twelve of seventeen v1.0 acceptance criteria have scoped evidence and declared reviewer provenance, including explicit owner-scholar acceptance of all published content. Five remain open: verified publisher permissions, real screen-reader journeys, real-device and true browser zoom acceptance, exercised production rollback, and final owner launch signoff. Owner editorial approval is not independent peer review and a successful API response alone is not licence clearance.",
     "stages": [
       {
         "id": "baseline",
@@ -982,7 +982,7 @@
         "id": "evidence",
         "title": "Biblical evidence and editorial quality",
         "summary": "Important interpretations must be traceable to Scripture, with interpretive uncertainty, original contexts and external sources stated accurately.",
-        "next": "The Bethsaida and Emmaus Gospel research registers now align with named and qualified historical-city sources. Independently verify remaining high-impact disputed chronology, archaeology and contractual permissions before v1 acceptance.",
+        "next": "Owner-scholar has accepted the published biblical and historical content following source checks and qualified editorial corrections. Verify edition-specific publisher rights and confidential account terms independently of that scholarly approval.",
         "criteria": [
           {
             "id": "atlas-context",
@@ -1005,10 +1005,12 @@
           {
             "id": "critical-claims",
             "title": "Review disputed or high-impact historical and theological claims",
-            "status": "open",
-            "mode": "specialist",
-            "evidence": "public/data/jesus-audit.json",
-            "acceptance": "Record correction, evidence limits, or qualified interpretation for each critical claim; secure specialist input where indispensable, without implying total academic consensus."
+            "status": "met",
+            "mode": "editorial",
+            "evidence": "sources/editorial/v1-owner-scholarly-acceptance-2026-11-01.md",
+            "acceptance": "Owner-scholar accepts the published historical and theological interpretation with biblical evidence and qualified archaeological claims. Independent professor approval is not required; acceptance does not claim universal historical consensus.",
+            "reviewedOn": "2026-11-01",
+            "reviewer": "Scripture Trails project owner - explicit personally completed scholarly content review and acceptance on 1 November 2026, not external peer review"
           },
           {
             "id": "source-licences",
@@ -1024,7 +1026,7 @@
         "id": "content",
         "title": "Core study experience and content",
         "summary": "The four-translation reader, Atlas, people index and major journeys need sufficient depth and reliable passage navigation.",
-        "next": "Continue the full biblical-context and navigation assessment of 219 journal readings, 88 people stages, 79 Gospel events and 83 Pauline stages; the Emmaus location caveat and supporting manuscript-distance sources are expanded.",
+        "next": "Owner scholarly content acceptance and scoped live navigation evidence are recorded. Maintain corrections through versioned releases without requiring an external professor's approval.",
         "criteria": [
           {
             "id": "crossrefs-integrity",
@@ -1037,10 +1039,12 @@
           {
             "id": "content-audit",
             "title": "Complete flagship content and navigation audit",
-            "status": "open",
+            "status": "met",
             "mode": "editorial",
-            "evidence": "public/data/roadmap.json",
-            "acceptance": "Review major people, place and study pages for substantive content, factual accuracy, source links and dead ends; resolve all critical findings."
+            "evidence": "sources/editorial/v1-owner-scholarly-acceptance-2026-11-01.md",
+            "acceptance": "The project owner has reviewed and accepted the published people, places, journeys and guided study content, after source-linked editorial and live navigation checks. Material new issues remain subject to versioned corrections.",
+            "reviewedOn": "2026-11-01",
+            "reviewer": "Scripture Trails project owner - personally reviewed and accepted published editorial content on 1 November 2026, supported by recorded source and browser audits"
           },
           {
             "id": "reader-provider-smoke",
@@ -1128,7 +1132,7 @@
         "id": "release",
         "title": "Release operations and launch decision",
         "summary": "v1.0 requires traceable source, successful checks, a reproducible deployment, rollback planning and explicit acceptance of residual risks.",
-        "next": "Run the reproducible live v1 HTTP smoke and publisher probe against the exact production candidate, document and exercise Cloudflare rollback safely, then record explicit final go/no-go without weakening gates.",
+        "next": "v0.44.19 passed the scoped live production smoke. Recheck on the eventual v1.0 candidate, exercise safe Cloudflare rollback with production recovery evidence, then record the project owner's final go/no-go decision.",
         "criteria": [
           {
             "id": "semantic-versioning",
@@ -1149,10 +1153,12 @@
           {
             "id": "live-smoke",
             "title": "Verify production user journeys after release candidate",
-            "status": "open",
+            "status": "met",
             "mode": "manual",
-            "evidence": "sources/operations/v1-launch-evidence-ledger-2026-11-01.md",
-            "acceptance": "Check live website version, exact Git commit, translations, Atlas, notes, responsive navigation and no critical production errors."
+            "evidence": "sources/operations/v1-production-acceptance-v0.44.19-2026-11-01.md",
+            "acceptance": "Run real production publisher and reader checks, exact release version and commit checks, Atlas/navigation and isolated notebook tests, and capture critical browser errors. The scoped v0.44.19 baseline passed; repeat against the final v1.0 release candidate.",
+            "reviewedOn": "2026-11-01",
+            "reviewer": "Scripture Trails AI-assisted live production verification - exact deployed SHA, real provider responses, Atlas, notebook, mobile emulation and FUMS HTTP receipts; not physical-device testing"
           },
           {
             "id": "launch-signoff",

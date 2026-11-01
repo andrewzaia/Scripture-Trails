@@ -79,14 +79,14 @@ test('map alternatives navigate Gospel stops and an unpinned Pauline stage',asyn
 test('v1.0 roadmap shows honest scoped progress and accessible launch acceptance criteria',async({page})=>{
  await open(page,'roadmap');
  await expect(page.locator('[data-roadmap=""]')).toHaveAttribute('data-ready','true');
- await expect(page.locator('[data-roadmap="v1-summary"]')).toContainText('9 of 17 criteria met');
- await expect(page.locator('[data-roadmap="v1-summary"]')).toContainText('8 criteria remain open');
+ await expect(page.locator('[data-roadmap="v1-summary"]')).toContainText('12 of 17 criteria met');
+ await expect(page.locator('[data-roadmap="v1-summary"]')).toContainText('5 criteria remain open');
  await expect(page.locator('.v1-gate')).toHaveCount(5);
  await page.locator('.v1-stages > summary').click();
  await expect(page.locator('[data-roadmap="v1-stages"] > li')).toHaveCount(5);
  const evidence=page.locator('.v1-gate').filter({has:page.getByRole('heading',{name:'Biblical evidence and editorial quality'})});
  await evidence.locator('.v1-gate-detail > summary').click();
- await expect(evidence.locator('[data-readiness="open"]')).toHaveCount(2);
+ await expect(evidence.locator('[data-readiness="open"]')).toHaveCount(1);
  await expect(evidence).toContainText('Dated editorial source assessments for all 161 explained Atlas pairs');
  await expect(evidence).toContainText('dated canonical Scripture-context and scoped named secondary-source assessments');
 });
@@ -340,7 +340,7 @@ test('v1 readiness preserves separate open rights review after live reader check
  await expect(content).toContainText('Verify all four authorised translations in production');
  await expect(content).toContainText('Test operational and publishing failure paths');
  await expect(content).toContainText('Verify citations, content rights and source attribution');
- await expect(page.locator('[data-roadmap="v1-summary"]')).toContainText('9 of 17 criteria met');
+ await expect(page.locator('[data-roadmap="v1-summary"]')).toContainText('12 of 17 criteria met');
 });
 
 test('Gospel Last Supper audit names relevant scholarship and keeps the calendar disputed',async({page})=>{
