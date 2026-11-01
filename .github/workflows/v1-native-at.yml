@@ -4,7 +4,10 @@ on:
   workflow_dispatch:
   push:
     branches: [release/qualified-device-acceptance-20261102]
-    paths: [.github/workflows/v1-native-at.yml]
+    paths:
+      - .github/workflows/v1-native-at.yml
+      - tests/assistive/**
+      - playwright.assistive.config.mjs
 
 permissions:
   contents: read

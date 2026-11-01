@@ -90,3 +90,10 @@ The project owner explicitly accepts the comprehensive compatibility checks alre
 **Current gate reconciliation:** 14 `met`, 2 `accepted-risk`, 1 `open`, 17 total. Only `launch-signoff` is still open. A release cannot claim all seventeen empirically tested, and cannot claim `v1.0` published until final-owner go/no-go, required exact-commit CI and Cloudflare verification succeed.
 
 The previous 13/17 and 14/17 descriptions above are dated historical checkpoints, not the present status. The historical rights and real-device uncertainty descriptions are retained for traceability and superseded by this section only where explicit owner acceptance has changed the launch blocking policy. The underlying limitations are not erased.
+
+
+## Free v1 compatibility automation evidence - 2 November 2026
+
+The pending v0.44.24 release candidate adds comprehensive accessible-name, keyboard, touch, reduced-motion, landscape and reflow regressions, plus genuine 200%/400% zoom on headed Chrome and Firefox inside existing PR CI runners. The verified [CI run 41325106634](https://github.com/andrewzaia/Scripture-Trails/actions/runs/41325106634) passed 146 Chromium, 73 Firefox and 146 WebKit browser tests and 24 true-zoom view checks in each zoom-capable browser. The launch decision remains independent of these tests.
+
+Real Windows NVDA on synthetic local fixtures passed four headed route-focus speech assertions. The initial macOS VoiceOver test and its retry failed at the notebook heading; see [native audit 41325102754](https://github.com/andrewzaia/Scripture-Trails/actions/runs/41325102754). Its revised method and future outcomes must be recorded separately. Mobile VoiceOver/TalkBack and native Safari page zoom remain distinct unverified boundaries.

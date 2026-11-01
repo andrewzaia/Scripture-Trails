@@ -40,3 +40,14 @@ Readiness states are distinct:
 - `open`: no applicable acceptance or documented risk decision has completed the criterion.
 
 Only the named `screen-readers` and `cross-browser-zoom` criteria may use `accepted-risk`. Other criteria, including final `launch-signoff`, must still be `met` before 1.0.0 can be released.
+
+
+## Expanded free release-candidate automation - 2 November 2026
+
+PR #94 adds `tests/browser/v1-inclusive-compatibility.spec.mjs` for accessible headings, input, reader status, touch, reduced motion, landscape and 320px/640px equivalent reflow across five existing browser profiles.
+
+It also adds `tests/zoom/actual-browser-zoom-regression.mjs` on the existing Chromium and Firefox runners, with authentic OS keyboard page zoom, measured DPR and viewport, and twelve main routes at 200% and 400%. The [v0.44.24 candidate CI run](https://github.com/andrewzaia/Scripture-Trails/actions/runs/41325106634) passed Chromium 146 browser cases and 24 native-zoom route checks, Firefox 73 browser cases and 24 native-zoom route checks, WebKit 146 browser cases, and the aggregate release gate. No tested view had document-level overflow in either real-zoom engine.
+
+The [separate free native-screen-reader run](https://github.com/andrewzaia/Scripture-Trails/actions/runs/41325102754) passed Windows NVDA focused-heading speech on four routes against synthetic local fixture data. The initial macOS VoiceOver test and its targeted retry both failed to announce the notebook heading using forward-only heading navigation. The test method is being revised to inspect the current VoiceOver cursor and navigate in both directions; it is NOT considered passed until verified.
+
+These additional results reduce, but do not eliminate, physical-device/real mobile assistive-technology and actual Safari native zoom uncertainty. The owner's accepted-risk status is retained without a fabricated test result.
