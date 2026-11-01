@@ -1,52 +1,52 @@
 import {nvdaTest as test} from '@guidepup/playwright';
 import {expect} from '@playwright/test';
 
-// Real NVDA on headed Windows Chromium, public site, no logged licensed text.
-// navigateToWebContent() is for the initial page entry, NOT every SPA route swap.
-const routeChecks=[
- {view:'reader',heading:'context'},
- {view:'connections',heading:'thread'},
- {view:'notebook',heading:'matters'},
- {view:'about',heading:'discernment'},
- {view:'reader',heading:'context'},
+// Browser-only prototype for route-heading focus. Nothing is deployed. Only
+// ordinary page headings and categorised speech outcomes are logged.
+const routes=[
+ {view:'connections',term:'thread'},
+ {view:'notebook',term:'matters'},
+ {view:'about',term:'discernment'},
+ {view:'reader',term:'context'},
 ];
-test('NVDA reads SPA headings with optional native browse-cursor return to top',async({page,nvda})=>{
- test.setTimeout(180000);
+test('real NVDA announces newly focused SPA route headings without Ctrl+Home',async({page,nvda})=>{
+ test.setTimeout(190000);
  await page.goto('/?view=reader&ref=John%203%3A16',{waitUntil:'load'});
  await expect(page.locator('#passage-content')).toHaveAttribute('aria-busy','false',{timeout:18000});
  await nvda.navigateToWebContent();
+ await nvda.nextHeading();
+ expect(String(await nvda.lastSpokenPhrase()).toLowerCase()).toContain('context');
+
+ // Experimental enhancement applied inside this one browser session only.
+ // The real application has not been edited.
+ await page.evaluate(()=>{
+  document.addEventListener('scripturetrails:view-change',e=>{
+   const heading=document.querySelector(`#view-${e.detail.view} h1`);
+   if(!heading)return;
+   heading.tabIndex=-1;
+   heading.focus({preventScroll:true});
+  });
+ });
  const observed=[];
- for(let index=0;index<routeChecks.length;index++){
-  const target=routeChecks[index];
-  if(index!==0)await page.locator(`.nav-link[data-view="${target.view}"]`).click();
+ for(const target of routes){
+  await page.locator(`.nav-link[data-view="${target.view}"]`).click();
   await expect(page.locator(`#view-${target.view}`)).toBeVisible();
   if(target.view==='reader')await expect(page.locator('#passage-content')).toHaveAttribute('aria-busy','false',{timeout:18000});
   if(target.view==='connections')await expect(page.locator('#atlas-preview-content')).toHaveAttribute('aria-busy','false',{timeout:18000});
-  if(index!==0)await expect(page.locator('#main')).toBeFocused();
-  const results=[];let matched=false;
-  for(let i=0;i<8;i++){
-   await nvda.nextHeading();
-   const phrase=String(await nvda.lastSpokenPhrase());
-   results.push({empty:!phrase.trim(),matched:phrase.toLowerCase().includes(target.heading)});
-   if(results.at(-1).matched){matched=true;break;}
-  }
-  const initialMatched=matched,firstMoves=results.length;
-  let recoveredWithControlHome=false,afterHomeMoves=0;
-  if(!matched){
-   await nvda.press('Control+Home');
-   for(let i=0;i<12;i++){
-    await nvda.nextHeading();
-    afterHomeMoves++;
-    const spoken=String(await nvda.lastSpokenPhrase());
-    if(spoken.toLowerCase().includes(target.heading)){matched=true;recoveredWithControlHome=true;break;}
-   }
-  }
-  observed.push({view:target.view,initialMatched,announced:matched,firstMoves,silent:results.filter(x=>x.empty).length,recoveredWithControlHome,afterHomeMoves,domMainFocused:await page.locator('#main').evaluate(e=>e===document.activeElement)});
-  if(!matched){
-   console.log('NVDA_FIVE_ROUTE_RESULT',JSON.stringify(observed));
-   throw Error('NVDA could not announce the '+target.view+' main heading even after Ctrl+Home');
-  }
+  const heading=page.locator(`#view-${target.view} h1`);
+  await expect(heading).toBeFocused();
+  await page.waitForTimeout(350);
+  const spontaneous=String(await nvda.lastSpokenPhrase()).toLowerCase();
+  await nvda.perform(nvda.keyboardCommands.reportCurrentFocus);
+  const reported=String(await nvda.lastSpokenPhrase()).toLowerCase();
+  observed.push({
+   view:target.view,
+   headingFocused:true,
+   spontaneouslyAnnounced:spontaneous.includes(target.term),
+   focusReportMatched:reported.includes(target.term),
+   reportContainsHeading:reported.includes('heading'),
+  });
  }
- console.log('NVDA_FIVE_ROUTE_RESULT',JSON.stringify(observed));
- expect(observed).toHaveLength(5);
+ console.log('NVDA_HEADING_FOCUS_PROTOTYPE',JSON.stringify(observed));
+ expect(observed.every(x=>x.focusReportMatched),'NVDA should report every newly focused view heading').toBe(true);
 });
