@@ -1,0 +1,28 @@
+name: Experiment - actual browser chrome zoom probe (one-time)
+
+on:
+  push:
+    branches: [audit/true-browser-zoom-v1-20261101]
+    paths: [.github/workflows/zoom-probe.yml]
+
+permissions:
+  contents: read
+
+jobs:
+  native-browser-zoom:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - name: Install real headed Chromium runtime and X11 key injector
+        run: |
+          npx playwright install --with-deps chromium
+          sudo apt-get update -qq
+          sudo apt-get install -y xdotool
+      - name: Test authentic browser zoom through keyboard shortcuts
+        run: xvfb-run --auto-servernum --server-args="-screen 0 1600x1100x24" node tests/zoom/actual-browser-zoom-probe.mjs
