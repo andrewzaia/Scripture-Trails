@@ -1,4 +1,4 @@
-name: Experiment - actual browser chrome zoom probe (one-time)
+name: Experiment - actual browser zoom probe, native viewport (one-time)
 
 on:
   push:
