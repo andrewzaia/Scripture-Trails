@@ -23,6 +23,20 @@ async function inspectRoutesAtActualZoom(zoom){
  for(const view of routeNames){
   await page.goto('https://www.scripturetrails.com/?view='+view,{waitUntil:'load',timeout:30000});
   await page.locator('#view-'+view).waitFor({state:'visible',timeout:18000});
+  if(view==='discover'&&zoom===400){
+   await page.evaluate(()=>localStorage.removeItem('scripture-trails:analytics-consent'));
+   await page.reload({waitUntil:'load'});
+   await page.locator('#view-'+view).waitFor({state:'visible',timeout:18000});
+  }
+  let consent='not-shown';
+  const panel=page.locator('#analytics-consent');
+  if(await panel.isVisible()){
+   try{
+    await page.locator('#analytics-decline').click({timeout:4500});
+    await panel.waitFor({state:'hidden',timeout:4500});
+    consent='dismissed';
+   }catch(e){consent='blocked';}
+  }
   if(view==='reader')await page.locator('#passage-content[aria-busy="false"]').waitFor({state:'attached',timeout:18000});
   if(view==='connections')await page.locator('#atlas-preview-content[aria-busy="false"]').waitFor({state:'attached',timeout:18000});
   const measured=await metrics();
@@ -32,14 +46,16 @@ async function inspectRoutesAtActualZoom(zoom){
   if(['discover','reader'].includes(view)){
    const button=page.locator('#menu-toggle');
    if(await button.isVisible()){
-    await button.click();
-    const expanded=await button.getAttribute('aria-expanded');
-    await page.keyboard.press('Escape');
-    const collapsed=await button.getAttribute('aria-expanded');
-    drawer=expanded==='true'&&collapsed==='false'?'pass':'fail';
+    try{
+     await button.click({timeout:4500});
+     const expanded=await button.getAttribute('aria-expanded');
+     await page.keyboard.press('Escape');
+     const collapsed=await button.getAttribute('aria-expanded');
+     drawer=expanded==='true'&&collapsed==='false'?'pass':'fail';
+    }catch(e){drawer='obstructed';}
    }
   }
-  routeResults.push({zoom,view,dpr:measured.dpr,cssViewport:measured.layoutWidth,overflow,overflowPixels:measured.scrollWidth-measured.layoutWidth,drawer,version:measured.version,browserZoomMatches});
+  routeResults.push({zoom,view,dpr:measured.dpr,cssViewport:measured.layoutWidth,overflow,overflowPixels:measured.scrollWidth-measured.layoutWidth,consent,drawer,version:measured.version,browserZoomMatches});
  }
 }
 try{
@@ -87,6 +103,6 @@ try{
   snapshots:findings,routeResults
  }));
  if(!measured)throw Error('Real headed browser zoom could not be verified; no true-zoom acceptance may be claimed');
- const violations=routeResults.filter(x=>x.overflow||x.drawer==='fail'||!x.browserZoomMatches||x.version!=='v0.44.22');
+ const violations=routeResults.filter(x=>x.overflow||(x.drawer==='fail'||x.drawer==='obstructed'||x.consent==='blocked')||!x.browserZoomMatches||x.version!=='v0.44.22');
  if(violations.length)throw Error('Actual browser zoom failed '+violations.length+' of '+routeResults.length+' sampled view checks; inspect ACTUAL_BROWSER_ZOOM_PROBE output');
 }finally{await browser.close();}
