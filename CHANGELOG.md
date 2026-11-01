@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.44.21 - 01/11/2026: Publisher view reporting and recovery readiness
+
+- Report API.Bible Scripture views when returning to a cached passage.
+- Document successful live production rollback and restoration in the v1.0 readiness roadmap.
+
 ## 0.44.20 - 01/11/2026: Owner-led scholarly review and verified launch readiness
 
 - Record the project owner's scholarly and editorial approval of published Scripture study content, without requiring a second professor or external specialist.
