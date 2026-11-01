@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.44.23 - 02/11/2026: Publisher rights acceptance and Safari verification
+
+- Record the project owner's qualified non-commercial publisher-rights acceptance and ongoing licence obligations.
+- Document native Safari desktop reflow checks while retaining physical-device and native Safari zoom acceptance as open.
+
 ## 0.44.22 - 01/11/2026: Accessible navigation between study sections
 
 - Move keyboard and screen-reader focus to the active section heading when navigating across study pages.
