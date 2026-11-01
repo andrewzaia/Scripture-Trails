@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.44.25 - 02/11/2026: Reliable v1 candidate live verification
+
+- Correct production readiness smoke checks to recognise only the two documented, owner-accepted device-testing limits.
+- Block any published v1 release without an explicit owner launch approval and add malformed-readiness regression coverage.
+- Reconcile the v1 launch evidence ledger with the verified v0.44.24 production deployment.
+
 ## 0.44.24 - 02/11/2026: Qualified v1 readiness compatibility acceptance
 
 - Record the project's owner-accepted device and accessibility testing limitations, without claiming untested devices passed.
