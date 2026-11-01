@@ -52,7 +52,7 @@ test('Full historical study view is linked from menu, the journeys map, and the 
 });
 
 test('city photo CSP permits local assets and required Bible reporting without Wikimedia requests',()=>{
- assert.match(headers,/img-src 'self' data: https:\/\/www\.google-analytics\.com/);
+ assert.match(headers,/img-src 'self' data: https:\/\/fums\.api\.bible https:\/\/www\.google-analytics\.com/);
  assert.match(headers,/connect-src[^\n]*https:\/\/fums\.api\.bible/);
  assert.doesNotMatch(headers,/script-src[^\n]*fumsV3|script-src[^\n]*fumsv2/);
  assert.doesNotMatch(headers,/https:\/\/(?:upload|commons)\.wikimedia\.org/);

@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.44.19 - 01/11/2026: Reliable Bible publisher usage reporting
+
+- Use the API.Bible-documented reporting pixel when displaying licensed translations, replacing browser requests that failed to reach the publisher.
+- Permit only the publisher's FUMS image endpoint in the restrictive image security policy, without adding external JavaScript or exposing private notebook data.
+- Prevent cached reporting images from suppressing repeated Scripture-view reports, with anonymous per-view nonces and cross-browser tests using synthetic Bible content.
+
 ## 0.44.18 - 01/11/2026: Accessible Scripture reader publisher links
 
 - Remove invisible unnamed anchors returned in publisher Scripture markup, avoiding an unnecessary keyboard focus stop in the Bible reader.

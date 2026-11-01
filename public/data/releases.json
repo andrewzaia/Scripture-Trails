@@ -1,6 +1,16 @@
 {
   "releases": [
     {
+      "version": "0.44.19",
+      "date": "2026-11-01",
+      "title": "Reliable Bible publisher usage reporting",
+      "changes": [
+        "Use the API.Bible-documented reporting pixel when displaying licensed translations, replacing browser requests that failed to reach the publisher.",
+        "Permit only the publisher's FUMS image endpoint in the restrictive image security policy, without adding external JavaScript or exposing private notebook data.",
+        "Prevent cached reporting images from suppressing repeated Scripture-view reports, with anonymous per-view nonces and cross-browser tests using synthetic Bible content."
+      ]
+    },
+    {
       "version": "0.44.18",
       "date": "2026-11-01",
       "title": "Accessible Scripture reader publisher links",
