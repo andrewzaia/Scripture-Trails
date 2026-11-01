@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.44.20 - 01/11/2026: Owner-led scholarly review and verified launch readiness
+
+- Record the project owner's scholarly and editorial approval of published Scripture study content, without requiring a second professor or external specialist.
+- Recognise independently evidenced live production checks for the four Bible editions, Atlas, notebook and publisher usage reports, while retaining the final-candidate recheck.
+- Update the v1.0 readiness roadmap, evidence records and tests to show twelve of seventeen acceptance criteria met, leaving rights, physical accessibility, rollback and final approval open.
+
 ## 0.44.19 - 01/11/2026: Reliable Bible publisher usage reporting
 
 - Use the API.Bible-documented reporting pixel when displaying licensed translations, replacing browser requests that failed to reach the publisher.
