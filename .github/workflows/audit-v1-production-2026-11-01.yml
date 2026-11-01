@@ -1,4 +1,4 @@
-name: v1 live production acceptance - single-runner audit
+name: Diagnose production FUMS view reporting - one runner
 on:
   push:
     branches:
@@ -6,12 +6,9 @@ on:
 permissions:
   contents: read
 jobs:
-  live:
+  diagnose:
     runs-on: ubuntu-24.04
-    timeout-minutes: 20
-    env:
-      SCRIPTURE_TRAILS_EXPECTED_VERSION: '0.44.18'
-      SCRIPTURE_TRAILS_ORIGIN: https://www.scripturetrails.com
+    timeout-minutes: 12
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-node@v5
@@ -19,22 +16,6 @@ jobs:
           node-version-file: .nvmrc
           cache: npm
       - run: npm ci
-      - name: Install one real browser, not a full duplicate matrix
-        run: npx playwright install --with-deps chromium
-      - name: Check live release, publisher responses and actual browser interactions
-        shell: bash
-        run: |
-          set +e
-          npm run check:live-v1
-          release_code=$?
-          npm run check:live-reader
-          reader_code=$?
-          node scripts/audit-v1-production-live.mjs
-          browser_code=$?
-          set -e
-          echo "Production release metadata: $release_code"
-          echo "Four-edition publisher responses: $reader_code"
-          echo "Real browser Atlas/notebook/navigation: $browser_code"
-          test "$release_code" -eq 0
-          test "$reader_code" -eq 0
-          test "$browser_code" -eq 0
+      - run: npx playwright install --with-deps chromium
+      - name: Inspect real NIV view and client FUMS reporting without leaking tokens
+        run: node scripts/audit-fums-production.mjs
