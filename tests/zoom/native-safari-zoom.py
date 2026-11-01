@@ -1,54 +1,41 @@
-"""Bounded native Safari zoom probe using WebDriver key actions.
+"""Actual Apple Safari responsive-layout audit, no page-zoom claims.
 
-No AppleScript application activation, which hung the first SafariDriver session.
-Measure actual Safari DPR and layout viewport after each browser shortcut.
-Do not certify zoom unless both independent metrics change accordingly.
+Use native SafariDriver-controlled window sizing; Safari's automation glass pane
+blocks out-of-band keyboard zoom. Records actual CSS viewport and overflow.
 """
 import json
 import time
 from selenium import webdriver
-from selenium.webdriver.common.action_chains import ActionChains
-from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.safari.options import Options
 
-JS = """return {
-  cssWidth:window.innerWidth,
-  layoutWidth:document.documentElement.clientWidth,
-  scrollWidth:document.documentElement.scrollWidth,
+ROUTES=['discover','reader','connections','jesus-map','paul-map','hebrew-geography','city-studies','entities','roadmap','journeys','notebook','about']
+JS="""const e=document.documentElement;const view=arguments[0];const target=document.getElementById('view-'+view);const version=document.getElementById('site-version');const nav=document.getElementById('menu-toggle');return {
+  clientWidth:e.clientWidth,scrollWidth:e.scrollWidth,cssWidth:window.innerWidth,
   ratio:window.devicePixelRatio,
-  version:document.querySelector('#site-version')?.textContent?.trim()||null
+  version:version?.textContent?.trim()||null,
+  routePresent:!!target,routeVisible:!!target&&getComputedStyle(target).display!=='none'&&!target.hidden,
+  menuVisible:!!nav&&getComputedStyle(nav).display!=='none',
+  documentTitle:document.title
 }"""
-def measure(driver):
-    return driver.execute_script(JS)
-
-driver=None
+browser=None
+records=[]
 try:
-    driver=webdriver.Safari(options=Options())
-    driver.command_executor._client_config.timeout=35
-    driver.set_window_rect(width=1280,height=940)
-    driver.get('https://www.scripturetrails.com/?view=about')
-    baseline=measure(driver)
-    print("SAFARI_NATIVE_BASELINE "+json.dumps(baseline),flush=True)
-    assert baseline['version']=='v0.44.22'
-    steps=[]
-    for keyname,key in [('equals',Keys.EQUALS),('add',Keys.ADD),('plus', '+')]:
-        try:
-            ActionChains(driver).key_down(Keys.COMMAND).send_keys(key).key_up(Keys.COMMAND).perform()
-            time.sleep(0.5)
-            current=measure(driver)
-            steps.append({'key':keyname,'metrics':current})
-            print('SAFARI_SHORTCUT_STEP '+json.dumps(steps[-1]),flush=True)
-            if current['ratio']>baseline['ratio']*1.04 and current['layoutWidth']<baseline['layoutWidth']*0.97:
-                break
-        except Exception as exc:
-            steps.append({'key':keyname,'error':type(exc).__name__+': '+str(exc)[:380]})
-            print('SAFARI_SHORTCUT_ERROR '+json.dumps(steps[-1]),flush=True)
-            break
-    valid=any('metrics' in x and x['metrics']['ratio']>baseline['ratio']*1.04 and x['metrics']['layoutWidth']<baseline['layoutWidth']*0.97 for x in steps)
-    print('SAFARI_SHORTCUT_VERDICT '+json.dumps({'verifiedInitialZoom':valid,'steps':steps}),flush=True)
-    if not valid:
-        raise RuntimeError('Safari native zoom did not measurably engage via WebDriver shortcuts')
+    browser=webdriver.Safari(options=Options())
+    browser.command_executor._client_config.timeout=35
+    for requestedWidth in [1280,400]:
+        browser.set_window_rect(width=requestedWidth,height=930)
+        for view in ROUTES:
+            browser.get('https://www.scripturetrails.com/?view='+view)
+            time.sleep(0.15)
+            d=browser.execute_script(JS,view)
+            d.update({'requestedWindowWidth':requestedWidth,'view':view,'overflow':d['scrollWidth']>d['clientWidth']+4})
+            records.append(d)
+            print('SAFARI_NATIVE_VIEW '+json.dumps(d,separators=(",",":")),flush=True)
+    failing=[x for x in records if x['version']!='v0.44.22' or not x['routePresent'] or not x['routeVisible'] or x['overflow']]
+    widths={str(w):sorted(set(x['clientWidth'] for x in records if x['requestedWindowWidth']==w)) for w in [1280,400]}
+    print('SAFARI_RESPONSIVE_VERDICT '+json.dumps({'count':len(records),'failures':failing,'measuredWidths':widths,'realSafari':True,'nativeZoomTested':False},separators=(",",":")),flush=True)
+    if failing:raise RuntimeError('Native Safari responsive audit found '+str(len(failing))+' failed of '+str(len(records))+' checks')
 finally:
-    if driver:
-        try:driver.quit()
+    if browser:
+        try:browser.quit()
         except Exception:pass
