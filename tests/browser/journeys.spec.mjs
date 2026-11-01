@@ -79,8 +79,8 @@ test('map alternatives navigate Gospel stops and an unpinned Pauline stage',asyn
 test('v1.0 roadmap shows honest scoped progress and accessible launch acceptance criteria',async({page})=>{
  await open(page,'roadmap');
  await expect(page.locator('[data-roadmap=""]')).toHaveAttribute('data-ready','true');
- await expect(page.locator('[data-roadmap="v1-summary"]')).toContainText('14 verified, 2 accepted with limitations, 1 open (17 total)');
- await expect(page.locator('[data-roadmap="v1-summary"]')).toContainText('1 release criterion remains open');
+ await expect(page.locator('[data-roadmap="v1-summary"]')).toContainText('15 verified, 2 accepted with limitations, 0 open (17 total)');
+ await expect(page.locator('[data-roadmap="v1-summary"]')).toContainText('All v1.0 launch criteria are accepted');
  await expect(page.locator('.v1-gate')).toHaveCount(5);
  await page.locator('.v1-stages > summary').click();
  await expect(page.locator('[data-roadmap="v1-stages"] > li')).toHaveCount(5);
@@ -334,13 +334,13 @@ test('Emmaus and Gethsemane keep site-identity limitations visible through deep 
  await expect(page.locator('[data-jesus="study-identification-claim"]')).toContainText('modern pilgrimage garden');
 });
 
-test('v1 readiness preserves separate open rights review after live reader checks',async({page})=>{
+test('v1 readiness retains qualified publisher rights and complete owner launch approval',async({page})=>{
  await open(page,'roadmap');
  const content=page.locator('[data-roadmap="v1-gates"]');
  await expect(content).toContainText('Verify all four authorised translations in production');
  await expect(content).toContainText('Test operational and publishing failure paths');
  await expect(content).toContainText('Verify citations, content rights and source attribution');
- await expect(page.locator('[data-roadmap="v1-summary"]')).toContainText('14 verified, 2 accepted with limitations, 1 open (17 total)');
+ await expect(page.locator('[data-roadmap="v1-summary"]')).toContainText('15 verified, 2 accepted with limitations, 0 open (17 total)');
 });
 
 test('Gospel Last Supper audit names relevant scholarship and keeps the calendar disputed',async({page})=>{
