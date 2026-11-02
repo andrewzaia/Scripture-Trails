@@ -46,6 +46,7 @@ test('audio byte-range requests are relayed to the media host, preserving partia
   count++;
   if(count===1){assert.equal(options.headers.Authorization,'Token private');return new Response(null,{status:302,headers:{location:'https://cdn.crossway.org/audio.mp3'}});}
   assert.deepEqual(options.headers,{Range:'bytes=100-'});
+  assert.equal(options.signal,undefined,'Long-running chapter streams must not be aborted by a short fetch timeout');
   return new Response(new Uint8Array([1,2,3]),{status:206,headers:{'Content-Type':'audio/mpeg','Content-Range':'bytes 100-102/900','Content-Length':'3','Accept-Ranges':'bytes'}});
  },async()=>{
   const r=await onRequestGet({request:request('Psalms 23','ESV',{Range:'bytes=100-'}),env:{ESV_API_KEY:'private'}});

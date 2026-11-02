@@ -23,7 +23,8 @@ export async function onRequestGet({request,env}){
    const target=new URL(location,source);
    if(target.protocol!=='https:'||target.username||target.password||target.port||!trustedHost(target.hostname))return error(502,'audio_redirect','ESV audio is unavailable.');
    // Do not send the token, cookies or any browser headers to the media host.
-   response=await fetch(target.href,{headers:range?{Range:range}:{},redirect:'manual',signal:AbortSignal.timeout(20000)});
+   // A short fetch timeout would abort an active MP3 stream before long chapters finish.
+   response=await fetch(target.href,{headers:range?{Range:range}:{},redirect:'manual'});
   }
   if(response.status===429)return error(429,'rate_limited','Crossway audio request limit reached. Try again later.');
   if(response.status===404)return error(404,'unavailable','Audio for this passage is unavailable.');
