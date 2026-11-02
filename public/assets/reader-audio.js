@@ -6,7 +6,7 @@ export function createReaderAudio({button,player,status}){
  function render(){
   const playing=enabled&&!player.paused&&!player.ended,action=playing?'Pause':'Play';
   button.setAttribute('aria-pressed',String(playing));
-  button.setAttribute('aria-label',action+' ESV audio for '+(reference||'the current passage'));
+  button.setAttribute('aria-label',(playing?'Pause ESV audio for ':'Listen to ESV audio for ')+(reference||'the current passage'));
   button.title=enabled?action+' ESV reading of '+reference:'Audio is available after an ESV passage loads';
   label.textContent=playing?'Pause':'Listen';
  }
