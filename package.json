@@ -1,6 +1,6 @@
 {
   "name": "scripture-trails",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "private": true,
   "type": "module",
   "description": "A Bible reader with ESV, NASB20, NIV and NKJV translations and visual Scripture discovery",
@@ -18,6 +18,7 @@
     "check:stats": "node scripts/site-stats.mjs --check",
     "check:v1": "node scripts/check-v1-readiness.mjs",
     "check:live-reader": "node scripts/check-live-reader.mjs",
+    "check:live-audio": "node scripts/check-live-audio.mjs",
     "check:live-v1": "node scripts/check-live-v1.mjs"
   },
   "devDependencies": {

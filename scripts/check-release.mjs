@@ -2,6 +2,8 @@ import {readFileSync} from 'node:fs';
 import {execFileSync} from 'node:child_process';
 import {validateReleases,assertReleaseIncrement} from './versioning.mjs';
 const pkg=JSON.parse(readFileSync('package.json','utf8'));
+const lock=JSON.parse(readFileSync('package-lock.json','utf8'));
+if(lock.version!==pkg.version||lock.packages?.['']?.version!==pkg.version)throw new Error('npm lockfile version must match package.json');
 const notes=JSON.parse(readFileSync('public/data/releases.json','utf8'));
 const html=readFileSync('public/index.html','utf8');
 const detailed=readFileSync('CHANGELOG.md','utf8');

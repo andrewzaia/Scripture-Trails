@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.1.1 - 02/11/2026: Reliable ESV audio playback verification
+
+- Automatically verify that the official ESV audio service returns playable MP3 data while other translations remain text-only.
+- Confirm the intended website version during production release checks without retaining audio recordings.
+- Improve release consistency by ensuring the npm lockfile stays aligned with the website version.
+- Improve ESV audio delivery by resolving official passage-linked recordings through Crossway's authenticated ESV service.
+
 ## 1.1.0 - 02/11/2026: Listen to Scripture - ESV audio Bible
 
 - Add a Listen button in the Bible reader for ESV verses, verse ranges and chapters, with play and pause controls.
