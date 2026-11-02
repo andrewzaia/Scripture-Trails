@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.1.5 - 03/11/2026: Reliable ESV audio release verification
+
+- Refine automated audio release checks to verify official ESV recording links, correct website versions and translation restrictions reliably.
+- Keep full MP3 verification available separately from infrastructure checks when external audio servers are inaccessible from automated test runners.
+- Preserve accessible playback controls, strict media security protections and the existing Scripture reader experience.
+
 ## 1.1.4 - 03/11/2026: ESV audio playback using verified passage references
 
 - Resolve ESV narration from Crossway's official passage metadata, avoiding unreliable audio and HTML-link requests.
