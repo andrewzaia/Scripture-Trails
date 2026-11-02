@@ -1,6 +1,12 @@
 import {fileURLToPath} from 'node:url';
 import {resolve} from 'node:path';
-import {validatedAudioDestination} from '../functions/api/audio.js';
+// An independent production-only check: never trust the site's link validator.
+function validatedAudioDestination(raw){
+ try{
+  const u=new URL(raw);
+  return u.protocol==='https:'&&u.hostname==='audio.esv.org'&&!u.port&&!u.username&&!u.password&&!u.search&&!u.hash&&/^\/hw\/\d{8}-\d{8}\.mp3$/.test(u.pathname)?u.href:null;
+ }catch{return null;}
+}
 
 const DEFAULT_ORIGIN='https://www.scripturetrails.com';
 const pause=ms=>new Promise(done=>setTimeout(done,ms));
