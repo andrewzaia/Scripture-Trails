@@ -1,6 +1,16 @@
 {
   "releases": [
     {
+      "version": "1.1.6",
+      "date": "2026-11-03",
+      "title": "Restore ESV audio playback for verses, ranges and chapters",
+      "changes": [
+        "Restore ESV audio through authenticated passage metadata after the documented audio endpoint proved unreliable from Cloudflare.",
+        "Correct exact verse-range matching and early-Bible book identifiers while preserving ESV-only playback.",
+        "Continue protected server-side API credentials, restricted official MP3 locations and non-cached audio links."
+      ]
+    },
+    {
       "version": "1.1.5",
       "date": "2026-11-03",
       "title": "Reliable ESV audio release verification",
