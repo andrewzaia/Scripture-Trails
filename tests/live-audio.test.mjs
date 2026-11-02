@@ -94,3 +94,11 @@ test('explicit CDN byte-level check fails rather than claiming success if the me
  };
  await assert.rejects(checkLiveAudio({fetcher,verifyRemoteMedia:true}),/CDN blocked/);
 });
+
+test('live acceptance rejects an official but unrelated ESV audio recording',async()=>{
+ const fetcher=async()=>new Response(null,{status:302,headers:{
+  Location:'https://audio.esv.org/hw/43003016-43003016.mp3',
+  'Cache-Control':'private, no-store'
+ }});
+ await assert.rejects(checkLiveAudio({fetcher}),/requested test verse/);
+});
