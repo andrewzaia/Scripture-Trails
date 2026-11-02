@@ -50,7 +50,7 @@ test('audio byte-range requests are relayed to the media host, preserving partia
   return new Response(new Uint8Array([1,2,3]),{status:206,headers:{'Content-Type':'audio/mpeg','Content-Range':'bytes 100-102/900','Content-Length':'3','Accept-Ranges':'bytes'}});
  },async()=>{
   const r=await onRequestGet({request:request('Psalms 23','ESV',{Range:'bytes=100-'}),env:{ESV_API_KEY:'private'}});
-  assert.equal(r.status,206);assert.equal(r.headers.get('Content-Range'),'bytes 100-102/900');assert.equal(r.headers.get('Content-Length'),'3');
+  assert.equal(r.status,206);assert.equal(r.headers.get('Content-Range'),'bytes 100-102/900');assert.equal(r.headers.get('Content-Length'),null,'The edge must generate its own stream length');
  });
 });
 

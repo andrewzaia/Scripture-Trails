@@ -5,6 +5,7 @@
 - Automatically verify that the official ESV audio service returns playable MP3 data while other translations remain text-only.
 - Confirm the intended website version during production release checks without retaining audio recordings.
 - Improve release consistency by ensuring the npm lockfile stays aligned with the website version.
+- Improve streamed MP3 delivery by letting Cloudflare generate its own audio response length.
 
 ## 1.1.0 - 02/11/2026: Listen to Scripture - ESV audio Bible
 

@@ -35,7 +35,8 @@ export async function onRequestGet({request,env}){
   const len=response.headers.get('content-length');
   if(len&&(!/^\d+$/.test(len)||Number(len)>75*1024*1024))return error(502,'invalid_audio','ESV audio is temporarily unavailable.');
   const headers=new Headers({'Content-Type':'audio/mpeg','Cache-Control':'private, no-store','X-Content-Type-Options':'nosniff','Cross-Origin-Resource-Policy':'same-origin','Content-Disposition':'inline'});
-  for(const name of ['content-length','content-range','accept-ranges']){const value=response.headers.get(name);if(value)headers.set(name,value);}
+  // Never reuse the upstream Content-Length on a re-encoded edge stream. This can trigger an edge 502.
+  for(const name of ['content-range','accept-ranges']){const value=response.headers.get(name);if(value)headers.set(name,value);}
   return new Response(response.body,{status:response.status,headers});
  }catch{return error(502,'upstream_unavailable','ESV audio is temporarily unavailable. Please try again.');}
 }
