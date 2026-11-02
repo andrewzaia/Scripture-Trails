@@ -1,6 +1,16 @@
 {
   "releases": [
     {
+      "version": "1.1.0",
+      "date": "2026-11-02",
+      "title": "Listen to Scripture - ESV audio Bible",
+      "changes": [
+        "Add a Listen button in the Bible reader for ESV verses, verse ranges and chapters, with play and pause controls.",
+        "Stream Crossway's MP3 narration on demand through a protected endpoint, keeping the API credential private and avoiding audio storage.",
+        "Keep narration exclusive to ESV, stop it when the passage or translation changes, and show accessible playback errors."
+      ]
+    },
+    {
       "version": "1.0.0",
       "date": "2026-11-02",
       "title": "Scripture Trails 1.0 - stable launch",
