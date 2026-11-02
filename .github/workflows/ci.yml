@@ -30,7 +30,7 @@ jobs:
       - run: npm ci
       - name: Check source and tests
         run: npm run build
-      - name: Verify newly deployed ESV MP3 and production version
+      - name: Verify official ESV audio redirect and live production version
         if: ${{ github.event_name == 'push' }}
         run: SCRIPTURE_TRAILS_EXPECTED_VERSION="$(node -p "require('./package.json').version")" npm run check:live-audio
       - name: Parse all Playwright browser tests before allocating browser runners
