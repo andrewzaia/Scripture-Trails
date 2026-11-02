@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.1.4 - 03/11/2026: ESV audio playback using verified passage references
+
+- Resolve ESV narration from Crossway's official passage metadata, avoiding unreliable audio and HTML-link requests.
+- Validate the selected book, chapter and verse range before opening its official MP3, with no recordings or API credentials stored.
+- Extend audio security and failure-handling tests for exact passages, chapters and invalid publisher metadata.
+
 ## 1.1.3 - 03/11/2026: Reliable official ESV audio playback
 
 - Play the official ESV audio recording using Crossway's documented MP3 service, without storing recordings on Scripture Trails.
