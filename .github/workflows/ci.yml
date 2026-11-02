@@ -30,6 +30,13 @@ jobs:
       - run: npm ci
       - name: Check source and tests
         run: npm run build
+      - name: Verify live Crossway audio without retaining MP3 data
+        run: |
+          if [ "$GITHUB_EVENT_NAME" = "push" ]; then
+            SCRIPTURE_TRAILS_EXPECTED_VERSION="$(node -p "require('./package.json').version")" npm run check:live-audio
+          else
+            npm run check:live-audio
+          fi
       - name: Parse all Playwright browser tests before allocating browser runners
         run: npx playwright test --list
   # Each engine gets an isolated runner. Firefox's full-page axe scans are

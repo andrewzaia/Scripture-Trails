@@ -7,7 +7,9 @@ const read=path=>readFileSync(path,'utf8');
 const packagePath='package.json',historyPath='public/data/releases.json',htmlPath='public/index.html';
 const appPath='public/assets/app.js',graphPath='public/assets/graph.js',indexPath='public/assets/entity-index.js',evidencePath='public/assets/connection-evidence.js';
 const versionedImport=(content,oldPart,newPart,label)=>{if(!content.includes(oldPart))throw Error('Index cache key missing: '+label);return content.replace(oldPart,newPart);};
-const pkg=JSON.parse(read(packagePath)),history=JSON.parse(read(historyPath));
+const lockfilePath='package-lock.json';
+const pkg=JSON.parse(read(packagePath)),lock=JSON.parse(read(lockfilePath)),history=JSON.parse(read(historyPath));
+if(lock.version!==pkg.version||lock.packages?.['']?.version!==pkg.version)throw new Error('npm lockfile version must match package.json before release');
 validateReleases(history.releases,pkg.version);
 const oldVersion=pkg.version,newVersion=nextVersion(oldVersion,level);
 const parts=Object.fromEntries(new Intl.DateTimeFormat('en-GB',{timeZone:'Australia/Sydney',day:'2-digit',month:'2-digit',year:'numeric'}).formatToParts(new Date()).map(x=>[x.type,x.value]));
@@ -57,6 +59,7 @@ const newHtml=html.replace(oldLabel,oldLabel.replace(oldVersion,newVersion))
  .replace('/assets/hebrew-geography.css?v='+oldVersion,'/assets/hebrew-geography.css?v='+newVersion)
  .replace('/assets/roadmap.css?v='+roadmapCssVersion,'/assets/roadmap.css?v='+newVersion);
 pkg.version=newVersion;
+lock.version=newVersion;lock.packages[''].version=newVersion;
 history.releases.unshift({version:newVersion,date,title:title.trim(),changes:changes.map(x=>x.trim())});
 validateReleases(history.releases,newVersion);
 const changelog=read('CHANGELOG.md');
@@ -65,6 +68,7 @@ const dated=`${parts.day}/${parts.month}/${parts.year}`;
 const lines=changes.map(x=>'- '+x.trim()).join('\n');
 const newChangelog=changelog.replace('# Changelog\n',`# Changelog\n\n## ${newVersion} - ${dated}: ${title.trim()}\n\n${lines}\n`);
 writeFileSync(packagePath,JSON.stringify(pkg,null,2)+'\n');
+writeFileSync(lockfilePath,JSON.stringify(lock,null,2)+'\n');
 writeFileSync(historyPath,JSON.stringify(history,null,2)+'\n');
 writeFileSync(htmlPath,newHtml);
 writeFileSync(appPath,nextApp);
