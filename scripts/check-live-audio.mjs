@@ -36,7 +36,11 @@ export async function checkLiveAudio({fetcher=fetch,origin=DEFAULT_ORIGIN,expect
  if(response.status!==200&&response.status!==206){
   const body=await response.json().catch(()=>({}));
   const code=typeof body?.code==='string'&&/^[a-z_]{1,50}$/.test(body.code)?body.code:'unknown';
-  throw Error('Live ESV MP3 HTTP '+response.status+' ('+code+')');
+  const kind=(response.headers.get('content-type')||'missing').split(';')[0].slice(0,60);
+  const server=(response.headers.get('server')||'missing').slice(0,30);
+  let readerStatus='unavailable';
+  try{const passage=new URL('/api/passage',base);passage.searchParams.set('q',AUDIO_REFERENCE);passage.searchParams.set('translation','ESV');const test=await fetchLive(fetcher,passage,{headers:{Accept:'application/json'}});readerStatus=String(test.status);await test.body?.cancel();}catch{}
+  throw Error('Live ESV MP3 HTTP '+response.status+' ('+code+', type='+kind+', server='+server+', text-api='+readerStatus+')');
  }
  if(response.headers.get('content-type')?.split(';')[0].trim().toLowerCase()!=='audio/mpeg')throw Error('Live ESV MP3 content type mismatch');
  if(!/(?:^|[, ]+)no-store(?:$|[, ]+)/i.test(response.headers.get('cache-control')||''))throw Error('ESV audio must not be cached');
