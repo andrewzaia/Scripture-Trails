@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.1.3 - 03/11/2026: Reliable official ESV audio playback
+
+- Play the official ESV audio recording using Crossway's documented MP3 service, without storing recordings on Scripture Trails.
+- Safely allow playback from Crossway's audio server while keeping the ESV API credential private and restricting audio to ESV.
+- Expand automated live audio verification to validate approved streaming destinations and genuine MP3 data.
+
 ## 1.1.2 - 02/11/2026: Resolve ESV audio from canonical passage IDs
 
 - Recover official ESV recordings from verified Crossway passage identifiers when the audio link is missing.
