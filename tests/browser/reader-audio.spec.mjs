@@ -9,7 +9,7 @@ test('only ESV passages have a Listen control, with reference and translation ch
  await open(page,'reader','John 3:16');
  const button=page.locator('#reader-audio-button'),player=page.locator('#reader-audio');
  await expect(button).toBeVisible();await expect(button).toBeEnabled();
- await expect(button).toHaveAttribute('aria-label','Play ESV audio for John 3:16');
+ await expect(button).toHaveAttribute('aria-label','Listen to ESV audio for John 3:16');
  await button.click();await expect(player).toHaveAttribute('src','/api/audio?q=John%203%3A16');
  await expect(button).toHaveAttribute('aria-pressed','true');
  await button.click();await expect(button).toHaveAttribute('aria-pressed','false');
@@ -19,7 +19,7 @@ test('only ESV passages have a Listen control, with reference and translation ch
  await page.locator('#reader-translation').selectOption('ESV');
  await expect(button).toBeVisible();await expect(button).toBeEnabled();
  await page.locator('#next-chapter').click();
- await expect(button).toHaveAttribute('aria-label','Play ESV audio for John 4');
+ await expect(button).toHaveAttribute('aria-label','Listen to ESV audio for John 4');
  await expect(player).not.toHaveAttribute('src',/./);
  await button.click();await expect(player).toHaveAttribute('src','/api/audio?q=John%204');
  await page.locator('#reader-related-index').click();
