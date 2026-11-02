@@ -17,6 +17,7 @@ if(!roadmapCssVersion)throw Error('Roadmap stylesheet cache key missing');
 if(!html.includes(oldLabel))throw new Error('Footer version is out of sync; run npm run check:release');
 if(!html.includes('/assets/app.js?v='+oldVersion)||!html.includes('/assets/style.css?v='+oldVersion)||!html.includes('/assets/entity-index.css?v='+oldVersion))throw new Error('Asset cache keys are out of sync');
 let nextApp=versionedImport(read(appPath),'entity-index.js?v='+oldVersion,'entity-index.js?v='+newVersion,'index module');
+nextApp=versionedImport(nextApp,'reader-audio.js?v='+oldVersion,'reader-audio.js?v='+newVersion,'ESV audio controller');
 nextApp=versionedImport(nextApp,'graph.js?v='+oldVersion,'graph.js?v='+newVersion,'Atlas renderer');
 const nextGraph=versionedImport(read(graphPath),'atlas-shortest-path.js?v='+oldVersion,'atlas-shortest-path.js?v='+newVersion,'Atlas shortest path module');
 nextApp=versionedImport(nextApp,'connection-evidence.js?v='+oldVersion,'connection-evidence.js?v='+newVersion,'Atlas evidence module');
