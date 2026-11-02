@@ -333,3 +333,15 @@ body.light .analytics-consent{background:#fffdf8;color:#243b42;box-shadow:0 10px
 
 /* Keep unavailable recovery controls hidden even when button classes set display. */
 .notebook-recovery-warning [hidden]{display:none}
+
+/* User-initiated ESV reader audio, including compact mobile layouts. */
+.reader-audio-button{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:38px}
+.reader-audio-button svg{width:17px;height:17px;flex:none}
+.reader-audio-button[hidden]{display:none!important}
+.reader-audio-button[disabled]{opacity:.55;cursor:not-allowed}
+.reader-audio-button[aria-pressed="true"]{border-color:var(--gold);color:var(--gold)}
+.reader-audio-button:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.reader-audio-status{margin:0;padding:0 24px;color:var(--muted);font-size:11px}
+.reader-audio-status:empty{display:none}
+.reader-audio-status:not(:empty){padding:9px 24px;border-bottom:1px solid var(--line)}
+@media(max-width:760px){.reader-audio-status:not(:empty){padding:9px 20px}}

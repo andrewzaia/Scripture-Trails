@@ -13,6 +13,7 @@ export const test=base.extend({
    const url=new URL(route.request().url());
    if(url.origin!=='http://127.0.0.1:4387'){unexpected.push(url.origin);await route.abort();return;}
    if(url.pathname==='/api/passage'){await route.fulfill({json:passagePayload(url.searchParams.get('q'),url.searchParams.get('translation'))});return;}
+   if(url.pathname==='/api/audio'){await route.fulfill({status:200,contentType:'audio/mpeg',body:Buffer.from([73,68,51,3,0,0,0,0,0,0])});return;}
    if(url.pathname.startsWith('/api/')){unexpected.push(url.pathname);await route.abort();return;}
    await route.continue();
   });
