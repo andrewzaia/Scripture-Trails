@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.1.6 - 03/11/2026: Restore ESV audio playback for verses, ranges and chapters
+
+- Restore ESV audio through authenticated passage metadata after the documented audio endpoint proved unreliable from Cloudflare.
+- Correct exact verse-range matching and early-Bible book identifiers while preserving ESV-only playback.
+- Continue protected server-side API credentials, restricted official MP3 locations and non-cached audio links.
+
 ## 1.1.5 - 03/11/2026: Reliable ESV audio release verification
 
 - Refine automated audio release checks to verify official ESV recording links, correct website versions and translation restrictions reliably.
