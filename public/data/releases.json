@@ -1,6 +1,16 @@
 {
   "releases": [
     {
+      "version": "1.1.2",
+      "date": "2026-11-02",
+      "title": "Resolve ESV audio from canonical passage IDs",
+      "changes": [
+        "Recover official ESV recordings from verified Crossway passage identifiers when the audio link is missing.",
+        "Retain strict reference and media-host validation, with tests rejecting malformed or ambiguous publisher metadata.",
+        "Keep production MP3 playback verification mandatory and preserve existing Bible reader behaviour."
+      ]
+    },
+    {
       "version": "1.1.1",
       "date": "2026-11-02",
       "title": "Reliable ESV audio playback verification",

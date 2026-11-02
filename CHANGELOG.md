@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.1.2 - 02/11/2026: Resolve ESV audio from canonical passage IDs
+
+- Recover official ESV recordings from verified Crossway passage identifiers when the audio link is missing.
+- Retain strict reference and media-host validation, with tests rejecting malformed or ambiguous publisher metadata.
+- Keep production MP3 playback verification mandatory and preserve existing Bible reader behaviour.
+
 ## 1.1.1 - 02/11/2026: Reliable ESV audio playback verification
 
 - Automatically verify that the official ESV audio service returns playable MP3 data while other translations remain text-only.
