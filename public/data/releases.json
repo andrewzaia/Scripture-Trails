@@ -8,7 +8,7 @@
         "Automatically verify that the official ESV audio service returns playable MP3 data while other translations remain text-only.",
         "Confirm the intended website version during production release checks without retaining audio recordings.",
         "Improve release consistency by ensuring the npm lockfile stays aligned with the website version.",
-        "Improve streamed MP3 delivery by letting Cloudflare generate its own audio response length."
+        "Improve ESV audio delivery by resolving official passage-linked recordings through Crossway's authenticated ESV service."
       ]
     },
     {

@@ -2,9 +2,27 @@ import {parseRef} from '../../public/assets/books.js';
 
 const HEADERS={'Content-Type':'application/json; charset=utf-8','Cache-Control':'no-store','X-Content-Type-Options':'nosniff'};
 const error=(status,code,message)=>new Response(JSON.stringify({code,message}),{status,headers:HEADERS});
-// Crossway's redirect can point to its own sites or common audio CDNs.
-const trustedHost=host=>['esv.org','crossway.org','cloudfront.net','amazonaws.com'].some(domain=>host===domain||host.endsWith('.'+domain));
-
+const MAX_PUBLISHER_BYTES=1024*1024;
+// Crossway's HTML API publishes an audio URL for the exact requested passage.
+// Only that official media origin and expected MP3 filename format are accepted.
+function audioLink(payload,ref){
+ if(parseRef(payload?.canonical)?.formatted!==ref.formatted||!Array.isArray(payload.passages)||payload.passages.length!==1||typeof payload.passages[0]!=='string')return null;
+ const links=[...payload.passages[0].matchAll(/href=["'](https:\/\/audio\.esv\.org\/hw\/\d{8}-\d{8}\.mp3)["']/g)].map(x=>x[1]);
+ return links.length===1?links[0]:null;
+}
+async function boundedJson(response){
+ if(!response.body)throw Error('Missing publisher body');
+ const reader=response.body.getReader(),chunks=[];let size=0;
+ try{
+  while(true){
+   const {done,value}=await reader.read();if(done)break;
+   size+=value.byteLength;if(size>MAX_PUBLISHER_BYTES)throw Error('Oversized publisher passage');
+   chunks.push(value);
+  }
+ }finally{await reader.cancel().catch(()=>{});}
+ const bytes=new Uint8Array(size);let off=0;for(const chunk of chunks){bytes.set(chunk,off);off+=chunk.byteLength;}
+ return JSON.parse(new TextDecoder().decode(bytes));
+}
 export async function onRequestGet({request,env}){
  const url=new URL(request.url),q=url.searchParams.get('q')||'';
  if((url.searchParams.get('translation')||'ESV').toUpperCase()!=='ESV')return error(400,'esv_only','Audio is available only for the ESV.');
@@ -14,29 +32,35 @@ export async function onRequestGet({request,env}){
  const range=request.headers.get('range');
  if(range&&!/^bytes=(0|[1-9]\d*)-(0|[1-9]\d*)?$/.test(range))return error(416,'invalid_range','Only one audio byte range is supported.');
  try{
-  const source=new URL('https://api.esv.org/v3/passage/audio/');
+  const source=new URL('https://api.esv.org/v3/passage/html/');
   source.searchParams.set('q',ref.formatted);
-  let response=await fetch(source.href,{headers:{Authorization:'Token '+env.ESV_API_KEY,Accept:'audio/mpeg'},redirect:'manual',signal:AbortSignal.timeout(12000)});
-  if([301,302,303,307,308].includes(response.status)){
-   const location=response.headers.get('location');
-   if(!location)return error(502,'audio_redirect','ESV audio is unavailable.');
-   const target=new URL(location,source);
-   if(target.protocol!=='https:'||target.username||target.password||target.port||!trustedHost(target.hostname))return error(502,'audio_redirect','ESV audio is unavailable.');
-   // Do not send the token, cookies or any browser headers to the media host.
-   // A short fetch timeout would abort an active MP3 stream before long chapters finish.
-   response=await fetch(target.href,{headers:range?{Range:range}:{},redirect:'manual'});
-  }
-  if(response.status===429)return error(429,'rate_limited','Crossway audio request limit reached. Try again later.');
+  source.searchParams.set('include-audio-link','true');
+  source.searchParams.set('include-passage-references','true');
+  source.searchParams.set('include-verse-numbers','false');
+  source.searchParams.set('include-footnotes','false');
+  source.searchParams.set('include-headings','false');
+  source.searchParams.set('include-short-copyright','false');
+  const publisher=await fetch(source.href,{headers:{Authorization:'Token '+env.ESV_API_KEY,Accept:'application/json'},redirect:'manual',signal:AbortSignal.timeout(12000)});
+  if(publisher.status===429)return error(429,'rate_limited','Crossway request limit reached. Please try again later.');
+  if(publisher.status===404)return error(404,'unavailable','Audio for this passage is unavailable.');
+  if(publisher.status!==200)return error(503,'publisher_unavailable','Crossway could not provide passage audio.');
+  const payload=await boundedJson(publisher);
+  const link=audioLink(payload,ref);
+  if(!link)return error(503,'audio_link_invalid','Crossway did not provide an audio recording for this reference.');
+  // The browser never sees the publisher token and the media host receives no token.
+  // Avoid a short timeout on the ongoing stream, which could interrupt long chapters.
+  const response=await fetch(link,{headers:range?{Range:range}:{},redirect:'manual'});
+  if(response.status===429)return error(429,'rate_limited','ESV audio request limit reached. Please try again later.');
   if(response.status===404)return error(404,'unavailable','Audio for this passage is unavailable.');
-  if(response.status===416)return error(416,'range_unavailable','The audio byte range is unavailable.');
-  if(response.status!==200&&response.status!==206)return error(502,'upstream_failure','ESV audio is temporarily unavailable.');
+  if(response.status===416)return error(416,'range_unavailable','The requested audio byte range is unavailable.');
+  if(response.status!==200&&response.status!==206)return error(503,'media_unavailable','The ESV audio recording is temporarily unavailable.');
   const type=(response.headers.get('content-type')||'').split(';')[0].trim().toLowerCase();
-  if(!['audio/mpeg','audio/mp3','application/octet-stream'].includes(type)||!response.body)return error(502,'invalid_audio','ESV audio is temporarily unavailable.');
+  if(!['audio/mpeg','audio/mp3','application/octet-stream'].includes(type)||!response.body)return error(503,'invalid_audio','ESV audio is temporarily unavailable.');
   const len=response.headers.get('content-length');
-  if(len&&(!/^\d+$/.test(len)||Number(len)>75*1024*1024))return error(502,'invalid_audio','ESV audio is temporarily unavailable.');
+  if(len&&(!/^\d+$/.test(len)||Number(len)>75*1024*1024))return error(503,'invalid_audio','ESV audio is temporarily unavailable.');
   const headers=new Headers({'Content-Type':'audio/mpeg','Cache-Control':'private, no-store','X-Content-Type-Options':'nosniff','Cross-Origin-Resource-Policy':'same-origin','Content-Disposition':'inline'});
-  // Never reuse the upstream Content-Length on a re-encoded edge stream. This can trigger an edge 502.
+  // Cloudflare calculates stream length. Do not propagate publisher Content-Length.
   for(const name of ['content-range','accept-ranges']){const value=response.headers.get(name);if(value)headers.set(name,value);}
   return new Response(response.body,{status:response.status,headers});
- }catch{return error(502,'upstream_unavailable','ESV audio is temporarily unavailable. Please try again.');}
+ }catch{return error(503,'upstream_unavailable','ESV audio is temporarily unavailable. Please try again.');}
 }
