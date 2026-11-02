@@ -8,7 +8,9 @@ const MAX_PUBLISHER_BYTES=1024*1024;
  * No MP3 is downloaded, generated from user-controlled URLs or stored by Scripture Trails.
  */
 export function audioUrlFromMetadata(payload,reference){
- const canonical=parseRef(payload?.canonical);
+ // Crossway formats canonical verse ranges with a Unicode range separator.
+ // Normalise formatting only; numeric book/chapter/verse validation stays strict.
+ const canonical=parseRef(typeof payload?.canonical==='string'?payload.canonical.replace(/\u2013/g,'-'):null);
  if(!canonical||canonical.formatted!==reference.formatted)return null;
  const ranges=payload?.parsed;
  if(!Array.isArray(ranges)||ranges.length!==1||!Array.isArray(ranges[0])||ranges[0].length!==2)return null;
