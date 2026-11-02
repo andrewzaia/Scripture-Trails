@@ -21,7 +21,7 @@ const isMp3=bytes=>(bytes[0]===73&&bytes[1]===68&&bytes[2]===51)||(bytes[0]===25
 async function fetchLive(fetcher,url,options){
  return fetcher(url,{redirect:'error',cache:'no-store',signal:AbortSignal.timeout(20000),...options});
 }
-export async function checkLiveAudio({fetcher=fetch,origin=DEFAULT_ORIGIN,expectedVersion=null,waitForDeployment=false,sleep=pause,waitLimitMs=150000}={}){
+export async function checkLiveAudio({fetcher=fetch,origin=DEFAULT_ORIGIN,expectedVersion=null,waitForDeployment=false,sleep=pause,waitLimitMs=150000,verifyRemoteMedia=false}={}){
  const base=validateOrigin(origin);
  if(expectedVersion&&!/^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)$/.test(expectedVersion))throw Error('Invalid expected release version');
  if(waitForDeployment&&!expectedVersion)throw Error('A release version is required to await deployment');
@@ -46,9 +46,12 @@ export async function checkLiveAudio({fetcher=fetch,origin=DEFAULT_ORIGIN,expect
  if([301,302,303,307,308].includes(response.status)){
   const location=validatedAudioDestination(response.headers.get('location'));
   if(!location)throw Error('Publisher redirect did not point to an approved MP3 host');
-  // Fetch only the first bytes from the official media host, without a publisher token or cookies.
-  media=await fetchLive(fetcher,new URL(location),{headers:{Range:'bytes=0-1023',Accept:'audio/mpeg'},redirect:'error'});
+  // Some CI networks cannot reach Crossway's CDN. Always prove that the website
+  // returns an approved non-cached destination; verify actual bytes only from
+  // an environment with independently established CDN connectivity.
+  media=verifyRemoteMedia?await fetchLive(fetcher,new URL(location),{headers:{Range:'bytes=0-1023',Accept:'audio/mpeg'},redirect:'error'}):null;
  }
+ if(media){
  if(media.status!==200&&media.status!==206){
   const body=await media.json().catch(()=>({}));
   const code=typeof body?.code==='string'&&/^[a-z_]{1,50}$/.test(body.code)?body.code:'unknown';
@@ -72,17 +75,20 @@ export async function checkLiveAudio({fetcher=fetch,origin=DEFAULT_ORIGIN,expect
   }
  }finally{await reader.cancel().catch(()=>{});}
  if(first.length<2||!isMp3(first))throw Error('Live ESV audio did not begin with an MP3 header');
+ }
  const rejected=new URL('/api/audio',base);rejected.searchParams.set('q',AUDIO_REFERENCE);rejected.searchParams.set('translation','NIV');
  const wrong=await fetchLive(fetcher,rejected,{headers:{Accept:'application/json'}});
  if(wrong.status!==400)throw Error('Non-ESV audio restriction failed: HTTP '+wrong.status);
  const denial=await wrong.json().catch(()=>({}));
  if(denial.code!=='esv_only')throw Error('Non-ESV audio restriction returned an unexpected result');
- return {reference:AUDIO_REFERENCE,audioStatus:media.status,routeStatus:response.status,nonEsvStatus:wrong.status,version:expectedVersion||null};
+ return {reference:AUDIO_REFERENCE,audioStatus:media?.status??null,routeStatus:response.status,nonEsvStatus:wrong.status,version:expectedVersion||null,mediaBytesVerified:Boolean(media)};
 }
 if(process.argv[1]&&resolve(process.argv[1])===fileURLToPath(import.meta.url)){
  try{
   const expectedVersion=process.env.SCRIPTURE_TRAILS_EXPECTED_VERSION||null;
-  const result=await checkLiveAudio({expectedVersion,waitForDeployment:Boolean(expectedVersion)});
-  console.log('Production ESV audio verified: valid MP3 header, no-store, ESV-only routing'+(result.version?', v'+result.version:'')+'. No recording retained or logged.');
+  const result=await checkLiveAudio({expectedVersion,waitForDeployment:Boolean(expectedVersion),verifyRemoteMedia:process.env.SCRIPTURE_TRAILS_VERIFY_MEDIA==='1'});
+  console.log(result.mediaBytesVerified?
+   'Production ESV MP3 bytes verified: valid audio header, secure routing, ESV-only access'+(result.version?', v'+result.version:'')+'. No recording retained.':
+   'Production ESV audio route verified: approved MP3 destination, no-store, ESV-only access'+(result.version?', v'+result.version:'')+'. CDN bytes require independent browser playback verification.');
  }catch(error){console.error('Production ESV audio FAILED: '+error.message);process.exitCode=1;}
 }

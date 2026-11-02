@@ -57,7 +57,7 @@ test('Crossway redirect is verified from the actual official media host without 
   if(url.searchParams.get('translation')==='NIV')return Response.json({code:'esv_only'},{status:400});
   return new Response('Unexpected', {status:500});
  };
- const result=await checkLiveAudio({fetcher});
+ const result=await checkLiveAudio({fetcher,verifyRemoteMedia:true});
  assert.equal(result.routeStatus,302);
  assert.equal(result.audioStatus,206);
  assert.equal(calls.length,3);
@@ -70,4 +70,27 @@ test('untrusted redirects are rejected before visiting the media host',async()=>
  const fetcher=async(url)=>{calls.push(url.href);return new Response(null,{status:302,headers:{Location:'https://evil.example/hw/43011035-43011035.mp3','Cache-Control':'private, no-store'}});};
  await assert.rejects(checkLiveAudio({fetcher}),/approved MP3 host/);
  assert.equal(calls.length,1);
+});
+
+test('default production check validates official streaming redirect without depending on GitHub CDN egress',async()=>{
+ const link='https://audio.esv.org/hw/43011035-43011035.mp3',calls=[];
+ const fetcher=async(url)=>{
+  calls.push(url.href);
+  if(url.pathname==='/api/audio'&&url.searchParams.get('translation')==='NIV')return Response.json({code:'esv_only'},{status:400});
+  if(url.pathname==='/api/audio')return new Response(null,{status:302,headers:{Location:link,'Cache-Control':'private, no-store'}});
+  throw Error('GitHub runner must not fetch audio.esv.org in the routine production gate');
+ };
+ const result=await checkLiveAudio({fetcher});
+ assert.equal(result.routeStatus,302);
+ assert.equal(result.mediaBytesVerified,false);
+ assert.equal(result.audioStatus,null);
+ assert.equal(result.nonEsvStatus,400);
+ assert.equal(calls.length,2);
+});
+test('explicit CDN byte-level check fails rather than claiming success if the media host cannot be reached',async()=>{
+ const fetcher=async(url)=>{
+  if(url.hostname==='audio.esv.org')throw Error('CDN blocked in test runner');
+  return new Response(null,{status:302,headers:{Location:'https://audio.esv.org/hw/43011035-43011035.mp3','Cache-Control':'private, no-store'}});
+ };
+ await assert.rejects(checkLiveAudio({fetcher,verifyRemoteMedia:true}),/CDN blocked/);
 });
