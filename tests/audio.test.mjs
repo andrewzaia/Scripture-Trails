@@ -33,6 +33,20 @@ test('exact Crossway metadata safely resolves a verse, range and complete chapte
   assert.equal(calls[0].options.redirect,'manual');
  }
 });
+
+test('real Crossway canonical range separator is normalised without relaxing verse validation',async()=>{
+ const canonical='John 3:16\u201318',query='John 3:16-18',parsed=[[43003016,43003018]];
+ const url='https://audio.esv.org/hw/43003016-43003018.mp3';
+ assert.equal(audioUrlFromMetadata({canonical,parsed},parseRef(query)),url);
+ await withFetch(async()=>metadata(canonical,parsed),async()=>{
+  const response=await onRequestGet({request:request(query),env:{ESV_API_KEY:'secret'}});
+  assert.equal(response.status,302);
+  assert.equal(response.headers.get('location'),url);
+ });
+ assert.equal(audioUrlFromMetadata({canonical,parsed:[[43003016,43003019]]},parseRef(query)),null);
+ assert.equal(audioUrlFromMetadata({canonical:'John 3:16\u201319',parsed},parseRef(query)),null);
+});
+
 test('metadata mismatch, ambiguous ranges, invalid book/chapter and manipulated verses are refused',async()=>{
  const q='John 11:35',ref=parseRef(q);
  for(const payload of [
