@@ -64,6 +64,34 @@ test('audio range requests are forwarded only to the official media host and con
  });
 });
 
+
+test('Crossway canonical numeric passage IDs safely recover audio when the HTML link is omitted',async()=>{
+ const requested=[];
+ await mockedFetch(async(url,options)=>{
+  requested.push({url:String(url),options});
+  if(requested.length===1)return Response.json({canonical:'John 11:35',parsed:[[43011035,43011035]],passages:['<p>Official passage reference, no audio anchor.</p>']});
+  return new Response(new Uint8Array([73,68,51]),{status:200,headers:{'Content-Type':'audio/mpeg'}});
+ },async()=>{
+  const r=await onRequestGet({request:request('John 11:35'),env:{ESV_API_KEY:'secret'}});
+  assert.equal(r.status,200);
+  assert.equal(await r.arrayBuffer().then(v=>v.byteLength),3);
+ });
+ assert.equal(requested.length,2);
+ assert.equal(requested[1].url,'https://audio.esv.org/hw/43011035-43011035.mp3');
+ assert.equal(requested[1].options.headers.Authorization,undefined);
+});
+
+test('ambiguous, malformed, multiple or forged canonical numeric ranges fail closed',async()=>{
+ for(const parsed of [null,[],[[43011035,43011035],[43011036,43011036]],[[0,43011035]],[[43011036,43011035]],[[43011035,999999999]],[[43011035,'43011035']]]){
+  let count=0;
+  await mockedFetch(async()=>{count++;return Response.json({canonical:'John 11:35',parsed,passages:['<p>Reference without audio link</p>']});},async()=>{
+   const r=await onRequestGet({request:request('John 11:35'),env:{ESV_API_KEY:'secret'}});
+   assert.equal(r.status,503,JSON.stringify(parsed));
+  });
+  assert.equal(count,1);
+ }
+});
+
 test('malicious, unsigned, ambiguous or wrong-reference audio links never reach an external media host',async()=>{
  for(const [reference,link] of [
   ['John 3:16','https://evil.example/recording.mp3'],

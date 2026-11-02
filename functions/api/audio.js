@@ -7,8 +7,18 @@ const MAX_PUBLISHER_BYTES=1024*1024;
 // Only that official media origin and expected MP3 filename format are accepted.
 function audioLink(payload,ref){
  if(parseRef(payload?.canonical)?.formatted!==ref.formatted||!Array.isArray(payload.passages)||payload.passages.length!==1||typeof payload.passages[0]!=='string')return null;
- const links=[...payload.passages[0].matchAll(/href=["'](https:\/\/audio\.esv\.org\/hw\/\d{8}-\d{8}\.mp3)["']/g)].map(x=>x[1]);
- return links.length===1?links[0]:null;
+ const markup=payload.passages[0];
+ const links=[...markup.matchAll(/href=["'](https:\/\/audio\.esv\.org\/hw\/\d{8}-\d{8}\.mp3)["']/g)].map(x=>x[1]);
+ if(links.length===1)return links[0];
+ // An unexpected publisher link must never be replaced with a guessed URL.
+ if(links.length>1||/mp3link|audio\.esv\.org|\.mp3/i.test(markup))return null;
+ // Crossway publishes the canonical start/end IDs in its parsed range metadata.
+ // Only one contiguous, validated 8-digit passage range is eligible.
+ const parsed=payload.parsed;
+ if(!Array.isArray(parsed)||parsed.length!==1||!Array.isArray(parsed[0])||parsed[0].length!==2)return null;
+ const [start,end]=parsed[0];
+ if(!Number.isInteger(start)||!Number.isInteger(end)||start<10000000||end>99999999||end<start)return null;
+ return 'https://audio.esv.org/hw/'+start+'-'+end+'.mp3';
 }
 async function boundedJson(response){
  if(!response.body)throw Error('Missing publisher body');
@@ -38,7 +48,8 @@ export async function onRequestGet({request,env}){
   source.searchParams.set('include-passage-references','true');
   source.searchParams.set('include-verse-numbers','false');
   source.searchParams.set('include-footnotes','false');
-  source.searchParams.set('include-headings','false');
+  // Preserve the passage reference heading that Crossway uses for audio links.
+  source.searchParams.set('include-headings','true');
   source.searchParams.set('include-short-copyright','false');
   const publisher=await fetch(source.href,{headers:{Authorization:'Token '+env.ESV_API_KEY,Accept:'application/json'},redirect:'manual',signal:AbortSignal.timeout(12000)});
   if(publisher.status===429)return error(429,'rate_limited','Crossway request limit reached. Please try again later.');
