@@ -46,6 +46,7 @@ export async function checkLiveAudio({fetcher=fetch,origin=DEFAULT_ORIGIN,expect
  if([301,302,303,307,308].includes(response.status)){
   const location=validatedAudioDestination(response.headers.get('location'));
   if(!location)throw Error('Publisher redirect did not point to an approved MP3 host');
+  if(location!=='https://audio.esv.org/hw/43011035-43011035.mp3')throw Error('ESV audio redirect did not match the requested test verse');
   // Some CI networks cannot reach Crossway's CDN. Always prove that the website
   // returns an approved non-cached destination; verify actual bytes only from
   // an environment with independently established CDN connectivity.
