@@ -18,7 +18,7 @@ test('live MP3 check verifies bytes and no-store without revealing credentials',
  assert.equal(calls.length,3);
  assert.equal(new URL(calls[1].url).searchParams.get('q'),'John 11:35');
  assert.equal(calls[1].opts.headers.Range,'bytes=0-1023');
- assert.equal(calls[1].opts.redirect,'error');
+ assert.equal(calls[1].opts.redirect,'manual');
  assert.ok(calls.every(c=>!Object.values(c.opts.headers).some(v=>/Token|secret/.test(v))));
 });
 test('invalid MP3, wrong content type, upstream outage and open translation access all fail',async()=>{
@@ -43,4 +43,31 @@ test('a production build may await the intended live footer version',async()=>{
   return base.fetcher(url,options);
  },expectedVersion:'1.1.1',waitForDeployment:true,sleep:async()=>{}});
  assert.equal(result.version,'1.1.1');
+});
+
+test('Crossway redirect is verified from the actual official media host without sending any token',async()=>{
+ const calls=[];
+ const link='https://audio.esv.org/hw/43011035-43011035.mp3';
+ const fetcher=async(url,options)=>{
+  calls.push({url:url.toString(),options});
+  if(url.pathname==='/api/audio'&&url.searchParams.get('translation')==='NIV')return Response.json({code:'esv_only'},{status:400});
+  if(url.pathname==='/api/audio')return new Response(null,{status:302,headers:{Location:link,'Cache-Control':'private, no-store'}});
+  if(url.hostname==='audio.esv.org')return new Response(new Uint8Array([73,68,51,4]),{status:206,headers:{'Content-Type':'audio/mpeg','Content-Range':'bytes 0-3/900'}});
+  if(url.pathname==='/api/passage')return Response.json({canonical:'John 11:35',passages:['synthetic']});
+  if(url.searchParams.get('translation')==='NIV')return Response.json({code:'esv_only'},{status:400});
+  return new Response('Unexpected', {status:500});
+ };
+ const result=await checkLiveAudio({fetcher});
+ assert.equal(result.routeStatus,302);
+ assert.equal(result.audioStatus,206);
+ assert.equal(calls.length,3);
+ assert.equal(calls[1].url,link);
+ assert.equal(calls[1].options.headers.Range,'bytes=0-1023');
+ assert.ok(calls.every(c=>c.options.headers.Authorization===undefined));
+});
+test('untrusted redirects are rejected before visiting the media host',async()=>{
+ const calls=[];
+ const fetcher=async(url)=>{calls.push(url.href);return new Response(null,{status:302,headers:{Location:'https://evil.example/hw/43011035-43011035.mp3','Cache-Control':'private, no-store'}});};
+ await assert.rejects(checkLiveAudio({fetcher}),/approved MP3 host/);
+ assert.equal(calls.length,1);
 });

@@ -1,6 +1,16 @@
 {
   "releases": [
     {
+      "version": "1.1.3",
+      "date": "2026-11-03",
+      "title": "Reliable official ESV audio playback",
+      "changes": [
+        "Play the official ESV audio recording using Crossway's documented MP3 service, without storing recordings on Scripture Trails.",
+        "Safely allow playback from Crossway's audio server while keeping the ESV API credential private and restricting audio to ESV.",
+        "Expand automated live audio verification to validate approved streaming destinations and genuine MP3 data."
+      ]
+    },
+    {
       "version": "1.1.2",
       "date": "2026-11-02",
       "title": "Resolve ESV audio from canonical passage IDs",
