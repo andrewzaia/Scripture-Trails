@@ -15,8 +15,9 @@ export function audioUrlFromMetadata(payload,reference){
  const ranges=payload?.parsed;
  if(!Array.isArray(ranges)||ranges.length!==1||!Array.isArray(ranges[0])||ranges[0].length!==2)return null;
  const [start,end]=ranges[0];
- if(!Number.isInteger(start)||!Number.isInteger(end)||start<10000000||end>99999999||start>end)return null;
- const s=String(start),e=String(end);
+ if(!Number.isInteger(start)||!Number.isInteger(end)||start<=0||end>99999999||start>end)return null;
+ // JSON numbers drop the leading zero for books 1 to 9.
+ const s=String(start).padStart(8,'0'),e=String(end).padStart(8,'0');
  const from={book:Number(s.slice(0,2)),chapter:Number(s.slice(2,5)),verse:Number(s.slice(5))};
  const to={book:Number(e.slice(0,2)),chapter:Number(e.slice(2,5)),verse:Number(e.slice(5))};
  const expectedBook=reference.book.index+1,expectedChapter=reference.chapter;

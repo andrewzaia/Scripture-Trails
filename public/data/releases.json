@@ -9,7 +9,8 @@
         "Keep full MP3 verification available separately from infrastructure checks when external audio servers are inaccessible from automated test runners.",
         "Preserve accessible playback controls, strict media security protections and the existing Scripture reader experience.",
         "Prefer Crossway's documented passage-audio endpoint and its official MP3 redirect, retaining verified passage metadata only as a fallback when the audio endpoint is temporarily unavailable.",
-        "Correct ESV verse-range playback when Crossway returns a typographic separator, while verifying the exact book, chapter and verse boundaries."
+        "Correct ESV verse-range playback when Crossway returns a typographic separator, while verifying the exact book, chapter and verse boundaries.",
+        "Support official eight-digit audio verse identifiers for Genesis through 1 Samuel, including the leading zeros dropped by JSON numeric metadata."
       ]
     },
     {

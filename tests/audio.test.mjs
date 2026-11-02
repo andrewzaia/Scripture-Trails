@@ -8,6 +8,8 @@ const metadata=(canonical,parsed)=>Response.json({canonical,parsed,passages:['Sy
 const redirect=url=>new Response(null,{status:302,headers:{Location:url}});
 async function withFetch(mock,run){const previous=globalThis.fetch;globalThis.fetch=mock;try{await run();}finally{globalThis.fetch=previous;}}
 const cases=[
+ {q:'Genesis 1:1',parsed:[[1001001,1001001]],url:'https://audio.esv.org/hw/01001001-01001001.mp3'},
+ {q:'Genesis 1',parsed:[[1001001,1001031]],url:'https://audio.esv.org/hw/01001001-01001031.mp3'},
  {q:'John 11:35',parsed:[[43011035,43011035]],url:'https://audio.esv.org/hw/43011035-43011035.mp3'},
  {q:'John 3:16-18',parsed:[[43003016,43003018]],url:'https://audio.esv.org/hw/43003016-43003018.mp3'},
  {q:'John 3',parsed:[[43003001,43003036]],url:'https://audio.esv.org/hw/43003001-43003036.mp3'},
