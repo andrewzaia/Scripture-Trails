@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.2.0 - 05/11/2026: Scripture previews across the study library
+
+- Preview Bible references across the study library on desktop hover, keyboard focus and mobile tap, including verse ranges.
+- Retrieve official ESV text through the protected API on demand, with brief hover intent and bounded in-memory caching.
+- Keep previews limited to reference text, retain existing reading actions and provide direct reading and publisher links.
+
 ## 1.1.6 - 03/11/2026: Restore ESV audio playback for verses, ranges and chapters
 
 - Restore ESV audio through authenticated passage metadata after the documented audio endpoint proved unreliable from Cloudflare.
