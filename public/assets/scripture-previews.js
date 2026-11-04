@@ -5,7 +5,7 @@ const aliases=['Psalm','Song of Songs','Jn','Matt','Mk','Lk','Rom','Rev','Gen','
 const names=[...new Set([...BOOKS.flatMap(book=>[book.name,book.abbr]),...aliases])].sort((a,b)=>b.length-a.length);
 const bookPattern=names.map(name=>name.replace(/[|\\{}()[\]^$+*?.]/g,'\\$&').replace(/\s+/g,'\\s*')+'\\.?').join('|');
 const expression=new RegExp('(?<![A-Za-z0-9])('+bookPattern+')\\s+(\\d{1,3})(?::(\\d{1,3})(?:\\s*[-\\u2013\\u2014]\\s*(\\d{1,3}))?)?(?![\\d:])','gi');
-const MAX_PREVIEW=6,MAX_VERSES=120,MAX_ITEMS=36,TTL=180000;
+const MAX_PREVIEW=6,MAX_VERSES=120,MAX_PER_BOOK=6,MAX_ITEMS=36,TTL=180000;
 const excluded='script,style,svg,textarea,select,option,pre,code,[contenteditable],#passage-content,#atlas-preview-content,#atlas-compare,.scripture-preview,.scripture-preview-trigger,.public-release-history,.translation-rights,.site-footer';
 
 export function findScriptureReferences(text){
@@ -33,11 +33,23 @@ export function createScripturePreviews({onRead}){
  document.body.append(panel);
  const title=panel.querySelector('[data-preview-title]'),message=panel.querySelector('[data-preview-text]'),scope=panel.querySelector('[data-preview-scope]'),source=panel.querySelector('[data-preview-source]');
  const countFor=ref=>{const p=parseRef(ref);return p?.end!==null?p.end-p.verse+1:p?.verse!==null?1:MAX_PREVIEW;};
+ let countsPromise=null;
+ const getCounts=()=>countsPromise||(countsPromise=fetch('/data/verse-counts.json').then(r=>r.ok?r.json():{}).catch(()=>({})));
+ async function boundedQuery(ref){
+  const query=previewQuery(ref),p=parseRef(ref);if(!query||p.verse!==null)return query;
+  const counts=await getCounts(),last=counts?.[p.book.name]?.[p.chapter-1];
+  return Number.isInteger(last)&&last>0&&last<MAX_PREVIEW?{query:p.book.name+' '+p.chapter+':1-'+last,partial:true}:query;
+ }
  const esvUrl=ref=>'https://www.esv.org/'+encodeURIComponent(ref.replace(/\s/g,'+')).replace(/%2B/g,'+')+'/';
  function prune(){for(const [key,item] of cache)if(item.expiry<=Date.now()){cachedVerses-=item.count;cache.delete(key);}}
  function store(key,passages,count){
   if(!Array.isArray(passages)||!passages.length||passages.some(x=>typeof x!=='string'||!x.trim())||count>MAX_VERSES)return;
   prune();if(cache.has(key)){cachedVerses-=cache.get(key).count;cache.delete(key);}
+  const book=parseRef(key)?.book.name;
+  let bookEntries=[...cache].filter(([ref])=>parseRef(ref)?.book.name===book);
+  while(bookEntries.reduce((n,[,value])=>n+value.count,0)+count>MAX_PER_BOOK){
+   const [old]=bookEntries.shift()||[];if(!old)return;cachedVerses-=cache.get(old).count;cache.delete(old);
+  }
   while(cache.size>=MAX_ITEMS||cachedVerses+count>MAX_VERSES){const first=cache.keys().next().value;if(!first)break;cachedVerses-=cache.get(first).count;cache.delete(first);}
   cache.set(key,{passages,count,expiry:Date.now()+TTL});cachedVerses+=count;
  }
@@ -74,9 +86,10 @@ export function createScripturePreviews({onRead}){
   inflight.set(key,task);try{return await task;}finally{inflight.delete(key);}
  }
  function open(trigger,immediate=false){
-  hide();const ref=trigger.dataset.scripturePreview,query=previewQuery(ref);if(!query)return;
+  hide();const ref=trigger.dataset.scripturePreview;if(!previewQuery(ref))return;
   const token={trigger,anchor:trigger,ref};active=token;title.textContent=ref;source.href=esvUrl(ref);scope.hidden=true;message.textContent='Loading ESV passage...';
   const start=async()=>{if(active!==token)return;position(trigger);try{
+   const query=await boundedQuery(ref);if(active!==token)return;
    const passages=await get(query.query);if(active===token)display(ref,passages);
   }catch(error){if(active===token){message.textContent=error.name==='AbortError'?'The passage timed out. Try again.':error.message;position(trigger);}}};
   if(immediate)void start();else hoverTimer=setTimeout(start,180);
