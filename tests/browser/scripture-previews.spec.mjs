@@ -8,7 +8,8 @@ test('ESV reference preview appears only after interacting with its citation and
   await route.fulfill({json:{canonical:q,passages:['<p>Synthetic ESV preview for '+q+'.</p>']}});
  });
  await open(page,'discover','John 3:16');
- const reference=page.locator('.hero-examples [data-open="Genesis 1:1"] .scripture-preview-trigger');
+ if(isMobile)await page.evaluate(()=>{const el=document.createElement('p');el.id='preview-tap-test';el.textContent='See Genesis 1:1 for context.';document.querySelector('#view-discover .content-wrap').prepend(el);});
+ const reference=isMobile?page.locator('#preview-tap-test .scripture-preview-trigger'):page.locator('.hero-examples [data-open="Genesis 1:1"] .scripture-preview-trigger');
  await expect(reference).toBeVisible();
  await expect(reference).toHaveAttribute('data-scripture-preview','Genesis 1:1');
  await expect(page.locator('.scripture-preview')).toBeHidden();
@@ -29,7 +30,8 @@ test('reopening the same citation reuses the in-memory ESV result',async({page,i
   await route.fulfill({json:{passages:['<p>Temporary synthetic test passage.</p>']}});
  });
  await open(page,'discover');
- const reference=page.locator('.hero-examples [data-open="Psalm 23:1"] .scripture-preview-trigger');
+ if(isMobile)await page.evaluate(()=>{const el=document.createElement('p');el.id='preview-tap-cache';el.textContent='Read Psalm 23:1 this week.';document.querySelector('#view-discover .content-wrap').prepend(el);});
+ const reference=isMobile?page.locator('#preview-tap-cache .scripture-preview-trigger'):page.locator('.hero-examples [data-open="Psalm 23:1"] .scripture-preview-trigger');
  await expect(reference).toBeVisible();
  if(isMobile)await reference.tap();else await reference.hover();
  await expect(page.locator('[data-preview-text]')).toContainText('Temporary synthetic test passage.');
@@ -58,4 +60,12 @@ test('long citations preview only a short passage and keep full reading target',
  expect(references).toEqual(['Romans 8:28-33']);
  await page.locator('[data-preview-read]').click();
  await expect(page.locator('#reader-title')).toHaveText('Romans 8:28-39');
+});
+
+test('existing Scripture shortcut buttons retain single-tap navigation on mobile',async({page,isMobile})=>{
+ test.skip(!isMobile,'Mobile navigation regression only');
+ await open(page,'discover');
+ await page.locator('.hero-examples [data-open="Genesis 1:1"] .scripture-preview-trigger').tap();
+ await expect(page.locator('#view-reader')).toBeVisible();
+ await expect(page.locator('#reader-title')).toHaveText('Genesis 1:1');
 });
