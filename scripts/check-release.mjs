@@ -17,6 +17,7 @@ for(const name of ['app.js','style.css','entity-index.css','paul-map.css','hebre
 const app=readFileSync('public/assets/app.js','utf8'),index=readFileSync('public/assets/entity-index.js','utf8');
 if(!app.includes('entity-index.js?v='+pkg.version))throw new Error('Index module cache key must match version');
 if(!app.includes('reader-audio.js?v='+pkg.version))throw new Error('ESV audio controller cache key must match version');
+if(!app.includes('scripture-previews.js?v='+pkg.version))throw new Error('Scripture hover preview cache key must match version');
 if(!app.includes('graph.js?v='+pkg.version))throw new Error('Atlas renderer cache key must match version');
 if(!readFileSync('public/assets/graph.js','utf8').includes('atlas-shortest-path.js?v='+pkg.version))throw new Error('Atlas shortest path module cache key must match version');
 if(!index.includes('entity-index-data.js?v='+pkg.version)||!index.includes("ENTITY_INDEX_DATA_VERSION='"+pkg.version+"'"))throw new Error('Index module and JSON cache keys must match version');
