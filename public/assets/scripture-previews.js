@@ -110,7 +110,7 @@ export function createScripturePreviews({onRead}){
  main.addEventListener('focusout',event=>{if(!panel.contains(event.relatedTarget))hideSoon();});
  main.addEventListener('click',event=>{
   const trigger=triggerAt(event);if(!trigger)return;
-  if(matchMedia('(hover: none)').matches){event.preventDefault();event.stopPropagation();open(trigger,true);}
+  if(matchMedia('(hover: none)').matches&&!trigger.closest('a,button,[role=button]')){event.preventDefault();event.stopPropagation();open(trigger,true);}
   else if(!trigger.closest('a,button,[role=button]')){event.preventDefault();onRead(trigger.dataset.scripturePreview);hide();}
  },true);
  main.addEventListener('keydown',event=>{
