@@ -345,3 +345,20 @@ body.light .analytics-consent{background:#fffdf8;color:#243b42;box-shadow:0 10px
 .reader-audio-status:empty{display:none}
 .reader-audio-status:not(:empty){padding:9px 24px;border-bottom:1px solid var(--line)}
 @media(max-width:760px){.reader-audio-status:not(:empty){padding:9px 20px}}
+
+
+/* API-backed Scripture previews; trigger only on reference text. */
+.scripture-preview-trigger{border-bottom:1px dotted currentColor;cursor:help;text-underline-offset:3px}
+.scripture-preview-trigger:hover,.scripture-preview-trigger:focus-visible{color:#c49c63}
+.scripture-preview-trigger:focus-visible{outline:2px solid currentColor;outline-offset:3px}
+.scripture-preview[hidden]{display:none!important}
+.scripture-preview{position:fixed;z-index:1200;box-sizing:border-box;width:min(370px,calc(100vw - 24px));max-height:min(65vh,520px);overflow:auto;padding:17px 18px 13px;border:1px solid #9c8060;border-radius:12px;background:#182931;color:#f5f0e8;box-shadow:0 18px 48px #0006;font-size:14px;line-height:1.55}
+.scripture-preview-heading{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.scripture-preview-heading strong{font-size:15px}.scripture-preview-heading span{font-size:11px;font-weight:700;letter-spacing:.1em;color:#e1ba7a}
+.scripture-preview [data-preview-text]{margin:12px 0 8px;overflow-wrap:anywhere}
+.scripture-preview [data-preview-scope]{font-size:12px;opacity:.85}
+.scripture-preview-actions{display:flex;align-items:center;flex-wrap:wrap;gap:10px;margin:12px 0}
+.scripture-preview-actions button,.scripture-preview-actions a{font:inherit;font-size:12px;color:inherit;border:0;background:transparent;padding:4px 1px;text-decoration:underline;cursor:pointer}
+.scripture-preview-actions [data-preview-read]{background:#aa8b5733;border:1px solid #aa8b5780;border-radius:6px;padding:5px 10px;text-decoration:none;font-weight:700}
+.scripture-preview small{display:block;font-size:10px;line-height:1.4;opacity:.75}
+body.light .scripture-preview{background:#fffdf8;color:#27313a;border-color:#c7ad85;box-shadow:0 12px 35px #1c28332b}
