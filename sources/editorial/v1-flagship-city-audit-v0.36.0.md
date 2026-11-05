@@ -2,7 +2,7 @@
 
 Review date: 2026-10-31
 Prepared website release: v0.36.0
-Audit classification: AI-assisted scoped biblical-text and published-source review. Not external peer review.
+Audit classification: Scoped biblical-text and published-source review. Not external peer review.
 
 ## Scope and method
 
