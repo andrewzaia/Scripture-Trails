@@ -6,7 +6,7 @@ const names=[...new Set([...BOOKS.flatMap(book=>[book.name,book.abbr]),...aliase
 const bookPattern=names.map(name=>name.replace(/[|\\{}()[\]^$+*?.]/g,'\\$&').replace(/\s+/g,'\\s*')+'\\.?').join('|');
 const expression=new RegExp('(?<![A-Za-z0-9])('+bookPattern+')\\s+(\\d{1,3})(?::(\\d{1,3})(?:\\s*[-\\u2013\\u2014]\\s*(\\d{1,3}))?)?(?![\\d:])','gi');
 const MAX_PREVIEW=6,MAX_VERSES=120,MAX_PER_BOOK=6,MAX_ITEMS=36,TTL=180000;
-const excluded='script,style,svg,textarea,select,option,pre,code,[contenteditable],#passage-content,#atlas-preview-content,#atlas-compare,.scripture-preview,.scripture-preview-trigger,.public-release-history,.translation-rights,.site-footer';
+const excluded='script,style,svg,textarea,select,option,pre,code,[contenteditable],#passage-content,#atlas-preview-content,#atlas-compare,.scripture-preview,.scripture-preview-trigger,.public-release-history,.translation-rights,.site-footer,h1,h2,h3,h4,h5,h6,summary';
 
 export function findScriptureReferences(text){
  const matches=[];expression.lastIndex=0;let match;
@@ -110,12 +110,12 @@ export function createScripturePreviews({onRead}){
  main.addEventListener('focusout',event=>{if(!panel.contains(event.relatedTarget))hideSoon();});
  main.addEventListener('click',event=>{
   const trigger=triggerAt(event);if(!trigger)return;
-  if(matchMedia('(hover: none)').matches&&!trigger.closest('a,button,[role=button]')){event.preventDefault();event.stopPropagation();open(trigger,true);}
-  else if(!trigger.closest('a,button,[role=button]')){event.preventDefault();onRead(trigger.dataset.scripturePreview);hide();}
+  if(matchMedia('(hover: none)').matches&&!trigger.parentElement.closest('a,button,[role=button]')){event.preventDefault();event.stopPropagation();open(trigger,true);}
+  else if(!trigger.parentElement.closest('a,button,[role=button]')){event.preventDefault();onRead(trigger.dataset.scripturePreview);hide();}
  },true);
  main.addEventListener('keydown',event=>{
   const trigger=triggerAt(event);
-  if(trigger&&!trigger.closest('a,button,[role=button]')&&['Enter',' '].includes(event.key)){
+  if(trigger&&!trigger.parentElement.closest('a,button,[role=button]')&&['Enter',' '].includes(event.key)){
    event.preventDefault();onRead(trigger.dataset.scripturePreview);hide();
   }
  });
@@ -142,7 +142,7 @@ export function createScripturePreviews({onRead}){
     if(match.start>from)fragment.append(document.createTextNode(node.nodeValue.slice(from,match.start)));
     const span=document.createElement('span');span.className='scripture-preview-trigger';span.dataset.scripturePreview=match.ref;
     span.textContent=node.nodeValue.slice(match.start,match.end);
-    if(!interactive){span.tabIndex=0;span.setAttribute('role','link');span.setAttribute('aria-label','Preview '+match.ref+' in ESV; press Enter to read');}
+    if(!interactive){span.tabIndex=0;span.setAttribute('role','button');span.setAttribute('aria-label','Read '+span.textContent+' in the Bible reader; hover or focus for an ESV preview');}
     fragment.append(span);from=match.end;
    }
    if(from<node.nodeValue.length)fragment.append(document.createTextNode(node.nodeValue.slice(from)));
