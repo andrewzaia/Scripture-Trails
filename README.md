@@ -259,7 +259,7 @@ These studies contextualise the material remains; none should be cited as indepe
 
 ## Gospel and place evidence audit - initial release (26 October 2026)
 
-The 79 Gospel and Acts episodes and 35 mapped place dossiers now include **initial, AI-assisted editorial screening** metadata. This is not a completed archaeological monograph, direct independent Bible translation verification of every event, or external expert peer review. No invented time, route or geolocation is implied by a timeline or schematic point.
+The 79 Gospel and Acts episodes and 35 mapped place dossiers now include **initial editorial source screening** metadata, with published study content reviewed and accepted by the project owner. This is not a completed archaeological monograph, direct independent Bible translation verification of every event, or external expert peer review. No invented time, route or geolocation is implied by a timeline or schematic point.
 
 - `public/data/jesus-audit.json` records the methodology, **9 specific editorial corrections**, **18 known interpretative/source issues**, source-page checks and the distinctions between `open`, `qualified` and `corrected` issues. These are all displayed in the journey map's evidence register.
 - `public/data/jesus-journeys.json` retains primary Gospel or Acts citations and adds screening statuses to every event. `screened` means no specific issue has been flagged in this first pass; it is not a statement of historical proof. `qualified` and `needs-further-review` disclose unresolved problems.
