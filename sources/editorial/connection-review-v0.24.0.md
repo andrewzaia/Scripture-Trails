@@ -1,6 +1,6 @@
 # Connection review follow-up - 28 October 2026
 
-This is an AI-assisted editorial source check, not independent specialist signoff. The authoritative record is `public/data/citation-review.json`; its generated browser copy must match byte-for-byte data after parsing. Each record identifies the selected passages, claim-level source, locator, access scope and retained limitation.
+This is an Scoped editorial source check, not independent specialist signoff. The authoritative record is `public/data/citation-review.json`; its generated browser copy must match byte-for-byte data after parsing. Each record identifies the selected passages, claim-level source, locator, access scope and retained limitation.
 
 ## Declared scope and disposition
 
