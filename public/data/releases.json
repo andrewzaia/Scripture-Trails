@@ -2,7 +2,7 @@
   "releases": [
     {
       "version": "1.2.0",
-      "date": "2026-11-05",
+      "date": "2026-11-06",
       "title": "Scripture previews across the study library",
       "changes": [
         "Preview Bible references across the study library on desktop hover, keyboard focus and mobile tap, including verse ranges.",
