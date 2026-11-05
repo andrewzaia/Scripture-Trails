@@ -1,5 +1,5 @@
 import {execFileSync} from 'node:child_process';
-import {mkdtempSync,readFileSync} from 'node:fs';
+import {mkdtempSync,readFileSync,writeFileSync} from 'node:fs';
 import {tmpdir} from 'node:os';
 import {join} from 'node:path';
 import {nextVersion} from './versioning.mjs';
@@ -25,6 +25,20 @@ if(release.version!==pkg.version)throw Error('Top release does not match package
 const dir=mkdtempSync(join(tmpdir(),'scripture-trails-release-'));
 try{
  execFileSync('git',['worktree','add','--detach',dir,base],{encoding:'utf8'});
+ // Recreate the proposed HTML at the previous version. Releases can also
+ // edit visible page copy, not just the version footer and asset cache keys.
+ // Running the official release command must still regenerate an exact match.
+ let preReleaseHtml=readFileSync('public/index.html','utf8');
+ const oldFoot='id="site-version" class="site-version" aria-label="Website version">v'+pkg.version+'</span>';
+ const baseFoot='id="site-version" class="site-version" aria-label="Website version">v'+original.version+'</span>';
+ if(!preReleaseHtml.includes(oldFoot))throw Error('Proposed footer version missing.');
+ preReleaseHtml=preReleaseHtml.replace(oldFoot,baseFoot);
+ for(const name of ['app.js','analytics.js','city-studies.css','style.css','entity-index.css','paul-map.css','hebrew-geography.css','roadmap.css']){
+  const current='/assets/'+name+'?v='+pkg.version;
+  if(!preReleaseHtml.includes(current))throw Error('Missing proposed versioned HTML asset '+name);
+  preReleaseHtml=preReleaseHtml.replace(current,'/assets/'+name+'?v='+original.version);
+ }
+ writeFileSync(join(dir,'public/index.html'),preReleaseHtml);
  const result=execFileSync('npm',['run','release','--',level,release.title,...release.changes],{cwd:dir,encoding:'utf8'});
  process.stdout.write(result);
  const files=['package.json','package-lock.json','public/index.html','public/data/releases.json','CHANGELOG.md'];
