@@ -6,7 +6,7 @@ The library expands from eight to twenty trails: the original forty verse anchor
 
 ## Method and limitations
 
-New summaries are short, original paraphrases of what the selected narrative presents. AI-assisted textual checks consulted selected primary chapter views and passage results from Bible Gateway and USCCB. This is not an independent human review or a verse-by-verse source-critical audit. USCCB's displayed translation and verse divisions can differ from the reader editions; application references are checked against the site's canonical navigation metadata. No USCCB translation is added to the app. Live reading continues through the existing authorised publisher APIs.
+New summaries are short, original paraphrases of what the selected narrative presents. Editorial textual checks consulted selected primary chapter views and passage results from Bible Gateway and USCCB. This is not an independently commissioned external review or a verse-by-verse source-critical audit. The project owner has separately reviewed and accepted the published study content. USCCB's displayed translation and verse divisions can differ from the reader editions; application references are checked against the site's canonical navigation metadata. No USCCB translation is added to the app. Live reading continues through the existing authorised publisher APIs.
 
 The original eight trails retain their verse references and notes. All twenty now expose the same explicit source and review labels. Automated checks validate profile identity, canonical reference boundaries, unique stages, request-size limits and metadata; they cannot establish historical accuracy or theological interpretation.
 
