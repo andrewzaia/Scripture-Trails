@@ -2,7 +2,7 @@
 
 Audit date: 2026-10-31
 Prepared website release: v0.37.0
-Scope: 20 Scripture person trails and six guided journals. AI-assisted biblical-text editorial assessment, not independent specialist signoff.
+Scope: 20 Scripture person trails and six guided journals. Biblical-text editorial assessment, not independent specialist signoff.
 
 ## Inventory reviewed
 
