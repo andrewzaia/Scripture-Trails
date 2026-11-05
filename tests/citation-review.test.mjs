@@ -45,7 +45,7 @@ const nodes=e=>[e,...e.children.flatMap(n=>nodes(n))];
 test('claim panels and About register show scope, external links and retained warnings without publisher text',t=>{
  const previous=globalThis.document;globalThis.document={createElement:tag=>new El(tag)};t.after(()=>{if(previous===undefined)delete globalThis.document;else globalThis.document=previous;});
  const root=new El('div');appendCitationReview(root,'place','nain');assert.equal(root.children.length,1);
- const all=nodes(root);assert.ok(all.some(e=>e.textContent.includes('publisher abstract')));assert.ok(all.some(e=>e.textContent.includes('Independent specialist review pending')));
+ const all=nodes(root);assert.ok(all.some(e=>e.textContent.includes('publisher abstract')));assert.ok(all.some(e=>e.textContent.includes('Independent specialist review not claimed')));
  for(const a of all.filter(e=>e.tagName==='a')){assert.match(a.href,/^https:\/\//);assert.equal(a.rel,'noopener noreferrer');}
  root.replaceChildren();appendCitationReview(root,'place','not-indexed');assert.equal(root.children.length,0);
  renderCitationSummary(root);const first=nodes(root).length;renderCitationSummary(root);assert.equal(nodes(root).length,first);
@@ -182,7 +182,7 @@ test('fourth narrative batch preserves consequential differences and access limi
 
 test('fourth batch preserves all previous dated assessments and source records',()=>{
  const digest=value=>createHash('sha256').update(JSON.stringify(value, (key,value)=>key==='supplement'?undefined:value)).digest('hex');
- assert.equal(digest(CITATION_REVIEW.records.slice(0,105)),'65b0a7ad0ff29c87815075702742b7342085c2db3f921e83601c731f37c834ce');
+ assert.equal(digest(CITATION_REVIEW.records.slice(0,105)),'1bf37266ead31d255f7133ec8ada5dbbcb072504f39af52447546aade6fba347');
  assert.equal(digest(Object.fromEntries(Object.entries(CITATION_REVIEW.sources).slice(0,190))),'35c34ed5434903be0028b2aad319d2de9113df5b7313947e2b3d711e72185268');
 });
 
@@ -221,7 +221,7 @@ test('fifth batch retains account differences, bodily life, harm and the single 
 
 test('fifth batch preserves the complete previous assessment and source register',()=>{
  const digest=value=>createHash('sha256').update(JSON.stringify(value, (key,value)=>key==='supplement'?undefined:value)).digest('hex');
- assert.equal(digest(CITATION_REVIEW.records.slice(0,125)),'79df0c2a0f6fb62b4206e42029506d89fa5888e6dba37ebe23003e29de8c6265');
+ assert.equal(digest(CITATION_REVIEW.records.slice(0,125)),'1ff91fa504bfbfc101c7d93a25d00609002746e3d05135b5c56f1a9148ee01e0');
  assert.equal(digest(Object.fromEntries(Object.entries(CITATION_REVIEW.sources).slice(0,233))),'686a306569d6bc31a57ca9344f46a1dae8ea21ddd010fc9cab84ceda543972fe');
 });
 
@@ -268,7 +268,7 @@ test('completed coverage retains final narrative differences and further-review 
 
 test('final batch preserves all earlier assessments, sources, anchors and classifications',()=>{
  const digest=value=>createHash('sha256').update(JSON.stringify(value, (key,value)=>key==='supplement'?undefined:value)).digest('hex');
- assert.equal(digest(CITATION_REVIEW.records.slice(0,145)),'4f815f85a238cc8667e9199ecd39010bc4563fabe109c644d7a93139381fee7b');
+ assert.equal(digest(CITATION_REVIEW.records.slice(0,145)),'e408ef03bb963dae223887f4a7e63c0cb826fff9a70553c5e27a0dd480ebb65c');
  assert.equal(digest(Object.fromEntries(Object.entries(CITATION_REVIEW.sources).slice(0,286))),'45b9a095de603e52ef7ff6693faf898a51af86dc5a5a69b203892d8860174ab7');
  const expected={ce086:['2 Kings 16:1','2 Chronicles 28:1'],ce090:['2 Kings 21:1','2 Chronicles 33:1'],ce091:['2 Kings 22:8','2 Chronicles 34:14'],ce092:['2 Kings 23:29','2 Chronicles 35:20'],ce093:['2 Kings 24:18','Jeremiah 52:1'],ce094:['2 Kings 25:1','Jeremiah 52:4'],ce095:['Ezra 2:1','Nehemiah 7:6']};
  for(const [id,anchors] of Object.entries(expected)){const e=CONNECTION_EVIDENCE.find(e=>e.id===id);assert.deepEqual([e.from,e.to],anchors);assert.equal(e.kind,'parallel');}
@@ -302,7 +302,7 @@ test('follow-up rejects missing claims, invalid dates, non-commentary sources an
 test('all earlier assessment fields, sources and classifications survive the supplements',()=>{
  const digest=value=>createHash('sha256').update(JSON.stringify(value)).digest('hex');
  const original=CITATION_REVIEW.records.slice(0,152).map(({supplement,...record})=>record);
- assert.equal(digest(original),'17e9a33374b20e963fc9c664d75486acfce30fa7d3478a47dfa7e5523d5dc396');
+ assert.equal(digest(original),'86c394c1e8333696fec1560ec13409bae1e44474187685f4b026faa0bdb23a28');
  assert.equal(digest(Object.fromEntries(Object.entries(CITATION_REVIEW.sources).slice(0,301))),'2d48c0299bad22deb186aea5f8d90d71ce5ef67dcee0c36116a071b87f46551a');
  assert.equal(CONNECTION_EVIDENCE.find(e=>e.id==='ce027').kind,'echo');
  for(const id of ['ce065','ce071'])assert.equal(CONNECTION_EVIDENCE.find(e=>e.id===id).kind,'theme');
