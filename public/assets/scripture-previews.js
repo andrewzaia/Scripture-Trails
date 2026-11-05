@@ -142,7 +142,7 @@ export function createScripturePreviews({onRead}){
     if(match.start>from)fragment.append(document.createTextNode(node.nodeValue.slice(from,match.start)));
     const span=document.createElement('span');span.className='scripture-preview-trigger';span.dataset.scripturePreview=match.ref;
     span.textContent=node.nodeValue.slice(match.start,match.end);
-    if(!interactive){span.tabIndex=0;span.setAttribute('role','button');span.setAttribute('aria-label','Read '+span.textContent+' in the Bible reader; hover or focus for an ESV preview');}
+    if(!interactive){span.tabIndex=0;span.setAttribute('role','button');span.setAttribute('aria-label','Preview '+span.textContent+' in ESV; press Enter to open the passage');}
     fragment.append(span);from=match.end;
    }
    if(from<node.nodeValue.length)fragment.append(document.createTextNode(node.nodeValue.slice(from)));
