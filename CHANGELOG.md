@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.2.0 - 05/11/2026: Scripture previews across the study library
+## 1.2.0 - 06/11/2026: Scripture previews across the study library
 
 - Preview Bible references across the study library on desktop hover, keyboard focus and mobile tap, including verse ranges.
 - Retrieve official ESV text through the protected API on demand, with brief hover intent and bounded in-memory caching.
