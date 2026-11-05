@@ -2,7 +2,7 @@
   "schema": 1,
   "updated": "2026-10-31",
   "status": "declared-batch-assessed",
-  "method": "AI-assisted editorial source-level review of a declared priority batch. The Bible is the authoritative foundation; supporting historical and archaeological sources are limited to the claims and access scope recorded here. No independent specialist signoff is claimed.",
+  "method": "Editorial source-level assessment of a declared priority batch. The project owner has reviewed and accepted the published study content. The Bible is the authoritative foundation; supporting historical and archaeological sources are limited to the claims and access scope recorded here. No independent specialist signoff is claimed.",
   "scope": {
     "issues": 18,
     "places": 15,
@@ -5987,7 +5987,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-28",
       "note": "Both accounts describe Jesus' baptism, the descending Spirit and a heavenly declaration of sonship.",
-      "limitation": "Matthew includes John's objection and a righteousness dialogue; Mark does not. Compare the heavenly address rather than treating the accounts as identical transcripts. This is an AI-assisted selected-passage comparison; fuller academic literature and independent specialist review remain open.",
+      "limitation": "Matthew includes John's objection and a righteousness dialogue; Mark does not. Compare the heavenly address rather than treating the accounts as identical transcripts. This is a selected-passage comparison; fuller academic literature and independent specialist review remain open.",
       "passages": [
         "Matthew 3:13-17",
         "Mark 1:9-11"
@@ -6027,7 +6027,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-28",
       "note": "Mark and Luke connect Jesus' baptism with the Spirit and a heavenly declaration.",
-      "limitation": "Luke foregrounds prayer and places John's imprisonment notice before the baptism scene. Narrative arrangement alone does not establish a separate baptism or exact chronology. This is an AI-assisted selected-passage comparison; fuller academic literature and independent specialist review remain open.",
+      "limitation": "Luke foregrounds prayer and places John's imprisonment notice before the baptism scene. Narrative arrangement alone does not establish a separate baptism or exact chronology. This is a selected-passage comparison; fuller academic literature and independent specialist review remain open.",
       "passages": [
         "Mark 1:9-11",
         "Luke 3:19-22"
@@ -6067,7 +6067,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-28",
       "note": "Both accounts narrate wilderness testing and responses drawn from Deuteronomy.",
-      "limitation": "The temple and kingdom tests occur in different orders. Retain parallel without inventing an exact reconciled sequence. This is an AI-assisted selected-passage comparison; fuller academic literature and independent specialist review remain open.",
+      "limitation": "The temple and kingdom tests occur in different orders. Retain parallel without inventing an exact reconciled sequence. This is a selected-passage comparison; fuller academic literature and independent specialist review remain open.",
       "passages": [
         "Matthew 4:1-11",
         "Luke 4:1-13"
@@ -6107,7 +6107,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-28",
       "note": "Both accounts place the healing of Simon Peter's mother-in-law in a house, followed by evening healings.",
-      "limitation": "Mark names additional disciples and connects the visit to the synagogue; Matthew gives a shorter account. The narrative link does not supply medical or archaeological verification. This is an AI-assisted selected-passage comparison; fuller academic literature and independent specialist review remain open.",
+      "limitation": "Mark names additional disciples and connects the visit to the synagogue; Matthew gives a shorter account. The narrative link does not supply medical or archaeological verification. This is a selected-passage comparison; fuller academic literature and independent specialist review remain open.",
       "passages": [
         "Matthew 8:14-17",
         "Mark 1:29-34"
@@ -6147,7 +6147,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-28",
       "note": "Both describe a sleeping Jesus, a storm, frightened disciples and the calming of wind and water.",
-      "limitation": "Matthew places the faith question before the calming; Mark places it after. Do not flatten this order difference or infer an exact sailing route. This is an AI-assisted selected-passage comparison; fuller academic literature and independent specialist review remain open.",
+      "limitation": "Matthew places the faith question before the calming; Mark places it after. Do not flatten this order difference or infer an exact sailing route. This is a selected-passage comparison; fuller academic literature and independent specialist review remain open.",
       "passages": [
         "Matthew 8:23-27",
         "Mark 4:35-41"
@@ -6187,7 +6187,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-28",
       "note": "Both accounts relate a tax collector's call and a meal with tax collectors and sinners.",
-      "limitation": "Matthew names the collector Matthew; Mark names Levi son of Alphaeus. Parallel story structure does not independently establish that these names identify the same historical person. This is an AI-assisted selected-passage comparison; fuller academic literature and independent specialist review remain open.",
+      "limitation": "Matthew names the collector Matthew; Mark names Levi son of Alphaeus. Parallel story structure does not independently establish that these names identify the same historical person. This is a selected-passage comparison; fuller academic literature and independent specialist review remain open.",
       "passages": [
         "Matthew 9:9-13",
         "Mark 2:13-17"
@@ -6227,7 +6227,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-28",
       "note": "Both accounts describe five loaves, two fish, a large crowd and twelve baskets after the feeding.",
-      "limitation": "Mark begins with the apostles' return; Matthew connects the withdrawal with news about John. Read each narrative setting; the parallel does not fix the exact location. This is an AI-assisted selected-passage comparison; fuller academic literature and independent specialist review remain open.",
+      "limitation": "Mark begins with the apostles' return; Matthew connects the withdrawal with news about John. Read each narrative setting; the parallel does not fix the exact location. This is a selected-passage comparison; fuller academic literature and independent specialist review remain open.",
       "passages": [
         "Matthew 14:13-21",
         "Mark 6:30-44"
@@ -6267,7 +6267,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-28",
       "note": "Both place Peter's confession in the Caesarea Philippi setting and include an instruction not to tell others.",
-      "limitation": "Matthew expands the confession with teaching about Peter, the church and the keys. Mark has no equivalent speech here; this comparison does not settle later ecclesial interpretations. This is an AI-assisted selected-passage comparison; fuller academic literature and independent specialist review remain open.",
+      "limitation": "Matthew expands the confession with teaching about Peter, the church and the keys. Mark has no equivalent speech here; this comparison does not settle later ecclesial interpretations. This is a selected-passage comparison; fuller academic literature and independent specialist review remain open.",
       "passages": [
         "Matthew 16:13-20",
         "Mark 8:27-30"
@@ -6307,7 +6307,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-28",
       "note": "Both describe the mountain scene with Peter, James, John, Moses, Elijah and the voice from the cloud.",
-      "limitation": "Matthew says six days; Luke says about eight and emphasises prayer and departure at Jerusalem. No precise mountain identification or harmonised calendar is established. This is an AI-assisted selected-passage comparison; fuller academic literature and independent specialist review remain open.",
+      "limitation": "Matthew says six days; Luke says about eight and emphasises prayer and departure at Jerusalem. No precise mountain identification or harmonised calendar is established. This is a selected-passage comparison; fuller academic literature and independent specialist review remain open.",
       "passages": [
         "Matthew 17:1-9",
         "Luke 9:28-36"
@@ -6347,7 +6347,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-28",
       "note": "Both accounts show disciples resisting people bringing children and Jesus welcoming them in relation to God's kingdom.",
-      "limitation": "Luke explicitly mentions infants and adds a saying about receiving the kingdom. This parallel does not by itself settle infant-baptism disputes. This is an AI-assisted selected-passage comparison; fuller academic literature and independent specialist review remain open.",
+      "limitation": "Luke explicitly mentions infants and adds a saying about receiving the kingdom. This parallel does not by itself settle infant-baptism disputes. This is a selected-passage comparison; fuller academic literature and independent specialist review remain open.",
       "passages": [
         "Matthew 19:13-15",
         "Luke 18:15-17"
@@ -6387,7 +6387,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-28",
       "note": "Both narrate the approach to Jerusalem, disciples obtaining an animal and acclamation of Jesus.",
-      "limitation": "Matthew mentions a donkey and colt; Luke describes a colt. Retain the literary parallel without inventing riding arrangements, a precise route or a single verbatim acclamation. This is an AI-assisted selected-passage comparison; fuller academic literature and independent specialist review remain open.",
+      "limitation": "Matthew mentions a donkey and colt; Luke describes a colt. Retain the literary parallel without inventing riding arrangements, a precise route or a single verbatim acclamation. This is a selected-passage comparison; fuller academic literature and independent specialist review remain open.",
       "passages": [
         "Matthew 21:1-11",
         "Luke 19:28-40"
@@ -6427,7 +6427,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-28",
       "note": "Both describe bread, a shared cup, covenant language and a future meal in the kingdom.",
-      "limitation": "Matthew includes the forgiveness-of-sins phrase absent from Mark's wording here. Manuscript variants and sacramental interpretations require a wider review. This is an AI-assisted selected-passage comparison; fuller academic literature and independent specialist review remain open.",
+      "limitation": "Matthew includes the forgiveness-of-sins phrase absent from Mark's wording here. Manuscript variants and sacramental interpretations require a wider review. This is a selected-passage comparison; fuller academic literature and independent specialist review remain open.",
       "passages": [
         "Matthew 26:26-30",
         "Mark 14:22-26"
@@ -6467,7 +6467,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-28",
       "note": "Both name Gethsemane and relate Jesus' distress, prayer about the cup and the disciples' failure to remain awake.",
-      "limitation": "Compare repeated prayers and forms of address in each account. The named setting does not identify an exact surviving tree, cave or prayer spot. This is an AI-assisted selected-passage comparison; fuller academic literature and independent specialist review remain open.",
+      "limitation": "Compare repeated prayers and forms of address in each account. The named setting does not identify an exact surviving tree, cave or prayer spot. This is a selected-passage comparison; fuller academic literature and independent specialist review remain open.",
       "passages": [
         "Matthew 26:36-46",
         "Mark 14:32-42"
@@ -6507,7 +6507,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-28",
       "note": "Both present Joseph of Arimathea requesting Jesus' body from Pilate and placing it in a rock-cut tomb.",
-      "limitation": "Matthew calls Joseph rich and a disciple and identifies the tomb as his own; Luke stresses his council role and dissent. These accounts do not independently verify a modern tomb identification. This is an AI-assisted selected-passage comparison; fuller academic literature and independent specialist review remain open.",
+      "limitation": "Matthew calls Joseph rich and a disciple and identifies the tomb as his own; Luke stresses his council role and dissent. These accounts do not independently verify a modern tomb identification. This is a selected-passage comparison; fuller academic literature and independent specialist review remain open.",
       "passages": [
         "Matthew 27:57-61",
         "Luke 23:50-56"
@@ -6547,7 +6547,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-28",
       "note": "Both narrate women visiting the tomb, finding it empty and receiving a message about Jesus' resurrection and Galilee.",
-      "limitation": "The named women, scene details and responses differ. Keep this comparison within Mark 16:1-8; the disputed longer ending is a separate textual issue, not evidence silently supplied here. This is an AI-assisted selected-passage comparison; fuller academic literature and independent specialist review remain open.",
+      "limitation": "The named women, scene details and responses differ. Keep this comparison within Mark 16:1-8; the disputed longer ending is a separate textual issue, not evidence silently supplied here. This is a selected-passage comparison; fuller academic literature and independent specialist review remain open.",
       "passages": [
         "Matthew 28:1-10",
         "Mark 16:1-8"
@@ -6587,7 +6587,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-28",
       "note": "Luke and John link Mary Magdalene, the first-day tomb visit, an absent body and subsequent reports to disciples.",
-      "limitation": "Luke has a group of women and an immediate message; John first foregrounds Mary's uncertainty, then Peter and the other disciple. Do not infer a unified timetable from the parallel label. This is an AI-assisted selected-passage comparison; fuller academic literature and independent specialist review remain open.",
+      "limitation": "Luke has a group of women and an immediate message; John first foregrounds Mary's uncertainty, then Peter and the other disciple. Do not infer a unified timetable from the parallel label. This is a selected-passage comparison; fuller academic literature and independent specialist review remain open.",
       "passages": [
         "Luke 24:1-12",
         "John 20:1-18"
@@ -6627,7 +6627,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-28",
       "note": "Acts narrates the Damascus encounter and later retells it in Paul's defence before Agrippa.",
-      "limitation": "Acts 26 states the commission within Jesus' speech and says all fell; Acts 9 includes Ananias and describes the companions differently. These are accounts within one literary work, not independent corroborating sources. This is an AI-assisted selected-passage comparison; fuller academic literature and independent specialist review remain open.",
+      "limitation": "Acts 26 states the commission within Jesus' speech and says all fell; Acts 9 includes Ananias and describes the companions differently. These are accounts within one literary work, not independent corroborating sources. This is a selected-passage comparison; fuller academic literature and independent specialist review remain open.",
       "passages": [
         "Acts 9:1-19",
         "Acts 26:12-18"
@@ -6667,7 +6667,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-28",
       "note": "Paul's Jerusalem defence and his speech before Agrippa both recount the Damascus light and voice.",
-      "limitation": "The speeches address different audiences and distribute the commission differently. Compare Acts 9 as well; the hearing/understanding question and textual details are not resolved by this pair. This is an AI-assisted selected-passage comparison; fuller academic literature and independent specialist review remain open.",
+      "limitation": "The speeches address different audiences and distribute the commission differently. Compare Acts 9 as well; the hearing/understanding question and textual details are not resolved by this pair. This is a selected-passage comparison; fuller academic literature and independent specialist review remain open.",
       "passages": [
         "Acts 22:6-16",
         "Acts 26:12-18"
@@ -6707,7 +6707,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-28",
       "note": "Both feeding accounts include five loaves, two fish, about five thousand men and twelve baskets.",
-      "limitation": "John names Philip, Andrew and a boy and frames the scene near Passover; Mark foregrounds the disciples collectively. Shared motifs do not erase distinct purposes or establish an exact location. This is an AI-assisted selected-passage comparison; fuller academic literature and independent specialist review remain open.",
+      "limitation": "John names Philip, Andrew and a boy and frames the scene near Passover; Mark foregrounds the disciples collectively. Shared motifs do not erase distinct purposes or establish an exact location. This is a selected-passage comparison; fuller academic literature and independent specialist review remain open.",
       "passages": [
         "John 6:5-15",
         "Mark 6:35-44"
@@ -6747,7 +6747,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-28",
       "note": "Both open major teaching sections with blessings linked to God's kingdom.",
-      "limitation": "Matthew speaks of poor in spirit in a mountain setting; Luke addresses the poor on level ground and includes woes. Do not equate the wording or use the comparison to remove either passage's distinctive emphasis. This is an AI-assisted selected-passage comparison; fuller academic literature and independent specialist review remain open.",
+      "limitation": "Matthew speaks of poor in spirit in a mountain setting; Luke addresses the poor on level ground and includes woes. Do not equate the wording or use the comparison to remove either passage's distinctive emphasis. This is a selected-passage comparison; fuller academic literature and independent specialist review remain open.",
       "passages": [
         "Matthew 5:1-12",
         "Luke 6:17-26"
@@ -6787,7 +6787,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-29",
       "note": "Genesis opens with God creating heaven and earth; Revelation envisions a renewed world and God dwelling with humanity. Brian J. Tabb points to Isaiah 65:17 as Revelation 21:1's more immediate scriptural background.",
-      "limitation": "Keep this broad creation theme distinct from a direct quotation of Genesis. The comparison does not settle how creation is renewed or supply a scientific chronology. AI-assisted selected-passage and named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "limitation": "Keep this broad creation theme distinct from a direct quotation of Genesis. The comparison does not settle how creation is renewed or supply a scientific chronology. Selected-passage and named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
       "passages": [
         "Genesis 1:1-5",
         "Revelation 21:1-5"
@@ -6819,7 +6819,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-29",
       "note": "Psalm 23 pictures the Lord guiding and sustaining the speaker; John presents Jesus as the shepherd who gives his life for the flock. Meda Stamper places John's imagery within Israel's scriptural shepherd traditions.",
-      "limitation": "This is a thematic comparison, not a verbatim quotation. Preserve the psalm's own voice and John's setting after the conflict in John 9; the shared metaphor does not make the passages interchangeable. AI-assisted selected-passage and named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "limitation": "This is a thematic comparison, not a verbatim quotation. Preserve the psalm's own voice and John's setting after the conflict in John 9; the shared metaphor does not make the passages interchangeable. Selected-passage and named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
       "passages": [
         "Psalm 23:1-6",
         "John 10:11-18"
@@ -6851,7 +6851,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-29",
       "note": "Genesis places the tree of life in Eden; Revelation places life-giving tree imagery beside the river from the throne. Brian J. Tabb also draws attention to Ezekiel 47 as background to the final vision.",
-      "limitation": "Keep the link thematic. Shared imagery does not identify the river with a modern waterway, reconstruct Eden or establish that Revelation merely repeats the garden scene. AI-assisted selected-passage and named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "limitation": "Keep the link thematic. Shared imagery does not identify the river with a modern waterway, reconstruct Eden or establish that Revelation merely repeats the garden scene. Selected-passage and named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
       "passages": [
         "Genesis 2:8-17",
         "Revelation 22:1-5"
@@ -6883,7 +6883,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-29",
       "note": "Genesis describes humanity made in God's image; Colossians identifies the Son as God's image and relates all creation to him. Alistair I. Wilson discusses the Genesis background while distinguishing the Son's role.",
-      "limitation": "This is an interpretive thematic link, not an explicit quotation. Do not collapse humanity's calling into the Son's identity; the meaning of firstborn and wider Christological debates need fuller treatment. AI-assisted selected-passage and named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "limitation": "This is an interpretive thematic link, not an explicit quotation. Do not collapse humanity's calling into the Son's identity; the meaning of firstborn and wider Christological debates need fuller treatment. Selected-passage and named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
       "passages": [
         "Genesis 1:26-28",
         "Colossians 1:15-20"
@@ -6915,7 +6915,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-29",
       "note": "The promise to Abram reaches beyond his family; Matthew commissions disciples among all nations. Terence E. Fretheim emphasises the wider reach of Genesis's blessing. Connecting that promise to Matthew is this site's Christian thematic comparison.",
-      "limitation": "Matthew does not quote Genesis 12:3 here. The pairing does not prove a deliberate literary allusion or erase the promise's particular relationship to Abram and Israel. AI-assisted selected-passage and named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "limitation": "Matthew does not quote Genesis 12:3 here. The pairing does not prove a deliberate literary allusion or erase the promise's particular relationship to Abram and Israel. Selected-passage and named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
       "passages": [
         "Genesis 12:1-3",
         "Matthew 28:16-20"
@@ -6947,7 +6947,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-29",
       "note": "The psalm's shepherd leads and restores; Ezekiel promises God's search for a scattered flock. Margaret Odell compares Psalm 23 while stressing Ezekiel's response to abusive leadership and the demands of justice.",
-      "limitation": "Shared pastoral imagery does not prove direct borrowing. Ezekiel addresses Israel's scattering and restoration; a comforting individual reading must not remove that communal and political setting. AI-assisted selected-passage and named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "limitation": "Shared pastoral imagery does not prove direct borrowing. Ezekiel addresses Israel's scattering and restoration; a comforting individual reading must not remove that communal and political setting. Selected-passage and named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
       "passages": [
         "Psalm 23:1-6",
         "Ezekiel 34:11-16"
@@ -6979,7 +6979,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-29",
       "note": "Psalm 46 confesses God's presence amid upheaval; Philippians urges a pressured community toward prayer, thanksgiving and peace. Jane Lancaster Patterson warns against reading Paul's words as a shallow assurance detached from their setting.",
-      "limitation": "This is an editorial theme, not a quotation or evidence of literary dependence. Neither passage promises a life without distress or supplies a timetable for the end of a particular crisis. AI-assisted selected-passage and named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "limitation": "This is an editorial theme, not a quotation or evidence of literary dependence. Neither passage promises a life without distress or supplies a timetable for the end of a particular crisis. Selected-passage and named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
       "passages": [
         "Psalm 46:1-11",
         "Philippians 4:4-9"
@@ -7011,7 +7011,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-29",
       "note": "The psalm asks God for inner renewal; Ezekiel promises a new heart and Spirit-enabled obedience to a restored people. Safwat Marzouk explicitly compares Psalm 51:10 within his discussion of Ezekiel's renewal language.",
-      "limitation": "The prayer and communal promise are distinct literary acts. Do not treat them as identical wording or detach Ezekiel from restoration to the land and covenant obedience. Psalm numbering can differ across editions. AI-assisted selected-passage and named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "limitation": "The prayer and communal promise are distinct literary acts. Do not treat them as identical wording or detach Ezekiel from restoration to the land and covenant obedience. Psalm numbering can differ across editions. Selected-passage and named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
       "passages": [
         "Psalm 51:10-12",
         "Ezekiel 36:24-28"
@@ -7043,7 +7043,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-29",
       "note": "Isaiah depicts a royal child and a reign of justice and peace; Luke announces Jesus as Saviour, Messiah and Lord. Patricia Tull distinguishes the royal setting of Isaiah from its later Christian reception alongside Luke.",
-      "limitation": "Luke 2 does not explicitly quote Isaiah 9:6. This Christian thematic reading does not settle the original child's identity, the royal titles' syntax or differences between Hebrew and Greek traditions. AI-assisted selected-passage and named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "limitation": "Luke 2 does not explicitly quote Isaiah 9:6. This Christian thematic reading does not settle the original child's identity, the royal titles' syntax or differences between Hebrew and Greek traditions. Selected-passage and named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
       "passages": [
         "Isaiah 9:2-7",
         "Luke 2:8-14"
@@ -7075,7 +7075,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-29",
       "note": "Isaiah joins the ending of death and tears to a feast for the peoples; Revelation repeats these motifs within its new-creation vision. Brian J. Tabb identifies Isaiah 25:8 among the backgrounds to Revelation 21:4.",
-      "limitation": "Retain literary echo as an editorial classification rather than a quotation formula. Read the Zion feast and the New Jerusalem in their own settings; the link supplies no date for the vision. AI-assisted selected-passage and named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "limitation": "Retain literary echo as an editorial classification rather than a quotation formula. Read the Zion feast and the New Jerusalem in their own settings; the link supplies no date for the vision. Selected-passage and named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
       "passages": [
         "Isaiah 25:6-9",
         "Revelation 21:1-5"
@@ -7107,7 +7107,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-29",
       "note": "Isaiah answers a weary people's complaint with the Creator's sustaining strength; Psalm 46 confesses God as refuge amid upheaval. Kristin J. Wendland locates Isaiah's hope within the challenge of return and rebuilding.",
-      "limitation": "This is a broad analogy of reliance on God, not a quotation or a demonstrated literary relationship. Preserve the different settings and do not turn renewed strength into a promise of effortless circumstances. AI-assisted selected-passage and named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "limitation": "This is a broad analogy of reliance on God, not a quotation or a demonstrated literary relationship. Preserve the different settings and do not turn renewed strength into a promise of effortless circumstances. Selected-passage and named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
       "passages": [
         "Isaiah 40:27-31",
         "Psalm 46:1-11"
@@ -7139,7 +7139,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-29",
       "note": "Ezekiel promises that God will seek and tend the scattered flock; John contrasts Jesus' self-giving care with the hired hand's flight. Meda Stamper identifies Ezekiel 34 as scriptural background to John's shepherd discourse.",
-      "limitation": "Keep the thematic label without claiming a verbatim citation. Ezekiel's restoration of Israel and John's account of Jesus each retain their own claims; neither is independent historical corroboration of the other. AI-assisted selected-passage and named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "limitation": "Keep the thematic label without claiming a verbatim citation. Ezekiel's restoration of Israel and John's account of Jesus each retain their own claims; neither is independent historical corroboration of the other. Selected-passage and named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
       "passages": [
         "Ezekiel 34:11-16",
         "John 10:11-18"
@@ -7171,7 +7171,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-29",
       "note": "Matthew's Jesus rejects abolishing the Law and Prophets; Romans rejects the claim that faith nullifies the Law. Warren Carter reads Matthew's teaching as a claim about scriptural continuity and Jesus' interpretive authority.",
-      "limitation": "The link does not make the two arguments identical or settle debates over Torah observance, justification or Jewish-Christian relations. Read Romans 3:21-31 and the wider Sermon on the Mount; this is no explicit cross-citation. AI-assisted selected-passage and named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "limitation": "The link does not make the two arguments identical or settle debates over Torah observance, justification or Jewish-Christian relations. Read Romans 3:21-31 and the wider Sermon on the Mount; this is no explicit cross-citation. Selected-passage and named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
       "passages": [
         "Matthew 5:17-20",
         "Romans 3:27-31"
@@ -7203,7 +7203,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-29",
       "note": "Matthew directs disciples toward the Father's care and God's kingdom amid everyday needs; Philippians connects prayer and thanksgiving with peace. Jane Lancaster Patterson stresses the community pressures surrounding Paul's exhortation.",
-      "limitation": "This is a thematic comparison, not an identified quotation. The passages have different audiences and arguments; they must not be used to blame distressed readers or promise exemption from hardship. AI-assisted selected-passage and named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "limitation": "This is a thematic comparison, not an identified quotation. The passages have different audiences and arguments; they must not be used to blame distressed readers or promise exemption from hardship. Selected-passage and named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
       "passages": [
         "Matthew 6:25-34",
         "Philippians 4:4-9"
@@ -7235,7 +7235,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-29",
       "note": "Matthew commissions disciple-making among all nations; Acts promises the Spirit's power for witness from Jerusalem outward. Gilberto A. Ruiz highlights the widening horizon of Acts 1:8 alongside the disciples' question about Israel's restoration.",
-      "limitation": "The commissions have distinct settings and wording: Galilee in Matthew and the Jerusalem/ascension sequence in Acts. Do not construct one speech or a single timetable from the pair, or turn mission into permission for domination. AI-assisted selected-passage and named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "limitation": "The commissions have distinct settings and wording: Galilee in Matthew and the Jerusalem/ascension sequence in Acts. Do not construct one speech or a single timetable from the pair, or turn mission into permission for domination. Selected-passage and named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
       "passages": [
         "Matthew 28:16-20",
         "Acts 1:6-11"
@@ -7267,7 +7267,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-29",
       "note": "Luke's shepherd searches for a lost sheep in a dispute over Jesus welcoming sinners; John's shepherd gives his life for the flock. Greg Carey stresses the table-fellowship setting that frames Luke's parable.",
-      "limitation": "These are different teachings and literary forms, linked by a pastoral theme. Do not label them the same event or a direct quotation; seeking a lost sheep and laying down a life are distinct emphases. AI-assisted selected-passage and named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "limitation": "These are different teachings and literary forms, linked by a pastoral theme. Do not label them the same event or a direct quotation; seeking a lost sheep and laying down a life are distinct emphases. Selected-passage and named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
       "passages": [
         "Luke 15:1-7",
         "John 10:11-18"
@@ -7299,7 +7299,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-29",
       "note": "John relates creation to the Word; Colossians relates all things to the Son. Alistair I. Wilson compares Colossians 1:16 with John 1:3 while noting their different terminology.",
-      "limitation": "The shared creation claim does not establish that one text quotes the other or that they use identical categories. Questions about authorship, composition and the development of Christological language remain outside this short comparison. AI-assisted selected-passage and named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "limitation": "The shared creation claim does not establish that one text quotes the other or that they use identical categories. Questions about authorship, composition and the development of Christological language remain outside this short comparison. Selected-passage and named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
       "passages": [
         "John 1:1-5",
         "Colossians 1:15-20"
@@ -7331,7 +7331,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-29",
       "note": "John describes the Word's coming in flesh; Philippians presents Christ's taking a servant's role, humility and obedience. Frank L. Crouch emphasises the communal ethical purpose of Philippians 2:5-11.",
-      "limitation": "This is a Christian thematic comparison, not a quotation or a complete account of incarnation. It does not settle debates about Christ's self-emptying; preserve Philippians' appeal to humility and John's witness to revelation. AI-assisted selected-passage and named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "limitation": "This is a Christian thematic comparison, not a quotation or a complete account of incarnation. It does not settle debates about Christ's self-emptying; preserve Philippians' appeal to humility and John's witness to revelation. Selected-passage and named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
       "passages": [
         "John 1:14-18",
         "Philippians 2:5-11"
@@ -7363,7 +7363,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-29",
       "note": "John connects God's love with the giving of the Son and life through belief; Romans presents Christ's death for sinners as God's demonstration of love. Stephen Chester stresses the undeserved character of that love in Romans 5.",
-      "limitation": "A shared theme does not make the passages interchangeable or settle every question about atonement and salvation. Read John's belief, judgment and light language alongside Romans' reconciliation argument; no direct quotation is claimed. AI-assisted selected-passage and named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "limitation": "A shared theme does not make the passages interchangeable or settle every question about atonement and salvation. Read John's belief, judgment and light language alongside Romans' reconciliation argument; no direct quotation is claimed. Selected-passage and named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
       "passages": [
         "John 3:14-21",
         "Romans 5:6-11"
@@ -7395,7 +7395,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-29",
       "note": "Romans portrays creation awaiting freedom from decay; Revelation envisions a renewed heaven and earth. Erin Heim stresses Romans' solidarity with suffering creation and patient expectation, which qualifies the thematic comparison with Revelation.",
-      "limitation": "Do not identify Paul's metaphor with John's entire vision or derive a fixed end-times sequence. Both contexts sustain hope, but this pairing does not demonstrate literary dependence or resolve how cosmic renewal occurs. AI-assisted selected-passage and named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "limitation": "Do not identify Paul's metaphor with John's entire vision or derive a fixed end-times sequence. Both contexts sustain hope, but this pairing does not demonstrate literary dependence or resolve how cosmic renewal occurs. Selected-passage and named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
       "passages": [
         "Romans 8:18-25",
         "Revelation 21:1-5"
@@ -7427,7 +7427,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-29",
       "note": "Kings and Isaiah share the invasion notice and the approach to Jerusalem. Kings also includes Hezekiah's tribute payment before the delegation; Isaiah moves directly to the Rabshakeh. Ray Ortlund identifies the larger parallel narrative.",
-      "limitation": "Preserve the tribute passage in Kings and the different narrative scope. Shared biblical wording does not establish independent historical confirmation, exact source dependence or an independently verified chronology. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "limitation": "Preserve the tribute passage in Kings and the different narrative scope. Shared biblical wording does not establish independent historical confirmation, exact source dependence or an independently verified chronology. Selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
       "passages": [
         "2 Kings 18:13-18",
         "Isaiah 36:1-3"
@@ -7459,7 +7459,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-29",
       "note": "Both accounts bring the ark into the inner sanctuary and describe the cloud interrupting priestly service. Chronicles expands the musicians and united praise. Cameron B.R. Howard discusses the ark transfer and divine presence in Kings.",
-      "limitation": "Kings names priests carrying the ark; Chronicles names Levites and levitical priests. Preserve the differing personnel and musical emphasis. This literary comparison does not reconstruct the ark or supply external evidence of the ceremony. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "limitation": "Kings names priests carrying the ark; Chronicles names Levites and levitical priests. Preserve the differing personnel and musical emphasis. This literary comparison does not reconstruct the ark or supply external evidence of the ceremony. Selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
       "passages": [
         "1 Kings 8:1-11",
         "2 Chronicles 5:2-14"
@@ -7491,7 +7491,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-29",
       "note": "Both narratives describe Saul's defeat, death and the recovery of the bodies by Jabesh-gilead. Chronicles concludes with a judgment on his unfaithfulness and the transfer to David. Winfried Corduan highlights this evaluative ending.",
-      "limitation": "Chronicles adds an explicit theological verdict absent from the selected Samuel chapter. The accounts also differ in descriptions of the body and burial. Do not treat literary overlap as independent corroboration or resolve every death-account tension here. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "limitation": "Chronicles adds an explicit theological verdict absent from the selected Samuel chapter. The accounts also differ in descriptions of the body and burial. Do not treat literary overlap as independent corroboration or resolve every death-account tension here. Selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
       "passages": [
         "1 Samuel 31:1-13",
         "1 Chronicles 10:1-14"
@@ -7523,7 +7523,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-29",
       "note": "Both accounts unite Israel around David at Hebron and narrate the capture of Jerusalem. Samuel includes David's age and divided reign totals; Chronicles specifies Joab's leading role. Winfried Corduan discusses the move from divided allegiance to reunification.",
-      "limitation": "Chronicles moves rapidly from Saul to David; Samuel supplies the intervening struggle in earlier chapters. Keep those different presentations visible. This selected comparison does not establish an exact chronology or independently reconstruct the capture of Jerusalem. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "limitation": "Chronicles moves rapidly from Saul to David; Samuel supplies the intervening struggle in earlier chapters. Keep those different presentations visible. This selected comparison does not establish an exact chronology or independently reconstruct the capture of Jerusalem. Selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
       "passages": [
         "2 Samuel 5:1-10",
         "1 Chronicles 11:1-9"
@@ -7555,7 +7555,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-29",
       "note": "Both accounts name Hiram's messengers, cedar and craftsmen and connect David's established kingship with the people's benefit. Winfried Corduan comments on that public purpose.",
-      "limitation": "Samuel places this report before its ark-transfer chapter; Chronicles places it after the first ark attempt. Narrative placement alone does not date the diplomatic exchange. Shared reports do not identify excavated palace remains or independently prove a building attribution. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "limitation": "Samuel places this report before its ark-transfer chapter; Chronicles places it after the first ark attempt. Narrative placement alone does not date the diplomatic exchange. Shared reports do not identify excavated palace remains or independently prove a building attribution. Selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
       "passages": [
         "2 Samuel 5:11-12",
         "1 Chronicles 14:1-2"
@@ -7587,7 +7587,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-29",
       "note": "Both accounts describe the cart, Uzzah's death and the ark's stay with Obed-edom. Chronicles begins with consultation of leaders and the assembly. Winfried Corduan discusses that planning and the failed transfer.",
-      "limitation": "The chosen ranges cover the first attempt; the later successful transfer belongs to further passages. Samuel and Chronicles organise the events differently and use different threshing-floor names. No single reconstructed itinerary or resolution of those names is claimed. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "limitation": "The chosen ranges cover the first attempt; the later successful transfer belongs to further passages. Samuel and Chronicles organise the events differently and use different threshing-floor names. No single reconstructed itinerary or resolution of those names is claimed. Selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
       "passages": [
         "2 Samuel 6:1-11",
         "1 Chronicles 13:1-14"
@@ -7619,7 +7619,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-29",
       "note": "Nathan's message redirects David's proposal to build a house into a promise about his dynasty and a son who will build. Winfried Corduan distinguishes the promised successor's building role.",
-      "limitation": "Samuel includes a clause about disciplining the son for wrongdoing; Chronicles omits that clause and speaks of establishment in God's house and kingdom. Preserve these differences. Later messianic reception and the promise's historical fulfilment need separate assessment. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "limitation": "Samuel includes a clause about disciplining the son for wrongdoing; Chronicles omits that clause and speaks of establishment in God's house and kingdom. Preserve these differences. Later messianic reception and the promise's historical fulfilment need separate assessment. Selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
       "passages": [
         "2 Samuel 7:1-17",
         "1 Chronicles 17:1-15"
@@ -7651,7 +7651,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-29",
       "note": "Both accounts place a divine appearance at Gibeon and Solomon's request for the capacity to govern. Kings explicitly calls it a dream and includes a conditional promise of long life. August H. Konkel discusses the request for discernment.",
-      "limitation": "Chronicles explains the tabernacle and bronze altar at Gibeon and asks for wisdom and knowledge. The accounts differ in wording and emphasis; the parallel does not make every detail interchangeable or provide an external verification of a private vision. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "limitation": "Chronicles explains the tabernacle and bronze altar at Gibeon and asks for wisdom and knowledge. The accounts differ in wording and emphasis; the parallel does not make every detail interchangeable or provide an external verification of a private vision. Selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
       "passages": [
         "1 Kings 3:4-15",
         "2 Chronicles 1:1-13"
@@ -7683,7 +7683,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-29",
       "note": "Both accounts begin construction in Solomon's fourth year and describe the temple. Kings also dates it in relation to the exodus; Chronicles names Mount Moriah and Ornan's threshing floor. August H. Konkel gives the Kings date a theological reading.",
-      "limitation": "Konkel's treatment of the 480 years is an interpretation, not a settled chronological result. Preserve each book's distinct location, dating and architectural details. This comparison does not supply archaeological confirmation or a complete temple reconstruction. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "limitation": "Konkel's treatment of the 480 years is an interpretation, not a settled chronological result. Preserve each book's distinct location, dating and architectural details. This comparison does not supply archaeological confirmation or a complete temple reconstruction. Selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
       "passages": [
         "1 Kings 6:1-13",
         "2 Chronicles 3:1-9"
@@ -7715,7 +7715,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-29",
       "note": "Both prayers invoke the covenant with David and ask God to hear from heaven; neither selected text confines God to the building. Chronicles adds the bronze platform and kneeling. Cameron B.R. Howard discusses presence without confinement.",
-      "limitation": "These are selected opening portions of longer prayers, not their complete petitions or conclusions. The platform and posture detail in Chronicles must remain visible. Literary similarity does not establish a verbatim transcript of a historical speech. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "limitation": "These are selected opening portions of longer prayers, not their complete petitions or conclusions. The platform and posture detail in Chronicles must remain visible. Literary similarity does not establish a verbatim transcript of a historical speech. Selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
       "passages": [
         "1 Kings 8:22-30",
         "2 Chronicles 6:12-21"
@@ -7747,7 +7747,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-29",
       "note": "Both accounts follow the building work with divine assurances and warnings about abandoning the covenant. Chronicles also includes humility, prayer and healing of the land in 7:13-16. August H. Konkel connects the second appearance with covenant responsibility.",
-      "limitation": "Retain Chronicles' additional wording and its address to Solomon and Israel around the temple. The land-healing promise is not automatically a guarantee about any modern nation or an individual's health. This check does not harmonise the timing of both narratives. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "limitation": "Retain Chronicles' additional wording and its address to Solomon and Israel around the temple. The land-healing promise is not automatically a guarantee about any modern nation or an individual's health. This check does not harmonise the timing of both narratives. Selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
       "passages": [
         "1 Kings 9:1-9",
         "2 Chronicles 7:11-22"
@@ -7779,7 +7779,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-29",
       "note": "Both narratives recount the queen testing Solomon, observing his court and exchanging gifts. The reported praise connects kingship with justice. August H. Konkel reads the visit as a portrayal of Solomon's far-reaching reputation.",
-      "limitation": "The queen is unnamed in both passages. Their overlap does not establish her personal identity, a precise itinerary, a romance or later traditions about descendants. Claims about Sheba's location require their own historical evidence. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "limitation": "The queen is unnamed in both passages. Their overlap does not establish her personal identity, a precise itinerary, a romance or later traditions about descendants. Claims about Sheba's location require their own historical evidence. Selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
       "passages": [
         "1 Kings 10:1-13",
         "2 Chronicles 9:1-12"
@@ -7811,7 +7811,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-29",
       "note": "Both closing notices give Solomon a forty-year reign, burial in David's city and Rehoboam as successor. Kings cites a book of Solomon's acts; Chronicles names prophetic records. August H. Konkel's overview traces Kings' movement toward Solomon's failure.",
-      "limitation": "The cited commentary supports the broader Kings framing, not the survival or identity of the works named in the notices. These biblical source notices do not demonstrate that those works are extant, independent or consulted in this assessment. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "limitation": "The cited commentary supports the broader Kings framing, not the survival or identity of the works named in the notices. These biblical source notices do not demonstrate that those works are extant, independent or consulted in this assessment. Selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
       "passages": [
         "1 Kings 11:41-43",
         "2 Chronicles 9:29-31"
@@ -7843,7 +7843,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-29",
       "note": "Both accounts describe the demand to ease the yoke, competing advisers, Rehoboam's harsh reply and the break with David's house. August H. Konkel discusses the choice of coercion and ensuing revolt.",
-      "limitation": "Preserve wording differences in the advisers' responses and Adoram/Hadoram's name. The books' theological explanation of the split is not an independent sociological reconstruction. Shared narrative material does not establish two independent witnesses. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "limitation": "Preserve wording differences in the advisers' responses and Adoram/Hadoram's name. The books' theological explanation of the split is not an independent sociological reconstruction. Shared narrative material does not establish two independent witnesses. Selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
       "passages": [
         "1 Kings 12:1-19",
         "2 Chronicles 10:1-19"
@@ -7875,7 +7875,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-29",
       "note": "Kings gives Abijam a negative evaluation while preserving David's dynastic promise; Chronicles tells an extended victory account about Abijah, priesthood and reliance on God. Winfried Corduan explicitly contrasts the two treatments.",
-      "limitation": "The differently named mother and the contrasting royal portraits remain unresolved here. Do not convert a selected favourable episode into identical overall evaluations or independently verified troop totals. Commentary access was limited to indexed passage excerpts. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "limitation": "The differently named mother and the contrasting royal portraits remain unresolved here. Do not convert a selected favourable episode into identical overall evaluations or independently verified troop totals. Commentary access was limited to indexed passage excerpts. Selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
       "passages": [
         "1 Kings 15:1-8",
         "2 Chronicles 13:1-22"
@@ -7907,7 +7907,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-29",
       "note": "Both passages introduce the Ramoth-gilead alliance and the request to consult Micaiah. Chronicles first names a marriage alliance and a feast. Winfried Corduan identifies the extensive parallel material in these chapters.",
-      "limitation": "The selected ranges cover the consultation's introduction, not the complete vision and battle. Similarity does not decide direct borrowing versus a common source. Corduan's attribution of Chronicles to Ezra is not adopted as an established authorship result. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "limitation": "The selected ranges cover the consultation's introduction, not the complete vision and battle. Similarity does not decide direct borrowing versus a common source. Corduan's attribution of Chronicles to Ezra is not adopted as an established authorship result. Selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
       "passages": [
         "1 Kings 22:1-9",
         "2 Chronicles 18:1-8"
@@ -7939,7 +7939,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-29",
       "note": "Both passages describe Athaliah's attack on the royal family and Joash's concealment for six years. Chronicles identifies Jehoshabeath as Jehoiada's wife. August H. Konkel places the episode within the preservation of David's line.",
-      "limitation": "Retain the added family and priestly connection in Chronicles and the different forms Jehosheba/Jehoshabeath. These selected verses do not narrate the full coronation. The literary parallel is not independent archaeological confirmation of the hiding place. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "limitation": "Retain the added family and priestly connection in Chronicles and the different forms Jehosheba/Jehoshabeath. These selected verses do not narrate the full coronation. The literary parallel is not independent archaeological confirmation of the hiding place. Selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
       "passages": [
         "2 Kings 11:1-3",
         "2 Chronicles 22:10-12"
@@ -7971,7 +7971,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-29",
       "note": "Both accounts describe Joash's reign, temple repairs and assassination. Chronicles expands his later abandonment of the temple and the killing of Jehoiada's son. August H. Konkel discusses the repair funds and the assassination report.",
-      "limitation": "Kings' assessment and Chronicles' account of later apostasy should not be flattened into one verdict. Temple-vessel funding and burial details also differ. English ESV numbering is used for Kings; other editions shift the chapter boundary. No full textual harmonisation is claimed. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "limitation": "Kings' assessment and Chronicles' account of later apostasy should not be flattened into one verdict. Temple-vessel funding and burial details also differ. English ESV numbering is used for Kings; other editions shift the chapter boundary. No full textual harmonisation is claimed. Selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
       "passages": [
         "2 Kings 12:1-21",
         "2 Chronicles 24:1-27"
@@ -8003,7 +8003,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-29",
       "note": "Both accounts introduce Amaziah and say he spared the children of his father's killers in accordance with the law. Their qualified evaluations differ in wording. August H. Konkel highlights that restraint in the revenge narrative.",
-      "limitation": "Keep Kings' comparison with David and Joash distinct from Chronicles' lack-of-wholeheartedness judgment. The selected ranges do not encompass the complete reign or resolve chronological correlations and military figures. Identifying the parallel is not a moral endorsement of every royal act. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "limitation": "Keep Kings' comparison with David and Joash distinct from Chronicles' lack-of-wholeheartedness judgment. The selected ranges do not encompass the complete reign or resolve chronological correlations and military figures. Identifying the parallel is not a moral endorsement of every royal act. Selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
       "passages": [
         "2 Kings 14:1-7",
         "2 Chronicles 25:1-10"
@@ -8035,7 +8035,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-29",
       "note": "Kings calls the king Azariah and briefly reports his illness and Jotham's governing role. Chronicles calls him Uzziah and expands his achievements, pride and temple confrontation. August H. Konkel notes Chronicles' additional reign material.",
-      "limitation": "Azariah the king and Azariah the chief priest in Chronicles are distinct people. Ancient skin-disease terminology does not establish a modern diagnosis. Preserve Chronicles' priestly confrontation and Kings' shorter evaluation; no independent clinical or chronological conclusion follows. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "limitation": "Azariah the king and Azariah the chief priest in Chronicles are distinct people. Ancient skin-disease terminology does not establish a modern diagnosis. Preserve Chronicles' priestly confrontation and Kings' shorter evaluation; no independent clinical or chronological conclusion follows. Selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
       "passages": [
         "2 Kings 15:1-7",
         "2 Chronicles 26:1-23"
@@ -8067,7 +8067,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-29",
       "note": "Matthew gives the prayer within teaching about private prayer and forgiveness; Luke introduces it through a disciple's request after Jesus prays. Jennifer S. Wyant notes Luke's shorter form and its framework of trust.",
-      "limitation": "Retain Matthew's additional petitions and the differing settings and debt/sin wording. Liturgical forms and manuscript variants require their own review. A narrative parallel does not supply one reconstructed verbatim prayer or make prayer a formula guaranteeing an outcome. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "limitation": "Retain Matthew's additional petitions and the differing settings and debt/sin wording. Liturgical forms and manuscript variants require their own review. A narrative parallel does not supply one reconstructed verbatim prayer or make prayer a formula guaranteeing an outcome. Selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
       "passages": [
         "Matthew 6:5-15",
         "Luke 11:1-4"
@@ -8099,7 +8099,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-29",
       "note": "Both accounts join love of God with love of neighbour. Mark includes the Shema and an appreciative exchange with a scribe; Matthew introduces a question intended to test Jesus. Amanda Brobst-Renaud stresses Mark's Jewish setting and the scribe's positive role.",
-      "limitation": "Keep the different introductions, responses and lists of faculties visible. Jesus and his interlocutors discuss Jewish Scripture; this is not a contrast between Christian love and a supposedly loveless Judaism. The parallel does not establish identical wording or independent eyewitness reports. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "limitation": "Keep the different introductions, responses and lists of faculties visible. Jesus and his interlocutors discuss Jewish Scripture; this is not a contrast between Christian love and a supposedly loveless Judaism. The parallel does not establish identical wording or independent eyewitness reports. Selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
       "passages": [
         "Mark 12:28-34",
         "Matthew 22:34-40"
@@ -8131,7 +8131,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-29",
       "note": "Acts 9 narrates Saul's encounter and Ananias's role; Acts 22 retells them in Paul's defence speech, with different emphases. Raj Nadella cautions against treating the encounter as a triumphalist rejection of Judaism.",
-      "limitation": "The companions' hearing is described differently in Acts 9:7 and 22:9; translation and Greek-language questions are not silently harmonised here. Both accounts belong to Acts, not two independent historical witnesses. The selected commentary addresses Acts 9's interpretation, not a full comparison of every retelling. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "limitation": "The companions' hearing is described differently in Acts 9:7 and 22:9; translation and Greek-language questions are not silently harmonised here. Both accounts belong to Acts, not two independent historical witnesses. The selected commentary addresses Acts 9's interpretation, not a full comparison of every retelling. Selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
       "passages": [
         "Acts 9:1-19",
         "Acts 22:6-16"
@@ -8163,7 +8163,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-29",
       "note": "Stephen's speech retells Moses's encounter with the angel, divine voice and holy ground, then his commission to Egypt. Exodus narrates that call directly. Alan J. Thompson highlights God's presence with Moses in the wilderness.",
-      "limitation": "Acts condenses the Exodus narrative and places it within Stephen's defence; its forty-year framing and rhetorical purpose remain distinct. A later retelling is not independent confirmation of the event, a location identification or a verbatim transcript of Stephen's speech. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "limitation": "Acts condenses the Exodus narrative and places it within Stephen's defence; its forty-year framing and rhetorical purpose remain distinct. A later retelling is not independent confirmation of the event, a location identification or a verbatim transcript of Stephen's speech. Selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
       "passages": [
         "Exodus 3:1-12",
         "Acts 7:30-35"
@@ -8195,7 +8195,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-29",
       "note": "Psalm 23 portrays the Lord as shepherd; 1 Peter calls elders to tend God's flock as examples and names Christ the chief shepherd. Shively Smith emphasises mutual obligations within the community under God's authority.",
-      "limitation": "This shared shepherd imagery is a thematic comparison, not an explicit quotation of Psalm 23. Do not equate elders with God or use the image to justify domineering leadership: 1 Peter expressly rejects that conduct. The psalm's individual voice and the letter's communal instruction remain distinct. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "limitation": "This shared shepherd imagery is a thematic comparison, not an explicit quotation of Psalm 23. Do not equate elders with God or use the image to justify domineering leadership: 1 Peter expressly rejects that conduct. The psalm's individual voice and the letter's communal instruction remain distinct. Selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
       "passages": [
         "Psalm 23:1-6",
         "1 Peter 5:1-5"
@@ -8227,7 +8227,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-29",
       "note": "John connects God's giving of the Son with life, belief and coming to the light; Ephesians describes salvation as God's gift and a new life of good works. Israel Kamudzandu discusses grace alongside the community's resulting vocation.",
-      "limitation": "Retain John's language of judgment and light and Ephesians' distinction between salvation's gift and the good works that follow. Shared salvation language does not establish quotation or settle every debate about faith, works, election or the extent of salvation. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "limitation": "Retain John's language of judgment and light and Ephesians' distinction between salvation's gift and the good works that follow. Shared salvation language does not establish quotation or settle every debate about faith, works, election or the extent of salvation. Selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
       "passages": [
         "John 3:16-21",
         "Ephesians 2:1-10"
@@ -8259,7 +8259,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-29",
       "note": "John places Jesus's resurrection-and-life claim in conversation with the grieving Martha. Paul argues that Christ's resurrection grounds the hope of those who have died. Frank L. Crouch explains the consequences of denying resurrection in Paul's argument.",
-      "limitation": "The selected John range precedes Lazarus's emergence from the tomb; it should not be presented as a complete account of that sign. A thematic comparison does not make Lazarus's restoration and Christ's resurrection identical events or independently settle historical claims and an end-times timetable. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "limitation": "The selected John range precedes Lazarus's emergence from the tomb; it should not be presented as a complete account of that sign. A thematic comparison does not make Lazarus's restoration and Christ's resurrection identical events or independently settle historical claims and an end-times timetable. Selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
       "passages": [
         "John 11:17-27",
         "1 Corinthians 15:12-23"
@@ -8291,7 +8291,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-29",
       "note": "John presents Jesus as the way to the Father while reassuring troubled disciples. Acts presents Peter's proclamation of salvation in Jesus's name during questioning about a healing. Laura Holmes reads John 14:6 within its reassurance of the disciples.",
-      "limitation": "These are distinct farewell and public-defence settings, not parallel reports of one speech. Retain both passages' claims without treating the pairing as a complete account of other people's final destinies or permission for coercion. It remains a Christian thematic comparison, not a quotation claim. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "limitation": "These are distinct farewell and public-defence settings, not parallel reports of one speech. Retain both passages' claims without treating the pairing as a complete account of other people's final destinies or permission for coercion. It remains a Christian thematic comparison, not a quotation claim. Selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
       "passages": [
         "John 14:1-7",
         "Acts 4:5-12"
@@ -8323,7 +8323,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-29",
       "note": "Paul describes universal sin alongside justification by grace; Ecclesiastes warns that even the righteous do wrong within a reflection on wisdom and human limits. Richard Ascough discusses Paul's shared human accountability and the gift of grace.",
-      "limitation": "Romans 3:23 does not explicitly cite Ecclesiastes 7:20. The wisdom reflection and Paul's argument retain their different purposes. This thematic link does not settle the interpretation of Ecclesiastes' counsel about excessive righteousness or Paul's debated faith-in/faithfulness-of-Christ wording. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "limitation": "Romans 3:23 does not explicitly cite Ecclesiastes 7:20. The wisdom reflection and Paul's argument retain their different purposes. This thematic link does not settle the interpretation of Ecclesiastes' counsel about excessive righteousness or Paul's debated faith-in/faithfulness-of-Christ wording. Selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
       "passages": [
         "Romans 3:21-26",
         "Ecclesiastes 7:15-22"
@@ -8355,7 +8355,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-29",
       "note": "Romans moves from universal sin to justification as a gift; Ephesians moves from death in trespasses to life with Christ and good works. Richard Ascough identifies grace as central to Romans while retaining questions about its theological language.",
-      "limitation": "Do not flatten the two arguments into interchangeable formulas or erase Ephesians 2:10 after citing 2:8-9. The relationship of faith, works and Christ's faithfulness needs fuller treatment. This comparison does not resolve the authorship of Ephesians or all theories of atonement. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "limitation": "Do not flatten the two arguments into interchangeable formulas or erase Ephesians 2:10 after citing 2:8-9. The relationship of faith, works and Christ's faithfulness needs fuller treatment. This comparison does not resolve the authorship of Ephesians or all theories of atonement. Selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
       "passages": [
         "Romans 3:21-26",
         "Ephesians 2:1-10"
@@ -8387,7 +8387,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-29",
       "note": "Romans announces freedom from condemnation for those in Christ and life through the Spirit; John speaks of hearing, believing and passing from death to life, alongside future judgment. Mary Hinkle Shore warns that Paul's flesh/Spirit contrast does not reject bodily existence.",
-      "limitation": "Keep John's future judgment and Romans' promise of life to mortal bodies in view. Shared life language does not imply that bodies are evil or that believers avoid physical death and suffering. This thematic pairing is not a quotation or a complete reconciliation of both authors' eschatology. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "limitation": "Keep John's future judgment and Romans' promise of life to mortal bodies in view. Shared life language does not imply that bodies are evil or that believers avoid physical death and suffering. This thematic pairing is not a quotation or a complete reconciliation of both authors' eschatology. Selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
       "passages": [
         "Romans 8:1-11",
         "John 5:19-29"
@@ -8419,7 +8419,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-29",
       "note": "Romans places God's purpose amid weakness and hope, with conformity to the Son in view; Joseph names his brothers' harmful intent while describing preservation of life. Vanessa Lovelace keeps that harm and the brothers' fear visible in reading Joseph's reassurance.",
-      "limitation": "Good does not mean that the original harm was good, nor does the pairing guarantee immediate relief or material success. It must not excuse abuse or require a harmed person to trust someone unsafe. The texts are linked thematically; a complete account of providence and the debates about Joseph's forgiveness remains open. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "limitation": "Good does not mean that the original harm was good, nor does the pairing guarantee immediate relief or material success. It must not excuse abuse or require a harmed person to trust someone unsafe. The texts are linked thematically; a complete account of providence and the debates about Joseph's forgiveness remains open. Selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
       "passages": [
         "Romans 8:26-30",
         "Genesis 50:15-21"
@@ -8451,7 +8451,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-29",
       "note": "Romans calls for transformed discernment and humble service through varied gifts; Ephesians describes putting away the old self and renewal of the mind. Frank L. Crouch grounds Romans' ethical appeal in God's mercies.",
-      "limitation": "The shared renewal theme does not establish quotation or identical authorship. Keep Romans' living, bodily service and Ephesians' concrete change of conduct in view. Renewal is not reduced to positive thinking, intellectual superiority or an exemption from the need for ongoing moral discernment. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "limitation": "The shared renewal theme does not establish quotation or identical authorship. Keep Romans' living, bodily service and Ephesians' concrete change of conduct in view. Renewal is not reduced to positive thinking, intellectual superiority or an exemption from the need for ongoing moral discernment. Selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
       "passages": [
         "Romans 12:1-8",
         "Ephesians 4:17-24"
@@ -8483,7 +8483,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-29",
       "note": "Paul insists that speech, knowledge, faith and generosity need love and describes its conduct. John commands mutual love shaped by Jesus's self-giving friendship. Meda Stamper connects the love command with abiding in Jesus's love.",
-      "limitation": "These are a discussion of community gifts and a farewell discourse, not one shared episode or a proven literary quotation. Endurance in love must not be used to excuse wrongdoing or demand submission to abuse. Retain the active, truthful and self-giving character of love in both contexts. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "limitation": "These are a discussion of community gifts and a farewell discourse, not one shared episode or a proven literary quotation. Endurance in love must not be used to excuse wrongdoing or demand submission to abuse. Retain the active, truthful and self-giving character of love in both contexts. Selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
       "passages": [
         "1 Corinthians 13:1-7",
         "John 15:9-17"
@@ -8515,7 +8515,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-29",
       "note": "Galatians relates Abraham's blessing to the Gentiles through faith; Ephesians describes salvation as a gift and a life of good works. Israel Kamudzandu reads Ephesians within the letter's concern for reconciliation and shared community.",
-      "limitation": "Galatians explicitly cites Abrahamic Scripture, but this pairing with Ephesians is thematic. Do not turn either passage into a claim that Jewish life is simply opposed to grace or that good works have no place. The relation of promise, law and communal inclusion needs wider contextual review. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "limitation": "Galatians explicitly cites Abrahamic Scripture, but this pairing with Ephesians is thematic. Do not turn either passage into a claim that Jewish life is simply opposed to grace or that good works have no place. The relation of promise, law and communal inclusion needs wider contextual review. Selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
       "passages": [
         "Galatians 3:6-9",
         "Ephesians 2:1-10"
@@ -8547,7 +8547,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-29",
       "note": "Hebrews introduces faith and the commendation of the ancestors; Paul describes confidence while away from the Lord, walking by faith and aiming to please him. Amy L.B. Peeler reads Hebrews' language as a foundation for enduring trust.",
-      "limitation": "The shared unseen/faith language is thematic and does not establish direct borrowing. It is not an instruction to reject evidence or make the visible world unreal. Keep Paul's accountability before Christ in view; the Greek terms in Hebrews and a full account of faith and knowledge remain open questions. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "limitation": "The shared unseen/faith language is thematic and does not establish direct borrowing. It is not an instruction to reject evidence or make the visible world unreal. Keep Paul's accountability before Christ in view; the Greek terms in Hebrews and a full account of faith and knowledge remain open questions. Selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
       "passages": [
         "Hebrews 11:1-3",
         "2 Corinthians 5:6-10"
@@ -8579,7 +8579,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-29",
       "note": "The new heaven and earth in verse 1 and the removal of tears and death in verse 4 belong to the same vision, linked by God's dwelling with humanity. Brian J. Tabb explains the relationship between the vision and the voice from the throne.",
-      "limitation": "These anchors belong to one passage, not two independent accounts. Two publisher views are cited for reading access; they do not create independent witnesses. The vision is not a guarantee that present grief should cease immediately or a complete map of the future. Manuscript and interpretive questions remain open. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "limitation": "These anchors belong to one passage, not two independent accounts. Two publisher views are cited for reading access; they do not create independent witnesses. The vision is not a guarantee that present grief should cease immediately or a complete map of the future. Manuscript and interpretive questions remain open. Selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
       "passages": [
         "Revelation 21:1-5",
         "Revelation 21:1-5"
@@ -8611,7 +8611,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-29",
       "note": "Both accounts introduce Hezekiah favourably. Kings summarises removed cult objects and trust in the Lord; Chronicles opens a detailed temple-restoration programme with priests and Levites. August H. Konkel comments on Kings' reform and faithfulness language.",
-      "limitation": "The selected Chronicles range is the programme's opening, not its full implementation. Abi/Abijah and the books' different emphases remain visible. Literary agreement does not establish independent archaeological confirmation or a resolved accession chronology; cited external historical reconstructions were not independently checked. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "limitation": "The selected Chronicles range is the programme's opening, not its full implementation. Abi/Abijah and the books' different emphases remain visible. Literary agreement does not establish independent archaeological confirmation or a resolved accession chronology; cited external historical reconstructions were not independently checked. Selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
       "passages": [
         "2 Kings 18:1-8",
         "2 Chronicles 29:1-11"
@@ -8643,7 +8643,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-29",
       "note": "Kings and Isaiah place the angel's action, the Assyrian withdrawal and Sennacherib's death after the promise to defend Jerusalem. Ray Ortlund reads the sequence as divine deliverance and the defeat of imperial arrogance.",
-      "limitation": "Shared narrative wording is not independent confirmation of the reported casualty total or the mechanism of death. The movement from withdrawal to assassination does not specify an elapsed interval. Do not equate the account with a verified plague diagnosis; annals, casualty figures and chronology need separate evidence. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "limitation": "Shared narrative wording is not independent confirmation of the reported casualty total or the mechanism of death. The movement from withdrawal to assassination does not specify an elapsed interval. Do not equate the account with a verified plague diagnosis; annals, casualty figures and chronology need separate evidence. Selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
       "passages": [
         "2 Kings 19:32-37",
         "Isaiah 37:33-38"
@@ -8675,7 +8675,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-29",
       "note": "Both accounts narrate Hezekiah's illness, prayer, added years and the reversing shadow. Isaiah also contains a thanksgiving poem and places the fig remedy and sign question after it. Ray Ortlund draws attention to that different placement.",
-      "limitation": "Retain Isaiah's poem and the differing order of remedy and sign; Ortlund's further reading of Hezekiah's motives is an interpretation. No exact diagnosis, reconstructed instrument or astronomical mechanism is established. This selected comparison does not independently verify the healing as a historical event. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "limitation": "Retain Isaiah's poem and the differing order of remedy and sign; Ortlund's further reading of Hezekiah's motives is an interpretation. No exact diagnosis, reconstructed instrument or astronomical mechanism is established. This selected comparison does not independently verify the healing as a historical event. Selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
       "passages": [
         "2 Kings 20:1-11",
         "Isaiah 38:1-22"
@@ -8707,7 +8707,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-29",
       "note": "Both books condemn Ahaz's worship and describe his appeal to Assyria. Kings details the Damascus altar; Chronicles includes Oded's rebuke and the care and release of Judahite captives. Winfried Corduan highlights that intervention.",
-      "limitation": "Kings says the Assyrian king listened to Ahaz and attacked Damascus; Chronicles says Assyria oppressed him and gave no help. Preserve those different evaluations, the fuller captive episode and the burial descriptions. The comparison does not verify troop or captive totals, reconstruct a single sequence of campaigns or independently establish the international history. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "limitation": "Kings says the Assyrian king listened to Ahaz and attacked Damascus; Chronicles says Assyria oppressed him and gave no help. Preserve those different evaluations, the fuller captive episode and the burial descriptions. The comparison does not verify troop or captive totals, reconstruct a single sequence of campaigns or independently establish the international history. Selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
       "passages": [
         "2 Kings 16:1-20",
         "2 Chronicles 28:1-27"
@@ -8739,7 +8739,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-29",
       "note": "Both books describe Manasseh's idolatry. Kings stresses the judgment on Judah and innocent blood; Chronicles adds his captivity, prayer, return and reforms. Winfried Corduan discusses that reversal in Chronicles.",
-      "limitation": "Chronicles' repentance is absent from Kings, whose judgment must not be rewritten as though it narrated the same ending. Retain the victims and innocent blood alongside the later reform account. The shared material does not independently corroborate the Babylonian captivity episode or establish the date, authorship or wording of Manasseh's prayer. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "limitation": "Chronicles' repentance is absent from Kings, whose judgment must not be rewritten as though it narrated the same ending. Retain the victims and innocent blood alongside the later reform account. The shared material does not independently corroborate the Babylonian captivity episode or establish the date, authorship or wording of Manasseh's prayer. Selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
       "passages": [
         "2 Kings 21:1-18",
         "2 Chronicles 33:1-20"
@@ -8771,7 +8771,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-29",
       "note": "Hilkiah finds a law book, Shaphan reads it, Josiah seeks Huldah's prophetic counsel, and a public covenant follows. Winfried Corduan discusses the scroll and Huldah's response, considering Deuteronomy as a possible identification.",
-      "limitation": "The exact extent and composition of the discovered scroll remain debated; identifying it with Deuteronomy is an interpretation. Preserve Huldah's role, the different delegation names and Chronicles' additional concluding reform summary. The report of discovery does not itself date the composition of the Torah. The promise of burial in peace needs to be read alongside Josiah's later death; this comparison does not settle that interpretive question. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "limitation": "The exact extent and composition of the discovered scroll remain debated; identifying it with Deuteronomy is an interpretation. Preserve Huldah's role, the different delegation names and Chronicles' additional concluding reform summary. The report of discovery does not itself date the composition of the Torah. The promise of burial in peace needs to be read alongside Josiah's later death; this comparison does not settle that interpretive question. Selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
       "passages": [
         "2 Kings 22:8-23:3",
         "2 Chronicles 34:14-33"
@@ -8803,7 +8803,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-29",
       "note": "Both accounts connect Josiah's death with Neco and Megiddo. Chronicles adds a warning attributed to God, disguise, archers and mourning. Winfried Corduan discusses the warning and wounded return.",
-      "limitation": "Kings has Josiah carried dead from Megiddo; Chronicles describes a wounded return to Jerusalem before his death. These details are not silently harmonised. Chronicles' attribution of Neco's words to God remains part of that narrative's explanation. The selected readings do not establish Josiah's political motive or a reconstructed final itinerary, and they do not make every ruler's claim to divine instruction authoritative. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "limitation": "Kings has Josiah carried dead from Megiddo; Chronicles describes a wounded return to Jerusalem before his death. These details are not silently harmonised. Chronicles' attribution of Neco's words to God remains part of that narrative's explanation. The selected readings do not establish Josiah's political motive or a reconstructed final itinerary, and they do not make every ruler's claim to divine instruction authoritative. Selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
       "passages": [
         "2 Kings 23:28-30",
         "2 Chronicles 35:20-27"
@@ -8835,7 +8835,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-29",
       "note": "The introductions give Zedekiah's age, reign, mother, adverse evaluation and rebellion in closely shared language. Matthew H. Patton reads Jeremiah's final chapter as a literary confirmation of its warnings about Judah's fall.",
-      "limitation": "Close wording is a literary parallel, not two demonstrably independent eyewitness reports. These short openings do not settle accession chronology, the direction of textual dependence or the identity of the appendix's compiler. Hamutal's father Jeremiah is not identified here as the prophet; a shared personal name is insufficient to establish that identity. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "limitation": "Close wording is a literary parallel, not two demonstrably independent eyewitness reports. These short openings do not settle accession chronology, the direction of textual dependence or the identity of the appendix's compiler. Hamutal's father Jeremiah is not identified here as the prophet; a shared personal name is insufficient to establish that identity. Selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
       "passages": [
         "2 Kings 24:18-20",
         "Jeremiah 52:1-3"
@@ -8867,7 +8867,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-29",
       "note": "Both accounts narrate siege, famine, the city's breach, Zedekiah's capture and Jerusalem's destruction. Jeremiah adds details of his imprisonment. Matthew H. Patton relates the destruction account to the book's earlier prophetic warnings.",
-      "limitation": "The fifth-month entry of Nebuzaradan is dated to the seventh day in 2 Kings 25:8 and the tenth in Jeremiah 52:12. Keep both dates visible; a proposed multi-day sequence is not established here. Jeremiah's fuller captivity account, the different treatment of deportees and the poor who remain also deserve comparison. Shared wording does not independently confirm casualty totals or resolve absolute chronology and manuscript questions. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "limitation": "The fifth-month entry of Nebuzaradan is dated to the seventh day in 2 Kings 25:8 and the tenth in Jeremiah 52:12. Keep both dates visible; a proposed multi-day sequence is not established here. Jeremiah's fuller captivity account, the different treatment of deportees and the poor who remain also deserve comparison. Shared wording does not independently confirm casualty totals or resolve absolute chronology and manuscript questions. Selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
       "passages": [
         "2 Kings 25:1-12",
         "Jeremiah 52:4-16"
@@ -8899,7 +8899,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-29",
       "note": "Ezra presents returning families; Nehemiah frames a related list as a recovered genealogy. Russell Meek records competing views of dependence. Both give a total of 42,360, while names and individual figures differ: Arah has 775 in Ezra 2:5 and 652 in Nehemiah 7:10.",
-      "limitation": "Retain the differing family counts, names, singers and gifts rather than replacing them with one harmonised list. A shared total does not settle the component figures or prove an unchanged census. Direct borrowing, a common source and transmission or registration explanations require further textual evidence. These ancient lineage and priesthood records do not establish modern ethnic superiority or permission to exclude people today. AI-assisted selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
+      "limitation": "Retain the differing family counts, names, singers and gifts rather than replacing them with one harmonised list. A shared total does not settle the component figures or prove an unchanged census. Direct borrowing, a common source and transmission or registration explanations require further textual evidence. These ancient lineage and priesthood records do not establish modern ethnic superiority or permission to exclude people today. Selected-passage and scoped named-commentary assessment; fuller literature, textual questions and independent specialist review remain open.",
       "passages": [
         "Ezra 2:1-70",
         "Nehemiah 7:5-73"
@@ -8931,7 +8931,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-31",
       "note": "Hebrews links the seventh day of Genesis to rest still available to the addressed community; Dennis Johnson discusses God's creator rest as distinct from Joshua's land-rest.",
-      "limitation": "Do not treat Genesis 2:2 as a direct command about modern worship days. Psalm 95, Israel's wilderness unbelief and the later 'Sabbath rest' language in Hebrews 4:9-11 remain integral. AI-assisted selective Scripture-context and named-commentary review; wider literature, original-language variants and independent specialist review remain open.",
+      "limitation": "Do not treat Genesis 2:2 as a direct command about modern worship days. Psalm 95, Israel's wilderness unbelief and the later 'Sabbath rest' language in Hebrews 4:9-11 remain integral. selective Scripture-context and named-commentary review; wider literature, original-language variants and independent specialist review remain open.",
       "passages": [
         "Genesis 2:2",
         "Hebrews 4:4"
@@ -8963,7 +8963,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-31",
       "note": "In Leviticus the neighbour command belongs to instructions against vengeance and injustice; Douglas Sean O'Donnell identifies Jesus' use of this command in the double-love summary of the Law.",
-      "limitation": "The commentary explains Jesus' synthesis but does not exhaust Leviticus 19's social setting, nor settle disputes about the scope of 'neighbour' across Jewish interpretive traditions. AI-assisted selective Scripture-context and named-commentary review; wider literature, original-language variants and independent specialist review remain open.",
+      "limitation": "The commentary explains Jesus' synthesis but does not exhaust Leviticus 19's social setting, nor settle disputes about the scope of 'neighbour' across Jewish interpretive traditions. selective Scripture-context and named-commentary review; wider literature, original-language variants and independent specialist review remain open.",
       "passages": [
         "Leviticus 19:18",
         "Matthew 22:39"
@@ -8995,7 +8995,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-31",
       "note": "The Psalm addresses an anointed ruler. In Acts Paul's Pisidian Antioch speech relates the sonship oracle to the proclamation of Jesus; Alan J. Thompson treats the speech as a Davidic promise and resurrection argument.",
-      "limitation": "The temporal relationship of resurrection, enthronement and 'today I have begotten you' is debated. The commentary is not a survey of these readings; do not claim the psalm had only one original horizon. AI-assisted selective Scripture-context and named-commentary review; wider literature, original-language variants and independent specialist review remain open.",
+      "limitation": "The temporal relationship of resurrection, enthronement and 'today I have begotten you' is debated. The commentary is not a survey of these readings; do not claim the psalm had only one original horizon. selective Scripture-context and named-commentary review; wider literature, original-language variants and independent specialist review remain open.",
       "passages": [
         "Psalm 2:7",
         "Acts 13:33"
@@ -9027,7 +9027,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-31",
       "note": "The original psalm expresses confidence in God's preserving presence; Alan J. Thompson examines Peter's use of Psalm 16 in the Pentecost sermon as a Davidic hope read through Jesus' resurrection.",
-      "limitation": "Peter's Christological argument in Acts is a primary textual claim, not archaeological confirmation. Greek/Hebrew wording and the scope of the psalm's original claim remain distinct research questions. AI-assisted selective Scripture-context and named-commentary review; wider literature, original-language variants and independent specialist review remain open.",
+      "limitation": "Peter's Christological argument in Acts is a primary textual claim, not archaeological confirmation. Greek/Hebrew wording and the scope of the psalm's original claim remain distinct research questions. selective Scripture-context and named-commentary review; wider literature, original-language variants and independent specialist review remain open.",
       "passages": [
         "Psalm 16:10",
         "Acts 2:27"
@@ -9059,7 +9059,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-31",
       "note": "The royal oracle speaks of sitting at the Lord's right hand; Alan J. Thompson explicitly relates Acts 2:34-36 to Psalm 110 and Peter's argument about divine kingship.",
-      "limitation": "The right-hand image is a theological royal claim; it is not a directly observed astronomical location. The original royal psalm's setting and later messianic uses are not identical questions. AI-assisted selective Scripture-context and named-commentary review; wider literature, original-language variants and independent specialist review remain open.",
+      "limitation": "The right-hand image is a theological royal claim; it is not a directly observed astronomical location. The original royal psalm's setting and later messianic uses are not identical questions. selective Scripture-context and named-commentary review; wider literature, original-language variants and independent specialist review remain open.",
       "passages": [
         "Psalm 110:1",
         "Acts 2:34"
@@ -9091,7 +9091,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-31",
       "note": "Isaiah's commission includes a warning of an unreceptive audience; Matthew applies it to contrasting responses to Jesus' teaching in parables, as Douglas Sean O'Donnell notes.",
-      "limitation": "Do not generalise the critique to all Jewish people, erase Isaiah's commissioning setting or infer a single explanation of divine agency and human responsibility from a short citation. AI-assisted selective Scripture-context and named-commentary review; wider literature, original-language variants and independent specialist review remain open.",
+      "limitation": "Do not generalise the critique to all Jewish people, erase Isaiah's commissioning setting or infer a single explanation of divine agency and human responsibility from a short citation. selective Scripture-context and named-commentary review; wider literature, original-language variants and independent specialist review remain open.",
       "passages": [
         "Isaiah 6:9",
         "Matthew 13:14"
@@ -9123,7 +9123,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-31",
       "note": "Isaiah depicts the servant's silent suffering; Alan J. Thompson explicitly notes Isaiah 53 as the passage read in Acts 8:32, in an account of the mission beyond Jerusalem.",
-      "limitation": "Acts does not transcribe Philip's entire teaching. The identity of Isaiah's servant and differences between Greek and Hebrew wordings require wider textual inquiry. AI-assisted selective Scripture-context and named-commentary review; wider literature, original-language variants and independent specialist review remain open.",
+      "limitation": "Acts does not transcribe Philip's entire teaching. The identity of Isaiah's servant and differences between Greek and Hebrew wordings require wider textual inquiry. selective Scripture-context and named-commentary review; wider literature, original-language variants and independent specialist review remain open.",
       "passages": [
         "Isaiah 53:7",
         "Acts 8:32"
@@ -9155,7 +9155,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-31",
       "note": "Habakkuk addresses proud domination and waiting for God's appointed action; Donny Ray Mathis relates the prophet's call to enduring trust to Paul's summary of the gospel in Romans 1:16-17.",
-      "limitation": "'Faith' and 'faithfulness', Hebrew and Greek phrase structure, and the perspective on God's righteousness remain contested. This commentary is one confessional interpretation, not a textual consensus. AI-assisted selective Scripture-context and named-commentary review; wider literature, original-language variants and independent specialist review remain open.",
+      "limitation": "'Faith' and 'faithfulness', Hebrew and Greek phrase structure, and the perspective on God's righteousness remain contested. This commentary is one confessional interpretation, not a textual consensus. selective Scripture-context and named-commentary review; wider literature, original-language variants and independent specialist review remain open.",
       "passages": [
         "Habakkuk 2:4",
         "Romans 1:17"
@@ -9187,7 +9187,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-31",
       "note": "Paul uses the statement about the righteous living by faith within an argument contrasting justification by faith and reliance on works of the Law; Matthew P. Harmon and John Sloat discuss that precise citation.",
-      "limitation": "Paul's use of Habakkuk does not erase the prophet's original crisis or decide all Jewish readings of Torah. The commentary is a confessional reading, not a full survey of Pauline scholarship. AI-assisted selective Scripture-context and named-commentary review; wider literature, original-language variants and independent specialist review remain open.",
+      "limitation": "Paul's use of Habakkuk does not erase the prophet's original crisis or decide all Jewish readings of Torah. The commentary is a confessional reading, not a full survey of Pauline scholarship. selective Scripture-context and named-commentary review; wider literature, original-language variants and independent specialist review remain open.",
       "passages": [
         "Habakkuk 2:4",
         "Galatians 3:11"
@@ -9219,7 +9219,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-31",
       "note": "Mark situates the quotation in a friendly exchange with a scribe; Mark L. Strauss identifies the Shema as a central Jewish confession and Jesus' twofold command as a summary of covenant allegiance.",
-      "limitation": "The Jewish confession retains its own integrity and centuries of interpretation. The text does not license a claim that Judaism lacks concern for neighbour-love. AI-assisted selective Scripture-context and named-commentary review; wider literature, original-language variants and independent specialist review remain open.",
+      "limitation": "The Jewish confession retains its own integrity and centuries of interpretation. The text does not license a claim that Judaism lacks concern for neighbour-love. selective Scripture-context and named-commentary review; wider literature, original-language variants and independent specialist review remain open.",
       "passages": [
         "Deuteronomy 6:4",
         "Mark 12:29"
@@ -9251,7 +9251,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-31",
       "note": "Deuteronomy warns Israel against following other gods in the land; Matthew depicts Jesus rejecting the tempter's demand. Douglas Sean O'Donnell names Deuteronomy 6:13 in his commentary on Matthew 4:10.",
-      "limitation": "Matthew adapts the command's wording. Do not claim verbatim identity across a specific Hebrew and Greek text, or equate the wilderness settings in every respect. AI-assisted selective Scripture-context and named-commentary review; wider literature, original-language variants and independent specialist review remain open.",
+      "limitation": "Matthew adapts the command's wording. Do not claim verbatim identity across a specific Hebrew and Greek text, or equate the wilderness settings in every respect. selective Scripture-context and named-commentary review; wider literature, original-language variants and independent specialist review remain open.",
       "passages": [
         "Deuteronomy 6:13",
         "Matthew 4:10"
@@ -9283,7 +9283,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-31",
       "note": "Deuteronomy 21 concerns the burial of a body exposed after execution; Harmon and Sloat discuss how Paul applies this judicial curse image to redemption in Galatians 3:10-14.",
-      "limitation": "Deuteronomy does not directly describe Roman crucifixion. Paul's application and atonement explanation are theological arguments that require context; different interpretations remain possible. AI-assisted selective Scripture-context and named-commentary review; wider literature, original-language variants and independent specialist review remain open.",
+      "limitation": "Deuteronomy does not directly describe Roman crucifixion. Paul's application and atonement explanation are theological arguments that require context; different interpretations remain possible. selective Scripture-context and named-commentary review; wider literature, original-language variants and independent specialist review remain open.",
       "passages": [
         "Deuteronomy 21:23",
         "Galatians 3:13"
@@ -9315,7 +9315,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-31",
       "note": "Köstenberger identifies John 19:24 as a use of Psalm 22:18; the Gospel narrates separate treatment of divided clothing and a garment allocated by lot.",
-      "limitation": "Psalm 22 is a lament moving towards public praise; matching wording shows the evangelist's scriptural interpretation but does not independently date or verify the soldiers' actions. AI-assisted selected-passage and scoped accessible named-commentary assessment; complete literature and independent specialist review remain open.",
+      "limitation": "Psalm 22 is a lament moving towards public praise; matching wording shows the evangelist's scriptural interpretation but does not independently date or verify the soldiers' actions. Selected-passage and scoped accessible named-commentary assessment; complete literature and independent specialist review remain open.",
       "passages": [
         "Psalm 22:18",
         "John 19:24"
@@ -9347,7 +9347,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-31",
       "note": "Mathis explicitly identifies Isaiah 52:7 as Paul's good-news messenger quotation; Romans connects it with sending, proclamation, hearing and faith.",
-      "limitation": "Isaiah's original horizon concerns Zion's comfort, the return of the Lord and salvation made visible to nations; do not erase that background or assume the source commentary represents every view of Israel. AI-assisted selected-passage and scoped accessible named-commentary assessment; complete literature and independent specialist review remain open.",
+      "limitation": "Isaiah's original horizon concerns Zion's comfort, the return of the Lord and salvation made visible to nations; do not erase that background or assume the source commentary represents every view of Israel. Selected-passage and scoped accessible named-commentary assessment; complete literature and independent specialist review remain open.",
       "passages": [
         "Isaiah 52:7",
         "Romans 10:15"
@@ -9379,7 +9379,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-31",
       "note": "O'Donnell identifies Zechariah 9:9 in Matthew 21:4-5 and discusses the donkey and colt narrative in the royal entry.",
-      "limitation": "Zechariah's poetic donkey parallelism, differences among the Gospels and Matthew's animal details must not be silently harmonised into a single reconstructed riding arrangement. AI-assisted selected-passage and scoped accessible named-commentary assessment; complete literature and independent specialist review remain open.",
+      "limitation": "Zechariah's poetic donkey parallelism, differences among the Gospels and Matthew's animal details must not be silently harmonised into a single reconstructed riding arrangement. Selected-passage and scoped accessible named-commentary assessment; complete literature and independent specialist review remain open.",
       "passages": [
         "Zechariah 9:9",
         "Matthew 21:5"
@@ -9411,7 +9411,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-31",
       "note": "Barrett explicitly reads Zechariah 12:10 in connection with John 19:37; John's narrative cites the pierced figure after the spear report.",
-      "limitation": "The Hebrew text's pronouns, the Greek textual tradition and differing theological referents remain contested. The commentary advances a confessional Christological interpretation rather than establishing unambiguous wording. AI-assisted selected-passage and scoped accessible named-commentary assessment; complete literature and independent specialist review remain open.",
+      "limitation": "The Hebrew text's pronouns, the Greek textual tradition and differing theological referents remain contested. The commentary advances a confessional Christological interpretation rather than establishing unambiguous wording. Selected-passage and scoped accessible named-commentary assessment; complete literature and independent specialist review remain open.",
       "passages": [
         "Zechariah 12:10",
         "John 19:37"
@@ -9443,7 +9443,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-31",
       "note": "Johnson describes the brief quotation of Jeremiah 31:33-34 in Hebrews 10 after its fuller appearance in Hebrews 8, in a discussion of forgiveness and transformed hearts.",
-      "limitation": "Jeremiah directly addresses Israel and Judah; the cited Christian exposition does not independently settle continuity, supersessionism or the full diversity of Jewish covenant interpretations. AI-assisted selected-passage and scoped accessible named-commentary assessment; complete literature and independent specialist review remain open.",
+      "limitation": "Jeremiah directly addresses Israel and Judah; the cited Christian exposition does not independently settle continuity, supersessionism or the full diversity of Jewish covenant interpretations. Selected-passage and scoped accessible named-commentary assessment; complete literature and independent specialist review remain open.",
       "passages": [
         "Jeremiah 31:33",
         "Hebrews 10:16"
@@ -9475,7 +9475,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-31",
       "note": "O'Donnell identifies Psalm 118:22-23 in Matthew 21:42 and relates the rejected stone to the conflict with particular religious leaders.",
-      "limitation": "The critique addresses specific characters and leaders in a narrative context. It cannot responsibly be generalised into collective guilt or a condemnation of the Jewish people. AI-assisted selected-passage and scoped accessible named-commentary assessment; complete literature and independent specialist review remain open.",
+      "limitation": "The critique addresses specific characters and leaders in a narrative context. It cannot responsibly be generalised into collective guilt or a condemnation of the Jewish people. Selected-passage and scoped accessible named-commentary assessment; complete literature and independent specialist review remain open.",
       "passages": [
         "Psalm 118:22",
         "Matthew 21:42"
@@ -9507,7 +9507,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-31",
       "note": "Harmon and Sloat explicitly describe Paul's quotation of Genesis 15:6 as an argument about Abraham's faith and the nations' promised blessing.",
-      "limitation": "Genesis 15 concerns Abraham's covenant and heir; Paul's subsequent theological argument does not demonstrate that the earlier narrative had no distinct historical setting. AI-assisted selected-passage and scoped accessible named-commentary assessment; complete literature and independent specialist review remain open.",
+      "limitation": "Genesis 15 concerns Abraham's covenant and heir; Paul's subsequent theological argument does not demonstrate that the earlier narrative had no distinct historical setting. Selected-passage and scoped accessible named-commentary assessment; complete literature and independent specialist review remain open.",
       "passages": [
         "Genesis 15:6",
         "Galatians 3:6"
@@ -9539,7 +9539,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-31",
       "note": "Jesus replies to the temple temptation with Deuteronomy 6:16, answering the use of Psalm 91 by distinguishing trust from putting God to the test.",
-      "limitation": "The original prohibition concerns Israel's testing of the Lord at Massah (Exodus 17). Deuteronomy and Matthew are not interchangeable historical scenes; this application does not imply God cannot protect. AI-assisted selected-passage and scoped accessible named-commentary assessment; complete literature and independent specialist review remain open.",
+      "limitation": "The original prohibition concerns Israel's testing of the Lord at Massah (Exodus 17). Deuteronomy and Matthew are not interchangeable historical scenes; this application does not imply God cannot protect. Selected-passage and scoped accessible named-commentary assessment; complete literature and independent specialist review remain open.",
       "passages": [
         "Deuteronomy 6:16",
         "Matthew 4:7"
@@ -9571,7 +9571,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-31",
       "note": "Redmond explicitly identifies Paul's appeal to Deuteronomy 25:4 and its principle of allowing workers a share in their labour, extending an animal rule by analogy.",
-      "limitation": "The ox's welfare is part of Deuteronomy's original ethical claim. Paul's wider argument includes his voluntary refusal to demand payment and cannot be reduced to a universal ministerial fee schedule. AI-assisted selected-passage and scoped accessible named-commentary assessment; complete literature and independent specialist review remain open.",
+      "limitation": "The ox's welfare is part of Deuteronomy's original ethical claim. Paul's wider argument includes his voluntary refusal to demand payment and cannot be reduced to a universal ministerial fee schedule. Selected-passage and scoped accessible named-commentary assessment; complete literature and independent specialist review remain open.",
       "passages": [
         "Deuteronomy 25:4",
         "1 Corinthians 9:9"
@@ -9603,7 +9603,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-31",
       "note": "Johnson explicitly reads Psalm 8 as a human vocation text re-applied in Hebrews to Jesus' humiliation and exaltation, including present incomplete dominion.",
-      "limitation": "Psalm 8 speaks of humanity in creation. Hebrew 'elohim' and Greek 'angels' readings are not identical and should not be flattened as if all translations use the same word. AI-assisted selected-passage and scoped accessible named-commentary assessment; complete literature and independent specialist review remain open.",
+      "limitation": "Psalm 8 speaks of humanity in creation. Hebrew 'elohim' and Greek 'angels' readings are not identical and should not be flattened as if all translations use the same word. Selected-passage and scoped accessible named-commentary assessment; complete literature and independent specialist review remain open.",
       "passages": [
         "Psalm 8:4",
         "Hebrews 2:6"
@@ -9635,7 +9635,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-31",
       "note": "Köstenberger connects the disciples' recollection of Psalm 69:9 with Jesus' zeal during the temple confrontation in John 2:17.",
-      "limitation": "John's setting does not resolve whether this and the Synoptic temple accounts describe one historical incident or more. The psalm's original voice belongs to a suffering worshipper. AI-assisted selected-passage and scoped accessible named-commentary assessment; complete literature and independent specialist review remain open.",
+      "limitation": "John's setting does not resolve whether this and the Synoptic temple accounts describe one historical incident or more. The psalm's original voice belongs to a suffering worshipper. Selected-passage and scoped accessible named-commentary assessment; complete literature and independent specialist review remain open.",
       "passages": [
         "Psalm 69:9",
         "John 2:17"
@@ -9667,7 +9667,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-31",
       "note": "Johnson identifies Psalm 110:4 as Hebrews' scriptural basis for a priestly appointment in the order of Melchizedek, distinct from Levitical descent.",
-      "limitation": "The psalm's royal-priestly setting, historical Melchizedek tradition and Christian exposition are separate layers. An author's confessional conclusions do not resolve all historical questions. AI-assisted selected-passage and scoped accessible named-commentary assessment; complete literature and independent specialist review remain open.",
+      "limitation": "The psalm's royal-priestly setting, historical Melchizedek tradition and Christian exposition are separate layers. An author's confessional conclusions do not resolve all historical questions. Selected-passage and scoped accessible named-commentary assessment; complete literature and independent specialist review remain open.",
       "passages": [
         "Psalm 110:4",
         "Hebrews 5:6"
@@ -9699,7 +9699,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-31",
       "note": "Matthew narrates crowds acclaiming Jesus with language from Psalm 118:26 and additional Davidic language; the quotation is placed in the Jerusalem entry.",
-      "limitation": "Psalm 118's original blessing has a communal liturgical setting. The narrative does not demonstrate that every resident of Jerusalem shared the crowds' acclamation. AI-assisted selected-passage and scoped accessible named-commentary assessment; complete literature and independent specialist review remain open.",
+      "limitation": "Psalm 118's original blessing has a communal liturgical setting. The narrative does not demonstrate that every resident of Jerusalem shared the crowds' acclamation. Selected-passage and scoped accessible named-commentary assessment; complete literature and independent specialist review remain open.",
       "passages": [
         "Psalm 118:26",
         "Matthew 21:9"
@@ -9731,7 +9731,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-31",
       "note": "O'Donnell directly identifies Isaiah 29:13 in Matthew 15:7-9 during Jesus' dispute about traditions, honouring parents and the heart.",
-      "limitation": "Isaiah's warning and Matthew's criticism address religious sincerity and particular conduct; neither permits wholesale hostility towards Jewish people or the assumption that all ritual observance is insincere. AI-assisted selected-passage and scoped accessible named-commentary assessment; complete literature and independent specialist review remain open.",
+      "limitation": "Isaiah's warning and Matthew's criticism address religious sincerity and particular conduct; neither permits wholesale hostility towards Jewish people or the assumption that all ritual observance is insincere. Selected-passage and scoped accessible named-commentary assessment; complete literature and independent specialist review remain open.",
       "passages": [
         "Isaiah 29:13",
         "Matthew 15:8"
@@ -9763,7 +9763,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-31",
       "note": "Strauss discusses Mark's composite scriptural introduction combining the messenger motif and the wilderness voice before the description of John the Baptist.",
-      "limitation": "The attribution to Isaiah accompanies words associated with Malachi 3:1 and Exodus 23:20; textual headings and the wilderness punctuation have variants. Do not label the entire quotation as solely Isaiah 40:3. AI-assisted selected-passage and scoped accessible named-commentary assessment; complete literature and independent specialist review remain open.",
+      "limitation": "The attribution to Isaiah accompanies words associated with Malachi 3:1 and Exodus 23:20; textual headings and the wilderness punctuation have variants. Do not label the entire quotation as solely Isaiah 40:3. Selected-passage and scoped accessible named-commentary assessment; complete literature and independent specialist review remain open.",
       "passages": [
         "Isaiah 40:3",
         "Mark 1:3"
@@ -9795,7 +9795,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-31",
       "note": "O'Donnell describes the longer quotation of Isaiah 42:1-4 as a key summary of Matthew's servant theology, linked to withdrawal and healing.",
-      "limitation": "The servant figure and justice to the nations belong to Isaiah's own literary context. Matthew adapts its use; a single confessional commentary is not proof of universal interpretive agreement. AI-assisted selected-passage and scoped accessible named-commentary assessment; complete literature and independent specialist review remain open.",
+      "limitation": "The servant figure and justice to the nations belong to Isaiah's own literary context. Matthew adapts its use; a single confessional commentary is not proof of universal interpretive agreement. Selected-passage and scoped accessible named-commentary assessment; complete literature and independent specialist review remain open.",
       "passages": [
         "Isaiah 42:1",
         "Matthew 12:18"
@@ -9827,7 +9827,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-31",
       "note": "Strauss identifies Isaiah 56:7 and Jeremiah 7:11 as the combined sources of Jesus' temple declaration, stressing prayer for all nations.",
-      "limitation": "The scene is a protest against behaviour obstructing worship in a particular narrative. Do not treat the two Hebrew Bible texts as one quotation or infer a blanket ban on commerce unrelated to the temple. AI-assisted selected-passage and scoped accessible named-commentary assessment; complete literature and independent specialist review remain open.",
+      "limitation": "The scene is a protest against behaviour obstructing worship in a particular narrative. Do not treat the two Hebrew Bible texts as one quotation or infer a blanket ban on commerce unrelated to the temple. Selected-passage and scoped accessible named-commentary assessment; complete literature and independent specialist review remain open.",
       "passages": [
         "Isaiah 56:7",
         "Mark 11:17"
@@ -9859,7 +9859,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-31",
       "note": "Hebrews 11:3 reasons that visible creation originates through divine speech, consonant with Genesis 1's account of God's initiative.",
-      "limitation": "A literary-theological connection does not establish a measurable cosmological process, the age of the earth or a scientific mechanism; Hebrews 11 is a faith exhortation. Source-specific AI-assisted contextual assessment; competing interpretations, manuscript variants and independent specialist review are not certified.",
+      "limitation": "A literary-theological connection does not establish a measurable cosmological process, the age of the earth or a scientific mechanism; Hebrews 11 is a faith exhortation. Source-specific contextual assessment; competing interpretations, manuscript variants and independent specialist review are not certified.",
       "passages": [
         "Genesis 1:1",
         "Hebrews 11:3"
@@ -9891,7 +9891,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-31",
       "note": "Köstenberger treats the Word in John's prologue as the agent of creation, deliberately invoking Genesis's theological opening.",
-      "limitation": "John 1:3 is an echo of creation rather than a direct quotation of Genesis 1:1; the prologue's Christological purpose should remain distinct. Source-specific AI-assisted contextual assessment; competing interpretations, manuscript variants and independent specialist review are not certified.",
+      "limitation": "John 1:3 is an echo of creation rather than a direct quotation of Genesis 1:1; the prologue's Christological purpose should remain distinct. Source-specific contextual assessment; competing interpretations, manuscript variants and independent specialist review are not certified.",
       "passages": [
         "Genesis 1:1",
         "John 1:3"
@@ -9923,7 +9923,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-31",
       "note": "Alexander identifies the later Hebrews interpretation of Abraham's statement about returning with Isaac and the possibility of resurrection.",
-      "limitation": "The test in Genesis 22 raises ethical and narrative questions that Hebrews does not erase. Hebrews is a later canonical portrayal of Abraham's faith, not a stenographic account of his thoughts. Source-specific AI-assisted contextual assessment; competing interpretations, manuscript variants and independent specialist review are not certified.",
+      "limitation": "The test in Genesis 22 raises ethical and narrative questions that Hebrews does not erase. Hebrews is a later canonical portrayal of Abraham's faith, not a stenographic account of his thoughts. Source-specific contextual assessment; competing interpretations, manuscript variants and independent specialist review are not certified.",
       "passages": [
         "Genesis 22:2",
         "Hebrews 11:17"
@@ -9955,7 +9955,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-31",
       "note": "Köstenberger discusses the Johannine 'I am' expression and its relationship to the language of God's name and divine identity.",
-      "limitation": "The Hebrew 'ehyeh' in Exodus 3:14, its ancient Greek renderings and the Johannine 'ego eimi' are not identical grammatical constructions. The allusion is interpretive, not verbatim citation. Source-specific AI-assisted contextual assessment; competing interpretations, manuscript variants and independent specialist review are not certified.",
+      "limitation": "The Hebrew 'ehyeh' in Exodus 3:14, its ancient Greek renderings and the Johannine 'ego eimi' are not identical grammatical constructions. The allusion is interpretive, not verbatim citation. Source-specific contextual assessment; competing interpretations, manuscript variants and independent specialist review are not certified.",
       "passages": [
         "Exodus 3:14",
         "John 8:58"
@@ -9987,7 +9987,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-31",
       "note": "Morales directly compares the unbroken-bone detail with Passover rules in Exodus 12:46 and the righteous-sufferer language of Psalm 34:20.",
-      "limitation": "Because John 19:36 does not name a single Old Testament location, Exodus 12:46 cannot be identified as the sole certain source; Psalm 34:20 remains relevant. Source-specific AI-assisted contextual assessment; competing interpretations, manuscript variants and independent specialist review are not certified.",
+      "limitation": "Because John 19:36 does not name a single Old Testament location, Exodus 12:46 cannot be identified as the sole certain source; Psalm 34:20 remains relevant. Source-specific contextual assessment; competing interpretations, manuscript variants and independent specialist review are not certified.",
       "passages": [
         "Exodus 12:46",
         "John 19:36"
@@ -10019,7 +10019,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-31",
       "note": "Chase describes the humanlike figure receiving dominion; Mark's hearing combines the clouds motif with Psalm 110's right-hand language.",
-      "limitation": "Mark combines distinct Hebrew Bible passages. Daniel's individual and corporate interpretations and the timing of Jesus' statement remain disputed; do not treat this as a single literal quotation. Source-specific AI-assisted contextual assessment; competing interpretations, manuscript variants and independent specialist review are not certified.",
+      "limitation": "Mark combines distinct Hebrew Bible passages. Daniel's individual and corporate interpretations and the timing of Jesus' statement remain disputed; do not treat this as a single literal quotation. Source-specific contextual assessment; competing interpretations, manuscript variants and independent specialist review are not certified.",
       "passages": [
         "Daniel 7:13",
         "Mark 14:62"
@@ -10051,7 +10051,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-31",
       "note": "John explicitly compares the elevation of Moses' bronze serpent with the Son of Man being lifted up; the figures are analogous rather than identical.",
-      "limitation": "Numbers recounts healing during a wilderness crisis. The bronze image's later destruction in 2 Kings 18:4 is relevant; typology should not encourage veneration of the image or replace the original account. Source-specific AI-assisted contextual assessment; competing interpretations, manuscript variants and independent specialist review are not certified.",
+      "limitation": "Numbers recounts healing during a wilderness crisis. The bronze image's later destruction in 2 Kings 18:4 is relevant; typology should not encourage veneration of the image or replace the original account. Source-specific contextual assessment; competing interpretations, manuscript variants and independent specialist review are not certified.",
       "passages": [
         "Numbers 21:9",
         "John 3:14"
@@ -10083,7 +10083,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-31",
       "note": "Mathis directly identifies Deuteronomy 32:35 in Paul's warning against private retaliation, linked to enemy-directed kindness.",
-      "limitation": "Deuteronomy's Song of Moses has its own covenant-judgment setting. Paul's command to refrain from revenge does not prohibit reporting abuse or seeking lawful protection. Source-specific AI-assisted contextual assessment; competing interpretations, manuscript variants and independent specialist review are not certified.",
+      "limitation": "Deuteronomy's Song of Moses has its own covenant-judgment setting. Paul's command to refrain from revenge does not prohibit reporting abuse or seeking lawful protection. Source-specific contextual assessment; competing interpretations, manuscript variants and independent specialist review are not certified.",
       "passages": [
         "Deuteronomy 32:35",
         "Romans 12:19"
@@ -10115,7 +10115,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-31",
       "note": "Bolt identifies Luke 22:37 as an explicit appeal to Isaiah 53:12 in the lead-up to Jesus' arrest.",
-      "limitation": "Luke's exchange about swords is interpretively disputed and should not be used alone to justify armed force. The servant's original identity remains a wider Isaiah research question. Source-specific AI-assisted contextual assessment; competing interpretations, manuscript variants and independent specialist review are not certified.",
+      "limitation": "Luke's exchange about swords is interpretively disputed and should not be used alone to justify armed force. The servant's original identity remains a wider Isaiah research question. Source-specific contextual assessment; competing interpretations, manuscript variants and independent specialist review are not certified.",
       "passages": [
         "Isaiah 53:12",
         "Luke 22:37"
@@ -10147,7 +10147,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-31",
       "note": "Köstenberger directly identifies Isaiah 54:13 in Jesus' statement about those taught by the Father and their coming to him.",
-      "limitation": "Isaiah's promise refers to Zion's restored children in its own context. John's application does not erase that community-oriented promise or settle every account of divine drawing. Source-specific AI-assisted contextual assessment; competing interpretations, manuscript variants and independent specialist review are not certified.",
+      "limitation": "Isaiah's promise refers to Zion's restored children in its own context. John's application does not erase that community-oriented promise or settle every account of divine drawing. Source-specific contextual assessment; competing interpretations, manuscript variants and independent specialist review are not certified.",
       "passages": [
         "Isaiah 54:13",
         "John 6:45"
@@ -10179,7 +10179,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-31",
       "note": "Tully describes Hosea 11:1 as a backward-looking recollection of Israel's exodus, while Matthew 2:15 reuses the line in a Jesus-as-Israel interpretive pattern.",
-      "limitation": "Hosea 11:1 does not literally predict a future infant's Egyptian exile. Matthew's fulfilment formula is best described as a Christian typological reuse; historical and Jewish interpretive horizons remain distinct. Source-specific AI-assisted contextual assessment; competing interpretations, manuscript variants and independent specialist review are not certified.",
+      "limitation": "Hosea 11:1 does not literally predict a future infant's Egyptian exile. Matthew's fulfilment formula is best described as a Christian typological reuse; historical and Jewish interpretive horizons remain distinct. Source-specific contextual assessment; competing interpretations, manuscript variants and independent specialist review are not certified.",
       "passages": [
         "Hosea 11:1",
         "Matthew 2:15"
@@ -10211,7 +10211,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-31",
       "note": "O'Donnell explicitly identifies Matthew 9:13 as a quotation of Hosea 6:6 in the dispute over eating with tax collectors and other sinners.",
-      "limitation": "In Hosea, covenant loyalty and knowing God challenge ritual detached from moral fidelity. Neither author demands a blanket rejection of Jewish worship or sacrifice. Source-specific AI-assisted contextual assessment; competing interpretations, manuscript variants and independent specialist review are not certified.",
+      "limitation": "In Hosea, covenant loyalty and knowing God challenge ritual detached from moral fidelity. Neither author demands a blanket rejection of Jewish worship or sacrifice. Source-specific contextual assessment; competing interpretations, manuscript variants and independent specialist review are not certified.",
       "passages": [
         "Hosea 6:6",
         "Matthew 9:13"
@@ -10243,7 +10243,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-31",
       "note": "Hill identifies James' use of Amos 9:11-12 at the Jerusalem council in the discussion of Gentile inclusion.",
-      "limitation": "The Hebrew text refers to Edom in many editions where the Greek rendering used by Acts is associated with 'humanity' or the nations. This textual issue cannot be resolved by treating the versions as identical. Source-specific AI-assisted contextual assessment; competing interpretations, manuscript variants and independent specialist review are not certified.",
+      "limitation": "The Hebrew text refers to Edom in many editions where the Greek rendering used by Acts is associated with 'humanity' or the nations. This textual issue cannot be resolved by treating the versions as identical. Source-specific contextual assessment; competing interpretations, manuscript variants and independent specialist review are not certified.",
       "passages": [
         "Amos 9:11",
         "Acts 15:16"
@@ -10275,7 +10275,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-31",
       "note": "Barrett directly connects Zechariah 13:7 with Matthew 26:31 and Jesus' prediction of the disciples' scattering.",
-      "limitation": "The shepherd's original oracle follows complicated prophetic imagery. Barrett's Trinitarian interpretation is not independently demonstrated by a single Hebrew phrase; keep it attributed. Source-specific AI-assisted contextual assessment; competing interpretations, manuscript variants and independent specialist review are not certified.",
+      "limitation": "The shepherd's original oracle follows complicated prophetic imagery. Barrett's Trinitarian interpretation is not independently demonstrated by a single Hebrew phrase; keep it attributed. Source-specific contextual assessment; competing interpretations, manuscript variants and independent specialist review are not certified.",
       "passages": [
         "Zechariah 13:7",
         "Matthew 26:31"
@@ -10307,7 +10307,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-31",
       "note": "Harmon directly identifies the Gospel association of Malachi's messenger with John the Baptist in Matthew 11:10.",
-      "limitation": "Matthew's quotation adapts pronouns, while Malachi's original warning addresses priesthood, injustice and covenant loyalty. No harmonised original-language form is established. Source-specific AI-assisted contextual assessment; competing interpretations, manuscript variants and independent specialist review are not certified.",
+      "limitation": "Matthew's quotation adapts pronouns, while Malachi's original warning addresses priesthood, injustice and covenant loyalty. No harmonised original-language form is established. Source-specific contextual assessment; competing interpretations, manuscript variants and independent specialist review are not certified.",
       "passages": [
         "Malachi 3:1",
         "Matthew 11:10"
@@ -10339,7 +10339,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-31",
       "note": "Busenitz explicitly distinguishes Joel's Zion-and-restoration horizon from Paul's broader use of the call-on-the-Lord promise for Jew and Gentile alike.",
-      "limitation": "Joel's day-of-the-Lord imagery and specific historical/eschatological referents remain contested. Paul's application is a later interpretation, not a deletion of Zion from the prophet. Source-specific AI-assisted contextual assessment; competing interpretations, manuscript variants and independent specialist review are not certified.",
+      "limitation": "Joel's day-of-the-Lord imagery and specific historical/eschatological referents remain contested. Paul's application is a later interpretation, not a deletion of Zion from the prophet. Source-specific contextual assessment; competing interpretations, manuscript variants and independent specialist review are not certified.",
       "passages": [
         "Joel 2:32",
         "Romans 10:13"
@@ -10371,7 +10371,7 @@
       "decision": "context-clarified",
       "reviewedOn": "2026-10-31",
       "note": "Johnson identifies an adapted citation of Habakkuk 2:4 in Hebrews' appeal to endure rather than shrink back.",
-      "limitation": "Hebrews' Greek wording, pronoun order and perseverance emphasis differ from a straightforward Hebrew quotation; its use must not be flattened into Paul's separate arguments in Romans and Galatians. Source-specific AI-assisted contextual assessment; competing interpretations, manuscript variants and independent specialist review are not certified.",
+      "limitation": "Hebrews' Greek wording, pronoun order and perseverance emphasis differ from a straightforward Hebrew quotation; its use must not be flattened into Paul's separate arguments in Romans and Galatians. Source-specific contextual assessment; competing interpretations, manuscript variants and independent specialist review are not certified.",
       "passages": [
         "Habakkuk 2:4",
         "Hebrews 10:38"
@@ -10424,7 +10424,7 @@
         "ce041",
         "ce043"
       ],
-      "method": "AI-assisted selected-passage comparison. Five assessments also include scoped scholarly commentary or publisher-summary support. Other pairs retain an explicit secondary-literature gap; no independent specialist signoff."
+      "method": "Selected-passage comparison. Five assessments also include scoped scholarly commentary or publisher-summary support. Other pairs retain an explicit secondary-literature gap; no independent specialist signoff."
     },
     {
       "id": "connections-support-01",
@@ -10444,7 +10444,7 @@
         "ce043",
         "ce044"
       ],
-      "method": "AI-assisted review of named, readable scholarly commentaries for twelve already assessed pairs. Eleven previously had passage-only support; one had a limited publisher chapter summary. Commentaries have stated confessional settings and do not constitute independent specialist signoff."
+      "method": "review of named, readable scholarly commentaries for twelve already assessed pairs. Eleven previously had passage-only support; one had a limited publisher chapter summary. Commentaries have stated confessional settings and do not constitute independent specialist signoff."
     },
     {
       "id": "connections-20-02",
@@ -10472,7 +10472,7 @@
         "ce114",
         "ce115"
       ],
-      "method": "AI-assisted selected-passage comparison of twenty previously unassessed narrative pairs. Literary parallels remain distinct from independent historical corroboration; order, identity and wording differences are retained. This batch does not claim full secondary-literature or specialist review."
+      "method": "Selected-passage comparison of twenty previously unassessed narrative pairs. Literary parallels remain distinct from independent historical corroboration; order, identity and wording differences are retained. This batch does not claim full secondary-literature or specialist review."
     },
     {
       "id": "connections-20-03",
@@ -10500,7 +10500,7 @@
         "ce051",
         "ce058"
       ],
-      "method": "AI-assisted selected-passage comparison with a named readable scholarly commentary for every pair. Commentary supports only the recorded claim and locator, not necessarily the complete cross-passage interpretation. Original contexts and confessional settings remain explicit; no independent specialist signoff."
+      "method": "Selected-passage comparison with a named readable scholarly commentary for every pair. Commentary supports only the recorded claim and locator, not necessarily the complete cross-passage interpretation. Original contexts and confessional settings remain explicit; no independent specialist signoff."
     },
     {
       "id": "connections-20-04",
@@ -10528,7 +10528,7 @@
         "ce084",
         "ce085"
       ],
-      "method": "AI-assisted comparison of two selected publisher passage contexts with one scoped named commentary for each pair. Six commentaries by four authors; access to two commentaries was limited to indexed excerpts. Narrative overlap, divergent evaluations and authorship/chronology limits remain explicit. All twenty links remain narrative parallels; no independent specialist signoff."
+      "method": "comparison of two selected publisher passage contexts with one scoped named commentary for each pair. Six commentaries by four authors; access to two commentaries was limited to indexed excerpts. Narrative overlap, divergent evaluations and authorship/chronology limits remain explicit. All twenty links remain narrative parallels; no independent specialist signoff."
     },
     {
       "id": "connections-20-05",
@@ -10556,7 +10556,7 @@
         "ce088",
         "ce089"
       ],
-      "method": "AI-assisted comparison of selected publisher passage contexts with one scoped named readable commentary for every pair. Seventeen commentary works by sixteen authors support particular claims, not automatically every editorial inference. Seven narrative parallels and thirteen thematic links retain their classifications. The Revelation anchors belong to the same vision; two publisher views are not independent witnesses. No independent specialist signoff."
+      "method": "comparison of selected publisher passage contexts with one scoped named readable commentary for every pair. Seventeen commentary works by sixteen authors support particular claims, not automatically every editorial inference. Seven narrative parallels and thirteen thematic links retain their classifications. The Revelation anchors belong to the same vision; two publisher views are not independent witnesses. No independent specialist signoff."
     },
     {
       "id": "connections-final-07",
@@ -10571,7 +10571,7 @@
         "ce094",
         "ce095"
       ],
-      "method": "AI-assisted comparison of selected publisher passage contexts with scoped named commentary for seven previously unassessed pairs. Three readable commentaries by three authors from one evangelical collection support stated claims, not a complete survey of competing interpretations. All seven retain their narrative-parallel classification. All 115 explained pairs now have dated assessments; the full OpenBible corpus, fuller literature and independent specialist review remain outside this completion claim."
+      "method": "comparison of selected publisher passage contexts with scoped named commentary for seven previously unassessed pairs. Three readable commentaries by three authors from one evangelical collection support stated claims, not a complete survey of competing interpretations. All seven retain their narrative-parallel classification. All 115 explained pairs now have dated assessments; the full OpenBible corpus, fuller literature and independent specialist review remain outside this completion claim."
     },
     {
       "id": "connections-support-32",
@@ -10611,7 +10611,7 @@
         "ce114",
         "ce115"
       ],
-      "method": "AI-assisted claim-specific commentary follow-up for all 32 previously passage-based assessments. Sixteen named commentary entries have recorded locators and access limits; one was available only through indexed excerpts, two are authorised handbook excerpts. Earlier assessment fields, classifications and cautions are preserved. These citations do not imply endorsement of every link, a complete literature review or independent specialist signoff."
+      "method": "claim-specific commentary follow-up for all 32 previously passage-based assessments. Sixteen named commentary entries have recorded locators and access limits; one was available only through indexed excerpts, two are authorised handbook excerpts. Earlier assessment fields, classifications and cautions are preserved. These citations do not imply endorsement of every link, a complete literature review or independent specialist signoff."
     },
     {
       "id": "v1-citations-12-01",
@@ -10631,7 +10631,7 @@
         "ce140",
         "ce142"
       ],
-      "method": "AI-assisted, claim-specific examination of twelve explicit Hebrew Bible quotations in the New Testament. Both biblical contexts and one scoped named, readable confessional commentary are cited per pair. Six selected TGC commentary pages, by seven named contributors, support scoped claims; passage link access varies, and source links are not independent scholarly confirmation. Full textual witnesses, competing interpretations and specialist review remain open."
+      "method": "Dated, claim-specific examination of twelve explicit Hebrew Bible quotations in the New Testament. Both biblical contexts and one scoped named, readable confessional commentary are cited per pair. Six selected TGC commentary pages, by seven named contributors, support scoped claims; passage link access varies, and source links are not independent scholarly confirmation. Full textual witnesses, competing interpretations and specialist review remain open."
     },
     {
       "id": "v1-citations-17-02",
@@ -10656,7 +10656,7 @@
         "ce151",
         "ce154"
       ],
-      "method": "AI-assisted, dated examination of explicit scriptural quotations and their New Testament contexts with named, publicly accessible TGC commentaries; sources support only the specified reading claims. Hebrew and Greek variants, original settings, competing interpretations and external specialist signoff remain qualified. Full OpenBible corpus is outside this work."
+      "method": "Dated examination of explicit scriptural quotations and their New Testament contexts with named, publicly accessible TGC commentaries; sources support only the specified reading claims. Hebrew and Greek variants, original settings, competing interpretations and external specialist signoff remain qualified. Full OpenBible corpus is outside this work."
     },
     {
       "id": "v1-citations-17-03",
@@ -10681,7 +10681,7 @@
         "ce160",
         "ce161"
       ],
-      "method": "AI-assisted scoped biblical-context assessment of seventeen remaining new Atlas explanation pairs against accessible named scholarly commentary and essays; original quotation, textual variants, typological reuse and contested interpretations are distinguished. No independent specialist signoff; complete manuscripts and full comparative literature outside scope."
+      "method": "Scoped biblical-context assessment of seventeen remaining new Atlas explanation pairs against accessible named scholarly commentary and essays; original quotation, textual variants, typological reuse and contested interpretations are distinguished. No independent specialist signoff; complete manuscripts and full comparative literature outside scope."
     }
   ]
 }
