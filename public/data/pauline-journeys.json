@@ -3,7 +3,7 @@
   "updated": "2026-10-31",
   "scope": "Three conventional missionary journey groupings in Acts 13-21 and a separately labelled prisoner voyage to Rome in Acts 27-28.",
   "method": "Acts is primary for the narrated movements. Each entry is an editorial paraphrase with a passage link; no Bible text is bundled. Markers are rounded Pleiades representative points. Regions, unnamed settings and offshore passages have no invented pins. Dashed connectors join only consecutive mapped entries within one journey and are not roads or sailing tracks. First- and second-journey stages also carry original Scripture study contexts; related texts support reading without establishing precise travel dates or routes.",
-  "review": "AI-assisted editorial source and reference screening. All 83 Pauline stages now have original passage-focused study context and canonical cross-references. The third journey and prisoner voyage explicitly distinguish named landfalls, inferred routes and intended destinations. Independent historical and textual specialist review has not occurred.",
+  "review": "Editorial source and reference screening. The project owner has reviewed and accepted the published study content. All 83 Pauline stages now have original passage-focused study context and canonical cross-references. The third journey and prisoner voyage explicitly distinguish named landfalls, inferred routes and intended destinations. Independent historical and textual specialist review has not occurred.",
   "chronology": "The timeline counts narrative stages, not elapsed time. No absolute years are assigned. Acts and Pauline-letter chronology require separate comparison; letters are not silently used to add unnamed Acts stops.",
   "journeys": [
     {
@@ -2763,7 +2763,7 @@
   "studyCoverage": {
     "reviewedOn": "2026-10-31",
     "scope": "All 83 of 83 Pauline stages, covering the first, second and third conventional missionary journeys and the separate prisoner voyage to Rome, have original Scripture-based study contexts and related canonical reading passages.",
-    "method": "AI-assisted original Scripture-first editorial reading and cross-passage comparison. Geographical limitations, groupings, text variants and other research cautions remain visible; not a certification of exact sailing paths, city visits, textual chronology or archaeological site matches.",
+    "method": "Original Scripture-first editorial reading and cross-passage comparison. Geographical limitations, groupings, text variants and other research cautions remain visible; not a certification of exact sailing paths, city visits, textual chronology or archaeological site matches.",
     "limit": "Scripture reading aids are not independent specialist historical reviews; published academic interpretation of the Acts voyage is not an independently surveyed route. The wider flagship historical audit and specialist consultation remain open."
   }
 }
