@@ -1132,7 +1132,7 @@
             "evidence": "sources/operations/v1-reader-provider-production-smoke-2026-10-31.md",
             "acceptance": "Simulate provider outages, missing keys and licence-related failure paths, then verify user messaging, request security and service recovery.",
             "reviewedOn": "2026-10-31",
-            "reviewer": "Scripture Trails editorial verification - real Cloudflare production browser checks and isolated failure/regression tests, not independent publisher licence approval"
+            "reviewer": "Scripture Trails automated verification - real Cloudflare production browser checks and isolated failure/regression tests, not independent publisher licence approval"
           }
         ]
       },
