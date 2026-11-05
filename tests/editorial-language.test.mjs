@@ -2,8 +2,9 @@ import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync,readdirSync} from 'node:fs';
 import {join,extname} from 'node:path';
+import {fileURLToPath} from 'node:url';
 
-const root=new URL('../public/',import.meta.url);
+const root=fileURLToPath(new URL('../public/',import.meta.url));
 function* files(dir){
  for(const item of readdirSync(dir,{withFileTypes:true})){
   const path=join(dir,item.name);
