@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.2.1 - 06/11/2026: Clarify Scripture source reviews
+
+- Refine the presentation of primary Scripture references and source-review notes across Hebrew Bible geography, Gospel journeys, Pauline studies, Atlas citations and the project roadmap.
+- Reflect project-owner review and acceptance of published studies while retaining research limits, source access qualifications and distinctions from independent external peer review.
+- Preserve existing source links, study navigation and historical releases, with validation coverage for consistent wording.
+
 ## 1.2.0 - 06/11/2026: Scripture previews across the study library
 
 - Preview Bible references across the study library on desktop hover, keyboard focus and mobile tap, including verse ranges.
