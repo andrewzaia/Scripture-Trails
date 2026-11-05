@@ -25,7 +25,7 @@ test('duplicate identities, backwards sections and broken profile/source links f
 });
 test('source/check records require safe links, real dates, authorship and stated access limitations',()=>{
  for(const mutate of [d=>d.sources['beitzel-sea'].url='javascript:alert(1)',d=>d.sources['iaa-kadesh'].access='',d=>d.sources['iaa-kadesh'].accessed='2026-02-31',d=>d.sources['iaa-kadesh'].author='',d=>d.stages[0].primaryCheck.url='https://unverified.example/reading',d=>delete d.stages[0].primaryCheck]){const d=clone();mutate(d);assert.throws(()=>validateHebrewGeography(d,counts));}
- assert.match(data.sources['iaa-kadesh'].access,/full.*not been reviewed/);assert.match(data.collection.review,/Independent.*review remains pending/);
+ assert.match(data.sources['iaa-kadesh'].access,/full.*not been reviewed/);assert.match(data.collection.review,/No independent .*review is claimed/);
 });
 test('Sin/Zin, Rephidim/Kadesh, refused passage and the unknown grave remain separate',()=>{
  const stage=id=>data.stages.find(s=>s.id===id);
