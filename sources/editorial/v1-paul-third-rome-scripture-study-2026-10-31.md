@@ -15,6 +15,6 @@ Acts 27 distinguishes arrival at Fair Havens from the proposed Phoenix winter ha
 
 ## Limits and acceptance
 
-The output is AI-assisted original narrative commentary and canonical cross-reading, not independent archaeological, textual or historical specialist signoff. The total Pauline content-depth coverage is 83/83. The 79 Gospel events still require further evidence work. The wider v1.0 launch has 12 open criteria, including publisher rights, external translation-provider behaviour and independent critical-claims assessment.
+The output is Original narrative commentary and canonical cross-reading, not independent archaeological, textual or historical specialist signoff. The total Pauline content-depth coverage is 83/83. The 79 Gospel events still require further evidence work. The wider v1.0 launch has 12 open criteria, including publisher rights, external translation-provider behaviour and independent critical-claims assessment.
 
 Verification required before publication: normal npm semantic-version release generator, full build and data tests, browser suite, PR-wide release validation and commit-matched Cloudflare deployment with a live footer and study-content smoke check.
