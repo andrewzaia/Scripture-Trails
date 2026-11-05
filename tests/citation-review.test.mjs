@@ -394,6 +394,6 @@ test('all 34 additional Atlas pairs have dated scoped assessments in two source-
  assert.deepEqual(new Set(CITATION_REVIEW.records.filter(x=>x.kind==='connection').map(x=>x.target)),new Set(CONNECTION_EVIDENCE.map(x=>x.id)));
  const gate=json('roadmap').v1Readiness.gates.find(g=>g.id==='evidence').criteria.find(c=>c.id==='atlas-reviews');
  assert.equal(gate.status,'met');
- assert.match(gate.reviewer,/AI-assisted/);
+ assert.match(gate.reviewer,/project owner/i);
  assert.match(gate.reviewer,/not independent specialist/);
 });
