@@ -1,4 +1,4 @@
-import {CITATION_REVIEW} from './citation-review-data.js?v=1.2.0';
+import {CITATION_REVIEW} from './citation-review-data.js?v=1.2.1';
 import {validateCanonicalReference} from './reference-integrity.js';
 export {CITATION_REVIEW};
 
@@ -16,7 +16,7 @@ export function commentaryCoverage(data=CITATION_REVIEW){return data.records.fil
 const safeUrl=value=>{try{const u=new URL(value);return u.protocol==='https:'&&!u.username&&!u.password;}catch{return false;}};
 const date=value=>/^\d{4}-\d{2}-\d{2}$/.test(value)&&!Number.isNaN(Date.parse(value))&&new Date(value).toISOString().slice(0,10)===value;
 export function validateCitationReview(data,counts,targets){
- if(data?.schema!==1||data.status!=='declared-batch-assessed'||!date(data.updated)||!data.method?.includes('AI-assisted')||!data.method.includes('No independent specialist signoff')||!data.deferred?.length||!Array.isArray(data.records)||!data.sources)throw Error('Invalid citation review metadata');
+ if(data?.schema!==1||data.status!=='declared-batch-assessed'||!date(data.updated)||!data.method?.includes('project owner has reviewed and accepted')||!data.method.includes('No independent specialist signoff')||!data.deferred?.length||!Array.isArray(data.records)||!data.sources)throw Error('Invalid citation review metadata');
  const sourceKinds=new Set(['primary-scripture','publisher-note','scholarly-commentary','excavation-report','publisher-abstract','project-summary','access-limited']);
  for(const [id,s] of Object.entries(data.sources)){
   if(!id||!s.title||!s.author||!s.publisher||!sourceKinds.has(s.kind)||!safeUrl(s.url)||!date(s.checkedOn)||s.checkedOn>data.updated||!s.access||!s.rights?.startsWith('Linked only;'))throw Error('Invalid citation source '+id);
@@ -53,7 +53,7 @@ export function appendCitationReview(parent,kind,target){
  for(const record of citationReviews(kind,target)){
   const detail=make('details',undefined,'citation-review');
   detail.append(make('summary','Citation review: '+REVIEW_DECISIONS[record.decision]));
-  detail.append(make('p',record.note),make('p',record.limitation),make('p','Reviewed '+record.reviewedOn+' | AI-assisted editorial check. Independent specialist review pending.','soft-note'));
+  detail.append(make('p',record.note),make('p',record.limitation),make('p','Source assessment recorded '+record.reviewedOn+'. Study content reviewed and accepted by the project owner. Independent specialist review not claimed.','soft-note'));
   if(record.supplement){const s=record.supplement;detail.append(make('h4','Commentary follow-up'),make('p',s.note),make('p',s.limitation),make('p','Follow-up reviewed '+s.reviewedOn+' | Earlier assessment retained above.','soft-note'));}
   const list=make('ul');
   for(const c of reviewCitations(record)){
@@ -73,7 +73,7 @@ export function renderCitationSummary(root){
  const newReviews=Math.max(0,scope.connections-115);
  const pending=Math.max(0,46-newReviews);
  root.replaceChildren(make('p',`Reviewed coverage: ${scope.issues} Gospel issues, ${scope.places} place dossiers, ${scope.trailReadings} Nehemiah readings and ${scope.connections} selected passage comparisons. ${commentaryCount} comparisons include named scholarly commentary or limited publisher-summary support. ${remaining?remaining+' comparisons rely on selected passage checks.':'All assessed pairs have at least one scoped secondary citation; this does not imply scholarly agreement with every link.'} Of the 46 explanations introduced in v0.32.0, ${newReviews} have dated assessments and ${pending} remain pending. Each assessment records a decision, checked source scope and limitations.`));
- root.append(make('p',`The original 115 explained pairs retain their earlier dated assessments and commentary follow-ups. ${newReviews} of the 46 newer pairs now have source assessments; ${pending} remain editorial reading aids pending review. The Bible is the authoritative foundation of Scripture Trails. Archaeological and historical publications supply supporting context within their stated scope. These AI-assisted editorial checks are not independent specialist signoff.`));
+ root.append(make('p',`The original 115 explained pairs retain their earlier dated assessments and commentary follow-ups. ${newReviews} of the 46 newer pairs now have source assessments; ${pending} remain editorial reading aids pending review. The Bible is the authoritative foundation of Scripture Trails. Archaeological and historical publications supply supporting context within their stated scope. The published study content has been reviewed and accepted by the project owner. The cited material is limited to its recorded source scope; independent specialist signoff is not claimed.`));
  for(const [kind,title] of [['issue','Gospel issue assessments'],['place','Place citation assessments'],['trail','Nehemiah passage checks'],['connection','Selected passage comparisons']]){
   const group=make('details',undefined,'citation-review-group');group.append(make('summary',title));
   for(const r of CITATION_REVIEW.records.filter(r=>r.kind===kind)){
@@ -88,5 +88,5 @@ export function renderCitationSummary(root){
  }
  root.append(make('h3','Remaining source work'));
  const list=make('ul');for(const text of CITATION_REVIEW.deferred)list.append(make('li',text));root.append(list);
- const download=make('a','Download the dated citation review register (JSON)');download.href='/data/citation-review.json?v=1.2.0';download.download='scripture-trails-citation-review-'+CITATION_REVIEW.updated+'.json';root.append(download);
+ const download=make('a','Download the dated citation review register (JSON)');download.href='/data/citation-review.json?v=1.2.1';download.download='scripture-trails-citation-review-'+CITATION_REVIEW.updated+'.json';root.append(download);
 }

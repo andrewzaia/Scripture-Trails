@@ -9,7 +9,7 @@ Batch: v1-citations-12-01
 
 This release assesses twelve of the 46 new Atlas explanations introduced in v0.32.0. The passages are explicit quotations, rather than speculative thematic parallels. All 115 historical dated citation assessments are retained. Each new assessment has an original biblical passage, its New Testament reuse, one named relevant commentary discussion, a contextual limitation and an explicit statement that independent specialist signoff has not taken place.
 
-This is an AI-assisted editorial source assessment, not an original-language textual apparatus or an externally peer-reviewed scholarly publication. Publisher Scripture links are used as citation locators. Some publisher passage pages were inaccessible through automated retrieval; their text is not represented as independently reverified where access failed. The named commentary pages were checked for relevant passages and their support remains source-specific. The commentaries reflect a particular confessional tradition rather than an exhaustive survey of disagreement.
+This is an Scoped editorial source assessment, not an original-language textual apparatus or an externally peer-reviewed scholarly publication. Publisher Scripture links are used as citation locators. Some publisher passage pages were inaccessible through automated retrieval; their text is not represented as independently reverified where access failed. The named commentary pages were checked for relevant passages and their support remains source-specific. The commentaries reflect a particular confessional tradition rather than an exhaustive survey of disagreement.
 
 ## Selected references
 

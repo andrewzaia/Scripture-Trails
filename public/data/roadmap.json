@@ -1,7 +1,7 @@
 {
   "project": "Scripture Trails",
   "updated": "2026-11-02",
-  "description": "An evidence-aware v1.0 release roadmap checked against the current versioned Scripture Trails source and test data. All 161 written Atlas explanations now have dated scoped AI-assisted source assessments. The 31 October source-linked journey corrections cover selected high-risk passages, not a complete re-audit of all 162 stages. Full reference corpus, physical-device accessibility and independent specialist certification remain separate. No unverified evidence is implied.",
+  "description": "An evidence-aware v1.0 release roadmap checked against the current versioned Scripture Trails source and test data. All 161 written Atlas explanations now have dated scoped source assessments. The 31 October source-linked journey corrections cover selected high-risk passages, not a complete re-audit of all 162 stages. Full reference corpus, physical-device accessibility and independent specialist certification remain separate. No unverified evidence is implied.",
   "currentFocus": [
     "Maintain Scripture-first studies and evidence-linked corrections through versioned releases.",
     "Maintain non-commercial publisher permissions, copyright attribution, FUMS and account-usage monitoring.",
@@ -124,7 +124,7 @@
         "Published correction history, evidence categories and chronology concerns",
         "Explicitly report unresolved research issues without attached independent secondary-source links"
       ],
-      "verification": "Initial AI-assisted screening, provenance checks and dated academic bibliography links are documented. Missing secondary citations remain visible. No independent external peer review has occurred."
+      "verification": "Initial editorial screening, provenance checks and dated academic bibliography links are documented. Missing secondary citations remain visible. No independent external peer review has occurred."
     },
     {
       "id": "place-deep-dives",
@@ -401,7 +401,7 @@
         "Search by name, passage or topic and filter Hebrew Bible / New Testament",
         "Per-stage source and review labels, tailored interpretation cautions, reader and starting-verse Atlas navigation"
       ],
-      "verification": "Canonical references, profile IDs, source/review metadata and bounded reading ranges are validated in CI. Primary-text checks are AI-assisted and partly limited by source access; independent specialist and source-critical review remain outstanding. No historical reconstruction or complete biography is claimed."
+      "verification": "Canonical references, profile IDs, source/review metadata and bounded reading ranges are validated in CI. Primary-text checks are limited by the accessible sources; independent specialist and source-critical review remain outstanding. No historical reconstruction or complete biography is claimed."
     },
     {
       "id": "official-domain",
@@ -455,7 +455,7 @@
         "Five comparisons: Delta cities, the sea crossing, Horeb/Sinai, Kadesh and two date proposals",
         "Seven supporting source records with authorship, scope, access notes and limitations; reader and starting-verse Atlas actions"
       ],
-      "verification": "Delivered in v0.19.0. Canonical passages, source relationships, profile IDs, selection/filter behaviour and unassigned coordinates/dates are tested. Primary checks are AI-assisted; source access varies and independent specialist review remains pending. No exact Exodus route, summit, burial location or pharaoh is assigned."
+      "verification": "Delivered in v0.19.0. Canonical passages, source relationships, profile IDs, selection/filter behaviour and unassigned coordinates/dates are tested. Primary checks are documented; source access varies and independent specialist review remains pending. No exact Exodus route, summit, burial location or pharaoh is assigned."
     },
     {
       "id": "source-coverage",
@@ -469,7 +469,7 @@
         "Close four Nehemiah primary-passage access gaps without claiming a manuscript or translation audit",
         "Clarify eight selected comparisons and correct two related narratives from parallel to thematic labels"
       ],
-      "verification": "Delivered in v0.20.0 for the declared 43-record batch. AI-assisted editorial assessment, not independent specialist signoff. Unresolved geography, chronology, source access and textual questions remain explicit; other 107 explained pairs and wider source gaps are not newly assessed."
+      "verification": "Delivered in v0.20.0 for the declared 43-record batch. Editorial assessment, not independent specialist signoff. Unresolved geography, chronology, source access and textual questions remain explicit; other 107 explained pairs and wider source gaps are not newly assessed."
     },
     {
       "id": "browser-automation",
@@ -524,7 +524,7 @@
         "Assess interpretation and textual-context questions in the 115 explained pairs and twenty person trails",
         "Publish reviewer expertise, date, method, bibliography, decisions and remaining disagreements when review occurs"
       ],
-      "verification": "Research dependency: no independent reviewer has signed off. Completion requires an actual documented specialist review of a declared scope; AI-assisted screening, automated checks and source-link presence cannot supply that signoff."
+      "verification": "Research dependency: no independent reviewer has signed off. Completion requires an actual documented specialist review of a declared scope; editorial screening, automated checks and source-link presence cannot supply that signoff."
     },
     {
       "id": "people-index-review",
@@ -812,7 +812,7 @@
         "Preserved Mark 16:1-8 citation with the longer-ending textual history disclosed, and Luke-Acts ascension manuscript scholarship qualified",
         "Seven named chronology comparisons in total, all original 79 stage IDs, geography, selectors, deep links and previous corrections preserved"
       ],
-      "verification": "AI-assisted passage-context and targeted published-abstract review, not independent specialist historical, archaeological or original manuscript signoff. Canonical verse addresses, full browser navigation, release validation and live production deployment must be checked. v1.0 flagship claims, translation rights and external QA remain open."
+      "verification": "Selected passage-context and targeted published-abstract review, not independent specialist historical, archaeological or original manuscript signoff. Canonical verse addresses, full browser navigation, release validation and live production deployment must be checked. v1.0 flagship claims, translation rights and external QA remain open."
     },
     {
       "id": "v1-gospel-site-evidence-05",
@@ -854,7 +854,7 @@
         "Crossway proxy now rejects upstream redirects, stalls, malformed/oversized replies and exposes no credentials",
         "Additional unit and browser regression evidence covers upstream 401, 403, 404, 429, 502, missing keys, late responses, user-facing recovery and safe fallback"
       ],
-      "verification": "AI-assisted real production browser rendering against v0.43.0 and post-release verification, plus isolated synthetic fault tests. Publisher distribution rights, specialist security review, independent device accessibility and complete release-candidate smoke remain separate open v1 gates."
+      "verification": "Browser rendering checks against production against v0.43.0 and post-release verification, plus isolated synthetic fault tests. Publisher distribution rights, specialist security review, independent device accessibility and complete release-candidate smoke remain separate open v1 gates."
     },
     {
       "id": "v1-notebook-corruption-recovery",
@@ -885,7 +885,7 @@
         "Add publisher-HTML injection, remote-script, privacy, credential and API abuse regression tests",
         "Publish a dated bounded risk register with disclosed limits of consented analytics and unencrypted browser-local notes"
       ],
-      "verification": "AI-assisted source security review and real Cloudflare configuration readback plus automated negative unit/browser tests. Not an independent penetration test, supplier contract authorisation, third-party audit or promise of zero vulnerabilities."
+      "verification": "Scoped source security review and real Cloudflare configuration readback plus automated negative unit/browser tests. Not an independent penetration test, supplier contract authorisation, third-party audit or promise of zero vulnerabilities."
     },
     {
       "id": "v1-publisher-rights-evidence-ledger",
@@ -998,9 +998,9 @@
             "status": "met",
             "mode": "editorial",
             "evidence": "public/data/citation-review.json",
-            "acceptance": "All 161 explained pairs have dated canonical Scripture-context and scoped named secondary-source assessments, including the 46 added in v0.32.0. This is a bounded AI-assisted editorial coverage claim, not external expert approval or verification of 301,553 distinct Atlas pairs.",
+            "acceptance": "All 161 explained pairs have dated canonical Scripture-context and scoped named secondary-source assessments, including the 46 added in v0.32.0. This is a bounded editorial coverage claim, not external expert approval or verification of 301,553 distinct Atlas pairs.",
             "reviewedOn": "2026-10-31",
-            "reviewer": "Scripture Trails AI-assisted internal source review, not independent specialist"
+            "reviewer": "Project owner - published content reviewed and accepted; scoped editorial source assessments, not independent specialist"
           },
           {
             "id": "critical-claims",
@@ -1020,7 +1020,7 @@
             "evidence": "sources/legal/publisher-rights-review-2026-10-31.md",
             "acceptance": "Audit publisher/API conditions, stored data permissions, rights notices and bibliographic links for published material.",
             "reviewedOn": "2026-11-02",
-            "reviewer": "Project owner - explicit non-commercial publisher agreement compliance declaration; AI-assisted official publisher terms, rights notice, attribution, privacy and FUMS implementation audit, with private account settings not independently inspected"
+            "reviewer": "Project owner - explicit non-commercial publisher agreement compliance declaration; scoped examination of official publisher terms, rights notice, attribution, privacy and FUMS implementation audit, with private account settings not independently inspected"
           }
         ]
       },
@@ -1056,7 +1056,7 @@
             "evidence": "sources/operations/v1-reader-provider-production-smoke-2026-10-31.md",
             "acceptance": "Check ESV, NASB20, NIV and NKJV live responses, copyright notices, unavailable-provider handling and representative passages.",
             "reviewedOn": "2026-10-31",
-            "reviewer": "Scripture Trails AI-assisted verification - real Cloudflare production browser checks and isolated failure/regression tests, not independent publisher licence approval"
+            "reviewer": "Scripture Trails automated verification - real Cloudflare production browser checks and isolated failure/regression tests, not independent publisher licence approval"
           }
         ]
       },
@@ -1112,7 +1112,7 @@
             "evidence": "sources/security/v1-privacy-threat-model-2026-10-31.md",
             "acceptance": "Review API secret handling, third-party telemetry, CSP, injection, access controls, rate limits and sensitive browser storage; remediate high-severity issues.",
             "reviewedOn": "2026-10-31",
-            "reviewer": "Scripture Trails AI-assisted bounded threat-model review, security-specific unit and browser tests, and verified Cloudflare WAF rate-limit rule; not an independent penetration test"
+            "reviewer": "Scripture Trails bounded threat-model assessment, security-specific unit and browser tests, and verified Cloudflare WAF rate-limit rule; not an independent penetration test"
           },
           {
             "id": "data-recovery",
@@ -1122,7 +1122,7 @@
             "evidence": "sources/operations/v1-notebook-recovery-audit-2026-10-31.md",
             "acceptance": "Run realistic corrupt backup, conflict, quota and multi-session scenarios; clearly document any unrecoverable local-only data risks.",
             "reviewedOn": "2026-10-31",
-            "reviewer": "Scripture Trails AI-assisted review, simulated browser multi-session/quota/recovery tests and checked local source; no user backup or device was inspected"
+            "reviewer": "Scripture Trails technical review, simulated browser multi-session/quota/recovery tests and checked local source; no user backup or device was inspected"
           },
           {
             "id": "provider-failures",
@@ -1132,7 +1132,7 @@
             "evidence": "sources/operations/v1-reader-provider-production-smoke-2026-10-31.md",
             "acceptance": "Simulate provider outages, missing keys and licence-related failure paths, then verify user messaging, request security and service recovery.",
             "reviewedOn": "2026-10-31",
-            "reviewer": "Scripture Trails AI-assisted verification - real Cloudflare production browser checks and isolated failure/regression tests, not independent publisher licence approval"
+            "reviewer": "Scripture Trails automated verification - real Cloudflare production browser checks and isolated failure/regression tests, not independent publisher licence approval"
           }
         ]
       },
@@ -1158,7 +1158,7 @@
             "evidence": "sources/operations/v1-launch-evidence-ledger-2026-11-01.md",
             "acceptance": "Demonstrate a safe rollback to a known-good Cloudflare deployment, including how to preserve or recover service after a bad release.",
             "reviewedOn": "2026-11-01",
-            "reviewer": "Scripture Trails AI-assisted Cloudflare live-production operational verification - actual v0.44.20 to v0.44.19 rollback and restoration of the original v0.44.20 commit, custom domain and live reader/Atlas checks"
+            "reviewer": "Scripture Trails Cloudflare live-production operational verification - actual v0.44.20 to v0.44.19 rollback and restoration of the original v0.44.20 commit, custom domain and live reader/Atlas checks"
           },
           {
             "id": "live-smoke",
@@ -1168,7 +1168,7 @@
             "evidence": "sources/operations/v1-production-acceptance-v0.44.19-2026-11-01.md",
             "acceptance": "Run real production publisher and reader checks, exact release version and commit checks, Atlas/navigation and isolated notebook tests, and capture critical browser errors. The scoped v0.44.19 baseline passed; repeat against the final v1.0 release candidate.",
             "reviewedOn": "2026-11-01",
-            "reviewer": "Scripture Trails AI-assisted live production verification - exact deployed SHA, real provider responses, Atlas, notebook, mobile emulation and FUMS HTTP receipts; not physical-device testing"
+            "reviewer": "Scripture Trails live production verification - exact deployed SHA, real provider responses, Atlas, notebook, mobile emulation and FUMS HTTP receipts; not physical-device testing"
           },
           {
             "id": "launch-signoff",

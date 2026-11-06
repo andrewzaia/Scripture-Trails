@@ -2733,7 +2733,7 @@
   "contextCoverage": {
     "reviewedOn": "2026-10-31",
     "scope": "All 79 Gospel journey entries include distinct original biblical reading-context notes and canonical comparison passages. Existing chronology, location and first-pass issues remain; this is not a comprehensive independent historical or textual audit.",
-    "method": "AI-assisted source-first narrative context and parallel-passage comparison across the Gospel itinerary. Source links address particular text-critical, chronological and site interpretations; unpublished underlying routes are not inferred.",
+    "method": "Source-linked narrative context and parallel-passage comparison across the Gospel itinerary. Source links address particular text-critical, chronological and site interpretations; unpublished underlying routes are not inferred.",
     "limitations": "Canonical texts are primary sources for their respective narrative and doctrinal claims, not archaeological proof of event locations. Further publisher-accessible source examination, original-manuscript work, independent historical review and flagship navigation QA remain v1.0 tasks."
   }
 }

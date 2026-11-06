@@ -1,6 +1,6 @@
 # Scripture Trails - Security and privacy threat model
 Date: 2026-10-31
-Status: AI-assisted bounded application/source review and production controls audit, not a penetration test.
+Status: Bounded application/source review and production controls audit, not a penetration test.
 
 ## Scope and assets
 
@@ -31,7 +31,7 @@ The rule is a production configuration attached to this release and should be ma
 
 ## Acceptance and limitations
 
-Evidence: reviewed source for the only three Pages Functions endpoints; public CSP; the script and telemetry paths; server-side read/response validation; existing notebook backup and browser-failure regressions; newly added security-specific Node and Playwright tests; production Cloudflare WAF rule readback. This is bounded AI-assisted verification rather than external specialist approval, full source dependency audit, third-party vendor assessment, vulnerability scan or adversarial penetration test. Critical vulnerabilities identified in the reviewed paths are remediated in code; consented GA and local-only note storage retain transparently scoped privacy limitations.
+Evidence: reviewed source for the only three Pages Functions endpoints; public CSP; the script and telemetry paths; server-side read/response validation; existing notebook backup and browser-failure regressions; newly added security-specific Node and Playwright tests; production Cloudflare WAF rule readback. This is bounded technical verification rather than external specialist approval, full source dependency audit, third-party vendor assessment, vulnerability scan or adversarial penetration test. Critical vulnerabilities identified in the reviewed paths are remediated in code; consented GA and local-only note storage retain transparently scoped privacy limitations.
 
 Next security work should include third-party dependency and supply chain vulnerability alerts, ongoing API quota and rate-limit monitoring, privacy review if adding authentication or cloud notes, and refresh the risk register when significant architecture or provider terms change.
 

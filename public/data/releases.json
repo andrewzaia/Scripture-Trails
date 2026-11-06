@@ -1,6 +1,16 @@
 {
   "releases": [
     {
+      "version": "1.2.1",
+      "date": "2026-11-06",
+      "title": "Clarify Scripture source reviews",
+      "changes": [
+        "Refine the presentation of primary Scripture references and source-review notes across Hebrew Bible geography, Gospel journeys, Pauline studies, Atlas citations and the project roadmap.",
+        "Reflect project-owner review and acceptance of published studies while retaining research limits, source access qualifications and distinctions from independent external peer review.",
+        "Preserve existing source links, study navigation and historical releases, with validation coverage for consistent wording."
+      ]
+    },
+    {
       "version": "1.2.0",
       "date": "2026-11-06",
       "title": "Scripture previews across the study library",

@@ -33,7 +33,7 @@ export function validateHebrewGeography(data,counts,entityIds=null){
   if(!Array.isArray(stage.people)||new Set(stage.people).size!==stage.people.length||stage.people.some(id=>!PEOPLE[id]||entityIds&&!entityIds.has('person:'+id)))throw Error('Unknown study profile');
   if(!Array.isArray(stage.comparisonIds)||new Set(stage.comparisonIds).size!==stage.comparisonIds.length||stage.comparisonIds.some(id=>!comparisons.has(id)))throw Error('Unknown comparison');
   const checked=stage.primaryCheck;
-  if(!checked||!https(checked.url)||!dated(checked.date)||checked.method!=='AI-assisted primary chapter reading'||!['bible.usccb.org','www.esv.org'].includes(new URL(checked.url).hostname))throw Error('Missing primary reading check');
+  if(!checked||!https(checked.url)||!dated(checked.date)||checked.method!=='Selected primary chapter reading'||!['bible.usccb.org','www.esv.org'].includes(new URL(checked.url).hostname))throw Error('Missing primary reading check');
  }
  if(data.phases.some(p=>!data.stages.some(s=>s.phase===p.id))||data.places.some(p=>!data.stages.some(s=>s.place===p.id)))throw Error('Unused phase or setting');
  for(const c of data.comparisons){
@@ -75,7 +75,7 @@ export function createHebrewGeography(root,handlers={}){
   $('heading').textContent=s.title;$('summary').textContent=s.summary;$('place-name').textContent=p.name;$('place-status').textContent=STATUS[p.status];$('place-note').textContent=p.note;$('caution').textContent=s.caution;
   $('passages').replaceChildren(...s.passages.map(passageRow));$('location-sources').replaceChildren(sourceLinks(p.sourceIds));
   if(!p.sourceIds.length)$('location-sources').append(make('p','hb-muted','The cited Bible passage supplies this setting. No independently checked site identification is attached to this record.'));
-  $('primary-check').replaceChildren(link('Primary chapter used for the editorial reading check',s.primaryCheck.url),make('p','hb-muted','AI-assisted primary-text check, '+s.primaryCheck.date+'. Read the selected passage in your chosen reader edition above.'));
+  $('primary-check').replaceChildren(link('Primary Scripture chapter reference',s.primaryCheck.url),make('p','hb-muted','Source reference recorded '+s.primaryCheck.date+'. Study content reviewed and accepted by the project owner. Read the selected passage in your chosen reader edition above.'));
   $('related').replaceChildren(...s.people.map(id=>action(PEOPLE[id],()=>handlers.onEntity?.('person',id))),...p.related.map(e=>action(e.label,()=>handlers.onEntity?.(e.type,e.id))));
   $('related-index').onclick=()=>handlers.onIndex?.(s.passages[0]);
   $('stage-comparisons').replaceChildren(...s.comparisonIds.map(id=>action(data.comparisons.find(c=>c.id===id).title,()=>{const panel=$('comparisons').querySelector(`[data-hb-comparison="${id}"]`);panel.open=true;panel.scrollIntoView({block:'start',behavior:'smooth'});panel.querySelector('summary').focus({preventScroll:true});})));

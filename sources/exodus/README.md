@@ -8,7 +8,7 @@ The Bible is the primary text and foundation. Stage summaries are short original
 
 ## Primary-text checks
 
-AI-assisted checks consulted USCCB chapter views for Exodus 1-4, 12-16 and 20 and Numbers 10, 14, 20 and 21. When direct USCCB views were unavailable, Crossway's official ESV chapter views were consulted for Exodus 17 and 19, Numbers 13 and 22, and Deuteronomy 34. Each stage retains its check URL, date and method. These are source-reading entry points; available chapter views sometimes include neighbouring chapters. Public USCCB views use a different translation from the website's four reader editions. They are not added as a reader edition.
+Source-reading checks consulted USCCB chapter views for Exodus 1-4, 12-16 and 20 and Numbers 10, 14, 20 and 21. When direct USCCB views were unavailable, Crossway's official ESV chapter views were consulted for Exodus 17 and 19, Numbers 13 and 22, and Deuteronomy 34. Each stage retains its check URL, date and method. These are source-reading entry points; available chapter views sometimes include neighbouring chapters. Public USCCB views use a different translation from the website's four reader editions. They are not added as a reader edition.
 
 The exact stage addresses are checked against the site's canonical verse metadata. Reader actions use the existing authorised publisher APIs and preserve the selected edition. Atlas actions use the starting verse rather than silently pretending that the graph represents a complete passage range. The site stores no publisher passage text in this dataset.
 

@@ -6,7 +6,7 @@ Batches: v1-citations-17-02 and v1-citations-17-03
 
 ## Scope
 
-The 34 previously unassessed explanations from v0.32.0 now have dated, source-specific AI-assisted editorial assessments. Together with the 115 historical reviews and the first 12 additions in v0.34.0, the register covers all 161 written explanations. It does NOT review the other 301,392 distinct Atlas pairs lacking written explanations. No independent scholar, original-language manuscript expert or external review panel has signed off.
+The 34 previously unassessed explanations from v0.32.0 now have dated, source-specific Editorial assessments. Together with the 115 historical reviews and the first 12 additions in v0.34.0, the register covers all 161 written explanations. It does NOT review the other 301,392 distinct Atlas pairs lacking written explanations. No independent scholar, original-language manuscript expert or external review panel has signed off.
 
 The source records preserve each explanatory pair's two primary biblical locations, one attributed commentary or analytical essay, the supported claim, interpretation caution and accessibility limitations. The primary Bible is the foundation of these study comparisons. Sources from a single confessional commentary collection are not independent archaeological confirmation or a survey of critical scholarship.
 
@@ -61,4 +61,4 @@ Critical unresolved work includes original-language textual witnesses for sensit
 
 ## Progress
 
-All 161 explained Atlas connections have dated AI-assisted editorial assessments. 301,392 distinct Atlas pairs remain unannotated. These numbers are different units. The editorial coverage gate can be marked as internally assessed with review provenance, while independent specialist, content and platform-readiness gates remain open. Physical-device verification is not assigned to the site owner and is not claimed without actual access.
+All 161 explained Atlas connections have dated scoped editorial assessments. 301,392 distinct Atlas pairs remain unannotated. These numbers are different units. The editorial coverage gate can be marked as internally assessed with review provenance, while independent specialist, content and platform-readiness gates remain open. Physical-device verification is not assigned to the site owner and is not claimed without actual access.

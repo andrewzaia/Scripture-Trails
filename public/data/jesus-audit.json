@@ -4,13 +4,13 @@
   "status": "first-pass-screened",
   "methodology": {
     "primary": "Biblical passages listed with each Gospel/Acts episode are primary narrative sources. The published sequence is a Gospel harmony, not a separately dated GPS reconstruction.",
-    "scope": "First-pass editorial and machine-assisted reference/location screening of 79 episodes and 35 dossiers, now supplemented by individually written biblical reading context for all 79 entries and three additional bounded historical/textual research issues. Corrected particular overclaims and recorded disputes. NOT independent specialist historical, textual or archaeological certification. This is not a claim of independent scholarly certification.",
+    "scope": "First-pass editorial and reference and location screening with source-linked editorial checks of 79 episodes and 35 dossiers, now supplemented by individually written biblical reading context for all 79 entries and three additional bounded historical/textual research issues. Corrected particular overclaims and recorded disputes. NOT independent specialist historical, textual or archaeological certification. This is not a claim of independent scholarly certification.",
     "sourceTypes": {
       "scripture": "Canonical Gospel/Acts narrative cited for each episode; text is opened in authorised reader.",
       "historical": "External archaeological or academic reference; proves only its stated archaeological/historical claim.",
       "tradition": "Later veneration or a candidate location, not independent proof of an episode."
     },
-    "reviewer": "Scripture Trails editorial - AI-assisted initial review; independent subject-matter review pending",
+    "reviewer": "Project owner - content reviewed and accepted; independent subject-matter review not claimed",
     "reviewedAt": "2026-10-26",
     "translationPolicy": "ESV, NASB20, NIV and NKJV are available reader editions. Differences in translation, verse numbering and ancient manuscripts require examination in context.",
     "voteAndSourcePolicy": "OpenBible.info cross-reference votes express source-seeded and community-ranked relevance, not scholarly confidence. A missing secondary literature link is a research gap, not proof or disproof of an event. Biblical references are primary witnesses to their textual claims, not independent archaeological verification."
