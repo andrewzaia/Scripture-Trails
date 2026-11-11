@@ -1,16 +1,16 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {readFileSync} from 'node:fs';
+import {readFileSync,existsSync,statSync} from 'node:fs';
 import {filterPersecutionReports,reportKind,formatReportDate} from '../public/assets/persecution-catalogue.js';
 import {aggregateIncidentLocations} from '../public/assets/christian-heatmap.js';
 const read=path=>readFileSync(new URL('../'+path,import.meta.url),'utf8');
 const records=JSON.parse(read('public/data/christian-persecution.json')).reports;
 const media=JSON.parse(read('public/data/christian-persecution-media.json')).media;
 test('open-ended reporting preserves source attribution, IDs and historical date precision',()=>{
- assert.ok(records.length>=240);
+ assert.ok(records.length>=252);
  assert.ok(records.filter(r=>r.country==='Australia').length>=37);
  assert.equal(new Set(records.map(x=>x.id)).size,records.length);
- assert.ok(new Set(records.map(x=>x.country)).size>=29);
+ assert.ok(new Set(records.map(x=>x.country)).size>=32);
  assert.ok(records.some(r=>r.date==='1997-02-06'));
  assert.ok(records.some(r=>r.date==='1999'));
  const archive=JSON.parse(read('public/data/christian-persecution.json'));
@@ -53,7 +53,7 @@ test('global distribution includes every report once and geographically separate
  const totals=aggregateIncidentLocations(records,geo);
  assert.equal(totals.reportCount,records.length);
  assert.equal([...totals.countries.values()].reduce((a,b)=>a+b,0),records.length);
- assert.ok(totals.countries.size>=29);
+ assert.ok(totals.countries.size>=32);
  assert.ok(totals.countries.get('Australia')>=37);
  assert.equal(totals.located+totals.withoutLocality,records.length);
  assert.ok(Math.abs(totals.weight-totals.located)<0.0001);
@@ -114,4 +114,41 @@ test('Australian and older reports remain filterable and mapped',()=>{
  assert.equal(geo.countries.Iraq.iso3,'IRQ');
  assert.equal(geo.countries.Libya.iso3,'LBY');
  assert.ok(geo.places['Australia|Wakeley, Sydney']);
+});
+
+test('Christian persecution page retains route and updated visible labels',()=>{
+ const html=read('public/index.html'),app=read('public/assets/app.js');
+ assert.match(html,/data-view="christian-persecution"[^>]*>.*Christian persecution<\/button>/);
+ assert.match(html,/CHRISTIAN PERSECUTION/);
+ assert.match(app,/'christian-persecution':'Christian persecution'/);
+ assert.doesNotMatch(html,/CHRISTIANS WORLDWIDE/);
+});
+test('locally stored licensed image thumbnails have complete credits and valid JPEG bytes',()=>{
+ const d=JSON.parse(read('public/data/christian-persecution-images.json'));
+ assert.ok(d.images.length>=4);
+ for(const pic of d.images){
+  assert.ok(records.some(r=>r.id===pic.report_id),'Image must reference a report');
+  assert.match(pic.path,/^\/assets\/persecution-media\/[a-z0-9-]+\.jpg$/);
+  assert.ok(pic.author&&pic.alt&&pic.caption&&pic.licence_label&&pic.adaptation);
+  assert.equal(new URL(pic.source).protocol,'https:');
+  assert.equal(new URL(pic.licence).protocol,'https:');
+  const filepath=new URL('../public'+pic.path,import.meta.url);
+  assert.ok(existsSync(filepath),'Missing locally hosted photo '+pic.path);
+  const bytes=readFileSync(filepath);
+  assert.equal(bytes[0],0xff);assert.equal(bytes[1],0xd8);
+  assert.ok(statSync(filepath).size<1250000,'Thumbnail must stay small '+pic.path);
+ }
+ const code=read('public/assets/persecution-catalogue.js');
+ assert.match(code,/persecution-case-header/);
+ assert.match(code,/image\.loading='lazy'/);
+ assert.match(code,/pic\.author/);
+ assert.doesNotMatch(code,/\.innerHTML\s*=/);
+});
+test('new reports extend geographic coverage without removing historic incidents',()=>{
+ const geo=JSON.parse(read('public/data/christian-heatmap-places.json'));
+ const countries=new Set(records.map(r=>r.country));
+ for(const name of ['Ethiopia','Eritrea','Kenya'])assert.ok(countries.has(name));
+ for(const code of ['ETH','ERI','KEN'])assert.ok(Object.values(geo.countries).some(x=>x.iso3===code));
+ assert.ok(records.some(r=>r.date==='2026-10-24'&&r.country==='Ethiopia'));
+ assert.ok(records.some(r=>r.date==='2015-04-02'&&r.country==='Kenya'));
 });
