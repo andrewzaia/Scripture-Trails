@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.9.0 - 11/11/2026: Christian persecution - Central Asia and global coverage expansion
+
+- Add 34 source-attributed reports across 15 previously unrepresented countries and three existing countries, expanding the archive to 392 records across 73 countries and territories.
+- Document Baptist and Protestant worship raids, clerical imprisonment, religious literature restrictions and church bans in Central Asia, alongside reported incidents and restrictions in Africa, Europe, Asia and the Americas.
+- Expand the live world heat map's country registry without inventing locations for unverified sites; retain original publisher links, all historical reports and clear distinctions between documented incidents, contested accounts and ongoing policy restrictions.
+- Refresh the coverage research backlog, add geographic integrity and source-attribution regression checks, and retain the established locally hosted media reuse safeguards.
+
 ## 1.8.0 - 11/11/2026: Worldwide coverage - 25 additional countries and territories
 
 - Add 65 published, source-attributed Christian incident records across 25 previously unrepresented countries and territories, expanding the archive to 358 reports across 58 geographical entries.
