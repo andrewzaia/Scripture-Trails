@@ -1,21 +1,27 @@
 # Christian persecution geographic coverage audit
 
 Checked: 2026-11-11
-Candidate release: v1.8.0
+Candidate release: v1.9.0
 
-The open-ended incident archive contains 358 attributed source reports covering 58 mapped countries and territories. The current release adds 65 accounts spanning 25 previously unrepresented geographical entries. Country shading is derived from report data; zero heat is not proof of religious safety or absence of persecution.
+The open-ended catalogue contains 390 source-attributed reports across 70 countries and territories. This release adds 32 entries, covering 12 countries with no earlier entries and adding depth in several previously covered countries. Previous releases and historical records remain preserved.
 
-## Coverage standard
+These figures describe *coverage in the catalogue*, not the true number of incidents or a population-adjusted persecution rate. A country with no published entry is not necessarily safe or persecution-free. A church-related crime, wartime strike, or clergy-related arrest is not automatically evidence that religion was the perpetrator's motive.
 
-- Enter a specific published incident or attributable pattern rather than creating one generic record per country.
-- Keep the source URL, published claim, date precision, named or explicitly unknown actor and reporting limitations.
-- Do not infer anti-Christian motivation from a church's involvement in an ordinary crime, wartime strike or disputed property matter.
-- Group multi-site or multi-victim campaigns transparently to avoid falsely inflating incident counts.
-- Do not infer casualty totals, coordinates or reuse rights not supplied by the underlying source.
-- A place in the world shape file without a report should remain unshaded, not be described as persecution-free.
+## Evidence and attribution policy
 
-## Further unrepresented countries for source research
+- Preserve an identifiable publisher, HTTPS source, date precision, named or unknown actor and qualifications in each report.
+- Attribute witness statements and advocacy-group allegations as allegations, not independent adjudications.
+- Differentiate administrative legal restrictions, religious hate attacks, ordinary theft, armed conflict and persecution motive when established.
+- Count separate events once, grouping related prosecutions and casualty figures rather than multiplying an incident into multiple records.
+- Do not assign unverified street-level coordinates or reproduce unlicensed images; country heat includes reports without locality pins.
+- Keep historical report dates with their original YYYY, YYYY-MM or YYYY-MM-DD precision, avoiding invented event days.
 
-The following countries remain candidates for a next evidence-gathering pass. Their inclusion here is a research queue, not an assertion of an incident: Saudi Arabia, Morocco, Tunisia, Oman, Jordan, Lebanon, Qatar, Bahrain, United Arab Emirates, Brunei, Bhutan, Maldives, Kazakhstan, Kyrgyzstan, Tajikistan, Uzbekistan, Armenia, Georgia, Kosovo, Serbia, Croatia, Romania, Greece, Sweden, Netherlands, Argentina, Brazil, Chile, Peru, Venezuela, Guatemala, Honduras, Tanzania, Chad, Ghana, Malawi and Zimbabwe.
+## Countries remaining to research
 
-Priority next: find individually attributable, dated events in the remaining underrepresented regions and continue expanding existing low-volume countries. Publish only where the report can be accurately described.
+Priority research candidates currently without incident entries include Saudi Arabia, Oman, Jordan, Qatar, Bahrain, United Arab Emirates, Brunei, Bhutan, Maldives, Tajikistan, Armenia, Georgia, Serbia, Croatia, Romania, Greece, Sweden, Netherlands, Argentina, Chile, Peru, Guatemala, Honduras, Zimbabwe and Malawi. Each is an investigation lead, *not* a claim that a documented qualifying incident has yet been found.
+
+## Countries that merit deeper coverage
+
+Existing coverage remains very sparse in the Democratic Republic of the Congo, South Africa, South Sudan, Haiti, Türkiye, Afghanistan, the Philippines, Yemen, Libya, the United Kingdom and other single-report geographies.
+
+Next pass: favour dated, distinct incidents with accessible publisher reports. Add country shapes only after a real report exists; avoid fabricating placeholder entries to make the heat map look complete.

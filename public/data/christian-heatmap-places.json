@@ -238,6 +238,54 @@
     "Azerbaijan": {
       "iso2": "AZ",
       "iso3": "AZE"
+    },
+    "Kazakhstan": {
+      "iso2": "KZ",
+      "iso3": "KAZ"
+    },
+    "Kyrgyzstan": {
+      "iso2": "KG",
+      "iso3": "KGZ"
+    },
+    "Uzbekistan": {
+      "iso2": "UZ",
+      "iso3": "UZB"
+    },
+    "Turkmenistan": {
+      "iso2": "TM",
+      "iso3": "TKM"
+    },
+    "Tanzania": {
+      "iso2": "TZ",
+      "iso3": "TZA"
+    },
+    "Chad": {
+      "iso2": "TD",
+      "iso3": "TCD"
+    },
+    "Ghana": {
+      "iso2": "GH",
+      "iso3": "GHA"
+    },
+    "Kosovo": {
+      "iso2": "XK",
+      "iso3": "KOS"
+    },
+    "Lebanon": {
+      "iso2": "LB",
+      "iso3": "LBN"
+    },
+    "Brazil": {
+      "iso2": "BR",
+      "iso3": "BRA"
+    },
+    "Venezuela": {
+      "iso2": "VE",
+      "iso3": "VEN"
+    },
+    "Morocco": {
+      "iso2": "MA",
+      "iso3": "MAR"
     }
   },
   "places": {
