@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" role="img" aria-labelledby="title desc">
+<title id="title">Christian persecution - fire editorial illustration</title><desc id="desc">Original abstract graphic, not a photograph of a reported incident.</desc>
+<defs><linearGradient id="sky" x2="1" y2="1"><stop stop-color="#241f2d"/><stop offset="1" stop-color="#111d27"/></linearGradient><radialGradient id="light"><stop stop-color="#f5b677" stop-opacity=".45"/><stop offset="1" stop-color="#f5b677" stop-opacity="0"/></radialGradient><pattern id="specks" width="32" height="32" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="1.7" fill="#e7d6b3" opacity=".12"/></pattern></defs>
+<rect width="960" height="480" fill="url(#sky)"/><rect width="960" height="480" fill="url(#specks)"/><ellipse cx="745" cy="204" rx="242" ry="196" fill="url(#light)"/>
+<circle cx="188" cy="209" r="133" stroke="#cd6e4e" stroke-width="3" stroke-opacity=".34" fill="none"/><circle cx="188" cy="209" r="98" stroke="#f5b677" stroke-opacity=".3" stroke-width="2" fill="none"/>
+<path d="M188 112V298M137 175H239" stroke="#f5b677" stroke-width="16" stroke-linecap="round"/><path d="M188 112V298M137 175H239" stroke="#fff6e7" stroke-width="3" stroke-linecap="round" opacity=".45"/>
+<path d="M0 390Q152 353 316 385T634 370T960 380V480H0Z" fill="#111b24"/><path d="M0 424Q154 406 305 425T660 415T960 425" stroke="#cd6e4e" stroke-width="4" opacity=".25" fill="none"/>
+<path d="M667 375V240L755 178L845 240V375Z" fill="#455059"/><path d="M756 186V140M735 159H777" stroke="#f3d1a8" stroke-width="7"/><path d="M739 373q-23-26-3-65q19-28 6-53q43 31 26 61q20-14 21-40q37 61-4 97" fill="#d96c42" opacity=".78"/><path d="M0 469H960" stroke="#cd6e4e" stroke-width="8" opacity=".75"/>
+</svg>
