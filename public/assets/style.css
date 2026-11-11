@@ -435,3 +435,14 @@ body.light .pc-legend-level[data-level="0"]{background:#d4dfd8;color:#243b39}
 .pc-map-reset:hover{border-color:var(--gold);color:var(--gold)}
 .pc-map-reset:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
 @media(max-width:760px){.pc-map-actions{width:100%;justify-content:space-between;align-items:flex-end}}
+
+/* Compact, rights-cleared incident-site photography on individual report cards. */
+.persecution-case-header{display:block;min-width:0}
+.persecution-case-header.has-media{display:grid;grid-template-columns:126px minmax(0,1fr);gap:14px;align-items:start}
+.persecution-case-heading{min-width:0;display:flex;flex-direction:column;gap:7px}
+.persecution-photo{margin:0;min-width:0}
+.persecution-photo img{width:100%;aspect-ratio:1/1;display:block;object-fit:cover;border:1px solid var(--line);border-radius:5px;background:var(--surface2)}
+.persecution-photo-credit{font-size:9px;line-height:1.45;color:var(--muted);overflow-wrap:anywhere;margin-top:5px}
+.persecution-photo-credit a{color:var(--gold);text-decoration:underline;text-underline-offset:2px}
+.persecution-photo-context{font-size:10px;line-height:1.5;color:var(--muted);font-style:italic}
+@media(max-width:470px){.persecution-case-header.has-media{grid-template-columns:105px minmax(0,1fr);gap:10px}.persecution-photo-credit{font-size:8.5px}.persecution-case-header.has-media h3{font-size:19px}}

@@ -79,3 +79,17 @@ test('Australia and historical years appear in the interactive report map',async
  await page.locator('[data-pc-year]').selectOption('1997');
  await expect(page.locator('.persecution-case').first()).toContainText('Shantinagar');
 });
+
+test('credited locally hosted site photos appear neatly on affected report cards',async({page})=>{
+ await open(page,'christian-persecution');
+ await expect(page.locator('[data-pc-map]')).toHaveAttribute('data-ready','true');
+ await expect(page.locator('[data-view="christian-persecution"].nav-link')).toContainText('Christian persecution');
+ await page.locator('[data-pc-country]').selectOption('Iraq');
+ const thumbnail=page.locator('.persecution-photo img').first();
+ await thumbnail.scrollIntoViewIfNeeded();
+ await expect(thumbnail).toHaveAttribute('src',/^\x2fassets\x2fpersecution-media\x2f[a-z0-9-]+\.jpg$/);
+ await expect.poll(()=>thumbnail.evaluate(img=>img.complete&&img.naturalWidth>0)).toBe(true);
+ await expect(page.locator('.persecution-photo-credit').first()).toContainText('CC BY');
+ const urls=await page.locator('.persecution-case img').evaluateAll(items=>items.map(img=>img.currentSrc));
+ expect(urls.every(url=>new URL(url).pathname.startsWith('/assets/persecution-media/'))).toBe(true);
+});
