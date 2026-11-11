@@ -1,6 +1,16 @@
 {
   "releases": [
     {
+      "version": "1.4.1",
+      "date": "2026-11-11",
+      "title": "Reset the worldwide incident map",
+      "changes": [
+        "Add a Reset map button beside the world map controls so visitors can return to the global incident overview after selecting a country or locality.",
+        "Restore the combined world heat layer and clear catalogue search and filters in one action, showing the complete report collection again.",
+        "Retain keyboard-accessible map controls and add browser regression coverage for resetting country and locality selections."
+      ]
+    },
+    {
       "version": "1.4.0",
       "date": "2026-11-11",
       "title": "Worldwide report heat map",

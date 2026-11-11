@@ -428,3 +428,10 @@ body.light .pc-legend-level[data-level="0"]{background:#d4dfd8;color:#243b39}
 .pc-map-explain,.pc-map-credits{color:var(--muted);font-size:11px;line-height:1.7;margin:5px 0 0}
 .pc-map-credits a{color:var(--gold);text-underline-offset:2px}
 @media(max-width:760px){.persecution-world-map{padding:15px}.pc-map-head{flex-direction:column;gap:11px}.pc-map-head label{width:100%;max-width:270px}.pc-map-legend{gap:6px}.pc-legend-level{min-width:38px;padding:5px 6px}}
+
+/* Restore the world heat map and incident filters from within the map controls. */
+.pc-map-actions{display:flex;align-items:flex-end;gap:12px;flex-wrap:wrap}
+.pc-map-reset{min-height:37px;padding:8px 13px;border:1px solid var(--line);border-radius:4px;background:var(--surface2);color:var(--ink);font-size:12px;white-space:nowrap;cursor:pointer}
+.pc-map-reset:hover{border-color:var(--gold);color:var(--gold)}
+.pc-map-reset:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+@media(max-width:760px){.pc-map-actions{width:100%;justify-content:space-between;align-items:flex-end}}

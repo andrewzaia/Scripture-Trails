@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.4.1 - 11/11/2026: Reset the worldwide incident map
+
+- Add a Reset map button beside the world map controls so visitors can return to the global incident overview after selecting a country or locality.
+- Restore the combined world heat layer and clear catalogue search and filters in one action, showing the complete report collection again.
+- Retain keyboard-accessible map controls and add browser regression coverage for resetting country and locality selections.
+
 ## 1.4.0 - 11/11/2026: Worldwide report heat map
 
 - Explore a world heat map of Christian incident reports, with country shading that includes every published case in the catalogue.
