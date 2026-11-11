@@ -3,7 +3,7 @@
     "source": "srestre world-countries-cities-db (dr5hn source), ODbL 1.0",
     "url": "https://github.com/srestre/world-countries-cities-db",
     "license": "ODbL-1.0",
-    "notice": "Original coordinates use gazetteer centres. Added markers are approximate city or regional centres; they are not precise attack sites, and route/multiple-site events may be represented by one centre."
+    "notice": "Original coordinates use gazetteer centres. Added markers are approximate city or regional centres; they are not precise attack sites, and route/multiple-site events may be represented by one centre. Ukraine additions use approximate settlement or region centres; occupied-region coordinates must not be interpreted as detention or attack locations."
   },
   "generated": "2026-11-11",
   "countries": {
@@ -134,6 +134,10 @@
     "Kenya": {
       "iso2": "KE",
       "iso3": "KEN"
+    },
+    "Ukraine": {
+      "iso2": "UA",
+      "iso3": "UKR"
     }
   },
   "places": {
@@ -2285,6 +2289,193 @@
           "lat": 3.93,
           "lon": 41.84,
           "precision": "approximate district or regional centre"
+        }
+      ]
+    },
+    "Ukraine|Kyiv": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Kyiv",
+          "lat": 50.4501,
+          "lon": 30.5234,
+          "precision": "city"
+        }
+      ]
+    },
+    "Ukraine|Zhytomyr region": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Zhytomyr region",
+          "lat": 50.2,
+          "lon": 28.5,
+          "precision": "region"
+        }
+      ]
+    },
+    "Ukraine|Chernihiv": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Chernihiv",
+          "lat": 51.4982,
+          "lon": 31.2893,
+          "precision": "city"
+        }
+      ]
+    },
+    "Ukraine|Cherkasy": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Cherkasy",
+          "lat": 49.4444,
+          "lon": 32.0598,
+          "precision": "city"
+        }
+      ]
+    },
+    "Ukraine|Sviatohirsk, Donetsk region": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Sviatohirsk, Donetsk region",
+          "lat": 49.033,
+          "lon": 37.567,
+          "precision": "region"
+        }
+      ]
+    },
+    "Ukraine|Ladyzhyn, Vinnytsia region": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Ladyzhyn, Vinnytsia region",
+          "lat": 48.684,
+          "lon": 29.236,
+          "precision": "region"
+        }
+      ]
+    },
+    "Ukraine|Khmelnytskyi": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Khmelnytskyi",
+          "lat": 49.4216,
+          "lon": 26.9965,
+          "precision": "city"
+        }
+      ]
+    },
+    "Ukraine|Ivano-Frankivsk": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Ivano-Frankivsk",
+          "lat": 48.9226,
+          "lon": 24.7111,
+          "precision": "city"
+        }
+      ]
+    },
+    "Ukraine|Occupied Zaporizhzhia region": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Occupied Zaporizhzhia region",
+          "lat": 47.1,
+          "lon": 36,
+          "precision": "region"
+        }
+      ]
+    },
+    "Ukraine|Occupied Crimea": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Occupied Crimea",
+          "lat": 44.95,
+          "lon": 34.1,
+          "precision": "region"
+        }
+      ]
+    },
+    "Ukraine|Berdiansk, occupied Zaporizhzhia region": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Berdiansk, occupied Zaporizhzhia region",
+          "lat": 46.756,
+          "lon": 36.789,
+          "precision": "region"
+        }
+      ]
+    },
+    "Ukraine|Occupied Kherson region": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Occupied Kherson region",
+          "lat": 46.64,
+          "lon": 32.62,
+          "precision": "region"
+        }
+      ]
+    },
+    "Ukraine|Kherson": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Kherson",
+          "lat": 46.6354,
+          "lon": 32.6169,
+          "precision": "city"
+        }
+      ]
+    },
+    "Ukraine|Zaporizhzhia": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Zaporizhzhia",
+          "lat": 47.8388,
+          "lon": 35.1396,
+          "precision": "city"
+        }
+      ]
+    },
+    "Ukraine|Odesa": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Odesa",
+          "lat": 46.4825,
+          "lon": 30.7233,
+          "precision": "city"
+        }
+      ]
+    },
+    "Ukraine|Bilozerka, Kherson region": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Bilozerka, Kherson region",
+          "lat": 46.625,
+          "lon": 32.442,
+          "precision": "region"
+        }
+      ]
+    },
+    "Ukraine|Dobropillia, Kherson region": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Dobropillia, Kherson region",
+          "lat": 46.9,
+          "lon": 33.6,
+          "precision": "region"
         }
       ]
     }
