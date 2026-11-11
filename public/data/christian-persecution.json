@@ -386,6 +386,20 @@
       "notes": "Ukrainian government-controlled territory. Church-aligned reporting; source allegations and incident details have not been independently established here. Military mobilisation alone does not demonstrate religious persecution."
     },
     {
+      "id": "CT-0364",
+      "country": "Kyrgyzstan",
+      "date": "2026-04-19",
+      "place": "Bishkek",
+      "category": "Secret-police raid; worship fine",
+      "title": "Second Baptist raid followed by fine for Pastor Golovin",
+      "published_account": "Forum 18 documented a second raid on the Bishkek Baptist congregation, after which the religious affairs agency fined its pastor for worship conducted without government registration.",
+      "reported_actor": "National Security Committee and National Agency for Religious Affairs",
+      "publisher": "Forum 18",
+      "source_url": "https://www.forum18.org/archive.php?article_id=3049",
+      "notes": "Separate event from September 2025. Forum 18 reported that an appeal was pending when it published its May account.",
+      "incident_group": "KGZ-BISHKEK-2026"
+    },
+    {
       "id": "CT-0021",
       "date": "2026-04-18",
       "country": "France",
@@ -410,6 +424,19 @@
       "publisher": "OIDAC Europe",
       "source_url": "https://www.intoleranceagainstchristians.eu/index.php?id=12&case=10947",
       "notes": "Single publisher case summary; no independent adjudication undertaken."
+    },
+    {
+      "id": "CT-0363",
+      "country": "Kyrgyzstan",
+      "date": "2026-04-09",
+      "place": "Kyrgyzstan (nationwide)",
+      "category": "Deportation of Protestant pastor",
+      "title": "Reform Adventist pastor Pavel Shreider deported",
+      "published_account": "Forum 18 reported that security officers deported Pastor Pavel Shreider, who was born in Kyrgyzstan but held Russian citizenship, after his prison sentence was changed to a fine. He was barred from returning.",
+      "reported_actor": "National Security Committee secret police",
+      "publisher": "Forum 18",
+      "source_url": "https://www.forum18.org/archive.php?article_id=3048",
+      "notes": "Follow-up to a previously imposed sentence, not an additional arrest. The deportation location was not specified; country-only map coverage."
     },
     {
       "id": "CT-0358",
@@ -920,6 +947,20 @@
       "source_url": "https://www.reuters.com/world/africa/whats-behind-nigerias-latest-school-abductions-church-attack-2025-11-21/"
     },
     {
+      "id": "CT-0361",
+      "country": "Kazakhstan",
+      "date": "2025-11-19",
+      "place": "Balpyk-Bi, Jetisu region",
+      "category": "Worship raid; administrative proceedings",
+      "title": "Baptist worship raided and worshippers prosecuted",
+      "published_account": "Forum 18 reported officers blocked exits during a Baptist service and initiated administrative cases against worshippers. The court later dismissed the cases in December for lack of an offence.",
+      "reported_actor": "Koksu District police; court later dismissed cases",
+      "publisher": "Forum 18",
+      "source_url": "https://www.forum18.org/archive.php?article_id=3022",
+      "notes": "Follow-up court dismissals included. Police also raided the church on 26 October 2025; this entry covers the 19 November event.",
+      "incident_group": "KAZ-BALPYK-2025"
+    },
+    {
       "id": "CT-0049",
       "date": "2025-11-16",
       "country": "United States",
@@ -991,6 +1032,19 @@
       "notes": "Single publisher case summary; no independent adjudication undertaken."
     },
     {
+      "id": "CT-0367",
+      "country": "Uzbekistan",
+      "date": "2025-11",
+      "place": "Fergana",
+      "category": "Church raid; religious questioning",
+      "title": "Baptist church worshippers questioned after police raid",
+      "published_account": "Forum 18 reported officers raided a Baptist worship meeting, took several members including a child to a police station and questioned them about the congregation's lack of registration.",
+      "reported_actor": "Fergana police",
+      "publisher": "Forum 18",
+      "source_url": "https://www.forum18.org/archive.php?article_id=3019",
+      "notes": "The source says no fines had been imposed at the time of reporting. Month-only event date."
+    },
+    {
       "id": "CT-0052",
       "date": "2025-10-31",
       "country": "Italy",
@@ -1027,6 +1081,19 @@
       "reported_actor": "38-year-old man charged with assault-related offences; motive not established",
       "publisher": "ABC News",
       "source_url": "https://www.abc.net.au/news/2025-10-27/man-charged-with-stabbing-darwin-priest-in-face-with-pen/105937868"
+    },
+    {
+      "id": "CT-0382",
+      "country": "Mozambique",
+      "date": "2025-10-09",
+      "place": "Napala, Chiure district, Cabo Delgado",
+      "category": "Militant attack on Christian community",
+      "title": "Napala Christian community attacked, churches burned",
+      "published_account": "Open Doors reported Islamist insurgents attacked Napala village over 9-12 October, killing twenty Christians and burning two churches, with substantial displacement.",
+      "reported_actor": "Islamist insurgents identified by Open Doors as ASWJ",
+      "publisher": "Open Doors Africa",
+      "source_url": "https://www.opendoors.org.za/media-release-deadly-attacks-on-christians-in-mozambique/",
+      "notes": "October 9 is the first reported day of the attack period, not a single-day event; figures remain source attributed."
     },
     {
       "id": "CT-0320",
@@ -1124,6 +1191,20 @@
       "notes": "USCCB archive contains additional incidents; this workbook extracts a selection."
     },
     {
+      "id": "CT-0362",
+      "country": "Kyrgyzstan",
+      "date": "2025-09-14",
+      "place": "Bishkek",
+      "category": "Secret-police raid; worship fines",
+      "title": "Baptist harvest festival raided and church leaders fined",
+      "published_account": "Forum 18 described National Security Committee officers interrupting a Baptist harvest celebration and summarily fining Pastor Dmitri Golovin and deacon Aleksey Demchenko over worship without state registration.",
+      "reported_actor": "National Security Committee, religious affairs agency and police",
+      "publisher": "Forum 18",
+      "source_url": "https://forum18.org/archive.php?article_id=3005",
+      "notes": "Two fines resulting from one service are grouped. The pastor disputed the registration requirement.",
+      "incident_group": "KGZ-BISHKEK-2025"
+    },
+    {
       "id": "CT-0058",
       "date": "2025-09-11",
       "country": "United States",
@@ -1139,6 +1220,19 @@
       "media_url": "https://www.kltv.com/2025/09/12/investigation-finds-suspected-jesus-statue-vandal-has-schizophrenia-denounced-christianity/",
       "media_note": "Link to local report; imagery/footage on page must be inspected and licensed before re-use",
       "notes": "USCCB archive contains additional incidents; this workbook extracts a selection."
+    },
+    {
+      "id": "CT-0374",
+      "country": "Kosovo",
+      "date": "2025-09",
+      "place": "Pristina",
+      "category": "Orthodox cemetery chapel vandalism",
+      "title": "Orthodox cemetery chapel windows smashed",
+      "published_account": "Kosovo Online reported unknown individuals broke windows and doors of an Orthodox funeral chapel in Pristina's cemetery, damaging a restored religious property.",
+      "reported_actor": "Unidentified vandals",
+      "publisher": "Kosovo Online",
+      "source_url": "https://www.kosovo-online.com/en/news/society/orthodox-cemetery-pristina-chapel-desecrated-11-9-2025",
+      "notes": "Published 11 September; exact incident day unknown. The report does not establish a specific religious motive."
     },
     {
       "id": "CT-0059",
@@ -1655,6 +1749,20 @@
       "notes": "Source gives only year or month. No exact day has been inferred."
     },
     {
+      "id": "CT-0384",
+      "country": "United Kingdom",
+      "date": "2025-04-27",
+      "place": "Leyland, Lancashire",
+      "category": "Religiously aggravated damage to church",
+      "title": "St Mary's Church window broken in linked Leyland attacks",
+      "published_account": "The Crown Prosecution Service reported Joseph Williams smashed a window at St Mary's Church on 27 April 2025. He later pleaded guilty to religiously aggravated and other criminal damage in connection with a series of incidents.",
+      "reported_actor": "Joseph Williams; guilty plea and sentencing recorded",
+      "publisher": "Crown Prosecution Service",
+      "source_url": "https://www.cps.gov.uk/north-west/news/man-who-defaced-and-desecrated-church-leyland-has-been-sentenced",
+      "notes": "Separate church and date, but linked offender and sentencing; grouped for double-count audit.",
+      "incident_group": "LEYLAND-APR-2025"
+    },
+    {
       "id": "CT-0086",
       "date": "2025-04-22",
       "country": "United States",
@@ -1670,6 +1778,20 @@
       "media_url": "https://www.pennlive.com/news/2025/04/man-desecrated-holy-water-with-urine-at-central-pa-catholic-church-police.html",
       "media_note": "Link to local report; imagery/footage on page must be inspected and licensed before re-use",
       "notes": "USCCB archive contains additional incidents; this workbook extracts a selection."
+    },
+    {
+      "id": "CT-0383",
+      "country": "United Kingdom",
+      "date": "2025-04-18",
+      "place": "Leyland, Lancashire",
+      "category": "Religiously aggravated criminal damage",
+      "title": "St James's church graves defaced with anti-Christian graffiti",
+      "published_account": "The Crown Prosecution Service said Joseph Williams painted derogatory words about God and other marks on more than twenty graves at St James's Church. He pleaded guilty to religiously aggravated criminal damage and was sentenced in November 2025.",
+      "reported_actor": "Joseph Williams; guilty plea and sentencing recorded",
+      "publisher": "Crown Prosecution Service",
+      "source_url": "https://www.cps.gov.uk/north-west/news/man-who-defaced-and-desecrated-church-leyland-has-been-sentenced",
+      "notes": "The same offender later damaged St Mary's Church in Leyland; this report concerns 18 April cemetery vandalism.",
+      "incident_group": "LEYLAND-APR-2025"
     },
     {
       "id": "CT-0336",
@@ -1929,6 +2051,19 @@
       "notes": "USCCB archive contains additional incidents; this workbook extracts a selection."
     },
     {
+      "id": "CT-0377",
+      "country": "Brazil",
+      "date": "2025-02-12",
+      "place": "Presidente Juscelino, Maranhao",
+      "category": "Vandalism of Catholic images",
+      "title": "Four saint statues smashed and dumped outside chapel",
+      "published_account": "ACI Prensa reported four sacred images were destroyed at Santa Isabel chapel and thrown onto the road. Local clergy described the incident as religious intolerance, and police were investigating.",
+      "reported_actor": "Unknown vandals",
+      "publisher": "ACI Prensa",
+      "source_url": "https://www.aciprensa.com/noticias/110905/arquidiocesis-en-brasil-repudia-acto-de-vandalismo-en-capilla-rural",
+      "notes": "Religious motive is the parish's assessment; police findings and identity of offenders remain unknown."
+    },
+    {
       "id": "CT-0102",
       "date": "2025-02-10",
       "country": "Germany",
@@ -2126,6 +2261,19 @@
       "media_url": "https://www.cbsnews.com/pittsburgh/news/catholic-diocese-st-peter-church-vandal/",
       "media_note": "Link to local report; imagery/footage on page must be inspected and licensed before re-use",
       "notes": "USCCB archive contains additional incidents; this workbook extracts a selection."
+    },
+    {
+      "id": "CT-0372",
+      "country": "Ghana",
+      "date": "2024-12-11",
+      "place": "Near Nkwanta, Oti region",
+      "category": "Assault on Catholic missionaries",
+      "title": "Three Capuchin missionaries beaten after equipment dispute",
+      "published_account": "Ghanaian police said three Catholic priests were assaulted by local youths after being accused of trying to steal machinery used on a land project. Police treated the priests as victims.",
+      "reported_actor": "Local youths, with police investigation pending",
+      "publisher": "Graphic Online reporting Ghana Police Service",
+      "source_url": "https://www.graphic.com.gh/news/general-news/police-begin-probe-into-assault-on-priests-in-oti-region.html",
+      "notes": "Police specifically said the priests were not detained, contrary to some earlier accounts. The dispute centred on equipment; anti-Christian motive not established."
     },
     {
       "id": "CT-0113",
@@ -2330,6 +2478,19 @@
       "incident_group": "INDIA-2024-TRACKER"
     },
     {
+      "id": "CT-0369",
+      "country": "Turkmenistan",
+      "date": "2024-07",
+      "place": "Dogryyol, Lebap region",
+      "category": "Threats and surveillance of pastor",
+      "title": "Officials and police pressure Pastor Rahymjan Borjakov and family",
+      "published_account": "Forum 18 reported that a local mosque official threatened Pastor Rahymjan Borjakov with detention, security officials questioned relatives and family members received threatening calls.",
+      "reported_actor": "Religious official, state security officials and unidentified callers",
+      "publisher": "Forum 18",
+      "source_url": "https://www.forum18.org/archive.php?article_id=2923",
+      "notes": "Multiple linked intimidation reports over July, not an established imprisonment. Authorities' responses were not available."
+    },
+    {
       "id": "CT-0118",
       "date": "2024-06-23",
       "country": "Russia",
@@ -2442,6 +2603,33 @@
       "notes": "Reported from faith-based and country-of-origin sources; personal details should not be expanded."
     },
     {
+      "id": "CT-0373",
+      "country": "Kosovo",
+      "date": "2024-05",
+      "place": "Naklo near Peja (Pec)",
+      "category": "Church vandalism; anti-Christian graffiti",
+      "title": "Holy Trinity Orthodox church defaced with religiously hostile graffiti",
+      "published_account": "Kosovo Online published the Raska-Prizren Eparchy's account of a break-in at the restored Holy Trinity church, including anti-Christian messages left on the walls.",
+      "reported_actor": "Unidentified vandals",
+      "publisher": "Kosovo Online / Raska-Prizren Eparchy",
+      "source_url": "https://www.kosovo-online.com/en/news/society/church-holy-trinity-near-pec-was-desecrated-graffiti-containing-messages-religious",
+      "notes": "The report was published 14 May; precise incident date was not established. Actor identity remains unknown."
+    },
+    {
+      "id": "CT-0360",
+      "country": "Kazakhstan",
+      "date": "2024-04-28",
+      "place": "Shu, Zhambyl region",
+      "category": "Police raid; fines for worship",
+      "title": "Police raid Shu Baptist service and fine worshippers",
+      "published_account": "Forum 18 reported police and officials entered the Council of Churches Baptist congregation during Sunday worship, took statements and fined three members the following day for participation in unregistered worship.",
+      "reported_actor": "Shu District police",
+      "publisher": "Forum 18",
+      "source_url": "https://forum18.org/archive.php?article_id=2907",
+      "notes": "The congregation declined state registration on grounds of religious freedom. Individual fines are grouped within this single worship event.",
+      "incident_group": "KAZ-SHU-2024"
+    },
+    {
       "id": "CT-0344",
       "country": "South Sudan",
       "date": "2024-04-27",
@@ -2534,6 +2722,33 @@
       "notes": "Ukrainian government-controlled territory; suspects denied the opportunity for a final determination in this source, so charges must not be presented as proven."
     },
     {
+      "id": "CT-0359",
+      "country": "Kazakhstan",
+      "date": "2024-03-03",
+      "place": "Konayeva village, Zhambyl region",
+      "category": "Police raid; fines for worship",
+      "title": "Baptist worship meeting searched and Pastor Valter Mirau fined",
+      "published_account": "Forum 18 documented a police visit to an unregistered Baptist home worship meeting on 3 March 2024. A court fined Pastor Valter Mirau on 27 March, and an appeal was rejected on 30 April.",
+      "reported_actor": "Shu District police and courts",
+      "publisher": "Forum 18",
+      "source_url": "https://forum18.org/archive.php?article_id=2907",
+      "notes": "The pastor disputes illegality. The event and ensuing proceedings are represented together, not counted as separate prosecutions.",
+      "incident_group": "KAZ-SHU-2024"
+    },
+    {
+      "id": "CT-0380",
+      "country": "Russia",
+      "date": "2024-03",
+      "place": "Kurganinsk, Krasnodar region",
+      "category": "Fines for Baptist worship",
+      "title": "Pastor Aleksandr Chmykh fined for organising unregistered worship",
+      "published_account": "Forum 18 reported a magistrate fined Pastor Aleksandr Chmykh for holding Baptist services without state notification, and five other Baptists were prosecuted after a conference.",
+      "reported_actor": "Russian magistrate and prosecutors",
+      "publisher": "Forum 18",
+      "source_url": "https://www.forum18.org/archive.php?article_id=2983",
+      "notes": "Month-only judgment date; no conflation with the Dagestan church attack already in the archive."
+    },
+    {
       "id": "CT-0123",
       "date": "2024-02-25",
       "country": "Burkina Faso",
@@ -2577,6 +2792,19 @@
       "notes": "Published as an advocacy report; the alleged national-security offence was linked to her Christian practice."
     },
     {
+      "id": "CT-0381",
+      "country": "Mozambique",
+      "date": "2024-02-09",
+      "place": "Mazeze, Cabo Delgado",
+      "category": "Church arson during insurgent attack",
+      "title": "Churches burned in Mazeze community attacks",
+      "published_account": "Aid to the Church in Need cited an on-the-ground missionary saying Islamist insurgents attacked three communities around Mazeze on 9 February 2024 and burned churches and homes.",
+      "reported_actor": "Islamic State-linked insurgents, according to missionary account",
+      "publisher": "Aid to the Church in Need",
+      "source_url": "https://aidtochurch.org/news/our-news/mozambique-communities-and-churches-attacked-as-insurgency-intensifies-in-cabo-delgado",
+      "notes": "Multiple village raids reported in one region-level incident; no invented casualties or site coordinates."
+    },
+    {
       "id": "CT-0313",
       "country": "Laos",
       "date": "2024-02",
@@ -2603,6 +2831,32 @@
       "media_type": "Video reported",
       "media_url": "https://apnews.com/article/2ccce8c7f225354a0228b452c0ee963a",
       "media_note": "AP article describes security footage; rights/availability to check"
+    },
+    {
+      "id": "CT-0375",
+      "country": "Lebanon",
+      "date": "2024-01-23",
+      "place": "Qornet Shehwan, Metn",
+      "category": "Church break-in; vandalism",
+      "title": "Notre-Dame-du-Secours church damaged during suspected theft",
+      "published_account": "L'Orient Today reported windows smashed and contents overturned at the historic church. The local council head identified theft as the apparent motive and said suspects were unknown.",
+      "reported_actor": "Unidentified intruders",
+      "publisher": "L'Orient Today",
+      "source_url": "https://today.lorientlejour.com/article/1365455/historic-qornet-shehwan-church-vandalized-in-suspected-theft.html",
+      "notes": "Suspected theft is the source's stated explanation, not a proven anti-Christian attack."
+    },
+    {
+      "id": "CT-0376",
+      "country": "Lebanon",
+      "date": "2024-01-19",
+      "place": "Fidar, Jbeil district",
+      "category": "Attempted church burglary",
+      "title": "Intruders enter Notre-Dame de Doueir church",
+      "published_account": "L'Orient Today reported that intruders entered the Notre-Dame de Doueir church in Fidar intending to steal property, but left without taking anything.",
+      "reported_actor": "Unidentified intruders",
+      "publisher": "L'Orient Today",
+      "source_url": "https://today.lorientlejour.com/article/1365455/historic-qornet-shehwan-church-vandalized-in-suspected-theft.html",
+      "notes": "Retrospective mention in 23 January report; theft attempt, no established anti-Christian motive."
     },
     {
       "id": "CT-0318",
@@ -2787,6 +3041,19 @@
       "publisher": "International Christian Concern",
       "source_url": "https://persecution.org/2023/10/10/nepalese-pastor-denied-appeal-faces-one-year-in-prison-for-alleged-forced-conversions/",
       "notes": "Date is month of appeal outcome; defendant contested the claim. This is an appeal milestone, not a new physical attack."
+    },
+    {
+      "id": "CT-0378",
+      "country": "Venezuela",
+      "date": "2023-10",
+      "place": "Venezuela (nationwide)",
+      "category": "Closure of Catholic-associated radio",
+      "title": "Regulator orders closure of Radio Fe y Alegria",
+      "published_account": "The US State Department reported that CONATEL ordered the Catholic-associated radio station Radio Fe y Alegria to close, citing lack of operating permission. Observers linked the action to an interview with an opposition figure.",
+      "reported_actor": "National Telecommunications Commission (CONATEL)",
+      "publisher": "US Department of State",
+      "source_url": "https://2021-2025.state.gov/reports/2023-report-on-international-religious-freedom/venezuela/",
+      "notes": "The regulator's stated reason and observers' political-retaliation interpretation are distinguished. No location is assigned without source evidence."
     },
     {
       "id": "CT-0325",
@@ -3017,6 +3284,19 @@
       "source_url": "https://2021-2025.state.gov/reports/2023-report-on-international-religious-freedom/burkina-faso/"
     },
     {
+      "id": "CT-0371",
+      "country": "Chad",
+      "date": "2023-05-08",
+      "place": "Don village, Logone Oriental",
+      "category": "Violence during Christian prayer gathering",
+      "title": "Armed attack kills pastor and congregants at prayer",
+      "published_account": "The US State Department cited Evangelical Church representatives reporting that attackers killed Pastor Doumro Tadingao Gaston and twelve congregants among seventeen fatalities in Don village; police arrested thirty suspected perpetrators.",
+      "reported_actor": "Armed groups; police arrested suspects",
+      "publisher": "US Department of State",
+      "source_url": "https://2021-2025.state.gov/reports/2023-report-on-international-religious-freedom/chad/",
+      "notes": "The report describes broader regional violence and displacement; suspects are not presumed convicted."
+    },
+    {
       "id": "CT-0131",
       "date": "2023-05-03",
       "country": "India",
@@ -3046,6 +3326,32 @@
       "publisher": "Christian Solidarity Worldwide",
       "source_url": "https://www.csw.org.uk/reports/briefing-attacks-on-places-of-worship-6662/",
       "notes": "CSW says responsibility was suspected, not judicially established."
+    },
+    {
+      "id": "CT-0366",
+      "country": "Uzbekistan",
+      "date": "2023-04-10",
+      "place": "Denov, Surkhandarya region",
+      "category": "Worship meeting dispersed",
+      "title": "Baptist Easter gathering broken up in Denov",
+      "published_account": "Forum 18 reported police raided a Council of Churches Baptist special Easter meeting in Denov, declared it unauthorised and dispersed participants.",
+      "reported_actor": "Uzbek police",
+      "publisher": "Forum 18",
+      "source_url": "https://www.forum18.org/archive.php?article_id=2824",
+      "notes": "A separate congregation and date from the Karshi Easter raid."
+    },
+    {
+      "id": "CT-0365",
+      "country": "Uzbekistan",
+      "date": "2023-04-09",
+      "place": "Karshi, Kashkadarya region",
+      "category": "Church raid; alleged police violence",
+      "title": "Baptist Easter worship raided and members allegedly beaten",
+      "published_account": "Forum 18 reported that officers forced entry during the Easter worship meeting, arrested three church members, and allegedly beat or used electric-shock devices on participants.",
+      "reported_actor": "Uzbek police and other officials; violence reported by Baptists",
+      "publisher": "Forum 18",
+      "source_url": "https://www.forum18.org/archive.php?article_id=2824",
+      "notes": "Alleged ill-treatment is attributed to congregation members; officials did not answer the publisher's questions."
     },
     {
       "id": "CT-0264",
@@ -3229,6 +3535,19 @@
       "source_url": "https://2021-2025.state.gov/reports/2023-report-on-international-religious-freedom/ukraine/",
       "second_source_url": "https://ukraine.ohchr.org/en/update-human-rights-situation-ukraine-1-february-2023-30-april-2023-EN",
       "notes": "Ukrainian government-controlled territory; a group of policy measures across regions, not one nationwide enforcement action."
+    },
+    {
+      "id": "CT-0379",
+      "country": "Morocco",
+      "date": "2023",
+      "place": "Morocco (nationwide)",
+      "category": "Restrictions on citizen Christian worship and civil registration",
+      "title": "Moroccan Christian congregations denied marriage and worship recognition",
+      "published_account": "The US State Department's 2023 religious freedom report stated that authorities continued to deny Moroccan-citizen Christian organisations permission for Christian or civil marriage and funerals and new church premises, while foreign-resident churches remained registered.",
+      "reported_actor": "Moroccan religious and administrative authorities",
+      "publisher": "US Department of State",
+      "source_url": "https://2021-2025.state.gov/reports/2023-report-on-international-religious-freedom/morocco/",
+      "notes": "Yearly pattern of continuing restrictions, not a single police incident. Registered foreign churches are legally distinct from Moroccan citizens' groups."
     },
     {
       "id": "CT-0304",
@@ -3427,6 +3746,19 @@
       "reported_actor": "Militants linked to JNIM",
       "publisher": "US State Department (via ecoi.net)",
       "source_url": "https://www.ecoi.net/en/document/2091877.html"
+    },
+    {
+      "id": "CT-0368",
+      "country": "Turkmenistan",
+      "date": "2022-04",
+      "place": "Turkmenabat",
+      "category": "Easter church raid; fines",
+      "title": "Protestant Easter meeting raided and church members fined",
+      "published_account": "Forum 18 reported police raided an unregistered Protestant Easter service and a court subsequently fined approximately twenty members.",
+      "reported_actor": "Turkmen police and court",
+      "publisher": "Forum 18",
+      "source_url": "https://www.forum18.org/archive.php?article_id=2858",
+      "notes": "Number is approximate and source relies on anonymous local Protestants; month-only event date."
     },
     {
       "id": "CT-0281",
@@ -4347,6 +4679,19 @@
       "reported_actor": "Various local mobs implicated; details differ by location",
       "publisher": "Amnesty International",
       "source_url": "https://www.amnesty.org/en/latest/press-release/2013/10/egypt-christians-scapegoated-after-dispersal-pro-morsi-sit-ins/"
+    },
+    {
+      "id": "CT-0370",
+      "country": "Tanzania",
+      "date": "2013-05-05",
+      "place": "Olasiti, Arusha",
+      "category": "Bombing at Catholic church; deaths and injuries",
+      "title": "Catholic church inauguration attacked with explosive",
+      "published_account": "The US State Department reported three deaths and more than forty serious injuries following an explosion at St Joseph's Catholic Church during its opening Mass in Arusha.",
+      "reported_actor": "Suspected bomber; one suspect arrested, trial pending at year-end",
+      "publisher": "US Department of State",
+      "source_url": "https://2009-2017.state.gov/documents/organization/222317.pdf",
+      "notes": "Government report confirms the attack and subsequent trial; no final finding of motive or perpetrator in the cited report."
     },
     {
       "id": "CT-0236",
