@@ -400,6 +400,21 @@
       "notes": "Ukrainian government-controlled territory. Church-aligned reporting; source allegations and incident details have not been independently established here. Military mobilisation alone does not demonstrate religious persecution."
     },
     {
+      "id": "CT-0530",
+      "date": "2026-04-30",
+      "country": "Mozambique",
+      "place": "Meza, Ancuabe district, Cabo Delgado",
+      "title": "St Louis de Montfort parish church destroyed",
+      "published_account": "Aid to the Church in Need reported militants burned St Louis de Montfort church, parish offices and missionary housing, and vandalised a kindergarten in Meza.",
+      "reported_actor": "daesh-affiliated Mozambique insurgents, per diocesan testimony",
+      "publisher": "Aid to the Church in Need",
+      "source_url": "https://aidtochurch.org/news/our-news/mozambique-islamists-reduce-historic-church-to-rubble",
+      "notes": "Diocesan sources reported no deaths at the parish; separate village casualty rumours must not be presented as confirmed parish deaths.",
+      "incident_group": "MOZ-MEZA-2026",
+      "category": "Church destruction",
+      "second_source_url": "https://www.vaticannews.va/en/church/news/2026-05/mozambique-church-set-on-fire-by-jihadists.html"
+    },
+    {
       "id": "CT-0285",
       "date": "2026-04-27",
       "country": "Ukraine",
@@ -1266,6 +1281,20 @@
       "publisher": "Srna",
       "source_url": "https://www.srna.rs/en/novost/1340701/tombstone-vandalized-at-orthodox-cemetery-in-village-of-gornji-ti%C4%8Dici",
       "notes": "Damage was noticed in late September and published in October; month-only catalogue date does not assert a precise act date."
+    },
+    {
+      "id": "CT-0531",
+      "date": "2025-10",
+      "country": "Mozambique",
+      "place": "Memba district, Nampula",
+      "title": "Two churches reportedly destroyed during Memba attacks",
+      "published_account": "ACLED reported that insurgents claimed destruction of two churches and hundreds of homes across villages attacked between late September and early October 2025.",
+      "reported_actor": "daesh Mozambique affiliate claim, as reported by ACLED",
+      "publisher": "ACLED",
+      "source_url": "https://acleddata.com/update/mozambique-conflict-monitor-update-15-october-2025",
+      "notes": "Claims of destruction are attributed; October marks end of reported multi-day period and is not a single date.",
+      "incident_group": "MOZ-MEMBA-2025",
+      "category": "Church destruction and displacement"
     },
     {
       "id": "CT-0253",
@@ -2799,6 +2828,20 @@
       "incident_group": "INDIA-2024-TRACKER"
     },
     {
+      "id": "CT-0529",
+      "date": "2024-07-24",
+      "country": "Democratic Republic of the Congo",
+      "place": "Batangi-Mbau, Beni territory",
+      "title": "More than thirty bodies discovered after ADF attacks",
+      "published_account": "International Christian Concern reported the discovery of over thirty bodies following raids by daesh-affiliated adf in Batangi-Mbau, affecting Christian communities.",
+      "reported_actor": "daesh-affiliated allied democratic forces (adf), per local reports",
+      "publisher": "International Christian Concern",
+      "source_url": "https://persecution.org/2024/08/13/islamic-rebels-kill-more-than-30-christians-in-eastern-drc/",
+      "notes": "The date is when bodies were reported discovered after attacks, not a single-day massacre date.",
+      "incident_group": "COD-ADF-2024",
+      "category": "Mass killing affecting Christian communities"
+    },
+    {
       "id": "CT-0315",
       "country": "Laos",
       "date": "2024-07-23",
@@ -3013,6 +3056,20 @@
       "publisher": "OSCE ODIHR Hate Crime Reporting",
       "source_url": "https://hatecrime.osce.org/serbia",
       "notes": "Month, reporting organisation and attack category are available from country overview; underlying victim remains unidentified."
+    },
+    {
+      "id": "CT-0528",
+      "date": "2024-05",
+      "country": "Democratic Republic of the Congo",
+      "place": "North Kivu",
+      "title": "Fourteen Catholics reportedly killed for refusing conversion",
+      "published_account": "A European Parliament resolution recorded reports that fourteen Catholics were killed in North Kivu after refusing to convert to Islam.",
+      "reported_actor": "daesh-affiliated allied democratic forces (adf), as reported",
+      "publisher": "European Parliament",
+      "source_url": "https://eur-lex.europa.eu/eli/C/2025/4370/oj/eng",
+      "notes": "The resolution does not establish an exact day or settlement for the 14 deaths.",
+      "incident_group": "COD-ADF-2024",
+      "category": "Religious coercion and killing"
     },
     {
       "id": "CT-0360",
@@ -3320,6 +3377,20 @@
       "notes": "A district-level aggregate; may include the previously catalogued Mazeze attack, which should not be treated as an additional victim toll.",
       "incident_group": "MOZ-CHIURE-2024",
       "id": "CT-0500"
+    },
+    {
+      "id": "CT-0527",
+      "date": "2024-01-30",
+      "country": "Democratic Republic of the Congo",
+      "place": "Beni and Oicha, North Kivu",
+      "title": "Pentecostal worshippers killed in Beni-area attack",
+      "published_account": "Vatican News reported eight civilians murdered in the Beni area, five while praying at a Pentecostal church, during attacks attributed to the armed group.",
+      "reported_actor": "daesh-affiliated allied democratic forces (adf), per local authorities",
+      "publisher": "Vatican News",
+      "source_url": "https://www.vaticannews.va/en/world/news/2024-02/pentecostal-church-attack-beni-democratic-republic-congo.html",
+      "notes": "Five of the eight reported victims were worshippers; not all eight are claimed as churchgoers.",
+      "incident_group": "COD-ADF-2024",
+      "category": "Attack on Pentecostal congregation"
     },
     {
       "id": "CT-0124",
@@ -4529,6 +4600,21 @@
       "notes": "Date is disappearance, not a confirmed date of death. No independent determination of motive or perpetrators."
     },
     {
+      "id": "CT-0526",
+      "date": "2022-10-16",
+      "country": "Nigeria",
+      "place": "Felele, Lokoja, Kogi State",
+      "title": "Two Christians killed at Celestial Church of Christ",
+      "published_account": "TheCable reported unknown gunmen shooting at a Celestial Church of Christ Sunday service in Lokoja, killing two and injuring others; a later USCIRF report attributed it to a daesh affiliate.",
+      "reported_actor": "daesh west africa affiliate attributed by USCIRF; police initially named no group",
+      "publisher": "TheCable",
+      "source_url": "https://www.thecable.ng/two-dead-many-injured-as-gunmen-attack-church-in-kogi/",
+      "notes": "Attribution remains qualified because local police did not identify the assailants.",
+      "incident_group": "NGA-ISWAP-2022",
+      "category": "Church shooting",
+      "second_source_url": "https://www.uscirf.gov/sites/default/files/2024-01/AR%202023.pdf"
+    },
+    {
       "id": "CT-0246",
       "date": "2022-10",
       "country": "Eritrea",
@@ -4540,6 +4626,20 @@
       "publisher": "Human Rights Watch",
       "source_url": "https://www.hrw.org/news/2022/12/07/eritrea-10-years-behind-bars-ex-ministers-daughter",
       "notes": "Account and attribution are according to the cited publisher; incident categorisation does not independently determine perpetrator identity or motive."
+    },
+    {
+      "id": "CT-0532",
+      "date": "2022-10",
+      "country": "Mozambique",
+      "place": "Cabo Delgado",
+      "title": "Threats to Christians in militant religious ultimata",
+      "published_account": "ACLED analysed militant messages threatening Christians and Jews with conversion, discriminatory taxation or violence during the Cabo Delgado insurgency.",
+      "reported_actor": "daesh-affiliated local insurgents, according to ACLED",
+      "publisher": "ACLED",
+      "source_url": "https://acleddata.com/report/preaching-coercion-and-sectarianism-how-islamic-state-building-stronghold-mozambique",
+      "notes": "This is one publication-level pattern of threats, not one dated massacre or an estimate of affected victims.",
+      "incident_group": "MOZ-ULTIMATA-2022",
+      "category": "Religious coercion and threats"
     },
     {
       "id": "CT-0177",
@@ -4646,6 +4746,20 @@
       "media_type": "Incident photographs",
       "media_url": "https://abcnews.com/International/35-killed-satanic-attack-catholic-church-nigeria-officials/story?id=85208528",
       "media_note": "AP photograph of church after attack"
+    },
+    {
+      "id": "CT-0525",
+      "date": "2022-04-20",
+      "country": "Nigeria",
+      "place": "Iware, Taraba State",
+      "title": "Bombing claimed to target Christian marketgoers",
+      "published_account": "International Christian Concern reported an Iware marketplace blast and quoted a daesh west africa affiliate statement describing Christian civilians as its intended target.",
+      "reported_actor": "daesh west africa affiliate claimed bombing",
+      "publisher": "International Christian Concern",
+      "source_url": "https://persecution.org/2022/05/02/iswap-claims-bombing-that-targeted-christians/",
+      "notes": "Publisher cited police initial tally of three killed and nineteen injured; group claims and casualty figures not independently established.",
+      "incident_group": "NGA-ISWAP-2022",
+      "category": "Claimed anti-Christian market bombing"
     },
     {
       "id": "CT-0135",
@@ -4806,6 +4920,21 @@
       "incident_group": "CANADA-CHURCHFIRE-2021"
     },
     {
+      "id": "CT-0518",
+      "date": "2021-04",
+      "country": "Egypt",
+      "place": "Bir al-Abd, North Sinai",
+      "title": "Coptic Christian Nabil Habashi Salama executed after abduction",
+      "published_account": "International Christian Concern reported that a daesh-affiliated group published footage of the execution of Coptic Christian Nabil Habashi Salama after his November 2020 abduction.",
+      "reported_actor": "daesh Sinai affiliate claimed execution",
+      "publisher": "International Christian Concern",
+      "source_url": "https://persecution.org/2021/04/19/isis-executes-sinai-christian/",
+      "notes": "April 2021 is the footage publication period; exact death date is not established.",
+      "incident_group": "EGY-SINAI-COPTS-2021",
+      "category": "Abduction and execution",
+      "second_source_url": "https://www.aljazeera.com/news/2021/4/19/isil-linked-group-in-egypt-claims-execution-of-copt-2-others"
+    },
+    {
       "id": "CT-0138",
       "date": "2021-03-28",
       "country": "Indonesia",
@@ -4832,6 +4961,20 @@
       "publisher": "International Christian Concern",
       "source_url": "https://persecution.org/2021/01/11/christian-convert-in-uganda-killed/",
       "notes": "Religious advocacy source; precise judicial findings and perpetrators unavailable."
+    },
+    {
+      "id": "CT-0522",
+      "date": "2020-11-27",
+      "country": "Indonesia",
+      "place": "Lembantongoa, Sigi, Central Sulawesi",
+      "title": "Four Christians killed and Salvation Army church burned",
+      "published_account": "Human Rights Watch reported that militants killed four Christian farmers, burned a Salvation Army church and houses in Lembantongoa, prompting displacement.",
+      "reported_actor": "daesh-affiliated eastern indonesia mujahideen suspected",
+      "publisher": "Human Rights Watch",
+      "source_url": "https://www.hrw.org/news/2020/12/02/brutal-attack-indonesia-targets-christian-farmers",
+      "notes": "Affiliate responsibility reported, not evidence of direction by a central command.",
+      "incident_group": "IDN-SIGI-2020",
+      "category": "Church arson and murder"
     },
     {
       "id": "CT-0139",
@@ -5222,6 +5365,21 @@
       "notes": "Source gives only year or month. No exact day has been inferred."
     },
     {
+      "id": "CT-0520",
+      "date": "2018-04-15",
+      "country": "Pakistan",
+      "place": "Essa Nagri, Quetta",
+      "title": "Two Christians killed as congregation left worship",
+      "published_account": "Dawn reported two Christians killed and others injured by motorcycle gunmen as worshippers left a Sunday service near a church in Essa Nagri; a church charity recorded a daesh claim.",
+      "reported_actor": "daesh claimed responsibility; local police initially described unknown gunmen",
+      "publisher": "Dawn",
+      "source_url": "https://www.dawn.com/news/1401797",
+      "notes": "Separate attack two weeks after the Easter Monday family killing.",
+      "incident_group": "PAK-QUETTA-2018",
+      "category": "Church congregation attacked",
+      "second_source_url": "https://www.barnabasaid.org/au/news/jihadi-attacks-forcing-out-quetta-christians/"
+    },
+    {
       "id": "CT-0158",
       "date": "2018-04-03",
       "country": "Mexico",
@@ -5233,6 +5391,21 @@
       "publisher": "US State Department",
       "source_url": "https://2017-2021.state.gov/reports/2018-report-on-international-religious-freedom/mexico/",
       "notes": "Source states apparent heart attack during captivity; religious motive not established."
+    },
+    {
+      "id": "CT-0519",
+      "date": "2018-04-02",
+      "country": "Pakistan",
+      "place": "Shah Zaman Road, Quetta",
+      "title": "Four Christian family members killed after Easter",
+      "published_account": "Dawn reported gunmen shot and killed four Christian family members travelling in Quetta after Easter; a later church charity account recorded a daesh responsibility claim.",
+      "reported_actor": "daesh claimed attack; gunmen not independently identified",
+      "publisher": "Dawn",
+      "source_url": "https://www.dawn.com/news/1399249/four-members-of-christian-family-shot-dead-in-quetta",
+      "notes": "Distinct from the December 2017 Quetta church bombing already catalogued.",
+      "incident_group": "PAK-QUETTA-2018",
+      "category": "Murder of Christian civilians",
+      "second_source_url": "https://www.barnabasaid.org/au/news/jihadi-attacks-forcing-out-quetta-christians/"
     },
     {
       "country": "Nigeria",
@@ -5383,6 +5556,20 @@
       "id": "CT-0504"
     },
     {
+      "id": "CT-0517",
+      "date": "2017-05-06",
+      "country": "Egypt",
+      "place": "al-Arish, North Sinai",
+      "title": "Returning Coptic barber Nabeel Saber Ayoub killed",
+      "published_account": "The US State Department cited reports that Nabeel Saber Ayoub, who had fled al-Arish with his family, was shot after briefly returning to check his home and barber shop.",
+      "reported_actor": "Unidentified gunmen amid daesh-affiliated threats",
+      "publisher": "US Department of State",
+      "source_url": "https://2017-2021.state.gov/reports/2017-report-on-international-religious-freedom/egypt/",
+      "notes": "Occurred after the earlier January-February campaign; separate from CT-0248's initial seven killings.",
+      "incident_group": "EGY-SINAI-COPTS-2017",
+      "category": "Killing, threats or attacks affecting Christians"
+    },
+    {
       "country": "Egypt",
       "date": "2017-04-18",
       "place": "Road to St Catherine's Monastery, South Sinai",
@@ -5443,6 +5630,34 @@
       "notes": "Part of coordinated Palm Sunday attacks; death counts differ by update."
     },
     {
+      "id": "CT-0516",
+      "date": "2017-02-22",
+      "country": "Egypt",
+      "place": "al-Arish, North Sinai",
+      "title": "Coptic father and son Saad and Medhat Hanna murdered",
+      "published_account": "The US State Department reported the bodies of Coptic Christian Saad Hanna and his son Medhat were discovered; one had been shot and the other showed severe burns.",
+      "reported_actor": "Unidentified gunmen during daesh-linked anti-Coptic campaign",
+      "publisher": "US Department of State",
+      "source_url": "https://2017-2021.state.gov/reports/2017-report-on-international-religious-freedom/egypt/",
+      "notes": "Two victims from one case, not two independently counted events; included in broader CT-0248.",
+      "incident_group": "EGY-SINAI-COPTS-2017",
+      "category": "Killing, threats or attacks affecting Christians"
+    },
+    {
+      "id": "CT-0515",
+      "date": "2017-02-16",
+      "country": "Egypt",
+      "place": "al-Arish market, North Sinai",
+      "title": "Coptic teacher Gamal Tawfiq assassinated",
+      "published_account": "The US State Department cited press reports that motorcycle-borne gunmen shot Coptic Christian schoolteacher Gamal Tawfiq on his way to school.",
+      "reported_actor": "Unknown gunmen during daesh-linked anti-Coptic campaign",
+      "publisher": "US Department of State",
+      "source_url": "https://2017-2021.state.gov/reports/2017-report-on-international-religious-freedom/egypt/",
+      "notes": "Separately identified victim of the series summarised by CT-0248.",
+      "incident_group": "EGY-SINAI-COPTS-2017",
+      "category": "Killing, threats or attacks affecting Christians"
+    },
+    {
       "id": "CT-0337",
       "country": "Malaysia",
       "date": "2017-02-13",
@@ -5454,6 +5669,34 @@
       "publisher": "International Christian Concern",
       "source_url": "https://persecution.org/2025/11/06/malaysian-court-orders-government-payment-to-pastor-raymond-kohs-family/",
       "notes": "Multiple findings evolved over years; do not present early government denials as settled vindication."
+    },
+    {
+      "id": "CT-0513",
+      "date": "2017-02-11",
+      "country": "Egypt",
+      "place": "al-Arish, North Sinai",
+      "title": "Christian veterinarian Bahgat William killed",
+      "published_account": "Eyewitness accounts cited by the US State Department said an attacker fatally shot veterinarian Bahgat William outside his clinic.",
+      "reported_actor": "Unidentified gunman during daesh-affiliated anti-Coptic campaign",
+      "publisher": "US Department of State",
+      "source_url": "https://2017-2021.state.gov/reports/2017-report-on-international-religious-freedom/egypt/",
+      "notes": "Distinct victim within wider CT-0248 series; source attribution does not establish individual assailant.",
+      "incident_group": "EGY-SINAI-COPTS-2017",
+      "category": "Killing, threats or attacks affecting Christians"
+    },
+    {
+      "id": "CT-0514",
+      "date": "2017-02-11",
+      "country": "Egypt",
+      "place": "Samaran, al-Arish",
+      "title": "Coptic resident Adel Showky killed",
+      "published_account": "The US State Department cited reports that attackers killed Coptic resident Adel Showky in the Samaran neighbourhood of al-Arish.",
+      "reported_actor": "Unidentified gunmen in reported Sinai campaign",
+      "publisher": "US Department of State",
+      "source_url": "https://2017-2021.state.gov/reports/2017-report-on-international-religious-freedom/egypt/",
+      "notes": "Separate case from the same-day killing of Bahgat William; also covered in broader CT-0248.",
+      "incident_group": "EGY-SINAI-COPTS-2017",
+      "category": "Killing, threats or attacks affecting Christians"
     },
     {
       "id": "CT-0352",
@@ -5482,6 +5725,20 @@
       "notes": "Account and attribution are according to the cited publisher; incident categorisation does not independently determine perpetrator identity or motive."
     },
     {
+      "id": "CT-0512",
+      "date": "2017-01-30",
+      "country": "Egypt",
+      "place": "al-Arish, North Sinai",
+      "title": "Wael Milad shot in Coptic-owned shop",
+      "published_account": "The US State Department documented the reported killing of Coptic Christian Wael Milad by masked assailants in his shop on January 30.",
+      "reported_actor": "Unidentified attackers during daesh-affiliated anti-Coptic campaign",
+      "publisher": "US Department of State",
+      "source_url": "https://2017-2021.state.gov/reports/2017-report-on-international-religious-freedom/egypt/",
+      "notes": "Individual case also included in broader North Sinai summary CT-0248; the new entry provides named victim and date.",
+      "incident_group": "EGY-SINAI-COPTS-2017",
+      "category": "Killing, threats or attacks affecting Christians"
+    },
+    {
       "country": "Mozambique",
       "date": "2017",
       "place": "Mitumbate and Maculo area, Cabo Delgado",
@@ -5508,6 +5765,20 @@
       "source_url": "https://www.hrw.org/news/2016/12/12/egypt-deadly-bombing-coptic-cathedral"
     },
     {
+      "id": "CT-0521",
+      "date": "2016-11-13",
+      "country": "Indonesia",
+      "place": "Oikumene Church, Samarinda",
+      "title": "Toddler killed and three children wounded outside church",
+      "published_account": "ABC News reported that an assailant who pledged allegiance to daesh threw an incendiary device at the Oikumene church; a child died and three other children were injured. The attacker was later convicted.",
+      "reported_actor": "Convicted militant sympathetic to daesh; not proof of foreign command",
+      "publisher": "ABC News",
+      "source_url": "https://www.abc.net.au/news/2017-09-26/indonesia-militant-gets-life-for-church-attack-that-killed-child/8986568",
+      "notes": "2016 attack date and 2017 conviction date are distinct; child victims were playing outside church.",
+      "incident_group": "IDN-SAMARINDA-2016",
+      "category": "Church bombing and killing"
+    },
+    {
       "id": "CT-0338",
       "country": "Malaysia",
       "date": "2016-11",
@@ -5532,6 +5803,34 @@
       "publisher": "International Christian Concern",
       "source_url": "https://persecution.org/2016/10/04/the-building-of-churches-in-brunei-is-prohibited/",
       "notes": "Source-attributed 2016 regulatory claim, not an independently adjudicated individual church closure."
+    },
+    {
+      "id": "CT-0511",
+      "date": "2016-06-30",
+      "country": "Egypt",
+      "place": "al-Arish, North Sinai",
+      "title": "Coptic priest Father Raphael Moussa murdered",
+      "published_account": "The US State Department reported that Coptic priest Raphael Moussa was shot and killed near his church and the Sinai affiliate of daesh claimed the murder.",
+      "reported_actor": "daesh Sinai affiliate claimed responsibility",
+      "publisher": "US Department of State",
+      "source_url": "https://2017-2021.state.gov/reports/2016-report-on-international-religious-freedom/egypt/",
+      "notes": "Distinct from the 2017 North Sinai killing series already recorded.",
+      "incident_group": "EGY-CLERGY-2016",
+      "category": "Killing of Coptic priest"
+    },
+    {
+      "id": "CT-0508",
+      "date": "2016-06-05",
+      "country": "Bangladesh",
+      "place": "Baraigram",
+      "title": "Christian grocer Sunil Gomez murdered",
+      "published_account": "The US State Department recorded that Christian grocer Sunil Gomez was murdered in Baraigram and that daesh claimed responsibility.",
+      "reported_actor": "daesh claimed responsibility; perpetrator attribution disputed",
+      "publisher": "US Department of State",
+      "source_url": "https://2017-2021.state.gov/reports/2016-report-on-international-religious-freedom/bangladesh/",
+      "notes": "Source attribution retained without assuming the claim establishes organisational control.",
+      "incident_group": "BGD-CONVERT-KILLINGS-2016",
+      "category": "Killing, threats or attacks affecting Christians"
     },
     {
       "id": "CT-0249",
@@ -5573,6 +5872,20 @@
       "notes": "Separate church and date from the April 2016 evangelical church arson."
     },
     {
+      "id": "CT-0507",
+      "date": "2016-03-22",
+      "country": "Bangladesh",
+      "place": "Kurigram",
+      "title": "Christian convert Hussein Ali Sarkar killed",
+      "published_account": "The US State Department recorded that Christian convert Hussein Ali Sarkar was hacked to death; daesh subsequently claimed the attack.",
+      "reported_actor": "daesh claim; investigation and command linkage disputed",
+      "publisher": "US Department of State",
+      "source_url": "https://2017-2021.state.gov/reports/2016-report-on-international-religious-freedom/bangladesh/",
+      "notes": "Separate from the January killing of Chhamir Uddin Mandal; the state report spells the location Kuringram.",
+      "incident_group": "BGD-CONVERT-KILLINGS-2016",
+      "category": "Killing, threats or attacks affecting Christians"
+    },
+    {
       "id": "CT-0351",
       "country": "Yemen",
       "date": "2016-03-04",
@@ -5586,6 +5899,20 @@
       "notes": "A religiously administered facility was attacked; no authoritative perpetrator finding in the initial report."
     },
     {
+      "id": "CT-0506",
+      "date": "2016-01-07",
+      "country": "Bangladesh",
+      "place": "Jhenaidah",
+      "title": "Christian convert Chhamir Uddin Mandal killed",
+      "published_account": "The US State Department recorded that 85-year-old Christian convert and homeopathic doctor Chhamir Uddin Mandal was stabbed to death in his office; daesh claimed the killing.",
+      "reported_actor": "daesh claim disputed by Bangladeshi authorities",
+      "publisher": "US Department of State",
+      "source_url": "https://2017-2021.state.gov/reports/2016-report-on-international-religious-freedom/bangladesh/",
+      "notes": "A claim of responsibility is not independent proof of operational control; the victim was separately named in the annual report.",
+      "incident_group": "BGD-CONVERT-KILLINGS-2016",
+      "category": "Killing, threats or attacks affecting Christians"
+    },
+    {
       "id": "CT-0185",
       "date": "2016",
       "country": "Australia",
@@ -5597,6 +5924,35 @@
       "publisher": "ABC News",
       "source_url": "https://www.abc.net.au/news/2019-03-20/neil-erikson-wanted-over-church-incident/10916948",
       "notes": "Source gives only year or month. No exact day has been inferred."
+    },
+    {
+      "id": "CT-0524",
+      "date": "2015-12-30",
+      "country": "Syria",
+      "place": "Christian quarter, Qamishli",
+      "title": "Assyrian Christian restaurants attacked by suicide bombers",
+      "published_account": "Contemporaneous reports described multiple bombs at restaurants in Qamishli's predominantly Christian district, killing at least sixteen and injuring dozens; daesh claimed responsibility.",
+      "reported_actor": "daesh responsibility claim",
+      "publisher": "Anadolu Agency",
+      "source_url": "https://h.aa.com.tr/en/world/syria-four-suicide-bombings-kill-16-in-al-hasakah/498838",
+      "notes": "Several nearby explosions in a coordinated attack are grouped as one incident record; not all fatalities were documented Christian.",
+      "incident_group": "SYR-QAMISHLI-2015",
+      "category": "Bombing of Christian neighbourhood",
+      "second_source_url": "https://www.nine.com.au/world-news/middle-east/syrian-suicide-bombs-kill-wound-dozens-20151231-p5two4.html"
+    },
+    {
+      "id": "CT-0509",
+      "date": "2015-11-18",
+      "country": "Bangladesh",
+      "place": "Dinajpur",
+      "title": "Catholic missionary Piero Parolari shot",
+      "published_account": "Vatican Radio reported that assailants shot Catholic priest Piero Parolari while he was cycling; he survived his injuries, and daesh later claimed responsibility.",
+      "reported_actor": "daesh claim; local investigators disputed extent of link",
+      "publisher": "Vatican Radio",
+      "source_url": "https://www.archivioradiovaticana.va/storico/2015/11/20/is_claims_attack_on_italian_priest_in_bangladesh/en-1188361",
+      "notes": "The victim survived, so this is recorded as attempted killing rather than execution.",
+      "incident_group": "BGD-CLERGY-2015",
+      "category": "Attempted murder of priest"
     },
     {
       "id": "CT-0186",
@@ -5624,6 +5980,20 @@
       "notes": "Video-publication date, not a verified date of killing; no invented town location.",
       "incident_group": "LBY-2015",
       "id": "CT-0486"
+    },
+    {
+      "id": "CT-0510",
+      "date": "2015-10-05",
+      "country": "Bangladesh",
+      "place": "Pabna",
+      "title": "Pastor Luke Sarkar survived knife attack",
+      "published_account": "A parliamentary inquiry recorded the attempted killing of Christian pastor Luke Sarkar in October 2015 and investigation of suspects from a local militant group.",
+      "reported_actor": "Local jmb suspects; daesh operational link not established",
+      "publisher": "Parliament of Australia",
+      "source_url": "https://www.aph.gov.au/Parliamentary_Business/Committees/Joint/Intelligence_and_Security/Completed_Inquiries_45th_Parliament/ListingofJADandJMB/Report/section?id=committees%2Freportjnt%2F024208%2F26531",
+      "notes": "Affiliation to daesh is not established; this is an associated militant-violence comparison, explicitly not attributed as a daesh-directed operation.",
+      "incident_group": "BGD-CLERGY-2015",
+      "category": "Attempted murder of pastor"
     },
     {
       "country": "Syria",
@@ -5796,6 +6166,20 @@
       "source_url": "https://www.hrw.org/news/2015/02/16/libya/egypt-murder-egyptians-war-crime"
     },
     {
+      "id": "CT-0534",
+      "date": "2015-02-02",
+      "country": "Iraq",
+      "place": "Our Lady of the Hour Church, Mosul",
+      "title": "Historic Clock Church bell tower destroyed",
+      "published_account": "Bellingcat analysed available photographs and eyewitness testimony and found daesh had destroyed the Clock Church bell tower, not the entire church, in February 2015.",
+      "reported_actor": "daesh, as documented by Bellingcat",
+      "publisher": "Bellingcat",
+      "source_url": "https://www.bellingcat.com/news/middle-east/2016/10/19/contrary-reports-clock-church-not-destroyed-mosul/",
+      "notes": "Corrects inaccurate claims that the whole church was demolished; destruction of bell tower only established.",
+      "incident_group": "IRQ-MOSUL-CHURCHES",
+      "category": "Church heritage destruction"
+    },
+    {
       "country": "Syria",
       "date": "2015-02",
       "place": "Tel Hermes and neighbouring Khabur villages, Hasakah",
@@ -5836,6 +6220,20 @@
       "source_url": "https://www.yahoo.com/news/niger-protesters-burn-churches-second-day-charlie-riots-143432674.html",
       "notes": "Clashes also involved police and secular state targets. Distinct city from Niamey.",
       "incident_group": "NIGER-RIOTS-2015"
+    },
+    {
+      "id": "CT-0533",
+      "date": "2015-01",
+      "country": "Iraq",
+      "place": "al-Wahda, Mosul",
+      "title": "Armenian church reportedly burned in Mosul",
+      "published_account": "Public Radio of Armenia reported a Kurdish official's account that militants set fire to an Armenian church in Mosul's al-Wahda neighbourhood.",
+      "reported_actor": "daesh accused by Kurdish official",
+      "publisher": "Public Radio of Armenia",
+      "source_url": "https://en.armradio.am/2015/01/27/islamic-state-torches-armenian-church-in-mosul/",
+      "notes": "Reported by January 27; actual day unknown; church not assumed identical to Armenian prison site in CT-0475.",
+      "incident_group": "IRQ-MOSUL-CHURCHES",
+      "category": "Church arson"
     },
     {
       "country": "Iraq",
@@ -6059,6 +6457,20 @@
       "id": "CT-0462"
     },
     {
+      "id": "CT-0523",
+      "date": "2014-07",
+      "country": "Syria",
+      "place": "al-Bukamal, Deir ez-Zor",
+      "title": "Christian resident reportedly executed in al-Bukamal",
+      "published_account": "Human Rights Watch documented a resident's account that daesh fighters executed a Christian and an Alawite resident in the main square following the group's July takeover.",
+      "reported_actor": "daesh fighters, according to local resident",
+      "publisher": "Human Rights Watch",
+      "source_url": "https://www.hrw.org/world-report/2015/country-chapters/syria",
+      "notes": "Month-only date based on eyewitness account within Ramadan 2014; Christian victim not named.",
+      "incident_group": "SYR-ALBUKAMAL-2014",
+      "category": "Reported execution of Christian civilian"
+    },
+    {
       "country": "Iraq",
       "date": "2014-06-29",
       "place": "Mosul",
@@ -6193,6 +6605,20 @@
       "notes": "One distinct church site within the 2014-2017 prison network.",
       "incident_group": "IRQ-MOSUL-CHURCHES",
       "id": "CT-0475"
+    },
+    {
+      "id": "CT-0535",
+      "date": "2014",
+      "country": "Iraq",
+      "place": "Mar Toma church, Mosul",
+      "title": "Mar Toma church desecrated during occupation",
+      "published_account": "Vatican News described vandalism and damage to historic Mar Toma Syriac church during daesh occupation, before the site was restored and reopened.",
+      "reported_actor": "daesh, as attributed by Vatican News",
+      "publisher": "Vatican News",
+      "source_url": "https://www.vaticannews.va/en/church/news/2025-10/mosul-inauguration-churches-isis-islamic-state-iraq-christian.html",
+      "notes": "2014 denotes occupation start and is not independently confirmed as date of the particular damage, which occurred during 2014-2017.",
+      "incident_group": "IRQ-MOSUL-CHURCHES",
+      "category": "Church vandalism"
     },
     {
       "id": "CT-0194",
