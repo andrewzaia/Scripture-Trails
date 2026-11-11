@@ -1,0 +1,37 @@
+name: One-time v1.6.0 release preparation
+
+on:
+  push:
+    branches: [feature/christian-persecution-media-v1-6-0]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    if: contains(github.event.head_commit.message, 'initiate_semver_release_1_6_0')
+    runs-on: ubuntu-24.04
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          persist-credentials: true
+      - uses: actions/setup-node@v5
+        with:
+          node-version-file: .nvmrc
+      - name: Run mandatory release command
+        run: |
+          npm run release -- minor \
+            "Christian persecution - research and local imagery" \
+            "Rename Christians worldwide to Christian persecution throughout the live navigation and page while preserving existing deep links." \
+            "Add twelve sourced incident reports from Ethiopia, Eritrea, Kenya and Egypt, growing the catalogue and global map to 252 reports across 32 countries." \
+            "Display compact, locally hosted photographs on selected report cards where reuse licences permit, with photo author, source, licence and before-or-after incident labels." \
+            "Retain publisher media as external links when no reuse permission is established and add photo provenance, accessible card layouts and regression checks."
+      - name: Commit release metadata and asset cache keys
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add package.json package-lock.json CHANGELOG.md public/data/releases.json public/index.html public/assets/
+          git diff --cached --quiet && exit 1
+          git commit -m "chore: generate v1.6.0 using npm run release"
+          git push origin HEAD:feature/christian-persecution-media-v1-6-0
