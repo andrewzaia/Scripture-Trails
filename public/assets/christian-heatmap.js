@@ -13,7 +13,7 @@ export function aggregateIncidentLocations(reports,geography){
   const key=report.country+'|'+report.place;
   const entry=geography?.places?.[key];
   const locations=Array.isArray(report.locations)&&report.locations.length?report.locations:(entry?.points||[]);
-  const valid=locations.filter(p=>Number.isFinite(Number(p.lat))&&Math.abs(Number(p.lat))<=90&&Number.isFinite(Number(p.lon))&&Math.abs(Number(p.lon))<=180).slice(0,6);
+  const valid=locations.filter(p=>p&&p.lat!==null&&p.lon!==null&&p.lat!==undefined&&p.lon!==undefined&&Number.isFinite(Number(p.lat))&&Math.abs(Number(p.lat))<=90&&Number.isFinite(Number(p.lon))&&Math.abs(Number(p.lon))<=180).slice(0,6);
   if(!valid.length){withoutLocality++;continue;}
   located++;
   for(const point of valid){
@@ -82,7 +82,7 @@ export function createChristianHeatmap(root,{onCountry=()=>{},onPlace=()=>{}}={}
    if(count){
     path.setAttribute('role','button');path.setAttribute('tabindex','0');
     path.setAttribute('aria-label',country+': '+count+' published '+(count===1?'report':'reports')+'. Filter catalogue by country.');
-    path.append(svg('title')).lastChild.textContent=country+': '+count+' published reports';
+    const title=svg('title');title.textContent=country+': '+count+' published reports';path.append(title);
     interaction(path,()=>onCountry(country));
    }else path.setAttribute('aria-hidden','true');
    worldLayer.append(path);
