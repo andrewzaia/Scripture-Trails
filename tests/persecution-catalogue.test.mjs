@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {filterPersecutionReports,reportKind} from '../public/assets/persecution-catalogue.js';
+import {aggregateIncidentLocations} from '../public/assets/christian-heatmap.js';
 const read=path=>readFileSync(new URL('../'+path,import.meta.url),'utf8');
 const records=JSON.parse(read('public/data/christian-persecution.json')).reports;
 const media=JSON.parse(read('public/data/christian-persecution-media.json')).media;
@@ -38,4 +39,53 @@ test('dedicated view, navigation and media index are present without unsafe HTML
  assert.match(html,/data-pc-media-details/);
  assert.match(app,/createPersecutionCatalogue/);
  assert.doesNotMatch(module,/\.innerHTML\s*=/);
+});
+
+test('global distribution includes every report once and geographically separates unresolved places',()=>{
+ const geo=JSON.parse(read('public/data/christian-heatmap-places.json'));
+ const world=JSON.parse(read('public/data/world-heatmap-110m.json'));
+ const totals=aggregateIncidentLocations(records,geo);
+ assert.equal(totals.reportCount,166);
+ assert.equal([...totals.countries.values()].reduce((a,b)=>a+b,0),166);
+ assert.equal(totals.countries.size,26);
+ assert.equal(totals.located,127);
+ assert.equal(totals.withoutLocality,39);
+ assert.ok(Math.abs(totals.weight-127)<0.0001);
+ assert.equal(world.features.length,177);
+ const countries=new Set(world.features.map(f=>f.id));
+ for(const [name,location] of Object.entries(geo.countries))assert.ok(countries.has(location.iso3),'No Natural Earth shape for '+name);
+ for(const [key,place] of Object.entries(geo.places)){
+  assert.ok(key.includes('|')&&Array.isArray(place.points)&&place.points.length);
+  for(const point of place.points){
+   assert.ok(Number.isFinite(point.lat)&&Math.abs(point.lat)<=90,key);
+   assert.ok(Number.isFinite(point.lon)&&Math.abs(point.lon)<=180,key);
+  }
+ }
+});
+test('adding reports automatically updates country heat and optional locality markers',()=>{
+ const geo=JSON.parse(read('public/data/christian-heatmap-places.json'));
+ const original=aggregateIncidentLocations(records,geo);
+ const next={id:'CT-NEW',country:'France',place:'New synthetic town',title:'Synthetic fixture'};
+ const unresolved=aggregateIncidentLocations([...records,next],geo);
+ assert.equal(unresolved.countries.get('France'),original.countries.get('France')+1);
+ assert.equal(unresolved.reportCount,original.reportCount+1);
+ assert.equal(unresolved.withoutLocality,original.withoutLocality+1);
+ const withCoords={...next,locations:[{name:'New synthetic town',lat:42.5,lon:3.2,precision:'city'}]};
+ const located=aggregateIncidentLocations([...records,withCoords],geo);
+ assert.equal(located.located,original.located+1);
+ assert.ok(located.places.some(x=>x.label==='New synthetic town'));
+ assert.equal(located.reportCount,original.reportCount+1);
+ const twoPlaces={...next,locations:[{name:'First',lat:38,lon:3},{name:'Second',lat:39,lon:4}]};
+ const split=aggregateIncidentLocations([twoPlaces],geo);
+ assert.equal(split.located,1);
+ assert.equal(split.places.length,2);
+ assert.equal(split.weight,1);
+});
+test('heat map is local, release-versioned and uses text-only source attribution',()=>{
+ const html=read('public/index.html'),module=read('public/assets/christian-heatmap.js');
+ assert.match(html,/data-pc-map-surface/);
+ assert.match(html,/data-pc-map-layer/);
+ assert.match(module,/world-heatmap-110m.json\?v=/);
+ assert.match(module,/christian-heatmap-places.json\?v=/);
+ assert.doesNotMatch(module,/(maps\.google|mapbox|tile\.openstreetmap|\.innerHTML\s*=)/);
 });
