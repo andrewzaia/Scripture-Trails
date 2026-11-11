@@ -28,6 +28,19 @@
       "source_url": "https://catholicweekly.com.au/priest-urges-prayer-and-hope-after-church-vandalism/"
     },
     {
+      "id": "CT-0452",
+      "country": "Bosnia and Herzegovina",
+      "date": "2026-11",
+      "place": "Lozna near Banovici",
+      "category": "Orthodox cemetery property damaged",
+      "title": "Cemetery shelter reportedly damaged with chainsaw",
+      "published_account": "Srna published a community representative's claim that a shelter serving an Orthodox cemetery at Gradina, Lozna, had been damaged with a chainsaw, amid further cemetery incidents.",
+      "reported_actor": "Unidentified people; attribution supplied by community representative",
+      "publisher": "Srna via Srpska National",
+      "source_url": "https://srpskanational.com/federation-of-bosnia-and-herzegovina/failure-to-punish-attacks-on-orthodox-cemeteries-and-serb-property-encourages-perpetrators/13404",
+      "notes": "Publication date 5 November 2026; exact incident date not established, so month only."
+    },
+    {
       "id": "CT-0001",
       "date": "2026-10-28",
       "country": "France",
@@ -551,6 +564,20 @@
       "source_url": "https://www.uscirf.gov/sites/default/files/2026-05/2026%20Nicaragua%20Country%20Update.pdf"
     },
     {
+      "id": "CT-0443",
+      "country": "Netherlands",
+      "date": "2026-02-25",
+      "place": "Ede, Gelderland",
+      "category": "Attempted arson; historic church",
+      "title": "Oude Kerk entrance door burned",
+      "published_account": "NL Times reported the historic Oude Kerk in Ede suffered a door fire and soot damage early on 25 February amid attacks on local churches.",
+      "reported_actor": "Unidentified attacker; Dutch police investigating",
+      "publisher": "NL Times",
+      "source_url": "https://nltimes.nl/2026/02/26/vandalism-arson-three-ede-churches-one-week",
+      "notes": "No fatalities or proven religiously motivated offender reported in the source.",
+      "incident_group": "EDE-CHURCHES-2026"
+    },
+    {
       "id": "CT-0288",
       "date": "2026-02-24",
       "country": "Ukraine",
@@ -564,6 +591,20 @@
       "notes": "Ukrainian government-controlled territory. Church-aligned reporting; source allegations and incident details have not been independently established here. Military mobilisation alone does not demonstrate religious persecution."
     },
     {
+      "id": "CT-0442",
+      "country": "Netherlands",
+      "date": "2026-02-22",
+      "place": "Ede, Gelderland",
+      "category": "Firebombing; Lutheran church vandalism",
+      "title": "Molotov cocktail thrown through Evangelical Lutheran church window",
+      "published_account": "NL Times reported an incendiary bottle was thrown through a stained-glass window at a Lutheran church in Ede and started a small fire.",
+      "reported_actor": "Unidentified attacker; Dutch police investigating",
+      "publisher": "NL Times",
+      "source_url": "https://nltimes.nl/2026/02/26/vandalism-arson-three-ede-churches-one-week",
+      "notes": "Separate church and date from the De Schuilplaats and Oude Kerk attacks.",
+      "incident_group": "EDE-CHURCHES-2026"
+    },
+    {
       "id": "CT-0289",
       "date": "2026-02-21",
       "country": "Ukraine",
@@ -575,6 +616,20 @@
       "publisher": "Union of Orthodox Journalists",
       "source_url": "https://spzh.eu/en/zashhita-very/93805-chronicle-of-the-reprisals-against-the-clergy-of-the-uoc.html",
       "notes": "Ukrainian government-controlled territory. Church-aligned reporting; source allegations and incident details have not been independently established here. Military mobilisation alone does not demonstrate religious persecution."
+    },
+    {
+      "id": "CT-0441",
+      "country": "Netherlands",
+      "date": "2026-02-19",
+      "place": "Ede, Gelderland",
+      "category": "Attempted arson; evangelical church vandalism",
+      "title": "Evangelical Church De Schuilplaats windows broken and room set alight",
+      "published_account": "NL Times reported a person damaged windows at De Schuilplaats church and set a meeting room on fire in the early morning of 19 February 2026.",
+      "reported_actor": "Unidentified individual; Dutch police investigating",
+      "publisher": "NL Times",
+      "source_url": "https://nltimes.nl/2026/02/26/vandalism-arson-three-ede-churches-one-week",
+      "notes": "Separate location in a three-church Ede series. Motive remained under investigation.",
+      "incident_group": "EDE-CHURCHES-2026"
     },
     {
       "id": "CT-0398",
@@ -1200,6 +1255,19 @@
       "notes": "Month precision: AP publication concerned the same case. Church allegations of systematic pressure and government criminal charges are separately attributed."
     },
     {
+      "id": "CT-0451",
+      "country": "Bosnia and Herzegovina",
+      "date": "2025-10",
+      "place": "Gornji Ticici, Kakanj",
+      "category": "Orthodox grave vandalism",
+      "title": "Orthodox tombstone smashed at Gornji Ticici cemetery",
+      "published_account": "Srna reported parish priest Dragisa Cvjetkovic's statement that a restored Orthodox gravestone was found smashed by parishioners after previously being intact in May.",
+      "reported_actor": "Unidentified persons",
+      "publisher": "Srna",
+      "source_url": "https://www.srna.rs/en/novost/1340701/tombstone-vandalized-at-orthodox-cemetery-in-village-of-gornji-ti%C4%8Dici",
+      "notes": "Damage was noticed in late September and published in October; month-only catalogue date does not assert a precise act date."
+    },
+    {
       "id": "CT-0253",
       "date": "2025-09-30",
       "country": "Ukraine",
@@ -1260,6 +1328,19 @@
       "media_url": "https://www.kltv.com/2025/09/12/investigation-finds-suspected-jesus-statue-vandal-has-schizophrenia-denounced-christianity/",
       "media_note": "Link to local report; imagery/footage on page must be inspected and licensed before re-use",
       "notes": "USCCB archive contains additional incidents; this workbook extracts a selection."
+    },
+    {
+      "id": "CT-0448",
+      "country": "Bosnia and Herzegovina",
+      "date": "2025-09-11",
+      "place": "Pecuj, Zenica",
+      "category": "Orthodox cemetery desecration",
+      "title": "Approximately 60 Orthodox grave markers damaged near Zenica",
+      "published_account": "The OSCE Mission in Bosnia and Herzegovina condemned vandalism at the Orthodox cemetery in Pecuj. Local reporting described dozens of damaged crosses and gravestones.",
+      "reported_actor": "Unidentified vandals",
+      "publisher": "OSCE Mission to Bosnia and Herzegovina",
+      "source_url": "https://bih.osce.org/mission-to-bosnia-and-herzegovina/597402",
+      "notes": "OSCE statement confirms reported incident and expresses condemnation; damage count comes from local reports and is approximate."
     },
     {
       "id": "CT-0374",
@@ -1598,6 +1679,19 @@
       "source_url": "https://www.uscirf.gov/sites/default/files/2026-04/2026%20Mozambique%20Factsheet.pdf"
     },
     {
+      "id": "CT-0450",
+      "country": "Bosnia and Herzegovina",
+      "date": "2025-07",
+      "place": "Karaula, Kakanj",
+      "category": "Orthodox cemetery chapel break-in",
+      "title": "Karaula Serbian Orthodox chapel windows smashed",
+      "published_account": "Srna reported local priest Dragisa Cvjetkovic said windows of a chapel at the Karaula Orthodox cemetery were smashed and the building was entered. The chapel had suffered earlier incidents.",
+      "reported_actor": "Unknown persons",
+      "publisher": "Srna",
+      "source_url": "https://www1.srna.rs/novost/1319133/chapel-at-serbian-orthodox-cemetery-target-of-the-vandals-again",
+      "notes": "The source's retrospective sequence includes separate earlier break-ins; this record concerns the July 2025 report of renewed damage."
+    },
+    {
       "id": "CT-0429",
       "country": "Democratic Republic of the Congo",
       "date": "2025-06-30",
@@ -1747,6 +1841,19 @@
       "notes": "USCCB archive contains additional incidents; this workbook extracts a selection."
     },
     {
+      "id": "CT-0449",
+      "country": "Bosnia and Herzegovina",
+      "date": "2025-06",
+      "place": "Kovacici, Kladanj",
+      "category": "Orthodox cemetery vandalism",
+      "title": "Serb Orthodox gravestones damaged in Kovacici",
+      "published_account": "Srna reported several graves were damaged in a second recent incident at the Orthodox cemetery in Kovacici near Kladanj, according to a parish priest.",
+      "reported_actor": "Unidentified people",
+      "publisher": "Srna via Srpska National",
+      "source_url": "https://srpskanational.com/federation-of-bosnia-and-herzegovina/headstones-smashed-at-orthodox-cemetery-in-kovacici-village/1710",
+      "notes": "June 2025 event, reported 24 June. A prior May 2024 attack is separately attested in a 2026 follow-up."
+    },
+    {
       "id": "CT-0082",
       "date": "2025-05-14",
       "country": "United States",
@@ -1839,6 +1946,19 @@
       "publisher": "ABC News",
       "source_url": "https://www.abc.net.au/news/2025-06-02/sculpture-theft-bendigo-transcendence-art-installation/105366352",
       "notes": "Source gives only year or month. No exact day has been inferred."
+    },
+    {
+      "id": "CT-0440",
+      "country": "Netherlands",
+      "date": "2025-05",
+      "place": "Doorwerth, Gelderland",
+      "category": "Catholic cemetery and chapel vandalism",
+      "title": "Mary statue decapitated and crucifix smashed at Catholic cemetery",
+      "published_account": "Katholiek Nieuwsblad reported vandalism of the cemetery chapel in Doorwerth, including a damaged cross and a decapitated statue of Mary, discovered in the week before 26 May 2025.",
+      "reported_actor": "Unidentified vandals",
+      "publisher": "Katholiek Nieuwsblad",
+      "source_url": "https://www.kn.nl/nieuws/lokaal/verdriet-door-vernielingen-op-katholieke-begraafplaats-deze-gewijde-plek-is-geschonden/",
+      "notes": "Publication provides a general May window, not a confirmed exact attack day."
     },
     {
       "id": "CT-0384",
@@ -1948,6 +2068,19 @@
       "media_url": "https://www.ncregister.com/cna/gunman-shot-kansas-catholic-priest-intentionally-and-with-premeditation",
       "media_note": "Link to local report; imagery/footage on page must be inspected and licensed before re-use",
       "notes": "USCCB archive contains additional incidents; this workbook extracts a selection."
+    },
+    {
+      "id": "CT-0460",
+      "country": "Kosovo",
+      "date": "2025-04-02",
+      "place": "Rahovec (Orahovac)",
+      "category": "Serbian Orthodox church flag desecration",
+      "title": "Orthodox church flag torn down and another stolen",
+      "published_account": "The Diocese of Raska and Prizren reported a masked person entered the Dormition of the Theotokos churchyard overnight and tore a church flag from the bell tower; another flag was missing.",
+      "reported_actor": "Unidentified masked individual",
+      "publisher": "Diocese of Raska and Prizren",
+      "source_url": "https://eparhija-prizren.com/en/statements/official-statement-of-the-diocese-of-raska-and-prizren-regarding-the-desecration-of-the-church-flag-in-orahovac/",
+      "notes": "Church statement cites security-camera footage; no trial or perpetrator identification claimed."
     },
     {
       "id": "CT-0090",
@@ -2517,6 +2650,33 @@
       "incident_group": "SOMALIA-ABDUL-2024"
     },
     {
+      "id": "CT-0439",
+      "country": "Netherlands",
+      "date": "2024-09-15",
+      "place": "Wijchen, Gelderland",
+      "category": "Arson; desecration of Christian images",
+      "title": "Marian chapel and Lourdes grotto statues damaged by fire",
+      "published_account": "The Observatory on Intolerance and Discrimination against Christians in Europe documented damage to Marian statues, lit devotional items and a grotto in Saint Anthony Abbot Church at Wijchen. Police later arrested a suspect.",
+      "reported_actor": "Unidentified attacker at time of incident; one suspect subsequently arrested",
+      "publisher": "Observatory on Intolerance and Discrimination against Christians in Europe",
+      "source_url": "https://www.intoleranceagainstchristians.eu/index.php?case=8532&id=12",
+      "notes": "Police allegations and arrest do not constitute conviction; three nearby incidents were mentioned but this entry is confined to Wijchen."
+    },
+    {
+      "id": "CT-0445",
+      "country": "Croatia",
+      "date": "2024-09-11",
+      "place": "Petrinja, Sisak-Moslavina",
+      "category": "Orthodox church vandalism; hostile graffiti",
+      "title": "St Spyridon and St Nicholas Orthodox churches defaced",
+      "published_account": "The Serbian Orthodox Church and Croatian media reported fascist or nationalist graffiti at St Spyridon's Church and St Nicholas' cemetery church overnight 10-11 September 2024.",
+      "reported_actor": "Unidentified vandals",
+      "publisher": "Serbian Orthodox Church",
+      "source_url": "https://spc.rs/sr/news/iz-zivota-crkve/11698.hramovi-srpske-pravoslavne-crkve-u-petrinji-na-meti-vandala.html",
+      "notes": "One night with multiple sites grouped as one report. The pastor linked tensions to a disputed flag placement; perpetrators and motive were not definitively established.",
+      "incident_group": "PETRINJA-GRAFFITI-2024"
+    },
+    {
       "id": "CT-0114",
       "date": "2024-08-29",
       "country": "India",
@@ -2649,6 +2809,19 @@
       "notes": "Multiple linked intimidation reports over July, not an established imprisonment. Authorities' responses were not available."
     },
     {
+      "id": "CT-0453",
+      "country": "Argentina",
+      "date": "2024-06-28",
+      "place": "Balvanera, Buenos Aires",
+      "category": "Theft of Marian religious image",
+      "title": "Virgin of Lujan statue stolen from Santa Rosa de Lima basilica",
+      "published_account": "ACI Prensa reported a man entered Santa Rosa de Lima basilica and took a statue of the Virgin of Lujan, according to the priest and security footage.",
+      "reported_actor": "Unidentified male suspect",
+      "publisher": "ACI Prensa",
+      "source_url": "https://www.aciprensa.com/noticias/105138/argentina-roban-imagen-de-la-virgen-de-lujan-de-una-basilica",
+      "notes": "Theft from a Christian place of worship is documented; religious animus not established."
+    },
+    {
       "id": "CT-0118",
       "date": "2024-06-23",
       "country": "Russia",
@@ -2702,6 +2875,19 @@
       "publisher": "Ministry of Foreign Affairs of Ukraine",
       "source_url": "https://mfa.gov.ua/en/news/zayava-mzs-shchodo-zvirstv-i-gonin-rosijskoyi-federaciyi-proti-duhovenstva-religijnih-gromad-ta-viryan-na-timchasovo-okupovanih-teritoriyah-ukrayini",
       "notes": "Russian-occupied Ukrainian territory; Ukrainian-government account; exact day and independent building-condition details are not established in this record."
+    },
+    {
+      "id": "CT-0459",
+      "country": "Serbia",
+      "date": "2024-06",
+      "place": "Serbia (locality not specified)",
+      "category": "Reported anti-Christian property attack",
+      "title": "Christian witness property targeted in June report",
+      "published_account": "OSCE ODIHR's 2024 Serbia case list includes a June anti-Christian attack on property reported by Jehovah's Witnesses.",
+      "reported_actor": "Unidentified alleged offender",
+      "publisher": "OSCE ODIHR Hate Crime Reporting",
+      "source_url": "https://hatecrime.osce.org/serbia",
+      "notes": "No exact place or day asserted. Separate month from other Serbian cases."
     },
     {
       "id": "CT-0120",
@@ -2772,6 +2958,19 @@
       "publisher": "Kosovo Online / Raska-Prizren Eparchy",
       "source_url": "https://www.kosovo-online.com/en/news/society/church-holy-trinity-near-pec-was-desecrated-graffiti-containing-messages-religious",
       "notes": "The report was published 14 May; precise incident date was not established. Actor identity remains unknown."
+    },
+    {
+      "id": "CT-0458",
+      "country": "Serbia",
+      "date": "2024-05",
+      "place": "Serbia (locality not specified)",
+      "category": "Reported violence against Christian witness",
+      "title": "OSCE records reported physical attack on Christian minority member",
+      "published_account": "OSCE ODIHR lists a May 2024 anti-Christian violent attack report submitted by Jehovah's Witnesses.",
+      "reported_actor": "Unidentified alleged offender",
+      "publisher": "OSCE ODIHR Hate Crime Reporting",
+      "source_url": "https://hatecrime.osce.org/serbia",
+      "notes": "Month, reporting organisation and attack category are available from country overview; underlying victim remains unidentified."
     },
     {
       "id": "CT-0360",
@@ -2946,6 +3145,19 @@
       "notes": "Month-only judgment date; no conflation with the Dagestan church attack already in the archive."
     },
     {
+      "id": "CT-0457",
+      "country": "Serbia",
+      "date": "2024-03",
+      "place": "Serbia (locality not specified)",
+      "category": "Reported anti-Christian property attack",
+      "title": "Jehovah's Witness property attacked in March case",
+      "published_account": "OSCE ODIHR lists a March 2024 property attack against Jehovah's Witnesses reported as anti-Christian.",
+      "reported_actor": "Unidentified alleged offender",
+      "publisher": "OSCE ODIHR Hate Crime Reporting",
+      "source_url": "https://hatecrime.osce.org/serbia",
+      "notes": "Specific locality and offender were not provided in source index; no pin generated."
+    },
+    {
       "id": "CT-0123",
       "date": "2024-02-25",
       "country": "Burkina Faso",
@@ -3069,6 +3281,19 @@
       "media_note": "AP article describes security footage; rights/availability to check"
     },
     {
+      "id": "CT-0447",
+      "country": "Croatia",
+      "date": "2024-01-28",
+      "place": "Kosute, Split-Dalmatia",
+      "category": "Catholic saint statue vandalism",
+      "title": "Blessed Cardinal Alojzije Stepinac statue damaged",
+      "published_account": "Aid to the Church in Need documented a vandalism report concerning the statue of Blessed Cardinal Alojzije Stepinac in front of a Catholic parish church in Kosute.",
+      "reported_actor": "Unidentified people",
+      "publisher": "Aid to the Church in Need - Religious Freedom Report",
+      "source_url": "https://rfr-acninternational.vercel.app/religiousfreedomreport/reports/country/2025/croatia",
+      "notes": "Source supplies a date and church-site location but not the offender's motive."
+    },
+    {
       "id": "CT-0375",
       "country": "Lebanon",
       "date": "2024-01-23",
@@ -3160,6 +3385,19 @@
       "notes": "2 January is publisher date; attack day not established by the account, so report date used for monthly precision."
     },
     {
+      "id": "CT-0456",
+      "country": "Serbia",
+      "date": "2024-01",
+      "place": "Serbia (locality not specified)",
+      "category": "Reported threats against Christian religious volunteers",
+      "title": "OSCE records threats against Jehovah's Witnesses",
+      "published_account": "OSCE's 2024 Serbia dataset lists a January report of anti-Christian threats or harassment submitted by Jehovah's Witnesses.",
+      "reported_actor": "Unidentified alleged offender",
+      "publisher": "OSCE ODIHR Hate Crime Reporting",
+      "source_url": "https://hatecrime.osce.org/serbia",
+      "notes": "The accessible incident summary supplies month, bias and type, not exact address or individual case details."
+    },
+    {
       "id": "CT-0357",
       "country": "Azerbaijan",
       "date": "2024",
@@ -3171,6 +3409,45 @@
       "publisher": "Monument Watch / Caucasus Heritage Watch",
       "source_url": "https://monumentwatch.org/en/alerts/azerbaijan-destroyed-the-church-of-tandzatap/",
       "notes": "Source attributes destruction to Azerbaijani forces, but satellite images alone cannot establish intent; year precision."
+    },
+    {
+      "id": "CT-0438",
+      "country": "Sweden",
+      "date": "2024",
+      "place": "Sweden (nationwide)",
+      "category": "Aggregate anti-Christian property attacks",
+      "title": "OSCE records reported attacks on Jehovah's Witnesses in Sweden",
+      "published_account": "OSCE ODIHR's 2024 reporting identified multiple property attacks against Jehovah's Witnesses, including vandalism of Kingdom Halls and publication carts and one attempted arson.",
+      "reported_actor": "Multiple unidentified alleged attackers",
+      "publisher": "OSCE ODIHR Hate Crime Reporting",
+      "source_url": "https://www.hatecrime.osce.org/sweden",
+      "notes": "Aggregate civil-society reports, not a count of distinct incidents entered here. The 12 reported cases include bias categories other than anti-Christian and must not be treated as 12 Christian incidents."
+    },
+    {
+      "id": "CT-0444",
+      "country": "Netherlands",
+      "date": "2024",
+      "place": "Netherlands (nationwide)",
+      "category": "Aggregate reports of threats and attacks on Christian witnesses",
+      "title": "OSCE receives reports of anti-Christian attacks and vandalism",
+      "published_account": "OSCE ODIHR noted reports of threats or violence against Jehovah's Witnesses, arson and repeated vandalism at a multicultural church, and damage to other church buildings in 2024.",
+      "reported_actor": "Multiple alleged offenders in separate reports",
+      "publisher": "OSCE ODIHR Hate Crime Reporting",
+      "source_url": "https://hatecrime.osce.org/reporting/netherlands/2024",
+      "notes": "Aggregate publication, potentially overlapping individual Netherlands entries; counts from all bias categories are not Christian-specific."
+    },
+    {
+      "id": "CT-0455",
+      "country": "Georgia",
+      "date": "2024",
+      "place": "Georgia (nationwide)",
+      "category": "Aggregate reported anti-Christian threats",
+      "title": "OSCE documents threats against Christian minority witnesses",
+      "published_account": "OSCE ODIHR's 2024 country reporting included complaints of threats and property offences against Jehovah's Witnesses engaged in religious activity, as reported by civil-society organisations.",
+      "reported_actor": "Various alleged private attackers",
+      "publisher": "OSCE ODIHR Hate Crime Reporting",
+      "source_url": "https://www.hatecrime.osce.org/georgia",
+      "notes": "Yearly aggregate; overlaps no individually included Georgian event records."
     },
     {
       "id": "CT-0125",
@@ -3186,6 +3463,19 @@
       "second_source_url": "https://2021-2025.state.gov/wp-content/uploads/2024/05/547499_NIGERIA-2023-INTERNATIONAL-RELIGIOUS-FREEDOM-REPORT.pdf",
       "incident_group": "NIGERIA-PLATEAU-2023",
       "notes": "One coordinated regional wave; causes and religious motive differently characterised by sources."
+    },
+    {
+      "id": "CT-0437",
+      "country": "Sweden",
+      "date": "2023-12-20",
+      "place": "Sodertalje",
+      "category": "Armenian Apostolic church break-in",
+      "title": "Saint Mary's Armenian Apostolic Church vandalised and items stolen",
+      "published_account": "Aid to the Church in Need's religious freedom report documented a December 2023 break-in at the Armenian Apostolic church in Sodertalje, during which items valued by the congregation were taken.",
+      "reported_actor": "Unidentified intruders",
+      "publisher": "Aid to the Church in Need - Religious Freedom Report",
+      "source_url": "https://rfr-acninternational.vercel.app/religiousfreedomreport/reports/country/2025/sweden",
+      "notes": "Source-reported robbery at Christian premises; motive not independently established."
     },
     {
       "id": "CT-0405",
@@ -3212,6 +3502,19 @@
       "publisher": "NGO statement to UN Human Rights Council",
       "source_url": "https://documents.un.org/access.nsf/get?DS=A%2FHRC%2F55%2FNGO%2F132&Lang=E&Open=",
       "notes": "NGO submission, not a formal UN fact-finding conclusion."
+    },
+    {
+      "id": "CT-0436",
+      "country": "Sweden",
+      "date": "2023-11-23",
+      "place": "Tensta, Stockholm",
+      "category": "Break-in; Syriac Orthodox church vandalism",
+      "title": "Saint Mary's Syriac Orthodox Church broken into",
+      "published_account": "Swedish public broadcaster SVT reported intruders broke windows, stole property and left damage at Saint Mary's Syriac Orthodox Church. Church representatives said inaccurate accounts were spreading on social media.",
+      "reported_actor": "Unidentified intruders; police investigated suspected aggravated theft",
+      "publisher": "SVT Nyheter",
+      "source_url": "https://www.svt.se/nyheter/lokalt/stockholm/inbrott-och-skadegorelse-i-syrisk-ortodoxa-kyrkan-i-tensta--si8byb",
+      "notes": "Religious motive not established. The police treated the event as serious theft; date follows SVT's report describing a Thursday-night break-in."
     },
     {
       "id": "CT-0263",
@@ -4005,6 +4308,32 @@
       "publisher": "US Department of State",
       "source_url": "https://2021-2025.state.gov/reports/2023-report-on-international-religious-freedom/oman/",
       "notes": "A published policy report, not an assertion of individual detention. Government report stated Christian groups reported no abuse or monitoring during 2023."
+    },
+    {
+      "id": "CT-0446",
+      "country": "Croatia",
+      "date": "2023",
+      "place": "Bjelovar and Petrinja",
+      "category": "Reported Orthodox church vandalism",
+      "title": "Serbian Orthodox representatives report church vandalism",
+      "published_account": "The US Department of State recorded Serbian Orthodox Church representatives' reports of vandalism at churches in Bjelovar and Petrinja in 2023.",
+      "reported_actor": "Unidentified vandals",
+      "publisher": "US Department of State",
+      "source_url": "https://2021-2025.state.gov/reports/2023-report-on-international-religious-freedom/croatia/",
+      "notes": "Two localities aggregated by the original 2023 country report; year precision. Not to be conflated with the 2024 Petrinja incident."
+    },
+    {
+      "id": "CT-0454",
+      "country": "Georgia",
+      "date": "2023",
+      "place": "Georgia (nationwide)",
+      "category": "Reported religiously motivated assaults on Christian minorities",
+      "title": "Jehovah's Witnesses report assaults and threats",
+      "published_account": "The US Department of State recorded reports submitted to Georgian authorities by Jehovah's Witnesses of religiously motivated assaults, harassment, threats and vandalism during 2023.",
+      "reported_actor": "Various reported private individuals",
+      "publisher": "US Department of State",
+      "source_url": "https://2021-2025.state.gov/reports/2023-report-on-international-religious-freedom/georgia/",
+      "notes": "Yearly aggregate of source-reported complaints, not independently verified criminal convictions or individually mapped acts."
     },
     {
       "id": "CT-0304",
