@@ -3,7 +3,7 @@
     "source": "srestre world-countries-cities-db (dr5hn source), ODbL 1.0",
     "url": "https://github.com/srestre/world-countries-cities-db",
     "license": "ODbL-1.0",
-    "notice": "Original coordinates use gazetteer centres. Newly added regional markers are approximate local-area centres, NOT exact attack sites or verified building coordinates."
+    "notice": "Original coordinates use gazetteer centres. Added points are approximate city or regional centres and NOT precise incident sites. Multiple-site records may be represented by one regional point."
   },
   "generated": "2026-11-11",
   "countries": {
@@ -114,6 +114,14 @@
     "Australia": {
       "iso2": "AU",
       "iso3": "AUS"
+    },
+    "Iraq": {
+      "iso2": "IQ",
+      "iso3": "IRQ"
+    },
+    "Libya": {
+      "iso2": "LY",
+      "iso3": "LBY"
     }
   },
   "places": {
@@ -1803,6 +1811,347 @@
           "lat": -34.9,
           "lon": 138.77,
           "precision": "approximate local area"
+        }
+      ]
+    },
+    "Pakistan|Shantinagar and Khanewal, Punjab": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Shantinagar and Khanewal, Punjab (approx.)",
+          "lat": 30.3,
+          "lon": 71.93,
+          "precision": "approximate regional centre"
+        }
+      ]
+    },
+    "Pakistan|Sheikhupura, Punjab": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Sheikhupura, Punjab (approx.)",
+          "lat": 31.72,
+          "lon": 73.98,
+          "precision": "approximate regional centre"
+        }
+      ]
+    },
+    "Pakistan|Lahore": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Lahore (approx.)",
+          "lat": 31.55,
+          "lon": 74.34,
+          "precision": "approximate regional centre"
+        }
+      ]
+    },
+    "Pakistan|Sialkot": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Sialkot (approx.)",
+          "lat": 32.5,
+          "lon": 74.54,
+          "precision": "approximate regional centre"
+        }
+      ]
+    },
+    "Pakistan|Bahawalpur, Punjab": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Bahawalpur, Punjab (approx.)",
+          "lat": 29.4,
+          "lon": 71.68,
+          "precision": "approximate regional centre"
+        }
+      ]
+    },
+    "Pakistan|Islamabad": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Islamabad (approx.)",
+          "lat": 33.69,
+          "lon": 73.06,
+          "precision": "approximate regional centre"
+        }
+      ]
+    },
+    "Pakistan|Murree, Punjab": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Murree, Punjab (approx.)",
+          "lat": 33.9,
+          "lon": 73.39,
+          "precision": "approximate regional centre"
+        }
+      ]
+    },
+    "Pakistan|Taxila, Punjab": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Taxila, Punjab (approx.)",
+          "lat": 33.75,
+          "lon": 72.8,
+          "precision": "approximate regional centre"
+        }
+      ]
+    },
+    "Pakistan|Karachi": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Karachi (approx.)",
+          "lat": 24.86,
+          "lon": 67.01,
+          "precision": "approximate regional centre"
+        }
+      ]
+    },
+    "Pakistan|Rawalpindi": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Rawalpindi (approx.)",
+          "lat": 33.6,
+          "lon": 73.05,
+          "precision": "approximate regional centre"
+        }
+      ]
+    },
+    "Pakistan|Gojra, Punjab": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Gojra, Punjab (approx.)",
+          "lat": 31.15,
+          "lon": 72.69,
+          "precision": "approximate regional centre"
+        }
+      ]
+    },
+    "Pakistan|Youhanabad, Lahore": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Youhanabad, Lahore (approx.)",
+          "lat": 31.45,
+          "lon": 74.32,
+          "precision": "approximate regional centre"
+        }
+      ]
+    },
+    "Pakistan|Peshawar": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Peshawar (approx.)",
+          "lat": 34.02,
+          "lon": 71.58,
+          "precision": "approximate regional centre"
+        }
+      ]
+    },
+    "Iraq|Baghdad and Mosul": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Baghdad and Mosul (approx.)",
+          "lat": 33.36,
+          "lon": 44.37,
+          "precision": "approximate regional centre"
+        }
+      ]
+    },
+    "Iraq|Dora, Baghdad": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Dora, Baghdad (approx.)",
+          "lat": 33.24,
+          "lon": 44.36,
+          "precision": "approximate regional centre"
+        }
+      ]
+    },
+    "Iraq|Baghdad": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Baghdad (approx.)",
+          "lat": 33.36,
+          "lon": 44.37,
+          "precision": "approximate regional centre"
+        }
+      ]
+    },
+    "Iraq|Mosul": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Mosul (approx.)",
+          "lat": 36.34,
+          "lon": 43.13,
+          "precision": "approximate regional centre"
+        }
+      ]
+    },
+    "India|Kandhamal, Odisha": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Kandhamal, Odisha (approx.)",
+          "lat": 20.48,
+          "lon": 84.02,
+          "precision": "approximate regional centre"
+        }
+      ]
+    },
+    "Egypt|Nag Hammadi, Qena": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Nag Hammadi, Qena (approx.)",
+          "lat": 26.05,
+          "lon": 32.24,
+          "precision": "approximate regional centre"
+        }
+      ]
+    },
+    "Egypt|Atfih, Helwan": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Atfih, Helwan (approx.)",
+          "lat": 29.39,
+          "lon": 31.28,
+          "precision": "approximate regional centre"
+        }
+      ]
+    },
+    "Egypt|Imbaba, Cairo": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Imbaba, Cairo (approx.)",
+          "lat": 30.08,
+          "lon": 31.22,
+          "precision": "approximate regional centre"
+        }
+      ]
+    },
+    "Egypt|Marinab, Aswan": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Marinab, Aswan (approx.)",
+          "lat": 24.09,
+          "lon": 32.9,
+          "precision": "approximate regional centre"
+        }
+      ]
+    },
+    "Egypt|Maspero, Cairo": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Maspero, Cairo (approx.)",
+          "lat": 30.06,
+          "lon": 31.23,
+          "precision": "approximate regional centre"
+        }
+      ]
+    },
+    "Egypt|Al-Khusus, Greater Cairo": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Al-Khusus, Greater Cairo (approx.)",
+          "lat": 30.15,
+          "lon": 31.31,
+          "precision": "approximate regional centre"
+        }
+      ]
+    },
+    "Nigeria|Madalla, Niger State": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Madalla, Niger State (approx.)",
+          "lat": 9.04,
+          "lon": 7.28,
+          "precision": "approximate regional centre"
+        }
+      ]
+    },
+    "Nigeria|Gombe": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Gombe (approx.)",
+          "lat": 10.29,
+          "lon": 11.17,
+          "precision": "approximate regional centre"
+        }
+      ]
+    },
+    "Nigeria|Yola, Adamawa State": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Yola, Adamawa State (approx.)",
+          "lat": 9.2,
+          "lon": 12.46,
+          "precision": "approximate regional centre"
+        }
+      ]
+    },
+    "Nigeria|Jos, Plateau State": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Jos, Plateau State (approx.)",
+          "lat": 9.93,
+          "lon": 8.89,
+          "precision": "approximate regional centre"
+        }
+      ]
+    },
+    "Nigeria|Rayfield, Jos": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Rayfield, Jos (approx.)",
+          "lat": 9.88,
+          "lon": 8.88,
+          "precision": "approximate regional centre"
+        }
+      ]
+    },
+    "Nigeria|Bayero University, Kano": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Bayero University, Kano (approx.)",
+          "lat": 12,
+          "lon": 8.53,
+          "precision": "approximate regional centre"
+        }
+      ]
+    },
+    "Libya|Near Sirte, Libyan coast": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Near Sirte, Libyan coast (approx.)",
+          "lat": 31.2,
+          "lon": 16.59,
+          "precision": "approximate regional centre"
         }
       ]
     }

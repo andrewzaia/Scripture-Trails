@@ -2695,6 +2695,30 @@
       "source_url": "https://www.abc.net.au/news/2015-03-30/heritage-listed-st-james-church-fire-brighton/6357430"
     },
     {
+      "id": "CT-0240",
+      "date": "2015-03-15",
+      "country": "Pakistan",
+      "place": "Youhanabad, Lahore",
+      "category": "Suicide bombings; churches",
+      "title": "Two Lahore churches bombed during Sunday Mass",
+      "published_account": "ABC News reported two suicide bombings hit a Catholic and a Protestant church in Youhanabad during Sunday services, killing worshippers and injuring many.",
+      "reported_actor": "Pakistani Taliban splinter group claimed responsibility",
+      "publisher": "ABC News",
+      "source_url": "https://www.abc.net.au/news/2015-03-16/taliban-suicide-bomb-attacks-on-pakistan-churches-kill-14/6321366"
+    },
+    {
+      "id": "CT-0239",
+      "date": "2015-02-15",
+      "country": "Libya",
+      "place": "Near Sirte, Libyan coast",
+      "category": "Abduction; execution of Christians",
+      "title": "21 Coptic Christian workers murdered in Libya",
+      "published_account": "Human Rights Watch reported an IS-affiliated group released footage of the execution of 21 men, most of whom were Egyptian Coptic Christian workers kidnapped in Libya.",
+      "reported_actor": "Islamic State-aligned armed group claimed responsibility",
+      "publisher": "Human Rights Watch",
+      "source_url": "https://www.hrw.org/news/2015/02/16/libya/egypt-murder-egyptians-war-crime"
+    },
+    {
       "id": "CT-0191",
       "date": "2014-11-02",
       "country": "Australia",
@@ -2744,6 +2768,186 @@
       "source_url": "https://www.abc.net.au/news/2013-10-23/church-destroyed-after-being-set-on-fire-in-willagee/5039802"
     },
     {
+      "id": "CT-0238",
+      "date": "2013-09-22",
+      "country": "Pakistan",
+      "place": "Peshawar",
+      "category": "Suicide bombings; church",
+      "title": "All Saints Anglican Church worshippers killed in Peshawar",
+      "published_account": "ABC News reported suicide bombers attacked parishioners leaving All Saints Church, killing dozens of Christians and injuring others.",
+      "reported_actor": "Taliban-linked Jundullah claimed responsibility according to ABC",
+      "publisher": "ABC News",
+      "source_url": "https://www.abc.net.au/news/2013-09-22/suicide-bomber-strikes-pakistani-church/4973762"
+    },
+    {
+      "id": "CT-0237",
+      "date": "2013-08-14",
+      "country": "Egypt",
+      "place": "Multiple Egyptian towns",
+      "category": "Mob violence; Christian churches and schools",
+      "title": "Widespread attacks on Coptic churches after sit-in dispersals",
+      "published_account": "Amnesty International documented a wave of mob attacks on churches, schools and Christian charities after pro-Morsi protest camps were dispersed.",
+      "reported_actor": "Various local mobs implicated; details differ by location",
+      "publisher": "Amnesty International",
+      "source_url": "https://www.amnesty.org/en/latest/press-release/2013/10/egypt-christians-scapegoated-after-dispersal-pro-morsi-sit-ins/"
+    },
+    {
+      "id": "CT-0236",
+      "date": "2013-04-05",
+      "country": "Egypt",
+      "place": "Al-Khusus, Greater Cairo",
+      "category": "Shooting; Coptic community",
+      "title": "Copts killed in Al-Khusus sectarian violence",
+      "published_account": "Carnegie Endowment documented deaths of five Coptic Christians and one Muslim during violence in Al-Khusus.",
+      "reported_actor": "Responsibility contested in sectarian violence account",
+      "publisher": "Carnegie Endowment for International Peace",
+      "source_url": "https://carnegieendowment.org/research/2013/11/violence-against-copts-in-egypt"
+    },
+    {
+      "id": "CT-0235",
+      "date": "2012-04-29",
+      "country": "Nigeria",
+      "place": "Bayero University, Kano",
+      "category": "Shooting; Christian services",
+      "title": "Bayero University Catholic and Protestant services attacked",
+      "published_account": "Human Rights Watch documented attacks on two Sunday services at Bayero University that killed at least nineteen people.",
+      "reported_actor": "Gunmen not identified in chronology",
+      "publisher": "Human Rights Watch",
+      "source_url": "https://www.hrw.org/report/2012/10/11/spiraling-violence/boko-haram-attacks-and-security-force-abuses-nigeria"
+    },
+    {
+      "id": "CT-0234",
+      "date": "2012-03-11",
+      "country": "Nigeria",
+      "place": "Rayfield, Jos",
+      "category": "Suicide bombing; Sunday Mass",
+      "title": "Catholic church congregation bombed in Rayfield",
+      "published_account": "Human Rights Watch reported two suicide bombers struck a Catholic church Mass in Rayfield, killing at least seven people.",
+      "reported_actor": "Two suicide bombers",
+      "publisher": "Human Rights Watch",
+      "source_url": "https://www.hrw.org/report/2012/10/11/spiraling-violence/boko-haram-attacks-and-security-force-abuses-nigeria"
+    },
+    {
+      "id": "CT-0233",
+      "date": "2012-02-26",
+      "country": "Nigeria",
+      "place": "Jos, Plateau State",
+      "category": "Suicide car bombing; church",
+      "title": "COCIN headquarters church bombed during Sunday services",
+      "published_account": "Human Rights Watch recorded a suicide car bomber killing at least three people during worship in Jos.",
+      "reported_actor": "Suicide bomber; affiliation examined in source's wider report",
+      "publisher": "Human Rights Watch",
+      "source_url": "https://www.hrw.org/report/2012/10/11/spiraling-violence/boko-haram-attacks-and-security-force-abuses-nigeria"
+    },
+    {
+      "id": "CT-0232",
+      "date": "2012-01-06",
+      "country": "Nigeria",
+      "place": "Yola, Adamawa State",
+      "category": "Shooting; church service",
+      "title": "Christ Apostolic Church congregation attacked in Yola",
+      "published_account": "Human Rights Watch recorded armed men attacking a church congregation and killing twelve worshippers.",
+      "reported_actor": "Unknown gunmen",
+      "publisher": "Human Rights Watch",
+      "source_url": "https://www.hrw.org/report/2012/10/11/spiraling-violence/boko-haram-attacks-and-security-force-abuses-nigeria"
+    },
+    {
+      "id": "CT-0231",
+      "date": "2012-01-05",
+      "country": "Nigeria",
+      "place": "Gombe",
+      "category": "Shooting; church service",
+      "title": "Deeper Life Church congregation shot in Gombe",
+      "published_account": "Human Rights Watch reported gunmen opened fire on a church service in Gombe, killing six, including the pastor's wife.",
+      "reported_actor": "Unknown gunmen described in incident chronology",
+      "publisher": "Human Rights Watch",
+      "source_url": "https://www.hrw.org/report/2012/10/11/spiraling-violence/boko-haram-attacks-and-security-force-abuses-nigeria"
+    },
+    {
+      "id": "CT-0230",
+      "date": "2011-12-25",
+      "country": "Nigeria",
+      "place": "Madalla, Niger State",
+      "category": "Bombing; Christmas church service",
+      "title": "St Theresa's Catholic Church bombed on Christmas",
+      "published_account": "Human Rights Watch recorded a suicide bombing outside St Theresa's church following Christmas Mass, killing worshippers and bystanders.",
+      "reported_actor": "Boko Haram claimed responsibility according to contemporary reporting",
+      "publisher": "Human Rights Watch",
+      "source_url": "https://www.hrw.org/report/2012/10/11/spiraling-violence/boko-haram-attacks-and-security-force-abuses-nigeria"
+    },
+    {
+      "id": "CT-0229",
+      "date": "2011-10-09",
+      "country": "Egypt",
+      "place": "Maspero, Cairo",
+      "category": "Killings; Coptic protesters",
+      "title": "Coptic Christian protesters killed at Maspero",
+      "published_account": "Carnegie Endowment documented the deaths of mainly Coptic protesters during a demonstration outside Egyptian state television amid church-related grievances.",
+      "reported_actor": "Soldiers and others were implicated in published accounts",
+      "publisher": "Carnegie Endowment for International Peace",
+      "source_url": "https://carnegieendowment.org/research/2013/11/violence-against-copts-in-egypt"
+    },
+    {
+      "id": "CT-0228",
+      "date": "2011-09-30",
+      "country": "Egypt",
+      "place": "Marinab, Aswan",
+      "category": "Arson; church",
+      "title": "Mar Girgis Church destroyed by a mob in Marinab",
+      "published_account": "Human Rights Watch reported a mob burned Mar Girgis Church in Aswan, and authorities initially failed to investigate criminally.",
+      "reported_actor": "Mob attackers; culpability not determined in summary",
+      "publisher": "Human Rights Watch",
+      "source_url": "https://www.hrw.org/world-report/2012/country-chapters/egypt"
+    },
+    {
+      "id": "CT-0227",
+      "date": "2011-05-07",
+      "country": "Egypt",
+      "place": "Imbaba, Cairo",
+      "category": "Mob violence; Coptic churches",
+      "title": "Churches set alight during deadly Imbaba violence",
+      "published_account": "The Egyptian Initiative for Personal Rights investigated deadly violence near Coptic churches in Imbaba, reporting attacks and destruction of Christian property.",
+      "reported_actor": "Armed groups and local combatants described in the field report",
+      "publisher": "Egyptian Initiative for Personal Rights",
+      "source_url": "https://eipr.org/en/press/2011/05/eipr-releases-findings-field-investigation-imbaba-events"
+    },
+    {
+      "id": "CT-0226",
+      "date": "2011-03-04",
+      "country": "Egypt",
+      "place": "Atfih, Helwan",
+      "category": "Arson; church",
+      "title": "Two Martyrs Church burned in Atfih",
+      "published_account": "Human Rights Watch documented a church arson in Atfih that was followed by further sectarian violence during protests.",
+      "reported_actor": "Unknown arsonists in the cited summary",
+      "publisher": "Human Rights Watch",
+      "source_url": "https://www.hrw.org/world-report/2012/country-chapters/egypt"
+    },
+    {
+      "id": "CT-0225",
+      "date": "2011-01-01",
+      "country": "Egypt",
+      "place": "Alexandria",
+      "category": "Bombing; Coptic worshippers",
+      "title": "Coptic New Year worshippers killed outside Saints Church",
+      "published_account": "Ahram Online reported a bomb exploded outside a Coptic church as worshippers left the New Year's Mass, killing and injuring attendees.",
+      "reported_actor": "Unknown bombers in initial source",
+      "publisher": "Ahram Online",
+      "source_url": "https://english.ahram.org.eg/NewsContent/1/64/2963/Egypt/Politics-/Breaking-news-Explosion-hits-Egypt-church%2C-eight-d.aspx"
+    },
+    {
+      "id": "CT-0224",
+      "date": "2010-10-31",
+      "country": "Iraq",
+      "place": "Baghdad",
+      "category": "Hostage taking; church massacre",
+      "title": "Our Lady of Salvation Catholic church congregation massacred",
+      "published_account": "Human Rights Watch documented a hostage taking by suicide-vest gunmen during Mass at Our Lady of Salvation Church, with many worshippers and clergy killed.",
+      "reported_actor": "Attackers reportedly identified themselves as Islamic State of Iraq militants",
+      "publisher": "Human Rights Watch",
+      "source_url": "https://www.hrw.org/report/2011/02/21/crossroads/human-rights-iraq-eight-years-after-us-led-invasion"
+    },
+    {
       "id": "CT-0195",
       "date": "2010-09",
       "country": "Australia",
@@ -2757,6 +2961,30 @@
       "notes": "Source gives only year or month. No exact day has been inferred."
     },
     {
+      "id": "CT-0223",
+      "date": "2010-01-06",
+      "country": "Egypt",
+      "place": "Nag Hammadi, Qena",
+      "category": "Shooting; Coptic parishioners",
+      "title": "Copts killed near Nag Hammadi Christmas worship",
+      "published_account": "Carnegie Endowment reported a gunman killed six Coptic worshippers and an off-duty Muslim police officer near Nag Hammadi around Coptic Christmas.",
+      "reported_actor": "Armed attacker; event included in documented sectarian violence chronology",
+      "publisher": "Carnegie Endowment for International Peace",
+      "source_url": "https://carnegieendowment.org/research/2013/11/violence-against-copts-in-egypt"
+    },
+    {
+      "id": "CT-0222",
+      "date": "2009-08-01",
+      "country": "Pakistan",
+      "place": "Gojra, Punjab",
+      "category": "Mob violence; arson of Christian homes",
+      "title": "Christians killed during Gojra neighbourhood attacks",
+      "published_account": "ABC News and Reuters reported a mob attacked Christian homes, burning properties and killing residents after claims about Quran desecration that local authorities said lacked substantiation.",
+      "reported_actor": "Mob allegedly incited by religious extremists",
+      "publisher": "ABC News",
+      "source_url": "https://www.abc.net.au/news/2009-08-02/christians-burnt-alive-in-pakistan-violence/1375464"
+    },
+    {
       "id": "CT-0196",
       "date": "2008-12",
       "country": "Australia",
@@ -2768,6 +2996,18 @@
       "publisher": "ABC News",
       "source_url": "https://www.abc.net.au/news/2008-12-15/healing-service-held-after-church-blaze/239884",
       "notes": "Source gives only year or month. No exact day has been inferred."
+    },
+    {
+      "id": "CT-0221",
+      "date": "2008-08-24",
+      "country": "India",
+      "place": "Kandhamal, Odisha",
+      "category": "Mob violence; Christian communities",
+      "title": "Kandhamal Christian communities attacked and displaced",
+      "published_account": "Amnesty International documented attacks on Christians, deaths and flight to relief camps after the killing of a Hindu nationalist leader in Odisha.",
+      "reported_actor": "Hindu nationalist supporters implicated in Amnesty account",
+      "publisher": "Amnesty International",
+      "source_url": "https://www.amnesty.org/en/documents/asa20/018/2008/en/"
     },
     {
       "id": "CT-0197",
@@ -2819,6 +3059,91 @@
       "source_url": "https://www.abc.net.au/news/2005-10-10/police-suspect-arson-in-church-fire/2121054"
     },
     {
+      "id": "CT-0220",
+      "date": "2005-03-28",
+      "country": "Pakistan",
+      "place": "Lahore",
+      "category": "Shooting; worshippers",
+      "title": "Christians shot after Easter service in Lahore",
+      "published_account": "The US State Department reported attackers fired on Christians leaving a church after Easter services, killing one and wounding seven.",
+      "reported_actor": "Two assailants arrested; a land dispute was reported as possible motive",
+      "publisher": "US Department of State",
+      "source_url": "https://2009-2017.state.gov/j/drl/rls/irf/2005/51621.htm"
+    },
+    {
+      "id": "CT-0219",
+      "date": "2005-03-16",
+      "country": "Pakistan",
+      "place": "Islamabad",
+      "category": "Assault; women at Christian church",
+      "title": "Women assaulted at Islamabad church prayer meeting",
+      "published_account": "The US State Department reported a large crowd assaulted women praying and fasting at a Christian church and damaged church property.",
+      "reported_actor": "Local religious leader and his students alleged to have led attackers",
+      "publisher": "US Department of State",
+      "source_url": "https://2009-2017.state.gov/j/drl/rls/irf/2005/51621.htm"
+    },
+    {
+      "id": "CT-0218",
+      "date": "2004-12-07",
+      "country": "Iraq",
+      "place": "Mosul",
+      "category": "Bombing; church destroyed",
+      "title": "Armenian Catholic Church in Mosul destroyed in bombing",
+      "published_account": "The US State Department reported a bombing destroyed an Armenian Catholic church in Mosul.",
+      "reported_actor": "Terrorist bombing; specific group not established in cited report",
+      "publisher": "US Department of State",
+      "source_url": "https://2009-2017.state.gov/j/drl/rls/irf/2005/51600.htm"
+    },
+    {
+      "id": "CT-0217",
+      "date": "2004-11-09",
+      "country": "Iraq",
+      "place": "Baghdad",
+      "category": "Bombing; churches",
+      "title": "St George and St Matthew churches bombed",
+      "published_account": "The US State Department reported car bombings near St George and St Matthew's churches that killed and injured people.",
+      "reported_actor": "Bombers not identified in report",
+      "publisher": "US Department of State",
+      "source_url": "https://2009-2017.state.gov/j/drl/rls/irf/2005/51600.htm"
+    },
+    {
+      "id": "CT-0216",
+      "date": "2004-10-16",
+      "country": "Iraq",
+      "place": "Baghdad",
+      "category": "Bombings; Christian churches",
+      "title": "Bombs exploded near Christian churches in Baghdad",
+      "published_account": "The US State Department reported explosions near five churches, with no casualties recorded in its account of the 16 October incident.",
+      "reported_actor": "Attackers not specifically identified in cited report",
+      "publisher": "US Department of State",
+      "source_url": "https://2009-2017.state.gov/j/drl/rls/irf/2005/51600.htm"
+    },
+    {
+      "id": "CT-0215",
+      "date": "2004-10",
+      "country": "Pakistan",
+      "place": "Rawalpindi",
+      "category": "Attempted bombings; church",
+      "title": "Two attempted grenade attacks on Rawalpindi church",
+      "published_account": "The US State Department reported parish staff discovered grenades at a church on 20 and 24 October 2004 before the devices could explode.",
+      "reported_actor": "Unknown attackers; no arrests reported",
+      "publisher": "US Department of State",
+      "source_url": "https://2009-2017.state.gov/j/drl/rls/irf/2005/51621.htm",
+      "notes": "Published account supplies only month or year. No exact event day inferred."
+    },
+    {
+      "id": "CT-0214",
+      "date": "2004-09-27",
+      "country": "Iraq",
+      "place": "Dora, Baghdad",
+      "category": "Shooting; Assyrian Christians",
+      "title": "Seven Assyrian Christians killed in Baghdad's Dora district",
+      "published_account": "The US State Department reported four armed men killed seven Assyrian Christians in an attack in the Dora district of Baghdad.",
+      "reported_actor": "Four armed men; affiliation unspecified in report",
+      "publisher": "US Department of State",
+      "source_url": "https://2009-2017.state.gov/j/drl/rls/irf/2005/51600.htm"
+    },
+    {
       "id": "CT-0201",
       "date": "2004-08-29",
       "country": "Australia",
@@ -2829,6 +3154,79 @@
       "reported_actor": "Unknown arsonist and motive",
       "publisher": "ABC News",
       "source_url": "https://www.abc.net.au/news/2004-08-29/arsonists-blamed-for-church-fire/2034306"
+    },
+    {
+      "id": "CT-0213",
+      "date": "2004-08-01",
+      "country": "Iraq",
+      "place": "Baghdad and Mosul",
+      "category": "Coordinated church bombings",
+      "title": "Christian churches bombed in Baghdad and Mosul",
+      "published_account": "Human Rights Watch reported coordinated car bombings during Christian Sunday worship at five churches in Baghdad and Mosul, killing and wounding worshippers.",
+      "reported_actor": "Insurgent attackers; responsibility was contested in early accounts",
+      "publisher": "Human Rights Watch",
+      "source_url": "https://www.hrw.org/reports/2005/iraq1005/4.htm"
+    },
+    {
+      "id": "CT-0212",
+      "date": "2002-09-25",
+      "country": "Pakistan",
+      "place": "Karachi",
+      "category": "Killings; Christian charity",
+      "title": "Christian charity staff killed in Karachi",
+      "published_account": "The US State Department reported seven workers of the Christian Institute of Peace and Justice were bound and shot dead.",
+      "reported_actor": "Perpetrators unspecified in the cited summary",
+      "publisher": "US Department of State",
+      "source_url": "https://2009-2017.state.gov/j/drl/rls/irf/2003/24473.htm"
+    },
+    {
+      "id": "CT-0211",
+      "date": "2002-08-09",
+      "country": "Pakistan",
+      "place": "Taxila, Punjab",
+      "category": "Violence; Christian hospital",
+      "title": "Three Christian hospital nurses killed at Taxila",
+      "published_account": "The US State Department reported an attack on the Christian hospital in Taxila that killed three nurses and injured other people.",
+      "reported_actor": "Extremist attackers reported",
+      "publisher": "US Department of State",
+      "source_url": "https://2009-2017.state.gov/j/drl/rls/irf/2003/24473.htm"
+    },
+    {
+      "id": "CT-0210",
+      "date": "2002-08-05",
+      "country": "Pakistan",
+      "place": "Murree, Punjab",
+      "category": "Shooting; Christian school",
+      "title": "Murree Christian School staff killed by attackers",
+      "published_account": "The US State Department reported that assailants killed six staff members of Murree Christian School near Islamabad.",
+      "reported_actor": "Three attackers described as extremists",
+      "publisher": "US Department of State",
+      "source_url": "https://2009-2017.state.gov/j/drl/rls/irf/2003/24473.htm"
+    },
+    {
+      "id": "CT-0209",
+      "date": "2002-03",
+      "country": "Pakistan",
+      "place": "Islamabad",
+      "category": "Church bombing",
+      "title": "Presbyterian church congregation attacked in Islamabad",
+      "published_account": "The US State Department recorded a March 2002 attack on a Presbyterian church in Islamabad that killed five people, including two foreign nationals.",
+      "reported_actor": "Extremist perpetrators described in a State Department report",
+      "publisher": "US Department of State",
+      "source_url": "https://2009-2017.state.gov/j/drl/rls/irf/2003/24473.htm",
+      "notes": "Published account supplies only month or year. No exact event day inferred."
+    },
+    {
+      "id": "CT-0208",
+      "date": "2001-10-28",
+      "country": "Pakistan",
+      "place": "Bahawalpur, Punjab",
+      "category": "Shooting; church massacre",
+      "title": "Worshippers massacred at Bahawalpur church",
+      "published_account": "Dawn reported armed attackers opened fire on a Sunday congregation in Bahawalpur, killing Christians and a police officer and injuring others.",
+      "reported_actor": "Armed men escaped; identity not conclusively established in initial report",
+      "publisher": "Dawn",
+      "source_url": "https://www.dawn.com/news/3891"
     },
     {
       "id": "CT-0202",
@@ -2844,6 +3242,32 @@
       "notes": "Source gives only year or month. No exact day has been inferred."
     },
     {
+      "id": "CT-0207",
+      "date": "2000-01",
+      "country": "Pakistan",
+      "place": "Sialkot",
+      "category": "Church break-in; desecration",
+      "title": "Christian literature desecrated at Sialkot church",
+      "published_account": "A US State Department report cited the Human Rights Commission of Pakistan reporting a break-in and desecration of Christian religious literature in January 2000.",
+      "reported_actor": "Unknown intruders; motive not otherwise stated",
+      "publisher": "US Department of State",
+      "source_url": "https://1997-2001.state.gov/global/human_rights/irf/irf_rpt/irf_pakistan.html",
+      "notes": "Published account supplies only month or year. No exact event day inferred."
+    },
+    {
+      "id": "CT-0206",
+      "date": "1999-10",
+      "country": "Pakistan",
+      "place": "Lahore",
+      "category": "Arson; church property",
+      "title": "St Peter's Catholic Church burned in Lahore",
+      "published_account": "A US State Department report stated a Sunni Muslim youth set fire to St Peter's Catholic Church in October 1999.",
+      "reported_actor": "A youth was arrested and charged, as the report stated",
+      "publisher": "US Department of State",
+      "source_url": "https://1997-2001.state.gov/global/human_rights/irf/irf_rpt/irf_pakistan.html",
+      "notes": "Published account supplies only month or year. No exact event day inferred."
+    },
+    {
       "id": "CT-0203",
       "date": "1999",
       "country": "Australia",
@@ -2855,10 +3279,36 @@
       "publisher": "ABC News",
       "source_url": "https://www.abc.net.au/news/2020-07-30/sacrilege-charge-over-church-breakin-a-throwback/12507974",
       "notes": "Source gives only year or month. No exact day has been inferred."
+    },
+    {
+      "id": "CT-0205",
+      "date": "1998-01-28",
+      "country": "Pakistan",
+      "place": "Sheikhupura, Punjab",
+      "category": "Killing of clergy",
+      "title": "Pastor Nur Alam killed amid plans to build a church",
+      "published_account": "The US State Department cited a Pakistani Christian rights group attributing the January 1998 murder of Pastor Nur Alam to his efforts to construct a church.",
+      "reported_actor": "Perpetrators not arrested according to the original report",
+      "publisher": "US Department of State",
+      "source_url": "https://www.refworld.org/reference/annualreport/usdos/1999/en/21844"
+    },
+    {
+      "id": "CT-0204",
+      "date": "1997-02-06",
+      "country": "Pakistan",
+      "place": "Shantinagar and Khanewal, Punjab",
+      "category": "Mob violence; churches destroyed",
+      "title": "Shantinagar Christian villages and churches attacked",
+      "published_account": "The Anglican Communion News Service documented attacks on Christian villages, churches, Bibles and homes on 5-6 February 1997 after a reported blasphemy accusation.",
+      "reported_actor": "Large neighbouring mobs were accused; reports also alleged police involvement",
+      "publisher": "Anglican Communion News Service",
+      "source_url": "https://www.anglicannews.org/news/1997/02/christian-villages-destroyed.aspx"
     }
   ],
   "coverage": {
     "date_policy": "The date field accepts YYYY, YYYY-MM and YYYY-MM-DD where sources do not provide an exact day. No day is invented.",
-    "note": "Historical source coverage is selective, including older retrospective reporting."
+    "note": "Historical source coverage is selective, including older retrospective reporting.",
+    "earliest_record": "1997-02-06",
+    "latest_record": "2026-11-02"
   }
 }
