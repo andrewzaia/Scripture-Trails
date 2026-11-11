@@ -42,7 +42,7 @@ const metrics=()=>page.evaluate(()=>({
   activeView:document.querySelector('.view.active-view')?.id||null,
 }));
 async function activateButton(locator){
- if(engine!=='firefox'){await locator.click({timeout:4500});return;}
+ if(engine!=='firefox'){await locator.waitFor({state:'visible',timeout:10000});await locator.scrollIntoViewIfNeeded({timeout:10000});await locator.click({timeout:10000});return;}
  await locator.focus();
  const ids=execFileSync('xdotool',['search','--onlyvisible','--name','Scripture Trails'],{encoding:'utf8'}).trim().split(/\s+/).filter(Boolean);
  if(!ids.length)throw Error('Firefox window missing for native keyboard activation');
@@ -92,7 +92,10 @@ async function inspectRoutesAtActualZoom(zoom){
      await page.keyboard.press('Escape');
      const collapsed=await button.getAttribute('aria-expanded');
      drawer=expanded==='true'&&collapsed==='false'?'pass':'fail';
-    }catch(e){drawer='obstructed';}
+    }catch(e){
+      console.error('ACTUAL_ZOOM_DRAWER_DIAGNOSTIC',JSON.stringify({zoom,view,error:String(e).slice(0,1100),state:await page.evaluate(()=>({menu:document.querySelector('#menu-toggle')?.outerHTML,sidebarOpen:document.querySelector('#sidebar')?.classList.contains('open'),shadeHidden:document.querySelector('#sidebar-shade')?.hidden,active:document.activeElement?.id,point:(()=>{const r=document.querySelector('#menu-toggle')?.getBoundingClientRect();if(!r)return null;return document.elementFromPoint(r.x+r.width/2,r.y+r.height/2)?.outerHTML?.slice(0,320)})()}))}));
+      drawer='obstructed';
+     }
    }
   }
   routeResults.push({zoom,view,dpr:measured.dpr,cssViewport:measured.layoutWidth,overflow,overflowPixels:measured.scrollWidth-measured.layoutWidth,consent,drawer,version:measured.version,browserZoomMatches});
