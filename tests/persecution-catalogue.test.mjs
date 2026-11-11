@@ -327,8 +327,8 @@ test('seven newly represented countries preserve incident-level and aggregate at
 test('daesh-linked expansion retains 45 distinct sourced report records and historical archive',()=>{
  const added=records.filter(r=>Number(r.id.slice(3))>=461&&Number(r.id.slice(3))<=505);
  assert.equal(added.length,45);
- assert.equal(records.length,562);
- assert.equal(new Set(records.map(x=>x.id)).size,562);
+ assert.equal(records.length,588);
+ assert.equal(new Set(records.map(x=>x.id)).size,588);
  assert.equal(new Set(records.map(x=>x.country)).size,91);
  const expected={Iraq:16,Syria:8,Libya:2,Egypt:3,Nigeria:5,'Democratic Republic of the Congo':3,Mozambique:6,Philippines:2};
  for(const [country,count] of Object.entries(expected)){
@@ -352,17 +352,17 @@ test('daesh-linked expansion retains 45 distinct sourced report records and hist
  assert.ok(added.some(r=>r.country==='Philippines'&&r.date==='2023-12-03'));
  const geo=JSON.parse(read('public/data/christian-heatmap-places.json'));
  const totals=aggregateIncidentLocations(records,geo);
- assert.equal(totals.reportCount,562);
- assert.equal([...totals.countries.values()].reduce((n,v)=>n+v,0),562);
- assert.equal(totals.located+totals.withoutLocality,562);
+ assert.equal(totals.reportCount,588);
+ assert.equal([...totals.countries.values()].reduce((n,v)=>n+v,0),588);
+ assert.equal(totals.located+totals.withoutLocality,588);
  assert.ok(totals.countries.get('Iraq')>=16);
 });
 
 test('thirty further daesh-related reports preserve provenance and report-based map counts',()=>{
  const fresh=records.filter(r=>Number(r.id.slice(3))>=506&&Number(r.id.slice(3))<=535);
  assert.equal(fresh.length,30);
- assert.equal(records.length,562);
- assert.equal(new Set(records.map(r=>r.id)).size,562);
+ assert.equal(records.length,588);
+ assert.equal(new Set(records.map(r=>r.id)).size,588);
  assert.equal(new Set(records.map(r=>r.country)).size,91);
  const expected={Bangladesh:4,Egypt:8,Pakistan:2,Indonesia:2,Syria:2,Nigeria:2,'Democratic Republic of the Congo':3,Mozambique:3,Iraq:3,France:1};
  for(const [country,count] of Object.entries(expected)){
@@ -386,15 +386,15 @@ test('thirty further daesh-related reports preserve provenance and report-based 
  assert.ok(egypt.every(r=>r.notes.includes('CT-0248')||r.date==='2017-05-06'));
  const geo=JSON.parse(read('public/data/christian-heatmap-places.json'));
  const totals=aggregateIncidentLocations(records,geo);
- assert.equal(totals.reportCount,562);
- assert.equal([...totals.countries.values()].reduce((s,n)=>s+n,0),562);
- assert.equal(totals.located+totals.withoutLocality,562);
+ assert.equal(totals.reportCount,588);
+ assert.equal([...totals.countries.values()].reduce((s,n)=>s+n,0),588);
+ assert.equal(totals.located+totals.withoutLocality,588);
 });
 
 test('second daesh-related research batch adds 18 fully attributed records while retaining earlier reports',()=>{
  const added=records.filter(r=>Number(r.id.slice(3))>=536&&Number(r.id.slice(3))<=553);
- assert.equal(records.length,562);
- assert.equal(new Set(records.map(r=>r.id)).size,562);
+ assert.equal(records.length,588);
+ assert.equal(new Set(records.map(r=>r.id)).size,588);
  assert.equal(new Set(records.map(r=>r.country)).size,91);
  assert.equal(added.length,18);
  const byCountry={Syria:3,'Democratic Republic of the Congo':13,Nigeria:2};
@@ -417,9 +417,9 @@ test('second daesh-related research batch adds 18 fully attributed records while
  assert.ok(drc.some(r=>r.date==='2025-11'&&r.notes.includes('exact day')));
  const geo=JSON.parse(read('public/data/christian-heatmap-places.json'));
  const totals=aggregateIncidentLocations(records,geo);
- assert.equal(totals.reportCount,562);
- assert.equal([...totals.countries.values()].reduce((s,n)=>s+n,0),562);
- assert.equal(totals.located+totals.withoutLocality,562);
+ assert.equal(totals.reportCount,588);
+ assert.equal([...totals.countries.values()].reduce((s,n)=>s+n,0),588);
+ assert.equal(totals.located+totals.withoutLocality,588);
 });
 
 test('Mozambique and Assyrian Khabur expansion preserves report attribution, duplicate context and map totals',()=>{
@@ -427,8 +427,8 @@ test('Mozambique and Assyrian Khabur expansion preserves report attribution, dup
  assert.equal(rows.length,9);
  assert.equal(rows.filter(r=>r.country==='Mozambique').length,7);
  assert.equal(rows.filter(r=>r.country==='Syria').length,2);
- assert.equal(records.length,562);
- assert.equal(new Set(records.map(r=>r.id)).size,562);
+ assert.equal(records.length,588);
+ assert.equal(new Set(records.map(r=>r.id)).size,588);
  assert.equal(new Set(records.map(r=>r.country)).size,91);
  for(const r of rows){
   assert.match(r.id,/^CT-\d{4}$/);
@@ -443,7 +443,37 @@ test('Mozambique and Assyrian Khabur expansion preserves report attribution, dup
  assert.ok(rows.some(r=>r.date==='2015-02-23'&&r.notes.includes('CT-0478')));
  const geo=JSON.parse(read('public/data/christian-heatmap-places.json'));
  const count=aggregateIncidentLocations(records,geo);
- assert.equal(count.reportCount,562);
- assert.equal([...count.countries.values()].reduce((sum,n)=>sum+n,0),562);
- assert.equal(count.located+count.withoutLocality,562);
+ assert.equal(count.reportCount,588);
+ assert.equal([...count.countries.values()].reduce((sum,n)=>sum+n,0),588);
+ assert.equal(count.located+count.withoutLocality,588);
+});
+
+test('v1.16 global expansion retains 26 separate attributed reports and transparent overlaps',()=>{
+ const fresh=records.filter(r=>Number(r.id.slice(3))>=563&&Number(r.id.slice(3))<=588);
+ assert.equal(fresh.length,26);
+ assert.equal(records.length,588);
+ assert.equal(new Set(records.map(r=>r.id)).size,588);
+ assert.equal(new Set(records.map(r=>r.country)).size,91);
+ const countries={Azerbaijan:1,China:3,Iran:4,Eritrea:1,Myanmar:1,Nigeria:3,Pakistan:1,Nicaragua:1,'Sri Lanka':5,Russia:1,Colombia:2,Cuba:1,Kyrgyzstan:2};
+ for(const [country,expected] of Object.entries(countries)){
+  assert.equal(fresh.filter(r=>r.country===country).length,expected);
+  assert.ok(filterPersecutionReports(records,{country}).length>=expected);
+ }
+ for(const report of fresh){
+  assert.match(report.id,/^CT-\d{4}$/);
+  assert.match(report.date,/^\d{4}(?:-\d{2}(?:-\d{2})?)?$/);
+  assert.ok(report.country&&report.title&&report.category&&report.place&&report.published_account&&report.reported_actor&&report.publisher&&report.notes&&report.incident_group);
+  assert.equal(new URL(report.source_url).protocol,'https:');
+  assert.doesNotMatch([report.title,report.published_account,report.reported_actor,report.notes].join(' '),/\b(?:ISIS|ISIL|Daesh|Islamic State|ISWAP)\b/);
+ }
+ assert.equal(fresh.filter(r=>r.incident_group==='CHN-JIAQUAN-2026').length,2);
+ assert.equal(fresh.filter(r=>r.incident_group==='LKA-SEETHWAKA-2025').length,2);
+ assert.equal(fresh.filter(r=>r.incident_group==='KGZ-SHREIDER-2024-2026').length,2);
+ assert.ok(fresh.some(r=>r.id==='CT-0574'&&r.notes.includes('not established')));
+ assert.ok(fresh.some(r=>r.country==='Cuba'&&r.date==='2026-09-26'));
+ const geo=JSON.parse(read('public/data/christian-heatmap-places.json'));
+ const result=aggregateIncidentLocations(records,geo);
+ assert.equal(result.reportCount,588);
+ assert.equal([...result.countries.values()].reduce((sum,n)=>sum+n,0),588);
+ assert.equal(result.located+result.withoutLocality,588);
 });

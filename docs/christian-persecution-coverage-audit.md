@@ -1,9 +1,9 @@
 # Christian persecution geographic coverage audit
 
 Checked: 2026-11-11
-Candidate release: v1.15.0
+Candidate release: v1.16.0
 
-The catalogue now contains 562 published source-attributed report records across 91 countries and territories. This release adds nine reports from Mozambique (7) and Syria (2), with source-date precision and overlap annotations. The preceding v1.14.0 added 18 reports, v1.13.0 added 30 and v1.12.0 added 45.
+The catalogue now contains 588 published source-attributed report records across 91 countries and territories. This release adds 26 reports across Azerbaijan (1), China (3), Iran (4), Eritrea (1), Myanmar (1), Nigeria (3), Pakistan (1), Nicaragua (1), Sri Lanka (5), Russia (1), Colombia (2), Cuba (1) and Kyrgyzstan (2). All earlier releases and source records remain preserved.
 
 ## Inclusion and counting
 
@@ -44,6 +44,16 @@ Published report totals do not equal unique attacks, victims, casualty figures o
 Open Doors Australia described Christian homes, churches, a pastor's family and religious books damaged or displaced at Muanquina on 30 July 2025, followed by reports of fifteen Christians beheaded in Marera on 1 August and nine relatives of a Christian youth worker abducted in Naphela on 3 August. The same publication includes a late-July anti-Christian conversion threat and an execution claim in Intutupue; Open Doors cautioned that those victims' Christian religious identities were not independently established. July-only dating is retained for an unspecified pastor abduction.
 
 The separate November 2025 Memba campaign in Chipene and Lurio is not merged with the existing September-October Memba attacks. Agenzia Fides reports concerning Tel Shamiran hostage-taking and damaged Christian symbols in the Khabur valley remain grouped with the existing 2015 Khabur campaign, not treated as new victim counts. These source records improve granularity, not an independently verified total of unique attacks or people affected.
+
+### v1.16.0 wider geographic and category coverage
+
+This batch adds independently identifiable publications on public worship restrictions, detention of congregations and clergy, legal punishment for religious practice, church damage, mob attacks and violence affecting Christian communities. Reports are attributed to Forum 18, Human Rights Watch, USCIRF, the UK Home Office, Amnesty International, local religious-freedom monitors, news services and Nigerian police.
+
+Records from Zikke and Yelewata involve predominantly Christian farming communities, but sources do not establish that every victim was Christian or that religion was the only motive. The 2026 China Jiaquan investigation, 2024-2026 Shreider prosecution and January 2025 Seethwaka intimidation and stone damage share incident groups where the same underlying case has multiple reported stages. An Iranian convert's 2025 sentencing cross-references her 2024 arrest. Russian prosecutions and Christmas arrests in Iran are reported aggregates, not invented distinct victim counts.
+
+Dates are year/month/day precise only when the source gives them. An October 2026 publication about Cuba describes a detention on 26 September. Neither an event's later publication nor an official allegation is treated as independent evidence of its occurrence or the identity of a perpetrator.
+
+Map shading reflects the count of report records, not a measure of unique attacks, victims, prevalence or independently verified religious motivation. Sites without grounded locations contribute to country totals without fabricated pins. This release does not republish unlicensed media.
 
 ### Remaining daesh research priorities
 
