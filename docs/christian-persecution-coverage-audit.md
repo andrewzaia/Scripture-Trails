@@ -1,9 +1,9 @@
 # Christian persecution geographic coverage audit
 
 Checked: 2026-11-11
-Candidate release: v1.13.0
+Candidate release: v1.14.0
 
-The catalogue now contains 535 published source-attributed report records across 91 countries and territories. This release adds 30 reports across Bangladesh (4), Egypt (8), Pakistan (2), Indonesia (2), Syria (2), Nigeria (2), the Democratic Republic of the Congo (3), Mozambique (3), Iraq (3) and France (1). The preceding v1.12.0 release added 45 daesh-related reports; v1.11.0 expanded geographic coverage.
+The catalogue now contains 553 published source-attributed report records across 91 countries and territories. This release adds 18 further reports from Syria (3), the Democratic Republic of the Congo (13) and Nigeria (2). Previous v1.13.0 added 30 records and v1.12.0 added 45, while earlier releases established the geographic base.
 
 ## Inclusion and counting
 
@@ -30,6 +30,14 @@ Thirty new report records cover murders of Bangladeshi Christian converts, an at
 The 535-report count is not a count of 535 unique incidents. CT-0248 summarises North Sinai killings; six newly distinguished cases identify individual events already discussed in the same broader campaign. Individual records are explicitly cross-referenced and grouped, not implied to be wholly additional attacks. In the map, each report adds one report unit, not an additional independently corroborated massacre or an individual victim count. Claim, source, victim-number and location qualifications are preserved.
 
 Bangladesh daesh claims are contested; the 2016 murder of Father Jacques Hamel in France is cited to an official government account, including the attributed daesh responsibility claim. One group-linked Congo attack involved some victims whose religion is not specified. Bellingcat documents destruction of the Clock Church bell tower rather than the whole building. Diocesan reporting did not establish any fatalities at the Meza parish. New report references do not authorise copying publisher photographs or videos.
+
+### Further v1.14.0 additions and attribution cautions
+
+The latest batch distinguishes the 24 January 2016 Qamishli restaurant bombing, 19 June 2016 Assyrian Sayfo commemoration suicide attack and 11 July 2019 church car bombing. The January allegation of daesh responsibility was disputed, the June attack was unclaimed and the 2019 claim was unconfirmed. These cases belong in an inclusive Christian persecution reporting archive but must not be described as proven daesh-directed operations.
+
+The new eastern Congo records document separately dated raids from 2020 to July 2026, including Christian churches, aid facilities, worship leaders, conversions alleged in perpetrators' messaging and villages. Nigeria additions include the 2020 aid worker killings with an anti-Christian-conversion message, and an October 2020 allegation of abduction after religious screening. Source qualifications preserve unknown victims' religious identities and distinguish claimed responsibility from established acts.
+
+Published report totals do not equal unique attacks, victims, casualty figures or prevalence. Localities lacking grounded coordinates remain included in country-level map shading without fabricated village pins. Prior multi-incident summaries can overlap narrower dated entries and must not be double-counted as distinct deaths.
 
 ### Remaining daesh research priorities
 
