@@ -59,7 +59,7 @@ test('global distribution includes every report once and geographically separate
  assert.ok(Math.abs(totals.weight-totals.located)<0.0001);
  assert.equal(world.features.length,177);
  const countries=new Set(world.features.map(f=>f.id));
- for(const [name,location] of Object.entries(geo.countries))assert.ok(countries.has(location.iso3),'No Natural Earth shape for '+name);
+ for(const [name,location] of Object.entries(geo.countries))assert.ok(countries.has(location.iso3)||unshapedCountryMarkers(geo,world.features,totals.countries).some(m=>m.country===name),'No polygon or valid country locator for '+name);
  for(const [key,place] of Object.entries(geo.places)){
   assert.ok(key.includes('|')&&Array.isArray(place.points)&&place.points.length);
   for(const point of place.points){
@@ -327,7 +327,7 @@ test('small island country locators show report totals without inventing localit
  assert.deepEqual(unshapedCountryMarkers(geo,world.features,filteredCounts).map(x=>x.country),['Maldives']);
  const invalidMarkers={...geo,countryMarkers:{...geo.countryMarkers,Bahrain:{lat:999,lon:50}}};
  assert.deepEqual(unshapedCountryMarkers(invalidMarkers,world.features,count).map(x=>x.country),['Maldives']);
- assert.ok(records.some(r=>r.country==='Romania'&&r.notes.includes('NOT established')));
+ assert.ok(records.some(r=>r.country==='Romania'&&r.notes.includes('not an established anti-Christian attack')));
  assert.ok(records.some(r=>r.country==='Sweden'&&r.notes.includes('rejected speculative claims')));
  assert.ok(records.some(r=>r.country==='Honduras'&&r.title.includes('Wilmer Castellanos')));
  assert.ok(read('public/index.html').includes('not invented incident coordinates'));
