@@ -51,7 +51,7 @@ export function createPersecutionCatalogue(root){
  const q=name=>root.querySelector('[data-pc-'+name+']');
  const search=q('search'),country=q('country'),year=q('year'),kind=q('kind'),sort=q('sort'),mediaOnly=q('media-only');
  const listing=q('list'),count=q('count'),status=q('status'),more=q('more'),mediaDetails=q('media-details'),mediaList=q('media-list');
- const map=createChristianHeatmap(q('map'),{onCountry:selected=>{country.value=selected;search.value='';refresh();},onPlace:(selected,place)=>{country.value=selected;search.value=place;refresh();}});
+ const map=createChristianHeatmap(q('map'),{onCountry:selected=>{country.value=selected;search.value='';refresh();},onPlace:(selected,place)=>{country.value=selected;search.value=place;refresh();},onReset:()=>resetControls()});
  let rows=[],media=[],limit=20,pending=null,ready=false;
  const options=(select,items)=>{for(const item of items){const o=el('option',item);o.value=item;select.append(o);}};
  function draw(){
@@ -63,6 +63,7 @@ export function createPersecutionCatalogue(root){
   map.update(found);
  }
  function refresh(){limit=20;draw();}
+ function resetControls({focusSearch=false}={}){search.value='';country.value='';year.value='';kind.value='';sort.value='newest';mediaOnly.checked=false;refresh();if(focusSearch)search.focus();}
  function initialise(){
   q('total').textContent=rows.length;q('countries').textContent=new Set(rows.map(r=>r.country)).size;q('media-total').textContent=media.length;
   options(country,[...new Set(rows.map(r=>r.country))].sort());
@@ -70,7 +71,7 @@ export function createPersecutionCatalogue(root){
   options(kind,[...new Set(rows.map(r=>reportKind(r.category)))].sort());
   search.addEventListener('input',refresh);
   for(const input of [country,year,kind,sort,mediaOnly])input.addEventListener('change',refresh);
-  q('reset').addEventListener('click',()=>{search.value='';country.value='';year.value='';kind.value='';sort.value='newest';mediaOnly.checked=false;refresh();search.focus();});
+  q('reset').addEventListener('click',()=>resetControls({focusSearch:true}));
   more.addEventListener('click',()=>{limit+=20;draw();});
   mediaDetails.addEventListener('toggle',()=>{if(mediaDetails.open&&!mediaList.childElementCount)mediaList.replaceChildren(...media.map(mediaCard));});
   ready=true;draw();void map.activate();

@@ -192,14 +192,14 @@
           <section class="persecution-world-map panel" aria-labelledby="persecution-world-map-title" data-pc-map>
             <div class="pc-map-head">
               <div><p class="eyebrow">GLOBAL INCIDENT DISTRIBUTION</p><h2 id="persecution-world-map-title">Explore reported cases around the world.</h2><p>Country shading shows report counts; locality heat markers show approximate towns and regions where coordinates are available.</p></div>
-              <label for="pc-map-layer-select">Map layers<select id="pc-map-layer-select" data-pc-map-layer><option value="combined">Combined heat map</option><option value="countries">Countries only</option><option value="localities">Locations only</option></select></label>
+              <div class="pc-map-actions"><label for="pc-map-layer-select">Map layers<select id="pc-map-layer-select" data-pc-map-layer><option value="combined">Combined heat map</option><option value="countries">Countries only</option><option value="localities">Locations only</option></select></label><button type="button" class="pc-map-reset" data-pc-map-reset>Reset map</button></div>
             </div>
             <div class="pc-map-surface" data-pc-map-surface><p>Loading global heat map...</p></div>
             <div class="pc-map-legend" aria-label="Published report count per country">
               <span>Country reports</span><span class="pc-legend-level" data-level="0">0</span><span class="pc-legend-level" data-level="1">1</span><span class="pc-legend-level" data-level="2">2-3</span><span class="pc-legend-level" data-level="3">4-7</span><span class="pc-legend-level" data-level="4">8-15</span><span class="pc-legend-level" data-level="5">16+</span>
             </div>
             <p class="pc-map-summary" data-pc-map-summary role="status" aria-live="polite">Preparing geographic distribution...</p>
-            <p class="pc-map-explain">Select a highlighted country or location to filter the incident list. Map counts update with the search and filters. Colours represent reports in this collection, not the prevalence or relative risk of persecution. Locality markers are approximate city or region centres, not exact attack sites. Unlocated and nationwide reports remain in their country totals.</p>
+            <p class="pc-map-explain">Select a highlighted country or location to filter the incident list. Use Reset map to return to the full worldwide display and clear catalogue filters. Map counts update with the search and filters. Colours represent reports in this collection, not the prevalence or relative risk of persecution. Locality markers are approximate city or region centres, not exact attack sites. Unlocated and nationwide reports remain in their country totals.</p>
             <p class="pc-map-credits">Map boundaries: <a href="https://www.naturalearthdata.com/" target="_blank" rel="noopener noreferrer">Natural Earth</a> (public domain). Locality coordinates: <a href="https://github.com/srestre/world-countries-cities-db" target="_blank" rel="noopener noreferrer">world-countries-cities-db</a> (ODbL 1.0). All underlying incident accounts retain their linked publisher attribution.</p>
           </section>
           <div class="persecution-results-title"><h2>Published cases</h2><span data-pc-count>Loading catalogue...</span></div>

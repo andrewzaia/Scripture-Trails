@@ -85,6 +85,8 @@ test('heat map is local, release-versioned and uses text-only source attribution
  const html=read('public/index.html'),module=read('public/assets/christian-heatmap.js');
  assert.match(html,/data-pc-map-surface/);
  assert.match(html,/data-pc-map-layer/);
+ assert.match(html,/data-pc-map-reset/);
+ assert.match(module,/onReset/);
  assert.match(module,/world-heatmap-110m.json\?v=/);
  assert.match(module,/christian-heatmap-places.json\?v=/);
  assert.doesNotMatch(module,/(maps\.google|mapbox|tile\.openstreetmap|\.innerHTML\s*=)/);

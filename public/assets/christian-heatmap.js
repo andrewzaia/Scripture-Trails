@@ -48,10 +48,11 @@ function interaction(el,callback){
  el.addEventListener('click',callback);
  el.addEventListener('keydown',event=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();callback();}});
 }
-export function createChristianHeatmap(root,{onCountry=()=>{},onPlace=()=>{}}={}){
+export function createChristianHeatmap(root,{onCountry=()=>{},onPlace=()=>{},onReset=()=>{}}={}){
  if(!root)throw Error('Missing heat map element');
  const surface=root.querySelector('[data-pc-map-surface]'),summary=root.querySelector('[data-pc-map-summary]');
  const layerControl=root.querySelector('[data-pc-map-layer]');
+ const resetControl=root.querySelector('[data-pc-map-reset]');
  let features=null,geo=null,latest=[],pending=null;
  let plot=null,worldLayer=null,densityLayer=null,markersLayer=null;
  function buildWorld(){
@@ -105,6 +106,7 @@ export function createChristianHeatmap(root,{onCountry=()=>{},onPlace=()=>{}}={}
   root.dataset.ready='true';
  }
  layerControl.addEventListener('change',draw);
+ resetControl.addEventListener('click',()=>{layerControl.value='combined';onReset();});
  return {
   update(reports){latest=reports;draw();},
   async activate(){
