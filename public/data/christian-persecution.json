@@ -58,6 +58,19 @@
       "notes": "Account and attribution are according to the cited publisher; incident categorisation does not independently determine perpetrator identity or motive."
     },
     {
+      "id": "CT-0282",
+      "date": "2026-10-09",
+      "country": "Ukraine",
+      "place": "Mali Puzyrky, Khmelnytskyi region",
+      "category": "Clerical detention; military mobilisation",
+      "title": "UOC diocese reports Archpriest Serhiy Sinyuk detained by recruitment officers",
+      "published_account": "A UOC diocese, reported by the Union of Orthodox Journalists, said territorial recruitment personnel detained a priest with medical conditions and transferred him after a medical assessment.",
+      "reported_actor": "Territorial recruitment officials, according to UOC diocese",
+      "publisher": "Union of Orthodox Journalists",
+      "source_url": "https://uoj.news/news/ukrainian-recruitment-officers-detain-uoc-priest-with-heart-condition/",
+      "notes": "Ukrainian government-controlled territory. Church-aligned reporting; source allegations and incident details have not been independently established here. Military mobilisation alone does not demonstrate religious persecution."
+    },
+    {
       "id": "CT-0002",
       "date": "2026-10-03",
       "country": "Syria",
@@ -282,6 +295,19 @@
       "notes": "Single publisher case summary; no independent adjudication undertaken."
     },
     {
+      "id": "CT-0283",
+      "date": "2026-06-04",
+      "country": "Ukraine",
+      "place": "Kyiv",
+      "category": "Clerical detention; military mobilisation",
+      "title": "UOC outlet reports Archpriest Oleksandr Drobiazko taken to recruitment office",
+      "published_account": "The Union of Orthodox Journalists reported recruitment officers detained a UOC priest near his church in Kyiv, questioned his affiliation and transferred him through a medical review to military training.",
+      "reported_actor": "Territorial recruitment officials, according to church-aligned outlet",
+      "publisher": "Union of Orthodox Journalists",
+      "source_url": "https://spzh.eu/en/zashhita-very/93805-chronicle-of-the-reprisals-against-the-clergy-of-the-uoc.html",
+      "notes": "Ukrainian government-controlled territory. Church-aligned reporting; source allegations and incident details have not been independently established here. Military mobilisation alone does not demonstrate religious persecution."
+    },
+    {
       "id": "CT-0019",
       "date": "2026-05-04",
       "country": "France",
@@ -308,6 +334,32 @@
       "notes": "Single publisher case summary; no independent adjudication undertaken."
     },
     {
+      "id": "CT-0284",
+      "date": "2026-05-01",
+      "country": "Ukraine",
+      "place": "Kyiv",
+      "category": "Monastic detention; military mobilisation",
+      "title": "Monk Archimandrite Theophil reportedly detained while visiting parishioner",
+      "published_account": "A UOC-aligned outlet reported territorial recruitment officers detained a Kyiv-Pechersk Lavra monk en route to providing pastoral support.",
+      "reported_actor": "Territorial recruitment officials, according to church-aligned outlet",
+      "publisher": "Union of Orthodox Journalists",
+      "source_url": "https://spzh.eu/en/zashhita-very/93805-chronicle-of-the-reprisals-against-the-clergy-of-the-uoc.html",
+      "notes": "Ukrainian government-controlled territory. Church-aligned reporting; source allegations and incident details have not been independently established here. Military mobilisation alone does not demonstrate religious persecution."
+    },
+    {
+      "id": "CT-0285",
+      "date": "2026-04-27",
+      "country": "Ukraine",
+      "place": "Chernivtsi",
+      "category": "Monastic detention; military mobilisation",
+      "title": "Bancheny monastery archimandrite reportedly detained and released",
+      "published_account": "The Union of Orthodox Journalists reported recruitment officers detained a monk from Bancheny Monastery and later released him following protests by church representatives and worshippers.",
+      "reported_actor": "Territorial recruitment officials, according to church-aligned outlet",
+      "publisher": "Union of Orthodox Journalists",
+      "source_url": "https://spzh.eu/en/zashhita-very/93805-chronicle-of-the-reprisals-against-the-clergy-of-the-uoc.html",
+      "notes": "Ukrainian government-controlled territory. Church-aligned reporting; source allegations and incident details have not been independently established here. Military mobilisation alone does not demonstrate religious persecution."
+    },
+    {
       "id": "CT-0021",
       "date": "2026-04-18",
       "country": "France",
@@ -332,6 +384,32 @@
       "publisher": "OIDAC Europe",
       "source_url": "https://www.intoleranceagainstchristians.eu/index.php?id=12&case=10947",
       "notes": "Single publisher case summary; no independent adjudication undertaken."
+    },
+    {
+      "id": "CT-0286",
+      "date": "2026-03-27",
+      "country": "Ukraine",
+      "place": "Izium, Kharkiv region",
+      "category": "Monastic detention; alleged forced transfer",
+      "title": "Two UOC monks reportedly taken from Izium monastery",
+      "published_account": "The Union of Orthodox Journalists alleged security and recruitment officers entered the Izium Peschansky Monastery, used force and removed Archimandrite Leontii and Hieromonk Arsenii.",
+      "reported_actor": "Security Service and territorial recruitment personnel, as alleged by church-aligned outlet",
+      "publisher": "Union of Orthodox Journalists",
+      "source_url": "https://spzh.eu/en/zashhita-very/93805-chronicle-of-the-reprisals-against-the-clergy-of-the-uoc.html",
+      "notes": "Ukrainian government-controlled territory. Church-aligned reporting; source allegations and incident details have not been independently established here. Military mobilisation alone does not demonstrate religious persecution."
+    },
+    {
+      "id": "CT-0287",
+      "date": "2026-03-20",
+      "country": "Ukraine",
+      "place": "Kharkiv",
+      "category": "Monastic detention; military mobilisation",
+      "title": "Two members of Kharkiv monastery reportedly detained",
+      "published_account": "The Union of Orthodox Journalists reported the detention of Hieromonk Daniel and novice Vadym of the Intercession Monastery by territorial recruitment officials.",
+      "reported_actor": "Territorial recruitment officials, according to church-aligned outlet",
+      "publisher": "Union of Orthodox Journalists",
+      "source_url": "https://spzh.eu/en/zashhita-very/93805-chronicle-of-the-reprisals-against-the-clergy-of-the-uoc.html",
+      "notes": "Ukrainian government-controlled territory. Church-aligned reporting; source allegations and incident details have not been independently established here. Military mobilisation alone does not demonstrate religious persecution."
     },
     {
       "id": "CT-0023",
@@ -380,6 +458,45 @@
       "source_url": "https://www.uscirf.gov/sites/default/files/2026-05/2026%20Nicaragua%20Country%20Update.pdf"
     },
     {
+      "id": "CT-0288",
+      "date": "2026-02-24",
+      "country": "Ukraine",
+      "place": "Kyiv",
+      "category": "Clerical detention; military mobilisation",
+      "title": "UOC priest Yaroslav Kruhlenko reportedly detained by recruitment officers",
+      "published_account": "The Union of Orthodox Journalists reported the detention of a Kyiv UOC rector by military recruitment personnel, followed by transfer between recruitment offices; the family reportedly said it had lost contact.",
+      "reported_actor": "Territorial recruitment officials, according to church-aligned outlet",
+      "publisher": "Union of Orthodox Journalists",
+      "source_url": "https://spzh.eu/en/zashhita-very/93805-chronicle-of-the-reprisals-against-the-clergy-of-the-uoc.html",
+      "notes": "Ukrainian government-controlled territory. Church-aligned reporting; source allegations and incident details have not been independently established here. Military mobilisation alone does not demonstrate religious persecution."
+    },
+    {
+      "id": "CT-0289",
+      "date": "2026-02-21",
+      "country": "Ukraine",
+      "place": "Horodyshche, Cherkasy region",
+      "category": "Clerical detention; military mobilisation",
+      "title": "Archpriest Anatolii Chernenko reportedly mobilised",
+      "published_account": "The Union of Orthodox Journalists reported recruitment officers detained the rector of a UOC parish in Horodyshche and transferred him for military service.",
+      "reported_actor": "Territorial recruitment officials, according to church-aligned outlet",
+      "publisher": "Union of Orthodox Journalists",
+      "source_url": "https://spzh.eu/en/zashhita-very/93805-chronicle-of-the-reprisals-against-the-clergy-of-the-uoc.html",
+      "notes": "Ukrainian government-controlled territory. Church-aligned reporting; source allegations and incident details have not been independently established here. Military mobilisation alone does not demonstrate religious persecution."
+    },
+    {
+      "id": "CT-0290",
+      "date": "2026-02-11",
+      "country": "Ukraine",
+      "place": "Chernivtsi",
+      "category": "Attempted clerical detention",
+      "title": "UOC outlet alleges attempted detention of Bishop Mykyta",
+      "published_account": "A UOC-aligned outlet reported recruitment personnel sought to detain Bishop Mykyta of Ivano-Frankivsk while he was travelling to a service in Chernivtsi; the bishop reportedly sought refuge at a cathedral.",
+      "reported_actor": "Territorial recruitment personnel, as alleged by church-aligned outlet",
+      "publisher": "Union of Orthodox Journalists",
+      "source_url": "https://spzh.eu/en/zashhita-very/93805-chronicle-of-the-reprisals-against-the-clergy-of-the-uoc.html",
+      "notes": "Ukrainian government-controlled territory. Church-aligned reporting; source allegations and incident details have not been independently established here. Military mobilisation alone does not demonstrate religious persecution."
+    },
+    {
       "id": "CT-0026",
       "date": "2026-02-01",
       "country": "United States",
@@ -407,6 +524,19 @@
       "reported_actor": "Nicaraguan government",
       "publisher": "USCIRF",
       "source_url": "https://www.uscirf.gov/sites/default/files/2026-05/2026%20Nicaragua%20Country%20Update.pdf"
+    },
+    {
+      "id": "CT-0291",
+      "date": "2026-01-28",
+      "country": "Ukraine",
+      "place": "Kyiv",
+      "category": "Clerical detention; military mobilisation",
+      "title": "UOC rector Oleksandr Itsenko reportedly detained in Kyiv",
+      "published_account": "The Union of Orthodox Journalists reported recruitment officials detained a priest from St Cyril's Monastery while he travelled to a church vigil and took him to a recruitment office.",
+      "reported_actor": "Territorial recruitment officials, according to church-aligned outlet",
+      "publisher": "Union of Orthodox Journalists",
+      "source_url": "https://spzh.eu/en/zashhita-very/93805-chronicle-of-the-reprisals-against-the-clergy-of-the-uoc.html",
+      "notes": "Ukrainian government-controlled territory. Church-aligned reporting; source allegations and incident details have not been independently established here. Military mobilisation alone does not demonstrate religious persecution."
     },
     {
       "id": "CT-0028",
@@ -492,6 +622,32 @@
       "media_url": "https://abc7ny.com/post/man-tased-arrested-altar-during-violent-disturbance-church-staten-island/18384804/",
       "media_note": "Link to local report; imagery/footage on page must be inspected and licensed before re-use",
       "notes": "USCCB archive contains additional incidents; this workbook extracts a selection."
+    },
+    {
+      "id": "CT-0292",
+      "date": "2026-01-08",
+      "country": "Ukraine",
+      "place": "Chuhuiv, Kharkiv region",
+      "category": "Clerical detention; military mobilisation",
+      "title": "Priest Viacheslav Kalinichenko reportedly detained at checkpoint",
+      "published_account": "A UOC-aligned outlet stated a priest was held after a Chuhuiv checkpoint stop, later transferred through Kharkiv to a military training unit in Dnipro.",
+      "reported_actor": "Territorial recruitment officials, according to church-aligned outlet",
+      "publisher": "Union of Orthodox Journalists",
+      "source_url": "https://spzh.eu/en/zashhita-very/93805-chronicle-of-the-reprisals-against-the-clergy-of-the-uoc.html",
+      "notes": "Ukrainian government-controlled territory. Church-aligned reporting; source allegations and incident details have not been independently established here. Military mobilisation alone does not demonstrate religious persecution."
+    },
+    {
+      "id": "CT-0293",
+      "date": "2026-01-07",
+      "country": "Ukraine",
+      "place": "Chernivtsi",
+      "category": "Clerical detention; military mobilisation",
+      "title": "Archpriest Mykola Syniuk reportedly detained",
+      "published_account": "The Union of Orthodox Journalists reported recruitment personnel detained a priest serving at the Presentation Monastery in Chernivtsi.",
+      "reported_actor": "Territorial recruitment officials, according to church-aligned outlet",
+      "publisher": "Union of Orthodox Journalists",
+      "source_url": "https://spzh.eu/en/zashhita-very/93805-chronicle-of-the-reprisals-against-the-clergy-of-the-uoc.html",
+      "notes": "Ukrainian government-controlled territory. Church-aligned reporting; source allegations and incident details have not been independently established here. Military mobilisation alone does not demonstrate religious persecution."
     },
     {
       "id": "CT-0034",
