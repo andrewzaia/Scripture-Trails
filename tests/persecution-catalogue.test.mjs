@@ -1,25 +1,31 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {filterPersecutionReports,reportKind} from '../public/assets/persecution-catalogue.js';
+import {filterPersecutionReports,reportKind,formatReportDate} from '../public/assets/persecution-catalogue.js';
 import {aggregateIncidentLocations} from '../public/assets/christian-heatmap.js';
 const read=path=>readFileSync(new URL('../'+path,import.meta.url),'utf8');
 const records=JSON.parse(read('public/data/christian-persecution.json')).reports;
 const media=JSON.parse(read('public/data/christian-persecution-media.json')).media;
-test('166 reports preserve source attribution, IDs, and reporting period',()=>{
- assert.equal(records.length,166);
+test('open-ended reporting preserves source attribution, IDs and historical date precision',()=>{
+ assert.equal(records.length,240);
+ assert.equal(records.filter(r=>r.country==='Australia').length,37);
  assert.equal(new Set(records.map(x=>x.id)).size,166);
- assert.equal(new Set(records.map(x=>x.country)).size,26);
+ assert.equal(new Set(records.map(x=>x.country)).size,29);
+ assert.ok(records.some(r=>r.date==='1997-02-06'));
+ assert.ok(records.some(r=>r.date==='1999'));
+ const archive=JSON.parse(read('public/data/christian-persecution.json'));
+ assert.equal('period' in archive,false);
  for(const r of records){
   assert.match(r.id,/^CT-\d{4}$/);
-  assert.ok(r.date>='2016-11-11'&&r.date<='2026-11-11');
+  assert.match(r.date,/^\d{4}(?:-\d{2}(?:-\d{2})?)?$/);
+  assert.notEqual(formatReportDate(r.date),'Invalid Date');
   assert.ok(r.title&&r.published_account&&r.publisher&&r.country);
   assert.equal(new URL(r.source_url).protocol,'https:');
   for(const field of ['second_source_url','media_url'])if(r[field])assert.equal(new URL(r[field]).protocol,'https:');
  }
 });
-test('media index retains 20 original publisher links and rights notes',()=>{
- assert.equal(media.length,20);
+test('media index retains publisher links and rights notes in the expanded archive',()=>{
+ assert.equal(media.length,65);
  for(const m of media){assert.ok(m.publisher_or_owner&&m.rights_and_reuse);assert.equal(new URL(m.media_url).protocol,'https:');}
 });
 test('source-preserving client filters combine without mutating records',()=>{
@@ -45,12 +51,12 @@ test('global distribution includes every report once and geographically separate
  const geo=JSON.parse(read('public/data/christian-heatmap-places.json'));
  const world=JSON.parse(read('public/data/world-heatmap-110m.json'));
  const totals=aggregateIncidentLocations(records,geo);
- assert.equal(totals.reportCount,166);
- assert.equal([...totals.countries.values()].reduce((a,b)=>a+b,0),166);
- assert.equal(totals.countries.size,26);
- assert.equal(totals.located,127);
- assert.equal(totals.withoutLocality,39);
- assert.ok(Math.abs(totals.weight-127)<0.0001);
+ assert.equal(totals.reportCount,records.length);
+ assert.equal([...totals.countries.values()].reduce((a,b)=>a+b,0),records.length);
+ assert.equal(totals.countries.size,29);
+ assert.equal(totals.countries.get('Australia'),37);
+ assert.equal(totals.located+totals.withoutLocality,records.length);
+ assert.ok(Math.abs(totals.weight-totals.located)<0.0001);
  assert.equal(world.features.length,177);
  const countries=new Set(world.features.map(f=>f.id));
  for(const [name,location] of Object.entries(geo.countries))assert.ok(countries.has(location.iso3),'No Natural Earth shape for '+name);
@@ -90,4 +96,22 @@ test('heat map is local, release-versioned and uses text-only source attribution
  assert.match(module,/world-heatmap-110m.json\?v=/);
  assert.match(module,/christian-heatmap-places.json\?v=/);
  assert.doesNotMatch(module,/(maps\.google|mapbox|tile\.openstreetmap|\.innerHTML\s*=)/);
+});
+
+test('historical dates display without inventing a day',()=>{
+ assert.equal(formatReportDate('1999'),'1999');
+ assert.equal(formatReportDate('2015-11'),'Nov 2015');
+ assert.equal(formatReportDate('2024-04-15'),'15 Apr 2024');
+ assert.equal(formatReportDate('2023-02-30'),'2023-02-30');
+ assert.equal(formatReportDate('unknown'),'unknown');
+ assert.equal(filterPersecutionReports(records,{country:'Australia',year:'1999'}).length,1);
+});
+test('Australian and older reports remain filterable and mapped',()=>{
+ assert.equal(filterPersecutionReports(records,{country:'Australia'}).length,37);
+ assert.ok(filterPersecutionReports(records,{country:'Pakistan',year:'1997'}).some(r=>r.title.includes('Shantinagar')));
+ const geo=JSON.parse(read('public/data/christian-heatmap-places.json'));
+ assert.equal(geo.countries.Australia.iso3,'AUS');
+ assert.equal(geo.countries.Iraq.iso3,'IRQ');
+ assert.equal(geo.countries.Libya.iso3,'LBY');
+ assert.ok(geo.places['Australia|Wakeley, Sydney']);
 });
