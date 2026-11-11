@@ -337,11 +337,11 @@ test('daesh-linked expansion retains 45 distinct sourced report records and hist
  }
  const groups=new Map();
  for(const r of added){
-  assert.match(r.id,/^CT-\\d{4}$/);
-  assert.match(r.date,/^\\d{4}(?:-\\d{2}(?:-\\d{2})?)?$/);
+  assert.match(r.id,/^CT-\d{4}$/);
+  assert.match(r.date,/^\d{4}(?:-\d{2}(?:-\d{2})?)?$/);
   assert.ok(r.title&&r.published_account&&r.publisher&&r.source_url&&r.reported_actor&&r.notes);
   assert.equal(new URL(r.source_url).protocol,'https:');
-  assert.doesNotMatch([r.title,r.published_account,r.reported_actor,r.notes].join(' '),/\\b(?:ISIS|ISIL|Daesh|Islamic State|ISWAP)\\b/);
+  assert.doesNotMatch([r.title,r.published_account,r.reported_actor,r.notes].join(' '),/\b(?:ISIS|ISIL|Daesh|Islamic State|ISWAP)\b/);
   if(r.incident_group)groups.set(r.incident_group,(groups.get(r.incident_group)||0)+1);
  }
  assert.ok(groups.get('IRQ-QARAQOSH-2014')>=2);
