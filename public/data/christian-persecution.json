@@ -1184,6 +1184,20 @@
       "category": "Catholic health centre killings and abductions"
     },
     {
+      "id": "CT-0560",
+      "date": "2025-11",
+      "country": "Mozambique",
+      "place": "Chipene and Lurio, Memba district, Nampula province",
+      "category": "Christians killed; churches and homes burned",
+      "title": "At least ten Christians reportedly killed in Memba-area November attacks",
+      "published_account": "Open Doors field sources reported at least ten Christians killed in coordinated 13-15 November attacks around Chipene and Lurio, where militants burned churches and homes and drove Christian families into neighbouring districts.",
+      "reported_actor": "daesh-associated Mozambique fighters, according to Open Doors",
+      "publisher": "Open Doors Australia",
+      "source_url": "https://www.opendoors.org.au/frontline-faith/mozambique-christians-killed-in-latest-attacks/",
+      "notes": "Source describes a multi-day campaign, so month-only date is used. This is distinct from the earlier September-October Memba report CT-0531; no per-village casualty split is invented.",
+      "incident_group": "MOZ-MEMBA-NOV-2025"
+    },
+    {
       "id": "CT-0052",
       "date": "2025-10-31",
       "country": "Italy",
@@ -1586,6 +1600,20 @@
       "notes": "Ukrainian government-controlled territory; location is region-level and individual culpability was not determined."
     },
     {
+      "id": "CT-0559",
+      "date": "2025-08-03",
+      "country": "Mozambique",
+      "place": "Naphela, Chiure district, Cabo Delgado",
+      "category": "Christian family members abducted",
+      "title": "Nine members of Christian youth worker's family abducted at Naphela",
+      "published_account": "Open Doors interviewed a Christian youth worker who reported that nine members of his family, aged 9 to 35, were captured by militants in Naphela, while two others remained unaccounted for.",
+      "reported_actor": "daesh-affiliated Mozambique insurgents, according to family eyewitness account",
+      "publisher": "Open Doors Australia",
+      "source_url": "https://www.opendoors.org.au/frontline-faith/mozambique-beheadings-and-thousands-displaced/",
+      "notes": "Two additional missing relatives are not added to the nine reported abductees; ages and outcomes remain those reported at the time.",
+      "incident_group": "MOZ-CHIURE-JUL-AUG-2025"
+    },
+    {
       "id": "CT-0067",
       "date": "2025-08-02",
       "country": "United States",
@@ -1601,6 +1629,20 @@
       "media_url": "https://www.blackcatholicmessenger.org/christ-the-king-flint-vandalized/",
       "media_note": "Link to local report; imagery/footage on page must be inspected and licensed before re-use",
       "notes": "USCCB archive contains additional incidents; this workbook extracts a selection."
+    },
+    {
+      "id": "CT-0558",
+      "date": "2025-08-01",
+      "country": "Mozambique",
+      "place": "Marera, Chiure district, Cabo Delgado",
+      "category": "Reported beheadings of Christian civilians",
+      "title": "Fifteen Christians reportedly beheaded fleeing Marera",
+      "published_account": "Open Doors field contacts reported fifteen Christians killed when armed militants intercepted a group fleeing Marera on 1 August and beheaded them. Local church leaders said the victims belonged to a church burnt two days earlier.",
+      "reported_actor": "daesh-affiliated Mozambique insurgents, according to Open Doors local sources",
+      "publisher": "Open Doors Australia",
+      "source_url": "https://www.opendoors.org.au/frontline-faith/mozambique-beheadings-and-thousands-displaced/",
+      "notes": "Victim count and Christian affiliation are explicitly source-attributed. The source links the event to the July 30 church arson but describes a distinct date and killing.",
+      "incident_group": "MOZ-CHIURE-JUL-AUG-2025"
     },
     {
       "id": "CT-0068",
@@ -1655,6 +1697,20 @@
       "id": "CT-0503"
     },
     {
+      "id": "CT-0556",
+      "date": "2025-07-30",
+      "country": "Mozambique",
+      "place": "Muanquina, Nassivare, Chiure district",
+      "category": "Churches burned; Christian homes destroyed",
+      "title": "Two churches, pastor's house and Christian homes burned in Muanquina",
+      "published_account": "Open Doors field contacts reported that militants burned two churches, a prayer house, the pastor's residence and 43 Christian family homes in Muanquina. They reportedly tore up Bibles and religious literature, and the pastor's family fled.",
+      "reported_actor": "daesh-affiliated Mozambique insurgents, according to Open Doors field sources",
+      "publisher": "Open Doors Australia",
+      "source_url": "https://www.opendoors.org.au/frontline-faith/mozambique-beheadings-and-thousands-displaced/",
+      "notes": "Named site and day reported. The attack is part of the July-August 2025 Chiure campaign, which was previously represented only by broader entries.",
+      "incident_group": "MOZ-CHIURE-JUL-AUG-2025"
+    },
+    {
       "id": "CT-0070",
       "date": "2025-07-27",
       "country": "Germany",
@@ -1691,6 +1747,34 @@
       "reported_actor": "ADF rebels linked to islamic state",
       "publisher": "Associated Press / PBS",
       "source_url": "https://www.pbs.org/newshour/world/what-to-know-about-the-attack-on-a-congolese-church-that-killed-nearly-40-worshippers"
+    },
+    {
+      "id": "CT-0555",
+      "date": "2025-07-24",
+      "country": "Mozambique",
+      "place": "Chiure Velho, Cabo Delgado",
+      "category": "Explicit threats against Christian population",
+      "title": "Conversion threats issued in militant video after Chiure Velho attack",
+      "published_account": "Open Doors reported a recorded insurgent statement during attacks in Chiure Velho that directly threatened Christians with suffering unless they converted to Islam.",
+      "reported_actor": "daesh Mozambique affiliate, according to militant footage described by Open Doors",
+      "publisher": "Open Doors Australia",
+      "source_url": "https://www.opendoors.org.au/frontline-faith/mozambique-beheadings-and-thousands-displaced/",
+      "notes": "The raid chiefly damaged police and public infrastructure; this record concerns the reported anti-Christian coercion threats rather than falsely treating the police raid as a church attack.",
+      "incident_group": "MOZ-JULY-2025"
+    },
+    {
+      "id": "CT-0554",
+      "date": "2025-07-22",
+      "country": "Mozambique",
+      "place": "Intutupue near Muaguide River, Cabo Delgado",
+      "category": "Reported killings; militants claimed Christian victims",
+      "title": "Five civilians reportedly beheaded near Muaguide River",
+      "published_account": "Open Doors cited a local news report that five people were beheaded near the Muaguide River and that daesh propaganda described them as five captured Christians.",
+      "reported_actor": "daesh Mozambique affiliate claimed the executions",
+      "publisher": "Open Doors Australia",
+      "source_url": "https://www.opendoors.org.au/frontline-faith/mozambique-beheadings-and-thousands-displaced/",
+      "notes": "Open Doors explicitly says it was unclear whether the five men were Christians. The Christian victim description belongs to militant propaganda, not a confirmed identification.",
+      "incident_group": "MOZ-JULY-2025"
     },
     {
       "id": "CT-0350",
@@ -1803,6 +1887,20 @@
       "notes": "Follow-on incidents distinct from the previously catalogued Ancuabe event; exact dates and numbers not provided.",
       "incident_group": "MOZ-JULY-2025",
       "id": "CT-0502"
+    },
+    {
+      "id": "CT-0557",
+      "date": "2025-07",
+      "country": "Mozambique",
+      "place": "Chiure district, Cabo Delgado",
+      "category": "Reported abduction of Christian pastor",
+      "title": "Pastor reportedly kidnapped during Chiure attacks",
+      "published_account": "Open Doors reported from church sources that a pastor was captured by militants during the late-July attacks in Chiure and was still missing as of 6 August.",
+      "reported_actor": "daesh-affiliated Mozambique insurgents, as alleged by church field sources",
+      "publisher": "Open Doors Australia",
+      "source_url": "https://www.opendoors.org.au/frontline-faith/mozambique-beheadings-and-thousands-displaced/",
+      "notes": "The exact kidnapping day and village are not identified. July 2025 is the surrounding reported attack month, and the case is linked to the wider Chiure campaign rather than presented as separately dated on July 30.",
+      "incident_group": "MOZ-CHIURE-JUL-AUG-2025"
     },
     {
       "id": "CT-0429",
@@ -6305,6 +6403,20 @@
       "id": "CT-0480"
     },
     {
+      "id": "CT-0562",
+      "date": "2015-05",
+      "country": "Syria",
+      "place": "Khabur valley Assyrian Christian villages, Hasakah",
+      "category": "Destruction of crosses; Christian church vandalism",
+      "title": "Destroyed crosses and anti-Christian graffiti found after Khabur occupation",
+      "published_account": "Agenzia Fides reported that after daesh withdrew from the Khabur villages in May 2015, Kurdish and Assyrian formations found damaged churches, broken crosses, anti-Christian graffiti and looted homes.",
+      "reported_actor": "daesh occupation forces, according to returning local observers",
+      "publisher": "Agenzia Fides",
+      "source_url": "https://fides.org/en/news/37885-ASIA_SYRIA_The_jihadists_retreat_from_the_villages_on_the_river_Khabur_leaving_destroyed_crosses_and_vandalized_churches",
+      "notes": "May 2015 is the discovery period, not a precise date of destruction. This is related to CT-0479's broader account of damaged Khabur church sites and is preserved as an attributed observation, not new individual victims.",
+      "incident_group": "SYR-KHABUR-2015"
+    },
+    {
       "country": "Libya",
       "date": "2015-04-19",
       "place": "Libya, locations shown in militant footage",
@@ -6405,6 +6517,20 @@
       "incident_group": "SYR-KHABUR-2015",
       "second_source_url": "https://questions-statements.parliament.uk/written-questions/detail/2015-06-02/HL180",
       "id": "CT-0478"
+    },
+    {
+      "id": "CT-0561",
+      "date": "2015-02-23",
+      "country": "Syria",
+      "place": "Tel Shamiran, Khabur valley, Hasakah",
+      "category": "Assyrian Christians abducted; village occupied",
+      "title": "Assyrian Christian residents abducted in Tel Shamiran",
+      "published_account": "Agenzia Fides quoted Syriac Catholic Archbishop Jacques Behnan Hindo that daesh fighters took Tel Shamiran during the Khabur offensive and captured dozens of Assyrian Christians there and in Tel Hormuz.",
+      "reported_actor": "daesh fighters according to local church leadership",
+      "publisher": "Agenzia Fides",
+      "source_url": "https://fides.org/en/news/37331-ASIA_SYRIA_Islamic_State_jihadists_attack_Christian_villages_along_the_river_Khabur",
+      "notes": "The source provides a combined hostage estimate across Tel Shamiran and Tel Hormuz and does not separate victims per site. Part of broader hostage attack previously reported in CT-0478, so do not interpret as a separate campaign or new victims.",
+      "incident_group": "SYR-KHABUR-2015"
     },
     {
       "id": "CT-0239",

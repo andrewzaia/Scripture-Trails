@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.15.0 - 11/11/2026: Detailed reporting from Mozambique and the Assyrian Khabur villages
+
+- Add nine published source-attributed Christian persecution reports from Mozambique and Syria, extending the archive to 562 reports across 91 countries and territories.
+- Document distinct 2025 reports from Intutupue, Chiure Velho, Muanquina, Marera, Naphela and Memba, including reported Christian killings, church and home destruction, abductions and threats of forced conversion.
+- Expand Assyrian Christian Khabur village reporting about the 2015 Tel Shamiran takeover and damage to churches and religious symbols, retaining links to the existing hostage campaign and avoiding duplicate casualty claims.
+- Preserve publisher qualifications, unconfirmed religious identities and approximate dates; retain the world report heat map, historical release records and locally hosted licensed-image policy.
+
 ## 1.14.0 - 11/11/2026: More attributed Christian persecution reports from Syria, Congo and Nigeria
 
 - Add 18 source-attributed reports of killings, church bombings and destruction, attacks on Catholic health centres, abductions and attacks on Christian communities in Syria, the Democratic Republic of the Congo and Nigeria, increasing the archive to 553 reports across 91 countries and territories.

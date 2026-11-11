@@ -1,9 +1,9 @@
 # Christian persecution geographic coverage audit
 
 Checked: 2026-11-11
-Candidate release: v1.14.0
+Candidate release: v1.15.0
 
-The catalogue now contains 553 published source-attributed report records across 91 countries and territories. This release adds 18 further reports from Syria (3), the Democratic Republic of the Congo (13) and Nigeria (2). Previous v1.13.0 added 30 records and v1.12.0 added 45, while earlier releases established the geographic base.
+The catalogue now contains 562 published source-attributed report records across 91 countries and territories. This release adds nine reports from Mozambique (7) and Syria (2), with source-date precision and overlap annotations. The preceding v1.14.0 added 18 reports, v1.13.0 added 30 and v1.12.0 added 45.
 
 ## Inclusion and counting
 
@@ -38,6 +38,12 @@ The latest batch distinguishes the 24 January 2016 Qamishli restaurant bombing, 
 The new eastern Congo records document separately dated raids from 2020 to July 2026, including Christian churches, aid facilities, worship leaders, conversions alleged in perpetrators' messaging and villages. Nigeria additions include the 2020 aid worker killings with an anti-Christian-conversion message, and an October 2020 allegation of abduction after religious screening. Source qualifications preserve unknown victims' religious identities and distinguish claimed responsibility from established acts.
 
 Published report totals do not equal unique attacks, victims, casualty figures or prevalence. Localities lacking grounded coordinates remain included in country-level map shading without fabricated village pins. Prior multi-incident summaries can overlap narrower dated entries and must not be double-counted as distinct deaths.
+
+### v1.15.0 Mozambique and Khabur source details
+
+Open Doors Australia described Christian homes, churches, a pastor's family and religious books damaged or displaced at Muanquina on 30 July 2025, followed by reports of fifteen Christians beheaded in Marera on 1 August and nine relatives of a Christian youth worker abducted in Naphela on 3 August. The same publication includes a late-July anti-Christian conversion threat and an execution claim in Intutupue; Open Doors cautioned that those victims' Christian religious identities were not independently established. July-only dating is retained for an unspecified pastor abduction.
+
+The separate November 2025 Memba campaign in Chipene and Lurio is not merged with the existing September-October Memba attacks. Agenzia Fides reports concerning Tel Shamiran hostage-taking and damaged Christian symbols in the Khabur valley remain grouped with the existing 2015 Khabur campaign, not treated as new victim counts. These source records improve granularity, not an independently verified total of unique attacks or people affected.
 
 ### Remaining daesh research priorities
 
