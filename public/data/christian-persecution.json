@@ -1711,20 +1711,6 @@
       "incident_group": "MOZ-CHIURE-JUL-AUG-2025"
     },
     {
-      "id": "CT-0557",
-      "date": "2025-07-30",
-      "country": "Mozambique",
-      "place": "Chiure district, Cabo Delgado",
-      "category": "Reported abduction of Christian pastor",
-      "title": "Pastor reportedly kidnapped during Chiure attacks",
-      "published_account": "Open Doors reported from church sources that a pastor was captured by militants during the late-July attacks in Chiure and was still missing as of 6 August.",
-      "reported_actor": "daesh-affiliated Mozambique insurgents, as alleged by church field sources",
-      "publisher": "Open Doors Australia",
-      "source_url": "https://www.opendoors.org.au/frontline-faith/mozambique-beheadings-and-thousands-displaced/",
-      "notes": "The source does not identify a precise kidnapping day or village. July 30 anchors the surrounding attack period, not a confirmed abduction date; the existing group links this to the local campaign.",
-      "incident_group": "MOZ-CHIURE-JUL-AUG-2025"
-    },
-    {
       "id": "CT-0070",
       "date": "2025-07-27",
       "country": "Germany",
@@ -1901,6 +1887,20 @@
       "notes": "Follow-on incidents distinct from the previously catalogued Ancuabe event; exact dates and numbers not provided.",
       "incident_group": "MOZ-JULY-2025",
       "id": "CT-0502"
+    },
+    {
+      "id": "CT-0557",
+      "date": "2025-07",
+      "country": "Mozambique",
+      "place": "Chiure district, Cabo Delgado",
+      "category": "Reported abduction of Christian pastor",
+      "title": "Pastor reportedly kidnapped during Chiure attacks",
+      "published_account": "Open Doors reported from church sources that a pastor was captured by militants during the late-July attacks in Chiure and was still missing as of 6 August.",
+      "reported_actor": "daesh-affiliated Mozambique insurgents, as alleged by church field sources",
+      "publisher": "Open Doors Australia",
+      "source_url": "https://www.opendoors.org.au/frontline-faith/mozambique-beheadings-and-thousands-displaced/",
+      "notes": "The exact kidnapping day and village are not identified. July 2025 is the surrounding reported attack month, and the case is linked to the wider Chiure campaign rather than presented as separately dated on July 30.",
+      "incident_group": "MOZ-CHIURE-JUL-AUG-2025"
     },
     {
       "id": "CT-0429",
