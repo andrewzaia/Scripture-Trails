@@ -39,10 +39,25 @@ export function formatReportDate(value){
  return input;
 }
 const date=formatReportDate;
-function caseCard(r){
+function caseCard(r,photos){
  const c=el('article','','persecution-case');
- c.append(el('p',date(r.date)+' | '+r.country+' | '+r.category+' | '+r.id,'persecution-meta'));
- c.append(el('h3',r.title),el('p',r.place||r.country,'persecution-meta'),el('p',r.published_account,'persecution-account'),el('p','Published by '+r.publisher,'persecution-meta'));
+ const pic=photos.get(r.id);
+ const header=el('div','','persecution-case-header'+(pic?' has-media':''));
+ if(pic){
+  const figure=el('figure','','persecution-photo');
+  const image=el('img');image.src=pic.path;image.alt=pic.alt;image.loading='lazy';image.decoding='async';
+  figure.append(image);
+  const credit=el('figcaption','','persecution-photo-credit');
+  credit.append(el('span',pic.author+' | '));
+  const licence=link(pic.licence,pic.licence_label),source=link(pic.source,'Photo source');
+  if(licence)credit.append(licence);if(source)credit.append(el('span',' | '),source);
+  figure.append(credit);header.append(figure);
+ }
+ const heading=el('div','','persecution-case-heading');
+ heading.append(el('p',date(r.date)+' | '+r.country+' | '+r.category+' | '+r.id,'persecution-meta'),el('h3',r.title),el('p',r.place||r.country,'persecution-meta'));
+ if(pic)heading.append(el('p',pic.caption,'persecution-photo-context'));
+ header.append(heading);c.append(header);
+ c.append(el('p',r.published_account,'persecution-account'),el('p','Published by '+r.publisher,'persecution-meta'));
  if(r.reported_actor)c.append(el('p','Reported actor: '+r.reported_actor,'persecution-meta'));
  const links=el('div','','persecution-links');
  for(const [url,label] of [[r.source_url,'Original report'],[r.second_source_url,'Additional source'],[r.media_url,'Media or coverage']]){
@@ -68,11 +83,11 @@ export function createPersecutionCatalogue(root){
  const search=q('search'),country=q('country'),year=q('year'),kind=q('kind'),sort=q('sort'),mediaOnly=q('media-only');
  const listing=q('list'),count=q('count'),status=q('status'),more=q('more'),mediaDetails=q('media-details'),mediaList=q('media-list');
  const map=createChristianHeatmap(q('map'),{onCountry:selected=>{country.value=selected;search.value='';refresh();},onPlace:(selected,place)=>{country.value=selected;search.value=place;refresh();},onReset:()=>resetControls()});
- let rows=[],media=[],limit=20,pending=null,ready=false;
+ let rows=[],media=[],photoMap=new Map(),limit=20,pending=null,ready=false;
  const options=(select,items)=>{for(const item of items){const o=el('option',item);o.value=item;select.append(o);}};
  function draw(){
   const found=filterPersecutionReports(rows,{query:search.value,country:country.value,year:year.value,kind:kind.value,sort:sort.value,media:mediaOnly.checked});
-  listing.replaceChildren(...found.slice(0,limit).map(caseCard));
+  listing.replaceChildren(...found.slice(0,limit).map(r=>caseCard(r,photoMap)));
   if(!found.length)listing.append(el('p','No reports match these filters.','persecution-empty'));
   count.textContent='Showing '+Math.min(limit,found.length)+' of '+found.length+' matching reports';
   status.textContent=found.length+' matching reports';more.hidden=limit>=found.length;
@@ -98,8 +113,11 @@ export function createPersecutionCatalogue(root){
    status.textContent='Loading reports...';
    pending=Promise.all([
     fetch('/data/christian-persecution.json?v=1.5.0').then(r=>{if(!r.ok)throw Error('Reports unavailable');return r.json();}),
-    fetch('/data/christian-persecution-media.json?v=1.5.0').then(r=>{if(!r.ok)throw Error('Media unavailable');return r.json();})
-   ]).then(([a,b])=>{if(!Array.isArray(a.reports)||!Array.isArray(b.media))throw Error('Invalid data');rows=a.reports;media=b.media;initialise();})
+    fetch('/data/christian-persecution-media.json?v=1.5.0').then(r=>{if(!r.ok)throw Error('Media unavailable');return r.json();}),
+    fetch('/data/christian-persecution-images.json?v=1.5.0').then(r=>{if(!r.ok)throw Error('Image credits unavailable');return r.json();})
+   ]).then(([a,b,c])=>{if(!Array.isArray(a.reports)||!Array.isArray(b.media)||!Array.isArray(c.images))throw Error('Invalid data');rows=a.reports;media=b.media;
+    photoMap=new Map(c.images.filter(x=>/^\/assets\/persecution-media\/[a-z0-9-]+\.jpg$/.test(x.path)).map(x=>[x.report_id,x]));
+    initialise();})
     .catch(error=>{pending=null;status.textContent='Catalogue unavailable. Revisit this page to retry.';console.error(error);});
   }
   await pending;

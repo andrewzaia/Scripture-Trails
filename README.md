@@ -424,17 +424,21 @@ The citation register now contains 85 assessments, including 48 of the 115 expla
 
 Batch `connections-20-02` compares twenty further Gospel and Acts narrative pairs (ce096-ce115). It preserves differences in order, names, account details and wording, and distinguishes multiple accounts within Acts from independent corroboration. Mark's composite opening citation and the manna comparison are clarified in the existing register. Only original editorial notes and bibliographic metadata are bundled; publisher text remains external. The browser/accessibility CI milestone remains open until its declared critical flows actually run in CI.
 
-## Christians worldwide incident archive
+## Christian persecution incident archive
 
-The Christians worldwide page is an open-ended historical reporting archive, not an exhaustive census. The primary dataset is public/data/christian-persecution.json. There is no fixed first or last year for future additions. Each record includes the publisher's summary and original source URL, as well as attributed responsibility and qualifications when reported. The archive now includes Australian sources and older incidents predating 2016.
+The Christian persecution page is an open-ended historical reporting archive, not an exhaustive census. The primary dataset is public/data/christian-persecution.json. There is no fixed first or last year for future additions. Each record includes the publisher's summary and original source URL, as well as attributed responsibility and qualifications when reported. The archive now includes Australian sources and older incidents predating 2016.
 
 Event dates follow the precision in the source: YYYY (year known), YYYY-MM (month known), or YYYY-MM-DD (day known). Do not invent days. New incidents automatically contribute to country heat shading. To show a locality marker, supply an approximate place entry in public/data/christian-heatmap-places.json or explicit locations coordinates. Country-only records remain included in total map counts. Locality coordinates are approximate, not precise attack-site coordinates.
 
 Media index entries are links to third-party publishers, not rights-cleared image copies.
 
+### Locally hosted incident-site media
+
+Only report photographs with verified reuse rights are embedded in incident cards, served from \`public/assets/persecution-media/\` at small thumbnail dimensions. \`public/data/christian-persecution-images.json\` identifies the exact incident, local file, author, licence, Commons file page, image alt text, and whether the photograph was taken before or after an incident. Photos are not labelled as images of an attack when they depict only the location or a later memorial. All other publisher-owned photographs and video remain external links. Do not hotlink them, scrape or copy them into this repository without confirming rights and recording credits first.
+
 ## Christian incident heat map
 
-The Christians worldwide page at `/?view=christian-persecution` uses a locally hosted, interactive world map. Country shading is calculated directly from the current published incident catalogue and includes all reports, including nationwide and unresolved place descriptions. It is a count of published records, not a rate or a severity measure.
+The Christian persecution page at `/?view=christian-persecution` uses a locally hosted, interactive world map. Country shading is calculated directly from the current published incident catalogue and includes all reports, including nationwide and unresolved place descriptions. It is a count of published records, not a rate or a severity measure.
 
 - `public/data/christian-persecution.json` is the source of report counts and reporting dates.
 - `public/data/world-heatmap-110m.json` provides Natural Earth country boundaries (public domain).
