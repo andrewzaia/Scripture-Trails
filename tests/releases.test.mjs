@@ -56,7 +56,7 @@ test('missing, reversed and skipped historical patch versions are rejected',()=>
 test('npm run release keeps npm lockfile, package and the website release history in sync',()=>{
  const temp=mkdtempSync(join(tmpdir(),'scripture-release-'));
  const root=new URL('../',import.meta.url).pathname;
- const required=['package.json','package-lock.json','CHANGELOG.md','public/data/releases.json','public/index.html','public/assets/app.js','public/assets/graph.js','public/assets/entity-index.js','public/assets/connection-evidence.js','public/assets/notebook-backup.js','public/assets/reading-plans.js','public/assets/study-collections.js','public/assets/annotations.js','public/assets/jesus-map.js','public/assets/atlas-comparison.js','public/assets/citation-review.js','scripts/release.mjs','scripts/versioning.mjs'];
+ const required=['package.json','package-lock.json','CHANGELOG.md','public/data/releases.json','public/index.html','public/assets/app.js','public/assets/graph.js','public/assets/entity-index.js','public/assets/connection-evidence.js','public/assets/notebook-backup.js','public/assets/reading-plans.js','public/assets/study-collections.js','public/assets/annotations.js','public/assets/jesus-map.js','public/assets/atlas-comparison.js','public/assets/citation-review.js','public/assets/persecution-catalogue.js','scripts/release.mjs','scripts/versioning.mjs'];
  try{
   for(const path of required){mkdirSync(join(temp,dirname(path)),{recursive:true});cpSync(new URL('../'+path,import.meta.url),join(temp,path));}
   const output=execFileSync('npm',['run','release','--','patch','Synthetic patch verification','Checks release metadata alignment'],{cwd:temp,encoding:'utf8'});
