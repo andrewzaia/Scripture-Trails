@@ -283,6 +283,20 @@
       "notes": "Single publisher case summary; no independent adjudication undertaken."
     },
     {
+      "id": "CT-0551",
+      "date": "2026-07-14",
+      "country": "Democratic Republic of the Congo",
+      "place": "Mangina rural commune, Beni territory",
+      "title": "Church elder and worship leader killed in Mangina",
+      "published_account": "Open Doors reported six people killed and six injured in a Mangina attack, including a Christian church elder and worship leader; the attack also burned houses.",
+      "reported_actor": "daesh-affiliated allied democratic forces (adf) per local Christian field reports",
+      "publisher": "Open Doors UK & Ireland",
+      "source_url": "https://www.opendoorsuk.org/news/latest-news/drc-christians-killed/",
+      "notes": "Two victims identified as church leaders; not all six deceased were documented as Christian. Separate from July 12 and 16 reports.",
+      "incident_group": "COD-MANGINA-2026",
+      "category": "Christian religious leaders killed"
+    },
+    {
       "id": "CT-0014",
       "date": "2026-07-10",
       "country": "France",
@@ -1075,6 +1089,20 @@
       "notes": "USCCB archive contains additional incidents; this workbook extracts a selection."
     },
     {
+      "id": "CT-0549",
+      "date": "2025-11-13",
+      "country": "Democratic Republic of the Congo",
+      "place": "Near Mayba, North Kivu",
+      "title": "Three Christians killed near Mayba",
+      "published_account": "Open Doors reported adf fighters killed three Christian residents near Mayba on 13 November 2025.",
+      "reported_actor": "daesh-affiliated allied democratic forces (adf) per Open Doors",
+      "publisher": "Open Doors UK & Ireland",
+      "source_url": "https://www.opendoorsuk.org/news/latest-news/drc-attacks-displacement/",
+      "notes": "Near Mayba is a reported geographic description, not an exact attack-site pin.",
+      "incident_group": "COD-NOV-2025",
+      "category": "Christian civilians murdered"
+    },
+    {
       "id": "CT-0322",
       "country": "Bangladesh",
       "date": "2025-11-08",
@@ -1140,6 +1168,20 @@
       "publisher": "Forum 18",
       "source_url": "https://www.forum18.org/archive.php?article_id=3019",
       "notes": "The source says no fines had been imposed at the time of reporting. Month-only event date."
+    },
+    {
+      "id": "CT-0550",
+      "date": "2025-11",
+      "country": "Democratic Republic of the Congo",
+      "place": "Byambwe, North Kivu",
+      "title": "At least eighteen killed at Catholic health centre in Byambwe",
+      "published_account": "Open Doors reported that adf militants killed at least eighteen people, largely patients of a Catholic-run health centre, burned the building and abducted staff in Byambwe.",
+      "reported_actor": "daesh-affiliated allied democratic forces (adf) according to local Open Doors partners",
+      "publisher": "Open Doors UK & Ireland",
+      "source_url": "https://www.opendoorsuk.org/news/latest-news/drc-attacks-displacement/",
+      "notes": "Attack followed the November 13 Mayba case and was reported within the 13-15 November period, but an exact day was not established.",
+      "incident_group": "COD-NOV-2025",
+      "category": "Catholic health centre killings and abductions"
     },
     {
       "id": "CT-0052",
@@ -1295,6 +1337,20 @@
       "notes": "Claims of destruction are attributed; October marks end of reported multi-day period and is not a single date.",
       "incident_group": "MOZ-MEMBA-2025",
       "category": "Church destruction and displacement"
+    },
+    {
+      "id": "CT-0548",
+      "date": "2025-10",
+      "country": "Democratic Republic of the Congo",
+      "place": "Gwado near Manguredjipa, North Kivu",
+      "title": "Eight Christians killed in Gwado village raid",
+      "published_account": "Open Doors reported eight Christians murdered during a late-October adf attack in Gwado, with homes destroyed and residents displaced.",
+      "reported_actor": "daesh-affiliated allied democratic forces (adf) according to Open Doors",
+      "publisher": "Open Doors UK & Ireland",
+      "source_url": "https://www.opendoorsuk.org/news/latest-news/drc-attacks-displacement/",
+      "notes": "The publication specifies late October but not the day; month-only date is deliberate.",
+      "incident_group": "COD-GWADO-2025",
+      "category": "Christian civilians killed; homes destroyed"
     },
     {
       "id": "CT-0253",
@@ -4082,6 +4138,48 @@
       "source_url": "https://2021-2025.state.gov/reports/2023-report-on-international-religious-freedom/burkina-faso/"
     },
     {
+      "id": "CT-0547",
+      "date": "2023-05-14",
+      "country": "Democratic Republic of the Congo",
+      "place": "Kasindi-Beni road, North Kivu",
+      "title": "Christian congregant Paluku Luc killed in burned vehicle",
+      "published_account": "Open Doors reported militants set a fish delivery vehicle alight, killing church member Paluku Luc and another traveller who were trapped inside.",
+      "reported_actor": "daesh-affiliated allied democratic forces (adf) according to Christian witnesses",
+      "publisher": "Open Doors UK & Ireland",
+      "source_url": "https://www.opendoorsuk.org/news/latest-news/drc-attacks/",
+      "notes": "A third distinct episode in the May 12-14 series. The other traveller's religion was not independently identified.",
+      "incident_group": "COD-BENI-MAY-2023",
+      "category": "Christian congregant killed in vehicle attack"
+    },
+    {
+      "id": "CT-0546",
+      "date": "2023-05-13",
+      "country": "Democratic Republic of the Congo",
+      "place": "Katongo village, Beni territory",
+      "title": "Three Christians murdered in Katongo village",
+      "published_account": "Open Doors reported three Christian residents killed in an attack on Katongo, confirmed to its partners by a local Christian pastor.",
+      "reported_actor": "daesh-affiliated allied democratic forces (adf) according to Open Doors",
+      "publisher": "Open Doors UK & Ireland",
+      "source_url": "https://www.opendoorsuk.org/news/latest-news/drc-attacks/",
+      "notes": "Separate village and date from the May 12 bridge killing.",
+      "incident_group": "COD-BENI-MAY-2023",
+      "category": "Christian civilians killed in village raid"
+    },
+    {
+      "id": "CT-0545",
+      "date": "2023-05-12",
+      "country": "Democratic Republic of the Congo",
+      "place": "Kasindi-Lubiriha bridge, Beni territory",
+      "title": "Three Christians killed at Kasindi-Lubiriha bridge",
+      "published_account": "Open Doors cited local field reports that adf fighters intercepted travellers near a bridge and killed three Christians while burning vehicles.",
+      "reported_actor": "daesh-affiliated allied democratic forces (adf) according to Open Doors local partners",
+      "publisher": "Open Doors UK & Ireland",
+      "source_url": "https://www.opendoorsuk.org/news/latest-news/drc-attacks/",
+      "notes": "Distinct first attack of a three-day series from 12 to 14 May.",
+      "incident_group": "COD-BENI-MAY-2023",
+      "category": "Christian civilians killed in road attack"
+    },
+    {
       "id": "CT-0371",
       "country": "Chad",
       "date": "2023-05-08",
@@ -4600,6 +4698,20 @@
       "notes": "Date is disappearance, not a confirmed date of death. No independent determination of motive or perpetrators."
     },
     {
+      "id": "CT-0544",
+      "date": "2022-10-19",
+      "country": "Democratic Republic of the Congo",
+      "place": "Catholic mission hospital, Maboya",
+      "title": "Catholic sister killed in Maboya mission hospital attack",
+      "published_account": "Caritas Congo and Catholic sources reported that adf fighters burned a Catholic-run hospital during the night of 19-20 October, killing sister Marie-Sylvie Kavuke Vakatsuraki and other civilians; a Protestant clinic was also attacked.",
+      "reported_actor": "daesh-affiliated allied democratic forces (adf) according to church and local authorities",
+      "publisher": "Caritas Congo",
+      "source_url": "https://web.caritasdev.cd/2022/10/21/nord-kivu-des-corps-sans-vie-des-personnes-portees-disparues-et-degats-materiels-enregistres-apres-une-incursion-attribuee-aux-adf-pres-de-beni/",
+      "notes": "Accounts cited seven total fatalities, with differing facility-level details; this is one overnight campaign, not per-patient reports.",
+      "incident_group": "COD-MABOYA-2022",
+      "category": "Catholic mission hospital destroyed; nun killed"
+    },
+    {
       "id": "CT-0526",
       "date": "2022-10-16",
       "country": "Nigeria",
@@ -4732,6 +4844,20 @@
       "notes": "Source gives only year or month. No exact day has been inferred."
     },
     {
+      "id": "CT-0543",
+      "date": "2022-06-21",
+      "country": "Democratic Republic of the Congo",
+      "place": "Makisabo, Beni territory",
+      "title": "Christian passengers killed in Makisabo road ambush",
+      "published_account": "International Christian Concern reported more than ten Christians killed when attackers stopped and shot passengers in three vehicles on the Kasindi-Beni road, then burned the vehicles.",
+      "reported_actor": "Suspected daesh-affiliated allied democratic forces (adf) according to local witnesses",
+      "publisher": "International Christian Concern",
+      "source_url": "https://persecution.org/2022/06/22/at-least-10-christians-killed-in-drc-attack/",
+      "notes": "The attack was 21 June; source published 22 June. Casualty and victim-identification claims remain attributed.",
+      "incident_group": "COD-MAKISABO-2022",
+      "category": "Road ambush; Christians killed"
+    },
+    {
       "id": "CT-0134",
       "date": "2022-06-05",
       "country": "Nigeria",
@@ -4746,6 +4872,20 @@
       "media_type": "Incident photographs",
       "media_url": "https://abcnews.com/International/35-killed-satanic-attack-catholic-church-nigeria-officials/story?id=85208528",
       "media_note": "AP photograph of church after attack"
+    },
+    {
+      "id": "CT-0542",
+      "date": "2022-05-29",
+      "country": "Democratic Republic of the Congo",
+      "place": "Bulongo, North Kivu",
+      "title": "Bulongo massacre claimed as killing of Christians",
+      "published_account": "Reuters reported at least fifteen villagers killed in Bulongo; daesh claimed its fighters had killed almost twenty Christians after attacking homes and vehicles.",
+      "reported_actor": "daesh responsibility claim; local witnesses suspected adf",
+      "publisher": "Reuters via VOA",
+      "source_url": "https://www.voanews.com/a/islamic-state-claims-responsibility-for-killing-15-in-east-congo-village-/6597670.html",
+      "notes": "The claim that victims were specifically Christian comes from the militants; published independently as a mass civilian killing.",
+      "incident_group": "COD-BULONGO-2022",
+      "category": "Claimed anti-Christian massacre"
     },
     {
       "id": "CT-0525",
@@ -4950,6 +5090,20 @@
       "media_note": "Forensic scene photograph credited AFP"
     },
     {
+      "id": "CT-0541",
+      "date": "2021-02-14",
+      "country": "Democratic Republic of the Congo",
+      "place": "Ndalya, Ituri",
+      "title": "Catholic church burned during deadly raid on Ndalya",
+      "published_account": "Reuters reported thirteen civilians and three soldiers killed during a raid in Ndalya, where attackers burned a Catholic church. The army suspected adf but responsibility remained unresolved.",
+      "reported_actor": "adf suspected by Congolese army, not conclusively identified",
+      "publisher": "Reuters via China Daily Hong Kong",
+      "source_url": "https://www.chinadailyhk.com/hk/article/157850",
+      "notes": "The report distinguishes thirteen civilian and three military casualties; it does not establish every victim's religion.",
+      "incident_group": "COD-NDALYA-2021",
+      "category": "Church arson; civilian killings"
+    },
+    {
       "id": "CT-0333",
       "country": "Uganda",
       "date": "2020-12-07",
@@ -4977,6 +5131,20 @@
       "category": "Church arson and murder"
     },
     {
+      "id": "CT-0540",
+      "date": "2020-10-30",
+      "country": "Democratic Republic of the Congo",
+      "place": "Lisasa village, North Kivu",
+      "title": "Church desecrated and villagers murdered in Lisasa",
+      "published_account": "Barnabas Aid reported more than twenty people killed, a church desecrated, houses burned and residents abducted during a raid on Lisasa village.",
+      "reported_actor": "Suspected daesh-affiliated allied democratic forces (adf), according to local witnesses",
+      "publisher": "Barnabas Aid",
+      "source_url": "https://www.barnabasaid.org/au/news/at-least-20-killed-church-desecrated-as-islamic-militants-suspected-in-a/",
+      "notes": "Published accounts reported roughly twenty to twenty-one killed; casualties are publisher-attributed and the site differs from Baeti.",
+      "incident_group": "COD-LISASA-2020",
+      "category": "Church desecration; killing and abductions"
+    },
+    {
       "id": "CT-0139",
       "date": "2020-10-29",
       "country": "France",
@@ -4991,6 +5159,34 @@
       "media_type": "Photographs",
       "media_url": "https://www.abc.net.au/news/2020-10-29/france-nice-knife-attack-three-dead-several-injured/12828942",
       "media_note": "Reuters site photographs in article"
+    },
+    {
+      "id": "CT-0553",
+      "date": "2020-10-29",
+      "country": "Nigeria",
+      "place": "Maiduguri-Damaturu highway, Borno State",
+      "title": "Three travellers reportedly identified as Christians abducted at checkpoint",
+      "published_account": "The US State Department cited reports that suspected daesh west africa operatives abducted three passengers after identifying them as Christians, two of them local NGO aid staff.",
+      "reported_actor": "Suspected daesh west africa affiliate operatives",
+      "publisher": "US Department of State",
+      "source_url": "https://2021-2025.state.gov/reports/2020-report-on-international-religious-freedom/nigeria/",
+      "notes": "Two of the reported captives were believed to remain missing at year-end. This is an abduction report, not a documented killing.",
+      "incident_group": "NGA-CHECKPOINT-2020",
+      "category": "Religious screening and abduction"
+    },
+    {
+      "id": "CT-0539",
+      "date": "2020-10-28",
+      "country": "Democratic Republic of the Congo",
+      "place": "Baeti village, North Kivu",
+      "title": "At least eighteen civilians killed and church burned in Baeti",
+      "published_account": "Reuters reported that fighters suspected of belonging to adf killed at least eighteen villagers and burned a church in Baeti near Oicha; the army confirmed a raid but not the reported death count.",
+      "reported_actor": "Suspected daesh-affiliated allied democratic forces (adf); daesh responsibility claim cited by State Department",
+      "publisher": "Reuters via Daily Maverick",
+      "source_url": "https://www.dailymaverick.co.za/article/2020-10-29-suspected-islamists-kill-18-torch-church-in-east-congo/",
+      "notes": "Victims' individual faiths are not established. This attack is not the separate Lisasa raid two days later.",
+      "incident_group": "COD-BAETI-2020",
+      "category": "Church destruction; civilian massacre"
     },
     {
       "id": "CT-0418",
@@ -5043,6 +5239,20 @@
       "source_url": "https://www.ecoi.net/en/document/2051558.html",
       "incident_group": "CHINA-CROSSES-2020",
       "notes": "Aggregate claim from reporting, not 900 individually catalogued records."
+    },
+    {
+      "id": "CT-0552",
+      "date": "2020-07",
+      "country": "Nigeria",
+      "place": "Monguno-Maiduguri road, Borno State",
+      "title": "Five kidnapped aid workers executed following Christian-conversion warning",
+      "published_account": "USCIRF reported that five captured aid and security workers were executed by the daesh west africa affiliate, whose statement cast the action as a warning against converting Muslims to Christianity.",
+      "reported_actor": "daesh west africa affiliate claimed responsibility",
+      "publisher": "US Commission on International Religious Freedom",
+      "source_url": "https://www.uscirf.gov/release-statements/uscirf-condemns-execution-aid-workers-iswap-militants",
+      "notes": "The sources did not identify every victim as Christian. USCIRF gave July 19; the video appeared July 22, so no exact death date is imposed.",
+      "incident_group": "NGA-AID-2020",
+      "category": "Aid worker executions framed as anti-Christian threats"
     },
     {
       "id": "CT-0141",
@@ -5126,6 +5336,20 @@
       "publisher": "Associated Press via Spectrum News",
       "source_url": "https://spectrumlocalnews.com/ap-top-news/2019/11/08/chilean-catholic-church-looted-by-vandals-as-protests-rage",
       "notes": "Different event from the 18 October 2020 arson of the same parish building."
+    },
+    {
+      "id": "CT-0538",
+      "date": "2019-07-11",
+      "country": "Syria",
+      "place": "Virgin Mary Syriac Orthodox church, Qamishli",
+      "title": "Car bomb damages Syriac Orthodox church in Qamishli",
+      "published_account": "Agenzia Fides described a car bomb explosion at the Syriac Orthodox Virgin Mary church in Qamishli, injuring more than ten people and damaging the building.",
+      "reported_actor": "daesh claim circulated online but was not officially confirmed",
+      "publisher": "Agenzia Fides",
+      "source_url": "https://www.fides.org/en/news/66353-ASIA_SYRIA_Attack_on_a_Syrian_Orthodox_church_in_Qamishli_More_than_ten_wounded",
+      "notes": "A circulated militant responsibility claim was expressly described by the publisher as unconfirmed.",
+      "incident_group": "SYR-QAMISHLI-2019",
+      "category": "Church bombing; Christian civilians injured"
     },
     {
       "id": "CT-0144",
@@ -5834,6 +6058,20 @@
       "category": "Killing of Coptic priest"
     },
     {
+      "id": "CT-0537",
+      "date": "2016-06-19",
+      "country": "Syria",
+      "place": "Sayfo commemoration, Qamishli",
+      "title": "Suicide bombing strikes Assyrian genocide memorial gathering",
+      "published_account": "Agenzia Fides reported that a bomber detonated explosives after being blocked from entering a Sayfo memorial meeting attended by Syriac Orthodox Patriarch Ignatius Aphrem II, killing three people.",
+      "reported_actor": "Unidentified suicide attacker; no established group claim",
+      "publisher": "Agenzia Fides",
+      "source_url": "https://www.fides.org/en/news/60270-ASIA_SYRIA_Three_people_killed_in_a_suicide_attack_Patriarch_Ignatius_Ephraim_II_escapes_the_bombing",
+      "notes": "The publisher stated that the attack was unclaimed; this record does not establish daesh responsibility.",
+      "incident_group": "SYR-QAMISHLI-2016",
+      "category": "Bombing of Assyrian Christian gathering"
+    },
+    {
       "id": "CT-0508",
       "date": "2016-06-05",
       "country": "Bangladesh",
@@ -5912,6 +6150,20 @@
       "publisher": "Agenzia Fides",
       "source_url": "https://www.fides.org/en/news/59563-ASIA_YEMEN_Terrorist_attack_kills_4_Mother_Teresa_Sisters_together_with_helpers_and_elderly_patients_in_care",
       "notes": "A religiously administered facility was attacked; no authoritative perpetrator finding in the initial report."
+    },
+    {
+      "id": "CT-0536",
+      "date": "2016-01-24",
+      "country": "Syria",
+      "place": "Miami Street, Qamishli",
+      "title": "Three Christians killed in Qamishli restaurant motorcycle bombing",
+      "published_account": "Agenzia Fides reported that a motorcycle bomb killed three Christians and injured ten people in Qamishli's Christian quarter. A Catholic archbishop reported competing allegations about responsibility.",
+      "reported_actor": "Perpetrators disputed; daesh responsibility rumoured, not established",
+      "publisher": "Agenzia Fides",
+      "source_url": "https://www.fides.org/en/news/59253-ASIA_SYRIA_Attack_in_the_Christian_area_in_Qamishli_3_dead_and_10_wounded",
+      "notes": "The victims were reported as one Chaldean and two Syriac Orthodox Christians. The publisher explicitly disputed the attribution.",
+      "incident_group": "SYR-QAMISHLI-2016",
+      "category": "Bombing of Christian civilians"
     },
     {
       "id": "CT-0506",
