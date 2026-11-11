@@ -77,8 +77,8 @@ export function createPersecutionCatalogue(root){
   if(!pending){
    status.textContent='Loading reports...';
    pending=Promise.all([
-    fetch('/data/christian-persecution.json?v=1.2.1').then(r=>{if(!r.ok)throw Error('Reports unavailable');return r.json();}),
-    fetch('/data/christian-persecution-media.json?v=1.2.1').then(r=>{if(!r.ok)throw Error('Media unavailable');return r.json();})
+    fetch('/data/christian-persecution.json?v=1.3.0').then(r=>{if(!r.ok)throw Error('Reports unavailable');return r.json();}),
+    fetch('/data/christian-persecution-media.json?v=1.3.0').then(r=>{if(!r.ok)throw Error('Media unavailable');return r.json();})
    ]).then(([a,b])=>{if(!Array.isArray(a.reports)||!Array.isArray(b.media))throw Error('Invalid data');rows=a.reports;media=b.media;initialise();})
     .catch(error=>{pending=null;status.textContent='Catalogue unavailable. Revisit this page to retry.';console.error(error);});
   }
