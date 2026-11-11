@@ -45,7 +45,9 @@ test('map reset clears locality and active catalogue filters without scrolling t
  await expect(page.locator('[data-pc-map]')).toHaveAttribute('data-ready','true');
  await page.locator('[data-pc-year]').selectOption('2026');
  await page.locator('[data-pc-map-layer]').selectOption('localities');
- await page.locator('.pc-map-marker').first().click();
+ const marker=page.locator('.pc-map-marker').first();
+ await marker.focus();
+ await page.keyboard.press('Enter');
  await expect(page.locator('[data-pc-country]')).not.toHaveValue('');
  await page.locator('[data-pc-map-reset]').click();
  await expect(page.locator('[data-pc-year]')).toHaveValue('');
