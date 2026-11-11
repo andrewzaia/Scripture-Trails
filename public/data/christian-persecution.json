@@ -2915,7 +2915,8 @@
       "reported_actor": "Cause of death disputed; police accused of earlier intimidation by advocates",
       "publisher": "International Christian Concern",
       "source_url": "https://persecution.org/2024/03/25/pastor-dead-in-northern-vietnam-following-forced-denunciation-of-faith/",
-      "notes": "Official suicide determination and alternative allegations are separately attributed; do not label death a proven killing."
+      "notes": "Official suicide determination and alternative allegations are separately attributed; do not label death a proven killing.",
+      "second_source_url": "https://www.opendoors.org.za/open-doors-calls-for-urgent-investigation-in-drc/"
     },
     {
       "id": "CT-0359",
@@ -3148,7 +3149,7 @@
     {
       "id": "CT-0423",
       "country": "Guatemala",
-      "date": "2024-01-02",
+      "date": "2024-01",
       "place": "Champerico, Retalhuleu",
       "category": "Killing of evangelical pastor",
       "title": "Pastor Gonzalo Tuna Pozuelos shot at home",
