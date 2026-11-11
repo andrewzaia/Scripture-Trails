@@ -327,8 +327,8 @@ test('seven newly represented countries preserve incident-level and aggregate at
 test('daesh-linked expansion retains 45 distinct sourced report records and historical archive',()=>{
  const added=records.filter(r=>Number(r.id.slice(3))>=461&&Number(r.id.slice(3))<=505);
  assert.equal(added.length,45);
- assert.equal(records.length,553);
- assert.equal(new Set(records.map(x=>x.id)).size,553);
+ assert.equal(records.length,568);
+ assert.equal(new Set(records.map(x=>x.id)).size,568);
  assert.equal(new Set(records.map(x=>x.country)).size,91);
  const expected={Iraq:16,Syria:8,Libya:2,Egypt:3,Nigeria:5,'Democratic Republic of the Congo':3,Mozambique:6,Philippines:2};
  for(const [country,count] of Object.entries(expected)){
@@ -352,17 +352,17 @@ test('daesh-linked expansion retains 45 distinct sourced report records and hist
  assert.ok(added.some(r=>r.country==='Philippines'&&r.date==='2023-12-03'));
  const geo=JSON.parse(read('public/data/christian-heatmap-places.json'));
  const totals=aggregateIncidentLocations(records,geo);
- assert.equal(totals.reportCount,553);
- assert.equal([...totals.countries.values()].reduce((n,v)=>n+v,0),553);
- assert.equal(totals.located+totals.withoutLocality,553);
+ assert.equal(totals.reportCount,568);
+ assert.equal([...totals.countries.values()].reduce((n,v)=>n+v,0),568);
+ assert.equal(totals.located+totals.withoutLocality,568);
  assert.ok(totals.countries.get('Iraq')>=16);
 });
 
 test('thirty further daesh-related reports preserve provenance and report-based map counts',()=>{
  const fresh=records.filter(r=>Number(r.id.slice(3))>=506&&Number(r.id.slice(3))<=535);
  assert.equal(fresh.length,30);
- assert.equal(records.length,553);
- assert.equal(new Set(records.map(r=>r.id)).size,553);
+ assert.equal(records.length,568);
+ assert.equal(new Set(records.map(r=>r.id)).size,568);
  assert.equal(new Set(records.map(r=>r.country)).size,91);
  const expected={Bangladesh:4,Egypt:8,Pakistan:2,Indonesia:2,Syria:2,Nigeria:2,'Democratic Republic of the Congo':3,Mozambique:3,Iraq:3,France:1};
  for(const [country,count] of Object.entries(expected)){
@@ -386,15 +386,15 @@ test('thirty further daesh-related reports preserve provenance and report-based 
  assert.ok(egypt.every(r=>r.notes.includes('CT-0248')||r.date==='2017-05-06'));
  const geo=JSON.parse(read('public/data/christian-heatmap-places.json'));
  const totals=aggregateIncidentLocations(records,geo);
- assert.equal(totals.reportCount,553);
- assert.equal([...totals.countries.values()].reduce((s,n)=>s+n,0),553);
- assert.equal(totals.located+totals.withoutLocality,553);
+ assert.equal(totals.reportCount,568);
+ assert.equal([...totals.countries.values()].reduce((s,n)=>s+n,0),568);
+ assert.equal(totals.located+totals.withoutLocality,568);
 });
 
 test('second daesh-related research batch adds 18 fully attributed records while retaining earlier reports',()=>{
  const added=records.filter(r=>Number(r.id.slice(3))>=536&&Number(r.id.slice(3))<=553);
- assert.equal(records.length,553);
- assert.equal(new Set(records.map(r=>r.id)).size,553);
+ assert.equal(records.length,568);
+ assert.equal(new Set(records.map(r=>r.id)).size,568);
  assert.equal(new Set(records.map(r=>r.country)).size,91);
  assert.equal(added.length,18);
  const byCountry={Syria:3,'Democratic Republic of the Congo':13,Nigeria:2};
@@ -417,7 +417,40 @@ test('second daesh-related research batch adds 18 fully attributed records while
  assert.ok(drc.some(r=>r.date==='2025-11'&&r.notes.includes('exact day')));
  const geo=JSON.parse(read('public/data/christian-heatmap-places.json'));
  const totals=aggregateIncidentLocations(records,geo);
- assert.equal(totals.reportCount,553);
- assert.equal([...totals.countries.values()].reduce((s,n)=>s+n,0),553);
- assert.equal(totals.located+totals.withoutLocality,553);
+ assert.equal(totals.reportCount,568);
+ assert.equal([...totals.countries.values()].reduce((s,n)=>s+n,0),568);
+ assert.equal(totals.located+totals.withoutLocality,568);
+});
+
+test('fifteen Nineveh site reports preserve source provenance and honest settlement-centre pins',()=>{
+ const added=records.filter(r=>Number(r.id.slice(3))>=554&&Number(r.id.slice(3))<=568);
+ assert.equal(records.length,568);
+ assert.equal(new Set(records.map(r=>r.id)).size,568);
+ assert.equal(new Set(records.map(r=>r.country)).size,91);
+ assert.equal(added.length,15);
+ assert.ok(added.every(r=>r.country==='Iraq'));
+ const sites=new Set(added.map(r=>r.locations?.[0]?.name));
+ assert.deepEqual([...sites].sort(),['Bartella','Karamlesh','Mosul','Qaraqosh','Tel Keppe']);
+ const groups=new Map();
+ for(const r of added){
+  assert.match(r.id,/^CT-\d{4}$/);
+  assert.match(r.date,/^\d{4}(?:-\d{2}(?:-\d{2})?)?$/);
+  assert.ok(r.category&&r.title&&r.published_account&&r.publisher&&r.reported_actor&&r.notes&&r.incident_group);
+  assert.equal(new URL(r.source_url).protocol,'https:');
+  assert.equal(r.locations?.length,1,'No invented multi-site pins');
+  assert.equal(r.locations[0].precision,'city','Use city centres, never church coordinates');
+  assert.ok(Number.isFinite(r.locations[0].lat)&&Number.isFinite(r.locations[0].lon));
+  assert.doesNotMatch([r.title,r.published_account,r.reported_actor,r.notes].join(' '),/\b(?:ISIS|ISIL|Daesh|Islamic State|ISWAP)\b/);
+  groups.set(r.incident_group,(groups.get(r.incident_group)||0)+1);
+ }
+ assert.ok(groups.get('IRQ-QARAQOSH-AL-TAHIRA')===2,'Two episodes at same church must share group');
+ assert.ok(added.some(r=>r.title.includes('Clock Church library')&&r.notes.includes('CT-0534')));
+ assert.ok(added.some(r=>r.title.includes('Mart Shmoni')));
+ assert.ok(added.some(r=>r.locations?.[0]?.name==='Tel Keppe'));
+ const geo=JSON.parse(read('public/data/christian-heatmap-places.json'));
+ const totals=aggregateIncidentLocations(records,geo);
+ assert.equal(totals.reportCount,568);
+ assert.equal([...totals.countries.values()].reduce((s,n)=>s+n,0),568);
+ assert.equal(totals.located+totals.withoutLocality,568);
+ for(const name of sites)assert.ok(totals.places.some(p=>p.country==='Iraq'&&p.label===name),'Missing town-centre pin '+name);
 });

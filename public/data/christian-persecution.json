@@ -6029,6 +6029,28 @@
       "notes": "Source-attributed 2016 regulatory claim, not an independently adjudicated individual church closure."
     },
     {
+      "id": "CT-0559",
+      "date": "2016-10",
+      "country": "Iraq",
+      "place": "Great al-Tahira church, Qaraqosh",
+      "category": "Church arson",
+      "title": "Great al-Tahira church set on fire near end of occupation",
+      "published_account": "UNITAD documented that daesh members set parts of al-Tahira church on fire at the beginning of October 2016 before Qaraqosh was retaken later that month.",
+      "reported_actor": "daesh, as documented by UNITAD",
+      "publisher": "United Nations - UNITAD",
+      "source_url": "https://www.unitad.un.org/sites/www.unitad.un.org/files/20240914_dch_public_final_2.pdf",
+      "notes": "The month is grounded; exact day and the portions burned are not stated. This is a later distinct arson episode at the complex described in the 2014 chapel occupation record.",
+      "incident_group": "IRQ-QARAQOSH-AL-TAHIRA",
+      "locations": [
+        {
+          "name": "Qaraqosh",
+          "lat": 36.271,
+          "lon": 43.3764,
+          "precision": "city"
+        }
+      ]
+    },
+    {
       "id": "CT-0510",
       "date": "2016-07-26",
       "country": "France",
@@ -6530,6 +6552,28 @@
       "notes": "Account and attribution are according to the cited publisher; incident categorisation does not independently determine perpetrator identity or motive."
     },
     {
+      "id": "CT-0557",
+      "date": "2014-12",
+      "country": "Iraq",
+      "place": "St George Catholic monastery, Mosul",
+      "category": "Monastery desecration and detention use",
+      "title": "St George Catholic monastery crosses removed and site used for detention",
+      "published_account": "UNITAD reported the monastery had been used as a detention centre and its roof and dome crosses removed in December 2014, with additional damage recorded in March 2015 and reported desecration of the adjacent cemetery.",
+      "reported_actor": "daesh, as documented by UNITAD",
+      "publisher": "United Nations - UNITAD",
+      "source_url": "https://www.unitad.un.org/sites/www.unitad.un.org/files/20240914_dch_public_final_2.pdf",
+      "notes": "The reported 150 detainees included Muslims opposing daesh; this record documents seizure and damage of Christian property, not a claim that all detainees were Christian.",
+      "incident_group": "IRQ-MOSUL-ST-GEORGE-2014",
+      "locations": [
+        {
+          "name": "Mosul",
+          "lat": 36.3416,
+          "lon": 43.1291,
+          "precision": "city"
+        }
+      ]
+    },
+    {
       "id": "CT-0252",
       "date": "2014-11-22",
       "country": "Kenya",
@@ -6566,6 +6610,28 @@
       "publisher": "Sydney Anglicans",
       "source_url": "https://sydneyanglicans.net/news/st-judes-carlton-damaged-by-fire",
       "notes": "Source gives only year or month. No exact day has been inferred."
+    },
+    {
+      "id": "CT-0558",
+      "date": "2014-09",
+      "country": "Iraq",
+      "place": "Great and Ancient al-Tahira Churches, Qaraqosh",
+      "category": "Destruction of Christian scripture; chapel seizure",
+      "title": "Bibles burned and al-Tahira chapels converted into militant training facilities",
+      "published_account": "UNITAD reported that militants burned Christian Bibles at the al-Tahira complex around September 2014 and used three chapels, including Mar Abdelhad, Sacred Heart of Jesus and Immaculate Conception, as training facilities.",
+      "reported_actor": "daesh, as documented by UNITAD",
+      "publisher": "United Nations - UNITAD",
+      "source_url": "https://www.unitad.un.org/sites/www.unitad.un.org/files/20240914_dch_public_final_2.pdf",
+      "notes": "Bible burning has an approximate month. The precise dates of the reported chapel occupations are not established; the entry is one property-complex report.",
+      "incident_group": "IRQ-QARAQOSH-AL-TAHIRA",
+      "locations": [
+        {
+          "name": "Qaraqosh",
+          "lat": 36.271,
+          "lon": 43.3764,
+          "precision": "city"
+        }
+      ]
     },
     {
       "country": "Iraq",
@@ -6609,6 +6675,28 @@
       "notes": "Do not allocate the combined death toll independently to both shelling entries.",
       "incident_group": "IRQ-QARAQOSH-2014",
       "id": "CT-0466"
+    },
+    {
+      "id": "CT-0562",
+      "date": "2014-08-06",
+      "country": "Iraq",
+      "place": "Mart Mariam Virgin Mary church, Bartella",
+      "category": "Church desecration and reported military use",
+      "title": "Virgin Mary statue thrown down and church reportedly used as sniper post",
+      "published_account": "UNITAD reported that around 6 August 2014 fighters threw the statue of the Virgin Mary from the Bartella church, forced entry and discarded Christian scriptures, and possibly later used its dome as a sniper post.",
+      "reported_actor": "daesh, as reported by UNITAD",
+      "publisher": "United Nations - UNITAD",
+      "source_url": "https://www.unitad.un.org/sites/www.unitad.un.org/files/20240914_dch_public_final_2.pdf",
+      "notes": "The statue incident is dated approximately; looting and the alleged sniper-tower use are qualified as possible and lack an established day.",
+      "incident_group": "IRQ-BARTELLA-MART-MARIAM",
+      "locations": [
+        {
+          "name": "Bartella",
+          "lat": 36.354,
+          "lon": 43.3816,
+          "precision": "city"
+        }
+      ]
     },
     {
       "country": "Iraq",
@@ -6665,6 +6753,116 @@
       "notes": "UNITAD details a case spanning 2014 to 2016, rather than a single day; 2014-08 indicates the takeover period, not a verified individual abduction date.",
       "incident_group": "IRQ-NINEVEH-2014",
       "id": "CT-0472"
+    },
+    {
+      "id": "CT-0560",
+      "date": "2014-08",
+      "country": "Iraq",
+      "place": "Mart Shmoni church, Bartella",
+      "category": "Church burning and cemetery desecration",
+      "title": "Mart Shmoni Syriac Orthodox church burned and cemetery damaged",
+      "published_account": "UNITAD reported Mart Shmoni church in Bartella was set alight, its altar and library damaged, crosses and statues destroyed and its adjacent cemetery desecrated during occupation; a cross was reportedly broken by hammer about 10 August 2014.",
+      "reported_actor": "daesh, according to UNITAD's investigation",
+      "publisher": "United Nations - UNITAD",
+      "source_url": "https://www.unitad.un.org/sites/www.unitad.un.org/files/20240914_dch_public_final_2.pdf",
+      "notes": "The hammering was dated to around 10 August 2014, but the date of the fire remains unknown; month denotes the start of relevant occupation, not every act.",
+      "incident_group": "IRQ-BARTELLA-MART-SHMONI",
+      "locations": [
+        {
+          "name": "Bartella",
+          "lat": 36.354,
+          "lon": 43.3816,
+          "precision": "city"
+        }
+      ]
+    },
+    {
+      "id": "CT-0561",
+      "date": "2014-08",
+      "country": "Iraq",
+      "place": "Mar Georgis church, Bartella",
+      "category": "Church burning; attempted explosive destruction",
+      "title": "Mar Georgis church burned and explosives placed around pillars",
+      "published_account": "UNITAD recorded fire damage and looting at Bartella's Mar Georgis church, with crosses and religious statues destroyed; militants also placed C4 around pillars, but the charges reportedly did not detonate.",
+      "reported_actor": "daesh, according to UNITAD's investigation",
+      "publisher": "United Nations - UNITAD",
+      "source_url": "https://www.unitad.un.org/sites/www.unitad.un.org/files/20240914_dch_public_final_2.pdf",
+      "notes": "The C4 did not explode, so this record does not claim explosive demolition. The exact arson day is not established.",
+      "incident_group": "IRQ-BARTELLA-MAR-GEORGIS",
+      "locations": [
+        {
+          "name": "Bartella",
+          "lat": 36.354,
+          "lon": 43.3816,
+          "precision": "city"
+        }
+      ]
+    },
+    {
+      "id": "CT-0563",
+      "date": "2014-08",
+      "country": "Iraq",
+      "place": "Mart Barbara monastery, Karamlesh",
+      "category": "Monastery seizure and religious heritage damage",
+      "title": "Mart Barbara monastery occupied as checkpoint and desecrated",
+      "published_account": "UNITAD documented the establishment of a daesh checkpoint at Mart Barbara monastery around 6 August 2014, followed by damage to Christian murals, crosses and tiles, graffiti, excavated tunnels and burned church property.",
+      "reported_actor": "daesh, according to UNITAD",
+      "publisher": "United Nations - UNITAD",
+      "source_url": "https://www.unitad.un.org/sites/www.unitad.un.org/files/20240914_dch_public_final_2.pdf",
+      "notes": "Evidence of alleged detention inside the monastery was circumstantial and is not treated as a confirmed imprisonment claim. Specific dates of later damage are unknown.",
+      "incident_group": "IRQ-KARAMLESH-MART-BARBARA",
+      "locations": [
+        {
+          "name": "Karamlesh",
+          "lat": 36.30563,
+          "lon": 43.41411,
+          "precision": "city"
+        }
+      ]
+    },
+    {
+      "id": "CT-0564",
+      "date": "2014-08",
+      "country": "Iraq",
+      "place": "Mar Addai church, Karamlesh",
+      "category": "Church headquarters seizure and grave desecration",
+      "title": "Mar Addai church converted to headquarters and damaged",
+      "published_account": "UNITAD reported that militants used Mar Addai church as headquarters beginning in August 2014, with extensive structural and religious-symbol damage including fires, mutilated Marian statuary and reported disturbance of Father Salem Ghanni's grave.",
+      "reported_actor": "daesh, according to UNITAD",
+      "publisher": "United Nations - UNITAD",
+      "source_url": "https://www.unitad.un.org/sites/www.unitad.un.org/files/20240914_dch_public_final_2.pdf",
+      "notes": "August 2014 marks the reported takeover; later acts of damage and grave disturbance were not individually dated. No specific victims of violence are inferred.",
+      "incident_group": "IRQ-KARAMLESH-MAR-ADDAI",
+      "locations": [
+        {
+          "name": "Karamlesh",
+          "lat": 36.30563,
+          "lon": 43.41411,
+          "precision": "city"
+        }
+      ]
+    },
+    {
+      "id": "CT-0565",
+      "date": "2014-08",
+      "country": "Iraq",
+      "place": "Mar Georgis church and cemetery, Karamlesh",
+      "category": "Cemetery and church desecration",
+      "title": "Historic Mar Georgis cemetery desecrated in Karamlesh",
+      "published_account": "UNITAD recorded destruction of crosses and a war memorial at the Mar Georgis church and cemetery in Karamlesh, and excavation of at least two graves during militant occupation.",
+      "reported_actor": "daesh, according to UNITAD",
+      "publisher": "United Nations - UNITAD",
+      "source_url": "https://www.unitad.un.org/sites/www.unitad.un.org/files/20240914_dch_public_final_2.pdf",
+      "notes": "Exact damage dates are unknown; August 2014 is the onset of occupation, not a proven date of excavation or demolition.",
+      "incident_group": "IRQ-KARAMLESH-MAR-GEORGIS",
+      "locations": [
+        {
+          "name": "Karamlesh",
+          "lat": 36.30563,
+          "lon": 43.41411,
+          "precision": "city"
+        }
+      ]
     },
     {
       "country": "Iraq",
@@ -6748,6 +6946,28 @@
       "reported_actor": "Unknown vandals; anti-Ukrainian messages reported",
       "publisher": "ABC News",
       "source_url": "https://www.abc.net.au/news/2014-06-21/swastikas-graffitied-on-side-of-ukranian-church-in-sydney/5540968"
+    },
+    {
+      "id": "CT-0554",
+      "date": "2014-06-16",
+      "country": "Iraq",
+      "place": "Mosul",
+      "category": "Religious persecution directive",
+      "title": "Mosul militants instructed to destroy Christian churches",
+      "published_account": "The United Nations investigative team's heritage report documents an instruction issued to daesh members on 16 June 2014 to destroy churches in Mosul, following the 12 June Mosul covenant.",
+      "reported_actor": "daesh, as documented in UNITAD's chronology",
+      "publisher": "United Nations - UNITAD",
+      "source_url": "https://www.unitad.un.org/sites/www.unitad.un.org/files/20240914_dch_public_final_2.pdf",
+      "notes": "This is a centrally issued instruction and not an additional count of every subsequent destroyed church; those are individually catalogued where site evidence exists.",
+      "incident_group": "IRQ-MOSUL-HERITAGE-2014",
+      "locations": [
+        {
+          "name": "Mosul",
+          "lat": 36.3416,
+          "lon": 43.1291,
+          "precision": "city"
+        }
+      ]
     },
     {
       "country": "Iraq",
@@ -6872,6 +7092,116 @@
       "notes": "2014 denotes occupation start and is not independently confirmed as date of the particular damage, which occurred during 2014-2017.",
       "incident_group": "IRQ-MOSUL-CHURCHES",
       "category": "Church vandalism"
+    },
+    {
+      "id": "CT-0555",
+      "date": "2014",
+      "country": "Iraq",
+      "place": "Old City Church Square, Mosul",
+      "category": "Church cemetery and heritage desecration",
+      "title": "Syriac churchyard and historic cemetery desecrated in Mosul",
+      "published_account": "UNITAD documented damaged marble columns and an adjoining historic cemetery at the Syriac Catholic al-Tahira Church complex in Church Square, alongside use of the precinct to store weapons and confiscated goods.",
+      "reported_actor": "daesh, according to UNITAD's site investigation",
+      "publisher": "United Nations - UNITAD",
+      "source_url": "https://www.unitad.un.org/sites/www.unitad.un.org/files/20240914_dch_public_final_2.pdf",
+      "notes": "This is separate physical heritage damage within the same church precinct already catalogued as a militant prison at CT-0474; it is not another independent takeover or an additional death.",
+      "incident_group": "IRQ-MOSUL-CHURCH-SQUARE",
+      "locations": [
+        {
+          "name": "Mosul",
+          "lat": 36.3416,
+          "lon": 43.1291,
+          "precision": "city"
+        }
+      ]
+    },
+    {
+      "id": "CT-0556",
+      "date": "2014",
+      "country": "Iraq",
+      "place": "Our Lady of the Hour Church, Sarjkhana, Mosul",
+      "category": "Religious library destruction; church conversion",
+      "title": "Historic Clock Church library burned and complex converted to operations base",
+      "published_account": "UNITAD documented the destruction of approximately four thousand historic volumes, removal of crosses, bells and church artworks, and commandeering of Our Lady of the Hour Church for military functions and alleged torture.",
+      "reported_actor": "daesh, as documented by UNITAD",
+      "publisher": "United Nations - UNITAD",
+      "source_url": "https://www.unitad.un.org/sites/www.unitad.un.org/files/20240914_dch_public_final_2.pdf",
+      "notes": "The destruction of books and takeover of the church complex are distinguished from the bell-tower damage already covered in CT-0534. The UN report treated detention-related inferences conditionally.",
+      "incident_group": "IRQ-MOSUL-CLOCK-CHURCH",
+      "locations": [
+        {
+          "name": "Mosul",
+          "lat": 36.3416,
+          "lon": 43.1291,
+          "precision": "city"
+        }
+      ]
+    },
+    {
+      "id": "CT-0566",
+      "date": "2014",
+      "country": "Iraq",
+      "place": "Sacred Heart Chaldean Catholic Church, Tel Keppe",
+      "category": "Church conversion into jail",
+      "title": "Sacred Heart Chaldean Catholic church used as a jail",
+      "published_account": "Aid to the Church in Need's Nineveh Plains field survey described the commandeering of the Sacred Heart Chaldean Catholic Church in Tel Keppe as a jail under daesh control.",
+      "reported_actor": "daesh, as attributed by Aid to the Church in Need",
+      "publisher": "Aid to the Church in Need International",
+      "source_url": "https://www.churchinneed.org/wp-content/uploads/2020/07/Report-on-Christianity-in-northern-Iraq.pdf",
+      "notes": "The 2020 survey retrospectively described use during occupation; the report does not establish when the site first became a prison or the prisoners' religions.",
+      "incident_group": "IRQ-TEL-KEPPE-SACRED-HEART",
+      "locations": [
+        {
+          "name": "Tel Keppe",
+          "lat": 36.49032,
+          "lon": 43.12057,
+          "precision": "city"
+        }
+      ]
+    },
+    {
+      "id": "CT-0567",
+      "date": "2014",
+      "country": "Iraq",
+      "place": "St George Syriac Orthodox Church, Qaraqosh",
+      "category": "Church misuse as explosives store",
+      "title": "St George Syriac Orthodox church allegedly used to store C4 explosives",
+      "published_account": "Aid to the Church in Need's field survey listed St George Syriac Orthodox Church in Qaraqosh as a location used by militants to store explosives, including C4.",
+      "reported_actor": "daesh, according to Aid to the Church in Need's survey",
+      "publisher": "Aid to the Church in Need International",
+      "source_url": "https://www.churchinneed.org/wp-content/uploads/2020/07/Report-on-Christianity-in-northern-Iraq.pdf",
+      "notes": "The source describes storage of C4 and does not establish detonation, chemical-weapons production or fatalities at the church. Precise dates unknown.",
+      "incident_group": "IRQ-QARAQOSH-ST-GEORGE",
+      "locations": [
+        {
+          "name": "Qaraqosh",
+          "lat": 36.271,
+          "lon": 43.3764,
+          "precision": "city"
+        }
+      ]
+    },
+    {
+      "id": "CT-0568",
+      "date": "2014",
+      "country": "Iraq",
+      "place": "Our Lady of Perpetual Help Church, Mosul",
+      "category": "Church seizure; coercive governance headquarters",
+      "title": "Our Lady of Perpetual Help church used as morality-police headquarters",
+      "published_account": "Aid to the Church in Need reported that daesh appropriated Our Lady of Perpetual Help Chaldean Catholic Church in Mosul as headquarters for its religious morality-police enforcement apparatus.",
+      "reported_actor": "daesh, as recorded in Aid to the Church in Need's field survey",
+      "publisher": "Aid to the Church in Need International",
+      "source_url": "https://www.churchinneed.org/wp-content/uploads/2020/07/Report-on-Christianity-in-northern-Iraq.pdf",
+      "notes": "A distinct named church property from the already catalogued al-Tahira and Mar Yousuf prisons. Survey does not establish which calendar day it was occupied.",
+      "incident_group": "IRQ-MOSUL-OUR-LADY-HELP",
+      "locations": [
+        {
+          "name": "Mosul",
+          "lat": 36.3416,
+          "lon": 43.1291,
+          "precision": "city"
+        }
+      ]
     },
     {
       "id": "CT-0194",

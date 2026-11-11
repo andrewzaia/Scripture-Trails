@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.15.0 - 11/11/2026: Nineveh Plains Christian heritage and persecution report expansion
+
+- Add 15 individually attributed reports of the seizure, burning, looting and desecration of Christian churches, monasteries, libraries and cemeteries in Mosul, Qaraqosh, Bartella, Karamlesh and Tel Keppe, expanding the archive to 568 reports in 91 countries and territories.
+- Document the destruction of historic church books, the conversion of religious buildings into prisons or militant facilities, and separate church and cemetery damage reported by the United Nations investigative team and Aid to the Church in Need.
+- Locate the 15 new reports at sourced approximate town centres in Iraq, while explicitly distinguishing these town markers from the precise sites of abuse and preserving source qualifications and linked-incident groupings.
+- Retain earlier reports, historical releases and existing report-based world heat-map behaviour; strengthen map and source-integrity regression checks without reproducing unlicensed third-party media.
+
 ## 1.14.0 - 11/11/2026: More attributed Christian persecution reports from Syria, Congo and Nigeria
 
 - Add 18 source-attributed reports of killings, church bombings and destruction, attacks on Catholic health centres, abductions and attacks on Christian communities in Syria, the Democratic Republic of the Congo and Nigeria, increasing the archive to 553 reports across 91 countries and territories.

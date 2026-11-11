@@ -1,9 +1,9 @@
 # Christian persecution geographic coverage audit
 
 Checked: 2026-11-11
-Candidate release: v1.14.0
+Candidate release: v1.15.0
 
-The catalogue now contains 553 published source-attributed report records across 91 countries and territories. This release adds 18 further reports from Syria (3), the Democratic Republic of the Congo (13) and Nigeria (2). Previous v1.13.0 added 30 records and v1.12.0 added 45, while earlier releases established the geographic base.
+The catalogue now contains 568 published source-attributed report records across 91 countries and territories. This release adds 15 specifically sourced Christian heritage reports from Iraq, expanding the Mosul and Nineveh Plains accounts. The preceding release, v1.14.0, added 18 records from Syria, the Democratic Republic of the Congo and Nigeria.
 
 ## Inclusion and counting
 
@@ -38,6 +38,14 @@ The latest batch distinguishes the 24 January 2016 Qamishli restaurant bombing, 
 The new eastern Congo records document separately dated raids from 2020 to July 2026, including Christian churches, aid facilities, worship leaders, conversions alleged in perpetrators' messaging and villages. Nigeria additions include the 2020 aid worker killings with an anti-Christian-conversion message, and an October 2020 allegation of abduction after religious screening. Source qualifications preserve unknown victims' religious identities and distinguish claimed responsibility from established acts.
 
 Published report totals do not equal unique attacks, victims, casualty figures or prevalence. Localities lacking grounded coordinates remain included in country-level map shading without fabricated village pins. Prior multi-incident summaries can overlap narrower dated entries and must not be double-counted as distinct deaths.
+
+### Further v1.15.0 Nineveh heritage sites and mapping
+
+Fifteen new site-related reports distinguish Christian churches, monasteries, cemeteries and religious libraries affected in Mosul, Qaraqosh, Bartella, Karamlesh and Tel Keppe. Primary evidence comes from the September 2024 UNITAD cultural-heritage investigation (https://www.unitad.un.org/sites/www.unitad.un.org/files/20240914_dch_public_final_2.pdf), supplemented by Aid to the Church in Need's 2020 Nineveh Plains survey (https://www.churchinneed.org/wp-content/uploads/2020/07/Report-on-Christianity-in-northern-Iraq.pdf).
+
+The new records include separately documented damage to al-Tahira churches, Mart Shmoni, Mar Georgis, Mart Mariam, Mart Barbara, Mar Addai, St George Catholic Monastery and other sites. The Clock Church library destruction is separate from the previously catalogued tower damage; reports that the entire building was demolished are not adopted. At Bartella's Mar Georgis church C4 explosives were reportedly placed but did not detonate. At Qaraqosh's St George church C4 was reported stored, not detonated. Claims about possible detention and exact incident days are preserved as conditional where the source does not resolve them.
+
+Map pins use approximate settlement centres, not coordinates of individual churches, grave sites or victims. City-centre sources: Mosul (https://mapcarta.com/Mosul), Qaraqosh (https://mapcarta.com/12530538), Bartella (https://mapcarta.com/Bartella), Karamlesh (https://mapcarta.com/12535078) and Tel Keppe (https://mapcarta.com/12526384). Record-level points use precision=city. Several acts took place on the same church compound and share incident_group; country heat still measures source-report records rather than distinct attacks, perpetrators or casualties.
 
 ### Remaining daesh research priorities
 
