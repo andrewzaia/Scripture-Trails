@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.13.0 - 11/11/2026: Further daesh-linked atrocities and Christian community reports
+
+- Add 30 individually sourced reports of killings, assaults, church destruction and religious intimidation linked or reportedly linked to daesh across Bangladesh, Egypt, Pakistan, Indonesia, Syria, Nigeria, the Democratic Republic of the Congo, Mozambique and Iraq, extending the archive to 535 records in 91 countries and territories.
+- Add named victims and dates to the North Sinai attacks alongside earlier summary coverage, distinguish multiple victims and individual episodes, and preserve uncertainty about responsibility and reported casualty figures.
+- Document further attacks on Assyrian Christians, clergy, converts, worshippers and Christian heritage, including the 2026 St Louis de Montfort parish destruction, and retain source links without using unlicensed media.
+- Update the source-driven global distribution map counts, preserve all previous reports and release history, and expand source and map regression checks.
+
 ## 1.12.0 - 11/11/2026: daesh-linked attacks and Christian persecution evidence expansion
 
 - Add 45 published, source-attributed reports of daesh and affiliated militant actions across Iraq, Syria, Libya, Egypt, Nigeria, the Democratic Republic of the Congo, Mozambique and the Philippines, extending the archive to 505 reports across 91 countries and territories.
