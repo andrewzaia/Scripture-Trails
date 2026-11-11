@@ -159,3 +159,30 @@ test('media filter includes rights-cleared local photographs without publisher m
  assert.equal(filterPersecutionReports([siteOnly],{media:true}).length,0);
  assert.equal(filterPersecutionReports([siteOnly],{media:true,localMediaIds:new Set([siteOnly.id])}).length,1);
 });
+
+test('Ukraine reports remain attributed and the world map includes locations with honest precision',()=>{
+ const uk=records.filter(r=>r.country==='Ukraine');
+ assert.equal(uk.length,41);
+ assert.ok(records.length>=293,'Existing archive must remain intact');
+ assert.equal(new Set(uk.map(x=>x.id)).size,uk.length);
+ assert.ok(uk.some(x=>x.date==='2023-03-28'&&x.place==='Ivano-Frankivsk'));
+ assert.ok(uk.some(x=>x.date==='2024-10-17'&&x.place==='Cherkasy'));
+ assert.ok(uk.some(x=>x.date==='2025-07-02'&&/Onufriy/.test(x.title)));
+ assert.ok(uk.some(x=>x.date==='2026-10-09'&&/Sinyuk/.test(x.title)));
+ assert.ok(uk.some(x=>x.notes?.includes('Russian-occupied')));
+ assert.ok(uk.some(x=>x.notes?.includes('government-controlled')));
+ assert.ok(uk.some(x=>x.notes?.includes('Military mobilisation alone')));
+ for(const r of uk){
+  assert.match(r.id,/^CT-\d{4}$/);
+  assert.ok(r.reported_actor&&r.publisher&&r.notes&&r.source_url,'Attribution missing for '+r.id);
+ }
+ const geo=JSON.parse(read('public/data/christian-heatmap-places.json'));
+ assert.equal(geo.countries.Ukraine.iso3,'UKR');
+ assert.ok(geo.places['Ukraine|Kyiv']);
+ assert.ok(geo.places['Ukraine|Cherkasy']);
+ assert.ok(!geo.places['Ukraine|Occupied Kherson region'],'Do not invent a detention-site pin');
+ const all=aggregateIncidentLocations(records,geo);
+ assert.equal(all.countries.get('Ukraine'),41);
+ assert.equal(all.reportCount,records.length);
+ assert.ok(all.places.some(x=>x.country==='Ukraine'&&x.label==='Kyiv'));
+});
