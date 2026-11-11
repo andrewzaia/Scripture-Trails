@@ -6040,7 +6040,15 @@
       "publisher": "United Nations - UNITAD",
       "source_url": "https://www.unitad.un.org/sites/www.unitad.un.org/files/20240914_dch_public_final_2.pdf",
       "notes": "The month is grounded; exact day and the portions burned are not stated. This is a later distinct arson episode at the complex described in the 2014 chapel occupation record.",
-      "incident_group": "IRQ-QARAQOSH-AL-TAHIRA"
+      "incident_group": "IRQ-QARAQOSH-AL-TAHIRA",
+      "locations": [
+        {
+          "name": "Qaraqosh",
+          "lat": 36.271,
+          "lon": 43.3764,
+          "precision": "city"
+        }
+      ]
     },
     {
       "id": "CT-0510",
@@ -6555,7 +6563,15 @@
       "publisher": "United Nations - UNITAD",
       "source_url": "https://www.unitad.un.org/sites/www.unitad.un.org/files/20240914_dch_public_final_2.pdf",
       "notes": "The reported 150 detainees included Muslims opposing daesh; this record documents seizure and damage of Christian property, not a claim that all detainees were Christian.",
-      "incident_group": "IRQ-MOSUL-ST-GEORGE-2014"
+      "incident_group": "IRQ-MOSUL-ST-GEORGE-2014",
+      "locations": [
+        {
+          "name": "Mosul",
+          "lat": 36.3416,
+          "lon": 43.1291,
+          "precision": "city"
+        }
+      ]
     },
     {
       "id": "CT-0252",
@@ -6607,7 +6623,15 @@
       "publisher": "United Nations - UNITAD",
       "source_url": "https://www.unitad.un.org/sites/www.unitad.un.org/files/20240914_dch_public_final_2.pdf",
       "notes": "Bible burning has an approximate month. The precise dates of the reported chapel occupations are not established; the entry is one property-complex report.",
-      "incident_group": "IRQ-QARAQOSH-AL-TAHIRA"
+      "incident_group": "IRQ-QARAQOSH-AL-TAHIRA",
+      "locations": [
+        {
+          "name": "Qaraqosh",
+          "lat": 36.271,
+          "lon": 43.3764,
+          "precision": "city"
+        }
+      ]
     },
     {
       "country": "Iraq",
@@ -6664,7 +6688,15 @@
       "publisher": "United Nations - UNITAD",
       "source_url": "https://www.unitad.un.org/sites/www.unitad.un.org/files/20240914_dch_public_final_2.pdf",
       "notes": "The statue incident is dated approximately; looting and the alleged sniper-tower use are qualified as possible and lack an established day.",
-      "incident_group": "IRQ-BARTELLA-MART-MARIAM"
+      "incident_group": "IRQ-BARTELLA-MART-MARIAM",
+      "locations": [
+        {
+          "name": "Bartella",
+          "lat": 36.354,
+          "lon": 43.3816,
+          "precision": "city"
+        }
+      ]
     },
     {
       "country": "Iraq",
@@ -6734,7 +6766,15 @@
       "publisher": "United Nations - UNITAD",
       "source_url": "https://www.unitad.un.org/sites/www.unitad.un.org/files/20240914_dch_public_final_2.pdf",
       "notes": "The hammering was dated to around 10 August 2014, but the date of the fire remains unknown; month denotes the start of relevant occupation, not every act.",
-      "incident_group": "IRQ-BARTELLA-MART-SHMONI"
+      "incident_group": "IRQ-BARTELLA-MART-SHMONI",
+      "locations": [
+        {
+          "name": "Bartella",
+          "lat": 36.354,
+          "lon": 43.3816,
+          "precision": "city"
+        }
+      ]
     },
     {
       "id": "CT-0561",
@@ -6748,7 +6788,15 @@
       "publisher": "United Nations - UNITAD",
       "source_url": "https://www.unitad.un.org/sites/www.unitad.un.org/files/20240914_dch_public_final_2.pdf",
       "notes": "The C4 did not explode, so this record does not claim explosive demolition. The exact arson day is not established.",
-      "incident_group": "IRQ-BARTELLA-MAR-GEORGIS"
+      "incident_group": "IRQ-BARTELLA-MAR-GEORGIS",
+      "locations": [
+        {
+          "name": "Bartella",
+          "lat": 36.354,
+          "lon": 43.3816,
+          "precision": "city"
+        }
+      ]
     },
     {
       "id": "CT-0563",
@@ -6762,7 +6810,15 @@
       "publisher": "United Nations - UNITAD",
       "source_url": "https://www.unitad.un.org/sites/www.unitad.un.org/files/20240914_dch_public_final_2.pdf",
       "notes": "Evidence of alleged detention inside the monastery was circumstantial and is not treated as a confirmed imprisonment claim. Specific dates of later damage are unknown.",
-      "incident_group": "IRQ-KARAMLESH-MART-BARBARA"
+      "incident_group": "IRQ-KARAMLESH-MART-BARBARA",
+      "locations": [
+        {
+          "name": "Karamlesh",
+          "lat": 36.30563,
+          "lon": 43.41411,
+          "precision": "city"
+        }
+      ]
     },
     {
       "id": "CT-0564",
@@ -6776,7 +6832,15 @@
       "publisher": "United Nations - UNITAD",
       "source_url": "https://www.unitad.un.org/sites/www.unitad.un.org/files/20240914_dch_public_final_2.pdf",
       "notes": "August 2014 marks the reported takeover; later acts of damage and grave disturbance were not individually dated. No specific victims of violence are inferred.",
-      "incident_group": "IRQ-KARAMLESH-MAR-ADDAI"
+      "incident_group": "IRQ-KARAMLESH-MAR-ADDAI",
+      "locations": [
+        {
+          "name": "Karamlesh",
+          "lat": 36.30563,
+          "lon": 43.41411,
+          "precision": "city"
+        }
+      ]
     },
     {
       "id": "CT-0565",
@@ -6790,7 +6854,15 @@
       "publisher": "United Nations - UNITAD",
       "source_url": "https://www.unitad.un.org/sites/www.unitad.un.org/files/20240914_dch_public_final_2.pdf",
       "notes": "Exact damage dates are unknown; August 2014 is the onset of occupation, not a proven date of excavation or demolition.",
-      "incident_group": "IRQ-KARAMLESH-MAR-GEORGIS"
+      "incident_group": "IRQ-KARAMLESH-MAR-GEORGIS",
+      "locations": [
+        {
+          "name": "Karamlesh",
+          "lat": 36.30563,
+          "lon": 43.41411,
+          "precision": "city"
+        }
+      ]
     },
     {
       "country": "Iraq",
@@ -6887,7 +6959,15 @@
       "publisher": "United Nations - UNITAD",
       "source_url": "https://www.unitad.un.org/sites/www.unitad.un.org/files/20240914_dch_public_final_2.pdf",
       "notes": "This is a centrally issued instruction and not an additional count of every subsequent destroyed church; those are individually catalogued where site evidence exists.",
-      "incident_group": "IRQ-MOSUL-HERITAGE-2014"
+      "incident_group": "IRQ-MOSUL-HERITAGE-2014",
+      "locations": [
+        {
+          "name": "Mosul",
+          "lat": 36.3416,
+          "lon": 43.1291,
+          "precision": "city"
+        }
+      ]
     },
     {
       "country": "Iraq",
@@ -7025,7 +7105,15 @@
       "publisher": "United Nations - UNITAD",
       "source_url": "https://www.unitad.un.org/sites/www.unitad.un.org/files/20240914_dch_public_final_2.pdf",
       "notes": "This is separate physical heritage damage within the same church precinct already catalogued as a militant prison at CT-0474; it is not another independent takeover or an additional death.",
-      "incident_group": "IRQ-MOSUL-CHURCH-SQUARE"
+      "incident_group": "IRQ-MOSUL-CHURCH-SQUARE",
+      "locations": [
+        {
+          "name": "Mosul",
+          "lat": 36.3416,
+          "lon": 43.1291,
+          "precision": "city"
+        }
+      ]
     },
     {
       "id": "CT-0556",
@@ -7039,7 +7127,15 @@
       "publisher": "United Nations - UNITAD",
       "source_url": "https://www.unitad.un.org/sites/www.unitad.un.org/files/20240914_dch_public_final_2.pdf",
       "notes": "The destruction of books and takeover of the church complex are distinguished from the bell-tower damage already covered in CT-0534. The UN report treated detention-related inferences conditionally.",
-      "incident_group": "IRQ-MOSUL-CLOCK-CHURCH"
+      "incident_group": "IRQ-MOSUL-CLOCK-CHURCH",
+      "locations": [
+        {
+          "name": "Mosul",
+          "lat": 36.3416,
+          "lon": 43.1291,
+          "precision": "city"
+        }
+      ]
     },
     {
       "id": "CT-0566",
@@ -7053,7 +7149,15 @@
       "publisher": "Aid to the Church in Need International",
       "source_url": "https://www.churchinneed.org/wp-content/uploads/2020/07/Report-on-Christianity-in-northern-Iraq.pdf",
       "notes": "The 2020 survey retrospectively described use during occupation; the report does not establish when the site first became a prison or the prisoners' religions.",
-      "incident_group": "IRQ-TEL-KEPPE-SACRED-HEART"
+      "incident_group": "IRQ-TEL-KEPPE-SACRED-HEART",
+      "locations": [
+        {
+          "name": "Tel Keppe",
+          "lat": 36.49032,
+          "lon": 43.12057,
+          "precision": "city"
+        }
+      ]
     },
     {
       "id": "CT-0567",
@@ -7067,7 +7171,15 @@
       "publisher": "Aid to the Church in Need International",
       "source_url": "https://www.churchinneed.org/wp-content/uploads/2020/07/Report-on-Christianity-in-northern-Iraq.pdf",
       "notes": "The source describes storage of C4 and does not establish detonation, chemical-weapons production or fatalities at the church. Precise dates unknown.",
-      "incident_group": "IRQ-QARAQOSH-ST-GEORGE"
+      "incident_group": "IRQ-QARAQOSH-ST-GEORGE",
+      "locations": [
+        {
+          "name": "Qaraqosh",
+          "lat": 36.271,
+          "lon": 43.3764,
+          "precision": "city"
+        }
+      ]
     },
     {
       "id": "CT-0568",
@@ -7081,7 +7193,15 @@
       "publisher": "Aid to the Church in Need International",
       "source_url": "https://www.churchinneed.org/wp-content/uploads/2020/07/Report-on-Christianity-in-northern-Iraq.pdf",
       "notes": "A distinct named church property from the already catalogued al-Tahira and Mar Yousuf prisons. Survey does not establish which calendar day it was occupied.",
-      "incident_group": "IRQ-MOSUL-OUR-LADY-HELP"
+      "incident_group": "IRQ-MOSUL-OUR-LADY-HELP",
+      "locations": [
+        {
+          "name": "Mosul",
+          "lat": 36.3416,
+          "lon": 43.1291,
+          "precision": "city"
+        }
+      ]
     },
     {
       "id": "CT-0194",
