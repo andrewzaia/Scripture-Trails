@@ -2123,7 +2123,8 @@
       "reported_actor": "Alleged Allied Democratic Forces fighters, according to local sources",
       "publisher": "Aid to the Church in Need",
       "source_url": "https://acninternational.org/dr-congo-local-acn-sources-confirm-massacre-with-70-bodies-found-in-lubero-church/",
-      "notes": "Published allegation retained despite later counter-reports disputing the account. Do not mark as independently established or add its alleged victim total to verified fatalities."
+      "notes": "Published allegation retained despite later conflicting reports. Mission Network News subsequently appended an editor's note stating its 70-deaths story did not happen; Open Doors later called for further investigation (https://www.opendoors.org.za/open-doors-calls-for-urgent-investigation-in-drc/). This catalogue does not resolve those competing accounts or treat alleged victims as verified fatalities.",
+      "second_source_url": "https://www.mnnonline.org/news/christian-beheadings-reflect-drc-chaos/"
     },
     {
       "id": "CT-0100",
@@ -2915,8 +2916,7 @@
       "reported_actor": "Cause of death disputed; police accused of earlier intimidation by advocates",
       "publisher": "International Christian Concern",
       "source_url": "https://persecution.org/2024/03/25/pastor-dead-in-northern-vietnam-following-forced-denunciation-of-faith/",
-      "notes": "Official suicide determination and alternative allegations are separately attributed; do not label death a proven killing.",
-      "second_source_url": "https://www.opendoors.org.za/open-doors-calls-for-urgent-investigation-in-drc/"
+      "notes": "Official suicide determination and alternative allegations are separately attributed; do not label death a proven killing."
     },
     {
       "id": "CT-0359",

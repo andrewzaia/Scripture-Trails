@@ -276,7 +276,7 @@ test('report-inclusive global expansion adds 45 source-attributed reports with m
    assert.ok(record.title&&record.published_account&&record.publisher&&record.reported_actor&&record.notes);
    assert.equal(new URL(record.source_url).protocol,'https:');
  }
- const disputed=records.find(r=>r.id==='CT-0430');
+ const disputed=records.find(r=>r.id==='CT-0428');
  assert.equal(disputed.country,'Democratic Republic of the Congo');
  assert.ok(disputed.notes.includes('counter-reports'));
  assert.equal(new URL(disputed.second_source_url).protocol,'https:');
