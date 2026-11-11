@@ -71,6 +71,20 @@
       "notes": "Account and attribution are according to the cited publisher; incident categorisation does not independently determine perpetrator identity or motive."
     },
     {
+      "id": "CT-0566",
+      "date": "2026-10-23",
+      "country": "China",
+      "place": "Jiaquan Church, Beijing",
+      "title": "Pastor Edward Cui formally arrested on fraud allegations tied to church offerings",
+      "published_account": "Associated Press reported that Pastor Xianfeng Edward Cui of the unregistered Jiaquan Church was formally arrested on 23 October on fraud allegations; his wife said the case concerned church donations and the congregation's unregistered status.",
+      "reported_actor": "Chinese public security and criminal justice authorities",
+      "publisher": "Associated Press",
+      "source_url": "https://apnews.com/article/36b57ad234169e41678e13f9562c9f38",
+      "notes": "The charges were reported rather than adjudicated. This entry records a legal escalation from the September detention; it does not represent a second victim.",
+      "incident_group": "CHN-JIAQUAN-2026",
+      "category": "Pastor charged and formally arrested"
+    },
+    {
       "id": "CT-0242",
       "date": "2026-10-20",
       "country": "Ethiopia",
@@ -124,6 +138,48 @@
       "publisher": "Christian Solidarity Worldwide",
       "source_url": "https://www.csw.org.uk/press/protestant-pastor-arbitrarily-detained/",
       "notes": "CSW disputes the state's disobedience allegation."
+    },
+    {
+      "id": "CT-0586",
+      "date": "2026-09-26",
+      "country": "Cuba",
+      "place": "Camaguey",
+      "title": "Evangelical pastor Maikel Pupo Velazquez detained over public prayer initiative",
+      "published_account": "Christian Solidarity Worldwide reported authorities detained evangelical pastor Maikel Pupo Velazquez as he approached a venue for a public prayer gathering, despite his reportedly cancelling it after official warnings. He was held incommunicado for days.",
+      "reported_actor": "Cuban Department of State Security, according to CSW",
+      "publisher": "Christian Solidarity Worldwide",
+      "source_url": "https://www.csw.org.uk/press/protestant-pastor-arbitrarily-detained/",
+      "notes": "The arrest occurred on 26 September, although it was publicised in October. The report describes detention and denial of bail, not a conviction.",
+      "incident_group": "CUB-PUPO-2026",
+      "category": "Evangelical pastor detained over public prayer"
+    },
+    {
+      "id": "CT-0563",
+      "date": "2026-09-06",
+      "country": "Azerbaijan",
+      "place": "Peace Protestant Church, Sumgait",
+      "title": "Police detain 30 Protestants before Sunday worship",
+      "published_account": "Forum 18 reported that police and religious-affairs officers raided the Peace Protestant Church gathering, confiscated phones and took 30 people to a police station. They reportedly had to write statements before release.",
+      "reported_actor": "State Committee for Work with Religious Organisations and police",
+      "publisher": "Forum 18",
+      "source_url": "https://forum18.org/archive.php?article_id=3069",
+      "notes": "The church had applied for registration in April 2025 with no formal reply. At reporting time, officials had not stated whether congregants would be prosecuted.",
+      "incident_group": "AZE-SUMGAIT-2026",
+      "category": "Church raid; worshippers detained"
+    },
+    {
+      "id": "CT-0565",
+      "date": "2026-09-04",
+      "country": "China",
+      "place": "Jiaquan Church, Beijing",
+      "title": "Unregistered Beijing congregation raided and Pastor Cui detained",
+      "published_account": "Associated Press reported Pastor Xianfeng Edward Cui was first detained on 4 September during a raid involving about 100 police officers on Jiaquan Church, an unregistered congregation.",
+      "reported_actor": "Beijing public security authorities",
+      "publisher": "Associated Press",
+      "source_url": "https://apnews.com/article/36b57ad234169e41678e13f9562c9f38",
+      "notes": "Cui was subsequently formally arrested in October; this is the initial detention and raid in the same ongoing legal case.",
+      "incident_group": "CHN-JIAQUAN-2026",
+      "category": "House-church raid; pastor detained"
     },
     {
       "id": "CT-0003",
@@ -493,6 +549,20 @@
       "publisher": "Forum 18",
       "source_url": "https://www.forum18.org/archive.php?article_id=3048",
       "notes": "Follow-up to a previously imposed sentence, not an additional arrest. The deportation location was not specified; country-only map coverage."
+    },
+    {
+      "id": "CT-0575",
+      "date": "2026-04-05",
+      "country": "Nigeria",
+      "place": "ECWA and Catholic churches, Ariko village, Kaduna State",
+      "title": "Ariko Easter services attacked; five killed and worshippers abducted",
+      "published_account": "Nigeria's police reported that armed bandits attacked ECWA and Catholic churches in Ariko on Easter Sunday, killing five people and abducting about fourteen others. The army separately reported rescuing 31 hostages.",
+      "reported_actor": "Unidentified armed bandits; police investigation continuing",
+      "publisher": "Nigeria Police Force",
+      "source_url": "https://incb.police.gov.ng/index.php/news/details/756",
+      "notes": "Different official statements report different hostage totals; do not add the police's fourteen and the army's thirty-one as separate groups of victims.",
+      "incident_group": "NGA-ARIKO-2026",
+      "category": "Christian church service attack; killings and abductions"
     },
     {
       "id": "CT-0358",
@@ -1198,6 +1268,20 @@
       "incident_group": "MOZ-MEMBA-NOV-2025"
     },
     {
+      "id": "CT-0582",
+      "date": "2025-11",
+      "country": "Sri Lanka",
+      "place": "Village in Sri Lanka, exact locality not reported",
+      "title": "Five Christians reportedly beaten and jailed after home prayer meeting",
+      "published_account": "The Voice of the Martyrs reported a mob assault during a Christian home prayer gathering involving Oshana and her family. Five Christians were arrested and jailed after the confrontation, with charges reportedly outstanding in 2026.",
+      "reported_actor": "Local mob and arresting police, according to Voice of the Martyrs",
+      "publisher": "The Voice of the Martyrs",
+      "source_url": "https://www.persecution.com/stories/pastors-family-beaten-jailed-for-prayer-meeting/",
+      "notes": "The publication identifies Oshana by first name and gives only a month for the original attack; its allegations and bail situation remain source-attributed.",
+      "incident_group": "LKA-PRAYER-2025",
+      "category": "Violence against worshippers; detention"
+    },
+    {
       "id": "CT-0052",
       "date": "2025-10-31",
       "country": "Italy",
@@ -1234,6 +1318,20 @@
       "reported_actor": "38-year-old man charged with assault-related offences; motive not established",
       "publisher": "ABC News",
       "source_url": "https://www.abc.net.au/news/2025-10-27/man-charged-with-stabbing-darwin-priest-in-face-with-pen/105937868"
+    },
+    {
+      "id": "CT-0564",
+      "date": "2025-10-10",
+      "country": "China",
+      "place": "Beihai and six other cities",
+      "title": "Nearly 30 Zion Church pastors and members detained in nationwide crackdown",
+      "published_account": "Human Rights Watch reported that on 10-11 October authorities arrested nearly 30 pastors, preachers and congregants in seven cities of the unregistered Zion Protestant Church, including its founder Pastor Jin Mingri.",
+      "reported_actor": "Chinese police and public security authorities",
+      "publisher": "Human Rights Watch",
+      "source_url": "https://www.hrw.org/news/2025/10/14/china-nationwide-crackdown-on-major-underground-church",
+      "notes": "The date records the start of the two-day crackdown; nearly 30 is a reported arrest count rather than a count of distinct raids.",
+      "incident_group": "CHN-ZION-2025",
+      "category": "Christian clergy and congregants detained"
     },
     {
       "id": "CT-0382",
@@ -1790,6 +1888,20 @@
       "notes": "Published preliminary casualty figures. No demonstrated intent to target Christians as a religious group."
     },
     {
+      "id": "CT-0581",
+      "date": "2025-07-14",
+      "country": "Sri Lanka",
+      "place": "Village in central Sri Lanka, precise locality withheld",
+      "title": "Demonstrators demand closure of Pastor Sirimal's house church",
+      "published_account": "Open Doors Youth reported about fifty people led by a Buddhist monk marched to local government offices to demand that Pastor Sirimal cease holding Christian worship gatherings.",
+      "reported_actor": "Local protesters led by Buddhist monk, according to Open Doors",
+      "publisher": "Open Doors Youth",
+      "source_url": "https://youth.opendoorsuk.org/new/sri-lanka-house-church-targeted-by-locals/",
+      "notes": "The report uses an alias for the pastor and does not publish a precise village; no coordinates or names are invented.",
+      "incident_group": "LKA-SIRIMAL-2025",
+      "category": "Campaign against house church"
+    },
+    {
       "id": "CT-0073",
       "date": "2025-07-10",
       "country": "United States",
@@ -1822,6 +1934,20 @@
       "media_url": "https://www.cbsnews.com/pittsburgh/news/baldwin-church-vandalized-fbi-investigation/",
       "media_note": "Link to local report; imagery/footage on page must be inspected and licensed before re-use",
       "notes": "USCCB archive contains additional incidents; this workbook extracts a selection."
+    },
+    {
+      "id": "CT-0580",
+      "date": "2025-07-06",
+      "country": "Sri Lanka",
+      "place": "Pastor Shashi's house church, Ududumbara, Kandy District",
+      "title": "Monks' protest stops home church service in Ududumbara",
+      "published_account": "Barnabas Aid reported that Buddhist monks surrounded Pastor Shashi's home where Christians planned Sunday worship. Police then dispersed believers and warned them not to continue the service.",
+      "reported_actor": "Local Buddhist monks; police dispersed congregation",
+      "publisher": "Barnabas Aid",
+      "source_url": "https://www.barnabasaid.org/us/news/buddhist-protests-force-abandonment-of-church-meeting-in-kandy-sri-lanka/",
+      "notes": "Account relies on Barnabas Aid's local Christian source; police said worship should not proceed to avoid unrest.",
+      "incident_group": "LKA-KANDY-2025",
+      "category": "Christian worship meeting obstructed"
     },
     {
       "id": "CT-0256",
@@ -1901,6 +2027,20 @@
       "source_url": "https://www.opendoors.org.au/frontline-faith/mozambique-beheadings-and-thousands-displaced/",
       "notes": "The exact kidnapping day and village are not identified. July 2025 is the surrounding reported attack month, and the case is linked to the wider Chiure campaign rather than presented as separately dated on July 30.",
       "incident_group": "MOZ-CHIURE-JUL-AUG-2025"
+    },
+    {
+      "id": "CT-0588",
+      "date": "2025-07",
+      "country": "Kyrgyzstan",
+      "place": "Bishkek",
+      "title": "Pastor Pavel Shreider sentenced to three years for religious speech",
+      "published_account": "USCIRF reported a Kyrgyz court sentenced Adventist pastor Pavel Shreider to three years' imprisonment followed by deportation for an offence framed as inciting enmity after his 2024 arrest.",
+      "reported_actor": "Kyrgyz court and security apparatus",
+      "publisher": "US Commission on International Religious Freedom",
+      "source_url": "https://www.uscirf.gov/religious-prisoners-conscience/forb-victims-database/pavel-shreider",
+      "notes": "The source reports his subsequent release and deportation in 2026; this records a separate sentencing stage in the same case, not a second person.",
+      "incident_group": "KGZ-SHREIDER-2024-2026",
+      "category": "Religious leader imprisoned and sentenced"
     },
     {
       "id": "CT-0429",
@@ -2003,6 +2143,20 @@
       "media_url": "https://abc7ny.com/post/nassau-county-man-charged-damaging-2-statues-worth-10k-during-church-service/16765002/",
       "media_note": "Link to local report; imagery/footage on page must be inspected and licensed before re-use",
       "notes": "USCCB archive contains additional incidents; this workbook extracts a selection."
+    },
+    {
+      "id": "CT-0574",
+      "date": "2025-06-14",
+      "country": "Nigeria",
+      "place": "Yelewata, Guma, Benue State",
+      "title": "At least one hundred killed in attack on largely Christian farming settlement",
+      "published_account": "Reuters reported that Amnesty International Nigeria documented more than one hundred people killed after gunmen raided Yelewata during the night of 13-14 June, with villagers burned in their homes and many missing.",
+      "reported_actor": "Unidentified gunmen; regional farmer-herder conflict reported",
+      "publisher": "Reuters",
+      "source_url": "https://www.yahoo.com/news/gunmen-kill-least-100-people-231701529.html",
+      "notes": "The attackers' identities and religious motivation were not established. Christian farmers were among the affected population, but this is not a verified count of solely Christian fatalities.",
+      "incident_group": "NGA-YELEWATA-2025",
+      "category": "Predominantly Christian farming community attacked"
     },
     {
       "id": "CT-0080",
@@ -2324,6 +2478,62 @@
       "notes": "April is disappearance month; remains discovered 1 July. Multiple victims in one incident group."
     },
     {
+      "id": "CT-0570",
+      "date": "2025-04",
+      "country": "Iran",
+      "place": "Tabriz, East Azerbaijan province",
+      "title": "Two Christian converts reportedly sentenced to twelve years each",
+      "published_account": "A UK government country report cited April 2025 judgments in absentia against two Christian converts in Tabriz, each receiving a twelve-year sentence, financial penalties and restrictions for distributing or holding Christian Bibles and literature.",
+      "reported_actor": "Iranian Revolutionary Court",
+      "publisher": "UK Home Office country information note",
+      "source_url": "https://www.gov.uk/government/publications/iran-country-policy-and-information-notes/country-policy-and-information-note-christians-and-christian-converts-iran-june-2026-accessible",
+      "notes": "The judicial allegations included prohibited religious material and propaganda. The source reported that both converts had fled Iran.",
+      "incident_group": "IRN-TABRIZ-2025",
+      "category": "Christian literature prosecutions"
+    },
+    {
+      "id": "CT-0573",
+      "date": "2025-04",
+      "country": "Nigeria",
+      "place": "Zikke or Zike village, Bassa, Plateau State",
+      "title": "More than fifty villagers killed in Zikke Christian community raid",
+      "published_account": "Amnesty International Nigeria condemned the night-time attack on Zikke village in Bassa Local Government Area and reported at least fifty-four deaths, including women, children and older villagers, with homes destroyed.",
+      "reported_actor": "Unidentified gunmen; community sources accused armed herder militias",
+      "publisher": "Amnesty International Nigeria",
+      "source_url": "https://www.amnesty.org.ng/2025/04/14/plateau-killing-of-51-people-is-an-inexcusable-security-failure/",
+      "notes": "Reports differ on whether the raid began 13 or 14 April. The village is predominantly Christian, but religion as the sole motive is not established; month precision avoids a contested day.",
+      "incident_group": "NGA-ZIKKE-2025",
+      "category": "Christian community attacked; mass civilian deaths"
+    },
+    {
+      "id": "CT-0577",
+      "date": "2025-04",
+      "country": "Nicaragua",
+      "place": "Catholic parishes nationwide",
+      "title": "Public Catholic Holy Week processions prohibited",
+      "published_account": "Vatican News reported authorities barred public Holy Week processions, including Good Friday Stations of the Cross, and restricted sacred images to church premises, accompanied by police surveillance and warnings.",
+      "reported_actor": "Nicaraguan authorities under the Ortega government",
+      "publisher": "Vatican News",
+      "source_url": "https://www.vaticannews.va/en/world/news/2025-04/holy-week-celebrations-banned-in-nicaragua.html",
+      "notes": "The source says a wider procession ban had been in force since 2023; this records its Easter 2025 enforcement and must not be conflated with the separate 2026 bans already catalogued.",
+      "incident_group": "NIC-EASTER-2025",
+      "category": "Restrictions on Catholic worship and processions"
+    },
+    {
+      "id": "CT-0583",
+      "date": "2025-04",
+      "country": "Russia",
+      "place": "Multiple regions of Russia",
+      "title": "Dozens of Christian congregants among worship-related prosecutions in 2024-25",
+      "published_account": "Forum 18's court-record review identified 124 prosecutions for alleged unlawful missionary activity from January 2024 through April 2025 across multiple religions, including 24 Council of Churches Baptist cases as well as other Protestant, Catholic and Adventist defendants.",
+      "reported_actor": "Russian police, prosecutors and magistrate courts",
+      "publisher": "Forum 18",
+      "source_url": "https://forum18.org/archive.php?article_id=2983",
+      "notes": "This is one aggregate source report, not 124 Christian incidents. Some cases overlap specific reports already catalogued, including Pastor Chmykh at CT-0380.",
+      "incident_group": "RUS-MISSIONARY-2024-2025",
+      "category": "Aggregate Christian worship-related fines and prosecutions"
+    },
+    {
       "id": "CT-0091",
       "date": "2025-03-22",
       "country": "United States",
@@ -2416,6 +2626,20 @@
       "media_url": "https://ktla.com/news/local-news/los-angeles-church-vandalized-on-ash-wednesday/",
       "media_note": "Link to local report; imagery/footage on page must be inspected and licensed before re-use",
       "notes": "USCCB archive contains additional incidents; this workbook extracts a selection."
+    },
+    {
+      "id": "CT-0569",
+      "date": "2025-03",
+      "country": "Iran",
+      "place": "Tehran",
+      "title": "Christian convert Narges Nasri sentenced to sixteen years",
+      "published_account": "The US Commission on International Religious Freedom reports that a Tehran Revolutionary Court sentenced Christian convert Narges Nasri in absentia to sixteen years for allegations involving house-church membership, religious activity and social media posts.",
+      "reported_actor": "Iranian Revolutionary Court",
+      "publisher": "US Commission on International Religious Freedom",
+      "source_url": "https://www.uscirf.gov/religious-prisoners-conscience/forb-victims-database/narges-nasri",
+      "notes": "This sentencing follows the separate November 2024 house raid and arrest already recorded as CT-0302. USCIRF reports her appeal was rejected and that she later fled Iran.",
+      "incident_group": "IRN-NASRI-2024-2025",
+      "category": "Christian convert sentenced"
     },
     {
       "id": "CT-0097",
@@ -2540,6 +2764,20 @@
       "notes": "Single publisher case summary; no independent adjudication undertaken."
     },
     {
+      "id": "CT-0572",
+      "date": "2025-02-06",
+      "country": "Myanmar",
+      "place": "Sacred Heart of Jesus Cathedral, Mindat, Chin State",
+      "title": "Catholic cathedral damaged by reported military airstrike in Mindat",
+      "published_account": "International Christian Concern reported an airstrike on the newly designated Sacred Heart of Jesus Cathedral in Mindat, damaging its roof and windows and making it unusable.",
+      "reported_actor": "Myanmar military junta, as alleged by church sources",
+      "publisher": "International Christian Concern",
+      "source_url": "https://persecution.org/2025/02/12/military-junta-in-myanmar-bombs-new-catholic-cathedral/",
+      "notes": "The area had reportedly been evacuated and no deaths were reported; a church-site attack during civil conflict does not independently establish the attacker's religious motive.",
+      "incident_group": "MMR-MINDAT-2025",
+      "category": "Catholic cathedral damaged in airstrike"
+    },
+    {
       "id": "CT-0104",
       "date": "2025-01-30",
       "country": "Germany",
@@ -2553,6 +2791,20 @@
       "notes": "Single publisher case summary; no independent adjudication undertaken."
     },
     {
+      "id": "CT-0579",
+      "date": "2025-01-27",
+      "country": "Sri Lanka",
+      "place": "Way to the Comfort Ministry Church, Seethwaka",
+      "title": "Stones thrown at church building, damaging roof near pastor's wife",
+      "published_account": "Voice of the Martyrs Canada reported an unidentified assailant threw large stones at the Seethwaka Christian congregation's church, damaging the roof and narrowly missing the pastor's wife.",
+      "reported_actor": "Unidentified stone-thrower",
+      "publisher": "Voice of the Martyrs Canada",
+      "source_url": "https://www.vomcanada.com/lk-2025-02-27.htm",
+      "notes": "The vandalism occurred after demands to stop Christian worship the previous day; the source does not identify the stone thrower.",
+      "incident_group": "LKA-SEETHWAKA-2025",
+      "category": "Church vandalism; intimidation"
+    },
+    {
       "id": "CT-0105",
       "date": "2025-01-26",
       "country": "Germany",
@@ -2564,6 +2816,20 @@
       "publisher": "OIDAC Europe",
       "source_url": "https://www.intoleranceagainstchristians.eu/index.php?id=12&case=9308",
       "notes": "Single publisher case summary; no independent adjudication undertaken."
+    },
+    {
+      "id": "CT-0578",
+      "date": "2025-01-26",
+      "country": "Sri Lanka",
+      "place": "Way to the Comfort Ministry Church, Seethwaka",
+      "title": "Buddhist monks reportedly demand closure of Christian worship in Seethwaka",
+      "published_account": "Voice of the Martyrs Canada, citing NCEASL, reported Buddhist monks approached church leaders and demanded that the pastor stop holding services, accusing the congregation of improper conversion practices.",
+      "reported_actor": "Local Buddhist monks, according to church account",
+      "publisher": "Voice of the Martyrs Canada",
+      "source_url": "https://www.vomcanada.com/lk-2025-02-27.htm",
+      "notes": "The religious-conversion allegations are attributed to the monks; this is a reported intimidation incident followed by a separate stone attack the next day.",
+      "incident_group": "LKA-SEETHWAKA-2025",
+      "category": "Threats and intimidation of Christian congregation"
     },
     {
       "id": "CT-0106",
@@ -2782,6 +3048,48 @@
       "notes": "Treason allegation was disputed by supporters; no independent judgment here on its truth."
     },
     {
+      "id": "CT-0568",
+      "date": "2024-12",
+      "country": "Iran",
+      "place": "Two locations in Iran, specific cities unconfirmed",
+      "title": "About forty Christians reportedly arrested during Christmas gatherings",
+      "published_account": "The UK Home Office's review cited human rights accounts of around forty Christians being arrested at two Christmas celebrations in different Iranian cities in December 2024.",
+      "reported_actor": "Iranian security authorities, as reported by Christian rights groups",
+      "publisher": "UK Home Office country information note",
+      "source_url": "https://www.gov.uk/government/publications/iran-country-policy-and-information-notes/country-policy-and-information-note-christians-and-christian-converts-iran-june-2026-accessible",
+      "notes": "The two cities and exact days are not established in this summary, so it is one aggregate report rather than two fabricated incident pins.",
+      "incident_group": "IRN-CHRISTMAS-2024",
+      "category": "Christmas worship arrests; aggregate"
+    },
+    {
+      "id": "CT-0584",
+      "date": "2024-11-13",
+      "country": "Colombia",
+      "place": "Farm in Valle del Cauca",
+      "title": "Christian community members Ever and Gerson Garcia Velez killed at farm",
+      "published_account": "Christian Solidarity Worldwide reported that brothers Ever and Gerson Garcia Velez, active members of a Christian faith community, were killed by three men at their farm in Valle del Cauca.",
+      "reported_actor": "Three unidentified men, according to CSW",
+      "publisher": "Christian Solidarity Worldwide",
+      "source_url": "https://www.csw.org.uk/press/colombian-pastor-and-family-attacked-after-sunday-service-6405/",
+      "notes": "The published account identifies the victims as Christian congregants, but does not establish the killers' motive. It is distinct from the already indexed Marlon Lora and Ivan Garcia cases.",
+      "incident_group": "COL-GARCIA-2024",
+      "category": "Christian congregants murdered; motive unconfirmed"
+    },
+    {
+      "id": "CT-0587",
+      "date": "2024-11-13",
+      "country": "Kyrgyzstan",
+      "place": "Bishkek",
+      "title": "Adventist pastor Pavel Shreider detained and church materials seized",
+      "published_account": "USCIRF reported armed security officers arrested Pastor Pavel Shreider of the True and Free Reform Seventh-day Adventist Church and raided his home, church and members' homes, taking Bibles and religious materials.",
+      "reported_actor": "Kyrgyz National Security Committee officers",
+      "publisher": "US Commission on International Religious Freedom",
+      "source_url": "https://www.uscirf.gov/religious-prisoners-conscience/forb-victims-database/pavel-shreider",
+      "notes": "USCIRF also reports physical abuse in custody. This is the initial detention in the legal case; the later deportation is already catalogued as CT-0363.",
+      "incident_group": "KGZ-SHREIDER-2024-2026",
+      "category": "Arrest of unregistered church pastor"
+    },
+    {
       "id": "CT-0302",
       "country": "Iran",
       "date": "2024-11",
@@ -2927,6 +3235,20 @@
       "source_url": "https://www.hrw.org/news/2024/10/30/ukraine-new-law-raises-religious-freedom-concerns",
       "second_source_url": "https://ukraine.ohchr.org/sites/default/files/2025-01/2024-12-31%20OHCHR%2041st%20periodic%20report%20on%20Ukraine.pdf",
       "notes": "Ukrainian government-controlled territory; a legislative measure and rights concern, not a count of closed churches or proven criminal wrongdoing."
+    },
+    {
+      "id": "CT-0585",
+      "date": "2024-08-14",
+      "country": "Colombia",
+      "place": "Residence of pastoral couple Rodian Rodriguez and Kelly Medina, specific town undisclosed",
+      "title": "Pastoral couple's home reportedly burned over Christian gatherings",
+      "published_account": "Christian Solidarity Worldwide reported that neighbours set fire to the home of pastoral couple Rodian Rodriguez and Kelly Medina after objecting to religious gatherings held outside their residence.",
+      "reported_actor": "Neighbours angered by religious gatherings, according to CSW",
+      "publisher": "Christian Solidarity Worldwide",
+      "source_url": "https://www.csw.org.uk/press/colombian-pastor-and-family-attacked-after-sunday-service-6405/",
+      "notes": "The publisher does not give a precise town in this report; the alleged anti-Christian motive comes from the source account.",
+      "incident_group": "COL-PASTOR-HOUSE-2024",
+      "category": "Christian pastoral home arson"
     },
     {
       "id": "CT-0270",
@@ -3129,6 +3451,20 @@
       "notes": "No exact place or day asserted. Separate month from other Serbian cases."
     },
     {
+      "id": "CT-0576",
+      "date": "2024-05-25",
+      "country": "Pakistan",
+      "place": "Mujahid Colony, Sargodha, Punjab",
+      "title": "Christian resident Nazir Masih assaulted by mob following blasphemy accusation",
+      "published_account": "The US Commission on International Religious Freedom reported a large mob assaulted the Christian man Nazir, also known as Lazar, Masih after a blasphemy allegation on 25 May. He died from his injuries on 3 June 2024.",
+      "reported_actor": "Mob mobilised by accusations of Quran desecration",
+      "publisher": "US Commission on International Religious Freedom",
+      "source_url": "https://www.uscirf.gov/news-room/releases-statements/uscirf-troubled-violence-against-christians-pakistan",
+      "notes": "The triggering allegation was unproven in the referenced report; the date is the assault, and 3 June is the later death, not another attack.",
+      "incident_group": "PAK-SARGODHA-2024",
+      "category": "Mob violence; Christian fatality"
+    },
+    {
       "id": "CT-0120",
       "date": "2024-05-23",
       "country": "Haiti",
@@ -3224,6 +3560,20 @@
       "notes": "The resolution does not establish an exact day or settlement for the 14 deaths.",
       "incident_group": "COD-ADF-2024",
       "category": "Religious coercion and killing"
+    },
+    {
+      "id": "CT-0567",
+      "date": "2024-05",
+      "country": "Iran",
+      "place": "Izeh, Khuzestan province",
+      "title": "Eight Christian converts sentenced to nearly 45 years collectively",
+      "published_account": "A UK government evidence review cited reports that a Revolutionary Court imposed nearly 45 years in combined sentences on eight Christian converts from Izeh for church involvement and accusations framed as national security offences.",
+      "reported_actor": "Iranian Revolutionary Court",
+      "publisher": "UK Home Office country information note",
+      "source_url": "https://www.gov.uk/government/publications/iran-country-policy-and-information-notes/country-policy-and-information-note-christians-and-christian-converts-iran-june-2026-accessible",
+      "notes": "The source says sentences ranged from nine months to fifteen years, and most defendants were reported on bail in June 2024. No exact decision day is established.",
+      "incident_group": "IRN-IZEH-2024",
+      "category": "Christian converts imprisoned or sentenced"
     },
     {
       "id": "CT-0360",
@@ -3586,6 +3936,20 @@
       "publisher": "L'Orient Today",
       "source_url": "https://today.lorientlejour.com/article/1365455/historic-qornet-shehwan-church-vandalized-in-suspected-theft.html",
       "notes": "Suspected theft is the source's stated explanation, not a proven anti-Christian attack."
+    },
+    {
+      "id": "CT-0571",
+      "date": "2024-01-20",
+      "country": "Eritrea",
+      "place": "Asmara",
+      "title": "More than thirty evangelical Christians detained after child's birthday party",
+      "published_account": "Christian Solidarity Worldwide told the UN Human Rights Council that Eritrean security agents detained more than thirty evangelical Christians following a raid on a child's birthday party; non-evangelical attendees were permitted to depart.",
+      "reported_actor": "Eritrean security officers",
+      "publisher": "Christian Solidarity Worldwide",
+      "source_url": "https://www.csw.org.uk/es/informes/hrc55-oral-statement-during-enhanced-interactive-dialogue-on-eritrea-6177/",
+      "notes": "CSW said women and accompanying children were ordered to report to police on 22 January, when they also were detained; the figure is approximate and includes multiple arrests within one episode.",
+      "incident_group": "ERI-ASMARA-BIRTHDAY-2024",
+      "category": "Arbitrary detention based on denomination"
     },
     {
       "id": "CT-0376",

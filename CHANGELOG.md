@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.16.0 - 11/11/2026: Global Christian persecution reports across thirteen countries
+
+- Add 26 source-attributed reports of violence, church attacks, detention and restrictions on Christian worship across thirteen countries, increasing the global catalogue to 588 report records across 91 countries and territories.
+- Document cases involving unregistered congregations in China and Azerbaijan, Christian converts in Iran, state restrictions in Cuba and Nicaragua, and detention and sentencing of an Adventist pastor in Kyrgyzstan.
+- Expand reports of attacks on Christian communities in Nigeria, Pakistan, Myanmar, Sri Lanka and Colombia, including church-service attacks, village raids, mob violence and attacks on clergy.
+- Preserve the distinction between confirmed and alleged religious targeting, link repeat stages in the same case and retain source context for disputed dates, unidentified attackers and aggregate records.
+- Preserve all prior reports, version history, source-driven heat-map behaviour and the existing local-licensed-media policy, with expanded regression coverage.
+
 ## 1.15.0 - 11/11/2026: Detailed reporting from Mozambique and the Assyrian Khabur villages
 
 - Add nine published source-attributed Christian persecution reports from Mozambique and Syria, extending the archive to 562 reports across 91 countries and territories.
