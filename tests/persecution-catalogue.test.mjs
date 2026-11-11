@@ -254,8 +254,8 @@ test('report-inclusive global expansion adds 45 source-attributed reports with m
  const countries=['Tajikistan','Armenia','Bhutan','Brunei','Jordan','Qatar','United Arab Emirates',
    'Saudi Arabia','Oman','Chile','Guatemala','Peru','Malawi','Greece'];
  assert.equal(countries.length,14);
- assert.equal(records.length,435);
- assert.equal(new Set(records.map(r=>r.country)).size,84);
+ assert.ok(records.length>=435);
+ assert.ok(new Set(records.map(r=>r.country)).size>=84);
  const geo=JSON.parse(read('public/data/christian-heatmap-places.json'));
  const world=JSON.parse(read('public/data/world-heatmap-110m.json'));
  const allowed=new Set(world.features.map(f=>f.id));
@@ -269,7 +269,7 @@ test('report-inclusive global expansion adds 45 source-attributed reports with m
    assert.equal(totals.countries.get(country),subset.length);
    assert.equal(filterPersecutionReports(records,{country}).length,subset.length);
  }
- const newRows=records.filter(r=>Number(r.id.slice(3))>=391);
+ const newRows=records.filter(r=>Number(r.id.slice(3))>=391&&Number(r.id.slice(3))<=435);
  assert.equal(newRows.length,45);
  for(const record of newRows){
    assert.match(record.id,/^CT-\d{4}$/);
@@ -289,4 +289,36 @@ test('report-inclusive global expansion adds 45 source-attributed reports with m
  assert.match(page,/includes published reports even where they are uncorroborated, disputed or based on a single source/);
  assert.match(page,/GLOBAL REPORT DISTRIBUTION/);
  assert.ok(!page.includes('GLOBAL INCIDENT DISTRIBUTION'));
+});
+
+test('seven newly represented countries preserve incident-level and aggregate attribution',()=>{
+ const countries=['Sweden','Netherlands','Croatia','Bosnia and Herzegovina','Argentina','Georgia','Serbia'];
+ const geo=JSON.parse(read('public/data/christian-heatmap-places.json'));
+ const world=JSON.parse(read('public/data/world-heatmap-110m.json'));
+ const shapes=new Set(world.features.map(x=>x.id));
+ const counts=aggregateIncidentLocations(records,geo);
+ assert.equal(records.length,460);
+ assert.equal(new Set(records.map(x=>x.country)).size,91);
+ assert.equal(counts.reportCount,records.length);
+ assert.equal([...counts.countries.values()].reduce((a,b)=>a+b,0),records.length);
+ for(const country of countries){
+  const rows=records.filter(x=>x.country===country);
+  assert.ok(rows.length,'Country missing: '+country);
+  assert.ok(geo.countries[country]&&shapes.has(geo.countries[country].iso3),'No map geometry: '+country);
+  assert.equal(counts.countries.get(country),rows.length);
+  assert.equal(filterPersecutionReports(records,{country}).length,rows.length);
+ }
+ const fresh=records.filter(r=>Number(r.id.slice(3))>=436);
+ assert.equal(fresh.length,25);
+ for(const r of fresh){
+  assert.match(r.id,/^CT-\d{4}$/);
+  assert.ok(r.publisher&&r.reported_actor&&r.notes&&r.published_account);
+  assert.equal(new URL(r.source_url).protocol,'https:');
+ }
+ assert.ok(fresh.some(r=>r.country==='Croatia'&&r.title.includes('St Spyridon')));
+ assert.ok(fresh.some(r=>r.country==='Sweden'&&r.title.includes('Syriac Orthodox')));
+ assert.ok(fresh.some(r=>r.country==='Bosnia and Herzegovina'&&r.publisher.includes('OSCE')));
+ assert.ok(fresh.some(r=>r.country==='Netherlands'&&r.incident_group==='EDE-CHURCHES-2026'));
+ assert.ok(fresh.some(r=>r.country==='Serbia'&&r.place.includes('not specified')));
+ assert.ok(fresh.some(r=>r.country==='Georgia'&&r.notes.includes('aggregate')));
 });

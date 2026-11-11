@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.11.0 - 11/11/2026: European and regional report coverage expansion
+
+- Add 25 published, attributed Christian incident reports from seven previously unrepresented countries, extending the catalogue to 460 reports across 91 countries and territories.
+- Include incidents affecting Orthodox, Catholic, Protestant and other Christian communities in Sweden, the Netherlands, Croatia, Bosnia and Herzegovina, Argentina, Georgia and Serbia.
+- Document church fires, desecration, cemetery damage, theft, reported assaults and minority-Christian threats, retaining source qualifications and grouping linked incidents or annual aggregates.
+- Extend the existing world heat map to the seven new countries and update regression tests and geographic coverage guidance, while preserving the inclusive reporting policy and prior source records.
+
 ## 1.10.0 - 11/11/2026: Global report expansion and inclusive source catalogue
 
 - Add 45 source-attributed reports from 14 previously unrepresented countries, growing the archive to 435 report records across 84 countries and territories.
