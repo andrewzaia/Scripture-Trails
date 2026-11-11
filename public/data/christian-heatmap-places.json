@@ -2380,17 +2380,6 @@
         }
       ]
     },
-    "Ukraine|Occupied Zaporizhzhia region": {
-      "resolution": "region",
-      "points": [
-        {
-          "name": "Occupied Zaporizhzhia region",
-          "lat": 47.1,
-          "lon": 36,
-          "precision": "region"
-        }
-      ]
-    },
     "Ukraine|Occupied Crimea": {
       "resolution": "region",
       "points": [
@@ -2409,17 +2398,6 @@
           "name": "Berdiansk, occupied Zaporizhzhia region",
           "lat": 46.756,
           "lon": 36.789,
-          "precision": "region"
-        }
-      ]
-    },
-    "Ukraine|Occupied Kherson region": {
-      "resolution": "region",
-      "points": [
-        {
-          "name": "Occupied Kherson region",
-          "lat": 46.64,
-          "lon": 32.62,
           "precision": "region"
         }
       ]
@@ -2468,14 +2446,58 @@
         }
       ]
     },
-    "Ukraine|Dobropillia, Kherson region": {
-      "resolution": "region",
+    "Ukraine|Chernivtsi": {
+      "resolution": "city",
       "points": [
         {
-          "name": "Dobropillia, Kherson region",
-          "lat": 46.9,
-          "lon": 33.6,
-          "precision": "region"
+          "name": "Chernivtsi",
+          "lat": 48.2915,
+          "lon": 25.9403,
+          "precision": "city"
+        }
+      ]
+    },
+    "Ukraine|Izium, Kharkiv region": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Izium, Kharkiv region",
+          "lat": 49.212,
+          "lon": 37.275,
+          "precision": "city"
+        }
+      ]
+    },
+    "Ukraine|Kharkiv": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Kharkiv",
+          "lat": 49.9935,
+          "lon": 36.2304,
+          "precision": "city"
+        }
+      ]
+    },
+    "Ukraine|Horodyshche, Cherkasy region": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Horodyshche, Cherkasy region",
+          "lat": 49.284,
+          "lon": 31.458,
+          "precision": "city"
+        }
+      ]
+    },
+    "Ukraine|Chuhuiv, Kharkiv region": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Chuhuiv, Kharkiv region",
+          "lat": 49.835,
+          "lon": 36.685,
+          "precision": "city"
         }
       ]
     }
