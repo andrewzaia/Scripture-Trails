@@ -222,14 +222,14 @@ test('new-country archive expansion adds 25 mapped countries without losing earl
 test('further country and low-coverage research has all source and world-map invariants',()=>{
  const newlyCovered=['Kazakhstan','Kyrgyzstan','Uzbekistan','Turkmenistan','Tanzania','Chad','Ghana','Kosovo','Lebanon','Brazil','Venezuela','Morocco'];
  assert.equal(newlyCovered.length,12);
- assert.equal(records.length,390);
+ assert.ok(records.length>=390);
  const geo=JSON.parse(read('public/data/christian-heatmap-places.json'));
  const world=JSON.parse(read('public/data/world-heatmap-110m.json'));
  const codes=new Set(world.features.map(f=>f.id));
- assert.equal(new Set(records.map(r=>r.country)).size,70);
+ assert.ok(new Set(records.map(r=>r.country)).size>=70);
  const totals=aggregateIncidentLocations(records,geo);
- assert.equal(totals.reportCount,390);
- assert.equal([...totals.countries.values()].reduce((sum,n)=>sum+n,0),390);
+ assert.equal(totals.reportCount,records.length);
+ assert.equal([...totals.countries.values()].reduce((sum,n)=>sum+n,0),records.length);
  for(const country of newlyCovered){
    const recordsInCountry=records.filter(r=>r.country===country);
    assert.ok(recordsInCountry.length>=1,'Country missing reports: '+country);
@@ -245,7 +245,48 @@ test('further country and low-coverage research has all source and world-map inv
  assert.ok(records.some(r=>r.country==='Lebanon'&&r.notes.includes('Suspected theft')));
  assert.ok(records.some(r=>r.country==='United Kingdom'&&r.publisher==='Crown Prosecution Service'));
  assert.ok(records.some(r=>r.country==='Mozambique'&&r.date==='2025-10-09'));
- const newRows=records.filter(r=>Number(r.id.slice(3))>=359);
+ const newRows=records.filter(r=>Number(r.id.slice(3))>=359&&Number(r.id.slice(3))<=390);
  assert.equal(newRows.length,32);
  for(const r of newRows){assert.equal(new URL(r.source_url).protocol,'https:');assert.ok(r.notes);}
+});
+
+test('report-inclusive global expansion adds 45 source-attributed reports with mapped country coverage',()=>{
+ const countries=['Tajikistan','Armenia','Bhutan','Brunei','Jordan','Qatar','United Arab Emirates',
+   'Saudi Arabia','Oman','Chile','Guatemala','Peru','Malawi','Greece'];
+ assert.equal(countries.length,14);
+ assert.equal(records.length,435);
+ assert.equal(new Set(records.map(r=>r.country)).size,84);
+ const geo=JSON.parse(read('public/data/christian-heatmap-places.json'));
+ const world=JSON.parse(read('public/data/world-heatmap-110m.json'));
+ const allowed=new Set(world.features.map(f=>f.id));
+ const totals=aggregateIncidentLocations(records,geo);
+ assert.equal(totals.reportCount,records.length);
+ assert.equal([...totals.countries.values()].reduce((n,count)=>n+count,0),records.length);
+ for(const country of countries){
+   const subset=records.filter(r=>r.country===country);
+   assert.ok(subset.length>0,'No reports in '+country);
+   assert.ok(geo.countries[country]&&allowed.has(geo.countries[country].iso3),'Missing geometry '+country);
+   assert.equal(totals.countries.get(country),subset.length);
+   assert.equal(filterPersecutionReports(records,{country}).length,subset.length);
+ }
+ const newRows=records.filter(r=>Number(r.id.slice(3))>=391);
+ assert.equal(newRows.length,45);
+ for(const record of newRows){
+   assert.match(record.id,/^CT-\d{4}$/);
+   assert.ok(record.title&&record.published_account&&record.publisher&&record.reported_actor&&record.notes);
+   assert.equal(new URL(record.source_url).protocol,'https:');
+ }
+ const disputed=records.find(r=>r.id==='CT-0430');
+ assert.equal(disputed.country,'Democratic Republic of the Congo');
+ assert.ok(disputed.notes.includes('counter-reports'));
+ assert.equal(new URL(disputed.second_source_url).protocol,'https:');
+ assert.ok(records.some(r=>r.country==='Armenia'&&r.category.includes('Clergy')));
+ assert.ok(records.some(r=>r.country==='Brunei'&&r.category.includes('surveillance')));
+ assert.ok(records.some(r=>r.country==='Saudi Arabia'&&r.notes.includes('Policy-level')));
+ assert.ok(records.some(r=>r.country==='Chile'&&r.notes.includes('Aggregate published claim')));
+ assert.ok(records.some(r=>r.country==='Guatemala'&&r.date==='2024-01'));
+ const page=read('public/index.html');
+ assert.match(page,/includes published reports even where they are uncorroborated, disputed or based on a single source/);
+ assert.match(page,/GLOBAL REPORT DISTRIBUTION/);
+ assert.ok(!page.includes('GLOBAL INCIDENT DISTRIBUTION'));
 });
