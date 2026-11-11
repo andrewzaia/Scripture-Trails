@@ -32,6 +32,32 @@
       "notes": "Aleteia reports Oct 31; Tribune reports Oct 28. Stored Oct 28 as one reported date, not resolved."
     },
     {
+      "id": "CT-0241",
+      "date": "2026-10-24",
+      "country": "Ethiopia",
+      "place": "Shirka district, Arsi Zone",
+      "category": "Killing; Orthodox Christian civilians",
+      "title": "Forty-six Orthodox Christians reportedly killed in Shirka district",
+      "published_account": "Reuters reported the Ethiopian Orthodox Church said attackers killed 46 Orthodox Christians on 24 October 2026 in Shirka district in Oromia's Arsi Zone. The killings formed a separate attack from the 20 October violence in Merti.",
+      "reported_actor": "Perpetrators disputed; Oromia officials blamed the Oromo Liberation Army without presenting evidence in the account.",
+      "publisher": "Reuters",
+      "source_url": "https://www.reuters.com/world/africa/attackers-kill-60-people-ethiopias-conflict-hit-oromiya-region-orthodox-church-2026-10-27/",
+      "notes": "Account and attribution are according to the cited publisher; incident categorisation does not independently determine perpetrator identity or motive."
+    },
+    {
+      "id": "CT-0242",
+      "date": "2026-10-20",
+      "country": "Ethiopia",
+      "place": "Merti district, Arsi Zone",
+      "category": "Killing; Orthodox Christian civilians",
+      "title": "Fourteen Orthodox Christians reportedly killed in Merti district",
+      "published_account": "Reuters reported the Ethiopian Orthodox Church said 14 Christian civilians were killed in Merti district on 20 October 2026 amid armed conflict in Oromia.",
+      "reported_actor": "Perpetrators and motive disputed; allegations against armed groups and security forces were not independently substantiated in the cited report.",
+      "publisher": "Reuters",
+      "source_url": "https://www.reuters.com/world/africa/attackers-kill-60-people-ethiopias-conflict-hit-oromiya-region-orthodox-church-2026-10-27/",
+      "notes": "Account and attribution are according to the cited publisher; incident categorisation does not independently determine perpetrator identity or motive."
+    },
+    {
       "id": "CT-0002",
       "date": "2026-10-03",
       "country": "Syria",
@@ -2020,6 +2046,32 @@
       "notes": "Aggregate destruction count; not 253 individual site entries."
     },
     {
+      "id": "CT-0243",
+      "date": "2023-04",
+      "country": "Eritrea",
+      "place": "Mai Serwa prison, near Asmara",
+      "category": "Detention; Christian worshippers",
+      "title": "More than one hundred Christians reportedly detained in April",
+      "published_account": "Human Rights Watch's 2024 country report said 103 Christians were arrested in April 2023 as part of detentions for religious worship and transferred into detention.",
+      "reported_actor": "Eritrean state security authorities reported; individual circumstances and precise days not specified.",
+      "publisher": "Human Rights Watch",
+      "source_url": "https://www.hrw.org/world-report/2024/country-chapters/eritrea",
+      "notes": "Account and attribution are according to the cited publisher; incident categorisation does not independently determine perpetrator identity or motive."
+    },
+    {
+      "id": "CT-0244",
+      "date": "2023-03",
+      "country": "Eritrea",
+      "place": "Asmara",
+      "category": "Detention; Christian prayer meeting",
+      "title": "Twenty-nine Christians reportedly arrested during prayer meeting",
+      "published_account": "Human Rights Watch's 2023 country report said 29 Christians were reportedly detained during a March prayer gathering in Asmara and taken to Mai Serwa prison.",
+      "reported_actor": "Eritrean state authorities according to the country report.",
+      "publisher": "Human Rights Watch",
+      "source_url": "https://www.hrw.org/world-report/2023/country-chapters/eritrea",
+      "notes": "Account and attribution are according to the cited publisher; incident categorisation does not independently determine perpetrator identity or motive."
+    },
+    {
       "id": "CT-0132",
       "date": "2023-02-10",
       "country": "Nicaragua",
@@ -2044,6 +2096,32 @@
       "source_url": "https://www.abc.net.au/news/2023-01-19/wesley-uniting-church-broken-hill-trashed-by-vandals/101869672"
     },
     {
+      "id": "CT-0245",
+      "date": "2023-01",
+      "country": "Eritrea",
+      "place": "Mai Serwa prison, near Asmara",
+      "category": "Detention; Christian worshippers",
+      "title": "Forty-four worshippers reportedly detained in January",
+      "published_account": "Human Rights Watch's 2024 country report recorded 44 people detained after religious services in January 2023 and sent to Mai Serwa prison.",
+      "reported_actor": "Eritrean state authorities as described in the report; exact incident day unspecified.",
+      "publisher": "Human Rights Watch",
+      "source_url": "https://www.hrw.org/world-report/2024/country-chapters/eritrea",
+      "notes": "Account and attribution are according to the cited publisher; incident categorisation does not independently determine perpetrator identity or motive."
+    },
+    {
+      "id": "CT-0246",
+      "date": "2022-10",
+      "country": "Eritrea",
+      "place": "Asmara and Segheneity",
+      "category": "Detention; Catholic clergy",
+      "title": "Three Catholic priests detained in October 2022",
+      "published_account": "Human Rights Watch reported Eritrean authorities detained three Catholic priests between 11 and 15 October 2022, including Bishop Fikremariam Hagos; the priests were later released in December.",
+      "reported_actor": "Eritrean authorities; no specific charges or stated religious motive established in report.",
+      "publisher": "Human Rights Watch",
+      "source_url": "https://www.hrw.org/news/2022/12/07/eritrea-10-years-behind-bars-ex-ministers-daughter",
+      "notes": "Account and attribution are according to the cited publisher; incident categorisation does not independently determine perpetrator identity or motive."
+    },
+    {
       "id": "CT-0177",
       "date": "2022-09-24",
       "country": "Australia",
@@ -2054,6 +2132,19 @@
       "reported_actor": "Vandals unidentified; motive not established",
       "publisher": "The Catholic Weekly",
       "source_url": "https://catholicweekly.com.au/heartache-as-vandals-target-historic-church/"
+    },
+    {
+      "id": "CT-0247",
+      "date": "2022-09-04",
+      "country": "Eritrea",
+      "place": "Akrur, southern Eritrea",
+      "category": "Detention; Catholic worship service",
+      "title": "Young Mass attendees rounded up at Catholic church in Akrur",
+      "published_account": "Human Rights Watch reported armed security forces detained young people attending a Catholic Mass in Akrur; it independently geolocated imagery of the roundup.",
+      "reported_actor": "Eritrean security forces amid broader military conscription, not proven religiously motivated.",
+      "publisher": "Human Rights Watch",
+      "source_url": "https://www.hrw.org/news/2023/02/09/eritrea-crackdown-draft-evaders-families",
+      "notes": "Account and attribution are according to the cited publisher; incident categorisation does not independently determine perpetrator identity or motive."
     },
     {
       "id": "CT-0133",
@@ -2609,6 +2700,19 @@
       "notes": "Part of coordinated Palm Sunday attacks; death counts differ by update."
     },
     {
+      "id": "CT-0248",
+      "date": "2017-02",
+      "country": "Egypt",
+      "place": "North Sinai",
+      "category": "Killing; displacement of Coptic families",
+      "title": "Coptic Christians killed during North Sinai attacks",
+      "published_account": "Human Rights Watch reported seven Christians murdered in separate attacks between late January and February 2017, with hundreds of Christian families fleeing North Sinai.",
+      "reported_actor": "Attacks had hallmarks of Islamic State violence, but the cited source stated that no group claimed responsibility for the seven killings.",
+      "publisher": "Human Rights Watch",
+      "source_url": "https://www.hrw.org/world-report/2018/country-chapters/egypt",
+      "notes": "Account and attribution are according to the cited publisher; incident categorisation does not independently determine perpetrator identity or motive."
+    },
+    {
       "id": "CT-0166",
       "date": "2016-12-11",
       "country": "Egypt",
@@ -2619,6 +2723,19 @@
       "reported_actor": "Bombing; responsibility not initially established",
       "publisher": "Human Rights Watch",
       "source_url": "https://www.hrw.org/news/2016/12/12/egypt-deadly-bombing-coptic-cathedral"
+    },
+    {
+      "id": "CT-0249",
+      "date": "2016-05",
+      "country": "Egypt",
+      "place": "Minya governorate and other towns",
+      "category": "Mob violence; church construction disputes",
+      "title": "Anti-Christian violence over suspected church construction",
+      "published_account": "Human Rights Watch reported a wave of anti-Christian violence between May and July 2016, including one death, injuries and destruction of Christian property amid rumours about church construction.",
+      "reported_actor": "Local attackers implicated; incidents spread across multiple towns, with varied circumstances.",
+      "publisher": "Human Rights Watch",
+      "source_url": "https://www.hrw.org/world-report/2017/country-chapters/egypt",
+      "notes": "Account and attribution are according to the cited publisher; incident categorisation does not independently determine perpetrator identity or motive."
     },
     {
       "id": "CT-0185",
@@ -2657,6 +2774,19 @@
       "reported_actor": "Cause and culprit not established",
       "publisher": "ABC News",
       "source_url": "https://www.abc.net.au/news/2015-04-04/fourth-melbourne-church-fire-not-linked-to-brighton-dandenong/6370704"
+    },
+    {
+      "id": "CT-0250",
+      "date": "2015-04-02",
+      "country": "Kenya",
+      "place": "Garissa University College",
+      "category": "Shooting; Christian university students",
+      "title": "Students killed during Garissa University attack",
+      "published_account": "Human Rights Watch reported at least 147 killed during the Garissa University assault. Survivors reported attackers later selected Christian students for killing, though the initial phase also killed Muslims.",
+      "reported_actor": "Al-Shabaab claimed responsibility; HRW warned claims that Muslims were universally spared were false.",
+      "publisher": "Human Rights Watch",
+      "source_url": "https://www.hrw.org/news/2015/04/06/after-garissa-kenya-needs-break-cycle",
+      "notes": "Account and attribution are according to the cited publisher; incident categorisation does not independently determine perpetrator identity or motive."
     },
     {
       "id": "CT-0188",
@@ -2717,6 +2847,32 @@
       "reported_actor": "Islamic State-aligned armed group claimed responsibility",
       "publisher": "Human Rights Watch",
       "source_url": "https://www.hrw.org/news/2015/02/16/libya/egypt-murder-egyptians-war-crime"
+    },
+    {
+      "id": "CT-0251",
+      "date": "2014-12-02",
+      "country": "Kenya",
+      "place": "Mandera County quarry",
+      "category": "Killing; workers selected by faith",
+      "title": "Quarry workers killed during Mandera attack",
+      "published_account": "Human Rights Watch reported that Al-Shabaab fighters singled out quarry workers unable to recite an Islamic creed during an assault in Mandera County in December 2014.",
+      "reported_actor": "Al-Shabaab attackers as reported; victims included non-Muslims singled out after a religious test.",
+      "publisher": "Human Rights Watch",
+      "source_url": "https://www.hrw.org/world-report/2016/country-chapters/kenya",
+      "notes": "Account and attribution are according to the cited publisher; incident categorisation does not independently determine perpetrator identity or motive."
+    },
+    {
+      "id": "CT-0252",
+      "date": "2014-11-22",
+      "country": "Kenya",
+      "place": "Mandera County bus route",
+      "category": "Killing; travellers selected by faith",
+      "title": "Bus passengers killed after religious screening in Mandera",
+      "published_account": "Human Rights Watch said an attack on a Mandera County bus was among several in which attackers singled out those unable to recite an Islamic creed, killing civilians.",
+      "reported_actor": "Suspected Al-Shabaab fighters; the cited report links the attack to faith-based victim selection.",
+      "publisher": "Human Rights Watch",
+      "source_url": "https://www.hrw.org/world-report/2016/country-chapters/kenya",
+      "notes": "Account and attribution are according to the cited publisher; incident categorisation does not independently determine perpetrator identity or motive."
     },
     {
       "id": "CT-0191",

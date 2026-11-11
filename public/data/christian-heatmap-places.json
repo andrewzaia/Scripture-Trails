@@ -3,7 +3,7 @@
     "source": "srestre world-countries-cities-db (dr5hn source), ODbL 1.0",
     "url": "https://github.com/srestre/world-countries-cities-db",
     "license": "ODbL-1.0",
-    "notice": "Original coordinates use gazetteer centres. Added points are approximate city or regional centres and NOT precise incident sites. Multiple-site records may be represented by one regional point."
+    "notice": "Original coordinates use gazetteer centres. Added markers are approximate city or regional centres; they are not precise attack sites, and route/multiple-site events may be represented by one centre."
   },
   "generated": "2026-11-11",
   "countries": {
@@ -122,6 +122,18 @@
     "Libya": {
       "iso2": "LY",
       "iso3": "LBY"
+    },
+    "Ethiopia": {
+      "iso2": "ET",
+      "iso3": "ETH"
+    },
+    "Eritrea": {
+      "iso2": "ER",
+      "iso3": "ERI"
+    },
+    "Kenya": {
+      "iso2": "KE",
+      "iso3": "KEN"
     }
   },
   "places": {
@@ -2152,6 +2164,127 @@
           "lat": 31.2,
           "lon": 16.59,
           "precision": "approximate regional centre"
+        }
+      ]
+    },
+    "Ethiopia|Shirka district, Arsi Zone": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Shirka district, Arsi Zone",
+          "lat": 7.5,
+          "lon": 39.2,
+          "precision": "approximate district or regional centre"
+        }
+      ]
+    },
+    "Ethiopia|Merti district, Arsi Zone": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Merti district, Arsi Zone",
+          "lat": 8.1,
+          "lon": 39.2,
+          "precision": "approximate district or regional centre"
+        }
+      ]
+    },
+    "Eritrea|Mai Serwa prison, near Asmara": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Mai Serwa prison, near Asmara",
+          "lat": 15.31,
+          "lon": 38.89,
+          "precision": "approximate district or regional centre"
+        }
+      ]
+    },
+    "Eritrea|Asmara": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Asmara",
+          "lat": 15.34,
+          "lon": 38.93,
+          "precision": "approximate district or regional centre"
+        }
+      ]
+    },
+    "Eritrea|Asmara and Segheneity": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Asmara and Segheneity",
+          "lat": 15.21,
+          "lon": 38.76,
+          "precision": "approximate district or regional centre"
+        }
+      ]
+    },
+    "Eritrea|Akrur, southern Eritrea": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Akrur, southern Eritrea",
+          "lat": 14.72,
+          "lon": 39.1,
+          "precision": "approximate district or regional centre"
+        }
+      ]
+    },
+    "Egypt|North Sinai": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "North Sinai",
+          "lat": 30.62,
+          "lon": 33.8,
+          "precision": "approximate district or regional centre"
+        }
+      ]
+    },
+    "Egypt|Minya governorate and other towns": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Minya governorate and other towns",
+          "lat": 28.1,
+          "lon": 30.75,
+          "precision": "approximate district or regional centre"
+        }
+      ]
+    },
+    "Kenya|Garissa University College": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Garissa University College",
+          "lat": -0.46,
+          "lon": 39.65,
+          "precision": "approximate district or regional centre"
+        }
+      ]
+    },
+    "Kenya|Mandera County quarry": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Mandera County quarry",
+          "lat": 3.93,
+          "lon": 41.84,
+          "precision": "approximate district or regional centre"
+        }
+      ]
+    },
+    "Kenya|Mandera County bus route": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Mandera County bus route",
+          "lat": 3.93,
+          "lon": 41.84,
+          "precision": "approximate district or regional centre"
         }
       ]
     }
