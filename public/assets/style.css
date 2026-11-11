@@ -414,7 +414,7 @@ body.light .pc-country{fill:#d4dfd8;stroke:#8fa8a0}
 .pc-country[data-level="2"],.pc-legend-level[data-level="2"]{fill:#d9a366;background:#d9a366}
 .pc-country[data-level="3"],.pc-legend-level[data-level="3"]{fill:#e68c4c;background:#e68c4c}
 .pc-country[data-level="4"],.pc-legend-level[data-level="4"]{fill:#dc613a;background:#dc613a}
-.pc-country[data-level="5"],.pc-legend-level[data-level="5"]{fill:#b83e3d;background:#b83e3d}
+.pc-country[data-level="5"],.pc-legend-level[data-level="5"]{fill:#b83e3d;background:#b83e3d;color:#fff}
 .pc-country[role="button"]{cursor:pointer}
 .pc-country[role="button"]:hover,.pc-country[role="button"]:focus-visible{stroke:#fff2c7;stroke-width:1.5;stroke-opacity:1;outline:none}
 .pc-map-marker{fill:#ffe1a7;stroke:#7a312a;stroke-width:1.1;cursor:pointer}
