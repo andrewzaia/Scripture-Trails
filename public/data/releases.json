@@ -1,6 +1,17 @@
 {
   "releases": [
     {
+      "version": "1.9.0",
+      "date": "2026-11-11",
+      "title": "Christian persecution - further geographic coverage and historical cases",
+      "changes": [
+        "Add 32 attributed reports, extending the Christian persecution catalogue to 390 records across 70 countries and territories, including 12 previously unrepresented countries.",
+        "Document worship restrictions and clerical detentions in Central Asia, attacks against Christians in Tanzania and Chad, and additional church-property incidents across Europe, Africa and Latin America.",
+        "Record six separately documented historical Tanzania incidents and additional cases in Russia, Mozambique and the United Kingdom while retaining incident-group notes and clear uncertainty about perpetrators or motives.",
+        "Extend local heat-map country definitions, update the geographic research queue and strengthen regression checks without adding unverified location pins or reusing unlicensed third-party imagery."
+      ]
+    },
+    {
       "version": "1.8.0",
       "date": "2026-11-11",
       "title": "Worldwide coverage - 25 additional countries and territories",

@@ -218,3 +218,34 @@ test('new-country archive expansion adds 25 mapped countries without losing earl
  assert.ok(records.some(r=>r.country==='Palestinian territories'&&r.notes.includes('No demonstrated intent')));
  assert.ok(records.some(r=>r.country==='Azerbaijan'&&r.publisher.includes('Caucasus Heritage Watch')));
 });
+
+test('further country and low-coverage research has all source and world-map invariants',()=>{
+ const newlyCovered=['Kazakhstan','Kyrgyzstan','Uzbekistan','Turkmenistan','Tanzania','Chad','Ghana','Kosovo','Lebanon','Brazil','Venezuela','Morocco'];
+ assert.equal(newlyCovered.length,12);
+ assert.equal(records.length,390);
+ const geo=JSON.parse(read('public/data/christian-heatmap-places.json'));
+ const world=JSON.parse(read('public/data/world-heatmap-110m.json'));
+ const codes=new Set(world.features.map(f=>f.id));
+ assert.equal(new Set(records.map(r=>r.country)).size,70);
+ const totals=aggregateIncidentLocations(records,geo);
+ assert.equal(totals.reportCount,390);
+ assert.equal([...totals.countries.values()].reduce((sum,n)=>sum+n,0),390);
+ for(const country of newlyCovered){
+   const recordsInCountry=records.filter(r=>r.country===country);
+   assert.ok(recordsInCountry.length>=1,'Country missing reports: '+country);
+   assert.ok(geo.countries[country]&&codes.has(geo.countries[country].iso3),'Country is not mapped: '+country);
+   assert.equal(totals.countries.get(country),recordsInCountry.length);
+   assert.ok(recordsInCountry.every(r=>r.publisher&&r.reported_actor&&r.source_url&&r.notes),'Missing provenance in '+country);
+   assert.equal(filterPersecutionReports(records,{country}).length,recordsInCountry.length);
+ }
+ for(const report of records)assert.ok(geo.countries[report.country],'Unmapped report: '+report.id);
+ assert.equal(records.filter(r=>r.country==='Tanzania').length,7);
+ assert.ok(records.some(r=>r.country==='Morocco'&&r.notes.includes('Yearly pattern')));
+ assert.ok(records.some(r=>r.country==='Ghana'&&r.notes.includes('not detained')));
+ assert.ok(records.some(r=>r.country==='Lebanon'&&r.notes.includes('Suspected theft')));
+ assert.ok(records.some(r=>r.country==='United Kingdom'&&r.publisher==='Crown Prosecution Service'));
+ assert.ok(records.some(r=>r.country==='Mozambique'&&r.date==='2025-10-09'));
+ const newRows=records.filter(r=>Number(r.id.slice(3))>=359);
+ assert.equal(newRows.length,32);
+ for(const r of newRows){assert.equal(new URL(r.source_url).protocol,'https:');assert.ok(r.notes);}
+});
