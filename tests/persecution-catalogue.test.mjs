@@ -446,7 +446,7 @@ test('fifteen Nineveh site reports preserve source provenance and honest settlem
  assert.ok(groups.get('IRQ-QARAQOSH-AL-TAHIRA')===2,'Two episodes at same church must share group');
  assert.ok(added.some(r=>r.title.includes('Clock Church library')&&r.notes.includes('CT-0534')));
  assert.ok(added.some(r=>r.title.includes('Mart Shmoni')));
- assert.ok(added.some(r=>r.title.includes('Tel Keppe')));
+ assert.ok(added.some(r=>r.locations?.[0]?.name==='Tel Keppe'));
  const geo=JSON.parse(read('public/data/christian-heatmap-places.json'));
  const totals=aggregateIncidentLocations(records,geo);
  assert.equal(totals.reportCount,568);
