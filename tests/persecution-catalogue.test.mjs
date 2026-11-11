@@ -218,3 +218,40 @@ test('new-country archive expansion adds 25 mapped countries without losing earl
  assert.ok(records.some(r=>r.country==='Palestinian territories'&&r.notes.includes('No demonstrated intent')));
  assert.ok(records.some(r=>r.country==='Azerbaijan'&&r.publisher.includes('Caucasus Heritage Watch')));
 });
+
+test('new Central Asian and worldwide coverage remains source-attributed and geographically valid',()=>{
+ const newCountryNames=['Bhutan','Brazil','Brunei','Chile','Jordan','Kazakhstan','Kyrgyzstan','Lebanon','Morocco','Saudi Arabia','Tajikistan','Tanzania','Tunisia','Uzbekistan','Venezuela'];
+ const archive=JSON.parse(read('public/data/christian-persecution.json'));
+ const geo=JSON.parse(read('public/data/christian-heatmap-places.json'));
+ const world=JSON.parse(read('public/data/world-heatmap-110m.json'));
+ const codes=new Set(world.features.map(x=>x.id));
+ assert.ok(records.length>=392);
+ assert.ok(new Set(records.map(r=>r.country)).size>=73);
+ assert.ok(records.some(r=>r.country==='Ukraine'&&r.date==='2026-10-09'),'Preserve Ukraine expansion');
+ const newCases=records.filter(r=>Number(r.id.slice(3))>=359&&Number(r.id.slice(3))<=392);
+ assert.equal(newCases.length,34);
+ assert.equal(new Set(newCases.map(x=>x.id)).size,newCases.length);
+ assert.ok(newCases.some(x=>x.country==='Philippines'&&x.date==='2023-12-03'));
+ assert.ok(newCases.some(x=>x.country==='Mozambique'&&x.date==='2020'));
+ assert.ok(newCases.some(x=>x.country==='Israel'&&x.date==='2026-11-01'));
+ assert.ok(newCases.some(x=>x.country==='Chile'&&x.incident_group==='CHILE-SANTIAGO-2020'));
+ assert.ok(newCases.some(x=>x.country==='Lebanon'&&x.notes.includes('No hate motivation')));
+ assert.ok(newCases.some(x=>x.country==='Saudi Arabia'&&x.notes.includes('Private worship')));
+ assert.ok(newCases.some(x=>x.country==='Kyrgyzstan'&&x.title.includes('Supreme Court')));
+ for(const x of newCases){
+  assert.ok(x.source_url&&new URL(x.source_url).protocol==='https:');
+  assert.ok(x.publisher&&x.reported_actor&&x.notes&&x.published_account);
+  assert.match(x.date,/^[0-9]{4}(?:-[0-9]{2}(?:-[0-9]{2})?)?$/);
+ }
+ const totals=aggregateIncidentLocations(records,geo);
+ assert.equal(totals.reportCount,records.length);
+ for(const n of newCountryNames){
+  assert.ok(geo.countries[n],'No map code for '+n);
+  assert.ok(codes.has(geo.countries[n].iso3),'No country shape for '+n);
+  const filtered=filterPersecutionReports(records,{country:n});
+  assert.ok(filtered.length>0,'No country reports for '+n);
+  assert.equal(totals.countries.get(n),filtered.length);
+ }
+ assert.ok(records.every(x=>geo.countries[x.country]),'Every report has a country mapping');
+ assert.equal(archive.coverage.latest_record,records[0].date);
+});
