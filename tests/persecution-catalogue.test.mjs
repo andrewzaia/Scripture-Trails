@@ -186,3 +186,35 @@ test('Ukraine reports remain attributed and the world map includes locations wit
  assert.equal(all.reportCount,records.length);
  assert.ok(all.places.some(x=>x.country==='Ukraine'&&x.label==='Kyiv'));
 });
+
+test('new-country archive expansion adds 25 mapped countries without losing earlier incidents',()=>{
+ const newCountries=[
+  'Algeria','Azerbaijan','Bangladesh','Belarus','Cameroon','Canada','Colombia','Cuba','Iran','Israel',
+  'Laos','Malaysia','Mali','Myanmar','Nepal','Niger','North Korea','Palestinian territories','Somalia',
+  'South Africa','South Sudan','Sudan','Uganda','Vietnam','Yemen'
+ ];
+ assert.equal(newCountries.length,25);
+ assert.ok(records.length>=358);
+ assert.ok(new Set(records.map(r=>r.country)).size>=58);
+ const geo=JSON.parse(read('public/data/christian-heatmap-places.json'));
+ const world=JSON.parse(read('public/data/world-heatmap-110m.json'));
+ const validCodes=new Set(world.features.map(f=>f.id));
+ const totals=aggregateIncidentLocations(records,geo);
+ for(const country of newCountries){
+  const all=records.filter(r=>r.country===country);
+  assert.ok(all.length>=1,'Unrepresented country: '+country);
+  assert.ok(geo.countries[country],'Missing map entry: '+country);
+  assert.ok(validCodes.has(geo.countries[country].iso3),'Missing world-map shape: '+country);
+  assert.equal(totals.countries.get(country),all.length);
+  assert.ok(all.every(r=>r.publisher&&r.reported_actor&&r.notes),'Missing source qualification: '+country);
+  assert.ok(all.every(r=>new URL(r.source_url).protocol==='https:'),'Unsafe source URL: '+country);
+  assert.ok(filterPersecutionReports(records,{country}).length>=1,'Country filter failed: '+country);
+ }
+ for(const r of records)assert.ok(geo.countries[r.country],'Every report must map to a country: '+r.country);
+ assert.equal(totals.reportCount,records.length);
+ assert.equal([...totals.countries.values()].reduce((a,b)=>a+b,0),records.length);
+ assert.ok(records.some(r=>r.country==='Bangladesh'&&r.notes.includes('land or intra-community dispute')));
+ assert.ok(records.some(r=>r.country==='Canada'&&r.notes.includes('No religiously motivated')));
+ assert.ok(records.some(r=>r.country==='Palestinian territories'&&r.notes.includes('No demonstrated intent')));
+ assert.ok(records.some(r=>r.country==='Azerbaijan'&&r.publisher.includes('Caucasus Heritage Watch')));
+});
