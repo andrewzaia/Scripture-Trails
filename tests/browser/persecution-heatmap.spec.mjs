@@ -86,6 +86,7 @@ test('credited locally hosted site photos appear neatly on affected report cards
  await expect(page.locator('[data-view="christian-persecution"].nav-link')).toContainText('Christian persecution');
  await page.locator('[data-pc-country]').selectOption('Iraq');
  const thumbnail=page.locator('.persecution-photo img').first();
+ await thumbnail.scrollIntoViewIfNeeded();
  await expect(thumbnail).toHaveAttribute('src',/^\x2fassets\x2fpersecution-media\x2f[a-z0-9-]+\.jpg$/);
  await expect.poll(()=>thumbnail.evaluate(img=>img.complete&&img.naturalWidth>0)).toBe(true);
  await expect(page.locator('.persecution-photo-credit').first()).toContainText('CC BY');
