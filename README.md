@@ -423,3 +423,16 @@ The top of About now presents a compact dashboard: 603,076 directed Atlas naviga
 The citation register now contains 85 assessments, including 48 of the 115 explained pairs; 67 pairs remain outside the dated register. Batch `connections-support-01` adds eleven readable scholarly commentaries to twelve existing assessments, eleven of which previously relied solely on passage comparisons. A twelfth already had a limited publisher-summary source. Sixteen assessed pairs now include named scholarly commentary or publisher-summary support in total. Those sources have explicit confessional settings and scoped claims; their presence does not imply consensus, complete literature coverage or independent specialist review.
 
 Batch `connections-20-02` compares twenty further Gospel and Acts narrative pairs (ce096-ce115). It preserves differences in order, names, account details and wording, and distinguishes multiple accounts within Acts from independent corroboration. Mark's composite opening citation and the manna comparison are clarified in the existing register. Only original editorial notes and bibliographic metadata are bundled; publisher text remains external. The browser/accessibility CI milestone remains open until its declared critical flows actually run in CI.
+
+## Christian incident heat map
+
+The Christians worldwide page at `/?view=christian-persecution` uses a locally hosted, interactive world map. Country shading is calculated directly from the current published incident catalogue and includes all reports, including nationwide and unresolved place descriptions. It is a count of published records, not a rate or a severity measure.
+
+- `public/data/christian-persecution.json` is the source of report counts and reporting dates.
+- `public/data/world-heatmap-110m.json` provides Natural Earth country boundaries (public domain).
+- `public/data/christian-heatmap-places.json` is a small derived locality index attributed to the srestre/dr5hn cities database under ODbL 1.0; keep that licence and provenance.
+- `public/assets/christian-heatmap.js` renders the country choropleth and locality heat markers without external map tiles, scripts or geocoding calls.
+
+**Expanding the catalogue:** New records automatically change their country's density and matching search/filter counts when the JSON dataset is updated. Existing place keys reuse the map's stored approximate coordinates. For a newly named place, add a compatible `country|place` entry to the location index or provide a `locations` array in the new report with objects containing `name`, `lat`, `lon` and `precision`. The latter is mapped immediately without changing map code. Unknown, nationwide or ambiguous localities are not assigned invented coordinates; they still contribute to country-level shading. Include new valid country name aliases in the location metadata when needed.
+
+Country and locality map features are selectable to filter reports. Exact attack-site coordinates are not claimed, since city and region centres come from a gazetteer. Retain the original publisher links and source attributions for each incident. Use the existing `npm run release` workflow for all public site updates.

@@ -21,6 +21,9 @@ if(!app.includes('scripture-previews.js?v='+pkg.version))throw new Error('Script
 if(!app.includes('persecution-catalogue.js?v='+pkg.version))throw new Error('Christians worldwide module cache key must match version');
 const persecution=readFileSync('public/assets/persecution-catalogue.js','utf8');
 for(const name of ['christian-persecution.json','christian-persecution-media.json'])if(!persecution.includes(name+'?v='+pkg.version))throw new Error('Christians worldwide data cache key must match version: '+name);
+if(!persecution.includes('christian-heatmap.js?v='+pkg.version))throw Error('Christians worldwide map cache key mismatch');
+const worldHeatmap=readFileSync('public/assets/christian-heatmap.js','utf8');
+for(const name of ['world-heatmap-110m.json','christian-heatmap-places.json'])if(!worldHeatmap.includes(name+'?v='+pkg.version))throw Error('Heat map data cache key mismatch: '+name);
 if(!app.includes('graph.js?v='+pkg.version))throw new Error('Atlas renderer cache key must match version');
 if(!readFileSync('public/assets/graph.js','utf8').includes('atlas-shortest-path.js?v='+pkg.version))throw new Error('Atlas shortest path module cache key must match version');
 if(!index.includes('entity-index-data.js?v='+pkg.version)||!index.includes("ENTITY_INDEX_DATA_VERSION='"+pkg.version+"'"))throw new Error('Index module and JSON cache keys must match version');

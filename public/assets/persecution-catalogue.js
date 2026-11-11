@@ -1,3 +1,4 @@
+import {createChristianHeatmap} from "./christian-heatmap.js?v=1.4.0";
 // This collection links published accounts without independently adjudicating them.
 const norm=value=>String(value||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
 export function reportKind(category){
@@ -50,6 +51,7 @@ export function createPersecutionCatalogue(root){
  const q=name=>root.querySelector('[data-pc-'+name+']');
  const search=q('search'),country=q('country'),year=q('year'),kind=q('kind'),sort=q('sort'),mediaOnly=q('media-only');
  const listing=q('list'),count=q('count'),status=q('status'),more=q('more'),mediaDetails=q('media-details'),mediaList=q('media-list');
+ const map=createChristianHeatmap(q('map'),{onCountry:selected=>{country.value=selected;search.value='';refresh();},onPlace:(selected,place)=>{country.value=selected;search.value=place;refresh();}});
  let rows=[],media=[],limit=20,pending=null,ready=false;
  const options=(select,items)=>{for(const item of items){const o=el('option',item);o.value=item;select.append(o);}};
  function draw(){
@@ -58,6 +60,7 @@ export function createPersecutionCatalogue(root){
   if(!found.length)listing.append(el('p','No reports match these filters.','persecution-empty'));
   count.textContent='Showing '+Math.min(limit,found.length)+' of '+found.length+' matching reports';
   status.textContent=found.length+' matching reports';more.hidden=limit>=found.length;
+  map.update(found);
  }
  function refresh(){limit=20;draw();}
  function initialise(){
@@ -70,15 +73,15 @@ export function createPersecutionCatalogue(root){
   q('reset').addEventListener('click',()=>{search.value='';country.value='';year.value='';kind.value='';sort.value='newest';mediaOnly.checked=false;refresh();search.focus();});
   more.addEventListener('click',()=>{limit+=20;draw();});
   mediaDetails.addEventListener('toggle',()=>{if(mediaDetails.open&&!mediaList.childElementCount)mediaList.replaceChildren(...media.map(mediaCard));});
-  ready=true;draw();
+  ready=true;draw();void map.activate();
  }
  return {async activate(){
   if(ready)return;
   if(!pending){
    status.textContent='Loading reports...';
    pending=Promise.all([
-    fetch('/data/christian-persecution.json?v=1.3.0').then(r=>{if(!r.ok)throw Error('Reports unavailable');return r.json();}),
-    fetch('/data/christian-persecution-media.json?v=1.3.0').then(r=>{if(!r.ok)throw Error('Media unavailable');return r.json();})
+    fetch('/data/christian-persecution.json?v=1.4.0').then(r=>{if(!r.ok)throw Error('Reports unavailable');return r.json();}),
+    fetch('/data/christian-persecution-media.json?v=1.4.0').then(r=>{if(!r.ok)throw Error('Media unavailable');return r.json();})
    ]).then(([a,b])=>{if(!Array.isArray(a.reports)||!Array.isArray(b.media))throw Error('Invalid data');rows=a.reports;media=b.media;initialise();})
     .catch(error=>{pending=null;status.textContent='Catalogue unavailable. Revisit this page to retry.';console.error(error);});
   }

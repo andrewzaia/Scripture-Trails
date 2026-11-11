@@ -54,6 +54,10 @@ const nextEvidence=versionedImport(read(evidencePath),'connection-evidence-expan
 const persecutionPath='public/assets/persecution-catalogue.js';
 let nextPersecution=versionedImport(read(persecutionPath),'christian-persecution.json?v='+oldVersion,'christian-persecution.json?v='+newVersion,'report dataset');
 nextPersecution=versionedImport(nextPersecution,'christian-persecution-media.json?v='+oldVersion,'christian-persecution-media.json?v='+newVersion,'media index');
+nextPersecution=versionedImport(nextPersecution,'christian-heatmap.js?v='+oldVersion,'christian-heatmap.js?v='+newVersion,'Christians worldwide heat map');
+const heatmapPath='public/assets/christian-heatmap.js';
+let nextHeatmap=versionedImport(read(heatmapPath),'world-heatmap-110m.json?v='+oldVersion,'world-heatmap-110m.json?v='+newVersion,'Natural Earth world map');
+nextHeatmap=versionedImport(nextHeatmap,'christian-heatmap-places.json?v='+oldVersion,'christian-heatmap-places.json?v='+newVersion,'incident location index');
 const newHtml=html.replace(oldLabel,oldLabel.replace(oldVersion,newVersion))
  .replace('/assets/app.js?v='+oldVersion,'/assets/app.js?v='+newVersion)
  .replace('/assets/analytics.js?v='+oldVersion,'/assets/analytics.js?v='+newVersion)
@@ -85,6 +89,7 @@ writeFileSync(graphPath,nextGraph);
 writeFileSync(indexPath,nextIndex);
 writeFileSync(evidencePath,nextEvidence);
 writeFileSync(persecutionPath,nextPersecution);
+writeFileSync(heatmapPath,nextHeatmap);
 for(const path of ['public/assets/app.js','public/assets/jesus-map.js','public/assets/entity-index.js','public/assets/atlas-comparison.js','public/assets/citation-review.js']){
  const text=read(path).replaceAll('citation-review.js?v='+oldVersion,'citation-review.js?v='+newVersion).replaceAll('citation-review-data.js?v='+oldVersion,'citation-review-data.js?v='+newVersion).replaceAll('jesus-map.js?v='+oldVersion,'jesus-map.js?v='+newVersion).replaceAll('citation-review.json?v='+oldVersion,'citation-review.json?v='+newVersion).replaceAll('city-studies.js?v='+oldVersion,'city-studies.js?v='+newVersion);
  writeFileSync(path,text);

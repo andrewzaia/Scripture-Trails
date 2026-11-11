@@ -1,0 +1,1443 @@
+{
+  "provenance": {
+    "source": "srestre world-countries-cities-db (dr5hn source), ODbL 1.0",
+    "url": "https://github.com/srestre/world-countries-cities-db",
+    "license": "ODbL-1.0",
+    "notice": "Locality coordinates are gazetteer centres, not building or attack-site coordinates. This derived location subset is shared under ODbL 1.0."
+  },
+  "generated": "2026-11-11",
+  "countries": {
+    "France": {
+      "iso2": "FR",
+      "iso3": "FRA"
+    },
+    "Syria": {
+      "iso2": "SY",
+      "iso3": "SYR"
+    },
+    "United States": {
+      "iso2": "US",
+      "iso3": "USA"
+    },
+    "Nicaragua": {
+      "iso2": "NI",
+      "iso3": "NIC"
+    },
+    "Nigeria": {
+      "iso2": "NG",
+      "iso3": "NGA"
+    },
+    "United Kingdom": {
+      "iso2": "GB",
+      "iso3": "GBR"
+    },
+    "Spain": {
+      "iso2": "ES",
+      "iso3": "ESP"
+    },
+    "Poland": {
+      "iso2": "PL",
+      "iso3": "POL"
+    },
+    "Italy": {
+      "iso2": "IT",
+      "iso3": "ITA"
+    },
+    "Germany": {
+      "iso2": "DE",
+      "iso3": "DEU"
+    },
+    "Democratic Republic of the Congo": {
+      "iso2": "CD",
+      "iso3": "COD"
+    },
+    "Mozambique": {
+      "iso2": "MZ",
+      "iso3": "MOZ"
+    },
+    "India": {
+      "iso2": "IN",
+      "iso3": "IND"
+    },
+    "Russia": {
+      "iso2": "RU",
+      "iso3": "RUS"
+    },
+    "Haiti": {
+      "iso2": "HT",
+      "iso3": "HTI"
+    },
+    "Egypt": {
+      "iso2": "EG",
+      "iso3": "EGY"
+    },
+    "Burkina Faso": {
+      "iso2": "BF",
+      "iso3": "BFA"
+    },
+    "Türkiye": {
+      "iso2": "TR",
+      "iso3": "TUR"
+    },
+    "Pakistan": {
+      "iso2": "PK",
+      "iso3": "PAK"
+    },
+    "Afghanistan": {
+      "iso2": "AF",
+      "iso3": "AFG"
+    },
+    "Indonesia": {
+      "iso2": "ID",
+      "iso3": "IDN"
+    },
+    "China": {
+      "iso2": "CN",
+      "iso3": "CHN"
+    },
+    "Sri Lanka": {
+      "iso2": "LK",
+      "iso3": "LKA"
+    },
+    "Philippines": {
+      "iso2": "PH",
+      "iso3": "PHL"
+    },
+    "Central African Republic": {
+      "iso2": "CF",
+      "iso3": "CAF"
+    },
+    "Mexico": {
+      "iso2": "MX",
+      "iso3": "MEX"
+    }
+  },
+  "places": {
+    "Burkina Faso|Ouahigouya": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Ouahigouya",
+          "lat": 13.58278,
+          "lon": -2.42158,
+          "precision": "city"
+        }
+      ]
+    },
+    "Burkina Faso|Titao": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Titao",
+          "lat": 13.76667,
+          "lon": -2.06667,
+          "precision": "city"
+        }
+      ]
+    },
+    "Central African Republic|Alindao": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Alindao",
+          "lat": 5.02667,
+          "lon": 21.20876,
+          "precision": "city"
+        }
+      ]
+    },
+    "Central African Republic|Bangassou": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Bangassou",
+          "lat": 4.74132,
+          "lon": 22.81838,
+          "precision": "city"
+        }
+      ]
+    },
+    "Central African Republic|Bangui": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Bangui",
+          "lat": 4.36122,
+          "lon": 18.55496,
+          "precision": "city"
+        }
+      ]
+    },
+    "China|Anhui": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Anhui",
+          "lat": 32,
+          "lon": 117,
+          "precision": "region"
+        }
+      ]
+    },
+    "China|Chengdu": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Chengdu",
+          "lat": 30.659867,
+          "lon": 104.063315,
+          "precision": "city"
+        }
+      ]
+    },
+    "China|Shandong": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Shandong",
+          "lat": 36.398987,
+          "lon": 118.5055691,
+          "precision": "region"
+        }
+      ]
+    },
+    "Democratic Republic of the Congo|Komanda, Ituri": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Ituri",
+          "lat": 1.8330623,
+          "lon": 29.4980774,
+          "precision": "region"
+        }
+      ]
+    },
+    "Egypt|Alexandria": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Alexandria",
+          "lat": 31.20176,
+          "lon": 29.91582,
+          "precision": "city"
+        }
+      ]
+    },
+    "Egypt|Cairo": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Cairo",
+          "lat": 30.06263,
+          "lon": 31.24967,
+          "precision": "city"
+        }
+      ]
+    },
+    "Egypt|El Kom El Ahmar, Minya": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Minya",
+          "lat": 28.0893325,
+          "lon": 30.7570623,
+          "precision": "region"
+        }
+      ]
+    },
+    "Egypt|Minya": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Minya",
+          "lat": 28.0893325,
+          "lon": 30.7570623,
+          "precision": "region"
+        }
+      ]
+    },
+    "France|Bernay": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Bernay",
+          "lat": 49.08888,
+          "lon": 0.59858,
+          "precision": "city"
+        }
+      ]
+    },
+    "France|Breil-sur-Roya": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Breil-sur-Roya",
+          "lat": 43.93755,
+          "lon": 7.51472,
+          "precision": "city"
+        }
+      ]
+    },
+    "France|Castelsarrasin": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Castelsarrasin",
+          "lat": 44.04022,
+          "lon": 1.10702,
+          "precision": "city"
+        }
+      ]
+    },
+    "France|Chambray-les-Tours": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Chambray-lès-Tours",
+          "lat": 47.33537,
+          "lon": 0.70286,
+          "precision": "city"
+        }
+      ]
+    },
+    "France|Coron": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Coron",
+          "lat": 47.12726,
+          "lon": -0.64512,
+          "precision": "city"
+        }
+      ]
+    },
+    "France|Dampierre-les-Bois": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Dampierre-les-Bois",
+          "lat": 47.50639,
+          "lon": 6.91279,
+          "precision": "city"
+        }
+      ]
+    },
+    "France|Ecommoy": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Écommoy",
+          "lat": 47.82565,
+          "lon": 0.27422,
+          "precision": "city"
+        }
+      ]
+    },
+    "France|Evreux": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Évreux",
+          "lat": 49.02414,
+          "lon": 1.15082,
+          "precision": "city"
+        }
+      ]
+    },
+    "France|Hazebrouck": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Hazebrouck",
+          "lat": 50.72374,
+          "lon": 2.53729,
+          "precision": "city"
+        }
+      ]
+    },
+    "France|Joue-les-Tours": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Joué-lès-Tours",
+          "lat": 47.35223,
+          "lon": 0.66905,
+          "precision": "city"
+        }
+      ]
+    },
+    "France|La Palme": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "La Palme",
+          "lat": 42.97518,
+          "lon": 2.99243,
+          "precision": "city"
+        }
+      ]
+    },
+    "France|Le Relecq-Kerhuon": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Le Relecq-Kerhuon",
+          "lat": 48.40691,
+          "lon": -4.39359,
+          "precision": "city"
+        }
+      ]
+    },
+    "France|Lille": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Lille",
+          "lat": 50.63297,
+          "lon": 3.05858,
+          "precision": "city"
+        }
+      ]
+    },
+    "France|Lourdes": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Lourdes",
+          "lat": 43.1,
+          "lon": -0.05,
+          "precision": "city"
+        }
+      ]
+    },
+    "France|Nevers": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Nevers",
+          "lat": 46.98956,
+          "lon": 3.159,
+          "precision": "city"
+        }
+      ]
+    },
+    "France|Nice": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Nice",
+          "lat": 43.70313,
+          "lon": 7.26608,
+          "precision": "city"
+        }
+      ]
+    },
+    "France|Plouhinec": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Plouhinec",
+          "lat": 48.01667,
+          "lon": -4.48333,
+          "precision": "city"
+        }
+      ]
+    },
+    "France|Rouen": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Rouen",
+          "lat": 49.44313,
+          "lon": 1.09932,
+          "precision": "city"
+        }
+      ]
+    },
+    "France|Saint-Denis": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Saint-Denis",
+          "lat": 48.93564,
+          "lon": 2.35387,
+          "precision": "city"
+        }
+      ]
+    },
+    "France|Saint-Jacques-de-la-Lande": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Saint-Jacques-de-la-Lande",
+          "lat": 48.06514,
+          "lon": -1.72086,
+          "precision": "city"
+        }
+      ]
+    },
+    "France|Saint-Nicolas-de-Port, Lorraine": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Saint-Nicolas-de-Port",
+          "lat": 48.62857,
+          "lon": 6.29668,
+          "precision": "city"
+        }
+      ]
+    },
+    "France|Saumur": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Saumur",
+          "lat": 47.25908,
+          "lon": -0.07796,
+          "precision": "city"
+        }
+      ]
+    },
+    "France|Toulouse": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Toulouse",
+          "lat": 43.60426,
+          "lon": 1.44367,
+          "precision": "city"
+        }
+      ]
+    },
+    "Germany|Bad Aibling": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Bad Aibling",
+          "lat": 47.8638,
+          "lon": 12.01055,
+          "precision": "city"
+        }
+      ]
+    },
+    "Germany|Gutersloh": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Gütersloh",
+          "lat": 51.90693,
+          "lon": 8.37853,
+          "precision": "city"
+        }
+      ]
+    },
+    "Germany|Kahla": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Kahla",
+          "lat": 50.80651,
+          "lon": 11.58516,
+          "precision": "city"
+        }
+      ]
+    },
+    "Germany|Peine": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Peine",
+          "lat": 52.31928,
+          "lon": 10.2352,
+          "precision": "city"
+        }
+      ]
+    },
+    "Germany|Waiblingen": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Waiblingen",
+          "lat": 48.83241,
+          "lon": 9.31641,
+          "precision": "city"
+        }
+      ]
+    },
+    "Germany|Wasserburg am Inn": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Wasserburg am Inn",
+          "lat": 48.0525,
+          "lon": 12.22341,
+          "precision": "city"
+        }
+      ]
+    },
+    "Germany|Witten": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Witten",
+          "lat": 51.44362,
+          "lon": 7.35258,
+          "precision": "city"
+        }
+      ]
+    },
+    "Germany|Wurzen": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Wurzen",
+          "lat": 51.3707,
+          "lon": 12.73939,
+          "precision": "city"
+        }
+      ]
+    },
+    "Haiti|Lizon, Port-au-Prince": {
+      "resolution": "nearby-city",
+      "points": [
+        {
+          "name": "Port-au-Prince",
+          "lat": 18.54349,
+          "lon": -72.33881,
+          "precision": "nearby-city"
+        }
+      ]
+    },
+    "India|Ayodhya, Uttar Pradesh": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Ayodhya",
+          "lat": 26.79909,
+          "lon": 82.2047,
+          "precision": "city"
+        }
+      ]
+    },
+    "India|Betul, Madhya Pradesh": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Betul",
+          "lat": 21.83333,
+          "lon": 77.83333,
+          "precision": "city"
+        }
+      ]
+    },
+    "India|Bharatpur, Rajasthan": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Bharatpur",
+          "lat": 27.21,
+          "lon": 77.29,
+          "precision": "city"
+        }
+      ]
+    },
+    "India|Bhopal, Madhya Pradesh": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Bhopal",
+          "lat": 23.25469,
+          "lon": 77.40289,
+          "precision": "city"
+        }
+      ]
+    },
+    "India|Khoken, Manipur": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Manipur",
+          "lat": 24.7208818,
+          "lon": 93.9229386,
+          "precision": "region"
+        }
+      ]
+    },
+    "India|Manipur": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Manipur",
+          "lat": 24.7208818,
+          "lon": 93.9229386,
+          "precision": "region"
+        }
+      ]
+    },
+    "India|Noida, Uttar Pradesh": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Noida",
+          "lat": 28.58,
+          "lon": 77.33,
+          "precision": "city"
+        }
+      ]
+    },
+    "India|Uttar Pradesh": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Uttar Pradesh",
+          "lat": 27.1303344,
+          "lon": 80.859666,
+          "precision": "region"
+        }
+      ]
+    },
+    "Indonesia|Makassar": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Makassar",
+          "lat": -5.14861,
+          "lon": 119.43194,
+          "precision": "city"
+        }
+      ]
+    },
+    "Indonesia|Surabaya": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Surabaya",
+          "lat": -7.24917,
+          "lon": 112.75083,
+          "precision": "city"
+        }
+      ]
+    },
+    "Italy|Palermo": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Palermo",
+          "lat": 37.81667,
+          "lon": 13.58333,
+          "precision": "city"
+        }
+      ]
+    },
+    "Italy|Stornara": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Stornara",
+          "lat": 41.28672,
+          "lon": 15.77003,
+          "precision": "city"
+        }
+      ]
+    },
+    "Italy|Trento": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Trento",
+          "lat": 46.06787,
+          "lon": 11.12108,
+          "precision": "city"
+        }
+      ]
+    },
+    "Mexico|Cuernavaca": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Cuernavaca",
+          "lat": 18.95532,
+          "lon": -99.24002,
+          "precision": "city"
+        }
+      ]
+    },
+    "Mexico|Guerrero": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Guerrero",
+          "lat": 17.666667,
+          "lon": -100,
+          "precision": "region"
+        }
+      ]
+    },
+    "Mozambique|Ancuabe district, Cabo Delgado": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Cabo Delgado",
+          "lat": -12.4254942,
+          "lon": 39.4168743,
+          "precision": "region"
+        }
+      ]
+    },
+    "Nicaragua|Managua": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Managua",
+          "lat": 12.13282,
+          "lon": -86.2504,
+          "precision": "city"
+        }
+      ]
+    },
+    "Nicaragua|Matagalpa": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Matagalpa",
+          "lat": 12.92559,
+          "lon": -85.91747,
+          "precision": "city"
+        }
+      ]
+    },
+    "Nigeria|Bokkos and Barkin-Ladi, Plateau": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Plateau",
+          "lat": 9.0583446,
+          "lon": 9.6826289,
+          "precision": "region"
+        }
+      ]
+    },
+    "Nigeria|Kaduna": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Kaduna",
+          "lat": 10.52641,
+          "lon": 7.43879,
+          "precision": "city"
+        }
+      ]
+    },
+    "Nigeria|Kwara": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Kwara",
+          "lat": 8.8367891,
+          "lon": 4.6688487,
+          "precision": "region"
+        }
+      ]
+    },
+    "Nigeria|Owo": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Owo",
+          "lat": 7.1962,
+          "lon": 5.58681,
+          "precision": "city"
+        }
+      ]
+    },
+    "Pakistan|Jaranwala": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Jaranwala",
+          "lat": 31.3332,
+          "lon": 73.41868,
+          "precision": "city"
+        }
+      ]
+    },
+    "Pakistan|Quetta": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Quetta",
+          "lat": 30.18414,
+          "lon": 67.00141,
+          "precision": "city"
+        }
+      ]
+    },
+    "Philippines|Jolo": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Jolo",
+          "lat": 6.047572,
+          "lon": 120.9782956,
+          "precision": "city"
+        }
+      ]
+    },
+    "Poland|Lublin": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Lublin",
+          "lat": 51.25,
+          "lon": 22.56667,
+          "precision": "city"
+        }
+      ]
+    },
+    "Poland|Sopot": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Sopot",
+          "lat": 54.4418,
+          "lon": 18.56003,
+          "precision": "city"
+        }
+      ]
+    },
+    "Russia|Derbent and Makhachkala, Dagestan": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Derbent",
+          "lat": 42.06779,
+          "lon": 48.28987,
+          "precision": "city"
+        },
+        {
+          "name": "Makhachkala",
+          "lat": 42.97638,
+          "lon": 47.50236,
+          "precision": "city"
+        }
+      ]
+    },
+    "Spain|Cuenca": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Cuenca",
+          "lat": 40.06667,
+          "lon": -2.13333,
+          "precision": "city"
+        }
+      ]
+    },
+    "Spain|Valladolid": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Valladolid",
+          "lat": 41.65518,
+          "lon": -4.72372,
+          "precision": "city"
+        }
+      ]
+    },
+    "Sri Lanka|Batticaloa": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Batticaloa",
+          "lat": 7.7102,
+          "lon": 81.6924,
+          "precision": "city"
+        }
+      ]
+    },
+    "Sri Lanka|Colombo": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Colombo",
+          "lat": 6.93548,
+          "lon": 79.84868,
+          "precision": "city"
+        }
+      ]
+    },
+    "Sri Lanka|Negombo": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Negombo",
+          "lat": 7.2083,
+          "lon": 79.8358,
+          "precision": "city"
+        }
+      ]
+    },
+    "Syria|Dweilaa, Damascus": {
+      "resolution": "nearby-city",
+      "points": [
+        {
+          "name": "Damascus",
+          "lat": 33.5102,
+          "lon": 36.29128,
+          "precision": "nearby-city"
+        }
+      ]
+    },
+    "Türkiye|Istanbul": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Istanbul",
+          "lat": 41.0053702,
+          "lon": 28.6825162,
+          "precision": "city"
+        }
+      ]
+    },
+    "United Kingdom|Middlesbrough": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Middlesbrough",
+          "lat": 54.57623,
+          "lon": -1.23483,
+          "precision": "city"
+        }
+      ]
+    },
+    "United States|Altoona, PA": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Altoona",
+          "lat": 40.51868,
+          "lon": -78.39474,
+          "precision": "city"
+        }
+      ]
+    },
+    "United States|Anchorage, AK": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Anchorage",
+          "lat": 61.21806,
+          "lon": -149.90028,
+          "precision": "city"
+        }
+      ]
+    },
+    "United States|Boston, MA": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Boston",
+          "lat": 42.35843,
+          "lon": -71.05977,
+          "precision": "city"
+        }
+      ]
+    },
+    "United States|Briarcliff Manor, NY": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Briarcliff Manor",
+          "lat": 41.14565,
+          "lon": -73.82375,
+          "precision": "city"
+        }
+      ]
+    },
+    "United States|Canonsburg, PA": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Canonsburg",
+          "lat": 40.26257,
+          "lon": -80.18728,
+          "precision": "city"
+        }
+      ]
+    },
+    "United States|Crawfordsville, IN": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Crawfordsville",
+          "lat": 40.04115,
+          "lon": -86.87445,
+          "precision": "city"
+        }
+      ]
+    },
+    "United States|Crown Heights, NY": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Crown Heights",
+          "lat": 41.63732,
+          "lon": -73.93792,
+          "precision": "city"
+        }
+      ]
+    },
+    "United States|Denver, CO": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Denver",
+          "lat": 39.73915,
+          "lon": -104.9847,
+          "precision": "city"
+        }
+      ]
+    },
+    "United States|East Providence, RI": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "East Providence",
+          "lat": 41.81371,
+          "lon": -71.37005,
+          "precision": "city"
+        }
+      ]
+    },
+    "United States|Edgewater, NJ": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Edgewater",
+          "lat": 40.82704,
+          "lon": -73.97569,
+          "precision": "city"
+        }
+      ]
+    },
+    "United States|Far Rockaway, NY": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Far Rockaway",
+          "lat": 40.60538,
+          "lon": -73.75513,
+          "precision": "city"
+        }
+      ]
+    },
+    "United States|Flint, MI": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Flint",
+          "lat": 43.01253,
+          "lon": -83.68746,
+          "precision": "city"
+        }
+      ]
+    },
+    "United States|Flint, TX": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Flint",
+          "lat": 43.01253,
+          "lon": -83.68746,
+          "precision": "city"
+        }
+      ]
+    },
+    "United States|Fresh Meadows, NY": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Fresh Meadows",
+          "lat": 40.73482,
+          "lon": -73.79347,
+          "precision": "city"
+        }
+      ]
+    },
+    "United States|Harrison, NJ": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Harrison",
+          "lat": 40.74649,
+          "lon": -74.15626,
+          "precision": "city"
+        }
+      ]
+    },
+    "United States|Lodi, CA": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Lodi",
+          "lat": 38.1302,
+          "lon": -121.27245,
+          "precision": "city"
+        }
+      ]
+    },
+    "United States|Long Beach, CA": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Long Beach",
+          "lat": 33.76696,
+          "lon": -118.18923,
+          "precision": "city"
+        }
+      ]
+    },
+    "United States|Los Angeles, CA": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Los Angeles",
+          "lat": 34.05223,
+          "lon": -118.24368,
+          "precision": "city"
+        }
+      ]
+    },
+    "United States|Mahanoy City, PA": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Mahanoy City",
+          "lat": 40.81259,
+          "lon": -76.1416,
+          "precision": "city"
+        }
+      ]
+    },
+    "United States|Marysville, MI": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Marysville",
+          "lat": 42.91253,
+          "lon": -82.48686,
+          "precision": "city"
+        }
+      ]
+    },
+    "United States|Memphis, TN": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Memphis",
+          "lat": 35.14953,
+          "lon": -90.04898,
+          "precision": "city"
+        }
+      ]
+    },
+    "United States|Menlo Park, CA": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Menlo Park",
+          "lat": 37.45383,
+          "lon": -122.18219,
+          "precision": "city"
+        }
+      ]
+    },
+    "United States|Mineola, NY": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Mineola",
+          "lat": 40.74927,
+          "lon": -73.64068,
+          "precision": "city"
+        }
+      ]
+    },
+    "United States|Minneapolis, MN": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Minneapolis",
+          "lat": 44.97997,
+          "lon": -93.26384,
+          "precision": "city"
+        }
+      ]
+    },
+    "United States|Pittsburgh, PA": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Pittsburgh",
+          "lat": 40.44062,
+          "lon": -79.99589,
+          "precision": "city"
+        }
+      ]
+    },
+    "United States|Pleasant Hills, PA": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Pleasant Hills",
+          "lat": 40.33563,
+          "lon": -79.96061,
+          "precision": "city"
+        }
+      ]
+    },
+    "United States|Plymouth, IN": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Plymouth",
+          "lat": 41.34366,
+          "lon": -86.30973,
+          "precision": "city"
+        }
+      ]
+    },
+    "United States|Portland, OR": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Portland",
+          "lat": 45.52345,
+          "lon": -122.67621,
+          "precision": "city"
+        }
+      ]
+    },
+    "United States|Queens, NY": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Queens",
+          "lat": 40.68149,
+          "lon": -73.83652,
+          "precision": "city"
+        }
+      ]
+    },
+    "United States|Rochester, NY": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Rochester",
+          "lat": 43.15478,
+          "lon": -77.61556,
+          "precision": "city"
+        }
+      ]
+    },
+    "United States|Santa Barbara, CA": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Santa Barbara",
+          "lat": 34.42083,
+          "lon": -119.69819,
+          "precision": "city"
+        }
+      ]
+    },
+    "United States|Seneca, KS": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Seneca",
+          "lat": 39.83416,
+          "lon": -96.06417,
+          "precision": "city"
+        }
+      ]
+    },
+    "United States|South Lake Tahoe, CA": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "South Lake Tahoe",
+          "lat": 38.93324,
+          "lon": -119.98435,
+          "precision": "city"
+        }
+      ]
+    },
+    "United States|Staten Island, NY": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Staten Island",
+          "lat": 40.56233,
+          "lon": -74.13986,
+          "precision": "city"
+        }
+      ]
+    },
+    "United States|Stockton, CA": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Stockton",
+          "lat": 37.9577,
+          "lon": -121.29078,
+          "precision": "city"
+        }
+      ]
+    },
+    "United States|Washington, DC": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Washington",
+          "lat": 47.2868352,
+          "lon": -120.212613,
+          "precision": "region"
+        }
+      ]
+    },
+    "United States|Waynesburg, PA": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Waynesburg",
+          "lat": 39.89646,
+          "lon": -80.17923,
+          "precision": "city"
+        }
+      ]
+    },
+    "United States|Wichita, KS": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Wichita",
+          "lat": 37.69224,
+          "lon": -97.33754,
+          "precision": "city"
+        }
+      ]
+    },
+    "United States|York, PA": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "York",
+          "lat": 39.9626,
+          "lon": -76.72774,
+          "precision": "city"
+        }
+      ]
+    }
+  }
+}

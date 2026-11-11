@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.4.0 - 11/11/2026: Worldwide report heat map
+
+- Explore a world heat map of Christian incident reports, with country shading that includes every published case in the catalogue.
+- View approximate locality heat markers where city or regional coordinates are available; nationwide and unresolved cases remain counted at country level.
+- Update the map immediately as visitors search or filter cases, and select countries or localities to narrow the accompanying reports.
+- Keep map boundaries and place coordinates locally hosted with data-source attributions, responsive layouts and keyboard-accessible controls.
+
 ## 1.3.0 - 11/11/2026: Christians worldwide - published incident catalogue
 
 - Add a dedicated Christians worldwide page with 166 source-attributed reports across 26 countries concerning violence, religious restrictions and attacks on churches, relics and Christian heritage.
