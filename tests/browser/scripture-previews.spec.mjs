@@ -33,10 +33,11 @@ test('reopening the same citation reuses the in-memory ESV result',async({page,i
  if(isMobile)await page.evaluate(()=>{const el=document.createElement('p');el.id='preview-tap-cache';el.textContent='Read Psalm 23:1 this week.';document.querySelector('#view-discover .content-wrap').prepend(el);});
  const reference=isMobile?page.locator('#preview-tap-cache .scripture-preview-trigger'):page.locator('.hero-examples [data-open="Psalm 23:1"] .scripture-preview-trigger');
  await expect(reference).toBeVisible();
- if(isMobile)await reference.tap();else await reference.hover();
+ // Exercise the cache through the keyboard path; pointer hover is covered by the preceding test.
+ if(isMobile)await reference.tap();else await reference.locator('..').focus();
  await expect(page.locator('[data-preview-text]')).toContainText('Temporary synthetic test passage.');
  await page.locator('[data-preview-close]').click();
- if(isMobile)await reference.tap();else {await page.mouse.move(0,0);await reference.hover();}
+ if(isMobile)await reference.tap();else await reference.locator('..').focus();
  await expect(page.locator('[data-preview-text]')).toContainText('Temporary synthetic test passage.');
  expect(requests).toBe(1);
 });

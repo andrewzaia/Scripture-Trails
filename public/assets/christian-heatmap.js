@@ -28,6 +28,14 @@ export function aggregateIncidentLocations(reports,geography){
  return {countries,places:[...places.values()],located,withoutLocality,reportCount:reports.length,weight:weighted};
 }
 const intensity=count=>count>=16?5:count>=8?4:count>=4?3:count>=2?2:count>0?1:0;
+export function unshapedCountryMarkers(geography,features,countryCounts){
+ const shaped=new Set(features.map(feature=>feature.id));
+ return Object.entries(geography?.countryMarkers||{}).flatMap(([country,marker])=>{
+  const iso3=geography?.countries?.[country]?.iso3,count=countryCounts.get(country)||0;
+  if(!iso3||shaped.has(iso3)||!count||!Number.isFinite(marker?.lat)||!Number.isFinite(marker?.lon)||Math.abs(marker.lat)>90||Math.abs(marker.lon)>180)return [];
+  return [{country,count,lat:marker.lat,lon:marker.lon,label:marker.label||country,precision:'country locator'}];
+ });
+}
 function toPath(feature){
  const polygons=feature.type==='MultiPolygon'?feature.coordinates:[feature.coordinates];
  const commands=[];
@@ -54,9 +62,9 @@ export function createChristianHeatmap(root,{onCountry=()=>{},onPlace=()=>{},onR
  const layerControl=root.querySelector('[data-pc-map-layer]');
  const resetControl=root.querySelector('[data-pc-map-reset]');
  let features=null,geo=null,latest=[],pending=null;
- let plot=null,worldLayer=null,densityLayer=null,markersLayer=null;
+ let plot=null,worldLayer=null,densityLayer=null,markersLayer=null,countryProxyLayer=null;
  function buildWorld(){
-  plot=svg('svg',{viewBox:'0 0 1000 510',role:'group','aria-label':'Interactive world heat map of published incident reports',preserveAspectRatio:'xMidYMid meet'});
+  plot=svg('svg',{viewBox:'0 0 1000 510',role:'group','aria-label':'Interactive world heat map of published reports, with country locators for places without world polygons',preserveAspectRatio:'xMidYMid meet'});
   const defs=svg('defs');
   const gradient=svg('radialGradient',{id:'pc-world-heat',cx:'50%',cy:'50%',r:'50%'});
   for(const [offset,opacity] of [['0%','0.83'],['42%','0.45'],['100%','0']])gradient.append(svg('stop',{offset,'stop-color':'#f26735','stop-opacity':opacity}));
@@ -68,7 +76,8 @@ export function createChristianHeatmap(root,{onCountry=()=>{},onPlace=()=>{},onR
   worldLayer=svg('g',{'class':'pc-world-countries'});
   densityLayer=svg('g',{'class':'pc-world-density','aria-hidden':'true'});
   markersLayer=svg('g',{'class':'pc-world-localities'});
-  plot.append(worldLayer,densityLayer,markersLayer);
+  countryProxyLayer=svg('g',{'class':'pc-world-country-proxies'});
+  plot.append(worldLayer,densityLayer,markersLayer,countryProxyLayer);
   surface.replaceChildren(plot);
  }
  function draw(){
@@ -76,7 +85,7 @@ export function createChristianHeatmap(root,{onCountry=()=>{},onPlace=()=>{},onR
   const stats=aggregateIncidentLocations(latest,geo);
   const countryCodes=countryCodeMap(geo);
   const layer=layerControl.value;
-  worldLayer.replaceChildren();densityLayer.replaceChildren();markersLayer.replaceChildren();
+  worldLayer.replaceChildren();densityLayer.replaceChildren();markersLayer.replaceChildren();countryProxyLayer.replaceChildren();
   for(const f of features){
    const country=featureCountry(f,stats.countries,countryCodes),count=country?(stats.countries.get(country)||0):0;
    const path=svg('path',{d:toPath(f),class:'pc-country','data-level':layer==='localities'?0:intensity(count),'fill-rule':'evenodd'});
@@ -87,6 +96,17 @@ export function createChristianHeatmap(root,{onCountry=()=>{},onPlace=()=>{},onR
     interaction(path,()=>onCountry(country));
    }else path.setAttribute('aria-hidden','true');
    worldLayer.append(path);
+  }
+  // The 110m basemap omits some small island countries. These are visibly
+  // country-level locators, never fabricated pins for an incident or policy.
+  for(const marker of unshapedCountryMarkers(geo,features,stats.countries)){
+   const {x,y}=position(marker.lat,marker.lon);
+   const symbol=svg('circle',{cx:x.toFixed(2),cy:y.toFixed(2),r:'6.5',class:'pc-map-marker pc-country-proxy',role:'button',tabindex:'0','stroke-dasharray':'2 1'});
+   const label=marker.country+': '+marker.count+' published '+(marker.count===1?'report':'reports')+'. Country-level locator only, not an incident location. Select to filter catalogue by country.';
+   symbol.setAttribute('aria-label',label);
+   const title=svg('title');title.textContent=label;symbol.append(title);
+   interaction(symbol,()=>onCountry(marker.country));
+   countryProxyLayer.append(symbol);
   }
   if(layer!=='countries'){
    const sites=stats.places.sort((a,b)=>a.weight-b.weight);
@@ -114,8 +134,8 @@ export function createChristianHeatmap(root,{onCountry=()=>{},onPlace=()=>{},onR
    if(!pending){
     summary.textContent='Loading world map...';
     pending=Promise.all([
-     fetch('/data/world-heatmap-110m.json?v=1.10.0').then(r=>{if(!r.ok)throw Error('Basemap unavailable');return r.json();}),
-     fetch('/data/christian-heatmap-places.json?v=1.10.0').then(r=>{if(!r.ok)throw Error('Coordinates unavailable');return r.json();})
+     fetch('/data/world-heatmap-110m.json?v=1.11.0').then(r=>{if(!r.ok)throw Error('Basemap unavailable');return r.json();}),
+     fetch('/data/christian-heatmap-places.json?v=1.11.0').then(r=>{if(!r.ok)throw Error('Coordinates unavailable');return r.json();})
     ]).then(([world,locations])=>{
      if(!Array.isArray(world.features)||!locations.places||!locations.countries)throw Error('Invalid world map data');
      features=world.features;geo=locations;buildWorld();draw();

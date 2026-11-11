@@ -342,6 +342,54 @@
     "Greece": {
       "iso2": "GR",
       "iso3": "GRC"
+    },
+    "Bahrain": {
+      "iso2": "BH",
+      "iso3": "BHR"
+    },
+    "Maldives": {
+      "iso2": "MV",
+      "iso3": "MDV"
+    },
+    "Georgia": {
+      "iso2": "GE",
+      "iso3": "GEO"
+    },
+    "Serbia": {
+      "iso2": "RS",
+      "iso3": "SRB"
+    },
+    "Croatia": {
+      "iso2": "HR",
+      "iso3": "HRV"
+    },
+    "Bosnia and Herzegovina": {
+      "iso2": "BA",
+      "iso3": "BIH"
+    },
+    "Sweden": {
+      "iso2": "SE",
+      "iso3": "SWE"
+    },
+    "Netherlands": {
+      "iso2": "NL",
+      "iso3": "NLD"
+    },
+    "Finland": {
+      "iso2": "FI",
+      "iso3": "FIN"
+    },
+    "Argentina": {
+      "iso2": "AR",
+      "iso3": "ARG"
+    },
+    "Honduras": {
+      "iso2": "HN",
+      "iso3": "HND"
+    },
+    "Romania": {
+      "iso2": "RO",
+      "iso3": "ROU"
     }
   },
   "places": {
@@ -2704,6 +2752,20 @@
           "precision": "city"
         }
       ]
+    }
+  },
+  "countryMarkers": {
+    "Bahrain": {
+      "lat": 26.0667,
+      "lon": 50.5577,
+      "label": "Bahrain",
+      "precision": "country marker"
+    },
+    "Maldives": {
+      "lat": 4.1755,
+      "lon": 73.5093,
+      "label": "Maldives",
+      "precision": "country marker"
     }
   }
 }

@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync,existsSync,statSync} from 'node:fs';
 import {filterPersecutionReports,reportKind,formatReportDate} from '../public/assets/persecution-catalogue.js';
-import {aggregateIncidentLocations} from '../public/assets/christian-heatmap.js';
+import {aggregateIncidentLocations,unshapedCountryMarkers} from '../public/assets/christian-heatmap.js';
 const read=path=>readFileSync(new URL('../'+path,import.meta.url),'utf8');
 const records=JSON.parse(read('public/data/christian-persecution.json')).reports;
 const media=JSON.parse(read('public/data/christian-persecution-media.json')).media;
@@ -59,7 +59,7 @@ test('global distribution includes every report once and geographically separate
  assert.ok(Math.abs(totals.weight-totals.located)<0.0001);
  assert.equal(world.features.length,177);
  const countries=new Set(world.features.map(f=>f.id));
- for(const [name,location] of Object.entries(geo.countries))assert.ok(countries.has(location.iso3),'No Natural Earth shape for '+name);
+ for(const [name,location] of Object.entries(geo.countries))assert.ok(countries.has(location.iso3)||unshapedCountryMarkers(geo,world.features,totals.countries).some(m=>m.country===name),'No polygon or valid country locator for '+name);
  for(const [key,place] of Object.entries(geo.places)){
   assert.ok(key.includes('|')&&Array.isArray(place.points)&&place.points.length);
   for(const point of place.points){
@@ -254,8 +254,8 @@ test('report-inclusive global expansion adds 45 source-attributed reports with m
  const countries=['Tajikistan','Armenia','Bhutan','Brunei','Jordan','Qatar','United Arab Emirates',
    'Saudi Arabia','Oman','Chile','Guatemala','Peru','Malawi','Greece'];
  assert.equal(countries.length,14);
- assert.equal(records.length,435);
- assert.equal(new Set(records.map(r=>r.country)).size,84);
+ assert.ok(records.length>=435);
+ assert.ok(new Set(records.map(r=>r.country)).size>=84);
  const geo=JSON.parse(read('public/data/christian-heatmap-places.json'));
  const world=JSON.parse(read('public/data/world-heatmap-110m.json'));
  const allowed=new Set(world.features.map(f=>f.id));
@@ -269,7 +269,7 @@ test('report-inclusive global expansion adds 45 source-attributed reports with m
    assert.equal(totals.countries.get(country),subset.length);
    assert.equal(filterPersecutionReports(records,{country}).length,subset.length);
  }
- const newRows=records.filter(r=>Number(r.id.slice(3))>=391);
+ const newRows=records.filter(r=>Number(r.id.slice(3))>=391&&Number(r.id.slice(3))<=435);
  assert.equal(newRows.length,45);
  for(const record of newRows){
    assert.match(record.id,/^CT-\d{4}$/);
@@ -289,4 +289,46 @@ test('report-inclusive global expansion adds 45 source-attributed reports with m
  assert.match(page,/includes published reports even where they are uncorroborated, disputed or based on a single source/);
  assert.match(page,/GLOBAL REPORT DISTRIBUTION/);
  assert.ok(!page.includes('GLOBAL INCIDENT DISTRIBUTION'));
+});
+
+test('small island country locators show report totals without inventing locality positions',()=>{
+ const added=['Bahrain','Maldives','Georgia','Serbia','Croatia','Bosnia and Herzegovina','Sweden',
+  'Netherlands','Finland','Argentina','Honduras','Romania'];
+ assert.equal(added.length,12);
+ assert.equal(records.length,470);
+ const geo=JSON.parse(read('public/data/christian-heatmap-places.json'));
+ const world=JSON.parse(read('public/data/world-heatmap-110m.json'));
+ const count=new Map();
+ for(const r of records)count.set(r.country,(count.get(r.country)||0)+1);
+ assert.equal(count.size,96);
+ assert.equal(Object.keys(geo.countries).length,96);
+ assert.equal(records.filter(r=>Number(r.id.slice(3))>=436).length,35);
+ for(const country of added){
+  const rows=records.filter(r=>r.country===country);
+  assert.ok(rows.length>=1,'Missing source report: '+country);
+  assert.equal(rows.length,count.get(country));
+  assert.ok(rows.every(r=>r.publisher&&r.source_url&&r.published_account&&r.reported_actor&&r.notes));
+  assert.equal(filterPersecutionReports(records,{country}).length,rows.length);
+  assert.equal(new URL(rows[0].source_url).protocol,'https:');
+ }
+ const proxies=unshapedCountryMarkers(geo,world.features,count);
+ assert.deepEqual(proxies.map(x=>x.country).sort(),['Bahrain','Maldives']);
+ assert.deepEqual(proxies.map(x=>x.count).sort((a,b)=>a-b),[1,3]);
+ assert.ok(proxies.every(x=>x.precision==='country locator'));
+ assert.ok(proxies.every(x=>Number.isFinite(x.lat)&&Number.isFinite(x.lon)));
+ assert.ok(!world.features.some(f=>f.id==='BHR'||f.id==='MDV'),'110m dataset must omit these polygons');
+ for(const r of records.filter(r=>r.country==='Bahrain'||r.country==='Maldives')){
+  assert.ok(!Array.isArray(r.locations)||r.locations.length===0,'A country marker must never masquerade as report location');
+  assert.ok(!geo.places[r.country+'|'+r.place],'A policy-level report must not claim a city coordinate');
+ }
+ const withBahrainShape=unshapedCountryMarkers(geo,[...world.features,{id:'BHR'}],count);
+ assert.deepEqual(withBahrainShape.map(x=>x.country),['Maldives']);
+ const filteredCounts=new Map([['Maldives',1]]);
+ assert.deepEqual(unshapedCountryMarkers(geo,world.features,filteredCounts).map(x=>x.country),['Maldives']);
+ const invalidMarkers={...geo,countryMarkers:{...geo.countryMarkers,Bahrain:{lat:999,lon:50}}};
+ assert.deepEqual(unshapedCountryMarkers(invalidMarkers,world.features,count).map(x=>x.country),['Maldives']);
+ assert.ok(records.some(r=>r.country==='Romania'&&r.notes.includes('not an established anti-Christian attack')));
+ assert.ok(records.some(r=>r.country==='Sweden'&&r.notes.includes('rejected speculative claims')));
+ assert.ok(records.some(r=>r.country==='Honduras'&&r.title.includes('Wilmer Castellanos')));
+ assert.ok(read('public/index.html').includes('not invented incident coordinates'));
 });

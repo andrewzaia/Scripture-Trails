@@ -93,3 +93,33 @@ test('credited locally hosted site photos appear neatly on affected report cards
  const urls=await page.locator('.persecution-case img').evaluateAll(items=>items.map(img=>img.currentSrc));
  expect(urls.every(url=>new URL(url).pathname.startsWith('/assets/persecution-media/'))).toBe(true);
 });
+
+test('Bahrain and Maldives appear as accessible country locators, not invented incident pins',async({page})=>{
+ await open(page,'christian-persecution');
+ const map=page.locator('[data-pc-map]');
+ await expect(map).toHaveAttribute('data-ready','true');
+ const proxy=page.locator('.pc-country-proxy');
+ await expect(proxy).toHaveCount(2);
+ const bahrain=page.locator('.pc-country-proxy[aria-label^="Bahrain:"]');
+ await expect(bahrain).toHaveAttribute('aria-label',/Country-level locator only, not an incident location/);
+ await bahrain.focus();
+ await page.keyboard.press('Enter');
+ await expect(page.locator('[data-pc-country]')).toHaveValue('Bahrain');
+ await expect(page.locator('[data-pc-map-summary]')).toContainText('1 matching reports across 1 countries');
+ await page.locator('[data-pc-map-layer]').selectOption('countries');
+ await expect(page.locator('.pc-country-proxy')).toHaveCount(1);
+ await expect(page.locator('.pc-world-localities .pc-map-marker')).toHaveCount(0);
+ await page.locator('[data-pc-map-reset]').click();
+ await expect(page.locator('.pc-country-proxy')).toHaveCount(2);
+ const maldives=page.locator('.pc-country-proxy[aria-label^="Maldives:"]');
+ await maldives.focus();
+ await page.keyboard.press('Enter');
+ await expect(page.locator('[data-pc-country]')).toHaveValue('Maldives');
+ await expect(page.locator('[data-pc-map-summary]')).toContainText('3 matching reports across 1 countries');
+ await expect(page.locator('.pc-world-localities .pc-map-marker')).toHaveCount(0);
+ await page.locator('[data-pc-map-layer]').selectOption('localities');
+ await expect(page.locator('.pc-country-proxy')).toHaveCount(1);
+ await page.locator('[data-pc-map-reset]').click();
+ await expect(page.locator('[data-pc-country]')).toHaveValue('');
+ await expect(page.locator('.pc-country-proxy')).toHaveCount(2);
+});

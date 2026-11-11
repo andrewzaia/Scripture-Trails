@@ -1,36 +1,33 @@
 # Christian persecution geographic coverage audit
 
 Checked: 2026-11-11
-Candidate release: v1.10.0
+Candidate release: v1.11.0
 
-The historical catalogue currently preserves 435 published report records across 84 mapped countries and territories, including 45 new records and 14 countries added in this release.
+The catalogue includes 470 published report records from 96 countries and territories. This release adds 35 records across 12 countries previously missing from the archive: Bahrain, Maldives, Georgia, Serbia, Croatia, Bosnia and Herzegovina, Sweden, Netherlands, Finland, Argentina, Honduras and Romania.
 
-## Mandatory inclusive reporting standard
+## Source-inclusive reporting policy
 
-This catalogue documents *published reports*, including unverified, disputed and single-source allegations. No external fact check, independent corroboration, judicial finding or confirmation of the perpetrator's motive is required for inclusion. A report can be included when its source clearly identifies what was alleged or described, including social-media accounts from identifiable sources.
+The archive preserves attributed reports whether confirmed, unverified, disputed or based on a single publisher. It includes reported attacks on clergy or church property, incidents affecting Christian worship, patterns of discrimination, and restrictive state laws. Entries are not independent findings of intent, guilt or responsibility.
 
-- Preserve an original source link, publication attribution and the precise factual claim being published.
-- Record the author's description even where its proof is incomplete, attributed as a report rather than a fact certified by the catalogue.
-- Where a publisher, witness, official or later report disputes an allegation, preserve that disagreement in notes or a second source. Do not erase the original report simply because its evidence was questioned.
-- Include source-reported incidents against Christians, clergy, church property and sacred places, regardless of whether investigators established religious motive.
-- Include published reports of ongoing legal restrictions, intimidation, registration barriers and religious speech restrictions. Label these as *policy or pattern reports*, not individual attacks.
-- Preserve date precision (year, month or exact day); never derive an event day solely from a publication date.
-- Group reports about the same event and identify aggregates. An allegation involving 70 people remains **one source report**, not 70 automatically verified victims or incidents.
-- Protect sensitive individuals and do not invent location coordinates. Published country restrictions should shade their country without creating an invented town-level map marker.
-- No third-party image reuse without documented reproduction rights. External source links and attribution remain visible.
+- Use an original published source URL and the publisher's name on every record. Maintain the original account even if later reporting disputes it; cite follow-up sources where available.
+- Describe arrests, convictions, allegations, religious motives and non-religious criminal explanations with the status actually reported.
+- Maintain source date precision and avoid confusing publication dates with the day of an incident.
+- Treat continuing regulatory restrictions and aggregate summaries as reports, not a number of individual attacks. Do not multiply victims or incidents to inflate report counts.
+- Do not supply fabricated site-level coordinates for country-wide policies or ambiguous locations.
+- Third-party images are included only with an established local-hosting reuse licence and attribution; otherwise link to the publisher.
 
-Archive report count is not an exhaustive worldwide census, a count of confirmed attacks, a verified casualty total, or a country-level persecution rate. Empty countries are **unrepresented**, not necessarily free from reports or persecution.
+## Simplified world-map issue and solution
 
-## Remaining geographical leads
+The local 110m world geometry omits Bahrain (BHR) and Maldives (MDV) even though the published reports now include them. These two countries appear using separate, accessible, keyboard-operable country-level map symbols. Their coordinates are representative map locators, **not** a reported incident location. They are present in country-only and combined layers, remain selectable when filtering, and disappear if a future map geometry includes the full country polygon. Existing countries continue to use their own true local polygons.
 
-Additional published sources should be sought for countries such as Bahrain, Maldives, Georgia, Serbia, Romania, Croatia, Sweden, Netherlands, Argentina, Zimbabwe, Honduras, and other zero-report geographies. Bahrain and Maldives do not appear in the current 110m world geometry and need accurate map geometry before being presented as heat-map countries; do not mislabel nearby shapes.
+Country-specific counts on the map represent *published report records*, not confirmed incidents or per-capita persecution levels. Locations with no report remain unshaded; absence of a recorded report does not establish safety.
 
-Prioritise the existing low-coverage countries (including DR Congo, Haiti, Türkiye, Afghanistan, South Sudan and the Philippines) as well as new countries. Search national news, church publishers, human-rights reporting and relevant attributed social-media accounts.
+## Research backlog
 
-## Source status example
+Next high-priority zero-coverage locations include Zimbabwe, North Macedonia, Albania, Switzerland, Norway, Denmark, Japan, South Korea, Mongolia, Ecuador, El Salvador, Panama and others where published records can be found. The detailed geographic research queue should be updated as more sources are found.
 
-The published February 2025 allegation concerning approximately 70 Christians allegedly killed in the DR Congo is retained as a report, with the original ACN account and Open Doors' subsequent questions both available. This does not imply the deaths were independently proved or disprove the source report.
+Continue deepening countries already covered by one or two reports, including Haiti, South Sudan, Afghanistan and the Philippines, as well as the Democratic Republic of the Congo.
 
-## Next milestone
+## Release verification
 
-Expand the source catalogue and the geospatial support for small island states, then continue adding reported cases, particularly underrepresented historic cases and sources not indexed by mainstream publishers.
+Required before publication: npm release reproduction with the standard command, npm run build, all source/data/release checks, Chromium/Firefox/WebKit desktop and mobile flows, true 200% and 400% zoom, merge checks, and Cloudflare production deployment for the exact merged SHA. Verify the live site if available, and report any limitations.

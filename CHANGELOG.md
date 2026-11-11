@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.11.0 - 11/11/2026: Wider global reports and small-island map coverage
+
+- Add 35 published, source-attributed reports covering 12 newly represented countries, bringing the Christian persecution catalogue to 470 report records across 96 countries and territories.
+- Record reported incidents, church vandalism, clergy killings and minority-Christian restrictions across Bahrain, Maldives, Georgia, Serbia, Croatia, Bosnia and Herzegovina, Sweden, Netherlands, Finland, Argentina, Honduras and Romania.
+- Introduce accessible, clickable country-level map markers for Bahrain and the Maldives, which are absent from the simplified world polygon data, without assigning fabricated incident coordinates or changing existing country shading.
+- Continue including disputed and single-source reports with their original attribution; distinguish religious motives from unrelated theft or criminal investigations, and strengthen catalogue and world-map regression tests.
+
 ## 1.10.0 - 11/11/2026: Global report expansion and inclusive source catalogue
 
 - Add 45 source-attributed reports from 14 previously unrepresented countries, growing the archive to 435 report records across 84 countries and territories.

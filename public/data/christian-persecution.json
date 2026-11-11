@@ -400,6 +400,19 @@
       "notes": "Ukrainian government-controlled territory. Church-aligned reporting; source allegations and incident details have not been independently established here. Military mobilisation alone does not demonstrate religious persecution."
     },
     {
+      "id": "CT-0448",
+      "country": "Croatia",
+      "date": "2026-04-23",
+      "place": "Zagreb",
+      "category": "Orthodox church vandalism; alleged religious hate crime",
+      "title": "Serbian Orthodox church vandalised in Zagreb, suspect accused of hate crime",
+      "published_account": "Croatian public broadcaster HRT reported police charged a 49-year-old man with damaging exterior lights, stained glass and security cameras at an Orthodox church in central Zagreb. Police also investigated hate-crime allegations.",
+      "reported_actor": "49-year-old man arrested and charged by Croatian police",
+      "publisher": "HRT / Hina",
+      "source_url": "https://vijesti.hrt.hr/hrvatska/prijavljen-zbog-zlocina-iz-mrznje-i-ostecenja-imovine-pravoslavne-crkve-u-zagrebu-12686343",
+      "notes": "Criminal charges reported; no final conviction was established by the cited account."
+    },
+    {
       "id": "CT-0364",
       "country": "Kyrgyzstan",
       "date": "2026-04-19",
@@ -551,6 +564,20 @@
       "source_url": "https://www.uscirf.gov/sites/default/files/2026-05/2026%20Nicaragua%20Country%20Update.pdf"
     },
     {
+      "id": "CT-0459",
+      "country": "Netherlands",
+      "date": "2026-02-25",
+      "place": "Ede, Gelderland",
+      "category": "Church door arson",
+      "title": "Historic Oude Kerk door burned in Ede",
+      "published_account": "NL Times reported someone set fire to a door of Ede's Oude Kerk in the early hours of Wednesday, blackening the wood and nearby window, in the third reported church incident that week.",
+      "reported_actor": "Unidentified perpetrator; police appeal for witnesses",
+      "publisher": "NL Times",
+      "source_url": "https://nltimes.nl/2026/02/26/vandalism-arson-three-ede-churches-one-week",
+      "notes": "Third separately located church attack in one published multi-incident account.",
+      "incident_group": "NLD-EDE-2026"
+    },
+    {
       "id": "CT-0288",
       "date": "2026-02-24",
       "country": "Ukraine",
@@ -564,6 +591,20 @@
       "notes": "Ukrainian government-controlled territory. Church-aligned reporting; source allegations and incident details have not been independently established here. Military mobilisation alone does not demonstrate religious persecution."
     },
     {
+      "id": "CT-0458",
+      "country": "Netherlands",
+      "date": "2026-02-22",
+      "place": "Ede, Gelderland",
+      "category": "Church firebombing",
+      "title": "Molotov cocktail reportedly thrown into Lutheran church",
+      "published_account": "NL Times reported a stained-glass window at Ede's Evangelical Lutheran Church was smashed and an incendiary device caused a small fire early on Sunday 22 February.",
+      "reported_actor": "Unidentified attacker; police investigating",
+      "publisher": "NL Times",
+      "source_url": "https://nltimes.nl/2026/02/26/vandalism-arson-three-ede-churches-one-week",
+      "notes": "Second church in the Ede sequence; event dates from the publication's Thursday timeline.",
+      "incident_group": "NLD-EDE-2026"
+    },
+    {
       "id": "CT-0289",
       "date": "2026-02-21",
       "country": "Ukraine",
@@ -575,6 +616,20 @@
       "publisher": "Union of Orthodox Journalists",
       "source_url": "https://spzh.eu/en/zashhita-very/93805-chronicle-of-the-reprisals-against-the-clergy-of-the-uoc.html",
       "notes": "Ukrainian government-controlled territory. Church-aligned reporting; source allegations and incident details have not been independently established here. Military mobilisation alone does not demonstrate religious persecution."
+    },
+    {
+      "id": "CT-0457",
+      "country": "Netherlands",
+      "date": "2026-02-19",
+      "place": "Ede, Gelderland",
+      "category": "Church vandalism and arson attempt",
+      "title": "De Schuilplaats Evangelical Church meeting room set alight",
+      "published_account": "NL Times reported windows were broken and a meeting room at De Schuilplaats church was set alight overnight. Police investigated the incident as part of a series of attacks on Ede churches.",
+      "reported_actor": "Unidentified arsonist or vandals",
+      "publisher": "NL Times",
+      "source_url": "https://nltimes.nl/2026/02/26/vandalism-arson-three-ede-churches-one-week",
+      "notes": "First of three distinct Ede church incidents that week, reported together by the publisher.",
+      "incident_group": "NLD-EDE-2026"
     },
     {
       "id": "CT-0398",
@@ -928,6 +983,19 @@
       "notes": "USCCB archive contains additional incidents; this workbook extracts a selection."
     },
     {
+      "id": "CT-0449",
+      "country": "Croatia",
+      "date": "2025-12",
+      "place": "Solin, Split-Dalmatia",
+      "category": "Catholic church vandalism during worship",
+      "title": "Gospa od Otoka church interior and parish barrier damaged",
+      "published_account": "Hina reported via Tportal that Solin police investigated damage to a parish barrier and interior walls at Gospa od Otoka between 31 December 2025 and 4 January 2026. The parish reported damage during evening Mass.",
+      "reported_actor": "Unidentified vandals; Croatian police investigating",
+      "publisher": "Hina via Tportal",
+      "source_url": "https://www.tportal.hr/vijesti/clanak/splitska-policija-istrazuje-tko-je-vandalizirao-crkvu-u-solinu-zupa-trazi-informacije-od-vjernika-20260105",
+      "notes": "Incident window spans December 2025 and early January 2026, so December precision is used; motive unknown."
+    },
+    {
       "id": "CT-0046",
       "date": "2025-11-29",
       "country": "United States",
@@ -1072,6 +1140,19 @@
       "notes": "The source says no fines had been imposed at the time of reporting. Month-only event date."
     },
     {
+      "id": "CT-0463",
+      "country": "Argentina",
+      "date": "2025-11",
+      "place": "Liniers, Buenos Aires",
+      "category": "Vandalism of Virgin of Lujan shrine",
+      "title": "Marian image smashed at roadside shrine near San Cayetano",
+      "published_account": "AICA reported the rector of San Cayetano parish complained after a Marian image at a small Liniers shrine was shattered, its protective glass broken, and religious objects knocked down.",
+      "reported_actor": "Unknown vandals",
+      "publisher": "AICA",
+      "source_url": "https://aica.org/noticia-vandalizan-una-imagen-de-la-virgen-de-lujan-frente-a-una-comisaria-en-liniers",
+      "notes": "Published 3 November 2025; no offender or precise moment of attack established."
+    },
+    {
       "id": "CT-0052",
       "date": "2025-10-31",
       "country": "Italy",
@@ -1108,6 +1189,19 @@
       "reported_actor": "38-year-old man charged with assault-related offences; motive not established",
       "publisher": "ABC News",
       "source_url": "https://www.abc.net.au/news/2025-10-27/man-charged-with-stabbing-darwin-priest-in-face-with-pen/105937868"
+    },
+    {
+      "id": "CT-0446",
+      "country": "Serbia",
+      "date": "2025-10-11",
+      "place": "Mrtvica, Vladicin Han municipality",
+      "category": "Arson of Orthodox monastery",
+      "title": "Historic Serbian Orthodox monastery iconostasis deliberately set alight",
+      "published_account": "OIDAC reported a man brought petrol and ignition materials into the Assumption of the Most Holy Theotokos Monastery in Mrtvica and set fire to an iconostasis and liturgical book before witnesses extinguished it. Police reportedly arrested the suspect.",
+      "reported_actor": "Man arrested by police, according to reported accounts",
+      "publisher": "Observatory on Intolerance and Discrimination against Christians in Europe",
+      "source_url": "https://www.intoleranceagainstchristians.eu/index.php?case=10267&id=12",
+      "notes": "The attacker was charged over endangering public safety; motive was not stated. Site name and place preserved from the report."
     },
     {
       "id": "CT-0382",
@@ -1198,6 +1292,19 @@
       "publisher": "Associated Press",
       "source_url": "https://apnews.com/article/5154d33e7a2ac7fbd3d135308cb4748d",
       "notes": "Month precision: AP publication concerned the same case. Church allegations of systematic pressure and government criminal charges are separately attributed."
+    },
+    {
+      "id": "CT-0462",
+      "country": "Argentina",
+      "date": "2025-10",
+      "place": "Gastona Norte, Tucuman",
+      "category": "Catholic chapel desecration and burglary",
+      "title": "Catholic chapel of Lord and Virgin of the Miracle desecrated",
+      "published_account": "AICA reported the Diocese of Concepcion found a chapel's tabernacle violated, church property stolen and walls and curtains bloodied, before a reparatory Mass and renewed blessing on 17 October 2025.",
+      "reported_actor": "Unidentified intruders",
+      "publisher": "AICA",
+      "source_url": "https://aica.org/imprimir-noticia.php?id=71408",
+      "notes": "Published 18 October, source gives no exact date of the preceding intrusion; event month only."
     },
     {
       "id": "CT-0253",
@@ -1407,6 +1514,19 @@
       "notes": "USCCB archive contains additional incidents; this workbook extracts a selection."
     },
     {
+      "id": "CT-0469",
+      "country": "Honduras",
+      "date": "2025-08-09",
+      "place": "Los Laureles, Santa Barbara",
+      "category": "Pastor killed before church service",
+      "title": "Pastor Wilmer Castellanos killed with machete outside service",
+      "published_account": "El Heraldo reported Pastor Wilmer Castellanos, aged 55, was attacked with a machete as he prepared for a worship service at the Alfa y Omega church in the Los Laureles area.",
+      "reported_actor": "Unidentified man who fled after attack",
+      "publisher": "El Heraldo Honduras",
+      "source_url": "https://www.elheraldo.hn/sucesos/matan-machetazos-pastor-wilmer-castellanos-cuando-estaba-por-iniciar-culto-santa-barbara-HL26963004",
+      "notes": "Article dated 10 August described attack on Saturday. Witnesses said attacker seemed intoxicated or impaired; motive not determined."
+    },
+    {
       "id": "CT-0255",
       "date": "2025-08-06",
       "country": "Ukraine",
@@ -1611,6 +1731,19 @@
       "notes": "Religious object desecration is reported; offenders and precise motive unknown."
     },
     {
+      "id": "CT-0450",
+      "country": "Bosnia and Herzegovina",
+      "date": "2025-06-28",
+      "place": "Gospino Vrilo, Travnik",
+      "category": "Catholic shrine chapel burglary and damage",
+      "title": "Marian shrine chapel in Travnik forcibly entered and damaged",
+      "published_account": "Croatian Catholic news agency IKA reported an intruder spent several hours breaking into a shrine chapel near Travnik, damaging its door. Parish representatives said a suspect was later detained.",
+      "reported_actor": "Alleged individual intruder, arrested according to parish",
+      "publisher": "IKA / Katolicki tjednik",
+      "source_url": "https://ika.hkm.hr/novosti/provaljeno-u-kapelicu-na-gospinu-vrilu-kod-travnika/",
+      "notes": "Parish identified earlier damage to a Marian statue in November 2024; do not infer same perpetrator."
+    },
+    {
       "id": "CT-0396",
       "country": "Armenia",
       "date": "2025-06-27",
@@ -1730,6 +1863,19 @@
       "notes": "Separate date from earlier 2023 event. No invented perpetrator."
     },
     {
+      "id": "CT-0468",
+      "country": "Honduras",
+      "date": "2025-06-10",
+      "place": "Nueva Esperanza, El Corpus, Choluteca",
+      "category": "Evangelical pastor shot dead at home",
+      "title": "Pastor Yonis Zepeda murdered inside his home",
+      "published_account": "La Prensa reported armed attackers shot Evangelical Pastor Yonis Zepeda in his home in Nueva Esperanza, El Corpus. Authorities had not established a motive or suspects in the account.",
+      "reported_actor": "Unidentified gunmen",
+      "publisher": "La Prensa Honduras",
+      "source_url": "https://www.laprensa.hn/sucesos/honduras-ultiman-pastor-evangelico-el-corpus-choluteca-LH26120209",
+      "notes": "Other local reporting used variant given names; this entry follows La Prensa's attribution. No religious motive established."
+    },
+    {
       "id": "CT-0081",
       "date": "2025-06-07",
       "country": "United States",
@@ -1745,6 +1891,19 @@
       "media_url": "https://www.fox26houston.com/news/porter-texas-church-vandalized-statues-st-martha-june-2025",
       "media_note": "Link to local report; imagery/footage on page must be inspected and licensed before re-use",
       "notes": "USCCB archive contains additional incidents; this workbook extracts a selection."
+    },
+    {
+      "id": "CT-0451",
+      "country": "Bosnia and Herzegovina",
+      "date": "2025-06",
+      "place": "Karaula, Kakanj",
+      "category": "Orthodox cemetery chapel vandalism",
+      "title": "Window of Serbian Orthodox cemetery chapel reportedly smashed",
+      "published_account": "SRNA cited Priest Dragisa Cvjetkovic reporting glass was broken at a chapel in the abandoned Serbian Orthodox cemetery at Karaula near Kakanj, with police examining the site.",
+      "reported_actor": "Unidentified person or persons",
+      "publisher": "SRNA",
+      "source_url": "https://www1.srna.rs/en/novost/1307489/persons-unknown-broke-window-glass-of-chapel-at-the-karaula-serbian-cemetery",
+      "notes": "Damage discovered in June but said to have occurred in the preceding ten days; no exact date or motive established."
     },
     {
       "id": "CT-0082",
@@ -1841,6 +2000,19 @@
       "notes": "Source gives only year or month. No exact day has been inferred."
     },
     {
+      "id": "CT-0456",
+      "country": "Netherlands",
+      "date": "2025-05",
+      "place": "Doorwerth, Gelderland",
+      "category": "Catholic cemetery chapel vandalism",
+      "title": "Virgin Mary statue decapitated and cross smashed in Doorwerth",
+      "published_account": "Katholiek Nieuwsblad reported extensive damage to the chapel at a Catholic cemetery, including a decapitated Marian image and a shattered wooden cross, found by a volunteer in May 2025.",
+      "reported_actor": "Unknown vandals",
+      "publisher": "Katholiek Nieuwsblad",
+      "source_url": "https://www.kn.nl/nieuws/lokaal/verdriet-door-vernielingen-op-katholieke-begraafplaats-deze-gewijde-plek-is-geschonden/",
+      "notes": "Source dates publication 26 May and suggests damage the previous week; precise day unverified."
+    },
+    {
       "id": "CT-0384",
       "country": "United Kingdom",
       "date": "2025-04-27",
@@ -1870,6 +2042,19 @@
       "media_url": "https://www.pennlive.com/news/2025/04/man-desecrated-holy-water-with-urine-at-central-pa-catholic-church-police.html",
       "media_note": "Link to local report; imagery/footage on page must be inspected and licensed before re-use",
       "notes": "USCCB archive contains additional incidents; this workbook extracts a selection."
+    },
+    {
+      "id": "CT-0447",
+      "country": "Serbia",
+      "date": "2025-04-22",
+      "place": "Mirijevo, Belgrade",
+      "category": "Burglary of Serbian Orthodox church",
+      "title": "St Elijah church robbed again within a week",
+      "published_account": "The Serbian Orthodox Church reported an intruder stole Easter donations from St Elijah's Church in Mirijevo on 22 April. Its priest said the church shop had been burgled a week earlier.",
+      "reported_actor": "Unidentified church burglar",
+      "publisher": "Serbian Orthodox Church",
+      "source_url": "https://spc.rs/sr/news/iz-zivota-crkve/-/13848.ponovo-opljackana-crkva-svetog-ilije-u-mirijevu.html",
+      "notes": "Two related burglaries are described as one report record; a surveillance image reportedly suggested the same offender."
     },
     {
       "id": "CT-0383",
@@ -2029,6 +2214,19 @@
       "media_url": "https://www.osvnews.com/wichita-catholic-church-vandalized-in-what-bishops-call-hate-crime/",
       "media_note": "Link to local report; imagery/footage on page must be inspected and licensed before re-use",
       "notes": "USCCB archive contains additional incidents; this workbook extracts a selection."
+    },
+    {
+      "id": "CT-0461",
+      "country": "Argentina",
+      "date": "2025-03-11",
+      "place": "Talleres Oeste, Cordoba",
+      "category": "Tabernacle desecration and theft from Catholic parish",
+      "title": "St Nicholas of Bari parish robbed and Eucharist desecrated",
+      "published_account": "Cadena 3 reported thieves took church sound equipment and a ciborium from the tabernacle at San Nicolas de Bari parish in Cordoba; the priest said consecrated hosts were left spilled.",
+      "reported_actor": "Unidentified thieves",
+      "publisher": "Cadena 3 Argentina",
+      "source_url": "https://www.cadena3.com/noticia/turno-noche/en-medio-del-temporal-robaron-y-profanaron-la-parroquia-san-nicolas-de-bari_409832",
+      "notes": "Report published 12 March and describes the previous night; no independently established religious motive."
     },
     {
       "id": "CT-0094",
@@ -2451,6 +2649,19 @@
       "notes": "USCIRF reports she fled Iran; do not describe her as currently serving the sentence."
     },
     {
+      "id": "CT-0467",
+      "country": "Honduras",
+      "date": "2024-10-20",
+      "place": "Juticalpa, Olancho",
+      "category": "Pastor shot dead; family member injured",
+      "title": "Pastor Enrique Banegas Salgado shot alongside nephew",
+      "published_account": "Proceso Digital reported attackers shot and killed evangelical Pastor Enrique Roman Banegas Salgado while he prepared to travel to work; his nephew was injured and transported for treatment.",
+      "reported_actor": "Unidentified gunmen",
+      "publisher": "Proceso Digital",
+      "source_url": "https://proceso.hn/ultiman-a-balazos-a-pastor-y-su-sobrino-resulta-herido-en-un-ataque-en-juticalpa/",
+      "notes": "Reported attack occurred at the residence as the victims were preparing to leave. Motive not established."
+    },
+    {
       "id": "CT-0258",
       "date": "2024-10-17",
       "country": "Ukraine",
@@ -2515,6 +2726,32 @@
       "source_url": "https://persecution.org/2024/10/25/christian-convert-assaulted-by-relatives-in-somalia/",
       "notes": "Same victim as earlier May incident; separate event dates within one persecution sequence.",
       "incident_group": "SOMALIA-ABDUL-2024"
+    },
+    {
+      "id": "CT-0455",
+      "country": "Netherlands",
+      "date": "2024-09-15",
+      "place": "Wijchen, Gelderland",
+      "category": "Vandalism and burning of Marian statues",
+      "title": "Two Marian statues vandalised and items burned at Wijchen church",
+      "published_account": "OIDAC reported the St Anthony Abbot Church in Wijchen suffered destruction and burning of Marian statues and devotional objects in its chapel and Lourdes grotto. A woman was subsequently arrested on suspicion of vandalism and arson.",
+      "reported_actor": "Unidentified offender at incident; woman later arrested according to OIDAC",
+      "publisher": "Observatory on Intolerance and Discrimination against Christians in Europe",
+      "source_url": "https://www.intoleranceagainstchristians.eu/index.php?case=8532&id=12",
+      "notes": "The OIDAC update reports an arrest, not a conviction."
+    },
+    {
+      "id": "CT-0466",
+      "country": "Honduras",
+      "date": "2024-09-14",
+      "place": "Tocoa, Colon",
+      "category": "Killing of Catholic pastoral advocate",
+      "title": "Church social-ministry leader Juan Antonio Lopez killed after Mass",
+      "published_account": "Agenzia Fides reported Juan Antonio Lopez, a Catholic social pastoral coordinator and environmental advocate in the Diocese of Trujillo, was shot dead in his car after attending Mass in Tocoa. Several suspects were later detained.",
+      "reported_actor": "Gunmen not named in initial report; subsequent arrests",
+      "publisher": "Agenzia Fides",
+      "source_url": "https://www.fides.org/es/news/75527-AMERICA_HONDURAS_A_un_mes_del_asesinato_del_agente_pastoral_Juan_Antonio_Lopez_detienen_a_tres_sospechosos_en_Honduras",
+      "notes": "The attack may be connected to his environmental advocacy; no determination of anti-Christian motive is inferred."
     },
     {
       "id": "CT-0114",
@@ -2675,6 +2912,19 @@
       "publisher": "Christian Solidarity Worldwide",
       "source_url": "https://www.csw.org.uk/reports/general-briefing-laos-6900/",
       "notes": "Allegations attributed to local advocates and CSW; release reported on 25 July."
+    },
+    {
+      "id": "CT-0465",
+      "country": "Honduras",
+      "date": "2024-06-11",
+      "place": "La Sosa, Catacamas, Olancho",
+      "category": "Murder of evangelical pastor",
+      "title": "Pastor Edgar Alvarez shot while working at construction site",
+      "published_account": "La Prensa reported the evangelical pastor Edgar Alvarez was shot and killed while working in construction near Catacamas, and police said they had no established motive.",
+      "reported_actor": "Unidentified shooter",
+      "publisher": "La Prensa Honduras",
+      "source_url": "https://www.laprensa.hn/sucesos/honduras-violencia-matan-pastor-evangelico-olancho-IE19840901",
+      "notes": "Victim identified as pastor; religiously motivated murder was not claimed by police."
     },
     {
       "id": "CT-0119",
@@ -3160,6 +3410,32 @@
       "notes": "2 January is publisher date; attack day not established by the account, so report date used for monthly precision."
     },
     {
+      "id": "CT-0454",
+      "country": "Netherlands",
+      "date": "2024-01",
+      "place": "Volendam, North Holland",
+      "category": "Assault of Catholic priest during funeral",
+      "title": "Catholic priest reportedly struck with a Bible at funeral service",
+      "published_account": "Aid to the Church in Need's Netherlands country report recorded a January 2024 incident in which a priest in Volendam was assaulted with a Bible during a funeral. He had previously spoken to the suspect by telephone about theology.",
+      "reported_actor": "Individual attendee; specific criminal findings not reported",
+      "publisher": "Aid to the Church in Need - Religious Freedom Report",
+      "source_url": "https://rfr-acninternational.vercel.app/religiousfreedomreport/reports/country/2025/netherlands",
+      "notes": "The priest reportedly described the attendee as confused; the source did not establish an ideological hate motive."
+    },
+    {
+      "id": "CT-0470",
+      "country": "Romania",
+      "date": "2024-01",
+      "place": "Romania (city not specified)",
+      "category": "Church property defaced with antisemitic graffiti",
+      "title": "Two churches reportedly vandalised with Star of David graffiti",
+      "published_account": "OSCE ODIHR recorded an incident in January 2024 in which two churches and two monuments in an unnamed city centre in Romania were defaced with graffiti depicting the Star of David.",
+      "reported_actor": "Unknown vandals",
+      "publisher": "OSCE ODIHR Hate Crime Reporting",
+      "source_url": "https://hatecrime.osce.org/romania",
+      "notes": "The OSCE categorised this incident as anti-Semitic vandalism involving two churches and two monuments, not an established anti-Christian attack. The reporting does not identify the city and no city-level map coordinate is assigned."
+    },
+    {
       "id": "CT-0357",
       "country": "Azerbaijan",
       "date": "2024",
@@ -3171,6 +3447,45 @@
       "publisher": "Monument Watch / Caucasus Heritage Watch",
       "source_url": "https://monumentwatch.org/en/alerts/azerbaijan-destroyed-the-church-of-tandzatap/",
       "notes": "Source attributes destruction to Azerbaijani forces, but satellite images alone cannot establish intent; year precision."
+    },
+    {
+      "id": "CT-0445",
+      "country": "Georgia",
+      "date": "2024",
+      "place": "Georgia (nationwide)",
+      "category": "Reported threats and property attacks on Christian minority",
+      "title": "OSCE records Christian-minority threats during public worship",
+      "published_account": "OSCE ODIHR reported civil-society submissions describing anti-Christian incidents in 2024, especially threats to Jehovah's Witnesses during door-to-door ministry, public outreach and private worship.",
+      "reported_actor": "Unidentified individuals reported by civil society",
+      "publisher": "OSCE ODIHR Hate Crime Reporting",
+      "source_url": "https://hatecrime.osce.org/georgia?year=2024",
+      "notes": "Aggregate civil-society reporting, not a confirmed total of unique assaults; may overlap individually documented events."
+    },
+    {
+      "id": "CT-0453",
+      "country": "Sweden",
+      "date": "2024",
+      "place": "Sweden (nationwide)",
+      "category": "Published aggregate of anti-Christian property attacks",
+      "title": "OSCE records repeated vandalism of Christian worship facilities",
+      "published_account": "OSCE ODIHR reported 2024 civil-society submissions recording mostly anti-Christian incidents involving repeated vandalism of Jehovah's Witness Kingdom Halls and literature carts, and one reported attempted arson.",
+      "reported_actor": "Unidentified perpetrators, as recorded by civil society",
+      "publisher": "OSCE ODIHR Hate Crime Reporting",
+      "source_url": "https://hatecrime.osce.org/sweden?year=2024",
+      "notes": "Aggregate record of voluntary reports, not a count of separately entered incidents; not a police census."
+    },
+    {
+      "id": "CT-0460",
+      "country": "Finland",
+      "date": "2024",
+      "place": "Finland (nationwide)",
+      "category": "Published anti-Christian property attack summary",
+      "title": "OSCE records anti-Christian damage to property in Finland",
+      "published_account": "OSCE ODIHR reported receiving two 2024 civil-society accounts of anti-Christian attacks on property, one submitted by OIDAC in June and one by Jehovah's Witnesses in December.",
+      "reported_actor": "Unidentified persons according to submitting organisations",
+      "publisher": "OSCE ODIHR Hate Crime Reporting",
+      "source_url": "https://www.hatecrime.osce.org/finland",
+      "notes": "This is an aggregate of two published reports and counts as one catalogue entry, not two verified police incidents."
     },
     {
       "id": "CT-0125",
@@ -3212,6 +3527,19 @@
       "publisher": "NGO statement to UN Human Rights Council",
       "source_url": "https://documents.un.org/access.nsf/get?DS=A%2FHRC%2F55%2FNGO%2F132&Lang=E&Open=",
       "notes": "NGO submission, not a formal UN fact-finding conclusion."
+    },
+    {
+      "id": "CT-0452",
+      "country": "Sweden",
+      "date": "2023-11-23",
+      "place": "Tensta, Stockholm",
+      "category": "Burglary and vandalism of Syriac Orthodox church",
+      "title": "St Mary's Syriac Orthodox church in Tensta burglarised and damaged",
+      "published_account": "Swedish broadcaster SVT reported thieves broke windows and stole property from the Syriac Orthodox St Mary's congregation in Tensta. Police treated the case as aggravated theft.",
+      "reported_actor": "Unidentified burglars; Swedish police investigating",
+      "publisher": "SVT Nyheter",
+      "source_url": "https://www.svt.se/nyheter/lokalt/stockholm/inbrott-och-skadegorelse-i-syrisk-ortodoxa-kyrkan-i-tensta--si8byb",
+      "notes": "The congregation rejected speculative claims circulating on social media and described a break-in, not an established religiously motivated attack."
     },
     {
       "id": "CT-0263",
@@ -3277,6 +3605,19 @@
       "publisher": "US Department of State",
       "source_url": "https://2021-2025.state.gov/reports/2023-report-on-international-religious-freedom/united-arab-emirates/",
       "notes": "Policy-level report covering all religious groups. Existing licensed Christian worship facilities continued to function."
+    },
+    {
+      "id": "CT-0443",
+      "country": "Georgia",
+      "date": "2023-11",
+      "place": "Tbilisi",
+      "category": "Evangelical congregation threatened with loss of funds",
+      "title": "Evangelical church loses final court appeal over prayer-house fundraising",
+      "published_account": "The US State Department reported the Georgian Supreme Court rejected an appeal by the Evangelical Church of Georgia. A civil judgment requiring substantial damages allegedly threatened funds collected to build its only prayer house.",
+      "reported_actor": "Georgian civil courts; private civil plaintiff",
+      "publisher": "US Department of State",
+      "source_url": "https://2021-2025.state.gov/reports/2023-report-on-international-religious-freedom/georgia/",
+      "notes": "Civil litigation is not proof of religious motive; NGOs reported serious impact on the congregation."
     },
     {
       "id": "CT-0349",
@@ -3395,6 +3736,19 @@
       "publisher": "The Catholic Weekly",
       "source_url": "https://catholicweekly.com.au/marian-statue-defaced/",
       "notes": "Source gives only year or month. No exact day has been inferred."
+    },
+    {
+      "id": "CT-0444",
+      "country": "Georgia",
+      "date": "2023-09",
+      "place": "Georgia (nationwide)",
+      "category": "Differential religious-clergy service exemption",
+      "title": "Defense code reportedly exempts Orthodox but not minority Christian clergy",
+      "published_account": "The US State Department reported a new defense code which the Tolerance and Diversity Institute said could require non-Georgian Orthodox clergy to perform alternative civilian service while Georgian Orthodox clergy retained exemptions.",
+      "reported_actor": "Georgian lawmakers and service authorities",
+      "publisher": "US Department of State",
+      "source_url": "https://2021-2025.state.gov/reports/2023-report-on-international-religious-freedom/georgia/",
+      "notes": "Source reports potential unequal application of the law; not an assertion that an individual pastor was conscripted."
     },
     {
       "id": "CT-0324",
@@ -3761,6 +4115,19 @@
       "notes": "Ukrainian government-controlled territory; OHCHR's monitoring documents the event and police response."
     },
     {
+      "id": "CT-0464",
+      "country": "Honduras",
+      "date": "2023-03-02",
+      "place": "Morazan, Yoro",
+      "category": "Killing of Catholic priest; later convictions",
+      "title": "Father Jose Enrique Vasquez found murdered near Morazan bridge",
+      "published_account": "Honduran prosecutors reported Catholic Father Jose Enrique Vasquez Calix was found dead on 2 March 2023; two men were convicted of his murder in 2024 and received prison sentences.",
+      "reported_actor": "Two men convicted by Honduran courts",
+      "publisher": "Ministerio Publico de Honduras",
+      "source_url": "https://www.mp.hn/publicaciones/penas-de-mas-de-20-anos-de-carcel-reciben-autores-del-crimen-contra-el-padre-quique-en-la-zona-norte-del-pais/",
+      "notes": "The 2024 conviction is a later outcome of the same 2023 killing, not an additional incident."
+    },
+    {
       "id": "CT-0244",
       "date": "2023-03",
       "country": "Eritrea",
@@ -4005,6 +4372,45 @@
       "publisher": "US Department of State",
       "source_url": "https://2021-2025.state.gov/reports/2023-report-on-international-religious-freedom/oman/",
       "notes": "A published policy report, not an assertion of individual detention. Government report stated Christian groups reported no abuse or monitoring during 2023."
+    },
+    {
+      "id": "CT-0436",
+      "country": "Bahrain",
+      "date": "2023",
+      "place": "Bahrain (nationwide)",
+      "category": "Reported social intimidation of Christian converts",
+      "title": "Christian converts reportedly conceal conversion amid family and social pressure",
+      "published_account": "The US State Department reported non-Muslim religious leaders said converts from Islam avoided disclosing their conversion because of fear of harassment or discrimination. The same report described general tolerance of established Christian worship.",
+      "reported_actor": "Community or family members, according to minority-faith leaders",
+      "publisher": "US Department of State",
+      "source_url": "https://2021-2025.state.gov/reports/2023-report-on-international-religious-freedom/bahrain/",
+      "notes": "Pattern-level testimony, not a reported arrest or ban on established churches. The report says 16 churches were registered and minority worship was widely tolerated."
+    },
+    {
+      "id": "CT-0437",
+      "country": "Maldives",
+      "date": "2023",
+      "place": "Maldives (nationwide)",
+      "category": "Ban on non-Islamic public worship",
+      "title": "Foreign Christian worship restricted to homes under religious unity rules",
+      "published_account": "The US State Department recorded that foreign residents could worship in their own residences but public non-Islamic prayer gatherings were illegal, as was encouraging local citizens to attend them.",
+      "reported_actor": "Maldivian Ministry of Islamic Affairs and legal authorities",
+      "publisher": "US Department of State",
+      "source_url": "https://2021-2025.state.gov/reports/2023-report-on-international-religious-freedom/maldives/",
+      "notes": "Continuing legal restriction, not a specific raid; private Christian worship by foreign residents was permitted."
+    },
+    {
+      "id": "CT-0438",
+      "country": "Maldives",
+      "date": "2023",
+      "place": "Maldives (nationwide)",
+      "category": "Reported Christian convert intimidation",
+      "title": "Christian converts reportedly practise secretly owing to fears of exposure",
+      "published_account": "The US State Department quoted Open Doors reports that conversions to Christianity could prompt reports to religious authorities and that Christian converts practised their faith secretly. Foreign Christian workers reportedly felt closely monitored.",
+      "reported_actor": "Community members or religious authorities, as alleged by Open Doors",
+      "publisher": "US Department of State",
+      "source_url": "https://2021-2025.state.gov/reports/2023-report-on-international-religious-freedom/maldives/",
+      "notes": "Single-source advocacy testimony relayed in a government report; not a documented arrest of a named convert."
     },
     {
       "id": "CT-0304",
@@ -4255,6 +4661,45 @@
       "source_url": "https://www.ecoi.net/en/document/2091877.html"
     },
     {
+      "id": "CT-0440",
+      "country": "Georgia",
+      "date": "2022",
+      "place": "Tbilisi",
+      "category": "Kingdom Hall burglary; Christian religious property",
+      "title": "Jehovah's Witness Kingdom Hall reportedly burgled in Tbilisi",
+      "published_account": "The US State Department recorded a report that unidentified persons broke into a Jehovah's Witness Kingdom Hall in Tbilisi and stole audiovisual equipment.",
+      "reported_actor": "Unidentified burglars",
+      "publisher": "US Department of State",
+      "source_url": "https://2021-2025.state.gov/reports/2022-report-on-international-religious-freedom/georgia/",
+      "notes": "One of several separately described cases in the 2022 annual report; motives and perpetrators not established."
+    },
+    {
+      "id": "CT-0441",
+      "country": "Georgia",
+      "date": "2022",
+      "place": "Tianeti",
+      "category": "Stones and eggs thrown at Christian worship site",
+      "title": "Kingdom Hall reportedly stoned and pelted with eggs in Tianeti",
+      "published_account": "The US State Department recorded the Jehovah's Witnesses' report that unidentified people threw stones and eggs at a Kingdom Hall in Tianeti.",
+      "reported_actor": "Unidentified individuals, as reported by Jehovah's Witnesses",
+      "publisher": "US Department of State",
+      "source_url": "https://2021-2025.state.gov/reports/2022-report-on-international-religious-freedom/georgia/",
+      "notes": "Year-only incident precision. Local investigation was unresolved at reporting time."
+    },
+    {
+      "id": "CT-0442",
+      "country": "Georgia",
+      "date": "2022",
+      "place": "Tbilisi",
+      "category": "Knife threats to Christian worshippers",
+      "title": "Jehovah's Witnesses allegedly threatened with a knife in Tbilisi",
+      "published_account": "The US State Department reported a man in Tbilisi threatened Jehovah's Witnesses with a knife. The government later reported a court ordered mental-health treatment for the perpetrator.",
+      "reported_actor": "Individual man subsequently ordered into psychiatric care",
+      "publisher": "US Department of State",
+      "source_url": "https://2021-2025.state.gov/reports/2022-report-on-international-religious-freedom/georgia/",
+      "notes": "Account concerns Christian Jehovah's Witnesses; year-only date in country report."
+    },
+    {
       "id": "CT-0180",
       "date": "2021-12-07",
       "country": "Australia",
@@ -4293,6 +4738,19 @@
       "second_source_url": "https://2021-2025.state.gov/reports/2022-report-on-international-religious-freedom/afghanistan/",
       "incident_group": "AFG-2021-PATTERN",
       "notes": "Country-wide reported pattern, not one discrete attack."
+    },
+    {
+      "id": "CT-0439",
+      "country": "Maldives",
+      "date": "2021-07-06",
+      "place": "Maldives (nationwide)",
+      "category": "Investigation into Christian literature distribution",
+      "title": "Maldivian authorities investigate mailed Dhivehi-language Christian literature",
+      "published_account": "The US State Department reported Maldives Customs launched a joint police investigation into Christian literature mailed to people and organisations in the Dhivehi language. In December, officials said the origin could not be verified and the case was closed.",
+      "reported_actor": "Maldives Customs Service and Police Service",
+      "publisher": "US Department of State",
+      "source_url": "https://2021-2025.state.gov/reports/2021-report-on-international-religious-freedom/maldives/",
+      "notes": "Investigation reported; no subsequent prosecution was documented. Date is the public announcement of investigation, not necessarily mail distribution."
     },
     {
       "id": "CT-0334",
