@@ -125,7 +125,7 @@ test('Christian persecution cards use locally hosted, constrained media with hon
  assert.doesNotMatch(module,/\.innerHTML\s*=/);
  for(const report of records){
   const src=localReportImage(report);
-  assert.match(src,/^\/assets\/persecution-media\/[a-z0-9-]+\.(svg|webp|jpg|jpeg|png)$/);
-  assert.ok(read('public'+src).includes('<svg')||/\.(webp|jpg|jpeg|png)$/.test(src));
+  assert.match(src,/^\/assets\/persecution-media\/[a-z0-9-]+\.(svg|webp|jpg|jpeg|png)\?v=\d+\.\d+\.\d+$/);
+  assert.ok(read('public'+src.split('?')[0]).includes('<svg')||/\.(webp|jpg|jpeg|png)\?v=/.test(src));
  }
 });

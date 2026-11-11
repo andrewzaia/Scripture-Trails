@@ -39,11 +39,12 @@ export function formatReportDate(value){
  return input;
 }
 const date=formatReportDate;
+export const PERSECUTION_MEDIA_VERSION='1.5.0';
 const artByKind={'Fire and explosions':'fire','Physical violence':'violence','Sacred sites and property':'heritage','Coercion and restrictions':'restrictions','Other reports':'other'};
 export function localReportImage(r){
  const asset=String(r.local_image||'');
- if(asset.startsWith('/assets/persecution-media/')&&/^[-a-z0-9.]+$/.test(asset.slice('/assets/persecution-media/'.length))&&['.webp','.jpg','.jpeg','.png','.svg'].some(ext=>asset.endsWith(ext)))return asset;
- return '/assets/persecution-media/'+(artByKind[reportKind(r.category)]||'other')+'.svg';
+ if(asset.startsWith('/assets/persecution-media/')&&/^[-a-z0-9.]+$/.test(asset.slice('/assets/persecution-media/'.length))&&['.webp','.jpg','.jpeg','.png','.svg'].some(ext=>asset.endsWith(ext)))return asset+'?v='+PERSECUTION_MEDIA_VERSION;
+ return '/assets/persecution-media/'+(artByKind[reportKind(r.category)]||'other')+'.svg?v='+PERSECUTION_MEDIA_VERSION;
 }
 function reportIllustration(r){
  const frame=el('figure','','persecution-card-media');

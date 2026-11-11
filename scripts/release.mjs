@@ -54,7 +54,8 @@ const nextEvidence=versionedImport(read(evidencePath),'connection-evidence-expan
 const persecutionPath='public/assets/persecution-catalogue.js';
 let nextPersecution=versionedImport(read(persecutionPath),'christian-persecution.json?v='+oldVersion,'christian-persecution.json?v='+newVersion,'report dataset');
 nextPersecution=versionedImport(nextPersecution,'christian-persecution-media.json?v='+oldVersion,'christian-persecution-media.json?v='+newVersion,'media index');
-nextPersecution=versionedImport(nextPersecution,'christian-heatmap.js?v='+oldVersion,'christian-heatmap.js?v='+newVersion,'Christians worldwide heat map');
+nextPersecution=versionedImport(nextPersecution,'christian-heatmap.js?v='+oldVersion,'christian-heatmap.js?v='+newVersion,'Christian persecution heat map');
+nextPersecution=versionedImport(nextPersecution,"PERSECUTION_MEDIA_VERSION='"+oldVersion+"'","PERSECUTION_MEDIA_VERSION='"+newVersion+"'",'Christian persecution local illustration cache key');
 const heatmapPath='public/assets/christian-heatmap.js';
 let nextHeatmap=versionedImport(read(heatmapPath),'world-heatmap-110m.json?v='+oldVersion,'world-heatmap-110m.json?v='+newVersion,'Natural Earth world map');
 nextHeatmap=versionedImport(nextHeatmap,'christian-heatmap-places.json?v='+oldVersion,'christian-heatmap-places.json?v='+newVersion,'incident location index');
