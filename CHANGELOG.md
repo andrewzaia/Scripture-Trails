@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.6.0 - 11/11/2026: Christian persecution - research and local imagery
+
+- Rename Christians worldwide to Christian persecution throughout the live navigation and page while preserving existing deep links.
+- Add twelve sourced incident reports from Ethiopia, Eritrea, Kenya and Egypt, growing the catalogue and global map to 252 reports across 32 countries.
+- Display compact, locally hosted photographs on selected report cards where reuse licences permit, with photo author, source, licence and before-or-after incident labels.
+- Retain publisher media as external links when no reuse permission is established and add photo provenance, accessible card layouts and regression checks.
+
 ## 1.5.0 - 11/11/2026: Historical worldwide reports and Australian Christian incident coverage
 
 - Remove the fixed 2016-2026 reporting window and support historical incidents with precise, month-only or year-only dates without inventing calendar days.
