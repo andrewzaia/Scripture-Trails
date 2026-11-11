@@ -112,8 +112,8 @@ export function createChristianHeatmap(root,{onCountry=()=>{},onPlace=()=>{}}={}
    if(!pending){
     summary.textContent='Loading world map...';
     pending=Promise.all([
-     fetch('/data/world-heatmap-110m.json?v=1.3.0').then(r=>{if(!r.ok)throw Error('Basemap unavailable');return r.json();}),
-     fetch('/data/christian-heatmap-places.json?v=1.3.0').then(r=>{if(!r.ok)throw Error('Coordinates unavailable');return r.json();})
+     fetch('/data/world-heatmap-110m.json?v=1.4.0').then(r=>{if(!r.ok)throw Error('Basemap unavailable');return r.json();}),
+     fetch('/data/christian-heatmap-places.json?v=1.4.0').then(r=>{if(!r.ok)throw Error('Coordinates unavailable');return r.json();})
     ]).then(([world,locations])=>{
      if(!Array.isArray(world.features)||!locations.places||!locations.countries)throw Error('Invalid world map data');
      features=world.features;geo=locations;buildWorld();draw();
