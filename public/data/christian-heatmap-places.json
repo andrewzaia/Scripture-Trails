@@ -138,6 +138,106 @@
     "Ukraine": {
       "iso2": "UA",
       "iso3": "UKR"
+    },
+    "Algeria": {
+      "iso2": "DZ",
+      "iso3": "DZA"
+    },
+    "Vietnam": {
+      "iso2": "VN",
+      "iso3": "VNM"
+    },
+    "North Korea": {
+      "iso2": "KP",
+      "iso3": "PRK"
+    },
+    "Iran": {
+      "iso2": "IR",
+      "iso3": "IRN"
+    },
+    "Cuba": {
+      "iso2": "CU",
+      "iso3": "CUB"
+    },
+    "Myanmar": {
+      "iso2": "MM",
+      "iso3": "MMR"
+    },
+    "Laos": {
+      "iso2": "LA",
+      "iso3": "LAO"
+    },
+    "Sudan": {
+      "iso2": "SD",
+      "iso3": "SDN"
+    },
+    "Bangladesh": {
+      "iso2": "BD",
+      "iso3": "BGD"
+    },
+    "Nepal": {
+      "iso2": "NP",
+      "iso3": "NPL"
+    },
+    "Colombia": {
+      "iso2": "CO",
+      "iso3": "COL"
+    },
+    "Uganda": {
+      "iso2": "UG",
+      "iso3": "UGA"
+    },
+    "Canada": {
+      "iso2": "CA",
+      "iso3": "CAN"
+    },
+    "South Africa": {
+      "iso2": "ZA",
+      "iso3": "ZAF"
+    },
+    "Malaysia": {
+      "iso2": "MY",
+      "iso3": "MYS"
+    },
+    "Cameroon": {
+      "iso2": "CM",
+      "iso3": "CMR"
+    },
+    "Niger": {
+      "iso2": "NE",
+      "iso3": "NER"
+    },
+    "South Sudan": {
+      "iso2": "SS",
+      "iso3": "SDS"
+    },
+    "Somalia": {
+      "iso2": "SO",
+      "iso3": "SOM"
+    },
+    "Israel": {
+      "iso2": "IL",
+      "iso3": "ISR"
+    },
+    "Palestinian territories": {
+      "iso2": "PS",
+      "iso3": "PSX"
+    },
+    "Yemen": {
+      "iso2": "YE",
+      "iso3": "YEM"
+    },
+    "Mali": {
+      "iso2": "ML",
+      "iso3": "MLI"
+    },
+    "Belarus": {
+      "iso2": "BY",
+      "iso3": "BLR"
+    },
+    "Azerbaijan": {
+      "iso2": "AZ",
+      "iso3": "AZE"
     }
   },
   "places": {
