@@ -58,6 +58,19 @@
       "notes": "Account and attribution are according to the cited publisher; incident categorisation does not independently determine perpetrator identity or motive."
     },
     {
+      "id": "CT-0282",
+      "date": "2026-10-09",
+      "country": "Ukraine",
+      "place": "Mali Puzyrky, Khmelnytskyi region",
+      "category": "Clerical detention; military mobilisation",
+      "title": "UOC diocese reports Archpriest Serhiy Sinyuk detained by recruitment officers",
+      "published_account": "A UOC diocese, reported by the Union of Orthodox Journalists, said territorial recruitment personnel detained a priest with medical conditions and transferred him after a medical assessment.",
+      "reported_actor": "Territorial recruitment officials, according to UOC diocese",
+      "publisher": "Union of Orthodox Journalists",
+      "source_url": "https://uoj.news/news/ukrainian-recruitment-officers-detain-uoc-priest-with-heart-condition/",
+      "notes": "Ukrainian government-controlled territory. Church-aligned reporting; source allegations and incident details have not been independently established here. Military mobilisation alone does not demonstrate religious persecution."
+    },
+    {
       "id": "CT-0002",
       "date": "2026-10-03",
       "country": "Syria",
@@ -282,6 +295,19 @@
       "notes": "Single publisher case summary; no independent adjudication undertaken."
     },
     {
+      "id": "CT-0283",
+      "date": "2026-06-04",
+      "country": "Ukraine",
+      "place": "Kyiv",
+      "category": "Clerical detention; military mobilisation",
+      "title": "UOC outlet reports Archpriest Oleksandr Drobiazko taken to recruitment office",
+      "published_account": "The Union of Orthodox Journalists reported recruitment officers detained a UOC priest near his church in Kyiv, questioned his affiliation and transferred him through a medical review to military training.",
+      "reported_actor": "Territorial recruitment officials, according to church-aligned outlet",
+      "publisher": "Union of Orthodox Journalists",
+      "source_url": "https://spzh.eu/en/zashhita-very/93805-chronicle-of-the-reprisals-against-the-clergy-of-the-uoc.html",
+      "notes": "Ukrainian government-controlled territory. Church-aligned reporting; source allegations and incident details have not been independently established here. Military mobilisation alone does not demonstrate religious persecution."
+    },
+    {
       "id": "CT-0019",
       "date": "2026-05-04",
       "country": "France",
@@ -308,6 +334,32 @@
       "notes": "Single publisher case summary; no independent adjudication undertaken."
     },
     {
+      "id": "CT-0284",
+      "date": "2026-05-01",
+      "country": "Ukraine",
+      "place": "Kyiv",
+      "category": "Monastic detention; military mobilisation",
+      "title": "Monk Archimandrite Theophil reportedly detained while visiting parishioner",
+      "published_account": "A UOC-aligned outlet reported territorial recruitment officers detained a Kyiv-Pechersk Lavra monk en route to providing pastoral support.",
+      "reported_actor": "Territorial recruitment officials, according to church-aligned outlet",
+      "publisher": "Union of Orthodox Journalists",
+      "source_url": "https://spzh.eu/en/zashhita-very/93805-chronicle-of-the-reprisals-against-the-clergy-of-the-uoc.html",
+      "notes": "Ukrainian government-controlled territory. Church-aligned reporting; source allegations and incident details have not been independently established here. Military mobilisation alone does not demonstrate religious persecution."
+    },
+    {
+      "id": "CT-0285",
+      "date": "2026-04-27",
+      "country": "Ukraine",
+      "place": "Chernivtsi",
+      "category": "Monastic detention; military mobilisation",
+      "title": "Bancheny monastery archimandrite reportedly detained and released",
+      "published_account": "The Union of Orthodox Journalists reported recruitment officers detained a monk from Bancheny Monastery and later released him following protests by church representatives and worshippers.",
+      "reported_actor": "Territorial recruitment officials, according to church-aligned outlet",
+      "publisher": "Union of Orthodox Journalists",
+      "source_url": "https://spzh.eu/en/zashhita-very/93805-chronicle-of-the-reprisals-against-the-clergy-of-the-uoc.html",
+      "notes": "Ukrainian government-controlled territory. Church-aligned reporting; source allegations and incident details have not been independently established here. Military mobilisation alone does not demonstrate religious persecution."
+    },
+    {
       "id": "CT-0021",
       "date": "2026-04-18",
       "country": "France",
@@ -332,6 +384,32 @@
       "publisher": "OIDAC Europe",
       "source_url": "https://www.intoleranceagainstchristians.eu/index.php?id=12&case=10947",
       "notes": "Single publisher case summary; no independent adjudication undertaken."
+    },
+    {
+      "id": "CT-0286",
+      "date": "2026-03-27",
+      "country": "Ukraine",
+      "place": "Izium, Kharkiv region",
+      "category": "Monastic detention; alleged forced transfer",
+      "title": "Two UOC monks reportedly taken from Izium monastery",
+      "published_account": "The Union of Orthodox Journalists alleged security and recruitment officers entered the Izium Peschansky Monastery, used force and removed Archimandrite Leontii and Hieromonk Arsenii.",
+      "reported_actor": "Security Service and territorial recruitment personnel, as alleged by church-aligned outlet",
+      "publisher": "Union of Orthodox Journalists",
+      "source_url": "https://spzh.eu/en/zashhita-very/93805-chronicle-of-the-reprisals-against-the-clergy-of-the-uoc.html",
+      "notes": "Ukrainian government-controlled territory. Church-aligned reporting; source allegations and incident details have not been independently established here. Military mobilisation alone does not demonstrate religious persecution."
+    },
+    {
+      "id": "CT-0287",
+      "date": "2026-03-20",
+      "country": "Ukraine",
+      "place": "Kharkiv",
+      "category": "Monastic detention; military mobilisation",
+      "title": "Two members of Kharkiv monastery reportedly detained",
+      "published_account": "The Union of Orthodox Journalists reported the detention of Hieromonk Daniel and novice Vadym of the Intercession Monastery by territorial recruitment officials.",
+      "reported_actor": "Territorial recruitment officials, according to church-aligned outlet",
+      "publisher": "Union of Orthodox Journalists",
+      "source_url": "https://spzh.eu/en/zashhita-very/93805-chronicle-of-the-reprisals-against-the-clergy-of-the-uoc.html",
+      "notes": "Ukrainian government-controlled territory. Church-aligned reporting; source allegations and incident details have not been independently established here. Military mobilisation alone does not demonstrate religious persecution."
     },
     {
       "id": "CT-0023",
@@ -380,6 +458,45 @@
       "source_url": "https://www.uscirf.gov/sites/default/files/2026-05/2026%20Nicaragua%20Country%20Update.pdf"
     },
     {
+      "id": "CT-0288",
+      "date": "2026-02-24",
+      "country": "Ukraine",
+      "place": "Kyiv",
+      "category": "Clerical detention; military mobilisation",
+      "title": "UOC priest Yaroslav Kruhlenko reportedly detained by recruitment officers",
+      "published_account": "The Union of Orthodox Journalists reported the detention of a Kyiv UOC rector by military recruitment personnel, followed by transfer between recruitment offices; the family reportedly said it had lost contact.",
+      "reported_actor": "Territorial recruitment officials, according to church-aligned outlet",
+      "publisher": "Union of Orthodox Journalists",
+      "source_url": "https://spzh.eu/en/zashhita-very/93805-chronicle-of-the-reprisals-against-the-clergy-of-the-uoc.html",
+      "notes": "Ukrainian government-controlled territory. Church-aligned reporting; source allegations and incident details have not been independently established here. Military mobilisation alone does not demonstrate religious persecution."
+    },
+    {
+      "id": "CT-0289",
+      "date": "2026-02-21",
+      "country": "Ukraine",
+      "place": "Horodyshche, Cherkasy region",
+      "category": "Clerical detention; military mobilisation",
+      "title": "Archpriest Anatolii Chernenko reportedly mobilised",
+      "published_account": "The Union of Orthodox Journalists reported recruitment officers detained the rector of a UOC parish in Horodyshche and transferred him for military service.",
+      "reported_actor": "Territorial recruitment officials, according to church-aligned outlet",
+      "publisher": "Union of Orthodox Journalists",
+      "source_url": "https://spzh.eu/en/zashhita-very/93805-chronicle-of-the-reprisals-against-the-clergy-of-the-uoc.html",
+      "notes": "Ukrainian government-controlled territory. Church-aligned reporting; source allegations and incident details have not been independently established here. Military mobilisation alone does not demonstrate religious persecution."
+    },
+    {
+      "id": "CT-0290",
+      "date": "2026-02-11",
+      "country": "Ukraine",
+      "place": "Chernivtsi",
+      "category": "Attempted clerical detention",
+      "title": "UOC outlet alleges attempted detention of Bishop Mykyta",
+      "published_account": "A UOC-aligned outlet reported recruitment personnel sought to detain Bishop Mykyta of Ivano-Frankivsk while he was travelling to a service in Chernivtsi; the bishop reportedly sought refuge at a cathedral.",
+      "reported_actor": "Territorial recruitment personnel, as alleged by church-aligned outlet",
+      "publisher": "Union of Orthodox Journalists",
+      "source_url": "https://spzh.eu/en/zashhita-very/93805-chronicle-of-the-reprisals-against-the-clergy-of-the-uoc.html",
+      "notes": "Ukrainian government-controlled territory. Church-aligned reporting; source allegations and incident details have not been independently established here. Military mobilisation alone does not demonstrate religious persecution."
+    },
+    {
       "id": "CT-0026",
       "date": "2026-02-01",
       "country": "United States",
@@ -407,6 +524,19 @@
       "reported_actor": "Nicaraguan government",
       "publisher": "USCIRF",
       "source_url": "https://www.uscirf.gov/sites/default/files/2026-05/2026%20Nicaragua%20Country%20Update.pdf"
+    },
+    {
+      "id": "CT-0291",
+      "date": "2026-01-28",
+      "country": "Ukraine",
+      "place": "Kyiv",
+      "category": "Clerical detention; military mobilisation",
+      "title": "UOC rector Oleksandr Itsenko reportedly detained in Kyiv",
+      "published_account": "The Union of Orthodox Journalists reported recruitment officials detained a priest from St Cyril's Monastery while he travelled to a church vigil and took him to a recruitment office.",
+      "reported_actor": "Territorial recruitment officials, according to church-aligned outlet",
+      "publisher": "Union of Orthodox Journalists",
+      "source_url": "https://spzh.eu/en/zashhita-very/93805-chronicle-of-the-reprisals-against-the-clergy-of-the-uoc.html",
+      "notes": "Ukrainian government-controlled territory. Church-aligned reporting; source allegations and incident details have not been independently established here. Military mobilisation alone does not demonstrate religious persecution."
     },
     {
       "id": "CT-0028",
@@ -492,6 +622,32 @@
       "media_url": "https://abc7ny.com/post/man-tased-arrested-altar-during-violent-disturbance-church-staten-island/18384804/",
       "media_note": "Link to local report; imagery/footage on page must be inspected and licensed before re-use",
       "notes": "USCCB archive contains additional incidents; this workbook extracts a selection."
+    },
+    {
+      "id": "CT-0292",
+      "date": "2026-01-08",
+      "country": "Ukraine",
+      "place": "Chuhuiv, Kharkiv region",
+      "category": "Clerical detention; military mobilisation",
+      "title": "Priest Viacheslav Kalinichenko reportedly detained at checkpoint",
+      "published_account": "A UOC-aligned outlet stated a priest was held after a Chuhuiv checkpoint stop, later transferred through Kharkiv to a military training unit in Dnipro.",
+      "reported_actor": "Territorial recruitment officials, according to church-aligned outlet",
+      "publisher": "Union of Orthodox Journalists",
+      "source_url": "https://spzh.eu/en/zashhita-very/93805-chronicle-of-the-reprisals-against-the-clergy-of-the-uoc.html",
+      "notes": "Ukrainian government-controlled territory. Church-aligned reporting; source allegations and incident details have not been independently established here. Military mobilisation alone does not demonstrate religious persecution."
+    },
+    {
+      "id": "CT-0293",
+      "date": "2026-01-07",
+      "country": "Ukraine",
+      "place": "Chernivtsi",
+      "category": "Clerical detention; military mobilisation",
+      "title": "Archpriest Mykola Syniuk reportedly detained",
+      "published_account": "The Union of Orthodox Journalists reported recruitment personnel detained a priest serving at the Presentation Monastery in Chernivtsi.",
+      "reported_actor": "Territorial recruitment officials, according to church-aligned outlet",
+      "publisher": "Union of Orthodox Journalists",
+      "source_url": "https://spzh.eu/en/zashhita-very/93805-chronicle-of-the-reprisals-against-the-clergy-of-the-uoc.html",
+      "notes": "Ukrainian government-controlled territory. Church-aligned reporting; source allegations and incident details have not been independently established here. Military mobilisation alone does not demonstrate religious persecution."
     },
     {
       "id": "CT-0034",
@@ -831,6 +987,20 @@
       "notes": "USCCB archive contains additional incidents; this workbook extracts a selection."
     },
     {
+      "id": "CT-0253",
+      "date": "2025-09-30",
+      "country": "Ukraine",
+      "place": "Kyiv",
+      "category": "Legal proceedings; religious restrictions",
+      "title": "Proceedings seek dissolution of the UOC's Kyiv Metropolis",
+      "published_account": "UN independent experts reported an administrative court hearing on a Ukrainian state agency's lawsuit seeking dissolution of the UOC Kyiv Metropolis over alleged affiliation with the Russian Orthodox Church.",
+      "reported_actor": "State Service for Ethnopolitics and Freedom of Conscience; Ukrainian courts",
+      "publisher": "UN Office of the High Commissioner for Human Rights",
+      "source_url": "https://www.ohchr.org/en/press-releases/2025/10/ukraine-un-experts-warn-persecution-against-ukrainian-orthodox-church",
+      "second_source_url": "https://ukraine.un.org/sites/default/files/2025-12/2025-12-09%20OHCHR%2043rd%20periodic%20report%20on%20Ukraine%20ENG.pdf",
+      "notes": "Ukrainian government-controlled territory; the suit was pending, not a completed dissolution."
+    },
+    {
       "id": "CT-0057",
       "date": "2025-09-27",
       "country": "United States",
@@ -997,6 +1167,19 @@
       "notes": "USCCB archive contains additional incidents; this workbook extracts a selection."
     },
     {
+      "id": "CT-0255",
+      "date": "2025-08-06",
+      "country": "Ukraine",
+      "place": "Zhytomyr region",
+      "category": "Physical violence; church affiliation dispute",
+      "title": "Orthodox church property dispute results in reported injuries in Zhytomyr region",
+      "published_account": "OHCHR recorded violence between Orthodox communities over control of a place of worship in Zhytomyr region, as part of two incidents investigated in 2025. One UOC cleric was hospitalised across the two incidents; the report did not clearly allocate that injury to this site.",
+      "reported_actor": "Participants in dispute; police investigation reported",
+      "publisher": "UN Office of the High Commissioner for Human Rights",
+      "source_url": "https://ukraine.un.org/sites/default/files/2025-12/2025-12-09%20OHCHR%2043rd%20periodic%20report%20on%20Ukraine%20ENG.pdf",
+      "notes": "Ukrainian government-controlled territory; location is region-level and individual culpability was not determined."
+    },
+    {
       "id": "CT-0067",
       "date": "2025-08-02",
       "country": "United States",
@@ -1036,6 +1219,20 @@
       "reported_actor": "Nicaraguan authorities",
       "publisher": "USCIRF",
       "source_url": "https://www.uscirf.gov/sites/default/files/2026-05/2026%20Nicaragua%20Country%20Update.pdf"
+    },
+    {
+      "id": "CT-0254",
+      "date": "2025-08",
+      "country": "Ukraine",
+      "place": "Kyiv",
+      "category": "Legal restrictions; religious affiliation",
+      "title": "Ukrainian regulator identifies UOC as affiliated with the Russian Orthodox Church",
+      "published_account": "Human Rights Watch reported that the Ukrainian religious affairs authority applied the 2024 affiliation law to the UOC and initiated a court action potentially affecting its property and places of worship.",
+      "reported_actor": "State Service for Ethnopolitics and Freedom of Conscience",
+      "publisher": "Human Rights Watch",
+      "source_url": "https://www.hrw.org/world-report/2026/country-chapters/ukraine",
+      "second_source_url": "https://ukraine.un.org/sites/default/files/2025-12/2025-12-09%20OHCHR%2043rd%20periodic%20report%20on%20Ukraine%20ENG.pdf",
+      "notes": "Ukrainian government-controlled territory; government relied on national-security legislation, and the UOC disputed its characterisation."
     },
     {
       "id": "CT-0070",
@@ -1110,6 +1307,20 @@
       "notes": "USCCB archive contains additional incidents; this workbook extracts a selection."
     },
     {
+      "id": "CT-0256",
+      "date": "2025-07-02",
+      "country": "Ukraine",
+      "place": "Kyiv",
+      "category": "Citizenship revoked; religious leadership",
+      "title": "Metropolitan Onufriy loses Ukrainian citizenship",
+      "published_account": "Ukrainian authorities announced revocation of UOC primate Metropolitan Onufriy's citizenship, asserting he had voluntarily acquired Russian citizenship. UN experts later expressed alarm about the measure and its implications for religious freedom.",
+      "reported_actor": "Ukrainian president and Security Service of Ukraine",
+      "publisher": "Interfax-Ukraine",
+      "source_url": "https://en.interfax.com.ua/news/general/1084567-amp.html",
+      "second_source_url": "https://www.ohchr.org/en/press-releases/2025/10/ukraine-un-experts-warn-persecution-against-ukrainian-orthodox-church",
+      "notes": "Ukrainian government-controlled territory; the government cited nationality and security grounds. It is not a finding that ethnicity or religious identity caused the decision."
+    },
+    {
       "id": "CT-0075",
       "date": "2025-07",
       "country": "Nicaragua",
@@ -1165,6 +1376,19 @@
       "media_url": "https://thetablet.org/vandal-charged-after-defacing-holy-family-statue/",
       "media_note": "Link to local report; imagery/footage on page must be inspected and licensed before re-use",
       "notes": "USCCB archive contains additional incidents; this workbook extracts a selection."
+    },
+    {
+      "id": "CT-0257",
+      "date": "2025-06-17",
+      "country": "Ukraine",
+      "place": "Chernihiv",
+      "category": "Physical violence; church affiliation dispute",
+      "title": "Orthodox congregations clash over a worship building in Chernihiv",
+      "published_account": "OHCHR documented violence between Orthodox communities over control of a worship building in Chernihiv and reported a police investigation covering the 2025 incidents.",
+      "reported_actor": "Participants in dispute; police investigation reported",
+      "publisher": "UN Office of the High Commissioner for Human Rights",
+      "source_url": "https://ukraine.un.org/sites/default/files/2025-12/2025-12-09%20OHCHR%2043rd%20periodic%20report%20on%20Ukraine%20ENG.pdf",
+      "notes": "Ukrainian government-controlled territory; responsibility for individual injuries was not established in this summary."
     },
     {
       "id": "CT-0079",
@@ -1711,6 +1935,19 @@
       "notes": "USCCB archive contains additional incidents; this workbook extracts a selection."
     },
     {
+      "id": "CT-0258",
+      "date": "2024-10-17",
+      "country": "Ukraine",
+      "place": "Cherkasy",
+      "category": "Church eviction; physical violence",
+      "title": "UOC clergy and parishioners forcibly removed during Cherkasy cathedral clashes",
+      "published_account": "OHCHR documented three incidents of violence after unidentified camouflage-clad people evicted UOC clergy and worshippers early in the morning. The UOC reported multiple injuries; OHCHR questioned the effectiveness of police intervention.",
+      "reported_actor": "Unidentified camouflage-clad group and opposing congregants; Ukrainian police present",
+      "publisher": "UN Office of the High Commissioner for Human Rights",
+      "source_url": "https://ukraine.ohchr.org/sites/default/files/2025-01/2024-12-31%20OHCHR%2041st%20periodic%20report%20on%20Ukraine.pdf",
+      "notes": "Ukrainian government-controlled territory; UOC injury totals are attributed to that church, and the police opened a hooliganism investigation."
+    },
+    {
       "id": "CT-0114",
       "date": "2024-08-29",
       "country": "India",
@@ -1722,6 +1959,34 @@
       "publisher": "South Asia Justice Campaign",
       "source_url": "https://southasiajusticecampaign.org/wp-content/uploads/2024/09/IPT_2024-4_Arrests-Conversion.pdf",
       "incident_group": "INDIA-2024-TRACKER"
+    },
+    {
+      "id": "CT-0259",
+      "date": "2024-08-20",
+      "country": "Ukraine",
+      "place": "Ukraine (nationwide)",
+      "category": "Religious restrictions; potential dissolution",
+      "title": "Parliament adopts restrictions on religious organisations linked to Russian Orthodox Church",
+      "published_account": "Human Rights Watch criticised the Ukrainian law adopted on 20 August as overly broad, warning it could effectively prevent UOC parishes from functioning and affect worship and religious property. Authorities said the measure addressed national security.",
+      "reported_actor": "Verkhovna Rada and Ukrainian government",
+      "publisher": "Human Rights Watch",
+      "source_url": "https://www.hrw.org/news/2024/10/30/ukraine-new-law-raises-religious-freedom-concerns",
+      "second_source_url": "https://ukraine.ohchr.org/sites/default/files/2025-01/2024-12-31%20OHCHR%2041st%20periodic%20report%20on%20Ukraine.pdf",
+      "notes": "Ukrainian government-controlled territory; a legislative measure and rights concern, not a count of closed churches or proven criminal wrongdoing."
+    },
+    {
+      "id": "CT-0270",
+      "date": "2024-08-02",
+      "country": "Ukraine",
+      "place": "Occupied Zaporizhzhia region",
+      "category": "Imprisonment of clergy; occupation court",
+      "title": "Orthodox priest Kostiantyn Maksimov sentenced to 14 years in occupied territory",
+      "published_account": "A UN Secretary-General report recorded a Russian occupation court sentencing a UOC priest to fourteen years on espionage charges following a secret trial. The priest had criticised local clergy who collaborated with occupying authorities.",
+      "reported_actor": "Russian occupation authorities and occupation court",
+      "publisher": "United Nations Secretary-General",
+      "source_url": "https://ukraine.ohchr.org/sites/default/files/2025-07/A%3AHRC%3A59%3A67%20ENG.pdf",
+      "second_source_url": "https://mfa.gov.ua/en/news/zayava-mzs-shchodo-zvirstv-i-gonin-rosijskoyi-federaciyi-proti-duhovenstva-religijnih-gromad-ta-viryan-na-timchasovo-okupovanih-teritoriyah-ukrayini",
+      "notes": "Russian-occupied Ukrainian territory; the UN described defects in the occupation proceedings."
     },
     {
       "id": "CT-0115",
@@ -1792,6 +2057,19 @@
       "notes": "Reported aggregate covering multiple dates."
     },
     {
+      "id": "CT-0271",
+      "date": "2024-06",
+      "country": "Ukraine",
+      "place": "Occupied Crimea",
+      "category": "Church closure; suppression of worship",
+      "title": "Final Orthodox Church of Ukraine temple in occupied Crimea reportedly destroyed",
+      "published_account": "Ukraine's foreign ministry stated that the remaining OCU temple in occupied Crimea was destroyed in June 2024 amid suppression of unaffiliated Orthodox communities.",
+      "reported_actor": "Russian occupation authorities, according to Ukrainian MFA",
+      "publisher": "Ministry of Foreign Affairs of Ukraine",
+      "source_url": "https://mfa.gov.ua/en/news/zayava-mzs-shchodo-zvirstv-i-gonin-rosijskoyi-federaciyi-proti-duhovenstva-religijnih-gromad-ta-viryan-na-timchasovo-okupovanih-teritoriyah-ukrayini",
+      "notes": "Russian-occupied Ukrainian territory; Ukrainian-government account; exact day and independent building-condition details are not established in this record."
+    },
+    {
       "id": "CT-0120",
       "date": "2024-05-23",
       "country": "Haiti",
@@ -1835,6 +2113,32 @@
       "source_url": "https://www.gov.uk/government/publications/egypt-country-policy-and-information-notes/country-policy-and-information-note-christians-egypt-august-2026-accessible"
     },
     {
+      "id": "CT-0260",
+      "date": "2024-04-25",
+      "country": "Ukraine",
+      "place": "Sviatohirsk, Donetsk region",
+      "category": "Detention of clergy; prosecution",
+      "title": "Sviatohirsk Lavra abbot detained after sermon",
+      "published_account": "OHCHR recorded the detention of the abbot of Sviatohirsk Lavra on charges of disclosing positions of Ukrainian military units during a sermon, and said it would monitor due-process guarantees.",
+      "reported_actor": "Security Service of Ukraine and Ukrainian prosecutors",
+      "publisher": "UN Office of the High Commissioner for Human Rights",
+      "source_url": "https://ukraine.un.org/sites/default/files/2024-07/24-07-03%20OHCHR%2039th%20periodic%20report%20on%20Ukraine.pdf",
+      "notes": "Ukrainian government-controlled territory; allegations against the abbot were charges, not an established conviction."
+    },
+    {
+      "id": "CT-0272",
+      "date": "2024-04-22",
+      "country": "Ukraine",
+      "place": "Berdiansk, occupied Zaporizhzhia region",
+      "category": "Church seizure; occupation restrictions",
+      "title": "Catholic Church of the Nativity seized in occupied Berdiansk",
+      "published_account": "The Ukrainian foreign ministry reported Russian occupation authorities took control of the Catholic Church of the Nativity of the Blessed Virgin Mary in Berdiansk. The ministry also detailed detentions of clergy in the area.",
+      "reported_actor": "Russian occupation authorities, according to Ukrainian MFA",
+      "publisher": "Ministry of Foreign Affairs of Ukraine",
+      "source_url": "https://mfa.gov.ua/en/news/zayava-mzs-shchodo-zvirstv-i-gonin-rosijskoyi-federaciyi-proti-duhovenstva-religijnih-gromad-ta-viryan-na-timchasovo-okupovanih-teritoriyah-ukrayini",
+      "notes": "Russian-occupied Ukrainian territory; the church seizure date is identified separately from earlier clergy detentions."
+    },
+    {
       "id": "CT-0170",
       "date": "2024-04-15",
       "country": "Australia",
@@ -1847,6 +2151,20 @@
       "source_url": "https://www.abc.net.au/news/2024-04-15/nsw-bishop-mar-mari-emmanuel-stabbed-man-arrested-wakeley/103711236",
       "second_source_url": "https://www.abc.net.au/news/2026-02-27/teenager-stabbed-sydney-bishop-schizophrenia-wakeley/106395940",
       "notes": "ABC follow-up in February 2026 covered the suspect's schizophrenia diagnosis and court assessment. Motive and criminal responsibility remain for proceedings to determine."
+    },
+    {
+      "id": "CT-0261",
+      "date": "2024-03-13",
+      "country": "Ukraine",
+      "place": "Kyiv",
+      "category": "Detention of clergy and media workers",
+      "title": "SBU arrests UOC clergyman and three people associated with UOC coverage",
+      "published_account": "OHCHR reported the detention of a UOC clergyman and three people linked to an internet outlet critical of the government. Prosecutors alleged organised criminal and subversive activities, while OHCHR monitored fair-trial protections.",
+      "reported_actor": "Security Service of Ukraine and prosecutors",
+      "publisher": "UN Office of the High Commissioner for Human Rights",
+      "source_url": "https://ukraine.un.org/sites/default/files/2024-07/24-07-03%20OHCHR%2039th%20periodic%20report%20on%20Ukraine.pdf",
+      "second_source_url": "https://www.reuters.com/world/europe/ukraine-says-it-broke-up-pro-kremlin-informational-sabotage-network-2024-03-12/",
+      "notes": "Ukrainian government-controlled territory; suspects denied the opportunity for a final determination in this source, so charges must not be presented as proven."
     },
     {
       "id": "CT-0123",
@@ -1865,6 +2183,20 @@
       "media_note": "ACN article explicitly uses archive church photograph, not incident image"
     },
     {
+      "id": "CT-0273",
+      "date": "2024-02-15",
+      "country": "Ukraine",
+      "place": "Occupied Kherson region",
+      "category": "Death in detention; clergy",
+      "title": "Archpriest Stepan Podolchak reported dead after detention",
+      "published_account": "An international religious freedom coalition statement reported Archpriest Stepan Podolchak died in Russian custody, following pressure over Ukrainian-language worship and refusal to conform to Russian church structures.",
+      "reported_actor": "Russian occupying forces, as reported by religious freedom coalition",
+      "publisher": "International Religious Freedom or Belief Alliance",
+      "source_url": "https://2021-2025.state.gov/irfba-chairs-statement-on-the-somber-anniversary-of-two-years-since-the-russian-aggression-against-ukraine-accompanied-by-severe-violations-and-abuses-killing-of-priests-and-destruction-of-p/",
+      "second_source_url": "https://mfa.gov.ua/en/news/zayava-mzs-shchodo-zvirstv-i-gonin-rosijskoyi-federaciyi-proti-duhovenstva-religijnih-gromad-ta-viryan-na-timchasovo-okupovanih-teritoriyah-ukrayini",
+      "notes": "Russian-occupied Ukrainian territory; attributed death-in-custody report."
+    },
+    {
       "id": "CT-0124",
       "date": "2024-01-28",
       "country": "Türkiye",
@@ -1880,6 +2212,19 @@
       "media_note": "AP article describes security footage; rights/availability to check"
     },
     {
+      "id": "CT-0262",
+      "date": "2024-01-09",
+      "country": "Ukraine",
+      "place": "Ladyzhyn, Vinnytsia region",
+      "category": "Church entry; alleged violence",
+      "title": "Advocacy group reports forceful entry at Kazan Church in Ladyzhyn",
+      "published_account": "An NGO statement submitted to the UN Human Rights Council alleged that attackers forced entry to a UOC church, used a forklift against a door and injured clergy and worshippers. This is the submitting group's account, not a United Nations finding.",
+      "reported_actor": "Individuals accused of forcible church takeover; involvement disputed",
+      "publisher": "NGO statement lodged with UN Human Rights Council",
+      "source_url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FHRC%2F55%2FNGO%2F147&t=pdf",
+      "notes": "Ukrainian government-controlled territory; allegations published as an NGO communication. UN document hosting does not constitute UN verification."
+    },
+    {
       "id": "CT-0125",
       "date": "2023-12-24",
       "country": "Nigeria",
@@ -1893,6 +2238,32 @@
       "second_source_url": "https://2021-2025.state.gov/wp-content/uploads/2024/05/547499_NIGERIA-2023-INTERNATIONAL-RELIGIOUS-FREEDOM-REPORT.pdf",
       "incident_group": "NIGERIA-PLATEAU-2023",
       "notes": "One coordinated regional wave; causes and religious motive differently characterised by sources."
+    },
+    {
+      "id": "CT-0263",
+      "date": "2023-11-20",
+      "country": "Ukraine",
+      "place": "Cherkasy",
+      "category": "Church affiliation dispute; alleged assault",
+      "title": "Convent takeover dispute leaves Orthodox worshippers reporting injuries",
+      "published_account": "The US State Department described UOC allegations that rival supporters entered a Cherkasy convent and injured a priest and parishioners; OCU supporters offered a different account of the confrontation.",
+      "reported_actor": "Competing UOC and OCU supporters; responsibility disputed",
+      "publisher": "US Department of State",
+      "source_url": "https://2021-2025.state.gov/reports/2023-report-on-international-religious-freedom/ukraine/",
+      "notes": "Ukrainian government-controlled territory; both rival accounts are preserved; property affiliation was disputed."
+    },
+    {
+      "id": "CT-0274",
+      "date": "2023-10-08",
+      "country": "Ukraine",
+      "place": "Kherson",
+      "category": "Shelling of church during worship; injuries",
+      "title": "Orthodox church congregation injured during Sunday service in Kherson",
+      "published_account": "The US State Department reported Russian shelling struck the Orthodox Church of Ukraine's Church of the Nativity of the Mother of God during a service, injuring two worshippers and damaging the building.",
+      "reported_actor": "Russian armed forces, as attributed by US State Department",
+      "publisher": "US Department of State",
+      "source_url": "https://2021-2025.state.gov/reports/2023-report-on-international-religious-freedom/ukraine/",
+      "notes": "Ukrainian government-controlled territory; reported attack by Russian forces."
     },
     {
       "id": "CT-0126",
@@ -1935,6 +2306,45 @@
       "media_type": "Photographs and video",
       "media_url": "https://www.ksat.com/news/world/2023/08/17/pakistan-arrests-129-muslims-after-mob-attacks-churches-and-homes-of-minority-christians/",
       "media_note": "Multiple AP incident photographs, check licences"
+    },
+    {
+      "id": "CT-0275",
+      "date": "2023-08-09",
+      "country": "Ukraine",
+      "place": "Zaporizhzhia",
+      "category": "Missile attack; church destruction",
+      "title": "Saints Peter and Paul Church destroyed by Russian missile",
+      "published_account": "The US State Department reported a Russian missile destroyed St Peter and Paul Church in Zaporizhzhia.",
+      "reported_actor": "Russian armed forces, as attributed by US State Department",
+      "publisher": "US Department of State",
+      "source_url": "https://2021-2025.state.gov/reports/2023-report-on-international-religious-freedom/ukraine/",
+      "notes": "Ukrainian government-controlled territory; reported attack by Russian forces."
+    },
+    {
+      "id": "CT-0276",
+      "date": "2023-07-23",
+      "country": "Ukraine",
+      "place": "Odesa",
+      "category": "Missile attack; cathedral damage",
+      "title": "Transfiguration Cathedral severely damaged by missile strike",
+      "published_account": "The US State Department reported a Russian missile struck Odesa's Transfiguration Cathedral, injuring a guard and severely damaging its sanctuary, walls and roof.",
+      "reported_actor": "Russian armed forces, as attributed by US State Department",
+      "publisher": "US Department of State",
+      "source_url": "https://2021-2025.state.gov/reports/2023-report-on-international-religious-freedom/ukraine/",
+      "notes": "Ukrainian government-controlled territory; this is a separate strike from church property disputes."
+    },
+    {
+      "id": "CT-0277",
+      "date": "2023-06-13",
+      "country": "Ukraine",
+      "place": "Bilozerka, Kherson region",
+      "category": "Shelling; killing of clergy",
+      "title": "Orthodox priest Mykola Palahnyuk killed in shelling",
+      "published_account": "The US State Department reported Russian shelling hit the UOC Church of St John the Forerunner at Bilozerka, killing priest Mykola Palahnyuk and wounding another resident.",
+      "reported_actor": "Russian armed forces, as attributed by US State Department",
+      "publisher": "US Department of State",
+      "source_url": "https://2021-2025.state.gov/reports/2023-report-on-international-religious-freedom/ukraine/",
+      "notes": "Ukrainian government-controlled territory; military attack, not a government church restriction."
     },
     {
       "id": "CT-0128",
@@ -2046,6 +2456,33 @@
       "notes": "Aggregate destruction count; not 253 individual site entries."
     },
     {
+      "id": "CT-0264",
+      "date": "2023-04-02",
+      "country": "Ukraine",
+      "place": "Khmelnytskyi",
+      "category": "Assault on clergy; worship disruption",
+      "title": "Cleric attacked during Orthodox cathedral service in Khmelnytskyi",
+      "published_account": "The US State Department recounted a man in military attire pushing a priest, splashing water on him and the Gospel, and tearing vestments during a UOC service; police detained the man. The incident preceded protests about control of the cathedral.",
+      "reported_actor": "Individual attacker detained by Ukrainian police",
+      "publisher": "US Department of State",
+      "source_url": "https://2021-2025.state.gov/reports/2023-report-on-international-religious-freedom/ukraine/",
+      "notes": "Ukrainian government-controlled territory; the attacker was not identified as acting on official government instructions."
+    },
+    {
+      "id": "CT-0265",
+      "date": "2023-04-01",
+      "country": "Ukraine",
+      "place": "Kyiv",
+      "category": "House arrest; prosecution of clergy",
+      "title": "Metropolitan Pavlo placed under house arrest",
+      "published_account": "ABC News reported that a Kyiv court placed the abbot of Kyiv-Pechersk Lavra under house arrest over allegations he condoned Russia's invasion. Pavlo denied the allegations.",
+      "reported_actor": "Ukrainian court and Security Service of Ukraine",
+      "publisher": "ABC News",
+      "source_url": "https://www.abc.net.au/news/2023-04-02/orthodox-priest-ukraine-house-arrest/102176766",
+      "second_source_url": "https://2021-2025.state.gov/reports/2023-report-on-international-religious-freedom/ukraine/",
+      "notes": "Ukrainian government-controlled territory; arrest and allegations are documented; no finding of religious motive established."
+    },
+    {
       "id": "CT-0243",
       "date": "2023-04",
       "country": "Eritrea",
@@ -2057,6 +2494,33 @@
       "publisher": "Human Rights Watch",
       "source_url": "https://www.hrw.org/world-report/2024/country-chapters/eritrea",
       "notes": "Account and attribution are according to the cited publisher; incident categorisation does not independently determine perpetrator identity or motive."
+    },
+    {
+      "id": "CT-0266",
+      "date": "2023-03-29",
+      "country": "Ukraine",
+      "place": "Kyiv",
+      "category": "Monastery eviction; property dispute",
+      "title": "Kyiv-Pechersk Lavra monks face state eviction deadline",
+      "published_account": "Euronews reported that UOC monks opposed a government order to leave the historic Lavra after a terminated lease. Authorities cited alleged lease and heritage breaches while clergy challenged the eviction.",
+      "reported_actor": "Ukrainian Ministry of Culture and monastery museum administration",
+      "publisher": "Euronews",
+      "source_url": "https://www.euronews.com/2023/03/30/orthodox-monks-expelled-from-kyiv-pechersk-lavra-monastery-refuse-to-leave",
+      "second_source_url": "https://2021-2025.state.gov/reports/2023-report-on-international-religious-freedom/ukraine/",
+      "notes": "Ukrainian government-controlled territory; the site was state-owned, and the order was legally contested."
+    },
+    {
+      "id": "CT-0267",
+      "date": "2023-03-28",
+      "country": "Ukraine",
+      "place": "Ivano-Frankivsk",
+      "category": "Tear-gas attack; violence at church",
+      "title": "Tear gas released inside UOC church at Ivano-Frankivsk",
+      "published_account": "OHCHR documented an attack in which people sprayed tear gas into a UOC church containing clergy and worshippers. Several people were injured, one cleric hospitalised, and police nearby did not prevent violence.",
+      "reported_actor": "Unidentified perpetrators; police response criticised by OHCHR",
+      "publisher": "UN Office of the High Commissioner for Human Rights",
+      "source_url": "https://ukraine.un.org/sites/default/files/2023-10/23-10-04-OHCHR-36th-periodic-report-ukraine-en.pdf",
+      "notes": "Ukrainian government-controlled territory; OHCHR's monitoring documents the event and police response."
     },
     {
       "id": "CT-0244",
@@ -2084,6 +2548,19 @@
       "source_url": "https://www.uscirf.gov/religious-prisoners-conscience/forb-victims-database/rolando-alvarez"
     },
     {
+      "id": "CT-0278",
+      "date": "2023-01-26",
+      "country": "Ukraine",
+      "place": "Dobropillia, Kherson region",
+      "category": "Abduction; religious coercion",
+      "title": "Orthodox priest Platon Danyshchuk detained by occupying forces",
+      "published_account": "The US State Department cited reports that Russian occupation authorities abducted the OCU priest after a sermon critical of Russian troops, released him on 4 February and barred him from his church after he refused to join the Russian Orthodox Church.",
+      "reported_actor": "Russian occupation forces, as reported to US State Department",
+      "publisher": "US Department of State",
+      "source_url": "https://2021-2025.state.gov/reports/2023-report-on-international-religious-freedom/ukraine/russia-occupied-territories-of-ukraine/",
+      "notes": "Russian-occupied Ukrainian territory; detention and release dates attributed to the report."
+    },
+    {
       "id": "CT-0176",
       "date": "2023-01-18",
       "country": "Australia",
@@ -2107,6 +2584,47 @@
       "publisher": "Human Rights Watch",
       "source_url": "https://www.hrw.org/world-report/2024/country-chapters/eritrea",
       "notes": "Account and attribution are according to the cited publisher; incident categorisation does not independently determine perpetrator identity or motive."
+    },
+    {
+      "id": "CT-0268",
+      "date": "2023",
+      "country": "Ukraine",
+      "place": "Ukraine (multiple regions)",
+      "category": "Regional restrictions; church bans",
+      "title": "Regional councils announce prohibitions targeting UOC activity",
+      "published_account": "The US State Department reported symbolic regional and municipal bans on UOC operations, some beyond local council authority. OHCHR expressed concern about cumulative discriminatory effects and terminations of church leases.",
+      "reported_actor": "Several regional and municipal councils",
+      "publisher": "US Department of State",
+      "source_url": "https://2021-2025.state.gov/reports/2023-report-on-international-religious-freedom/ukraine/",
+      "second_source_url": "https://ukraine.ohchr.org/en/update-human-rights-situation-ukraine-1-february-2023-30-april-2023-EN",
+      "notes": "Ukrainian government-controlled territory; a group of policy measures across regions, not one nationwide enforcement action."
+    },
+    {
+      "id": "CT-0269",
+      "date": "2022-11",
+      "country": "Ukraine",
+      "place": "Kyiv and other regions",
+      "category": "Raids on religious institutions; clerical questioning",
+      "title": "Ukrainian security agency searches UOC monasteries and church properties",
+      "published_account": "OHCHR recorded SBU searches or so-called security measures at UOC facilities across numerous regions, and questioned the legal procedures used at some sites. Some clergy were questioned and placed under house arrest.",
+      "reported_actor": "Security Service of Ukraine",
+      "publisher": "UN Office of the High Commissioner for Human Rights",
+      "source_url": "https://www.ohchr.org/sites/default/files/documents/countries/ukraine/2023/23-03-24-Ukraine-35th-periodic-report-ENG.pdf",
+      "second_source_url": "https://2021-2025.state.gov/reports/2023-report-on-international-religious-freedom/ukraine/",
+      "notes": "Ukrainian government-controlled territory; coverage is a multi-site reporting group; one catalogue report avoids treating every search as a separately proven incident."
+    },
+    {
+      "id": "CT-0279",
+      "date": "2022-11",
+      "country": "Ukraine",
+      "place": "Occupied Zaporizhzhia region",
+      "category": "Detention of Catholic clergy; ill-treatment",
+      "title": "Greek Catholic priests detained by Russian occupation authorities",
+      "published_account": "A UN Secretary-General report recounted two Greek Catholic priests arrested by occupying authorities in November 2022. They were released in a June 2024 prisoner exchange, and one told OHCHR he was tortured and ill-treated while detained.",
+      "reported_actor": "Russian occupation authorities",
+      "publisher": "United Nations Secretary-General",
+      "source_url": "https://ukraine.ohchr.org/sites/default/files/2025-07/A%3AHRC%3A59%3A67%20ENG.pdf",
+      "notes": "Russian-occupied Ukrainian territory; exact place within the region not supplied in cited UN paragraph."
     },
     {
       "id": "CT-0246",
@@ -2160,6 +2678,19 @@
       "second_source_url": "https://2021-2025.state.gov/reports/2023-report-on-international-religious-freedom/nicaragua/"
     },
     {
+      "id": "CT-0280",
+      "date": "2022-08",
+      "country": "Ukraine",
+      "place": "Occupied Kherson region",
+      "category": "Arbitrary detention of clergy; alleged torture",
+      "title": "Pro-Ukrainian Orthodox priest detained for months in occupied Kherson",
+      "published_account": "OHCHR recorded the detention of a Ukrainian Orthodox priest by Russian occupying forces from August 2022 to May 2023 in multiple facilities in the Kherson region.",
+      "reported_actor": "Russian occupation forces",
+      "publisher": "UN Office of the High Commissioner for Human Rights",
+      "source_url": "https://ukraine.un.org/sites/default/files/2023-10/23-10-04-OHCHR-36th-periodic-report-ukraine-en.pdf",
+      "notes": "Russian-occupied Ukrainian territory; the report's identity and precise facility locations were not disclosed."
+    },
+    {
       "id": "CT-0178",
       "date": "2022-07",
       "country": "Australia",
@@ -2199,6 +2730,19 @@
       "reported_actor": "Militants linked to JNIM",
       "publisher": "US State Department (via ecoi.net)",
       "source_url": "https://www.ecoi.net/en/document/2091877.html"
+    },
+    {
+      "id": "CT-0281",
+      "date": "2022-03",
+      "country": "Ukraine",
+      "place": "Occupied Kherson region",
+      "category": "Detention; alleged torture of Orthodox priests",
+      "title": "Orthodox Church of Ukraine clergy detained in occupied Kherson",
+      "published_account": "A communication to UN Special Procedures alleged several OCU priests were detained and tortured by Russian occupying forces in Kherson in March 2022.",
+      "reported_actor": "Russian occupying forces, according to special procedures communication",
+      "publisher": "UN Special Procedures communication",
+      "source_url": "https://spcommreports.ohchr.org/TMResultsBase/DownLoadPublicCommunicationFile?gId=28563",
+      "notes": "Russian-occupied Ukrainian territory; allegations in a formal communication are not equivalent to a court finding."
     },
     {
       "id": "CT-0179",

@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.7.0 - 11/11/2026: Ukraine Orthodox clergy and church incident coverage
+
+- Expand Christian persecution coverage with 41 published reports from Ukraine, including Ukrainian government actions affecting Orthodox churches and clergy, and abuses in Russian-occupied territories.
+- Include 2026 clergy detention and military-recruitment reports with clear church-publication attribution, source qualifications and no presumption of a religious motive.
+- Add Ukraine to the interactive country heat map, with approximately located city markers and no fabricated coordinates for unresolved sites or regional events.
+- Preserve the entire historical catalogue, distinguish national-security allegations from convictions, and strengthen automated Ukraine coverage and map regression checks.
+
 ## 1.6.0 - 11/11/2026: Christian persecution - research and local imagery
 
 - Rename Christians worldwide to Christian persecution throughout the live navigation and page while preserving existing deep links.
