@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {filterPersecutionReports,reportKind,formatReportDate} from '../public/assets/persecution-catalogue.js';
+import {filterPersecutionReports,reportKind,formatReportDate,localReportImage} from '../public/assets/persecution-catalogue.js';
 import {aggregateIncidentLocations} from '../public/assets/christian-heatmap.js';
 const read=path=>readFileSync(new URL('../'+path,import.meta.url),'utf8');
 const records=JSON.parse(read('public/data/christian-persecution.json')).reports;
@@ -114,4 +114,18 @@ test('Australian and older reports remain filterable and mapped',()=>{
  assert.equal(geo.countries.Iraq.iso3,'IRQ');
  assert.equal(geo.countries.Libya.iso3,'LBY');
  assert.ok(geo.places['Australia|Wakeley, Sydney']);
+});
+
+test('Christian persecution cards use locally hosted, constrained media with honest labelling',()=>{
+ const module=read('public/assets/persecution-catalogue.js');
+ const html=read('public/index.html');
+ assert.match(html,/Christian persecution<\\/button>/);
+ assert.match(html,/CHRISTIAN PERSECUTION/);
+ assert.match(module,/reportIllustration\\(r\\)/);
+ assert.doesNotMatch(module,/\\.innerHTML\\s*=/);
+ for(const report of records){
+  const src=localReportImage(report);
+  assert.match(src,/^\\/assets\\/persecution-media\\/[a-z0-9-]+\\.(svg|webp|jpg|jpeg|png)$/);
+  assert.ok(read('public'+src).includes('<svg')||/\\.(webp|jpg|jpeg|png)$/.test(src));
+ }
 });

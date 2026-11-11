@@ -1685,6 +1685,19 @@
       "notes": "USCCB archive contains additional incidents; this workbook extracts a selection."
     },
     {
+      "id": "CT-0247",
+      "date": "2024-09",
+      "country": "Eritrea",
+      "place": "Asmara, Eritrea",
+      "category": "Detention; home worship",
+      "title": "Jehovah's Witnesses detained during private religious meeting",
+      "published_account": "USCIRF reported that authorities detained 24 Jehovah's Witnesses, including minors, at a private worship meeting in September 2024.",
+      "reported_actor": "Eritrean authorities; faith-related detentions reported",
+      "publisher": "US Commission on International Religious Freedom",
+      "source_url": "https://www.uscirf.gov/religious-prisoners-conscience/forb-victims-database/tsige-ghebremedhin",
+      "notes": "Event report retains source attribution and reported uncertainty; the illustration on the card is not event photography."
+    },
+    {
       "id": "CT-0114",
       "date": "2024-08-29",
       "country": "India",
@@ -1854,6 +1867,19 @@
       "media_note": "AP article describes security footage; rights/availability to check"
     },
     {
+      "id": "CT-0241",
+      "date": "2024-01-07",
+      "country": "Myanmar",
+      "place": "Kanan village, Sagaing Region",
+      "category": "Military airstrike; church congregation",
+      "title": "Military strike kills Christian worshippers in Kanan",
+      "published_account": "Human Rights Watch reported that a Myanmar military airstrike on Kanan village killed 17 civilians attending church, including nine children.",
+      "reported_actor": "Myanmar military; armed-conflict attack, not independently adjudicated religious motive",
+      "publisher": "Human Rights Watch",
+      "source_url": "https://www.hrw.org/world-report/2025/country-chapters/myanmar",
+      "notes": "Event report retains source attribution and reported uncertainty; the illustration on the card is not event photography."
+    },
+    {
       "id": "CT-0125",
       "date": "2023-12-24",
       "country": "Nigeria",
@@ -2020,6 +2046,32 @@
       "notes": "Aggregate destruction count; not 253 individual site entries."
     },
     {
+      "id": "CT-0245",
+      "date": "2023-04",
+      "country": "Eritrea",
+      "place": "Eritrea",
+      "category": "Detention; Christian worship",
+      "title": "More than 100 Christians reportedly detained",
+      "published_account": "Human Rights Watch recorded reports that another 103 Christians were detained in April 2023, amid restrictions on unrecognised Christian worship.",
+      "reported_actor": "Eritrean authorities; detained Christians reported; exact sites not supplied",
+      "publisher": "Human Rights Watch",
+      "source_url": "https://www.hrw.org/world-report/2024/country-chapters/eritrea",
+      "notes": "Event report retains source attribution and reported uncertainty; the illustration on the card is not event photography."
+    },
+    {
+      "id": "CT-0246",
+      "date": "2023-04",
+      "country": "Eritrea",
+      "place": "Eritrea",
+      "category": "Detention; Orthodox monks",
+      "title": "Orthodox monks detained over patriarchal affiliation",
+      "published_account": "Human Rights Watch cited the UN special rapporteur reporting that 44 Eritrean Orthodox monks who supported late patriarch Abune Antonios were detained in April 2023.",
+      "reported_actor": "Eritrean authorities; support for late Orthodox patriarch as reported",
+      "publisher": "Human Rights Watch",
+      "source_url": "https://www.hrw.org/world-report/2024/country-chapters/eritrea",
+      "notes": "Event report retains source attribution and reported uncertainty; the illustration on the card is not event photography."
+    },
+    {
       "id": "CT-0132",
       "date": "2023-02-10",
       "country": "Nicaragua",
@@ -2044,6 +2096,32 @@
       "source_url": "https://www.abc.net.au/news/2023-01-19/wesley-uniting-church-broken-hill-trashed-by-vandals/101869672"
     },
     {
+      "id": "CT-0244",
+      "date": "2023-01",
+      "country": "Eritrea",
+      "place": "Mai Serwa, Eritrea",
+      "category": "Detention; Christian worship",
+      "title": "Forty-four Christians detained after religious service",
+      "published_account": "Human Rights Watch cited reporting that 44 Christians attending a religious service were detained in January 2023 and sent to Mai Serwa prison.",
+      "reported_actor": "Eritrean authorities; faith-related detention reported",
+      "publisher": "Human Rights Watch",
+      "source_url": "https://www.hrw.org/world-report/2024/country-chapters/eritrea",
+      "notes": "Event report retains source attribution and reported uncertainty; the illustration on the card is not event photography."
+    },
+    {
+      "id": "CT-0243",
+      "date": "2022-10",
+      "country": "Eritrea",
+      "place": "Multiple locations, Eritrea",
+      "category": "Detention; Catholic clergy",
+      "title": "Three Eritrean Catholic priests detained",
+      "published_account": "Human Rights Watch reported three Catholic priests were detained in separate October 2022 incidents, including the bishop of Segheneity, and released in December.",
+      "reported_actor": "Eritrean authorities; exact dates and detention grounds vary by priest",
+      "publisher": "Human Rights Watch",
+      "source_url": "https://www.hrw.org/news/2023/02/09/eritrea-crackdown-draft-evaders-families",
+      "notes": "Event report retains source attribution and reported uncertainty; the illustration on the card is not event photography."
+    },
+    {
       "id": "CT-0177",
       "date": "2022-09-24",
       "country": "Australia",
@@ -2054,6 +2132,19 @@
       "reported_actor": "Vandals unidentified; motive not established",
       "publisher": "The Catholic Weekly",
       "source_url": "https://catholicweekly.com.au/heartache-as-vandals-target-historic-church/"
+    },
+    {
+      "id": "CT-0242",
+      "date": "2022-09-04",
+      "country": "Eritrea",
+      "place": "Akrur, southern Eritrea",
+      "category": "Detention; Christian Mass",
+      "title": "Catholic Mass attendees detained near Akrur",
+      "published_account": "Human Rights Watch reported security forces rounded up and detained young people attending Mass near Medhane-Alem Roman Catholic Church in Akrur, with researchers verifying the location shown in images.",
+      "reported_actor": "Eritrean security forces; conscription-related arrests reported",
+      "publisher": "Human Rights Watch",
+      "source_url": "https://www.hrw.org/news/2023/02/09/eritrea-crackdown-draft-evaders-families",
+      "notes": "Event report retains source attribution and reported uncertainty; the illustration on the card is not event photography."
     },
     {
       "id": "CT-0133",

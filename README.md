@@ -424,9 +424,9 @@ The citation register now contains 85 assessments, including 48 of the 115 expla
 
 Batch `connections-20-02` compares twenty further Gospel and Acts narrative pairs (ce096-ce115). It preserves differences in order, names, account details and wording, and distinguishes multiple accounts within Acts from independent corroboration. Mark's composite opening citation and the manna comparison are clarified in the existing register. Only original editorial notes and bibliographic metadata are bundled; publisher text remains external. The browser/accessibility CI milestone remains open until its declared critical flows actually run in CI.
 
-## Christians worldwide incident archive
+## Christian persecution incident archive
 
-The Christians worldwide page is an open-ended historical reporting archive, not an exhaustive census. The primary dataset is public/data/christian-persecution.json. There is no fixed first or last year for future additions. Each record includes the publisher's summary and original source URL, as well as attributed responsibility and qualifications when reported. The archive now includes Australian sources and older incidents predating 2016.
+The Christian persecution page is an open-ended historical reporting archive, not an exhaustive census. The primary dataset is public/data/christian-persecution.json. There is no fixed first or last year for future additions. Each record includes the publisher's summary and original source URL, as well as attributed responsibility and qualifications when reported. The archive now includes Australian sources and older incidents predating 2016.
 
 Event dates follow the precision in the source: YYYY (year known), YYYY-MM (month known), or YYYY-MM-DD (day known). Do not invent days. New incidents automatically contribute to country heat shading. To show a locality marker, supply an approximate place entry in public/data/christian-heatmap-places.json or explicit locations coordinates. Country-only records remain included in total map counts. Locality coordinates are approximate, not precise attack-site coordinates.
 
@@ -434,7 +434,7 @@ Media index entries are links to third-party publishers, not rights-cleared imag
 
 ## Christian incident heat map
 
-The Christians worldwide page at `/?view=christian-persecution` uses a locally hosted, interactive world map. Country shading is calculated directly from the current published incident catalogue and includes all reports, including nationwide and unresolved place descriptions. It is a count of published records, not a rate or a severity measure.
+The Christian persecution page at `/?view=christian-persecution` uses a locally hosted, interactive world map. Country shading is calculated directly from the current published incident catalogue and includes all reports, including nationwide and unresolved place descriptions. It is a count of published records, not a rate or a severity measure.
 
 - `public/data/christian-persecution.json` is the source of report counts and reporting dates.
 - `public/data/world-heatmap-110m.json` provides Natural Earth country boundaries (public domain).
@@ -444,3 +444,7 @@ The Christians worldwide page at `/?view=christian-persecution` uses a locally h
 **Expanding the catalogue:** New records automatically change their country's density and matching search/filter counts when the JSON dataset is updated. Existing place keys reuse the map's stored approximate coordinates. For a newly named place, add a compatible `country|place` entry to the location index or provide a `locations` array in the new report with objects containing `name`, `lat`, `lon` and `precision`. The latter is mapped immediately without changing map code. Unknown, nationwide or ambiguous localities are not assigned invented coordinates; they still contribute to country-level shading. Include new valid country name aliases in the location metadata when needed.
 
 Country and locality map features are selectable to filter reports. Exact attack-site coordinates are not claimed, since city and region centres come from a gazetteer. Retain the original publisher links and source attributions for each incident. Use the existing `npm run release` workflow for all public site updates.
+
+## Christian persecution report-card artwork
+
+Each report card displays a compact, original, locally hosted category illustration from `public/assets/persecution-media/`. These illustrations are editorial artwork, **not photographs of particular incidents**. They are intentionally identified as such in the card caption and alternative text. Publisher photographs and videos remain outbound source references unless the project has independently verified the licence to redistribute the original material. The component supports a future optional `local_image` path restricted to the local media directory, with local attribution fields for licence-cleared images. No publisher media is hotlinked or downloaded solely because it appeared in a report.

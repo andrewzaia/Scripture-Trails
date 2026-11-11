@@ -39,8 +39,23 @@ export function formatReportDate(value){
  return input;
 }
 const date=formatReportDate;
+const artByKind={'Fire and explosions':'fire','Physical violence':'violence','Sacred sites and property':'heritage','Coercion and restrictions':'restrictions','Other reports':'other'};
+export function localReportImage(r){
+ const asset=String(r.local_image||'');
+ if(/^\\/assets\\/persecution-media\\/[a-z0-9-]+\\.(?:webp|jpg|jpeg|png|svg)$/.test(asset))return asset;
+ return '/assets/persecution-media/'+(artByKind[reportKind(r.category)]||'other')+'.svg';
+}
+function reportIllustration(r){
+ const frame=el('figure','','persecution-card-media');
+ const img=document.createElement('img');
+ img.src=localReportImage(r);img.alt=r.local_image?String(r.local_image_alt||'Locally hosted incident image'):'Original editorial illustration, not an incident photograph';
+ img.loading='lazy';img.decoding='async';img.width=960;img.height=480;
+ const caption=el('figcaption',r.local_image?String(r.local_image_caption||'Licensed image - refer to attribution'):'Editorial illustration | Not incident photography');
+ frame.append(img,caption);return frame;
+}
 function caseCard(r){
  const c=el('article','','persecution-case');
+ c.append(reportIllustration(r));
  c.append(el('p',date(r.date)+' | '+r.country+' | '+r.category+' | '+r.id,'persecution-meta'));
  c.append(el('h3',r.title),el('p',r.place||r.country,'persecution-meta'),el('p',r.published_account,'persecution-account'),el('p','Published by '+r.publisher,'persecution-meta'));
  if(r.reported_actor)c.append(el('p','Reported actor: '+r.reported_actor,'persecution-meta'));

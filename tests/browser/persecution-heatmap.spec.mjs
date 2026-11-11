@@ -79,3 +79,15 @@ test('Australia and historical years appear in the interactive report map',async
  await page.locator('[data-pc-year]').selectOption('1997');
  await expect(page.locator('.persecution-case').first()).toContainText('Shantinagar');
 });
+
+test('incident cards display consistent locally hosted media and the renamed section',async({page})=>{
+ await open(page,'christian-persecution');
+ await expect(page.locator('#view-christian-persecution .page-heading h1')).toContainText('Christian persecution');
+ const first=page.locator('.persecution-case').first();
+ const image=first.locator('.persecution-card-media img');
+ await expect(image).toBeVisible();
+ await expect(image).toHaveAttribute('src',/^\\/assets\\/persecution-media\\/[a-z0-9-]+\\.svg$/);
+ await expect(first.locator('.persecution-card-media figcaption')).toContainText('Not incident photography');
+ const loaded=await image.evaluate(img=>img.complete&&img.naturalWidth>0);
+ expect(loaded).toBe(true);
+});

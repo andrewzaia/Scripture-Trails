@@ -122,6 +122,14 @@
     "Libya": {
       "iso2": "LY",
       "iso3": "LBY"
+    },
+    "Eritrea": {
+      "iso2": "ER",
+      "iso3": "ERI"
+    },
+    "Myanmar": {
+      "iso2": "MM",
+      "iso3": "MMR"
     }
   },
   "places": {
@@ -2152,6 +2160,39 @@
           "lat": 31.2,
           "lon": 16.59,
           "precision": "approximate regional centre"
+        }
+      ]
+    },
+    "Myanmar|Kanan village, Sagaing Region": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Sagaing Region (approximate)",
+          "lat": 22.1,
+          "lon": 95.65,
+          "precision": "regional centre, not incident site"
+        }
+      ]
+    },
+    "Eritrea|Akrur, southern Eritrea": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Akrur area (approximate)",
+          "lat": 14.85,
+          "lon": 39.1,
+          "precision": "approximate locality"
+        }
+      ]
+    },
+    "Eritrea|Asmara, Eritrea": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Asmara",
+          "lat": 15.338,
+          "lon": 38.931,
+          "precision": "city centre"
         }
       ]
     }
