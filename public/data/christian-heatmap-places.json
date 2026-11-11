@@ -342,6 +342,34 @@
     "Greece": {
       "iso2": "GR",
       "iso3": "GRC"
+    },
+    "Sweden": {
+      "iso2": "SE",
+      "iso3": "SWE"
+    },
+    "Netherlands": {
+      "iso2": "NL",
+      "iso3": "NLD"
+    },
+    "Croatia": {
+      "iso2": "HR",
+      "iso3": "HRV"
+    },
+    "Bosnia and Herzegovina": {
+      "iso2": "BA",
+      "iso3": "BIH"
+    },
+    "Argentina": {
+      "iso2": "AR",
+      "iso3": "ARG"
+    },
+    "Georgia": {
+      "iso2": "GE",
+      "iso3": "GEO"
+    },
+    "Serbia": {
+      "iso2": "RS",
+      "iso3": "SRB"
     }
   },
   "places": {
