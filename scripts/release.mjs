@@ -21,6 +21,7 @@ if(!html.includes('/assets/app.js?v='+oldVersion)||!html.includes('/assets/style
 let nextApp=versionedImport(read(appPath),'entity-index.js?v='+oldVersion,'entity-index.js?v='+newVersion,'index module');
 nextApp=versionedImport(nextApp,'reader-audio.js?v='+oldVersion,'reader-audio.js?v='+newVersion,'ESV audio controller');
 nextApp=versionedImport(nextApp,'scripture-previews.js?v='+oldVersion,'scripture-previews.js?v='+newVersion,'Scripture hover previews');
+nextApp=versionedImport(nextApp,'persecution-catalogue.js?v='+oldVersion,'persecution-catalogue.js?v='+newVersion,'Christians worldwide module');
 nextApp=versionedImport(nextApp,'graph.js?v='+oldVersion,'graph.js?v='+newVersion,'Atlas renderer');
 const nextGraph=versionedImport(read(graphPath),'atlas-shortest-path.js?v='+oldVersion,'atlas-shortest-path.js?v='+newVersion,'Atlas shortest path module');
 nextApp=versionedImport(nextApp,'connection-evidence.js?v='+oldVersion,'connection-evidence.js?v='+newVersion,'Atlas evidence module');
@@ -50,6 +51,9 @@ nextIndex=versionedImport(nextIndex,"ENTITY_INDEX_DATA_VERSION='"+oldVersion+"'"
 nextIndex=versionedImport(nextIndex,'connection-evidence.js?v='+oldVersion,'connection-evidence.js?v='+newVersion,'index evidence import');
 nextIndex=versionedImport(nextIndex,'person-trails.js?v='+oldVersion,'person-trails.js?v='+newVersion,'person study trails');
 const nextEvidence=versionedImport(read(evidencePath),'connection-evidence-expanded.js?v='+oldVersion,'connection-evidence-expanded.js?v='+newVersion,'expanded evidence');
+const persecutionPath='public/assets/persecution-catalogue.js';
+let nextPersecution=versionedImport(read(persecutionPath),'christian-persecution.json?v='+oldVersion,'christian-persecution.json?v='+newVersion,'report dataset');
+nextPersecution=versionedImport(nextPersecution,'christian-persecution-media.json?v='+oldVersion,'christian-persecution-media.json?v='+newVersion,'media index');
 const newHtml=html.replace(oldLabel,oldLabel.replace(oldVersion,newVersion))
  .replace('/assets/app.js?v='+oldVersion,'/assets/app.js?v='+newVersion)
  .replace('/assets/analytics.js?v='+oldVersion,'/assets/analytics.js?v='+newVersion)
@@ -80,6 +84,7 @@ writeFileSync(annotationsPath,nextAnnotations);
 writeFileSync(graphPath,nextGraph);
 writeFileSync(indexPath,nextIndex);
 writeFileSync(evidencePath,nextEvidence);
+writeFileSync(persecutionPath,nextPersecution);
 for(const path of ['public/assets/app.js','public/assets/jesus-map.js','public/assets/entity-index.js','public/assets/atlas-comparison.js','public/assets/citation-review.js']){
  const text=read(path).replaceAll('citation-review.js?v='+oldVersion,'citation-review.js?v='+newVersion).replaceAll('citation-review-data.js?v='+oldVersion,'citation-review-data.js?v='+newVersion).replaceAll('jesus-map.js?v='+oldVersion,'jesus-map.js?v='+newVersion).replaceAll('citation-review.json?v='+oldVersion,'citation-review.json?v='+newVersion).replaceAll('city-studies.js?v='+oldVersion,'city-studies.js?v='+newVersion);
  writeFileSync(path,text);

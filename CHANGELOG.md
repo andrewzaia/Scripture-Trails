@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.3.0 - 11/11/2026: Christians worldwide - published incident catalogue
+
+- Add a dedicated Christians worldwide page with 166 source-attributed reports across 26 countries concerning violence, religious restrictions and attacks on churches, relics and Christian heritage.
+- Provide searchable reports with country, year and report-type filters, chronological sorting, original publisher links and incremental browsing.
+- Publish a separate 20-item photo and video coverage index linking to publisher-hosted media with reuse notices and distinctions between incident and illustrative material.
+- Clarify the archive's date range and uneven source-based coverage while preserving existing Bible study functionality.
+
 ## 1.2.1 - 06/11/2026: Clarify Scripture source reviews
 
 - Refine the presentation of primary Scripture references and source-review notes across Hebrew Bible geography, Gospel journeys, Pauline studies, Atlas citations and the project roadmap.
