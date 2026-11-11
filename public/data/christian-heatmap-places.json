@@ -286,6 +286,62 @@
     "Morocco": {
       "iso2": "MA",
       "iso3": "MAR"
+    },
+    "Tajikistan": {
+      "iso2": "TJ",
+      "iso3": "TJK"
+    },
+    "Armenia": {
+      "iso2": "AM",
+      "iso3": "ARM"
+    },
+    "Bhutan": {
+      "iso2": "BT",
+      "iso3": "BTN"
+    },
+    "Brunei": {
+      "iso2": "BN",
+      "iso3": "BRN"
+    },
+    "Jordan": {
+      "iso2": "JO",
+      "iso3": "JOR"
+    },
+    "Qatar": {
+      "iso2": "QA",
+      "iso3": "QAT"
+    },
+    "United Arab Emirates": {
+      "iso2": "AE",
+      "iso3": "ARE"
+    },
+    "Saudi Arabia": {
+      "iso2": "SA",
+      "iso3": "SAU"
+    },
+    "Oman": {
+      "iso2": "OM",
+      "iso3": "OMN"
+    },
+    "Chile": {
+      "iso2": "CL",
+      "iso3": "CHL"
+    },
+    "Guatemala": {
+      "iso2": "GT",
+      "iso3": "GTM"
+    },
+    "Peru": {
+      "iso2": "PE",
+      "iso3": "PER"
+    },
+    "Malawi": {
+      "iso2": "MW",
+      "iso3": "MWI"
+    },
+    "Greece": {
+      "iso2": "GR",
+      "iso3": "GRC"
     }
   },
   "places": {
