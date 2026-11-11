@@ -1,6 +1,17 @@
 {
   "releases": [
     {
+      "version": "1.8.0",
+      "date": "2026-11-11",
+      "title": "Worldwide coverage - 25 additional countries and territories",
+      "changes": [
+        "Add 65 published, source-attributed Christian incident records across 25 previously unrepresented countries and territories, expanding the archive to 358 reports across 58 geographical entries.",
+        "Include incidents from Asia, Africa, Europe, the Americas and the Middle East, including attacks on clergy, church properties, Christian converts and Armenian heritage.",
+        "Extend the existing world heat map's country definitions so every new report contributes to its country shading and catalogue filters without inventing precise incident coordinates.",
+        "Distinguish allegations and disputed motives from established events, retain original publisher links and previous incident history, and add automated regression coverage."
+      ]
+    },
+    {
       "version": "1.7.0",
       "date": "2026-11-11",
       "title": "Ukraine Orthodox clergy and church incident coverage",

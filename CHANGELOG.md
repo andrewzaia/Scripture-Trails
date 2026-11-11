@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.8.0 - 11/11/2026: Worldwide coverage - 25 additional countries and territories
+
+- Add 65 published, source-attributed Christian incident records across 25 previously unrepresented countries and territories, expanding the archive to 358 reports across 58 geographical entries.
+- Include incidents from Asia, Africa, Europe, the Americas and the Middle East, including attacks on clergy, church properties, Christian converts and Armenian heritage.
+- Extend the existing world heat map's country definitions so every new report contributes to its country shading and catalogue filters without inventing precise incident coordinates.
+- Distinguish allegations and disputed motives from established events, retain original publisher links and previous incident history, and add automated regression coverage.
+
 ## 1.7.0 - 11/11/2026: Ukraine Orthodox clergy and church incident coverage
 
 - Expand Christian persecution coverage with 41 published reports from Ukraine, including Ukrainian government actions affecting Orthodox churches and clergy, and abuses in Russian-occupied territories.

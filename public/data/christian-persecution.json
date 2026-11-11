@@ -3,6 +3,19 @@
   "scope": "An open-ended collection of attributed published incident reports affecting Christians, clergy, church property and religious heritage. The archive does not impose an earliest or latest historical year, but is neither an exhaustive worldwide census nor an independent finding of perpetrator identity or motive.",
   "reports": [
     {
+      "id": "CT-0305",
+      "country": "Cuba",
+      "date": "2026-11-06",
+      "place": "Guanajay, Artemisa",
+      "category": "Detention of Protestant leaders",
+      "title": "Five Protestant leaders detained with Christian media creator",
+      "published_account": "CSW reported that Cuban authorities detained at least five Protestant leaders on 6 November 2026 while accompanying a Christian content creator summoned by police. Several were later released.",
+      "reported_actor": "Cuban National Revolutionary Police and state security",
+      "publisher": "Christian Solidarity Worldwide",
+      "source_url": "https://www.csw.org.uk/press/authorities-detain-church-leaders-members-influencers-and-activists/",
+      "notes": "Arrests occurred during activity connected with summonses and public commentary; individual reasons and outcomes varied."
+    },
+    {
       "id": "CT-0167",
       "date": "2026-11-02",
       "country": "Australia",
@@ -85,6 +98,19 @@
       "media_type": "Illustrative photograph",
       "media_url": "https://acnuk.org/news/2026/10/08/bullet-narrowly-misses-priest-gunmen-open-fire-syrian-christian-village",
       "media_note": "ACN photo is a file image from 2025 Damascus attack, NOT this incident"
+    },
+    {
+      "id": "CT-0306",
+      "country": "Cuba",
+      "date": "2026-09-26",
+      "place": "Camaguey",
+      "category": "Detention; restriction of public prayer",
+      "title": "Pastor Maikel Pupo Velazquez detained over planned public prayer",
+      "published_account": "CSW reported police detained Pastor Maikel Pupo Velazquez after he sought to cancel a public prayer event and warn attendees not to gather. Authorities charged him with disobedience.",
+      "reported_actor": "Cuban state security and police",
+      "publisher": "Christian Solidarity Worldwide",
+      "source_url": "https://www.csw.org.uk/press/protestant-pastor-arbitrarily-detained/",
+      "notes": "CSW disputes the state's disobedience allegation."
     },
     {
       "id": "CT-0003",
@@ -386,6 +412,19 @@
       "notes": "Single publisher case summary; no independent adjudication undertaken."
     },
     {
+      "id": "CT-0358",
+      "country": "Azerbaijan",
+      "date": "2026-04",
+      "place": "Khankendi (Stepanakert), Nagorno-Karabakh",
+      "category": "Cathedral demolition",
+      "title": "Holy Mother of God Armenian cathedral razed",
+      "published_account": "Caucasus Heritage Watch documented satellite evidence of the complete demolition of the Armenian Apostolic Holy Mother of God Cathedral between early March and early April 2026.",
+      "reported_actor": "Exact demolishing authority unidentified; site within Azerbaijani-controlled territory",
+      "publisher": "Caucasus Heritage Watch (Cornell and Purdue)",
+      "source_url": "https://caucasusheritage.cornell.edu/?page_id=2427",
+      "notes": "Month reflects verified demolition window ending in April, not an asserted exact demolition day."
+    },
+    {
       "id": "CT-0286",
       "date": "2026-03-27",
       "country": "Ukraine",
@@ -410,6 +449,19 @@
       "publisher": "Union of Orthodox Journalists",
       "source_url": "https://spzh.eu/en/zashhita-very/93805-chronicle-of-the-reprisals-against-the-clergy-of-the-uoc.html",
       "notes": "Ukrainian government-controlled territory. Church-aligned reporting; source allegations and incident details have not been independently established here. Military mobilisation alone does not demonstrate religious persecution."
+    },
+    {
+      "id": "CT-0307",
+      "country": "Cuba",
+      "date": "2026-03-15",
+      "place": "Matanzas",
+      "category": "Detention; Christian speech",
+      "title": "Pastor Rolando Perez Lora arrested after Bible video upload",
+      "published_account": "CSW reported that Cuban political police detained Pastor Rolando Perez Lora in a public park soon after he uploaded a Bible-teaching video.",
+      "reported_actor": "Cuban political police",
+      "publisher": "Christian Solidarity Worldwide",
+      "source_url": "https://www.csw.org.uk/press/pastor-arrested-after-recording-and-uploading-bible-teaching-video-to-6760/",
+      "notes": "Religious advocacy report; exact release information not asserted here."
     },
     {
       "id": "CT-0023",
@@ -662,6 +714,19 @@
       "source_url": "https://www.uscirf.gov/sites/default/files/2026-05/2026%20Nicaragua%20Country%20Update.pdf"
     },
     {
+      "id": "CT-0330",
+      "country": "Colombia",
+      "date": "2025-12-31",
+      "place": "Fundacion, Magdalena",
+      "category": "Killing of pastor",
+      "title": "Pastor José Otoniel Ortega shot during family celebration",
+      "published_account": "CSW reported armed people shot Pastor José Otoniel Ortega while he celebrated New Year's Eve with relatives in Fundación municipality.",
+      "reported_actor": "Unidentified armed men",
+      "publisher": "Christian Solidarity Worldwide",
+      "source_url": "https://www.csw.org.uk/reports/foco-forb-january-june-2026-6861/",
+      "notes": "No proven anti-Christian motive attributed beyond his pastoral role."
+    },
+    {
       "id": "CT-0035",
       "date": "2025-12-30",
       "country": "United Kingdom",
@@ -872,6 +937,34 @@
       "notes": "USCCB archive contains additional incidents; this workbook extracts a selection."
     },
     {
+      "id": "CT-0322",
+      "country": "Bangladesh",
+      "date": "2025-11-08",
+      "place": "Mohammadpur, Dhaka",
+      "category": "Explosions outside clergy residence",
+      "title": "Explosives detonated near St Joseph School clergy residence",
+      "published_account": "The Daily Star reported two crude bombs exploded outside the residence used by priests and teachers at St Joseph School and College in the early hours of 8 November.",
+      "reported_actor": "Unidentified attackers; police investigation reported",
+      "publisher": "The Daily Star",
+      "source_url": "https://www.thedailystar.net/news/bangladesh/crime-justice/news/crude-bombs-explode-near-christian-sites-dhaka-4030076",
+      "notes": "Distinct site from St Mary's Cathedral on the previous night.",
+      "incident_group": "BANGLADESH-DHAKA-2025-11"
+    },
+    {
+      "id": "CT-0321",
+      "country": "Bangladesh",
+      "date": "2025-11-07",
+      "place": "Kakrail, Dhaka",
+      "category": "Explosive attack near cathedral",
+      "title": "Explosives thrown near St Mary's Cathedral",
+      "published_account": "The Daily Star reported one crude bomb exploded near the cathedral gate before a Catholic jubilee celebration and another unexploded device was recovered within the compound.",
+      "reported_actor": "Unidentified attackers; police investigating",
+      "publisher": "The Daily Star",
+      "source_url": "https://www.thedailystar.net/news/bangladesh/crime-justice/news/crude-bombs-explode-near-christian-sites-dhaka-4030076",
+      "notes": "Exact date derived from report published 8 November describing the previous night.",
+      "incident_group": "BANGLADESH-DHAKA-2025-11"
+    },
+    {
       "id": "CT-0050",
       "date": "2025-11-03",
       "country": "Poland",
@@ -934,6 +1027,19 @@
       "reported_actor": "38-year-old man charged with assault-related offences; motive not established",
       "publisher": "ABC News",
       "source_url": "https://www.abc.net.au/news/2025-10-27/man-charged-with-stabbing-darwin-priest-in-face-with-pen/105937868"
+    },
+    {
+      "id": "CT-0320",
+      "country": "Bangladesh",
+      "date": "2025-10-08",
+      "place": "Tejgaon, Dhaka",
+      "category": "Bomb near church",
+      "title": "Crude bomb thrown at Holy Rosary Church gate",
+      "published_account": "The Daily Star reported an explosive device detonated outside Holy Rosary Church in Dhaka, with no injuries. Police investigated and later arrested suspects.",
+      "reported_actor": "Unidentified attackers; two suspects subsequently arrested",
+      "publisher": "The Daily Star",
+      "source_url": "https://www.thedailystar.net/news/bangladesh/crime-justice/news/crude-bomb-explodes-front-tejgaon-church-4005406",
+      "notes": "Motive not established by police in the cited report."
     },
     {
       "id": "CT-0054",
@@ -1273,6 +1379,19 @@
       "source_url": "https://www.pbs.org/newshour/world/what-to-know-about-the-attack-on-a-congolese-church-that-killed-nearly-40-worshippers"
     },
     {
+      "id": "CT-0350",
+      "country": "Palestinian territories",
+      "date": "2025-07-17",
+      "place": "Gaza City",
+      "category": "Strike on Catholic church; fatalities",
+      "title": "Holy Family Catholic Church hit by strike in Gaza",
+      "published_account": "Reuters reported a strike on Gaza's Catholic church killed at least two people and wounded others including the parish priest; Israeli forces said they were investigating and regretted damage to a religious site.",
+      "reported_actor": "Israeli military strike acknowledged as under investigation",
+      "publisher": "Reuters",
+      "source_url": "https://www.reuters.com/world/middle-east/two-dead-several-injured-raid-catholic-church-gaza-2025-07-17/",
+      "notes": "Published preliminary casualty figures. No demonstrated intent to target Christians as a religious group."
+    },
+    {
       "id": "CT-0073",
       "date": "2025-07-10",
       "country": "United States",
@@ -1459,6 +1578,19 @@
       "notes": "USCCB archive contains additional incidents; this workbook extracts a selection."
     },
     {
+      "id": "CT-0341",
+      "country": "Cameroon",
+      "date": "2025-05-07",
+      "place": "Madingring, North region",
+      "category": "Abduction of priest",
+      "title": "Father Valentin Mbaibarem kidnapped with five other people",
+      "published_account": "Vatican News reported a Catholic parish priest and five others were kidnapped, with the priest released about nine days later. Local media cited a ransom demand.",
+      "reported_actor": "Unidentified armed kidnappers",
+      "publisher": "Vatican News",
+      "source_url": "https://www.vaticannews.va/en/world/news/2025-05/cameroonian-priest-kidnapped-on-may-7-released.html",
+      "notes": "Church stated it did not pay ransom; motive not conclusively determined."
+    },
+    {
       "id": "CT-0083",
       "date": "2025-05-06",
       "country": "United States",
@@ -1540,6 +1672,19 @@
       "notes": "USCCB archive contains additional incidents; this workbook extracts a selection."
     },
     {
+      "id": "CT-0336",
+      "country": "South Africa",
+      "date": "2025-04-10",
+      "place": "Motherwell, Eastern Cape",
+      "category": "Abduction of pastor during prayer",
+      "title": "Baptist missionary Josh Sullivan abducted during worship",
+      "published_account": "International Christian Concern reported masked armed men abducted American missionary Josh Sullivan from a Baptist prayer gathering, after taking mobile phones.",
+      "reported_actor": "Unidentified armed kidnappers",
+      "publisher": "International Christian Concern",
+      "source_url": "https://persecution.org/2025/04/11/u-s-missionary-abducted-at-gunpoint-while-preaching-in-south-africa/",
+      "notes": "Possible ransom or criminal motive noted by publisher; anti-Christian motive not established."
+    },
+    {
       "id": "CT-0087",
       "date": "2025-04-08",
       "country": "United States",
@@ -1606,6 +1751,19 @@
       "media_url": "https://astoriapost.com/police-arrest-astoria-repeat-offender-for-multiple-hate-crimes-at-same-church",
       "media_note": "Link to local report; imagery/footage on page must be inspected and licensed before re-use",
       "notes": "USCCB archive contains additional incidents; this workbook extracts a selection."
+    },
+    {
+      "id": "CT-0329",
+      "country": "Colombia",
+      "date": "2025-04",
+      "place": "Guaviare department",
+      "category": "Disappearance of Protestant church leaders",
+      "title": "Seven Protestant leaders disappeared after armed group summons",
+      "published_account": "CSW reported seven Protestant church leaders and a related social leader disappeared after complying with summonses from an armed group in April 2025. Their remains were recovered in July.",
+      "reported_actor": "Suspected FARC dissident armed group",
+      "publisher": "Christian Solidarity Worldwide",
+      "source_url": "https://www.csw.org.uk/reports/hrc61-oral-statement-during-general-debate-under-agenda-item-4-6757/",
+      "notes": "April is disappearance month; remains discovered 1 July. Multiple victims in one incident group."
     },
     {
       "id": "CT-0091",
@@ -1901,6 +2059,58 @@
       "notes": "Single publisher case summary; no independent adjudication undertaken."
     },
     {
+      "id": "CT-0328",
+      "country": "Colombia",
+      "date": "2025-01-08",
+      "place": "Zona Bananera, Magdalena",
+      "category": "Killing of Christian leader",
+      "title": "Iván García shot after Bible study",
+      "published_account": "CSW reported that gunmen shot dead Protestant church leader Iván García while he walked home with congregants after a religious service.",
+      "reported_actor": "Two unidentified gunmen on a motorcycle",
+      "publisher": "Christian Solidarity Worldwide",
+      "source_url": "https://www.csw.org.uk/2025/01/14/press/6409/article.htm",
+      "notes": "Church-leader vulnerability documented; no court finding about individual motive cited."
+    },
+    {
+      "id": "CT-0319",
+      "country": "Sudan",
+      "date": "2024-12-30",
+      "place": "Al Hasaheisa, Gezira",
+      "category": "Church raid; Christian worship disrupted",
+      "title": "Church of Christ service raided and worshippers expelled",
+      "published_account": "CSW reported RSF personnel entered a Sudanese Church of Christ congregation during Christmas worship, looted the building and forced 177 Christians to leave.",
+      "reported_actor": "Rapid Support Forces personnel, according to CSW",
+      "publisher": "Christian Solidarity Worldwide",
+      "source_url": "https://www.csw.org.uk/reports/briefing-attacks-on-places-of-worship-6662/",
+      "notes": "Number of congregants is source-reported."
+    },
+    {
+      "id": "CT-0327",
+      "country": "Colombia",
+      "date": "2024-12-29",
+      "place": "Aguachica, Cesar",
+      "category": "Killing of pastor and family",
+      "title": "Pastor Marlon Lora and family killed after worship",
+      "published_account": "CSW recorded Pastor Marlon Lora and several family members shot dead while eating lunch following Sunday worship in Aguachica.",
+      "reported_actor": "Unidentified armed attackers",
+      "publisher": "Christian Solidarity Worldwide",
+      "source_url": "https://www.csw.org.uk/reports/hrc58-oral-statement-during-item-4-general-debate-6464/",
+      "notes": "The family's final casualty count changed as an injured son later died; the attack's motive was not proven."
+    },
+    {
+      "id": "CT-0323",
+      "country": "Bangladesh",
+      "date": "2024-12-25",
+      "place": "Lama, Bandarban",
+      "category": "Arson; Christian community homes",
+      "title": "Tripura Christian community homes destroyed by fire",
+      "published_account": "The Daily Star reported that 17 houses in a Christian Tripura settlement were burned while residents attended Christmas celebrations, and that police arrested four suspects.",
+      "reported_actor": "Suspects named by police; underlying dispute between community groups",
+      "publisher": "The Daily Star",
+      "source_url": "https://www.thedailystar.net/news/bangladesh/crime-justice/news/arson-attack-christian-tripura-community-fir-filed-4-arrested-3785131",
+      "notes": "Police indicated a long-running land or intra-community dispute; religious hatred was not established as the cause."
+    },
+    {
       "id": "CT-0112",
       "date": "2024-12-13",
       "country": "United States",
@@ -1935,6 +2145,32 @@
       "notes": "USCCB archive contains additional incidents; this workbook extracts a selection."
     },
     {
+      "id": "CT-0354",
+      "country": "Belarus",
+      "date": "2024-12",
+      "place": "Valozhyn, Minsk region",
+      "category": "Prosecution of Catholic priest",
+      "title": "Father Henryk Okolotovich jailed after closed treason trial",
+      "published_account": "Forum 18 reported a Catholic parish priest was given an eleven-year prison sentence at a closed trial in December 2024 on treason charges, and later pardoned and sent to Rome in November 2025.",
+      "reported_actor": "Belarusian courts and security services",
+      "publisher": "Forum 18",
+      "source_url": "https://www.forum18.org/archive.php?article_id=3079",
+      "notes": "Treason allegation was disputed by supporters; no independent judgment here on its truth."
+    },
+    {
+      "id": "CT-0302",
+      "country": "Iran",
+      "date": "2024-11",
+      "place": "Tehran",
+      "category": "House-church raid; detention",
+      "title": "Christian convert Narges Nasri arrested in home raid",
+      "published_account": "USCIRF reported that Iranian intelligence personnel raided Narges Nasri's Tehran home and confiscated Christian materials in November 2024. A court later imposed a sixteen-year sentence in absentia, which she challenged while outside Iran.",
+      "reported_actor": "Iranian intelligence and Revolutionary Court",
+      "publisher": "US Commission on International Religious Freedom",
+      "source_url": "https://www.uscirf.gov/religious-prisoners-conscience/forb-victims-database/narges-nasri",
+      "notes": "USCIRF reports she fled Iran; do not describe her as currently serving the sentence."
+    },
+    {
       "id": "CT-0258",
       "date": "2024-10-17",
       "country": "Ukraine",
@@ -1946,6 +2182,46 @@
       "publisher": "UN Office of the High Commissioner for Human Rights",
       "source_url": "https://ukraine.ohchr.org/sites/default/files/2025-01/2024-12-31%20OHCHR%2041st%20periodic%20report%20on%20Ukraine.pdf",
       "notes": "Ukrainian government-controlled territory; UOC injury totals are attributed to that church, and the police opened a hooliganism investigation."
+    },
+    {
+      "id": "CT-0331",
+      "country": "Uganda",
+      "date": "2024-10-13",
+      "place": "Kibale, Namutumba district",
+      "category": "Arson; killing of pastor family",
+      "title": "Pastor Weere Mukisa and family reported killed in home fire",
+      "published_account": "International Christian Concern reported relatives said an Islamist mob set a pastor's home ablaze, killing the pastor, wife and two children after conversions in the locality.",
+      "reported_actor": "Alleged local mob; perpetrators under police investigation",
+      "publisher": "International Christian Concern",
+      "source_url": "https://persecution.org/2024/11/01/pastor-family-killed-in-uganda-following-muslim-conversions/",
+      "notes": "Single-source attributed allegation; no judicial confirmation of perpetrators in the published account."
+    },
+    {
+      "id": "CT-0332",
+      "country": "Uganda",
+      "date": "2024-10-09",
+      "place": "Nankoma, Bugiri district",
+      "category": "Domestic assault linked to conversion",
+      "title": "Christian convert Hidaaya Nabafa reportedly assaulted with acid",
+      "published_account": "International Christian Concern reported a woman's husband beat her and poured battery acid over her following discovery of her Christian conversion.",
+      "reported_actor": "Husband, as alleged in witness account",
+      "publisher": "International Christian Concern",
+      "source_url": "https://persecution.org/2024/11/01/pastor-family-killed-in-uganda-following-muslim-conversions/",
+      "notes": "Church advocacy report; religious motive alleged by survivor."
+    },
+    {
+      "id": "CT-0346",
+      "country": "Somalia",
+      "date": "2024-10-05",
+      "place": "Lower Juba region",
+      "category": "Assault at Christian prayer gathering",
+      "title": "Christian convert assaulted after secret home service",
+      "published_account": "International Christian Concern reported relatives attacked convert Mohammad Abdul after a Christian prayer meeting in his home, leaving fractures and facial injuries.",
+      "reported_actor": "Relatives, according to survivor account",
+      "publisher": "International Christian Concern",
+      "source_url": "https://persecution.org/2024/10/25/christian-convert-assaulted-by-relatives-in-somalia/",
+      "notes": "Same victim as earlier May incident; separate event dates within one persecution sequence.",
+      "incident_group": "SOMALIA-ABDUL-2024"
     },
     {
       "id": "CT-0114",
@@ -1989,6 +2265,19 @@
       "notes": "Russian-occupied Ukrainian territory; the UN described defects in the occupation proceedings."
     },
     {
+      "id": "CT-0299",
+      "country": "Vietnam",
+      "date": "2024-08",
+      "place": "Central Highlands",
+      "category": "Arrest; religious freedom advocacy",
+      "title": "Montagnard Christian Y Po Mlo imprisoned",
+      "published_account": "USCIRF reported that Vietnamese authorities arrested the Montagnard Christian Y Po Mlo in August 2024, later sentencing him to eleven years on terrorism and national-unity charges.",
+      "reported_actor": "Vietnamese police and courts",
+      "publisher": "US Commission on International Religious Freedom",
+      "source_url": "https://www.uscirf.gov/religious-prisoners-conscience/forb-victims-database/y-po-mlo",
+      "notes": "USCIRF describes the case as religious-freedom repression; government charges must not be represented as independently proven."
+    },
+    {
       "id": "CT-0115",
       "date": "2024-07-29",
       "country": "India",
@@ -2000,6 +2289,19 @@
       "publisher": "South Asia Justice Campaign",
       "source_url": "https://southasiajusticecampaign.org/wp-content/uploads/2024/09/IPT_2024-4_Arrests-Conversion.pdf",
       "incident_group": "INDIA-2024-TRACKER"
+    },
+    {
+      "id": "CT-0315",
+      "country": "Laos",
+      "date": "2024-07-23",
+      "place": "Oudomxay province",
+      "category": "Killing of pastor",
+      "title": "Pastor Thongkham Philavanh fatally shot",
+      "published_account": "CSW and International Christian Concern reported that two masked gunmen shot Protestant Pastor Thongkham Philavanh near his home, and he died after being taken to hospital.",
+      "reported_actor": "Unidentified masked gunmen",
+      "publisher": "Christian Solidarity Worldwide",
+      "source_url": "https://www.csw.org.uk/reports/general-briefing-laos-6900/",
+      "notes": "No arrests had been reported as of the CSW briefing; motive remains unresolved."
     },
     {
       "id": "CT-0116",
@@ -2041,6 +2343,19 @@
       "media_type": "News images",
       "media_url": "https://www.abc.net.au/news/2024-06-25/death-toll-rises-to-20-after-gunmen-attack-russia-dagestan/104017082",
       "media_note": "Reuters and agency event imagery"
+    },
+    {
+      "id": "CT-0314",
+      "country": "Laos",
+      "date": "2024-06-22",
+      "place": "Tahae, Khammouane province",
+      "category": "Detention of Christian worshippers",
+      "title": "Pastor Mum and five congregants detained after home service",
+      "published_account": "CSW reported a village chief ordered six Christians detained after a private service. They were held without charge for more than a month and released in July.",
+      "reported_actor": "Village chief and local law-enforcement officials",
+      "publisher": "Christian Solidarity Worldwide",
+      "source_url": "https://www.csw.org.uk/reports/general-briefing-laos-6900/",
+      "notes": "Allegations attributed to local advocates and CSW; release reported on 25 July."
     },
     {
       "id": "CT-0119",
@@ -2088,6 +2403,19 @@
       "notes": "Gang attack; source does not establish religious motive."
     },
     {
+      "id": "CT-0297",
+      "country": "Vietnam",
+      "date": "2024-05-10",
+      "place": "Gia Lai province",
+      "category": "Arrest of Christian deacon; religious restrictions",
+      "title": "Montagnard deacon Ro Cham Grong detained",
+      "published_account": "USCIRF recorded the arrest of Dega Protestant Church deacon Ro Cham Grong, later sentenced to seven years in March 2025. USCIRF described the state campaign as directed at the group's Christian religious activity.",
+      "reported_actor": "Vietnamese security authorities",
+      "publisher": "US Commission on International Religious Freedom",
+      "source_url": "https://www.uscirf.gov/religious-prisoners-conscience/forb-victims-database/ro-cham-grong",
+      "notes": "Arrest date recorded; no precise detention-site coordinates supplied."
+    },
+    {
       "id": "CT-0121",
       "date": "2024-05-05",
       "country": "India",
@@ -2099,6 +2427,32 @@
       "publisher": "South Asia Justice Campaign",
       "source_url": "https://southasiajusticecampaign.org/wp-content/uploads/2024/09/IPT_2024-4_Arrests-Conversion.pdf",
       "incident_group": "INDIA-2024-TRACKER"
+    },
+    {
+      "id": "CT-0345",
+      "country": "Somalia",
+      "date": "2024-05-05",
+      "place": "Near Kismayo, Lower Juba",
+      "category": "Assault against Christian convert",
+      "title": "Convert Mohammad Abdul reportedly assaulted by relatives",
+      "published_account": "European Union Agency for Asylum summarised reports that relatives attacked Christian convert Mohammad Abdul after he changed religion, and separated him from his family.",
+      "reported_actor": "Relatives, according to asylum-country evidence report",
+      "publisher": "European Union Agency for Asylum",
+      "source_url": "https://www.euaa.europa.eu/coi/somalia/2025/country-focus/13-individuals-contravening-sharia-and-customary-lawstenets/132-individuals-contravening-religious-and-customary-tenets-elsewhere-somalia",
+      "notes": "Reported from faith-based and country-of-origin sources; personal details should not be expanded."
+    },
+    {
+      "id": "CT-0344",
+      "country": "South Sudan",
+      "date": "2024-04-27",
+      "place": "Tambura County, Western Equatoria",
+      "category": "Kidnapping and killing of Catholic priest",
+      "title": "Father Luke Yugue and driver murdered after abduction",
+      "published_account": "Sudans Post reported Father Luke Yugue and a motorcycle taxi driver were found dead after being kidnapped while travelling between Nagero and Tambura.",
+      "reported_actor": "Unidentified kidnappers; police investigation reported",
+      "publisher": "Sudans Post",
+      "source_url": "https://www.sudanspost.com/catholic-priest-and-driver-found-murdered-after-kidnapping-in-tambura-county/",
+      "notes": "No evidence in the cited report establishing anti-Christian motive."
     },
     {
       "id": "CT-0122",
@@ -2153,6 +2507,19 @@
       "notes": "ABC follow-up in February 2026 covered the suspect's schizophrenia diagnosis and court assessment. Motive and criminal responsibility remain for proceedings to determine."
     },
     {
+      "id": "CT-0356",
+      "country": "Azerbaijan",
+      "date": "2024-04",
+      "place": "Shusha (Shushi), Nagorno-Karabakh",
+      "category": "Demolition of Armenian Apostolic church",
+      "title": "St John the Baptist Church demolished in Shusha",
+      "published_account": "Cornell's Caucasus Heritage Watch reported satellite evidence showing St Hovhannes Mkrtich Church, also known as Kanach Zham, had been demolished by April 2024.",
+      "reported_actor": "Responsibility for demolition not conclusively identified by satellite images",
+      "publisher": "Caucasus Heritage Watch (Cornell and Purdue)",
+      "source_url": "https://caucasusheritage.cornell.edu/?page_id=2427",
+      "notes": "The researchers verified demolition, but motives and individual perpetrators require separate evidence."
+    },
+    {
       "id": "CT-0261",
       "date": "2024-03-13",
       "country": "Ukraine",
@@ -2197,6 +2564,32 @@
       "notes": "Russian-occupied Ukrainian territory; attributed death-in-custody report."
     },
     {
+      "id": "CT-0303",
+      "country": "Iran",
+      "date": "2024-02-13",
+      "place": "Tehran",
+      "category": "Arrest; criminalisation of conversion",
+      "title": "Iranian Christian convert Laleh Saati imprisoned",
+      "published_account": "CSW reported that Iranian authorities arrested Christian convert Laleh Saati and questioned her about baptism and faith activities overseas. She received a two-year sentence in March 2024 and was later released.",
+      "reported_actor": "Iranian intelligence and judiciary",
+      "publisher": "Christian Solidarity Worldwide",
+      "source_url": "https://www.csw.org.uk/2025/09/12/prayer/6607/article.htm",
+      "notes": "Published as an advocacy report; the alleged national-security offence was linked to her Christian practice."
+    },
+    {
+      "id": "CT-0313",
+      "country": "Laos",
+      "date": "2024-02",
+      "place": "Kaleum Vangke, Savannakhet province",
+      "category": "Church demolition; village orders",
+      "title": "Protestant church destroyed on village elder's orders",
+      "published_account": "CSW reported that a Protestant church was destroyed in Kaleum Vangke village in February 2024 following instructions from a local elder despite regulations authorising worship.",
+      "reported_actor": "Village elder according to CSW",
+      "publisher": "Christian Solidarity Worldwide",
+      "source_url": "https://www.csw.org.uk/reports/general-briefing-laos-6900/",
+      "notes": "Only month provided by source."
+    },
+    {
       "id": "CT-0124",
       "date": "2024-01-28",
       "country": "Türkiye",
@@ -2212,6 +2605,19 @@
       "media_note": "AP article describes security footage; rights/availability to check"
     },
     {
+      "id": "CT-0318",
+      "country": "Sudan",
+      "date": "2024-01-12",
+      "place": "Wad Madani, Gezira",
+      "category": "Arson against church",
+      "title": "Wad Madani Evangelical Church burned",
+      "published_account": "CSW reported that Rapid Support Forces members set fire to the Evangelical Church, one of Gezira's oldest churches, in January 2024.",
+      "reported_actor": "Rapid Support Forces members, according to CSW",
+      "publisher": "Christian Solidarity Worldwide",
+      "source_url": "https://www.csw.org.uk/reports/briefing-attacks-on-places-of-worship-6662/",
+      "notes": "The nearby Greek church reportedly burned a week later; those events should not be merged as one location."
+    },
+    {
       "id": "CT-0262",
       "date": "2024-01-09",
       "country": "Ukraine",
@@ -2223,6 +2629,32 @@
       "publisher": "NGO statement lodged with UN Human Rights Council",
       "source_url": "https://documents.un.org/api/symbol/access?l=en&s=A%2FHRC%2F55%2FNGO%2F147&t=pdf",
       "notes": "Ukrainian government-controlled territory; allegations published as an NGO communication. UN document hosting does not constitute UN verification."
+    },
+    {
+      "id": "CT-0310",
+      "country": "Myanmar",
+      "date": "2024-01-07",
+      "place": "Kanan, Sagaing region",
+      "category": "Airstrike; deaths at Christian gathering",
+      "title": "Seventeen civilians killed in airstrikes near Baptist church",
+      "published_account": "Amnesty International investigated airstrikes near St Peter Baptist Church during a Sunday gathering, reporting 17 deaths including nine children, and damage to the church and surrounding homes.",
+      "reported_actor": "Myanmar armed forces, according to Amnesty's investigation",
+      "publisher": "Amnesty International",
+      "source_url": "https://www.amnesty.org/en/latest/news/2024/02/myanmar-military-air-strikes-that-killed-17-civilians-must-be-investigated-as-war-crimes/",
+      "notes": "The evidence supports an attack in a Christian gathering area, not necessarily proof that religious affiliation motivated the strike."
+    },
+    {
+      "id": "CT-0357",
+      "country": "Azerbaijan",
+      "date": "2024",
+      "place": "Tandzatap, Zangilan district",
+      "category": "Destruction of Armenian Christian heritage",
+      "title": "Tandzatap church demolished during 2023-2024 period",
+      "published_account": "Monument Watch cited satellite analysis showing the church in Tandzatap was removed between October 2023 and April 2024 in territory under Azerbaijani control.",
+      "reported_actor": "Specific demolition personnel unidentified; Azerbaijan exercised territorial control",
+      "publisher": "Monument Watch / Caucasus Heritage Watch",
+      "source_url": "https://monumentwatch.org/en/alerts/azerbaijan-destroyed-the-church-of-tandzatap/",
+      "notes": "Source attributes destruction to Azerbaijani forces, but satellite images alone cannot establish intent; year precision."
     },
     {
       "id": "CT-0125",
@@ -2240,6 +2672,19 @@
       "notes": "One coordinated regional wave; causes and religious motive differently characterised by sources."
     },
     {
+      "id": "CT-0311",
+      "country": "Myanmar",
+      "date": "2023-11-26",
+      "place": "Loikaw, Kayah State",
+      "category": "Cathedral airstrike; displacement",
+      "title": "Christ the King Cathedral pastoral centre bombed in Loikaw",
+      "published_account": "A human-rights NGO submission circulated at the UN reported a Myanmar military bomb struck the pastoral centre of Christ the King Cathedral, forcing the bishop and sheltering civilians to leave.",
+      "reported_actor": "Myanmar military, as alleged in NGO submission",
+      "publisher": "NGO statement to UN Human Rights Council",
+      "source_url": "https://documents.un.org/access.nsf/get?DS=A%2FHRC%2F55%2FNGO%2F132&Lang=E&Open=",
+      "notes": "NGO submission, not a formal UN fact-finding conclusion."
+    },
+    {
       "id": "CT-0263",
       "date": "2023-11-20",
       "country": "Ukraine",
@@ -2251,6 +2696,45 @@
       "publisher": "US Department of State",
       "source_url": "https://2021-2025.state.gov/reports/2023-report-on-international-religious-freedom/ukraine/",
       "notes": "Ukrainian government-controlled territory; both rival accounts are preserved; property affiliation was disputed."
+    },
+    {
+      "id": "CT-0317",
+      "country": "Sudan",
+      "date": "2023-11-01",
+      "place": "Omdurman",
+      "category": "Shelling; church destruction",
+      "title": "Major Episcopal and Evangelical church destroyed by shelling",
+      "published_account": "CSW reported Sudanese Armed Forces shelling destroyed a large church shared by Episcopal and Evangelical congregations in Omdurman.",
+      "reported_actor": "Sudanese Armed Forces, as attributed by CSW",
+      "publisher": "Christian Solidarity Worldwide",
+      "source_url": "https://www.csw.org.uk/reports/briefing-attacks-on-places-of-worship-6662/",
+      "notes": "Conflict event; specifically anti-Christian intent not independently established."
+    },
+    {
+      "id": "CT-0294",
+      "country": "Algeria",
+      "date": "2023-11",
+      "place": "Tizi Ghenif, Tizi Ouzou",
+      "category": "Prosecution; religious literature",
+      "title": "Five Protestant church members sentenced over unauthorised worship",
+      "published_account": "The US State Department reported that a court imposed prison sentences and fines on five members of the Tizi Ghenif church for unauthorised worship and preparing religious publications. Appeals were pending.",
+      "reported_actor": "Algerian judicial authorities",
+      "publisher": "US Department of State",
+      "source_url": "https://2021-2025.state.gov/reports/2023-report-on-international-religious-freedom/algeria/",
+      "notes": "Convictions were subject to appeal; the government's legal rationale was lack of authorisation."
+    },
+    {
+      "id": "CT-0349",
+      "country": "Palestinian territories",
+      "date": "2023-10-19",
+      "place": "Gaza City",
+      "category": "Church compound struck; civilian deaths",
+      "title": "Saint Porphyrius church compound damaged in airstrike",
+      "published_account": "AFP documented that the Orthodox church compound in Gaza City was damaged by an Israeli airstrike on 19 October 2023, correcting false earlier claims that it had already been destroyed.",
+      "reported_actor": "Israeli military airstrike; targeting intent not established",
+      "publisher": "Agence France-Presse Fact Check",
+      "source_url": "https://factcheck.afp.com/doc.afp.com.33XW7MV",
+      "notes": "Site was damaged rather than entirely destroyed; do not assume a religion-based targeting motive."
     },
     {
       "id": "CT-0274",
@@ -2279,6 +2763,46 @@
       "notes": "Month as reported; Muslim residents also reportedly fled in solidarity."
     },
     {
+      "id": "CT-0295",
+      "country": "Algeria",
+      "date": "2023-10",
+      "place": "Ouacif, Tizi Ouzou",
+      "category": "Prosecution; worship restrictions",
+      "title": "Pastor Allahoum sentenced for operating a church",
+      "published_account": "The US State Department reported an October 2023 two-month prison sentence and fine against a pastor associated with a Ouacif church for operating a place of worship without authorisation.",
+      "reported_actor": "Algerian judicial authorities",
+      "publisher": "US Department of State",
+      "source_url": "https://2021-2025.state.gov/reports/2023-report-on-international-religious-freedom/algeria/",
+      "notes": "The pastor appealed the judgment."
+    },
+    {
+      "id": "CT-0326",
+      "country": "Nepal",
+      "date": "2023-10",
+      "place": "Pokhara",
+      "category": "Prosecution; conversion allegation",
+      "title": "Pastor Keshav Raj Acharya loses appeal in conversion case",
+      "published_account": "International Christian Concern reported an appellate court upheld a one-year prison sentence against Pastor Keshav Raj Acharya following disputed allegations of coercive conversion.",
+      "reported_actor": "Nepalese courts",
+      "publisher": "International Christian Concern",
+      "source_url": "https://persecution.org/2023/10/10/nepalese-pastor-denied-appeal-faces-one-year-in-prison-for-alleged-forced-conversions/",
+      "notes": "Date is month of appeal outcome; defendant contested the claim. This is an appeal milestone, not a new physical attack."
+    },
+    {
+      "id": "CT-0325",
+      "country": "Nepal",
+      "date": "2023-09-04",
+      "place": "Nawalparasi, Lumbini",
+      "category": "Assault on Christian pastor",
+      "title": "Pastor Bhim Tamang attacked during home visit",
+      "published_account": "Voice of the Martyrs reported that Pastor Bhim Tamang was assaulted, his Bible burned and black paint smeared on his face after visiting a Christian family.",
+      "reported_actor": "Local mob, as described by church advocacy group",
+      "publisher": "The Voice of the Martyrs",
+      "source_url": "https://www.persecution.com/stories/pastor-attacked-by-hindu-radicals/",
+      "notes": "Source is a church advocacy account, and this may overlap the broader late-August campaign.",
+      "incident_group": "NEPAL-LUMBINI-2023"
+    },
+    {
       "id": "CT-0171",
       "date": "2023-09",
       "country": "Australia",
@@ -2290,6 +2814,20 @@
       "publisher": "The Catholic Weekly",
       "source_url": "https://catholicweekly.com.au/marian-statue-defaced/",
       "notes": "Source gives only year or month. No exact day has been inferred."
+    },
+    {
+      "id": "CT-0324",
+      "country": "Nepal",
+      "date": "2023-08-30",
+      "place": "West Nawalparasi, Lumbini",
+      "category": "Church vandalism; mob violence",
+      "title": "Four churches vandalised amid religious tensions",
+      "published_account": "The US Department of State reported a self-described Hindu nationalist group damaged four churches in West Nawalparasi and that nearby pastors were assaulted the following day.",
+      "reported_actor": "Local mob described as Hindu nationalist in reporting",
+      "publisher": "US Department of State via ecoi.net",
+      "source_url": "https://www.ecoi.net/en/document/2111928.html",
+      "notes": "Event group includes several churches, represented once to avoid counting every building as a separate incident.",
+      "incident_group": "NEPAL-LUMBINI-2023"
     },
     {
       "id": "CT-0127",
@@ -2306,6 +2844,34 @@
       "media_type": "Photographs and video",
       "media_url": "https://www.ksat.com/news/world/2023/08/17/pakistan-arrests-129-muslims-after-mob-attacks-churches-and-homes-of-minority-christians/",
       "media_note": "Multiple AP incident photographs, check licences"
+    },
+    {
+      "id": "CT-0309",
+      "country": "Myanmar",
+      "date": "2023-08-14",
+      "place": "Khuafo, Thantlang township, Chin State",
+      "category": "Airstrike; Baptist church damage",
+      "title": "Khuafo Baptist Church damaged in bombardment",
+      "published_account": "Myanmar Witness and Radio Free Asia documented reported airstrike damage at Khuafo Baptist Church and nearby homes on 14 August 2023. Investigators geolocated footage but could not independently date all damage.",
+      "reported_actor": "Myanmar Air Force, as alleged by local residents",
+      "publisher": "Centre for Information Resilience - Myanmar Witness",
+      "source_url": "https://www.info-res.org/myanmar-witness/reports/conflict-stricken-churches/",
+      "notes": "The report distinguishes the claimed attack date from independently geolocated imagery.",
+      "incident_group": "MYANMAR-CHIN-AUG2023"
+    },
+    {
+      "id": "CT-0308",
+      "country": "Myanmar",
+      "date": "2023-08-12",
+      "place": "Ramthlo, Falam township, Chin State",
+      "category": "Airstrike; Baptist church destruction",
+      "title": "Ramthlo Baptist Church destroyed in reported military airstrike",
+      "published_account": "Radio Free Asia reported a Myanmar military airstrike destroyed the Baptist church at Ramthlo and injured seven civilians. Myanmar Witness independently geolocated damage evidence.",
+      "reported_actor": "Myanmar military, as attributed by residents and researchers",
+      "publisher": "Radio Free Asia",
+      "source_url": "https://www.rfa.org/english/news/myanmar/chin-churches-bombed-08152023160053.html",
+      "notes": "Airstrike attribution relies on residents and investigative analysis; no independent finding of specifically anti-Christian intent.",
+      "incident_group": "MYANMAR-CHIN-AUG2023"
     },
     {
       "id": "CT-0275",
@@ -2426,6 +2992,19 @@
       "source_url": "https://2021-2025.state.gov/reports/2023-report-on-international-religious-freedom/burkina-faso/"
     },
     {
+      "id": "CT-0298",
+      "country": "Vietnam",
+      "date": "2023-05-18",
+      "place": "Phu Yen province",
+      "category": "Arrest; private Christian worship",
+      "title": "Nay Y Blang imprisoned over unregistered home prayer meetings",
+      "published_account": "USCIRF documented the arrest of Christian congregant Nay Y Blang over meetings of an unregistered Evangelical church, followed by a January 2024 sentence of four years and six months.",
+      "reported_actor": "Vietnamese police and Phu Yen provincial court",
+      "publisher": "US Commission on International Religious Freedom",
+      "source_url": "https://www.uscirf.gov/religious-prisoners-conscience/forb-victims-database/nay-y-blang",
+      "notes": "Authorities invoked public-order or subversion charges; USCIRF characterised the activity as peaceful religious worship."
+    },
+    {
       "id": "CT-0130",
       "date": "2023-05-15",
       "country": "Burkina Faso",
@@ -2454,6 +3033,19 @@
       "media_url": "https://www.hrw.org/news/2023/06/30/ethnic-violence-spirals-indias-northeastern-manipur-state",
       "media_note": "HRW uses AP/Sipa photo of burnt homes",
       "notes": "Aggregate destruction count; not 253 individual site entries."
+    },
+    {
+      "id": "CT-0316",
+      "country": "Sudan",
+      "date": "2023-04-17",
+      "place": "Khartoum",
+      "category": "Church seizure; assault; displacement",
+      "title": "Anglican cathedral seized by armed fighters",
+      "published_account": "CSW reported suspected Rapid Support Forces fighters occupied the Episcopal cathedral compound and forcibly expelled people sheltering there, including the archbishop and family.",
+      "reported_actor": "Suspected Rapid Support Forces fighters",
+      "publisher": "Christian Solidarity Worldwide",
+      "source_url": "https://www.csw.org.uk/reports/briefing-attacks-on-places-of-worship-6662/",
+      "notes": "CSW says responsibility was suspected, not judicially established."
     },
     {
       "id": "CT-0264",
@@ -2548,6 +3140,19 @@
       "source_url": "https://www.uscirf.gov/religious-prisoners-conscience/forb-victims-database/rolando-alvarez"
     },
     {
+      "id": "CT-0348",
+      "country": "Israel",
+      "date": "2023-02-02",
+      "place": "Old City, Jerusalem",
+      "category": "Church desecration; vandalism of Jesus statue",
+      "title": "Statue of Jesus broken at Church of the Flagellation",
+      "published_account": "Associated Press reported a visitor was arrested after allegedly pulling down and breaking a statue of Jesus inside the Church of the Flagellation.",
+      "reported_actor": "Individual tourist arrested by Israeli police",
+      "publisher": "Associated Press",
+      "source_url": "https://apnews.com/article/f94fe8a9f865d7fd830b4b67cb5664d9",
+      "notes": "Motive and mental health assessment were not definitively resolved in the cited account."
+    },
+    {
       "id": "CT-0278",
       "date": "2023-01-26",
       "country": "Ukraine",
@@ -2573,6 +3178,19 @@
       "source_url": "https://www.abc.net.au/news/2023-01-19/wesley-uniting-church-broken-hill-trashed-by-vandals/101869672"
     },
     {
+      "id": "CT-0347",
+      "country": "Israel",
+      "date": "2023-01-03",
+      "place": "Mount Zion, Jerusalem",
+      "category": "Vandalism of Christian graves",
+      "title": "Protestant cemetery tombstones broken in Jerusalem",
+      "published_account": "Associated Press reported vandals smashed and toppled dozens of graves at Mount Zion's historic Protestant cemetery. Police investigated and the foreign ministry condemned the damage.",
+      "reported_actor": "Two suspects charged, according to later Israeli police reporting",
+      "publisher": "Associated Press via Bay News 9",
+      "source_url": "https://baynews9.com/fl/tampa/ap-online/2023/01/04/christian-graves-desecrated-in-historic-jerusalem-cemetery",
+      "notes": "Location in disputed Jerusalem; anti-Christian motive alleged by church officials."
+    },
+    {
       "id": "CT-0245",
       "date": "2023-01",
       "country": "Eritrea",
@@ -2584,6 +3202,19 @@
       "publisher": "Human Rights Watch",
       "source_url": "https://www.hrw.org/world-report/2024/country-chapters/eritrea",
       "notes": "Account and attribution are according to the cited publisher; incident categorisation does not independently determine perpetrator identity or motive."
+    },
+    {
+      "id": "CT-0296",
+      "country": "Algeria",
+      "date": "2023-01",
+      "place": "Larbaa Nath Irathen, Tizi Ouzou",
+      "category": "Church closure; government pressure",
+      "title": "Methodist congregation closes after official pressure",
+      "published_account": "The US State Department reported that United Methodist Church leaders closed the church in Larbaa Nath Irathen in January 2023 after interrogation of its pastor and official pressure.",
+      "reported_actor": "Algerian provincial and religious authorities",
+      "publisher": "US Department of State",
+      "source_url": "https://2021-2025.state.gov/reports/2023-report-on-international-religious-freedom/algeria/",
+      "notes": "Government officials cited registration and building compliance; church leaders described significant pressure."
     },
     {
       "id": "CT-0268",
@@ -2598,6 +3229,20 @@
       "source_url": "https://2021-2025.state.gov/reports/2023-report-on-international-religious-freedom/ukraine/",
       "second_source_url": "https://ukraine.ohchr.org/en/update-human-rights-situation-ukraine-1-february-2023-30-april-2023-EN",
       "notes": "Ukrainian government-controlled territory; a group of policy measures across regions, not one nationwide enforcement action."
+    },
+    {
+      "id": "CT-0304",
+      "country": "Iran",
+      "date": "2022-12-26",
+      "place": "Anzali, Gilan",
+      "category": "Arrest of Christian clergy",
+      "title": "Pastor Matthias Haghnejad and church associates arrested",
+      "published_account": "CSW reported that Pastor Matthias Haghnejad was arrested on 26 December 2022 during furlough, alongside two Christian associates, before his wife was detained in January 2023.",
+      "reported_actor": "Iranian security authorities",
+      "publisher": "Christian Solidarity Worldwide",
+      "source_url": "https://www.csw.org.uk/2023/01/04/press/5901/article.htm",
+      "notes": "One 26 December arrest group; the wife's January detention is follow-up in the same incident group.",
+      "incident_group": "IRAN-GILAN-2022"
     },
     {
       "id": "CT-0269",
@@ -2627,6 +3272,32 @@
       "notes": "Russian-occupied Ukrainian territory; exact place within the region not supplied in cited UN paragraph."
     },
     {
+      "id": "CT-0353",
+      "country": "Mali",
+      "date": "2022-11",
+      "place": "Bamako",
+      "category": "Abduction of missionary priest",
+      "title": "Missionary Father Hans-Joachim Lohre abducted",
+      "published_account": "Vatican News reported the German missionary disappeared while travelling to celebrate Mass in Bamako in 2022 and was freed in November 2023; security sources attributed the abduction to JNIM.",
+      "reported_actor": "Suspected al-Qaeda-linked JNIM militants",
+      "publisher": "Vatican News",
+      "source_url": "https://www.vaticannews.va/en/world/news/2023-11/mali-german-white-father-hans-joachim-lohre-release.html",
+      "notes": "Month-only event date; militant responsibility was reported by security sources, not a court."
+    },
+    {
+      "id": "CT-0312",
+      "country": "Laos",
+      "date": "2022-10-20",
+      "place": "Khammouane province",
+      "category": "Abduction; killing of pastor",
+      "title": "Pastor Sy Sengmany found killed after disappearance",
+      "published_account": "CSW documented the disappearance and later discovery of Pastor Sy Sengmany's body with reported signs of torture; authorities had not publicly identified perpetrators.",
+      "reported_actor": "Unknown assailants; investigation by Lao police",
+      "publisher": "Christian Solidarity Worldwide",
+      "source_url": "https://www.csw.org.uk/reports/general-briefing-laos-6900/",
+      "notes": "Date is disappearance, not a confirmed date of death. No independent determination of motive or perpetrators."
+    },
+    {
       "id": "CT-0246",
       "date": "2022-10",
       "country": "Eritrea",
@@ -2652,6 +3323,19 @@
       "source_url": "https://catholicweekly.com.au/heartache-as-vandals-target-historic-church/"
     },
     {
+      "id": "CT-0339",
+      "country": "Cameroon",
+      "date": "2022-09-16",
+      "place": "Nchang, Manyu division",
+      "category": "Church arson; mass clerical kidnapping",
+      "title": "St Mary's Catholic Church burned and nine people abducted",
+      "published_account": "Vatican News reported armed men set fire to St Mary's Catholic church in Nchang and kidnapped five priests, a religious sister and three other people.",
+      "reported_actor": "Unidentified armed men; separatist involvement reported but not established",
+      "publisher": "Vatican News",
+      "source_url": "https://www.vaticannews.va/en/church/news/2022-09/bishops-condemn-attack-and-abduction-in-a-church-in-cameroon.html",
+      "notes": "Attack occurred amid Anglophone conflict; the kidnappers' demand and purpose remained disputed."
+    },
+    {
       "id": "CT-0247",
       "date": "2022-09-04",
       "country": "Eritrea",
@@ -2663,6 +3347,19 @@
       "publisher": "Human Rights Watch",
       "source_url": "https://www.hrw.org/news/2023/02/09/eritrea-crackdown-draft-evaders-families",
       "notes": "Account and attribution are according to the cited publisher; incident categorisation does not independently determine perpetrator identity or motive."
+    },
+    {
+      "id": "CT-0355",
+      "country": "Belarus",
+      "date": "2022-09",
+      "place": "Minsk",
+      "category": "Church closure; restrictions on worship",
+      "title": "Red Church closed after suspicious minor fire",
+      "published_account": "Forum 18 reported authorities closed Saints Simon and Helena Church after a small fire in September 2022. The Catholic community continued campaigning for its return to worship.",
+      "reported_actor": "Minsk municipal authorities and state property administration",
+      "publisher": "Forum 18",
+      "source_url": "https://www.forum18.org/archive.php?article_id=3034",
+      "notes": "Official rationale included fire safety and renovations; the congregation contested the prolonged loss of access."
     },
     {
       "id": "CT-0133",
@@ -2781,6 +3478,19 @@
       "source_url": "https://www.abc.net.au/news/2021-12-08/canberra-church-break-in-police-st-thomas-aquinas-vandalism/100682058"
     },
     {
+      "id": "CT-0340",
+      "country": "Cameroon",
+      "date": "2021-08-29",
+      "place": "Mamfe, South West region",
+      "category": "Abduction of priest",
+      "title": "Mamfe vicar-general Julius Agbortoko abducted",
+      "published_account": "Vatican News reported the Mamfe vicar-general was abducted by men describing themselves as separatist fighters and that a ransom demand was made.",
+      "reported_actor": "Men presenting themselves as separatist fighters",
+      "publisher": "Vatican News",
+      "source_url": "https://www.vaticannews.va/en/church/news/2021-08/cameroon-kidnap-priest-mamfe-msgr-julius-agbor.html",
+      "notes": "Ransom and security context explicitly documented; religious identity alone does not prove religious motive."
+    },
+    {
       "id": "CT-0137",
       "date": "2021-08",
       "country": "Afghanistan",
@@ -2796,6 +3506,34 @@
       "notes": "Country-wide reported pattern, not one discrete attack."
     },
     {
+      "id": "CT-0334",
+      "country": "Canada",
+      "date": "2021-06-21",
+      "place": "Penticton Indian Band reserve, British Columbia",
+      "category": "Church fire; suspected arson",
+      "title": "Sacred Heart Catholic Church destroyed by suspicious fire",
+      "published_account": "The Canadian Press reported RCMP found Sacred Heart Catholic Church burning and treated the incident as suspicious. Investigators did not establish a motive in the cited report.",
+      "reported_actor": "Unidentified suspect or cause; RCMP investigation",
+      "publisher": "The Canadian Press via CityNews",
+      "source_url": "https://ottawa.citynews.ca/2021/06/21/separate-fires-destroy-two-catholic-churches-in-southern-british-columbia/",
+      "notes": "The church stood on a First Nations reserve. No religiously motivated arson finding should be inferred.",
+      "incident_group": "CANADA-CHURCHFIRE-2021"
+    },
+    {
+      "id": "CT-0335",
+      "country": "Canada",
+      "date": "2021-06-21",
+      "place": "Osoyoos Indian Band reserve, British Columbia",
+      "category": "Church fire; suspected arson",
+      "title": "St Gregory's Catholic Church destroyed by suspicious fire",
+      "published_account": "The Canadian Press reported St Gregory's Church was destroyed hours after another Catholic church fire in the region. RCMP investigated the two fires as suspicious.",
+      "reported_actor": "Unidentified suspect or cause; RCMP investigation",
+      "publisher": "The Canadian Press via CityNews",
+      "source_url": "https://ottawa.citynews.ca/2021/06/21/separate-fires-destroy-two-catholic-churches-in-southern-british-columbia/",
+      "notes": "No definitive motive or causal connection between the two sites was established.",
+      "incident_group": "CANADA-CHURCHFIRE-2021"
+    },
+    {
       "id": "CT-0138",
       "date": "2021-03-28",
       "country": "Indonesia",
@@ -2809,6 +3547,19 @@
       "media_type": "Photograph",
       "media_url": "https://www.thejakartapost.com/news/2021/03/28/20-injured-in-palm-sunday-suicide-bombing-at-makassar-cathedral",
       "media_note": "Forensic scene photograph credited AFP"
+    },
+    {
+      "id": "CT-0333",
+      "country": "Uganda",
+      "date": "2020-12-07",
+      "place": "Dolwe Island, Mayuge district",
+      "category": "Killing of Christian convert",
+      "title": "Former imam Yusuf Kintu reportedly killed following conversion",
+      "published_account": "International Christian Concern cited a local pastor saying former imam Yusuf Kintu was killed by a mob a week after he became a Christian.",
+      "reported_actor": "Local mob, according to religious witnesses",
+      "publisher": "International Christian Concern",
+      "source_url": "https://persecution.org/2021/01/11/christian-convert-in-uganda-killed/",
+      "notes": "Religious advocacy source; precise judicial findings and perpetrators unavailable."
     },
     {
       "id": "CT-0139",
@@ -3181,6 +3932,19 @@
       "source_url": "https://2017-2021.state.gov/reports/2018-report-on-international-religious-freedom/central-african-republic/"
     },
     {
+      "id": "CT-0300",
+      "country": "North Korea",
+      "date": "2018",
+      "place": "North Pyongan province",
+      "category": "Arrest; possession of Bible",
+      "title": "Christian detained for possessing a Bible, case NP-0121",
+      "published_account": "USCIRF recorded Ministry of State Security detention of an anonymised Christian in 2018 for possessing a Bible, with transfer to a political prison camp reportedly intended.",
+      "reported_actor": "Ministry of State Security",
+      "publisher": "US Commission on International Religious Freedom",
+      "source_url": "https://www.uscirf.gov/religious-prisoners-conscience/forb-victims-database/victim-np-0121",
+      "notes": "Identity withheld by USCIRF; year precision only."
+    },
+    {
       "id": "CT-0162",
       "date": "2017-12-17",
       "country": "Pakistan",
@@ -3244,6 +4008,32 @@
       "notes": "Part of coordinated Palm Sunday attacks; death counts differ by update."
     },
     {
+      "id": "CT-0337",
+      "country": "Malaysia",
+      "date": "2017-02-13",
+      "place": "Petaling Jaya, Selangor",
+      "category": "Abduction; enforced disappearance of pastor",
+      "title": "Pastor Raymond Koh abducted in broad daylight",
+      "published_account": "International Christian Concern described Pastor Raymond Koh's abduction and a Malaysian human rights commission finding implicating state agents. A Malaysian court in 2025 ordered government compensation.",
+      "reported_actor": "Abductors disputed: 2019 human rights inquiry implicated state agents; court later found government involvement",
+      "publisher": "International Christian Concern",
+      "source_url": "https://persecution.org/2025/11/06/malaysian-court-orders-government-payment-to-pastor-raymond-kohs-family/",
+      "notes": "Multiple findings evolved over years; do not present early government denials as settled vindication."
+    },
+    {
+      "id": "CT-0352",
+      "country": "Mali",
+      "date": "2017-02-07",
+      "place": "Karangasso, Sikasso",
+      "category": "Kidnapping of Catholic missionary",
+      "title": "Sister Gloria Narvaez abducted by armed militants",
+      "published_account": "Vatican News reported Colombian Franciscan Sister Gloria Cecilia Narvaez was abducted from a mission in southern Mali in 2017 and freed in October 2021 after years of captivity.",
+      "reported_actor": "Jihadist armed group, as described by released hostage and Vatican reporting",
+      "publisher": "Vatican News",
+      "source_url": "https://www.vaticannews.va/en/church/news/2021-10/sr-gloria-abucted-nun-mali-colombia-release.html",
+      "notes": "Kidnapping and later release are one record; precise location name varies by transliteration."
+    },
+    {
       "id": "CT-0248",
       "date": "2017-02",
       "country": "Egypt",
@@ -3269,6 +4059,19 @@
       "source_url": "https://www.hrw.org/news/2016/12/12/egypt-deadly-bombing-coptic-cathedral"
     },
     {
+      "id": "CT-0338",
+      "country": "Malaysia",
+      "date": "2016-11",
+      "place": "Petaling Jaya, Selangor",
+      "category": "Disappearance of Christian pastor and spouse",
+      "title": "Pastor Joshua Hilmy and Ruth Sitepu disappear",
+      "published_account": "International Christian Concern reported a Malaysian human rights commission inquiry found the disappearance of Pastor Joshua Hilmy and his wife Ruth Sitepu involuntary, but did not establish direct abduction by state agents.",
+      "reported_actor": "Unidentified perpetrators; police investigation criticised",
+      "publisher": "International Christian Concern",
+      "source_url": "https://persecution.org/2022/04/23/missing-pastor-and-wife-likely-victims-of-enforced-disappearance/",
+      "notes": "Month last seen only; publisher distinguished this case from Pastor Raymond Koh."
+    },
+    {
       "id": "CT-0249",
       "date": "2016-05",
       "country": "Egypt",
@@ -3280,6 +4083,19 @@
       "publisher": "Human Rights Watch",
       "source_url": "https://www.hrw.org/world-report/2017/country-chapters/egypt",
       "notes": "Account and attribution are according to the cited publisher; incident categorisation does not independently determine perpetrator identity or motive."
+    },
+    {
+      "id": "CT-0351",
+      "country": "Yemen",
+      "date": "2016-03-04",
+      "place": "Aden",
+      "category": "Killing of nuns; attack on Christian care home",
+      "title": "Four Missionaries of Charity sisters murdered in Aden",
+      "published_account": "Agenzia Fides reported armed men attacked a nursing home run by the Missionaries of Charity, killing four nuns along with staff and residents, and that a priest was missing afterward.",
+      "reported_actor": "Unidentified gunmen; no group claimed responsibility at the time",
+      "publisher": "Agenzia Fides",
+      "source_url": "https://www.fides.org/en/news/59563-ASIA_YEMEN_Terrorist_attack_kills_4_Mother_Teresa_Sisters_together_with_helpers_and_elderly_patients_in_care",
+      "notes": "A religiously administered facility was attacked; no authoritative perpetrator finding in the initial report."
     },
     {
       "id": "CT-0185",
@@ -3393,6 +4209,34 @@
       "source_url": "https://www.hrw.org/news/2015/02/16/libya/egypt-murder-egyptians-war-crime"
     },
     {
+      "id": "CT-0343",
+      "country": "Niger",
+      "date": "2015-01-17",
+      "place": "Niamey",
+      "category": "Church burning; looting",
+      "title": "Catholic and Protestant churches looted during riots in Niamey",
+      "published_account": "Agenzia Fides reported widespread burning and looting of Christian churches and religious houses in the capital during protests on 16 and 17 January.",
+      "reported_actor": "Protest mobs",
+      "publisher": "Agenzia Fides",
+      "source_url": "https://fides.org/en/news/37139-AFRICA_NIGER_Churches_and_convents_burned_schools_and_dispensaries_closed",
+      "notes": "Many church buildings attacked in one city-level riot record to avoid artificial inflation.",
+      "incident_group": "NIGER-RIOTS-2015"
+    },
+    {
+      "id": "CT-0342",
+      "country": "Niger",
+      "date": "2015-01-16",
+      "place": "Maradi",
+      "category": "Arson; attacks on churches",
+      "title": "Churches burned in Maradi during Charlie Hebdo protests",
+      "published_account": "Reuters reported protesters set fire to churches in Maradi during widespread riots over the French Charlie Hebdo publication.",
+      "reported_actor": "Protest mobs",
+      "publisher": "Reuters via Yahoo News",
+      "source_url": "https://www.yahoo.com/news/niger-protesters-burn-churches-second-day-charlie-riots-143432674.html",
+      "notes": "Clashes also involved police and secular state targets. Distinct city from Niamey.",
+      "incident_group": "NIGER-RIOTS-2015"
+    },
+    {
       "id": "CT-0251",
       "date": "2014-12-02",
       "country": "Kenya",
@@ -3454,6 +4298,19 @@
       "reported_actor": "Unknown vandals; anti-Ukrainian messages reported",
       "publisher": "ABC News",
       "source_url": "https://www.abc.net.au/news/2014-06-21/swastikas-graffitied-on-side-of-ukranian-church-in-sydney/5540968"
+    },
+    {
+      "id": "CT-0301",
+      "country": "North Korea",
+      "date": "2014",
+      "place": "Musan County, North Hamgyong",
+      "category": "Imprisonment; Christian literature",
+      "title": "Christian sentenced indefinitely after religious pamphlet found",
+      "published_account": "USCIRF documented an anonymised man detained in 2014 for Christian literature, and reported that his family was arrested and he was assigned indefinite confinement in a political prison camp.",
+      "reported_actor": "Ministry of State Security",
+      "publisher": "US Commission on International Religious Freedom",
+      "source_url": "https://www.uscirf.gov/religious-prisoners-conscience/forb-victims-database/victim-np-0136",
+      "notes": "Victim anonymised by publisher; retrospective detention account."
     },
     {
       "id": "CT-0194",
@@ -4007,8 +4864,8 @@
   ],
   "coverage": {
     "date_policy": "The date field accepts YYYY, YYYY-MM and YYYY-MM-DD where sources do not provide an exact day. No day is invented.",
-    "note": "Historical source coverage is selective, including older retrospective reporting.",
+    "note": "Historical source coverage is selective; recent additions prioritise countries previously missing from the archive. Inclusion of an incident does not establish an anti-Christian motive without explicit source evidence.",
     "earliest_record": "1997-02-06",
-    "latest_record": "2026-11-02"
+    "latest_record": "2026-11-06"
   }
 }
