@@ -328,7 +328,7 @@ test('daesh-linked expansion retains 45 distinct sourced report records and hist
  const added=records.filter(r=>Number(r.id.slice(3))>=461&&Number(r.id.slice(3))<=505);
  assert.equal(added.length,45);
  assert.equal(records.length,535);
- assert.equal(new Set(records.map(x=>x.id)).size,505);
+ assert.equal(new Set(records.map(x=>x.id)).size,535);
  assert.equal(new Set(records.map(x=>x.country)).size,91);
  const expected={Iraq:16,Syria:8,Libya:2,Egypt:3,Nigeria:5,'Democratic Republic of the Congo':3,Mozambique:6,Philippines:2};
  for(const [country,count] of Object.entries(expected)){
@@ -353,7 +353,7 @@ test('daesh-linked expansion retains 45 distinct sourced report records and hist
  const geo=JSON.parse(read('public/data/christian-heatmap-places.json'));
  const totals=aggregateIncidentLocations(records,geo);
  assert.equal(totals.reportCount,535);
- assert.equal([...totals.countries.values()].reduce((n,v)=>n+v,0),505);
+ assert.equal([...totals.countries.values()].reduce((n,v)=>n+v,0),535);
  assert.equal(totals.located+totals.withoutLocality,535);
  assert.ok(totals.countries.get('Iraq')>=16);
 });
