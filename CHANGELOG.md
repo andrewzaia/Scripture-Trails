@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.14.0 - 11/11/2026: More attributed Christian persecution reports from Syria, Congo and Nigeria
+
+- Add 18 source-attributed reports of killings, church bombings and destruction, attacks on Catholic health centres, abductions and attacks on Christian communities in Syria, the Democratic Republic of the Congo and Nigeria, increasing the archive to 553 reports across 91 countries and territories.
+- Document the 2016 Qamishli attacks on Assyrian and Syriac Christian gatherings and the 2019 church bombing, with explicit qualifications about disputed or unconfirmed responsibility claims.
+- Expand individual eastern Congo attacks on churches, health centres and Christian civilians from 2020 through 2026, plus two further Nigerian reports involving daesh west africa militants, keeping reported victim details and dates distinct.
+- Preserve all earlier reports and historical releases, update source-driven country heat-map counts, and extend source-integrity and regression testing without reproducing unlicensed third-party images.
+
 ## 1.13.0 - 11/11/2026: Further daesh-linked atrocities and Christian community reports
 
 - Add 30 individually sourced reports of killings, assaults, church destruction and religious intimidation linked or reportedly linked to daesh across Bangladesh, Egypt, Pakistan, Indonesia, Syria, Nigeria, the Democratic Republic of the Congo, Mozambique, Iraq and France, extending the archive to 535 records in 91 countries and territories.
