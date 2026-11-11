@@ -86,7 +86,7 @@ test('incident cards display consistent locally hosted media and the renamed sec
  const first=page.locator('.persecution-case').first();
  const image=first.locator('.persecution-card-media img');
  await expect(image).toBeVisible();
- await expect(image).toHaveAttribute('src',/^\\/assets\\/persecution-media\\/[a-z0-9-]+\\.svg$/);
+ await expect(image).toHaveAttribute('src',/^\/assets\/persecution-media\/[a-z0-9-]+\.svg$/);
  await expect(first.locator('.persecution-card-media figcaption')).toContainText('Not incident photography');
  const loaded=await image.evaluate(img=>img.complete&&img.naturalWidth>0);
  expect(loaded).toBe(true);

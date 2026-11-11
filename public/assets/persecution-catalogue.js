@@ -42,7 +42,7 @@ const date=formatReportDate;
 const artByKind={'Fire and explosions':'fire','Physical violence':'violence','Sacred sites and property':'heritage','Coercion and restrictions':'restrictions','Other reports':'other'};
 export function localReportImage(r){
  const asset=String(r.local_image||'');
- if(/^\\/assets\\/persecution-media\\/[a-z0-9-]+\\.(?:webp|jpg|jpeg|png|svg)$/.test(asset))return asset;
+ if(asset.startsWith('/assets/persecution-media/')&&/^[-a-z0-9.]+$/.test(asset.slice('/assets/persecution-media/'.length))&&['.webp','.jpg','.jpeg','.png','.svg'].some(ext=>asset.endsWith(ext)))return asset;
  return '/assets/persecution-media/'+(artByKind[reportKind(r.category)]||'other')+'.svg';
 }
 function reportIllustration(r){

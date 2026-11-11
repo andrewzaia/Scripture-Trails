@@ -119,13 +119,13 @@ test('Australian and older reports remain filterable and mapped',()=>{
 test('Christian persecution cards use locally hosted, constrained media with honest labelling',()=>{
  const module=read('public/assets/persecution-catalogue.js');
  const html=read('public/index.html');
- assert.match(html,/Christian persecution<\\/button>/);
+ assert.match(html,/Christian persecution<\/button>/);
  assert.match(html,/CHRISTIAN PERSECUTION/);
- assert.match(module,/reportIllustration\\(r\\)/);
- assert.doesNotMatch(module,/\\.innerHTML\\s*=/);
+ assert.match(module,/reportIllustration\(r\)/);
+ assert.doesNotMatch(module,/\.innerHTML\s*=/);
  for(const report of records){
   const src=localReportImage(report);
-  assert.match(src,/^\\/assets\\/persecution-media\\/[a-z0-9-]+\\.(svg|webp|jpg|jpeg|png)$/);
-  assert.ok(read('public'+src).includes('<svg')||/\\.(webp|jpg|jpeg|png)$/.test(src));
+  assert.match(src,/^\/assets\/persecution-media\/[a-z0-9-]+\.(svg|webp|jpg|jpeg|png)$/);
+  assert.ok(read('public'+src).includes('<svg')||/\.(webp|jpg|jpeg|png)$/.test(src));
  }
 });
