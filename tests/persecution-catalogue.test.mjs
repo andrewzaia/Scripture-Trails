@@ -9,7 +9,7 @@ const media=JSON.parse(read('public/data/christian-persecution-media.json')).med
 test('open-ended reporting preserves source attribution, IDs and historical date precision',()=>{
  assert.ok(records.length>=240);
  assert.ok(records.filter(r=>r.country==='Australia').length>=37);
- assert.equal(new Set(records.map(x=>x.id)).size,166);
+ assert.equal(new Set(records.map(x=>x.id)).size,records.length);
  assert.ok(new Set(records.map(x=>x.country)).size>=29);
  assert.ok(records.some(r=>r.date==='1997-02-06'));
  assert.ok(records.some(r=>r.date==='1999'));
