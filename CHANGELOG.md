@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.12.0 - 11/11/2026: daesh-linked attacks and Christian persecution evidence expansion
+
+- Add 45 published, source-attributed reports of daesh and affiliated militant actions across Iraq, Syria, Libya, Egypt, Nigeria, the Democratic Republic of the Congo, Mozambique and the Philippines, extending the archive to 505 reports across 91 countries and territories.
+- Document the expulsion of Mosul Christians, abuses in the Nineveh Plains, seized churches used as detention centres, and the 2015 Assyrian Khabur hostage crisis and executions.
+- Add church and pilgrim attacks, Christian executions and school abductions, preserving differences between investigative findings, reported allegations, claimed responsibility and retrospectively linked militants.
+- Retain the historical catalogue, use lowercase terrorist-group names in editorial records, update the existing report-driven world heat map automatically and extend data regression tests without reproducing unlicensed media.
+
 ## 1.11.0 - 11/11/2026: European and regional report coverage expansion
 
 - Add 25 published, attributed Christian incident reports from seven previously unrepresented countries, extending the catalogue to 460 reports across 91 countries and territories.
