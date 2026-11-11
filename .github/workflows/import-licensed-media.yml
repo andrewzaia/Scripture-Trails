@@ -9,7 +9,7 @@ permissions:
 
 jobs:
   fetch:
-    if: github.event.head_commit.message == 'chore: stage approved licensed media import'
+    if: contains(github.event.head_commit.message, 'import_verified_commons_media')
     runs-on: ubuntu-24.04
     timeout-minutes: 6
     steps:
