@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.10.0 - 11/11/2026: Global report expansion and inclusive source catalogue
+
+- Add 45 source-attributed reports from 14 previously unrepresented countries, growing the archive to 435 report records across 84 countries and territories.
+- Include published allegations regardless of whether independently corroborated, including disputed accounts, clergy prosecutions, church attacks, and reported restrictions on worship and conversion.
+- Expand coverage of Armenia, Central Asia, South America, the Gulf, and Africa, and document a contested Democratic Republic of the Congo report with both its original publication and a follow-up source.
+- Clarify the public source inclusion policy: catalogue counts are published reports, not independently verified attacks or victim totals; expand automatic heat map country coverage and regression checks.
+
 ## 1.9.0 - 11/11/2026: Christian persecution - further geographic coverage and historical cases
 
 - Add 32 attributed reports, extending the Christian persecution catalogue to 390 records across 70 countries and territories, including 12 previously unrepresented countries.
