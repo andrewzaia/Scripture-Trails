@@ -1,4 +1,4 @@
-import {createChristianHeatmap} from "./christian-heatmap.js?v=1.5.0";
+import {createChristianHeatmap} from "./christian-heatmap.js?v=1.6.0";
 // This collection links published accounts without independently adjudicating them.
 const norm=value=>String(value||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
 export function reportKind(category){
@@ -39,7 +39,7 @@ export function formatReportDate(value){
  return input;
 }
 const date=formatReportDate;
-export const PERSECUTION_MEDIA_VERSION='1.5.0';
+export const PERSECUTION_MEDIA_VERSION='1.6.0';
 const artByKind={'Fire and explosions':'fire','Physical violence':'violence','Sacred sites and property':'heritage','Coercion and restrictions':'restrictions','Other reports':'other'};
 export function localReportImage(r){
  const asset=String(r.local_image||'');
@@ -113,8 +113,8 @@ export function createPersecutionCatalogue(root){
   if(!pending){
    status.textContent='Loading reports...';
    pending=Promise.all([
-    fetch('/data/christian-persecution.json?v=1.5.0').then(r=>{if(!r.ok)throw Error('Reports unavailable');return r.json();}),
-    fetch('/data/christian-persecution-media.json?v=1.5.0').then(r=>{if(!r.ok)throw Error('Media unavailable');return r.json();})
+    fetch('/data/christian-persecution.json?v=1.6.0').then(r=>{if(!r.ok)throw Error('Reports unavailable');return r.json();}),
+    fetch('/data/christian-persecution-media.json?v=1.6.0').then(r=>{if(!r.ok)throw Error('Media unavailable');return r.json();})
    ]).then(([a,b])=>{if(!Array.isArray(a.reports)||!Array.isArray(b.media))throw Error('Invalid data');rows=a.reports;media=b.media;initialise();})
     .catch(error=>{pending=null;status.textContent='Catalogue unavailable. Revisit this page to retry.';console.error(error);});
   }
