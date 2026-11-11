@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.5.0 - 11/11/2026: Historical worldwide reports and Australian Christian incident coverage
+
+- Remove the fixed 2016-2026 reporting window and support historical incidents with precise, month-only or year-only dates without inventing calendar days.
+- Add 74 source-attributed reports, including 37 Australian incidents and 37 earlier international events, expanding the archive to 240 records across 29 countries.
+- Extend the interactive world map with approximate Australian, Iraqi and Libyan location coverage; continue to include unresolved locations in their country totals.
+- Expand publisher-hosted media coverage links, improve historical source disclosures and add data-driven regression tests for growing reports and map filters.
+
 ## 1.4.1 - 11/11/2026: Reset the worldwide incident map
 
 - Add a Reset map button beside the world map controls so visitors can return to the global incident overview after selecting a country or locality.

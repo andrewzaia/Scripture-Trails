@@ -424,6 +424,14 @@ The citation register now contains 85 assessments, including 48 of the 115 expla
 
 Batch `connections-20-02` compares twenty further Gospel and Acts narrative pairs (ce096-ce115). It preserves differences in order, names, account details and wording, and distinguishes multiple accounts within Acts from independent corroboration. Mark's composite opening citation and the manna comparison are clarified in the existing register. Only original editorial notes and bibliographic metadata are bundled; publisher text remains external. The browser/accessibility CI milestone remains open until its declared critical flows actually run in CI.
 
+## Christians worldwide incident archive
+
+The Christians worldwide page is an open-ended historical reporting archive, not an exhaustive census. The primary dataset is public/data/christian-persecution.json. There is no fixed first or last year for future additions. Each record includes the publisher's summary and original source URL, as well as attributed responsibility and qualifications when reported. The archive now includes Australian sources and older incidents predating 2016.
+
+Event dates follow the precision in the source: YYYY (year known), YYYY-MM (month known), or YYYY-MM-DD (day known). Do not invent days. New incidents automatically contribute to country heat shading. To show a locality marker, supply an approximate place entry in public/data/christian-heatmap-places.json or explicit locations coordinates. Country-only records remain included in total map counts. Locality coordinates are approximate, not precise attack-site coordinates.
+
+Media index entries are links to third-party publishers, not rights-cleared image copies.
+
 ## Christian incident heat map
 
 The Christians worldwide page at `/?view=christian-persecution` uses a locally hosted, interactive world map. Country shading is calculated directly from the current published incident catalogue and includes all reports, including nationwide and unresolved place descriptions. It is a count of published records, not a rate or a severity measure.

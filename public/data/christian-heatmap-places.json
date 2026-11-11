@@ -3,7 +3,7 @@
     "source": "srestre world-countries-cities-db (dr5hn source), ODbL 1.0",
     "url": "https://github.com/srestre/world-countries-cities-db",
     "license": "ODbL-1.0",
-    "notice": "Locality coordinates are gazetteer centres, not building or attack-site coordinates. This derived location subset is shared under ODbL 1.0."
+    "notice": "Original coordinates use gazetteer centres. Added points are approximate city or regional centres and NOT precise incident sites. Multiple-site records may be represented by one regional point."
   },
   "generated": "2026-11-11",
   "countries": {
@@ -110,6 +110,18 @@
     "Mexico": {
       "iso2": "MX",
       "iso3": "MEX"
+    },
+    "Australia": {
+      "iso2": "AU",
+      "iso3": "AUS"
+    },
+    "Iraq": {
+      "iso2": "IQ",
+      "iso3": "IRQ"
+    },
+    "Libya": {
+      "iso2": "LY",
+      "iso3": "LBY"
     }
   },
   "places": {
@@ -1436,6 +1448,710 @@
           "lat": 39.9626,
           "lon": -76.72774,
           "precision": "city"
+        }
+      ]
+    },
+    "Australia|Rockdale, Sydney": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Rockdale, Sydney",
+          "lat": -33.95,
+          "lon": 151.14,
+          "precision": "approximate local area"
+        }
+      ]
+    },
+    "Australia|Wanguri, Darwin": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Wanguri, Darwin",
+          "lat": -12.38,
+          "lon": 130.87,
+          "precision": "approximate local area"
+        }
+      ]
+    },
+    "Australia|Bendigo, Victoria": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Bendigo, Victoria",
+          "lat": -36.76,
+          "lon": 144.28,
+          "precision": "approximate local area"
+        }
+      ]
+    },
+    "Australia|Wakeley, Sydney": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Wakeley, Sydney",
+          "lat": -33.87,
+          "lon": 150.91,
+          "precision": "approximate local area"
+        }
+      ]
+    },
+    "Australia|Greenacre, Sydney": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Greenacre, Sydney",
+          "lat": -33.91,
+          "lon": 151.06,
+          "precision": "approximate local area"
+        }
+      ]
+    },
+    "Australia|Gladstone, Queensland": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Gladstone, Queensland",
+          "lat": -23.85,
+          "lon": 151.26,
+          "precision": "approximate local area"
+        }
+      ]
+    },
+    "Australia|Tannum Sands, Queensland": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Tannum Sands, Queensland",
+          "lat": -23.95,
+          "lon": 151.37,
+          "precision": "approximate local area"
+        }
+      ]
+    },
+    "Australia|Broken Hill, NSW": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Broken Hill, NSW",
+          "lat": -31.96,
+          "lon": 141.46,
+          "precision": "approximate local area"
+        }
+      ]
+    },
+    "Australia|Goulburn, NSW": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Goulburn, NSW",
+          "lat": -34.75,
+          "lon": 149.72,
+          "precision": "approximate local area"
+        }
+      ]
+    },
+    "Australia|Muswellbrook, NSW": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Muswellbrook, NSW",
+          "lat": -32.27,
+          "lon": 150.89,
+          "precision": "approximate local area"
+        }
+      ]
+    },
+    "Australia|Christies Beach, Adelaide": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Christies Beach, Adelaide",
+          "lat": -35.14,
+          "lon": 138.47,
+          "precision": "approximate local area"
+        }
+      ]
+    },
+    "Australia|Charnwood, Canberra": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Charnwood, Canberra",
+          "lat": -35.2,
+          "lon": 149.04,
+          "precision": "approximate local area"
+        }
+      ]
+    },
+    "Australia|Kingsgrove, Sydney": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Kingsgrove, Sydney",
+          "lat": -33.94,
+          "lon": 151.1,
+          "precision": "approximate local area"
+        }
+      ]
+    },
+    "Australia|Elizabeth Park, Adelaide": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Elizabeth Park, Adelaide",
+          "lat": -34.71,
+          "lon": 138.67,
+          "precision": "approximate local area"
+        }
+      ]
+    },
+    "Australia|Western Sydney, NSW": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Western Sydney, NSW",
+          "lat": -33.8,
+          "lon": 150.95,
+          "precision": "approximate local area"
+        }
+      ]
+    },
+    "Australia|Gosford, NSW": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Gosford, NSW",
+          "lat": -33.43,
+          "lon": 151.34,
+          "precision": "approximate local area"
+        }
+      ]
+    },
+    "Australia|Orange, NSW": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Orange, NSW",
+          "lat": -33.28,
+          "lon": 149.1,
+          "precision": "approximate local area"
+        }
+      ]
+    },
+    "Australia|Doncaster East, Melbourne": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Doncaster East, Melbourne",
+          "lat": -37.79,
+          "lon": 145.16,
+          "precision": "approximate local area"
+        }
+      ]
+    },
+    "Australia|Dandenong, Melbourne": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Dandenong, Melbourne",
+          "lat": -37.99,
+          "lon": 145.22,
+          "precision": "approximate local area"
+        }
+      ]
+    },
+    "Australia|St Kilda East, Melbourne": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "St Kilda East, Melbourne",
+          "lat": -37.87,
+          "lon": 145,
+          "precision": "approximate local area"
+        }
+      ]
+    },
+    "Australia|Brighton, Melbourne": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Brighton, Melbourne",
+          "lat": -37.91,
+          "lon": 144.99,
+          "precision": "approximate local area"
+        }
+      ]
+    },
+    "Australia|Morphett Vale, Adelaide": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Morphett Vale, Adelaide",
+          "lat": -35.12,
+          "lon": 138.52,
+          "precision": "approximate local area"
+        }
+      ]
+    },
+    "Australia|Carlton, Melbourne": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Carlton, Melbourne",
+          "lat": -37.8,
+          "lon": 144.97,
+          "precision": "approximate local area"
+        }
+      ]
+    },
+    "Australia|Lidcombe, Sydney": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Lidcombe, Sydney",
+          "lat": -33.86,
+          "lon": 151.05,
+          "precision": "approximate local area"
+        }
+      ]
+    },
+    "Australia|Willagee, Perth": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Willagee, Perth",
+          "lat": -32.05,
+          "lon": 115.81,
+          "precision": "approximate local area"
+        }
+      ]
+    },
+    "Australia|Port Augusta, South Australia": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Port Augusta, South Australia",
+          "lat": -32.49,
+          "lon": 137.76,
+          "precision": "approximate local area"
+        }
+      ]
+    },
+    "Australia|Kangaroo Flat, Bendigo": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Kangaroo Flat, Bendigo",
+          "lat": -36.8,
+          "lon": 144.24,
+          "precision": "approximate local area"
+        }
+      ]
+    },
+    "Australia|St Albans, Melbourne": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "St Albans, Melbourne",
+          "lat": -37.74,
+          "lon": 144.8,
+          "precision": "approximate local area"
+        }
+      ]
+    },
+    "Australia|Camberwell, NSW": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Camberwell, NSW",
+          "lat": -32.48,
+          "lon": 151.09,
+          "precision": "approximate local area"
+        }
+      ]
+    },
+    "Australia|Bagdad, Temora region NSW": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Bagdad, Temora region NSW",
+          "lat": -34.45,
+          "lon": 147.45,
+          "precision": "approximate local area"
+        }
+      ]
+    },
+    "Australia|Bass Hill, Sydney": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Bass Hill, Sydney",
+          "lat": -33.9,
+          "lon": 150.99,
+          "precision": "approximate local area"
+        }
+      ]
+    },
+    "Australia|Moonee Ponds, Melbourne": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Moonee Ponds, Melbourne",
+          "lat": -37.77,
+          "lon": 144.92,
+          "precision": "approximate local area"
+        }
+      ]
+    },
+    "Australia|Adelaide Hills, South Australia": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Adelaide Hills, South Australia",
+          "lat": -34.9,
+          "lon": 138.77,
+          "precision": "approximate local area"
+        }
+      ]
+    },
+    "Pakistan|Shantinagar and Khanewal, Punjab": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Shantinagar and Khanewal, Punjab (approx.)",
+          "lat": 30.3,
+          "lon": 71.93,
+          "precision": "approximate regional centre"
+        }
+      ]
+    },
+    "Pakistan|Sheikhupura, Punjab": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Sheikhupura, Punjab (approx.)",
+          "lat": 31.72,
+          "lon": 73.98,
+          "precision": "approximate regional centre"
+        }
+      ]
+    },
+    "Pakistan|Lahore": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Lahore (approx.)",
+          "lat": 31.55,
+          "lon": 74.34,
+          "precision": "approximate regional centre"
+        }
+      ]
+    },
+    "Pakistan|Sialkot": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Sialkot (approx.)",
+          "lat": 32.5,
+          "lon": 74.54,
+          "precision": "approximate regional centre"
+        }
+      ]
+    },
+    "Pakistan|Bahawalpur, Punjab": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Bahawalpur, Punjab (approx.)",
+          "lat": 29.4,
+          "lon": 71.68,
+          "precision": "approximate regional centre"
+        }
+      ]
+    },
+    "Pakistan|Islamabad": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Islamabad (approx.)",
+          "lat": 33.69,
+          "lon": 73.06,
+          "precision": "approximate regional centre"
+        }
+      ]
+    },
+    "Pakistan|Murree, Punjab": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Murree, Punjab (approx.)",
+          "lat": 33.9,
+          "lon": 73.39,
+          "precision": "approximate regional centre"
+        }
+      ]
+    },
+    "Pakistan|Taxila, Punjab": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Taxila, Punjab (approx.)",
+          "lat": 33.75,
+          "lon": 72.8,
+          "precision": "approximate regional centre"
+        }
+      ]
+    },
+    "Pakistan|Karachi": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Karachi (approx.)",
+          "lat": 24.86,
+          "lon": 67.01,
+          "precision": "approximate regional centre"
+        }
+      ]
+    },
+    "Pakistan|Rawalpindi": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Rawalpindi (approx.)",
+          "lat": 33.6,
+          "lon": 73.05,
+          "precision": "approximate regional centre"
+        }
+      ]
+    },
+    "Pakistan|Gojra, Punjab": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Gojra, Punjab (approx.)",
+          "lat": 31.15,
+          "lon": 72.69,
+          "precision": "approximate regional centre"
+        }
+      ]
+    },
+    "Pakistan|Youhanabad, Lahore": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Youhanabad, Lahore (approx.)",
+          "lat": 31.45,
+          "lon": 74.32,
+          "precision": "approximate regional centre"
+        }
+      ]
+    },
+    "Pakistan|Peshawar": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Peshawar (approx.)",
+          "lat": 34.02,
+          "lon": 71.58,
+          "precision": "approximate regional centre"
+        }
+      ]
+    },
+    "Iraq|Baghdad and Mosul": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Baghdad and Mosul (approx.)",
+          "lat": 33.36,
+          "lon": 44.37,
+          "precision": "approximate regional centre"
+        }
+      ]
+    },
+    "Iraq|Dora, Baghdad": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Dora, Baghdad (approx.)",
+          "lat": 33.24,
+          "lon": 44.36,
+          "precision": "approximate regional centre"
+        }
+      ]
+    },
+    "Iraq|Baghdad": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Baghdad (approx.)",
+          "lat": 33.36,
+          "lon": 44.37,
+          "precision": "approximate regional centre"
+        }
+      ]
+    },
+    "Iraq|Mosul": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Mosul (approx.)",
+          "lat": 36.34,
+          "lon": 43.13,
+          "precision": "approximate regional centre"
+        }
+      ]
+    },
+    "India|Kandhamal, Odisha": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Kandhamal, Odisha (approx.)",
+          "lat": 20.48,
+          "lon": 84.02,
+          "precision": "approximate regional centre"
+        }
+      ]
+    },
+    "Egypt|Nag Hammadi, Qena": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Nag Hammadi, Qena (approx.)",
+          "lat": 26.05,
+          "lon": 32.24,
+          "precision": "approximate regional centre"
+        }
+      ]
+    },
+    "Egypt|Atfih, Helwan": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Atfih, Helwan (approx.)",
+          "lat": 29.39,
+          "lon": 31.28,
+          "precision": "approximate regional centre"
+        }
+      ]
+    },
+    "Egypt|Imbaba, Cairo": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Imbaba, Cairo (approx.)",
+          "lat": 30.08,
+          "lon": 31.22,
+          "precision": "approximate regional centre"
+        }
+      ]
+    },
+    "Egypt|Marinab, Aswan": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Marinab, Aswan (approx.)",
+          "lat": 24.09,
+          "lon": 32.9,
+          "precision": "approximate regional centre"
+        }
+      ]
+    },
+    "Egypt|Maspero, Cairo": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Maspero, Cairo (approx.)",
+          "lat": 30.06,
+          "lon": 31.23,
+          "precision": "approximate regional centre"
+        }
+      ]
+    },
+    "Egypt|Al-Khusus, Greater Cairo": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Al-Khusus, Greater Cairo (approx.)",
+          "lat": 30.15,
+          "lon": 31.31,
+          "precision": "approximate regional centre"
+        }
+      ]
+    },
+    "Nigeria|Madalla, Niger State": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Madalla, Niger State (approx.)",
+          "lat": 9.04,
+          "lon": 7.28,
+          "precision": "approximate regional centre"
+        }
+      ]
+    },
+    "Nigeria|Gombe": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Gombe (approx.)",
+          "lat": 10.29,
+          "lon": 11.17,
+          "precision": "approximate regional centre"
+        }
+      ]
+    },
+    "Nigeria|Yola, Adamawa State": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Yola, Adamawa State (approx.)",
+          "lat": 9.2,
+          "lon": 12.46,
+          "precision": "approximate regional centre"
+        }
+      ]
+    },
+    "Nigeria|Jos, Plateau State": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Jos, Plateau State (approx.)",
+          "lat": 9.93,
+          "lon": 8.89,
+          "precision": "approximate regional centre"
+        }
+      ]
+    },
+    "Nigeria|Rayfield, Jos": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Rayfield, Jos (approx.)",
+          "lat": 9.88,
+          "lon": 8.88,
+          "precision": "approximate regional centre"
+        }
+      ]
+    },
+    "Nigeria|Bayero University, Kano": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Bayero University, Kano (approx.)",
+          "lat": 12,
+          "lon": 8.53,
+          "precision": "approximate regional centre"
+        }
+      ]
+    },
+    "Libya|Near Sirte, Libyan coast": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Near Sirte, Libyan coast (approx.)",
+          "lat": 31.2,
+          "lon": 16.59,
+          "precision": "approximate regional centre"
         }
       ]
     }
