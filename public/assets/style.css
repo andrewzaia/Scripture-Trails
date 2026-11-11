@@ -362,3 +362,36 @@ body.light .analytics-consent{background:#fffdf8;color:#243b42;box-shadow:0 10px
 .scripture-preview-actions [data-preview-read]{background:#aa8b5733;border:1px solid #aa8b5780;border-radius:6px;padding:5px 10px;text-decoration:none;font-weight:700}
 .scripture-preview small{display:block;font-size:10px;line-height:1.4;opacity:.75}
 body.light .scripture-preview{background:#fffdf8;color:#27313a;border-color:#c7ad85;box-shadow:0 12px 35px #1c28332b}
+
+/* Christians worldwide catalogue */
+.persecution-wrap{max-width:1480px;margin:auto;padding:30px min(5.2%,68px) 70px}
+.persecution-notice{color:var(--muted);font-size:12px;line-height:1.8;margin:0 0 22px}
+.persecution-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-bottom:22px}
+.persecution-stats>div{border:1px solid var(--line);border-radius:6px;background:var(--surface);padding:17px}
+.persecution-stats strong{display:block;font:normal 34px var(--serif)}.persecution-stats span{font-size:11px;color:var(--muted)}
+.persecution-controls{padding:20px;display:grid;gap:14px;margin-bottom:24px}
+.persecution-fields{display:grid;grid-template-columns:minmax(175px,2fr) repeat(3,minmax(110px,1fr));gap:12px}
+.persecution-controls label{display:grid;gap:6px;font-size:11px;color:var(--muted)}
+.persecution-controls :is(input[type=search],select){width:100%;min-width:0;min-height:42px;border:1px solid var(--line);border-radius:4px;background:var(--surface2);color:var(--ink);padding:8px;font-size:12px}
+.persecution-controls-secondary{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.persecution-controls-secondary .persecution-media-only{display:flex;align-items:center;gap:9px}
+.persecution-controls-secondary input{accent-color:var(--gold)}
+.persecution-controls-secondary button,.persecution-more{border:1px solid var(--line);border-radius:4px;background:var(--surface);color:var(--ink);padding:9px 13px;cursor:pointer}
+.persecution-wrap :is(input,select,button,a,summary):focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.persecution-results-title{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:17px}
+.persecution-results-title h2{font:normal 25px var(--serif);margin:0}.persecution-results-title span{font-size:12px;color:var(--muted)}
+.persecution-case-grid,.persecution-media-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}
+.persecution-case,.persecution-media-card{min-width:0;display:flex;flex-direction:column;gap:9px;border:1px solid var(--line);border-radius:6px;background:var(--surface);padding:20px}
+.persecution-case h3,.persecution-media-card h3{font:normal 21px/1.25 var(--serif);margin:0}
+.persecution-case p,.persecution-media-card p{overflow-wrap:anywhere;margin:0}
+.persecution-meta{font-size:11px;line-height:1.65;color:var(--muted)}.persecution-account{font-size:13px;line-height:1.75}
+.persecution-links{display:flex;flex-wrap:wrap;gap:8px 15px;margin-top:auto;padding-top:8px}
+.persecution-links a,.persecution-media-card a{font-size:12px;color:var(--gold);text-decoration:underline;text-underline-offset:3px}
+.persecution-notes{font-size:11px;color:var(--muted);border-top:1px solid var(--line);padding-top:10px}
+.persecution-notes summary{cursor:pointer;color:var(--ink)}.persecution-empty{grid-column:1/-1;color:var(--muted);padding:20px;border:1px dashed var(--line)}
+.persecution-more{display:block;margin:24px auto 32px}.persecution-more[hidden]{display:none}
+.persecution-media-index{padding:20px;margin:24px 0}.persecution-media-index>summary{font:normal 22px var(--serif);cursor:pointer}
+.persecution-media-index>p{font-size:12px;color:var(--muted)}.persecution-media-grid{padding-top:12px}.persecution-media-card{background:var(--surface2)}
+@media(max-width:1020px){.persecution-fields{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){.persecution-wrap{padding:20px 18px 45px}.persecution-case-grid,.persecution-media-grid{grid-template-columns:1fr}}
+@media(max-width:470px){.persecution-fields{grid-template-columns:1fr}.persecution-stats{gap:8px}.persecution-stats>div{padding:10px}.persecution-stats strong{font-size:24px}.persecution-stats span{font-size:10px}}
