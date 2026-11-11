@@ -152,3 +152,10 @@ test('new reports extend geographic coverage without removing historic incidents
  assert.ok(records.some(r=>r.date==='2026-10-24'&&r.country==='Ethiopia'));
  assert.ok(records.some(r=>r.date==='2015-04-02'&&r.country==='Kenya'));
 });
+
+test('media filter includes rights-cleared local photographs without publisher media URLs',()=>{
+ const siteOnly=records.find(r=>r.id==='CT-0224');
+ assert.ok(siteOnly&&!siteOnly.media_url&&!siteOnly.media_type);
+ assert.equal(filterPersecutionReports([siteOnly],{media:true}).length,0);
+ assert.equal(filterPersecutionReports([siteOnly],{media:true,localMediaIds:new Set([siteOnly.id])}).length,1);
+});

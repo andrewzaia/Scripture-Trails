@@ -15,7 +15,7 @@ export function filterPersecutionReports(rows,options={}){
   if(options.country&&options.country!==r.country)return false;
   if(options.year&&options.year!==r.date.slice(0,4))return false;
   if(options.kind&&options.kind!==reportKind(r.category))return false;
-  if(options.media&&!r.media_url&&!r.media_type)return false;
+  if(options.media&&!r.media_url&&!r.media_type&&!options.localMediaIds?.has(r.id))return false;
   const haystack=norm([r.id,r.title,r.country,r.place,r.category,r.published_account,r.reported_actor,r.publisher,r.notes].join(' '));
   return tokens.every(t=>haystack.includes(t));
  }).sort((a,b)=>(options.sort==='oldest'?1:-1)*a.date.localeCompare(b.date)||a.id.localeCompare(b.id));
@@ -86,7 +86,7 @@ export function createPersecutionCatalogue(root){
  let rows=[],media=[],photoMap=new Map(),limit=20,pending=null,ready=false;
  const options=(select,items)=>{for(const item of items){const o=el('option',item);o.value=item;select.append(o);}};
  function draw(){
-  const found=filterPersecutionReports(rows,{query:search.value,country:country.value,year:year.value,kind:kind.value,sort:sort.value,media:mediaOnly.checked});
+  const found=filterPersecutionReports(rows,{query:search.value,country:country.value,year:year.value,kind:kind.value,sort:sort.value,media:mediaOnly.checked,localMediaIds:new Set(photoMap.keys())});
   listing.replaceChildren(...found.slice(0,limit).map(r=>caseCard(r,photoMap)));
   if(!found.length)listing.append(el('p','No reports match these filters.','persecution-empty'));
   count.textContent='Showing '+Math.min(limit,found.length)+' of '+found.length+' matching reports';
