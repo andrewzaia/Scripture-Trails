@@ -3,7 +3,7 @@
 Checked: 2026-11-11
 Candidate release: v1.13.0
 
-The catalogue now contains 535 published source-attributed report records across 91 countries and territories. This release adds 30 reports across Bangladesh (5), Egypt (8), Pakistan (2), Indonesia (2), Syria (2), Nigeria (2), the Democratic Republic of the Congo (3), Mozambique (3) and Iraq (3). The preceding v1.12.0 release added 45 daesh-related reports; v1.11.0 expanded geographic coverage.
+The catalogue now contains 535 published source-attributed report records across 91 countries and territories. This release adds 30 reports across Bangladesh (4), Egypt (8), Pakistan (2), Indonesia (2), Syria (2), Nigeria (2), the Democratic Republic of the Congo (3), Mozambique (3), Iraq (3) and France (1). The preceding v1.12.0 release added 45 daesh-related reports; v1.11.0 expanded geographic coverage.
 
 ## Inclusion and counting
 
@@ -25,11 +25,11 @@ Editorial copy uses lowercase names for terrorist organisations. Formal publishe
 
 ### Further v1.13.0 additions and qualifications
 
-Thirty new report records cover murders of Bangladeshi Christian converts, attempted attacks on clergy, separately named Coptic victims in North Sinai, April 2018 Christian killings in Quetta, the Samarinda church bombing and conviction, attacks on Assyrian Christian businesses in Qamishli, attributed violence affecting Christian communities in eastern Congo, and the 30 April 2026 destruction of St Louis de Montfort parish in Mozambique.
+Thirty new report records cover murders of Bangladeshi Christian converts, an attack on a Catholic priest in France, separately named Coptic victims in North Sinai, April 2018 Christian killings in Quetta, the Samarinda church bombing and conviction, attacks on Assyrian Christian businesses in Qamishli, attributed violence affecting Christian communities in eastern Congo, and the 30 April 2026 destruction of St Louis de Montfort parish in Mozambique.
 
 The 535-report count is not a count of 535 unique incidents. CT-0248 summarises North Sinai killings; six newly distinguished cases identify individual events already discussed in the same broader campaign. Individual records are explicitly cross-referenced and grouped, not implied to be wholly additional attacks. In the map, each report adds one report unit, not an additional independently corroborated massacre or an individual victim count. Claim, source, victim-number and location qualifications are preserved.
 
-Bangladesh daesh claims are contested; the attempted murder of a pastor by local militants is included explicitly without establishing a daesh link. One group-linked Congo attack involved some victims whose religion is not specified. Bellingcat documents destruction of the Clock Church bell tower rather than the whole building. Diocesan reporting did not establish any fatalities at the Meza parish. New report references do not authorise copying publisher photographs or videos.
+Bangladesh daesh claims are contested; the 2016 murder of Father Jacques Hamel in France is cited to an official government account, including the attributed daesh responsibility claim. One group-linked Congo attack involved some victims whose religion is not specified. Bellingcat documents destruction of the Clock Church bell tower rather than the whole building. Diocesan reporting did not establish any fatalities at the Meza parish. New report references do not authorise copying publisher photographs or videos.
 
 ### Remaining daesh research priorities
 

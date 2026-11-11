@@ -364,7 +364,7 @@ test('thirty further daesh-related reports preserve provenance and report-based 
  assert.equal(records.length,535);
  assert.equal(new Set(records.map(r=>r.id)).size,535);
  assert.equal(new Set(records.map(r=>r.country)).size,91);
- const expected={Bangladesh:5,Egypt:8,Pakistan:2,Indonesia:2,Syria:2,Nigeria:2,'Democratic Republic of the Congo':3,Mozambique:3,Iraq:3};
+ const expected={Bangladesh:4,Egypt:8,Pakistan:2,Indonesia:2,Syria:2,Nigeria:2,'Democratic Republic of the Congo':3,Mozambique:3,Iraq:3,France:1};
  for(const [country,count] of Object.entries(expected)){
   assert.equal(fresh.filter(r=>r.country===country).length,count);
   assert.ok(filterPersecutionReports(records,{country}).length>=count);
@@ -379,6 +379,7 @@ test('thirty further daesh-related reports preserve provenance and report-based 
  }
  assert.ok(fresh.some(r=>r.country==='Mozambique'&&r.date==='2026-04-30'));
  assert.ok(fresh.some(r=>r.country==='Iraq'&&r.title.includes('Clock Church')));
+ assert.ok(fresh.some(r=>r.country==='France'&&r.title.includes('Father Jacques Hamel')));
  assert.ok(fresh.some(r=>r.country==='Syria'&&r.title.includes('Assyrian Christian restaurants')));
  const egypt=fresh.filter(r=>r.incident_group==='EGY-SINAI-COPTS-2017');
  assert.equal(egypt.length,6);

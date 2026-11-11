@@ -5805,6 +5805,21 @@
       "notes": "Source-attributed 2016 regulatory claim, not an independently adjudicated individual church closure."
     },
     {
+      "id": "CT-0510",
+      "date": "2016-07-26",
+      "country": "France",
+      "place": "Saint-Etienne-du-Rouvray, Normandy",
+      "title": "Father Jacques Hamel murdered while celebrating Mass",
+      "published_account": "France's Ministry of the Interior documented the murder of Catholic priest Jacques Hamel during Mass on 26 July 2016, with another parishioner injured and worshippers held hostage. The attackers were killed by police and daesh claimed the attack.",
+      "reported_actor": "Two assailants linked to daesh; responsibility claimed by daesh, as reported by French authorities",
+      "publisher": "French Ministry of the Interior",
+      "source_url": "https://www.interieur.gouv.fr/actualites/actualites-du-ministere/attaque-terroriste-de-saint-etienne-du-rouvray-hommage-au-pretre-jacques-hamel",
+      "notes": "Official French government retrospective of the 2016 attack and later proceedings; the claim is attributed rather than evidence of central command. Distinct from the 2020 Nice church attack.",
+      "incident_group": "FRA-CHURCH-2016",
+      "category": "Murder of Catholic priest; hostage-taking",
+      "second_source_url": "https://www.abc.net.au/news/2016-07-26/islamic-state-hostage-takers-murder-french-priest-in-church/7663000"
+    },
+    {
       "id": "CT-0511",
       "date": "2016-06-30",
       "country": "Egypt",
@@ -5980,20 +5995,6 @@
       "notes": "Video-publication date, not a verified date of killing; no invented town location.",
       "incident_group": "LBY-2015",
       "id": "CT-0486"
-    },
-    {
-      "id": "CT-0510",
-      "date": "2015-10-05",
-      "country": "Bangladesh",
-      "place": "Pabna",
-      "title": "Pastor Luke Sarkar survived knife attack",
-      "published_account": "A parliamentary inquiry recorded the attempted killing of Christian pastor Luke Sarkar in October 2015 and investigation of suspects from a local militant group.",
-      "reported_actor": "Local jmb suspects; daesh operational link not established",
-      "publisher": "Parliament of Australia",
-      "source_url": "https://www.aph.gov.au/Parliamentary_Business/Committees/Joint/Intelligence_and_Security/Completed_Inquiries_45th_Parliament/ListingofJADandJMB/Report/section?id=committees%2Freportjnt%2F024208%2F26531",
-      "notes": "Affiliation to daesh is not established; this is an associated militant-violence comparison, explicitly not attributed as a daesh-directed operation.",
-      "incident_group": "BGD-CLERGY-2015",
-      "category": "Attempted murder of pastor"
     },
     {
       "country": "Syria",
