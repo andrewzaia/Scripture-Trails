@@ -75,6 +75,56 @@
       "notes": "Publication date 5 November 2026; exact incident date not established, so month only."
     },
     {
+      "id": "CT-0593",
+      "country": "France",
+      "date": "2026-10-31",
+      "place": "Corbeil-Essonnes, Essonne",
+      "category": "Cemetery vandalism; Christian grave symbols",
+      "title": "About 185 graves vandalised and religious ornaments destroyed at Corbeil-Essonnes",
+      "published_account": "Ouest-France, citing reports from Le Figaro, said approximately 185 graves were damaged or looted at a Corbeil-Essonnes cemetery on 31 October 2026, with crosses and statues of angels broken and commemorative plaques and other funerary items removed. Le Parisien reported that Catholic graves were affected. Police arrested a 58-year-old man; reporting said he was later hospitalised for psychiatric care as police investigated grave violation, theft and criminal damage.",
+      "reported_actor": "A 58-year-old man arrested and referred for psychiatric hospitalisation; motive and any religious targeting intention not established",
+      "publisher": "Ouest-France",
+      "source_url": "https://www.ouest-france.fr/ile-de-france/corbeil-essonnes-91100/croix-arrachees-objets-voles-un-homme-interpelle-soupconne-davoir-saccage-pres-de-200-sepultures-en-essonne-681378a8-d770-11f1-9911-9179baff22e2",
+      "second_source_url": "https://www.leparisien.fr/essonne-91/je-suis-ecoeure-a-corbeil-essonnes-une-centaine-de-tombes-profanees-juste-avant-la-toussaint-01-11-2026-RSKQBU6CIFH6PG7GSEKVIZBGZA.php",
+      "media_type": "Video coverage of cemetery vandalism",
+      "media_url": "https://video.lefigaro.fr/figaro/faits-divers/un-homme-de-58-ans-interpelle-pour-avoir-degrade-185-sepultures-dans-un-cimetiere-a-la-veille-de-la-toussaint-20261101",
+      "media_note": "External publisher video; reproduction rights not established.",
+      "notes": "The approximately 185 damaged graves belong to one reported cemetery incident, not 185 separate attacks. Le Parisien described Catholic grave plots as affected; Aleteia noted not all damaged objects were exclusively Christian symbols. Le Parisien calls the site Tarterets cemetery while Le Figaro describes Bas de Corbeil; the record uses only the grounded town and an approximate town marker rather than resolving differing site descriptions without evidence. Arrest and psychiatric hospitalisation do not establish motive or a conviction. The social-media post @visegrad.24 reported the event on 5 November.",
+      "locations": [
+        {
+          "name": "Corbeil-Essonnes",
+          "lat": 48.61456,
+          "lon": 2.47181,
+          "precision": "city"
+        }
+      ]
+    },
+    {
+      "id": "CT-0592",
+      "country": "United Kingdom",
+      "date": "2026-10-30",
+      "place": "St Alban's Catholic Church, Warrington",
+      "category": "Vandalism; Christian statue and war memorial",
+      "title": "Christ statue beheaded and St Alban's church war memorial defaced",
+      "published_account": "Cheshire Constabulary reported a war memorial at St Alban's Catholic Church on Bewsey Street in Warrington was vandalised, likely between 18:00 and 22:00 on 30 October 2026. A congregant discovered the damage at 09:23 on 1 November. ITV News described the head of the crucified Christ figure being knocked off, green paint and offensive anti-Catholic graffiti on the memorial. Police identified a 42-year-old man and announced his detention under the Mental Health Act on 3 November.",
+      "reported_actor": "A 42-year-old man identified in the investigation and detained under the Mental Health Act; no reported conviction or settled religious motive",
+      "publisher": "Cheshire Constabulary",
+      "source_url": "https://www.cheshire.police.uk/news/cheshire/news/appeals/2026/10/appeal-for-witnesses-following-vandalism-of-war-memorial-in-warrington/",
+      "second_source_url": "https://www.itv.com/news/granada/2026-11-03/war-memorial-desecrated-by-vandals-in-hate-crime",
+      "media_type": "News video and photographs of vandalised memorial",
+      "media_url": "https://www.itv.com/news/granada/2026-11-03/war-memorial-desecrated-by-vandals-in-hate-crime",
+      "media_note": "External publisher media only; reproduction rights not established.",
+      "notes": "Two social posts shared on 4 November 2026, from @mascul.christianity and @mr_moss_uk, refer to this same incident. Police dated the possible damage to 30 October and its discovery to 1 November. ITV reported that police treated it as a hate crime, but neither the suspect's religious identity nor an ideological motive is established. One post described marks as resembling Arabic; no police finding that they were Arabic or a confirmed translation was found. The man's detention under the Mental Health Act is not a criminal conviction.",
+      "locations": [
+        {
+          "name": "St Alban's Catholic Church, Warrington",
+          "lat": 53.39305,
+          "lon": -2.59687,
+          "precision": "site"
+        }
+      ]
+    },
+    {
       "id": "CT-0001",
       "date": "2026-10-28",
       "country": "France",

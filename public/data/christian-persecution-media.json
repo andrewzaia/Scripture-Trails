@@ -3,6 +3,26 @@
   "rights": "Third-party material - check publisher reuse rights.",
   "media": [
     {
+      "date": "2026-10-30",
+      "country": "United Kingdom",
+      "linked_incident": "CT-0592 - St Alban's Church memorial, Warrington",
+      "media_kind": "News images and video of defaced church memorial",
+      "publisher_or_owner": "ITV News Granada; separately reposted by @mascul.christianity and @mr_moss_uk",
+      "media_url": "https://www.itv.com/news/granada/2026-11-03/war-memorial-desecrated-by-vandals-in-hate-crime",
+      "description": "Contemporary reporting with church-site footage and interview. Original social uploads are referenced as source leads, not licensed local assets.",
+      "rights_and_reuse": "Third-party media. External link only; do not copy or rehost without confirmed rights."
+    },
+    {
+      "date": "2026-10-31",
+      "country": "France",
+      "linked_incident": "CT-0593 - Corbeil-Essonnes graves vandalism",
+      "media_kind": "Publisher video on cemetery damage",
+      "publisher_or_owner": "Le Figaro; reposted in a separate social account @visegrad.24",
+      "media_url": "https://video.lefigaro.fr/figaro/faits-divers/un-homme-de-58-ans-interpelle-pour-avoir-degrade-185-sepultures-dans-un-cimetiere-a-la-veille-de-la-toussaint-20261101",
+      "description": "Contemporary video of 31 October 2026 cemetery vandalism; the social post is an additional source lead.",
+      "rights_and_reuse": "Third-party publisher footage. External link only; reuse permission not established."
+    },
+    {
       "date": "2026-11-11",
       "country": "Lithuania",
       "linked_incident": "CT-0589 - Vilnius Divine Mercy Shrine sculpture",

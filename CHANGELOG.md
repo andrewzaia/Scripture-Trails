@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.16.2 - 15/11/2026: Christian memorial and cemetery vandalism reports in Britain and France
+
+- Add two source-attributed incidents involving St Alban's church war memorial in Warrington and vandalism of approximately 185 graves in Corbeil-Essonnes, bringing the catalogue to 593 reports in 93 countries and territories.
+- Avoid double-counting two social posts about the Warrington memorial and record the French cemetery damage as one incident, with careful attribution of suspect status and unresolved motive.
+- Add mapped localities and publisher-linked coverage for the new reports without reproducing unlicensed third-party photographs or video.
+- Document a separate French religious-building heritage-loss claim for further research without counting conversions, demolitions or unverified fires as persecution incidents.
+
 ## 1.16.1 - 15/11/2026: Christian persecution source reports from Lithuania, Ireland and France
 
 - Add three attributed church-property incident reports from Lithuania, Ireland and France, extending the catalogue to 591 reports across 93 countries and territories.
