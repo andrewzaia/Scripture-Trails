@@ -1,9 +1,9 @@
 # Christian persecution geographic coverage audit
 
-Checked: 2026-11-11
-Candidate release: v1.16.0
+Checked: 2026-11-15
+Candidate release: v1.16.1
 
-The catalogue now contains 588 published source-attributed report records across 91 countries and territories. This release adds 26 reports across Azerbaijan (1), China (3), Iran (4), Eritrea (1), Myanmar (1), Nigeria (3), Pakistan (1), Nicaragua (1), Sri Lanka (5), Russia (1), Colombia (2), Cuba (1) and Kyrgyzstan (2). All earlier releases and source records remain preserved.
+The catalogue now contains 591 published source-attributed report records across 93 countries and territories. Release v1.16.1 adds three reports from Lithuania, Ireland and France; the earlier v1.16.0 release added 26 reports across Azerbaijan, China, Iran, Eritrea, Myanmar, Nigeria, Pakistan, Nicaragua, Sri Lanka, Russia, Colombia, Cuba and Kyrgyzstan. All earlier releases and source records remain preserved.
 
 ## Inclusion and counting
 
@@ -61,7 +61,7 @@ Review the full UN investigative dossiers and other primary reporting for additi
 
 ## Remaining zero-report research queue
 
-Investigate Romania, Zimbabwe, Honduras, Iceland, Norway, Ireland, Denmark, Austria, Switzerland, Belgium, Bulgaria, North Macedonia, Montenegro, Slovenia, Czechia, Finland, Estonia, Latvia, Lithuania, Moldova, Angola, Zambia, Rwanda, Burundi, Namibia, Papua New Guinea and other unrepresented territories.
+Investigate Romania, Zimbabwe, Honduras, Iceland, Norway, Denmark, Austria, Switzerland, Belgium, Bulgaria, North Macedonia, Montenegro, Slovenia, Czechia, Finland, Estonia, Latvia, Moldova, Angola, Zambia, Rwanda, Burundi, Namibia, Papua New Guinea and other unrepresented territories.
 
 Small countries including Bahrain and Maldives are missing from the current 110m map geometry. Do not create country shading for them by reusing a neighbouring country polygon. Incorporating correct geometry is a separate mapping task.
 
@@ -70,3 +70,11 @@ Small countries including Bahrain and Maldives are missing from the current 110m
 Prioritise low-coverage countries including Haiti, Afghanistan, South Sudan, the Philippines, Yemen, Libya and Morocco. Continue consulting church statements, local broadcasters, OSCE/ODIHR, human rights monitors, historical reporting and published social-media accounts, identifying each claim as reported.
 
 Do not download or publish third-party photographs without reproduction rights.
+
+## v1.16.1 source submissions reviewed on 15 November 2026
+
+- CT-0589 (Lithuania): 11 November 2026 Vilnius Divine Mercy Shrine sculpture breakage, supported by LRT reporting of the police investigation. Preserve uncertainty about the men, motive, nationality and intoxication; do not rely on manipulated suspect images.
+- CT-0590 (Ireland): damage to the Belmullet school chapel and convent discovered on 6 November 2026, covered by the school, Connaught Telegraph and RTÉ. The precise vandalism date and perpetrator remain undetermined.
+- CT-0591 (France): genuine 17 March 2019 Saint-Sulpice entrance fire, supported by the parish's contemporary statement and press reporting. A circulating October 2026 claim reused the historical photograph to allege five church fires by migrants in a day, with no substantiation of that claimed sequence or attribution. Do not count five events.
+- Add country shapes for Ireland and Lithuania and approximate locality markers from the Getty TGN, UNGEGN and published Saint-Sulpice map. Location markers identify places, not culprit locations.
+- Preserve third-party media as external, rights-qualified links only; do not host Instagram screenshots, CCTV or publisher photographs locally without clear reproduction permission.

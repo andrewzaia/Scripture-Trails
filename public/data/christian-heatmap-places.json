@@ -5,7 +5,7 @@
     "license": "ODbL-1.0",
     "notice": "Original coordinates use gazetteer centres. Added markers are approximate city or regional centres; they are not precise attack sites, and route/multiple-site events may be represented by one centre. Ukraine additions use approximate settlement or region centres; occupied-region coordinates must not be interpreted as detention or attack locations."
   },
-  "generated": "2026-11-11",
+  "generated": "2026-11-15",
   "countries": {
     "France": {
       "iso2": "FR",
@@ -370,6 +370,14 @@
     "Serbia": {
       "iso2": "RS",
       "iso3": "SRB"
+    },
+    "Ireland": {
+      "iso2": "IE",
+      "iso3": "IRL"
+    },
+    "Lithuania": {
+      "iso2": "LT",
+      "iso3": "LTU"
     }
   },
   "places": {
@@ -2730,6 +2738,39 @@
           "lat": 49.835,
           "lon": 36.685,
           "precision": "city"
+        }
+      ]
+    },
+    "Lithuania|Vilnius, Old Town": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Vilnius",
+          "lat": 54.67579,
+          "lon": 25.27331,
+          "precision": "city"
+        }
+      ]
+    },
+    "Ireland|Belmullet, County Mayo": {
+      "resolution": "town",
+      "points": [
+        {
+          "name": "Belmullet",
+          "lat": 54.225,
+          "lon": -9.9908,
+          "precision": "town"
+        }
+      ]
+    },
+    "France|Saint-Sulpice, Paris": {
+      "resolution": "site",
+      "points": [
+        {
+          "name": "Saint-Sulpice church, Paris",
+          "lat": 48.85098,
+          "lon": 2.33487,
+          "precision": "site"
         }
       ]
     }
