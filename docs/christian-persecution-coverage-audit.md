@@ -1,9 +1,9 @@
 # Christian persecution geographic coverage audit
 
 Checked: 2026-11-15
-Candidate release: v1.16.1
+Candidate release: v1.16.2
 
-The catalogue now contains 591 published source-attributed report records across 93 countries and territories. Release v1.16.1 adds three reports from Lithuania, Ireland and France; the earlier v1.16.0 release added 26 reports across Azerbaijan, China, Iran, Eritrea, Myanmar, Nigeria, Pakistan, Nicaragua, Sri Lanka, Russia, Colombia, Cuba and Kyrgyzstan. All earlier releases and source records remain preserved.
+The catalogue now contains 593 published source-attributed report records across 93 countries and territories. Release v1.16.2 adds two reports from the United Kingdom and France without duplicate incidents or inventing events from aggregate claims. Release v1.16.1 adds three reports from Lithuania, Ireland and France; the earlier v1.16.0 release added 26 reports across Azerbaijan, China, Iran, Eritrea, Myanmar, Nigeria, Pakistan, Nicaragua, Sri Lanka, Russia, Colombia, Cuba and Kyrgyzstan. All earlier releases and source records remain preserved.
 
 ## Inclusion and counting
 
@@ -78,3 +78,10 @@ Do not download or publish third-party photographs without reproduction rights.
 - CT-0591 (France): genuine 17 March 2019 Saint-Sulpice entrance fire, supported by the parish's contemporary statement and press reporting. A circulating October 2026 claim reused the historical photograph to allege five church fires by migrants in a day, with no substantiation of that claimed sequence or attribution. Do not count five events.
 - Add country shapes for Ireland and Lithuania and approximate locality markers from the Getty TGN, UNGEGN and published Saint-Sulpice map. Location markers identify places, not culprit locations.
 - Preserve third-party media as external, rights-qualified links only; do not host Instagram screenshots, CCTV or publisher photographs locally without clear reproduction permission.
+
+## v1.16.2 source submissions reviewed on 15 November 2026
+
+- CT-0592 (United Kingdom): the St Alban's Catholic Church war memorial crucifix was damaged at Warrington, most probably on 30 October 2026 and discovered on 1 November. Cheshire Constabulary and ITV News provide the source trail. Two different social posts refer to this same incident. The claimed Arabic writing in one post is not a police-confirmed language finding or translation. The reported suspect's detention under the Mental Health Act is not a criminal conviction.
+- CT-0593 (France): approximately 185 graves at Corbeil-Essonnes were vandalised on 31 October 2026, with damage to crosses, angels and other grave ornaments, reported by Ouest-France, Le Parisien and Le Figaro. Record a single event rather than 185 attacks; religious motive and criminal adjudication are not established. Publishers describe the cemetery differently, so the map uses a city-level approximation.
+- One additional social post from @sgnews_sg cites an article from La Gaceta claiming the loss of approximately one religious building per week in France through demolition, conversion, structural collapse or fire, and mentions arson concerns. It is an aggregate heritage-loss assertion, not a discrete persecution incident. Do not add it as a catalogue report or count implied fires as attacks without distinct dated cases. Lead: https://gaceta.es/europa/un-informe-del-observatorio-del-patrimonio-religioso-desvela-que-francia-pierde-un-edificio-cristiano-a-la-semana-por-incendios-intencionados-20261028-0156/ . Further context: https://www.ouelen.com/2026/11/04/une-eglise-brule-chaque-semaine-en-france-ce-que-disent-vraiment-les-chiffres/
+- Preserve original media links as source attribution without local-hosting unlicensed images or videos. Warrington church coordinates are from the publicly listed St Alban's church location, while the French marker is an approximate Corbeil-Essonnes town point.

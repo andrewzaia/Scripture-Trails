@@ -2773,6 +2773,28 @@
           "precision": "site"
         }
       ]
+    },
+    "United Kingdom|St Alban's Catholic Church, Warrington": {
+      "resolution": "site",
+      "points": [
+        {
+          "name": "St Alban's Catholic Church, Warrington",
+          "lat": 53.39305,
+          "lon": -2.59687,
+          "precision": "site"
+        }
+      ]
+    },
+    "France|Corbeil-Essonnes, Essonne": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Corbeil-Essonnes",
+          "lat": 48.61456,
+          "lon": 2.47181,
+          "precision": "city"
+        }
+      ]
     }
   }
 }
