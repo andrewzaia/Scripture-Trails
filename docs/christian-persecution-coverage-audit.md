@@ -3,7 +3,7 @@
 Checked: 2026-11-15
 Candidate release: v1.16.1
 
-The catalogue now contains 591 published source-attributed report records across 93 countries and territories. This release adds 26 reports across Azerbaijan (1), China (3), Iran (4), Eritrea (1), Myanmar (1), Nigeria (3), Pakistan (1), Nicaragua (1), Sri Lanka (5), Russia (1), Colombia (2), Cuba (1) and Kyrgyzstan (2). All earlier releases and source records remain preserved.
+The catalogue now contains 591 published source-attributed report records across 93 countries and territories. Release v1.16.1 adds three reports from Lithuania, Ireland and France; the earlier v1.16.0 release added 26 reports across Azerbaijan, China, Iran, Eritrea, Myanmar, Nigeria, Pakistan, Nicaragua, Sri Lanka, Russia, Colombia, Cuba and Kyrgyzstan. All earlier releases and source records remain preserved.
 
 ## Inclusion and counting
 
