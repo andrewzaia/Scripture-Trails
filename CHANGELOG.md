@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.16.1 - 15/11/2026: Christian persecution source reports from Lithuania, Ireland and France
+
+- Add three attributed church-property incident reports from Lithuania, Ireland and France, extending the catalogue to 591 reports across 93 countries and territories.
+- Record damage to a Christ sculpture in Vilnius and the chapel of Our Lady's Secondary School in Belmullet, preserving uncertainty about suspects and the timing of the incidents.
+- Include the documented 2019 Saint-Sulpice church fire without repeating a misleading 2026 claim about five fires; distinguish historical photographs from recent events.
+- Extend country and locality mapping, preserve source-linked media without rehosting unlicensed footage or photographs, and add targeted catalogue regression checks.
+
 ## 1.16.0 - 11/11/2026: Global Christian persecution reports across thirteen countries
 
 - Add 26 source-attributed reports of violence, church attacks, detention and restrictions on Christian worship across thirteen countries, increasing the global catalogue to 588 report records across 91 countries and territories.

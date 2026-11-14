@@ -477,3 +477,25 @@ test('v1.16 global expansion retains 26 separate attributed reports and transpar
  assert.equal([...result.countries.values()].reduce((sum,n)=>sum+n,0),588);
  assert.equal(result.located+result.withoutLocality,588);
 });
+
+test('submitted November 2026 sources form three distinct records without amplifying five-fire claim',()=>{
+ const cases=records.filter(r=>['CT-0589','CT-0590','CT-0591'].includes(r.id));
+ assert.equal(cases.length,3);
+ const byId=Object.fromEntries(cases.map(r=>[r.id,r]));
+ assert.equal(byId['CT-0589'].country,'Lithuania');
+ assert.equal(byId['CT-0589'].date,'2026-11-11');
+ assert.equal(byId['CT-0590'].country,'Ireland');
+ assert.equal(byId['CT-0590'].date,'2026-11-06');
+ assert.equal(byId['CT-0591'].country,'France');
+ assert.equal(byId['CT-0591'].date,'2019-03-17');
+ assert.match(byId['CT-0591'].notes,/not five 2026 events/);
+ assert.ok(!records.some(r=>r.country==='France'&&r.date.startsWith('2026-10')&&/five churches|five-fire/i.test(r.title)));
+ const geo=JSON.parse(read('public/data/christian-heatmap-places.json'));
+ assert.equal(geo.countries.Ireland.iso3,'IRL');
+ assert.equal(geo.countries.Lithuania.iso3,'LTU');
+ const distribution=aggregateIncidentLocations(cases,geo);
+ assert.equal(distribution.reportCount,3);
+ assert.equal(distribution.located,3);
+ assert.equal(distribution.countries.size,3);
+ for(const r of cases)assert.equal(new URL(r.source_url).protocol,'https:');
+});

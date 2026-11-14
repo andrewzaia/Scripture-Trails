@@ -1,7 +1,24 @@
 {
-  "compiled": "2026-11-11",
+  "compiled": "2026-11-15",
   "scope": "An open-ended collection of attributed published incident reports affecting Christians, clergy, church property and religious heritage. The archive does not impose an earliest or latest historical year, but is neither an exhaustive worldwide census nor an independent finding of perpetrator identity or motive.",
   "reports": [
+    {
+      "id": "CT-0589",
+      "country": "Lithuania",
+      "date": "2026-11-11",
+      "place": "Vilnius, Old Town",
+      "category": "Vandalism; Christian sculpture",
+      "title": "Sculpture of Jesus removed from cross and shattered at Divine Mercy Shrine",
+      "published_account": "Lithuanian public broadcaster LRT reported a police investigation after a gold-coloured sculpture of Jesus was removed from a wooden cross and broken in the inner courtyard of the Divine Mercy Shrine on Dominikonu Street in Vilnius on the night of 11 November 2026. CCTV published by the church showed two men with the sculpture before it broke.",
+      "reported_actor": "Unidentified men; nationality, religion, alleged intoxication and religious motive were not established by police",
+      "publisher": "LRT",
+      "source_url": "https://archyvai.lrt.lt/naujienos/lietuvoje/2/3112027/ispuolis-vilniaus-senamiestyje-nuo-baznycios-nuplesta-ir-sudauzyta-jezaus-skulptura",
+      "second_source_url": "https://www.lrt.lt/naujienos/lietuvoje/2/3113229/suklastoti-gailestingumo-sventoves-vandalo-vaizdai-melagingai-apkaltinti-tamsiaodziai",
+      "media_type": "CCTV footage shared by a news account",
+      "media_url": "https://www.instagram.com/reel/Dfuer9iFMnl/",
+      "media_note": "Externally hosted footage. No local reproduction licence established.",
+      "notes": "Police placed the episode between 21:00 on 11 November and 00:30 on 12 November; 11 November is the catalogue date. Subsequent online depictions of suspects with manipulated racial characteristics were reported as fake; English speech did not establish British nationality or religious identity."
+    },
     {
       "id": "CT-0305",
       "country": "Cuba",
@@ -14,6 +31,23 @@
       "publisher": "Christian Solidarity Worldwide",
       "source_url": "https://www.csw.org.uk/press/authorities-detain-church-leaders-members-influencers-and-activists/",
       "notes": "Arrests occurred during activity connected with summonses and public commentary; individual reasons and outcomes varied."
+    },
+    {
+      "id": "CT-0590",
+      "country": "Ireland",
+      "date": "2026-11-06",
+      "place": "Belmullet, County Mayo",
+      "category": "Vandalism; Catholic chapel and religious artefacts",
+      "title": "Our Lady's Secondary School chapel and convent extensively vandalised",
+      "published_account": "The Connaught Telegraph reported that extensive vandalism at Our Lady's Secondary School's chapel and convent in Belmullet was discovered on 6 November 2026. The principal said religious artefacts, sacred images, stained-glass windows and furnishings were damaged and appealed for information.",
+      "reported_actor": "Unknown person or persons; motivation and exact date of damage not established",
+      "publisher": "Connaught Telegraph",
+      "source_url": "https://www.con-telegraph.ie/2026/11/06/appeal-for-information-after-vandalism-at-north-mayo-school-chapel/",
+      "second_source_url": "https://www.rte.ie/news/regional/2026/1108/1598427-belmullet-mayo-vandalism/",
+      "media_type": "Social-media photograph of chapel damage",
+      "media_url": "https://www.instagram.com/p/Dfaks9BMKVH/",
+      "media_note": "Reposted school damage photograph, externally hosted. Original photograph's reuse rights not established.",
+      "notes": "6 November is the discovery/publication date, not a confirmed offence date. The headmaster asked witnesses to contact the school or Garda. No suspect or religiously motivated perpetrator was identified in the cited reporting."
     },
     {
       "id": "CT-0167",
@@ -5922,6 +5956,23 @@
       "media_url": "https://www.reutersconnect.com/item/file-footage-of-sri-lanka-bombings-as-one-year-anniversary-approaches/dGFnOnJldXRlcnMuY29tLDIwMjA6bmV3c21sX1ZBQzlWTloyRg/dGFnOnJldXRlcnMuY29tLDIwMjA6bmV3c21sX0xWQTAwQUM5Vk5aMkY",
       "media_note": "Reuters Connect licensable video, rights restrictions apply",
       "notes": "Part of multi-site bombings; combined death toll not assigned to this church."
+    },
+    {
+      "id": "CT-0591",
+      "country": "France",
+      "date": "2019-03-17",
+      "place": "Saint-Sulpice, Paris",
+      "category": "Church fire; possible deliberate property damage",
+      "title": "Saint-Sulpice church entrance and stained glass damaged by 2019 fire",
+      "published_account": "The Saint-Sulpice parish reported a fire on 17 March 2019 that severely damaged its south transept wooden entrance, adjacent woodwork and stained glass. Le Parisien reported that preliminary police laboratory findings described a human and deliberate origin, while the perpetrator and religious motive were not established.",
+      "reported_actor": "Unknown; preliminary police assessment reported deliberate ignition, but neither perpetrator nor anti-Christian motive established",
+      "publisher": "Saint-Sulpice parish",
+      "source_url": "https://www.saintsulpicefrance.fr/actualites/323-debut-d-incendie-dans-l-eglise-saint-sulpice-a-paris",
+      "second_source_url": "https://www.leparisien.fr/paris-75/paris-l-incendie-a-l-eglise-saint-sulpice-n-etait-pas-accidentel-18-03-2019-8034678.php",
+      "media_type": "Historical church-fire coverage",
+      "media_url": "https://www.euronews.com/2019/03/17/paris-historic-saint-sulpice-church-briefly-catches-fire-nobody-hurt",
+      "media_note": "Historical source photo, not a recent 2026 church fire; no rights for local reuse established.",
+      "notes": "A social-media post in October 2026 reused the 2019 Saint-Sulpice image to allege five churches burned in France in one day and attributed them to migrants. France 24's Observers documented that the photograph was historical and the five-fire claim unsupported. This is one 2019 reported event, not five 2026 events. See https://defacto-observatoire.fr/Medias/France-Medias-Monde/Eglises-incendiees/."
     },
     {
       "id": "CT-0151",

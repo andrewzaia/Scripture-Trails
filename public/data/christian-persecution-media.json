@@ -1,7 +1,37 @@
 {
-  "compiled": "2026-11-11",
+  "compiled": "2026-11-15",
   "rights": "Third-party material - check publisher reuse rights.",
   "media": [
+    {
+      "date": "2026-11-11",
+      "country": "Lithuania",
+      "linked_incident": "CT-0589 - Vilnius Divine Mercy Shrine sculpture",
+      "media_kind": "CCTV footage reposted as Instagram Reel",
+      "publisher_or_owner": "GB News (repost; footage credited Facebook / Aura Zukoviene)",
+      "media_url": "https://www.instagram.com/reel/Dfuer9iFMnl/",
+      "description": "CCTV of men handling a Christ sculpture and its breakage; linked to LRT report.",
+      "rights_and_reuse": "External source only; do not download or rehost without a confirmed licence."
+    },
+    {
+      "date": "2026-11-06",
+      "country": "Ireland",
+      "linked_incident": "CT-0590 - Belmullet school chapel",
+      "media_kind": "Photo shared by Instagram account",
+      "publisher_or_owner": "@sachinettivil (repost; school image)",
+      "media_url": "https://www.instagram.com/p/Dfaks9BMKVH/",
+      "description": "Photograph of damaged school chapel and furnishings; independently reported by RTÉ and the school.",
+      "rights_and_reuse": "External source only; underlying school photograph's local-reuse licence is not established."
+    },
+    {
+      "date": "2019-03-17",
+      "country": "France",
+      "linked_incident": "CT-0591 - Saint-Sulpice fire",
+      "media_kind": "2019 report and fire photographs",
+      "publisher_or_owner": "Euronews / Reuters",
+      "media_url": "https://www.euronews.com/2019/03/17/paris-historic-saint-sulpice-church-briefly-catches-fire-nobody-hurt",
+      "description": "Historical reporting of 17 March 2019 Saint-Sulpice fire, later wrongly presented as October 2026 church fires.",
+      "rights_and_reuse": "External publisher media only; reuse rights not established."
+    },
     {
       "date": "2017-04-09",
       "country": "Egypt",
