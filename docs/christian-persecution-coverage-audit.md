@@ -1,9 +1,9 @@
 # Christian persecution geographic coverage audit
 
 Checked: 2026-11-15
-Candidate release: v1.16.2
+Candidate release: v1.16.3
 
-The catalogue now contains 593 published source-attributed report records across 93 countries and territories. Release v1.16.2 adds two reports from the United Kingdom and France without duplicate incidents or inventing events from aggregate claims. Release v1.16.1 adds three reports from Lithuania, Ireland and France; the earlier v1.16.0 release added 26 reports across Azerbaijan, China, Iran, Eritrea, Myanmar, Nigeria, Pakistan, Nicaragua, Sri Lanka, Russia, Colombia, Cuba and Kyrgyzstan. All earlier releases and source records remain preserved.
+The catalogue now contains 616 published source-attributed report records across 96 countries and territories. Release v1.16.3 adds 23 distinct reports across Belgium (4), Austria (4), Denmark (5) and Ireland (10). Release v1.16.2 adds two reports from the United Kingdom and France without duplicate incidents or inventing events from aggregate claims. Release v1.16.1 adds three reports from Lithuania, Ireland and France; the earlier v1.16.0 release added 26 reports across Azerbaijan, China, Iran, Eritrea, Myanmar, Nigeria, Pakistan, Nicaragua, Sri Lanka, Russia, Colombia, Cuba and Kyrgyzstan. All earlier releases and source records remain preserved.
 
 ## Inclusion and counting
 
@@ -61,7 +61,7 @@ Review the full UN investigative dossiers and other primary reporting for additi
 
 ## Remaining zero-report research queue
 
-Investigate Romania, Zimbabwe, Honduras, Iceland, Norway, Denmark, Austria, Switzerland, Belgium, Bulgaria, North Macedonia, Montenegro, Slovenia, Czechia, Finland, Estonia, Latvia, Moldova, Angola, Zambia, Rwanda, Burundi, Namibia, Papua New Guinea and other unrepresented territories.
+Investigate Romania, Zimbabwe, Honduras, Iceland, Norway, Switzerland, Bulgaria, North Macedonia, Montenegro, Slovenia, Czechia, Finland, Estonia, Latvia, Moldova, Angola, Zambia, Rwanda, Burundi, Namibia, Papua New Guinea and other unrepresented territories.
 
 Small countries including Bahrain and Maldives are missing from the current 110m map geometry. Do not create country shading for them by reusing a neighbouring country polygon. Incorporating correct geometry is a separate mapping task.
 
@@ -85,3 +85,14 @@ Do not download or publish third-party photographs without reproduction rights.
 - CT-0593 (France): approximately 185 graves at Corbeil-Essonnes were vandalised on 31 October 2026, with damage to crosses, angels and other grave ornaments, reported by Ouest-France, Le Parisien and Le Figaro. Record a single event rather than 185 attacks; religious motive and criminal adjudication are not established. Publishers describe the cemetery differently, so the map uses a city-level approximation.
 - One additional social post from @sgnews_sg cites an article from La Gaceta claiming the loss of approximately one religious building per week in France through demolition, conversion, structural collapse or fire, and mentions arson concerns. It is an aggregate heritage-loss assertion, not a discrete persecution incident. Do not add it as a catalogue report or count implied fires as attacks without distinct dated cases. Lead: https://gaceta.es/europa/un-informe-del-observatorio-del-patrimonio-religioso-desvela-que-francia-pierde-un-edificio-cristiano-a-la-semana-por-incendios-intencionados-20261028-0156/ . Further context: https://www.ouelen.com/2026/11/04/une-eglise-brule-chaque-semaine-en-france-ce-que-disent-vraiment-les-chiffres/
 - Preserve original media links as source attribution without local-hosting unlicensed images or videos. Warrington church coordinates are from the publicly listed St Alban's church location, while the French marker is an approximate Corbeil-Essonnes town point.
+
+## v1.16.3 four-country coverage expansion - 15 November 2026
+
+- Belgium: CT-0594 to CT-0597. Hoogstade memorial Mass disruption, Lommel church bench fire, Appels First Communion materials, Bovekerke cemetery vandalism. Four individually dated incidents. No assumption that property theft or vandalism automatically establishes anti-Christian prejudice.
+- Austria: CT-0598 to CT-0601. Vienna Four Evangelists property destruction and sculpture theft, Steyr liturgical Gospel damage, St Anthony church graffiti, and the Feldkirch Serbian Orthodox altar fire. The reported Feldkirch child offenders are not identified and the source also describes a theft motive.
+- Denmark: CT-0602 to CT-0606. Christmas-night damage to an Esbjerg Christ figure, Hellerup exterior graffiti with unknown message, Frederikshavn swastika graffiti, severe Spjellerup church vandalism recorded by local police in February 2024, and Vestervig church-door graffiti. Caution: one secondary organisation report misdates Spjellerup to February 2023; Danish police's 21 February 2024 bulletin and contemporaneous reporting control the catalogue date.
+- Ireland: CT-0607 to CT-0616. Bundoran multi-month vandalism pattern, two police-documented Ballyjamesduff church break-ins, two separate Westmeath church door arsons, a pair of Ravensdale clergy-residence incidents on consecutive dates, the St Johnston church within a multi-building arson investigation, the Renmore Barracks chaplain stabbing, and St Michan's Dublin crypt arson. The Galway court record says the priest was not selected specifically for his religious office. Bundoran is one published multi-month report, not an invented daily incident count.
+- Geographic coverage expands from 93 to 96 country/territory keys. Country polygons are linked to ISO 3166 codes. 21 approximate city, village or church-site coordinate entries are supported by cartographic references; two distinct Ballyjamesduff reports and two distinct Ravensdale reports share their appropriate source-grounded localities. Accuracy is declared in the point precision, not presented as exact attack coordinates.
+- Published reports remain included when motive, charge or prosecution status is unresolved. Separate offences are kept distinct where police explicitly reported separate dates or church locations; related incidents carry an incident_group key.
+- Include 13 publisher-hosted media source references without storing or distributing unlicensed image or video copies. The images manifest is unchanged pending reproduction rights.
+- Context: OSCE/ODIHR's 2024 reporting provides country-level bias coverage for Belgium, Austria, Denmark and Ireland; its aggregate figures are not converted into individual incident records. The Republic of Ireland and Northern Ireland remain separate in the current political boundary data, with Northern Ireland church cases allocated to the United Kingdom.

@@ -1,6 +1,17 @@
 {
   "releases": [
     {
+      "version": "1.16.3",
+      "date": "2026-11-15",
+      "title": "Christian persecution reports expanded across Belgium, Austria, Denmark and Ireland",
+      "changes": [
+        "Add 23 individually source-attributed reports from Belgium (4), Austria (4), Denmark (5) and Ireland (10), expanding the catalogue to 616 records across 96 countries and territories.",
+        "Document cemetery and church vandalism, arson, attacks on clergy and worship disruption while preserving distinctions between disputed religious motives, allegations and convictions.",
+        "Add country heat-map coverage for Belgium, Austria and Denmark, plus 21 grounded locality map entries and 13 external publisher media references.",
+        "Keep separately reported linked incidents grouped, record uncertain offence dates without invention, and add regression tests for attribution, geographic coverage and report totals."
+      ]
+    },
+    {
       "version": "1.16.2",
       "date": "2026-11-15",
       "title": "Christian memorial and cemetery vandalism reports in Britain and France",

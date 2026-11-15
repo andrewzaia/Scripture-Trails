@@ -252,6 +252,19 @@
       "category": "Church raid; worshippers detained"
     },
     {
+      "id": "CT-0594",
+      "date": "2026-09-06",
+      "country": "Belgium",
+      "place": "St Lambert's Church, Hoogstade",
+      "category": "Church vandalism; service disrupted",
+      "title": "Cemented church locks prevent memorial Mass in Hoogstade",
+      "published_account": "OIDAC Europe reported that unknown persons blocked multiple doors of St Lambert's Church in Hoogstade, Alveringem, using cement. Approximately 100 worshippers were unable to enter for a memorial Mass on 6 September 2026, and Fr Johannes Mwamba conducted an abbreviated service outdoors.",
+      "reported_actor": "Unknown perpetrators; religious motive not independently determined",
+      "publisher": "OIDAC Europe",
+      "source_url": "https://www.intoleranceagainstchristians.eu/index.php?case=11929&id=12",
+      "notes": "OIDAC's incident page carries a 7 September heading but describes the affected Sunday Mass as 6 September. Police opened an investigation. The blocked doors interrupted Communion and a memorial service. One site and one reported incident."
+    },
+    {
       "id": "CT-0565",
       "date": "2026-09-04",
       "country": "China",
@@ -264,6 +277,49 @@
       "notes": "Cui was subsequently formally arrested in October; this is the initial detention and raid in the same ongoing legal case.",
       "incident_group": "CHN-JIAQUAN-2026",
       "category": "House-church raid; pastor detained"
+    },
+    {
+      "id": "CT-0607",
+      "date": "2026-09",
+      "country": "Ireland",
+      "place": "Our Lady Star of the Sea Church, Bundoran",
+      "category": "Repeated church-ground vandalism; published pattern",
+      "title": "Summer vandalism reported at Bundoran church grounds",
+      "published_account": "Donegal Live published an account on 2 September 2026 from Fr Jeremiah Munyoki describing roughly three months of repeated vandalism at Our Lady Star of the Sea Church in Bundoran. The reported conduct included fires on the grounds, offensive graffiti, damaged railings, damaged public toilets and litter.",
+      "reported_actor": "Groups of young people reportedly involved; no individuals adjudicated or motive established",
+      "publisher": "Donegal Live",
+      "source_url": "https://www.donegallive.ie/news/donegal/used-condoms-discarded-and-fires-lit-at-church-during-summer-of-vandalism-8956422",
+      "notes": "This record represents a published multi-month pattern, not an individual offence on 2 September or a tally of all reported acts. September is the reporting month. No arson finding for the building itself is implied."
+    },
+    {
+      "id": "CT-0608",
+      "date": "2026-08-30",
+      "country": "Ireland",
+      "place": "Church of Ireland building, Ballyjamesduff",
+      "category": "Church break-in; criminal damage",
+      "title": "Second separately reported break-in damages Ballyjamesduff church",
+      "published_account": "Northern Sound reported Garda confirmation of a further break-in and damage at the Church of Ireland building at The Grove in Ballyjamesduff, County Cavan, between 14:30 and 15:00 on 30 August 2026. The parish reported the interior had been disturbed during repeated intrusions.",
+      "reported_actor": "Unknown; the rector described youth disorder but no anti-Christian motive was established",
+      "publisher": "Northern Sound",
+      "source_url": "https://www.northernsound.ie/news/significant-damage-caused-to-ballyjamesduff-church-following-break-ins-289884",
+      "second_source_url": "https://www.crimeworld.com/ireland/community-saddened-as-church-ransacked-after-repeated-incidents-of-vandalism/a/160917101.html",
+      "notes": "Police reported this as separate from damage notified on 28 August at the same church. Both records share an incident group to expose the association and avoid counting one press article as multiple events without separate police dates.",
+      "incident_group": "IRL-BALLYJAMESDUFF-AUG2026"
+    },
+    {
+      "id": "CT-0609",
+      "date": "2026-08-28",
+      "country": "Ireland",
+      "place": "Church of Ireland building, Ballyjamesduff",
+      "category": "Church break-in; criminal damage",
+      "title": "Church break-in and criminal damage reported in Ballyjamesduff",
+      "published_account": "Gardaí confirmed a report shortly before 17:40 on 28 August 2026 of criminal damage at the Church of Ireland premises at The Grove, Ballyjamesduff. The parish later shared photographs of the disrupted interior and said the premises had been entered repeatedly.",
+      "reported_actor": "Unknown persons; motive unconfirmed",
+      "publisher": "Northern Sound",
+      "source_url": "https://www.northernsound.ie/news/significant-damage-caused-to-ballyjamesduff-church-following-break-ins-289884",
+      "second_source_url": "https://www.northernsound.ie/news/break-in-to-a-ballyjamesduff-church-described-as-mindless-messing-289973",
+      "notes": "The date identifies the first police-confirmed report. The separate 30 August report is CT-0608; both are grouped rather than presented as unrelated church campaigns.",
+      "incident_group": "IRL-BALLYJAMESDUFF-AUG2026"
     },
     {
       "id": "CT-0003",
@@ -502,6 +558,19 @@
       "notes": "Single publisher case summary; no independent adjudication undertaken."
     },
     {
+      "id": "CT-0595",
+      "date": "2026-06-08",
+      "country": "Belgium",
+      "place": "St Peter's Church, Lommel",
+      "category": "Attempted church arson",
+      "title": "Church bench deliberately set alight at St Peter's Church in Lommel",
+      "published_account": "OIDAC Europe, citing Belgian reporting, described a fire deliberately started on a bench in Sint-Pietersbandenkerk in Lommel on 8 June 2026. A visitor discovered a burn hole in the upholstery around 17:00, and church representatives referred to earlier separate acts of vandalism.",
+      "reported_actor": "Unknown persons; a visitor reportedly saw possible suspects leaving; motive unconfirmed",
+      "publisher": "OIDAC Europe",
+      "source_url": "https://www.intoleranceagainstchristians.eu/index.php?case=11549&id=12",
+      "notes": "The bench fire is the discrete recorded incident. Earlier acts mentioned in the story are background, not additional records without dated independent descriptions. The reported fire did not spread through the church."
+    },
+    {
       "id": "CT-0283",
       "date": "2026-06-04",
       "country": "Ukraine",
@@ -675,6 +744,19 @@
       "notes": "Ukrainian government-controlled territory. Church-aligned reporting; source allegations and incident details have not been independently established here. Military mobilisation alone does not demonstrate religious persecution."
     },
     {
+      "id": "CT-0598",
+      "date": "2026-03-25",
+      "country": "Austria",
+      "place": "Church of the Four Holy Evangelists, Vienna",
+      "category": "Church vandalism; sacred-object theft",
+      "title": "Vienna church interior vandalised and two Evangelist sculptures stolen",
+      "published_account": "OIDAC Europe reported that an unidentified intruder extensively damaged the Church of the Four Holy Evangelists in Vienna-Oberbaumgarten on 25 March 2026. Religious materials and furnishings were scattered or overturned and two bronze Evangelist sculptures were stolen.",
+      "reported_actor": "Unidentified intruder; police complaint for criminal damage and aggravated theft reported",
+      "publisher": "OIDAC Europe",
+      "source_url": "https://www.intoleranceagainstchristians.eu/index.php?case=11331&id=12",
+      "notes": "The reported entry window was approximately 13:00-17:00. The source attributes the initial account to christenschutz.at. Motive and offender identity remain unconfirmed."
+    },
+    {
       "id": "CT-0287",
       "date": "2026-03-20",
       "country": "Ukraine",
@@ -716,6 +798,36 @@
       "media_url": "https://13wham.com/news/local/priest-makes-plea-after-mother-virgin-mary-statue-stolen-from-holy-cross-roman-catholic-church-rochester-charlotte-lake-avenue-theft-grotto",
       "media_note": "Link to local report; imagery/footage on page must be inspected and licensed before re-use",
       "notes": "USCCB archive contains additional incidents; this workbook extracts a selection."
+    },
+    {
+      "id": "CT-0610",
+      "date": "2026-03-06",
+      "country": "Ireland",
+      "place": "St James's Church, Kilbeggan",
+      "category": "Attempted church arson; entrance",
+      "title": "Diesel-soaked materials ignited at St James's church doorway",
+      "published_account": "RTÉ reported a deliberate attempt to set alight the entrance of St James's Catholic Church in Kilbeggan, Westmeath, at approximately 02:00 on 6 March 2026. The parish described cloths placed across the entrance, soaked in diesel and ignited.",
+      "reported_actor": "Unknown persons; Garda investigation ongoing at publication",
+      "publisher": "RTÉ News",
+      "source_url": "https://www.rte.ie/news/leinster/2026/0309/1562408-church-fires-westmeath/",
+      "second_source_url": "https://www.thejournal.ie/westmeath-parishes-shaken-by-arson-attacks-on-two-churches-6980396-Mar2026/",
+      "notes": "The report concerns St James's Church only; St Michael's Church was attacked hours later in a separately identified incident. No completed destruction of either church was reported.",
+      "incident_group": "IRL-WESTMEATH-MARCH2026"
+    },
+    {
+      "id": "CT-0611",
+      "date": "2026-03-06",
+      "country": "Ireland",
+      "place": "St Michael's Church, Castletown Geoghegan",
+      "category": "Attempted church arson; entrance",
+      "title": "Second diesel-fuelled doorway fire reported at St Michael's Church",
+      "published_account": "RTÉ reported that cloths and diesel were used to ignite the main entrance of St Michael's Catholic Church at Castletown Geoghegan, Westmeath, a few hours after the Kilbeggan church fire on 6 March 2026. A local volunteer raised the alarm and emergency services prevented the fire spreading.",
+      "reported_actor": "Unknown persons; the relationship between the two fires was being investigated",
+      "publisher": "RTÉ News",
+      "source_url": "https://www.rte.ie/news/leinster/2026/0309/1562408-church-fires-westmeath/",
+      "second_source_url": "https://www.thejournal.ie/westmeath-parishes-shaken-by-arson-attacks-on-two-churches-6980396-Mar2026/",
+      "notes": "This is a separate named church and location from CT-0610. The events share an incident group for linked investigations and must not be conflated into one location.",
+      "incident_group": "IRL-WESTMEATH-MARCH2026"
     },
     {
       "id": "CT-0024",
@@ -1134,6 +1246,19 @@
       "publisher": "OIDAC Europe",
       "source_url": "https://www.intoleranceagainstchristians.eu/index.php?id=12&case=10755",
       "notes": "Single publisher case summary; no independent adjudication undertaken."
+    },
+    {
+      "id": "CT-0602",
+      "date": "2025-12-25",
+      "country": "Denmark",
+      "place": "St Nikolaj Catholic Church, Esbjerg",
+      "category": "Crucifix vandalism; religious sculpture",
+      "title": "Christ figure struck in the face outside Esbjerg Catholic church at Christmas",
+      "published_account": "Danish Christian newspaper Udfordringen published a statement by Fr Benny Blumensaat describing CCTV from St Nikolaj Church in Esbjerg on Christmas night 2025. A man reportedly returned to a crucifix outside the church and struck the face of the Jesus figure with a heavy object three times.",
+      "reported_actor": "Unidentified man described in reported CCTV; motive unconfirmed",
+      "publisher": "Udfordringen",
+      "source_url": "https://udfordringen.dk/2026/01/haervaerk-paa-jesusfigur-ved-kirke-i-esbjerg-julenat/",
+      "notes": "The newspaper article was published in January 2026, but it dates the reported act to about 01:30 on 25 December 2025. No offender identity or criminal outcome is established in the cited account."
     },
     {
       "id": "CT-0044",
@@ -2199,6 +2324,19 @@
       "notes": "USCCB archive contains additional incidents; this workbook extracts a selection."
     },
     {
+      "id": "CT-0599",
+      "date": "2025-06-19",
+      "country": "Austria",
+      "place": "St Ulrich parish church, Steyr",
+      "category": "Desecration of liturgical book",
+      "title": "Liturgical Gospel book torn apart at St Ulrich parish church",
+      "published_account": "OIDAC Europe reported that parish staff at St Ulrich bei Steyr discovered a liturgical Gospel book with its approximately 300 pages torn through the centre between 17 and 19 June 2025. The book had been displayed on a side altar.",
+      "reported_actor": "Unknown vandal; motive unconfirmed",
+      "publisher": "OIDAC Europe",
+      "source_url": "https://www.intoleranceagainstchristians.eu/index.php?case=9845&id=12",
+      "notes": "19 June is the discovery or reported date within a 17-19 June window, not a confirmed exact offence date. The damaged pages represent one reported incident."
+    },
+    {
       "id": "CT-0257",
       "date": "2025-06-17",
       "country": "Ukraine",
@@ -2422,6 +2560,36 @@
       "source_url": "https://www.cps.gov.uk/north-west/news/man-who-defaced-and-desecrated-church-leyland-has-been-sentenced",
       "notes": "Separate church and date, but linked offender and sentencing; grouped for double-count audit.",
       "incident_group": "LEYLAND-APR-2025"
+    },
+    {
+      "id": "CT-0612",
+      "date": "2025-04-27",
+      "country": "Ireland",
+      "place": "Ravensdale parochial house, County Louth",
+      "category": "Firebomb attack on clergy residence",
+      "title": "Petrol bombs thrown at occupied Ravensdale priest's house",
+      "published_account": "RTÉ reported that petrol bombs were thrown at a parochial house in Ravensdale, County Louth, at around 22:00 on 27 April 2025, damaging the front door and exterior walls. Fr Stephen Duffy was at home and escaped injury. Fire services extinguished the blaze before it reached the interior.",
+      "reported_actor": "A man in his 30s later charged in connection with multiple criminal-damage incidents; religious motive not confirmed",
+      "publisher": "RTÉ News",
+      "source_url": "https://www.rte.ie/news/leinster/2025/0429/1510207-damage-louth/",
+      "second_source_url": "https://www.rte.ie/news/leinster/2025/0502/1510726-louth-charged/",
+      "notes": "A distinct earlier graffiti incident at the same house is catalogued as CT-0613, linked by incident group. No conviction or anti-Christian motive is inferred from the charges.",
+      "incident_group": "IRL-RAVENSDALE-APR2025"
+    },
+    {
+      "id": "CT-0613",
+      "date": "2025-04-26",
+      "country": "Ireland",
+      "place": "Ravensdale parochial house, County Louth",
+      "category": "Religious graffiti; clergy residence",
+      "title": "Religious graffiti reported on Ravensdale parochial house",
+      "published_account": "RTÉ reported that graffiti understood to be satanic in character was sprayed on the outside of Fr Stephen Duffy's parochial residence in Ravensdale in the early hours of 26 April 2025. The residence was separately firebombed the following evening.",
+      "reported_actor": "A man later charged in relation to several area criminal-damage incidents; graffiti author and specific motive not conclusively established",
+      "publisher": "RTÉ News",
+      "source_url": "https://www.rte.ie/news/leinster/2025/0429/1510207-damage-louth/",
+      "second_source_url": "https://www.irishcatholic.com/priest-shocked-by-petrol-bombs-and-graffiti-at-parochial-house/",
+      "notes": "RTÉ confirms different dates and acts, so the graffiti and the 27 April firebombing are distinct reports but grouped under one related-case identifier. 'Satanic' is a publisher-attributed description.",
+      "incident_group": "IRL-RAVENSDALE-APR2025"
     },
     {
       "id": "CT-0086",
@@ -3007,6 +3175,19 @@
       "notes": "Church-leader vulnerability documented; no court finding about individual motive cited."
     },
     {
+      "id": "CT-0603",
+      "date": "2025-01",
+      "country": "Denmark",
+      "place": "Hellerup Church, Gentofte",
+      "category": "Church exterior graffiti",
+      "title": "Unknown figure painted on Hellerup church exterior",
+      "published_account": "The North Zealand Police daily bulletin dated 10 January 2025 records a report of vandalism at Hellerup Church. An unknown person or persons painted a circular figure on the church building at some point between a Sunday and Monday earlier that week.",
+      "reported_actor": "Unknown; no reported religiously hostile inscription or motive",
+      "publisher": "North Zealand Police",
+      "source_url": "https://politi.dk/nordsjaellands-politi/doegnrapporter/nordsjaellands-politi-uddrag-af-doegnrapport-0910-januar-2025/2025/01/10",
+      "notes": "The police account does not confirm a particular offence day or explicitly anti-Christian message. The catalogue uses month precision to avoid inventing an exact date."
+    },
+    {
       "id": "CT-0422",
       "country": "Chile",
       "date": "2025",
@@ -3187,6 +3368,20 @@
       "notes": "USCIRF reports she fled Iran; do not describe her as currently serving the sentence."
     },
     {
+      "id": "CT-0604",
+      "date": "2024-10-27",
+      "country": "Denmark",
+      "place": "Frederikshavn Church",
+      "category": "Extremist-symbol graffiti; church vandalism",
+      "title": "Swastika and number 28 painted on Frederikshavn Church entrance",
+      "published_account": "Local Danish outlet Kanal Frederikshavn reported a swastika and the number 28 painted on the main entrance to Frederikshavn Church on 27 October 2024. The parish council chairman said the incident would be reported to police.",
+      "reported_actor": "Unidentified persons; ideological affiliation and motive not confirmed",
+      "publisher": "Kanal Frederikshavn",
+      "source_url": "https://www.kanalfrederikshavn.dk/vis/nyhed/er-det-nynazister-som-har-tegnet-hagekors-paa-frederikshavn-kirkes-hoveddoer",
+      "second_source_url": "https://presse-fotos.dk/post/kirke-udsat-for-haervaerk-hagekors-paa-hoveddoeren/",
+      "notes": "The number 28 has associations with a neo-Nazi group, but the reporting does not identify who created the graffiti. 27 October is the report date; the exact time of painting was not confirmed."
+    },
+    {
       "id": "CT-0258",
       "date": "2024-10-17",
       "country": "Ukraine",
@@ -3307,6 +3502,20 @@
       "incident_group": "INDIA-2024-TRACKER"
     },
     {
+      "id": "CT-0614",
+      "date": "2024-08-28",
+      "country": "Ireland",
+      "place": "St Baithin's Catholic Church, St Johnston",
+      "category": "Reported attempted church arson",
+      "title": "St Baithin's Church targeted during St Johnston arson incidents",
+      "published_account": "The Garda public statement recorded multiple attempted arson and criminal-damage incidents in St Johnston, Donegal, on the night of 28 August 2024. Contemporary Donegal reporting identified St Baithin's Catholic Church among the targeted premises, alongside an Orange Hall and a Masonic Hall.",
+      "reported_actor": "A 27-year-old man was charged in connection with alleged attacks; no conviction or specifically anti-Christian motive documented in these sources",
+      "publisher": "An Garda Síochána",
+      "source_url": "https://www.garda.ie/en/about-us/our-departments/office-of-corporate-communications/press-releases/2024/august/arrest-arson-and-criminal-damage-st-johnston-co-donegal-28th-august-2024-.html",
+      "second_source_url": "https://www.irishtimes.com/ireland/2024/08/29/man-27-charged-with-attacks-on-church-orange-hall-and-masonic-hall-in-co-donegal/",
+      "notes": "The official Garda release does not individually name buildings; the church location is attributed to the cited contemporary press. The incident date differs from some charge dates mentioned in court reporting. Only the church attack is included, not attacks against the two other buildings."
+    },
+    {
       "id": "CT-0259",
       "date": "2024-08-20",
       "country": "Ukraine",
@@ -3319,6 +3528,20 @@
       "source_url": "https://www.hrw.org/news/2024/10/30/ukraine-new-law-raises-religious-freedom-concerns",
       "second_source_url": "https://ukraine.ohchr.org/sites/default/files/2025-01/2024-12-31%20OHCHR%2041st%20periodic%20report%20on%20Ukraine.pdf",
       "notes": "Ukrainian government-controlled territory; a legislative measure and rights concern, not a count of closed churches or proven criminal wrongdoing."
+    },
+    {
+      "id": "CT-0615",
+      "date": "2024-08-15",
+      "country": "Ireland",
+      "place": "Renmore Barracks, Galway",
+      "category": "Violent attack on Catholic chaplain; motive qualified",
+      "title": "Army chaplain Fr Paul Murphy repeatedly stabbed at Renmore Barracks",
+      "published_account": "RTÉ reported that Fr Paul Murphy, an Irish Defence Forces Catholic chaplain, was repeatedly stabbed at Renmore Barracks on 15 August 2024. In April 2025 the teenage attacker was sentenced after pleading guilty to attempted murder; court reporting described online radicalisation and a ten-year detention sentence with two years suspended.",
+      "reported_actor": "Teenager convicted of attempted murder; court heard he did not specifically select the victim because he was a priest",
+      "publisher": "RTÉ News",
+      "source_url": "https://www.rte.ie/news/courts/2025/0429/1510129-chaplain-stabbing/",
+      "second_source_url": "https://www.rte.ie/news/courts/2025/0410/1506938-galway-court/",
+      "notes": "A violent incident affecting a Christian cleric, included on the report-based catalogue with express qualification: the court heard the priest was not specifically targeted for his religion, and the attacker cited grievances involving the Irish Defence Forces. The juvenile is not identified. No definitive faith-based motive should be asserted."
     },
     {
       "id": "CT-0585",
@@ -3495,6 +3718,20 @@
       "notes": "Allegations attributed to local advocates and CSW; release reported on 25 July."
     },
     {
+      "id": "CT-0616",
+      "date": "2024-06-11",
+      "country": "Ireland",
+      "place": "St Michan's Church, Dublin",
+      "category": "Church crypt arson; sacred remains",
+      "title": "Historic St Michan's church crypt set on fire and mummified remains destroyed",
+      "published_account": "The Church of Ireland's Dublin diocese reported that vandals broke into the crypt of St Michan's Church on 11 June 2024 and lit a fire among historic mummified remains. RTÉ reported damage to five mummies, and a man was subsequently convicted and sentenced for arson.",
+      "reported_actor": "A man pleaded guilty to arson and was sentenced according to subsequent Irish Times reporting; religious hatred not established",
+      "publisher": "United Dioceses of Dublin and Glendalough",
+      "source_url": "https://dublin.anglican.org/news/2024/06/11/devastation-as-st-michans-mummies",
+      "second_source_url": "https://www.rte.ie/news/2024/0611/1454267-st-michans-church/",
+      "notes": "One fire event and one church crypt, not five separate attacks for the five damaged remains. Subsequent conviction reported in March 2025; the archive does not infer an anti-Christian motivation from the arson conviction alone."
+    },
+    {
       "id": "CT-0119",
       "date": "2024-06-07",
       "country": "India",
@@ -3565,6 +3802,19 @@
       "media_url": "https://www.abc.net.au/news/2024-05-26/american-couple-killed-in-haiti-missionaries/103894362",
       "media_note": "Supplied wedding photograph of Davy and Natalie Lloyd; third-party rights",
       "notes": "Gang attack; source does not establish religious motive."
+    },
+    {
+      "id": "CT-0600",
+      "date": "2024-05-12",
+      "country": "Austria",
+      "place": "St Anthony of Padua Church, Vienna",
+      "category": "Anti-Christian graffiti; church vandalism",
+      "title": "Religious slogans written beside St Anthony's church entrance in Vienna",
+      "published_account": "OIDAC Europe documented graffiti near the entrance to St Anthony of Padua Church in Vienna in May 2024, including slogans asserting the supremacy of Islam. The source described writing in black marker on the exterior wall.",
+      "reported_actor": "Unknown writers; the wording alone does not establish an offender's ethnicity or religious identity",
+      "publisher": "OIDAC Europe",
+      "source_url": "https://www.intoleranceagainstchristians.eu/index.php?case=8021&id=12",
+      "notes": "The source dates the incident 12 May 2024. Later attacks reported at the same church in 2025 are not merged into this dated incident. This entry attributes the words to the published account rather than establishing their author's identity."
     },
     {
       "id": "CT-0297",
@@ -3712,6 +3962,19 @@
       "notes": "Ukrainian government-controlled territory; allegations against the abbot were charges, not an established conviction."
     },
     {
+      "id": "CT-0596",
+      "date": "2024-04-23",
+      "country": "Belgium",
+      "place": "Church of Appels, Dendermonde",
+      "category": "Church vandalism; First Communion materials",
+      "title": "First Communion booklets torn up in Appels church vandalism",
+      "published_account": "OIDAC Europe reported that intruders damaged the church's notice board and destroyed booklets prepared for First Communion at the church in Appels, Dendermonde, on 23 April 2024. A church council member said the building would close in the evenings temporarily.",
+      "reported_actor": "Unidentified individuals; motive not established",
+      "publisher": "OIDAC Europe",
+      "source_url": "https://www.intoleranceagainstchristians.eu/index.php?case=7938&id=12",
+      "notes": "The OIDAC case cites Belgian news outlets Nieuwsblad and HLN. First Communion preparations were affected; the report does not establish a specific offender."
+    },
+    {
       "id": "CT-0272",
       "date": "2024-04-22",
       "country": "Ukraine",
@@ -3765,6 +4028,19 @@
       "notes": "A church-reported account with alleged explicit anti-religious statements by attackers, not a court finding."
     },
     {
+      "id": "CT-0601",
+      "date": "2024-04-06",
+      "country": "Austria",
+      "place": "Serbian Orthodox Church of Our Lady, Feldkirch",
+      "category": "Church altar arson; theft",
+      "title": "Altar cloth set alight in Feldkirch Serbian Orthodox church",
+      "published_account": "OIDAC Europe reported that two minors searched church donation boxes at the Serbian Orthodox Church of Our Lady in Feldkirch on 6 April 2024 and set an altar cloth on fire. The fire spread to flooring and adjacent woodwork, prompting a fire-service response and causing substantial damage.",
+      "reported_actor": "Two children reportedly involved, one aged 12; report describes a theft-related sequence, not an established anti-Christian motive",
+      "publisher": "OIDAC Europe",
+      "source_url": "https://www.intoleranceagainstchristians.eu/index.php?case=7726&id=12",
+      "notes": "OIDAC cites regional media and reports damage exceeding EUR 20,000. The record concerns one church-fire event and does not identify children by name."
+    },
+    {
       "id": "CT-0356",
       "country": "Azerbaijan",
       "date": "2024-04",
@@ -3776,6 +4052,19 @@
       "publisher": "Caucasus Heritage Watch (Cornell and Purdue)",
       "source_url": "https://caucasusheritage.cornell.edu/?page_id=2427",
       "notes": "The researchers verified demolition, but motives and individual perpetrators require separate evidence."
+    },
+    {
+      "id": "CT-0597",
+      "date": "2024-03-16",
+      "country": "Belgium",
+      "place": "Bovekerke church cemetery, Koekelare",
+      "category": "Cemetery vandalism; Christian monuments",
+      "title": "Grave crosses, statues and plaques damaged at Bovekerke cemetery",
+      "published_account": "OIDAC Europe reported vandalism at the cemetery surrounding the Bovekerke church in Koekelare on 16 March 2024. Approximately a dozen statues, ornaments and memorial plaques were damaged and some grave crosses were reported missing. Local authorities investigated.",
+      "reported_actor": "Unidentified vandals; motive not determined",
+      "publisher": "OIDAC Europe",
+      "source_url": "https://www.intoleranceagainstchristians.eu/index.php?case=7559&id=12",
+      "notes": "One cemetery incident involving multiple graves and monuments; the reported dozen items must not become a dozen catalogue incidents."
     },
     {
       "id": "CT-0261",
@@ -3859,6 +4148,20 @@
       "media_type": "Illustrative photograph",
       "media_url": "https://acnuk.org/news/2024/02/26/burkina-faso-15-killed-attack-catholic-church",
       "media_note": "ACN article explicitly uses archive church photograph, not incident image"
+    },
+    {
+      "id": "CT-0605",
+      "date": "2024-02-20",
+      "country": "Denmark",
+      "place": "Spjellerup Church, Karise",
+      "category": "Severe church vandalism; altar and organ",
+      "title": "Altar and organ damaged with extinguishers at Spjellerup Church",
+      "published_account": "South Zealand and Lolland-Falster Police reported that intruders damaged Spjellerup Church between 17 and 20 February 2024. They discharged two fire extinguishers over the church interior, altar and organ, damaged the altar and cut organ tubing.",
+      "reported_actor": "Police later reportedly arrested and charged a 21-year-old man; motive and conviction not established",
+      "publisher": "South Zealand and Lolland-Falster Police",
+      "source_url": "https://politi.dk/sydsjaellands-og-lolland-falsters-politi/doegnrapporter/sydsjaellands-og-lolland-falsters-politi-uddrag-af-doegnrapporten-fra-tirsdag-20-februar/2024/02/21",
+      "second_source_url": "https://presse-fotos.dk/post/landsby-i-chok-kirke-vandaliseret-af-ukendte-gerningsmand/",
+      "notes": "20 February is the discovery/reporting deadline within the police-stated 17-20 February window, not a confirmed offence day. This is separate from a 2023 cemetery incident noted in later general reporting."
     },
     {
       "id": "CT-0273",
@@ -4099,6 +4402,19 @@
       "publisher": "RPP Noticias",
       "source_url": "https://rpp.pe/peru/loreto/loreto-pastor-evangelico-fue-asesinado-a-machetazos-por-delincuentes-durante-asalto-en-su-centro-de-trabajo-noticia-1526156",
       "notes": "Reported underlying motive was robbery rather than religious hostility; included under the user's comprehensive clergy incident standard."
+    },
+    {
+      "id": "CT-0606",
+      "date": "2024-01-01",
+      "country": "Denmark",
+      "place": "Vestervig Church, Thisted",
+      "category": "Church-door graffiti; occult and Nazi symbols",
+      "title": "Pentagrams and swastika drawn on Vestervig Church door",
+      "published_account": "Udfordringen reported that the door of Vestervig Church was marked with six pentagrams, an animal-head symbol and a swastika around New Year's Day 2024. The parish council chair said marks were discovered the following Tuesday and a report made to police.",
+      "reported_actor": "Unknown perpetrators; church representative considered it hostile, but intent not judicially established",
+      "publisher": "Udfordringen",
+      "source_url": "https://udfordringen.dk/2024/01/haervaerk-mod-kirker-i-danmark-kalder-paa-at-kristne-maa-vaagne-aandeligt/",
+      "notes": "The church reported the marks were made after a New Year's Day service or overnight before discovery on 2 January. Reported markings were made with chalk, and material damage was described as limited. Date reflects the likely starting window."
     },
     {
       "id": "CT-0423",
@@ -8109,6 +8425,6 @@
     "date_policy": "The date field accepts YYYY, YYYY-MM and YYYY-MM-DD where sources do not provide an exact day. No day is invented.",
     "note": "A source-attributed record is included if a published report describes an alleged, disputed, unverified or substantiated incident, reported pattern or relevant restriction affecting Christians. Publication does not establish the event or motive as fact; descriptions preserve publisher attribution. Entries count reports, not independently verified incidents or victims.",
     "earliest_record": "1997-02-06",
-    "latest_record": "2026-11-06"
+    "latest_record": "2026-11-11"
   }
 }
