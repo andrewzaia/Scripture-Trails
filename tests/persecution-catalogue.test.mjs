@@ -640,3 +640,25 @@ test('v1.16.5 adds documented distinct cases across five previously unrepresente
  assert.ok(manifest.filter(x=>/^CT-06(?:3[7-9]|4\d|5[0-4])/.test(x.linked_incident)).length>=12);
 });
 
+
+test('seven additional countries remain source-attributed and geographically indexable',()=>{
+ const geo=JSON.parse(read('public/data/christian-heatmap-places.json'));
+ const world=JSON.parse(read('public/data/world-heatmap-110m.json'));
+ const validIso3=new Set(world.features.map(feature=>feature.id));
+ const added=['North Macedonia','Slovenia','Latvia','Estonia','Moldova','Montenegro','Rwanda'];
+ const relevant=records.filter(record=>added.includes(record.country));
+ assert.equal(relevant.length,10);
+ for(const country of added){
+  assert.ok(geo.countries[country], 'Missing country mapping: '+country);
+  assert.ok(validIso3.has(geo.countries[country].iso3),'Missing geometry: '+country);
+  const matching=relevant.filter(record=>record.country===country);
+  assert.ok(matching.length>0,'Missing records: '+country);
+  assert.equal(filterPersecutionReports(records,{country}).length,matching.length);
+ }
+ for(const record of relevant){
+  assert.ok(record.publisher&&record.reported_actor&&record.notes&&record.source_url);
+  assert.equal(new URL(record.source_url).protocol,'https:');
+ }
+ const aggregates=aggregateIncidentLocations(records,geo);
+ for(const country of added)assert.equal(aggregates.countries.get(country),relevant.filter(record=>record.country===country).length);
+});
