@@ -66,7 +66,7 @@ export function createChristianHeatmap(root,{onCountry=()=>{},onPlace=()=>{},onR
   for(const lon of [-120,-60,0,60,120]){const x=position(0,lon).x;grid.append(svg('path',{d:'M'+x+',0V510'}));}
   plot.append(grid);
   worldLayer=svg('g',{'class':'pc-world-countries'});
-  densityLayer=svg('g',{'class':'pc-world-density','aria-hidden':'true'});
+  densityLayer=svg('g',{'class':'pc-world-density','aria-hidden':'true','pointer-events':'none'});
   markersLayer=svg('g',{'class':'pc-world-localities'});
   plot.append(worldLayer,densityLayer,markersLayer);
   surface.replaceChildren(plot);
