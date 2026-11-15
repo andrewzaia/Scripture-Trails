@@ -1,9 +1,9 @@
 # Christian persecution geographic coverage audit
 
 Checked: 2026-11-15
-Candidate release: v1.16.3
+Candidate release: v1.16.4
 
-The catalogue now contains 616 published source-attributed report records across 96 countries and territories. Release v1.16.3 adds 23 distinct reports across Belgium (4), Austria (4), Denmark (5) and Ireland (10). Release v1.16.2 adds two reports from the United Kingdom and France without duplicate incidents or inventing events from aggregate claims. Release v1.16.1 adds three reports from Lithuania, Ireland and France; the earlier v1.16.0 release added 26 reports across Azerbaijan, China, Iran, Eritrea, Myanmar, Nigeria, Pakistan, Nicaragua, Sri Lanka, Russia, Colombia, Cuba and Kyrgyzstan. All earlier releases and source records remain preserved.
+The catalogue now contains 636 published source-attributed report records across 100 countries and territories. Release v1.16.4 adds 20 separately described reports: Switzerland (9), Romania (4), Bulgaria (3) and Finland (4). Release v1.16.3 adds 23 distinct reports across Belgium (4), Austria (4), Denmark (5) and Ireland (10). Release v1.16.2 adds two reports from the United Kingdom and France without duplicate incidents or inventing events from aggregate claims. Release v1.16.1 adds three reports from Lithuania, Ireland and France; the earlier v1.16.0 release added 26 reports across Azerbaijan, China, Iran, Eritrea, Myanmar, Nigeria, Pakistan, Nicaragua, Sri Lanka, Russia, Colombia, Cuba and Kyrgyzstan. All earlier releases and source records remain preserved.
 
 ## Inclusion and counting
 
@@ -61,7 +61,7 @@ Review the full UN investigative dossiers and other primary reporting for additi
 
 ## Remaining zero-report research queue
 
-Investigate Romania, Zimbabwe, Honduras, Iceland, Norway, Switzerland, Bulgaria, North Macedonia, Montenegro, Slovenia, Czechia, Finland, Estonia, Latvia, Moldova, Angola, Zambia, Rwanda, Burundi, Namibia, Papua New Guinea and other unrepresented territories.
+Investigate Zimbabwe, Honduras, Iceland, Norway, North Macedonia, Montenegro, Slovenia, Czechia, Estonia, Latvia, Moldova, Angola, Zambia, Rwanda, Burundi, Namibia, Papua New Guinea and other unrepresented territories.
 
 Small countries including Bahrain and Maldives are missing from the current 110m map geometry. Do not create country shading for them by reusing a neighbouring country polygon. Incorporating correct geometry is a separate mapping task.
 
@@ -96,3 +96,13 @@ Do not download or publish third-party photographs without reproduction rights.
 - Published reports remain included when motive, charge or prosecution status is unresolved. Separate offences are kept distinct where police explicitly reported separate dates or church locations; related incidents carry an incident_group key.
 - Include 13 publisher-hosted media source references without storing or distributing unlicensed image or video copies. The images manifest is unchanged pending reproduction rights.
 - Context: OSCE/ODIHR's 2024 reporting provides country-level bias coverage for Belgium, Austria, Denmark and Ireland; its aggregate figures are not converted into individual incident records. The Republic of Ireland and Northern Ireland remain separate in the current political boundary data, with Northern Ireland church cases allocated to the United Kingdom.
+
+## v1.16.4 four-country research expansion - 15 November 2026
+
+- Switzerland: CT-0617 to CT-0625. Reports cover Geneva tabernacle theft and consecrated hosts, Villigen's recurrent church and cemetery damage, a Bible fire at Le Sentier, the Frenkendorf church fire, Neuchâtel anti-clerical graffiti, Monthey church misuse, the Olten crucifix, Appenzell cemetery crosses, and the Madonna and Child shooting-target incident. Some are patterns reported on a given date rather than offences confined to that day. The Zürich shooting range has no identified exact position; map to regional centre only.
+- Romania: CT-0626 to CT-0629. The Brașov church fire and candle seller assault have no confirmed exact offence day, so January 2026 precision is retained. The Pașcani attempted burglary is a reported theft, not necessarily an anti-Christian act. The March 2023 demolition at Ungheni is an intra-Christian property restitution dispute, documented by the US State Department; record the Romanian Orthodox and Greek Catholic parties without erasing the contested claim. The 1984 communist demolition of Spirea Veche Church is a historic event, not a 2026 memorial incident.
+- Bulgaria: CT-0630 to CT-0632. The Svirachi chapel icons and donations were stolen in an undated August 2026 burglary. Two separate events at Patriarch Neofit's grave in Sofia are dated 15 April (cross and marble) and 20 July 2024 (Resurrection icon); the event pair shares an incident_group. The earlier report and the Patriarchate's later statement do not describe the same vandalism episode.
+- Finland: CT-0633 to CT-0636. The Supreme Court decision of 26 March 2026 convicted Päivi Räsänen and a representative of the Luther Foundation Finland over internet-published text derogatory toward homosexual people, but dismissed the Bible-verse social-media charge. The court held the conviction consistent with freedom-of-expression and freedom-of-religion guarantees, while the defendants dispute that assessment; this is a legal controversy, not an independently established persecution finding. Distinct incidents include Joensuu parish centre burglary in March 2026, Kettuvaara cemetery vandalism reported June 2024 and the 23 September 2018 Kiihtelysvaara church arson.
+- Four new ISO-country map definitions (CHE, ROU, BGR, FIN) and 19 grounded city, town or locality keys with declared approximate precision; repeated desecration of the same Sofia grave maps to one location. No map point represents an identified offender's residence or a court judgment's effects across the whole country.
+- Source distinctions: the content counts published reports, not verified religiously motivated hate crimes. Police charges, court findings, parish reports, convictions and disputed interpretations remain separate. Months and years are used where source accounts do not establish exact incident dates.
+- Add 16 external publisher source entries. Local image or video hosting was not attempted without established rights. The original four-entry local image manifest remains unchanged.

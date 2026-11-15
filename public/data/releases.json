@@ -1,6 +1,17 @@
 {
   "releases": [
     {
+      "version": "1.16.4",
+      "date": "2026-11-15",
+      "title": "Christian persecution coverage expands to Switzerland, Romania, Bulgaria and Finland",
+      "changes": [
+        "Add 20 source-attributed reports from Switzerland (9), Romania (4), Bulgaria (3) and Finland (4), extending the catalogue to 636 published reports across 100 countries and territories.",
+        "Document vandalism, church fires, sacred-object theft, communist-era church demolition and religious property disputes, preserving unclear motives and historical reporting dates.",
+        "Record the Finnish Supreme Court's 2026 judgment accurately: an online pamphlet led to convictions, while the separate charge over a Bible-verse social-media post was dismissed.",
+        "Add heat-map coverage for four new countries, 19 approximate site or locality markers, 16 external publisher source references and targeted regression tests."
+      ]
+    },
+    {
       "version": "1.16.3",
       "date": "2026-11-15",
       "title": "Christian persecution reports expanded across Belgium, Austria, Denmark and Ireland",

@@ -414,6 +414,19 @@
       "incident_group": "ARMENIA-CATHOLICOS-2026"
     },
     {
+      "id": "CT-0630",
+      "date": "2026-08",
+      "country": "Bulgaria",
+      "place": "Village chapel, Svirachi, Ivaylovgrad",
+      "category": "Chapel burglary; icon damage",
+      "title": "Icons broken and donations stolen from Svirachi chapel",
+      "published_account": "Regional Bulgarian reporting citing Haskovo police said burglars entered a chapel at Svirachi through a broken small window, damaged several icons and took donated money and approximately EUR 40 in coins from candle sales. Police were investigating following a report received on 9 August 2026.",
+      "reported_actor": "Unknown burglar or burglars; financial theft reported, religious animus not established",
+      "publisher": "Kardzhali.bgvesti.net",
+      "source_url": "https://kardjali.bgvesti.net/index.php/news/634818/vandali-schupikha-ikoni-i-zadignakha-dareniiata-ot-paraklis-v-svirachi",
+      "notes": "The article was published on 10 August and reports a police call the previous day, not a confirmed day of entry. Date is month-precision. The site is a chapel in Svirachi; no specific chapel dedication is asserted."
+    },
+    {
       "id": "CT-0009",
       "date": "2026-07-27",
       "country": "France",
@@ -556,6 +569,19 @@
       "publisher": "OIDAC Europe",
       "source_url": "https://www.intoleranceagainstchristians.eu/index.php?id=12&case=11633",
       "notes": "Single publisher case summary; no independent adjudication undertaken."
+    },
+    {
+      "id": "CT-0617",
+      "date": "2026-06-29",
+      "country": "Switzerland",
+      "place": "Sacré-Cœur Church, Geneva",
+      "category": "Sacrilegious theft; tabernacle desecration",
+      "title": "Tabernacle stolen and consecrated hosts discarded at Geneva church",
+      "published_account": "OIDAC Europe reported that unknown persons stole and damaged the bronze tabernacle from Sacré-Cœur Church in Geneva's Plainpalais district on 29 June 2026. Liturgical vessels were taken and consecrated hosts were reportedly found in a nearby construction waste container. The parish held a Mass of reparation.",
+      "reported_actor": "Unidentified thieves; religiously hostile intention not independently established",
+      "publisher": "OIDAC Europe",
+      "source_url": "https://www.intoleranceagainstchristians.eu/index.php?case=11627&id=12",
+      "notes": "The loss of the tabernacle, religious vessels and hosts concerns one church incident. The publisher cites cath.ch and Tribune de Genève. This is not counted separately for each stolen or desecrated item."
     },
     {
       "id": "CT-0595",
@@ -704,6 +730,19 @@
       "notes": "Follow-up to a previously imposed sentence, not an additional arrest. The deportation location was not specified; country-only map coverage."
     },
     {
+      "id": "CT-0618",
+      "date": "2026-04-09",
+      "country": "Switzerland",
+      "place": "Church and cemetery grounds, Rein, Villigen",
+      "category": "Repeated church-ground and cemetery vandalism",
+      "title": "Repeated damage and sign removal reported on Rein church and cemetery grounds",
+      "published_account": "OIDAC Europe reproduced a municipal appeal from Villigen describing repeated vandalism around the church and cemetery grounds at Rein. Signs had been removed and found discarded in wooded areas, prompting the municipality to ask residents to report suspicious activity.",
+      "reported_actor": "Unknown persons; timing, number of acts and religious motive not established",
+      "publisher": "OIDAC Europe",
+      "source_url": "https://www.intoleranceagainstchristians.eu/index.php?case=11257&id=12",
+      "notes": "9 April 2026 is the date the municipality reported the pattern, not a confirmed date for every individual act. One pattern record, not an invented incident count. Complaints about dog fouling are background and not treated as persecution."
+    },
+    {
       "id": "CT-0575",
       "date": "2026-04-05",
       "country": "Nigeria",
@@ -744,6 +783,20 @@
       "notes": "Ukrainian government-controlled territory. Church-aligned reporting; source allegations and incident details have not been independently established here. Military mobilisation alone does not demonstrate religious persecution."
     },
     {
+      "id": "CT-0633",
+      "date": "2026-03-26",
+      "country": "Finland",
+      "place": "Supreme Court of Finland, Helsinki",
+      "category": "Religious-expression prosecution; contested free-speech ruling",
+      "title": "Supreme Court convicts Christian author and publisher over online pamphlet but dismisses Bible-verse post charge",
+      "published_account": "The Supreme Court of Finland announced its judgment of 26 March 2026 convicting parliamentarian Päivi Räsänen and a representative of the Luther Foundation Finland of agitation against a population group arising from continued internet publication of text the court found derogatory towards homosexual people. The court imposed fines and ordered unlawful passages removed. The separate charge against Räsänen concerning her 2019 social-media post with a Bible quotation was dismissed.",
+      "reported_actor": "Finnish public prosecution and Supreme Court; convictions concern specific statements about a protected group, while the Bible-verse post charge was dismissed",
+      "publisher": "Supreme Court of Finland",
+      "source_url": "https://www.korkeinoikeus.fi/en/news/news-archive/supreme-court-paivi-rasanen-and-her-internet-publisher-convicted-of-agitation-against-a-population-group/",
+      "second_source_url": "https://www.lhpk.fi/en/the-supreme-court-convicted-rasanen-pohjola-and-the-luther-foundation-finland/",
+      "notes": "One continuing legal case, not individual incidents for every hearing or statement. The Supreme Court held that the conviction was compatible with constitutional and Convention rights to expression and religion. Räsänen disputes that assessment and describes it as a free-speech concern. The original print booklet was not the subject of the criminal charges. The court communication was published 7 April 2026 for a 26 March judgment."
+    },
+    {
       "id": "CT-0598",
       "date": "2026-03-25",
       "country": "Austria",
@@ -781,6 +834,20 @@
       "publisher": "Christian Solidarity Worldwide",
       "source_url": "https://www.csw.org.uk/press/pastor-arrested-after-recording-and-uploading-bible-teaching-video-to-6760/",
       "notes": "Religious advocacy report; exact release information not asserted here."
+    },
+    {
+      "id": "CT-0619",
+      "date": "2026-03-15",
+      "country": "Switzerland",
+      "place": "Protestant church, Le Sentier, Vaud",
+      "category": "Bible arson; church damage; smoke injury",
+      "title": "Bible deliberately set alight on altar at Le Sentier Protestant church",
+      "published_account": "The Vaud public prosecutor's office reported that a Bible on a lectern beside the altar was set on fire on 15 March 2026 at approximately 07:25. The pastor extinguished the flames but required hospital assessment after inhaling smoke. The Bible and stand were destroyed and flooring was damaged.",
+      "reported_actor": "Vaud police identified a 31-year-old woman as a suspect; investigation ongoing in the official statement",
+      "publisher": "Canton of Vaud Public Prosecutor",
+      "source_url": "https://www.vd.ch/actualites/actualite/news/26114-incendie-au-temple-du-sentier",
+      "second_source_url": "https://www.intoleranceagainstchristians.eu/index.php?case=11134&id=12",
+      "notes": "The official Vaud statement of 17 March describes a suspect identified and cared for, rather than a conviction. No religious ideology, nationality beyond the source report or ultimate court disposition is inferred."
     },
     {
       "id": "CT-0023",
@@ -857,6 +924,19 @@
       "reported_actor": "Nicaraguan government",
       "publisher": "USCIRF",
       "source_url": "https://www.uscirf.gov/sites/default/files/2026-05/2026%20Nicaragua%20Country%20Update.pdf"
+    },
+    {
+      "id": "CT-0634",
+      "date": "2026-03",
+      "country": "Finland",
+      "place": "Evangelical Lutheran parish centre, Joensuu",
+      "category": "Church-affiliated premises burglary; damage",
+      "title": "Joensuu parish centre burgled, with tools stolen and offices defaced",
+      "published_account": "Yle reported that police were investigating a burglary at Joensuu's Evangelical Lutheran parish centre in Kirkkokatu over the weekend preceding 23 March 2026. Tools had been taken, walls and furniture were marked, and locks on office doors were broken.",
+      "reported_actor": "Unknown burglar or burglars; religious motive not established",
+      "publisher": "Yle",
+      "source_url": "https://yle.fi/a/74-20216877",
+      "notes": "The 23 March report identifies an approximate Friday-Sunday weekend for the offences, not a confirmed exact day. Recorded at month precision. One parish-property incident without inferring hostility to religious belief from theft."
     },
     {
       "id": "CT-0443",
@@ -1116,6 +1196,20 @@
       "reported_actor": "Nicaraguan government",
       "publisher": "USCIRF",
       "source_url": "https://www.uscirf.gov/sites/default/files/2026-05/2026%20Nicaragua%20Country%20Update.pdf"
+    },
+    {
+      "id": "CT-0626",
+      "date": "2026-01",
+      "country": "Romania",
+      "place": "Unspecified church, Brașov",
+      "category": "Church fire; assault on candle seller",
+      "title": "Brașov church candle area set on fire and woman assaulted",
+      "published_account": "Digi24, citing Brașov county police, reported that a 29-year-old man was detained in January 2026 after allegedly igniting the area where candles and devotional items were sold in a Brașov church and assaulting a woman working there. A court ordered 30 days of pre-trial detention.",
+      "reported_actor": "29-year-old man arrested and detained pending investigation; no final conviction or religious motive documented",
+      "publisher": "Digi24",
+      "source_url": "https://www.digi24.ro/amphtml/stiri/actualitate/tanar-arestat-dupa-ce-a-provocat-un-incendiu-intr-o-biserica-din-brasov-si-a-agresat-o-femeie-care-vindea-lumanari-3599825",
+      "second_source_url": "https://stirileprotv.ro/stiri/actualitate/un-tanar-din-brasov-arestat-dupa-ce-a-provocat-un-incendiu-intr-o-biserica-si-a-agresat-o-pe-femeia-care-vindea-lumanari.html",
+      "notes": "The article is dated 24 January but does not confirm the precise day of ignition, so the incident is dated only to January 2026. The victim's employment and injuries are source-attributed. The church's name is not established by the cited reporting."
     },
     {
       "id": "CT-0330",
@@ -1554,6 +1648,19 @@
       "publisher": "Open Doors Africa",
       "source_url": "https://www.opendoors.org.za/media-release-deadly-attacks-on-christians-in-mozambique/",
       "notes": "October 9 is the first reported day of the attack period, not a single-day event; figures remain source attributed."
+    },
+    {
+      "id": "CT-0620",
+      "date": "2025-10-09",
+      "country": "Switzerland",
+      "place": "St Margaretha Reformed Church, Frenkendorf",
+      "category": "Church arson; interior damage",
+      "title": "Pews and church interior damaged by fire at Frenkendorf Reformed church",
+      "published_account": "OIDAC Europe reported a fire at St Margaretha Reformed Church in Frenkendorf on 9 October 2025, affecting rear pews, the ceiling and walls. Police detained a 36-year-old Swiss man near the church and investigated whether he was responsible.",
+      "reported_actor": "Man detained for questioning; Basel-Landschaft police said no evidence of political motivation was known at the time",
+      "publisher": "OIDAC Europe",
+      "source_url": "https://www.intoleranceagainstchristians.eu/index.php?case=10256&id=12",
+      "notes": "The reported suspect is not treated as convicted. The published police assessment did not indicate a political motive. One fire event."
     },
     {
       "id": "CT-0320",
@@ -2004,6 +2111,20 @@
       "id": "CT-0503"
     },
     {
+      "id": "CT-0621",
+      "date": "2025-08",
+      "country": "Switzerland",
+      "place": "Collegiate Church, Neuchâtel",
+      "category": "Anti-clerical graffiti; church vandalism",
+      "title": "Anti-clerical and satanic-symbol graffiti painted on Neuchâtel collegiate church",
+      "published_account": "Keystone-SDA reporting said the historic Collegiate Church of Neuchâtel was among several public buildings defaced in early August 2025. The church bore anti-clerical slogans and other spray-painted markings, and city authorities announced a criminal complaint.",
+      "reported_actor": "Unknown sprayers; police did not establish that all citywide incidents had the same author",
+      "publisher": "Keystone-SDA via blue News",
+      "source_url": "https://www.bluewin.ch/en/news/international/sprayers-smear-buildings-and-monuments-in-neuchatel-2814402.html",
+      "second_source_url": "https://chretiens.com/actualites/la-collegiale-de-neuchatel-prise-pour-cible-au-coeur-dune-serie-de-tags/2025/08/09/15/09/",
+      "notes": "The reporting dates the discovery to early August rather than establishing one precise offence day. The church episode is one record, not every damaged municipal building. Graffiti included political and anti-clerical messages; authorship and religious animus were not established by police."
+    },
+    {
       "id": "CT-0556",
       "date": "2025-07-30",
       "country": "Mozambique",
@@ -2426,6 +2547,19 @@
       "media_url": "https://www.fox26houston.com/news/porter-texas-church-vandalized-statues-st-martha-june-2025",
       "media_note": "Link to local report; imagery/footage on page must be inspected and licensed before re-use",
       "notes": "USCCB archive contains additional incidents; this workbook extracts a selection."
+    },
+    {
+      "id": "CT-0622",
+      "date": "2025-06-05",
+      "country": "Switzerland",
+      "place": "Parish church, Monthey",
+      "category": "Repeated church vandalism; confessional misuse",
+      "title": "Monthey parish restricts access after repeated overnight damage and confessional misuse",
+      "published_account": "OIDAC Europe, citing Le Nouvelliste, reported repeated nighttime incursions at a church in Monthey, including attempts to open cabinets behind the altar, handling of liturgical objects and misuse of the confessional. The parish filed a police complaint and planned additional locking measures.",
+      "reported_actor": "Unidentified individuals; no reported theft or confirmed religious motive",
+      "publisher": "OIDAC Europe",
+      "source_url": "https://www.intoleranceagainstchristians.eu/index.php?case=9819&id=12",
+      "notes": "5 June 2025 is the publication date for a pattern of incidents, not a proven offence date for a single break-in. One attributed report avoids multiplying unitemised episodes."
     },
     {
       "id": "CT-0449",
@@ -2933,6 +3067,19 @@
       "notes": "Single publisher case summary; no independent adjudication undertaken."
     },
     {
+      "id": "CT-0623",
+      "date": "2025-02-20",
+      "country": "Switzerland",
+      "place": "Town church, Olten",
+      "category": "Crucifix destruction; church interior vandalism",
+      "title": "Christ figure torn from cross during vandalism inside Olten church",
+      "published_account": "OIDAC Europe reported that two men caused damage inside Olten's town church, including moving a wooden bench onto the altar, lighting candles and pulling a figure of Jesus from its cross. Staff alerted police, who found the men inside.",
+      "reported_actor": "Two men found by police and described as intoxicated; no anti-Christian motive established",
+      "publisher": "OIDAC Europe",
+      "source_url": "https://www.intoleranceagainstchristians.eu/index.php?case=9402&id=12",
+      "notes": "The catalogue uses the 20 February report date because the precise time of the damage is not independently established. One church episode, not separate incidents for each damaged object."
+    },
+    {
       "id": "CT-0428",
       "country": "Democratic Republic of the Congo",
       "date": "2025-02-15",
@@ -3041,6 +3188,19 @@
       "publisher": "OIDAC Europe",
       "source_url": "https://www.intoleranceagainstchristians.eu/index.php?id=12&case=9318",
       "notes": "Single publisher case summary; no independent adjudication undertaken."
+    },
+    {
+      "id": "CT-0627",
+      "date": "2025-01-29",
+      "country": "Romania",
+      "place": "Înălțarea Domnului Church, Pașcani",
+      "category": "Church break-in; attempted theft",
+      "title": "Church window broken during attempted donation-box theft in Pașcani",
+      "published_account": "Local outlet BIT24 reported that intruders broke a window at the Church of the Ascension in Pașcani during the night of 28-29 January 2025 and damaged church property while searching for donations. The donation box was empty and the suspects left without reported theft.",
+      "reported_actor": "Unknown burglar or burglars; police investigation of attempted theft, with no anti-Christian motive established",
+      "publisher": "BIT24",
+      "source_url": "https://bit24.ro/hotii-au-spart-capela-de-la-cimitirul-din-pascani-nu-au-gasit-nimic-in-cutia-milei-foto/",
+      "notes": "The article refers to both the cemetery chapel and Church of the Ascension. Preserve its identification without assuming separate break-ins at two sites. This is one 28-29 January incident dated by discovery day; theft rather than religious motive was reported."
     },
     {
       "id": "CT-0579",
@@ -3173,6 +3333,19 @@
       "publisher": "Christian Solidarity Worldwide",
       "source_url": "https://www.csw.org.uk/2025/01/14/press/6409/article.htm",
       "notes": "Church-leader vulnerability documented; no court finding about individual motive cited."
+    },
+    {
+      "id": "CT-0624",
+      "date": "2025-01-05",
+      "country": "Switzerland",
+      "place": "St Mauritius church cemetery, Appenzell",
+      "category": "Christian grave crosses and figures vandalised",
+      "title": "Multiple crosses damaged at Appenzell St Mauritius cemetery",
+      "published_account": "OIDAC Europe reported damage to grave crosses in the cemetery adjoining St Mauritius Parish Church in Appenzell on the night of 5 January 2025. Earlier vandalism at the same cemetery in 2022 was referenced as a separate historical episode.",
+      "reported_actor": "Unknown authors for the 2025 damage; earlier 2022 offenders reportedly identified",
+      "publisher": "OIDAC Europe",
+      "source_url": "https://www.intoleranceagainstchristians.eu/index.php?case=9185&id=12",
+      "notes": "The 2022 desecration of thirteen graves was historical context and is not multiplied into separate reports here. Religious motive in the 2025 incident was not determined."
     },
     {
       "id": "CT-0603",
@@ -3475,6 +3648,19 @@
       "incident_group": "PETRINJA-GRAFFITI-2024"
     },
     {
+      "id": "CT-0625",
+      "date": "2024-09-07",
+      "country": "Switzerland",
+      "place": "Canton of Zürich; shooting range unspecified",
+      "category": "Christian sacred-image shooting; religious offence conviction",
+      "title": "Swiss politician shoots at Madonna and Child poster used as target",
+      "published_account": "Associated Press reported that Zurich politician Sanija Ameti fired a pistol at a reproduction of a Madonna and Child artwork and posted images online in September 2024. A Zurich court subsequently convicted her of disturbing freedom of religion and worship and imposed financial penalties.",
+      "reported_actor": "Sanija Ameti; she apologised and said the large poster was chosen without initially recognising its religious subject",
+      "publisher": "Associated Press",
+      "source_url": "https://apnews.com/article/50124e0b42f3ab56e786ac398e81b905",
+      "notes": "One reported shooting-range event, not an assault on a church. The exact shooting-range address was not identified, so the map uses the canton/city area only. Record the court outcome and her account without attributing a religious or ethnic motive not proven in the reporting."
+    },
+    {
       "country": "Mozambique",
       "date": "2024-09",
       "place": "Cabo Delgado",
@@ -3638,6 +3824,21 @@
       "notes": "No arrests had been reported as of the CSW briefing; motive remains unresolved."
     },
     {
+      "id": "CT-0631",
+      "date": "2024-07-20",
+      "country": "Bulgaria",
+      "place": "Patriarch Neofit's grave, St Nedelya Church, Sofia",
+      "category": "Grave icon desecration; Christian monument",
+      "title": "Resurrection icon defaced on Patriarch Neofit's tomb cross in Sofia",
+      "published_account": "The Bulgarian Patriarchate reported that an unknown person damaged the mother-of-pearl icon of the Resurrection of Christ embedded in the cross on the grave of Patriarch Neofit at St Nedelya Church in Sofia early on 20 July 2024. Church authorities alerted police and undertook restoration.",
+      "reported_actor": "Unknown author; church did not establish identity or motive",
+      "publisher": "Bulgarian Patriarchate",
+      "source_url": "https://bg-patriarshia.bg/news/oskverniha-sedefenata-ikona-na-vazkresenie-hristovo-vgradena",
+      "second_source_url": "https://www.24chasa.bg/bulgaria/article/18501978",
+      "notes": "The church statement was published 25 July but dates the icon damage to 20 July. This is a later distinct act at the same grave previously damaged in April, recorded as a related incident rather than a second retelling of April.",
+      "incident_group": "BGR-NEOFIT-TOMB-2024"
+    },
+    {
       "id": "CT-0116",
       "date": "2024-07-17",
       "country": "India",
@@ -3716,6 +3917,19 @@
       "publisher": "Christian Solidarity Worldwide",
       "source_url": "https://www.csw.org.uk/reports/general-briefing-laos-6900/",
       "notes": "Allegations attributed to local advocates and CSW; release reported on 25 July."
+    },
+    {
+      "id": "CT-0635",
+      "date": "2024-06-19",
+      "country": "Finland",
+      "place": "Kettuvaara Cemetery, Joensuu",
+      "category": "Cemetery vandalism; property damage",
+      "title": "Lanterns damaged and scattered over graves at Joensuu's Kettuvaara cemetery",
+      "published_account": "OIDAC Europe reported that unknown persons broke into a maintenance building at Kettuvaara Cemetery in Joensuu, damaged grave lanterns, scattered items on graves and left taps running. The account was reported on 19 June 2024.",
+      "reported_actor": "Unidentified perpetrators; intent and religious motivation unverified",
+      "publisher": "OIDAC Europe",
+      "source_url": "https://www.intoleranceagainstchristians.eu/index.php?case=8801&id=12",
+      "notes": "19 June is the published report date and is not guaranteed to be the date the cemetery was entered. The broken lanterns and damaged premises belong to one reported cemetery episode."
     },
     {
       "id": "CT-0616",
@@ -4000,6 +4214,21 @@
       "source_url": "https://www.abc.net.au/news/2024-04-15/nsw-bishop-mar-mari-emmanuel-stabbed-man-arrested-wakeley/103711236",
       "second_source_url": "https://www.abc.net.au/news/2026-02-27/teenager-stabbed-sydney-bishop-schizophrenia-wakeley/106395940",
       "notes": "ABC follow-up in February 2026 covered the suspect's schizophrenia diagnosis and court assessment. Motive and criminal responsibility remain for proceedings to determine."
+    },
+    {
+      "id": "CT-0632",
+      "date": "2024-04-15",
+      "country": "Bulgaria",
+      "place": "Patriarch Neofit's grave, St Nedelya Church, Sofia",
+      "category": "Grave cross desecration; monument damage",
+      "title": "Patriarch Neofit's grave cross damaged and marble broken in Sofia",
+      "published_account": "The Bulgarian Orthodox Holy Synod reported that unidentified individuals desecrated the grave of Patriarch Neofit at St Nedelya Church in Sofia before its 16 April 2024 statement. The grave cross had been removed and damaged, and part of the marble structure was broken.",
+      "reported_actor": "Unknown offender or offenders; a suspect's detention was separately reported and is not treated as conviction",
+      "publisher": "The Sofia Globe",
+      "source_url": "https://sofiaglobe.com/2024/04/16/bulgarian-orthodox-church-patriarch-neofits-grave-desecrated/",
+      "second_source_url": "https://www.bta.bg/en/news/654918-patriarch-neophyte-s-grave-desecrated-suspect-detained",
+      "notes": "OIDAC lists 15 April for this first incident, which was publicly announced by the church on 16 April. The 20 July destruction of a Resurrection icon at the same grave was a separate subsequent event. Do not conflate the two.",
+      "incident_group": "BGR-NEOFIT-TOMB-2024"
     },
     {
       "id": "CT-0426",
@@ -5220,6 +5449,19 @@
       "id": "CT-0497"
     },
     {
+      "id": "CT-0628",
+      "date": "2023-03",
+      "country": "Romania",
+      "place": "Greek Catholic church, Ungheni, Mureș",
+      "category": "Contested church demolition; religious property rights",
+      "title": "Greek Catholic church demolished in Ungheni amid contested restitution",
+      "published_account": "The US Department of State's 2023 religious freedom report records the Romanian Orthodox Church's demolition of a Greek Catholic church in Ungheni in March 2023 despite protests. Greek Catholic leaders said the church had been confiscated under communist rule and sought restitution; Archbishop Lucian Mureșan protested to the prime minister.",
+      "reported_actor": "Romanian Orthodox Church carried out demolition; Greek Catholic ownership and restitution claims were contested",
+      "publisher": "US Department of State",
+      "source_url": "https://2021-2025.state.gov/reports/2023-report-on-international-religious-freedom/romania/",
+      "notes": "This is a dispute and demolition involving two Christian denominations, not an attack by a non-Christian group. The Department of State attributes some ownership and objection details to Greek Catholic leaders. No precise demolition day is provided."
+    },
+    {
       "id": "CT-0132",
       "date": "2023-02-10",
       "country": "Nicaragua",
@@ -6408,6 +6650,20 @@
       "publisher": "US State Department",
       "source_url": "https://2017-2021.state.gov/reports/2018-report-on-international-religious-freedom/mexico/",
       "notes": "Motive not established."
+    },
+    {
+      "id": "CT-0636",
+      "date": "2018-09-23",
+      "country": "Finland",
+      "place": "Historic Kiihtelysvaara Church, Joensuu",
+      "category": "Arson; historic church destroyed",
+      "title": "Eighteenth-century Kiihtelysvaara church destroyed by deliberate fire",
+      "published_account": "Yle reported the complete destruction by fire of the wooden Kiihtelysvaara Church, constructed in 1770, on 23 September 2018. Police investigated arson and later said a 29-year-old man admitted lighting the fire; the Joensuu parish subsequently rebuilt a new church at the site.",
+      "reported_actor": "29-year-old man admitted setting the church alight during police questioning; no religious motive established in cited source",
+      "publisher": "Yle",
+      "source_url": "https://yle.fi/a/3-10418870",
+      "second_source_url": "https://www.joensuunseurakunnat.fi/kiihtelysvaaran-kirkkohanke/kirkon-palo",
+      "notes": "The 2018 fire destroyed one church; the 2024 replacement and its dedication are not separate persecution cases. Yle later reported the suspect's admission, but the cited sources do not establish a religiously motivated attack or the final sentencing outcome. Further Yle follow-up: https://yle.fi/a/3-10432512 ."
     },
     {
       "id": "CT-0155",
@@ -8419,6 +8675,19 @@
       "reported_actor": "Large neighbouring mobs were accused; reports also alleged police involvement",
       "publisher": "Anglican Communion News Service",
       "source_url": "https://www.anglicannews.org/news/1997/02/christian-villages-destroyed.aspx"
+    },
+    {
+      "id": "CT-0629",
+      "date": "1984",
+      "country": "Romania",
+      "place": "Spirea Veche Church, Bucharest",
+      "category": "Communist-state destruction of church",
+      "title": "Spirea Veche Orthodox church demolished for communist-era civic project",
+      "published_account": "Romanian Orthodox news service Basilica recalled that the Spirea Veche church in Bucharest was demolished in 1984 under the communist regime during construction of the House of the People. A memorial cross was blessed at the former site in 2026, with rescued stained glass and other church property preserved elsewhere.",
+      "reported_actor": "Romanian communist state authorities responsible for demolition connected with the civic redevelopment",
+      "publisher": "Basilica.ro",
+      "source_url": "https://basilica.ro/en/spirea-veche-church-memorial-cross-bucharest/",
+      "notes": "The report was published in 2026 but concerns a historical demolition in 1984. The 2026 memorial ceremony is not a separate persecution incident. Preserve the single historic church site and do not imply a specific motive beyond state redevelopment and religious property destruction."
     }
   ],
   "coverage": {

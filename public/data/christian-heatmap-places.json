@@ -390,6 +390,22 @@
     "Denmark": {
       "iso2": "DK",
       "iso3": "DNK"
+    },
+    "Switzerland": {
+      "iso2": "CH",
+      "iso3": "CHE"
+    },
+    "Romania": {
+      "iso2": "RO",
+      "iso3": "ROU"
+    },
+    "Bulgaria": {
+      "iso2": "BG",
+      "iso3": "BGR"
+    },
+    "Finland": {
+      "iso2": "FI",
+      "iso3": "FIN"
     }
   },
   "places": {
@@ -3036,6 +3052,215 @@
           "lat": 53.3494,
           "lon": -6.2606,
           "precision": "city"
+        }
+      ]
+    },
+    "Switzerland|Sacré-Cœur Church, Geneva": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Geneva",
+          "lat": 46.2044,
+          "lon": 6.1432,
+          "precision": "city"
+        }
+      ]
+    },
+    "Switzerland|Church and cemetery grounds, Rein, Villigen": {
+      "resolution": "municipality",
+      "points": [
+        {
+          "name": "Villigen municipality",
+          "lat": 47.533,
+          "lon": 8.217,
+          "precision": "municipality"
+        }
+      ]
+    },
+    "Switzerland|Protestant church, Le Sentier, Vaud": {
+      "resolution": "village",
+      "points": [
+        {
+          "name": "Le Sentier",
+          "lat": 46.6141,
+          "lon": 6.239,
+          "precision": "village"
+        }
+      ]
+    },
+    "Switzerland|St Margaretha Reformed Church, Frenkendorf": {
+      "resolution": "town",
+      "points": [
+        {
+          "name": "Frenkendorf",
+          "lat": 47.505,
+          "lon": 7.717,
+          "precision": "town"
+        }
+      ]
+    },
+    "Switzerland|Collegiate Church, Neuchâtel": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Neuchâtel",
+          "lat": 46.9918,
+          "lon": 6.931,
+          "precision": "city"
+        }
+      ]
+    },
+    "Switzerland|Parish church, Monthey": {
+      "resolution": "town",
+      "points": [
+        {
+          "name": "Monthey",
+          "lat": 46.2552,
+          "lon": 6.9467,
+          "precision": "town"
+        }
+      ]
+    },
+    "Switzerland|Town church, Olten": {
+      "resolution": "town",
+      "points": [
+        {
+          "name": "Olten",
+          "lat": 47.351,
+          "lon": 7.903,
+          "precision": "town"
+        }
+      ]
+    },
+    "Switzerland|St Mauritius church cemetery, Appenzell": {
+      "resolution": "town",
+      "points": [
+        {
+          "name": "Appenzell",
+          "lat": 47.331,
+          "lon": 9.409,
+          "precision": "town"
+        }
+      ]
+    },
+    "Switzerland|Canton of Zürich; shooting range unspecified": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Zürich area, venue undisclosed",
+          "lat": 47.3769,
+          "lon": 8.5417,
+          "precision": "region"
+        }
+      ]
+    },
+    "Romania|Unspecified church, Brașov": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Brașov",
+          "lat": 45.6579,
+          "lon": 25.6012,
+          "precision": "city"
+        }
+      ]
+    },
+    "Romania|Înălțarea Domnului Church, Pașcani": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Pașcani",
+          "lat": 47.248,
+          "lon": 26.722,
+          "precision": "city"
+        }
+      ]
+    },
+    "Romania|Greek Catholic church, Ungheni, Mureș": {
+      "resolution": "town",
+      "points": [
+        {
+          "name": "Ungheni, Mureș",
+          "lat": 46.4833,
+          "lon": 24.4667,
+          "precision": "town"
+        }
+      ]
+    },
+    "Romania|Spirea Veche Church, Bucharest": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Bucharest",
+          "lat": 44.4268,
+          "lon": 26.1025,
+          "precision": "city"
+        }
+      ]
+    },
+    "Bulgaria|Village chapel, Svirachi, Ivaylovgrad": {
+      "resolution": "village",
+      "points": [
+        {
+          "name": "Svirachi",
+          "lat": 41.47781,
+          "lon": 26.11702,
+          "precision": "village"
+        }
+      ]
+    },
+    "Bulgaria|Patriarch Neofit's grave, St Nedelya Church, Sofia": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "St Nedelya, Sofia",
+          "lat": 42.6977,
+          "lon": 23.3219,
+          "precision": "city"
+        }
+      ]
+    },
+    "Finland|Supreme Court of Finland, Helsinki": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Helsinki",
+          "lat": 60.1699,
+          "lon": 24.9384,
+          "precision": "city"
+        }
+      ]
+    },
+    "Finland|Evangelical Lutheran parish centre, Joensuu": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Joensuu",
+          "lat": 62.601,
+          "lon": 29.763,
+          "precision": "city"
+        }
+      ]
+    },
+    "Finland|Kettuvaara Cemetery, Joensuu": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Kettuvaara, Joensuu",
+          "lat": 62.601,
+          "lon": 29.763,
+          "precision": "city"
+        }
+      ]
+    },
+    "Finland|Historic Kiihtelysvaara Church, Joensuu": {
+      "resolution": "town",
+      "points": [
+        {
+          "name": "Kiihtelysvaara",
+          "lat": 62.4932,
+          "lon": 30.2514,
+          "precision": "town"
         }
       ]
     }
