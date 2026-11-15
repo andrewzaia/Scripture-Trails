@@ -426,6 +426,34 @@
     "Czech Republic": {
       "iso2": "CZ",
       "iso3": "CZE"
+    },
+    "North Macedonia": {
+      "iso2": "MK",
+      "iso3": "MKD"
+    },
+    "Slovenia": {
+      "iso2": "SI",
+      "iso3": "SVN"
+    },
+    "Latvia": {
+      "iso2": "LV",
+      "iso3": "LVA"
+    },
+    "Estonia": {
+      "iso2": "EE",
+      "iso3": "EST"
+    },
+    "Moldova": {
+      "iso2": "MD",
+      "iso3": "MDA"
+    },
+    "Montenegro": {
+      "iso2": "ME",
+      "iso3": "MNE"
+    },
+    "Rwanda": {
+      "iso2": "RW",
+      "iso3": "RWA"
     }
   },
   "places": {
