@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.16.6 - 15/11/2026: World heat-map glow click-through
+
+- Make decorative heat-map glows click-through so underlying countries can be selected without changing the glow appearance.
+- Preserve locality marker selection and add a cross-browser regression test for country clicks beneath the glow.
+
 ## 1.16.5 - 15/11/2026: Christian persecution reports in Norway, Iceland, Zimbabwe, Honduras and Czech Republic
 
 - Add 18 source-attributed reports across Norway (5), Iceland (3), Zimbabwe (3), Honduras (6) and the Czech Republic (1), extending the catalogue to 654 reports across 105 countries and territories.
