@@ -66,7 +66,7 @@ export function createChristianHeatmap(root,{onCountry=()=>{},onPlace=()=>{},onR
   for(const lon of [-120,-60,0,60,120]){const x=position(0,lon).x;grid.append(svg('path',{d:'M'+x+',0V510'}));}
   plot.append(grid);
   worldLayer=svg('g',{'class':'pc-world-countries'});
-  densityLayer=svg('g',{'class':'pc-world-density','aria-hidden':'true'});
+  densityLayer=svg('g',{'class':'pc-world-density','aria-hidden':'true','pointer-events':'none'});
   markersLayer=svg('g',{'class':'pc-world-localities'});
   plot.append(worldLayer,densityLayer,markersLayer);
   surface.replaceChildren(plot);
@@ -114,8 +114,8 @@ export function createChristianHeatmap(root,{onCountry=()=>{},onPlace=()=>{},onR
    if(!pending){
     summary.textContent='Loading world map...';
     pending=Promise.all([
-     fetch('/data/world-heatmap-110m.json?v=1.16.5').then(r=>{if(!r.ok)throw Error('Basemap unavailable');return r.json();}),
-     fetch('/data/christian-heatmap-places.json?v=1.16.5').then(r=>{if(!r.ok)throw Error('Coordinates unavailable');return r.json();})
+     fetch('/data/world-heatmap-110m.json?v=1.16.6').then(r=>{if(!r.ok)throw Error('Basemap unavailable');return r.json();}),
+     fetch('/data/christian-heatmap-places.json?v=1.16.6').then(r=>{if(!r.ok)throw Error('Coordinates unavailable');return r.json();})
     ]).then(([world,locations])=>{
      if(!Array.isArray(world.features)||!locations.places||!locations.countries)throw Error('Invalid world map data');
      features=world.features;geo=locations;buildWorld();draw();

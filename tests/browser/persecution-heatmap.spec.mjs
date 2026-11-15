@@ -30,6 +30,45 @@ test('world heat map loads from local data and updates alongside incident filter
  await expect(page.locator('[data-pc-map-summary]')).toContainText(overall);
 });
 
+test('decorative locality glows allow pointer selection of underlying countries',async({page})=>{
+ await open(page,'christian-persecution');
+ await expect(page.locator('[data-pc-map]')).toHaveAttribute('data-ready','true');
+ await page.locator('.pc-map-surface').scrollIntoViewIfNeeded();
+ await expect(page.locator('.pc-world-density')).toHaveAttribute('pointer-events','none');
+ const clickPoint=await page.evaluate(()=>{
+  const map=document.querySelector('[data-pc-map-surface] svg');
+  const france=map.querySelector('.pc-country[aria-label^="France:"]');
+  const glows=[...map.querySelectorAll('.pc-world-density circle')];
+  const point=map.createSVGPoint(),matrix=map.getScreenCTM();
+  if(!france||!matrix)return null;
+  for(const glow of glows){
+   const cx=Number(glow.getAttribute('cx')),cy=Number(glow.getAttribute('cy'));
+   const radius=Number(glow.getAttribute('r'));
+   point.x=cx;point.y=cy;
+   if(!france.isPointInFill(point))continue;
+   for(const d of [8,11,14,17]){
+    if(d>=radius-1)continue;
+    for(const [dx,dy] of [[d,0],[-d,0],[0,d],[0,-d]]){
+     point.x=cx+dx;point.y=cy+dy;
+     if(!france.isPointInFill(point))continue;
+     const screen=point.matrixTransform(matrix);
+     if(screen.x<1||screen.x>=innerWidth-1||screen.y<1||screen.y>=innerHeight-1)continue;
+     if(document.elementFromPoint(screen.x,screen.y)===france)return {x:screen.x,y:screen.y};
+    }
+   }
+  }
+  return null;
+ });
+ expect(clickPoint,'A point within a visible glow should hit the underlying country').not.toBeNull();
+ await page.mouse.click(clickPoint.x,clickPoint.y);
+ await expect(page.locator('[data-pc-country]')).toHaveValue('France');
+ await page.locator('[data-pc-map-reset]').click();
+ const marker=page.locator('.pc-map-marker').first();
+ await marker.focus();
+ await page.keyboard.press('Enter');
+ await expect(page.locator('[data-pc-country]')).not.toHaveValue('');
+});
+
 test('country keyboard selection filters reports and map controls are accessible',async({page},testInfo)=>{
  if(testInfo.project.name==='desktop-firefox')test.setTimeout(120000);
  await open(page,'christian-persecution');

@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "version": "1.16.6",
+      "date": "2026-11-15",
+      "title": "World heat-map glow click-through",
+      "changes": [
+        "Make decorative heat-map glows click-through so underlying countries can be selected without changing the glow appearance.",
+        "Preserve locality marker selection and add a cross-browser regression test for country clicks beneath the glow."
+      ]
+    },
+    {
       "version": "1.16.5",
       "date": "2026-11-15",
       "title": "Christian persecution reports in Norway, Iceland, Zimbabwe, Honduras and Czech Republic",
