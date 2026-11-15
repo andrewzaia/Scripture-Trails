@@ -1,9 +1,9 @@
 # Christian persecution geographic coverage audit
 
 Checked: 2026-11-15
-Candidate release: v1.16.4
+Candidate release: v1.16.5
 
-The catalogue now contains 636 published source-attributed report records across 100 countries and territories. Release v1.16.4 adds 20 separately described reports: Switzerland (9), Romania (4), Bulgaria (3) and Finland (4). Release v1.16.3 adds 23 distinct reports across Belgium (4), Austria (4), Denmark (5) and Ireland (10). Release v1.16.2 adds two reports from the United Kingdom and France without duplicate incidents or inventing events from aggregate claims. Release v1.16.1 adds three reports from Lithuania, Ireland and France; the earlier v1.16.0 release added 26 reports across Azerbaijan, China, Iran, Eritrea, Myanmar, Nigeria, Pakistan, Nicaragua, Sri Lanka, Russia, Colombia, Cuba and Kyrgyzstan. All earlier releases and source records remain preserved.
+The catalogue now contains 654 published source-attributed report records across 105 countries and territories. Release v1.16.5 adds 18 records: Norway (5), Iceland (3), Zimbabwe (3), Honduras (6) and Czech Republic (1). Release v1.16.4 adds 20 separately described reports: Switzerland (9), Romania (4), Bulgaria (3) and Finland (4). Release v1.16.3 adds 23 distinct reports across Belgium (4), Austria (4), Denmark (5) and Ireland (10). Release v1.16.2 adds two reports from the United Kingdom and France without duplicate incidents or inventing events from aggregate claims. Release v1.16.1 adds three reports from Lithuania, Ireland and France; the earlier v1.16.0 release added 26 reports across Azerbaijan, China, Iran, Eritrea, Myanmar, Nigeria, Pakistan, Nicaragua, Sri Lanka, Russia, Colombia, Cuba and Kyrgyzstan. All earlier releases and source records remain preserved.
 
 ## Inclusion and counting
 
@@ -61,7 +61,7 @@ Review the full UN investigative dossiers and other primary reporting for additi
 
 ## Remaining zero-report research queue
 
-Investigate Zimbabwe, Honduras, Iceland, Norway, North Macedonia, Montenegro, Slovenia, Czechia, Estonia, Latvia, Moldova, Angola, Zambia, Rwanda, Burundi, Namibia, Papua New Guinea and other unrepresented territories.
+Investigate North Macedonia, Montenegro, Slovenia, Czechia, Estonia, Latvia, Moldova, Angola, Zambia, Rwanda, Burundi, Namibia, Papua New Guinea and other unrepresented territories.
 
 Small countries including Bahrain and Maldives are missing from the current 110m map geometry. Do not create country shading for them by reusing a neighbouring country polygon. Incorporating correct geometry is a separate mapping task.
 
@@ -106,3 +106,13 @@ Do not download or publish third-party photographs without reproduction rights.
 - Four new ISO-country map definitions (CHE, ROU, BGR, FIN) and 19 grounded city, town or locality keys with declared approximate precision; repeated desecration of the same Sofia grave maps to one location. No map point represents an identified offender's residence or a court judgment's effects across the whole country.
 - Source distinctions: the content counts published reports, not verified religiously motivated hate crimes. Police charges, court findings, parish reports, convictions and disputed interpretations remain separate. Months and years are used where source accounts do not establish exact incident dates.
 - Add 16 external publisher source entries. Local image or video hosting was not attempted without established rights. The original four-entry local image manifest remains unchanged.
+
+## v1.16.5 five-country geographic expansion - 15 November 2026
+
+- Norway, CT-0637 to CT-0641: record three separately dated fire-related incidents at Stensgård Church in July 2026 (12, 14 and 15 July), connected through one group, and 2020 fires involving Dombås and Sel churches (another group). Norwegian police's 14 and 15 July logs and NTB reporting support the dates. Two men initially arrested on 14 July were later released after the evidence supporting suspicion weakened; do not label them convicted or attribute all three fires to them. The man in the Dombås-Sel case admitted both acts, and the appellate outcome involved compulsory psychiatric treatment. Those are independent from the 2026 incidents.
+- Iceland, CT-0642 to CT-0644: an unauthorised repainting of the Grafarvogur Church Pride steps in July 2026, removal of a Pride flag at Hjallakirkja in August 2022, and swastika graffiti on a Russian Orthodox prayer house in March 2022. The first two were reported as attacks on churches' LGBTQ-supportive displays rather than proven anti-Christian hatred. The Orthodox incident was linked by reporting to anger over the Russian invasion of Ukraine rather than confirmed religious targeting. Record site vandalism and the publisher's framing, without reversing the apparent motive.
+- Zimbabwe, CT-0645 to CT-0647: 2022 arrests of an Apostolic bishop and 34 church members at a procession, 2022 arrests of 34 Zimbabwe Divine Destiny prayer participants, and the 2017 arrest of pastor Evan Mawarire at the University of Zimbabwe prayer gathering. All are detailed in the US Department of State's annual religious freedom reports. Political protest and public-order context must be retained; Mawarire was subsequently acquitted. The Apostolic march report lacks a grounded address and therefore has no locality pin.
+- Honduras, CT-0648 to CT-0653: the violent deaths of pastors Elías García Miranda, Wilmer Castellanos, Elías Guardado, Selvin Sabillón and Enrique Banegas Salgado, plus the assassination of Catholic pastoral worker and environmental advocate Juan Antonio López. No inference that robbery or environmental advocacy killings were proven anti-Christian hate crimes. Wilmer Castellanos was attacked immediately before worship, and López shortly after leading worship. The latter was active in political and ecological advocacy and received threats. Reported counts describe one attack per event, not all casualties as separate incidents.
+- Czech Republic, CT-0654: March 2026 graffiti on St Wenceslas Church in Prague connecting the Christian cross and Star of David to a swastika. This also targeted a Jewish religious symbol. One report preserves both dimensions rather than attributing the perpetrator's religion or political movement.
+- New ISO-country map definitions NOR, ISL, ZWE, HND, CZE have matching polygons in the existing 110m world dataset. Fifteen grounded approximate municipality, town, city or church-locality keys are added. Multiple incidents at Stensgård Church share one map key. One Zimbabwe procession remains country-shaded only, as the specific location is not established by the source.
+- Add 15 externally linked publisher media references without downloading copyrighted images or video. The local image manifest is unchanged pending licence review.

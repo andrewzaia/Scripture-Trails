@@ -492,6 +492,21 @@
       "notes": "Single publisher case summary; no independent adjudication undertaken."
     },
     {
+      "id": "CT-0637",
+      "date": "2026-07-15",
+      "country": "Norway",
+      "place": "Stensgård Church, Maura, Nannestad",
+      "category": "Attempted arson; church exterior",
+      "title": "Third reported fire attempt at Stensgård Church targets door frame",
+      "published_account": "The Eastern Police District reported a new attempted ignition at Stensgård Church in Nannestad shortly before 23:00 on 15 July 2026. Police found evidence consistent with an attempted fire at the door frame and investigated, identifying it as the third fire-related incident at this church in four days.",
+      "reported_actor": "Unknown perpetrator for the 15 July attempt; investigation ongoing and no motive established",
+      "publisher": "Eastern Police District (Norway)",
+      "source_url": "https://www.politiet.no/politiloggen/hendelse/268799/ost-politidistrikt-brann-nannestad-steinsgard-kirke-maura",
+      "second_source_url": "https://www.dagen.no/nyheter/stensgard-kirke-i-nannestad-forsokt-patent-for-tredje-gang-pa-fire-dager/1624320",
+      "notes": "Distinct 15 July attempt, not a duplicate of the 12 or 14 July incidents. Two men initially arrested over 14 July were later released and police reported that the grounds for suspicion had weakened. The three cases share one group and location without asserting a common offender.",
+      "incident_group": "NOR-STENSGARD-JUL2026"
+    },
+    {
       "id": "CT-0551",
       "date": "2026-07-14",
       "country": "Democratic Republic of the Congo",
@@ -506,6 +521,36 @@
       "category": "Christian religious leaders killed"
     },
     {
+      "id": "CT-0638",
+      "date": "2026-07-14",
+      "country": "Norway",
+      "place": "Stensgård Church, Maura, Nannestad",
+      "category": "Attempted arson; church door damage",
+      "title": "Stensgård Church entrance damaged in overnight attempted arson",
+      "published_account": "Eastern Police District recorded a fire alarm at approximately 03:30 on 14 July 2026 at the wooden Stensgård Church, Maura. Firefighters quickly extinguished a small fire, leaving minor scorch damage to the church entrance. Two men were arrested nearby and initially charged with arson.",
+      "reported_actor": "Two men initially arrested and charged, subsequently released as grounds for suspicion weakened; no conviction or proven motive",
+      "publisher": "Eastern Police District (Norway)",
+      "source_url": "https://www.politiet.no/politiloggen/hendelse/266nkt/ost-politidistrikt-brann-nannestad-steinsgard-kirke-maura",
+      "second_source_url": "https://www.dagen.no/nyheter/stensgard-kirke-i-nannestad-forsokt-patent-for-tredje-gang-pa-fire-dager/1624320",
+      "notes": "The police log concerns 14 July, distinct from a first exterior-panel fire reported on 12 July and a third door-frame attempt on 15 July. Subsequent reporting explicitly says suspicion against the two men weakened. Identity, affiliation and religious hostility were not established.",
+      "incident_group": "NOR-STENSGARD-JUL2026"
+    },
+    {
+      "id": "CT-0639",
+      "date": "2026-07-12",
+      "country": "Norway",
+      "place": "Stensgård Church, Maura, Nannestad",
+      "category": "Suspected arson; exterior church panel",
+      "title": "Exterior wall at Stensgård Church damaged in first of three fire incidents",
+      "published_account": "Norwegian NTB reporting published through Dagen stated that an exterior panel of Stensgård Church burned on Sunday 12 July 2026, before the separate 14 and 15 July attempts. Police considered the earlier fire a separate case while investigating possible connections.",
+      "reported_actor": "Unknown; no established perpetrator or motive for the first incident",
+      "publisher": "NTB via Dagen",
+      "source_url": "https://www.dagen.no/nyheter/stensgard-kirke-i-nannestad-forsokt-patent-for-tredje-gang-pa-fire-dager/1624320",
+      "second_source_url": "https://inyheter.no/16/07/2026/tredje-branntillop-ved-stensgard-kirke-pa-fire-dager/",
+      "notes": "The 12 July panel fire was described as the first of three separately dated incidents at one church. Police did not establish whether they shared an offender. No other buildings or victims are inferred.",
+      "incident_group": "NOR-STENSGARD-JUL2026"
+    },
+    {
       "id": "CT-0014",
       "date": "2026-07-10",
       "country": "France",
@@ -517,6 +562,19 @@
       "publisher": "OIDAC Europe",
       "source_url": "https://www.intoleranceagainstchristians.eu/index.php?id=12&case=11672",
       "notes": "Single publisher case summary; no independent adjudication undertaken."
+    },
+    {
+      "id": "CT-0642",
+      "date": "2026-07-08",
+      "country": "Iceland",
+      "place": "Grafarvogur Church, Reykjavík",
+      "category": "Church property vandalism; contested symbol",
+      "title": "Pride-painted steps at Grafarvogur Church repainted without parish permission",
+      "published_account": "Iceland Review reported that Grafarvogur Church in Reykjavík discovered its rainbow-painted front steps had been covered overnight with the colours of the Icelandic flag on or before 8 July 2026. Parish representatives called it vandalism, said the church had not authorised the repainting, and planned to restore the rainbow steps.",
+      "reported_actor": "Unidentified people; apparent opposition to the church's Pride display rather than a demonstrated attack on Christianity",
+      "publisher": "Iceland Review",
+      "source_url": "https://www.icelandreview.com/news/church-to-restore-pride-flag-after-overnight-vandalism-in-reykjavik/",
+      "notes": "This qualifies as an attributed case of interference with church property, not evidence of religiously motivated anti-Christian prejudice. The affected artwork expressed support for LGBTQ people. Previous incidents in 2022 concerned the same display but are not counted again without separate dated records."
     },
     {
       "id": "CT-0015",
@@ -865,6 +923,19 @@
       "media_url": "https://13wham.com/news/local/priest-makes-plea-after-mother-virgin-mary-statue-stolen-from-holy-cross-roman-catholic-church-rochester-charlotte-lake-avenue-theft-grotto",
       "media_note": "Link to local report; imagery/footage on page must be inspected and licensed before re-use",
       "notes": "USCCB archive contains additional incidents; this workbook extracts a selection."
+    },
+    {
+      "id": "CT-0654",
+      "date": "2026-03-10",
+      "country": "Czech Republic",
+      "place": "St Wenceslas Church, Prague",
+      "category": "Church graffiti linking Christian and Jewish symbols to Nazi iconography",
+      "title": "Prague's St Wenceslas Church defaced with offensive cross and Star of David graffiti",
+      "published_account": "OIDAC Europe reported that unidentified individuals defaced St Wenceslas Church in Prague on 10 March 2026 with graffiti visually equating the Christian cross and Jewish Star of David to a swastika. The source attributed photographs to local outlet Praha na dlani.",
+      "reported_actor": "Unidentified graffiti authors; the vandalism targeted religious symbols, but individual ideological identity was not established",
+      "publisher": "OIDAC Europe",
+      "source_url": "https://www.intoleranceagainstchristians.eu/index.php?case=11092&id=12",
+      "notes": "The published report describes the cross and Star of David together, so the catalogue should not erase the antisemitic dimension or infer the offender's religious affiliation. One graffiti incident, not separate entries for each symbol."
     },
     {
       "id": "CT-0610",
@@ -1429,6 +1500,19 @@
       "reported_actor": "Bandit gangs suspected; motive may include ransom",
       "publisher": "Reuters",
       "source_url": "https://www.reuters.com/world/africa/whats-behind-nigerias-latest-school-abductions-church-attack-2025-11-21/"
+    },
+    {
+      "id": "CT-0648",
+      "date": "2025-11-20",
+      "country": "Honduras",
+      "place": "El Simbil, Agua Caliente Norte, Intibucá",
+      "category": "Killing of Christian pastor; alleged robbery",
+      "title": "Pastor Elías García Miranda killed in reported vehicle robbery",
+      "published_account": "TuNota reported that evangelical pastor Elías García Miranda was killed on 20 November 2025 in the El Simbil sector of Agua Caliente Norte, Intibucá, allegedly during a robbery of his pickup and goods. The community remembered his preaching work.",
+      "reported_actor": "Unidentified suspected robbers; motive described as theft, not proven religious hostility",
+      "publisher": "TuNota",
+      "source_url": "https://www.tunota.com/honduras-hoy/matan-pastor-robarle-carro-intibuca-2025-11-20",
+      "notes": "The story is included as violence affecting a Christian clergy member, with a possible robbery motive explicitly preserved. The article did not establish a conviction, assailant identity or faith-based targeting."
     },
     {
       "id": "CT-0361",
@@ -2001,6 +2085,20 @@
       "notes": "USCCB archive contains additional incidents; this workbook extracts a selection."
     },
     {
+      "id": "CT-0649",
+      "date": "2025-08-09",
+      "country": "Honduras",
+      "place": "Los Laureles, Santa Bárbara",
+      "category": "Pastor killed immediately before worship service",
+      "title": "Pastor Wilmer Castellanos murdered with machete before church service",
+      "published_account": "Honduran newspapers La Prensa and El Heraldo reported that evangelical pastor Wilmer Castellanos, aged 55, was attacked with a machete on Saturday 9 August 2025 immediately before leading a worship service in the Los Laureles area of Santa Bárbara. Neighbours took him for emergency treatment but he died.",
+      "reported_actor": "Unidentified attacker; witnesses suggested intoxication or substance use, while religious motive remained unestablished",
+      "publisher": "La Prensa (Honduras)",
+      "source_url": "https://www.laprensa.hn/sucesos/pastor-asesinado-antes-iniciar-culto-santa-barbara-AL26962299",
+      "second_source_url": "https://www.elheraldo.hn/sucesos/matan-machetazos-pastor-wilmer-castellanos-cuando-estaba-por-iniciar-culto-santa-barbara-HL26963004",
+      "notes": "The report was published 10 August, identifying Saturday 9 August as the attack date. One violent attack, not a separate case for hospital treatment or subsequent reporting. No identified religious hostility."
+    },
+    {
       "id": "CT-0255",
       "date": "2025-08-06",
       "country": "Ukraine",
@@ -2500,6 +2598,20 @@
       "notes": "The attackers' identities and religious motivation were not established. Christian farmers were among the affected population, but this is not a verified count of solely Christian fatalities.",
       "incident_group": "NGA-YELEWATA-2025",
       "category": "Predominantly Christian farming community attacked"
+    },
+    {
+      "id": "CT-0650",
+      "date": "2025-06-14",
+      "country": "Honduras",
+      "place": "Quebrada Seca, Erandique, Lempira",
+      "category": "Pastor found dead; suspected violent death",
+      "title": "Missing evangelical pastor Elías Guardado found dead in Lempira",
+      "published_account": "Proceso Digital reported that the body of evangelical pastor Elías Guardado was found near Quebrada Seca in Erandique, Lempira, on 14 June 2025 after he went missing during a vehicle delivery trip. Local reporting described the death as violent, with an investigation under way.",
+      "reported_actor": "Unidentified; source did not establish whether the death was related to his pastoral activities",
+      "publisher": "Proceso Digital",
+      "source_url": "https://proceso.hn/hallan-sin-vida-a-pastor-evangelico-desaparecido-en-lempira/",
+      "second_source_url": "https://www.radiohrn.hn/sanjuan-intibuca-el-destino-al-cual-no-llego-pastor-evangelico-elias-guardado-hallado-muerto-en-lempira-2025-06-15",
+      "notes": "14 June is the discovery date, not necessarily the time of death. The circumstances are not equivalent to proof of anti-Christian intent. Preserve the unknown perpetrator and any pending forensic or court conclusions."
     },
     {
       "id": "CT-0080",
@@ -3500,6 +3612,19 @@
       "category": "Christmas worship arrests; aggregate"
     },
     {
+      "id": "CT-0651",
+      "date": "2024-12",
+      "country": "Honduras",
+      "place": "Barrio Guadalupe, San Pedro Sula",
+      "category": "Pastor killed during alleged robbery",
+      "title": "Evangelical pastor and jewellery seller Selvin Sabillón killed in San Pedro Sula",
+      "published_account": "El Heraldo reported that evangelical pastor Selvin Sabillón, aged 34, who also sold jewellery, was shot dead during an apparent robbery in San Pedro Sula's Guadalupe neighbourhood. Witnesses said attackers tried to take his belongings and he resisted.",
+      "reported_actor": "Unidentified robbers; published motive was theft and a religious motive was not reported",
+      "publisher": "El Heraldo",
+      "source_url": "https://www.elheraldo.hn/sucesos/asaltantes-asesinan-pastor-vendedor-joyas-resistirse-robo-san-pedro-sula-JA23328436",
+      "notes": "The newspaper item was updated 23 December 2024 but does not establish an exact offence date; December precision is used. The archive includes a reported pastor's killing, not a proven act of religious persecution."
+    },
+    {
       "id": "CT-0584",
       "date": "2024-11-13",
       "country": "Colombia",
@@ -3553,6 +3678,19 @@
       "source_url": "https://www.kanalfrederikshavn.dk/vis/nyhed/er-det-nynazister-som-har-tegnet-hagekors-paa-frederikshavn-kirkes-hoveddoer",
       "second_source_url": "https://presse-fotos.dk/post/kirke-udsat-for-haervaerk-hagekors-paa-hoveddoeren/",
       "notes": "The number 28 has associations with a neo-Nazi group, but the reporting does not identify who created the graffiti. 27 October is the report date; the exact time of painting was not confirmed."
+    },
+    {
+      "id": "CT-0652",
+      "date": "2024-10-19",
+      "country": "Honduras",
+      "place": "Juticalpa, Olancho",
+      "category": "Pastor shot dead; relative wounded",
+      "title": "Pastor Enrique Banegas Salgado killed and nephew wounded in gun attack",
+      "published_account": "Radio HRN reported pastor Enrique Banegas Salgado was killed and his nephew Cristhian Zúñiga Colindres seriously injured by masked gunmen while travelling to work in Juticalpa, Olancho, on Saturday 19 October 2024. Authorities investigated possible motives; relatives said belongings had not been stolen and suspected a targeted attack.",
+      "reported_actor": "Unidentified gunmen; robbery appeared unlikely to relatives, but a religious motive was not established",
+      "publisher": "Radio HRN",
+      "source_url": "https://www.radiohrn.hn/revelan-motivos-detras-del-crimen-contra-pastor-evangelico-en-olancho-2024-10-21",
+      "notes": "The report is dated 21 October and describes the previous Saturday. One shooting with two victims, not two separate incidents. Family speculation about the motive remains attributed."
     },
     {
       "id": "CT-0258",
@@ -3632,6 +3770,20 @@
       "publisher": "Observatory on Intolerance and Discrimination against Christians in Europe",
       "source_url": "https://www.intoleranceagainstchristians.eu/index.php?case=8532&id=12",
       "notes": "Police allegations and arrest do not constitute conviction; three nearby incidents were mentioned but this entry is confined to Wijchen."
+    },
+    {
+      "id": "CT-0653",
+      "date": "2024-09-14",
+      "country": "Honduras",
+      "place": "Church of St Anthony of Padua, Tocoa, Colón",
+      "category": "Catholic pastoral worker murdered after service; environmental advocacy",
+      "title": "Catholic delegate Juan Antonio López assassinated after leading worship in Tocoa",
+      "published_account": "The Vatican and Agenzia Fides reported that Juan Antonio López, a Catholic delegate of the Word of God, was shot dead shortly after leaving a chapel in Tocoa on 14 September 2024. López coordinated Church social pastoral work and defended the environment; the killing followed threats connected to his anti-mining activism.",
+      "reported_actor": "Unidentified assailants; environmental activism and local political conflicts were central investigative contexts, rather than a proven anti-Christian motive",
+      "publisher": "Vatican News",
+      "source_url": "https://www.vaticannews.va/en/pope/news/2024-09/pope-angelus-honduras-enviornmental-activist-juan-antonio-lopez.html",
+      "second_source_url": "https://www.fides.org/en/news/75527-AMERICA_HONDURAS_One_month_after_the_murder_of_pastoral_worker_Juan_Antonio_Lopez_Three_suspects_arrested_in_Honduras",
+      "notes": "Catholic bishops condemned the murder, and investigators subsequently arrested suspects. López's ministry is documented, but his defence of natural resources and political disputes are necessary context. This is one 14 September 2024 killing, not a separate incident for later memorial services."
     },
     {
       "id": "CT-0445",
@@ -5909,6 +6061,20 @@
       "notes": "Official rationale included fire safety and renovations; the congregation contested the prolonged loss of access."
     },
     {
+      "id": "CT-0643",
+      "date": "2022-08-13",
+      "country": "Iceland",
+      "place": "Hjallakirkja, Kópavogur",
+      "category": "Church flag vandalism; opposition to Pride display",
+      "title": "Rainbow flag torn down and damaged outside Hjallakirkja church",
+      "published_account": "Icelandic public broadcaster RÚV reported that a rainbow flag at Hjallakirkja in Kópavogur was pulled down and damaged during the weekend of 13-14 August 2022. The church's pastor Sunna Dóra Möller condemned the action and reported it to police.",
+      "reported_actor": "Unidentified persons; evidence suggests hostility to the church's LGBT-inclusive display, not necessarily to Christianity",
+      "publisher": "RÚV",
+      "source_url": "https://www.ruv.is/english/2022-08-14-rainbow-flag-vandalism-described-as-worrying-sign",
+      "second_source_url": "https://grapevine.is/news/2022/08/15/tear-down-and-destruction-of-rainbow-flag-at-hjallakirkja/",
+      "notes": "A distinct church and date from the Grafarvogur steps case. The church flag was removed and damaged; the pastor characterised it as a hate crime against LGBTQ inclusion, not a confirmed anti-Christian hate crime. 13 August is the reported overnight start, with the discovery reported the following day."
+    },
+    {
       "id": "CT-0133",
       "date": "2022-08-04",
       "country": "Nicaragua",
@@ -5933,6 +6099,19 @@
       "publisher": "UN Office of the High Commissioner for Human Rights",
       "source_url": "https://ukraine.un.org/sites/default/files/2023-10/23-10-04-OHCHR-36th-periodic-report-ukraine-en.pdf",
       "notes": "Russian-occupied Ukrainian territory; the report's identity and precise facility locations were not disclosed."
+    },
+    {
+      "id": "CT-0645",
+      "date": "2022-07-09",
+      "country": "Zimbabwe",
+      "place": "Zimbabwe; procession venue not specified",
+      "category": "Police arrest of bishop and Christian marchers; political context",
+      "title": "Apostolic bishop and 34 church members arrested during procession",
+      "published_account": "The US State Department reported that Zimbabwe Republic Police arrested Bishop Kanyenzura Parare of the Mirirai Jehovha Apostolic Church and 34 other church members during a procession on 9 July 2022. The bishop also led an opposition political party. Followers were held for four months before receiving fines for criminal nuisance, while the bishop remained in detention at the end of the year.",
+      "reported_actor": "Zimbabwe Republic Police; authorities said the procession lacked notification and obstructed traffic, while participants alleged interference with religious expression",
+      "publisher": "US Department of State",
+      "source_url": "https://2021-2025.state.gov/reports/2022-report-on-international-religious-freedom/zimbabwe/",
+      "notes": "The State Department describes a political and religious procession and the bishop's opposition party activity. Neither an exact incident address nor exclusively religious motive is established. Do not create an invented locality pin or count all 34 arrests as 34 separate catalogue reports."
     },
     {
       "id": "CT-0178",
@@ -5960,6 +6139,19 @@
       "notes": "The attack was 21 June; source published 22 June. Casualty and victim-identification claims remain attributed.",
       "incident_group": "COD-MAKISABO-2022",
       "category": "Road ambush; Christians killed"
+    },
+    {
+      "id": "CT-0646",
+      "date": "2022-06-10",
+      "country": "Zimbabwe",
+      "place": "Zimbabwe Divine Destiny prayer gathering, Harare",
+      "category": "Police raid on prayer meeting; worshippers arrested",
+      "title": "Police arrest 34 bishops, pastors and worshippers at Zimbabwe Divine Destiny prayer",
+      "published_account": "The US State Department documented armed Zimbabwe Republic Police entering an outdoor Zimbabwe Divine Destiny prayer meeting on 10 June 2022 and arresting 34 bishops, pastors and worshippers. Witnesses said some were beaten. The church said it had notified police; officials characterised the meeting as political and critical of the government.",
+      "reported_actor": "Zimbabwe Republic Police; government asserted public-order and political concerns, while organisers disputed the basis for interference",
+      "publisher": "US Department of State",
+      "source_url": "https://2021-2025.state.gov/reports/2022-report-on-international-religious-freedom/zimbabwe/",
+      "notes": "One prayer-meeting event involving 34 arrests, not 34 events. Harare-level location only; exact meeting address is not established. Reporting says 24 later accepted fines after pressure, while 10 continued reporting to court at year end."
     },
     {
       "id": "CT-0134",
@@ -6029,6 +6221,19 @@
       "publisher": "Forum 18",
       "source_url": "https://www.forum18.org/archive.php?article_id=2858",
       "notes": "Number is approximate and source relies on anonymous local Protestants; month-only event date."
+    },
+    {
+      "id": "CT-0644",
+      "date": "2022-03-06",
+      "country": "Iceland",
+      "place": "Russian Orthodox prayer house, Mýrargata, Reykjavík",
+      "category": "Church graffiti; wartime political backlash",
+      "title": "Swastikas painted on Russian Orthodox church building in Reykjavík",
+      "published_account": "Icelandic outlet Vísir reported that two swastikas had been painted on a Russian Orthodox church prayer house on Mýrargata in Reykjavík in early March 2022, during Russia's invasion of Ukraine. Volunteers from Adventist, Pentecostal and national Lutheran congregations joined together to clean the graffiti on 6 March.",
+      "reported_actor": "Unknown graffiti writers; reporting interpreted the target as political backlash to Russia, not proof of an offender's religious identity",
+      "publisher": "Vísir",
+      "source_url": "https://www.visir.is/g/20222231348d/hakakross-a-kirkjuhusi-vid-myrargotu-svona-vandalismi-skilar-engu-",
+      "notes": "6 March is the news and cleanup date, not a confirmed date of spraying. The source describes the attacked property as a Russian Orthodox Christian worship space, without establishing that the vandalism was anti-Christian rather than anti-Russian."
     },
     {
       "id": "CT-0281",
@@ -6369,6 +6574,34 @@
       "reported_actor": "Chinese authorities",
       "publisher": "US State Department (via ecoi.net)",
       "source_url": "https://www.ecoi.net/en/document/2051558.html"
+    },
+    {
+      "id": "CT-0640",
+      "date": "2020-03-19",
+      "country": "Norway",
+      "place": "Sel Church, Sel, Innlandet",
+      "category": "Attempted church arson; admitted offender",
+      "title": "Offender attempts to set Sel Church on fire after Dombås church attack",
+      "published_account": "NTB reporting in Aftenposten said the man who had set fire to Dombås Church in February 2020 admitted attempting to ignite Sel Church on 19 March 2020. A Norwegian appellate court later ordered compulsory psychiatric treatment in relation to the series of church fires.",
+      "reported_actor": "Same man admitted involvement in the Dombås and Sel cases; court imposed compulsory mental-health care",
+      "publisher": "Aftenposten / NTB",
+      "source_url": "https://www.aftenposten.no/norge/i/ALEwQM/kirkebrannstifter-doemt-til-tvungent-psykisk-helsevern",
+      "notes": "Distinct church and date from the Dombås fire. The convicted man described anger about a 2019 Quran-burning event; that explanation should not be conflated with the motives of unrelated church fires. Court outcome reported September 2021.",
+      "incident_group": "NOR-DOMBAS-SEL-2020"
+    },
+    {
+      "id": "CT-0641",
+      "date": "2020-02-20",
+      "country": "Norway",
+      "place": "Dombås Church, Dovre, Innlandet",
+      "category": "Church arson; extensive interior damage",
+      "title": "Dombås Church severely damaged by deliberately lit fire",
+      "published_account": "NTB reported that Dombås Church was set alight on 20 February 2020, resulting in major interior damage and an estimated repair cost of NOK 35 million. The offender admitted setting the fire and later also attempting to burn Sel Church in March. An appellate court sentenced him to compulsory psychiatric care.",
+      "reported_actor": "Man admitted deliberately igniting the church; compulsory psychiatric care ordered by appellate court",
+      "publisher": "Aftenposten / NTB",
+      "source_url": "https://www.aftenposten.no/norge/i/ALEwQM/kirkebrannstifter-doemt-til-tvungent-psykisk-helsevern",
+      "notes": "The same offender was responsible for the separately dated Sel Church attempted arson. Reporting attributed his stated motivation to anger over the Quran burning in Kristiansand in 2019. Record one Dombås incident, not a new case for the later court judgment.",
+      "incident_group": "NOR-DOMBAS-SEL-2020"
     },
     {
       "country": "Nigeria",
@@ -6871,6 +7104,19 @@
       "publisher": "Forum 18",
       "source_url": "https://forum18.org/archive.php?article_id=2337",
       "notes": "This is a separate congregation and date from the June 2017 Dushanbe raid."
+    },
+    {
+      "id": "CT-0647",
+      "date": "2017-06-26",
+      "country": "Zimbabwe",
+      "place": "University of Zimbabwe, Harare",
+      "category": "Arrest of pastor during university prayer meeting",
+      "title": "Pastor Evan Mawarire arrested during prayer meeting with university students",
+      "published_account": "The US State Department reported police arrested pastor Evan Mawarire of His Generation Church on 26 June 2017 during a prayer meeting with University of Zimbabwe students. Authorities initially charged public-disorder and public-violence offences, but he was acquitted on those charges in September 2017, and a separate subversion charge also ended in acquittal in November.",
+      "reported_actor": "Zimbabwe Republic Police; political protest and campus-fee context documented, no exclusive anti-Christian motive established",
+      "publisher": "US Department of State",
+      "source_url": "https://2021-2025.state.gov/reports/2017-report-on-international-religious-freedom/zimbabwe/",
+      "notes": "A single arrest at a prayer meeting, not a claim that all participants were detained. Mawarire's political activism and the students' protests form part of the background. The acquittals are recorded, not omitted."
     },
     {
       "id": "CT-0392",
