@@ -116,3 +116,15 @@ Do not download or publish third-party photographs without reproduction rights.
 - Czech Republic, CT-0654: March 2026 graffiti on St Wenceslas Church in Prague connecting the Christian cross and Star of David to a swastika. This also targeted a Jewish religious symbol. One report preserves both dimensions rather than attributing the perpetrator's religion or political movement.
 - New ISO-country map definitions NOR, ISL, ZWE, HND, CZE have matching polygons in the existing 110m world dataset. Fifteen grounded approximate municipality, town, city or church-locality keys are added. Multiple incidents at Stensgård Church share one map key. One Zimbabwe procession remains country-shaded only, as the specific location is not established by the source.
 - Add 15 externally linked publisher media references without downloading copyrighted images or video. The local image manifest is unchanged pending licence review.
+
+## Pending catalogue expansion - 15 November 2026
+
+Five source-attributed reports were prepared in a development branch, bringing the pending dataset to 659 reports across 109 countries and territories. No published release is claimed until the mandatory release process, automated checks, pull-request merge and Cloudflare deployment are verified.
+
+- CT-0655: North Macedonia, 9 April 2024, St Athanasius monastery church vandalism in Tetovo. Separate from an earlier reported intrusion; perpetrators unconfirmed.
+- CT-0656: Slovenia, 29 May 2024, vandalism of a chapel in Prevalje. Graffiti content does not identify the offenders.
+- CT-0657: Slovenia, 2 February 2021, vandalism targeting Christian institution Zavod Iskreni. Motive attribution remains qualified.
+- CT-0658: Latvia, 23 July 2023, Riga Lutheran church damage and threats. A church dispute and religious hatred were both discussed as possible motives.
+- CT-0659: Estonia, June 2026, Tallinn Baptist church attempted arson investigation. The exact offence date and motive were not established in the cited source excerpt.
+
+Before merging: run `npm run release -- patch "Expanded Christian persecution geographic coverage" "Added five attributed reports from North Macedonia, Slovenia, Latvia and Estonia with uncertainty qualifications"`, then `npm run build`, tests and release validation. Update the pending audit release note to its actual released version. Confirm deployment and the live footer before reporting completion. Do not publish unlicensed third-party photographs.
