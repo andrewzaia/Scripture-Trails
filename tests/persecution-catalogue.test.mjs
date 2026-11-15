@@ -586,7 +586,7 @@ test('v1.16.4 source-qualified incidents cover Switzerland, Romania, Bulgaria an
  assert.equal(byId['CT-0636'].date,'2018-09-23');
  for(const row of cases){
   assert.ok(row.publisher&&row.published_account&&row.reported_actor&&row.notes&&row.source_url);
-  assert.match(row.date,/^\\d{4}(?:-\\d{2}(?:-\\d{2})?)?$/);
+  assert.match(row.date,/^\d{4}(?:-\d{2}(?:-\d{2})?)?$/);
   assert.equal(new URL(row.source_url).protocol,'https:');
  }
  const geo=JSON.parse(read('public/data/christian-heatmap-places.json'));
