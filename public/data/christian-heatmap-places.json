@@ -378,6 +378,18 @@
     "Lithuania": {
       "iso2": "LT",
       "iso3": "LTU"
+    },
+    "Belgium": {
+      "iso2": "BE",
+      "iso3": "BEL"
+    },
+    "Austria": {
+      "iso2": "AT",
+      "iso3": "AUT"
+    },
+    "Denmark": {
+      "iso2": "DK",
+      "iso3": "DNK"
     }
   },
   "places": {
@@ -2792,6 +2804,237 @@
           "name": "Corbeil-Essonnes",
           "lat": 48.61456,
           "lon": 2.47181,
+          "precision": "city"
+        }
+      ]
+    },
+    "Belgium|St Lambert's Church, Hoogstade": {
+      "resolution": "village",
+      "points": [
+        {
+          "name": "Hoogstade, Alveringem",
+          "lat": 50.97957,
+          "lon": 2.69226,
+          "precision": "village"
+        }
+      ]
+    },
+    "Belgium|St Peter's Church, Lommel": {
+      "resolution": "town",
+      "points": [
+        {
+          "name": "Lommel",
+          "lat": 51.23074,
+          "lon": 5.31349,
+          "precision": "town"
+        }
+      ]
+    },
+    "Belgium|Church of Appels, Dendermonde": {
+      "resolution": "village",
+      "points": [
+        {
+          "name": "Appels, Dendermonde",
+          "lat": 51.02945,
+          "lon": 4.06543,
+          "precision": "village"
+        }
+      ]
+    },
+    "Belgium|Bovekerke church cemetery, Koekelare": {
+      "resolution": "village",
+      "points": [
+        {
+          "name": "Bovekerke",
+          "lat": 51.05426,
+          "lon": 2.96341,
+          "precision": "village"
+        }
+      ]
+    },
+    "Austria|Church of the Four Holy Evangelists, Vienna": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Vienna",
+          "lat": 48.2084,
+          "lon": 16.3725,
+          "precision": "city"
+        }
+      ]
+    },
+    "Austria|St Ulrich parish church, Steyr": {
+      "resolution": "town",
+      "points": [
+        {
+          "name": "Steyr",
+          "lat": 48.039,
+          "lon": 14.4191,
+          "precision": "town"
+        }
+      ]
+    },
+    "Austria|St Anthony of Padua Church, Vienna": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Vienna",
+          "lat": 48.2084,
+          "lon": 16.3725,
+          "precision": "city"
+        }
+      ]
+    },
+    "Austria|Serbian Orthodox Church of Our Lady, Feldkirch": {
+      "resolution": "town",
+      "points": [
+        {
+          "name": "Feldkirch",
+          "lat": 47.2376,
+          "lon": 9.5982,
+          "precision": "town"
+        }
+      ]
+    },
+    "Denmark|St Nikolaj Catholic Church, Esbjerg": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Esbjerg",
+          "lat": 55.4665,
+          "lon": 8.4521,
+          "precision": "city"
+        }
+      ]
+    },
+    "Denmark|Hellerup Church, Gentofte": {
+      "resolution": "suburb",
+      "points": [
+        {
+          "name": "Hellerup",
+          "lat": 55.73367,
+          "lon": 12.56554,
+          "precision": "suburb"
+        }
+      ]
+    },
+    "Denmark|Frederikshavn Church": {
+      "resolution": "town",
+      "points": [
+        {
+          "name": "Frederikshavn",
+          "lat": 57.4412,
+          "lon": 10.5336,
+          "precision": "town"
+        }
+      ]
+    },
+    "Denmark|Spjellerup Church, Karise": {
+      "resolution": "site",
+      "points": [
+        {
+          "name": "Spjellerup Church",
+          "lat": 55.2735516,
+          "lon": 12.2265713,
+          "precision": "site"
+        }
+      ]
+    },
+    "Denmark|Vestervig Church, Thisted": {
+      "resolution": "village",
+      "points": [
+        {
+          "name": "Vestervig",
+          "lat": 56.76239,
+          "lon": 8.31831,
+          "precision": "village"
+        }
+      ]
+    },
+    "Ireland|Our Lady Star of the Sea Church, Bundoran": {
+      "resolution": "town",
+      "points": [
+        {
+          "name": "Bundoran",
+          "lat": 54.47888,
+          "lon": -8.27825,
+          "precision": "town"
+        }
+      ]
+    },
+    "Ireland|Church of Ireland building, Ballyjamesduff": {
+      "resolution": "town",
+      "points": [
+        {
+          "name": "Ballyjamesduff",
+          "lat": 53.863875,
+          "lon": -7.2051613,
+          "precision": "town"
+        }
+      ]
+    },
+    "Ireland|St James's Church, Kilbeggan": {
+      "resolution": "town",
+      "points": [
+        {
+          "name": "Kilbeggan",
+          "lat": 53.3636,
+          "lon": -7.4985,
+          "precision": "town"
+        }
+      ]
+    },
+    "Ireland|St Michael's Church, Castletown Geoghegan": {
+      "resolution": "village",
+      "points": [
+        {
+          "name": "Castletown Geoghegan",
+          "lat": 53.44472,
+          "lon": -7.48576,
+          "precision": "village"
+        }
+      ]
+    },
+    "Ireland|Ravensdale parochial house, County Louth": {
+      "resolution": "locality",
+      "points": [
+        {
+          "name": "Ravensdale",
+          "lat": 54.05412,
+          "lon": -6.33485,
+          "precision": "locality"
+        }
+      ]
+    },
+    "Ireland|St Baithin's Catholic Church, St Johnston": {
+      "resolution": "village",
+      "points": [
+        {
+          "name": "St Johnston",
+          "lat": 54.93452,
+          "lon": -7.45824,
+          "precision": "village"
+        }
+      ]
+    },
+    "Ireland|Renmore Barracks, Galway": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Galway",
+          "lat": 53.2707,
+          "lon": -9.0568,
+          "precision": "city"
+        }
+      ]
+    },
+    "Ireland|St Michan's Church, Dublin": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Dublin",
+          "lat": 53.3494,
+          "lon": -6.2606,
           "precision": "city"
         }
       ]
