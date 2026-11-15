@@ -119,7 +119,7 @@ Do not download or publish third-party photographs without reproduction rights.
 
 ## Pending catalogue expansion - 15 November 2026
 
-Five source-attributed reports were prepared in a development branch, bringing the pending dataset to 659 reports across 109 countries and territories. No published release is claimed until the mandatory release process, automated checks, pull-request merge and Cloudflare deployment are verified.
+Ten source-attributed reports were prepared in a development branch, bringing the pending dataset to 664 reports across 112 countries and territories. No published release is claimed until the mandatory release process, automated checks, pull-request merge and Cloudflare deployment are verified.
 
 - CT-0655: North Macedonia, 9 April 2024, St Athanasius monastery church vandalism in Tetovo. Separate from an earlier reported intrusion; perpetrators unconfirmed.
 - CT-0656: Slovenia, 29 May 2024, vandalism of a chapel in Prevalje. Graffiti content does not identify the offenders.
@@ -128,3 +128,13 @@ Five source-attributed reports were prepared in a development branch, bringing t
 - CT-0659: Estonia, June 2026, Tallinn Baptist church attempted arson investigation. The exact offence date and motive were not established in the cited source excerpt.
 
 Before merging: run `npm run release -- patch "Expanded Christian persecution geographic coverage" "Added five attributed reports from North Macedonia, Slovenia, Latvia and Estonia with uncertainty qualifications"`, then `npm run build`, tests and release validation. Update the pending audit release note to its actual released version. Confirm deployment and the live footer before reporting completion. Do not publish unlicensed third-party photographs.
+
+### Further pending additions - Moldova, Montenegro and Rwanda
+
+- CT-0660: Moldova, 8 March 2020, Petresti Pentecostal congregation programme reportedly disrupted by local officials and Orthodox church associates. Preserve denomination and source attribution; this was an intra-Christian dispute, not evidence that all parties shared the same beliefs.
+- CT-0661: Moldova, 6 May 2022, Saint Lazarus cemetery crosses and wreaths burned. Follow-up police reporting records a detained suspect; avoid inferring religious allegiance from mention of a ritual.
+- CT-0662: Montenegro, overnight 18-19 November 2025, Saint Nicholas church break-in and interior damage, investigation ongoing.
+- CT-0663: Montenegro, 28-29 August 2025, third reported burglary of Holy Archangel Michael church. Earlier burglaries are mentioned, not duplicated as distinct reports.
+- CT-0664: Rwanda, July 2024 onward, national closure of thousands of prayer houses. The UN recorded the Rwandan government's compliance rationale and concerns about freedom of religion. This is one national policy episode and affects more than one faith; it is not a claim of 8,000 unique anti-Christian attacks.
+
+The map country index now includes all seven newly documented countries: North Macedonia, Slovenia, Latvia, Estonia, Moldova, Montenegro and Rwanda. Existing Natural Earth geometry contains their ISO3 identifiers. No locality point is invented solely because a report names a country or city. All ten new records remain subject to mandatory release checks and deployment verification before publication.
