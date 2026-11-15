@@ -3,6 +3,156 @@
   "rights": "Third-party material - check publisher reuse rights.",
   "media": [
     {
+      "date": "2026-07-15",
+      "country": "Norway",
+      "linked_incident": "CT-0637 - Third reported fire attempt at Stensgård Church targets door frame",
+      "media_kind": "Publisher-hosted news coverage; imagery rights not established",
+      "publisher_or_owner": "Eastern Police District (Norway)",
+      "media_url": "https://www.politiet.no/politiloggen/hendelse/268799/ost-politidistrikt-brann-nannestad-steinsgard-kirke-maura",
+      "description": "Original external source reporting third reported fire attempt at stensgård church targets door frame.",
+      "rights_and_reuse": "Link only; no third-party video or image rehosting without a confirmed licence."
+    },
+    {
+      "date": "2026-07-14",
+      "country": "Norway",
+      "linked_incident": "CT-0638 - Stensgård Church entrance damaged in overnight attempted arson",
+      "media_kind": "Publisher-hosted news coverage; imagery rights not established",
+      "publisher_or_owner": "Eastern Police District (Norway)",
+      "media_url": "https://www.politiet.no/politiloggen/hendelse/266nkt/ost-politidistrikt-brann-nannestad-steinsgard-kirke-maura",
+      "description": "Original external source reporting stensgård church entrance damaged in overnight attempted arson.",
+      "rights_and_reuse": "Link only; no third-party video or image rehosting without a confirmed licence."
+    },
+    {
+      "date": "2020-02-20",
+      "country": "Norway",
+      "linked_incident": "CT-0641 - Dombås Church severely damaged by deliberately lit fire",
+      "media_kind": "Publisher-hosted news coverage; imagery rights not established",
+      "publisher_or_owner": "Aftenposten / NTB",
+      "media_url": "https://www.aftenposten.no/norge/i/ALEwQM/kirkebrannstifter-doemt-til-tvungent-psykisk-helsevern",
+      "description": "Original external source reporting dombås church severely damaged by deliberately lit fire.",
+      "rights_and_reuse": "Link only; no third-party video or image rehosting without a confirmed licence."
+    },
+    {
+      "date": "2026-07-08",
+      "country": "Iceland",
+      "linked_incident": "CT-0642 - Pride-painted steps at Grafarvogur Church repainted without parish permission",
+      "media_kind": "Publisher-hosted news coverage; imagery rights not established",
+      "publisher_or_owner": "Iceland Review",
+      "media_url": "https://www.icelandreview.com/news/church-to-restore-pride-flag-after-overnight-vandalism-in-reykjavik/",
+      "description": "Original external source reporting pride-painted steps at grafarvogur church repainted without parish permission.",
+      "rights_and_reuse": "Link only; no third-party video or image rehosting without a confirmed licence."
+    },
+    {
+      "date": "2022-08-13",
+      "country": "Iceland",
+      "linked_incident": "CT-0643 - Rainbow flag torn down and damaged outside Hjallakirkja church",
+      "media_kind": "Publisher-hosted news coverage; imagery rights not established",
+      "publisher_or_owner": "RÚV",
+      "media_url": "https://www.ruv.is/english/2022-08-14-rainbow-flag-vandalism-described-as-worrying-sign",
+      "description": "Original external source reporting rainbow flag torn down and damaged outside hjallakirkja church.",
+      "rights_and_reuse": "Link only; no third-party video or image rehosting without a confirmed licence."
+    },
+    {
+      "date": "2022-03-06",
+      "country": "Iceland",
+      "linked_incident": "CT-0644 - Swastikas painted on Russian Orthodox church building in Reykjavík",
+      "media_kind": "Publisher-hosted news coverage; imagery rights not established",
+      "publisher_or_owner": "Vísir",
+      "media_url": "https://www.visir.is/g/20222231348d/hakakross-a-kirkjuhusi-vid-myrargotu-svona-vandalismi-skilar-engu-",
+      "description": "Original external source reporting swastikas painted on russian orthodox church building in reykjavík.",
+      "rights_and_reuse": "Link only; no third-party video or image rehosting without a confirmed licence."
+    },
+    {
+      "date": "2022-07-09",
+      "country": "Zimbabwe",
+      "linked_incident": "CT-0645 - Apostolic bishop and 34 church members arrested during procession",
+      "media_kind": "Publisher-hosted news coverage; imagery rights not established",
+      "publisher_or_owner": "US Department of State",
+      "media_url": "https://2021-2025.state.gov/reports/2022-report-on-international-religious-freedom/zimbabwe/",
+      "description": "Original external source reporting apostolic bishop and 34 church members arrested during procession.",
+      "rights_and_reuse": "Link only; no third-party video or image rehosting without a confirmed licence."
+    },
+    {
+      "date": "2022-06-10",
+      "country": "Zimbabwe",
+      "linked_incident": "CT-0646 - Police arrest 34 bishops, pastors and worshippers at Zimbabwe Divine Destiny prayer",
+      "media_kind": "Publisher-hosted news coverage; imagery rights not established",
+      "publisher_or_owner": "US Department of State",
+      "media_url": "https://2021-2025.state.gov/reports/2022-report-on-international-religious-freedom/zimbabwe/",
+      "description": "Original external source reporting police arrest 34 bishops, pastors and worshippers at zimbabwe divine destiny prayer.",
+      "rights_and_reuse": "Link only; no third-party video or image rehosting without a confirmed licence."
+    },
+    {
+      "date": "2025-11-20",
+      "country": "Honduras",
+      "linked_incident": "CT-0648 - Pastor Elías García Miranda killed in reported vehicle robbery",
+      "media_kind": "Publisher-hosted news coverage; imagery rights not established",
+      "publisher_or_owner": "TuNota",
+      "media_url": "https://www.tunota.com/honduras-hoy/matan-pastor-robarle-carro-intibuca-2025-11-20",
+      "description": "Original external source reporting pastor elías garcía miranda killed in reported vehicle robbery.",
+      "rights_and_reuse": "Link only; no third-party video or image rehosting without a confirmed licence."
+    },
+    {
+      "date": "2025-08-09",
+      "country": "Honduras",
+      "linked_incident": "CT-0649 - Pastor Wilmer Castellanos murdered with machete before church service",
+      "media_kind": "Publisher-hosted news coverage; imagery rights not established",
+      "publisher_or_owner": "La Prensa (Honduras)",
+      "media_url": "https://www.laprensa.hn/sucesos/pastor-asesinado-antes-iniciar-culto-santa-barbara-AL26962299",
+      "description": "Original external source reporting pastor wilmer castellanos murdered with machete before church service.",
+      "rights_and_reuse": "Link only; no third-party video or image rehosting without a confirmed licence."
+    },
+    {
+      "date": "2025-06-14",
+      "country": "Honduras",
+      "linked_incident": "CT-0650 - Missing evangelical pastor Elías Guardado found dead in Lempira",
+      "media_kind": "Publisher-hosted news coverage; imagery rights not established",
+      "publisher_or_owner": "Proceso Digital",
+      "media_url": "https://proceso.hn/hallan-sin-vida-a-pastor-evangelico-desaparecido-en-lempira/",
+      "description": "Original external source reporting missing evangelical pastor elías guardado found dead in lempira.",
+      "rights_and_reuse": "Link only; no third-party video or image rehosting without a confirmed licence."
+    },
+    {
+      "date": "2024-12",
+      "country": "Honduras",
+      "linked_incident": "CT-0651 - Evangelical pastor and jewellery seller Selvin Sabillón killed in San Pedro Sula",
+      "media_kind": "Publisher-hosted news coverage; imagery rights not established",
+      "publisher_or_owner": "El Heraldo",
+      "media_url": "https://www.elheraldo.hn/sucesos/asaltantes-asesinan-pastor-vendedor-joyas-resistirse-robo-san-pedro-sula-JA23328436",
+      "description": "Original external source reporting evangelical pastor and jewellery seller selvin sabillón killed in san pedro sula.",
+      "rights_and_reuse": "Link only; no third-party video or image rehosting without a confirmed licence."
+    },
+    {
+      "date": "2024-10-19",
+      "country": "Honduras",
+      "linked_incident": "CT-0652 - Pastor Enrique Banegas Salgado killed and nephew wounded in gun attack",
+      "media_kind": "Publisher-hosted news coverage; imagery rights not established",
+      "publisher_or_owner": "Radio HRN",
+      "media_url": "https://www.radiohrn.hn/revelan-motivos-detras-del-crimen-contra-pastor-evangelico-en-olancho-2024-10-21",
+      "description": "Original external source reporting pastor enrique banegas salgado killed and nephew wounded in gun attack.",
+      "rights_and_reuse": "Link only; no third-party video or image rehosting without a confirmed licence."
+    },
+    {
+      "date": "2024-09-14",
+      "country": "Honduras",
+      "linked_incident": "CT-0653 - Catholic delegate Juan Antonio López assassinated after leading worship in Tocoa",
+      "media_kind": "Publisher-hosted news coverage; imagery rights not established",
+      "publisher_or_owner": "Vatican News",
+      "media_url": "https://www.vaticannews.va/en/pope/news/2024-09/pope-angelus-honduras-enviornmental-activist-juan-antonio-lopez.html",
+      "description": "Original external source reporting catholic delegate juan antonio lópez assassinated after leading worship in tocoa.",
+      "rights_and_reuse": "Link only; no third-party video or image rehosting without a confirmed licence."
+    },
+    {
+      "date": "2026-03-10",
+      "country": "Czech Republic",
+      "linked_incident": "CT-0654 - Prague's St Wenceslas Church defaced with offensive cross and Star of David graffiti",
+      "media_kind": "Publisher-hosted news coverage; imagery rights not established",
+      "publisher_or_owner": "OIDAC Europe",
+      "media_url": "https://www.intoleranceagainstchristians.eu/index.php?case=11092&id=12",
+      "description": "Original external source reporting prague's st wenceslas church defaced with offensive cross and star of david graffiti.",
+      "rights_and_reuse": "Link only; no third-party video or image rehosting without a confirmed licence."
+    },
+    {
       "date": "2026-06-29",
       "country": "Switzerland",
       "linked_incident": "CT-0617 - Tabernacle stolen and consecrated hosts discarded at Geneva church",

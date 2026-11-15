@@ -406,6 +406,26 @@
     "Finland": {
       "iso2": "FI",
       "iso3": "FIN"
+    },
+    "Norway": {
+      "iso2": "NO",
+      "iso3": "NOR"
+    },
+    "Iceland": {
+      "iso2": "IS",
+      "iso3": "ISL"
+    },
+    "Zimbabwe": {
+      "iso2": "ZW",
+      "iso3": "ZWE"
+    },
+    "Honduras": {
+      "iso2": "HN",
+      "iso3": "HND"
+    },
+    "Czech Republic": {
+      "iso2": "CZ",
+      "iso3": "CZE"
     }
   },
   "places": {
@@ -3261,6 +3281,171 @@
           "lat": 62.4932,
           "lon": 30.2514,
           "precision": "town"
+        }
+      ]
+    },
+    "Norway|Stensgård Church, Maura, Nannestad": {
+      "resolution": "municipality",
+      "points": [
+        {
+          "name": "Stensgård Church, Nannestad",
+          "lat": 60.237,
+          "lon": 11.158,
+          "precision": "municipality"
+        }
+      ]
+    },
+    "Norway|Sel Church, Sel, Innlandet": {
+      "resolution": "municipality",
+      "points": [
+        {
+          "name": "Sel, Innlandet",
+          "lat": 61.835,
+          "lon": 9.402,
+          "precision": "municipality"
+        }
+      ]
+    },
+    "Norway|Dombås Church, Dovre, Innlandet": {
+      "resolution": "town",
+      "points": [
+        {
+          "name": "Dombås",
+          "lat": 62.075,
+          "lon": 9.123,
+          "precision": "town"
+        }
+      ]
+    },
+    "Iceland|Grafarvogur Church, Reykjavík": {
+      "resolution": "district",
+      "points": [
+        {
+          "name": "Grafarvogur, Reykjavík",
+          "lat": 64.137,
+          "lon": -21.797,
+          "precision": "district"
+        }
+      ]
+    },
+    "Iceland|Hjallakirkja, Kópavogur": {
+      "resolution": "municipality",
+      "points": [
+        {
+          "name": "Kópavogur",
+          "lat": 64.111,
+          "lon": -21.908,
+          "precision": "municipality"
+        }
+      ]
+    },
+    "Iceland|Russian Orthodox prayer house, Mýrargata, Reykjavík": {
+      "resolution": "street",
+      "points": [
+        {
+          "name": "Mýrargata, Reykjavík",
+          "lat": 64.15,
+          "lon": -21.95,
+          "precision": "street"
+        }
+      ]
+    },
+    "Zimbabwe|Zimbabwe Divine Destiny prayer gathering, Harare": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Harare, approximate",
+          "lat": -17.829,
+          "lon": 31.053,
+          "precision": "city"
+        }
+      ]
+    },
+    "Zimbabwe|University of Zimbabwe, Harare": {
+      "resolution": "district",
+      "points": [
+        {
+          "name": "University of Zimbabwe, Harare",
+          "lat": -17.783,
+          "lon": 31.054,
+          "precision": "district"
+        }
+      ]
+    },
+    "Honduras|El Simbil, Agua Caliente Norte, Intibucá": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Intibucá department",
+          "lat": 14.32,
+          "lon": -88.18,
+          "precision": "region"
+        }
+      ]
+    },
+    "Honduras|Los Laureles, Santa Bárbara": {
+      "resolution": "region",
+      "points": [
+        {
+          "name": "Santa Bárbara department",
+          "lat": 14.92,
+          "lon": -88.24,
+          "precision": "region"
+        }
+      ]
+    },
+    "Honduras|Quebrada Seca, Erandique, Lempira": {
+      "resolution": "municipality",
+      "points": [
+        {
+          "name": "Erandique, Lempira",
+          "lat": 14.23,
+          "lon": -88.48,
+          "precision": "municipality"
+        }
+      ]
+    },
+    "Honduras|Barrio Guadalupe, San Pedro Sula": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "San Pedro Sula",
+          "lat": 15.503,
+          "lon": -88.025,
+          "precision": "city"
+        }
+      ]
+    },
+    "Honduras|Juticalpa, Olancho": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Juticalpa",
+          "lat": 14.67,
+          "lon": -86.22,
+          "precision": "city"
+        }
+      ]
+    },
+    "Honduras|Church of St Anthony of Padua, Tocoa, Colón": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Tocoa, Colón",
+          "lat": 15.684,
+          "lon": -86,
+          "precision": "city"
+        }
+      ]
+    },
+    "Czech Republic|St Wenceslas Church, Prague": {
+      "resolution": "city",
+      "points": [
+        {
+          "name": "Prague",
+          "lat": 50.0755,
+          "lon": 14.4378,
+          "precision": "city"
         }
       ]
     }

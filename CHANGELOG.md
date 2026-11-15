@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.16.5 - 15/11/2026: Christian persecution reports in Norway, Iceland, Zimbabwe, Honduras and Czech Republic
+
+- Add 18 source-attributed reports across Norway (5), Iceland (3), Zimbabwe (3), Honduras (6) and the Czech Republic (1), extending the catalogue to 654 reports across 105 countries and territories.
+- Document separate Norwegian church fires, Christian prayer-gathering arrests in Zimbabwe and violent attacks affecting Honduran clergy and a Catholic pastoral worker, distinguishing political, criminal and unresolved motives.
+- Record Icelandic church-property vandalism accurately where the apparent target was LGBTQ inclusion or Russian national associations, and acknowledge the Jewish symbolism attacked alongside the Christian cross in Prague.
+- Extend country heat-map coverage and 15 approximate locality mappings, add 15 external publisher references and test incident grouping, dates and source attribution.
+
 ## 1.16.4 - 15/11/2026: Christian persecution coverage expands to Switzerland, Romania, Bulgaria and Finland
 
 - Add 20 source-attributed reports from Switzerland (9), Romania (4), Bulgaria (3) and Finland (4), extending the catalogue to 636 published reports across 100 countries and territories.
