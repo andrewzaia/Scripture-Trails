@@ -121,6 +121,8 @@ test('indexed-only commentary discloses its access limit alongside the original 
 });
 
 test('twelve new biblical quotation assessments are available from About with named accessible source links',async({page})=>{
+  // These disclosure-heavy checks can exceed the default timeout in Firefox on Ubuntu 26.04.
+  test.setTimeout(90000);
  await open(page,'about');
  await expect(page.locator('#about-review-meter')).toHaveAttribute('value','161');
  await expect(page.locator('#citation-review-summary')).toContainText('0 remain pending');
@@ -141,6 +143,7 @@ test('twelve new biblical quotation assessments are available from About with na
 
 
 test('final sensitive quotation reviews are available with textual cautions and original sources',async({page})=>{
+  test.setTimeout(90000);
  await open(page,'about');
  await expect(page.locator('#about-review-meter')).toHaveAttribute('value','161');
  await expect(page.locator('#citation-review-summary')).toContainText('46 have dated assessments and 0 remain pending');

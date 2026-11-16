@@ -7,7 +7,9 @@ const read=name=>readFileSync(new URL('../.github/workflows/'+name,import.meta.u
 test('CI runs supported Node 24 actions on a stable runner with all three browser engines',()=>{
  const ci=read('ci.yml');
  assert.ok(!ci.split('\n').some(line=>line.trim()==='runs-on: ubuntu-latest'),'CI image must not change without review');
- assert.ok((ci.match(/runs-on: ubuntu-24\.04/g)||[]).length>=3);
+ assert.equal((ci.match(/runs-on: ubuntu-26\.04/g)||[]).length,3,'all required jobs must pin the reviewed Ubuntu 26.04 runner');
+ assert.match(ci,/Verify deterministic Atlas import on Ubuntu 26\.04/);
+ assert.match(ci,/git status --porcelain -- public\/data\/refs/);
  assert.ok(!ci.includes('actions/checkout@v4'));
  assert.ok(!ci.includes('actions/setup-node@v4'));
  assert.match(ci,/actions\/checkout@v5/);
@@ -41,7 +43,7 @@ test('superseded PR validations cancel without canceling main or weakening relea
 test('Atlas reference rebuild cannot bypass semantic release reviews by directly pushing to main',()=>{
  const flow=read('import-crossrefs.yml');
  assert.match(flow,/contents: read/);
- assert.match(flow,/runs-on: ubuntu-24\.04/);
+ assert.match(flow,/runs-on: ubuntu-26\.04/);
  assert.match(flow,/actions\/checkout@v5/);
  assert.match(flow,/actions\/setup-node@v5/);
  assert.match(flow,/npm run import:refs/);

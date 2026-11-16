@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "version": "1.16.7",
+      "date": "2026-11-17",
+      "title": "Ubuntu 26.04 CI compatibility and Atlas verification",
+      "changes": [
+        "Move required source, Chromium, Firefox and WebKit validation to explicit Ubuntu 26.04 while retaining the fail-closed release gate.",
+        "Validate deterministic Atlas reference regeneration on Ubuntu 26.04 and migrate the read-only Atlas import workflow to the same runner image."
+      ]
+    },
+    {
       "version": "1.16.6",
       "date": "2026-11-15",
       "title": "World heat-map glow click-through",

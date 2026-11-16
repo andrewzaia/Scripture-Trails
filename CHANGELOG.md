@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.16.7 - 17/11/2026: Ubuntu 26.04 CI compatibility and Atlas verification
+
+- Move required source, Chromium, Firefox and WebKit validation to explicit Ubuntu 26.04 while retaining the fail-closed release gate.
+- Validate deterministic Atlas reference regeneration on Ubuntu 26.04 and migrate the read-only Atlas import workflow to the same runner image.
+
 ## 1.16.6 - 15/11/2026: World heat-map glow click-through
 
 - Make decorative heat-map glows click-through so underlying countries can be selected without changing the glow appearance.

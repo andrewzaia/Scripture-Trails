@@ -18,7 +18,7 @@ jobs:
   # Pin the tested image while ubuntu-latest transitions to Ubuntu 26.04.
   # Upgrade the runner explicitly after a full cross-browser compatibility run.
   test:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     steps:
       - uses: actions/checkout@v5
         with:
@@ -28,6 +28,14 @@ jobs:
           node-version-file: .nvmrc
           cache: npm
       - run: npm ci
+      - name: Verify deterministic Atlas import on Ubuntu 26.04
+        run: |
+          npm run import:refs
+          if [ -n "$(git status --porcelain -- public/data/refs)" ]; then
+            echo "::error::Atlas reference regeneration was not deterministic."
+            git status --short -- public/data/refs
+            exit 1
+          fi
       - name: Check source and tests
         run: npm run build
       - name: Reproduce release with the standard npm command
@@ -48,7 +56,7 @@ jobs:
     if: ${{ github.event_name == 'pull_request' }}
     name: Browser - ${{ matrix.engine }}
     needs: test
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     timeout-minutes: 35
     strategy:
       fail-fast: false
@@ -98,7 +106,7 @@ jobs:
   release-gate:
     if: ${{ always() }}
     needs: [test, browser]
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     timeout-minutes: 5
     steps:
       - name: Enforce PR browsers and source-verified main releases
