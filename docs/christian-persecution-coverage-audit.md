@@ -125,7 +125,7 @@ Ten source-attributed reports were prepared in a development branch, bringing th
 - CT-0656: Slovenia, 29 May 2024, vandalism of a chapel in Prevalje. Graffiti content does not identify the offenders.
 - CT-0657: Slovenia, 2 February 2021, vandalism targeting Christian institution Zavod Iskreni. Motive attribution remains qualified.
 - CT-0658: Latvia, 23 July 2023, Riga Lutheran church damage and threats. A church dispute and religious hatred were both discussed as possible motives.
-- CT-0659: Estonia, June 2026, Tallinn Baptist church attempted arson investigation. The exact offence date and motive were not established in the cited source excerpt.
+- CT-0659: Estonia, 13 June 2026, attempted arson at Nomme Baptist Church in Tallinn. The date is confirmed in OIDAC's detailed report; the religious motive remains under investigation.
 
 Before merging: run `npm run release -- patch "Expanded Christian persecution geographic coverage" "Added five attributed reports from North Macedonia, Slovenia, Latvia and Estonia with uncertainty qualifications"`, then `npm run build`, tests and release validation. Update the pending audit release note to its actual released version. Confirm deployment and the live footer before reporting completion. Do not publish unlicensed third-party photographs.
 
