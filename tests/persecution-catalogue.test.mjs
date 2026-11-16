@@ -647,6 +647,7 @@ test('seven additional countries remain source-attributed and geographically ind
  const validIso3=new Set(world.features.map(feature=>feature.id));
  const added=['North Macedonia','Slovenia','Latvia','Estonia','Moldova','Montenegro','Rwanda'];
  const relevant=records.filter(record=>added.includes(record.country));
+ assert.equal(records.find(record=>record.id==='CT-0659')?.date,'2026-06-13','Use confirmed Tallinn incident date');
  assert.equal(relevant.length,10);
  for(const country of added){
   assert.ok(geo.countries[country], 'Missing country mapping: '+country);
