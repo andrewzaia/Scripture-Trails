@@ -2,7 +2,7 @@
 
 ## Current register interpretation - 17 November 2026
 
-The qualified **owner-accepted** v1 source-licences review is the current acceptance status. The register no longer describes this accepted criterion as blocked, but retains `allPublisherPermissionsVerified: false`, because private account entitlements and agreements were not independently inspected. Earlier "OPEN" passages below are historical snapshots, not renewed launch blockers. See `sources/legal/ongoing-publisher-monitoring.md` for current private-account and FUMS confirmation work. No confidential agreements are stored here.
+The qualified **owner-accepted** v1 source-licences review is the current acceptance status. The register no longer describes this accepted criterion as blocked, but retains `allPublisherPermissionsVerified: false`, because private account entitlements and agreements were not independently inspected. Earlier "OPEN" passages below are historical snapshots, not renewed launch blockers. See `sources/legal/ongoing-publisher-monitoring.md` for event-driven review triggers and the remaining one-time private-account and FUMS confirmation work. There is no arbitrary recurring publisher-terms audit. No confidential agreements are stored here.
 
 Date: 2026-10-31
 

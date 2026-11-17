@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.16.9 - 18/11/2026: Event-driven publisher rights review
+
+- Replace arbitrary recurring publisher licence checks with reviews triggered by relevant provider notifications or material changes to website content use.
+- Preserve dated source-rights evidence, existing publisher attribution and specific unresolved account and FUMS verification without imposing a public licensing declaration.
+
 ## 1.16.8 - 17/11/2026: Public repository safeguards and publisher rights maintenance
 
 - Introduce a read-only monthly reachable Git-history credential audit, grouped dependency update reviews and a confidential security disclosure policy.
