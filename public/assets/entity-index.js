@@ -1,8 +1,8 @@
-import {appendCitationReview} from './citation-review.js?v=1.16.8';
-import {buildEntityCatalog,findEntities,ENTITY_TYPES} from './entity-index-data.js?v=1.16.8';
+import {appendCitationReview} from './citation-review.js?v=1.16.9';
+import {buildEntityCatalog,findEntities,ENTITY_TYPES} from './entity-index-data.js?v=1.16.9';
 import {validateCanonicalReference} from './reference-integrity.js';
-import {connectionsForPassages,CONNECTION_KINDS,REVIEW_LABELS} from './connection-evidence.js?v=1.16.8';
-import {personTrail,TRAIL_SOURCE_LABELS,TRAIL_REVIEW_LABELS} from './person-trails.js?v=1.16.8';
+import {connectionsForPassages,CONNECTION_KINDS,REVIEW_LABELS} from './connection-evidence.js?v=1.16.9';
+import {personTrail,TRAIL_SOURCE_LABELS,TRAIL_REVIEW_LABELS} from './person-trails.js?v=1.16.9';
 
 const make=(tag,cls,text)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(text!==undefined)e.textContent=text;return e;};
 const key=(type,id)=>type+':'+id;
