@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.16.8 - 17/11/2026: Public repository safeguards and publisher rights maintenance
+
+- Introduce a read-only monthly reachable Git-history credential audit, grouped dependency update reviews and a confidential security disclosure policy.
+- Validate locally hosted third-party image attribution and distinguish public source rights from publisher-controlled Bible translation permissions.
+- Reconcile the qualified publisher-rights acceptance record, preserving unresolved private account entitlements, FUMS confirmation and usage monitoring requirements.
+
 ## 1.16.7 - 17/11/2026: Ubuntu 26.04 CI compatibility and Atlas verification
 
 - Move required source, Chromium, Firefox and WebKit validation to explicit Ubuntu 26.04 while retaining the fail-closed release gate.

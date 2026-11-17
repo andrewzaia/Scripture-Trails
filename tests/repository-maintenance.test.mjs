@@ -1,6 +1,14 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {existsSync,readFileSync} from 'node:fs';
+import {mkdtempSync,writeFileSync,rmSync} from 'node:fs';
+import {tmpdir} from 'node:os';
+import {join} from 'node:path';
+import {spawnSync} from 'node:child_process';
+const requireFs=()=>({mkdtempSync,writeFileSync,rmSync});
+const requireOs=()=>({tmpdir});
+const requirePath=()=>({join});
+const requireChild=()=>({spawnSync});
 const read=path=>readFileSync(new URL('../'+path,import.meta.url),'utf8');
 
 test('security operations are read-only and grouped without bypassing release checks',()=>{
@@ -55,4 +63,38 @@ test('publisher register does not falsely block the owner-accepted v1 gate or cl
  assert.match(monitoring,/5,000 monthly end-user ceiling/);
  assert.match(monitoring,/private written provider confirmation/);
  assert.match(monitoring,/Keep issue #79 open/);
+});
+
+test('history audit detects sensitive tracked names without printing their contents',()=>{
+ const {mkdtempSync,writeFileSync,rmSync}=requireFs();
+ const {tmpdir}=requireOs();
+ const {join}=requirePath();
+ const {spawnSync}=requireChild();
+ const dir=mkdtempSync(join(tmpdir(),'scripture-security-audit-'));
+ const run=(command,args)=>spawnSync(command,args,{cwd:dir,encoding:'utf8'});
+ try{
+  for(const args of [['init','-q'],['config','user.name','Security fixture'],['config','user.email','fixture@example.invalid']]){
+   const result=run('git',args);
+   assert.equal(result.status,0,result.stderr);
+  }
+  writeFileSync(join(dir,'safe.txt'),'A safe synthetic test fixture');
+  for(const args of [['add','safe.txt'],['commit','-qm','safe fixture']]){
+   const result=run('git',args);
+   assert.equal(result.status,0,result.stderr);
+  }
+  const scanner=new URL('../scripts/audit-public-history.mjs',import.meta.url).pathname;
+  const success=run(process.execPath,[scanner]);
+  assert.equal(success.status,0,success.stderr);
+  assert.match(success.stdout,/Reachable history security audit/);
+  assert.doesNotMatch(success.stdout,/synthetic test fixture/);
+  writeFileSync(join(dir,'.env'),'synthetic-not-a-real-secret');
+  for(const args of [['add','-f','.env'],['commit','-qm','deliberately sensitive filename fixture']]){
+   const result=run('git',args);
+   assert.equal(result.status,0,result.stderr);
+  }
+  const failed=run(process.execPath,[scanner]);
+  assert.equal(failed.status,1,failed.stderr);
+  assert.match(failed.stdout,/sensitive-filename/);
+  assert.doesNotMatch(failed.stdout,/synthetic-not-a-real-secret/);
+ }finally{rmSync(dir,{recursive:true,force:true});}
 });
