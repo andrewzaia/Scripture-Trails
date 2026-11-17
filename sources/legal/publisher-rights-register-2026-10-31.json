@@ -64,7 +64,7 @@
         "Exceeding this audience threshold requires ceasing NKJV or a suitable commercial plan/licence",
         "Publisher copyright notices, FUMS and translation-specific plan permissions apply"
       ],
-      "nextEvidence": "Monitor public usage limits and provider availability for the non-commercial site; preserve notices and reporting."
+      "nextEvidence": "Maintain applicable audience limits; review relevant provider notices when received and reassess before material changes to usage."
     },
     {
       "id": "openbible-crossrefs",
@@ -77,7 +77,7 @@
         "OpenBible.info attribution does not grant permission to redistribute Crossway ESV verse text",
         "Snapshot provenance and exact licence version should be archived; existing attribution claims CC BY 4.0"
       ],
-      "nextEvidence": "Retain dated source snapshot, upstream attribution/license record and transformation ledger; separately re-check original source licence if its scope changes."
+      "nextEvidence": "Retain dated source, attribution and transformation records; review if the source or intended use materially changes or a relevant rights notice is received."
     },
     {
       "id": "historical-city-photographs",
