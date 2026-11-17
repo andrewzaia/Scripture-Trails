@@ -1,6 +1,16 @@
 {
   "releases": [
     {
+      "version": "1.16.8",
+      "date": "2026-11-17",
+      "title": "Public repository safeguards and publisher rights maintenance",
+      "changes": [
+        "Introduce a read-only monthly reachable Git-history credential audit, grouped dependency update reviews and a confidential security disclosure policy.",
+        "Validate locally hosted third-party image attribution and distinguish public source rights from publisher-controlled Bible translation permissions.",
+        "Reconcile the qualified publisher-rights acceptance record, preserving unresolved private account entitlements, FUMS confirmation and usage monitoring requirements."
+      ]
+    },
+    {
       "version": "1.16.7",
       "date": "2026-11-17",
       "title": "Ubuntu 26.04 CI compatibility and Atlas verification",
