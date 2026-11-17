@@ -19,6 +19,6 @@ Record the date, relevant agreement or publisher notice, authorised application 
 
 ## Specific outstanding implementation evidence
 
-Tests check publisher notices, attribution, absence of a bundled licensed Bible corpus and FUMS GET emission for initial and cached passage display. The site uses a manual FUMS v3 GET rather than executing a third-party tracker script alongside private notes. API.Bible recommends its tracker for browser environments and documents manual GET for other contexts. A **one-time private provider clarification** on the browser implementation and anonymous `cb` cache-buster remains appropriate. HTTP 200 alone does not establish publisher-side ingestion.
+Tests check publisher notices, attribution, absence of a bundled licensed Bible corpus and FUMS GET emission for initial and cached passage display. The site uses a manual FUMS v3 GET rather than executing a third-party tracker script alongside private notes. API.Bible recommends its tracker for browser environments and documents manual GET for other contexts. Request **private written provider confirmation** once on the browser implementation and anonymous `cb` cache-buster. HTTP 200 alone does not establish publisher-side ingestion.
 
 Issue #79 tracks specific unresolved account-side permission and FUMS questions, not perpetual scheduled policy reviews.
