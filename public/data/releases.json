@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "version": "1.16.9",
+      "date": "2026-11-17",
+      "title": "Event-driven publisher rights review",
+      "changes": [
+        "Replace arbitrary recurring publisher licence checks with reviews triggered by relevant provider notifications or material changes to website content use.",
+        "Preserve dated source-rights evidence, existing publisher attribution and specific unresolved account and FUMS verification without imposing a public licensing declaration."
+      ]
+    },
+    {
       "version": "1.16.8",
       "date": "2026-11-17",
       "title": "Public repository safeguards and publisher rights maintenance",
