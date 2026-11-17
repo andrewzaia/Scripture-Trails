@@ -1,8 +1,6 @@
 name: Reachable public Git-history security audit
 
 on:
-  push:
-    branches: [audit/history-security-20261118]
   workflow_dispatch:
   schedule:
     - cron: '17 3 1 * *'
@@ -12,7 +10,6 @@ permissions:
 
 jobs:
   audit:
-    if: github.event_name != 'push'
     runs-on: ubuntu-26.04
     timeout-minutes: 15
     steps:
@@ -27,62 +24,3 @@ jobs:
           node-version-file: .nvmrc
       - name: Report only bounded scan counts and classifications
         run: node scripts/audit-public-history.mjs
-
-  # Branch-only, one-off audit. Do not merge into main.
-  audit-actions-logs-once:
-    if: github.event_name == 'push' && github.ref == 'refs/heads/audit/history-security-20261118'
-    runs-on: ubuntu-26.04
-    timeout-minutes: 35
-    permissions:
-      contents: read
-      actions: read
-    steps:
-      - uses: actions/checkout@v5
-        with:
-          persist-credentials: false
-      - name: Retrieve publicly accessible Actions logs into temporary runner storage
-        env:
-          GITHUB_TOKEN: ${{ github.token }}
-        run: python3 scripts/audit-actions-logs.py
-      - name: Scan logs with Gitleaks without publishing findings
-        shell: bash
-        run: |
-          set -euo pipefail
-          umask 077
-          report="$RUNNER_TEMP/audit-actions-gitleaks.json"
-          scanner_log="$RUNNER_TEMP/audit-actions-gitleaks-output.log"
-          trap 'rm -rf "$RUNNER_TEMP/audit-actions-logs" "$report" "$scanner_log" "$RUNNER_TEMP/audit-actions-incomplete"' EXIT
-          set +e
-          docker run --rm --network none --user "$(id -u):$(id -g)" \
-            -v "$RUNNER_TEMP:/work" -w /work \
-            ghcr.io/gitleaks/gitleaks:v8.30.1@sha256:b109bc5f8f76a38196a3e413704fc5b9e3c32360bce4e4b603bd6f45b3721dbb \
-            dir --no-banner --redact=100 --exit-code 7 \
-            --report-format json --report-path /work/audit-actions-gitleaks.json /work/audit-actions-logs \
-            >"$scanner_log" 2>&1
-          status=$?
-          set -e
-          if [[ "$status" != 0 && "$status" != 7 ]]; then
-            echo "::error::Gitleaks did not complete successfully. Raw scanner output intentionally withheld."
-            exit 2
-          fi
-          REPORT="$report" node --input-type=module -e '
-            import fs from "node:fs";
-            const rows = fs.existsSync(process.env.REPORT) ? JSON.parse(fs.readFileSync(process.env.REPORT,"utf8")) : [];
-            if (!Array.isArray(rows)) throw new Error("Unexpected scanner report schema");
-            const counts = {};
-            for (const row of rows) {
-              const key = String(row.RuleID || "unclassified").replace(/[^a-zA-Z0-9_-]/g,"").slice(0,80);
-              counts[key] = (counts[key] || 0) + 1;
-            }
-            console.log("Gitleaks Actions-log candidate count: " + rows.length);
-            console.log("Gitleaks Actions-log classifications: " + JSON.stringify(counts));
-          '
-          if [[ -f "$RUNNER_TEMP/audit-actions-incomplete" ]]; then
-            echo "::error::Actions log archive coverage incomplete; no comprehensive clean-log claim."
-            exit 3
-          fi
-          if [[ "$status" == 7 ]]; then
-            echo "::error::Potential exposed secrets require private maintainer review; details withheld."
-            exit 1
-          fi
-          echo "No Gitleaks candidate secrets in downloaded Actions logs."
