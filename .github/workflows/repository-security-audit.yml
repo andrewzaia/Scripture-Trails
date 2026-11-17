@@ -1,0 +1,26 @@
+name: Reachable public Git-history security audit
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 3 1 * *'
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-26.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Fetch current public heads and tags for scoped history scanning
+        run: git fetch --force --tags origin '+refs/heads/*:refs/remotes/origin/*'
+      - uses: actions/setup-node@v5
+        with:
+          node-version-file: .nvmrc
+      - name: Report only bounded scan counts and classifications
+        run: node scripts/audit-public-history.mjs

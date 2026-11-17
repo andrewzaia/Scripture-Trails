@@ -4,7 +4,6 @@
   "project": "Scripture Trails",
   "method": "Public publisher terms and repository implementation audit only.",
   "allPublisherPermissionsVerified": false,
-  "blockedCriterion": "source-licences",
   "items": [
     {
       "id": "esv-crossway",
@@ -94,5 +93,17 @@
       "nextEvidence": "Verify each original Commons file page's author, source and licence and retain evidence of transforms, URLs and exact SHA-256 bytes."
     }
   ],
-  "projectUse": "Non-commercial academic Bible study"
+  "projectUse": "Non-commercial academic Bible study",
+  "acceptance": {
+    "acceptedOn": "2026-11-02",
+    "status": "owner-accepted-with-limitations",
+    "scope": "Owner-attested non-commercial v1 public source and implementation review",
+    "unverifiedAccountChecks": [
+      "Edition-specific authorisations",
+      "Active Crossway and API.Bible plan settings",
+      "Monthly end-user range and quotas",
+      "Provider-side FUMS reporting confirmation"
+    ],
+    "updatedOn": "2026-11-17"
+  }
 }
