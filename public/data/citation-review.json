@@ -10979,24 +10979,24 @@
       },
       {
         "id": "xr009",
-        "from": "Psalms 2:7",
-        "to": "Hebrews 1:5",
-        "kind": "quotation",
-        "summary": "Hebrews 1:5 quotes the royal sonship decree of Psalm 2:7 while contrasting the Son with angels.",
-        "limitation": "Psalm 2 speaks in the setting of the Israelite king and divine royal decree; Hebrews' Christological use is a later textual interpretation, not a second independent account of the original enthronement.",
+        "from": "Deuteronomy 32:43",
+        "to": "Hebrews 1:6",
+        "kind": "greek-dependent-quotation",
+        "summary": "Hebrews 1:6 invokes the worship of the Son by angels using language associated with the Greek form of Deuteronomy 32:43. The USCCB Hebrews footnote also identifies Psalm 97:7 as a related source.",
+        "limitation": "The Masoretic Hebrew form of Deuteronomy 32:43 differs from the Greek tradition and other ancient witnesses; Psalm 97:7 provides a competing or related intertext. The original passage is the Song of Moses, not a direct speech about angels worshipping Jesus. A single precise source exemplar has not been established.",
         "reviewedOn": "2026-11-18",
         "sources": [
           {
-            "title": "Psalms 2 - USCCB chapter",
+            "title": "Deuteronomy 32 - USCCB chapter",
             "publisher": "USCCB",
-            "url": "https://bible.usccb.org/bible/psalms/2",
-            "locator": "2:7"
+            "url": "https://bible.usccb.org/bible/deuteronomy/32",
+            "locator": "32:43; compare Greek/ancient textual forms"
           },
           {
             "title": "Hebrews 1 - USCCB chapter",
             "publisher": "USCCB",
             "url": "https://bible.usccb.org/bible/hebrews/1",
-            "locator": "1:5"
+            "locator": "1:6 and publisher note referencing Deuteronomy 32:43 LXX and Psalm 97:7"
           }
         ]
       },
