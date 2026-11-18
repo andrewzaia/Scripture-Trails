@@ -1,6 +1,6 @@
 {
   "name": "scripture-trails",
-  "version": "1.17.0",
+  "version": "1.17.1",
   "private": true,
   "type": "module",
   "description": "A Bible reader with ESV, NASB20, NIV and NKJV translations and visual Scripture discovery",
@@ -23,8 +23,8 @@
   },
   "devDependencies": {
     "@axe-core/playwright": "4.14.0",
-    "@playwright/test": "1.64.1",
-    "wrangler": "^4.0.0"
+    "@playwright/test": "1.65.1",
+    "wrangler": "^4.162.0"
   },
   "engines": {
     "node": ">=22"

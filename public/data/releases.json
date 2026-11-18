@@ -1,6 +1,16 @@
 {
   "releases": [
     {
+      "version": "1.17.1",
+      "date": "2026-11-18",
+      "title": "Maintenance and compatibility updates",
+      "changes": [
+        "Updated automated validation workflows to maintain reliable checks before website publication.",
+        "Refreshed browser testing and Cloudflare deployment tooling without changing reader or catalogue content.",
+        "Fixed premature ESV citation preview dismissal when a passage link scrolls into view."
+      ]
+    },
+    {
       "version": "1.17.0",
       "date": "2026-11-18",
       "title": "Expanded persecution geography and small-island access",
