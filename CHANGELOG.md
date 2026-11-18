@@ -5,7 +5,6 @@
 - Introduced an immersive, full-screen Connection Atlas with a dedicated scrollable sidebar for passage previews, source explanations, comparison, filtering and navigation.
 - Added responsive Atlas sidebar controls, an accessible exit path and a fixed-position fallback where browser element fullscreen is unavailable.
 - Prevented unrelated ESV verse popups from opening when page navigation focuses the main content area, while preserving intentional citation hover, keyboard and touch previews.
-- Kept desktop and mobile WebKit testing mandatory while splitting their CI runs to prevent combined browser test timeouts from blocking a validated release.
 
 ## 1.19.0 - 18/11/2026: First-pass source classification of imported Scripture quotations
 
