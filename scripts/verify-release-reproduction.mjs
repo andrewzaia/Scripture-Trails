@@ -28,7 +28,8 @@ try{
  // Reproduce dependency maintenance releases from the proposed dependency tree.
  // Only devDependency declarations may differ outside the release version.
  const sourcePkg=JSON.parse(git('show',base+':package.json'));
- const versionlessSource={...sourcePkg},versionlessCandidate={...pkg,version:original.version};
+ const stagedPkg={...pkg,version:original.version};
+ const versionlessSource={...sourcePkg},versionlessCandidate={...stagedPkg};
  delete versionlessSource.devDependencies;
  delete versionlessCandidate.devDependencies;
  if(JSON.stringify(versionlessSource)!==JSON.stringify(versionlessCandidate))
@@ -39,7 +40,7 @@ try{
   throw Error('Dependency lockfile identity changed unexpectedly.');
  candidateLock.version=original.version;
  candidateLock.packages[''].version=original.version;
- writeFileSync(join(dir,'package.json'),JSON.stringify(versionlessCandidate,null,2)+'\n');
+ writeFileSync(join(dir,'package.json'),JSON.stringify(stagedPkg,null,2)+'\n');
  writeFileSync(join(dir,'package-lock.json'),JSON.stringify(candidateLock,null,2)+'\n');
  // Recreate the proposed HTML at the previous version. Releases can also
  // edit visible page copy, not just the version footer and asset cache keys.
