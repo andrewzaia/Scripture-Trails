@@ -10,7 +10,7 @@ export const CITATION_REVIEW = {
     "connections": 161
   },
   "deferred": [
-    "301,392 distinct Atlas pairs still lack a written editorial explanation or claim-level classification. OpenBible vote counts are an imported navigation signal, not an independently validated judgement about each cross-reference. The full imported corpus remains unclassified.",
+    "301,392 distinct Atlas pairs still lack a fully developed editorial explanation. Fourteen of those pairs now have first-pass quotation-source classifications with source links and limitations; 301,378 remain without either level of treatment. OpenBible vote counts are navigational suggestions, not independent evidence of a quotation type or interpretation.",
     "Named-place research retains disputed identifications and limited access to excavation monographs, primary archaeological records and comparative site reports. Existing regional placeholders must not be presented as resolved historical locations.",
     "Full Hebrew and Greek manuscript apparatuses have not been independently collated. Four focused textual-source follow-ups now identify specific variants or candidate passages, but do not settle every underlying reading.",
     "Outside the four rechecked Nehemiah readings, some person-trail passage sources and historical context questions still have documented access limitations. Any deeper source work requires passage-specific evidence and its own access record.",
@@ -10788,5 +10788,333 @@ export const CITATION_REVIEW = {
       ],
       "method": "Scoped biblical-context assessment of seventeen remaining new Atlas explanation pairs against accessible named scholarly commentary and essays; original quotation, textual variants, typological reuse and contested interpretations are distinguished. No independent specialist signoff; complete manuscripts and full comparative literature outside scope."
     }
-  ]
+  ],
+  "importedReviews": {
+    "reviewedOn": "2026-11-18",
+    "method": "First-pass, claim-level Scripture quotation classifications of fourteen distinct imported OpenBible.info pairs, selected after checking presence in the local cross-reference shards. Publisher chapter references and accessible editorial notes were checked at their stated scope. Some direct publisher requests were restricted; linked pages and indexed passage or note material supported those limited comparisons. The classifications are not the 161 full Atlas explanations, do not certify external historical events or resolve manuscript variation, and are not independent specialist approval.",
+    "entries": [
+      {
+        "id": "xr001",
+        "from": "Hosea 2:23",
+        "to": "Romans 9:25",
+        "kind": "quotation",
+        "summary": "Paul explicitly quotes Hosea's reversal of the 'not my people' and 'not loved' names while discussing God's call of Jews and Gentiles in Romans 9:24-26.",
+        "limitation": "Hosea's immediate oracle concerns Israel's covenant judgement and promised restoration; Paul's application to Gentiles is a further interpretive use, not a claim that Hosea originally named the Roman church.",
+        "reviewedOn": "2026-11-18",
+        "sources": [
+          {
+            "title": "Hosea 2 - USCCB chapter",
+            "publisher": "USCCB",
+            "url": "https://bible.usccb.org/bible/hosea/2",
+            "locator": "2:23 in common Protestant numbering; 2:25 in NABRE"
+          },
+          {
+            "title": "Romans 9 - USCCB chapter",
+            "publisher": "USCCB",
+            "url": "https://bible.usccb.org/bible/romans/9",
+            "locator": "9:25"
+          }
+        ]
+      },
+      {
+        "id": "xr002",
+        "from": "Isaiah 8:14",
+        "to": "Romans 9:33",
+        "kind": "composite-quotation",
+        "summary": "The stumbling-stone language from Isaiah 8:14 is combined in Romans 9:33 with Zion's foundation stone from Isaiah 28:16.",
+        "limitation": "Isaiah 8 addresses trust and refuge amid Judah's crisis. This is one component of Paul's composite citation, not a stand-alone verbatim quotation from Isaiah 8.",
+        "reviewedOn": "2026-11-18",
+        "sources": [
+          {
+            "title": "Isaiah 8 - USCCB chapter",
+            "publisher": "USCCB",
+            "url": "https://bible.usccb.org/bible/isaiah/8",
+            "locator": "8:14"
+          },
+          {
+            "title": "Romans 9 - USCCB chapter",
+            "publisher": "USCCB",
+            "url": "https://bible.usccb.org/bible/romans/9",
+            "locator": "9:32-33"
+          }
+        ]
+      },
+      {
+        "id": "xr003",
+        "from": "Isaiah 28:16",
+        "to": "Romans 9:33",
+        "kind": "composite-quotation",
+        "summary": "Paul's stone laid in Zion and the believer not being put to shame draws on Isaiah 28:16 alongside the stumbling language of Isaiah 8:14.",
+        "limitation": "Isaiah's original foundation-stone oracle addresses Zion and the ruling community. Romans 9:33 combines passages and applies them within Paul's argument about righteousness and faith.",
+        "reviewedOn": "2026-11-18",
+        "sources": [
+          {
+            "title": "Isaiah 28 - USCCB chapter",
+            "publisher": "USCCB",
+            "url": "https://bible.usccb.org/bible/isaiah/28",
+            "locator": "28:16"
+          },
+          {
+            "title": "Romans 9 - USCCB chapter",
+            "publisher": "USCCB",
+            "url": "https://bible.usccb.org/bible/romans/9",
+            "locator": "9:32-33"
+          }
+        ]
+      },
+      {
+        "id": "xr004",
+        "from": "Deuteronomy 30:12",
+        "to": "Romans 10:6",
+        "kind": "adapted-quotation",
+        "summary": "Paul adapts Moses' question about ascending to heaven from Deuteronomy 30:12 in his argument concerning the righteousness of faith.",
+        "limitation": "Deuteronomy 30 speaks of God's instruction being accessible to Israel and possible to obey. Paul's parenthetical Christological interpretation is not part of Moses' original quotation.",
+        "reviewedOn": "2026-11-18",
+        "sources": [
+          {
+            "title": "Deuteronomy 30 - USCCB chapter",
+            "publisher": "USCCB",
+            "url": "https://bible.usccb.org/bible/deuteronomy/30",
+            "locator": "30:11-14"
+          },
+          {
+            "title": "Romans 10 - USCCB chapter",
+            "publisher": "USCCB",
+            "url": "https://bible.usccb.org/bible/romans/10",
+            "locator": "10:5-8"
+          }
+        ]
+      },
+      {
+        "id": "xr005",
+        "from": "Deuteronomy 30:14",
+        "to": "Romans 10:8",
+        "kind": "adapted-quotation",
+        "summary": "Paul reuses Deuteronomy's language about the word being near, in the mouth and heart, and applies it to the proclaimed word of faith.",
+        "limitation": "Deuteronomy's own context concerns keeping the commandment. Romans' proclamation-centred application does not make these two contexts identical; read the whole 30:11-14 unit.",
+        "reviewedOn": "2026-11-18",
+        "sources": [
+          {
+            "title": "Deuteronomy 30 - USCCB chapter",
+            "publisher": "USCCB",
+            "url": "https://bible.usccb.org/bible/deuteronomy/30",
+            "locator": "30:11-14"
+          },
+          {
+            "title": "Romans 10 - USCCB chapter",
+            "publisher": "USCCB",
+            "url": "https://bible.usccb.org/bible/romans/10",
+            "locator": "10:6-9"
+          }
+        ]
+      },
+      {
+        "id": "xr006",
+        "from": "Isaiah 53:1",
+        "to": "Romans 10:16",
+        "kind": "quotation",
+        "summary": "Romans 10:16 expressly cites Isaiah's question about who has believed the report, within Paul's discussion of hearing the proclaimed message.",
+        "limitation": "Isaiah 52:13-53:12 is a servant poem. Paul's reuse does not erase the original literary speakers or settle all questions about their identity and reception.",
+        "reviewedOn": "2026-11-18",
+        "sources": [
+          {
+            "title": "Isaiah 53 - USCCB chapter",
+            "publisher": "USCCB",
+            "url": "https://bible.usccb.org/bible/isaiah/53",
+            "locator": "53:1 in the 52:13-53:12 servant context"
+          },
+          {
+            "title": "Romans 10 - USCCB chapter",
+            "publisher": "USCCB",
+            "url": "https://bible.usccb.org/bible/romans/10",
+            "locator": "10:14-17"
+          }
+        ]
+      },
+      {
+        "id": "xr007",
+        "from": "Isaiah 65:1",
+        "to": "Romans 10:20",
+        "kind": "quotation",
+        "summary": "Paul introduces Isaiah 65:1 as Isaiah speaking boldly and applies its language about being found by those who did not seek God.",
+        "limitation": "Isaiah 65 belongs to a longer exchange about God's people, response and judgement. Paul's argument distinguishes the nations from Israel and should not be used to erase those original referents.",
+        "reviewedOn": "2026-11-18",
+        "sources": [
+          {
+            "title": "Isaiah 65 - USCCB chapter",
+            "publisher": "USCCB",
+            "url": "https://bible.usccb.org/bible/isaiah/65",
+            "locator": "65:1"
+          },
+          {
+            "title": "Romans 10 - USCCB chapter",
+            "publisher": "USCCB",
+            "url": "https://bible.usccb.org/bible/romans/10",
+            "locator": "10:19-21"
+          }
+        ]
+      },
+      {
+        "id": "xr008",
+        "from": "Isaiah 65:2",
+        "to": "Romans 10:21",
+        "kind": "quotation",
+        "summary": "Romans 10:21 quotes Isaiah's extended-hands image of divine appeal to a disobedient people in Paul's discussion of Israel.",
+        "limitation": "The original oracle is historically addressed in its own covenant setting. Paul's use does not justify collective hostility to Jewish people or collapse all historical audiences into one.",
+        "reviewedOn": "2026-11-18",
+        "sources": [
+          {
+            "title": "Isaiah 65 - USCCB chapter",
+            "publisher": "USCCB",
+            "url": "https://bible.usccb.org/bible/isaiah/65",
+            "locator": "65:2"
+          },
+          {
+            "title": "Romans 10 - USCCB chapter",
+            "publisher": "USCCB",
+            "url": "https://bible.usccb.org/bible/romans/10",
+            "locator": "10:19-21"
+          }
+        ]
+      },
+      {
+        "id": "xr009",
+        "from": "Psalms 2:7",
+        "to": "Hebrews 1:5",
+        "kind": "quotation",
+        "summary": "Hebrews 1:5 quotes the royal sonship decree of Psalm 2:7 while contrasting the Son with angels.",
+        "limitation": "Psalm 2 speaks in the setting of the Israelite king and divine royal decree; Hebrews' Christological use is a later textual interpretation, not a second independent account of the original enthronement.",
+        "reviewedOn": "2026-11-18",
+        "sources": [
+          {
+            "title": "Psalms 2 - USCCB chapter",
+            "publisher": "USCCB",
+            "url": "https://bible.usccb.org/bible/psalms/2",
+            "locator": "2:7"
+          },
+          {
+            "title": "Hebrews 1 - USCCB chapter",
+            "publisher": "USCCB",
+            "url": "https://bible.usccb.org/bible/hebrews/1",
+            "locator": "1:5"
+          }
+        ]
+      },
+      {
+        "id": "xr010",
+        "from": "2 Samuel 7:14",
+        "to": "Hebrews 1:5",
+        "kind": "quotation",
+        "summary": "Hebrews 1:5 places the Davidic father-and-son promise from 2 Samuel 7:14 beside Psalm 2:7 to support its sonship argument.",
+        "limitation": "The source oracle concerns David's dynasty and includes a discipline clause for a royal descendant. Hebrews selects one clause for a later Christological argument; it does not repeat all the oracle's conditions.",
+        "reviewedOn": "2026-11-18",
+        "sources": [
+          {
+            "title": "2 Samuel 7 - USCCB chapter",
+            "publisher": "USCCB",
+            "url": "https://bible.usccb.org/bible/2samuel/7",
+            "locator": "7:12-16"
+          },
+          {
+            "title": "Hebrews 1 - USCCB chapter",
+            "publisher": "USCCB",
+            "url": "https://bible.usccb.org/bible/hebrews/1",
+            "locator": "1:5"
+          }
+        ]
+      },
+      {
+        "id": "xr011",
+        "from": "Psalms 104:4",
+        "to": "Hebrews 1:7",
+        "kind": "greek-dependent-quotation",
+        "summary": "Hebrews 1:7 cites Psalm 104:4 using the Greek Septuagint's description of angels and ministers as winds and flames.",
+        "limitation": "The Hebrew wording in Psalm 104 may instead describe winds and flames as God's messengers. The USCCB Hebrews note explicitly marks the difference; do not infer identical meaning across versions.",
+        "reviewedOn": "2026-11-18",
+        "sources": [
+          {
+            "title": "Psalms 104 - USCCB chapter",
+            "publisher": "USCCB",
+            "url": "https://bible.usccb.org/bible/psalms/104",
+            "locator": "104:4"
+          },
+          {
+            "title": "Hebrews 1 - USCCB chapter",
+            "publisher": "USCCB",
+            "url": "https://bible.usccb.org/bible/hebrews/1",
+            "locator": "1:7"
+          }
+        ]
+      },
+      {
+        "id": "xr012",
+        "from": "Psalms 45:6",
+        "to": "Hebrews 1:8",
+        "kind": "quotation",
+        "summary": "Hebrews 1:8 applies Psalm 45's royal throne language to the Son and continues through the psalm's righteous-sceptre and anointing imagery.",
+        "limitation": "In its original royal setting the psalm is a courtly wedding song. NABRE numbers the throne declaration as Psalm 45:7; the imported link uses the common Protestant 45:6 numbering.",
+        "reviewedOn": "2026-11-18",
+        "sources": [
+          {
+            "title": "Psalms 45 - USCCB chapter",
+            "publisher": "USCCB",
+            "url": "https://bible.usccb.org/bible/psalms/45",
+            "locator": "45:6 in common Protestant numbering; 45:7 in NABRE"
+          },
+          {
+            "title": "Hebrews 1 - USCCB chapter",
+            "publisher": "USCCB",
+            "url": "https://bible.usccb.org/bible/hebrews/1",
+            "locator": "1:8-9"
+          }
+        ]
+      },
+      {
+        "id": "xr013",
+        "from": "Psalms 102:25",
+        "to": "Hebrews 1:10",
+        "kind": "quotation",
+        "summary": "Hebrews 1:10-12 cites the psalm's language about the Creator establishing the heavens and remaining when creation wears out.",
+        "limitation": "Psalm 102 is originally a lament addressing God. Hebrews applies this language to the Son; the NABRE verse number is 102:26 rather than 102:25 at the quotation opening.",
+        "reviewedOn": "2026-11-18",
+        "sources": [
+          {
+            "title": "Psalms 102 - USCCB chapter",
+            "publisher": "USCCB",
+            "url": "https://bible.usccb.org/bible/psalms/102",
+            "locator": "102:25 in common Protestant numbering; 102:26 in NABRE"
+          },
+          {
+            "title": "Hebrews 1 - USCCB chapter",
+            "publisher": "USCCB",
+            "url": "https://bible.usccb.org/bible/hebrews/1",
+            "locator": "1:10-12"
+          }
+        ]
+      },
+      {
+        "id": "xr014",
+        "from": "Psalms 110:1",
+        "to": "Hebrews 1:13",
+        "kind": "quotation",
+        "summary": "Hebrews 1:13 quotes the royal right-hand invitation of Psalm 110:1 as the closing contrast between the Son and ministering angels.",
+        "limitation": "The psalm is a royal oracle in its earlier setting. Hebrews' theological argument applies it to the Son; this is a scriptural reuse and not independent historical corroboration of a throne scene.",
+        "reviewedOn": "2026-11-18",
+        "sources": [
+          {
+            "title": "Psalms 110 - USCCB chapter",
+            "publisher": "USCCB",
+            "url": "https://bible.usccb.org/bible/psalms/110",
+            "locator": "110:1"
+          },
+          {
+            "title": "Hebrews 1 - USCCB chapter",
+            "publisher": "USCCB",
+            "url": "https://bible.usccb.org/bible/hebrews/1",
+            "locator": "1:13-14"
+          }
+        ]
+      }
+    ]
+  }
 };
