@@ -421,10 +421,11 @@ async function toggleAtlasFullscreen(){
 }
 function initAtlasFullscreen(){
  $('graph-fullscreen').addEventListener('click',()=>void toggleAtlasFullscreen());
+ $('graph-fullscreen-exit').addEventListener('click',()=>void exitAtlasFullscreen());
  $('graph-details-toggle').addEventListener('click',()=>setAtlasDetailsVisible(!$('atlas-workspace').classList.contains('atlas-details-open')));
  $('graph-details-close').addEventListener('click',()=>{setAtlasDetailsVisible(false);$('graph-details-toggle').focus({preventScroll:true});});
  document.addEventListener('fullscreenchange',syncAtlasFullscreen);
- document.addEventListener('keydown',event=>{if(event.key==='Escape'&&$('atlas-workspace').classList.contains('atlas-fullscreen-fallback'))void exitAtlasFullscreen();});
+ document.addEventListener('keydown',event=>{if(event.key==='Escape'&&atlasIsFullscreen()){event.preventDefault();void exitAtlasFullscreen();}});
 }
 function activateAtlasNode(ref,action='preview'){
  if(action==='focus')selectRef(ref,'connections');

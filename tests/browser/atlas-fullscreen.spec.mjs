@@ -40,7 +40,7 @@ test('Atlas fullscreen preserves the passage preview, evidence sidebar, controls
  expect(dimensions.width).toBeGreaterThan(200);
  expect(dimensions.height).toBeGreaterThan(120);
  await page.locator('#graph-details-toggle').click();await showDetails(page);
- await page.locator('#graph-fullscreen').click();
+ await page.locator('#graph-fullscreen-exit').click();
  await expect(page.locator('#graph-fullscreen')).toHaveAttribute('aria-pressed','false');
  await expect(page.locator('#graph-panel #atlas-preview-panel')).toHaveCount(1);
  await expect(page.locator('#view-connections > #atlas-compare')).toHaveCount(1);

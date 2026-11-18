@@ -484,3 +484,9 @@ body.atlas-fullscreen-lock .active-view{animation:none;transform:none}
  .graph-layout:is(:fullscreen,.atlas-fullscreen-fallback) .toolbar-right{gap:7px}
  .graph-layout:is(:fullscreen,.atlas-fullscreen-fallback) .graph-canvas-wrap{min-height:0}
 }
+
+/* Sidebar controls stay reachable when the compact details drawer covers the graph toolbar. */
+.atlas-sidebar-actions{display:none}
+.graph-layout:is(:fullscreen,.atlas-fullscreen-fallback) .atlas-sidebar-actions{display:flex;position:sticky;top:0;z-index:25;align-items:center;justify-content:flex-end;gap:8px;padding:7px 0 10px;background:var(--surface)}
+.graph-layout:is(:fullscreen,.atlas-fullscreen-fallback) .atlas-sidebar-actions .atlas-details-close{display:inline-flex;position:static;margin:0}
+.graph-layout:is(:fullscreen,.atlas-fullscreen-fallback) .atlas-sidebar-actions .atlas-fullscreen-exit{display:inline-flex;align-items:center;background:var(--surface2);border:1px solid var(--line)}

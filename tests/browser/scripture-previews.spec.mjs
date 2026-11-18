@@ -1,4 +1,4 @@
-import {test,expect,open} from './fixtures.mjs';
+import {test,expect,open,navigate} from './fixtures.mjs';
 
 test('ESV reference preview appears only after interacting with its citation and opens the reader',async({page,isMobile})=>{
  const requests=[];
