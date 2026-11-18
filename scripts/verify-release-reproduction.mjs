@@ -25,6 +25,22 @@ if(release.version!==pkg.version)throw Error('Top release does not match package
 const dir=mkdtempSync(join(tmpdir(),'scripture-trails-release-'));
 try{
  execFileSync('git',['worktree','add','--detach',dir,base],{encoding:'utf8'});
+ // Reproduce dependency maintenance releases from the proposed dependency tree.
+ // Only devDependency declarations may differ outside the release version.
+ const sourcePkg=JSON.parse(git('show',base+':package.json'));
+ const versionlessSource={...sourcePkg},versionlessCandidate={...pkg,version:original.version};
+ delete versionlessSource.devDependencies;
+ delete versionlessCandidate.devDependencies;
+ if(JSON.stringify(versionlessSource)!==JSON.stringify(versionlessCandidate))
+  throw Error('Release reproduction only pre-stages devDependency manifest changes.');
+ const candidateLock=JSON.parse(readFileSync('package-lock.json','utf8'));
+ const sourceLock=JSON.parse(git('show',base+':package-lock.json'));
+ if(candidateLock.name!==sourceLock.name||candidateLock.lockfileVersion!==sourceLock.lockfileVersion||candidateLock.packages?.['']?.name!==sourceLock.packages?.['']?.name)
+  throw Error('Dependency lockfile identity changed unexpectedly.');
+ candidateLock.version=original.version;
+ candidateLock.packages[''].version=original.version;
+ writeFileSync(join(dir,'package.json'),JSON.stringify(versionlessCandidate,null,2)+'\\n');
+ writeFileSync(join(dir,'package-lock.json'),JSON.stringify(candidateLock,null,2)+'\\n');
  // Recreate the proposed HTML at the previous version. Releases can also
  // edit visible page copy, not just the version footer and asset cache keys.
  // Running the official release command must still regenerate an exact match.
