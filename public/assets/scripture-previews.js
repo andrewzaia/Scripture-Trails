@@ -104,7 +104,9 @@ export function createScripturePreviews({onRead}){
   const trigger=triggerAt(event);if(trigger&&!(event.relatedTarget instanceof Node&&trigger.contains(event.relatedTarget)))hideSoon();
  });
  main.addEventListener('focusin',event=>{
-  const trigger=triggerAt(event)||(event.target instanceof Element?event.target.querySelector('.scripture-preview-trigger'):null);
+  // Focusing the main region after navigation is not a request to preview its first citation.
+  const target=event.target;
+  const trigger=triggerAt(event)||(target instanceof Element&&target.matches('a,button,[role=button]')?target.querySelector('.scripture-preview-trigger[data-scripture-preview]'):null);
   if(trigger)open(trigger,true);
  });
  main.addEventListener('focusout',event=>{if(!panel.contains(event.relatedTarget))hideSoon();});
