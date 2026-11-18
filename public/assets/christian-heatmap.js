@@ -97,9 +97,7 @@ export function createChristianHeatmap(root,{onCountry=()=>{},onPlace=()=>{},onR
    }else path.setAttribute('aria-hidden','true');
    worldLayer.append(path);
   }
-  // Small islands missing from the 110m basemap use country-level locators, never invented incident pins.
- These are visibly
-  // country-level locators, never fabricated pins for an incident or policy.
+  // Small islands missing from the 110m basemap use country-level locators, never fabricated incident-site pins.
   for(const marker of unshapedCountryMarkers(geo,features,stats.countries)){
    const {x,y}=position(marker.lat,marker.lon);
    const symbol=svg('circle',{cx:x.toFixed(2),cy:y.toFixed(2),r:'6.5',class:'pc-map-marker pc-country-proxy',role:'button',tabindex:'0','stroke-dasharray':'2 1'});
