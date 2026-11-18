@@ -4,6 +4,7 @@
 
 - Updated automated validation workflows to maintain reliable checks before website publication.
 - Refreshed browser testing and Cloudflare deployment tooling without changing reader or catalogue content.
+- Fixed premature ESV citation preview dismissal when a passage link scrolls into view.
 
 ## 1.17.0 - 18/11/2026: Expanded persecution geography and small-island access
 

@@ -125,7 +125,7 @@ export function createScripturePreviews({onRead}){
  panel.querySelector('[data-preview-close]').addEventListener('click',hide);
  document.addEventListener('pointerdown',event=>{if(active&&!panel.contains(event.target)&&!active.trigger.contains(event.target))hide();},true);
  document.addEventListener('keydown',event=>{if(active&&event.key==='Escape')hide();});
- window.addEventListener('scroll',event=>{if(active&&!panel.contains(event.target))hide();},true);
+ window.addEventListener('scroll',event=>{if(active&&!panel.hidden&&!panel.contains(event.target))hide();},true);
  window.addEventListener('resize',hide);
  function allowed(node){
   return node.parentElement&&!node.parentElement.closest(excluded)&&!node.parentElement.closest('.view:not(.active-view)')&&node.nodeValue?.length>=5&&node.nodeValue?.length<=2200;

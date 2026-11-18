@@ -6,7 +6,8 @@
       "title": "Maintenance and compatibility updates",
       "changes": [
         "Updated automated validation workflows to maintain reliable checks before website publication.",
-        "Refreshed browser testing and Cloudflare deployment tooling without changing reader or catalogue content."
+        "Refreshed browser testing and Cloudflare deployment tooling without changing reader or catalogue content.",
+        "Fixed premature ESV citation preview dismissal when a passage link scrolls into view."
       ]
     },
     {

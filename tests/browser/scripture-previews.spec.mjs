@@ -69,3 +69,21 @@ test('existing Scripture shortcut buttons retain single-tap navigation on mobile
  await expect(page.locator('#view-reader')).toBeVisible();
  await expect(page.locator('#reader-title')).toHaveText('Genesis 1:1');
 });
+
+test('a scroll during the pending hover does not cancel the ESV preview',async({page,isMobile})=>{
+ test.skip(isMobile,'Desktop pointer hover regression');
+ await page.route('**/api/passage?**',async route=>{
+  await route.fulfill({json:{passages:['<p>Synthetic scroll-safe preview.</p>']}});
+ });
+ await open(page,'discover');
+ const ref=page.locator('.hero-examples [data-open="Psalm 23:1"] .scripture-preview-trigger');
+ await expect(ref).toHaveAttribute('data-scripture-preview','Psalms 23:1');
+ // An automatic scroll may fire after pointerover but before its hover delay.
+ await page.evaluate(()=>{
+  const trigger=document.querySelector('.hero-examples [data-open="Psalm 23:1"] .scripture-preview-trigger');
+  trigger.dispatchEvent(new PointerEvent('pointerover',{bubbles:true,pointerType:'mouse'}));
+  document.querySelector('#view-discover .hero').dispatchEvent(new Event('scroll'));
+ });
+ await expect(page.locator('.scripture-preview')).toBeVisible();
+ await expect(page.locator('[data-preview-text]')).toContainText('Synthetic scroll-safe preview.');
+});
