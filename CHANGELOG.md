@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.20.0 - 18/11/2026: Immersive connection Atlas and focused Scripture previews
+
+- Introduced an immersive, full-screen Connection Atlas with a dedicated scrollable sidebar for passage previews, source explanations, comparison, filtering and navigation.
+- Added responsive Atlas sidebar controls, an accessible exit path and a fixed-position fallback where browser element fullscreen is unavailable.
+- Prevented unrelated ESV verse popups from opening when page navigation focuses the main content area, while preserving intentional citation hover, keyboard and touch previews.
+
 ## 1.19.0 - 18/11/2026: First-pass source classification of imported Scripture quotations
 
 - Classified 14 additional imported Scripture cross-references in Romans 9-10 and Hebrews 1 using attributed publisher passage sources and context-specific editorial cautions.

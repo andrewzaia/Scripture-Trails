@@ -1,4 +1,4 @@
-import {test,expect,open} from './fixtures.mjs';
+import {test,expect,open,navigate} from './fixtures.mjs';
 
 test('ESV reference preview appears only after interacting with its citation and opens the reader',async({page,isMobile})=>{
  const requests=[];
@@ -89,4 +89,28 @@ test('a scroll during the pending hover does not cancel the ESV preview',async({
  // Once visible, real page movement still dismisses the positioned preview.
  await page.evaluate(()=>document.querySelector('#view-discover .hero').dispatchEvent(new Event('scroll')));
  await expect(page.locator('.scripture-preview')).toBeHidden();
+});
+
+
+test('focusing the main content after header navigation never opens an unrelated Bible popup',async({page})=>{
+ let requests=0;
+ await page.route('**/api/passage?**',async route=>{requests++;await route.fulfill({json:{passages:['<p>Synthetic focused reference.</p>']}});});
+ await open(page,'reader');
+ await navigate(page,'discover');
+ const before=requests;
+ await page.evaluate(()=>{
+  const main=document.getElementById('main');
+  document.activeElement?.blur();
+  main.focus({preventScroll:true});
+ });
+ await expect(page.locator('.scripture-preview')).toBeHidden();
+ await page.waitForTimeout(300);
+ expect(requests).toBe(before);
+ await expect(page.locator('.scripture-preview')).toBeHidden();
+ const reference=page.locator('.hero-examples [data-open="Genesis 1:1"] .scripture-preview-trigger');
+ await expect(reference).toHaveAttribute('data-scripture-preview','Genesis 1:1');
+ await page.locator('.hero-examples [data-open="Genesis 1:1"]').focus();
+ await expect(page.locator('.scripture-preview')).toBeVisible();
+ await expect(page.locator('[data-preview-title]')).toHaveText('Genesis 1:1');
+ await expect(page.locator('[data-preview-text]')).toContainText('Synthetic focused reference.');
 });

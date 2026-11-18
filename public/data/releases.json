@@ -1,6 +1,16 @@
 {
   "releases": [
     {
+      "version": "1.20.0",
+      "date": "2026-11-18",
+      "title": "Immersive connection Atlas and focused Scripture previews",
+      "changes": [
+        "Introduced an immersive, full-screen Connection Atlas with a dedicated scrollable sidebar for passage previews, source explanations, comparison, filtering and navigation.",
+        "Added responsive Atlas sidebar controls, an accessible exit path and a fixed-position fallback where browser element fullscreen is unavailable.",
+        "Prevented unrelated ESV verse popups from opening when page navigation focuses the main content area, while preserving intentional citation hover, keyboard and touch previews."
+      ]
+    },
+    {
       "version": "1.19.0",
       "date": "2026-11-18",
       "title": "First-pass source classification of imported Scripture quotations",
