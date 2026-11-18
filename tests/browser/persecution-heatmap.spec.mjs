@@ -132,3 +132,18 @@ test('credited locally hosted site photos appear neatly on affected report cards
  const urls=await page.locator('.persecution-case img').evaluateAll(items=>items.map(img=>img.currentSrc));
  expect(urls.every(url=>new URL(url).pathname.startsWith('/assets/persecution-media/'))).toBe(true);
 });
+
+test('small island country locators support keyboard country filtering',async({page})=>{
+ await open(page,'christian-persecution');
+ await expect(page.locator('[data-pc-map]')).toHaveAttribute('data-ready','true');
+ const markers=page.locator('.pc-country-proxy');
+ await expect(markers).toHaveCount(2);
+ const bahrain=page.locator('.pc-country-proxy[aria-label^="Bahrain:"]');
+ await expect(bahrain).toHaveAttribute('role','button');
+ await bahrain.focus();
+ await page.keyboard.press('Enter');
+ await expect(page.locator('[data-pc-country]')).toHaveValue('Bahrain');
+ await expect(page.locator('[data-pc-map-summary]')).toContainText('across 1 countries');
+ await page.locator('[data-pc-map-reset]').click();
+ await expect(page.locator('[data-pc-country]')).toHaveValue('');
+});
