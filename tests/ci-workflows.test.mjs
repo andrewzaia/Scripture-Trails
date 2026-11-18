@@ -12,9 +12,9 @@ test('CI runs supported Node 24 actions on a stable runner with all three browse
  assert.match(ci,/git status --porcelain -- public\/data\/refs/);
  assert.ok(!ci.includes('actions/checkout@v4'));
  assert.ok(!ci.includes('actions/setup-node@v4'));
- assert.match(ci,/actions\/checkout@v5/);
- assert.match(ci,/actions\/setup-node@v5/);
- assert.match(ci,/actions\/upload-artifact@v6/);
+ assert.match(ci,/actions\/checkout@v7/);
+ assert.match(ci,/actions\/setup-node@v7/);
+ assert.match(ci,/actions\/upload-artifact@v7/);
  for(const engine of ['chromium','firefox','webkit'])assert.match(ci,new RegExp('engine: '+engine));
  assert.match(ci,/needs: \[test, browser\]/);
  assert.ok(ci.includes("  browser:\n    if: ${{ github.event_name == 'pull_request' }}\n    name: Browser - ${{ matrix.engine }}\n    needs: test"),'PR browser matrix must wait for source checks');
@@ -44,8 +44,8 @@ test('Atlas reference rebuild cannot bypass semantic release reviews by directly
  const flow=read('import-crossrefs.yml');
  assert.match(flow,/contents: read/);
  assert.match(flow,/runs-on: ubuntu-26\.04/);
- assert.match(flow,/actions\/checkout@v5/);
- assert.match(flow,/actions\/setup-node@v5/);
+ assert.match(flow,/actions\/checkout@v7/);
+ assert.match(flow,/actions\/setup-node@v7/);
  assert.match(flow,/npm run import:refs/);
  assert.match(flow,/npm run build/);
  assert.match(flow,/git status --porcelain -- public\/data\/refs/);
