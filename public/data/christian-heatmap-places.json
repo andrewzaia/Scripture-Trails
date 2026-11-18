@@ -5,7 +5,7 @@
     "license": "ODbL-1.0",
     "notice": "Original coordinates use gazetteer centres. Added markers are approximate city or regional centres; they are not precise attack sites, and route/multiple-site events may be represented by one centre. Ukraine additions use approximate settlement or region centres; occupied-region coordinates must not be interpreted as detention or attack locations."
   },
-  "generated": "2026-11-15",
+  "generated": "2026-11-18",
   "countries": {
     "France": {
       "iso2": "FR",
@@ -426,6 +426,46 @@
     "Czech Republic": {
       "iso2": "CZ",
       "iso3": "CZE"
+    },
+    "Tunisia": {
+      "iso2": "TN",
+      "iso3": "TUN"
+    },
+    "Bahrain": {
+      "iso2": "BH",
+      "iso3": "BHR"
+    },
+    "Maldives": {
+      "iso2": "MV",
+      "iso3": "MDV"
+    },
+    "Moldova": {
+      "iso2": "MD",
+      "iso3": "MDA"
+    },
+    "Montenegro": {
+      "iso2": "ME",
+      "iso3": "MNE"
+    },
+    "Rwanda": {
+      "iso2": "RW",
+      "iso3": "RWA"
+    },
+    "North Macedonia": {
+      "iso2": "MK",
+      "iso3": "MKD"
+    },
+    "Slovenia": {
+      "iso2": "SI",
+      "iso3": "SVN"
+    },
+    "Latvia": {
+      "iso2": "LV",
+      "iso3": "LVA"
+    },
+    "Estonia": {
+      "iso2": "EE",
+      "iso3": "EST"
     }
   },
   "places": {
@@ -3448,6 +3488,20 @@
           "precision": "city"
         }
       ]
+    }
+  },
+  "countryMarkers": {
+    "Bahrain": {
+      "lat": 26.0667,
+      "lon": 50.5577,
+      "label": "Bahrain",
+      "precision": "country marker"
+    },
+    "Maldives": {
+      "lat": 4.1755,
+      "lon": 73.5093,
+      "label": "Maldives",
+      "precision": "country marker"
     }
   }
 }

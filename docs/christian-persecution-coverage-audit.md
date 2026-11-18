@@ -1,9 +1,9 @@
 # Christian persecution geographic coverage audit
 
-Checked: 2026-11-15
-Candidate release: v1.16.5
+Checked: 2026-11-18
+Candidate release: v1.17.0
 
-The catalogue now contains 654 published source-attributed report records across 105 countries and territories. Release v1.16.5 adds 18 records: Norway (5), Iceland (3), Zimbabwe (3), Honduras (6) and Czech Republic (1). Release v1.16.4 adds 20 separately described reports: Switzerland (9), Romania (4), Bulgaria (3) and Finland (4). Release v1.16.3 adds 23 distinct reports across Belgium (4), Austria (4), Denmark (5) and Ireland (10). Release v1.16.2 adds two reports from the United Kingdom and France without duplicate incidents or inventing events from aggregate claims. Release v1.16.1 adds three reports from Lithuania, Ireland and France; the earlier v1.16.0 release added 26 reports across Azerbaijan, China, Iran, Eritrea, Myanmar, Nigeria, Pakistan, Nicaragua, Sri Lanka, Russia, Colombia, Cuba and Kyrgyzstan. All earlier releases and source records remain preserved.
+The catalogue now contains 748 source-attributed report records across 115 countries and territories. This release reconciles 94 additional published reports: 34 from Central Asia and other regions, 35 European and small-island reports, 15 Nineveh Christian heritage reports, and 10 reports in seven newly represented countries. All 654 existing records and IDs remain intact, with draft IDs reassigned to avoid collisions. Report counts are not independently verified unique incidents or casualty figures. Bahrain and Maldives have accessible country-level map locators because their polygons are absent from the 110m world basemap. Release v1.16.5 adds 18 records: Norway (5), Iceland (3), Zimbabwe (3), Honduras (6) and Czech Republic (1). Release v1.16.4 adds 20 separately described reports: Switzerland (9), Romania (4), Bulgaria (3) and Finland (4). Release v1.16.3 adds 23 distinct reports across Belgium (4), Austria (4), Denmark (5) and Ireland (10). Release v1.16.2 adds two reports from the United Kingdom and France without duplicate incidents or inventing events from aggregate claims. Release v1.16.1 adds three reports from Lithuania, Ireland and France; the earlier v1.16.0 release added 26 reports across Azerbaijan, China, Iran, Eritrea, Myanmar, Nigeria, Pakistan, Nicaragua, Sri Lanka, Russia, Colombia, Cuba and Kyrgyzstan. All earlier releases and source records remain preserved.
 
 ## Inclusion and counting
 

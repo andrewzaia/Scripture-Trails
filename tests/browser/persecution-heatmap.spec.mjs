@@ -124,6 +124,10 @@ test('credited locally hosted site photos appear neatly on affected report cards
  await expect(page.locator('[data-pc-map]')).toHaveAttribute('data-ready','true');
  await expect(page.locator('[data-view="christian-persecution"].nav-link')).toContainText('Christian persecution');
  await page.locator('[data-pc-country]').selectOption('Iraq');
+ // Newer reports may fill the first page; target the licensed image's own report.
+ await page.locator('[data-pc-search]').fill('CT-0224');
+ await expect(page.locator('.persecution-case')).toHaveCount(1);
+ await expect(page.locator('.persecution-case')).toContainText('CT-0224');
  const thumbnail=page.locator('.persecution-photo img').first();
  await thumbnail.scrollIntoViewIfNeeded();
  await expect(thumbnail).toHaveAttribute('src',/^\x2fassets\x2fpersecution-media\x2f[a-z0-9-]+\.jpg$/);
@@ -131,4 +135,19 @@ test('credited locally hosted site photos appear neatly on affected report cards
  await expect(page.locator('.persecution-photo-credit').first()).toContainText('CC BY');
  const urls=await page.locator('.persecution-case img').evaluateAll(items=>items.map(img=>img.currentSrc));
  expect(urls.every(url=>new URL(url).pathname.startsWith('/assets/persecution-media/'))).toBe(true);
+});
+
+test('small island country locators support keyboard country filtering',async({page})=>{
+ await open(page,'christian-persecution');
+ await expect(page.locator('[data-pc-map]')).toHaveAttribute('data-ready','true');
+ const markers=page.locator('.pc-country-proxy');
+ await expect(markers).toHaveCount(2);
+ const bahrain=page.locator('.pc-country-proxy[aria-label^="Bahrain:"]');
+ await expect(bahrain).toHaveAttribute('role','button');
+ await bahrain.focus();
+ await page.keyboard.press('Enter');
+ await expect(page.locator('[data-pc-country]')).toHaveValue('Bahrain');
+ await expect(page.locator('[data-pc-map-summary]')).toContainText('across 1 countries');
+ await page.locator('[data-pc-map-reset]').click();
+ await expect(page.locator('[data-pc-country]')).toHaveValue('');
 });
