@@ -39,8 +39,8 @@ try{
   throw Error('Dependency lockfile identity changed unexpectedly.');
  candidateLock.version=original.version;
  candidateLock.packages[''].version=original.version;
- writeFileSync(join(dir,'package.json'),JSON.stringify(versionlessCandidate,null,2)+'\\n');
- writeFileSync(join(dir,'package-lock.json'),JSON.stringify(candidateLock,null,2)+'\\n');
+ writeFileSync(join(dir,'package.json'),JSON.stringify(versionlessCandidate,null,2)+'\n');
+ writeFileSync(join(dir,'package-lock.json'),JSON.stringify(candidateLock,null,2)+'\n');
  // Recreate the proposed HTML at the previous version. Releases can also
  // edit visible page copy, not just the version footer and asset cache keys.
  // Running the official release command must still regenerate an exact match.
