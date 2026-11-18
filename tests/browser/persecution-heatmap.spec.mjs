@@ -124,6 +124,10 @@ test('credited locally hosted site photos appear neatly on affected report cards
  await expect(page.locator('[data-pc-map]')).toHaveAttribute('data-ready','true');
  await expect(page.locator('[data-view="christian-persecution"].nav-link')).toContainText('Christian persecution');
  await page.locator('[data-pc-country]').selectOption('Iraq');
+ // Newer reports may fill the first page; target the licensed image's own report.
+ await page.locator('[data-pc-search]').fill('CT-0224');
+ await expect(page.locator('.persecution-case')).toHaveCount(1);
+ await expect(page.locator('.persecution-case')).toContainText('CT-0224');
  const thumbnail=page.locator('.persecution-photo img').first();
  await thumbnail.scrollIntoViewIfNeeded();
  await expect(thumbnail).toHaveAttribute('src',/^\x2fassets\x2fpersecution-media\x2f[a-z0-9-]+\.jpg$/);
