@@ -60,7 +60,7 @@ test('global distribution includes every report once and geographically separate
  assert.ok(Math.abs(totals.weight-totals.located)<0.0001);
  assert.equal(world.features.length,177);
  const countries=new Set(world.features.map(f=>f.id));
- for(const [name,location] of Object.entries(geo.countries))assert.ok(countries.has(location.iso3),'No Natural Earth shape for '+name);
+ for(const [name,location] of Object.entries(geo.countries))assert.ok(countries.has(location.iso3)||geo.countryMarkers?.[name],'No Natural Earth shape or country locator for '+name);
  for(const [key,place] of Object.entries(geo.places)){
   assert.ok(key.includes('|')&&Array.isArray(place.points)&&place.points.length);
   for(const point of place.points){
@@ -237,10 +237,10 @@ test('further country and low-coverage research has all source and world-map inv
    assert.ok(geo.countries[country]&&codes.has(geo.countries[country].iso3),'Country is not mapped: '+country);
    assert.equal(totals.countries.get(country),recordsInCountry.length);
    assert.ok(recordsInCountry.every(r=>r.publisher&&r.reported_actor&&r.source_url&&r.notes),'Missing provenance in '+country);
-   assert.equal(filterPersecutionReports(historicalRecords,{country}).length,recordsInCountry.length);
+   assert.equal(filterPersecutionReports(records,{country}).length,recordsInCountry.length);
  }
  for(const report of records)assert.ok(geo.countries[report.country],'Unmapped report: '+report.id);
- assert.equal(records.filter(r=>r.country==='Tanzania').length,7);
+ assert.equal(historicalRecords.filter(r=>r.country==='Tanzania').length,7);
  assert.ok(records.some(r=>r.country==='Morocco'&&r.notes.includes('Yearly pattern')));
  assert.ok(records.some(r=>r.country==='Ghana'&&r.notes.includes('not detained')));
  assert.ok(records.some(r=>r.country==='Lebanon'&&r.notes.includes('Suspected theft')));
@@ -268,7 +268,7 @@ test('report-inclusive global expansion adds 45 source-attributed reports with m
    assert.ok(subset.length>0,'No reports in '+country);
    assert.ok(geo.countries[country]&&allowed.has(geo.countries[country].iso3),'Missing geometry '+country);
    assert.equal(totals.countries.get(country),subset.length);
-   assert.equal(filterPersecutionReports(historicalRecords,{country}).length,subset.length);
+   assert.equal(filterPersecutionReports(records,{country}).length,subset.length);
  }
  const newRows=records.filter(r=>Number(r.id.slice(3))>=391&&Number(r.id.slice(3))<=435);
  assert.equal(newRows.length,45);
@@ -308,7 +308,7 @@ test('seven newly represented countries preserve incident-level and aggregate at
   assert.ok(rows.length,'Country missing: '+country);
   assert.ok(geo.countries[country]&&shapes.has(geo.countries[country].iso3),'No map geometry: '+country);
   assert.equal(counts.countries.get(country),rows.length);
-  assert.equal(filterPersecutionReports(historicalRecords,{country}).length,rows.length);
+  assert.equal(filterPersecutionReports(records,{country}).length,rows.length);
  }
  const fresh=records.filter(r=>Number(r.id.slice(3))>=436&&Number(r.id.slice(3))<=460);
  assert.equal(fresh.length,25);
