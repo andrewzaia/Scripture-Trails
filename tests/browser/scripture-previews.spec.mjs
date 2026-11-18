@@ -86,4 +86,7 @@ test('a scroll during the pending hover does not cancel the ESV preview',async({
  });
  await expect(page.locator('.scripture-preview')).toBeVisible();
  await expect(page.locator('[data-preview-text]')).toContainText('Synthetic scroll-safe preview.');
+ // Once visible, real page movement still dismisses the positioned preview.
+ await page.evaluate(()=>document.querySelector('#view-discover .hero').dispatchEvent(new Event('scroll')));
+ await expect(page.locator('.scripture-preview')).toBeHidden();
 });
