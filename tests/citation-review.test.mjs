@@ -397,3 +397,37 @@ test('all 34 additional Atlas pairs have dated scoped assessments in two source-
  assert.match(gate.reviewer,/project owner/i);
  assert.match(gate.reviewer,/not independent specialist/);
 });
+
+
+test('four dated textual-source follow-ups retain contested readings and accurate open work',()=>{
+ const records=CITATION_REVIEW.records.filter(r=>r.textualFollowUp);
+ assert.deepEqual(records.map(r=>r.target).sort(),['ce121','ce133','ce150','ce157']);
+ assert.equal(CITATION_REVIEW.updated,'2026-11-18');
+ assert.ok(CITATION_REVIEW.deferred.every(s=>!s.includes('34 remain pending')));
+ for(const r of records){
+  assert.equal(r.textualFollowUp.reviewedOn,'2026-11-18');
+  assert.ok(r.textualFollowUp.limitation.length>90);
+  assert.ok(r.textualFollowUp.citations.every(c=>CITATION_REVIEW.sources[c.sourceId].checkedOn==='2026-11-18'));
+ }
+ assert.match(citationReviews('connection','ce121')[0].textualFollowUp.finding,/Numbers 9:12 and Psalm 34:20/);
+ assert.match(citationReviews('connection','ce133')[0].textualFollowUp.finding,/Masoretic 'to me'/);
+ assert.match(citationReviews('connection','ce150')[0].textualFollowUp.finding,/in the prophets/);
+ assert.match(citationReviews('connection','ce157')[0].textualFollowUp.finding,/possess\/seek/);
+ const fake=structuredClone(CITATION_REVIEW);
+ fake.records.find(r=>r.target==='ce133').textualFollowUp.citations[0].sourceId='missing';
+ assert.throws(()=>validateCitationReview(fake,counts,targets),/Invalid textual source follow-up/);
+ const duplicate=structuredClone(CITATION_REVIEW);
+ duplicate.records.find(r=>r.target==='ce121').textualFollowUp.citations[0].sourceId='john19';
+ assert.throws(()=>validateCitationReview(duplicate,counts,targets),/Duplicate follow-up source/);
+ const previous=globalThis.document;globalThis.document={createElement:tag=>new El(tag)};
+ try{
+  const panel=new El('div');appendCitationReview(panel,'connection','ce157');
+  assert.ok(nodes(panel).some(e=>e.textContent.includes('Textual-source follow-up')));
+  assert.ok(nodes(panel).some(e=>e.textContent.includes('remnant of humanity')));
+  const about=new El('div');renderCitationSummary(about);
+  assert.ok(nodes(about).some(e=>e.textContent.includes('Completed citation milestones')));
+  assert.ok(nodes(about).some(e=>e.textContent.includes('0 remain pending')));
+  assert.ok(nodes(about).some(e=>e.textContent.includes('301,392 distinct Atlas pairs')));
+  assert.ok(nodes(about).some(e=>e.textContent.includes('4 further source-specific comparisons')));
+ }finally{if(previous===undefined)delete globalThis.document;else globalThis.document=previous;}
+});

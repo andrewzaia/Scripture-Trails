@@ -160,3 +160,19 @@ test('final sensitive quotation reviews are available with textual cautions and 
   await expect(article.locator('.citation-review a[href^="https://"]')).toHaveCount(3);
  }
 });
+
+
+test('textual-source follow-ups show citations and replace stale About research status',async({page})=>{
+ await open(page,'about');
+ await expect(page.locator('#citation-review-summary')).toContainText('Completed citation milestones');
+ await expect(page.locator('#citation-review-summary')).toContainText('All 46 explanations introduced in v0.32.0 have scoped source assessments; 0 remain pending');
+ await expect(page.locator('#citation-review-summary')).toContainText('4 further source-specific comparisons recorded');
+ await expect(page.locator('#citation-review-summary')).not.toContainText('34 remain pending');
+ const group=page.locator('.citation-review-group').filter({has:page.getByText('Selected passage comparisons',{exact:true})});
+ await group.locator('> summary').click();
+ const article=group.locator('article').filter({has:page.getByRole('heading',{name:'Amos 9:11 and Acts 15:16',exact:true})});
+ await article.locator('.citation-review > summary').click();
+ await expect(article).toContainText('Textual-source follow-up');
+ await expect(article).toContainText('Edom');
+ await expect(article.getByRole('link',{name:'The Use of the Old Testament in the New Testament (2019)',exact:true})).toHaveAttribute('href',/rsc\.byu\.edu/);
+});
