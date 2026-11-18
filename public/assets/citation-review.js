@@ -1,4 +1,4 @@
-import {CITATION_REVIEW} from './citation-review-data.js?v=1.17.1';
+import {CITATION_REVIEW} from './citation-review-data.js?v=1.18.0';
 import {validateCanonicalReference} from './reference-integrity.js';
 export {CITATION_REVIEW};
 
@@ -11,7 +11,7 @@ export const REVIEW_DECISIONS=Object.freeze({
 });
 const scopeKeys={issue:'issues',place:'places',trail:'trailReadings',connection:'connections'};
 export function citationReviews(kind,target,data=CITATION_REVIEW){return data.records.filter(r=>r.kind===kind&&r.target===target);}
-export const reviewCitations=record=>[...record.citations,...(record.supplement?.citations||[])];
+export const reviewCitations=record=>[...record.citations,...(record.supplement?.citations||[]),...(record.textualFollowUp?.citations||[])];
 export function commentaryCoverage(data=CITATION_REVIEW){return data.records.filter(r=>r.kind==='connection'&&reviewCitations(r).some(c=>['scholarly-commentary','publisher-note','publisher-abstract'].includes(data.sources[c.sourceId]?.kind))).length;}
 const safeUrl=value=>{try{const u=new URL(value);return u.protocol==='https:'&&!u.username&&!u.password;}catch{return false;}};
 const date=value=>/^\d{4}-\d{2}-\d{2}$/.test(value)&&!Number.isNaN(Date.parse(value))&&new Date(value).toISOString().slice(0,10)===value;
@@ -31,6 +31,11 @@ export function validateCitationReview(data,counts,targets){
   if(r.supplement){
    const s=r.supplement;
    if(r.kind!=='connection'||!s.batch||!date(s.reviewedOn)||s.reviewedOn<r.reviewedOn||s.reviewedOn>data.updated||!s.note||!s.limitation||!s.citations?.length||s.citations.some(c=>data.sources[c.sourceId]?.kind!=='scholarly-commentary'||data.sources[c.sourceId].checkedOn>s.reviewedOn||!c.locator||!c.supports))throw Error('Invalid commentary follow-up '+k);
+   if(new Set(reviewCitations(r).map(c=>c.sourceId)).size!==reviewCitations(r).length)throw Error('Duplicate follow-up source '+k);
+  }
+  if(r.textualFollowUp){
+   const f=r.textualFollowUp;
+   if(r.kind!=='connection'||!date(f.reviewedOn)||f.reviewedOn<r.reviewedOn||f.reviewedOn>data.updated||!f.topic||!f.finding||!f.limitation||!f.citations?.length||f.citations.some(c=>!data.sources[c.sourceId]||data.sources[c.sourceId].checkedOn>f.reviewedOn||!c.locator||!c.supports))throw Error('Invalid textual source follow-up '+k);
    if(new Set(reviewCitations(r).map(c=>c.sourceId)).size!==reviewCitations(r).length)throw Error('Duplicate follow-up source '+k);
   }
   if(r.kind==='place'&&r.decision==='sources-added'&&!r.citations.some(c=>['excavation-report','publisher-abstract','project-summary'].includes(data.sources[c.sourceId].kind)))throw Error('Place support needs a historical source '+k);
@@ -55,6 +60,7 @@ export function appendCitationReview(parent,kind,target){
   detail.append(make('summary','Citation review: '+REVIEW_DECISIONS[record.decision]));
   detail.append(make('p',record.note),make('p',record.limitation),make('p','Source assessment recorded '+record.reviewedOn+'. Study content reviewed and accepted by the project owner. Independent specialist review not claimed.','soft-note'));
   if(record.supplement){const s=record.supplement;detail.append(make('h4','Commentary follow-up'),make('p',s.note),make('p',s.limitation),make('p','Follow-up reviewed '+s.reviewedOn+' | Earlier assessment retained above.','soft-note'));}
+  if(record.textualFollowUp){const f=record.textualFollowUp;detail.append(make('h4','Textual-source follow-up: '+f.topic),make('p',f.finding),make('p',f.limitation),make('p','Additional evidence assessed '+f.reviewedOn+'. Earlier editorial review and limitations are retained. No independent manuscript collation is claimed.','soft-note'));}
   const list=make('ul');
   for(const c of reviewCitations(record)){
    const s=CITATION_REVIEW.sources[c.sourceId],item=make('li'),link=make('a',s.title);
@@ -86,7 +92,16 @@ export function renderCitationSummary(root){
   }
   root.append(group);
  }
+ const textual=CITATION_REVIEW.records.filter(r=>r.textualFollowUp);
+ root.append(make('h3','Completed citation milestones'));
+ const done=make('ul');
+ for(const line of [`All ${scope.connections} explained Atlas pairs have dated contextual source assessments.`,`All 46 explanations introduced in v0.32.0 have scoped source assessments; 0 remain pending.`,`The 32 previously passage-based assessments have dated commentary follow-ups.`,`All six earlier named-place bibliography gaps have scoped citations; their site-identification cautions remain.`])done.append(make('li',line));
+ root.append(done);
+ root.append(make('h3','Focused textual-source follow-ups'));
+ const focused=make('ul');
+ for(const r of textual){const item=make('li'),a=make('a',r.title+' - '+r.textualFollowUp.topic);a.href='/?view=connections&ref='+encodeURIComponent(r.anchor||r.passages[0].replace(/-.*$/,''));item.append(a);focused.append(item);}
+ root.append(make('p',`${textual.length} further source-specific comparisons recorded. Follow-ups explain candidate readings and remaining limitations; they do not imply a complete manuscript collation.`));root.append(focused);
  root.append(make('h3','Remaining source work'));
  const list=make('ul');for(const text of CITATION_REVIEW.deferred)list.append(make('li',text));root.append(list);
- const download=make('a','Download the dated citation review register (JSON)');download.href='/data/citation-review.json?v=1.17.1';download.download='scripture-trails-citation-review-'+CITATION_REVIEW.updated+'.json';root.append(download);
+ const download=make('a','Download the dated citation review register (JSON)');download.href='/data/citation-review.json?v=1.18.0';download.download='scripture-trails-citation-review-'+CITATION_REVIEW.updated+'.json';root.append(download);
 }

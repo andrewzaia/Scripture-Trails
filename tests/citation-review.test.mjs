@@ -247,7 +247,7 @@ test('final seven assessments complete the exact explained-pair register with co
  assert.equal(scholars.size,3);assert.equal(authors.size,3);assert.equal(texts.size,12);
  const records=CITATION_REVIEW.records.filter(r=>r.kind==='connection');
  assert.equal(records.length,161);assert.deepEqual(new Set(records.filter(r=>Number(r.target.slice(2))<=115).map(r=>r.target)),new Set(CONNECTION_EVIDENCE.filter(e=>Number(e.id.slice(2))<=115).map(e=>e.id)));
- assert.equal(Object.keys(CITATION_REVIEW.sources).length,410);
+ assert.equal(Object.keys(CITATION_REVIEW.sources).length,415);
  assert.equal(records.filter(r=>Number(r.target.slice(2))<=115&&r.citations.some(c=>['scholarly-commentary','publisher-note','publisher-abstract'].includes(CITATION_REVIEW.sources[c.sourceId].kind))).length,83);
  assert.equal(CITATION_REVIEW.scope.connections,161);assert.match(batch.method,/full OpenBible corpus.*outside/);
 });
@@ -259,7 +259,8 @@ test('completed coverage retains final narrative differences and further-review 
  assert.deepEqual(review('ce091').passages,['2 Kings 22:8-23:3','2 Chronicles 34:14-33']);
  assert.deepEqual(review('ce094').passages,['2 Kings 25:1-12','Jeremiah 52:4-16']);
  assert.match(CITATION_REVIEW.sources['b6-text-2-kings-23'].access,/Kings 23 view also supplied 22:8-20/);
- assert.ok(CITATION_REVIEW.deferred.some(s=>/All 115.*32 previously passage-based.*not independent specialist signoff/.test(s)));
+ assert.ok(CITATION_REVIEW.deferred.some(s=>/301,392 distinct Atlas pairs still lack/.test(s)));
+  assert.ok(CITATION_REVIEW.deferred.some(s=>/Full Hebrew and Greek manuscript apparatuses have not been independently collated/.test(s)));
  assert.equal(CITATION_REVIEW.deferred.some(s=>s.includes('The other 7 explained pairs')),false);
  const roadmap=json('roadmap');assert.equal(roadmap.milestones.find(m=>m.id==='source-coverage-final-07').status,'delivered');
  const followup=roadmap.milestones.find(m=>m.id==='source-coverage-followup');assert.equal(followup.status,'planned');assert.match(followup.summary,/115 of 115.*32.*not constitute scholarly certification/);
@@ -396,4 +397,39 @@ test('all 34 additional Atlas pairs have dated scoped assessments in two source-
  assert.equal(gate.status,'met');
  assert.match(gate.reviewer,/project owner/i);
  assert.match(gate.reviewer,/not independent specialist/);
+});
+
+
+test('four dated textual-source follow-ups retain contested readings and accurate open work',()=>{
+ const records=CITATION_REVIEW.records.filter(r=>r.textualFollowUp);
+ assert.deepEqual(records.map(r=>r.target).sort(),['ce121','ce133','ce150','ce157']);
+ assert.equal(CITATION_REVIEW.updated,'2026-11-18');
+ assert.ok(CITATION_REVIEW.deferred.every(s=>!s.includes('34 remain pending')));
+ for(const r of records){
+  assert.equal(r.textualFollowUp.reviewedOn,'2026-11-18');
+  assert.ok(r.textualFollowUp.limitation.length>90);
+  assert.ok(r.textualFollowUp.citations.every(c=>CITATION_REVIEW.sources[c.sourceId].checkedOn==='2026-11-18'));
+ }
+ assert.match(citationReviews('connection','ce121')[0].textualFollowUp.finding,/Numbers 9:12 and Psalm 34:20/);
+ assert.match(citationReviews('connection','ce133')[0].textualFollowUp.finding,/Masoretic 'to me'/);
+ assert.match(citationReviews('connection','ce150')[0].textualFollowUp.finding,/in the prophets/);
+ assert.match(citationReviews('connection','ce157')[0].textualFollowUp.finding,/possess\/seek/);
+ const fake=structuredClone(CITATION_REVIEW);
+ fake.records.find(r=>r.target==='ce133').textualFollowUp.citations[0].sourceId='missing';
+ assert.throws(()=>validateCitationReview(fake,counts,targets),/Invalid textual source follow-up/);
+ const duplicate=structuredClone(CITATION_REVIEW);
+ const duplicateRow=duplicate.records.find(r=>r.target==='ce121');
+  duplicateRow.textualFollowUp.citations[0].sourceId=duplicateRow.citations[0].sourceId;
+ assert.throws(()=>validateCitationReview(duplicate,counts,targets),/Duplicate follow-up source/);
+ const previous=globalThis.document;globalThis.document={createElement:tag=>new El(tag)};
+ try{
+  const panel=new El('div');appendCitationReview(panel,'connection','ce157');
+  assert.ok(nodes(panel).some(e=>e.textContent.includes('Textual-source follow-up')));
+  assert.ok(nodes(panel).some(e=>e.textContent.includes('remnant of humanity')));
+  const about=new El('div');renderCitationSummary(about);
+  assert.ok(nodes(about).some(e=>e.textContent.includes('Completed citation milestones')));
+  assert.ok(nodes(about).some(e=>e.textContent.includes('0 remain pending')));
+  assert.ok(nodes(about).some(e=>e.textContent.includes('301,392 distinct Atlas pairs')));
+  assert.ok(nodes(about).some(e=>e.textContent.includes('4 further source-specific comparisons')));
+ }finally{if(previous===undefined)delete globalThis.document;else globalThis.document=previous;}
 });

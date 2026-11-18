@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.18.0 - 18/11/2026: Expanded textual-source evidence and research priorities
+
+- Add four attributed textual-source follow-ups to the Atlas citation register, covering John 19, Zechariah 12, Mark 1 and the Amos quotation in Acts 15.
+- Correct outdated About-page research status: all 46 newer explained Atlas connections are assessed, while the wider imported cross-reference corpus remains unclassified.
+- Distinguish completed citation milestones from source-access and historical research priorities, with direct links to the newly documented textual comparisons.
+
 ## 1.17.1 - 18/11/2026: Maintenance and compatibility updates
 
 - Updated automated validation workflows to maintain reliable checks before website publication.

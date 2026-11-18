@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-10-31",
+  "updated": "2026-11-18",
   "status": "declared-batch-assessed",
   "method": "Editorial source-level assessment of a declared priority batch. The project owner has reviewed and accepted the published study content. The Bible is the authoritative foundation; supporting historical and archaeological sources are limited to the claims and access scope recorded here. No independent specialist signoff is claimed.",
   "scope": {
@@ -10,13 +10,11 @@
     "connections": 161
   },
   "deferred": [
-    "All six previously unlinked named-place assessments now include external research. Bibliographic gaps in this declared batch are addressed at the stated scope; exact identifications, comparative excavation review, textual variants and abstract-only access remain unresolved. Regional placeholders were not upgraded.",
-    "All 115 explained pairs now have dated editorial assessments and at least one scoped secondary citation. The 32 previously passage-based assessments have dated commentary follow-ups. Named commentary or limited publisher-summary support is not independent specialist signoff or agreement with every link. Fuller literature, source-access gaps and textual questions remain open.",
-    "Other person-trail access gaps, full excavation reports, manuscript apparatuses, wider source coverage and independent specialist review remain open.",
-    "The full OpenBible corpus remains unclassified.",
-    "Of the 46 explanations introduced in v0.32.0, twelve now have dated Scripture-context and named-commentary assessments in v1-citations-12-01; 34 remain pending. Access restrictions and commentary scope are recorded; no external peer review is implied.",
-    "All 46 v0.32.0 newer Atlas explanations now have dated scoped source assessments, subject to access, original-language and interpretive limitations. This is not independent specialist approval.",
-    "All 161 explained Atlas pairs are covered by dated editorial source assessments. This is not equivalent to assessing the 301,553 distinct Atlas pairs, verifying each historical event independently or obtaining external academic peer review."
+    "301,392 distinct Atlas pairs still lack a written editorial explanation or claim-level classification. OpenBible vote counts are an imported navigation signal, not an independently validated judgement about each cross-reference. The full imported corpus remains unclassified.",
+    "Named-place research retains disputed identifications and limited access to excavation monographs, primary archaeological records and comparative site reports. Existing regional placeholders must not be presented as resolved historical locations.",
+    "Full Hebrew and Greek manuscript apparatuses have not been independently collated. Four focused textual-source follow-ups now identify specific variants or candidate passages, but do not settle every underlying reading.",
+    "Outside the four rechecked Nehemiah readings, some person-trail passage sources and historical context questions still have documented access limitations. Any deeper source work requires passage-specific evidence and its own access record.",
+    "Wider comparative scholarship, primary historical verification and unresolved chronology questions remain research opportunities, not automatic requirements for outside approval. The project owner's editorial acceptance is distinct from external specialist review."
   ],
   "sources": {
     "luke2": {
@@ -4124,6 +4122,56 @@
       "checkedOn": "2026-10-31",
       "access": "Publisher chapter link for verse and immediate context. Automated page access is not consistent; no manuscripts or copyright text are hosted.",
       "rights": "Linked only; no Bible or commentary text retained."
+    },
+    "net-john19-note": {
+      "title": "NET Bible translators' note on John 19:36",
+      "author": "NET Bible translation team",
+      "publisher": "Biblical Studies Press",
+      "kind": "publisher-note",
+      "url": "https://www.biblegateway.com/passage/?search=John+19%3A36&version=NET",
+      "checkedOn": "2026-11-18",
+      "access": "Search-indexed NET translation study note explicitly lists Exodus 12:46, Numbers 9:12 and Psalm 34:20; full publisher page retrieval was unavailable. This is a translator note, not manuscript collation.",
+      "rights": "Linked only; no publisher Bible text or notes retained."
+    },
+    "net-zechariah-note": {
+      "title": "NET Bible textual note on Zechariah 12:10",
+      "author": "NET Bible translation team",
+      "publisher": "Biblical Studies Press",
+      "kind": "publisher-note",
+      "url": "https://classic.net.bible.org/passage.php?passage=Zec+12%3A10",
+      "checkedOn": "2026-11-18",
+      "access": "Search-indexed translator textual note distinguishes the Masoretic reading 'to me' from attested alternative 'to the one whom'. The editors favour the Masoretic reading; the source is not an independent collation of cited witnesses.",
+      "rights": "Linked only; no publisher Bible text or notes retained."
+    },
+    "net-mark-note": {
+      "title": "NET Bible textual note on Mark 1:2",
+      "author": "NET Bible translation team",
+      "publisher": "Biblical Studies Press",
+      "kind": "publisher-note",
+      "url": "https://classic.net.bible.org/verse.php?book=Mar&chapter=1&verse=2",
+      "checkedOn": "2026-11-18",
+      "access": "Search-indexed translator textual note reports the competing headings 'in Isaiah the prophet' and 'in the prophets' and identifies a composite quotation. Individual manuscripts were not inspected.",
+      "rights": "Linked only; no publisher Bible text or notes retained."
+    },
+    "net-amos-note": {
+      "title": "NET Bible translators' note on Amos 9:12",
+      "author": "NET Bible translation team",
+      "publisher": "Biblical Studies Press",
+      "kind": "publisher-note",
+      "url": "https://classic.net.bible.org/verse.php?book=Amo&chapter=9&verse=12",
+      "checkedOn": "2026-11-18",
+      "access": "Search-indexed NET translators' note identifies the Hebrew remnant-of-Edom and possess wording. No manuscript inspection or Old Greek collation claimed.",
+      "rights": "Linked only; no publisher Bible text or notes retained."
+    },
+    "mcclellan-2019-amos-acts": {
+      "title": "The Use of the Old Testament in the New Testament (2019)",
+      "author": "Daniel O. McClellan",
+      "publisher": "Brigham Young University Religious Studies Center",
+      "kind": "scholarly-commentary",
+      "url": "https://rsc.byu.edu/new-testament-history-culture-society/use-old-testament-new-testament",
+      "checkedOn": "2026-11-18",
+      "access": "Full accessible published chapter, especially the Acts 15 discussion of Hebrew and Greek Amos 9:11-12 (pp. 497-513). The author's LDS institutional setting and interpretive framing are identified; his argument is not treated as textual proof.",
+      "rights": "Linked only; no book or publisher commentary text retained."
     }
   },
   "records": [
@@ -9434,7 +9482,20 @@
         }
       ],
       "batch": "v1-citations-17-02",
-      "anchor": "Zechariah 12:10"
+      "anchor": "Zechariah 12:10",
+      "textualFollowUp": {
+        "reviewedOn": "2026-11-18",
+        "topic": "Hebrew pronouns and the Johannine quotation",
+        "finding": "The NET textual note records the Masoretic 'to me' reading in Zechariah 12:10 and another Hebrew reading corresponding to 'to the one whom'. John 19:37 quotes the pierced figure in the third person. These observations specify the textual issue without requiring the two passages to be verbatim identical.",
+        "limitation": "The NET editorial preference for a Hebrew reading is a reasoned translator judgement, not independent verification of individual manuscripts or the precise textual exemplar behind John. No full Hebrew and Greek apparatus was collated.",
+        "citations": [
+          {
+            "sourceId": "net-zechariah-note",
+            "locator": "Zechariah 12:10, NET textual-critical note",
+            "supports": "Distinguishes the Masoretic pronoun from an alternative manuscript reading and reports the editors' judgement"
+          }
+        ]
+      }
     },
     {
       "kind": "connection",
@@ -9786,7 +9847,20 @@
         }
       ],
       "batch": "v1-citations-17-02",
-      "anchor": "Isaiah 40:3"
+      "anchor": "Isaiah 40:3",
+      "textualFollowUp": {
+        "reviewedOn": "2026-11-18",
+        "topic": "Mark's variant attribution and composite opening",
+        "finding": "The NET textual note for Mark 1:2 records 'in Isaiah the prophet' alongside the manuscript alternative 'in the prophets'. Mark 1:2-3 brings together the messenger language associated with Exodus 23:20 and Malachi 3:1 and the wilderness-voice wording of Isaiah 40:3. The Isaiah 40:3 connection remains valid without treating both verses as a single Isaiah quotation.",
+        "limitation": "The indexed translator note identifies the alternatives but is not a personal collation of surviving witnesses. This follow-up does not settle source-dependence, priority among witnesses or the punctuation of the wilderness phrase.",
+        "citations": [
+          {
+            "sourceId": "net-mark-note",
+            "locator": "Mark 1:2, NET textual-critical note",
+            "supports": "Lists competing attribution headings and recognises the Exodus/Malachi/Isaiah composite"
+          }
+        ]
+      }
     },
     {
       "kind": "connection",
@@ -10010,7 +10084,20 @@
         }
       ],
       "batch": "v1-citations-17-03",
-      "anchor": "Exodus 12:46"
+      "anchor": "Exodus 12:46",
+      "textualFollowUp": {
+        "reviewedOn": "2026-11-18",
+        "topic": "Competing sources for the unbroken-bone citation",
+        "finding": "The NET Bible translator note on John 19:36 lists Exodus 12:46, Numbers 9:12 and Psalm 34:20 together. Exodus and Numbers supply Passover instructions; the psalm speaks of the protected righteous sufferer. John's citation cannot be reduced to a uniquely established single source by this note.",
+        "limitation": "A translator cross-reference note identifies plausible literary sources, not the exact scroll or version used by the Gospel author. No manuscript witness or quotation stemma was independently examined.",
+        "citations": [
+          {
+            "sourceId": "net-john19-note",
+            "locator": "John 19:36, NET study note",
+            "supports": "Explicitly names all three candidate scriptural locations rather than certifying Exodus 12:46 alone"
+          }
+        ]
+      }
     },
     {
       "kind": "connection",
@@ -10266,7 +10353,25 @@
         }
       ],
       "batch": "v1-citations-17-03",
-      "anchor": "Amos 9:11"
+      "anchor": "Amos 9:11",
+      "textualFollowUp": {
+        "reviewedOn": "2026-11-18",
+        "topic": "Hebrew and Greek wording behind the Jerusalem council quotation",
+        "finding": "Amos 9:12 in the Hebrew tradition speaks of possession of the remnant of Edom, while the Greek formulation taken up in Acts 15:17 speaks of the remnant of humanity seeking the Lord. Daniel O. McClellan's published discussion identifies two distinct wording shifts, including possess/seek, and notes the object 'the Lord' in Acts. These are textual differences with interpretive consequences, not identical formulations.",
+        "limitation": "McClellan's 2019 discussion is a secondary academic analysis from a particular institutional perspective, not direct examination of every Greek or Hebrew witness. It does not by itself establish why the variants originated or determine James's exact spoken language.",
+        "citations": [
+          {
+            "sourceId": "net-amos-note",
+            "locator": "Amos 9:12, NET translation note",
+            "supports": "Records the Hebrew remnant-of-Edom possession phrasing"
+          },
+          {
+            "sourceId": "mcclellan-2019-amos-acts",
+            "locator": "Acts section, Amos 9:11-12 / Acts 15:16-17 discussion",
+            "supports": "Contrasts Edom/humanity and possess/seek formulations and documents the quotation's use in Acts"
+          }
+        ]
+      }
     },
     {
       "kind": "connection",
