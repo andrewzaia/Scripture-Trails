@@ -51,23 +51,30 @@ jobs:
   # timeouts, hiding real regressions behind runner contention.
   # Skip browser setup when the inexpensive source/build job already fails.
   # Every browser engine remains mandatory on PRs after source validation.
+  # WebKit desktop and mobile run on separate runners to avoid exceeding the job timeout.
   # Protected main merges repeat full source checks but skip a duplicate browser matrix.
   browser:
     if: ${{ github.event_name == 'pull_request' }}
-    name: Browser - ${{ matrix.engine }}
+    name: Browser - ${{ matrix.label }}
     needs: test
     runs-on: ubuntu-26.04
-    timeout-minutes: 35
+    timeout-minutes: 45
     strategy:
       fail-fast: false
       matrix:
         include:
           - engine: chromium
+            label: chromium
             projects: '--project=desktop-chromium --project=mobile-chromium'
           - engine: firefox
+            label: firefox
             projects: '--project=desktop-firefox'
           - engine: webkit
-            projects: '--project=desktop-webkit --project=mobile-webkit'
+            label: webkit-desktop
+            projects: '--project=desktop-webkit'
+          - engine: webkit
+            label: webkit-mobile
+            projects: '--project=mobile-webkit'
     steps:
       - uses: actions/checkout@v7
       - uses: actions/setup-node@v7
@@ -98,7 +105,7 @@ jobs:
       - uses: actions/upload-artifact@v7
         if: ${{ !cancelled() }}
         with:
-          name: browser-report-${{ matrix.engine }}
+          name: browser-report-${{ matrix.label }}
           path: |
             playwright-report/
             test-results/
