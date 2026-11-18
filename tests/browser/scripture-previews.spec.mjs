@@ -109,7 +109,7 @@ test('focusing the main content after header navigation never opens an unrelated
  await expect(page.locator('.scripture-preview')).toBeHidden();
  const reference=page.locator('.hero-examples [data-open="Genesis 1:1"] .scripture-preview-trigger');
  await expect(reference).toHaveAttribute('data-scripture-preview','Genesis 1:1');
- await reference.focus();
+ await page.locator('.hero-examples [data-open="Genesis 1:1"]').focus();
  await expect(page.locator('.scripture-preview')).toBeVisible();
  await expect(page.locator('[data-preview-title]')).toHaveText('Genesis 1:1');
  await expect(page.locator('[data-preview-text]')).toContainText('Synthetic focused reference.');
