@@ -1,5 +1,5 @@
 {
-  "compiled": "2026-11-15",
+  "compiled": "2026-11-18",
   "scope": "An open-ended collection of attributed published incident reports affecting Christians, clergy, church property and religious heritage. The archive does not impose an earliest or latest historical year, but is neither an exhaustive worldwide census nor an independent finding of perpetrator identity or motive.",
   "reports": [
     {
@@ -653,6 +653,19 @@
       "publisher": "OIDAC Europe",
       "source_url": "https://www.intoleranceagainstchristians.eu/index.php?case=11627&id=12",
       "notes": "The loss of the tabernacle, religious vessels and hosts concerns one church incident. The publisher cites cath.ch and Tribune de Genève. This is not counted separately for each stolen or desecrated item."
+    },
+    {
+      "id": "CT-0748",
+      "country": "Estonia",
+      "date": "2026-06-13",
+      "place": "Nomme Baptist Church, Tallinn",
+      "category": "Attempted church arson",
+      "title": "Three suspects reportedly detained following attempted arson at Tallinn Baptist church",
+      "published_account": "OIDAC Europe reported that an attempt was made on 13 June 2026 to set fire to Nomme Baptist Church in Tallinn. The building did not catch fire but police reported damage of up to EUR 10,000. Three men were later apprehended on the basis of security footage and witness statements, and police were investigating whether the attempted arson was motivated by religion.",
+      "reported_actor": "Three male suspects reported detained; motive undetermined",
+      "publisher": "OIDAC Europe",
+      "source_url": "https://www.intoleranceagainstchristians.eu/index.php?id=12&case=11603",
+      "notes": "The source explicitly identifies 13 June 2026 as the incident date. The attempt was reported to police the following morning. A possible anti-Christian motive remained under investigation; no conviction or established motive is asserted."
     },
     {
       "id": "CT-0595",
@@ -1636,6 +1649,19 @@
       "notes": "Important outcome: nine court cases dismissed in December 2025; no conviction is claimed."
     },
     {
+      "id": "CT-0741",
+      "date": "2025-11-19",
+      "country": "Montenegro",
+      "place": "Church of Saint Nicholas, Bijela Gora, Ulcinj",
+      "category": "Break-in and Orthodox church vandalism",
+      "title": "Saint Nicholas Orthodox church broken into and damaged in Bijela Gora",
+      "published_account": "Vijesti reported that one or more people broke through the entrance of the Church of Saint Nicholas in Bijela Gora overnight before 19 November 2025 and damaged its interior. Ulcinj police and the state prosecutor's office were investigating.",
+      "reported_actor": "Unidentified perpetrator or perpetrators; motive not established",
+      "publisher": "Vijesti",
+      "source_url": "https://en.vijesti.me/vijesti/crna-hronika/783994/ulcinj-obijena-pravoslavna-crkva-u-bijeloj-gori-pricinjena-materijalna-steta-u-unutrasnjosti",
+      "notes": "19 November is the report date; the break-in was reported as occurring overnight 18-19 November. Do not infer anti-Christian motive beyond the reported church damage."
+    },
+    {
       "id": "CT-0049",
       "date": "2025-11-16",
       "country": "United States",
@@ -2157,6 +2183,19 @@
       "media_url": "https://www.lodinews.com/news/article_e58787b5-433c-430d-bef0-3de042b6ad87.html",
       "media_note": "Link to local report; imagery/footage on page must be inspected and licensed before re-use",
       "notes": "USCCB archive contains additional incidents; this workbook extracts a selection."
+    },
+    {
+      "id": "CT-0742",
+      "date": "2025-08-29",
+      "country": "Montenegro",
+      "place": "Church of the Holy Archangel Michael, Gvozden Brijeg cemetery, Bar",
+      "category": "Repeated church burglary and theft",
+      "title": "Holy Archangel Michael church robbed for the third time in 2025",
+      "published_account": "Vijesti reported that the Church of the Holy Archangel Michael at Gvozden Brijeg cemetery was broken into during the night of 28-29 August 2025 and money stolen from its donations box. Church representatives said the same building had been robbed twice earlier that year, in January and late July.",
+      "reported_actor": "Unidentified thief or thieves; religious motivation not established",
+      "publisher": "Vijesti",
+      "source_url": "https://en.vijesti.me/news-b/black-chronicle/772639/obijena-crkva-na-groblju-gvozden-brijeg-u-baru",
+      "notes": "Record the precisely dated August event; the earlier January and July burglaries are referenced in this entry but not counted as additional dated incidents without separately grounded source detail."
     },
     {
       "id": "CT-0061",
@@ -4358,6 +4397,20 @@
       "notes": "Reported alleged order, not independently verified closure or anti-Catholic conviction."
     },
     {
+      "id": "CT-0743",
+      "date": "2024-07",
+      "country": "Rwanda",
+      "place": "Nationwide, including Musanze district",
+      "category": "Government closure of places of Christian worship",
+      "title": "Mass inspections and closure of thousands of Rwandan places of worship",
+      "published_account": "The United Nations Human Rights Committee's October 2026 discussion of Rwanda's fifth periodic report recorded questions over the 2024 closure of between 7,000 and 10,000 churches and around 100 mosques. Rwanda's delegation said inspections starting in July 2024 led to around 8,000 prayer-house closures over unmet legal requirements and that compliant facilities could apply to reopen. A 2025 World Evangelical Alliance submission argued that the requirements imposed undue restrictions on communal religious practice.",
+      "reported_actor": "Rwandan government and Rwanda Governance Board through regulatory inspections; official safety rationale contested as disproportionate by religious freedom advocates",
+      "publisher": "United Nations Office at Geneva",
+      "source_url": "https://www.ungeneva.org/en/news-media/meeting-summary/2026/10/experts-human-rights-committee-welcome-rwandas-decriminalisation",
+      "second_source_url": "https://www.gov.rw/blog-detail/frequent-questions-on-inspection-and-closure-of-prayer-houses",
+      "notes": "Single nationwide policy episode, not one record per closed church. July 2024 marks the beginning of inspections; religious facilities of more than one faith were affected. Official legal compliance grounds and reported freedom-of-religion objections must both remain explicit."
+    },
+    {
       "id": "CT-0453",
       "country": "Argentina",
       "date": "2024-06-28",
@@ -4477,6 +4530,19 @@
       "publisher": "OSCE ODIHR Hate Crime Reporting",
       "source_url": "https://hatecrime.osce.org/serbia",
       "notes": "No exact place or day asserted. Separate month from other Serbian cases."
+    },
+    {
+      "id": "CT-0745",
+      "country": "Slovenia",
+      "date": "2024-05-29",
+      "place": "Chapel between Zagrad and Lese, Prevalje",
+      "category": "Chapel vandalism and religious graffiti",
+      "title": "Prevalje roadside chapel reportedly defaced with religious graffiti",
+      "published_account": "OIDAC Europe reported that a chapel at the crossroads of Zagrad and Lese near Prevalje was found with red graffiti on 29 May 2024, including the word Allah. Police were reportedly investigating.",
+      "reported_actor": "Unidentified perpetrators; graffiti wording does not establish perpetrators' religion or identity",
+      "publisher": "OIDAC Europe",
+      "source_url": "https://www.intoleranceagainstchristians.eu/index.php?id=12&case=8103",
+      "notes": "The content of graffiti is reported as written; it is not evidence of the offender's religious affiliation."
     },
     {
       "id": "CT-0576",
@@ -4762,6 +4828,20 @@
       "publisher": "ACI Africa",
       "source_url": "https://www.aciafrica.org/index.php/news/10729/appalling-distressing-malawis-bishops-condemn-in-strongest-terms-abduction-torture-assault-of-catholic-nun",
       "notes": "A church-reported account with alleged explicit anti-religious statements by attackers, not a court finding."
+    },
+    {
+      "id": "CT-0744",
+      "country": "North Macedonia",
+      "date": "2024-04-09",
+      "place": "St Athanasius Monastery Church, Tetovo",
+      "category": "Church break-in and vandalism",
+      "title": "St Athanasius monastery church windows smashed in reported second intrusion",
+      "published_account": "The Observatory on Intolerance and Discrimination Against Christians in Europe reported that the St Athanasius monastery church in Tetovo was broken into on 9 April 2024, with its windows smashed and material damage. The Tetovo-Gostivar Diocese said this followed an earlier intrusion and desecration involving decorations resembling another country's flag.",
+      "reported_actor": "Unidentified perpetrators; motive and responsibility not established",
+      "publisher": "OIDAC Europe",
+      "source_url": "https://www.intoleranceagainstchristians.eu/index.php?case=7762&id=12",
+      "second_source_url": "https://hatecrime.osce.org/north-macedonia",
+      "notes": "Separate from the earlier reported intrusion. ODIHR listed an April 2024 anti-Christian property attack in North Macedonia; its aggregate listing does not independently confirm the exact monastery case."
     },
     {
       "id": "CT-0601",
@@ -5773,6 +5853,19 @@
       "publisher": "US Department of State",
       "source_url": "https://2021-2025.state.gov/reports/2023-report-on-international-religious-freedom/ukraine/",
       "notes": "Ukrainian government-controlled territory; this is a separate strike from church property disputes."
+    },
+    {
+      "id": "CT-0747",
+      "country": "Latvia",
+      "date": "2023-07-23",
+      "place": "Old St Gertrude Lutheran Church, Riga",
+      "category": "Threats against clergy and church vandalism",
+      "title": "Masked man reportedly threatened staff and damaged Lutheran church in Riga",
+      "published_account": "OIDAC Europe reported that a masked man entered Old St Gertrude Lutheran Church in Riga on 23 July 2023, threatened its warden and pastor, damaged a baptismal vessel and an icon, and scattered sand and water. Police reportedly detained a suspect.",
+      "reported_actor": "One suspect detained; religious hatred and a dispute over a Ukrainian flag were both discussed as possible motives",
+      "publisher": "OIDAC Europe",
+      "source_url": "https://www.intoleranceagainstchristians.eu/index.php?case=7772&id=12",
+      "notes": "The reporting does not establish a final police or judicial determination of religious motive."
     },
     {
       "id": "CT-0277",
@@ -6864,6 +6957,20 @@
       "category": "Claimed anti-Christian massacre"
     },
     {
+      "id": "CT-0740",
+      "date": "2022-05-06",
+      "country": "Moldova",
+      "place": "Saint Lazarus Cemetery, Chisinau",
+      "category": "Cemetery desecration; burning of Christian crosses",
+      "title": "Twenty crosses and more than seventy wreaths burned at Saint Lazarus Cemetery",
+      "published_account": "Moldovan police reported that 20 crosses and more than 70 funeral wreaths were burned at Saint Lazarus Cemetery, also known as Doina Cemetery, in Chisinau. NewsMaker and Unimedia reported the damage on 6 May 2022. A follow-up police account reported the detention of a 35-year-old suspect who described conducting a ritual.",
+      "reported_actor": "A 35-year-old man later detained as a suspect according to Moldovan police reporting; no religious identity established",
+      "publisher": "NewsMaker",
+      "source_url": "https://newsmaker.md/ro/ritual-in-cel-mai-mare-cimitir-din-moldova-zeci-de-morminte-au-fost-profanate",
+      "second_source_url": "https://laf.md/news/policija-zaderzhala-muzhchinu-kotoryj-szheg-na-kladbishhe-venki-i-kresty",
+      "notes": "Use the reported discovery/publication date as the catalogue date. The police description of a ritual does not establish the suspect's religious affiliation, and this is one cemetery episode, not 20 separate attacks."
+    },
+    {
       "id": "CT-0525",
       "date": "2022-04-20",
       "country": "Nigeria",
@@ -7171,6 +7278,19 @@
       "category": "Church arson; civilian killings"
     },
     {
+      "id": "CT-0746",
+      "country": "Slovenia",
+      "date": "2021-02-02",
+      "place": "Zavod Iskreni, Slovenia",
+      "category": "Vandalism of Christian institution",
+      "title": "Christian organisation Zavod Iskreni vandalised with swastikas and broken windows",
+      "published_account": "OIDAC Europe reported that unknown people damaged the entrance of the Christian organisation Zavod Iskreni in February 2021, smashing windows and marking its facade with swastikas and the word corruption. The incident was condemned by Slovenian public officials.",
+      "reported_actor": "Unidentified vandals; political and religious motives alleged but not legally established",
+      "publisher": "OIDAC Europe",
+      "source_url": "https://www.intoleranceagainstchristians.eu/index.php?case=4513&id=12",
+      "notes": "The report describes vandalism directed at a Christian-identifying institution; it does not establish the offenders' identity."
+    },
+    {
       "id": "CT-0333",
       "country": "Uganda",
       "date": "2020-12-07",
@@ -7374,6 +7494,19 @@
       "source_url": "https://www.aftenposten.no/norge/i/ALEwQM/kirkebrannstifter-doemt-til-tvungent-psykisk-helsevern",
       "notes": "Distinct church and date from the Dombås fire. The convicted man described anger about a 2019 Quran-burning event; that explanation should not be conflated with the motives of unrelated church fires. Court outcome reported September 2021.",
       "incident_group": "NOR-DOMBAS-SEL-2020"
+    },
+    {
+      "id": "CT-0739",
+      "date": "2020-03-08",
+      "country": "Moldova",
+      "place": "Petresti, Ungheni district",
+      "category": "Disruption of Pentecostal religious gathering",
+      "title": "Pentecostal community programme disrupted at Petresti church",
+      "published_account": "The US Department of State's 2020 religious freedom report, citing the Union of Pentecostal Churches' lawyer, reported that a group of local residents led by the mayor and an Orthodox priest disrupted a church programme for women on 8 March. People allegedly removed chairs, obstructed entry and threatened the building. The congregation reported lodging a police complaint without receiving a response.",
+      "reported_actor": "Local mayor, Orthodox priest and associated residents, as alleged by the Pentecostal church's lawyer",
+      "publisher": "US Department of State",
+      "source_url": "https://2021-2025.state.gov/reports/2020-report-on-international-religious-freedom/moldova/",
+      "notes": "This is a reported dispute between Christian communities and local authorities; the attribution is from the Pentecostal church's account. No independent criminal determination is asserted."
     },
     {
       "id": "CT-0641",
@@ -10172,7 +10305,7 @@
   "coverage": {
     "date_policy": "The date field accepts YYYY, YYYY-MM and YYYY-MM-DD where sources do not provide an exact day. No day is invented.",
     "note": "A source-attributed record is included if a published report describes an alleged, disputed, unverified or substantiated incident, reported pattern or relevant restriction affecting Christians. Publication does not establish the event or motive as fact; descriptions preserve publisher attribution. Entries count reports, not independently verified incidents or victims.",
-    "earliest_record": "1997-02-06",
+    "earliest_record": "1984",
     "latest_record": "2026-11-11"
   }
 }
