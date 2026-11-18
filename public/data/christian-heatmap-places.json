@@ -430,6 +430,14 @@
     "Tunisia": {
       "iso2": "TN",
       "iso3": "TUN"
+    },
+    "Bahrain": {
+      "iso2": "BH",
+      "iso3": "BHR"
+    },
+    "Maldives": {
+      "iso2": "MV",
+      "iso3": "MDV"
     }
   },
   "places": {
@@ -3452,6 +3460,20 @@
           "precision": "city"
         }
       ]
+    }
+  },
+  "countryMarkers": {
+    "Bahrain": {
+      "lat": 26.0667,
+      "lon": 50.5577,
+      "label": "Bahrain",
+      "precision": "country marker"
+    },
+    "Maldives": {
+      "lat": 4.1755,
+      "lon": 73.5093,
+      "label": "Maldives",
+      "precision": "country marker"
     }
   }
 }
