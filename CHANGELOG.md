@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.17.0 - 18/11/2026: Expanded persecution geography and small-island access
+
+- Add 94 further source-attributed reports while retaining all earlier cases, bringing the catalogue to 748 reports across 115 countries and territories.
+- Make Bahrain and Maldives selectable by mouse and keyboard through country-level map locators where low-resolution map polygons are missing.
+- Preserve original source links and reported uncertainties, with map locations distinguished from independently verified incident sites.
+
 ## 1.16.9 - 18/11/2026: Event-driven publisher rights review
 
 - Replace arbitrary recurring publisher licence checks with reviews triggered by relevant provider notifications or material changes to website content use.
