@@ -426,6 +426,10 @@
     "Czech Republic": {
       "iso2": "CZ",
       "iso3": "CZE"
+    },
+    "Tunisia": {
+      "iso2": "TN",
+      "iso3": "TUN"
     }
   },
   "places": {
