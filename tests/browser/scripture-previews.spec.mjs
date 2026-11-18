@@ -97,6 +97,7 @@ test('focusing the main content after header navigation never opens an unrelated
  await page.route('**/api/passage?**',async route=>{requests++;await route.fulfill({json:{passages:['<p>Synthetic focused reference.</p>']}});});
  await open(page,'reader');
  await navigate(page,'discover');
+ const before=requests;
  await page.evaluate(()=>{
   const main=document.getElementById('main');
   document.activeElement?.blur();
@@ -104,7 +105,7 @@ test('focusing the main content after header navigation never opens an unrelated
  });
  await expect(page.locator('.scripture-preview')).toBeHidden();
  await page.waitForTimeout(300);
- expect(requests).toBeGreaterThanOrEqual(0);
+ expect(requests).toBe(before);
  await expect(page.locator('.scripture-preview')).toBeHidden();
  const reference=page.locator('.hero-examples [data-open="Genesis 1:1"] .scripture-preview-trigger');
  await expect(reference).toHaveAttribute('data-scripture-preview','Genesis 1:1');
