@@ -176,3 +176,25 @@ test('textual-source follow-ups show citations and replace stale About research 
  await expect(article).toContainText('Edom');
  await expect(article.getByRole('link',{name:'The Use of the Old Testament in the New Testament (2019)',exact:true})).toHaveAttribute('href',/rsc\.byu\.edu/);
 });
+
+
+test('About and Atlas expose first-pass imported Scripture quotations without claiming full explanation',async({page})=>{
+ test.setTimeout(90000);
+ await open(page,'about');
+ await expect(page.locator('#citation-review-summary')).toContainText('14 additional imported Atlas pairs');
+ await expect(page.locator('#citation-review-summary')).toContainText('301,378 remain without either level');
+ const group=page.locator('.citation-review-group').filter({has:page.getByText('Imported Scripture quotation reviews (14)',{exact:true})});
+ await group.locator('> summary').click();
+ await expect(group.locator('article')).toHaveCount(14);
+ const article=group.locator('article').filter({has:page.getByRole('heading',{name:'Psalms 104:4 and Hebrews 1:7',exact:true})});
+ await article.locator('.citation-review > summary').click();
+ await expect(article).toContainText('Greek Septuagint');
+ await expect(article).toContainText('Hebrew wording');
+ await expect(article.locator('.citation-review a[href^="https://"]')).toHaveCount(2);
+ await article.getByRole('link',{name:'Open in Atlas',exact:true}).click();
+ await expect(page.locator('#graph-current')).toHaveText('Psalms 104:4');
+ const row=page.locator('.atlas-reference-row').filter({has:page.getByText('Hebrews 1:7',{exact:true})});
+ await expect(row.getByText('Source-classified: Greek-version-dependent quotation')).toBeVisible();
+ await row.locator('.citation-review > summary').click();
+ await expect(row).toContainText('First-pass imported reference classification');
+});
