@@ -1,5 +1,6 @@
-import {CITATION_REVIEW} from './citation-review-data.js?v=1.18.0';
+import {CITATION_REVIEW} from './citation-review-data.js?v=1.19.0';
 import {validateCanonicalReference} from './reference-integrity.js';
+import {parseRef} from './books.js';
 export {CITATION_REVIEW};
 
 export const REVIEW_DECISIONS=Object.freeze({
@@ -9,7 +10,21 @@ export const REVIEW_DECISIONS=Object.freeze({
  'passage-checked':'Selected passage checked',
  'context-clarified':'Reading context clarified'
 });
+export const IMPORTED_QUOTATION_KINDS=Object.freeze({
+ 'quotation':'Explicit quotation',
+ 'composite-quotation':'Combined scriptural quotation',
+ 'adapted-quotation':'Adapted scriptural quotation',
+ 'greek-dependent-quotation':'Greek-version-dependent quotation'
+});
 const scopeKeys={issue:'issues',place:'places',trail:'trailReadings',connection:'connections'};
+const importedPairKey=(from,to)=>{const a=parseRef(from)?.formatted,b=parseRef(to)?.formatted;return a&&b?[a,b].sort().join('|'):null;};
+const importedLookup=new Map((CITATION_REVIEW.importedReviews?.entries||[]).map(e=>[importedPairKey(e.from,e.to),e]));
+export function importedQuotationReview(from,to,data=CITATION_REVIEW){
+ const key=importedPairKey(from,to);
+ if(!key)return null;
+ if(data===CITATION_REVIEW)return importedLookup.get(key)||null;
+ return data.importedReviews?.entries?.find(e=>importedPairKey(e.from,e.to)===key)||null;
+}
 export function citationReviews(kind,target,data=CITATION_REVIEW){return data.records.filter(r=>r.kind===kind&&r.target===target);}
 export const reviewCitations=record=>[...record.citations,...(record.supplement?.citations||[]),...(record.textualFollowUp?.citations||[])];
 export function commentaryCoverage(data=CITATION_REVIEW){return data.records.filter(r=>r.kind==='connection'&&reviewCitations(r).some(c=>['scholarly-commentary','publisher-note','publisher-abstract'].includes(data.sources[c.sourceId]?.kind))).length;}
@@ -42,6 +57,16 @@ export function validateCitationReview(data,counts,targets){
   totals[scopeKeys[r.kind]]++;seen.add(k);
  }
  for(const [k,n] of Object.entries(totals))if(data.scope[k]!==n)throw Error('Citation scope count mismatch '+k);
+ const imported=data.importedReviews;
+ if(imported){
+  if(!date(imported.reviewedOn)||imported.reviewedOn>data.updated||!imported.method?.includes('OpenBible.info')||!Array.isArray(imported.entries)||!imported.entries.length)throw Error('Invalid imported quotation batch');
+  const ids=new Set(),pairs=new Set();
+  for(const r of imported.entries){
+   const key=importedPairKey(r.from,r.to),from=validateCanonicalReference(r.from,counts),to=validateCanonicalReference(r.to,counts);
+   if(!/^xr\d{3}$/.test(r.id)||ids.has(r.id)||!key||pairs.has(key)||!from||!to||from.startVerse===null||to.startVerse===null||from.book===to.book||!IMPORTED_QUOTATION_KINDS[r.kind]||!r.summary||!r.limitation||!date(r.reviewedOn)||r.reviewedOn>imported.reviewedOn||!Array.isArray(r.sources)||r.sources.length!==2||r.sources.some(src=>src.publisher!=='USCCB'||!src.title||!src.locator||!safeUrl(src.url)||!src.url.startsWith('https://bible.usccb.org/bible/')))throw Error('Invalid imported quotation '+r.id);
+   ids.add(r.id);pairs.add(key);
+  }
+ }
  const batchIds=new Set();
  for(const batch of data.batches||[]){
   if(!batch.id||batchIds.has(batch.id)||!batch.title||!batch.method||!Number.isInteger(batch.count)||batch.count<1||batch.targets?.length!==batch.count||new Set(batch.targets).size!==batch.count)throw Error('Invalid citation batch '+batch.id);
@@ -69,6 +94,16 @@ export function appendCitationReview(parent,kind,target){
   }
   detail.append(list);parent.append(detail);
  }
+}
+
+export function appendImportedQuotationReview(parent,from,to){
+ const record=importedQuotationReview(from,to);
+ if(!record)return false;
+ const detail=make('details',undefined,'citation-review');
+ detail.append(make('summary','Source-classified: '+IMPORTED_QUOTATION_KINDS[record.kind]),make('p',record.summary),make('p',record.limitation),make('p','Primary Scripture citation review recorded '+record.reviewedOn+'. First-pass imported reference classification, not a complete Atlas explanation or independent manuscript review.','soft-note'));
+ const sources=make('ul');
+ for(const source of record.sources){const item=make('li'),link=make('a',source.title);link.href=source.url;link.target='_blank';link.rel='noopener noreferrer';item.append(link,make('p','Source: '+source.publisher+' | Locator: '+source.locator));sources.append(item);}
+ detail.append(sources);parent.append(detail);return true;
 }
 
 export function renderCitationSummary(root){
@@ -101,7 +136,19 @@ export function renderCitationSummary(root){
  const focused=make('ul');
  for(const r of textual){const item=make('li'),a=make('a',r.title+' - '+r.textualFollowUp.topic);a.href='/?view=connections&ref='+encodeURIComponent(r.anchor||r.passages[0].replace(/-.*$/,''));item.append(a);focused.append(item);}
  root.append(make('p',`${textual.length} further source-specific comparisons recorded. Follow-ups explain candidate readings and remaining limitations; they do not imply a complete manuscript collation.`));root.append(focused);
+ const imported=CITATION_REVIEW.importedReviews?.entries||[];
+ if(imported.length){
+  root.append(make('h3','First-pass imported quotation classifications'));
+  root.append(make('p',`${imported.length} additional imported Atlas pairs have been classified by their Scripture quotation form and given source links and limitations. They are separate from the ${scope.connections} fully explained connections. The remaining imported corpus has not been exhaustively classified.`));
+  const group=make('details',undefined,'citation-review-group');group.append(make('summary',`Imported Scripture quotation reviews (${imported.length})`));
+  for(const review of imported){
+   const article=make('article');article.append(make('h3',review.from+' and '+review.to));
+   const link=make('a','Open in Atlas');link.href='/?view=connections&ref='+encodeURIComponent(review.from);article.append(link);
+   appendImportedQuotationReview(article,review.from,review.to);group.append(article);
+  }
+  root.append(group);
+ }
  root.append(make('h3','Remaining source work'));
  const list=make('ul');for(const text of CITATION_REVIEW.deferred)list.append(make('li',text));root.append(list);
- const download=make('a','Download the dated citation review register (JSON)');download.href='/data/citation-review.json?v=1.18.0';download.download='scripture-trails-citation-review-'+CITATION_REVIEW.updated+'.json';root.append(download);
+ const download=make('a','Download the dated citation review register (JSON)');download.href='/data/citation-review.json?v=1.19.0';download.download='scripture-trails-citation-review-'+CITATION_REVIEW.updated+'.json';root.append(download);
 }

@@ -1,26 +1,26 @@
-import {appendCitationReview,renderCitationSummary} from './citation-review.js?v=1.18.0';
-import {PERSON_TRAILS,findPersonTrails} from './person-trails.js?v=1.18.0';
-import {createStudyCollections} from './study-collections.js?v=1.18.0';
-import {createAnnotations,applyHighlights,canonicalVerse,validateAnnotations,emptyAnnotations} from './annotations.js?v=1.18.0';
-import {renderReadingPlan} from './reading-plans.js?v=1.18.0';
-import {createNotebookBackup,persistNotebook,inspectNotebookStorage,replaceUnreadableNotebook,safeBrowserStorage} from './notebook-backup.js?v=1.18.0';
+import {appendCitationReview,renderCitationSummary,importedQuotationReview,IMPORTED_QUOTATION_KINDS,appendImportedQuotationReview} from './citation-review.js?v=1.19.0';
+import {PERSON_TRAILS,findPersonTrails} from './person-trails.js?v=1.19.0';
+import {createStudyCollections} from './study-collections.js?v=1.19.0';
+import {createAnnotations,applyHighlights,canonicalVerse,validateAnnotations,emptyAnnotations} from './annotations.js?v=1.19.0';
+import {renderReadingPlan} from './reading-plans.js?v=1.19.0';
+import {createNotebookBackup,persistNotebook,inspectNotebookStorage,replaceUnreadableNotebook,safeBrowserStorage} from './notebook-backup.js?v=1.19.0';
 import {BOOKS,findBook,parseRef,referenceFor,chapterRef,adjacentChapter,readerScope} from './books.js';
-import {PATHS,EDITORIAL_LINKS} from './studies.js?v=1.18.0';
-import {ScriptureGraph} from './graph.js?v=1.18.0';
-import {createJesusMap} from './jesus-map.js?v=1.18.0';
-import {createPaulMap} from './paul-map.js?v=1.18.0';
-import {createHebrewGeography} from './hebrew-geography.js?v=1.18.0';
-import {createRoadmap} from './roadmap.js?v=1.18.0';
-import {createCityStudies} from './city-studies.js?v=1.18.0';
-import {createEntityIndex} from './entity-index.js?v=1.18.0';
+import {PATHS,EDITORIAL_LINKS} from './studies.js?v=1.19.0';
+import {ScriptureGraph} from './graph.js?v=1.19.0';
+import {createJesusMap} from './jesus-map.js?v=1.19.0';
+import {createPaulMap} from './paul-map.js?v=1.19.0';
+import {createHebrewGeography} from './hebrew-geography.js?v=1.19.0';
+import {createRoadmap} from './roadmap.js?v=1.19.0';
+import {createCityStudies} from './city-studies.js?v=1.19.0';
+import {createEntityIndex} from './entity-index.js?v=1.19.0';
 import {buildAtlas} from './atlas-paths.js';
-import {initPublicReleases} from './release-notes.js?v=1.18.0';
+import {initPublicReleases} from './release-notes.js?v=1.19.0';
 import {maxDatasetVotes,relativeVoteBars} from './atlas-strength.js';
-import {CONNECTION_EVIDENCE,CONNECTION_KINDS,explainConnection,REVIEW_LABELS} from './connection-evidence.js?v=1.18.0';
-import {createPassageComparison} from './atlas-comparison.js?v=1.18.0';
-import {createReaderAudio} from './reader-audio.js?v=1.18.0';
-import {createScripturePreviews} from './scripture-previews.js?v=1.18.0';
-import {createPersecutionCatalogue} from './persecution-catalogue.js?v=1.18.0';
+import {CONNECTION_EVIDENCE,CONNECTION_KINDS,explainConnection,REVIEW_LABELS} from './connection-evidence.js?v=1.19.0';
+import {createPassageComparison} from './atlas-comparison.js?v=1.19.0';
+import {createReaderAudio} from './reader-audio.js?v=1.19.0';
+import {createScripturePreviews} from './scripture-previews.js?v=1.19.0';
+import {createPersecutionCatalogue} from './persecution-catalogue.js?v=1.19.0';
 import {TRANSLATIONS,getTranslation} from './translations.js';
 import {reportScriptureView} from './fums.js';
 import {TRANSLATION_STATUS,statusForResponse} from './translation-status.js?v=20261027-indicators';
@@ -190,7 +190,7 @@ async function connectionsFor(ref){const cur=parseRef(ref);if(!cur)return [];
  return base.sort((a,b)=>(a.type==='dataset'?1:0)-(b.type==='dataset'?1:0)||(b.votes||0)-(a.votes||0));
 }
 async function renderConnections(){const ref=state.ref;const connections=await connectionsFor(ref);if(ref!==state.ref)return;state.links=connections;const filter=state.filter;$('reference-count').textContent=String(connections.length);const list=$('reference-list');list.replaceChildren();let shown=connections.filter(x=>filter==='all'||x.type===filter);shown=shown.slice(0,80);if(!shown.length){list.append(create('p','empty-list',filter==='all'?'No references recorded for this verse. Try a neighbouring verse or view Crossway callouts in the reader.':'No connections in this category for the selected verse.'));return;}
- for(const item of shown){const button=create('button','reference-item');const left=create('span');left.append(create('strong','',item.to),create('small','',item.description));const right=create('span');right.append(create('em','',item.evidence?CONNECTION_KINDS[item.evidence.kind]:item.type==='dataset'?'UNCLASSIFIED':item.type==='context'?'CONTEXT':'EDITORIAL'),create('span','arrow','↗'));button.append(left,right);button.title=item.evidence?'Editorial passage comparison, not external peer review':item.source==='Reading context'?'Neighbouring verse, not a cross-reference':item.type==='dataset'?'Community-voted link, not classified':'Editorial study suggestion without an evidence check';button.addEventListener('click',()=>selectRef(item.to));list.append(button);}
+ for(const item of shown){const classified=item.evidence?null:importedQuotationReview(ref,item.to);const button=create('button','reference-item');const left=create('span');left.append(create('strong','',item.to),create('small','',classified?classified.summary:item.description));const right=create('span');right.append(create('em','',item.evidence?CONNECTION_KINDS[item.evidence.kind]:classified?'SOURCE-CLASSIFIED':item.type==='dataset'?'UNCLASSIFIED':item.type==='context'?'CONTEXT':'EDITORIAL'),create('span','arrow','↗'));button.append(left,right);button.title=item.evidence?'Editorial passage comparison, not external peer review':classified?'Scripture quotation type classified with two publisher sources; full explanation still open':item.source==='Reading context'?'Neighbouring verse, not a cross-reference':item.type==='dataset'?'Community-voted link, not classified':'Editorial study suggestion without an evidence check';button.addEventListener('click',()=>selectRef(item.to));list.append(button);}
 }
 function renderNote(){$('highlight-ref').value=state.ref;const note=state.notes[state.ref]||'';$('notes-text').value=note;}
 function currentIsSaved(){return state.bookmarks.includes(state.ref);}
@@ -399,7 +399,8 @@ async function renderGraph(){
     const {meter,label}=createAtlasVoteMeter(link,highestVotes);
     b.append(meter);b.title=label;
    }
-   const status=link.evidence?CONNECTION_KINDS[link.evidence.kind]:link.type==='context'?'Reading context':link.type==='dataset'?'OpenBible suggestion - unclassified':'Editorial suggestion - unreviewed';
+   const imported=link.evidence?null:importedQuotationReview(ref,link.to);
+   const status=link.evidence?CONNECTION_KINDS[link.evidence.kind]:imported?'Source-classified: '+IMPORTED_QUOTATION_KINDS[imported.kind]:link.type==='context'?'Reading context':link.type==='dataset'?'OpenBible suggestion - unclassified':'Editorial suggestion - unreviewed';
    b.append(create('small','atlas-edge-status',status));
    b.addEventListener('click',()=>activateAtlasNode(link.to,link.to===state.atlasPreviewRef&&link.to!==state.ref?'focus':'preview'));row.append(b);
    if(link.evidence){
@@ -411,7 +412,7 @@ async function renderGraph(){
     }
     const compare=create('button','small-action','Compare passages side by side');compare.type='button';compare.addEventListener('click',()=>comparePassages(e.from,e.to,e));actions.append(compare);
     note.append(actions);row.append(note);
-   }
+   }else if(imported)appendImportedQuotationReview(row,ref,link.to);
    list.append(row);
   }
   if(filtered.length>80)list.append(create('p','soft-note',`Showing 80 of ${filtered.length} matching connections.`));

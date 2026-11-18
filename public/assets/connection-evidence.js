@@ -1,7 +1,7 @@
 import {parseRef} from './books.js';
 import {validateCanonicalReference} from './reference-integrity.js';
-import {ADDITIONAL_CONNECTION_EVIDENCE} from './connection-evidence-expanded.js?v=1.18.0';
-/** Selective passage-linked editorial register. The 603k OpenBible links remain unclassified. */
+import {ADDITIONAL_CONNECTION_EVIDENCE} from './connection-evidence-expanded.js?v=1.19.0';
+/** Selective passage-linked explanations. Most imported OpenBible links remain unclassified; first-pass quotation reviews are recorded separately. */
 export const CONNECTION_KINDS=Object.freeze({
   "quotation": "Direct quotation",
   "parallel": "Narrative parallel",

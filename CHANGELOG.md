@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.19.0 - 18/11/2026: First-pass source classification of imported Scripture quotations
+
+- Classified 14 additional imported Scripture cross-references in Romans 9-10 and Hebrews 1 using attributed publisher passage sources and context-specific editorial cautions.
+- Added discoverable first-pass quotation reviews to the About page and Atlas without misrepresenting them as part of the 161 fully explained comparisons.
+- Distinguished direct, combined, adapted and Greek-version-dependent quotations, including key source-verse numbering differences and updated outstanding research counts.
+
 ## 1.18.0 - 18/11/2026: Expanded textual-source evidence and research priorities
 
 - Add four attributed textual-source follow-ups to the Atlas citation register, covering John 19, Zechariah 12, Mark 1 and the Amos quotation in Acts 15.
