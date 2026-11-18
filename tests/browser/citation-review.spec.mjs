@@ -194,7 +194,7 @@ test('About and Atlas expose first-pass imported Scripture quotations without cl
  await article.getByRole('link',{name:'Open in Atlas',exact:true}).click();
  await expect(page.locator('#graph-current')).toHaveText('Psalms 104:4');
  const row=page.locator('.atlas-reference-row').filter({has:page.getByText('Hebrews 1:7',{exact:true})});
- await expect(row.getByText('Source-classified: Greek-version-dependent quotation')).toBeVisible();
+ await expect(row.locator('.atlas-edge-status')).toHaveText('Source-classified: Greek-version-dependent quotation');
  await row.locator('.citation-review > summary').click();
  await expect(row).toContainText('First-pass imported reference classification');
 });
