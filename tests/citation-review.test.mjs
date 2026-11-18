@@ -49,7 +49,7 @@ test('claim panels and About register show scope, external links and retained wa
  for(const a of all.filter(e=>e.tagName==='a')){assert.match(a.href,/^https:\/\//);assert.equal(a.rel,'noopener noreferrer');}
  root.replaceChildren();appendCitationReview(root,'place','not-indexed');assert.equal(root.children.length,0);
  renderCitationSummary(root);const first=nodes(root).length;renderCitationSummary(root);assert.equal(nodes(root).length,first);
- assert.equal(nodes(root).filter(e=>e.tagName==='article').length,198);
+ assert.equal(nodes(root).filter(e=>e.tagName==='article').length,198+CITATION_REVIEW.importedReviews.entries.length);
  assert.ok(nodes(root).some(e=>e.download?.endsWith('.json')));
  assert.ok(nodes(root).some(e=>e.textContent.includes('The original 115 explained pairs retain their earlier dated assessments')));
 });

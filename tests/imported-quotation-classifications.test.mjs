@@ -42,6 +42,8 @@ test('curated quotations preserve composite, Greek-version and versification dis
  const byId=Object.fromEntries(data.entries.map(r=>[r.id,r]));
  assert.deepEqual([byId.xr002.kind,byId.xr003.kind],['composite-quotation','composite-quotation']);
  assert.match(byId.xr004.limitation,/Moses' original quotation/);
+ assert.match(byId.xr009.limitation,/Psalm 97:7/);
+ assert.equal(byId.xr009.kind,'greek-dependent-quotation');
  assert.match(byId.xr011.limitation,/Hebrew wording/);
  assert.match(byId.xr012.limitation,/45:7/);
  assert.match(byId.xr013.limitation,/102:26/);

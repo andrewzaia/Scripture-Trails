@@ -22,7 +22,7 @@ The publisher chapter texts and editorial cross-reference notes were checked whe
 
 ## Hebrews 1
 
-- `xr009` Psalm 2:7 / Hebrews 1:5 - royal sonship decree applied to the Son.
+- `xr009` Deuteronomy 32:43 / Hebrews 1:6 - Greek-dependent angel-worship wording, with Psalm 97:7 as an additional possible source. The Masoretic and Greek textual traditions cannot be treated as identical.
 - `xr010` 2 Samuel 7:14 / Hebrews 1:5 - Davidic father-and-son promise used in the sonship argument.
 - `xr011` Psalm 104:4 / Hebrews 1:7 - Greek Septuagint wording has a different relationship between angels, winds and messengers than the Hebrew.
 - `xr012` Psalm 45:6 / Hebrews 1:8 - royal throne and divine kingship language, numbered 45:7 in NABRE.
@@ -36,9 +36,9 @@ The publisher chapter texts and editorial cross-reference notes were checked whe
 - Hebrews 1: https://bible.usccb.org/bible/hebrews/1
 - Hosea 2: https://bible.usccb.org/bible/hosea/2
 - Isaiah 8, 28, 53 and 65: https://bible.usccb.org/bible/isaiah/8 , https://bible.usccb.org/bible/isaiah/28 , https://bible.usccb.org/bible/isaiah/53 , https://bible.usccb.org/bible/isaiah/65
-- Deuteronomy 30: https://bible.usccb.org/bible/deuteronomy/30
+- Deuteronomy 30 and 32: https://bible.usccb.org/bible/deuteronomy/30 , https://bible.usccb.org/bible/deuteronomy/32
 - 2 Samuel 7: https://bible.usccb.org/bible/2samuel/7
-- Psalms 2, 45, 102, 104 and 110: https://bible.usccb.org/bible/psalms/2 , https://bible.usccb.org/bible/psalms/45 , https://bible.usccb.org/bible/psalms/102 , https://bible.usccb.org/bible/psalms/104 , https://bible.usccb.org/bible/psalms/110
+- Psalms 45, 102, 104 and 110: https://bible.usccb.org/bible/psalms/45 , https://bible.usccb.org/bible/psalms/102 , https://bible.usccb.org/bible/psalms/104 , https://bible.usccb.org/bible/psalms/110
 
 ## Research limits and next stages
 
