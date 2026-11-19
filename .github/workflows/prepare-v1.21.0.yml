@@ -1,0 +1,46 @@
+name: Prepare v1.21.0 Scripture quotation release
+
+on:
+  push:
+    branches:
+      - release/v1.21.0-imported-quotation-expansion
+
+permissions:
+  contents: write
+
+jobs:
+  prepare-release:
+    if: ${{ github.event.head_commit.message == 'ci(release): run official v1.21.0 generator' }}
+    runs-on: ubuntu-26.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+          ref: release/v1.21.0-imported-quotation-expansion
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - name: Generate official semantic-version release
+        run: |
+          npm run release -- minor "Broader Scripture quotation classifications" "Classify ten additional source-linked imported Scripture quotation pairs across Psalm 91, Isaiah 9, Joel 2, Psalm 16 and Isaiah 61." "Explain original passage contexts, Greek wording and Isaiah/Joel verse-numbering cautions without conflating separate quotation events." "Expand the About review register to 24 first-pass classifications while preserving all 161 explained Atlas links and earlier citation assessments."
+      - name: Validate source, release consistency and tests
+        run: |
+          npm run build
+          node scripts/import-citation-review.mjs
+          if [ -n "$(git diff -- public/assets/citation-review-data.js)" ]; then
+            echo "::error::Canonical citation register bundle does not match its source."
+            exit 1
+          fi
+      - name: Commit and push generated release files to the feature branch
+        run: |
+          set -euo pipefail
+          test "$(node -p "require('./package.json').version")" = "1.21.0"
+          git config user.name "scripture-trails-release-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add package.json package-lock.json public/data/releases.json CHANGELOG.md public/index.html public/assets
+          git diff --cached --quiet && { echo "::error::Release script produced no changes."; exit 1; }
+          git commit -m "chore(release): generate v1.21.0 with official npm release command"
+          git push origin HEAD:release/v1.21.0-imported-quotation-expansion
