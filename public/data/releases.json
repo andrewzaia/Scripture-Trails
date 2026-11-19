@@ -1,6 +1,16 @@
 {
   "releases": [
     {
+      "version": "1.21.0",
+      "date": "2026-11-20",
+      "title": "Broader Scripture quotation classifications",
+      "changes": [
+        "Classify ten additional source-linked imported Scripture quotation pairs across Psalm 91, Isaiah 9, Joel 2, Psalm 16 and Isaiah 61.",
+        "Explain original passage contexts, Greek wording and Isaiah/Joel verse-numbering cautions without conflating separate quotation events.",
+        "Expand the About review register to 24 first-pass classifications while preserving all 161 explained Atlas links and earlier citation assessments."
+      ]
+    },
+    {
       "version": "1.20.1",
       "date": "2026-11-19",
       "title": "Streamlined fullscreen Atlas controls",
