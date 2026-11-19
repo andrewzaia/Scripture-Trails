@@ -185,7 +185,7 @@ test('About and Atlas expose first-pass imported Scripture quotations without cl
  await expect(page.locator('#citation-review-summary')).toContainText('301,368 remain without either level');
  const group=page.locator('.citation-review-group').filter({has:page.getByText('Imported Scripture quotation reviews (24)',{exact:true})});
  await group.locator('> summary').click();
- await expect(group.locator('article')).toHaveCount(14);
+ await expect(group.locator('article')).toHaveCount(24);
  const article=group.locator('article').filter({has:page.getByRole('heading',{name:'Psalms 104:4 and Hebrews 1:7',exact:true})});
  await article.locator('.citation-review > summary').click();
  await expect(article).toContainText('Greek Septuagint');
