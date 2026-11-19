@@ -10,9 +10,9 @@ const importedShard=book=>JSON.parse(read('public/data/refs/'+book.abbr.toLowerC
 class Element{constructor(tag){this.tagName=tag;this.children=[];this.textContent='';}append(...nodes){this.children.push(...nodes);}replaceChildren(...nodes){this.children=[...nodes];}}
 const all=e=>[e,...e.children.flatMap(all)];
 
-test('fourteen first-pass quotation classifications exist as distinct imported Atlas pairs, not existing explanations',()=>{
- assert.equal(data.entries.length,14);
- assert.equal(data.reviewedOn,'2026-11-18');
+test('twenty-four first-pass quotation classifications exist as distinct imported Atlas pairs, not existing explanations',()=>{
+ assert.equal(data.entries.length,24);
+ assert.equal(data.reviewedOn,'2026-11-20');
  assert.equal(validateCitationReview(CITATION_REVIEW,counts),true);
  assert.equal(CONNECTION_EVIDENCE.length,161);
  const ids=new Set(),pairs=new Set();
@@ -35,7 +35,7 @@ test('fourteen first-pass quotation classifications exist as distinct imported A
   assert.ok(review.summary.length>60&&review.limitation.length>60,review.id);
  }
  assert.match(data.method,/First-pass/);
- assert.match(CITATION_REVIEW.deferred[0],/301,378 remain without either level/);
+ assert.match(CITATION_REVIEW.deferred[0],/301,368 remain without either level/);
 });
 
 test('curated quotations preserve composite, Greek-version and versification distinctions',()=>{
@@ -73,7 +73,18 @@ test('About and Atlas source disclosures show classification scope and linked pr
  assert.ok(links.every(e=>e.rel==='noopener noreferrer'));
  assert.equal(appendImportedQuotationReview(new Element('div'),'Genesis 1:1','Revelation 1:1'),false);
  const about=new Element('div');renderCitationSummary(about);
- assert.ok(all(about).some(e=>e.textContent.includes('Imported Scripture quotation reviews (14)')));
- assert.ok(all(about).some(e=>e.textContent.includes('14 additional imported Atlas pairs')));
- assert.ok(all(about).some(e=>e.textContent.includes('301,378 remain')));
+ assert.ok(all(about).some(e=>e.textContent.includes('Imported Scripture quotation reviews (24)')));
+ assert.ok(all(about).some(e=>e.textContent.includes('24 additional imported Atlas pairs')));
+ assert.ok(all(about).some(e=>e.textContent.includes('301,368 remain')));
+});
+
+test('second batch retains ten non-duplicated quotation components and edition cautions',()=>{
+ const second=data.entries.filter(e=>Number(e.id.slice(2))>=15);
+ assert.equal(second.length,10);
+ assert.deepEqual(second.map(e=>e.id),Array.from({length:10},(_,i)=>'xr'+String(15+i).padStart(3,'0')));
+ assert.ok(second.every(e=>e.reviewedOn==='2026-11-20'));
+ for(const id of ['xr017','xr018','xr019','xr020'])assert.match(second.find(e=>e.id===id).limitation,/NABRE\/USCCB/);
+ assert.match(second.find(e=>e.id==='xr022').limitation,/Greek/);
+ assert.match(second.find(e=>e.id==='xr024').limitation,/Isaiah 58:6/);
+ assert.equal(new Set(second.map(e=>e.from+'|'+e.to)).size,10);
 });

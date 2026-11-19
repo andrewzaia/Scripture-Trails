@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-11-18",
+  "updated": "2026-11-20",
   "status": "declared-batch-assessed",
   "method": "Editorial source-level assessment of a declared priority batch. The project owner has reviewed and accepted the published study content. The Bible is the authoritative foundation; supporting historical and archaeological sources are limited to the claims and access scope recorded here. No independent specialist signoff is claimed.",
   "scope": {
@@ -10,7 +10,7 @@
     "connections": 161
   },
   "deferred": [
-    "301,392 distinct Atlas pairs still lack a fully developed editorial explanation. Fourteen of those pairs now have first-pass quotation-source classifications with source links and limitations; 301,378 remain without either level of treatment. OpenBible vote counts are navigational suggestions, not independent evidence of a quotation type or interpretation.",
+    "301,392 distinct Atlas pairs still lack a fully developed editorial explanation. Twenty-four of those pairs now have first-pass quotation-source classifications with source links and limitations; 301,368 remain without either level of treatment. OpenBible vote counts are navigational suggestions, not independent evidence of a quotation type or interpretation.",
     "Named-place research retains disputed identifications and limited access to excavation monographs, primary archaeological records and comparative site reports. Existing regional placeholders must not be presented as resolved historical locations.",
     "Full Hebrew and Greek manuscript apparatuses have not been independently collated. Four focused textual-source follow-ups now identify specific variants or candidate passages, but do not settle every underlying reading.",
     "Outside the four rechecked Nehemiah readings, some person-trail passage sources and historical context questions still have documented access limitations. Any deeper source work requires passage-specific evidence and its own access record.",
@@ -10790,8 +10790,8 @@
     }
   ],
   "importedReviews": {
-    "reviewedOn": "2026-11-18",
-    "method": "First-pass, claim-level Scripture quotation classifications of fourteen distinct imported OpenBible.info pairs, selected after checking presence in the local cross-reference shards. Publisher chapter references and accessible editorial notes were checked at their stated scope. Some direct publisher requests were restricted; linked pages and indexed passage or note material supported those limited comparisons. The classifications are not the 161 full Atlas explanations, do not certify external historical events or resolve manuscript variation, and are not independent specialist approval.",
+    "reviewedOn": "2026-11-20",
+    "method": "First-pass, claim-level Scripture quotation classifications of twenty-four distinct imported OpenBible.info pairs. The original fourteen entries from 2026-11-18 remain unchanged; ten further verse pairs were checked on 2026-11-20 against local reference shards, publisher Scripture passages and available notes. Some direct publisher chapter requests were restricted, so source-access limits and edition-numbering cautions remain explicit. Multiple verse-level pairs may form one extended quotation. The entries do not constitute fully developed Atlas explanations, independent manuscript collation or external specialist approval.",
     "entries": [
       {
         "id": "xr001",
@@ -11112,6 +11112,236 @@
             "publisher": "USCCB",
             "url": "https://bible.usccb.org/bible/hebrews/1",
             "locator": "1:13-14"
+          }
+        ]
+      },
+      {
+        "id": "xr015",
+        "from": "Psalm 91:11",
+        "to": "Matthew 4:6",
+        "kind": "quotation",
+        "summary": "The devil quotes the promise of angelic protection from Psalm 91 to urge Jesus to leap from the temple, using Scripture as an argument during the temptation.",
+        "limitation": "Psalm 91 is a prayer of refuge and not a command to manufacture danger. Matthew 4:7 records Jesus rejecting the test. The episode does not establish the exact spoken-language form of the citation.",
+        "reviewedOn": "2026-11-20",
+        "sources": [
+          {
+            "title": "Psalm 91 - USCCB chapter",
+            "publisher": "USCCB",
+            "url": "https://bible.usccb.org/bible/psalms/91",
+            "locator": "91:11 in the complete protection psalm"
+          },
+          {
+            "title": "Matthew 4 - USCCB chapter",
+            "publisher": "USCCB",
+            "url": "https://bible.usccb.org/bible/matthew/4",
+            "locator": "4:5-7, including the tempter's quotation and Jesus' reply"
+          }
+        ]
+      },
+      {
+        "id": "xr016",
+        "from": "Psalm 91:12",
+        "to": "Matthew 4:6",
+        "kind": "quotation",
+        "summary": "The angelic protection image of Psalm 91:12 forms the second verse-level component of the quotation placed on the tempter's lips in Matthew 4:6.",
+        "limitation": "This is one continuous quotation episode with Psalm 91:11, not another independent temptation. Read the original promise and Jesus' reply in context; it must not be interpreted as approval of self-endangerment.",
+        "reviewedOn": "2026-11-20",
+        "sources": [
+          {
+            "title": "Psalm 91 - USCCB chapter",
+            "publisher": "USCCB",
+            "url": "https://bible.usccb.org/bible/psalms/91",
+            "locator": "91:11-12"
+          },
+          {
+            "title": "Matthew 4 - USCCB chapter",
+            "publisher": "USCCB",
+            "url": "https://bible.usccb.org/bible/matthew/4",
+            "locator": "4:6-7, including the rejection of the proposed test"
+          }
+        ]
+      },
+      {
+        "id": "xr017",
+        "from": "Isaiah 9:1",
+        "to": "Matthew 4:15",
+        "kind": "adapted-quotation",
+        "summary": "Matthew cites the geographical notice of Zebulun, Naphtali and Galilee from Isaiah while introducing the setting of Jesus' ministry.",
+        "limitation": "The source is Isaiah 9:1 in common Protestant numbering but Isaiah 8:23 in NABRE/USCCB. The geographical framing is adapted and does not independently establish a particular historical route or itinerary.",
+        "reviewedOn": "2026-11-20",
+        "sources": [
+          {
+            "title": "Isaiah 8 - USCCB chapter",
+            "publisher": "USCCB",
+            "url": "https://bible.usccb.org/bible/isaiah/8",
+            "locator": "8:23 in NABRE/USCCB; 9:1 in common Protestant numbering"
+          },
+          {
+            "title": "Matthew 4 - USCCB chapter",
+            "publisher": "USCCB",
+            "url": "https://bible.usccb.org/bible/matthew/4",
+            "locator": "4:12-15, introduced as fulfilment of Isaiah"
+          }
+        ]
+      },
+      {
+        "id": "xr018",
+        "from": "Isaiah 9:2",
+        "to": "Matthew 4:16",
+        "kind": "quotation",
+        "summary": "Matthew applies Isaiah's light appearing to people in darkness to Jesus' Galilean ministry and explicitly associates this narrative setting with Isaiah.",
+        "limitation": "The quoted line is Isaiah 9:2 in common Protestant numbering but Isaiah 9:1 in NABRE/USCCB. Isaiah speaks in a northern-territory oracle; Matthew's application is a later Christological use, not a dated map.",
+        "reviewedOn": "2026-11-20",
+        "sources": [
+          {
+            "title": "Isaiah 9 - USCCB chapter",
+            "publisher": "USCCB",
+            "url": "https://bible.usccb.org/bible/isaiah/9",
+            "locator": "9:1 in NABRE/USCCB; 9:2 in common Protestant numbering"
+          },
+          {
+            "title": "Matthew 4 - USCCB chapter",
+            "publisher": "USCCB",
+            "url": "https://bible.usccb.org/bible/matthew/4",
+            "locator": "4:15-16, light in the darkness"
+          }
+        ]
+      },
+      {
+        "id": "xr019",
+        "from": "Joel 2:30",
+        "to": "Acts 2:19",
+        "kind": "quotation",
+        "summary": "Peter's Pentecost speech explicitly quotes the prophet Joel, including signs in heaven and on earth as part of the larger account of the Spirit's outpouring.",
+        "limitation": "This verse is one component of Acts 2:16-21 and not a separate quotation event. The full day-of-the-Lord oracle remains in view; Joel 2:30 in common Protestant numbering is Joel 3:3 in NABRE/USCCB.",
+        "reviewedOn": "2026-11-20",
+        "sources": [
+          {
+            "title": "Joel 3 - USCCB chapter",
+            "publisher": "USCCB",
+            "url": "https://bible.usccb.org/bible/joel/3",
+            "locator": "3:3 in NABRE/USCCB; 2:30 in common Protestant numbering"
+          },
+          {
+            "title": "Acts 2 - USCCB chapter",
+            "publisher": "USCCB",
+            "url": "https://bible.usccb.org/bible/acts/2",
+            "locator": "2:16-21, including 2:19"
+          }
+        ]
+      },
+      {
+        "id": "xr020",
+        "from": "Joel 2:32",
+        "to": "Acts 2:21",
+        "kind": "quotation",
+        "summary": "Acts concludes Peter's Joel quotation with the promise concerning those who call upon the Lord, placed within his proclamation at Pentecost.",
+        "limitation": "The original Joel passage also speaks of Zion and the day of the Lord; it cannot be reduced to a claim that every sign was finished at Pentecost. Joel 2:32 in common Protestant numbering is Joel 3:5 in NABRE/USCCB.",
+        "reviewedOn": "2026-11-20",
+        "sources": [
+          {
+            "title": "Joel 3 - USCCB chapter",
+            "publisher": "USCCB",
+            "url": "https://bible.usccb.org/bible/joel/3",
+            "locator": "3:5 in NABRE/USCCB; 2:32 in common Protestant numbering"
+          },
+          {
+            "title": "Acts 2 - USCCB chapter",
+            "publisher": "USCCB",
+            "url": "https://bible.usccb.org/bible/acts/2",
+            "locator": "2:21, concluding the Joel quotation"
+          }
+        ]
+      },
+      {
+        "id": "xr021",
+        "from": "Psalm 16:8",
+        "to": "Acts 2:25",
+        "kind": "quotation",
+        "summary": "Peter introduces a Davidic passage and quotes Psalm 16:8-11 in his Pentecost address, subsequently applying the passage to Jesus' resurrection.",
+        "limitation": "Psalm 16 originally expresses the speaker's dependence on God, whereas Acts uses it in a Christological argument. This pair does not identify Peter's exact textual exemplar or duplicate the already explained Psalm 16:10 and Acts 2:27 pair.",
+        "reviewedOn": "2026-11-20",
+        "sources": [
+          {
+            "title": "Psalm 16 - USCCB chapter",
+            "publisher": "USCCB",
+            "url": "https://bible.usccb.org/bible/psalms/16",
+            "locator": "16:8-11, beginning at 16:8"
+          },
+          {
+            "title": "Acts 2 - USCCB chapter",
+            "publisher": "USCCB",
+            "url": "https://bible.usccb.org/bible/acts/2",
+            "locator": "2:25-28, beginning at 2:25"
+          }
+        ]
+      },
+      {
+        "id": "xr022",
+        "from": "Psalm 16:9",
+        "to": "Acts 2:26",
+        "kind": "quotation",
+        "summary": "Peter's quoted Psalm continues with rejoicing and hope, within the larger argument about David and the resurrection in Acts 2.",
+        "limitation": "Acts reflects Greek wording involving the tongue, while Hebrew-based renderings of Psalm 16:9 often refer to glory or the whole being. This classification does not independently collate manuscripts or establish a single original-language exemplar.",
+        "reviewedOn": "2026-11-20",
+        "sources": [
+          {
+            "title": "Psalm 16 - USCCB chapter",
+            "publisher": "USCCB",
+            "url": "https://bible.usccb.org/bible/psalms/16",
+            "locator": "16:9, Hebrew and Greek wording to be distinguished"
+          },
+          {
+            "title": "Acts 2 - USCCB chapter",
+            "publisher": "USCCB",
+            "url": "https://bible.usccb.org/bible/acts/2",
+            "locator": "2:26 in the continuing Psalm 16 citation"
+          }
+        ]
+      },
+      {
+        "id": "xr023",
+        "from": "Psalm 16:11",
+        "to": "Acts 2:28",
+        "kind": "quotation",
+        "summary": "Acts completes its explicit quotation of Psalm 16 with the paths-of-life and divine-presence language at the end of Peter's extended citation.",
+        "limitation": "This is the conclusion of one continuous Psalm 16 quotation, not an independent prophecy in the earlier psalm. Language variation and the later resurrection application remain separate questions, and Psalm 16:10 already has a full explanation.",
+        "reviewedOn": "2026-11-20",
+        "sources": [
+          {
+            "title": "Psalm 16 - USCCB chapter",
+            "publisher": "USCCB",
+            "url": "https://bible.usccb.org/bible/psalms/16",
+            "locator": "16:11 in the original psalm"
+          },
+          {
+            "title": "Acts 2 - USCCB chapter",
+            "publisher": "USCCB",
+            "url": "https://bible.usccb.org/bible/acts/2",
+            "locator": "2:28, close of the citation"
+          }
+        ]
+      },
+      {
+        "id": "xr024",
+        "from": "Isaiah 61:2",
+        "to": "Luke 4:19",
+        "kind": "adapted-quotation",
+        "summary": "Luke's account of Jesus reading in the Nazareth synagogue includes the proclamation of a year of divine favour from Isaiah 61:2.",
+        "limitation": "The reading does not continue with Isaiah's subsequent day-of-vindication language and Luke 4:18-19 also draws upon Isaiah 58:6. The selection is clear, but its motive and exact textual exemplar are not established by this citation alone.",
+        "reviewedOn": "2026-11-20",
+        "sources": [
+          {
+            "title": "Isaiah 61 - USCCB chapter",
+            "publisher": "USCCB",
+            "url": "https://bible.usccb.org/bible/isaiah/61",
+            "locator": "61:1-2, including the wording beyond the favourable year"
+          },
+          {
+            "title": "Luke 4 - USCCB chapter",
+            "publisher": "USCCB",
+            "url": "https://bible.usccb.org/bible/luke/4",
+            "locator": "4:16-21, especially 4:19"
           }
         ]
       }
