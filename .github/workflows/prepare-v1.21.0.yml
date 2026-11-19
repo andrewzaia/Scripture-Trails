@@ -10,7 +10,6 @@ permissions:
 
 jobs:
   prepare-release:
-    if: ${{ github.event.head_commit.message == 'ci(release): run official v1.21.0 generator' }}
     runs-on: ubuntu-26.04
     timeout-minutes: 20
     steps:
