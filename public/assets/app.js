@@ -373,6 +373,7 @@ async function renderAtlasPreview(reference){
  }finally{if(fresh())content.setAttribute('aria-busy','false');}
 }
 let atlasFullscreenActive=false;
+let atlasToolbarObserver=null;
 function atlasIsFullscreen(){
  const workspace=$('atlas-workspace');
  return document.fullscreenElement===workspace||workspace.classList.contains('atlas-fullscreen-fallback');
@@ -384,6 +385,12 @@ function setAtlasDetailsVisible(visible){
  details.setAttribute('aria-hidden',String(atlasIsFullscreen()&&!visible));
  const toggle=$('graph-details-toggle');toggle.setAttribute('aria-expanded',String(visible));
  toggle.textContent=visible?'Hide details':'Show details';
+}
+function syncAtlasToolbarOffset(){
+ if(!atlasIsFullscreen())return;
+ const workspace=$('atlas-workspace'),toolbar=workspace.querySelector('.graph-toolbar');
+ const bottom=toolbar.getBoundingClientRect().bottom-workspace.getBoundingClientRect().top;
+ workspace.style.setProperty('--atlas-toolbar-bottom',`${Math.max(0,Math.ceil(bottom))}px`);
 }
 function syncAtlasFullscreen(){
  const workspace=$('atlas-workspace'),active=atlasIsFullscreen();
@@ -402,7 +409,7 @@ function syncAtlasFullscreen(){
  $('graph-fullscreen').textContent=active?'Exit full screen':'Full screen';
  $('graph-fullscreen').setAttribute('aria-pressed',String(active));
  document.body.classList.toggle('atlas-fullscreen-lock',workspace.classList.contains('atlas-fullscreen-fallback'));
- requestAnimationFrame(()=>state.graph?.resize());
+ requestAnimationFrame(()=>{syncAtlasToolbarOffset();state.graph?.resize();});
 }
 async function exitAtlasFullscreen(){
  const workspace=$('atlas-workspace');
@@ -421,9 +428,12 @@ async function toggleAtlasFullscreen(){
 }
 function initAtlasFullscreen(){
  $('graph-fullscreen').addEventListener('click',()=>void toggleAtlasFullscreen());
- $('graph-fullscreen-exit').addEventListener('click',()=>void exitAtlasFullscreen());
  $('graph-details-toggle').addEventListener('click',()=>setAtlasDetailsVisible(!$('atlas-workspace').classList.contains('atlas-details-open')));
- $('graph-details-close').addEventListener('click',()=>{setAtlasDetailsVisible(false);$('graph-details-toggle').focus({preventScroll:true});});
+ if(typeof ResizeObserver==='function'){
+  atlasToolbarObserver=new ResizeObserver(syncAtlasToolbarOffset);
+  atlasToolbarObserver.observe($('graph-panel').querySelector('.graph-toolbar'));
+ }
+ window.addEventListener('resize',syncAtlasToolbarOffset);
  document.addEventListener('fullscreenchange',syncAtlasFullscreen);
  document.addEventListener('keydown',event=>{if(event.key==='Escape'&&atlasIsFullscreen()){event.preventDefault();void exitAtlasFullscreen();}});
 }
