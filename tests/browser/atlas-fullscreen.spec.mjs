@@ -19,6 +19,9 @@ test('Atlas fullscreen preserves the passage preview, evidence sidebar, controls
  await open(page,'connections','John 1:1');
  await expect(page.locator('#atlas-preview-content')).toContainText('John 1:1 in ESV');
  await enterImmersive(page);await showDetails(page);
+ await expect(page.locator('.atlas-sidebar-actions')).toHaveCount(0);
+ await expect(page.locator('#graph-details-toggle')).toBeVisible();
+ await expect(page.locator('#graph-fullscreen')).toBeVisible();
  await expect(page.locator('#graph-info-ref')).toHaveText('John 1:1');
  const row=page.locator('#graph-details-list .atlas-reference-row').filter({has:page.getByRole('button',{name:/Genesis 1:1/})}).first();
  await expect(row).toBeVisible();
@@ -32,15 +35,19 @@ test('Atlas fullscreen preserves the passage preview, evidence sidebar, controls
  await expect(page.locator('#atlas-compare [data-compare="left-passage"]')).toContainText('Synthetic browser fixture');
  await page.locator('#atlas-compare [data-compare="close"]').click();
  const compact=await page.evaluate(()=>matchMedia('(max-width:850px)').matches);
- if(compact)await page.locator('#graph-details-close').click();
- else await page.locator('#graph-details-toggle').click();
+ if(compact)await expect.poll(async()=>{
+  const toolbar=await page.locator('#graph-panel .graph-toolbar').boundingBox();
+  const sidebar=await page.locator('#graph-details').boundingBox();
+  return sidebar.y-toolbar.y-toolbar.height;
+ }).toBeGreaterThanOrEqual(-1);
+ await page.locator('#graph-details-toggle').click();
  await expect(page.locator('#graph-details-toggle')).toHaveAttribute('aria-expanded','false');
  await expect(page.locator('#graph-details')).toBeHidden();
  const dimensions=await page.locator('#graph-canvas').boundingBox();
  expect(dimensions.width).toBeGreaterThan(200);
  expect(dimensions.height).toBeGreaterThan(120);
  await page.locator('#graph-details-toggle').click();await showDetails(page);
- await page.locator('#graph-fullscreen-exit').click();
+ await page.locator('#graph-fullscreen').click();
  await expect(page.locator('#graph-fullscreen')).toHaveAttribute('aria-pressed','false');
  await expect(page.locator('#graph-panel #atlas-preview-panel')).toHaveCount(1);
  await expect(page.locator('#view-connections > #atlas-compare')).toHaveCount(1);

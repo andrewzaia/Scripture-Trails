@@ -448,7 +448,7 @@ body.light .pc-legend-level[data-level="0"]{background:#d4dfd8;color:#243b39}
 @media(max-width:470px){.persecution-case-header.has-media{grid-template-columns:105px minmax(0,1fr);gap:10px}.persecution-photo-credit{font-size:8.5px}.persecution-case-header.has-media h3{font-size:19px}}
 
 /* Atlas immersive viewing: native fullscreen with a fixed-position fallback for browsers without element fullscreen. */
-.atlas-details-toggle,.atlas-details-close{display:none}
+.atlas-details-toggle{display:none}
 .graph-layout:is(:fullscreen,.atlas-fullscreen-fallback){position:fixed;inset:0;z-index:150;display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,370px);grid-template-rows:minmax(0,1fr);gap:12px;width:100%;height:100vh;height:100dvh;max-width:none;margin:0;padding:12px;overflow:hidden;align-items:stretch;background:var(--bg);color:var(--ink)}
 .graph-layout:is(:fullscreen,.atlas-fullscreen-fallback):not(.atlas-details-open){grid-template-columns:minmax(0,1fr)}
 .graph-layout:is(:fullscreen,.atlas-fullscreen-fallback):not(.atlas-details-open)>.graph-details{display:none}
@@ -469,12 +469,11 @@ body.light .pc-legend-level[data-level="0"]{background:#d4dfd8;color:#243b39}
 .graph-layout:is(:fullscreen,.atlas-fullscreen-fallback) .atlas-comparison-column{padding:11px}
 .graph-layout:is(:fullscreen,.atlas-fullscreen-fallback) .atlas-comparison-bar select{min-width:0;max-width:100%}
 .graph-layout:is(:fullscreen,.atlas-fullscreen-fallback) .atlas-details-toggle{display:inline-flex}
-.graph-layout:is(:fullscreen,.atlas-fullscreen-fallback) .atlas-details-close{display:block;position:sticky;top:0;z-index:5;margin:0 0 12px auto;background:var(--surface2);border:1px solid var(--line)}
 body.atlas-fullscreen-lock{overflow:hidden}
 body.atlas-fullscreen-lock .active-view{animation:none;transform:none}
 @media(max-width:850px){
  .graph-layout:is(:fullscreen,.atlas-fullscreen-fallback){grid-template-columns:minmax(0,1fr);position:fixed;padding:8px;gap:0}
- .graph-layout:is(:fullscreen,.atlas-fullscreen-fallback)>.graph-details{position:absolute;z-index:20;top:0;right:0;bottom:0;width:min(92vw,390px);max-height:100%;border-left:1px solid var(--line);box-shadow:-16px 0 45px #0008}
+ .graph-layout:is(:fullscreen,.atlas-fullscreen-fallback)>.graph-details{position:absolute;z-index:20;top:var(--atlas-toolbar-bottom,0px);right:0;bottom:0;width:min(92vw,390px);height:auto;max-height:none;border-top:1px solid var(--line);border-left:1px solid var(--line);box-shadow:-16px 0 45px #0008}
  .graph-layout:is(:fullscreen,.atlas-fullscreen-fallback) .graph-toolbar{padding:9px 12px}
  .graph-layout:is(:fullscreen,.atlas-fullscreen-fallback) .graph-legend{gap:6px;padding:7px 10px;font-size:9px}
 }
@@ -485,8 +484,3 @@ body.atlas-fullscreen-lock .active-view{animation:none;transform:none}
  .graph-layout:is(:fullscreen,.atlas-fullscreen-fallback) .graph-canvas-wrap{min-height:0}
 }
 
-/* Sidebar controls stay reachable when the compact details drawer covers the graph toolbar. */
-.atlas-sidebar-actions{display:none}
-.graph-layout:is(:fullscreen,.atlas-fullscreen-fallback) .atlas-sidebar-actions{display:flex;position:sticky;top:0;z-index:25;align-items:center;justify-content:flex-end;gap:8px;padding:7px 0 10px;background:var(--surface)}
-.graph-layout:is(:fullscreen,.atlas-fullscreen-fallback) .atlas-sidebar-actions .atlas-details-close{display:inline-flex;position:static;margin:0}
-.graph-layout:is(:fullscreen,.atlas-fullscreen-fallback) .atlas-sidebar-actions .atlas-fullscreen-exit{display:inline-flex;align-items:center;background:var(--surface2);border:1px solid var(--line)}

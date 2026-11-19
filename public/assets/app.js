@@ -1,26 +1,26 @@
-import {appendCitationReview,renderCitationSummary,importedQuotationReview,IMPORTED_QUOTATION_KINDS,appendImportedQuotationReview} from './citation-review.js?v=1.20.0';
-import {PERSON_TRAILS,findPersonTrails} from './person-trails.js?v=1.20.0';
-import {createStudyCollections} from './study-collections.js?v=1.20.0';
-import {createAnnotations,applyHighlights,canonicalVerse,validateAnnotations,emptyAnnotations} from './annotations.js?v=1.20.0';
-import {renderReadingPlan} from './reading-plans.js?v=1.20.0';
-import {createNotebookBackup,persistNotebook,inspectNotebookStorage,replaceUnreadableNotebook,safeBrowserStorage} from './notebook-backup.js?v=1.20.0';
+import {appendCitationReview,renderCitationSummary,importedQuotationReview,IMPORTED_QUOTATION_KINDS,appendImportedQuotationReview} from './citation-review.js?v=1.20.1';
+import {PERSON_TRAILS,findPersonTrails} from './person-trails.js?v=1.20.1';
+import {createStudyCollections} from './study-collections.js?v=1.20.1';
+import {createAnnotations,applyHighlights,canonicalVerse,validateAnnotations,emptyAnnotations} from './annotations.js?v=1.20.1';
+import {renderReadingPlan} from './reading-plans.js?v=1.20.1';
+import {createNotebookBackup,persistNotebook,inspectNotebookStorage,replaceUnreadableNotebook,safeBrowserStorage} from './notebook-backup.js?v=1.20.1';
 import {BOOKS,findBook,parseRef,referenceFor,chapterRef,adjacentChapter,readerScope} from './books.js';
-import {PATHS,EDITORIAL_LINKS} from './studies.js?v=1.20.0';
-import {ScriptureGraph} from './graph.js?v=1.20.0';
-import {createJesusMap} from './jesus-map.js?v=1.20.0';
-import {createPaulMap} from './paul-map.js?v=1.20.0';
-import {createHebrewGeography} from './hebrew-geography.js?v=1.20.0';
-import {createRoadmap} from './roadmap.js?v=1.20.0';
-import {createCityStudies} from './city-studies.js?v=1.20.0';
-import {createEntityIndex} from './entity-index.js?v=1.20.0';
+import {PATHS,EDITORIAL_LINKS} from './studies.js?v=1.20.1';
+import {ScriptureGraph} from './graph.js?v=1.20.1';
+import {createJesusMap} from './jesus-map.js?v=1.20.1';
+import {createPaulMap} from './paul-map.js?v=1.20.1';
+import {createHebrewGeography} from './hebrew-geography.js?v=1.20.1';
+import {createRoadmap} from './roadmap.js?v=1.20.1';
+import {createCityStudies} from './city-studies.js?v=1.20.1';
+import {createEntityIndex} from './entity-index.js?v=1.20.1';
 import {buildAtlas} from './atlas-paths.js';
-import {initPublicReleases} from './release-notes.js?v=1.20.0';
+import {initPublicReleases} from './release-notes.js?v=1.20.1';
 import {maxDatasetVotes,relativeVoteBars} from './atlas-strength.js';
-import {CONNECTION_EVIDENCE,CONNECTION_KINDS,explainConnection,REVIEW_LABELS} from './connection-evidence.js?v=1.20.0';
-import {createPassageComparison} from './atlas-comparison.js?v=1.20.0';
-import {createReaderAudio} from './reader-audio.js?v=1.20.0';
-import {createScripturePreviews} from './scripture-previews.js?v=1.20.0';
-import {createPersecutionCatalogue} from './persecution-catalogue.js?v=1.20.0';
+import {CONNECTION_EVIDENCE,CONNECTION_KINDS,explainConnection,REVIEW_LABELS} from './connection-evidence.js?v=1.20.1';
+import {createPassageComparison} from './atlas-comparison.js?v=1.20.1';
+import {createReaderAudio} from './reader-audio.js?v=1.20.1';
+import {createScripturePreviews} from './scripture-previews.js?v=1.20.1';
+import {createPersecutionCatalogue} from './persecution-catalogue.js?v=1.20.1';
 import {TRANSLATIONS,getTranslation} from './translations.js';
 import {reportScriptureView} from './fums.js';
 import {TRANSLATION_STATUS,statusForResponse} from './translation-status.js?v=20261027-indicators';
@@ -373,6 +373,7 @@ async function renderAtlasPreview(reference){
  }finally{if(fresh())content.setAttribute('aria-busy','false');}
 }
 let atlasFullscreenActive=false;
+let atlasToolbarObserver=null;
 function atlasIsFullscreen(){
  const workspace=$('atlas-workspace');
  return document.fullscreenElement===workspace||workspace.classList.contains('atlas-fullscreen-fallback');
@@ -384,6 +385,12 @@ function setAtlasDetailsVisible(visible){
  details.setAttribute('aria-hidden',String(atlasIsFullscreen()&&!visible));
  const toggle=$('graph-details-toggle');toggle.setAttribute('aria-expanded',String(visible));
  toggle.textContent=visible?'Hide details':'Show details';
+}
+function syncAtlasToolbarOffset(){
+ if(!atlasIsFullscreen())return;
+ const workspace=$('atlas-workspace'),toolbar=workspace.querySelector('.graph-toolbar');
+ const bottom=toolbar.getBoundingClientRect().bottom-workspace.getBoundingClientRect().top;
+ workspace.style.setProperty('--atlas-toolbar-bottom',`${Math.max(0,Math.ceil(bottom))}px`);
 }
 function syncAtlasFullscreen(){
  const workspace=$('atlas-workspace'),active=atlasIsFullscreen();
@@ -402,7 +409,7 @@ function syncAtlasFullscreen(){
  $('graph-fullscreen').textContent=active?'Exit full screen':'Full screen';
  $('graph-fullscreen').setAttribute('aria-pressed',String(active));
  document.body.classList.toggle('atlas-fullscreen-lock',workspace.classList.contains('atlas-fullscreen-fallback'));
- requestAnimationFrame(()=>state.graph?.resize());
+ requestAnimationFrame(()=>{syncAtlasToolbarOffset();state.graph?.resize();});
 }
 async function exitAtlasFullscreen(){
  const workspace=$('atlas-workspace');
@@ -421,9 +428,12 @@ async function toggleAtlasFullscreen(){
 }
 function initAtlasFullscreen(){
  $('graph-fullscreen').addEventListener('click',()=>void toggleAtlasFullscreen());
- $('graph-fullscreen-exit').addEventListener('click',()=>void exitAtlasFullscreen());
  $('graph-details-toggle').addEventListener('click',()=>setAtlasDetailsVisible(!$('atlas-workspace').classList.contains('atlas-details-open')));
- $('graph-details-close').addEventListener('click',()=>{setAtlasDetailsVisible(false);$('graph-details-toggle').focus({preventScroll:true});});
+ if(typeof ResizeObserver==='function'){
+  atlasToolbarObserver=new ResizeObserver(syncAtlasToolbarOffset);
+  atlasToolbarObserver.observe($('graph-panel').querySelector('.graph-toolbar'));
+ }
+ window.addEventListener('resize',syncAtlasToolbarOffset);
  document.addEventListener('fullscreenchange',syncAtlasFullscreen);
  document.addEventListener('keydown',event=>{if(event.key==='Escape'&&atlasIsFullscreen()){event.preventDefault();void exitAtlasFullscreen();}});
 }
