@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.20.1 - 19/11/2026: Streamlined fullscreen Atlas controls
+
+- Removed the duplicate Close details and Exit full screen buttons from the Atlas sidebar; the existing graph toolbar remains the single place for these actions.
+- Kept the fullscreen graph toolbar accessible above the details drawer on narrow screens, including when its height changes.
+
 ## 1.20.0 - 18/11/2026: Immersive connection Atlas and focused Scripture previews
 
 - Introduced an immersive, full-screen Connection Atlas with a dedicated scrollable sidebar for passage previews, source explanations, comparison, filtering and navigation.
