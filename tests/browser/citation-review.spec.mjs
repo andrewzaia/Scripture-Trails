@@ -181,9 +181,9 @@ test('textual-source follow-ups show citations and replace stale About research 
 test('About and Atlas expose first-pass imported Scripture quotations without claiming full explanation',async({page})=>{
  test.setTimeout(90000);
  await open(page,'about');
- await expect(page.locator('#citation-review-summary')).toContainText('14 additional imported Atlas pairs');
- await expect(page.locator('#citation-review-summary')).toContainText('301,378 remain without either level');
- const group=page.locator('.citation-review-group').filter({has:page.getByText('Imported Scripture quotation reviews (14)',{exact:true})});
+ await expect(page.locator('#citation-review-summary')).toContainText('24 additional imported Atlas pairs');
+ await expect(page.locator('#citation-review-summary')).toContainText('301,368 remain without either level');
+ const group=page.locator('.citation-review-group').filter({has:page.getByText('Imported Scripture quotation reviews (24)',{exact:true})});
  await group.locator('> summary').click();
  await expect(group.locator('article')).toHaveCount(14);
  const article=group.locator('article').filter({has:page.getByRole('heading',{name:'Psalms 104:4 and Hebrews 1:7',exact:true})});
