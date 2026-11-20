@@ -143,6 +143,7 @@ def syriac_book(book):
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
     redirects, ambiguous = verse_map()
+    relocated_targets = set(redirects.values())
     hebrew_books = BOOKS[:39]
     with ThreadPoolExecutor(max_workers=5) as pool:
         result = list(pool.map(wlc_book, hebrew_books))
@@ -153,6 +154,13 @@ def main():
                            "editionNote": "Includes Biblical Aramaic where present in Ezra and Daniel.",
                            "chapters": {}, "superscriptions": {}}
         for native, text in verses.items():
+            # The WLC may have a heading or split source verse at a KJV target
+            # occupied by a different mapped source verse. Never overwrite it.
+            if native not in redirects and native in relocated_targets:
+                if code == "Ps" and native.endswith(".1"):
+                    part = native.split(".")
+                    originals[code]["superscriptions"][part[1]] = text
+                continue
             english = redirects.get(native, native)
             if native in ambiguous or english in ambiguous:
                 continue  # A partial alignment must not be presented as a full verse.
@@ -167,8 +175,13 @@ def main():
                 continue
             chapter_data = record["chapters"].setdefault(chapter, {})
             if verse in chapter_data and chapter_data[verse] != text:
-                collisions.append(english)
-                del chapter_data[verse]
+                # Four Psalms split the English first verse into two source
+                # verses. Both parts must appear, in native source order.
+                if code == "Ps" and native in redirects:
+                    chapter_data[verse] += " " + text
+                else:
+                    collisions.append(english)
+                    del chapter_data[verse]
             else:
                 chapter_data[verse] = text
     if collisions:
