@@ -20,7 +20,7 @@ export function verseScriptLanguage(reference,verse){
  if(parsed.book.index>=39)return 'syc';
  const chapter=parsed.chapter,n=Number(verse),book=parsed.book.abbr;
  if(book==='Dan'&&(chapter>2&&chapter<8||chapter===2&&n>=4))return 'arc';
- if(book==='Ezra'&&(chapter>=5&&chapter<=6||chapter===4&&n>=8||chapter===7&&n>=12&&n<=26))return 'arc';
+ if(book==='Ezra'&&(chapter===5||chapter===6&&n<=18||chapter===4&&n>=8||chapter===7&&n>=12&&n<=26))return 'arc';
  return 'he';
 }
 async function getBook(slug){
