@@ -71,7 +71,7 @@ export async function showOriginalPassage(container,reference,{wrapEnglish=true,
   const data=await getBook(ref.book.abbr.toLowerCase());
   if(!valid())return;
   lines.replaceChildren();
-  heading.querySelector('small').textContent=language.code==='syc'?(data.editionNote?'Later Syriac NT tradition (SEDRA 3.0)':'Peshitta (SEDRA 3.0)'):(data.source||language.source);
+  heading.querySelector('small').textContent=data.source||language.source;
   if(ref.verse===null&&data.superscriptions?.[String(ref.chapter)]){
    lines.append(make('p','original-superscription',data.superscriptions[String(ref.chapter)]));
   }
@@ -88,7 +88,7 @@ export async function showOriginalPassage(container,reference,{wrapEnglish=true,
   if(!verses.length)lines.append(make('p','original-scripture-status','No verse-aligned text is available for this chapter.'));
   if(data.editionNote)sourcePanel.append(make('p','original-edition-note',data.editionNote));
   const link=make('a','original-source-link','Source and licensing');
-  link.href=language.code==='he'?'https://github.com/openscriptures/morphhb':'https://github.com/ETCBC/syrnt';
+  link.href=language.code==='he'?'https://github.com/openscriptures/morphhb':'https://ftp.crosswire.org/sword/modules/ModInfo.jsp?modName=Peshitta';
   link.target='_blank';link.rel='noopener noreferrer';
   sourcePanel.append(link);
  }catch(error){
