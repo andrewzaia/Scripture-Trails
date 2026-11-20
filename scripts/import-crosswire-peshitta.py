@@ -56,3 +56,5 @@ def main(path):
  manifest_path.write_text(json.dumps(manifest,indent=2,ensure_ascii=False)+"\n")
  print("Imported 27 books, 7956 verse entries")
 if __name__=="__main__":main(sys.argv[1])
+
+# Automated migration workflow trigger.
