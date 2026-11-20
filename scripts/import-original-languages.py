@@ -88,7 +88,7 @@ def verse_map():
         if kind == "full":
             redirects[native] = english
         else:
-            ambiguous.update((native, english))
+            ambiguous.update((native.split('!')[0], english.split('!')[0]))
     return redirects, ambiguous
 
 
