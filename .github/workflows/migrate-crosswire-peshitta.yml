@@ -46,13 +46,15 @@ jobs:
           s=s.replace("assert.ok(['he','syc'].includes(data.language));","assert.ok(['he','syc'].includes(data.language));\n  if(data.language==='syc')assert.match(data.source,/CrossWire Peshitta.*1905/);")
           p.write_text(s)
           PY
-      - name: Verify corpus and build
-        env:
-          GITHUB_BASE_REF: main
+      - name: Verify imported corpus before committing PR changes
         run: |
           npm ci
           npm test
-          npm run build
+          npm run check:refs
+          npm run check:stats
+          npm run check:v1
+      # The PR validation workflow runs npm run build, including the mandatory
+      # release-history check, against the committed migration and target branch.
       - name: Commit verified migration
         run: |
           git config user.name "github-actions[bot]"
