@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync,readdirSync} from 'node:fs';
 import {createHash} from 'node:crypto';
-import {originalLanguageFor,verseScriptLanguage,originalVerseSelection} from '../public/assets/original-languages.js';
+import {originalLanguageFor,verseScriptLanguage,originalVerseSelection,originalPassageLanguageLabel} from '../public/assets/original-languages.js';
 
 test('the Old Testament shows Hebrew, and the New Testament shows Syriac Aramaic',()=>{
  assert.equal(originalLanguageFor('Genesis 1:1').code,'he');
@@ -13,6 +13,20 @@ test('the Old Testament shows Hebrew, and the New Testament shows Syriac Aramaic
  assert.equal(verseScriptLanguage('Ezra 6:18',18),'arc');
  assert.equal(verseScriptLanguage('Ezra 6:19',19),'he');
  assert.equal(verseScriptLanguage('Genesis 1:1',1),'he');
+});
+test('selected Hebrew Bible passages are labelled Hebrew, Aramaic, or mixed accurately',()=>{
+ const one=(number,text='source text')=>[{number,text}];
+ assert.equal(originalPassageLanguageLabel('Genesis 1:1',one(1)),'Biblical Hebrew');
+ assert.equal(originalPassageLanguageLabel('John 1:1',one(1)),'Syriac Aramaic');
+ assert.equal(originalPassageLanguageLabel('Daniel 3:1',one(1)),'Biblical Aramaic');
+ assert.equal(originalPassageLanguageLabel('Ezra 4:8',one(8)),'Biblical Aramaic');
+ assert.equal(originalPassageLanguageLabel('Jeremiah 10:11',one(11)),'Biblical Aramaic');
+ assert.equal(originalPassageLanguageLabel('Daniel 2:4',one(4)),'Biblical Hebrew and Aramaic');
+ assert.equal(originalPassageLanguageLabel('Genesis 31:47',one(47)),'Biblical Hebrew and Aramaic');
+ assert.equal(originalPassageLanguageLabel('Ezra 6:18-19',[{number:18,text:'Aramaic'},{number:19,text:'Hebrew'}]),'Biblical Hebrew and Aramaic');
+ assert.equal(originalPassageLanguageLabel('Ezra 6:18-19',[{number:18,text:null},{number:19,text:'Hebrew'}]),'Biblical Hebrew');
+ assert.equal(verseScriptLanguage('Jeremiah 10:11',11),'arc');
+ assert.equal(verseScriptLanguage('Jeremiah 10:12',12),'he');
 });
 test('a one-verse or chapter request selects only the requested source lines',()=>{
  const data={chapters:{'1':{'1':'one','2':'two','3':'three'}}};
