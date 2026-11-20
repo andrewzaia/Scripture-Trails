@@ -14,9 +14,7 @@ from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 WLC_COMMIT = "db6c5c9b46b8f39346f10915ddb1a70dcd429901"
-SYRNT_COMMIT = "dae3eb6ff62b9b272fb503646796c25d248175ce"
 WLC_BASE = "https://raw.githubusercontent.com/openscriptures/morphhb/" + WLC_COMMIT + "/wlc/"
-SYRNT_BASE = "https://raw.githubusercontent.com/ETCBC/syrnt/" + SYRNT_COMMIT + "/plain/0.1/"
 OSIS = "{http://www.bibletechnologies.net/2003/OSIS/namespace}"
 BOOKS = [
     ("Genesis","Gen"),("Exodus","Exod"),("Leviticus","Lev"),("Numbers","Num"),
@@ -108,38 +106,6 @@ def wlc_book(book):
     return name, code, verses
 
 
-def syriac_book(book):
-    name, code, filename = book
-    data = download(SYRNT_BASE + filename + ".txt")
-    chapters = {}
-    chapter = None
-    for raw in data.splitlines():
-        line = raw.strip()
-        heading = re.fullmatch(r"[\w]+\s+(\d+)", line)
-        if heading and not line[0].isdigit():
-            chapter = heading.group(1)
-            chapters.setdefault(chapter, {})
-            continue
-        # Numeric book headings such as '1Corinthians 1' also occur.
-        if heading and re.search(r"[A-Za-z]", line.split()[0]):
-            chapter = heading.group(1)
-            chapters.setdefault(chapter, {})
-            continue
-        verse = re.fullmatch(r"(\d+)\s+(.+)", line)
-        if verse and chapter:
-            text = verse.group(2).strip()
-            if re.search(r"[\u0700-\u074f]", text):
-                chapters[chapter][verse.group(1)] = text
-    if not chapters or not chapters.get("1", {}).get("1"):
-        raise ValueError("Missing Syriac text: " + name)
-    return code.lower(), {
-        "book": name, "language": "syc", "source": "SEDRA 3.0 Syriac New Testament",
-        "editionNote": ("Later Syriac textual tradition; outside the traditional 22-book Peshitta canon."
-                        if code in ("2Pet", "2John", "3John", "Jude", "Rev") else ""),
-        "chapters": chapters
-    }
-
-
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
     redirects, ambiguous = verse_map()
@@ -196,12 +162,6 @@ def main():
         (OUT / (code.lower() + ".json")).write_text(
             json.dumps(record, ensure_ascii=False, separators=(",", ":")) + "\n", encoding="utf-8"
         )
-    with ThreadPoolExecutor(max_workers=5) as pool:
-        syriac = list(pool.map(syriac_book, BOOKS[39:]))
-    for slug, record in syriac:
-        (OUT / (slug + ".json")).write_text(
-            json.dumps(record, ensure_ascii=False, separators=(",", ":")) + "\n", encoding="utf-8"
-        )
     expected = {book[1].lower() + ".json" for book in BOOKS}
     actual = {p.name for p in OUT.glob("*.json")}
     if actual != expected:
@@ -211,16 +171,21 @@ def main():
         data = json.loads((OUT / (slug + ".json")).read_text(encoding="utf-8"))
         if not data.get("chapters", {}).get(chapter, {}).get(verse):
             raise ValueError("Missing example alignment: " + slug + " " + chapter + ":" + verse)
+    previous_manifest_path = Path("sources/original-languages/manifest.json")
+    previous_manifest = json.loads(previous_manifest_path.read_text(encoding="utf-8")) if previous_manifest_path.exists() else {}
+    if not previous_manifest.get("sourceArchives", {}).get("crosswirePeshitta"):
+        raise ValueError("CrossWire Peshitta archive must be imported first; do not regenerate SEDRA-derived shards.")
     manifest = {
         "generatedAt": datetime.now(timezone.utc).date().isoformat(),
-        "sourceCommits": {"wlc": WLC_COMMIT, "syrnt": SYRNT_COMMIT},
+        "sourceCommits": {"wlc": WLC_COMMIT},
         "description": "Verse-aligned source-text snapshots; WLC uses its published KJV VerseMap where full equivalence exists.",
+        "sourceArchives": previous_manifest["sourceArchives"],
         "files": {p.name: hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(OUT.glob("*.json"))},
     }
     evidence = Path("sources/original-languages")
     evidence.mkdir(parents=True, exist_ok=True)
     (evidence / "manifest.json").write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
-    print("Imported 39 WLC and 27 Syriac books; checked mapped Psalms, Joel and Malachi examples.")
+    print("Imported 39 WLC books; retained existing CrossWire Peshitta shards.")
 
 
 if __name__ == "__main__":
