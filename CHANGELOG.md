@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.22.0 - 21/11/2026: Hebrew and Syriac Scripture alongside English
+
+- Read the Hebrew Old Testament and the Syriac Aramaic New Testament alongside the selected English edition.
+- Explore original-language passages in the Bible reader, Atlas passage preview, passage comparison and Scripture hover previews.
+- Provide locally hosted source editions, source attribution and Hebrew-to-English verse-number alignment.
+
 ## 1.21.0 - 20/11/2026: Broader Scripture quotation classifications
 
 - Classify ten additional source-linked imported Scripture quotation pairs across Psalm 91, Isaiah 9, Joel 2, Psalm 16 and Isaiah 61.
