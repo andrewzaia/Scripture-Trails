@@ -23,6 +23,7 @@ export function createPassageComparison(root,handlers={}){
    if(round!==revision||root.hidden)return;
    if(!response.ok||!Array.isArray(result.passages)||!result.passages.length||result.passages.some(x=>typeof x!=='string'))throw Error(result.message||'Could not load this passage.');
    body.replaceChildren(...result.passages.map(html=>handlers.sanitize(html)));
+    void handlers.original?.(body,ref,()=>round===revision&&!root.hidden);
    const provider=getTranslation(edition);
    status.textContent=edition+' via '+provider.provider;
    if(typeof result.copyright==='string'&&result.copyright.trim())copyright.append(handlers.sanitize(result.copyright));

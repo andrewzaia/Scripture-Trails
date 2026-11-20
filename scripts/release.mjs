@@ -21,6 +21,7 @@ if(!html.includes('/assets/app.js?v='+oldVersion)||!html.includes('/assets/style
 let nextApp=versionedImport(read(appPath),'entity-index.js?v='+oldVersion,'entity-index.js?v='+newVersion,'index module');
 nextApp=versionedImport(nextApp,'reader-audio.js?v='+oldVersion,'reader-audio.js?v='+newVersion,'ESV audio controller');
 nextApp=versionedImport(nextApp,'scripture-previews.js?v='+oldVersion,'scripture-previews.js?v='+newVersion,'Scripture hover previews');
+nextApp=versionedImport(nextApp,'original-languages.js?v='+oldVersion,'original-languages.js?v='+newVersion,'Hebrew and Syriac source-text renderer');
 nextApp=versionedImport(nextApp,'persecution-catalogue.js?v='+oldVersion,'persecution-catalogue.js?v='+newVersion,'Christians worldwide module');
 nextApp=versionedImport(nextApp,'graph.js?v='+oldVersion,'graph.js?v='+newVersion,'Atlas renderer');
 const nextGraph=versionedImport(read(graphPath),'atlas-shortest-path.js?v='+oldVersion,'atlas-shortest-path.js?v='+newVersion,'Atlas shortest path module');
