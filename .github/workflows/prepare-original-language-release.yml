@@ -32,10 +32,8 @@ jobs:
             "Provide locally hosted source editions, source attribution and Hebrew-to-English verse-number alignment."
       - name: Validate build, release history and test suite
         run: npm run build
-      - name: Install Chromium for targeted browser checks
-        run: npx playwright install --with-deps chromium
-      - name: Test Scripture reader, previews and Atlas in Chromium
-        run: npx playwright test tests/browser/scripture-previews.spec.mjs tests/browser/atlas-fullscreen.spec.mjs tests/browser/reader-sanitisation.spec.mjs --project=desktop-chromium
+      - name: Verify browser test discovery for the PR matrix
+        run: npx playwright test --list
       - name: Remove one-time release workflow and commit release
         run: |
           git rm .github/workflows/prepare-original-language-release.yml
