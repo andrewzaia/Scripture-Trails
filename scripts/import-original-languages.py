@@ -5,6 +5,8 @@ Run intentionally, then commit the generated files. No licensed English Bible te
 is fetched, cached or changed. Verse-map partial matches are not silently guessed.
 """
 import json
+import hashlib
+from datetime import datetime, timezone
 import re
 import urllib.request
 import xml.etree.ElementTree as ET
@@ -196,6 +198,15 @@ def main():
         data = json.loads((OUT / (slug + ".json")).read_text(encoding="utf-8"))
         if not data.get("chapters", {}).get(chapter, {}).get(verse):
             raise ValueError("Missing example alignment: " + slug + " " + chapter + ":" + verse)
+    manifest = {
+        "generatedAt": datetime.now(timezone.utc).date().isoformat(),
+        "sourceCommits": {"wlc": WLC_COMMIT, "syrnt": SYRNT_COMMIT},
+        "description": "Verse-aligned source-text snapshots; WLC uses its published KJV VerseMap where full equivalence exists.",
+        "files": {p.name: hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(OUT.glob("*.json"))},
+    }
+    evidence = Path("sources/original-languages")
+    evidence.mkdir(parents=True, exist_ok=True)
+    (evidence / "manifest.json").write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
     print("Imported 39 WLC and 27 Syriac books; checked mapped Psalms, Joel and Malachi examples.")
 
 
