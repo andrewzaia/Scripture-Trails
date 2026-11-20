@@ -5,6 +5,7 @@
 - Read the Hebrew Old Testament and the Syriac Aramaic New Testament alongside the selected English edition.
 - Explore original-language passages in the Bible reader, Atlas passage preview, passage comparison and Scripture hover previews.
 - Provide locally hosted source editions, source attribution and Hebrew-to-English verse-number alignment.
+- Identify Biblical Aramaic passages in Ezra, Daniel and Jeremiah, and label passages containing Hebrew and Aramaic accurately.
 
 ## 1.21.0 - 20/11/2026: Broader Scripture quotation classifications
 
