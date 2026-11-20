@@ -12,10 +12,11 @@ jobs:
   migrate:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           ref: feature/hebrew-peshitta-parallel-scripture
           persist-credentials: true
+          fetch-depth: 0
       - name: Download pinned CrossWire archive
         run: |
           curl --fail --location --retry 4 --retry-delay 3 --output /tmp/Peshitta.zip https://ftp.crosswire.org/ftpmirror/pub/sword/packages/rawzip/Peshitta.zip
