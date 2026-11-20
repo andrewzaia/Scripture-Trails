@@ -33,6 +33,7 @@ def main(path):
    books[current]={}; chapter=None
   match=re.search(r'<chapter n="(\d+)"[^>]*sID=',fragment)
   if match:
+   if current is None: raise ValueError("Chapter encountered before book heading")
    chapter=match.group(1)
    if chapter in books[current]: raise ValueError("Duplicate chapter")
    books[current][chapter]={}; verse_no=0
