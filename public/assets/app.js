@@ -300,7 +300,7 @@ async function searchBible(q){
   if(requestId!==state.requestId)return;
   if(!res.ok){box.replaceChildren(buildFallback(data.message||'Bible search is not configured.'));return;}
   box.replaceChildren();box.append(create('h3','',`${data.total_results} matching verses`));
-  for(const result of data.results){const row=create('div','search-result');const btn=create('button','search-result-link',result.reference+' ↗');btn.addEventListener('click',()=>selectRef(result.reference));row.append(btn,create('p','',result.content),create('small','search-esv','ESV'));box.append(row);}
+  for(const result of data.results){const row=create('div','search-result');const btn=create('button','search-result-link',result.reference+' ↗');btn.addEventListener('click',()=>selectRef(result.reference));const source= create('div','search-original-scripture');row.append(btn,create('p','',result.content),source,create('small','search-esv','ESV'));box.append(row);void showOriginalPassage(source,result.reference,{wrapEnglish:false,compact:true,guard:()=>requestId===state.requestId});}
   $('passage-status').textContent='ESV search results';
  }catch{
   updateStatus('unavailable');if(requestId!==state.requestId)return;box.replaceChildren(buildFallback('Could not search the ESV at this time.',true));

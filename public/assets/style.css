@@ -511,3 +511,5 @@ body.atlas-fullscreen-lock .active-view{animation:none;transform:none}
 .atlas-preview-content .original-scripture,.atlas-comparison .original-scripture{padding:12px}
 @media(max-width:900px){.parallel-scripture{grid-template-columns:minmax(0,1fr)}}
 @media(max-width:500px){.original-scripture{padding:12px}.original-verse-text{font-size:19px}}
+
+.search-original-scripture{margin-top:9px}.search-original-scripture .original-scripture{padding:10px 12px}.search-original-scripture .original-verse-text{font-size:17px;line-height:1.65}
