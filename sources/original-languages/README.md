@@ -16,16 +16,23 @@ alongside existing English Scripture supplied separately by Crossway or API.Bibl
 
 ## Syriac Aramaic New Testament
 
-- Source: CrossWire Peshitta SWORD module version 2.0, British and Foreign Bible Society 1905 edition.\n- Module: https://ftp.crosswire.org/sword/modules/ModInfo.jsp?modName=Peshitta\n- Archive SHA-256: badce0aa0a9b70a9c81891ed48d5a9e86de1e24d12ad4ad378e060e03cabc7b9\n- Distribution licence: Public Domain, per bundled module metadata.\n- Scripture is displayed in Syriac script as Classical Syriac, an Aramaic language.
+- Source: CrossWire Peshitta SWORD module version 2.0, British and Foreign Bible Society 1905 edition.
+- Module: https://ftp.crosswire.org/sword/modules/ModInfo.jsp?modName=Peshitta
+- Archive SHA-256: badce0aa0a9b70a9c81891ed48d5a9e86de1e24d12ad4ad378e060e03cabc7b9
+- Distribution licence: Public Domain, per bundled module metadata.
+- Scripture is displayed in Syriac script as Classical Syriac, an Aramaic language.
 - The classic Syriac Peshitta comprises 22 New Testament books. 2 Peter, 2 John, 3 John, Jude and Revelation in the imported full 27-book Syriac corpus come from later Syriac textual tradition. The UI identifies this distinction.
 
 ## Import and maintenance
 
 Run from the repository root:
 
-    python3 scripts/import-crosswire-peshitta.py /path/to/Peshitta.zip\n    python3 scripts/import-original-languages.py
+    python3 scripts/import-crosswire-peshitta.py /path/to/Peshitta.zip
+    python3 scripts/import-original-languages.py
 
-The CrossWire importer replaces the 27 Syriac JSON files; the Hebrew importer\nregenerates 39 Hebrew books while retaining the pinned CrossWire source.\nTogether these generate 66 JSON files in public/data/originals/ and a SHA-256
+The CrossWire importer replaces the 27 Syriac JSON files; the Hebrew importer
+regenerates 39 Hebrew books while retaining the pinned CrossWire source.
+Together these generate 66 JSON files in public/data/originals/ and a SHA-256
 file manifest in sources/original-languages/manifest.json. These generated
 files are committed to the repository and served locally. The normal
 public build does not contact the external source hosts.
