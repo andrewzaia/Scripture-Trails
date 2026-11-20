@@ -28,13 +28,14 @@ test('all 66 pinned, locally hosted original-language source shards are availabl
  assert.equal(files.length,66);
  assert.deepEqual(Object.keys(manifest.files).sort(),files);
  assert.equal(manifest.sourceCommits.wlc,'db6c5c9b46b8f39346f10915ddb1a70dcd429901');
- assert.equal(manifest.sourceCommits.syrnt,'dae3eb6ff62b9b272fb503646796c25d248175ce');
+ assert.equal(manifest.sourceArchives.crosswirePeshitta.sha256,'badce0aa0a9b70a9c81891ed48d5a9e86de1e24d12ad4ad378e060e03cabc7b9');
  for(const file of files){
   const bytes=readFileSync(new URL('../public/data/originals/'+file,import.meta.url));
   assert.equal(createHash('sha256').update(bytes).digest('hex'),manifest.files[file],file+' integrity');
   const data=JSON.parse(bytes.toString('utf8'));
   assert.ok(data.book&&data.language&&data.chapters?.['1']?.['1'],file+' first verse');
   assert.ok(['he','syc'].includes(data.language));
+  if(data.language==='syc')assert.match(data.source,/CrossWire Peshitta.*1905/);
  }
  for(const [book,chapter,verse] of [['gen',1,1],['ps',3,1],['joel',3,1],['mal',4,1],['john',1,1],['rev',1,1]]){
   const data=JSON.parse(readFileSync(new URL('../public/data/originals/'+book+'.json',import.meta.url),'utf8'));
