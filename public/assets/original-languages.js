@@ -71,7 +71,7 @@ export async function showOriginalPassage(container,reference,{wrapEnglish=true,
   const data=await getBook(ref.book.abbr.toLowerCase());
   if(!valid())return;
   lines.replaceChildren();
-  heading.querySelector('small').textContent=data.source||language.source;
+  heading.querySelector('small').textContent=language.code==='syc'?(data.editionNote?'Later Syriac NT tradition (SEDRA 3.0)':'Peshitta (SEDRA 3.0)'):(data.source||language.source);
   if(ref.verse===null&&data.superscriptions?.[String(ref.chapter)]){
    lines.append(make('p','original-superscription',data.superscriptions[String(ref.chapter)]));
   }
