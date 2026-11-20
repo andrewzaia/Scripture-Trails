@@ -55,6 +55,7 @@ def main(path):
  manifest["sourceArchives"]={"crosswirePeshitta":{"version":"2.0","date":"2020-02-08","sha256":SHA,"licence":"Public Domain","edition":"British and Foreign Bible Society 1905","versification":"KJV"}}
  manifest_path.write_text(json.dumps(manifest,indent=2,ensure_ascii=False)+"\n")
  print("Imported 27 books, 7956 verse entries")
-if __name__=="__main__":main(sys.argv[1])
-
-# Automated migration workflow trigger.
+if __name__=="__main__":
+ if len(sys.argv)!=2:
+  raise SystemExit("Usage: python3 scripts/import-crosswire-peshitta.py /path/to/Peshitta.zip")
+ main(sys.argv[1])
