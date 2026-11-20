@@ -10,7 +10,7 @@ alongside existing English Scripture supplied separately by Crossway or API.Bibl
 - Pinned commit: db6c5c9b46b8f39346f10915ddb1a70dcd429901
 - WLC text: public domain. OSHB morphology and editorial enhancements: CC BY 4.0.
 - Only Scripture words and original punctuation are selected; morphology, notes and identifiers are omitted.
-- Hebrew vowel and cantillation marks are retained. Biblical Aramaic passages in Ezra and Daniel remain in their source language.
+- Hebrew vowel and cantillation marks are retained. Biblical Aramaic in Ezra, Daniel and Jeremiah 10:11, and the Aramaic phrase in Genesis 31:47, remain in their source language.
 - OSHB's own VerseMap.xml remaps complete Westminster-to-KJV verse correspondences. Partial matches are omitted rather than assigned to an incorrect English verse. Psalm superscriptions are retained separately where mapped to verse zero.
 - English translations may differ in verse segmentation, so a non-corresponding source verse is marked unavailable rather than guessed.
 
