@@ -14,6 +14,16 @@ test('Hebrew OT and Peshitta Syriac NT appear alongside untouched English text',
  await expect(nt.locator('.original-scripture-heading')).toContainText('Peshitta');
 });
 
+test('Hebrew Bible reader identifies Aramaic and bilingual passages',async({page})=>{
+ await open(page,'reader','Daniel 3:1');
+ await expect(page.locator('#passage-content .original-scripture-heading strong')).toHaveText('Biblical Aramaic');
+ await expect(page.locator('#passage-content .original-verse-text[lang="arc"]')).toContainText(/[\\u0590-\\u05ff]/);
+ await page.goto('/?view=reader&ref='+encodeURIComponent('Daniel 2:4'));
+ await expect(page.locator('#passage-content .original-scripture-heading strong')).toHaveText('Biblical Hebrew and Aramaic');
+ await page.goto('/?view=reader&ref='+encodeURIComponent('Jeremiah 10:11'));
+ await expect(page.locator('#passage-content .original-scripture-heading strong')).toHaveText('Biblical Aramaic');
+});
+
 test('the Syriac later-canon note distinguishes five NT books',async({page})=>{
  await open(page,'reader','Revelation 1:1');
  await expect(page.locator('#passage-content .original-verse-text[lang="syc"]')).toContainText(/[\u0700-\u074f]/);
