@@ -25,13 +25,13 @@ export function previewQuery(value){
  if(p.end!==null&&p.end-p.verse+1>MAX_PREVIEW)return {query:p.book.name+' '+p.chapter+':'+p.verse+'-'+(p.verse+MAX_PREVIEW-1),partial:true};
  return {query:p.formatted,partial:false};
 }
-export function createScripturePreviews({onRead}){
+export function createScripturePreviews({onRead,original}){
  const main=document.getElementById('main');if(!main)return {seed(){}};
  const cache=new Map(),inflight=new Map();let cachedVerses=0,active=null,hoverTimer=0,hideTimer=0,scanFrame=0;
  const panel=document.createElement('aside');panel.className='scripture-preview';panel.hidden=true;panel.setAttribute('role','dialog');panel.setAttribute('aria-label','ESV passage preview');
- panel.innerHTML='<div class="scripture-preview-heading"><strong data-preview-title></strong><span>ESV</span></div><p data-preview-text role="status"></p><p data-preview-scope hidden></p><div class="scripture-preview-actions"><button type="button" data-preview-read>Read passage</button><a data-preview-source target="_blank" rel="noopener noreferrer">ESV.org</a><button type="button" data-preview-close aria-label="Close preview">Close</button></div><small>ESV text supplied by Crossway. See About for copyright and permissions.</small>';
+ panel.innerHTML='<div class="scripture-preview-heading"><strong data-preview-title></strong><span>ESV</span></div><p data-preview-text role="status"></p><div data-preview-original></div><p data-preview-scope hidden></p><div class="scripture-preview-actions"><button type="button" data-preview-read>Read passage</button><a data-preview-source target="_blank" rel="noopener noreferrer">ESV.org</a><button type="button" data-preview-close aria-label="Close preview">Close</button></div><small>ESV text supplied by Crossway. See About for copyright and permissions.</small>';
  document.body.append(panel);
- const title=panel.querySelector('[data-preview-title]'),message=panel.querySelector('[data-preview-text]'),scope=panel.querySelector('[data-preview-scope]'),source=panel.querySelector('[data-preview-source]');
+ const title=panel.querySelector('[data-preview-title]'),message=panel.querySelector('[data-preview-text]'),scope=panel.querySelector('[data-preview-scope]'),source=panel.querySelector('[data-preview-source]'),originalSlot=panel.querySelector('[data-preview-original]');
  const countFor=ref=>{const p=parseRef(ref);return p?.end!==null?p.end-p.verse+1:p?.verse!==null?1:MAX_PREVIEW;};
  let countsPromise=null;
  const getCounts=()=>countsPromise||(countsPromise=fetch('/data/verse-counts.json').then(r=>r.ok?r.json():{}).catch(()=>({})));
@@ -62,14 +62,18 @@ export function createScripturePreviews({onRead}){
   const y=below+height>window.innerHeight-12&&rect.top>height+16?rect.top-height-9:below;
   panel.style.left=x+'px';panel.style.top=Math.max(12,Math.min(y,window.innerHeight-height-12))+'px';
  }
- function display(ref,passages){
+ function display(ref,passages,originalRef){
   const html=new DOMParser().parseFromString(passages.join(' '),'text/html');
   html.querySelectorAll('script,style,iframe,object,template').forEach(node=>node.remove());
   const text=(html.body.textContent||'').replace(/\s+/g,' ').trim();
   message.textContent=text.length>950?text.slice(0,947).replace(/\s+\S*$/,'')+'...':text||'No passage text returned.';
   scope.hidden=!previewQuery(ref).partial;
   if(!scope.hidden)scope.textContent='First verses only. Read the full passage in the Bible reader.';
-  if(active)position(active.anchor);
+  if(active){
+   const token=active;
+   if(typeof original==='function')void original(originalSlot,originalRef,()=>active===token&&!panel.hidden);
+   position(active.anchor);
+  }
  }
  async function get(key){
   prune();if(cache.has(key))return cache.get(key).passages;
@@ -87,10 +91,10 @@ export function createScripturePreviews({onRead}){
  }
  function open(trigger,immediate=false){
   hide();const ref=trigger.dataset.scripturePreview;if(!previewQuery(ref))return;
-  const token={trigger,anchor:trigger,ref};active=token;title.textContent=ref;source.href=esvUrl(ref);scope.hidden=true;message.textContent='Loading ESV passage...';
+  const token={trigger,anchor:trigger,ref};active=token;title.textContent=ref;source.href=esvUrl(ref);scope.hidden=true;originalSlot.replaceChildren();message.textContent='Loading ESV passage...';
   const start=async()=>{if(active!==token)return;position(trigger);try{
    const query=await boundedQuery(ref);if(active!==token)return;
-   const passages=await get(query.query);if(active===token)display(ref,passages);
+   const passages=await get(query.query);if(active===token)display(ref,passages,query.query);
   }catch(error){if(active===token){message.textContent=error.name==='AbortError'?'The passage timed out. Try again.':error.message;position(trigger);}}};
   if(immediate)void start();else hoverTimer=setTimeout(start,180);
  }

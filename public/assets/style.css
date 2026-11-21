@@ -484,3 +484,32 @@ body.atlas-fullscreen-lock .active-view{animation:none;transform:none}
  .graph-layout:is(:fullscreen,.atlas-fullscreen-fallback) .graph-canvas-wrap{min-height:0}
 }
 
+
+
+/* Verse-mapped Hebrew WLC and Syriac Peshitta beside existing English Scripture. */
+.parallel-scripture{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px;align-items:start;direction:rtl}
+.parallel-english{min-width:0;direction:ltr}
+.parallel-scripture-compact{display:block;direction:ltr}
+.parallel-scripture-compact .parallel-english{margin-top:14px}
+.original-scripture{min-width:0;direction:ltr;background:var(--surface2);border:1px solid var(--line);border-radius:6px;padding:16px 18px;margin-bottom:14px}
+.original-scripture-heading{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;margin-bottom:13px}
+.original-scripture-heading strong{font-size:13px;color:var(--ink)}
+.original-scripture-heading small,.original-edition-note,.original-source-link{font-size:10px;line-height:1.65;color:var(--muted)}
+.original-scripture-verses{min-width:0}
+.original-verse{display:grid;grid-template-columns:24px minmax(0,1fr);gap:7px;align-items:start;margin:0 0 12px}
+.original-verse-number{direction:ltr;text-align:left;font-size:10px;color:var(--muted);padding-top:6px;font-family:system-ui,sans-serif}
+.original-verse-text{display:block;direction:rtl;text-align:right;unicode-bidi:isolate;font-family:"SBL Hebrew","Noto Sans Syriac","Noto Sans Hebrew","Estrangelo Edessa","Segoe UI Historic",serif;font-size:21px;line-height:1.85;overflow-wrap:anywhere}
+.original-verse-unmapped .original-verse-text{direction:ltr;text-align:left;font-family:inherit;font-size:12px;color:var(--muted)}
+.original-superscription{direction:rtl;text-align:right;font-size:15px;line-height:1.8;color:var(--muted)}
+.original-scripture-status{font-size:12px;line-height:1.65;color:var(--muted)}
+.original-edition-note{margin:8px 0}
+.original-source-link{display:inline-block;text-decoration:underline;text-underline-offset:2px;color:var(--gold)}
+.scripture-preview [data-preview-original]{margin:8px 0;max-height:160px;overflow-y:auto}
+.scripture-preview .original-scripture{padding:9px 11px;margin:0}
+.scripture-preview .original-verse-text{font-size:16px;line-height:1.55}
+.scripture-preview .original-verse{margin-bottom:6px}
+.atlas-preview-content .original-scripture,.atlas-comparison .original-scripture{padding:12px}
+@media(max-width:900px){.parallel-scripture{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:500px){.original-scripture{padding:12px}.original-verse-text{font-size:19px}}
+
+.search-original-scripture{margin-top:9px}.search-original-scripture .original-scripture{padding:10px 12px}.search-original-scripture .original-verse-text{font-size:17px;line-height:1.65}

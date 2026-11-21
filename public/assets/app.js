@@ -1,26 +1,27 @@
-import {appendCitationReview,renderCitationSummary,importedQuotationReview,IMPORTED_QUOTATION_KINDS,appendImportedQuotationReview} from './citation-review.js?v=1.21.0';
-import {PERSON_TRAILS,findPersonTrails} from './person-trails.js?v=1.21.0';
-import {createStudyCollections} from './study-collections.js?v=1.21.0';
-import {createAnnotations,applyHighlights,canonicalVerse,validateAnnotations,emptyAnnotations} from './annotations.js?v=1.21.0';
-import {renderReadingPlan} from './reading-plans.js?v=1.21.0';
-import {createNotebookBackup,persistNotebook,inspectNotebookStorage,replaceUnreadableNotebook,safeBrowserStorage} from './notebook-backup.js?v=1.21.0';
+import {appendCitationReview,renderCitationSummary,importedQuotationReview,IMPORTED_QUOTATION_KINDS,appendImportedQuotationReview} from './citation-review.js?v=1.22.0';
+import {PERSON_TRAILS,findPersonTrails} from './person-trails.js?v=1.22.0';
+import {createStudyCollections} from './study-collections.js?v=1.22.0';
+import {createAnnotations,applyHighlights,canonicalVerse,validateAnnotations,emptyAnnotations} from './annotations.js?v=1.22.0';
+import {renderReadingPlan} from './reading-plans.js?v=1.22.0';
+import {createNotebookBackup,persistNotebook,inspectNotebookStorage,replaceUnreadableNotebook,safeBrowserStorage} from './notebook-backup.js?v=1.22.0';
 import {BOOKS,findBook,parseRef,referenceFor,chapterRef,adjacentChapter,readerScope} from './books.js';
-import {PATHS,EDITORIAL_LINKS} from './studies.js?v=1.21.0';
-import {ScriptureGraph} from './graph.js?v=1.21.0';
-import {createJesusMap} from './jesus-map.js?v=1.21.0';
-import {createPaulMap} from './paul-map.js?v=1.21.0';
-import {createHebrewGeography} from './hebrew-geography.js?v=1.21.0';
-import {createRoadmap} from './roadmap.js?v=1.21.0';
-import {createCityStudies} from './city-studies.js?v=1.21.0';
-import {createEntityIndex} from './entity-index.js?v=1.21.0';
+import {PATHS,EDITORIAL_LINKS} from './studies.js?v=1.22.0';
+import {ScriptureGraph} from './graph.js?v=1.22.0';
+import {createJesusMap} from './jesus-map.js?v=1.22.0';
+import {createPaulMap} from './paul-map.js?v=1.22.0';
+import {createHebrewGeography} from './hebrew-geography.js?v=1.22.0';
+import {createRoadmap} from './roadmap.js?v=1.22.0';
+import {createCityStudies} from './city-studies.js?v=1.22.0';
+import {createEntityIndex} from './entity-index.js?v=1.22.0';
 import {buildAtlas} from './atlas-paths.js';
-import {initPublicReleases} from './release-notes.js?v=1.21.0';
+import {initPublicReleases} from './release-notes.js?v=1.22.0';
 import {maxDatasetVotes,relativeVoteBars} from './atlas-strength.js';
-import {CONNECTION_EVIDENCE,CONNECTION_KINDS,explainConnection,REVIEW_LABELS} from './connection-evidence.js?v=1.21.0';
-import {createPassageComparison} from './atlas-comparison.js?v=1.21.0';
-import {createReaderAudio} from './reader-audio.js?v=1.21.0';
-import {createScripturePreviews} from './scripture-previews.js?v=1.21.0';
-import {createPersecutionCatalogue} from './persecution-catalogue.js?v=1.21.0';
+import {CONNECTION_EVIDENCE,CONNECTION_KINDS,explainConnection,REVIEW_LABELS} from './connection-evidence.js?v=1.22.0';
+import {createPassageComparison} from './atlas-comparison.js?v=1.22.0';
+import {createReaderAudio} from './reader-audio.js?v=1.22.0';
+import {createScripturePreviews} from './scripture-previews.js?v=1.22.0';
+import {showOriginalPassage} from './original-languages.js?v=1.22.0';
+import {createPersecutionCatalogue} from './persecution-catalogue.js?v=1.22.0';
 import {TRANSLATIONS,getTranslation} from './translations.js';
 import {reportScriptureView} from './fums.js';
 import {TRANSLATION_STATUS,statusForResponse} from './translation-status.js?v=20261027-indicators';
@@ -99,6 +100,7 @@ function comparePassages(from,to,evidence=null){
  if(state.view!=='connections')selectRef(from,'connections');
  if(!passageComparison)passageComparison=createPassageComparison($('atlas-compare'),{
   sanitize:safeHtml,onViewed:reportScriptureView,getEdition:()=>state.translation,
+  original:(root,ref,guard)=>showOriginalPassage(root,ref,{compact:true,guard}),
   onRead:ref=>selectRef(ref,'reader')
  });
  return passageComparison.open(from,to,evidence||explainConnection(from,to));
@@ -272,7 +274,9 @@ async function loadPassage(reference){
   if(!Array.isArray(payload.passages)||!payload.passages.length||payload.passages.some(p=>typeof p!=='string'))throw Error('The provider returned no passage text');
   updateStatus('available');
   if(requestId!==state.requestId)return;
-  content.replaceChildren(...payload.passages.map(html=>safeHtml(html)));decorateReaderVerses(chapterRef(reference));renderPassageAttribution(payload,edition);
+  content.replaceChildren(...payload.passages.map(html=>safeHtml(html)));decorateReaderVerses(chapterRef(reference));
+  void showOriginalPassage(content,reference,{guard:()=>requestId===state.requestId});
+  renderPassageAttribution(payload,edition);
   $('passage-status').textContent=`Official ${translation} text`;state.loadedPassage=reference;state.loadedTranslation=translation;readerAudio.sync({ref:reference,translation,view:state.view,ready:true});if(translation==='ESV')scripturePreviews?.seed(reference,payload.passages);
   state.fums=payload.fums;state.lastFums=payload.fums;if(state.view==='reader'){void reportScriptureView(state.fums);state.fums=null;}
  }catch{
@@ -296,7 +300,7 @@ async function searchBible(q){
   if(requestId!==state.requestId)return;
   if(!res.ok){box.replaceChildren(buildFallback(data.message||'Bible search is not configured.'));return;}
   box.replaceChildren();box.append(create('h3','',`${data.total_results} matching verses`));
-  for(const result of data.results){const row=create('div','search-result');const btn=create('button','search-result-link',result.reference+' ↗');btn.addEventListener('click',()=>selectRef(result.reference));row.append(btn,create('p','',result.content),create('small','search-esv','ESV'));box.append(row);}
+  for(const result of data.results){const row=create('div','search-result');const btn=create('button','search-result-link',result.reference+' ↗');btn.addEventListener('click',()=>selectRef(result.reference));const source= create('div','search-original-scripture');row.append(btn,create('p','',result.content),source,create('small','search-esv','ESV'));box.append(row);void showOriginalPassage(source,result.reference,{wrapEnglish:false,compact:true,guard:()=>requestId===state.requestId});}
   $('passage-status').textContent='ESV search results';
  }catch{
   updateStatus('unavailable');if(requestId!==state.requestId)return;box.replaceChildren(buildFallback('Could not search the ESV at this time.',true));
@@ -355,6 +359,7 @@ async function renderAtlasPreview(reference){
   }
   if(!Array.isArray(payload.passages)||!payload.passages.length||payload.passages.some(p=>typeof p!=='string'))throw Error('Missing passage text');
   content.replaceChildren(...payload.passages.map(safeHtml));
+  void showOriginalPassage(content,ref,{compact:true,guard:fresh});
   if(edition.provider==='API.Bible'){
    if(typeof payload.copyright==='string'){
     credit.append(safeHtml(payload.copyright));
@@ -507,7 +512,7 @@ function renderNotebook(){collectionPage?.render();annotationPage?.render();cons
  if(!state.bookmarks.length)b.append(create('p','empty-list','No saved verses yet. Open a passage and select Save to build your collection.'));if(!state.history.length)h.append(create('p','empty-list','Your recently visited passages will appear here.'));if(!n.children.length)n.append(create('p','empty-list','Notes added during reading will appear here.'));
 }
 function removeBookmark(ref){try{const bookmarks=state.bookmarks.filter(x=>x!==ref);persistNotebook(localStorage,{...currentNotebook(),bookmarks},currentNotebook());state.bookmarks=bookmarks;renderNotebook();setSaveButton();}catch(error){toast(error.message.replace('before importing.','before saving.'));}}
-function init(){initAtlasFullscreen();scripturePreviews=createScripturePreviews({onRead:ref=>selectRef(ref,'reader')});renderStorageWarning();window.addEventListener('storage',event=>{if(event.key==='scripture-trails:notebook')renderStorageWarning();});collectionPage=createStudyCollections(document.querySelector('[data-study-collections]'),{current:()=>structuredClone(state.collections),counts:getCounts,read:ref=>selectRef(ref),save:next=>{persistNotebook(localStorage,{...currentNotebook(),collections:next},currentNotebook());state.collections=next;}});annotationPage=createAnnotations(document.querySelector('[data-annotations]'),{current:()=>structuredClone(state.annotations),save:saveAnnotations,counts:getCounts,read:ref=>selectRef(ref),place:id=>{const url=new URL(location.href);url.searchParams.set('type','place');url.searchParams.set('id',id);history.replaceState(history.state,'',url);showView('entities');}});$('save-highlight').addEventListener('click',async()=>{try{const ref=canonicalVerse($('highlight-ref').value,await getCounts()),colour=$('highlight-colour').value,next=structuredClone(state.annotations);if(colour==='none')delete next.highlights[ref];else next.highlights[ref]=colour;saveAnnotations(validateAnnotations(next,await getCounts()));$('highlight-status').textContent=colour==='none'?'Highlight removed.':'Verse highlighted: '+colour+'.';}catch(e){$('highlight-status').textContent=e.message;}});createNotebookBackup(document.querySelector('[data-notebook-backup]'),{storage:safeBrowserStorage(),counts:getCounts,current:currentNotebook,apply:(notebook,options={})=>{try{const storage=safeBrowserStorage();if(options.recoverCorrupt!==undefined)replaceUnreadableNotebook(storage,notebook,options.recoverCorrupt);else persistNotebook(storage,notebook,currentNotebook());}catch(error){throw Error(/Notebook changed in another tab/.test(error.message)?error.message:'The browser could not save the import. Your existing notebook is unchanged.');}renderStorageWarning();state.bookmarks=notebook.bookmarks;state.notes=notebook.notes;state.readingPlans=notebook.readingPlans||{};state.annotations=notebook.annotations||emptyAnnotations();state.collections=notebook.collections||[];renderNotebook();applyHighlights($('passage-content'),state.annotations.highlights);renderNote();setSaveButton();}});void initPublicReleases();document.body.classList.toggle('light',state.theme==='light');updateThemeControl();$('copyright-year').textContent=String(new Date().getFullYear());populateBookPicker();initAtlasPicker();buildJourneys();$('person-trail-search').addEventListener('input',renderPersonTrailDirectory);$('person-trail-corpus').addEventListener('change',renderPersonTrailDirectory);
+function init(){initAtlasFullscreen();scripturePreviews=createScripturePreviews({onRead:ref=>selectRef(ref,'reader'),original:(root,ref,guard)=>showOriginalPassage(root,ref,{wrapEnglish:false,compact:true,guard})});renderStorageWarning();window.addEventListener('storage',event=>{if(event.key==='scripture-trails:notebook')renderStorageWarning();});collectionPage=createStudyCollections(document.querySelector('[data-study-collections]'),{current:()=>structuredClone(state.collections),counts:getCounts,read:ref=>selectRef(ref),save:next=>{persistNotebook(localStorage,{...currentNotebook(),collections:next},currentNotebook());state.collections=next;}});annotationPage=createAnnotations(document.querySelector('[data-annotations]'),{current:()=>structuredClone(state.annotations),save:saveAnnotations,counts:getCounts,read:ref=>selectRef(ref),place:id=>{const url=new URL(location.href);url.searchParams.set('type','place');url.searchParams.set('id',id);history.replaceState(history.state,'',url);showView('entities');}});$('save-highlight').addEventListener('click',async()=>{try{const ref=canonicalVerse($('highlight-ref').value,await getCounts()),colour=$('highlight-colour').value,next=structuredClone(state.annotations);if(colour==='none')delete next.highlights[ref];else next.highlights[ref]=colour;saveAnnotations(validateAnnotations(next,await getCounts()));$('highlight-status').textContent=colour==='none'?'Highlight removed.':'Verse highlighted: '+colour+'.';}catch(e){$('highlight-status').textContent=e.message;}});createNotebookBackup(document.querySelector('[data-notebook-backup]'),{storage:safeBrowserStorage(),counts:getCounts,current:currentNotebook,apply:(notebook,options={})=>{try{const storage=safeBrowserStorage();if(options.recoverCorrupt!==undefined)replaceUnreadableNotebook(storage,notebook,options.recoverCorrupt);else persistNotebook(storage,notebook,currentNotebook());}catch(error){throw Error(/Notebook changed in another tab/.test(error.message)?error.message:'The browser could not save the import. Your existing notebook is unchanged.');}renderStorageWarning();state.bookmarks=notebook.bookmarks;state.notes=notebook.notes;state.readingPlans=notebook.readingPlans||{};state.annotations=notebook.annotations||emptyAnnotations();state.collections=notebook.collections||[];renderNotebook();applyHighlights($('passage-content'),state.annotations.highlights);renderNote();setSaveButton();}});void initPublicReleases();document.body.classList.toggle('light',state.theme==='light');updateThemeControl();$('copyright-year').textContent=String(new Date().getFullYear());populateBookPicker();initAtlasPicker();buildJourneys();$('person-trail-search').addEventListener('input',renderPersonTrailDirectory);$('person-trail-corpus').addEventListener('change',renderPersonTrailDirectory);
  $('reader-translation').replaceChildren(...TRANSLATIONS.map(edition=>{const option=create('option','',`${edition.code} - ${edition.name}`);option.value=edition.code;return option;}));
  $('reader-translation').addEventListener('change',()=>selectTranslation($('reader-translation').value));
  document.addEventListener('click',e=>{const button=e.target.closest('[data-view]');if(button){showView(button.dataset.view);return;}const ref=e.target.closest('[data-open]');if(ref)selectRef(ref.dataset.open);});
