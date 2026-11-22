@@ -2,7 +2,7 @@ name: Prepare v1.23.0 quotation register
 on:
   push:
     branches: [release/1.23.0-quotation-register]
-    paths: [.github/workflows/prepare-1.23.0.yml]
+    paths: [.github/workflows/prepare-1.23.0.yml, tests/citation-review.test.mjs]
   pull_request:
     types: [opened]
     branches: [main]
