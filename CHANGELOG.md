@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.23.0 - 23/11/2026: Expanded Scripture quotation register
+
+- Add eight source-classified Old Testament quotation pairs in Romans 15 and Hebrews 3, with publisher references and contextual limitations.
+- Distinguish parallel Davidic song sources and extended Psalm 95 quotation components; support links to checked Crossway Scripture chapters.
+
 ## 1.22.1 - 22/11/2026: Hebrew and Aramaic search metadata
 
 - Update search and social sharing descriptions to reflect Hebrew Old Testament and Aramaic Peshitta New Testament companion Scripture.
