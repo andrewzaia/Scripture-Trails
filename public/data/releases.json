@@ -1,6 +1,14 @@
 {
   "releases": [
     {
+      "version": "1.22.1",
+      "date": "2026-11-22",
+      "title": "Hebrew and Aramaic search metadata",
+      "changes": [
+        "Update search and social sharing descriptions to reflect Hebrew Old Testament and Aramaic Peshitta New Testament companion Scripture."
+      ]
+    },
+    {
       "version": "1.22.0",
       "date": "2026-11-21",
       "title": "Hebrew and Syriac Scripture alongside English",
