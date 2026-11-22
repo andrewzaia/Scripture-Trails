@@ -1,6 +1,6 @@
 # Scripture Trails
 
-A responsive, extensible Bible study website with in-page ESV, NASB20, NIV (2011) and NKJV translation selection. Follow passages and references, explore the interactive connection atlas, use six guided study journeys and retain bookmarks and notes locally.
+A responsive, extensible Bible study website with in-page ESV, NASB20, NIV (2011) and NKJV translation selection, with locally hosted Westminster Leningrad Codex Old Testament and 1905 Syriac Peshitta New Testament companion text. Follow passages and references, explore the interactive connection atlas, use six guided study journeys and retain bookmarks and notes locally.
 
 Production address: <https://www.scripturetrails.com/>. The apex `scripturetrails.com` and HTTP requests redirect permanently to HTTPS on `www`, preserving the full path and query string, including passage and translation links. Cloudflare DNS points `www` to `scripture-trails.pages.dev`; a proxied originless apex record supports the zone redirect rule. The Pages custom domain is `www.scripturetrails.com`. Canonical and sharing metadata, `robots.txt` and the sitemap use this address.
 
@@ -16,7 +16,8 @@ The top-right header has separate, display-only ESV, NASB20, NIV and NKJV status
 - ESV keyword search (10 results per query) through a server-side Cloudflare Pages Function.
 - Starter reference network with editorial labels for quotations, parallels, echoes and themes.
 - Interactive pan-and-zoom connection map, with one to ten levels of bounded verse-to-verse exploration. Hover over a node to light up the shortest visible route to the centre; the highlight follows the graph's shown links, not unrendered relationships.
-- Six comprehensive guided study journals with approximate total study-time estimates, now with 36 thematic reading stages, hundreds of curated passage links, contextual cautions, passage connections and reflection questions. Original anchor references and saved progress remain valid.\n- Saved passages, recent-history list and user notes.
+- Six comprehensive guided study journals with approximate total study-time estimates, now with 36 thematic reading stages, hundreds of curated passage links, contextual cautions, passage connections and reflection questions. Original anchor references and saved progress remain valid.
+- Saved passages, recent-history list and user notes.
 - Responsive layout, keyboard-focus indicators, dark/light themes and accessible text alternatives for the graph.
 - Clear separation of Scripture text, reference data and editorial interpretation.
 
@@ -187,7 +188,7 @@ Delivered foundations include four reader editions, the local 603,076-link Atlas
 | Specialist availability | Independent historical, textual and nautical review | Actual named, dated specialist review of a declared scope; publish decisions and remaining disagreements |
 | Later content | Kings, prophets and wider historical geography | Build on the first Hebrew Bible collection; audit each collection separately |
 | Later content | Broader people, family and event relationships | Scope each expansion around new study needs and validate identity, passages, relationships and sources |
-| Research | Original-language study | Resolve licensing, datasets, versification and a useful first-tool scope before implementation |
+| Research | Further original-language study | Build on the delivered Hebrew and Syriac companion text; review versification and scope before implementation |
 | Conditional research | Optional encrypted sync and accounts | Demonstrated need plus security, recovery, conflicts, deletion and cost design; no commitment yet |
 
 The first Exodus/wilderness collection is delivered. Citation work and browser coverage now support further expansion. External review depends on suitable specialists and is not implied by editorial checks. Original-language tools and accounts have no committed delivery date. Preserve uncertainty, local licensed supporting data and publisher restrictions in every milestone. Do not describe a universal, settled biblical chronology or a fully classified cross-reference corpus as delivered.
