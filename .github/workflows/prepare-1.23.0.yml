@@ -3,256 +3,39 @@ on:
   push:
     branches: [release/1.23.0-quotation-register]
     paths: [.github/workflows/prepare-1.23.0.yml]
+  pull_request:
+    types: [opened]
+    branches: [main]
 permissions:
   contents: write
+concurrency:
+  group: scripture-trails-prepare-1-23-0
+  cancel-in-progress: false
 jobs:
   release:
+    if: github.event_name == 'push' || (github.event.pull_request.head.repo.full_name == github.repository && github.event.pull_request.head.ref == 'release/1.23.0-quotation-register')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
+          ref: release/1.23.0-quotation-register
           fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
       - run: npm ci
-      - name: Extend quotation register and tests
+      - name: Generate and validate release
         run: |
-          node --input-type=module <<'JS'
-          import {readFileSync,writeFileSync} from 'node:fs';
-          const read=p=>readFileSync(p,'utf8');
-          const edit=(p,a,b)=>{const s=read(p);if(!s.includes(a))throw Error('Expected text missing: '+p+' '+a);writeFileSync(p,s.replace(a,b));};
-          const p='public/data/citation-review.json', d=JSON.parse(read(p));
-          if(d.importedReviews.entries.length!==24)throw Error('Unexpected baseline');
-          const entries=[
-            {
-              "id": "xr025",
-              "from": "Psalm 18:49",
-              "to": "Romans 15:9",
-              "kind": "quotation",
-              "summary": "Paul opens his chain of citations with David's praise among the nations, placing it within Christ's ministry to Israel and mercy towards the Gentiles.",
-              "limitation": "Psalm 18 is a royal thanksgiving after deliverance from enemies. The corresponding line is 18:50 in NABRE. The parallel in 2 Samuel 22:50 prevents certainty about which written exemplar Paul used.",
-              "reviewedOn": "2026-11-22",
-              "sources": [
-                {
-                  "title": "Psalm 18 - USCCB chapter",
-                  "publisher": "USCCB",
-                  "url": "https://bible.usccb.org/bible/psalms/18",
-                  "locator": "18:50 in NABRE; 18:49 in Protestant numbering"
-                },
-                {
-                  "title": "Romans 15 - ESV chapter",
-                  "publisher": "Crossway",
-                  "url": "https://www.esv.org/Romans+15/",
-                  "locator": "15:8-9"
-                }
-              ]
-            },
-            {
-              "id": "xr026",
-              "from": "2 Samuel 22:50",
-              "to": "Romans 15:9",
-              "kind": "quotation",
-              "summary": "David's thanksgiving in Samuel contains the same praise among the nations that Paul quotes to support his argument for Gentile participation in worship.",
-              "limitation": "The song also appears in Psalm 18:49. These are two linked source locations for one Pauline quotation, not two independent quotations or separate historical witnesses.",
-              "reviewedOn": "2026-11-22",
-              "sources": [
-                {
-                  "title": "2 Samuel 22 - ESV chapter",
-                  "publisher": "Crossway",
-                  "url": "https://www.esv.org/2+Samuel+22/",
-                  "locator": "22:50-51"
-                },
-                {
-                  "title": "Romans 15 - ESV chapter",
-                  "publisher": "Crossway",
-                  "url": "https://www.esv.org/Romans+15/",
-                  "locator": "15:8-9"
-                }
-              ]
-            },
-            {
-              "id": "xr027",
-              "from": "Psalm 117:1",
-              "to": "Romans 15:11",
-              "kind": "quotation",
-              "summary": "Paul cites the opening summons to all nations to praise God, continuing his case for shared worship by Jews and Gentiles.",
-              "limitation": "The short psalm grounds praise in divine faithfulness and mercy. Paul quotes its opening verse, rather than repeating the complete psalm or erasing its Israelite context.",
-              "reviewedOn": "2026-11-22",
-              "sources": [
-                {
-                  "title": "Psalm 117 - USCCB chapter",
-                  "publisher": "USCCB",
-                  "url": "https://bible.usccb.org/bible/psalms/117",
-                  "locator": "117:1-2"
-                },
-                {
-                  "title": "Romans 15 - ESV chapter",
-                  "publisher": "Crossway",
-                  "url": "https://www.esv.org/Romans+15/",
-                  "locator": "15:7-13"
-                }
-              ]
-            },
-            {
-              "id": "xr028",
-              "from": "Isaiah 11:10",
-              "to": "Romans 15:12",
-              "kind": "adapted-quotation",
-              "summary": "Paul names Isaiah and applies the root of Jesse and the nations' hope to Christ, completing the chain of Scripture citations with a Davidic royal image.",
-              "limitation": "Isaiah's oracle also concerns the recovery of Israel's remnant. Romans uses different wording about rule and hope from the Hebrew-based ESV Isaiah passage; the exact manuscript exemplar has not been collated.",
-              "reviewedOn": "2026-11-22",
-              "sources": [
-                {
-                  "title": "Isaiah 11 - ESV chapter",
-                  "publisher": "Crossway",
-                  "url": "https://www.esv.org/Isaiah+11/",
-                  "locator": "11:1-12"
-                },
-                {
-                  "title": "Romans 15 - ESV chapter",
-                  "publisher": "Crossway",
-                  "url": "https://www.esv.org/Romans+15/",
-                  "locator": "15:12-13"
-                }
-              ]
-            },
-            {
-              "id": "xr029",
-              "from": "Psalm 95:7",
-              "to": "Hebrews 3:7",
-              "kind": "quotation",
-              "summary": "Hebrews introduces the Spirit's speech with the closing appeal of Psalm 95:7, using the psalm to urge its readers to respond to God now.",
-              "limitation": "The opening part of Psalm 95:7 describes God's people as his flock; Hebrews quotes its closing appeal. This is the beginning of one extended quotation, not a separate historical event.",
-              "reviewedOn": "2026-11-22",
-              "sources": [
-                {
-                  "title": "Psalm 95 - ESV chapter",
-                  "publisher": "Crossway",
-                  "url": "https://www.esv.org/Psalm+95/",
-                  "locator": "95:6-11"
-                },
-                {
-                  "title": "Hebrews 3 - ESV chapter",
-                  "publisher": "Crossway",
-                  "url": "https://www.esv.org/Hebrews+3/",
-                  "locator": "3:7-11"
-                }
-              ]
-            },
-            {
-              "id": "xr030",
-              "from": "Psalm 95:8",
-              "to": "Hebrews 3:8",
-              "kind": "adapted-quotation",
-              "summary": "Hebrews continues the Psalm 95 quotation with the warning against hardened hearts during the wilderness rebellion and period of testing.",
-              "limitation": "The Hebrew-based psalm names Meribah and Massah, while Hebrews presents the corresponding rebellion and testing language. Read Exodus 17 in context without assuming the wording is identical across editions.",
-              "reviewedOn": "2026-11-22",
-              "sources": [
-                {
-                  "title": "Psalm 95 - ESV chapter",
-                  "publisher": "Crossway",
-                  "url": "https://www.esv.org/Psalm+95/",
-                  "locator": "95:8-9"
-                },
-                {
-                  "title": "Hebrews 3 - ESV chapter",
-                  "publisher": "Crossway",
-                  "url": "https://www.esv.org/Hebrews+3/",
-                  "locator": "3:8-9"
-                }
-              ]
-            },
-            {
-              "id": "xr031",
-              "from": "Psalm 95:10",
-              "to": "Hebrews 3:10",
-              "kind": "adapted-quotation",
-              "summary": "Hebrews reuses the divine displeasure and wandering-heart language from Psalm 95 in its warning about the wilderness generation's unbelief.",
-              "limitation": "The forty-year phrase in Psalm 95:10 appears with seeing God's works in Hebrews 3:9. This link identifies a quotation component, not a precise word-by-word or manuscript alignment.",
-              "reviewedOn": "2026-11-22",
-              "sources": [
-                {
-                  "title": "Psalm 95 - ESV chapter",
-                  "publisher": "Crossway",
-                  "url": "https://www.esv.org/Psalm+95/",
-                  "locator": "95:9-10"
-                },
-                {
-                  "title": "Hebrews 3 - ESV chapter",
-                  "publisher": "Crossway",
-                  "url": "https://www.esv.org/Hebrews+3/",
-                  "locator": "3:9-10"
-                }
-              ]
-            },
-            {
-              "id": "xr032",
-              "from": "Psalm 95:11",
-              "to": "Hebrews 3:11",
-              "kind": "quotation",
-              "summary": "Hebrews concludes its extended Psalm 95 citation with God's oath excluding the rebellious generation from rest, then develops the theme in chapter 4.",
-              "limitation": "The psalm recalls Israel's wilderness experience. Hebrews develops a continuing promise of rest; the single link does not determine every theological interpretation of that promise.",
-              "reviewedOn": "2026-11-22",
-              "sources": [
-                {
-                  "title": "Psalm 95 - ESV chapter",
-                  "publisher": "Crossway",
-                  "url": "https://www.esv.org/Psalm+95/",
-                  "locator": "95:11"
-                },
-                {
-                  "title": "Hebrews 3 - ESV chapter",
-                  "publisher": "Crossway",
-                  "url": "https://www.esv.org/Hebrews+3/",
-                  "locator": "3:11-4:11"
-                }
-              ]
-            }
-          ];
-          d.importedReviews.entries.push(...entries);
-          d.updated=d.importedReviews.reviewedOn='2026-11-22';
-          d.importedReviews.method='First-pass, claim-level Scripture quotation classifications of thirty-two distinct imported OpenBible.info pairs. The original twenty-four entries from 18 and 20 November remain unchanged. Eight additional pairs were checked on 22 November 2026 UTC against imported reference shards and accessible publisher Scripture chapters (USCCB or Crossway ESV). The exact publisher chapter used for each comparison is linked. Parallel source locations or multiple verse-level components may represent one extended quotation. These are not full Atlas explanations, manuscript collation or independent specialist approval.';
-          d.deferred[0]=d.deferred[0].replace('Twenty-four','Thirty-two').replace('301,368','301,360');
-          writeFileSync(p,JSON.stringify(d,null,2)+'\n');
-          edit('public/assets/citation-review.js',"src.publisher!=='USCCB'||!src.title||!src.locator||!safeUrl(src.url)||!src.url.startsWith('https://bible.usccb.org/bible/')","!src.title||!src.locator||!safeUrl(src.url)||!((src.publisher==='USCCB'&&src.url.startsWith('https://bible.usccb.org/bible/'))||(src.publisher==='Crossway'&&src.url.startsWith('https://www.esv.org/')))");
-          const t='tests/imported-quotation-classifications.test.mjs';
-          edit(t,'twenty-four first-pass','thirty-two first-pass');
-          edit(t,'assert.equal(data.entries.length,24);','assert.equal(data.entries.length,32);');
-          edit(t,"assert.equal(data.reviewedOn,'2026-11-20');","assert.equal(data.reviewedOn,'2026-11-22');");
-          edit(t,"assert.equal(source.publisher,'USCCB');assert.equal(new URL(source.url).hostname,'bible.usccb.org');","assert.ok(['USCCB','Crossway'].includes(source.publisher));assert.equal(new URL(source.url).hostname,source.publisher==='USCCB'?'bible.usccb.org':'www.esv.org');");
-          edit(t,'301,368','301,360');
-          edit(t,'301,368','301,360');
-          edit(t,'reviews (24)','reviews (32)');
-          edit(t,'24 additional imported Atlas pairs','32 additional imported Atlas pairs');
-          edit(t,'Number(e.id.slice(2))>=15','Number(e.id.slice(2))>=15&&Number(e.id.slice(2))<=24');
-          writeFileSync(t,read(t)+`
-          test('third batch retains parallel source locations, extended quotations and strict publisher origin checks',()=>{
-           const third=data.entries.slice(24);
-           assert.deepEqual(third.map(e=>e.id),Array.from({length:8},(_,i)=>'xr'+String(25+i).padStart(3,'0')));
-           assert.ok(third.every(e=>e.reviewedOn==='2026-11-22'));
-           assert.equal(third[0].to,third[1].to);
-           assert.match(third[0].limitation,/18:50/);
-           assert.match(third[1].limitation,/one Pauline quotation/);
-           assert.match(third[5].limitation,/Meribah and Massah/);
-           assert.match(third[6].limitation,/Hebrews 3:9/);
-           const invalid=structuredClone(CITATION_REVIEW);
-           invalid.importedReviews.entries[24].sources[1].url='https://www.esv.org.example.test/Romans+15/';
-           assert.throws(()=>validateCitationReview(invalid,counts));
-          });
-          `);
-          
-          const browser='tests/browser/citation-review.spec.mjs';
-          edit(browser,'24 additional imported Atlas pairs','32 additional imported Atlas pairs');
-          edit(browser,'301,368 remain without either level','301,360 remain without either level');
-          edit(browser,'Imported Scripture quotation reviews (24)','Imported Scripture quotation reviews (32)');
-          edit(browser,'toHaveCount(24)','toHaveCount(32)');
-          JS
+          if [ "$(node -p 'require("./package.json").version')" = "1.23.0" ]; then
+            npm run build
+            exit 0
+          fi
+          test "$(node -p 'require("./package.json").version')" = "1.22.1"
           node scripts/import-citation-review.mjs
           npm run release -- minor "Expanded Scripture quotation register" "Add eight source-classified Old Testament quotation pairs in Romans 15 and Hebrews 3, with publisher references and contextual limitations." "Distinguish parallel Davidic song sources and extended Psalm 95 quotation components; support links to checked Crossway Scripture chapters."
           npm run build
           git config user.name "scripture-trails-release-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -u
-          git commit -m "feat(release): expand quotation register to 32 reviewed pairs"
+          git commit -m "chore(release): generate v1.23.0"
           git push origin HEAD:release/1.23.0-quotation-register
