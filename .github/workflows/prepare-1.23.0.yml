@@ -212,7 +212,7 @@ jobs:
           ];
           d.importedReviews.entries.push(...entries);
           d.updated=d.importedReviews.reviewedOn='2026-11-22';
-          d.importedReviews.method='First-pass, claim-level Scripture quotation classifications of thirty-two distinct imported OpenBible.info pairs. The original twenty-four entries from 18 and 20 November remain unchanged. Eight additional pairs were checked on 22 November 2026 UTC against imported reference shards and accessible publisher Scripture chapters (USCCB or Crossway ESV). Some USCCB chapter requests were restricted; accessible ESV chapter views were used and linked instead. Parallel source locations or multiple verse-level components may represent one extended quotation. These are not full Atlas explanations, manuscript collation or independent specialist approval.';
+          d.importedReviews.method='First-pass, claim-level Scripture quotation classifications of thirty-two distinct imported OpenBible.info pairs. The original twenty-four entries from 18 and 20 November remain unchanged. Eight additional pairs were checked on 22 November 2026 UTC against imported reference shards and accessible publisher Scripture chapters (USCCB or Crossway ESV). The exact publisher chapter used for each comparison is linked. Parallel source locations or multiple verse-level components may represent one extended quotation. These are not full Atlas explanations, manuscript collation or independent specialist approval.';
           d.deferred[0]=d.deferred[0].replace('Twenty-four','Thirty-two').replace('301,368','301,360');
           writeFileSync(p,JSON.stringify(d,null,2)+'\n');
           edit('public/assets/citation-review.js',"src.publisher!=='USCCB'||!src.title||!src.locator||!safeUrl(src.url)||!src.url.startsWith('https://bible.usccb.org/bible/')","!src.title||!src.locator||!safeUrl(src.url)||!((src.publisher==='USCCB'&&src.url.startsWith('https://bible.usccb.org/bible/'))||(src.publisher==='Crossway'&&src.url.startsWith('https://www.esv.org/')))");
@@ -242,6 +242,11 @@ jobs:
           });
           `);
           
+          const browser='tests/browser/citation-review.spec.mjs';
+          edit(browser,'24 additional imported Atlas pairs','32 additional imported Atlas pairs');
+          edit(browser,'301,368 remain without either level','301,360 remain without either level');
+          edit(browser,'Imported Scripture quotation reviews (24)','Imported Scripture quotation reviews (32)');
+          edit(browser,'toHaveCount(24)','toHaveCount(32)');
           JS
           node scripts/import-citation-review.mjs
           npm run release -- minor "Expanded Scripture quotation register" "Add eight source-classified Old Testament quotation pairs in Romans 15 and Hebrews 3, with publisher references and contextual limitations." "Distinguish parallel Davidic song sources and extended Psalm 95 quotation components; support links to checked Crossway Scripture chapters."
