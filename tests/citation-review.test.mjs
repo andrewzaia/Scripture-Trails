@@ -403,7 +403,8 @@ test('all 34 additional Atlas pairs have dated scoped assessments in two source-
 test('four dated textual-source follow-ups retain contested readings and accurate open work',()=>{
  const records=CITATION_REVIEW.records.filter(r=>r.textualFollowUp);
  assert.deepEqual(records.map(r=>r.target).sort(),['ce121','ce133','ce150','ce157']);
- assert.equal(CITATION_REVIEW.updated,'2026-11-20');
+ assert.ok(CITATION_REVIEW.updated>='2026-11-20');
+ assert.equal(CITATION_REVIEW.updated,CITATION_REVIEW.importedReviews.reviewedOn);
  assert.ok(CITATION_REVIEW.deferred.every(s=>!s.includes('34 remain pending')));
  for(const r of records){
   assert.equal(r.textualFollowUp.reviewedOn,'2026-11-18');

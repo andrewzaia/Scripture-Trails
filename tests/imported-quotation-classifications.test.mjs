@@ -10,9 +10,9 @@ const importedShard=book=>JSON.parse(read('public/data/refs/'+book.abbr.toLowerC
 class Element{constructor(tag){this.tagName=tag;this.children=[];this.textContent='';}append(...nodes){this.children.push(...nodes);}replaceChildren(...nodes){this.children=[...nodes];}}
 const all=e=>[e,...e.children.flatMap(all)];
 
-test('twenty-four first-pass quotation classifications exist as distinct imported Atlas pairs, not existing explanations',()=>{
- assert.equal(data.entries.length,24);
- assert.equal(data.reviewedOn,'2026-11-20');
+test('thirty-two first-pass quotation classifications exist as distinct imported Atlas pairs, not existing explanations',()=>{
+ assert.equal(data.entries.length,32);
+ assert.equal(data.reviewedOn,'2026-11-22');
  assert.equal(validateCitationReview(CITATION_REVIEW,counts),true);
  assert.equal(CONNECTION_EVIDENCE.length,161);
  const ids=new Set(),pairs=new Set();
@@ -31,11 +31,11 @@ test('twenty-four first-pass quotation classifications exist as distinct importe
   const item=importedShard(from.book)[from.chapter+':'+from.verse]||[];
   assert.ok(item.some(row=>Array.isArray(row)&&row[0]===to.book.index&&row[1]===to.chapter&&row[2]===to.verse),'not in imported archive: '+key);
   assert.equal(review.sources.length,2);
-  for(const source of review.sources){assert.equal(source.publisher,'USCCB');assert.equal(new URL(source.url).hostname,'bible.usccb.org');assert.ok(source.locator);}
+  for(const source of review.sources){assert.ok(['USCCB','Crossway'].includes(source.publisher));assert.equal(new URL(source.url).hostname,source.publisher==='USCCB'?'bible.usccb.org':'www.esv.org');assert.ok(source.locator);}
   assert.ok(review.summary.length>60&&review.limitation.length>60,review.id);
  }
  assert.match(data.method,/First-pass/);
- assert.match(CITATION_REVIEW.deferred[0],/301,368 remain without either level/);
+ assert.match(CITATION_REVIEW.deferred[0],/301,360 remain without either level/);
 });
 
 test('curated quotations preserve composite, Greek-version and versification distinctions',()=>{
@@ -73,13 +73,13 @@ test('About and Atlas source disclosures show classification scope and linked pr
  assert.ok(links.every(e=>e.rel==='noopener noreferrer'));
  assert.equal(appendImportedQuotationReview(new Element('div'),'Genesis 1:1','Revelation 1:1'),false);
  const about=new Element('div');renderCitationSummary(about);
- assert.ok(all(about).some(e=>e.textContent.includes('Imported Scripture quotation reviews (24)')));
- assert.ok(all(about).some(e=>e.textContent.includes('24 additional imported Atlas pairs')));
- assert.ok(all(about).some(e=>e.textContent.includes('301,368 remain')));
+ assert.ok(all(about).some(e=>e.textContent.includes('Imported Scripture quotation reviews (32)')));
+ assert.ok(all(about).some(e=>e.textContent.includes('32 additional imported Atlas pairs')));
+ assert.ok(all(about).some(e=>e.textContent.includes('301,360 remain')));
 });
 
 test('second batch retains ten non-duplicated quotation components and edition cautions',()=>{
- const second=data.entries.filter(e=>Number(e.id.slice(2))>=15);
+ const second=data.entries.filter(e=>Number(e.id.slice(2))>=15&&Number(e.id.slice(2))<=24);
  assert.equal(second.length,10);
  assert.deepEqual(second.map(e=>e.id),Array.from({length:10},(_,i)=>'xr'+String(15+i).padStart(3,'0')));
  assert.ok(second.every(e=>e.reviewedOn==='2026-11-20'));
@@ -87,4 +87,18 @@ test('second batch retains ten non-duplicated quotation components and edition c
  assert.match(second.find(e=>e.id==='xr022').limitation,/Greek/);
  assert.match(second.find(e=>e.id==='xr024').limitation,/Isaiah 58:6/);
  assert.equal(new Set(second.map(e=>e.from+'|'+e.to)).size,10);
+});
+
+test('third batch retains parallel source locations, extended quotations and strict publisher origin checks',()=>{
+ const third=data.entries.slice(24);
+ assert.deepEqual(third.map(e=>e.id),Array.from({length:8},(_,i)=>'xr'+String(25+i).padStart(3,'0')));
+ assert.ok(third.every(e=>e.reviewedOn==='2026-11-22'));
+ assert.equal(third[0].to,third[1].to);
+ assert.match(third[0].limitation,/18:50/);
+ assert.match(third[1].limitation,/one Pauline quotation/);
+ assert.match(third[5].limitation,/Meribah and Massah/);
+ assert.match(third[6].limitation,/Hebrews 3:9/);
+ const invalid=structuredClone(CITATION_REVIEW);
+ invalid.importedReviews.entries[24].sources[1].url='https://www.esv.org.example.test/Romans+15/';
+ assert.throws(()=>validateCitationReview(invalid,counts));
 });

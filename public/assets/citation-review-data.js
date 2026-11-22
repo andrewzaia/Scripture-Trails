@@ -1,6 +1,6 @@
 export const CITATION_REVIEW = {
   "schema": 1,
-  "updated": "2026-11-20",
+  "updated": "2026-11-22",
   "status": "declared-batch-assessed",
   "method": "Editorial source-level assessment of a declared priority batch. The project owner has reviewed and accepted the published study content. The Bible is the authoritative foundation; supporting historical and archaeological sources are limited to the claims and access scope recorded here. No independent specialist signoff is claimed.",
   "scope": {
@@ -10,7 +10,7 @@ export const CITATION_REVIEW = {
     "connections": 161
   },
   "deferred": [
-    "301,392 distinct Atlas pairs still lack a fully developed editorial explanation. Twenty-four of those pairs now have first-pass quotation-source classifications with source links and limitations; 301,368 remain without either level of treatment. OpenBible vote counts are navigational suggestions, not independent evidence of a quotation type or interpretation.",
+    "301,392 distinct Atlas pairs still lack a fully developed editorial explanation. Thirty-two of those pairs now have first-pass quotation-source classifications with source links and limitations; 301,360 remain without either level of treatment. OpenBible vote counts are navigational suggestions, not independent evidence of a quotation type or interpretation.",
     "Named-place research retains disputed identifications and limited access to excavation monographs, primary archaeological records and comparative site reports. Existing regional placeholders must not be presented as resolved historical locations.",
     "Full Hebrew and Greek manuscript apparatuses have not been independently collated. Four focused textual-source follow-ups now identify specific variants or candidate passages, but do not settle every underlying reading.",
     "Outside the four rechecked Nehemiah readings, some person-trail passage sources and historical context questions still have documented access limitations. Any deeper source work requires passage-specific evidence and its own access record.",
@@ -10790,8 +10790,8 @@ export const CITATION_REVIEW = {
     }
   ],
   "importedReviews": {
-    "reviewedOn": "2026-11-20",
-    "method": "First-pass, claim-level Scripture quotation classifications of twenty-four distinct imported OpenBible.info pairs. The original fourteen entries from 2026-11-18 remain unchanged; ten further verse pairs were checked on 2026-11-20 against local reference shards, publisher Scripture passages and available notes. Some direct publisher chapter requests were restricted, so source-access limits and edition-numbering cautions remain explicit. Multiple verse-level pairs may form one extended quotation. The entries do not constitute fully developed Atlas explanations, independent manuscript collation or external specialist approval.",
+    "reviewedOn": "2026-11-22",
+    "method": "First-pass, claim-level Scripture quotation classifications of thirty-two distinct imported OpenBible.info pairs. The original twenty-four entries from 18 and 20 November remain unchanged. Eight additional pairs were assessed on 22 November 2026 UTC against the imported reference shards and linked publisher Scripture chapters (USCCB or Crossway ESV). Parallel source locations or multiple verse-level components may represent one extended quotation. These are not full Atlas explanations, manuscript collation or independent specialist approval.",
     "entries": [
       {
         "id": "xr001",
@@ -11342,6 +11342,190 @@ export const CITATION_REVIEW = {
             "publisher": "USCCB",
             "url": "https://bible.usccb.org/bible/luke/4",
             "locator": "4:16-21, especially 4:19"
+          }
+        ]
+      },
+      {
+        "id": "xr025",
+        "from": "Psalm 18:49",
+        "to": "Romans 15:9",
+        "kind": "quotation",
+        "summary": "Paul opens his chain of citations with David's praise among the nations, placing it within Christ's ministry to Israel and mercy towards the Gentiles.",
+        "limitation": "Psalm 18 is a royal thanksgiving after deliverance from enemies. The corresponding line is 18:50 in NABRE. The parallel in 2 Samuel 22:50 prevents certainty about which written exemplar Paul used.",
+        "reviewedOn": "2026-11-22",
+        "sources": [
+          {
+            "title": "Psalm 18 - USCCB chapter",
+            "publisher": "USCCB",
+            "url": "https://bible.usccb.org/bible/psalms/18",
+            "locator": "18:50 in NABRE; 18:49 in Protestant numbering"
+          },
+          {
+            "title": "Romans 15 - ESV chapter",
+            "publisher": "Crossway",
+            "url": "https://www.esv.org/Romans+15/",
+            "locator": "15:8-9"
+          }
+        ]
+      },
+      {
+        "id": "xr026",
+        "from": "2 Samuel 22:50",
+        "to": "Romans 15:9",
+        "kind": "quotation",
+        "summary": "David's thanksgiving in Samuel contains the same praise among the nations that Paul quotes to support his argument for Gentile participation in worship.",
+        "limitation": "The song also appears in Psalm 18:49. These are two linked source locations for one Pauline quotation, not two independent quotations or separate historical witnesses.",
+        "reviewedOn": "2026-11-22",
+        "sources": [
+          {
+            "title": "2 Samuel 22 - ESV chapter",
+            "publisher": "Crossway",
+            "url": "https://www.esv.org/2+Samuel+22/",
+            "locator": "22:50-51"
+          },
+          {
+            "title": "Romans 15 - ESV chapter",
+            "publisher": "Crossway",
+            "url": "https://www.esv.org/Romans+15/",
+            "locator": "15:8-9"
+          }
+        ]
+      },
+      {
+        "id": "xr027",
+        "from": "Psalm 117:1",
+        "to": "Romans 15:11",
+        "kind": "quotation",
+        "summary": "Paul cites the opening summons to all nations to praise God, continuing his case for shared worship by Jews and Gentiles.",
+        "limitation": "The short psalm grounds praise in divine faithfulness and mercy. Paul quotes its opening verse, rather than repeating the complete psalm or erasing its Israelite context.",
+        "reviewedOn": "2026-11-22",
+        "sources": [
+          {
+            "title": "Psalm 117 - USCCB chapter",
+            "publisher": "USCCB",
+            "url": "https://bible.usccb.org/bible/psalms/117",
+            "locator": "117:1-2"
+          },
+          {
+            "title": "Romans 15 - ESV chapter",
+            "publisher": "Crossway",
+            "url": "https://www.esv.org/Romans+15/",
+            "locator": "15:7-13"
+          }
+        ]
+      },
+      {
+        "id": "xr028",
+        "from": "Isaiah 11:10",
+        "to": "Romans 15:12",
+        "kind": "adapted-quotation",
+        "summary": "Paul names Isaiah and applies the root of Jesse and the nations' hope to Christ, completing the chain of Scripture citations with a Davidic royal image.",
+        "limitation": "Isaiah's oracle also concerns the recovery of Israel's remnant. Romans uses different wording about rule and hope from the Hebrew-based ESV Isaiah passage; the exact manuscript exemplar has not been collated.",
+        "reviewedOn": "2026-11-22",
+        "sources": [
+          {
+            "title": "Isaiah 11 - ESV chapter",
+            "publisher": "Crossway",
+            "url": "https://www.esv.org/Isaiah+11/",
+            "locator": "11:1-12"
+          },
+          {
+            "title": "Romans 15 - ESV chapter",
+            "publisher": "Crossway",
+            "url": "https://www.esv.org/Romans+15/",
+            "locator": "15:12-13"
+          }
+        ]
+      },
+      {
+        "id": "xr029",
+        "from": "Psalm 95:7",
+        "to": "Hebrews 3:7",
+        "kind": "quotation",
+        "summary": "Hebrews introduces the Spirit's speech with the closing appeal of Psalm 95:7, using the psalm to urge its readers to respond to God now.",
+        "limitation": "The opening part of Psalm 95:7 describes God's people as his flock; Hebrews quotes its closing appeal. This is the beginning of one extended quotation, not a separate historical event.",
+        "reviewedOn": "2026-11-22",
+        "sources": [
+          {
+            "title": "Psalm 95 - ESV chapter",
+            "publisher": "Crossway",
+            "url": "https://www.esv.org/Psalm+95/",
+            "locator": "95:6-11"
+          },
+          {
+            "title": "Hebrews 3 - ESV chapter",
+            "publisher": "Crossway",
+            "url": "https://www.esv.org/Hebrews+3/",
+            "locator": "3:7-11"
+          }
+        ]
+      },
+      {
+        "id": "xr030",
+        "from": "Psalm 95:8",
+        "to": "Hebrews 3:8",
+        "kind": "adapted-quotation",
+        "summary": "Hebrews continues the Psalm 95 quotation with the warning against hardened hearts during the wilderness rebellion and period of testing.",
+        "limitation": "The Hebrew-based psalm names Meribah and Massah, while Hebrews presents the corresponding rebellion and testing language. Read Exodus 17 in context without assuming the wording is identical across editions.",
+        "reviewedOn": "2026-11-22",
+        "sources": [
+          {
+            "title": "Psalm 95 - ESV chapter",
+            "publisher": "Crossway",
+            "url": "https://www.esv.org/Psalm+95/",
+            "locator": "95:8-9"
+          },
+          {
+            "title": "Hebrews 3 - ESV chapter",
+            "publisher": "Crossway",
+            "url": "https://www.esv.org/Hebrews+3/",
+            "locator": "3:8-9"
+          }
+        ]
+      },
+      {
+        "id": "xr031",
+        "from": "Psalm 95:10",
+        "to": "Hebrews 3:10",
+        "kind": "adapted-quotation",
+        "summary": "Hebrews reuses the divine displeasure and wandering-heart language from Psalm 95 in its warning about the wilderness generation's unbelief.",
+        "limitation": "The forty-year phrase in Psalm 95:10 appears with seeing God's works in Hebrews 3:9. This link identifies a quotation component, not a precise word-by-word or manuscript alignment.",
+        "reviewedOn": "2026-11-22",
+        "sources": [
+          {
+            "title": "Psalm 95 - ESV chapter",
+            "publisher": "Crossway",
+            "url": "https://www.esv.org/Psalm+95/",
+            "locator": "95:9-10"
+          },
+          {
+            "title": "Hebrews 3 - ESV chapter",
+            "publisher": "Crossway",
+            "url": "https://www.esv.org/Hebrews+3/",
+            "locator": "3:9-10"
+          }
+        ]
+      },
+      {
+        "id": "xr032",
+        "from": "Psalm 95:11",
+        "to": "Hebrews 3:11",
+        "kind": "quotation",
+        "summary": "Hebrews concludes its extended Psalm 95 citation with God's oath excluding the rebellious generation from rest, then develops the theme in chapter 4.",
+        "limitation": "The psalm recalls Israel's wilderness experience. Hebrews develops a continuing promise of rest; the single link does not determine every theological interpretation of that promise.",
+        "reviewedOn": "2026-11-22",
+        "sources": [
+          {
+            "title": "Psalm 95 - ESV chapter",
+            "publisher": "Crossway",
+            "url": "https://www.esv.org/Psalm+95/",
+            "locator": "95:11"
+          },
+          {
+            "title": "Hebrews 3 - ESV chapter",
+            "publisher": "Crossway",
+            "url": "https://www.esv.org/Hebrews+3/",
+            "locator": "3:11-4:11"
           }
         ]
       }

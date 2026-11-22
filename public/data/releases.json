@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "version": "1.23.0",
+      "date": "2026-11-23",
+      "title": "Expanded Scripture quotation register",
+      "changes": [
+        "Add eight source-classified Old Testament quotation pairs in Romans 15 and Hebrews 3, with publisher references and contextual limitations.",
+        "Distinguish parallel Davidic song sources and extended Psalm 95 quotation components; support links to checked Crossway Scripture chapters."
+      ]
+    },
+    {
       "version": "1.22.1",
       "date": "2026-11-22",
       "title": "Hebrew and Aramaic search metadata",

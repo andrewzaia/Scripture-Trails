@@ -1,4 +1,4 @@
-import {CITATION_REVIEW} from './citation-review-data.js?v=1.22.1';
+import {CITATION_REVIEW} from './citation-review-data.js?v=1.23.0';
 import {validateCanonicalReference} from './reference-integrity.js';
 import {parseRef} from './books.js';
 export {CITATION_REVIEW};
@@ -63,7 +63,7 @@ export function validateCitationReview(data,counts,targets){
   const ids=new Set(),pairs=new Set();
   for(const r of imported.entries){
    const key=importedPairKey(r.from,r.to),from=validateCanonicalReference(r.from,counts),to=validateCanonicalReference(r.to,counts);
-   if(!/^xr\d{3}$/.test(r.id)||ids.has(r.id)||!key||pairs.has(key)||!from||!to||from.startVerse===null||to.startVerse===null||from.book===to.book||!IMPORTED_QUOTATION_KINDS[r.kind]||!r.summary||!r.limitation||!date(r.reviewedOn)||r.reviewedOn>imported.reviewedOn||!Array.isArray(r.sources)||r.sources.length!==2||r.sources.some(src=>src.publisher!=='USCCB'||!src.title||!src.locator||!safeUrl(src.url)||!src.url.startsWith('https://bible.usccb.org/bible/')))throw Error('Invalid imported quotation '+r.id);
+   if(!/^xr\d{3}$/.test(r.id)||ids.has(r.id)||!key||pairs.has(key)||!from||!to||from.startVerse===null||to.startVerse===null||from.book===to.book||!IMPORTED_QUOTATION_KINDS[r.kind]||!r.summary||!r.limitation||!date(r.reviewedOn)||r.reviewedOn>imported.reviewedOn||!Array.isArray(r.sources)||r.sources.length!==2||r.sources.some(src=>!src.title||!src.locator||!safeUrl(src.url)||!((src.publisher==='USCCB'&&src.url.startsWith('https://bible.usccb.org/bible/'))||(src.publisher==='Crossway'&&src.url.startsWith('https://www.esv.org/')))))throw Error('Invalid imported quotation '+r.id);
    ids.add(r.id);pairs.add(key);
   }
  }
@@ -150,5 +150,5 @@ export function renderCitationSummary(root){
  }
  root.append(make('h3','Remaining source work'));
  const list=make('ul');for(const text of CITATION_REVIEW.deferred)list.append(make('li',text));root.append(list);
- const download=make('a','Download the dated citation review register (JSON)');download.href='/data/citation-review.json?v=1.22.1';download.download='scripture-trails-citation-review-'+CITATION_REVIEW.updated+'.json';root.append(download);
+ const download=make('a','Download the dated citation review register (JSON)');download.href='/data/citation-review.json?v=1.23.0';download.download='scripture-trails-citation-review-'+CITATION_REVIEW.updated+'.json';root.append(download);
 }

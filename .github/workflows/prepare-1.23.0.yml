@@ -1,0 +1,41 @@
+name: Prepare v1.23.0 quotation register
+on:
+  push:
+    branches: [release/1.23.0-quotation-register]
+    paths: [.github/workflows/prepare-1.23.0.yml, tests/citation-review.test.mjs]
+  pull_request:
+    types: [opened]
+    branches: [main]
+permissions:
+  contents: write
+concurrency:
+  group: scripture-trails-prepare-1-23-0
+  cancel-in-progress: false
+jobs:
+  release:
+    if: github.event_name == 'push' || (github.event.pull_request.head.repo.full_name == github.repository && github.event.pull_request.head.ref == 'release/1.23.0-quotation-register')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: release/1.23.0-quotation-register
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm ci
+      - name: Generate and validate release
+        run: |
+          if [ "$(node -p 'require("./package.json").version')" = "1.23.0" ]; then
+            npm run build
+            exit 0
+          fi
+          test "$(node -p 'require("./package.json").version')" = "1.22.1"
+          node scripts/import-citation-review.mjs
+          npm run release -- minor "Expanded Scripture quotation register" "Add eight source-classified Old Testament quotation pairs in Romans 15 and Hebrews 3, with publisher references and contextual limitations." "Distinguish parallel Davidic song sources and extended Psalm 95 quotation components; support links to checked Crossway Scripture chapters."
+          npm run build
+          git config user.name "scripture-trails-release-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -u
+          git commit -m "chore(release): generate v1.23.0"
+          git push origin HEAD:release/1.23.0-quotation-register
