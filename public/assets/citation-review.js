@@ -63,7 +63,7 @@ export function validateCitationReview(data,counts,targets){
   const ids=new Set(),pairs=new Set();
   for(const r of imported.entries){
    const key=importedPairKey(r.from,r.to),from=validateCanonicalReference(r.from,counts),to=validateCanonicalReference(r.to,counts);
-   if(!/^xr\d{3}$/.test(r.id)||ids.has(r.id)||!key||pairs.has(key)||!from||!to||from.startVerse===null||to.startVerse===null||from.book===to.book||!IMPORTED_QUOTATION_KINDS[r.kind]||!r.summary||!r.limitation||!date(r.reviewedOn)||r.reviewedOn>imported.reviewedOn||!Array.isArray(r.sources)||r.sources.length!==2||r.sources.some(src=>src.publisher!=='USCCB'||!src.title||!src.locator||!safeUrl(src.url)||!src.url.startsWith('https://bible.usccb.org/bible/')))throw Error('Invalid imported quotation '+r.id);
+   if(!/^xr\d{3}$/.test(r.id)||ids.has(r.id)||!key||pairs.has(key)||!from||!to||from.startVerse===null||to.startVerse===null||from.book===to.book||!IMPORTED_QUOTATION_KINDS[r.kind]||!r.summary||!r.limitation||!date(r.reviewedOn)||r.reviewedOn>imported.reviewedOn||!Array.isArray(r.sources)||r.sources.length!==2||r.sources.some(src=>!src.title||!src.locator||!safeUrl(src.url)||!((src.publisher==='USCCB'&&src.url.startsWith('https://bible.usccb.org/bible/'))||(src.publisher==='Crossway'&&src.url.startsWith('https://www.esv.org/')))))throw Error('Invalid imported quotation '+r.id);
    ids.add(r.id);pairs.add(key);
   }
  }
