@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.22.1 - 22/11/2026: Hebrew and Aramaic search metadata
+
+- Update search and social sharing descriptions to reflect Hebrew Old Testament and Aramaic Peshitta New Testament companion Scripture.
+
 ## 1.22.0 - 21/11/2026: Hebrew and Syriac Scripture alongside English
 
 - Read the Hebrew Old Testament and the Syriac Aramaic New Testament alongside the selected English edition.
